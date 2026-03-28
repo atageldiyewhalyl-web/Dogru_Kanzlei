@@ -18,7 +18,7 @@ export function Hero() {
   };
 
   return (
-    <section className="relative min-h-screen bg-[#1C3829] overflow-hidden flex flex-col justify-center pt-32 pb-0 lg:pt-0">
+    <section className="relative min-h-screen bg-[#1C3829] overflow-hidden flex flex-col justify-center pt-40 pb-0 lg:pt-0">
       {/* High-prestige background grid & gradients */}
       <div className="absolute inset-0 pointer-events-none opacity-20 bg-[linear-gradient(to_right,#B8963E_1px,transparent_1px),linear-gradient(to_bottom,#B8963E_1px,transparent_1px)] bg-[size:100px_100px] [mask-image:radial-gradient(ellipse_60%_60%_at_50%_50%,#000_10%,transparent_100%)]" />
       <div className="absolute top-0 left-0 w-full h-full bg-gradient-to-b from-[#1C3829]/70 via-[#1C3829]/40 to-[#1a3326] pointer-events-none z-0" />
@@ -36,11 +36,11 @@ export function Hero() {
       {/* Decorative vertical architectural line */}
       <div className="hidden lg:block absolute left-1/2 top-0 bottom-0 w-[1px] bg-white/5 pointer-events-none" />
 
-      <div className="relative z-10 max-w-[1400px] mx-auto px-6 lg:px-16 w-full grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16 items-center flex-grow py-12 lg:py-0">
+      <div className="relative z-10 max-w-[1400px] mx-auto px-6 lg:px-12 w-full grid grid-cols-1 lg:grid-cols-12 gap-16 lg:gap-24 items-center flex-grow py-12 lg:py-20">
         
         {/* Left Content */}
         <motion.div 
-          className="lg:col-span-6 flex flex-col justify-center z-20"
+          className="lg:col-span-5 flex flex-col justify-center z-20"
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, ease: "easeOut" }}
@@ -92,12 +92,12 @@ export function Hero() {
 
         {/* Right Content - Hero Image */}
         <motion.div 
-          className="lg:col-span-6 relative hidden md:flex justify-center lg:justify-end items-center"
+          className="lg:col-span-7 relative hidden md:flex justify-center lg:justify-end items-center"
           initial={{ opacity: 0, x: 30 }}
           animate={{ opacity: 1, x: 0 }}
           transition={{ duration: 0.8, delay: 0.2, ease: "easeOut" }}
         >
-          <div className="relative w-full max-w-[480px] lg:max-w-[500px] xl:max-w-[540px] aspect-[4/5] z-10 mt-10 lg:mt-0">
+          <div className="relative w-full max-w-[480px] lg:max-w-[500px] xl:max-w-[540px] aspect-[4/5] z-10 mt-12 lg:mt-32">
             {/* Gold Frame Accent */}
             <div className="absolute -top-5 -right-5 w-full h-full border border-[#B8963E]/40 z-0 transition-transform duration-700 hover:translate-x-2 hover:-translate-y-2" />
             
