@@ -1,4 +1,4 @@
-import React, { createContext, useContext, useMemo } from 'react';
+import React, { createContext, useContext, useMemo, useEffect } from 'react';
 import { useNavigate, useLocation } from 'react-router';
 import { translations, TranslationKeys } from '../data/translations';
 
@@ -75,6 +75,10 @@ export const LanguageProvider: React.FC<{ language: Language; children: React.Re
       blogSection: `${prefix}/#blog`,
       contact: `${prefix}/#iletisim`,
     };
+  }, [language]);
+
+  React.useEffect(() => {
+    document.documentElement.lang = language;
   }, [language]);
 
   return (

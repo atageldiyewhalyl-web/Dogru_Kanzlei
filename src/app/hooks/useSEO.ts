@@ -43,9 +43,6 @@ export function useSEO(config: SEOConfig) {
     // Title
     document.title = config.title;
 
-    // Language
-    document.documentElement.lang = config.lang;
-
     // Description
     setMetaTag('description', config.description, true);
 
