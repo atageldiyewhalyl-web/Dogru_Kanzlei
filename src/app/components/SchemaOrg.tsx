@@ -1,0 +1,84 @@
+import { useEffect } from "react";
+import { useLanguage } from "../context/LanguageContext";
+
+const SCHEMA_ID = "schema-org-jsonld";
+
+const schemaData = {
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "LegalService",
+      "@id": "https://www.hasandogru.de/#organization",
+      "name": "Doğru Kanzlei",
+      "alternateName": "Rechtsanwalt Hasan Doğru",
+      "url": "https://www.hasandogru.de",
+      "logo": "https://www.hasandogru.de/logo.png",
+      "description": "Rechtsanwaltskanzlei für türkisches und deutsches Recht in Mannheim und Ankara. Spezialisiert auf Familienrecht, Erbrecht, Mietrecht, Strafrecht und grenzüberschreitende Rechtsberatung.",
+      "telephone": "+49 621 15 20 83 23",
+      "email": "info@dogru-kanzlei.de",
+      "priceRange": "$$",
+      "knowsLanguage": ["de", "tr"],
+      "areaServed": [
+        { "@type": "Country", "name": "Germany" },
+        { "@type": "Country", "name": "Turkey" }
+      ],
+      "address": [
+        {
+          "@type": "PostalAddress",
+          "streetAddress": "Q7, 24",
+          "addressLocality": "Mannheim",
+          "postalCode": "68161",
+          "addressCountry": "DE"
+        },
+        {
+          "@type": "PostalAddress",
+          "addressLocality": "Ankara",
+          "addressCountry": "TR"
+        }
+      ],
+      "founder": {
+        "@type": "Person",
+        "name": "Hasan Doğru",
+        "jobTitle": "Rechtsanwalt",
+        "knowsLanguage": ["de", "tr"]
+      },
+      "hasOfferCatalog": {
+        "@type": "OfferCatalog",
+        "name": "Rechtsgebiete",
+        "itemListElement": [
+          { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Familienrecht / Aile Hukuku" } },
+          { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Erbrecht / Miras Hukuku" } },
+          { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Mietrecht / Kira Hukuku" } },
+          { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Strafrecht / Ceza Hukuku" } },
+          { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Türkisches Recht / Türk Hukuku" } }
+        ]
+      },
+      "sameAs": []
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://www.hasandogru.de/#website",
+      "url": "https://www.hasandogru.de",
+      "name": "Doğru Kanzlei",
+      "publisher": { "@id": "https://www.hasandogru.de/#organization" },
+      "inLanguage": ["de", "tr"]
+    }
+  ]
+};
+
+export function SchemaOrg() {
+  const { language } = useLanguage();
+
+  useEffect(() => {
+    let el = document.getElementById(SCHEMA_ID) as HTMLScriptElement | null;
+    if (!el) {
+      el = document.createElement("script");
+      el.id = SCHEMA_ID;
+      el.type = "application/ld+json";
+      document.head.appendChild(el);
+    }
+    el.textContent = JSON.stringify(schemaData);
+  }, [language]);
+
+  return null;
+}

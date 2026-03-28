@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:xhtml="http://www.w3.org/1999/xhtml">
+
+  <!-- Homepage -->
+  <url>
+    <loc>https://www.hasandogru.de/de</loc>
+    <xhtml:link rel="alternate" hreflang="de" href="https://www.hasandogru.de/de" />
+    <xhtml:link rel="alternate" hreflang="tr" href="https://www.hasandogru.de/tr" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.hasandogru.de/de" />
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+  </url>
+  <url>
+    <loc>https://www.hasandogru.de/tr</loc>
+    <xhtml:link rel="alternate" hreflang="de" href="https://www.hasandogru.de/de" />
+    <xhtml:link rel="alternate" hreflang="tr" href="https://www.hasandogru.de/tr" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.hasandogru.de/de" />
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+  </url>
+
+  <!-- Services Listing -->
+  <url>
+    <loc>https://www.hasandogru.de/de/leistungen</loc>
+    <xhtml:link rel="alternate" hreflang="de" href="https://www.hasandogru.de/de/leistungen" />
+    <xhtml:link rel="alternate" hreflang="tr" href="https://www.hasandogru.de/tr/hizmetler" />
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://www.hasandogru.de/tr/hizmetler</loc>
+    <xhtml:link rel="alternate" hreflang="de" href="https://www.hasandogru.de/de/leistungen" />
+    <xhtml:link rel="alternate" hreflang="tr" href="https://www.hasandogru.de/tr/hizmetler" />
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+
+  <!-- Service: Mietrecht -->
+  <url>
+    <loc>https://www.hasandogru.de/de/leistungen/mietrecht</loc>
+    <xhtml:link rel="alternate" hreflang="de" href="https://www.hasandogru.de/de/leistungen/mietrecht" />
+    <xhtml:link rel="alternate" hreflang="tr" href="https://www.hasandogru.de/tr/hizmetler/mietrecht" />
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.hasandogru.de/tr/hizmetler/mietrecht</loc>
+    <xhtml:link rel="alternate" hreflang="de" href="https://www.hasandogru.de/de/leistungen/mietrecht" />
+    <xhtml:link rel="alternate" hreflang="tr" href="https://www.hasandogru.de/tr/hizmetler/mietrecht" />
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- Service: Familienrecht -->
+  <url>
+    <loc>https://www.hasandogru.de/de/leistungen/familienrecht</loc>
+    <xhtml:link rel="alternate" hreflang="de" href="https://www.hasandogru.de/de/leistungen/familienrecht" />
+    <xhtml:link rel="alternate" hreflang="tr" href="https://www.hasandogru.de/tr/hizmetler/familienrecht" />
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.hasandogru.de/tr/hizmetler/familienrecht</loc>
+    <xhtml:link rel="alternate" hreflang="de" href="https://www.hasandogru.de/de/leistungen/familienrecht" />
+    <xhtml:link rel="alternate" hreflang="tr" href="https://www.hasandogru.de/tr/hizmetler/familienrecht" />
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- Service: Strafrecht -->
+  <url>
+    <loc>https://www.hasandogru.de/de/leistungen/strafrecht</loc>
+    <xhtml:link rel="alternate" hreflang="de" href="https://www.hasandogru.de/de/leistungen/strafrecht" />
+    <xhtml:link rel="alternate" hreflang="tr" href="https://www.hasandogru.de/tr/hizmetler/strafrecht" />
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.hasandogru.de/tr/hizmetler/strafrecht</loc>
+    <xhtml:link rel="alternate" hreflang="de" href="https://www.hasandogru.de/de/leistungen/strafrecht" />
+    <xhtml:link rel="alternate" hreflang="tr" href="https://www.hasandogru.de/tr/hizmetler/strafrecht" />
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- Service: Türkisches Recht -->
+  <url>
+    <loc>https://www.hasandogru.de/de/leistungen/tuerkisches-recht</loc>
+    <xhtml:link rel="alternate" hreflang="de" href="https://www.hasandogru.de/de/leistungen/tuerkisches-recht" />
+    <xhtml:link rel="alternate" hreflang="tr" href="https://www.hasandogru.de/tr/hizmetler/tuerkisches-recht" />
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.hasandogru.de/tr/hizmetler/tuerkisches-recht</loc>
+    <xhtml:link rel="alternate" hreflang="de" href="https://www.hasandogru.de/de/leistungen/tuerkisches-recht" />
+    <xhtml:link rel="alternate" hreflang="tr" href="https://www.hasandogru.de/tr/hizmetler/tuerkisches-recht" />
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- Service: Erbrecht -->
+  <url>
+    <loc>https://www.hasandogru.de/de/leistungen/erbrecht</loc>
+    <xhtml:link rel="alternate" hreflang="de" href="https://www.hasandogru.de/de/leistungen/erbrecht" />
+    <xhtml:link rel="alternate" hreflang="tr" href="https://www.hasandogru.de/tr/hizmetler/erbrecht" />
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.hasandogru.de/tr/hizmetler/erbrecht</loc>
+    <xhtml:link rel="alternate" hreflang="de" href="https://www.hasandogru.de/de/leistungen/erbrecht" />
+    <xhtml:link rel="alternate" hreflang="tr" href="https://www.hasandogru.de/tr/hizmetler/erbrecht" />
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- Blog -->
+  <url>
+    <loc>https://www.hasandogru.de/de/blog</loc>
+    <xhtml:link rel="alternate" hreflang="de" href="https://www.hasandogru.de/de/blog" />
+    <xhtml:link rel="alternate" hreflang="tr" href="https://www.hasandogru.de/tr/blog" />
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.hasandogru.de/tr/blog</loc>
+    <xhtml:link rel="alternate" hreflang="de" href="https://www.hasandogru.de/de/blog" />
+    <xhtml:link rel="alternate" hreflang="tr" href="https://www.hasandogru.de/tr/blog" />
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <!-- Blog Post: Miras Hukuku Rehberi -->
+  <url>
+    <loc>https://www.hasandogru.de/de/blog/miras-hukuku-rehberi</loc>
+    <xhtml:link rel="alternate" hreflang="de" href="https://www.hasandogru.de/de/blog/miras-hukuku-rehberi" />
+    <xhtml:link rel="alternate" hreflang="tr" href="https://www.hasandogru.de/tr/blog/miras-hukuku-rehberi" />
+    <lastmod>2026-03-15</lastmod>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://www.hasandogru.de/tr/blog/miras-hukuku-rehberi</loc>
+    <xhtml:link rel="alternate" hreflang="de" href="https://www.hasandogru.de/de/blog/miras-hukuku-rehberi" />
+    <xhtml:link rel="alternate" hreflang="tr" href="https://www.hasandogru.de/tr/blog/miras-hukuku-rehberi" />
+    <lastmod>2026-03-15</lastmod>
+    <priority>0.6</priority>
+  </url>
+
+  <!-- Blog Post: Uluslararası Boşanma -->
+  <url>
+    <loc>https://www.hasandogru.de/de/blog/uluslararasi-bosanma</loc>
+    <xhtml:link rel="alternate" hreflang="de" href="https://www.hasandogru.de/de/blog/uluslararasi-bosanma" />
+    <xhtml:link rel="alternate" hreflang="tr" href="https://www.hasandogru.de/tr/blog/uluslararasi-bosanma" />
+    <lastmod>2026-03-02</lastmod>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://www.hasandogru.de/tr/blog/uluslararasi-bosanma</loc>
+    <xhtml:link rel="alternate" hreflang="de" href="https://www.hasandogru.de/de/blog/uluslararasi-bosanma" />
+    <xhtml:link rel="alternate" hreflang="tr" href="https://www.hasandogru.de/tr/blog/uluslararasi-bosanma" />
+    <lastmod>2026-03-02</lastmod>
+    <priority>0.6</priority>
+  </url>
+
+  <!-- Blog Post: Gayrimenkul Hakları -->
+  <url>
+    <loc>https://www.hasandogru.de/de/blog/gayrimenkul-haklari</loc>
+    <xhtml:link rel="alternate" hreflang="de" href="https://www.hasandogru.de/de/blog/gayrimenkul-haklari" />
+    <xhtml:link rel="alternate" hreflang="tr" href="https://www.hasandogru.de/tr/blog/gayrimenkul-haklari" />
+    <lastmod>2026-02-18</lastmod>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://www.hasandogru.de/tr/blog/gayrimenkul-haklari</loc>
+    <xhtml:link rel="alternate" hreflang="de" href="https://www.hasandogru.de/de/blog/gayrimenkul-haklari" />
+    <xhtml:link rel="alternate" hreflang="tr" href="https://www.hasandogru.de/tr/blog/gayrimenkul-haklari" />
+    <lastmod>2026-02-18</lastmod>
+    <priority>0.6</priority>
+  </url>
+
+  <!-- Legal Pages -->
+  <url>
+    <loc>https://www.hasandogru.de/de/datenschutz</loc>
+    <xhtml:link rel="alternate" hreflang="de" href="https://www.hasandogru.de/de/datenschutz" />
+    <xhtml:link rel="alternate" hreflang="tr" href="https://www.hasandogru.de/tr/gizlilik-politikasi" />
+    <changefreq>yearly</changefreq>
+    <priority>0.3</priority>
+  </url>
+  <url>
+    <loc>https://www.hasandogru.de/de/impressum</loc>
+    <xhtml:link rel="alternate" hreflang="de" href="https://www.hasandogru.de/de/impressum" />
+    <xhtml:link rel="alternate" hreflang="tr" href="https://www.hasandogru.de/tr/yasal-bilgiler" />
+    <changefreq>yearly</changefreq>
+    <priority>0.3</priority>
+  </url>
+
+</urlset>
