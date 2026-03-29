@@ -154,3 +154,16 @@
     line-height: 1.5;
   }
 }
+
+/* Language-specific typographic refinements */
+html[lang="de"] {
+  font-language-override: "DEU";
+  -webkit-font-feature-settings: "locl" 0;
+  font-feature-settings: "locl" 0;
+}
+
+html[lang="tr"] {
+  font-language-override: "TRK";
+  -webkit-font-feature-settings: "locl" 1;
+  font-feature-settings: "locl" 1;
+}
