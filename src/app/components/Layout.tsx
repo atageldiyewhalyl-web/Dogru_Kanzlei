@@ -19,6 +19,13 @@ export function Layout() {
     window.scrollTo(0, 0);
   }, [pathname]);
 
+  // Sync HTML lang attribute immediately on render/path change
+  useEffect(() => {
+    if (language) {
+      document.documentElement.lang = language;
+    }
+  }, [language]);
+
   return (
     <LanguageProvider language={language}>
       <div

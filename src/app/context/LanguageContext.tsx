@@ -77,10 +77,6 @@ export const LanguageProvider: React.FC<{ language: Language; children: React.Re
     };
   }, [language]);
 
-  React.useEffect(() => {
-    document.documentElement.lang = language;
-  }, [language]);
-
   return (
     <LanguageContext.Provider value={{ language, setLanguage, t, paths }}>
       {children}
