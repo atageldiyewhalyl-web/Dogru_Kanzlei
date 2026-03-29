@@ -126,8 +126,8 @@ export function About() {
             style={{
               fontFamily: "'Lato', sans-serif",
               fontSize: 16,
-              fontWeight: 300,
-              color: "#6a6a6a",
+              fontWeight: 400,
+              color: "#4a4a4a",
               lineHeight: 1.8,
               marginBottom: 36,
             }}

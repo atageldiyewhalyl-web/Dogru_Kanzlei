@@ -75,8 +75,8 @@ export function Footer() {
               style={{
                 fontFamily: "'Lato', sans-serif",
                 fontSize: 13,
-                fontWeight: 300,
-                color: "rgba(255,255,255,0.45)",
+                fontWeight: 400,
+                color: "rgba(255,255,255,0.55)",
                 lineHeight: 1.7,
                 maxWidth: 320,
                 marginBottom: 24,

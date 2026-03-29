@@ -112,8 +112,8 @@ export function WhyUs() {
             style={{
               fontFamily: "'Lato', sans-serif",
               fontSize: 15,
-              fontWeight: 300,
-              color: "rgba(255,255,255,0.55)",
+              fontWeight: 400,
+              color: "rgba(255,255,255,0.7)",
               lineHeight: 1.8,
               maxWidth: 500,
               margin: "0 auto",
@@ -202,8 +202,8 @@ export function WhyUs() {
                   style={{
                     fontFamily: "'Lato', sans-serif",
                     fontSize: 14,
-                    fontWeight: 300,
-                    color: "rgba(255,255,255,0.55)",
+                    fontWeight: 400,
+                    color: "rgba(255,255,255,0.65)",
                     lineHeight: 1.8,
                     margin: 0,
                   }}

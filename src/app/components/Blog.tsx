@@ -160,8 +160,8 @@ export function Blog() {
                     style={{
                       fontFamily: "'Lato', sans-serif",
                       fontSize: 12,
-                      fontWeight: 300,
-                      color: "#aaa8a0",
+                      fontWeight: 400,
+                      color: "#888680",
                     }}
                   >
                     {language === 'de' ? post.dateDE : post.dateTR}
@@ -188,8 +188,8 @@ export function Blog() {
                   style={{
                     fontFamily: "'Lato', sans-serif",
                     fontSize: 14,
-                    fontWeight: 300,
-                    color: "#6a6a6a",
+                    fontWeight: 400,
+                    color: "#5a5a5a",
                     lineHeight: 1.7,
                     marginBottom: 20,
                   }}
