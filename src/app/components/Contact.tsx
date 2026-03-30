@@ -8,17 +8,17 @@ export function Contact() {
     {
       city: "Mannheim",
       country: language === "tr" ? "Almanya" : "Deutschland",
-      address: "Q7, 24\n68161 Mannheim, Deutschland",
-      phone: "+49 (0) 621 15 20 83 23",
-      email: "info@dogru-kanzlei.de",
+      address: "R1 2,3\n68161 Mannheim, Deutschland",
+      phone: "+4917661221210",
+      email: "Avukat.hasandogru@outlook.de",
       hours: language === "tr" ? "Pzt–Cmt: 09:00 – 18:00" : "Mo–Sa: 09:00 – 18:00",
     },
     {
       city: "Ankara",
       country: language === "tr" ? "Türkiye" : "Türkei",
       address: "Aziziye, Kuzgun Sk. No:2\n06690 Çankaya / Ankara",
-      phone: "+90 (0) 312 431 01 01",
-      email: "info@dogru-kanzlei.de",
+      phone: "+905332375918",
+      email: "Avukat.hasandogru@outlook.de",
       hours: language === "tr" ? "Pzt–Cum: 09:00 – 18:00" : "Mo–Fr: 09:00 – 18:00",
     },
   ];

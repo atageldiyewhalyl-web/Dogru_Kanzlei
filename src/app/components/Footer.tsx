@@ -213,19 +213,19 @@ export function Footer() {
             >
               <div style={{ display: "flex", alignItems: "center", gap: 10, marginBottom: 14 }}>
                 <Mail size={14} color="#B8963E" />
-                <a href="mailto:info@dogru-kanzlei.de" style={{ color: "inherit", textDecoration: "none" }}>info@dogru-kanzlei.de</a>
+                <a href="mailto:Avukat.hasandogru@outlook.de" style={{ color: "inherit", textDecoration: "none" }}>Avukat.hasandogru@outlook.de</a>
               </div>
               <div style={{ display: "flex", alignItems: "center", gap: 10, marginBottom: 14 }}>
                 <Phone size={14} color="#B8963E" />
-                <span>+49 (0) 621 15 20 83 23</span>
+                <span>+4917661221210</span>
               </div>
               <div style={{ display: "flex", alignItems: "center", gap: 10, marginBottom: 14 }}>
                 <Phone size={14} color="#B8963E" />
-                <span>+90 (0) 312 431 01 01</span>
+                <span>+905332375918</span>
               </div>
               <div style={{ display: "flex", alignItems: "flex-start", gap: 10 }}>
                 <MapPin size={14} color="#B8963E" style={{ marginTop: 4 }} />
-                <span>Q7, 24, 68161 Mannheim, Deutschland</span>
+                <span>R1 2,3, 68161 Mannheim, Deutschland</span>
               </div>
             </div>
           </div>

@@ -54,10 +54,11 @@ export function Datenschutz() {
               <h2 className="font-serif text-2xl text-[#1C3829] mt-8 mb-4">1. Verantwortlicher</h2>
               <p>
                 Verantwortlich für die Datenverarbeitung auf dieser Website ist:<br />
-                Rechtsanwalt Hasan Doğru<br />
-                Q7, 24, 68161 Mannheim<br />
-                Telefon: +49 (0) 621 15 20 83 23<br />
-                E-Mail: info@dogru-kanzlei.de
+                Hasan Doğru<br />
+                R1 2,3<br />
+                68161 Mannheim<br />
+                Telefon: +4917661221210<br />
+                E-Mail: Avukat.hasandogru@outlook.de
               </p>
 
               <h2 className="font-serif text-2xl text-[#1C3829] mt-8 mb-4">2. Erhebung und Speicherung personenbezogener Daten</h2>
@@ -83,16 +84,17 @@ export function Datenschutz() {
               <h2 className="font-serif text-2xl text-[#1C3829] mt-8 mb-4">1. Sorumlu Kişi</h2>
               <p>
                 Bu web sitesindeki veri işlemeden sorumlu olan kişi:<br />
-                Avukat Hasan Doğru<br />
-                Q7, 24, 68161 Mannheim<br />
-                Telefon: +49 (0) 621 15 20 83 23<br />
-                E-posta: info@dogru-kanzlei.de
+                Hasan Doğru<br />
+                R1 2,3<br />
+                68161 Mannheim<br />
+                Telefon: +4917661221210<br />
+                E-posta: Avukat.hasandogru@outlook.de
               </p>
 
               <h2 className="font-serif text-2xl text-[#1C3829] mt-8 mb-4">2. Kişisel Verilerin Toplanması ve Saklanması</h2>
               <p>
                 Web sitemizi ziyaret ettiğinizde, bilgiler otomatik olarak web sitesi sunucumuza gönderilir.
-                Bu bilgiler geçici olarak bir log dosyasında saklanır. Daha fazla bilgi yakında eklenecektir.
+                Bu bilgiler geçici olarak bir log dosyasında saklanır.
               </p>
 
               <h2 className="font-serif text-2xl text-[#1C3829] mt-8 mb-4">3. İletişim Formu</h2>

@@ -48,47 +48,78 @@ export function Impressum() {
           {language === 'de' ? 'Impressum' : 'Yasal Bilgiler'}
         </h1>
 
-        <div className="prose prose-lg max-w-none font-sans text-[#3a3a3a] leading-[1.9] font-light">
+        <div className="prose prose-lg max-w-none font-sans text-[#3a3a3a] leading-[1.8] font-medium">
           <h2 className="font-serif text-2xl text-[#1C3829] mt-8 mb-4">
-            {language === 'de' ? 'Angaben gemäß § 5 TMG' : '§ 5 TMG Kapsamında Bilgiler'}
+            Angaben gemäß § 5 TMG
           </h2>
-          <p>
-            Rechtsanwalt Hasan Doğru<br />
-            Doğru Kanzlei<br />
-            Q7, 24<br />
-            68161 Mannheim<br />
-            Deutschland
-          </p>
+          <div className="mb-8">
+            <p className="mb-2"><strong>Firma / Anbieter:</strong><br />DOGRU KANZLEİ</p>
+            <p className="mb-2"><strong>Rechtsform:</strong><br />Einzelunternehmen</p>
+            <p className="mb-2"><strong>Vertreten durch (Geschäftsführer / Inhaber):</strong><br />Avukat Hasan DOĞRU</p>
+            <p className="mb-2"><strong>Anschrift:</strong><br />R1 2,3<br />68161 MANNHEIM<br />DEUTSCHLAND</p>
+          </div>
 
           <h2 className="font-serif text-2xl text-[#1C3829] mt-8 mb-4">
-            {language === 'de' ? 'Kontakt' : 'İletişim'}
+            Kontakt
           </h2>
-          <p>
-            {language === 'de' ? 'Telefon' : 'Telefon'}: +49 (0) 621 15 20 83 23<br />
-            E-Mail: info@dogru-kanzlei.de
-          </p>
+          <div className="mb-8">
+            <p className="mb-2"><strong>Telefon:</strong><br />+4917661221210<br />+905332375918</p>
+            <p className="mb-2"><strong>E-Mail:</strong><br />Avukat.hasandogru@outlook.de</p>
+            <p className="mb-2"><strong>Webseite:</strong><br />Strato</p>
+          </div>
 
           <h2 className="font-serif text-2xl text-[#1C3829] mt-8 mb-4">
-            {language === 'de' ? 'Berufsbezeichnung und berufsrechtliche Regelungen' : 'Meslek Unvanı ve Mesleki Düzenlemeler'}
+            Registereintrag
           </h2>
-          <p>
-            {language === 'de' ? 'Berufsbezeichnung: Rechtsanwalt' : 'Meslek Unvanı: Avukat'}<br />
-            {language === 'de' ? 'Zuständige Kammer: Rechtsanwaltskammer' : 'Yetkili Oda: Rechtsanwaltskammer'}<br />
-            {language === 'de' ? 'Verliehen in: Bundesrepublik Deutschland' : 'Verilen Ülke: Federal Almanya Cumhuriyeti'}
-          </p>
+          <div className="mb-8">
+            <p className="mb-2"><strong>Handelsregister:</strong> [HRA]</p>
+            <p className="mb-2"><strong>Registergericht:</strong> Rechtsanwaltskammer Karlsruhe</p>
+            <p className="mb-2"><strong>Registernummer:</strong> Mitgliedsnummer: [Miras]</p>
+            <p className="mb-2"><strong>Umsatzsteuer-ID gemäß § 27a UStG:</strong> (Ust.-Nr.: 38240/01054)</p>
+          </div>
+
+          <div className="bg-[#1C3829] text-white p-6 my-8">
+            <p className="font-mono text-sm tracking-widest mb-0">
+              IBAN: DE70 6705 0505 0040 5727 75
+            </p>
+          </div>
 
           <h2 className="font-serif text-2xl text-[#1C3829] mt-8 mb-4">
-            {language === 'de' ? 'Zweigstelle Ankara' : 'Ankara Şubesi'}
+            Inhaltlich verantwortlich gemäß § 18 Abs. 2 MStV
           </h2>
-          <p>
-            Ankara, Türkiye<br />
-            {language === 'de' ? 'Telefon' : 'Telefon'}: +90 (0) 312 431 01 01
+          <p className="mb-8">
+            Hasan DOĞRU<br />
+            R1 2,3 68161 Mannheim
           </p>
 
-          <p className="mt-8 text-sm text-[#6a6a6a] italic">
-            {language === 'de'
-              ? 'Dieses Impressum wird in Kürze mit vollständigen Angaben aktualisiert.'
-              : 'Bu yasal bilgiler sayfası yakında tam bilgilerle güncellenecektir.'}
+          <hr className="border-[#B8963E]/30 my-12" />
+
+          <h2 className="font-serif text-3xl text-[#1C3829] mt-12 mb-6">Haftungsausschluss</h2>
+          
+          <h3 className="text-xl font-serif text-[#1C3829] mt-8 mb-3">1. Haftung für Inhalte</h3>
+          <p className="mb-6 text-sm">
+            Die Inhalte unserer Seiten wurden mit größter Sorgfalt erstellt. Für die Richtigkeit, Vollständigkeit und Aktualität der Inhalte können wir jedoch keine Gewähr übernehmen. Als Diensteanbieter sind wir gemäß § 7 Abs. 1 TMG für eigene Inhalte verantwortlich. Nach §§ 8 bis 10 TMG sind wir jedoch nicht verpflichtet, übermittelte oder gespeicherte fremde Informationen zu überwachen.
+          </p>
+
+          <h3 className="text-xl font-serif text-[#1C3829] mt-8 mb-3">2. Haftung für externe Links</h3>
+          <p className="mb-6 text-sm">
+            Unsere Website enthält Links zu externen Webseiten Dritter, auf deren Inhalte wir keinen Einfluss haben. Für die Inhalte der verlinkten Seiten ist stets der jeweilige Betreiber verantwortlich. Bei Bekanntwerden von Rechtsverletzungen werden wir derartige Links umgehend entfernen.
+          </p>
+
+          <h3 className="text-xl font-serif text-[#1C3829] mt-8 mb-3">3. Urheberrecht</h3>
+          <p className="mb-6 text-sm">
+            Alle auf dieser Website veröffentlichten Inhalte unterliegen dem deutschen Urheberrecht. Vervielfältigung, Bearbeitung oder Verbreitung außerhalb der Grenzen des Urheberrechts bedarf der schriftlichen Zustimmung des jeweiligen Autors.
+          </p>
+
+          <h2 className="font-serif text-2xl text-[#1C3829] mt-12 mb-4">EU-Streitschlichtung gemäß Art. 14 ODR-VO</h2>
+          <p className="mb-4 text-sm">
+            Die Europäische Kommission stellt eine Plattform zur Online-Streitbeilegung bereit:<br />
+            <a href="https://ec.europa.eu/consumers/odr/" target="_blank" rel="noopener noreferrer" className="text-[#B8963E] hover:underline">
+              https://ec.europa.eu/consumers/odr/
+            </a>
+          </p>
+          <p className="text-sm font-italic">
+            Wir sind nicht verpflichtet und nicht bereit, an Streitbeilegungsverfahren vor einer Verbraucherschlichtungsstelle teilzunehmen.
           </p>
         </div>
       </div>

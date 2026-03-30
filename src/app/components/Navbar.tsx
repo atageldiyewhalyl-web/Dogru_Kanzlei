@@ -281,8 +281,8 @@ export function Navbar() {
             <p className="font-sans text-[11px] text-white/50 tracking-[0.2em] uppercase mb-4">
               {language === 'de' ? 'Direkter Kontakt' : 'Doğrudan İletişim'}
             </p>
-            <p className="font-sans text-white mb-2">info@dogru-kanzlei.de</p>
-            <p className="font-sans text-white mb-8">+49 621 15 20 83 23</p>
+            <p className="font-sans text-white mb-2">Avukat.hasandogru@outlook.de</p>
+            <p className="font-sans text-white mb-8">+4917661221210</p>
             <button
               onClick={() => handleNavClick(paths.contact)}
               className="w-full bg-[#B8963E] text-white font-sans text-xs font-bold tracking-[0.15em] uppercase py-5 text-center transition-colors hover:bg-[#a68635]"

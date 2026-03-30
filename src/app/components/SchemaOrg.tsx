@@ -14,8 +14,8 @@ const schemaData = {
       "url": "https://www.hasandogru.de",
       "logo": "https://www.hasandogru.de/logo.png",
       "description": "Rechtsanwaltskanzlei für türkisches und deutsches Recht in Mannheim und Ankara. Spezialisiert auf Familienrecht, Erbrecht, Mietrecht, Strafrecht und grenzüberschreitende Rechtsberatung.",
-      "telephone": "+49 621 15 20 83 23",
-      "email": "info@dogru-kanzlei.de",
+      "telephone": "+4917661221210",
+      "email": "Avukat.hasandogru@outlook.de",
       "priceRange": "$$",
       "knowsLanguage": ["de", "tr"],
       "areaServed": [
@@ -25,7 +25,7 @@ const schemaData = {
       "address": [
         {
           "@type": "PostalAddress",
-          "streetAddress": "Q7, 24",
+          "streetAddress": "R1 2,3",
           "addressLocality": "Mannheim",
           "postalCode": "68161",
           "addressCountry": "DE"
