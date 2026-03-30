@@ -60,7 +60,7 @@
 
 @theme inline {
   --font-serif: "Cormorant Garamond", serif;
-  --font-sans: "Lato", sans-serif;
+  --font-sans: "Inter", sans-serif;
   --color-brand-green: #1C3829;
   --color-brand-gold: #B8963E;
   --color-background: var(--background);

@@ -92,11 +92,11 @@ export function ServiceDetail() {
 
           <div className="grid grid-cols-1 lg:grid-cols-3 gap-12 mt-12">
             <div className="lg:col-span-2">
-              <p className="font-sans text-lg text-[#1C3829]/80 leading-relaxed mb-8 italic">
+              <p className="font-sans text-lg text-[#1C3829] leading-relaxed mb-8 italic font-medium">
                 {description}
               </p>
 
-              <div className="prose prose-lg text-[#6a6a6a] font-sans font-light leading-relaxed mb-12 whitespace-pre-line">
+              <div className="prose prose-lg text-[#4a4a4a] font-sans font-normal leading-relaxed mb-12 whitespace-pre-line">
                 {content || (language === 'de'
                   ? 'In diesem Bereich bieten wir umfassende Rechtsberatung und Vertretung.'
                   : 'Bu alanda kapsamlı hukuki danışmanlık ve temsil hizmetleri sunmaktayız.')}

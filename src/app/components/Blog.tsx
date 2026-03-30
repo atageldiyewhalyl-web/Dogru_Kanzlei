@@ -32,9 +32,9 @@ export function Blog() {
               <div style={{ width: 32, height: 1, background: "#B8963E" }} />
               <span
                 style={{
-                  fontFamily: "'Lato', sans-serif",
-                  fontSize: 10,
-                  fontWeight: 700,
+                  fontFamily: "var(--font-sans)",
+                  fontSize: 15,
+                  fontWeight: 500,
                   letterSpacing: "0.22em",
                   color: "#B8963E",
                   textTransform: "uppercase",
@@ -62,7 +62,7 @@ export function Blog() {
           <Link
             to={paths.blog}
             style={{
-              fontFamily: "'Lato', sans-serif",
+              fontFamily: "var(--font-sans)",
               fontSize: 12,
               fontWeight: 700,
               letterSpacing: "0.14em",
@@ -137,7 +137,7 @@ export function Blog() {
                 >
                   <span
                     style={{
-                      fontFamily: "'Lato', sans-serif",
+                      fontFamily: "var(--font-sans)",
                       fontSize: 10,
                       fontWeight: 700,
                       letterSpacing: "0.14em",
@@ -158,7 +158,7 @@ export function Blog() {
                   />
                   <span
                     style={{
-                      fontFamily: "'Lato', sans-serif",
+                      fontFamily: "var(--font-sans)",
                       fontSize: 12,
                       fontWeight: 400,
                       color: "#888680",
@@ -186,9 +186,9 @@ export function Blog() {
 
                 <p
                   style={{
-                    fontFamily: "'Lato', sans-serif",
-                    fontSize: 14,
-                    fontWeight: 400,
+                    fontFamily: "var(--font-sans)",
+                    fontSize: 11,
+                    fontWeight: 700,
                     color: "#5a5a5a",
                     lineHeight: 1.7,
                     marginBottom: 20,

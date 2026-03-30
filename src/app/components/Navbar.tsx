@@ -157,8 +157,8 @@ export function Navbar() {
                 background: "none",
                 border: "none",
                 cursor: "pointer",
-                fontFamily: "'Lato', sans-serif",
-                fontSize: 11,
+                fontFamily: "var(--font-sans)",
+                fontSize: 10,
                 fontWeight: 700,
                 letterSpacing: "0.1em",
                 textTransform: "uppercase",
@@ -187,7 +187,7 @@ export function Navbar() {
               background: "none",
               border: "none",
               cursor: "pointer",
-              fontFamily: "'Lato', sans-serif",
+              fontFamily: "var(--font-sans)",
               fontSize: 11,
               fontWeight: 700,
               color: isLight ? "#3a3a3a" : "#ffffff",
@@ -201,7 +201,7 @@ export function Navbar() {
           <button
             onClick={() => handleNavClick(paths.contact)}
             style={{
-              fontFamily: "'Lato', sans-serif",
+              fontFamily: "var(--font-sans)",
               fontSize: 10,
               fontWeight: 700,
               letterSpacing: "0.12em",

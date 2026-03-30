@@ -1,5 +1,4 @@
 import { Hero } from "../components/Hero";
-import { About } from "../components/About";
 import { PracticeAreas } from "../components/PracticeAreas";
 import { WhyUs } from "../components/WhyUs";
 import { Testimonials } from "../components/Testimonials";
@@ -29,7 +28,6 @@ export function Home() {
   return (
     <>
       <Hero />
-      <About />
       <PracticeAreas />
       <WhyUs />
       <Testimonials />

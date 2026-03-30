@@ -101,9 +101,9 @@ export function Footer() {
               </div>
               <span
                 style={{
-                  fontFamily: "'Lato', sans-serif",
-                  fontSize: 12,
-                  fontWeight: 400,
+                  fontFamily: "var(--font-sans)",
+                  fontSize: 14,
+                  fontWeight: 500,
                   color: "rgba(255,255,255,0.6)",
                   letterSpacing: "0.05em",
                 }}
@@ -134,9 +134,9 @@ export function Footer() {
                 to={link.href}
                 style={{
                   display: "block",
-                  fontFamily: "'Lato', sans-serif",
+                  fontFamily: "var(--font-sans)",
                   fontSize: 13,
-                  fontWeight: 400,
+                  fontWeight: 500,
                   color: "rgba(255,255,255,0.4)",
                   textDecoration: "none",
                   marginBottom: 12,
@@ -171,9 +171,9 @@ export function Footer() {
                 to={link.href}
                 style={{
                   display: "block",
-                  fontFamily: "'Lato', sans-serif",
+                  fontFamily: "var(--font-sans)",
                   fontSize: 13,
-                  fontWeight: 400,
+                  fontWeight: 500,
                   color: "rgba(255,255,255,0.4)",
                   textDecoration: "none",
                   marginBottom: 12,

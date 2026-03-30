@@ -50,9 +50,9 @@ export function Contact() {
             <div style={{ width: 32, height: 1, background: "#B8963E" }} />
             <span
               style={{
-                fontFamily: "'Lato', sans-serif",
-                fontSize: 10,
-                fontWeight: 700,
+                fontFamily: "var(--font-sans)",
+                fontSize: 14,
+                fontWeight: 500,
                 letterSpacing: "0.22em",
                 color: "#B8963E",
                 textTransform: "uppercase",
@@ -78,7 +78,7 @@ export function Contact() {
           </h2>
           <p
             style={{
-              fontFamily: "'Lato', sans-serif",
+              fontFamily: "var(--font-sans)",
               fontSize: 16,
               color: "#6a6a6a",
               lineHeight: 1.8,
@@ -119,7 +119,7 @@ export function Contact() {
             </h3>
             <p
               style={{
-                fontFamily: "'Lato', sans-serif",
+                fontFamily: "var(--font-sans)",
                 fontSize: 15,
                 color: "#6a6a6a",
                 marginBottom: 40,
@@ -142,7 +142,7 @@ export function Contact() {
                   background: "#1C3829",
                   color: "#ffffff",
                   padding: "18px 32px",
-                  fontFamily: "'Lato', sans-serif",
+                  fontFamily: "var(--font-sans)",
                   fontSize: 13,
                   fontWeight: 700,
                   letterSpacing: "0.1em",
@@ -170,7 +170,7 @@ export function Contact() {
                   border: "1px solid #1C3829",
                   color: "#1C3829",
                   padding: "18px 32px",
-                  fontFamily: "'Lato', sans-serif",
+                  fontFamily: "var(--font-sans)",
                   fontSize: 13,
                   fontWeight: 700,
                   letterSpacing: "0.1em",
@@ -195,7 +195,7 @@ export function Contact() {
             <div style={{ marginTop: 48, borderTop: "1px solid #d4cfc6", paddingTop: 32 }}>
               <div
                 style={{
-                  fontFamily: "'Lato', sans-serif",
+                  fontFamily: "var(--font-sans)",
                   fontSize: 11,
                   fontWeight: 700,
                   color: "#B8963E",

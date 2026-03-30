@@ -80,9 +80,9 @@ export function About() {
             <div style={{ width: 32, height: 1, background: "#B8963E" }} />
             <span
               style={{
-                fontFamily: "'Lato', sans-serif",
+                fontFamily: "var(--font-sans)",
                 fontSize: 10,
-                fontWeight: 700,
+                fontWeight: 800,
                 letterSpacing: "0.22em",
                 color: "#B8963E",
                 textTransform: "uppercase",
@@ -111,9 +111,9 @@ export function About() {
 
           <p
             style={{
-              fontFamily: "'Lato', sans-serif",
-              fontSize: 16,
-              fontWeight: 400,
+            fontFamily: "var(--font-sans)",
+            fontSize: 16,
+            fontWeight: 500,
               color: "#4a4a4a",
               lineHeight: 1.8,
               marginBottom: 20,
@@ -124,9 +124,9 @@ export function About() {
 
           <p
             style={{
-              fontFamily: "'Lato', sans-serif",
-              fontSize: 16,
-              fontWeight: 400,
+            fontFamily: "var(--font-sans)",
+            fontSize: 16,
+            fontWeight: 500,
               color: "#4a4a4a",
               lineHeight: 1.8,
               marginBottom: 36,
@@ -168,9 +168,9 @@ export function About() {
                 />
                 <span
                   style={{
-                    fontFamily: "'Lato', sans-serif",
+                    fontFamily: "var(--font-sans)",
                     fontSize: 13,
-                    fontWeight: 400,
+                    fontWeight: 500,
                     color: "#4a4a4a",
                     letterSpacing: "0.02em",
                   }}
@@ -202,9 +202,9 @@ export function About() {
             </div>
             <div
               style={{
-                fontFamily: "'Lato', sans-serif",
+                fontFamily: "var(--font-sans)",
                 fontSize: 11,
-                fontWeight: 400,
+                fontWeight: 600,
                 letterSpacing: "0.14em",
                 textTransform: "uppercase",
                 color: "#B8963E",

@@ -39,9 +39,9 @@ export function WhatsAppButton() {
       {/* Label - only visible on hover */}
       <span
         style={{
-          fontFamily: "'Lato', sans-serif",
-          fontSize: 12,
-          fontWeight: 700,
+          fontFamily: "var(--font-sans)",
+          fontSize: "12px",
+          fontWeight: "600",
           letterSpacing: "0.1em",
           textTransform: "uppercase",
           whiteSpace: "nowrap",

@@ -31,14 +31,16 @@ const LanguageContext = createContext<LanguageContextType | undefined>(undefined
 function translatePath(path: string, fromLang: Language, toLang: Language): string {
   let newPath = path.replace(`/${fromLang}`, `/${toLang}`);
 
-  if (fromLang === 'de' && toLang === 'tr') {
-    newPath = newPath.replace('/leistungen', '/hizmetler');
-    newPath = newPath.replace('/datenschutz', '/gizlilik-politikasi');
-    newPath = newPath.replace('/impressum', '/yasal-bilgiler');
-  } else if (fromLang === 'tr' && toLang === 'de') {
+  if (fromLang === 'tr' && toLang === 'de') {
     newPath = newPath.replace('/hizmetler', '/leistungen');
     newPath = newPath.replace('/gizlilik-politikasi', '/datenschutz');
     newPath = newPath.replace('/yasal-bilgiler', '/impressum');
+    newPath = newPath.replace('/hakkimizda', '/ueber-uns');
+  } else if (fromLang === 'de' && toLang === 'tr') {
+    newPath = newPath.replace('/leistungen', '/hizmetler');
+    newPath = newPath.replace('/datenschutz', '/gizlilik-politikasi');
+    newPath = newPath.replace('/impressum', '/yasal-bilgiler');
+    newPath = newPath.replace('/ueber-uns', '/hakkimizda');
   }
 
   return newPath;
@@ -70,7 +72,7 @@ export const LanguageProvider: React.FC<{ language: Language; children: React.Re
       blogPost: (slug: string) => `${prefix}/blog/${slug}`,
       datenschutz: language === 'de' ? `${prefix}/datenschutz` : `${prefix}/gizlilik-politikasi`,
       impressum: language === 'de' ? `${prefix}/impressum` : `${prefix}/yasal-bilgiler`,
-      about: `${prefix}/#hakkimizda`,
+      about: language === 'de' ? `${prefix}/ueber-uns` : `${prefix}/hakkimizda`,
       whyUs: `${prefix}/#neden-biz`,
       blogSection: `${prefix}/#blog`,
       contact: `${prefix}/#iletisim`,

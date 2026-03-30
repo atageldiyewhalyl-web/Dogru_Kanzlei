@@ -30,7 +30,7 @@ export function Layout() {
     <LanguageProvider language={language}>
       <div
         style={{
-          fontFamily: "'Lato', sans-serif",
+          fontFamily: "var(--font-sans)",
           margin: 0,
           padding: 0,
           minHeight: "100vh",

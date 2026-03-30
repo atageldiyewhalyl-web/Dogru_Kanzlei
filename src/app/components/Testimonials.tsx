@@ -27,9 +27,9 @@ export function Testimonials() {
             <div style={{ width: 32, height: 1, background: "#B8963E" }} />
             <span
               style={{
-                fontFamily: "'Lato', sans-serif",
-                fontSize: 10,
-                fontWeight: 700,
+                fontFamily: "var(--font-sans)",
+                fontSize: 14,
+                fontWeight: 500,
                 letterSpacing: "0.22em",
                 color: "#B8963E",
                 textTransform: "uppercase",
@@ -86,9 +86,9 @@ export function Testimonials() {
                 >
                   <div
                     style={{
-                      fontFamily: "'Lato', sans-serif",
+                      fontFamily: "var(--font-sans)",
                       fontSize: 13,
-                      fontWeight: i === current ? 700 : 400,
+                      fontWeight: i === current ? 700 : 500,
                       color: i === current ? "#1C3829" : "#9a9a8a",
                       transition: "color 0.2s, font-weight 0.2s",
                     }}
@@ -97,7 +97,7 @@ export function Testimonials() {
                   </div>
                   <div
                     style={{
-                      fontFamily: "'Lato', sans-serif",
+                      fontFamily: "var(--font-sans)",
                       fontSize: 11,
                       color: i === current ? "#B8963E" : "#bbb8b0",
                       marginTop: 2,
@@ -216,8 +216,8 @@ export function Testimonials() {
             <div style={{ borderTop: "1px solid #f0ece4", paddingTop: 24 }}>
               <div
                 style={{
-                  fontFamily: "'Lato', sans-serif",
-                  fontSize: 14,
+                  fontFamily: "var(--font-sans)",
+                  fontSize: 13,
                   fontWeight: 700,
                   color: "#1C3829",
                   letterSpacing: "0.04em",

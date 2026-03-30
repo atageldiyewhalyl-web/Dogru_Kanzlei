@@ -12,8 +12,8 @@ export const translations = {
     // Hero Section
     hero_title_pre: "Avukat",
     hero_title_main: "Hasan Doğru",
-    hero_subtitle: "Türk ve Alman Hukukunda Danışmanınız",
-    hero_description: "Almanya ve Türkiye arasındaki hukuki meselelerde 15 yılı aşkın deneyimle, uluslararası standartlarda otoriter ve çözüm odaklı temsil.",
+    hero_subtitle: "Türk Hukuku & Milletlerarası Özel Hukuk (MÖHUK) Alanında Uzmanınız",
+    hero_description: "Alman ve Türk hukuk sistemleri arasında köprü işlevi görecek deneyimli bir hukuk danışmanı arıyorsanız, uluslararası nitelikteki karmaşık hukuki süreçlerde uzman bilgi birikimim ve geniş deneyimimle hizmetinizdeyim",
     hero_cta_primary: "Hemen Danışın",
     hero_cta_secondary: "Hizmetlerimiz",
 
@@ -34,17 +34,17 @@ export const translations = {
 
     // Why Us
     why_us_badge: "Neden Biz?",
-    why_us_title: "Sizi bize Güvendiren",
-    why_us_subtitle: "Dört sebep",
+    why_us_title: "Neden",
+    why_us_subtitle: "DOĞRU KANZLEİ?",
     why_us_description: "Müvekkillerimiz Almanya ve Türkiye'deki hukuki süreçlerinde bize güveniyor. İşte nedenleri:",
-    why_us_point_01_title: "İki Ülke, Tek Ofis",
-    why_us_point_01_desc: "Mannheim ve Ankara ofislerimizle, Türkiye ve Almanya arasındaki tüm hukuki süreçlerinizi tek elden yönetiyoruz. Sınır ötesi meselelerde eksiksiz temsil.",
-    why_us_point_02_title: "Çift Hukuk Sistemi Uzmanlığı",
-    why_us_point_02_desc: "Hem Türk hem Alman hukukuna hakim olan Avukat Hasan Doğru, iki ülkenin yasal sistemlerinin kesiştiği davalarda benzersiz bir avantaj sunar.",
-    why_us_point_03_title: "Ana Dilinizde Hizmet",
-    why_us_point_03_desc: "Türkçe ve Almanca olarak tam destek. Hukuki süreçlerin karmaşıklığını kendi dilinizde net ve anlaşılır biçimde aktarıyoruz.",
-    why_us_point_04_title: "Gizlilik & Güven",
-    why_us_point_04_desc: "Her müvekkile bireysel yaklaşım ve tam gizlilik garantisi. İlk görüşmeden sonuca kadar yanınızdayız; bilgileriniz asla üçüncü şahıslarla paylaşılmaz.",
+    why_us_point_01_title: "Ruhsat & Uzmanlık",
+    why_us_point_01_desc: "Karlsruhe Barosu (BRAO 207. madde uyarınca kayıtlı) ve Ankara Barosu üyesi olarak, size doğrudan Almanya'da Türk hukukunda güvenilir danışmanlık sunuyorum.",
+    why_us_point_02_title: "MÖHUK Odaklı (Milletlerarası Özel Hukuk)",
+    why_us_point_02_desc: "Hangi hukukun uygulanacağı sorusunu sizin için netleştiriyoruz. Miras, aile veya sözleşme hukuku olsun – uluslararası hukuk trafiğinin kurallarına hakimiz.",
+    why_us_point_03_title: "Doğrudan İletişim",
+    why_us_point_03_desc: "Benden çağrı merkezleri aracılığıyla standartlaştırılmış bir danışmanlık almazsınız. Doğrudan benimle – avukatınızla – konuşursunuz.",
+    why_us_point_04_title: "Sınır Ötesi Temsil",
+    why_us_point_04_desc: "Almanya ve Türkiye'deki müvekkillerimizi temsil ediyor, her iki ülkenin bürokratik ve hukuki engellerini uygulamadan tanıyoruz.",
 
     // About Section
     about_badge: "Hakkımızda",
@@ -67,7 +67,7 @@ export const translations = {
 
     // Contact Section
     contact_badge: "İletişim",
-    contact_title: "Bugün Bize",
+    contact_title: "Bize",
     contact_subtitle: "Ulaşın",
     contact_description: "İlk görüşme ücretsizdir. Davanızı dinliyor, size en hızlı ve en doğru yolu gösteriyoruz.",
     contact_form_title: "Ücretsiz Danışma Talebi",
@@ -137,8 +137,8 @@ export const translations = {
     // Hero Section
     hero_title_pre: "Rechtsanwalt",
     hero_title_main: "Hasan Doğru",
-    hero_subtitle: "Ihr Anwalt im türkischen und deutschen Recht",
-    hero_description: "Mit über 15 Jahren Erfahrung in rechtlichen Angelegenheiten zwischen Deutschland und der Türkei bieten wir kompetente und lösungsorientierte Vertretung auf internationalem Niveau.",
+    hero_subtitle: "Ihr Experte für Türkisches Recht & Internationales Privatrecht (IPR)",
+    hero_description: "Suchen Sie einen kompetenten Rechtsbeistand, der die Brücke zwischen dem deutschen und dem türkischen Rechtssystem schlägt? Als spezialisierter Avukat unterstütze ich Sie bei komplexen grenzüberschreitenden Rechtsfragen mit fundierter Fachkenntnis und langjähriger Erfahrung.",
     hero_cta_primary: "Jetzt beraten lassen",
     hero_cta_secondary: "Unsere Leistungen",
 
@@ -159,17 +159,17 @@ export const translations = {
 
     // Why Us
     why_us_badge: "Warum wir?",
-    why_us_title: "Vier Gründe,",
-    why_us_subtitle: "die uns auszeichnen",
+    why_us_title: "Warum",
+    why_us_subtitle: "DOĞRU KANZLEİ?",
     why_us_description: "Unsere Mandanten vertrauen uns bei ihren rechtlichen Angelegenheiten in Deutschland und der Türkei. Hier ist der Grund:",
-    why_us_point_01_title: "Zwei Länder, eine Kanzlei",
-    why_us_point_01_desc: "Mit unseren Büros in Mannheim und Ankara verwalten wir alle Ihre rechtlichen Prozesse zwischen der Türkei und Deutschland aus einer Hand.",
-    why_us_point_02_title: "Expertise in beiden Rechtssystemen",
-    why_us_point_02_desc: "Als Experte für türkisches und deutsches Recht bietet Rechtsanwalt Hasan Doğru einen einzigartigen Vorteil in Fällen, in denen sich die Rechtssysteme beider Länder überschneiden.",
-    why_us_point_03_title: "Service in Ihrer Muttersprache",
-    why_us_point_03_desc: "Volle Unterstützung auf Türkisch und Deutsch. Wir vermitteln die Komplexität rechtlicher Prozesse klar und verständlich in Ihrer Sprache.",
-    why_us_point_04_title: "Vertraulichkeit & Vertrauen",
-    why_us_point_04_desc: "Individuelle Betreuung und volle Vertraulichkeit für jeden Mandanten. Wir stehen Ihnen vom ersten Gespräch bis zum Ergebnis zur Seite.",
+    why_us_point_01_title: "Zulassung & Expertise",
+    why_us_point_01_desc: "Als Mitglied der Rechtsanwaltskammer Karlsruhe (registriert gemäß § 207 BRAO) und der Anwaltskammer Ankara biete ich Ihnen rechtssichere Beratung im türkischen Recht direkt in Deutschland an.",
+    why_us_point_02_title: "Fokus auf IPR (Internationales Privatrecht)",
+    why_us_point_02_desc: "Wir klären für Sie die entscheidende Frage: Welches Recht findet Anwendung? Ob Erbrecht, Familienrecht oder Vertragsrecht – wir beherrschen die Regeln des internationalen Rechtsverkehrs.",
+    why_us_point_03_title: "Keine Drittvermittlung",
+    why_us_point_03_desc: "Bei mir erhalten Sie keine standardisierte Beratung durch Callcenter. Sie sprechen direkt mit mir – Ihrem Anwalt.",
+    why_us_point_04_title: "Grenzüberschreitende Vertretung",
+    why_us_point_04_desc: "Wir vertreten Mandanten aus Deutschland und der Türkei und kennen die bürokratischen sowie rechtlichen Hürden beider Länder aus der Praxis.",
 
     // About Section
     about_badge: "Über uns",
@@ -193,7 +193,7 @@ export const translations = {
     // Contact Section
     contact_badge: "Kontakt",
     contact_title: "Kontaktieren Sie",
-    contact_subtitle: "uns heute",
+    contact_subtitle: "uns",
     contact_description: "Die Erstberatung ist kostenlos. Wir hören uns Ihren Fall an ve zeigen Ihnen den schnellsten ve am besten geeigneten Weg.",
     contact_form_title: "Kostenlose Beratungsanfrage",
     contact_form_name: "Vor- & Nachname *",

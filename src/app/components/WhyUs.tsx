@@ -1,4 +1,4 @@
-import { Globe2, Scale, MessageSquare, Lock } from "lucide-react";
+import { ShieldCheck, Scale, MessageSquare, Globe, Star } from "lucide-react";
 import { useLanguage } from "../context/LanguageContext";
 
 export function WhyUs() {
@@ -6,7 +6,7 @@ export function WhyUs() {
 
   const points = [
     {
-      icon: Globe2,
+      icon: ShieldCheck,
       title: t("why_us_point_01_title"),
       description: t("why_us_point_01_desc"),
     },
@@ -21,7 +21,7 @@ export function WhyUs() {
       description: t("why_us_point_03_desc"),
     },
     {
-      icon: Lock,
+      icon: Globe,
       title: t("why_us_point_04_title"),
       description: t("why_us_point_04_desc"),
     },
@@ -80,9 +80,9 @@ export function WhyUs() {
             <div style={{ width: 32, height: 1, background: "#B8963E" }} />
             <span
               style={{
-                fontFamily: "'Lato', sans-serif",
+                fontFamily: "var(--font-sans)",
                 fontSize: 10,
-                fontWeight: 700,
+                fontWeight: 800,
                 letterSpacing: "0.22em",
                 color: "#B8963E",
                 textTransform: "uppercase",
@@ -110,10 +110,10 @@ export function WhyUs() {
 
           <p
             style={{
-              fontFamily: "'Lato', sans-serif",
+              fontFamily: "var(--font-sans)",
               fontSize: 15,
-              fontWeight: 400,
-              color: "rgba(255,255,255,0.7)",
+              fontWeight: 500,
+              color: "rgba(255,255,255,0.85)",
               lineHeight: 1.8,
               maxWidth: 500,
               margin: "0 auto",
@@ -144,6 +144,7 @@ export function WhyUs() {
                   position: "relative",
                   transition: "background 0.3s, border-color 0.3s",
                 }}
+                className={`why-item-${i + 1}`}
                 onMouseEnter={(e) => {
                   (e.currentTarget as HTMLElement).style.background = "rgba(255,255,255,0.06)";
                   (e.currentTarget as HTMLElement).style.borderColor = "rgba(184,150,62,0.3)";
@@ -200,10 +201,10 @@ export function WhyUs() {
 
                 <p
                   style={{
-                    fontFamily: "'Lato', sans-serif",
+                    fontFamily: "var(--font-sans)",
                     fontSize: 14,
-                    fontWeight: 400,
-                    color: "rgba(255,255,255,0.65)",
+                    fontWeight: 500,
+                    color: "rgba(255,255,255,0.8)",
                     lineHeight: 1.8,
                     margin: 0,
                   }}
@@ -226,6 +227,9 @@ export function WhyUs() {
           }
           .why-grid {
             grid-template-columns: 1fr !important;
+          }
+          .why-grid > div {
+            grid-column: auto !important;
           }
         }
       `}</style>

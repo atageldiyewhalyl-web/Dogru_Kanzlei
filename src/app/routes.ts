@@ -7,6 +7,7 @@ import { BlogPage } from "./pages/BlogPage";
 import { BlogPost } from "./pages/BlogPost";
 import { Datenschutz } from "./pages/Datenschutz";
 import { Impressum } from "./pages/Impressum";
+import { AboutPage } from "./pages/AboutPage";
 import { NotFound } from "./pages/NotFound";
 
 export const router = createBrowserRouter([
@@ -45,6 +46,7 @@ export const router = createBrowserRouter([
       { path: "blog/:slug", Component: BlogPost },
       { path: "datenschutz", Component: Datenschutz },
       { path: "impressum", Component: Impressum },
+      { path: "ueber-uns", Component: AboutPage },
     ],
   },
 
@@ -60,6 +62,7 @@ export const router = createBrowserRouter([
       { path: "blog/:slug", Component: BlogPost },
       { path: "gizlilik-politikasi", Component: Datenschutz },
       { path: "yasal-bilgiler", Component: Impressum },
+      { path: "hakkimizda", Component: AboutPage },
     ],
   },
 

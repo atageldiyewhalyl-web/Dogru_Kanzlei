@@ -56,7 +56,7 @@ export function Hizmetler() {
             className="font-sans text-[15px] text-[#6a6a6a] leading-relaxed font-light max-w-sm mb-2"
           >
             {language === 'de'
-              ? 'Wir bieten umfassende Dienstleistungen im türkischen und deutschen Recht. Jeder Fall wird individuell bewertet und die effektivste Lösung angeboten.'
+              ? 'Wir bieten umfassende Dienstleistungen im Türkischen Recht und Internationalen Privatrecht (IPR). Jeder Fall wird individuell bewertet und die effektivste Lösung angeboten.'
               : 'Türk ve Alman hukuku alanlarında kapsamlı hizmet sunuyoruz. Her davayı bireysel olarak değerlendiriyor, en etkin çözümü sunuyoruz.'}
           </motion.p>
         </div>

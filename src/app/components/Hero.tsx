@@ -132,43 +132,6 @@ export function Hero() {
         </motion.div>
       </div>
 
-      {/* Dynamic Service Grid & Numbered Emphasis Areas (Bottom) */}
-      <motion.div 
-        className="relative z-20 w-full bg-[#13271c] border-t border-white/5 mt-auto hidden md:block"
-        initial={{ opacity: 0, y: 30 }}
-        animate={{ opacity: 1, y: 0 }}
-        transition={{ delay: 0.4, duration: 0.8 }}
-      >
-        <div className="w-full grid grid-cols-1 md:grid-cols-3 divide-y md:divide-y-0 md:divide-x divide-white/5">
-          {[
-            { num: "01", title: t("service_01_title"), desc: t("service_01_subtitle"), icon: Globe, href: paths.service("tuerkisches-recht") },
-            { num: "02", title: t("service_02_title"), desc: t("service_02_subtitle"), icon: FileText, href: paths.services },
-            { num: "03", title: t("service_03_title"), desc: t("service_03_subtitle"), icon: Scale, href: paths.service("strafrecht") },
-          ].map((item, idx) => (
-            <div 
-              key={idx} 
-              onClick={() => navigate(item.href)}
-              className="group p-8 lg:p-12 hover:bg-[#1a3326] transition-all duration-500 cursor-pointer flex items-start gap-6 relative overflow-hidden"
-            >
-              {/* Subtle hover background effect */}
-              <div className="absolute inset-0 bg-gradient-to-br from-[#B8963E]/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
-              
-              <span className="relative z-10 font-sans text-sm font-bold text-[#B8963E] opacity-50 group-hover:opacity-100 transition-opacity">
-                {item.num}
-              </span>
-              <div className="relative z-10">
-                <item.icon className="w-6 h-6 text-[#B8963E] mb-5 opacity-80 group-hover:scale-110 transition-transform duration-500" strokeWidth={1.5} />
-                <h3 className="font-serif text-2xl text-white mb-2 group-hover:text-[#B8963E] transition-colors duration-300">
-                  {item.title}
-                </h3>
-                <p className="font-sans text-[11px] font-bold text-white/40 uppercase tracking-[0.15em]">
-                  {item.desc}
-                </p>
-              </div>
-            </div>
-          ))}
-        </div>
-      </motion.div>
     </section>
   );
 }
