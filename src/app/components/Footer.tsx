@@ -242,16 +242,55 @@ export function Footer() {
             gap: 16,
           }}
         >
-          <span
-            style={{
-              fontFamily: "'Lato', sans-serif",
-              fontSize: 11,
-              fontWeight: 400,
-              color: "rgba(255,255,255,0.2)",
-            }}
-          >
-            © {year} DOGRU Kanzlei · {t("hero_title_pre")} Hasan Dogru. {t("footer_rights")}
-          </span>
+          <div style={{ display: "flex", flexDirection: "column", gap: 8 }}>
+            <span
+              style={{
+                fontFamily: "'Lato', sans-serif",
+                fontSize: 11,
+                fontWeight: 400,
+                color: "rgba(255,255,255,0.2)",
+              }}
+            >
+              © {year} DOGRU Kanzlei · {t("hero_title_pre")} Hasan Dogru. {t("footer_rights")}
+            </span>
+            <a
+              href="https://nüll.com"
+              target="_blank"
+              rel="noopener noreferrer"
+              style={{
+                display: "inline-flex",
+                alignItems: "center",
+                gap: "4px",
+                fontFamily: "'Lato', sans-serif",
+                fontSize: 10,
+                fontWeight: 400,
+                color: "rgba(255,255,255,0.15)",
+                textDecoration: "none",
+                transition: "all 0.2s ease",
+              }}
+              onMouseEnter={(e) => {
+                const target = e.currentTarget as HTMLElement;
+                target.style.color = "rgba(255,255,255,0.4)";
+              }}
+              onMouseLeave={(e) => {
+                const target = e.currentTarget as HTMLElement;
+                target.style.color = "rgba(255,255,255,0.15)";
+              }}
+            >
+              Site made by
+              <span style={{ 
+                display: "flex", 
+                alignItems: "center", 
+                color: "rgba(255,255,255,0.8)", 
+                fontWeight: 800,
+                marginLeft: 2,
+                letterSpacing: "-0.02em",
+                fontFamily: "var(--font-sans)"
+              }}>
+                nüll<span style={{ color: "#3B82F6" }}>.</span>com
+              </span>
+            </a>
+          </div>
           <div style={{ display: "flex", gap: 24 }}>
             {[
               { label: "Impressum", href: paths.impressum },
