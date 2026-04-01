@@ -1,4 +1,4 @@
-import heroImage from "@/assets/a93bf24bca9c4dfa8d45df7a2b6776cc935ee14f.png";
+import heroImage from "@/assets/Hero 1.png";
 import { useLanguage } from "../context/LanguageContext";
 
 export function About() {

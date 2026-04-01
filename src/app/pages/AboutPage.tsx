@@ -8,10 +8,10 @@ export function AboutPage() {
 
   useSEO({
     title: language === 'de'
-      ? 'Über uns | Rechtsanwalt Hasan Doğru'
+      ? 'Über uns | Avukat Hasan Doğru'
       : 'Hakkımızda | Avukat Hasan Doğru',
     description: language === 'de'
-      ? 'Erfahren Sie mehr über Rechtsanwalt Hasan Doğru und seine Kanzlei in Mannheim und Ankara.'
+      ? 'Erfahren Sie mehr über Avukat Hasan Doğru und seine Kanzlei in Mannheim und Ankara.'
       : 'Avukat Hasan Doğru ve Mannheim ile Ankara\'daki bürosu hakkında daha fazla bilgi edinin.',
     lang: language,
     canonical: `${SITE_URL}/${language}/${aboutPath}`,

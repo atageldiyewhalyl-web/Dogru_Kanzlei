@@ -4,6 +4,8 @@ import { WhatsAppButton } from "./WhatsAppButton";
 import { Outlet, useLocation, ScrollRestoration, Navigate } from "react-router";
 import { useEffect } from "react";
 import { LanguageProvider } from "../context/LanguageContext";
+import { ConsentProvider } from "../context/ConsentContext";
+import { CookieBanner } from "./CookieBanner";
 import { SchemaOrg } from "./SchemaOrg";
 
 export function Layout() {
@@ -28,26 +30,29 @@ export function Layout() {
 
   return (
     <LanguageProvider language={language}>
-      <div
-        style={{
-          fontFamily: "var(--font-sans)",
-          margin: 0,
-          padding: 0,
-          minHeight: "100vh",
-          overflowX: "hidden",
-          display: "flex",
-          flexDirection: "column",
-        }}
-      >
-        <ScrollRestoration />
-        <SchemaOrg />
-        <Navbar />
-        <main style={{ flex: 1 }}>
-          <Outlet />
-        </main>
-        <Footer />
-        <WhatsAppButton />
-      </div>
+      <ConsentProvider>
+        <div
+          style={{
+            fontFamily: "var(--font-sans)",
+            margin: 0,
+            padding: 0,
+            minHeight: "100vh",
+            overflowX: "hidden",
+            display: "flex",
+            flexDirection: "column",
+          }}
+        >
+          <ScrollRestoration />
+          <SchemaOrg />
+          <Navbar />
+          <main style={{ flex: 1 }}>
+            <Outlet />
+          </main>
+          <Footer />
+          <WhatsAppButton />
+          <CookieBanner />
+        </div>
+      </ConsentProvider>
     </LanguageProvider>
   );
 }

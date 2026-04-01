@@ -1,8 +1,10 @@
-import { MapPin, Phone, Mail, Clock } from "lucide-react";
+import { MapPin, Phone, Mail, Clock, Lock } from "lucide-react";
 import { useLanguage } from "../context/LanguageContext";
+import { useConsent } from "../context/ConsentContext";
 
 export function Contact() {
   const { t, language } = useLanguage();
+  const { consent, openSettings } = useConsent();
 
   const offices = [
     {
@@ -130,32 +132,58 @@ export function Contact() {
             </p>
 
             <div style={{ display: "flex", flexDirection: "column", gap: 16 }}>
-              <a
-                href={calendlyLink}
-                target="_blank"
-                rel="noopener noreferrer"
-                style={{
-                  display: "flex",
-                  alignItems: "center",
-                  justifyContent: "center",
-                  gap: 12,
-                  background: "#1C3829",
-                  color: "#ffffff",
-                  padding: "18px 32px",
-                  fontFamily: "var(--font-sans)",
-                  fontSize: 13,
-                  fontWeight: 700,
-                  letterSpacing: "0.1em",
-                  textTransform: "uppercase",
-                  textDecoration: "none",
-                  transition: "all 0.3s ease",
-                }}
-                onMouseEnter={(e) => (e.currentTarget.style.background = "#B8963E")}
-                onMouseLeave={(e) => (e.currentTarget.style.background = "#1C3829")}
-              >
-                <Clock size={18} />
-                {t("contact_calendly_btn")}
-              </a>
+              {consent.functional ? (
+                <a
+                  href={calendlyLink}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  style={{
+                    display: "flex",
+                    alignItems: "center",
+                    justifyContent: "center",
+                    gap: 12,
+                    background: "#1C3829",
+                    color: "#ffffff",
+                    padding: "18px 32px",
+                    fontFamily: "var(--font-sans)",
+                    fontSize: 13,
+                    fontWeight: 700,
+                    letterSpacing: "0.1em",
+                    textTransform: "uppercase",
+                    textDecoration: "none",
+                    transition: "all 0.3s ease",
+                  }}
+                  onMouseEnter={(e) => (e.currentTarget.style.background = "#B8963E")}
+                  onMouseLeave={(e) => (e.currentTarget.style.background = "#1C3829")}
+                >
+                  <Clock size={18} />
+                  {t("contact_calendly_btn")}
+                </a>
+              ) : (
+                <button
+                  onClick={openSettings}
+                  style={{
+                    display: "flex",
+                    alignItems: "center",
+                    justifyContent: "center",
+                    gap: 12,
+                    background: "#e8e4dc",
+                    color: "#6a6a6a",
+                    padding: "18px 32px",
+                    fontFamily: "var(--font-sans)",
+                    fontSize: 13,
+                    fontWeight: 700,
+                    letterSpacing: "0.1em",
+                    textTransform: "uppercase",
+                    border: "none",
+                    cursor: "pointer",
+                    width: "100%",
+                  }}
+                >
+                  <Lock size={18} />
+                  {language === 'de' ? 'Cookie-Einwilligung erforderlich' : 'Çerez izni gerekli'}
+                </button>
+              )}
 
               <a
                 href={`https://wa.me/${whatsappNumber}`}

@@ -1,3 +1,5 @@
+import realEstateImg from "@/assets/blog_real_estate.png";
+
 export interface BlogPost {
   slug: string;
   titleDE: string;
@@ -85,7 +87,7 @@ Dank moderner Vollmachtsverfahren ist es möglich, den gesamten Kaufprozess aus 
 Modern vekaletname prosedürleri sayesinde, Türkiye'ye bizzat seyahat etmeye gerek kalmadan tüm satın alma sürecini Almanya'dan yönetmek mümkündür.`,
     category: "Türk Hukuku",
     categoryDE: "Türkisches Recht",
-    image: "https://images.unsplash.com/photo-1594813621196-bb7b497c134d?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxmYW1pbHklMjBsYXclMjBjb3VydCUyMGp1c3RpY2V8ZW58MXx8fHwxNzc0Njk3NzQ2fDA&ixlib=rb-4.1.0&q=80&w=1080",
+    image: realEstateImg,
     dateDE: "18. Februar 2026",
     dateTR: "18 Şubat 2026",
     readTimeDE: "10 Min. Lesezeit",

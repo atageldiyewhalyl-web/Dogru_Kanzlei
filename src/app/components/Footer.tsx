@@ -2,9 +2,11 @@ import logoImage from "@/assets/30fbe893025c3fe015e5b6962dda4011264eeccb.png";
 import { Mail, Phone, MapPin } from "lucide-react";
 import { Link } from "react-router";
 import { useLanguage } from "../context/LanguageContext";
+import { useConsent } from "../context/ConsentContext";
 
 export function Footer() {
   const { t, language, paths } = useLanguage();
+  const { openSettings } = useConsent();
   const year = new Date().getFullYear();
 
   const quickLinks = [
@@ -313,6 +315,25 @@ export function Footer() {
                 {link.label}
               </Link>
             ))}
+            <button
+              onClick={openSettings}
+              style={{
+                fontFamily: "'Lato', sans-serif",
+                fontSize: 11,
+                fontWeight: 400,
+                color: "rgba(255,255,255,0.2)",
+                textDecoration: "none",
+                background: "none",
+                border: "none",
+                padding: 0,
+                cursor: "pointer",
+                transition: "color 0.2s",
+              }}
+              onMouseEnter={(e) => ((e.target as HTMLElement).style.color = "rgba(255,255,255,0.4)")}
+              onMouseLeave={(e) => ((e.target as HTMLElement).style.color = "rgba(255,255,255,0.2)")}
+            >
+              {language === 'de' ? 'Cookie-Einstellungen' : 'Çerez Ayarları'}
+            </button>
           </div>
         </div>
       </div>

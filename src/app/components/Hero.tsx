@@ -1,5 +1,5 @@
 import { motion } from "motion/react";
-import heroImage from "@/assets/a93bf24bca9c4dfa8d45df7a2b6776cc935ee14f.png";
+import heroImage from "@/assets/Hero 1.png";
 import { ArrowRight, Scale, Globe, FileText } from "lucide-react";
 import { useNavigate } from "react-router";
 import { useLanguage } from "../context/LanguageContext";
@@ -116,18 +116,7 @@ export function Hero() {
               </div>
             </div>
 
-            {/* Floating Action/Info Block - High Prestige Element */}
-            <motion.div 
-              className="absolute -left-12 top-1/4 bg-[#1C3829] border border-[#B8963E]/30 p-6 shadow-2xl z-20 w-40 backdrop-blur-xl"
-              initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ delay: 0.6, duration: 0.6 }}
-            >
-              <div className="text-[#B8963E] font-serif text-[2.2rem] leading-none mb-3">15+</div>
-              <div className="font-sans text-[8px] font-bold tracking-[0.2em] uppercase text-white/60 mb-4">{t("stats_years_title").split(' ')[1] + ' ' + t("stats_years_title").split(' ')[2]}</div>
-              <div className="w-full h-[1px] bg-white/10" />
-              <div className="mt-4 font-serif text-[12px] text-white/80 italic leading-snug">{t("stats_years_subtitle")}</div>
-            </motion.div>
+
           </div>
         </motion.div>
       </div>

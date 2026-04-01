@@ -5,6 +5,7 @@ import { services } from "../data/services";
 import { ArrowRight } from "lucide-react";
 import { useLanguage } from "../context/LanguageContext";
 import { useSEO, SITE_URL } from "../hooks/useSEO";
+import hizmetlerBg from "../../assets/hizmetler-bg.jpg";
 
 export function Hizmetler() {
   const [hovered, setHovered] = useState<string | null>(null);
@@ -14,7 +15,7 @@ export function Hizmetler() {
 
   useSEO({
     title: language === 'de'
-      ? 'Unsere Leistungen | Rechtsanwalt Hasan Doğru'
+      ? 'Unsere Leistungen | Avukat Hasan Doğru'
       : 'Hizmetlerimiz | Avukat Hasan Doğru',
     description: language === 'de'
       ? 'Rechtsberatung in Familienrecht, Erbrecht, Mietrecht, Strafrecht und türkischem Recht. Kanzlei Doğru in Mannheim und Ankara.'
@@ -124,7 +125,10 @@ export function Hizmetler() {
       {/* CTA Section */}
       <div className="max-w-[1200px] mx-auto px-6 lg:px-12 mt-40">
         <div className="bg-[#1C3829] p-12 lg:p-24 relative overflow-hidden flex flex-col md:flex-row items-center justify-between gap-12 group">
-          <div className="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1505664194779-8beaceb93744?q=80&w=2070')] bg-cover bg-center opacity-10 group-hover:scale-105 transition-transform duration-1000" />
+          <div 
+            className="absolute inset-0 bg-cover bg-center opacity-10 group-hover:scale-105 transition-transform duration-1000" 
+            style={{ backgroundImage: `url(${hizmetlerBg})` }}
+          />
           <div className="relative z-10 max-w-2xl text-left">
             <h2 className="font-serif text-3xl md:text-5xl text-white mb-8 leading-tight">
               {language === 'de' ? (

@@ -10,32 +10,34 @@ export const services = [
     descriptionDE: "Fachkundige Beratung zu Visumverfahren, Aufenthaltserlaubnis, Einbürgerung und rechtlicher Schutz gegen Ausweisungsentscheidungen.",
     detail: "Mavi Kart & Vatandaşlık · İkamet İzinleri · Geri Dönüş",
     detailDE: "Mavi Kart & Status · Aufenthaltstitel · Remigration",
-    content: `Göç Hukuku — Türkiye ve Almanya Arasında Göç Hukuku Danışmanlığı
-Türkiye'deki İkamet, Çalışma ve Geri Dönüş Süreçlerinde Hukuki Güvence
+    content: `Göç Hukuku — Türkiye'ye Yerleşim İçin Hukuki Danışmanlık
+Türkiye'de İkamet, Çalışma ve Yaşam İçin Hukuki Güvence — Uyruğunuzdan Bağımsız Olarak
 
-Almanya'da yaşıyor ve Türkiye'deki hukuki statünüz hakkında sorularınız mı var? İkamet izni, vatandaşlık ya da geri dönüş planlaması olsun — her iki ülkenin hukuki gereklilikleri karmaşık bir yapı arz etmekte ve her iki hukuk sisteminde de derinlemesine uzmanlık gerektirmektedir.
+Türkiye'ye taşınmayı mı planlıyorsunuz yoksa zaten orada mı yaşıyorsunuz? Alman, Avrupalı ya da başka bir pasaporta sahip olun — Türk göç hukukunda yolunuzu bulmak, standart çevrimiçi kaynaklarının çok ötesinde uzman bilgi gerektirmektedir.
 
-Hukuk büromuz, Almanya'daki Türk topluluğunun göç hukuku alanındaki ihtiyaçlarına yönelik uzmanlaşmış olup Türk hukukuna göre doğru ve güvenilir danışmanlık sunmaktadır.
+Hukuk büromuz, tüm uyruktan bireylere Türk ikamet ve göç hukuku konularında danışmanlık sunmakta olup özellikle Türkiye'ye taşınmak, emeklilik, yatırım veya çalışma amacıyla Almanya'dan gelen müvekkillere odaklanmaktadır.
 
-Size sunduğumuz hizmetler:
-• Mavi Kart & Vatandaşlık — Yurt dışında yaşayan Türk vatandaşlarının hak ve yükümlülükleri ile Mavi Kart başvurusu ve kullanımı konusunda kapsamlı danışmanlık
-• Çalışma & İkamet İzinleri — Expat'lar, geri dönenler ve çifte vatandaşlar için Türkiye'deki ikamet ve çalışma izni süreçlerinde profesyonel destek
-• Hukuki Güvenceli Geri Dönüş — Almanya'daki resmi çıkış işlemlerinden Türkiye'ye yeniden yerleşime kadar geri dönüş sürecinizi sağlam hukuki temeller üzerine planlıyoruz
+Sizin için neler yapıyoruz:
+• Türkiye'de İkamet İzni — Kısa süreli izinlerden uzun süreli ve kalıcı ikamet statüsüne kadar Türk ikamet izni sistemi (ikamet) konusunda tüm uyruklar için rehberlik ediyoruz
+• Çalışma İzni & Şirket Kuruluşu — Çalışanlar, girişimciler ve yatırımcılar için menşei ülkeden bağımsız olarak Türk çalışma izni başvurularında profesyonel destek
+• Mavi Kart & Vatandaşlık — Türk kökenli müvekkiller için Mavi Kart hakları, yükümlülükleri ve çifte vatandaşlık konularında özel danışmanlık
+• Hukuki Güvenceli Geri Dönüş — Almanya'dan çıkış kaydından Türkiye'de yasal ikamet tesisine kadar taşınma sürecinizin tüm hukuki aşamalarını yönetiyoruz
 
-Hukuk büromuz, Karlsruhe Barosu üyesidir (§ 207 BRAO uyarınca tescillidir) ve çıkarlarınızı en yüksek mesleki yetkinlikle — sınır ötesinde ve güvenilir biçimde — temsil etmektedir.`,
-    contentDE: `Göç Hukuku — Migrationsrechtliche Beratung zwischen der Türkei und Deutschland
-Rechtssicherheit bei Aufenthalt, Arbeit und Rückkehr in die Türkei
+Hukuk büromuz Karlsruhe Barosu'na kayıtlıdır (§ 207 BRAO uyarınca tescilli) ve çıkarlarınızı en yüksek mesleki yetkinlikle temsil etmektedir — sınır ötesi ve güvenilir biçimde.`,
+    contentDE: `Migrationsrecht — Rechtsberatung für Ihre Umsiedlung in die Türkei
+Rechtssicherheit bei Aufenthalt, Arbeit und Leben in der Türkei — unabhängig von Ihrer Staatsangehörigkeit
 
-Leben Sie in Deutschland und haben Fragen zu Ihrem rechtlichen Status in der Türkei? Ob Aufenthaltstitel, Staatsbürgerschaft oder Rückkehrplanung – die rechtlichen Anforderungen zwischen beiden Ländern sind komplex und erfordern fundierte Fachkenntnis in beiden Rechtssystemen.
+Planen Sie einen Umzug in die Türkei oder leben Sie bereits dort? Ob mit deutschem, europäischem oder einem anderen Pass — die Navigation durch das türkische Migrationsrecht erfordert spezialisiertes Fachwissen, das weit über standardmäßige Online-Ressourcen hinausgeht.
 
-Unsere Kanzlei ist spezialisiert auf die migrationsrechtlichen Bedürfnisse der türkischen Gemeinschaft in Deutschland und begleitet Sie mit präziser, verlässlicher Beratung nach türkischem Recht.
+Unsere Kanzlei berät Personen aller Staatsangehörigkeiten im türkischen Aufenthalts- und Migrationsrecht, mit besonderem Schwerpunkt auf Mandanten mit Wohnsitz in Deutschland, die in die Türkei umsiedeln, dort ihren Ruhestand verbringen, investieren oder arbeiten möchten.
 
 Was wir für Sie tun:
-• Mavi Kart & Staatsbürgerschaft — Umfassende Beratung zu Ihren Rechten und Pflichten als Auslandstürke, einschließlich der Beantragung und Nutzung der Blauen Karte
-• Arbeits- & Aufenthaltstitel — Professionelle Begleitung für Expats, Rückkehrer und Personen mit doppelter Staatsangehörigkeit bei der Beantragung türkischer Aufenthalts- und Arbeitsgenehmigungen
-• Rechtssichere Remigration — Wir planen Ihre Rückkehr in die Türkei auf juristisch solidem Fundament – von der Abmeldung in Deutschland bis zur Wiederansiedlung in der Türkei
+• Aufenthaltserlaubnis in der Türkei — Wir begleiten Sie durch das türkische Aufenthaltserlaubnissystem (ikamet), von kurzfristigen Genehmigungen bis hin zu langfristigen und dauerhaften Aufenthaltstiteln — für alle Staatsangehörigkeiten
+• Arbeitserlaubnis & Unternehmensgründung — Professionelle Unterstützung für Arbeitnehmer, Unternehmer und Investoren bei der Beantragung türkischer Arbeitsgenehmigungen, unabhängig von Ihrer Herkunft
+• Mavi Kart & Staatsbürgerschaft — Spezialisierte Beratung für Mandanten türkischer Herkunft zu Rechten und Pflichten der Blauen Karte sowie zur doppelten Staatsangehörigkeit
+• Rechtssichere Remigration — Wir begleiten den gesamten rechtlichen Prozess Ihres Umzugs in die Türkei — von der Abmeldung in Deutschland bis zur Begründung Ihres rechtlichen Wohnsitzes in der Türkei
 
-Unsere Kanzlei ist Mitglied der Rechtsanwaltskammer Karlsruhe (registriert gemäß § 207 BRAO) und vertritt Ihre Interessen mit höchster fachlicher Kompetenz – grenzüberschreitend und verlässlich.`
+Unsere Kanzlei ist Mitglied der Rechtsanwaltskammer Karlsruhe (registriert gemäß § 207 BRAO) und vertritt Ihre Interessen mit höchster fachlicher Kompetenz — grenzüberschreitend and verlässlich.`
   },
   {
     id: "familienrecht",
@@ -141,7 +143,7 @@ Unsere Kanzlei steht Ihnen mit fundierter Expertise im türkischen und deutsch-t
     content: `Miras Hukuku — Alman ve Türk Vatandaşları için Miras Hukuku Danışmanlığı
 Türkiye'de Miras mı Kaldı? Varlıklarınızı Zamanında Güvence Altına Alın.
 
-Türkiye'de miras bırakılan mal varlıkları — taşınmazlar, banka hesapları veya diğer değerler — söz konusu olduğunda beklenmedik hukuki güçlükler ortaya çıkabilir. Uzman destek alınmadan yürütülen bir miras süreci; uzun, maliyetli ve hata riskiyle dolu bir hal alabilir.
+Türkiye'de miras bırakılan mal varlıkları — taşınmazlar, banka hesapları oder dier değerler — söz konusu olduğunda beklenmedik hukuki güçlükler ortaya çıkabilir. Uzman destek alınmadan yürütülen bir miras süreci; uzun, maliyetli ve hata riskiyle dolu bir hal alabilir.
 
 Hukuk büromuz, Türk ve Alman miras hukukunda sınır ötesi uzmanlığa sahip olup miras işlemlerinizi Türkiye'de bizzat takip etmektedir — siz seyahat etmek zorunda kalmadan.
 
@@ -249,7 +251,7 @@ Was ist das türkische Immobilienrecht und wann wird es relevant?
 
 Das türkische Immobilienrecht (Gayrimenkul Hukuku) regelt sämtliche rechtlichen Vorgänge rund um Grundstücke, Wohnimmobilien und Gewerbeimmobilien in der Türkei — von Kauf und Verkauf über Mietverträge bis hin zu Grundbucheintragungen und Eigentumsstreitigkeiten.
 
-Für Deutsch-Türken, die in der Türkei Eigentum besitzen, erben oder erwerben möchten, ist eine fachkundige rechtliche Begleitung unerlässlich — denn selbst kleine Fehler bei Immobiliengeschäften können zu erheblichen finanziellen Verlusten und langwierigen Gerichtsverfahren führen.
+Für Deutsch-Türken, die in der Türkei Eigentum besitzen, erben oder erwerben möchten, ist eine fachkundige rechtliche Begleitung unerlässlich — denn selbst kleine Fehler bei Immobiliengeschäften können zu einer erheblichen finanziellen Verlusten und langwierigen Gerichtsverfahren führen.
 
 Welche Bereiche umfasst das türkische Immobilienrecht?
 • Grundbuchberichtigung & Eintragung — Anfechtung und Berichtigung fehlerhafter Grundbucheinträge sowie Neueintragungen

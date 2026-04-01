@@ -10,7 +10,7 @@ export function BlogPage() {
 
   useSEO({
     title: language === 'de'
-      ? 'Blog & Aktuelles | Rechtsanwalt Hasan Doğru'
+      ? 'Blog & Aktuelles | Avukat Hasan Doğru'
       : 'Blog & Güncel | Avukat Hasan Doğru',
     description: language === 'de'
       ? 'Rechtliche Entwicklungen und Fachartikel zu türkischem und deutschem Recht. Informieren Sie sich über aktuelle Themen im Familienrecht, Erbrecht und mehr.'

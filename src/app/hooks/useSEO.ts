@@ -58,17 +58,16 @@ export function useSEO(config: SEOConfig) {
     setMetaTag('og:locale', config.lang === 'de' ? 'de_DE' : 'tr_TR');
     setMetaTag('og:locale:alternate', config.lang === 'de' ? 'tr_TR' : 'de_DE');
     setMetaTag('og:site_name', 'Doğru Kanzlei');
-    if (config.ogImage) {
-      setMetaTag('og:image', config.ogImage);
-    }
+    const defaultOgImage = `${SITE_URL}/logo.png`;
+    const finalOgImage = config.ogImage || defaultOgImage;
+
+    setMetaTag('og:image', finalOgImage);
 
     // Twitter Card
     setMetaTag('twitter:card', 'summary_large_image', true);
     setMetaTag('twitter:title', config.title, true);
     setMetaTag('twitter:description', config.description, true);
-    if (config.ogImage) {
-      setMetaTag('twitter:image', config.ogImage, true);
-    }
+    setMetaTag('twitter:image', finalOgImage, true);
 
     // Hreflang alternate
     if (config.alternateLang) {

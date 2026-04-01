@@ -18,11 +18,11 @@ export const translations = {
     hero_cta_secondary: "Hizmetlerimiz",
 
     // Stats Card
-    stats_years_title: "15+ Yıllık Deneyim",
+    stats_years_title: "3 Yıllık Deneyim",
     stats_years_subtitle: "Güven ve Otorite Temelinde",
 
     // Lawyer Card
-    lawyer_role: "Kurucu Ortak & Baş Müşavir",
+    lawyer_role: "Türk Hukuku Avukatı",
 
     // Service Teasers
     service_01_title: "Sınır Ötesi Hukuk",
@@ -37,19 +37,19 @@ export const translations = {
     why_us_title: "Neden",
     why_us_subtitle: "DOĞRU KANZLEİ?",
     why_us_description: "Müvekkillerimiz Almanya ve Türkiye'deki hukuki süreçlerinde bize güveniyor. İşte nedenleri:",
-    why_us_point_01_title: "Ruhsat & Uzmanlık",
-    why_us_point_01_desc: "Karlsruhe Barosu (BRAO 207. madde uyarınca kayıtlı) ve Ankara Barosu üyesi olarak, size doğrudan Almanya'da Türk hukukunda güvenilir danışmanlık sunuyorum.",
-    why_us_point_02_title: "MÖHUK Odaklı (Milletlerarası Özel Hukuk)",
-    why_us_point_02_desc: "Hangi hukukun uygulanacağı sorusunu sizin için netleştiriyoruz. Miras, aile veya sözleşme hukuku olsun – uluslararası hukuk trafiğinin kurallarına hakimiz.",
-    why_us_point_03_title: "Doğrudan İletişim",
-    why_us_point_03_desc: "Benden çağrı merkezleri aracılığıyla standartlaştırılmış bir danışmanlık almazsınız. Doğrudan benimle – avukatınızla – konuşursunuz.",
-    why_us_point_04_title: "Sınır Ötesi Temsil",
-    why_us_point_04_desc: "Almanya ve Türkiye'deki müvekkillerimizi temsil ediyor, her iki ülkenin bürokratik ve hukuki engellerini uygulamadan tanıyoruz.",
+    why_us_point_01_title: "Türk Mahkemelerinde Dijital Erişim",
+    why_us_point_01_desc: "UYAP'a kayıtlı avukat olarak, Türkiye'deki hukuki süreçlerinizi Almanya'dan gerçek zamanlı olarak yönetiyorum. Mahkemeye gitmek, belge takibi, dava durumu. Hepsini sizin adınıza uzaktan hallediyorum.",
+    why_us_point_02_title: "Ruhsat & Uzmanlık",
+    why_us_point_02_desc: "Karlsruhe Barosu (BRAO 207. madde uyarınca kayıtlı) ve Ankara Barosu üyesi olarak, size doğrudan Almanya'da Türk hukukunda güvenilir danışmanlık sunuyorum.",
+    why_us_point_03_title: "MÖHUK Odaklı (Milletlerarası Özel Hukuk)",
+    why_us_point_03_desc: "Hangi hukukun uygulanacağı sorusunu sizin için netleştiriyoruz. Miras, aile veya sözleşme hukuku olsun, uluslararası hukuk trafiğinin kurallarına hakimiz.",
+    why_us_point_04_title: "Doğrudan İletişim",
+    why_us_point_04_desc: "Benden çağrı merkezleri aracılığıyla standartlaştırılmış bir danışmanlık almazsınız. Doğrudan benimle – avukatınızla – konuşursunuz.",
 
     // About Section
     about_badge: "Hakkımızda",
     about_title: "Hukuki Çözümde",
-    about_subtitle: "15 Yıllık Deneyim",
+    about_subtitle: "3 Yıllık Deneyim",
     about_p1: "Avukat Hasan Doğru, Türk ve Alman hukuku alanında uzmanlaşmış deneyimli bir avukattır. Mannheim ve Ankara ofisleriyle, Almanya'daki Türk vatandaşlarına ve Türkiye ile bağlantılı hukuki meselelere kapsamlı çözümler sunmaktadır.",
     about_p2: "Türk Hukuk Fakültesi'nden mezun olan ve Almanya'da lisans tamamlayan Avukat Hasan Doğru, iki ülke hukuku arasındaki köprüyü kurarak müvekkillerine en etkin hukuki desteği sağlamaktadır. Her davaya bireysel yaklaşım ve tam gizlilik ilkesiyle hizmet vermektedir.",
     about_cred_01: "Türk Barosu Üyesi",
@@ -118,7 +118,7 @@ export const translations = {
     blog_read_more: "Devamını Oku",
 
     // Footer
-    footer_description: "Almanya ve Türkiye arasındaki hukuki köprünüz. 15 yılı aşkın deneyimle profesyonel danışmanlık.",
+    footer_description: "Almanya ve Türkiye arasındaki hukuki köprünüz. 3 yılı aşkın deneyimle profesyonel danışmanlık.",
     footer_quick_links: "Hızlı Bağlantılar",
     footer_contact_info: "İletişim Bilgileri",
     footer_legal: "Yasal",
@@ -135,7 +135,7 @@ export const translations = {
     nav_cta: "Beratung anfragen",
 
     // Hero Section
-    hero_title_pre: "Rechtsanwalt",
+    hero_title_pre: "Avukat",
     hero_title_main: "Hasan Doğru",
     hero_subtitle: "Ihr Experte für Türkisches Recht & Internationales Privatrecht (IPR)",
     hero_description: "Suchen Sie einen kompetenten Rechtsbeistand, der die Brücke zwischen dem deutschen und dem türkischen Rechtssystem schlägt? Als spezialisierter Avukat unterstütze ich Sie bei komplexen grenzüberschreitenden Rechtsfragen mit fundierter Fachkenntnis und langjähriger Erfahrung.",
@@ -143,11 +143,11 @@ export const translations = {
     hero_cta_secondary: "Unsere Leistungen",
 
     // Stats Card
-    stats_years_title: "15+ Jahre Erfahrung",
+    stats_years_title: "3 Jahre Erfahrung",
     stats_years_subtitle: "Auf Basis von Vertrauen und Kompetenz",
 
     // Lawyer Card
-    lawyer_role: "Gründungspartner & Chefberater",
+    lawyer_role: "Fachanwalt für türkisches Recht",
 
     // Service Teasers
     service_01_title: "Grenzüberschreitendes Recht",
@@ -162,21 +162,21 @@ export const translations = {
     why_us_title: "Warum",
     why_us_subtitle: "DOĞRU KANZLEİ?",
     why_us_description: "Unsere Mandanten vertrauen uns bei ihren rechtlichen Angelegenheiten in Deutschland und der Türkei. Hier ist der Grund:",
-    why_us_point_01_title: "Zulassung & Expertise",
-    why_us_point_01_desc: "Als Mitglied der Rechtsanwaltskammer Karlsruhe (registriert gemäß § 207 BRAO) und der Anwaltskammer Ankara biete ich Ihnen rechtssichere Beratung im türkischen Recht direkt in Deutschland an.",
-    why_us_point_02_title: "Fokus auf IPR (Internationales Privatrecht)",
-    why_us_point_02_desc: "Wir klären für Sie die entscheidende Frage: Welches Recht findet Anwendung? Ob Erbrecht, Familienrecht oder Vertragsrecht – wir beherrschen die Regeln des internationalen Rechtsverkehrs.",
-    why_us_point_03_title: "Keine Drittvermittlung",
-    why_us_point_03_desc: "Bei mir erhalten Sie keine standardisierte Beratung durch Callcenter. Sie sprechen direkt mit mir – Ihrem Anwalt.",
-    why_us_point_04_title: "Grenzüberschreitende Vertretung",
-    why_us_point_04_desc: "Wir vertreten Mandanten aus Deutschland und der Türkei und kennen die bürokratischen sowie rechtlichen Hürden beider Länder aus der Praxis.",
+    why_us_point_01_title: "Digitaler Zugang zu türkischen Gerichten",
+    why_us_point_01_desc: "Als im UYAP-System registrierter Anwalt verwalte ich Ihre türkischen Rechtsangelegenheiten in Echtzeit aus Deutschland. Gerichtstermine, Dokumentenverfolgung, Verfahrensstatus. Ich erledige alles remote in Ihrem Namen.",
+    why_us_point_02_title: "Zulassung & Expertise",
+    why_us_point_02_desc: "Als Mitglied der Rechtsanwaltskammer Karlsruhe (registriert gemäß § 207 BRAO) und der Anwaltskammer Ankara biete ich Ihnen rechtssichere Beratung im türkischen Recht direkt in Deutschland an.",
+    why_us_point_03_title: "Fokus auf IPR (Internationales Privatrecht)",
+    why_us_point_03_desc: "Wir klären für Sie die entscheidende Frage: Welches Recht findet Anwendung? Ob Erbrecht, Familienrecht oder Vertragsrecht. Wir beherrschen die Regeln des internationalen Rechtsverkehrs.",
+    why_us_point_04_title: "Keine Drittvermittlung",
+    why_us_point_04_desc: "Bei mir erhalten Sie keine standardisierte Beratung durch Callcenter. Sie sprechen direkt mit mir – Ihrem Anwalt.",
 
     // About Section
     about_badge: "Über uns",
-    about_title: "15 Jahre Erfahrung in",
+    about_title: "3 Jahre Erfahrung in",
     about_subtitle: "rechtlichen Lösungen",
-    about_p1: "Rechtsanwalt Hasan Doğru ist ein erfahrener Anwalt mit fundierter Expertise im türkischen und deutschen Recht. Mit seinen Kanzleien in Mannheim und Ankara bietet er türkischen Staatsangehörigen in Deutschland sowie bei allen rechtlichen Angelegenheiten mit Türkei-Bezug umfassende und kompetente Beratung.",
-    about_p2: "Nach seinem Abschluss an der türkischen Rechtsfakultät und seinem weiterführenden Studium in Deutschland schlägt Rechtsanwalt Hasan Doğru die Brücke zwischen beiden Rechtssystemen und bietet seinen Mandanten so die bestmögliche rechtliche Unterstützung. Dabei steht er jedem Fall mit einem persönlichen Ansatz und absoluter Vertraulichkeit gegenüber.",
+    about_p1: "Avukat Hasan Doğru ist ein erfahrener Anwalt mit fundierter Expertise im türkischen und deutschen Recht. Mit seinen Kanzleien in Mannheim und Ankara bietet er türkischen Staatsangehörigen in Deutschland sowie bei allen rechtlichen Angelegenheiten mit Türkei-Bezug umfassende und kompetente Beratung.",
+    about_p2: "Nach seinem Abschluss an der türkischen Rechtsfakultät und seinem weiterführenden Studium in Deutschland schlägt Avukat Hasan Doğru die Brücke zwischen beiden Rechtssystemen und bietet seinen Mandanten so die bestmögliche rechtliche Unterstützung. Dabei steht er jedem Fall mit einem persönlichen Ansatz und absoluter Vertraulichkeit gegenüber.",
     about_cred_01: "Mitglied der türkischen Rechtsanwaltskammer",
     about_cred_02: "Mitglied des Anwaltsvereins Mannheim",
     about_cred_03: "Internationales Recht",
@@ -243,7 +243,7 @@ export const translations = {
     blog_read_more: "Weiterlesen",
 
     // Footer
-    footer_description: "Ihre rechtliche Brücke zwischen Deutschland und der Türkei. Professionelle Beratung mit über 15 Jahren Erfahrung.",
+    footer_description: "Ihre rechtliche Brücke zwischen Deutschland und der Türkei. Professionelle Beratung mit über 3 Jahren Erfahrung.",
     footer_quick_links: "Schnelllinks",
     footer_contact_info: "Kontaktinformationen",
     footer_legal: "Rechtliches",
