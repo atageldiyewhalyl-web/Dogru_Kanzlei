@@ -32,7 +32,9 @@ const schemaData = {
         },
         {
           "@type": "PostalAddress",
-          "addressLocality": "Ankara",
+          "streetAddress": "Aşağı Öveçler Mahallesi 1322 Cadde 45/9",
+          "addressLocality": "Çankaya",
+          "addressRegion": "Ankara",
           "addressCountry": "TR"
         }
       ],

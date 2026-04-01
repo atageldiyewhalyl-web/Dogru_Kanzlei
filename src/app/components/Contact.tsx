@@ -1,4 +1,4 @@
-import { MapPin, Phone, Mail, Clock, Lock } from "lucide-react";
+import { MapPin, Phone, Mail, Clock, Lock, ArrowRight, ExternalLink } from "lucide-react";
 import { useLanguage } from "../context/LanguageContext";
 import { useConsent } from "../context/ConsentContext";
 
@@ -14,14 +14,16 @@ export function Contact() {
       phone: "+4917661221210",
       email: "Avukat.hasandogru@outlook.de",
       hours: language === "tr" ? "Pzt–Cmt: 09:00 – 18:00" : "Mo–Sa: 09:00 – 18:00",
+      mapLink: "https://www.google.com/maps/search/?api=1&query=R1+2+3+68161+Mannheim+Deutschland",
     },
     {
       city: "Ankara",
       country: language === "tr" ? "Türkiye" : "Türkei",
-      address: "Aziziye, Kuzgun Sk. No:2\n06690 Çankaya / Ankara",
+      address: "Aşağı Öveçler Mahallesi 1322 Cadde 45/9\nÇankaya / Ankara, Türkiye",
       phone: "+905332375918",
       email: "Avukat.hasandogru@outlook.de",
       hours: language === "tr" ? "Pzt–Cum: 09:00 – 18:00" : "Mo–Fr: 09:00 – 18:00",
+      mapLink: "https://www.google.com/maps/search/?api=1&query=Aşağı+Öveçler+Mahallesi+1322+Cadde+45/9+Çankaya+Ankara+Türkiye",
     },
   ];
 

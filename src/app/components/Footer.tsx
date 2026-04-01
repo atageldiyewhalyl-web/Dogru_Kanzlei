@@ -225,9 +225,13 @@ export function Footer() {
                 <Phone size={14} color="#B8963E" />
                 <span>+905332375918</span>
               </div>
-              <div style={{ display: "flex", alignItems: "flex-start", gap: 10 }}>
+              <div style={{ display: "flex", alignItems: "flex-start", gap: 10, marginBottom: 14 }}>
                 <MapPin size={14} color="#B8963E" style={{ marginTop: 4 }} />
                 <span>R1 2,3, 68161 Mannheim, Deutschland</span>
+              </div>
+              <div style={{ display: "flex", alignItems: "flex-start", gap: 10 }}>
+                <MapPin size={14} color="#B8963E" style={{ marginTop: 4 }} />
+                <span>Aşağı Öveçler Mahallesi 1322 Cadde 45/9, Çankaya Ankara</span>
               </div>
             </div>
           </div>
