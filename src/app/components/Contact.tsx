@@ -27,7 +27,7 @@ export function Contact() {
     },
   ];
 
-  const calendlyLink = "https://calendly.com/your-link";
+  const calendlyLink = "https://calendly.com/hasand9366/30min";
   const whatsappNumber = "4917661221210"; 
 
   return (

@@ -5,6 +5,8 @@ import { useLanguage } from "../context/LanguageContext";
 import { useSEO, SITE_URL } from "../hooks/useSEO";
 import { blogPosts } from "../data/blogPosts";
 
+const CALENDLY_URL = "https://calendly.com/hasand9366/30min";
+
 function processInlineStyles(text: string) {
   const parts = text.split(/(\*\*.*?\*\*)/g);
   return parts.map((part, i) => {
@@ -167,12 +169,14 @@ export function BlogPost() {
                 ? 'Kontaktieren Sie uns für eine kostenlose Erstberatung. Wir helfen Ihnen gerne weiter.'
                 : 'Ücretsiz ilk görüşme için bizimle iletişime geçin. Size yardımcı olmaktan memnuniyet duyarız.'}
             </p>
-            <Link
-              to={paths.contact}
+            <a
+              href={CALENDLY_URL}
+              target="_blank"
+              rel="noopener noreferrer"
               className="inline-block bg-[#B8963E] text-white font-sans text-[11px] font-bold tracking-[0.15em] uppercase px-8 py-4 hover:bg-[#a68635] transition-colors"
             >
               {t("nav_cta")}
-            </Link>
+            </a>
           </div>
         </motion.div>
       </article>

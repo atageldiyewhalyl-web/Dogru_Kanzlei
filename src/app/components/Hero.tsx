@@ -4,6 +4,8 @@ import { ArrowRight, Scale, Globe, FileText } from "lucide-react";
 import { useNavigate } from "react-router";
 import { useLanguage } from "../context/LanguageContext";
 
+const CALENDLY_URL = "https://calendly.com/hasand9366/30min";
+
 export function Hero() {
   const navigate = useNavigate();
   const { t, paths } = useLanguage();
@@ -75,7 +77,7 @@ export function Hero() {
           {/* CTA Buttons - Dark Green/Gold Blocks */}
           <div className="flex flex-wrap gap-5">
             <button 
-              onClick={() => handleScroll("#iletisim")}
+              onClick={() => window.open(CALENDLY_URL, "_blank")}
               className="group relative overflow-hidden bg-[#B8963E] text-white font-sans text-[11px] font-bold tracking-[0.15em] uppercase px-10 py-5 transition-all hover:bg-[#a68635] flex items-center gap-3"
             >
               {t("hero_cta_primary")}

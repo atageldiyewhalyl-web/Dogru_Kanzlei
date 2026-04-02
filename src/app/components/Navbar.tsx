@@ -4,6 +4,8 @@ import { Link, useLocation, useNavigate } from "react-router";
 import { useLanguage } from "../context/LanguageContext";
 import logoImage from "@/assets/30fbe893025c3fe015e5b6962dda4011264eeccb.png";
 
+const CALENDLY_URL = "https://calendly.com/hasand9366/30min";
+
 export function Navbar() {
   const [scrolled, setScrolled] = useState(false);
   const [mobileOpen, setMobileOpen] = useState(false);
@@ -199,7 +201,7 @@ export function Navbar() {
           </button>
 
           <button
-            onClick={() => handleNavClick(paths.contact)}
+            onClick={() => window.open(CALENDLY_URL, "_blank")}
             style={{
               fontFamily: "var(--font-sans)",
               fontSize: 10,
@@ -285,7 +287,7 @@ export function Navbar() {
             <p className="font-sans text-white mb-2">Avukat.hasandogru@outlook.de</p>
             <p className="font-sans text-white mb-8">+4917661221210</p>
             <button
-              onClick={() => handleNavClick(paths.contact)}
+              onClick={() => window.open(CALENDLY_URL, "_blank")}
               className="w-full bg-[#B8963E] text-white font-sans text-xs font-bold tracking-[0.15em] uppercase py-5 text-center transition-colors hover:bg-[#a68635]"
             >
               {t("nav_cta")}
