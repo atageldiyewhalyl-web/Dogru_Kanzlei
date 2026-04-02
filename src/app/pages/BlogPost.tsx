@@ -5,6 +5,20 @@ import { useLanguage } from "../context/LanguageContext";
 import { useSEO, SITE_URL } from "../hooks/useSEO";
 import { blogPosts } from "../data/blogPosts";
 
+function processInlineStyles(text: string) {
+  const parts = text.split(/(\*\*.*?\*\*)/g);
+  return parts.map((part, i) => {
+    if (part.startsWith('**') && part.endsWith('**')) {
+      return (
+        <strong key={i} className="font-bold text-[#1C3829]">
+          {part.slice(2, -2)}
+        </strong>
+      );
+    }
+    return part;
+  });
+}
+
 export function BlogPost() {
   const { slug } = useParams();
   const { language, t, paths } = useLanguage();
@@ -110,10 +124,37 @@ export function BlogPost() {
           </div>
 
           {/* Content */}
-          <div className="prose prose-lg max-w-none font-sans text-[#3a3a3a] leading-[1.9] font-light">
-            {content.split('\n\n').map((paragraph, idx) => (
-              <p key={idx} className="mb-6">{paragraph}</p>
-            ))}
+          <div className="prose prose-lg max-w-none font-sans text-[#3a3a3a] leading-[1.8] font-medium">
+            {content.split('\n').map((line, idx) => {
+              const trimmedLine = line.trim();
+              
+              if (!trimmedLine) return <div key={idx} className="h-4" />;
+
+              // Handle Headers
+              if (trimmedLine.startsWith('###')) {
+                return (
+                  <h3 key={idx} className="font-serif text-2xl text-[#1C3829] mt-10 mb-4">
+                    {processInlineStyles(trimmedLine.replace('###', '').trim())}
+                  </h3>
+                );
+              }
+
+              // Handle List Items
+              if (trimmedLine.startsWith('- ')) {
+                return (
+                  <li key={idx} className="ml-6 mb-2 list-disc">
+                    {processInlineStyles(trimmedLine.replace('- ', '').trim())}
+                  </li>
+                );
+              }
+
+              // Normal Paragraph
+              return (
+                <p key={idx} className="mb-4">
+                  {processInlineStyles(trimmedLine)}
+                </p>
+              );
+            })}
           </div>
 
           {/* CTA */}

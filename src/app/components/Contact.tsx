@@ -1,4 +1,4 @@
-import { MapPin, Phone, Mail, Clock, Lock, ArrowRight, ExternalLink } from "lucide-react";
+import { MapPin, Phone, Mail, Clock, Lock } from "lucide-react";
 import { useLanguage } from "../context/LanguageContext";
 import { useConsent } from "../context/ConsentContext";
 
@@ -12,7 +12,7 @@ export function Contact() {
       country: language === "tr" ? "Almanya" : "Deutschland",
       address: "R1 2,3\n68161 Mannheim, Deutschland",
       phone: "+4917661221210",
-      email: "Avukat.hasandogru@outlook.de",
+      emails: ["info@hasandogru.de", "Avukat.hasandogru@outlook.de"],
       hours: language === "tr" ? "Pzt–Cmt: 09:00 – 18:00" : "Mo–Sa: 09:00 – 18:00",
       mapLink: "https://www.google.com/maps/search/?api=1&query=R1+2+3+68161+Mannheim+Deutschland",
     },
@@ -21,13 +21,12 @@ export function Contact() {
       country: language === "tr" ? "Türkiye" : "Türkei",
       address: "Aşağı Öveçler Mahallesi 1322 Cadde 45/9\nÇankaya / Ankara, Türkiye",
       phone: "+905332375918",
-      email: "Avukat.hasandogru@outlook.de",
+      emails: ["info@hasandogru.de", "Avukat.hasandogru@outlook.de"],
       hours: language === "tr" ? "Pzt–Cum: 09:00 – 18:00" : "Mo–Fr: 09:00 – 18:00",
       mapLink: "https://www.google.com/maps/search/?api=1&query=Aşağı+Öveçler+Mahallesi+1322+Cadde+45/9+Çankaya+Ankara+Türkiye",
     },
   ];
 
-  // PLACEHOLDERS - User should update these
   const calendlyLink = "https://calendly.com/your-link";
   const whatsappNumber = "4917661221210"; 
 
@@ -332,17 +331,25 @@ export function Contact() {
 
                   <div style={{ display: "flex", gap: 12 }}>
                     <Mail size={16} color="#B8963E" style={{ flexShrink: 0 }} />
-                    <a
-                      href={`mailto:${office.email}`}
-                      style={{
-                        fontFamily: "'Lato', sans-serif",
-                        fontSize: 14,
-                        color: "#4a4a4a",
-                        textDecoration: "none",
-                      }}
-                    >
-                      {office.email}
-                    </a>
+                    <div style={{ display: "flex", flexDirection: "column", gap: 8 }}>
+                      {office.emails.map(email => (
+                        <a
+                          key={email}
+                          href={`mailto:${email}`}
+                          style={{
+                            fontFamily: "'Lato', sans-serif",
+                            fontSize: 14,
+                            color: "#4a4a4a",
+                            textDecoration: "none",
+                            transition: "color 0.2s ease",
+                          }}
+                          onMouseEnter={(e) => (e.currentTarget.style.color = "#B8963E")}
+                          onMouseLeave={(e) => (e.currentTarget.style.color = "#4a4a4a")}
+                        >
+                          {email}
+                        </a>
+                      ))}
+                    </div>
                   </div>
 
                   <div style={{ display: "flex", gap: 12 }}>

@@ -64,7 +64,7 @@ export function Impressum() {
           </h2>
           <div className="mb-8">
             <p className="mb-2"><strong>Telefon:</strong><br />+4917661221210<br />+905332375918</p>
-            <p className="mb-2"><strong>E-Mail:</strong><br />Avukat.hasandogru@outlook.de</p>
+            <p className="mb-2"><strong>E-Mail:</strong><br />info@hasandogru.de<br />Avukat.hasandogru@outlook.de</p>
             <p className="mb-2"><strong>Webseite:</strong><br />Strato</p>
           </div>
 

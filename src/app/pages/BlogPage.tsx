@@ -55,8 +55,9 @@ export function BlogPage() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.5, delay: idx * 0.1 }}
+              className="text-left"
             >
-              <Link to={paths.blogPost(post.slug)} className="group block">
+              <Link to={paths.blogPost(post.slug)} className="group block no-justify">
                 {/* Image */}
                 <div className="overflow-hidden mb-6 h-[220px] bg-[#e8e4dc]">
                   <img
@@ -68,7 +69,7 @@ export function BlogPage() {
                 </div>
 
                 {/* Meta */}
-                <div className="flex items-center gap-4 mb-3">
+                <div className="flex items-center gap-4 mb-3 text-left">
                   <span className="font-sans text-[10px] font-bold tracking-[0.14em] uppercase text-[#B8963E]">
                     {language === 'de' ? post.categoryDE : post.category}
                   </span>
@@ -79,12 +80,12 @@ export function BlogPage() {
                 </div>
 
                 {/* Title */}
-                <h2 className="font-serif text-[22px] font-semibold text-[#1C3829] leading-[1.3] mb-3 group-hover:text-[#B8963E] transition-colors">
+                <h2 className="font-serif text-[22px] font-semibold text-[#1C3829] leading-[1.3] mb-3 group-hover:text-[#B8963E] transition-colors text-left no-justify">
                   {language === 'de' ? post.titleDE : post.titleTR}
                 </h2>
 
                 {/* Excerpt */}
-                <p className="font-sans text-sm font-light text-[#6a6a6a] leading-[1.7] mb-5">
+                <p className="font-sans text-sm font-light text-[#6a6a6a] leading-[1.7] mb-5 text-left no-justify">
                   {language === 'de' ? post.excerptDE : post.excerptTR}
                 </p>
 

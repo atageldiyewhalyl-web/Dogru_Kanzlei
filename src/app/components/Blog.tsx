@@ -99,9 +99,9 @@ export function Blog() {
           }}
           className="blog-grid"
         >
-          {blogPosts.map((post) => (
-            <article key={post.slug}>
-              <Link to={paths.blogPost(post.slug)} className="group block" style={{ textDecoration: "none" }}>
+          {blogPosts.slice(0, 3).map((post) => (
+            <article key={post.slug} className="text-left">
+              <Link to={paths.blogPost(post.slug)} className="group block no-justify" style={{ textDecoration: "none", textAlign: "left" }}>
                 {/* Image */}
                 <div
                   style={{
@@ -133,6 +133,7 @@ export function Blog() {
                     alignItems: "center",
                     gap: 16,
                     marginBottom: 14,
+                    textAlign: "left",
                   }}
                 >
                   <span
@@ -178,8 +179,9 @@ export function Blog() {
                     lineHeight: 1.3,
                     marginBottom: 12,
                     transition: "color 0.2s",
+                    textAlign: "left",
                   }}
-                  className="group-hover:!text-[#B8963E]"
+                  className="group-hover:!text-[#B8963E] no-justify"
                 >
                   {language === 'de' ? post.titleDE : post.titleTR}
                 </h3>
@@ -192,7 +194,9 @@ export function Blog() {
                     color: "#5a5a5a",
                     lineHeight: 1.7,
                     marginBottom: 20,
+                    textAlign: "left",
                   }}
+                  className="no-justify"
                 >
                   {language === 'de' ? post.excerptDE : post.excerptTR}
                 </p>

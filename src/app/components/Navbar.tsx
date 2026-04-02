@@ -281,6 +281,7 @@ export function Navbar() {
             <p className="font-sans text-[11px] text-white/50 tracking-[0.2em] uppercase mb-4">
               {language === 'de' ? 'Direkter Kontakt' : 'Doğrudan İletişim'}
             </p>
+            <p className="font-sans text-white mb-1">info@hasandogru.de</p>
             <p className="font-sans text-white mb-2">Avukat.hasandogru@outlook.de</p>
             <p className="font-sans text-white mb-8">+4917661221210</p>
             <button

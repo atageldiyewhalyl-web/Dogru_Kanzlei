@@ -15,7 +15,7 @@ const schemaData = {
       "logo": "https://www.hasandogru.de/logo.png",
       "description": "Avukat Hasan Doğru für türkisches und deutsches Recht in Mannheim und Ankara. Spezialisiert auf Familienrecht, Erbrecht, Mietrecht, Strafrecht und grenzüberschreitende Rechtsberatung.",
       "telephone": "+4917661221210",
-      "email": "Avukat.hasandogru@outlook.de",
+      "email": ["info@hasandogru.de", "Avukat.hasandogru@outlook.de"],
       "priceRange": "$$",
       "knowsLanguage": ["de", "tr"],
       "areaServed": [
