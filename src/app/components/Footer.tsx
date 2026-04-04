@@ -240,6 +240,35 @@ export function Footer() {
           </div>
         </div>
 
+        {/* Legal Disclaimer Section */}
+        <div
+          style={{
+            marginTop: 80,
+            marginBottom: 20,
+          }}
+        >
+          <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr 1fr", gap: 40 }} className="footer-disclaimer-grid">
+            <div>
+              <span style={{ color: "#B8963E", fontSize: 9, fontWeight: 700, textTransform: "uppercase", letterSpacing: "0.2em", display: "block", marginBottom: 16, opacity: 0.8 }}>Rechtlicher Hinweis</span>
+              <p style={{ color: "rgba(255,255,255,0.3)", fontSize: 11, lineHeight: 1.8, margin: 0, fontFamily: "'Lato', sans-serif" }}>
+                Die Kanzlei berät ausschließlich im türkischen Recht. Eine Beratung oder Vertretung im deutschen Recht findet nicht statt. Registriert als ausländischer Rechtsanwalt gemäß § 207 BRAO.
+              </p>
+            </div>
+            <div>
+              <span style={{ color: "#B8963E", fontSize: 9, fontWeight: 700, textTransform: "uppercase", letterSpacing: "0.2em", display: "block", marginBottom: 16, opacity: 0.8 }}>Yasal Uyarı</span>
+              <p style={{ color: "rgba(255,255,255,0.3)", fontSize: 11, lineHeight: 1.8, margin: 0, fontFamily: "'Lato', sans-serif" }}>
+                Büromuz yalnızca Türk hukuku alanında danışmanlık vermektedir. Alman hukuku konusunda danışmanlık veya temsil hizmeti verilmemektedir. § 207 BRAO uyarınca kayıtlı yabancı avukat.
+              </p>
+            </div>
+            <div>
+              <span style={{ color: "#B8963E", fontSize: 9, fontWeight: 700, textTransform: "uppercase", letterSpacing: "0.2em", display: "block", marginBottom: 16, opacity: 0.8 }}>Legal Notice</span>
+              <p style={{ color: "rgba(255,255,255,0.3)", fontSize: 11, lineHeight: 1.8, margin: 0, fontFamily: "'Lato', sans-serif" }}>
+                The firm provides legal advice exclusively in Turkish law. We do not provide advice or representation in German law. Registered as a foreign lawyer according to § 207 BRAO.
+              </p>
+            </div>
+          </div>
+        </div>
+
         {/* Bottom row */}
         <div
           style={{
@@ -350,6 +379,12 @@ export function Footer() {
           .footer-grid {
             grid-template-columns: 1fr 1fr !important;
             gap: 48px !important;
+          }
+        }
+        @media (max-width: 768px) {
+          .footer-disclaimer-grid {
+            grid-template-columns: 1fr !important;
+            gap: 16px !important;
           }
         }
         @media (max-width: 640px) {

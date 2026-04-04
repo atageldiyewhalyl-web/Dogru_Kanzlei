@@ -15,8 +15,8 @@ export function Home() {
       ? 'Avukat Hasan Doğru | Doğru Kanzlei Mannheim'
       : 'Avukat Hasan Doğru | Türk Hukuku Uzmanı Mannheim',
     description: language === 'de'
-      ? 'Avukat Hasan Doğru für türkisches und deutsches Recht in Mannheim. Spezialisiert auf Familienrecht, Erbrecht, Mietrecht und grenzüberschreitende Rechtsberatung. Kostenlose Erstberatung.'
-      : 'Mannheim\'da Türk ve Alman hukuku alanında uzman avukatlık bürosu. Aile hukuku, miras hukuku, kira hukuku ve uluslararası hukuki danışmanlık. Ücretsiz ilk görüşme.',
+      ? 'Avukat Hasan Doğru für türkisches und deutsches Recht in Mannheim. Spezialisiert auf Familienrecht, Erbrecht, Mietrecht und grenzüberschreitende Rechtsberatung. Professionelle Rechtsberatung.'
+      : 'Mannheim\'da Türk ve Alman hukuku alanında uzman avukatlık bürosu. Aile hukuku, miras hukuku, kira hukuku ve uluslararası hukuki danışmanlık. Profesyonel hukuki danışmanlık.',
     lang: language,
     canonical: `${SITE_URL}/${language}`,
     alternateLang: {

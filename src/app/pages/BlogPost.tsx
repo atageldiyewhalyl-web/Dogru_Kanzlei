@@ -166,8 +166,8 @@ export function BlogPost() {
             </h3>
             <p className="font-sans text-white/60 mb-6 leading-relaxed">
               {language === 'de'
-                ? 'Kontaktieren Sie uns für eine kostenlose Erstberatung. Wir helfen Ihnen gerne weiter.'
-                : 'Ücretsiz ilk görüşme için bizimle iletişime geçin. Size yardımcı olmaktan memnuniyet duyarız.'}
+                ? 'Kontaktieren Sie uns für eine rechtliche Einschätzung Ihres Falles. Wir helfen Ihnen gerne weiter.'
+                : 'Davanızın profesyonel değerlendirmesi için bizimle iletişime geçin. Size yardımcı olmaktan memnuniyet duyarız.'}
             </p>
             <a
               href={CALENDLY_URL}

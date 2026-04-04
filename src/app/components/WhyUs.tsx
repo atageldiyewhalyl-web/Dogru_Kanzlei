@@ -101,6 +101,7 @@ export function WhyUs() {
               color: "#ffffff",
               lineHeight: 1.15,
               margin: "0 0 20px",
+              textAlign: "center",
             }}
           >
             {t("why_us_title")}

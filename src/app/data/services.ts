@@ -108,8 +108,8 @@ Wir begleiten Sie durch den gesamten Prozess — schnell, zuverlässig und mit l
     icon: Plane,
     title: "Migrationsrecht",
     titleTR: "Göç Hukuku",
-    description: "Vize işlemleri, oturum izni, vatandaşlık başvuruları ve sınır dışı kararlarına karşı hukuki koruma konularında uzman danışmanlık.",
-    descriptionDE: "Fachkundige Beratung zu Visumverfahren, Aufenthaltserlaubnis, Einbürgerung und rechtlicher Schutz gegen Ausweisungsentscheidungen.",
+    description: "Türk hukukuna göre vize işlemleri, oturma izni ve vatandaşlık başvurularında uzman danışmanlık — Türk göç hukuku kapsamında hukuki koruma dahil.",
+    descriptionDE: "Fachkundige Beratung zu Visumverfahren, Aufenthaltserlaubnis und Einbürgerung im türkischen Recht — sowie rechtlicher Schutz nach türkischem Migrationsrecht.",
     detail: "Mavi Kart & Vatandaşlık · İkamet İzinleri · Geri Dönüş",
     detailDE: "Mavi Kart & Status · Aufenthaltstitel · Remigration",
     content: `Göç Hukuku — Türkiye'ye Yerleşim İçin Hukuki Danışmanlık
