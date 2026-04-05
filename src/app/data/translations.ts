@@ -142,7 +142,7 @@ export const translations = {
     // Hero Section
     hero_title_pre: "Avukat",
     hero_title_main: "Hasan Doğru",
-    hero_subtitle: "Avukat für türkisches Recht",
+    hero_subtitle: "Fachanwalt für türkisches Recht",
     hero_description: "Suchen Sie einen kompetenten Rechtsbeistand, der die Brücke zwischen dem deutschen und dem türkischen Rechtssystem schlägt? Als spezialisierter Avukat unterstütze ich Sie bei komplexen grenzüberschreitenden Rechtsfragen mit fundierter Fachkenntnis und langjähriger Erfahrung.",
     hero_cta_primary: "Jetzt beraten lassen",
     hero_cta_secondary: "Unsere Leistungen",
@@ -152,7 +152,7 @@ export const translations = {
     stats_years_subtitle: "Auf Basis von Vertrauen und Kompetenz",
 
     // Lawyer Card
-    lawyer_role: "Avukat für türkisches Recht",
+    lawyer_role: "Fachanwalt für türkisches Recht",
 
     // Service Teasers
     service_01_title: "Grenzüberschreitendes Recht",
