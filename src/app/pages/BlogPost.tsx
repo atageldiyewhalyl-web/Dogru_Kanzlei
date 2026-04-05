@@ -24,7 +24,11 @@ function processInlineStyles(text: string) {
 export function BlogPost() {
   const { slug } = useParams();
   const { language, t, paths } = useLanguage();
-  const post = blogPosts.find((p) => p.slug === slug);
+  
+  // Find post by localized slug
+  const post = blogPosts.find((p) => p.slugDE === slug || p.slugTR === slug);
+
+  const altLang = language === 'de' ? 'tr' : 'de';
 
   useSEO({
     title: post
@@ -38,10 +42,12 @@ export function BlogPost() {
     lang: language,
     ogType: 'article',
     ogImage: post?.image,
-    canonical: post ? `${SITE_URL}/${language}/blog/${post.slug}` : undefined,
+    canonical: post 
+      ? `${SITE_URL}/${language}/blog/${language === 'de' ? post.slugDE : post.slugTR}` 
+      : undefined,
     alternateLang: post ? {
-      lang: language === 'de' ? 'tr' : 'de',
-      href: `${SITE_URL}/${language === 'de' ? 'tr' : 'de'}/blog/${post.slug}`,
+      lang: altLang,
+      href: `${SITE_URL}/${altLang}/blog/${altLang === 'de' ? post.slugDE : post.slugTR}`,
     } : undefined,
   });
 

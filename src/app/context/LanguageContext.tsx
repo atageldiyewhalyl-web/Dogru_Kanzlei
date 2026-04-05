@@ -1,6 +1,8 @@
 import React, { createContext, useContext, useMemo, useEffect } from 'react';
 import { useNavigate, useLocation } from 'react-router';
 import { translations, TranslationKeys } from '../data/translations';
+import { services } from '../data/services';
+import { blogPosts } from '../data/blogPosts';
 
 type Language = 'tr' | 'de';
 
@@ -31,6 +33,7 @@ const LanguageContext = createContext<LanguageContextType | undefined>(undefined
 function translatePath(path: string, fromLang: Language, toLang: Language): string {
   let newPath = path.replace(`/${fromLang}`, `/${toLang}`);
 
+  // 1. Static base segments
   if (fromLang === 'tr' && toLang === 'de') {
     newPath = newPath.replace('/hizmetler', '/leistungen');
     newPath = newPath.replace('/gizlilik-politikasi', '/datenschutz');
@@ -41,6 +44,36 @@ function translatePath(path: string, fromLang: Language, toLang: Language): stri
     newPath = newPath.replace('/datenschutz', '/gizlilik-politikasi');
     newPath = newPath.replace('/impressum', '/yasal-bilgiler');
     newPath = newPath.replace('/ueber-uns', '/hakkimizda');
+  }
+
+  // 2. Dynamic slugs (Services)
+  const servicesSegment = toLang === 'de' ? '/leistungen/' : '/hizmetler/';
+  if (newPath.includes(servicesSegment)) {
+    const slug = newPath.split(servicesSegment)[1]?.split(/[?#]/)[0];
+    if (slug) {
+      const service = services.find(s => 
+        fromLang === 'de' ? s.slugDE === slug : s.slugTR === slug
+      );
+      if (service) {
+        const newSlug = toLang === 'de' ? service.slugDE : service.slugTR;
+        newPath = newPath.replace(slug, newSlug);
+      }
+    }
+  }
+
+  // 3. Dynamic slugs (Blog)
+  const blogSegment = '/blog/';
+  if (newPath.includes(blogSegment)) {
+    const slug = newPath.split(blogSegment)[1]?.split(/[?#]/)[0];
+    if (slug) {
+      const post = blogPosts.find(p => 
+        fromLang === 'de' ? p.slugDE === slug : p.slugTR === slug
+      );
+      if (post) {
+        const newSlug = toLang === 'de' ? post.slugDE : post.slugTR;
+        newPath = newPath.replace(slug, newSlug);
+      }
+    }
   }
 
   return newPath;
@@ -67,9 +100,17 @@ export const LanguageProvider: React.FC<{ language: Language; children: React.Re
     return {
       home: prefix,
       services: `${prefix}/${servicesSegment}`,
-      service: (id: string) => `${prefix}/${servicesSegment}/${id}`,
+      service: (id: string) => {
+        const s = services.find(serv => serv.id === id);
+        const slug = s ? (language === 'de' ? s.slugDE : s.slugTR) : id;
+        return `${prefix}/${servicesSegment}/${slug}`;
+      },
       blog: `${prefix}/blog`,
-      blogPost: (slug: string) => `${prefix}/blog/${slug}`,
+      blogPost: (origSlug: string) => {
+        const p = blogPosts.find(post => post.slug === origSlug);
+        const slug = p ? (language === 'de' ? p.slugDE : p.slugTR) : origSlug;
+        return `${prefix}/blog/${slug}`;
+      },
       datenschutz: language === 'de' ? `${prefix}/datenschutz` : `${prefix}/gizlilik-politikasi`,
       impressum: language === 'de' ? `${prefix}/impressum` : `${prefix}/yasal-bilgiler`,
       about: language === 'de' ? `${prefix}/ueber-uns` : `${prefix}/hakkimizda`,

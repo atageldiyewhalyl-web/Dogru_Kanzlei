@@ -11,6 +11,8 @@ import vekaletnameImg from "@/assets/blog_vekaletname.png";
 
 export interface BlogPost {
   slug: string;
+  slugDE: string;
+  slugTR: string;
   titleDE: string;
   titleTR: string;
   excerptDE: string;
@@ -30,6 +32,8 @@ export interface BlogPost {
 export const blogPosts: BlogPost[] = [
   {
     slug: "miras-hukuku-rehberi",
+    slugDE: "erbrecht-leitfaden-tuerkei",
+    slugTR: "miras-hukuku-rehberi",
     titleDE: "Erbrecht-Leitfaden für türkische Staatsangehörige in Deutschland",
     titleTR: "Almanya'daki Türk Vatandaşları için Kapsamlı Miras Hukuku Rehberi",
     excerptDE: "Das Erbrecht für türkische Staatsangehörige in Deutschland beschäftigt viele Familien. Wir erklären den Veraset İlamı und Testamente nach türkischem Recht.",
@@ -152,6 +156,8 @@ Ankara Barosu ve Karlsruhe Barosu (§ 207 BRAO) üyesi olarak, Türkiye'deki tü
   },
   {
     slug: "uluslararasi-bosanma",
+    slugDE: "internationale-scheidung-tuerkei",
+    slugTR: "uluslararasi-bosanma",
     titleDE: "Internationale Scheidungsverfahren – Was Sie wissen müssen",
     titleTR: "Uluslararası Boşanma Davalarında Bilinmesi Gerekenler",
     excerptDE: "Eine Scheidung zwischen Deutschland und der Türkei ist rechtlich komplex. Wir erklären Zuständigkeiten und die Anerkennung nach türkischem Recht.",
@@ -232,6 +238,8 @@ Uluslararası boşanma davaları ve tanıma-tenfiz süreçleri bizim uzmanlık a
   },
   {
     slug: "gayrimenkul-haklari",
+    slugDE: "immobilienrechte-tuerkei",
+    slugTR: "gayrimenkul-haklari",
     titleDE: "Rechte von Ausländern beim Immobilienkauf in der Türkei",
     titleTR: "Yabancıların Türkiye'de Mülk Satın Alma Hakları",
     excerptDE: "Immobilienkauf in der Türkei: Rechtssichere Abwicklung aus Deutschland, Tapu-Prüfung und Risiken nach türkischem Recht.",
@@ -297,6 +305,8 @@ Türkiye'deki taşınmaz hukukuna hakimiz ve işlemlerinizi doğrudan Türk maka
   },
   {
     slug: "tanima-tenfiz-rehberi",
+    slugDE: "tanima-tenfiz-leitfaden",
+    slugTR: "tanima-tenfiz-rehberi",
     titleDE: "Tanıma ve Tenfiz: Warum Ihre deutsche Scheidung in der Türkei nicht gilt",
     titleTR: "Tanıma ve Tenfiz: Almanya'daki Boşanma Kararınız Türkiye'de Neden Geçersiz?",
     excerptDE: "In Deutschland geschieden, in der Türkei noch verheiratet? Wir erklären das Anerkennungsverfahren nach türkischem Recht.",
@@ -346,6 +356,8 @@ Türkiye'deki aile mahkemeleri nezdindeki süreci bizzat yönetiyoruz.`,
   },
   {
     slug: "sakli-pay-tenkis-davasi",
+    slugDE: "pflichtteil-herabsetzungsklage-tuerkei",
+    slugTR: "sakli-pay-tenkis-davasi",
     titleDE: "Saklı Pay im türkischen Erbrecht: Wann Erben klagen können",
     titleTR: "Saklı Pay ve Tenkis Davası: Mirasçıların Hakları ve Dava Süreci",
     excerptDE: "Pflichtteil (Saklı Pay) nach türkischem Recht verletzt? Wir erklären die Herabsetzungsklage (Tenkis Davası).",
@@ -386,6 +398,8 @@ Saklı payınız ihlal edilmişse, öğrenmeden itibaren 1 yıl içinde **Tenkis
   },
   {
     slug: "izale-i-suyu-paylasim-davasi",
+    slugDE: "teilungsklage-immobilien-tuerkei",
+    slugTR: "izale-i-suyu-paylasim-davasi",
     titleDE: "İzale-i Şüyu: Wenn Erben sich nicht einigen: Teilungsklage in der Türkei",
     titleTR: "İzale-i Şüyu: Miras Kalan Taşınmazlarda Ortaklığın Giderilmesi Davası",
     excerptDE: "İzale-i Şüyu (Teilungsklage) bei Erbimmobilien in der Türkei nach türkischem Zivilrecht.",
@@ -421,6 +435,8 @@ Paydaşlar arasında paylaşılamayan taşınmazlar için Sulh Hukuk Mahkemesi'n
   },
   {
     slug: "mavi-kart-haklari-rehberi",
+    slugDE: "mavi-kart-rechte-tuerkei",
+    slugTR: "mavi-kart-haklari-rehberi",
     titleDE: "Mavi Kart: Ihre Rechte in der Türkei nach Einbürgerung in Deutschland",
     titleTR: "Mavi Kart: Alman Vatandaşlığına Geçiş Sonrası Türkiye'deki Haklarınız",
     excerptDE: "Mavi Kart — Rechte in der Türkei: Eigentum und Erbschaft nach türkischem Staatsangehörigkeitsrecht.",
@@ -458,6 +474,8 @@ Türk vatandaşlığından çıkan kişilerin Türkiye'deki haklarını koruyan 
   },
   {
     slug: "vorladung-haftbefehl-tuerkei",
+    slugDE: "vorladung-haftbefehl-tuerkei",
+    slugTR: "turkiye-den-tebligat-veya-yakalama-karari",
     titleDE: "Vorladung oder Haftbefehl aus der Türkei: Was tun?",
     titleTR: "Türkiye'den Tebligat veya Yakalama Kararı mı Geldi? Almanya'dan Ne Yapmalısınız?",
     excerptDE: "Vorladungen oder Strafverfahren in der Türkei können auch aus Deutschland heraus nach türkischem Strafprozessrecht verteidigt werden.",
@@ -494,6 +512,8 @@ Türkiye'deki ceza dosyalarınızı Almanya'dan vekalet vererek takip edebilirsi
   },
   {
     slug: "suc-duyurusu-tuerkei-rehberi",
+    slugDE: "strafanzeige-tuerkei-rehber",
+    slugTR: "turkiye-de-suc-duyurusu-rehberi",
     titleDE: "Strafanzeige in der Türkei aus Deutschland erstatten",
     titleTR: "Almanya'dan Türkiye'deki Bir Suç İçin Şikayetçi Olmak: Suç Duyurusu Rehberi",
     excerptDE: "Opfer einer Straftat in der Türkei geworden? Wir erklären die Strafanzeige (Suç Duyurusu) nach türkischem Recht.",
@@ -523,6 +543,8 @@ Türkiye'deki suç mağduriyetleriniz için Almanya'dan vekaletle suç duyurusun
   },
   {
     slug: "bosanma-rehberi-tuerkiye",
+    slugDE: "scheidung-tuerkei-ohne-reise",
+    slugTR: "turkiye-de-bosanma-rehberi",
     titleDE: "Scheidung in der Türkei ohne Reise",
     titleTR: "Almanya'dan Türkiye'de Boşanma: Anlaşmalı ve Çekişmeli Boşanma Rehberi",
     excerptDE: "Scheidung in der Türkei aus Deutschland einreichen nach türkischem Zivilgesetzbuch (TMK).",
@@ -557,6 +579,8 @@ Süreci Almanya'dan vekaletle yönetmek mümkündür.
   },
   {
     slug: "vekaletname-rehberi-almanya",
+    slugDE: "tuerkische-vekaletname-deutschland",
+    slugTR: "almanya-da-vekaletname-cikarma-rehberi",
     titleDE: "Türkische Vollmacht (Vekaletname) in Deutschland",
     titleTR: "Almanya'da Türk Vekaletnamesi: Noter, Apostil ve Konsolosluk Rehberi",
     excerptDE: "Vekaletname in Deutschland erstellen — Schritte nach türkischem Notariatsrecht.",

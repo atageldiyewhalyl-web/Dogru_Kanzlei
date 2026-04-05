@@ -8,10 +8,13 @@ import { useSEO, SITE_URL } from "../hooks/useSEO";
 export function ServiceDetail() {
   const { id } = useParams();
   const { language, t, paths } = useLanguage();
-  const service = services.find((s) => s.id === id);
+  
+  // Find service by localized slug
+  const service = services.find((s) => s.slugDE === id || s.slugTR === id);
 
   const servicesSegment = language === 'de' ? 'leistungen' : 'hizmetler';
-  const altServicesSegment = language === 'de' ? 'hizmetler' : 'leistungen';
+  const altLang = language === 'de' ? 'tr' : 'de';
+  const altServicesSegment = altLang === 'de' ? 'leistungen' : 'hizmetler';
 
   useSEO({
     title: service
@@ -23,10 +26,12 @@ export function ServiceDetail() {
       ? (language === 'de' ? service.descriptionDE : service.description)
       : '',
     lang: language,
-    canonical: service ? `${SITE_URL}/${language}/${servicesSegment}/${service.id}` : undefined,
+    canonical: service 
+      ? `${SITE_URL}/${language}/${servicesSegment}/${language === 'de' ? service.slugDE : service.slugTR}` 
+      : undefined,
     alternateLang: service ? {
-      lang: language === 'de' ? 'tr' : 'de',
-      href: `${SITE_URL}/${language === 'de' ? 'tr' : 'de'}/${altServicesSegment}/${service.id}`,
+      lang: altLang,
+      href: `${SITE_URL}/${altLang}/${altServicesSegment}/${altLang === 'de' ? service.slugDE : service.slugTR}`,
     } : undefined,
   });
 

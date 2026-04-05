@@ -3,6 +3,8 @@ import { Home, Users, BookOpen, Globe, Shield, Heart, Plane, UserCheck, Gavel } 
 export const services = [
   {
     id: "familienrecht",
+    slugDE: "familienrecht",
+    slugTR: "aile-hukuku",
     icon: Users,
     title: "Familienrecht & Scheidung",
     titleTR: "Aile Hukuku ve Boşanma",
@@ -49,6 +51,8 @@ Wir begleiten Sie durch den gesamten Prozess — zuverlässig, transparent und m
   },
   {
     id: "vollmacht-apostille",
+    slugDE: "vollmacht-apostille",
+    slugTR: "vekaletname-ve-apostil",
     icon: Shield,
     title: "Vollmacht & Apostille",
     titleTR: "Vekaletname & Apostil",
@@ -105,6 +109,8 @@ Wir begleiten Sie durch den gesamten Prozess — schnell, zuverlässig und mit l
   },
   {
     id: "migrationsrecht",
+    slugDE: "migrationsrecht",
+    slugTR: "goc-hukuku",
     icon: Plane,
     title: "Migrationsrecht",
     titleTR: "Göç Hukuku",
@@ -143,6 +149,8 @@ Unsere Kanzlei ist Mitglied der Rechtsanwaltskammer Karlsruhe (registriert gemä
   },
   {
     id: "strafrecht",
+    slugDE: "strafrecht",
+    slugTR: "ceza-hukuku",
     icon: Gavel,
     title: "Strafrecht",
     titleTR: "Ceza Hukuku",
@@ -196,6 +204,8 @@ Wir begleiten Sie durch den gesamten Prozess — zuverlässig, transparent und m
   },
   {
     id: "tanima-ve-tenfiz",
+    slugDE: "tanima-ve-tenfiz",
+    slugTR: "tanima-ve-tenfiz",
     icon: Users,
     title: "Tanıma & Tenfiz",
     titleTR: "Tanıma ve Tenfiz",
@@ -242,6 +252,8 @@ Wir begleiten Sie durch den gesamten Prozess — zuverlässig, transparent und m
   },
   {
     id: "mavi-kart",
+    slugDE: "mavi-kart",
+    slugTR: "mavi-kart",
     icon: UserCheck,
     title: "Mavi Kart (Blaue Karte)",
     titleTR: "Mavi Kart",
@@ -318,6 +330,8 @@ Unsere Kanzlei steht Ihnen mit fundierter Expertise im türkischen und deutsch-t
   },
   {
     id: "icra-ve-iflas",
+    slugDE: "icra-ve-iflas",
+    slugTR: "icra-ve-iflas",
     icon: Gavel,
     title: "Zwangsvollstreckung & Forderungsbeitreibung in der Türkei",
     titleTR: "Türkiye'de İcra ve İflas",
@@ -399,6 +413,8 @@ Wir begleiten Sie durch den gesamten Prozess — schnell, zuverlässig und mit l
   },
   {
     id: "erbrecht",
+    slugDE: "erbrecht",
+    slugTR: "miras-hukuku",
     icon: BookOpen,
     title: "Erbrecht",
     titleTR: "Miras Hukuku",
@@ -450,6 +466,8 @@ Vertrauen Sie auf unsere langjährige Erfahrung im deutsch-türkischen Erbrecht:
   },
   {
     id: "sorgerecht",
+    slugDE: "sorgerecht",
+    slugTR: "velayet",
     icon: Heart,
     title: "Sorgerecht",
     titleTR: "Velayet",
@@ -496,6 +514,8 @@ Unsere Kanzlei ist auf deutsch-türkisches Familienrecht spezialisiert und begle
   },
   {
     id: "immobilienrecht",
+    slugDE: "immobilienrecht",
+    slugTR: "gayrimenkul-hukuku",
     icon: Home,
     title: "Immobilienrecht",
     titleTR: "Gayrimenkul Hukuku",

@@ -10,6 +10,7 @@ interface SEOConfig {
   ogType?: string;
   lang: 'de' | 'tr';
   alternateLang?: { lang: string; href: string };
+  xDefault?: string;
   noindex?: boolean;
 }
 
@@ -69,16 +70,18 @@ export function useSEO(config: SEOConfig) {
     setMetaTag('twitter:description', config.description, true);
     setMetaTag('twitter:image', finalOgImage, true);
 
-    // Hreflang alternate
+    // Lang alternates
+    const langAlternateHreflang = config.lang === 'de' ? 'tr' : 'de';
     if (config.alternateLang) {
       setLinkTag('alternate', config.alternateLang.href, { hreflang: config.alternateLang.lang });
+      setLinkTag('alternate', canonicalUrl, { hreflang: config.lang });
     }
 
     // x-default hreflang (always points to German version)
-    const xDefaultUrl = config.lang === 'de'
-      ? canonicalUrl
-      : canonicalUrl.replace('/tr/', '/de/');
-    setLinkTag('alternate', xDefaultUrl, { hreflang: 'x-default' });
+    const xDefaultUrl = config.xDefault || (config.lang === 'de' ? canonicalUrl : config.alternateLang?.href);
+    if (xDefaultUrl) {
+      setLinkTag('alternate', xDefaultUrl, { hreflang: 'x-default' });
+    }
 
     // Robots
     if (config.noindex) {

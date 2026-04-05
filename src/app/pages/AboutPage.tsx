@@ -14,7 +14,7 @@ export function AboutPage() {
       ? 'Erfahren Sie mehr über Avukat Hasan Doğru und seine Kanzlei in Mannheim und Ankara.'
       : 'Avukat Hasan Doğru ve Mannheim ile Ankara\'daki bürosu hakkında daha fazla bilgi edinin.',
     lang: language,
-    canonical: `${SITE_URL}/${language}/${aboutPath}`,
+    canonical: `${SITE_URL}/${language}/${language === 'de' ? 'ueber-uns' : 'hakkimizda'}`,
     alternateLang: {
       lang: language === 'de' ? 'tr' : 'de',
       href: `${SITE_URL}/${language === 'de' ? 'tr/hakkimizda' : 'de/ueber-uns'}`,
