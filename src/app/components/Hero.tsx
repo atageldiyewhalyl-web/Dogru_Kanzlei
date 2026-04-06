@@ -1,5 +1,5 @@
 import { motion } from "motion/react";
-import heroImage from "@/assets/Hero 1.png";
+import heroImage from "@/assets/hero.avif";
 import { ArrowRight, Scale, Globe, FileText } from "lucide-react";
 import { useNavigate } from "react-router";
 import { useLanguage } from "../context/LanguageContext";
@@ -114,6 +114,7 @@ export function Hero() {
                 alt="Avukat Hasan Doğru" 
                 width={540}
                 height={675}
+                fetchPriority="high"
                 className="w-full h-full object-cover object-top opacity-90 transition-transform duration-1000 hover:scale-105"
               />
               <div className="absolute inset-x-0 bottom-0 h-3/5 bg-gradient-to-t from-[#1C3829] via-[#1C3829]/60 to-transparent opacity-90" />

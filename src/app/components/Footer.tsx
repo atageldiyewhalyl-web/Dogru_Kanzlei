@@ -1,4 +1,4 @@
-import logoImage from "@/assets/30fbe893025c3fe015e5b6962dda4011264eeccb.png";
+import logoImage from "@/assets/logo.avif";
 import { Mail, Phone, MapPin } from "lucide-react";
 import { Link } from "react-router";
 import { useLanguage } from "../context/LanguageContext";

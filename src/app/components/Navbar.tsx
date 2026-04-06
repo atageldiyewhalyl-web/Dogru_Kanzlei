@@ -2,7 +2,7 @@ import { useEffect, useState } from "react";
 import { Menu, X, Globe } from "lucide-react";
 import { Link, useLocation, useNavigate } from "react-router";
 import { useLanguage } from "../context/LanguageContext";
-import logoImage from "@/assets/30fbe893025c3fe015e5b6962dda4011264eeccb.png";
+import logoImage from "@/assets/logo.avif";
 
 const CALENDLY_URL = "https://calendly.com/hasand9366/30min";
 

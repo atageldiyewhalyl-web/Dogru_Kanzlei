@@ -5,11 +5,11 @@ import { motion } from "motion/react";
 import { useLanguage } from "../context/LanguageContext";
 
 // Mobile background images
-import tanimaImg from "@/assets/services/tanima.png";
-import migrationImg from "@/assets/services/migration.png";
-import inheritanceImg from "@/assets/services/inheritance.png";
-import custodyImg from "@/assets/services/custody.png";
-import criminalImg from "@/assets/services/criminal.png";
+import tanimaImg from "@/assets/services/tanima.avif";
+import migrationImg from "@/assets/services/migration.avif";
+import inheritanceImg from "@/assets/services/inheritance.avif";
+import custodyImg from "@/assets/services/custody.avif";
+import criminalImg from "@/assets/services/criminal.avif";
 
 export function PracticeAreas() {
   const { t, language, paths } = useLanguage();
@@ -58,7 +58,7 @@ export function PracticeAreas() {
               >
                 {/* Mobile Background */}
                 <div className="md:hidden absolute inset-0 z-0" aria-hidden="true">
-                  <img src={tanimaImg} alt="" width={600} height={400} className="w-full h-full object-cover opacity-60" />
+                  <img src={tanimaImg} alt="" width={600} height={400} loading="lazy" decoding="async" className="w-full h-full object-cover opacity-60" />
                   <div className="absolute inset-0 bg-gradient-to-t from-[#1C3829] via-[#1C3829]/70 to-transparent" />
                 </div>
 
@@ -96,7 +96,7 @@ export function PracticeAreas() {
               >
                 {/* Mobile Background */}
                 <div className="md:hidden absolute inset-0 z-0" aria-hidden="true">
-                  <img src={migrationImg} alt="" width={600} height={400} className="w-full h-full object-cover opacity-60" />
+                  <img src={migrationImg} alt="" width={600} height={400} loading="lazy" decoding="async" className="w-full h-full object-cover opacity-60" />
                   <div className="absolute inset-0 bg-gradient-to-t from-[#1C3829] via-[#1C3829]/70 to-transparent" />
                 </div>
 
@@ -127,7 +127,7 @@ export function PracticeAreas() {
               >
                 {/* Mobile Background */}
                 <div className="md:hidden absolute inset-0 z-0" aria-hidden="true">
-                  <img src={inheritanceImg} alt="" width={600} height={400} className="w-full h-full object-cover opacity-60" />
+                  <img src={inheritanceImg} alt="" width={600} height={400} loading="lazy" decoding="async" className="w-full h-full object-cover opacity-60" />
                   <div className="absolute inset-0 bg-gradient-to-t from-[#1C3829] via-[#1C3829]/70 to-transparent" />
                 </div>
 
@@ -158,7 +158,7 @@ export function PracticeAreas() {
               >
                 {/* Mobile Background */}
                 <div className="md:hidden absolute inset-0 z-0" aria-hidden="true">
-                  <img src={custodyImg} alt="" width={600} height={400} className="w-full h-full object-cover opacity-60" />
+                  <img src={custodyImg} alt="" width={600} height={400} loading="lazy" decoding="async" className="w-full h-full object-cover opacity-60" />
                   <div className="absolute inset-0 bg-gradient-to-t from-[#1C3829] via-[#1C3829]/70 to-transparent" />
                 </div>
 
@@ -198,7 +198,7 @@ export function PracticeAreas() {
 
                 {/* Mobile Background */}
                 <div className="md:hidden absolute inset-0 z-0" aria-hidden="true">
-                  <img src={criminalImg} alt="" width={600} height={400} className="w-full h-full object-cover opacity-60" />
+                  <img src={criminalImg} alt="" width={600} height={400} loading="lazy" decoding="async" className="w-full h-full object-cover opacity-60" />
                   <div className="absolute inset-0 bg-gradient-to-t from-[#1C3829] via-[#1C3829]/70 to-transparent" />
                 </div>
 
