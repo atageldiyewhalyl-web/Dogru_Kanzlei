@@ -20,21 +20,31 @@ export function Hero() {
   };
 
   return (
-    <section className="relative min-h-screen bg-[#1C3829] overflow-hidden flex flex-col justify-center pt-40 pb-0 lg:pt-0">
-      {/* High-prestige background grid & gradients */}
-      <div className="absolute inset-0 pointer-events-none opacity-20 bg-[linear-gradient(to_right,#B8963E_1px,transparent_1px),linear-gradient(to_bottom,#B8963E_1px,transparent_1px)] bg-[size:100px_100px] [mask-image:radial-gradient(ellipse_60%_60%_at_50%_50%,#000_10%,transparent_100%)]" />
-      <div className="absolute top-0 left-0 w-full h-full bg-gradient-to-b from-[#1C3829]/70 via-[#1C3829]/40 to-[#1a3326] pointer-events-none z-0" />
+    <section className="relative min-h-screen bg-[#1C3829] overflow-hidden flex flex-col justify-center pt-40 pb-0 lg:pt-0 hero-instant">
+      {/* Background with priority for first paint */}
+      <div className="absolute inset-0 z-0">
+        <motion.div
+          initial={{ opacity: 0.5 }}
+          animate={{ opacity: 1 }}
+          transition={{ duration: 0.5 }}
+          className="absolute inset-0 z-0 overflow-hidden"
+        >
+          {/* High-prestige background grid & gradients */}
+          <div className="absolute inset-0 pointer-events-none opacity-20 bg-[linear-gradient(to_right,#B8963E_1px,transparent_1px),linear-gradient(to_bottom,#B8963E_1px,transparent_1px)] bg-[size:100px_100px] [mask-image:radial-gradient(ellipse_60%_60%_at_50%_50%,#000_10%,transparent_100%)]" />
+          <div className="absolute top-0 left-0 w-full h-full bg-gradient-to-b from-[#1C3829]/70 via-[#1C3829]/40 to-[#1a3326] pointer-events-none z-0" />
 
-      {/* Mobile Background Image */}
-      <div className="absolute inset-0 z-0 lg:hidden" aria-hidden="true">
-        <img
-          src={heroImage}
-          alt=""
-          width={1024}
-          height={1280}
-          className="w-full h-full object-cover object-top opacity-30 mix-blend-overlay"
-        />
-        <div className="absolute inset-0 bg-gradient-to-t from-[#1C3829] via-[#1C3829]/80 to-transparent" />
+          {/* Mobile Background Image */}
+          <div className="absolute inset-0 z-0 lg:hidden" aria-hidden="true">
+            <img
+              src={heroImage}
+              alt=""
+              width={1024}
+              height={1280}
+              className="w-full h-full object-cover object-top opacity-30 mix-blend-overlay"
+            />
+            <div className="absolute inset-0 bg-gradient-to-t from-[#1C3829] via-[#1C3829]/80 to-transparent" />
+          </div>
+        </motion.div>
       </div>
 
       {/* Decorative vertical architectural line */}
@@ -98,10 +108,10 @@ export function Hero() {
 
         {/* Right Content - Hero Image */}
         <motion.div 
-          className="lg:col-span-7 relative hidden md:flex justify-center lg:justify-end items-center"
-          initial={{ opacity: 0, x: 30 }}
-          animate={{ opacity: 1, x: 0 }}
-          transition={{ duration: 0.8, delay: 0.2, ease: "easeOut" }}
+          className="lg:col-span-7 relative hidden md:flex justify-center lg:justify-end"
+          initial={{ opacity: 0.5, scale: 0.95 }}
+          animate={{ opacity: 1, scale: 1 }}
+          transition={{ duration: 0.5 }}
         >
           <div className="relative w-full max-w-[480px] lg:max-w-[500px] xl:max-w-[540px] aspect-[4/5] z-10 mt-12 lg:mt-32">
             {/* Gold Frame Accent */}
