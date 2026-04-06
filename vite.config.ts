@@ -22,5 +22,19 @@ export default defineConfig({
 
   build: {
     outDir: 'build',
+    rollupOptions: {
+      output: {
+        // Task 2: Remove hashes from filenames for reliable async loading
+        assetFileNames: 'assets/[name].[ext]',
+        chunkFileNames: 'assets/[name].js',
+        entryFileNames: 'assets/[name].js',
+        // Task 5: Eliminate Unused JS by splitting vendor libraries
+        manualChunks: {
+          'react-vendor': ['react', 'react-dom', 'react-router'],
+          'framer-vendor': ['motion/react'],
+          'ui-vendor': ['lucide-react']
+        }
+      }
+    }
   },
 })

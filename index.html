@@ -4,6 +4,17 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
+    <!-- Task 6: Preload LCP Hero Image (First Tag in Head) -->
+    <link rel="preload" as="image" href="/assets/hero.avif" fetchPriority="high" type="image/avif" />
+
+    <!-- Task 2: Async CSS - No longer hashed via vite.config.ts -->
+    <link rel="preload" href="/assets/index.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <noscript><link rel="stylesheet" href="/assets/index.css"></noscript>
+
+    <!-- Task 1: Async Font Chain decoupling -->
+    <link rel="preload" href="/assets/cormorant-fonts.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <noscript><link rel="stylesheet" href="/assets/cormorant-fonts.css"></noscript>
+
     <!-- Primary Meta Tags (overridden dynamically per page by useSEO hook) -->
     <title>Avukat Hasan Doğru | Doğru Kanzlei Mannheim</title>
     <meta name="description" content="Avukat Hasan Doğru für türkisches und deutsches Recht in Mannheim. Familienrecht, Erbrecht, Mietrecht, Strafrecht und grenzüberschreitende Rechtsberatung. Kostenlose Erstberatung." />
@@ -35,12 +46,8 @@
     <meta name="geo.region" content="DE-BW" />
     <meta name="geo.placename" content="Mannheim" />
 
-    <!-- Google Search Console Verification (replace with actual code) -->
-    <!-- <meta name="google-site-verification" content="YOUR_VERIFICATION_CODE" /> -->
-
-    <!-- LCP Preloading & Resource Hints (Tasks 2 & 5) -->
+    <!-- Resource Hints (Task 5) -->
     <link rel="dns-prefetch" href="https://fonts.googleapis.com">
-    <link rel="preload" href="/src/assets/hero.avif" as="image" fetchPriority="high" type="image/avif" />
     <link rel="preload" href="/src/assets/fonts/Inter.woff2" as="font" type="font/woff2" crossorigin="anonymous" />
     
     <!-- Critical CSS (Task 1: Above-the-fold styles) -->
