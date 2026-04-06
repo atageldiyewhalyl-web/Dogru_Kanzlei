@@ -84,35 +84,43 @@ export function Hizmetler() {
                   <service.icon
                     size={28}
                     strokeWidth={1}
-                    className="text-[#1C3829] group-hover:text-[#B8963E] transition-colors duration-500"
+                    className="text-[#1C3829] group-hover:text-[#8B6E2A] transition-colors duration-500"
                   />
                 </div>
 
                 {/* Category */}
-                <div className="font-sans text-[10px] font-bold tracking-[0.2em] text-[#B8963E] uppercase mb-4">
-                  {language === 'de' ? service.title : service.titleTR}
+                <div className="font-sans text-[10px] font-bold tracking-[0.2em] text-[#7A5F20] uppercase mb-4">
+                  <span lang={language === 'tr' ? 'tr' : 'de'}>
+                    {language === 'de' ? service.title : service.titleTR}
+                  </span>
                 </div>
 
                 {/* Title */}
                 <h3 className="font-serif text-[32px] md:text-[36px] text-[#1C3829] leading-tight mb-8">
-                  {language === 'de' ? service.title : service.titleTR}
+                  <span lang={language === 'tr' ? 'tr' : 'de'}>
+                    {language === 'de' ? service.title : service.titleTR}
+                  </span>
                 </h3>
 
                 {/* Divider Line */}
-                <div className="w-full h-[1px] bg-black/5 mb-8 group-hover:bg-[#B8963E]/30 transition-colors duration-500" />
+                <div className="w-full h-[1px] bg-black/5 mb-8 group-hover:bg-[#8B6E2A]/30 transition-colors duration-500" />
 
                 {/* Description */}
                 <p className="font-sans text-[14px] text-[#6a6a6a] leading-relaxed font-light mb-10 line-clamp-3">
-                  {language === 'de' ? service.descriptionDE : service.description}
+                  <span lang={language === 'tr' ? 'tr' : 'de'}>
+                    {language === 'de' ? service.descriptionDE : service.description}
+                  </span>
                 </p>
 
                 {/* Details / Scope */}
                 <div className="font-sans text-[9px] font-medium tracking-[0.1em] text-[#aaa8a0] uppercase mb-10">
-                  {language === 'de' ? service.detailDE : service.detail}
+                  <span lang={language === 'tr' ? 'tr' : 'de'}>
+                    {language === 'de' ? service.detailDE : service.detail}
+                  </span>
                 </div>
 
                 {/* Link Action */}
-                <div className="flex items-center gap-2 font-sans text-[10px] font-bold tracking-[0.2em] text-[#1C3829] uppercase group-hover:text-[#B8963E] transition-all duration-500 mt-auto">
+                <div className="flex items-center gap-2 font-sans text-[10px] font-bold tracking-[0.2em] text-[#1C3829] uppercase group-hover:text-[#7A5F20] transition-all duration-500 mt-auto">
                   {t("practice_view_detail")}
                   <ArrowRight size={14} className="transition-transform duration-500 group-hover:translate-x-2" />
                 </div>
@@ -132,23 +140,23 @@ export function Hizmetler() {
           <div className="relative z-10 max-w-2xl text-left">
             <h2 className="font-serif text-3xl md:text-5xl text-white mb-8 leading-tight">
               {language === 'de' ? (
-                <>Grenzüberschreitende <br /> <em className="italic text-[#B8963E] font-normal">Rechtslösungen</em></>
+                <>Grenzüberschreitende <br /> <em className="italic text-[#8B6E2A] font-normal">Rechtslösungen</em></>
               ) : (
-                <>Uluslararası Hukukta <br /> <em className="italic text-[#B8963E] font-normal">Sınır Tanımayan Çözümler</em></>
+                <><span lang="tr">Uluslararası Hukukta</span> <br /> <em className="italic text-[#8B6E2A] font-normal"><span lang="tr">Sınır Tanımayan Çözümler</span></em></>
               )}
             </h2>
             <p className="font-sans text-white/50 text-lg mb-0 leading-relaxed font-light">
               {language === 'de'
                 ? 'Mit unseren Büros in Mannheim und Ankara bieten wir fachkundige Beratung in beiden Rechtssystemen.'
-                : 'Mannheim ve Ankara ofislerimizle her iki ülkenin hukuk sisteminde uzman danışmanlık sağlıyoruz.'}
+                : <span lang="tr">'Mannheim ve Ankara ofislerimizle her iki ülkenin hukuk sisteminde uzman danışmanlık sağlıyoruz.'</span>}
             </p>
           </div>
           <div className="relative z-10 flex-shrink-0">
             <Link
               to={paths.contact}
-              className="inline-flex items-center gap-4 bg-[#B8963E] text-white font-sans text-[11px] font-bold tracking-[0.2em] uppercase px-12 py-6 hover:bg-[#a68635] transition-all"
+              className="inline-flex items-center gap-4 bg-[#8B6E2A] text-white font-sans text-[11px] font-bold tracking-[0.2em] uppercase px-12 py-6 hover:bg-[#7A5F20] transition-all"
             >
-              {language === 'de' ? 'JETZT BERATEN LASSEN' : 'ŞİMDİ DANIŞIN'} <ArrowRight size={16} />
+              {language === 'de' ? 'JETZT BERATEN LASSEN' : <span lang="tr">ŞİMDİ DANIŞIN</span>} <ArrowRight size={16} />
             </Link>
           </div>
         </div>

@@ -61,8 +61,8 @@ export function Hero() {
         >
           {/* Pre-title */}
           <div className="flex items-center gap-4 mb-8">
-            <span className="w-12 h-[1px] bg-[#B8963E]" />
-            <span className="font-sans text-[11px] font-bold tracking-[0.2em] text-[#B8963E] uppercase">
+            <span className="w-12 h-[1px] bg-[#8B6E2A]" />
+            <span className="font-sans text-[11px] font-bold tracking-[0.2em] text-[#7A5F20] uppercase">
               Mannheim · Ankara
             </span>
           </div>
@@ -75,7 +75,7 @@ export function Hero() {
             {t("hero_title_main")}
           </h1>
 
-          <div className="w-24 h-[2px] bg-[#B8963E] mb-8" />
+          <div className="w-24 h-[2px] bg-[#8B6E2A] mb-8" />
 
           {/* Subtitle */}
           <p className="font-serif text-2xl md:text-[28px] font-light italic text-white/90 leading-snug mb-8 max-w-lg">
@@ -91,7 +91,7 @@ export function Hero() {
             <button 
               onClick={() => window.open(CALENDLY_URL, "_blank")}
               aria-label={t("hero_cta_primary")}
-              className="group relative overflow-hidden bg-[#B8963E] text-white font-sans text-[11px] font-bold tracking-[0.15em] uppercase px-10 py-5 transition-all hover:bg-[#a68635] flex items-center gap-3"
+              className="group relative overflow-hidden bg-[#8B6E2A] text-white font-sans text-[11px] font-bold tracking-[0.15em] uppercase px-10 py-5 transition-all hover:bg-[#7A5F20] flex items-center gap-3"
             >
               {t("hero_cta_primary")}
               <ArrowRight className="w-4 h-4 transition-transform group-hover:translate-x-1" aria-hidden="true" />
@@ -99,7 +99,7 @@ export function Hero() {
             <button 
               onClick={() => handleScroll(paths.services)}
               aria-label={t("hero_cta_secondary")}
-              className="group border border-white/20 text-white hover:border-[#B8963E] hover:text-[#B8963E] font-sans text-[11px] font-bold tracking-[0.15em] uppercase px-10 py-5 transition-all bg-white/5 backdrop-blur-sm"
+              className="group border border-white/20 text-white hover:border-[#8B6E2A] hover:text-[#7A5F20] font-sans text-[11px] font-bold tracking-[0.15em] uppercase px-10 py-5 transition-all bg-white/5 backdrop-blur-sm"
             >
               {t("hero_cta_secondary")}
             </button>
@@ -115,13 +115,13 @@ export function Hero() {
         >
           <div className="relative w-full max-w-[480px] lg:max-w-[500px] xl:max-w-[540px] aspect-[4/5] z-10 mt-12 lg:mt-32">
             {/* Gold Frame Accent */}
-            <div className="absolute -top-5 -right-5 w-full h-full border border-[#B8963E]/40 z-0 transition-transform duration-700 hover:translate-x-2 hover:-translate-y-2" />
+            <div className="absolute -top-5 -right-5 w-full h-full border border-[#8B6E2A]/40 z-0 transition-transform duration-700 hover:translate-x-2 hover:-translate-y-2" />
             
             {/* Image Container */}
             <div className="relative w-full h-full bg-[#152a1e] border border-white/10 overflow-hidden z-10 shadow-2xl">
               <img 
                 src={heroImage} 
-                alt="Avukat Hasan Doğru" 
+                alt="Avukat Hasan Doğru - Doğru Kanzlei Mannheim" 
                 width={540}
                 height={675}
                 fetchPriority="high"
@@ -130,9 +130,9 @@ export function Hero() {
               />
               <div className="absolute inset-x-0 bottom-0 h-3/5 bg-gradient-to-t from-[#1C3829] via-[#1C3829]/60 to-transparent opacity-90" />
               
-              <div className="absolute bottom-0 left-0 right-0 p-8 border-t border-[#B8963E]/20 bg-[#1C3829]/40 backdrop-blur-md">
+              <div className="absolute bottom-0 left-0 right-0 p-8 border-t border-[#8B6E2A]/20 bg-[#1C3829]/40 backdrop-blur-md">
                 <div className="font-serif text-2xl font-medium text-white mb-2 tracking-wide">{t("hero_title_pre")} Hasan Doğru</div>
-                <div className="font-sans text-[11px] tracking-[0.2em] uppercase text-[#B8963E]">{t("lawyer_role")}</div>
+                <div className="font-sans text-[11px] tracking-[0.2em] uppercase text-[#7A5F20]">{t("lawyer_role")}</div>
               </div>
             </div>
 

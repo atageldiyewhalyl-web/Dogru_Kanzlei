@@ -114,6 +114,7 @@ export function Testimonials() {
             <div className="testimonial-nav-controls" style={{ display: "flex", gap: 8 }}>
               <button
                 onClick={prev}
+                aria-label="Vorheriges Testimonial"
                 style={{
                   width: 44,
                   height: 44,

@@ -34,8 +34,8 @@ export function BlogPage() {
           className="mb-20"
         >
           <div className="flex items-center gap-4 mb-10">
-            <div className="w-10 h-[1px] bg-[#B8963E]" />
-            <span className="font-sans text-[10px] font-bold tracking-[0.2em] text-[#B8963E] uppercase">
+            <div className="w-10 h-[1px] bg-[#8B6E2A]" />
+            <span className="font-sans text-[10px] font-bold tracking-[0.2em] text-[#7A5F20] uppercase">
               {t("blog_badge")}
             </span>
           </div>
@@ -70,27 +70,35 @@ export function BlogPage() {
 
                 {/* Meta */}
                 <div className="flex items-center gap-4 mb-3 text-left">
-                  <span className="font-sans text-[10px] font-bold tracking-[0.14em] uppercase text-[#B8963E]">
-                    {language === 'de' ? post.categoryDE : post.category}
+                  <span className="font-sans text-[10px] font-bold tracking-[0.14em] uppercase text-[#7A5F20]">
+                    <span lang={language === 'tr' ? 'tr' : 'de'}>
+                      {language === 'de' ? post.categoryDE : post.category}
+                    </span>
                   </span>
                   <span className="w-1 h-1 rounded-full bg-[#d4cfc6] inline-block" />
                   <span className="font-sans text-xs font-light text-[#aaa8a0]">
-                    {language === 'de' ? post.dateDE : post.dateTR}
+                    <span lang={language === 'tr' ? 'tr' : 'de'}>
+                      {language === 'de' ? post.dateDE : post.dateTR}
+                    </span>
                   </span>
                 </div>
 
                 {/* Title */}
-                <h2 className="font-serif text-[22px] font-semibold text-[#1C3829] leading-[1.3] mb-3 group-hover:text-[#B8963E] transition-colors text-left no-justify">
-                  {language === 'de' ? post.titleDE : post.titleTR}
+                <h2 className="font-serif text-[22px] font-semibold text-[#1C3829] leading-[1.3] mb-3 group-hover:text-[#7A5F20] transition-colors text-left no-justify">
+                  <span lang={language === 'tr' ? 'tr' : 'de'}>
+                    {language === 'de' ? post.titleDE : post.titleTR}
+                  </span>
                 </h2>
 
                 {/* Excerpt */}
                 <p className="font-sans text-sm font-light text-[#6a6a6a] leading-[1.7] mb-5 text-left no-justify">
-                  {language === 'de' ? post.excerptDE : post.excerptTR}
+                  <span lang={language === 'tr' ? 'tr' : 'de'}>
+                    {language === 'de' ? post.excerptDE : post.excerptTR}
+                  </span>
                 </p>
 
                 {/* Read more */}
-                <div className="flex items-center gap-2 font-sans text-xs font-bold tracking-[0.1em] uppercase text-[#1C3829] group-hover:text-[#B8963E] transition-colors">
+                <div className="flex items-center gap-2 font-sans text-xs font-bold tracking-[0.1em] uppercase text-[#1C3829] group-hover:text-[#7A5F20] transition-colors">
                   <span>{t("blog_read_more")}</span>
                   <ArrowRight size={13} className="transition-transform duration-300 group-hover:translate-x-1" />
                 </div>

@@ -195,85 +195,93 @@ export function Footer() {
             ))}
           </div>
 
-          {/* Contact */}
-          <div>
-            <div
-              style={{
-                fontFamily: "'Lato', sans-serif",
-                fontSize: 10,
-                fontWeight: 700,
-                letterSpacing: "0.15em",
-                textTransform: "uppercase",
-                color: "#B8963E",
-                marginBottom: 24,
-              }}
-            >
-              {t("footer_contact_info")}
-            </div>
-            <div
-              style={{
-                fontFamily: "'Lato', sans-serif",
-                fontSize: 13,
-                fontWeight: 400,
-                color: "rgba(255,255,255,0.7)",
-                lineHeight: 1.7,
-              }}
-            >
-              <div style={{ display: "flex", alignItems: "flex-start", gap: 10, marginBottom: 14 }}>
-                <Mail size={14} color="#B8963E" style={{ marginTop: 4 }} />
-                <div style={{ display: "flex", flexDirection: "column", gap: 4 }}>
-                  <a href="mailto:info@hasandogru.de" style={{ color: "inherit", textDecoration: "none" }}>info@hasandogru.de</a>
-                  <a href="mailto:Avukat.hasandogru@outlook.de" style={{ color: "inherit", textDecoration: "none" }}>Avukat.hasandogru@outlook.de</a>
-                </div>
-              </div>
-              <div style={{ display: "flex", alignItems: "center", gap: 10, marginBottom: 14 }}>
-                <Phone size={14} color="#B8963E" />
-                <span>+4917661221210</span>
-              </div>
-              <div style={{ display: "flex", alignItems: "center", gap: 10, marginBottom: 14 }}>
-                <Phone size={14} color="#B8963E" />
-                <span>+905332375918</span>
-              </div>
-              <div style={{ display: "flex", alignItems: "flex-start", gap: 10, marginBottom: 14 }}>
-                <MapPin size={14} color="#B8963E" style={{ marginTop: 4 }} />
-                <span>R1 2,3, 68161 Mannheim, Deutschland</span>
-              </div>
-              <div style={{ display: "flex", alignItems: "flex-start", gap: 10 }}>
-                <MapPin size={14} color="#B8963E" style={{ marginTop: 4 }} />
-                <span>Aşağı Öveçler Mahallesi 1322 Cadde 45/9, Çankaya Ankara</span>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        {/* Legal Disclaimer Section */}
-        <div
-          style={{
-            marginTop: 80,
-            marginBottom: 20,
-          }}
-        >
-          <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr 1fr", gap: 40 }} className="footer-disclaimer-grid">
-            <div>
-              <span style={{ color: "#B8963E", fontSize: 9, fontWeight: 700, textTransform: "uppercase", letterSpacing: "0.2em", display: "block", marginBottom: 16, opacity: 0.8 }}>Rechtlicher Hinweis</span>
-              <p style={{ color: "rgba(255,255,255,0.6)", fontSize: 11, lineHeight: 1.8, margin: 0, fontFamily: "'Lato', sans-serif" }}>
-                Die Kanzlei berät ausschließlich im türkischen Recht. Eine Beratung oder Vertretung im deutschen Recht findet nicht statt. Registriert als ausländischer Rechtsanwalt gemäß § 207 BRAO.
-              </p>
-            </div>
-            <div>
-              <span style={{ color: "#B8963E", fontSize: 9, fontWeight: 700, textTransform: "uppercase", letterSpacing: "0.2em", display: "block", marginBottom: 16, opacity: 0.8 }}>Yasal Uyarı</span>
-              <p style={{ color: "rgba(255,255,255,0.6)", fontSize: 11, lineHeight: 1.8, margin: 0, fontFamily: "'Lato', sans-serif" }}>
-                Büromuz yalnızca Türk hukuku alanında danışmanlık vermektedir. Alman hukuku konusunda danışmanlık veya temsil hizmeti verilmemektedir. § 207 BRAO uyarınca kayıtlı yabancı avukat.
-              </p>
-            </div>
-            <div>
-              <span style={{ color: "#B8963E", fontSize: 9, fontWeight: 700, textTransform: "uppercase", letterSpacing: "0.2em", display: "block", marginBottom: 16, opacity: 0.8 }}>Legal Notice</span>
-              <p style={{ color: "rgba(255,255,255,0.6)", fontSize: 11, lineHeight: 1.8, margin: 0, fontFamily: "'Lato', sans-serif" }}>
-                The firm provides legal advice exclusively in Turkish law. We do not provide advice or representation in German law. Registered as a foreign lawyer according to § 207 BRAO.
-              </p>
-            </div>
-          </div>
-        </div>
+           {/* Contact */}
+           <div>
+             <div
+               style={{
+                 fontFamily: "'Lato', sans-serif",
+                 fontSize: 10,
+                 fontWeight: 700,
+                 letterSpacing: "0.15em",
+                 textTransform: "uppercase",
+                 color: "#8B6E2A", // Task 2: Darker gold for text contrast
+                 marginBottom: 24,
+               }}
+             >
+               {t("footer_contact_info")}
+             </div>
+             <div
+               style={{
+                 fontFamily: "'Lato', sans-serif",
+                 fontSize: 13,
+                 fontWeight: 400,
+                 color: "rgba(255,255,255,0.7)",
+                 lineHeight: 1.7,
+               }}
+             >
+               <div style={{ display: "flex", alignItems: "flex-start", gap: 10, marginBottom: 14 }}>
+                 <Mail size={14} color="#8B6E2A" style={{ marginTop: 4 }} />
+                 <div style={{ display: "flex", flexDirection: "column", gap: 4 }}>
+                   <a href="mailto:info@hasandogru.de" style={{ color: "inherit", textDecoration: "none" }}>info@hasandogru.de</a>
+                   <a href="mailto:Avukat.hasandogru@outlook.de" style={{ color: "inherit", textDecoration: "none" }}>Avukat.hasandogru@outlook.de</a>
+                 </div>
+               </div>
+               <div style={{ display: "flex", alignItems: "center", gap: 10, marginBottom: 14 }}>
+                 <Phone size={14} color="#8B6E2A" />
+                 <a 
+                   href="https://wa.me/4917661221210" 
+                   aria-label="Kontakt per WhatsApp" 
+                   style={{ color: "inherit", textDecoration: "none" }}
+                   target="_blank"
+                   rel="noopener noreferrer"
+                 >
+                   +4917661221210
+                 </a>
+               </div>
+               <div style={{ display: "flex", alignItems: "center", gap: 10, marginBottom: 14 }}>
+                 <Phone size={14} color="#8B6E2A" />
+                 <span>+905332375918</span>
+               </div>
+               <div style={{ display: "flex", alignItems: "flex-start", gap: 10, marginBottom: 14 }}>
+                 <MapPin size={14} color="#8B6E2A" style={{ marginTop: 4 }} />
+                 <span>R1 2,3, 68161 Mannheim, Deutschland</span>
+               </div>
+               <div style={{ display: "flex", alignItems: "flex-start", gap: 10 }}>
+                 <MapPin size={14} color="#8B6E2A" style={{ marginTop: 4 }} />
+                 <span>Aşağı Öveçler Mahallesi 1322 Cadde 45/9, Çankaya Ankara</span>
+               </div>
+             </div>
+           </div>
+         </div>
+ 
+         {/* Legal Disclaimer Section */}
+         <div
+           style={{
+             marginTop: 80,
+             marginBottom: 20,
+           }}
+         >
+           <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr 1fr", gap: 40 }} className="footer-disclaimer-grid">
+             <div>
+               <span style={{ color: "#C9A84C", fontSize: 11, fontWeight: 700, textTransform: "uppercase", letterSpacing: "0.2em", display: "block", marginBottom: 16, opacity: 0.9 }}>Rechtlicher Hinweis</span>
+               <p style={{ color: "rgba(255,255,255,0.6)", fontSize: 11, lineHeight: 1.8, margin: 0, fontFamily: "'Lato', sans-serif" }}>
+                 Die Kanzlei berät ausschließlich im türkischen Recht. Eine Beratung oder Vertretung im deutschen Recht findet nicht statt. Registriert als ausländischer Rechtsanwalt gemäß § 207 BRAO.
+               </p>
+             </div>
+             <div lang="tr">
+               <span style={{ color: "#C9A84C", fontSize: 11, fontWeight: 700, textTransform: "uppercase", letterSpacing: "0.2em", display: "block", marginBottom: 16, opacity: 0.9 }}>Yasal Uyarı</span>
+               <p style={{ color: "rgba(255,255,255,0.6)", fontSize: 11, lineHeight: 1.8, margin: 0, fontFamily: "'Lato', sans-serif" }}>
+                 Büromuz yalnızca Türk hukuku alanında danışmanlık vermektedir. Alman hukuku konusunda danışmanlık veya temsil hizmeti verilmemektedir. § 207 BRAO uyarınca kayıtlı yabancı avukat.
+               </p>
+             </div>
+             <div>
+               <span style={{ color: "#C9A84C", fontSize: 11, fontWeight: 700, textTransform: "uppercase", letterSpacing: "0.2em", display: "block", marginBottom: 16, opacity: 0.9 }}>Legal Notice</span>
+               <p style={{ color: "rgba(255,255,255,0.6)", fontSize: 11, lineHeight: 1.8, margin: 0, fontFamily: "'Lato', sans-serif" }}>
+                 The firm provides legal advice exclusively in Turkish law. We do not provide advice or representation in German law. Registered as a foreign lawyer according to § 207 BRAO.
+               </p>
+             </div>
+           </div>
+         </div>
 
         {/* Bottom row */}
         <div

@@ -9,14 +9,15 @@ export function WhatsAppButton() {
   const message = encodeURIComponent(
     "Merhaba, hukuki konuda danışmak istiyorum. / Hallo, ich hätte gerne eine rechtliche Beratung."
   );
-  const url = `https://wa.me/${phone}?text=${message}`;
+  const url = `https://wa.me/${phone}`; // Unified URL (Task 3)
+  const whatsappLabel = "Kontakt per WhatsApp"; // Unified Label (Task 3)
 
   return (
     <a
       href={url}
       target="_blank"
       rel="noopener noreferrer"
-      aria-label={t("contact_whatsapp_btn")}
+      aria-label={whatsappLabel}
       onMouseEnter={() => setHovered(true)}
       onMouseLeave={() => setHovered(false)}
       className="fixed z-[200] flex items-center gap-3 bg-[#25D366] text-white no-underline rounded-full shadow-[0_6px_25px_rgba(37,211,102,0.45)] transition-all duration-300 bottom-6 right-6 md:bottom-8 md:right-8"

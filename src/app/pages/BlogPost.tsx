@@ -80,13 +80,13 @@ export function BlogPost() {
         <nav aria-label="Breadcrumb" className="mb-8">
           <ol className="flex items-center gap-2 font-sans text-xs tracking-widest uppercase">
             <li>
-              <Link to={paths.home} className="text-[#6a6a6a] hover:text-[#B8963E] transition-colors">
+              <Link to={paths.home} className="text-[#6a6a6a] hover:text-[#7A5F20] transition-colors">
                 {t("nav_home")}
               </Link>
             </li>
             <li className="text-[#6a6a6a]">/</li>
             <li>
-              <Link to={paths.blog} className="text-[#B8963E] font-bold hover:opacity-70 transition-opacity">
+              <Link to={paths.blog} className="text-[#7A5F20] font-bold hover:opacity-70 transition-opacity">
                 Blog
               </Link>
             </li>
@@ -101,24 +101,28 @@ export function BlogPost() {
           transition={{ duration: 0.6 }}
         >
           {/* Category */}
-          <span className="font-sans text-[10px] font-bold tracking-[0.2em] text-[#B8963E] uppercase">
-            {category}
+          <span className="font-sans text-[10px] font-bold tracking-[0.2em] text-[#7A5F20] uppercase">
+            <span lang={language === 'tr' ? 'tr' : 'de'}>{category}</span>
           </span>
 
           {/* Title */}
           <h1 className="font-serif text-[clamp(32px,4vw,48px)] text-[#1C3829] leading-[1.15] font-medium mt-4 mb-6">
-            {title}
+            <span lang={language === 'tr' ? 'tr' : 'de'}>{title}</span>
           </h1>
 
           {/* Meta */}
           <div className="flex items-center gap-6 mb-10 text-[#6a6a6a] font-sans text-sm">
             <div className="flex items-center gap-2">
-              <Calendar size={14} className="text-[#B8963E]" />
-              <span>{date}</span>
+              <Calendar size={14} className="text-[#7A5F20]" />
+              <span>
+                <span lang={language === 'tr' ? 'tr' : 'de'}>{date}</span>
+              </span>
             </div>
             <div className="flex items-center gap-2">
-              <Clock size={14} className="text-[#B8963E]" />
-              <span>{readTime}</span>
+              <Clock size={14} className="text-[#7A5F20]" />
+              <span>
+                <span lang={language === 'tr' ? 'tr' : 'de'}>{readTime}</span>
+              </span>
             </div>
           </div>
 
@@ -133,53 +137,57 @@ export function BlogPost() {
 
           {/* Content */}
           <div className="prose prose-lg max-w-none font-sans text-[#3a3a3a] leading-[1.8] font-medium">
-            {content.split('\n').map((line, idx) => {
-              const trimmedLine = line.trim();
-              
-              if (!trimmedLine) return <div key={idx} className="h-4" />;
+            <span lang={language === 'tr' ? 'tr' : 'de'}>
+              {content.split('\n').map((line, idx) => {
+                const trimmedLine = line.trim();
+                
+                if (!trimmedLine) return <div key={idx} className="h-4" />;
 
-              // Handle Headers
-              if (trimmedLine.startsWith('###')) {
+                // Handle Headers
+                if (trimmedLine.startsWith('###')) {
+                  return (
+                    <h3 key={idx} className="font-serif text-2xl text-[#1C3829] mt-10 mb-4">
+                      {processInlineStyles(trimmedLine.replace('###', '').trim())}
+                    </h3>
+                  );
+                }
+
+                // Handle List Items
+                if (trimmedLine.startsWith('- ')) {
+                  return (
+                    <li key={idx} className="ml-6 mb-2 list-disc">
+                      {processInlineStyles(trimmedLine.replace('- ', '').trim())}
+                    </li>
+                  );
+                }
+
+                // Normal Paragraph
                 return (
-                  <h3 key={idx} className="font-serif text-2xl text-[#1C3829] mt-10 mb-4">
-                    {processInlineStyles(trimmedLine.replace('###', '').trim())}
-                  </h3>
+                  <p key={idx} className="mb-4">
+                    {processInlineStyles(trimmedLine)}
+                  </p>
                 );
-              }
-
-              // Handle List Items
-              if (trimmedLine.startsWith('- ')) {
-                return (
-                  <li key={idx} className="ml-6 mb-2 list-disc">
-                    {processInlineStyles(trimmedLine.replace('- ', '').trim())}
-                  </li>
-                );
-              }
-
-              // Normal Paragraph
-              return (
-                <p key={idx} className="mb-4">
-                  {processInlineStyles(trimmedLine)}
-                </p>
-              );
-            })}
+              })}
+            </span>
           </div>
 
           {/* CTA */}
-          <div className="mt-16 p-8 md:p-12 bg-[#1C3829] border-l-4 border-[#B8963E]">
+          <div className="mt-16 p-8 md:p-12 bg-[#1C3829] border-l-4 border-[#8B6E2A]">
             <h3 className="font-serif text-2xl text-white mb-4">
-              {language === 'de' ? 'Haben Sie Fragen zu diesem Thema?' : 'Bu konuda sorularınız mı var?'}
+              {language === 'de' ? 'Haben Sie Fragen zu diesem Thema?' : <span lang="tr">Bu konuda sorularınız mı var?</span>}
             </h3>
             <p className="font-sans text-white/60 mb-6 leading-relaxed">
-              {language === 'de'
-                ? 'Kontaktieren Sie uns für eine rechtliche Einschätzung Ihres Falles. Wir helfen Ihnen gerne weiter.'
-                : 'Davanızın profesyonel değerlendirmesi için bizimle iletişime geçin. Size yardımcı olmaktan memnuniyet duyarız.'}
+              <span lang={language === 'tr' ? 'tr' : 'de'}>
+                {language === 'de'
+                  ? 'Kontaktieren Sie uns for eine rechtliche Einschätzung Ihres Falles. Wir helfen Ihnen gerne weiter.'
+                  : 'Davanızın profesyonel değerlendirmesi için bizimle iletişime geçin. Size yardımcı olmaktan memnuniyet duyarız.'}
+              </span>
             </p>
             <a
               href={CALENDLY_URL}
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-block bg-[#B8963E] text-white font-sans text-[11px] font-bold tracking-[0.15em] uppercase px-8 py-4 hover:bg-[#a68635] transition-colors"
+              className="inline-block bg-[#8B6E2A] text-white font-sans text-[11px] font-bold tracking-[0.15em] uppercase px-8 py-4 hover:bg-[#7A5F20] transition-colors"
             >
               {t("nav_cta")}
             </a>
@@ -191,7 +199,7 @@ export function BlogPost() {
       {related.length > 0 && (
         <div className="max-w-3xl mx-auto px-6 lg:px-12 mt-20">
           <h3 className="font-serif text-2xl text-[#1C3829] mb-8">
-            {language === 'de' ? 'Weitere Artikel' : 'Diğer Makaleler'}
+            {language === 'de' ? 'Weitere Artikel' : <span lang="tr">Diğer Makaleler</span>}
           </h3>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
             {related.map((r) => (
@@ -204,11 +212,15 @@ export function BlogPost() {
                     className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-[1.04]"
                   />
                 </div>
-                <span className="font-sans text-[10px] font-bold tracking-[0.14em] uppercase text-[#B8963E]">
-                  {language === 'de' ? r.categoryDE : r.category}
+                <span className="font-sans text-[10px] font-bold tracking-[0.14em] uppercase text-[#7A5F20]">
+                  <span lang={language === 'tr' ? 'tr' : 'de'}>
+                    {language === 'de' ? r.categoryDE : r.category}
+                  </span>
                 </span>
-                <h4 className="font-serif text-lg text-[#1C3829] mt-2 group-hover:text-[#B8963E] transition-colors leading-snug">
-                  {language === 'de' ? r.titleDE : r.titleTR}
+                <h4 className="font-serif text-lg text-[#1C3829] mt-2 group-hover:text-[#7A5F20] transition-colors leading-snug">
+                  <span lang={language === 'tr' ? 'tr' : 'de'}>
+                    {language === 'de' ? r.titleDE : r.titleTR}
+                  </span>
                 </h4>
               </Link>
             ))}

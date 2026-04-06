@@ -76,7 +76,7 @@ export function CookieBanner() {
           animate={{ y: 0, opacity: 1 }}
           exit={{ y: 100, opacity: 0 }}
           transition={{ type: "spring", stiffness: 300, damping: 30 }}
-          className="relative pointer-events-auto w-full max-w-4xl mx-auto bg-white shadow-2xl border-t-4 border-[#B8963E]"
+          className="relative pointer-events-auto w-full max-w-4xl mx-auto bg-white shadow-2xl border-t-4 border-[#8B6E2A]"
           style={{ maxHeight: "90vh", overflowY: "auto" }}
         >
           <div className="p-8 lg:p-12">
@@ -84,11 +84,11 @@ export function CookieBanner() {
             <div className="flex items-start justify-between gap-6 mb-8">
               <div className="flex items-start gap-5">
                 <div className="w-12 h-12 bg-[#1C3829] flex items-center justify-center shrink-0">
-                  <Shield size={22} className="text-[#B8963E]" />
+                  <Shield size={22} className="text-[#8B6E2A]" />
                 </div>
                 <div>
                   <div className="flex items-center gap-3 mb-1">
-                    <span className="font-sans text-[10px] font-bold tracking-[0.2em] uppercase text-[#B8963E]">
+                    <span className="font-sans text-[10px] font-bold tracking-[0.2em] uppercase text-[#7A5F20]">
                       Doğru Kanzlei
                     </span>
                   </div>
@@ -107,7 +107,7 @@ export function CookieBanner() {
             {/* Toggle Details */}
             <button
               onClick={() => setShowDetails(!showDetails)}
-              className="flex items-center gap-2 font-sans text-[12px] font-bold tracking-widest text-[#B8963E] uppercase mb-6 hover:text-[#1C3829] transition-colors"
+              className="flex items-center gap-2 font-sans text-[12px] font-bold tracking-widest text-[#7A5F20] uppercase mb-6 hover:text-[#1C3829] transition-colors"
             >
               {showDetails ? <ChevronUp size={14} /> : <ChevronDown size={14} />}
               {c.customize}
@@ -155,7 +155,7 @@ export function CookieBanner() {
             <div className="flex flex-col sm:flex-row gap-3 mb-6">
               <button
                 onClick={acceptAll}
-                className="flex-1 flex items-center justify-center gap-2 py-4 bg-[#1C3829] text-white font-sans text-[11px] font-bold tracking-[0.2em] uppercase hover:bg-[#B8963E] transition-colors"
+                className="flex-1 flex items-center justify-center gap-2 py-4 bg-[#1C3829] text-white font-sans text-[11px] font-bold tracking-[0.2em] uppercase hover:bg-[#8B6E2A] transition-colors"
               >
                 <Check size={14} />
                 {c.acceptAll}
@@ -184,7 +184,7 @@ export function CookieBanner() {
             <div className="flex gap-4 font-sans text-[11px] text-[#6a6a6a]">
               <Link
                 to={paths.datenschutz}
-                className="hover:text-[#B8963E] transition-colors underline-offset-2 hover:underline"
+                className="hover:text-[#7A5F20] transition-colors underline-offset-2 hover:underline"
                 onClick={rejectAll}
               >
                 {c.privacyLink}
@@ -192,7 +192,7 @@ export function CookieBanner() {
               <span>·</span>
               <Link
                 to={paths.impressum}
-                className="hover:text-[#B8963E] transition-colors underline-offset-2 hover:underline"
+                className="hover:text-[#7A5F20] transition-colors underline-offset-2 hover:underline"
                 onClick={rejectAll}
               >
                 {c.imprintLink}
@@ -228,13 +228,14 @@ function CookieRow({
       </div>
       <div className="shrink-0 pt-1">
         {disabled ? (
-          <span className="font-sans text-[10px] font-bold tracking-widest text-[#B8963E] uppercase">
+          <span className="font-sans text-[10px] font-bold tracking-widest text-[#8B6E2A] uppercase">
             {alwaysOnLabel}
           </span>
         ) : (
           <button
             role="switch"
             aria-checked={checked}
+            aria-label={title}
             onClick={() => onChange(!checked)}
             className={`relative w-12 h-6 rounded-full transition-colors duration-200 focus:outline-none ${
               checked ? "bg-[#1C3829]" : "bg-[#d4cfc6]"

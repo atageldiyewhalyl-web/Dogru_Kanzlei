@@ -60,7 +60,7 @@ export function About() {
                   left: 0,
                   right: 0,
                   height: 4,
-                  background: "#B8963E",
+                  background: "#8B6E2A",
                 }}
               />
             </div>
@@ -74,7 +74,7 @@ export function About() {
                 width: "100%",
                 maxWidth: 520,
                 aspectRatio: "4/5",
-                border: "1px solid rgba(184,150,62,0.25)",
+                border: "1px solid rgba(139,110,42,0.25)",
                 zIndex: -1,
               }}
             />
@@ -84,14 +84,14 @@ export function About() {
           <div>
             {/* Section label */}
             <div style={{ display: "flex", alignItems: "center", gap: 12, marginBottom: 20 }}>
-              <div style={{ width: 32, height: 1, background: "#B8963E" }} />
+              <div style={{ width: 32, height: 1, background: "#8B6E2A" }} />
               <span
                 style={{
                   fontFamily: "var(--font-sans)",
                   fontSize: 10,
                   fontWeight: 800,
                   letterSpacing: "0.22em",
-                  color: "#B8963E",
+                  color: "#7A5F20",
                   textTransform: "uppercase",
                 }}
               >
@@ -114,7 +114,7 @@ export function About() {
               <em style={{ fontStyle: "italic", fontWeight: 400 }}>{t("about_subtitle")}</em>
             </h2>
 
-            <div style={{ width: 48, height: 2, background: "#B8963E", marginBottom: 28 }} />
+            <div style={{ width: 48, height: 2, background: "#8B6E2A", marginBottom: 28 }} />
 
             {[t("about_p1"), t("about_p2"), t("about_p3"), t("about_p4")].map((p, idx, arr) => (
               <p
@@ -159,7 +159,7 @@ export function About() {
                     style={{
                       width: 6,
                       height: 6,
-                      background: "#B8963E",
+                      background: "#8B6E2A",
                       flexShrink: 0,
                     }}
                   />
@@ -195,7 +195,7 @@ export function About() {
                   letterSpacing: "0.03em",
                 }}
               >
-                {t("hero_title_pre")} Hasan Doğru
+                {t("hero_title_pre")} <span lang="tr">Hasan Doğru</span>
               </div>
               <div
                 style={{
@@ -204,7 +204,7 @@ export function About() {
                   fontWeight: 600,
                   letterSpacing: "0.14em",
                   textTransform: "uppercase",
-                  color: "#B8963E",
+                  color: "#7A5F20",
                   marginTop: 4,
                 }}
               >
@@ -225,20 +225,20 @@ export function About() {
         >
           <div style={{ maxWidth: 800, margin: "0 auto 64px" }}>
             <div style={{ display: "flex", alignItems: "center", justifyContent: "center", gap: 12, marginBottom: 20 }}>
-              <div style={{ width: 32, height: 1, background: "#B8963E" }} />
+              <div style={{ width: 32, height: 1, background: "#8B6E2A" }} />
               <span
                 style={{
                   fontFamily: "var(--font-sans)",
                   fontSize: 10,
                   fontWeight: 800,
                   letterSpacing: "0.22em",
-                  color: "#B8963E",
+                  color: "#7A5F20",
                   textTransform: "uppercase",
                 }}
               >
                 {t("about_press_badge")}
               </span>
-              <div style={{ width: 32, height: 1, background: "#B8963E" }} />
+              <div style={{ width: 32, height: 1, background: "#8B6E2A" }} />
             </div>
             <h3
               style={{
@@ -265,7 +265,7 @@ export function About() {
                 maxWidth: 650,
               }}
             >
-              {t("about_p1").split("—")[0]}... {t("about_signature_role")} Hasan Doğru&apos;nun profesyonel yolculuğu ve büro açılışına dair basında yer alan haber kupürü.
+              {t("about_p1").split("—")[0]}... {t("about_signature_role")} <span lang="tr">Hasan Doğru</span>'nun profesyonel yolculuğu ve büro açılışına dair basında yer alan haber kupürü.
             </p>
           </div>
 
@@ -290,7 +290,7 @@ export function About() {
             >
               <img
                 src={newsletterImage}
-                alt="Newsletter Cutout"
+                alt="Haber bülteni kupürü - Avukat Hasan Doğru ve Doğru Kanzlei büro açılışı haberi"
                 style={{
                   width: "100%",
                   height: "auto",

@@ -141,7 +141,7 @@ export function Navbar() {
                 fontFamily: "'Lato', sans-serif",
                 fontSize: 9,
                 fontWeight: 700,
-                color: "#B8963E",
+                color: "#7A5F20", // Task 2: Darker gold for text
                 letterSpacing: "0.2em",
                 textTransform: "uppercase",
                 marginTop: 2,
@@ -173,7 +173,7 @@ export function Navbar() {
                 transition: "color 0.2s",
                 padding: "8px 0",
               }}
-              onMouseEnter={(e) => ((e.target as HTMLElement).style.color = "#B8963E")}
+              onMouseEnter={(e) => ((e.target as HTMLElement).style.color = "#7A5F20")}
               onMouseLeave={(e) => ((e.target as HTMLElement).style.color = isLight ? "#3a3a3a" : "rgba(255,255,255,0.9)")}
             >
               {link.label}
@@ -200,7 +200,7 @@ export function Navbar() {
               textTransform: "uppercase",
             }}
           >
-            <Globe size={13} color="#B8963E" aria-hidden="true" />
+            <Globe size={13} color="#7A5F20" aria-hidden="true" />
             {language === 'de' ? 'TR' : 'DE'}
           </button>
 
@@ -213,7 +213,7 @@ export function Navbar() {
               letterSpacing: "0.12em",
               textTransform: "uppercase",
               color: "#ffffff",
-              background: "#B8963E",
+              background: "#8B6E2A", // Task 2: Darker gold for BG contrast
               padding: "12px 24px",
               textDecoration: "none",
               transition: "transform 0.2s, background 0.2s",
@@ -221,11 +221,11 @@ export function Navbar() {
               cursor: "pointer",
             }}
             onMouseEnter={(e) => {
-              (e.target as HTMLElement).style.background = "#9a7c32";
+              (e.target as HTMLElement).style.background = "#7A5F20";
               (e.target as HTMLElement).style.transform = "translateY(-1px)";
             }}
             onMouseLeave={(e) => {
-              (e.target as HTMLElement).style.background = "#B8963E";
+              (e.target as HTMLElement).style.background = "#8B6E2A";
               (e.target as HTMLElement).style.transform = "translateY(0)";
             }}
           >
@@ -256,7 +256,7 @@ export function Navbar() {
           </button>
           <button
             onClick={() => setMobileOpen(!mobileOpen)}
-            aria-label={mobileOpen ? 'Menu schließen' : 'Menu öffnen'}
+            aria-label={mobileOpen ? 'Hauptmenü schließen' : 'Hauptmenü öffnen'}
             style={{ background: "none", border: "none", cursor: "pointer", color: isLight ? "#1C3829" : "#ffffff", padding: 4 }}
           >
             {mobileOpen ? <X size={24} /> : <Menu size={24} />}
@@ -276,7 +276,7 @@ export function Navbar() {
                 key={link.href}
                 onClick={() => handleNavClick(link.href)}
                 style={{ transitionDelay: `${idx * 100}ms` }}
-                className={`text-left font-serif text-3xl font-medium text-white hover:text-[#B8963E] transition-all duration-300 ${mobileOpen ? "opacity-100 translate-y-0" : "opacity-0 translate-y-4"}`}
+                className={`text-left font-serif text-3xl font-medium text-white hover:text-[#8B6E2A] transition-all duration-300 ${mobileOpen ? "opacity-100 translate-y-0" : "opacity-0 translate-y-4"}`}
               >
                 {link.label}
               </button>
@@ -292,7 +292,7 @@ export function Navbar() {
             <p className="font-sans text-white mb-8">+4917661221210</p>
             <button
               onClick={() => window.open(CALENDLY_URL, "_blank")}
-              className="w-full bg-[#B8963E] text-white font-sans text-xs font-bold tracking-[0.15em] uppercase py-5 text-center transition-colors hover:bg-[#a68635]"
+              className="w-full bg-[#8B6E2A] text-white font-sans text-xs font-bold tracking-[0.15em] uppercase py-5 text-center transition-colors hover:bg-[#7A5F20]"
             >
               {t("nav_cta")}
             </button>

@@ -138,6 +138,7 @@ export function Contact() {
                   href={calendlyLink}
                   target="_blank"
                   rel="noopener noreferrer"
+                  aria-label={t("contact_calendly_btn")}
                   style={{
                     display: "flex",
                     alignItems: "center",
@@ -154,7 +155,7 @@ export function Contact() {
                     textDecoration: "none",
                     transition: "all 0.3s ease",
                   }}
-                  onMouseEnter={(e) => (e.currentTarget.style.background = "#B8963E")}
+                  onMouseEnter={(e) => (e.currentTarget.style.background = "#8B6E2A")}
                   onMouseLeave={(e) => (e.currentTarget.style.background = "#1C3829")}
                 >
                   <Clock size={18} />
@@ -163,6 +164,7 @@ export function Contact() {
               ) : (
                 <button
                   onClick={openSettings}
+                  aria-label="Cookie-Einstellungen öffnen"
                   style={{
                     display: "flex",
                     alignItems: "center",
@@ -190,6 +192,7 @@ export function Contact() {
                 href={`https://wa.me/${whatsappNumber}`}
                 target="_blank"
                 rel="noopener noreferrer"
+                aria-label="Kontakt per WhatsApp"
                 style={{
                   display: "flex",
                   alignItems: "center",

@@ -27,8 +27,8 @@ export function PracticeAreas() {
         <div className="flex flex-col md:flex-row md:items-end justify-between gap-8 mb-16">
           <div className="max-w-xl">
             <div className="flex items-center gap-3 mb-6">
-              <div className="w-8 h-[1px] bg-[#B8963E]" />
-              <span className="font-sans text-[9px] font-bold tracking-[0.25em] text-[#B8963E] uppercase">
+              <div className="w-8 h-[1px] bg-[#8B6E2A]" />
+              <span className="font-sans text-[9px] font-bold tracking-[0.25em] text-[#7A5F20] uppercase">
                 {t("practice_badge")}
               </span>
             </div>
@@ -38,7 +38,7 @@ export function PracticeAreas() {
           </div>
           <Link
             to={paths.services}
-            className="group inline-flex items-center gap-3 font-sans text-[10px] font-bold tracking-[0.2em] text-[#1C3829] uppercase border-b border-black/10 pb-1 hover:border-[#B8963E] transition-all"
+            className="group inline-flex items-center gap-3 font-sans text-[10px] font-bold tracking-[0.2em] text-[#1C3829] uppercase border-b border-black/10 pb-1 hover:border-[#8B6E2A] transition-all"
           >
             {t("practice_view_all")} <MoveRight size={14} className="group-hover:translate-x-1 transition-transform" />
           </Link>
@@ -54,11 +54,11 @@ export function PracticeAreas() {
                 initial={{ opacity: 0, y: 20 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true }}
-                className="h-full bg-white p-10 md:p-14 border-l-[3px] border-[#B8963E] flex flex-col justify-center relative transition-all duration-500 hover:shadow-xl hover:shadow-black/[0.02] overflow-hidden"
+                className="h-full bg-white p-10 md:p-14 border-l-[3px] border-[#8B6E2A] flex flex-col justify-center relative transition-all duration-500 hover:shadow-xl hover:shadow-black/[0.02] overflow-hidden"
               >
                 {/* Mobile Background */}
                 <div className="md:hidden absolute inset-0 z-0" aria-hidden="true">
-                  <img src={tanimaImg} alt="" width={600} height={400} loading="lazy" decoding="async" className="w-full h-full object-cover opacity-60" />
+                  <img src={tanimaImg} alt={language === 'tr' ? 'Tanıma ve Tenfiz hizmeti görseli' : 'Anerkennung und Vollstreckung Dienstleistungsbild'} width={600} height={400} loading="lazy" decoding="async" className="w-full h-full object-cover opacity-60" />
                   <div className="absolute inset-0 bg-gradient-to-t from-[#1C3829] via-[#1C3829]/70 to-transparent" />
                 </div>
 
@@ -67,7 +67,7 @@ export function PracticeAreas() {
                     {(() => {
                       const Icon = tanima.icon;
                       if (!Icon) return null;
-                      return <Icon size={32} strokeWidth={1} className="text-[#B8963E]" aria-hidden="true" />;
+                      return <Icon size={32} strokeWidth={1} className="text-[#8B6E2A]" aria-hidden="true" />;
                     })()}
                   </div>
                   <h3 className="font-serif text-3xl md:text-4xl text-white md:text-[#1C3829] mb-6">
