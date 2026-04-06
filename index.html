@@ -38,10 +38,12 @@
     <!-- Google Search Console Verification (replace with actual code) -->
     <!-- <meta name="google-site-verification" content="YOUR_VERIFICATION_CODE" /> -->
 
-    <!-- LCP Preloading: Essential for 90+ Score -->
-    <link rel="preload" as="image" href="/src/assets/hero.avif" fetchPriority="high" type="image/avif" />
+    <!-- LCP Preloading & Resource Hints (Tasks 2 & 5) -->
+    <link rel="dns-prefetch" href="https://fonts.googleapis.com">
+    <link rel="preload" href="/src/assets/hero.avif" as="image" fetchPriority="high" type="image/avif" />
+    <link rel="preload" href="/src/assets/fonts/Inter.woff2" as="font" type="font/woff2" crossorigin="anonymous" />
     
-    <!-- Critical CSS to show layout instantly -->
+    <!-- Critical CSS (Task 1: Above-the-fold styles) -->
     <style>
       :root { --brand-green: #1C3829; --brand-gold: #B8963E; }
       body { background: var(--brand-green); margin: 0; padding: 0; font-family: sans-serif; overflow-x: hidden; }
