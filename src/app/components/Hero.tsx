@@ -26,17 +26,19 @@ export function Hero() {
       <div className="absolute top-0 left-0 w-full h-full bg-gradient-to-b from-[#1C3829]/70 via-[#1C3829]/40 to-[#1a3326] pointer-events-none z-0" />
 
       {/* Mobile Background Image */}
-      <div className="absolute inset-0 z-0 lg:hidden">
+      <div className="absolute inset-0 z-0 lg:hidden" aria-hidden="true">
         <img
           src={heroImage}
-          alt="Avukat Hasan Doğru Background"
+          alt=""
+          width={1024}
+          height={1280}
           className="w-full h-full object-cover object-top opacity-30 mix-blend-overlay"
         />
         <div className="absolute inset-0 bg-gradient-to-t from-[#1C3829] via-[#1C3829]/80 to-transparent" />
       </div>
 
       {/* Decorative vertical architectural line */}
-      <div className="hidden lg:block absolute left-1/2 top-0 bottom-0 w-[1px] bg-white/5 pointer-events-none" />
+      <div className="hidden lg:block absolute left-1/2 top-0 bottom-0 w-[1px] bg-white/5 pointer-events-none" aria-hidden="true" />
 
       <div className="relative z-10 max-w-[1400px] mx-auto px-6 lg:px-12 w-full grid grid-cols-1 lg:grid-cols-12 gap-16 lg:gap-24 items-center flex-grow py-12 lg:py-20">
         
@@ -78,13 +80,15 @@ export function Hero() {
           <div className="flex flex-wrap gap-5">
             <button 
               onClick={() => window.open(CALENDLY_URL, "_blank")}
+              aria-label={t("hero_cta_primary")}
               className="group relative overflow-hidden bg-[#B8963E] text-white font-sans text-[11px] font-bold tracking-[0.15em] uppercase px-10 py-5 transition-all hover:bg-[#a68635] flex items-center gap-3"
             >
               {t("hero_cta_primary")}
-              <ArrowRight className="w-4 h-4 transition-transform group-hover:translate-x-1" />
+              <ArrowRight className="w-4 h-4 transition-transform group-hover:translate-x-1" aria-hidden="true" />
             </button>
             <button 
               onClick={() => handleScroll(paths.services)}
+              aria-label={t("hero_cta_secondary")}
               className="group border border-white/20 text-white hover:border-[#B8963E] hover:text-[#B8963E] font-sans text-[11px] font-bold tracking-[0.15em] uppercase px-10 py-5 transition-all bg-white/5 backdrop-blur-sm"
             >
               {t("hero_cta_secondary")}
@@ -108,6 +112,8 @@ export function Hero() {
               <img 
                 src={heroImage} 
                 alt="Avukat Hasan Doğru" 
+                width={540}
+                height={675}
                 className="w-full h-full object-cover object-top opacity-90 transition-transform duration-1000 hover:scale-105"
               />
               <div className="absolute inset-x-0 bottom-0 h-3/5 bg-gradient-to-t from-[#1C3829] via-[#1C3829]/60 to-transparent opacity-90" />

@@ -57,8 +57,8 @@ export function PracticeAreas() {
                 className="h-full bg-white p-10 md:p-14 border-l-[3px] border-[#B8963E] flex flex-col justify-center relative transition-all duration-500 hover:shadow-xl hover:shadow-black/[0.02] overflow-hidden"
               >
                 {/* Mobile Background */}
-                <div className="md:hidden absolute inset-0 z-0">
-                  <img src={tanimaImg} alt="" className="w-full h-full object-cover opacity-60" />
+                <div className="md:hidden absolute inset-0 z-0" aria-hidden="true">
+                  <img src={tanimaImg} alt="" width={600} height={400} className="w-full h-full object-cover opacity-60" />
                   <div className="absolute inset-0 bg-gradient-to-t from-[#1C3829] via-[#1C3829]/70 to-transparent" />
                 </div>
 
@@ -67,7 +67,7 @@ export function PracticeAreas() {
                     {(() => {
                       const Icon = tanima.icon;
                       if (!Icon) return null;
-                      return <Icon size={32} strokeWidth={1} className="text-[#B8963E]" />;
+                      return <Icon size={32} strokeWidth={1} className="text-[#B8963E]" aria-hidden="true" />;
                     })()}
                   </div>
                   <h3 className="font-serif text-3xl md:text-4xl text-white md:text-[#1C3829] mb-6">
@@ -77,7 +77,7 @@ export function PracticeAreas() {
                     {language === "tr" ? tanima.description : tanima.descriptionDE}
                   </p>
                   <div className="absolute bottom-10 right-10 text-white md:text-[#1C3829] opacity-0 group-hover:opacity-100 transition-all duration-500 group-hover:translate-x-1">
-                    <ArrowRight size={20} />
+                    <ArrowRight size={20} aria-hidden="true" />
                   </div>
                 </div>
               </motion.div>
@@ -95,8 +95,8 @@ export function PracticeAreas() {
                 className="h-full bg-[#F2F2F0] p-8 flex flex-col justify-center relative transition-all duration-500 hover:bg-[#ebebe9] overflow-hidden"
               >
                 {/* Mobile Background */}
-                <div className="md:hidden absolute inset-0 z-0">
-                  <img src={migrationImg} alt="" className="w-full h-full object-cover opacity-60" />
+                <div className="md:hidden absolute inset-0 z-0" aria-hidden="true">
+                  <img src={migrationImg} alt="" width={600} height={400} className="w-full h-full object-cover opacity-60" />
                   <div className="absolute inset-0 bg-gradient-to-t from-[#1C3829] via-[#1C3829]/70 to-transparent" />
                 </div>
 
@@ -108,7 +108,7 @@ export function PracticeAreas() {
                     {language === "tr" ? migrations.description : migrations.descriptionDE}
                   </p>
                   <div className="mt-6 text-white md:text-[#1C3829] group-hover:text-[#B8963E] transition-all duration-500 group-hover:translate-x-1">
-                    <ArrowRight size={18} strokeWidth={1} />
+                    <ArrowRight size={18} strokeWidth={1} aria-hidden="true" />
                   </div>
                 </div>
               </motion.div>
@@ -126,8 +126,8 @@ export function PracticeAreas() {
                 className="h-full bg-[#F2F2F0] p-8 flex flex-col justify-center relative transition-all duration-500 hover:bg-[#ebebe9] overflow-hidden"
               >
                 {/* Mobile Background */}
-                <div className="md:hidden absolute inset-0 z-0">
-                  <img src={inheritanceImg} alt="" className="w-full h-full object-cover opacity-60" />
+                <div className="md:hidden absolute inset-0 z-0" aria-hidden="true">
+                  <img src={inheritanceImg} alt="" width={600} height={400} className="w-full h-full object-cover opacity-60" />
                   <div className="absolute inset-0 bg-gradient-to-t from-[#1C3829] via-[#1C3829]/70 to-transparent" />
                 </div>
 
@@ -139,7 +139,7 @@ export function PracticeAreas() {
                     {language === "tr" ? erb.description : erb.descriptionDE}
                   </p>
                   <div className="mt-6 text-white md:text-[#1C3829] group-hover:text-[#B8963E] transition-all duration-500 group-hover:translate-x-1">
-                    <ArrowRight size={18} strokeWidth={1} />
+                    <ArrowRight size={18} strokeWidth={1} aria-hidden="true" />
                   </div>
                 </div>
               </motion.div>
@@ -157,8 +157,8 @@ export function PracticeAreas() {
                 className="h-full bg-[#F2F2F0] p-8 flex flex-col justify-center relative transition-all duration-500 hover:bg-[#ebebe9] overflow-hidden"
               >
                 {/* Mobile Background */}
-                <div className="md:hidden absolute inset-0 z-0">
-                  <img src={custodyImg} alt="" className="w-full h-full object-cover opacity-60" />
+                <div className="md:hidden absolute inset-0 z-0" aria-hidden="true">
+                  <img src={custodyImg} alt="" width={600} height={400} className="w-full h-full object-cover opacity-60" />
                   <div className="absolute inset-0 bg-gradient-to-t from-[#1C3829] via-[#1C3829]/70 to-transparent" />
                 </div>
 
@@ -170,7 +170,7 @@ export function PracticeAreas() {
                     {language === "tr" ? sorge.description : sorge.descriptionDE}
                   </p>
                   <div className="mt-6 text-white md:text-[#1C3829] group-hover:text-[#B8963E] transition-all duration-500 group-hover:translate-x-1">
-                    <ArrowRight size={18} strokeWidth={1} />
+                    <ArrowRight size={18} strokeWidth={1} aria-hidden="true" />
                   </div>
                 </div>
               </motion.div>
@@ -192,13 +192,13 @@ export function PracticeAreas() {
                   {(() => {
                     const Icon = straf.icon;
                     if (!Icon) return null;
-                    return <Icon size={200} strokeWidth={0.5} />;
+                    return <Icon size={200} strokeWidth={0.5} aria-hidden="true" />;
                   })()}
                 </div>
 
                 {/* Mobile Background */}
-                <div className="md:hidden absolute inset-0 z-0">
-                  <img src={criminalImg} alt="" className="w-full h-full object-cover opacity-60" />
+                <div className="md:hidden absolute inset-0 z-0" aria-hidden="true">
+                  <img src={criminalImg} alt="" width={600} height={400} className="w-full h-full object-cover opacity-60" />
                   <div className="absolute inset-0 bg-gradient-to-t from-[#1C3829] via-[#1C3829]/70 to-transparent" />
                 </div>
 
@@ -210,7 +210,7 @@ export function PracticeAreas() {
                     {language === "tr" ? straf.description : straf.descriptionDE}
                   </p>
                   <div className="mt-8 inline-flex items-center gap-3 text-[#B8963E] font-sans text-[9px] font-bold tracking-widest uppercase hover:text-white transition-all duration-500 group-hover:translate-x-1">
-                    {t("practice_view_detail")} <ArrowRight size={14} />
+                    {t("practice_view_detail")} <ArrowRight size={14} aria-hidden="true" />
                   </div>
                 </div>
               </motion.div>

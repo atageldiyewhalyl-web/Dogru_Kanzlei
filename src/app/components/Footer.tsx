@@ -49,10 +49,16 @@ export function Footer() {
         >
           {/* Brand */}
           <div>
-            <div style={{ marginBottom: 20, display: "flex", alignItems: "center", gap: 10 }}>
+            <Link 
+              to={paths.home}
+              aria-label={`Doğru Kanzlei - ${t("nav_home")}`}
+              style={{ marginBottom: 20, display: "flex", alignItems: "center", gap: 10, textDecoration: "none" }}
+            >
               <img
                 src={logoImage}
-                alt="Doğru Kanzlei"
+                alt="Doğru Kanzlei Logo"
+                width={48}
+                height={48}
                 style={{
                   height: 48,
                   width: "auto",
@@ -72,7 +78,7 @@ export function Footer() {
               >
                 DOGRU Kanzlei
               </span>
-            </div>
+            </Link>
             <p
               style={{
                 fontFamily: "'Lato', sans-serif",
@@ -139,13 +145,13 @@ export function Footer() {
                   fontFamily: "var(--font-sans)",
                   fontSize: 13,
                   fontWeight: 500,
-                  color: "rgba(255,255,255,0.4)",
+                  color: "rgba(255,255,255,0.7)",
                   textDecoration: "none",
                   marginBottom: 12,
                   transition: "color 0.2s",
                 }}
                 onMouseEnter={(e) => ((e.target as HTMLElement).style.color = "#ffffff")}
-                onMouseLeave={(e) => ((e.target as HTMLElement).style.color = "rgba(255,255,255,0.4)")}
+                onMouseLeave={(e) => ((e.target as HTMLElement).style.color = "rgba(255,255,255,0.7)")}
               >
                 {link.label}
               </Link>
@@ -176,13 +182,13 @@ export function Footer() {
                   fontFamily: "var(--font-sans)",
                   fontSize: 13,
                   fontWeight: 500,
-                  color: "rgba(255,255,255,0.4)",
+                  color: "rgba(255,255,255,0.7)",
                   textDecoration: "none",
                   marginBottom: 12,
                   transition: "color 0.2s",
                 }}
                 onMouseEnter={(e) => ((e.target as HTMLElement).style.color = "#ffffff")}
-                onMouseLeave={(e) => ((e.target as HTMLElement).style.color = "rgba(255,255,255,0.4)")}
+                onMouseLeave={(e) => ((e.target as HTMLElement).style.color = "rgba(255,255,255,0.7)")}
               >
                 {link.label}
               </Link>
@@ -209,7 +215,7 @@ export function Footer() {
                 fontFamily: "'Lato', sans-serif",
                 fontSize: 13,
                 fontWeight: 400,
-                color: "rgba(255,255,255,0.4)",
+                color: "rgba(255,255,255,0.7)",
                 lineHeight: 1.7,
               }}
             >
@@ -250,19 +256,19 @@ export function Footer() {
           <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr 1fr", gap: 40 }} className="footer-disclaimer-grid">
             <div>
               <span style={{ color: "#B8963E", fontSize: 9, fontWeight: 700, textTransform: "uppercase", letterSpacing: "0.2em", display: "block", marginBottom: 16, opacity: 0.8 }}>Rechtlicher Hinweis</span>
-              <p style={{ color: "rgba(255,255,255,0.3)", fontSize: 11, lineHeight: 1.8, margin: 0, fontFamily: "'Lato', sans-serif" }}>
+              <p style={{ color: "rgba(255,255,255,0.6)", fontSize: 11, lineHeight: 1.8, margin: 0, fontFamily: "'Lato', sans-serif" }}>
                 Die Kanzlei berät ausschließlich im türkischen Recht. Eine Beratung oder Vertretung im deutschen Recht findet nicht statt. Registriert als ausländischer Rechtsanwalt gemäß § 207 BRAO.
               </p>
             </div>
             <div>
               <span style={{ color: "#B8963E", fontSize: 9, fontWeight: 700, textTransform: "uppercase", letterSpacing: "0.2em", display: "block", marginBottom: 16, opacity: 0.8 }}>Yasal Uyarı</span>
-              <p style={{ color: "rgba(255,255,255,0.3)", fontSize: 11, lineHeight: 1.8, margin: 0, fontFamily: "'Lato', sans-serif" }}>
+              <p style={{ color: "rgba(255,255,255,0.6)", fontSize: 11, lineHeight: 1.8, margin: 0, fontFamily: "'Lato', sans-serif" }}>
                 Büromuz yalnızca Türk hukuku alanında danışmanlık vermektedir. Alman hukuku konusunda danışmanlık veya temsil hizmeti verilmemektedir. § 207 BRAO uyarınca kayıtlı yabancı avukat.
               </p>
             </div>
             <div>
               <span style={{ color: "#B8963E", fontSize: 9, fontWeight: 700, textTransform: "uppercase", letterSpacing: "0.2em", display: "block", marginBottom: 16, opacity: 0.8 }}>Legal Notice</span>
-              <p style={{ color: "rgba(255,255,255,0.3)", fontSize: 11, lineHeight: 1.8, margin: 0, fontFamily: "'Lato', sans-serif" }}>
+              <p style={{ color: "rgba(255,255,255,0.6)", fontSize: 11, lineHeight: 1.8, margin: 0, fontFamily: "'Lato', sans-serif" }}>
                 The firm provides legal advice exclusively in Turkish law. We do not provide advice or representation in German law. Registered as a foreign lawyer according to § 207 BRAO.
               </p>
             </div>
@@ -302,17 +308,17 @@ export function Footer() {
                 fontFamily: "'Lato', sans-serif",
                 fontSize: 10,
                 fontWeight: 400,
-                color: "rgba(255,255,255,0.15)",
+                color: "rgba(255,255,255,0.4)",
                 textDecoration: "none",
                 transition: "all 0.2s ease",
               }}
               onMouseEnter={(e) => {
                 const target = e.currentTarget as HTMLElement;
-                target.style.color = "rgba(255,255,255,0.4)";
+                target.style.color = "rgba(255,255,255,0.7)";
               }}
               onMouseLeave={(e) => {
                 const target = e.currentTarget as HTMLElement;
-                target.style.color = "rgba(255,255,255,0.15)";
+                target.style.color = "rgba(255,255,255,0.4)";
               }}
             >
               Site made by
@@ -341,7 +347,7 @@ export function Footer() {
                   fontFamily: "'Lato', sans-serif",
                   fontSize: 11,
                   fontWeight: 400,
-                  color: "rgba(255,255,255,0.2)",
+                  color: "rgba(255,255,255,0.6)",
                   textDecoration: "none",
                   transition: "color 0.2s",
                 }}

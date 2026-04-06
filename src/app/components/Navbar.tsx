@@ -99,6 +99,7 @@ export function Navbar() {
         {/* Logo */}
         <Link
           to={paths.home}
+          aria-label={`Doğru Kanzlei - ${t("nav_home")}`}
           onClick={(e) => {
             if (isHome) {
               e.preventDefault();
@@ -109,7 +110,9 @@ export function Navbar() {
         >
           <img
             src={logoImage}
-            alt="Doğru Kanzlei"
+            alt="Doğru Kanzlei Logo"
+            width={44}
+            height={44}
             style={{
               height: 44,
               width: "auto",
@@ -155,6 +158,7 @@ export function Navbar() {
             <button
               key={link.href}
               onClick={() => handleNavClick(link.href)}
+              aria-label={link.label}
               style={{
                 background: "none",
                 border: "none",
@@ -181,7 +185,7 @@ export function Navbar() {
           {/* Language Switcher */}
           <button
             onClick={() => setLanguage(language === "tr" ? "de" : "tr")}
-            aria-label={language === 'de' ? 'Sprache wechseln' : 'Dil değiştir'}
+            aria-label={language === 'de' ? 'Sprache zu Türkisch wechseln' : 'Dili Almanca yap'}
             style={{
               display: "flex",
               alignItems: "center",
@@ -196,7 +200,7 @@ export function Navbar() {
               textTransform: "uppercase",
             }}
           >
-            <Globe size={13} color="#B8963E" />
+            <Globe size={13} color="#B8963E" aria-hidden="true" />
             {language === 'de' ? 'TR' : 'DE'}
           </button>
 
@@ -233,7 +237,7 @@ export function Navbar() {
         <div className="flex items-center gap-4 lg:hidden">
            <button
             onClick={() => setLanguage(language === "tr" ? "de" : "tr")}
-            aria-label={language === 'de' ? 'Sprache wechseln' : 'Dil değiştir'}
+            aria-label={language === 'de' ? 'Sprache zu Türkisch wechseln' : 'Dili Almanca yap'}
             style={{
               display: "flex",
               alignItems: "center",

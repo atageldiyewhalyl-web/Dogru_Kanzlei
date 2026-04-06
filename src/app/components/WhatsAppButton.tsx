@@ -16,6 +16,7 @@ export function WhatsAppButton() {
       href={url}
       target="_blank"
       rel="noopener noreferrer"
+      aria-label={t("contact_whatsapp_btn")}
       onMouseEnter={() => setHovered(true)}
       onMouseLeave={() => setHovered(false)}
       className="fixed z-[200] flex items-center gap-3 bg-[#25D366] text-white no-underline rounded-full shadow-[0_6px_25px_rgba(37,211,102,0.45)] transition-all duration-300 bottom-6 right-6 md:bottom-8 md:right-8"
