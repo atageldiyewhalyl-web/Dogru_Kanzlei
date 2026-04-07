@@ -78,7 +78,8 @@ export default defineConfig({
         chunkFileNames: 'assets/[name]-[hash].js',
         entryFileNames: 'assets/[name]-[hash].js',
         manualChunks: {
-          'react-vendor': ['react', 'react-dom', 'react-router'],
+          'react-core': ['react', 'react-dom'],
+          'react-router': ['react-router'],
           'ui-vendor': ['lucide-react']
         }
       }
