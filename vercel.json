@@ -27,7 +27,9 @@
     { "source": "/tr/schlüsselthemen", "destination": "/de/leistungen", "permanent": true },
     { "source": "/en", "destination": "/de", "permanent": true }
   ],
+  "cleanUrls": true,
+  "trailingSlash": false,
   "rewrites": [
-    { "source": "/(.*)", "destination": "/index.html" }
+    { "source": "/((?!assets|logo\\.png|sitemap\\.xml|robots\\.txt|favicon.*).*)", "destination": "/index.html" }
   ]
 }
