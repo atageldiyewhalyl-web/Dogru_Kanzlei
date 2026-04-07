@@ -113,6 +113,7 @@ export function Navbar() {
             alt="Doğru Kanzlei Logo"
             width={44}
             height={44}
+            fetchPriority="high"
             style={{
               height: 44,
               width: "auto",

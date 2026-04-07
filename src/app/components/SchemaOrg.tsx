@@ -13,7 +13,7 @@ const schemaData = {
       "alternateName": "Avukat Hasan Doğru",
       "url": "https://www.hasandogru.de",
       "logo": "https://www.hasandogru.de/logo.png",
-      "description": "Avukat Hasan Doğru für türkisches und deutsches Recht in Mannheim und Ankara. Spezialisiert auf Familienrecht, Erbrecht, Mietrecht, Strafrecht und grenzüberschreitende Rechtsberatung.",
+      "description": "Avukat Hasan Doğru für türkisches und internationales Recht in Mannheim und Ankara. Spezialisiert auf Familienrecht, Erbrecht, Strafrecht und grenzüberschreitende Rechtsberatung.",
       "telephone": "+4917661221210",
       "email": ["info@hasandogru.de", "Avukat.hasandogru@outlook.de"],
       "priceRange": "$$",
@@ -50,9 +50,7 @@ const schemaData = {
         "itemListElement": [
           { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Familienrecht / Aile Hukuku" } },
           { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Erbrecht / Miras Hukuku" } },
-          { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Mietrecht / Kira Hukuku" } },
-          { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Strafrecht / Ceza Hukuku" } },
-          { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Türkisches Recht / Türk Hukuku" } }
+          { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Strafrecht / Ceza Hukuku" } }
         ]
       },
       "sameAs": []

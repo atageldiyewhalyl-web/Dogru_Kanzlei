@@ -18,8 +18,8 @@ export function Hizmetler() {
       ? 'Unsere Leistungen | Avukat Hasan Doğru'
       : 'Hizmetlerimiz | Avukat Hasan Doğru',
     description: language === 'de'
-      ? 'Rechtsberatung in Familienrecht, Erbrecht, Mietrecht, Strafrecht und türkischem Recht. Kanzlei Doğru in Mannheim und Ankara.'
-      : 'Aile hukuku, miras hukuku, kira hukuku, ceza hukuku ve Türk hukuku alanlarında hukuki danışmanlık. Mannheim ve Ankara\'da Doğru Kanzlei.',
+      ? 'Rechtsberatung in Familienrecht, Erbrecht, Strafrecht und internationalem Recht. Kanzlei Doğru in Mannheim und Ankara.'
+      : 'Aile hukuku, miras hukuku, ceza hukuku ve uluslararası hukuk alanlarında hukuki danışmanlık. Mannheim ve Ankara\'da Doğru Kanzlei.',
     lang: language,
     canonical: `${SITE_URL}/${language}/${servicesPath}`,
     alternateLang: {

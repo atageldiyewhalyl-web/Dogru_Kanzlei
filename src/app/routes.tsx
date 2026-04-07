@@ -33,7 +33,6 @@ export const router = createBrowserRouter([
   { path: "/immobilienrecht", loader: () => redirect("/de/leistungen/immobilienrecht") },
   { path: "/scheidungsverfahren", loader: () => redirect("/de/leistungen") },
   { path: "/schuldrecht", loader: () => redirect("/de/leistungen") },
-  { path: "/mietrecht", loader: () => redirect("/de/leistungen") },
   { path: "/kontakt", loader: () => redirect("/de/#iletisim") },
   { path: "/meine-vision", loader: () => redirect("/de/#hakkimizda") },
   { path: "/blog", loader: () => redirect("/de/blog") },
