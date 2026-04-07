@@ -59,10 +59,12 @@ export function ServiceDetail() {
     title: service
       ? language === 'de'
         ? service.seoTitleDE || `${service.title} | Avukat Hasan Doğru`
-        : `${service.titleTR} | Avukat Hasan Doğru`
+        : service.seoTitleTR || `${service.titleTR} | Avukat Hasan Doğru`
       : 'Seite nicht gefunden',
     description: service
-      ? (language === 'de' ? (service.seoDescriptionDE || service.descriptionDE) : service.description)
+      ? language === 'de'
+        ? service.seoDescriptionDE || service.descriptionDE
+        : service.seoDescriptionTR || service.description
       : '',
     lang: language,
     canonical: service 
@@ -164,7 +166,9 @@ export function ServiceDetail() {
                 <div className="flex items-center gap-4 mb-12">
                    <div className="w-12 h-[1px] bg-[#8B6E2A]" />
                    <h3 className="font-serif text-3xl text-[#1C3829]">
-                    {language === 'de' ? (service.expertiseTitleDE || 'Unsere Expertise') : <span lang="tr">Uzmanlık Alanlarımız</span>}
+                    {language === 'de' 
+                      ? (service.expertiseTitleDE || 'Unsere Expertise') 
+                      : (service.expertiseTitleTR || <span lang="tr">Uzmanlık Alanlarımız</span>)}
                   </h3>
                 </div>
 
@@ -177,7 +181,9 @@ export function ServiceDetail() {
                           <span lang={language === 'tr' ? 'tr' : 'de'}>{item}</span>
                         </h4>
                         <p className="font-sans text-[13px] text-[#6a6a6a] leading-relaxed">
-                          {language === 'de' ? (service.id === 'familienrecht' ? 'Individuelle Beratung vor Ort' : 'Professionelle Fall- und Prozessführung') : <span lang="tr">Profesyonel Dava ve Süreç Takibi</span>}
+                          {language === 'de' 
+                            ? (service.id === 'familienrecht' ? 'Individuelle Beratung vor Ort' : 'Professionelle Fall- und Prozessführung') 
+                            : (service.id === 'familienrecht' ? <span lang="tr">Bireysel ve Yerinde Danışmalık</span> : <span lang="tr">Profesyonel Dava ve Süreç Takibi</span>)}
                         </p>
                       </div>
                     </div>
@@ -185,15 +191,17 @@ export function ServiceDetail() {
                 </div>
               </div>
 
-              {/* FAQ Accordion Section */}
-              {language === 'de' && service.faqDE && (
+               {/* FAQ Accordion Section */}
+              {((language === 'de' && service.faqDE) || (language === 'tr' && service.faqTR)) && (
                 <div className="mb-20">
                   <div className="flex items-center gap-4 mb-12">
                     <div className="w-12 h-[1px] bg-[#8B6E2A]" />
-                    <h3 className="font-serif text-3xl text-[#1C3829]">Häufige Fragen</h3>
+                    <h3 className="font-serif text-3xl text-[#1C3829]">
+                      {language === 'de' ? 'Häufige Fragen' : <span lang="tr">Sıkça Sorulan Sorular</span>}
+                    </h3>
                   </div>
                   <div className="space-y-4">
-                    {service.faqDE.map((faq: any, idx: number) => (
+                    {(language === 'de' ? service.faqDE : service.faqTR).map((faq: any, idx: number) => (
                       <FAQItem key={idx} question={faq.question} answer={faq.answer} />
                     ))}
                   </div>

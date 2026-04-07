@@ -10,29 +10,47 @@ export const services = [
     titleTR: "Aile Hukuku ve Boşanma",
     seoTitleDE: "Türkisches Familienrecht & Scheidung Mannheim | Avukat Hasan Doğru",
     seoDescriptionDE: "Scheidung nach türkischem Recht von Mannheim aus — ohne Reise in die Türkei. Avukat Hasan Doğru berät türkischstämmige Familien in Mannheim, Heidelberg und dem Rhein-Neckar-Raum.",
-    description: "Almanya ile Türkiye arasındaki aile hukuku davalarında uzman hukuki danışmanlık ve temsil — boşanmadan velayete kadar.",
+    seoTitleTR: "Türk Aile Hukuku & Boşanma Mannheim | Avukat Hasan Doğru",
+    seoDescriptionTR: "Mannheim'dan Türkiye'de boşanma — Türkiye'ye gitmeden. Avukat Hasan Doğru, Mannheim ve Rhein-Neckar bölgesindeki Türk ailelerine Türk aile hukuku konusunda danışmanlık verir.",
+    description: "Mannheim, Heidelberg ve Rhein-Neckar bölgesindeki Türk aileler; boşanma, velayet veya nafaka konularında sıklıkla çift taraflı bir zorlukla karşılaşır — iki hukuk sistemi, iki ülke, bir aile.",
     descriptionDE: "Türkischstämmige Familien in Mannheim, Heidelberg und dem gesamten Rhein-Neckar-Raum stehen bei Scheidung, Sorgerecht oder Unterhalt oft vor einer besonderen Herausforderung: Zwei Rechtssysteme, zwei Länder, eine Familie. Das türkische Familienrecht unterscheidet sich in wesentlichen Punkten vom deutschen Recht — und erfordert einen Anwalt, der beide Seiten kennt.",
-    detail: "Boşanma · Nafaka · Velayet · Mal Paylaşımı · Aile Birleşimi · Soyadı Değişikliği",
+    detail: "Yalnızca Türk hukuku — uzlaşmasız uzmanlaşma · Ankara Barosu üyesi, § 207 BRAO kapsamında kayıtlı · Türkiye'ye seyahat etmeden tam süreç yönetimi · Türkçe ve Almanca danışmanlık · Mannheim'da yüz yüze görüşme imkânı · Ankara'da ikinci ofis — Türk mahkemeleriyle doğrudan iş birliği",
     detailDE: "Ausschließlich türkisches Recht — keine Kompromisse, volle Spezialisierung · Mitglied der Ankara Barosu und registriert gemäß § 207 BRAO · Verfahren vollständig ohne Reise in die Türkei möglich · Beratung auf Türkisch und Deutsch · Standort Mannheim — persönliche Beratung im Rhein-Neckar-Raum · Zweiter Standort in Ankara für direkte Zusammenarbeit mit türkischen Gerichten",
     expertiseTitleDE: "Warum Doğru Kanzlei für türkisches Familienrecht in Mannheim?",
-    content: `Aile Hukuku — Türk-Alman aileler für aile hukuku danışmanlığı
-Boşanma, nafaka, velayet — sınır ötesinde yanınızdayız.
+    expertiseTitleTR: "Mannheim'da Türk Aile Hukuku İçin Neden Doğru Kanzlei?",
+    content: `Aile Hukuku ve Boşanma — Mannheim'da Türk Aile Hukuku
 
-Türkiye ile bağlantılı aile hukuku davaları karmaşık bir yapıya sahiptir — özellikle eşlerin farklı ülkelerde yaşadığı, çocukların dahil olduğu veya her iki ülkede mal varlığı bulunduğu durumlarda. Türk aile hukuku, Alman hukukundan önemli noktalarda ayrılır ve uzman sınır ötesi deneyim gerektirir.
+Türk Aile Hukuku & Boşanma Mannheim
 
-Hukuk büromuz, Almanya ile Türkiye arasındaki tüm aile hukuku konularında size destek olur — yetkin, gizli ve Türkiye've seyahat etmenize gerek kalmadan.
+Mannheim, Heidelberg ve Rhein-Neckar bölgesindeki Türk aileler; boşanma, velayet veya nafaka konularında sıklıkla çift taraflı bir zorlukla karşılaşır: İki hukuk sistemi, iki ülke, bir aile. Türk aile hukuku, Alman hukukundan önemli noktalarda ayrılmaktadır — ve her iki tarafı da bilen bir avukat gerektirir.
+
+Avukat Hasan Doğru, Ankara Barosu üyesidir ve yalnızca Türk hukuku alanında danışmanlık vermektedir. Mannheim'daki büromuz, Türkiye ile ilgili tüm aile hukuku konularında size yardımcı olmaktadır — yetkin, gizli ve Türkiye'ye seyahat etmeden.
 
 Sizin için neler yapıyoruz:
-• Almanya'dan Türkiye'de Boşanma Davası Açma — Bizzat Türkiye'ye gitmeden Türk boşanma davasının başlatılması ve tam takibi
-• Anlaşmalı Boşanma (Einvernehmliche Scheidung) — Her iki tarafın rızasıyla hızlı ve ekonomik boşanma, boşanma protokolü dahil
-• Çekişmeli Boşanma (Streitige Scheidung) — Türk mahkemelerinde tartışmalı boşanma davalarında güçlü hukuki temsil
-• Nafaka (Unterhalt) — Tedbir nafakası, iştirak nafakası ve yoksulluk nafakasının talep edilmesi ve icrası
-• Velayet Davası (Sorgerecht) — Türk mahkemelerinde velayet davalarında temsil ve uluslararası velayet kararlarının icrası
-• Edinilmiş Mallara Katılma (Zugewinnausgleich) — Boşanmada Türk mal rejimi hukukuna göre mal paylaşımı danışmanlığı
-• Türkiye'den Eş Getirme (Ehegattennachzug) — Aile birleşimi ve eş vizesi süreçlerinde hukuki destek
-• Boşanma Sonrası Soyadı Değişikliği — Türk hukukuna göre isim değişikliği danışmanlığı ve işlem takibi
 
-Tüm süreç boyunca yanınızdayız — güvenilir, şeffaf ve Türk-Alman aile hukukunda derin deneyimle.`,
+• Almanya'dan Türkiye'de Boşanma Davası Açmak (Boşanma Davası)
+Mannheim'daki pek çok Türk çift, Türkiye'ye gitmeden Türk hukukuna göre boşanmak istemektedir. Vekaletname ile tüm Türk boşanma sürecini Almanya'dan yürütüyor, sizi Türk mahkemelerinde temsil ediyor ve karar kesinleşene kadar yanınızda oluyoruz.
+
+• Anlaşmalı Boşanma Türkiye (Anlaşmalı Boşanma)
+Her iki eş de boşanmayı kabul ediyorsa, anlaşmalı boşanma en hızlı ve en ekonomik çözümdür. Boşanma protokolünü hazırlıyor, nafaka, velayet ve mal paylaşımı gibi tüm konuları netleştiriyor ve sürecin sorunsuz ilerlemesini sağlıyoruz.
+
+• Çekişmeli Boşanma Türkiye (Çekişmeli Boşanma)
+Anlaşma sağlanamadığında, çıkarlarınızı Türk mahkemelerinde kararlılıkla savunuyoruz. Özellikle Almanya ile Türkiye arasındaki sınır ötesi boşanma davalarında deneyimli hukuki temsil belirleyici olmaktadır.
+
+• Türk Hukukuna Göre Nafaka (Nafaka)
+Türk nafaka hukuku üç türü kapsar: Tedbir Nafakası (ayrılık nafakası), İştirak Nafakası (çocuk nafakası) ve Yoksulluk Nafakası (yoksulluk nafakası). Haklarınız konusunda sizi bilgilendiriyor ve bu hakları Türk mahkemelerinde takip ediyoruz — nafaka yükümlüsü ebeveyn Almanya'da yaşasa bile.
+
+• Türkiye'de Velayet Davası (Velayet Davası)
+Türkiye bağlantılı velayet anlaşmazlıkları, aile hukukunun en karmaşık davalarından biridir. Türk velayet davalarında sizi temsil ediyor ve Almanya ile Türkiye arasındaki velayet ile kişisel ilişki kararlarının uluslararası alanda tanınmasını sağlıyoruz.
+
+• Mal Rejimi / Edinilmiş Mallara Katılma (Edinilmiş Mallara Katılma)
+Boşanmada sıkça sorulan soru şudur: Kime ne kalır? Türk mal rejimi hukuku, edinilmiş mallara katılma ilkesine göre mal paylaşımını düzenler. Türkiye'deki taşınmazlar, banka hesapları ve diğer varlıkların adil paylaşımı konusunda danışmanlık veriyoruz.
+
+• Türkiye'den Eş Getirme (Aile Birleşimi)
+Eşinizi Türkiye'den Almanya'ya getirmek mi istiyorsunuz? Aile birleşimi ve eş vizesi başvurusunda belgelerinizin hazırlanmasından Almanya'ya girişe kadar tüm süreçte hukuki destek sağlıyoruz.
+
+• Boşanma Sonrası İsim Hakkı Türkiye
+Boşanma sonrasında Türk hukukuna göre isim değişikliği konusunda sorularınız olabilir. Seçenekleriniz hakkında bilgi veriyor ve Türk makamları nezdinde isim değişikliği işlemlerini yürütüyoruz.`,
     contentDE: `Avukat Hasan Doğru ist Mitglied der Ankara Barosu und berät ausschließlich im türkischen Recht. Unsere Kanzlei in Mannheim begleitet Sie in allen familienrechtlichen Fragen mit Bezug zur Türkei — kompetent, diskret und vollständig ohne Reise in die Türkei.
 
 Was wir für Sie tun:
@@ -41,7 +59,7 @@ Was wir für Sie tun:
 Viele türkischstämmige Paare in Mannheim möchten ihre Ehe nach türkischem Recht scheiden lassen — ohne dafür in die Türkei reisen zu müssen. Wir leiten das gesamte türkische Scheidungsverfahren von Deutschland aus ein, vertreten Sie vor türkischen Gerichten per Vollmacht und begleiten Sie bis zum rechtskräftigen Urteil.
 
 • Einvernehmliche Scheidung Türkei (Anlaşmalı Boşanma)
-Wenn beide Ehepartner einer Scheidung zustimmen, ist eine einvernehmliche Scheidung nach türkischem Recht die schnellste und kostengünstigste Lösung. Wir bereiten die Scheidungsfolgenvereinbarung vor, klären alle offenen Punkte — Unterhalt, Sorgerecht, Vermögensaufteilung — und sorgen für einen reibungslosen Ablauf.
+Wenn beide Ehepartner einer Scheidung zustimmen, ist eine einvernehmliche Scheidung nach türkischem Recht die schnellste und kostengünstigste Lösung. Wir bereiten die Scheidungsfolgenvereinbarung vor, klären alle offenen Punkte — Unterhalt, Sorgerecht, Vermögensaufteilung — and sorgen für einen reibungslosen Ablauf.
 
 • Streitige Scheidung Türkei (Çekişmeli Boşanma)
 Wenn keine Einigung möglich ist, vertreten wir Ihre Interessen konsequent vor türkischen Gerichten. Gerade bei grenzüberschreitenden Scheidungsverfahren zwischen Deutschland und der Türkei ist erfahrene anwaltliche Vertretung entscheidend.
@@ -81,8 +99,31 @@ Nach einer Scheidung stellen sich Fragen zur Namensänderung nach türkischem Re
         question: "Muss ich für eine Erstberatung nach Mannheim kommen?",
         answer: "Nein. Wir bieten Erstberatungen auch per Telefon oder Video an. Viele unserer Mandanten aus dem gesamten Bundesgebiet betreuen wir vollständig auf Distanz."
       }
+    ],
+    faqTR: [
+      {
+        question: "Türkiye'ye gitmeden Türkiye'de boşanabilir miyim?",
+        answer: "Evet. Noter tasdikli bir vekaletname ile tüm Türk boşanma sürecini Almanya'dan sizin adınıza yürütebiliriz. Türk mahkemelerinde bizzat bulunmanız gerekmez. Bu, Mannheim ve Rhein-Neckar bölgesinden bize başvuran Türk ailelerin en sık dile getirdiği nedenlerden biridir."
+      },
+      {
+        question: "Türk hukukuna göre boşanma ne kadar sürer?",
+        answer: "Anlaşmalı boşanma (Anlaşmalı Boşanma) genellikle 2–6 ay sürer. Çekişmeli boşanma (Çekişmeli Boşanma) ise davanın karmaşıklığına ve ilgili Türk mahkemesine bağlı olarak 1–3 yıl sürebilir."
+      },
+      {
+        question: "Türkiye'de gerçekleşen boşanma Almanya'da tanınır mı?",
+        answer: "Türkiye'de verilen boşanma kararının Almanya'da tanınması gerekmektedir. Yetkili Alman makamı nezdinde tanıma ve tenfiz sürecinde (Tanıma ve Tenfiz) size eşlik ediyoruz; böylece medeni haliniz Almanya'da doğru şekilde tescil edilir."
+      },
+      {
+        question: "Ebeveynlerden biri Almanya'da, diğeri Türkiye'de yaşıyorsa velayet nasıl belirlenir?",
+        answer: "Sınır ötesi velayet davaları son derece karmaşıktır. Hangi mahkemenin yetkili olduğu ve hangi hukukun uygulanacağı, çocuğun mutad meskenine bağlıdır. Davanızı analiz ediyor ve sizi yetkili Türk veya Alman mahkemesinde temsil ediyoruz."
+      },
+      {
+        question: "İlk danışma için Mannheim'a gelmem gerekiyor mu?",
+        answer: "Hayır. İlk danışmayı telefon veya video görüşmesi yoluyla da gerçekleştirebilirsiniz. Almanya'nın dört bir yanından pek çok müvekkilimize tamamen uzaktan hizmet veriyoruz."
+      }
     ]
   },
+
 
   {
     id: "vollmacht-apostille",
