@@ -17,7 +17,14 @@
     { "source": "/impressum", "destination": "/de/impressum", "permanent": true },
     { "source": "/book-online", "destination": "/de", "permanent": true },
     { "source": "/treffen", "destination": "/de", "permanent": true },
-    { "source": "/schlüsselthemen", "destination": "/de/leistungen", "permanent": true }
+    { "source": "/schlüsselthemen", "destination": "/de/leistungen", "permanent": true },
+
+    { "source": "/immobilie", "destination": "/de/leistungen/immobilienrecht", "permanent": true },
+    { "source": "/tr/erbrecht", "destination": "/de/leistungen/erbrecht", "permanent": true },
+    { "source": "/tr/datenschutz", "destination": "/tr/gizlilik-politikasi", "permanent": true },
+    { "source": "/en/scheidungsverfahren", "destination": "/de/leistungen/familienrecht", "permanent": true },
+    { "source": "/tr/schlüsselthemen", "destination": "/de/leistungen", "permanent": true },
+    { "source": "/en", "destination": "/de", "permanent": true }
   ],
   "rewrites": [
     { "source": "/(.*)", "destination": "/index.html" }
