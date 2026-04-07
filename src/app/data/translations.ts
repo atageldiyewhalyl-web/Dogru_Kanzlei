@@ -142,7 +142,7 @@ export const translations = {
     // Hero Section
     hero_title_pre: "Avukat",
     hero_title_main: "Hasan Doğru",
-    hero_subtitle: "Fachanwalt für türkisches Recht",
+    hero_subtitle: "Experte für türkisches Recht",
     hero_description: "Suchen Sie einen kompetenten Rechtsbeistand, der die Brücke zwischen dem deutschen und dem türkischen Rechtssystem schlägt? Als spezialisierter Avukat unterstütze ich Sie bei komplexen grenzüberschreitenden Rechtsfragen mit fundierter Fachkenntnis und langjähriger Erfahrung.",
     hero_cta_primary: "Jetzt beraten lassen",
     hero_cta_secondary: "Unsere Leistungen",
@@ -152,7 +152,7 @@ export const translations = {
     stats_years_subtitle: "Auf Basis von Vertrauen und Kompetenz",
 
     // Lawyer Card
-    lawyer_role: "Fachanwalt für türkisches Recht",
+    lawyer_role: "Experte für türkisches Recht",
 
     // Service Teasers
     service_01_title: "Grenzüberschreitendes Recht",
@@ -170,7 +170,7 @@ export const translations = {
     why_us_point_01_title: "Digitaler Zugang zu türkischen Gerichten",
     why_us_point_01_desc: "Als im UYAP-System registrierter Avukat verwalte ich Ihre türkischen Rechtsangelegenheiten in Echtzeit aus Deutschland. Gerichtstermine, Dokumentenverfolgung, Verfahrensstatus. Ich erledige alles remote in Ihrem Namen. Sie müssen nie persönlich in der Türkei erscheinen.",
     why_us_point_02_title: "Doppelte Zulassung",
-    why_us_point_02_desc: "Als Mitglied der Anwaltskammer Ankara und der Rechtsanwaltskammer Karlsruhe (§207 BRAO) vertrete ich Sie direkt vor türkischen Gerichten. Ohne Kooperationspartner, ohne Mittelsmann. Während andere Kanzleien auf externe Anwälte in der Türkei angewiesen sind, handle ich selbst. Das spart Zeit, Kosten und Kommunikationsverluste.",
+    why_us_point_02_desc: "Als Mitglied der Anwaltskammer Ankara und der Anwaltskammer Karlsruhe (§207 BRAO) vertrete ich Sie direkt vor türkischen Gerichten. Ohne Kooperationspartner, ohne Mittelsmann. Während andere Kanzleien auf externe Anwälte in der Türkei angewiesen sind, handle ich selbst. Das spart Zeit, Kosten und Kommunikationsverluste.",
     why_us_point_03_title: "70+ Google-Bewertungen · 5,0 Sterne",
     why_us_point_03_desc: "Über 70 Mandanten haben ihre Erfahrungen mit uns geteilt. Mit der Bestnote 5,0 von 5,0 Sternen. Das ist kein Zufall, sondern das Ergebnis konsequenter, persönlicher und ergebnisorientierter Arbeit. Überzeugen Sie sich selbst.",
     why_us_point_04_title: "Büro in Ankara",
@@ -182,10 +182,10 @@ export const translations = {
     about_subtitle: "Avukat Hasan Doğru",
     about_p1: "Bevor ich den Weg ins Recht einschlug, war ich fast ein Jahrzehnt im türkischen Sicherheitsdienst tätig — in einer operativen Spezialeinheit, die höchste Disziplin, Belastbarkeit und ein tiefes Verständnis für das türkische Rechtssystem erforderte. Diese Jahre haben mich geprägt: Ich habe gelernt, unter Druck präzise zu handeln, komplexe Sachverhalte schnell zu erfassen und Verantwortung für andere zu übernehmen. Genau diese Eigenschaften bringe ich heute in jedes Mandat ein.",
     about_p2: "Bereits während meiner aktiven Dienstzeit begann ich parallel mein Studium — zunächst Kamu Yönetimi (Öffentliche Verwaltung) an der Anadolu Üniversitesi, anschließend Rechtswissenschaften (LL.B.) an der Cyprus International University. Nach meiner Zulassung als Avukat bei der Rechtsanwaltskammer Ankara (Ankara Barosu, Sicil-Nr. 47068) verlegte ich meinen Lebensmittelpunkt nach Deutschland.",
-    about_p3: "Seit meiner Registrierung bei der Rechtsanwaltskammer Karlsruhe gemäß §207 BRAO berate und vertrete ich Mandanten mit Kanzleistandorten in Mannheim und Ankara — ausschließlich im türkischen Recht und Völkerrecht. Direkt, persönlich und ohne Drittvermittlung.",
+    about_p3: "Seit meiner Registrierung bei der Anwaltskammer Karlsruhe gemäß §207 BRAO berate und vertrete ich Mandanten mit Kanzleistandorten in Mannheim und Ankara — ausschließlich im türkischen Recht und Völkerrecht. Direkt, persönlich und ohne Drittvermittlung.",
     about_p4: "Was mich von anderen unterscheidet: Durch meine Doppelzulassung bin ich berechtigt, Mandanten unmittelbar vor türkischen Gerichten und Behörden zu vertreten — ohne dass meine Mandanten dafür die Türkei bereisen müssen. Über 70 Google-Bewertungen mit 5,0 Sternen spiegeln das Vertrauen wider, das mir meine Mandanten täglich entgegenbringen.",
     about_cred_01: "Mitglied der Anwaltskammer Ankara",
-    about_cred_02: "Rechtsanwaltskammer Karlsruhe — §207 BRAO",
+    about_cred_02: "Anwaltskammer Karlsruhe — §207 BRAO",
     about_cred_03: "Direkte Vertretung vor türkischen Gerichten",
     about_cred_04: "Büros in Mannheim & Ankara",
     about_signature_role: "Gründer & Inhaber",

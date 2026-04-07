@@ -73,7 +73,7 @@ export function Impressum() {
           </h2>
           <div className="mb-8">
             <p className="mb-2"><strong>Handelsregister:</strong> [HRA]</p>
-            <p className="mb-2"><strong>Registergericht:</strong> Rechtsanwaltskammer Karlsruhe</p>
+            <p className="mb-2"><strong>Registergericht:</strong> Anwaltskammer Karlsruhe</p>
             <p className="mb-2"><strong>Registernummer:</strong> Mitgliedsnummer: [Miras]</p>
             <p className="mb-2"><strong>Umsatzsteuer-ID gemäß § 27a UStG:</strong> (Ust.-Nr.: 38240/01054)</p>
           </div>

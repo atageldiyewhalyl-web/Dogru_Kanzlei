@@ -91,7 +91,7 @@ Viele türkischstämmige Familien besitzen Immobilien in der Türkei. Stirbt der
 - **Unbeglaubigte Dokumente** – Dokumente ohne Apostille werden in der Türkei nicht anerkannt.
 
 **Dogru Kanzlei: Ihre Experten für türkisches Recht**
-Als Mitglied der Ankara Barosu und der Rechtsanwaltskammer Karlsruhe (§ 207 BRAO) führen wir Erbschaftsangelegenheiten direkt vor türkischen Behörden durch. Wir sprechen Türkisch und Deutsch. Kontaktieren Sie uns für eine professionelle Unterstützung.`,
+Als Mitglied der Ankara Barosu und der Anwaltskammer Karlsruhe (§ 207 BRAO) führen wir Erbschaftsangelegenheiten direkt vor türkischen Behörden durch. Wir sprechen Türkisch und Deutsch. Kontaktieren Sie uns für eine professionelle Unterstützung.`,
     contentTR: `**YASAL UYARI:** Bu makale yalnızca Türk hukuku ile ilgilidir. Büromuzda Alman hukuku (örneğin Alman miras hukuku, BGB uyarınca aile hukuku veya Alman göç hukuku) konusunda danışmanlık verilmemektedir.
 
 Almanya'da yaşayan Türk vatandaşları için miras hukuku, özellikle Türkiye'deki malvarlıklarının yönetimi açısından büyük önem taşır.

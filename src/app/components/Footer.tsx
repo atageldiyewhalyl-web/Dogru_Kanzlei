@@ -21,16 +21,12 @@ export function Footer() {
     ? [
         { label: "Familienrecht", href: paths.service("familienrecht") },
         { label: "Erbrecht", href: paths.service("erbrecht") },
-        { label: "Mietrecht", href: paths.service("mietrecht") },
         { label: "Strafrecht", href: paths.service("strafrecht") },
-        { label: "Türkisches Recht", href: paths.service("tuerkisches-recht") },
       ]
     : [
         { label: "Aile Hukuku", href: paths.service("familienrecht") },
         { label: "Miras Hukuku", href: paths.service("erbrecht") },
-        { label: "Kira Hukuku", href: paths.service("mietrecht") },
         { label: "Ceza Hukuku", href: paths.service("strafrecht") },
-        { label: "Türk Hukuku", href: paths.service("tuerkisches-recht") },
       ];
 
   return (
@@ -265,7 +261,7 @@ export function Footer() {
              <div>
                <span style={{ color: "#C9A84C", fontSize: 11, fontWeight: 700, textTransform: "uppercase", letterSpacing: "0.2em", display: "block", marginBottom: 16, opacity: 0.9 }}>Rechtlicher Hinweis</span>
                <p style={{ color: "rgba(255,255,255,0.6)", fontSize: 11, lineHeight: 1.8, margin: 0, fontFamily: "'Lato', sans-serif" }}>
-                 Die Kanzlei berät ausschließlich im türkischen Recht. Eine Beratung oder Vertretung im deutschen Recht findet nicht statt. Registriert als ausländischer Rechtsanwalt gemäß § 207 BRAO.
+                 Die Kanzlei berät ausschließlich im türkischen Recht. Eine Beratung oder Vertretung im deutschen Recht findet nicht statt. Registriert als ausländischer Anwalt gemäß § 207 BRAO.
                </p>
              </div>
              <div lang="tr">
