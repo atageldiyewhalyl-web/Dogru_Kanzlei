@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="de">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Preload LCP Hero Image (First Tag in Head for priority) -->                
+    <link rel="preload" as="image" href="/assets/hero.avif" fetchPriority="high" type="image/avif" />
+
+    <!-- CSS is loaded asynchronously by the Vite makeCssAsync plugin at build time.
+         In dev mode, Vite injects CSS normally. -->
+
+    <!-- Cormorant font: fully deferred via print media trick to break critical path chain -->
+    <link rel="stylesheet" href="data:text/css;base64,LyogPT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09CiAgIENvcm1vcmFudCBHYXJhbW9uZCDigJQgRGVjb3VwbGVkIGZyb20gY3JpdGljYWwgcGF0aAogICA9PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT0gKi8KCkBmb250LWZhY2UgewogIGZvbnQtZmFtaWx5OiAnQ29ybW9yYW50IEdhcmFtb25kJzsKICBmb250LXN0eWxlOiBub3JtYWw7CiAgZm9udC13ZWlnaHQ6IDMwMCA3MDA7CiAgZm9udC1kaXNwbGF5OiBzd2FwOwogIHNyYzogdXJsKCcvc3JjL2Fzc2V0cy9mb250cy9Db3Jtb3JhbnRHYXJhbW9uZC1SZWd1bGFyLndvZmYyJykgZm9ybWF0KCd3b2ZmMicpOwogIHVuaWNvZGUtcmFuZ2U6IFUrMDAwMC0wMEZGLCBVKzAxMDAtMDI0RiwgVSswMjUwLTAyQUYsIFUrMUUwMC0xRUZGOwp9CgpAZm9udC1mYWNlIHsKICBmb250LWZhbWlseTogJ0Nvcm1vcmFudCBHYXJhbW9uZCc7CiAgZm9udC1zdHlsZTogaXRhbGljOwogIGZvbnQtd2VpZ2h0OiAzMDAgNzAwOwogIGZvbnQtZGlzcGxheTogc3dhcDsKICBzcmM6IHVybCgnL3NyYy9hc3NldHMvZm9udHMvQ29ybW9yYW50R2FyYW1vbmQtSXRhbGljLndvZmYyJykgZm9ybWF0KCd3b2ZmMicpOwogIHVuaWNvZGUtcmFuZ2U6IFUrMDAwMC0wMEZGLCBVKzAxMDAtMDI0RiwgVSswMjUwLTAyQUYsIFUrMUUwMC0xRUZGOwp9Cg==" media="print" onload="this.media='all'">
+    <noscript></noscript>
+
+    <!-- Primary Meta Tags (overridden dynamically per page by useSEO hook) -->
+    <title>Avukat Hasan Doğru | Doğru Kanzlei Mannheim</title>
+    <meta name="description" content="Avukat Hasan Doğru für türkisches und deutsches Recht in Mannheim. Familienrecht, Erbrecht, Mietrecht, Strafrecht und grenzüberschreitende Rechtsberatung. Kostenlose Erstberatung." />
+    <meta name="robots" content="index, follow" />
+
+    <!-- Hreflang (defaults, overridden per page) -->
+    <link rel="alternate" hreflang="de" href="https://www.hasandogru.de/de" />
+    <link rel="alternate" hreflang="tr" href="https://www.hasandogru.de/tr" />
+    <link rel="alternate" hreflang="x-default" href="https://www.hasandogru.de/de" />
+
+    <!-- Canonical (overridden per page) -->
+    <link rel="canonical" href="https://www.hasandogru.de/de" />
+
+    <!-- Open Graph -->
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="Doğru Kanzlei" />
+    <meta property="og:title" content="Avukat Hasan Doğru | Doğru Kanzlei Mannheim" />
+    <meta property="og:description" content="Avukat Hasan Doğru für türkisches und deutsches Recht in Mannheim und Ankara." />
+    <meta property="og:url" content="https://www.hasandogru.de" />
+    <meta property="og:locale" content="de_DE" />
+    <meta property="og:locale:alternate" content="tr_TR" />
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Avukat Hasan Doğru | Doğru Kanzlei" />
+    <meta name="twitter:description" content="Avukat Hasan Doğru für türkisches und deutsches Recht in Mannheim und Ankara." />
+
+    <!-- Geo Tags (Local SEO) -->
+    <meta name="geo.region" content="DE-BW" />
+    <meta name="geo.placename" content="Mannheim" />
+
+    <!-- Resource Hints -->
+    <link rel="preload" href="/assets/Inter-CMLeEau1.woff2" as="font" type="font/woff2" crossorigin="anonymous" />
+    
+    <!-- Critical CSS: inline above-the-fold styles so the page background renders immediately,
+         even before the full CSS bundle loads asynchronously. -->
+    <style>
+      :root { --brand-green: #1C3829; --brand-gold: #B8963E; }
+      body { background: var(--brand-green); margin: 0; padding: 0; font-family: sans-serif; overflow-x: hidden; }
+      #root { min-height: 100vh; background: var(--brand-green); }
+      header { position: fixed; top: 0; width: 100%; height: 80px; z-index: 100; transition: background 0.3s; }
+      .hero-instant { background: var(--brand-green); min-height: 100vh; display: flex; align-items: center; justify-content: center; }
+      /* LCP pre-render shell styles */
+      #lcp-shell { min-height: 100vh; background: #1C3829; display: flex; align-items: center; padding-top: 80px; }
+      #lcp-shell-inner { max-width: 1400px; margin: 0 auto; padding: 48px 24px 48px 48px; width: 100%; }
+      #lcp-pre { font-family: Arial, sans-serif; font-size: 15px; font-weight: 300; color: rgba(255,255,255,0.6); line-height: 1.625; max-width: 28rem; margin: 0; }
+    </style>
+    <script type="module" crossorigin src="/assets/index-Ct_jTi2O.js"></script>
+    <link rel="modulepreload" crossorigin href="/assets/react-vendor-CgwWJmHi.js">
+    <link rel="modulepreload" crossorigin href="/assets/framer-vendor-BIA4YF-8.js">
+    <link rel="modulepreload" crossorigin href="/assets/ui-vendor-Bd5aUR3P.js">
+    <link rel="preload" as="style" href="/assets/index-CukWImkt.css" onload="this.onload=null;this.rel='stylesheet'"><noscript><link rel="stylesheet" href="/assets/index-CukWImkt.css"></noscript>
+  </head>
+
+  <body>
+    <div id="root">
+      <!--
+        Static LCP pre-render shell — painted immediately from HTML before React mounts.
+        Reduces "Element render delay" from ~2,530ms to near-zero.
+        React replaces this content on mount.
+        aria-hidden prevents screen readers from reading this duplicate content.
+      -->
+      <div id="lcp-shell" aria-hidden="true">
+        <div id="lcp-shell-inner">
+          <p id="lcp-pre">
+            Suchen Sie einen kompetenten Rechtsbeistand, der die Brücke zwischen dem deutschen und dem türkischen Rechtssystem schlägt? Als spezialisierter Avukat unterstütze ich Sie bei komplexen grenzüberschreitenden Rechtsfragen mit fundierter Fachkenntnis und langjähriger Erfahrung.
+          </p>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
