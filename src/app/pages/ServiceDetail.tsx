@@ -44,6 +44,54 @@ function FAQItem({ question, answer }: { question: string; answer: string }) {
   );
 }
 
+const renderFormattedContent = (text: string) => {
+  const paragraphs = text.split('\n\n');
+  return paragraphs.map((para, i) => {
+    const lines = para.split('\n');
+    return (
+      <div key={i} className={i < paragraphs.length - 1 ? "mb-8 flex flex-col" : "flex flex-col"}>
+        {lines.map((line, j) => {
+          const trimmed = line.trim();
+          if (!trimmed) return null;
+
+          // Headers
+          const isHeaderLine = 
+            trimmed.includes('Sizin için neler') ||
+            trimmed.includes('Was wir für Sie') ||
+            trimmed.includes('Warum Doğru') ||
+            trimmed.includes('Neden Doğru');
+
+          if (isHeaderLine) {
+            return (
+              <h3 key={j} className="font-serif text-[24px] md:text-[28px] text-[#1C3829] mt-8 mb-4 border-b border-[#8B6E2A]/20 pb-3 self-start">
+                {trimmed}
+              </h3>
+            );
+          }
+
+          // Bold list items: lines starting with '-' or '•'
+          if (trimmed.startsWith('- ') || trimmed.startsWith('• ') || trimmed.startsWith('-') || trimmed.startsWith('•')) {
+            const content = trimmed.replace(/^[-•]\s*/, '');
+            return (
+              <div key={j} className="font-sans font-bold text-[17px] md:text-[19px] text-[#1C3829] mt-6 mb-2 flex items-start gap-3">
+                <span className="text-[#8B6E2A] shrink-0 mt-0.5">—</span>
+                <span>{content}</span>
+              </div>
+            );
+          }
+
+          // Default text
+          return (
+            <p key={j} className={`font-light text-[#3a3a3a] leading-[1.8] ${j > 0 ? "mt-2" : ""}`}>
+              {trimmed}
+            </p>
+          );
+        })}
+      </div>
+    );
+  });
+};
+
 export function ServiceDetail() {
   const { id } = useParams();
   const { language, t, paths } = useLanguage();
@@ -152,11 +200,11 @@ export function ServiceDetail() {
                   <span lang={language === 'tr' ? 'tr' : 'de'}>{description}</span>
                 </p>
 
-                <div className="prose prose-xl prose-serif max-w-none text-[#3a3a3a] leading-[1.8] font-light whitespace-pre-line mb-20 space-y-8">
+                <div className="prose-container prose-xl prose-serif max-w-none text-[#3a3a3a] leading-[1.8] font-light mb-20 space-y-8">
                   <span lang={language === 'tr' ? 'tr' : 'de'}>
-                    {content || (language === 'de'
+                    {renderFormattedContent(content || (language === 'de'
                       ? 'In diesem Bereich bieten wir umfassende Rechtsberatung und Vertretung.'
-                      : 'Bu alanda kapsamlı hukuki danışmanlık ve temsil hizmetleri sunmaktayız.')}
+                      : 'Bu alanda kapsamlı hukuki danışmanlık ve temsil hizmetleri sunmaktayız.'))}
                   </span>
                 </div>
               </div>
