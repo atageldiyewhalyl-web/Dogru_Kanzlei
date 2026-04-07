@@ -49,14 +49,24 @@
     <link rel="preload" href="/assets/Inter-CMLeEau1.woff2" as="font" type="font/woff2" crossorigin="anonymous" />
     <link rel="preload" href="/assets/CormorantGaramond-Regular-n41RAqwj.woff2" as="font" type="font/woff2" crossorigin="anonymous" />
     
-    <!-- Critical CSS: inline above-the-fold styles so the page background renders immediately,
-         even before the full CSS bundle loads asynchronously. -->
+    <!-- Critical CSS: inline above-the-fold styles so the page background renders immediately.
+         Ensures LCP text (h1 and p) is visible white/gold instantly without waiting for async CSS. -->
     <style>
       :root { --brand-green: #1C3829; --brand-gold: #B8963E; }
-      body { background: var(--brand-green); margin: 0; padding: 0; font-family: sans-serif; overflow-x: hidden; }
+      body { background: var(--brand-green); margin: 0; padding: 0; font-family: sans-serif; overflow-x: hidden; color: white; }
       #root { min-height: 100vh; background: var(--brand-green); }
       header { position: fixed; top: 0; width: 100%; height: 80px; z-index: 100; transition: background 0.3s; }
       .hero-instant { background: var(--brand-green); min-height: 100vh; display: flex; align-items: center; justify-content: center; }
+      
+      /* LCP Text Styles (Critical for reducing PSI render delay) */
+      .font-serif { font-family: 'Cormorant Garamond', serif; }
+      .font-sans { font-family: 'Inter', system-ui, -apple-system, sans-serif; }
+      h1 { color: white; margin-bottom: 2rem; letter-spacing: -0.025em; line-height: 1; }
+      .text-white\/80 { color: rgba(255, 255, 255, 0.8); }
+      .text-white\/60 { color: rgba(255, 255, 255, 0.6); }
+      .max-w-md { max-width: 28rem; }
+      .leading-relaxed { line-height: 1.625; }
+      .italic { font-style: italic; }
     </style>
     <script type="module" crossorigin src="/assets/index-DNgV7Qcp.js"></script>
     <link rel="modulepreload" crossorigin href="/assets/react-router-6-Nor5m_.js">
