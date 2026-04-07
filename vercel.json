@@ -18,7 +18,6 @@
     { "source": "/book-online", "destination": "/de", "permanent": true },
     { "source": "/treffen", "destination": "/de", "permanent": true },
     { "source": "/schlüsselthemen", "destination": "/de/leistungen", "permanent": true },
-
     { "source": "/immobilie", "destination": "/de/leistungen/immobilienrecht", "permanent": true },
     { "source": "/tr/erbrecht", "destination": "/de/leistungen/erbrecht", "permanent": true },
     { "source": "/tr/datenschutz", "destination": "/tr/gizlilik-politikasi", "permanent": true },
