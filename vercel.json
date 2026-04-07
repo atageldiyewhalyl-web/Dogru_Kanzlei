@@ -1,6 +1,7 @@
 {
   "framework": null,
-  "buildCommand": null,
+  "installCommand": "echo skipping install",
+  "buildCommand": "echo skipping build",
   "outputDirectory": "build",
   "redirects": [
     { "source": "/", "destination": "/de", "permanent": true },
