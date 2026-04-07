@@ -381,8 +381,10 @@ Was uns auszeichnet:
     icon: Gavel,
     title: "Strafrecht",
     titleTR: "Ceza Hukuku",
+    seoTitleDE: "Türkisches Strafrecht Mannheim | Vorladung & Haftbefehl aus der Türkei | Avukat Hasan Doğru",
+    seoDescriptionDE: "Vorladung, Haftbefehl oder Interpol-Ausschreibung aus der Türkei? Avukat Hasan Doğru vertritt türkischstämmige Mandanten aus Mannheim in türkischen Strafverfahren — vollständig ohne Reise in die Türkei.",
     description: "Türkiye'deki ceza davalarında Almanya'dan uzman hukuki savunma ve temsil. Mahkeme celbi, tutuklama müzekkeresi veya Interpol bildirimi olsa — Türk ceza yargı sisteminde her adımda yanınızdayız.",
-    descriptionDE: "Fachkundige Strafverteidigung und rechtliche Beratung in türkischen Strafverfahren — direkt aus Deutschland. Ob Vorladung, Haftbefehl oder Interpol-Ausschreibung: Wir begleiten Sie durch das türkische Strafjustizsystem.",
+    descriptionDE: "Fachkundige Strafverteidigung und rechtliche Beratung in türkischen Strafverfahren — direkt aus Mannheim. Ob Vorladung, Haftbefehl oder Interpol-Ausschreibung: Wir begleiten Sie durch das türkische Strafjustizsystem.",
     detail: "CEZA SAVUNMASI · INTERPOL / KIRMIZI KÖŞE · İADE",
     detailDE: "STRAFVERTEIDIGUNG · INTERPOL / ROTE ECKE · AUSLIEFERUNG",
     content: `Türkiye'deki ceza davalarında Almanya'dan uzman hukuki savunma ve temsil — güvenilir, şeffaf ve deneyimli.
@@ -407,27 +409,105 @@ Sizin için neler yapıyoruz:
 
 Kapanış cümlesi:
 Tüm süreç boyunca yanınızdayız — güvenilir, şeffaf ve Türk-Alman ceza hukuku alanında derin deneyimle.`,
-    contentDE: `Fachkundige Strafverteidigung und rechtliche Beratung bei türkischen Strafverfahren — kompetent vertreten aus Deutschland.
+    contentDE: `Strafverteidigung in der Türkei aus Deutschland
 
-Strafverteidigung in der Türkei aus Deutschland
-Türkisches Strafrecht for Auslandstürken — Was tun bei Vorladung oder Haftbefehl?
+Türkisches Strafrecht für Auslandstürken — Was tun bei Vorladung oder Haftbefehl?
 
-Wenn Sie in Deutschland leben und eine Vorladung, einen Haftbefehl oder eine Interpol-Ausschreibung aus der Türkei erhalten haben, stehen Sie vor einer ernsthaften rechtlichen Herausforderung. Das türkische Strafrecht unterscheidet sich grundlegend vom deutschen — ohne fachkundige Begleitung riskieren Sie schwerwiegende Konsequenzen, auch ohne in die Türkei zu reisen.
+Wenn Sie in Mannheim, Heidelberg oder dem Rhein-Neckar-Raum leben und eine Vorladung, einen Haftbefehl oder eine Interpol-Ausschreibung aus der Türkei erhalten haben, stehen Sie vor einer ernsthaften rechtlichen Herausforderung. Das türkische Strafrecht unterscheidet sich grundlegend vom deutschen — ohne fachkundige Begleitung riskieren Sie schwerwiegende Konsequenzen, auch ohne jemals in die Türkei zu reisen.
 
-Ein laufendes Strafverfahren in der Türkei kann weitreichende Folgen haben: Einschränkungen bei der Passverlängerung, Probleme bei der Einreise in die Türkei, Auslieferungsanträge oder Einträge im internationalen Fahndungssystem (Interpol). Wir vertreten Sie vollständig — auch ohne Ihre persönliche Anwesenheit in der Türkei.
+Ein laufendes Strafverfahren in der Türkei kann weitreichende Folgen haben: Einschränkungen bei der Passverlängerung, Probleme bei der Einreise in die Türkei, Auslieferungsanträge oder Einträge im internationalen Fahndungssystem (Interpol). Zeit ist dabei entscheidend — je früher Sie handeln, desto besser stehen Ihre Chancen.
+
+Avukat Hasan Doğru ist Mitglied der Ankara Barosu und berät ausschließlich im türkischen Recht. Wir vertreten Sie vollständig in türkischen Strafverfahren — auch ohne Ihre persönliche Anwesenheit in der Türkei.
 
 Was wir für Sie tun:
-• Prüfung Ihrer Situation bei Vorladung oder Haftbefehl aus der Türkei
-• Vollständige Strafverteidigung im türkischen Strafverfahren
-• Vertretung bei Interpol-Ausschreibungen und Roten Ecken
-• Begleitung bei Auslieferungsverfahren zwischen der Türkei und Deutschland
-• Beratung bei Betäubungsmitteldelikten (TCK m. 188, 191)
-• Vertretung bei Betrug und Untreue (Dolandırıcılık, Güveni Kötüye Kullanma)
-• Einreichung von Strafanzeigen in der Türkei aus Deutschland (Suç duyurusu)
-• Beratung bei Militärdienst-Vergehen (Bakaya, Yoklama Kaçağı)
-• Begleitung bei Internetstraftaten und Cyber-Kriminalität nach türkischem Recht
 
-Wir begleiten Sie durch den gesamten Prozess — zuverlässig, transparent und mit fundierter Erfahrung im deutsch-türkischen Strafrecht.`
+- Prüfung Ihrer Situation bei Vorladung oder Haftbefehl aus der Türkei
+Sie haben Post aus der Türkei erhalten und wissen nicht, was zu tun ist? Wir analysieren Ihre Situation sofort und vertraulich — prüfen ob ein Haftbefehl oder Reiseverbot besteht, erklären Ihnen die Konsequenzen und legen gemeinsam mit Ihnen den nächsten Schritt fest. Handeln Sie nicht, bevor Sie mit uns gesprochen haben.
+
+- Vollständige Strafverteidigung im türkischen Strafverfahren (Ceza Davası)
+Wir übernehmen die vollständige Verteidigung in türkischen Strafverfahren — von der ersten Einlassung bis zum Urteil und gegebenenfalls bis zur Rechtsmittelinstanz. Per Prozessvollmacht vertreten wir Sie vor türkischen Strafgerichten, ohne dass Sie persönlich in der Türkei erscheinen müssen. Wir kennen das türkische Strafprozessrecht (CMK) und nutzen jeden rechtlichen Spielraum für Ihre Verteidigung.
+
+- Vertretung bei Interpol-Ausschreibungen und Roten Ecken (Kırmızı Bülten)
+Eine Rote Ecke (Red Notice) von Interpol kann Ihre Reisefreiheit in allen 196 Mitgliedsstaaten einschränken — und dazu führen, dass Sie bei jeder Grenzüberschreitung festgehalten werden. Wir prüfen die Rechtmäßigkeit der Ausschreibung, beantragen die Löschung oder Aussetzung bei der Interpol-Kommission für die Kontrolle von Dateien (CCF) und vertreten Sie gegenüber Interpol und türkischen Behörden.
+
+- Begleitung bei Auslieferungsverfahren zwischen der Türkei und Deutschland (İade)
+Wenn die Türkei ein förmliches Auslieferungsersuchen an Deutschland stellt, sind schnelles Handeln und spezialisierte Vertretung in beiden Ländern entscheidend. Wir koordinieren mit deutschen Behörden und türkischen Gerichten gleichzeitig, prüfen die Zulässigkeit des Ersuchens und setzen alles daran, Ihre Rechte zu schützen.
+
+- Beratung bei Betäubungsmitteldelikten nach türkischem Recht (TCK m. 188, 191)
+Betäubungsmitteldelikte nach dem türkischen Strafgesetzbuch (TCK) werden mit erheblichen Freiheitsstrafen geahndet — die Strafen reichen je nach Delikt von mehreren Jahren bis zu lebenslanger Haft. Wir beraten Sie zu Ihren Rechten, möglichen Strafminderungsgründen und vertreten Sie konsequent vor türkischen Strafgerichten.
+
+- Vertretung bei Betrug und Untreue (Dolandırıcılık, Güveni Kötüye Kullanma)
+Betrugs- und Untreuevorwürfe nach türkischem Strafrecht erfordern eine differenzierte und sorgfältige Verteidigungsstrategie. Wir analysieren den Sachverhalt vollständig, sichern entlastende Beweismittel und vertreten Sie durchsetzungsstark in türkischen Strafverfahren.
+
+- Einreichung von Strafanzeigen in der Türkei aus Deutschland (Suç Duyurusu)
+Wurden Sie selbst Opfer einer Straftat in der Türkei — Betrug, Erpressung, Diebstahl, Körperverletzung — können Sie auch von Deutschland aus Strafanzeige erstatten. Wir formulieren und reichen die Suç Duyurusu bei der zuständigen türkischen Staatsanwaltschaft ein und verfolgen das Verfahren in Ihrem Auftrag.
+
+- Beratung bei Militärdienst-Vergehen (Bakaya, Yoklama Kaçağı)
+Viele Deutsch-Türken reisen sorglos in die Türkei — ohne zu wissen, dass sie wegen nicht abgeleisteten Militärdienstes gesucht werden. Bakaya (Fahnenflucht) oder Yoklama Kaçağı (Erfassungsentzug) können bei der Einreise zu sofortiger Festnahme führen. Wir klären Ihren Militärdienststatus, regeln offene Pflichten und sichern Ihnen die Möglichkeit, sicher in die Türkei zu reisen.
+
+- Begleitung bei Internetstraftaten und Cyber-Kriminalität nach türkischem Recht
+Das türkische Strafgesetzbuch ahndet Beleidigung im Internet (TCK m. 125), Verleumdung in sozialen Medien und Datenschutzverletzungen zunehmend streng — auch wenn die betreffenden Personen im Ausland leben. Wir vertreten Sie sowohl als Beschuldigten als auch als Geschädigten in türkischen Verfahren wegen Internetkriminalität.
+
+- Beratung bei politischen Strafverfahren und Pressefreiheitsdelikten
+In der Türkei werden auch Meinungsäußerungen in sozialen Medien oder Beiträge in Gruppenkonversationen strafrechtlich verfolgt. Wenn Sie wegen Beleidigung des Staates (TCK m. 301), Terrorismuspropaganda (TMK m. 7/2) oder ähnlichen Delikten verfolgt werden, stehen wir Ihnen mit spezialisierter Expertise zur Seite.
+
+Was tun, wenn Sie eine Vorladung aus der Türkei erhalten?
+
+Viele Menschen machen in dieser Situation denselben Fehler: Sie reisen in die Türkei, ohne zu wissen, ob ein Haftbefehl vorliegt. Das kann zur sofortigen Festnahme am Flughafen führen.
+
+Der richtige Ablauf:
+
+Schritt 1 — Nicht in die Türkei reisen, bevor Ihr Status geklärt ist.
+Schritt 2 — Kontaktieren Sie uns sofort. Wir prüfen ob ein Haftbefehl, Reiseverbot oder eine Interpol-Ausschreibung vorliegt.
+Schritt 3 — Wir analysieren das zugrundeliegende Verfahren und erklären Ihnen Ihre Optionen.
+Schritt 4 — Wir entwickeln gemeinsam mit Ihnen eine Strategie — ob Einlassung, Verteidigung oder Verfahrenseinstellung.
+Schritt 5 — Wir vertreten Sie vollständig vor türkischen Behörden und Gerichten — per Vollmacht, ohne Ihre Anwesenheit.
+
+Warum Doğru Kanzlei für türkisches Strafrecht in Mannheim?
+
+Türkisches Strafrecht ist ein Spezialgebiet, das tiefgreifende Kenntnisse des türkischen Strafgesetzbuchs (TCK), der türkischen Strafprozessordnung (CMK) und der türkischen Justizpraxis erfordert. Avukat Hasan Doğru ist Mitglied der Ankara Barosu und kennt das türkische Strafjustizsystem von innen — nicht aus Lehrbüchern, sondern aus der Praxis.
+
+Unsere Kanzlei in Mannheim ist der direkte Ansprechpartner für türkischstämmige Mandanten im Rhein-Neckar-Raum, die mit türkischen Strafverfahren konfrontiert sind. Wir sprechen Türkisch und Deutsch. Wir handeln schnell. Und wir halten Sie in jeder Phase des Verfahrens transparent informiert.
+
+Was uns auszeichnet:
+
+- Ausschließlich türkisches Recht — spezialisierte Expertise im türkischen Strafrecht
+- Mitglied der Ankara Barosu, registriert gemäß § 207 BRAO
+- Vollständige Vertretung ohne Reise in die Türkei möglich
+- Sofortige Statusprüfung bei Vorladung oder Haftbefehl
+- Beratung auf Türkisch und Deutsch
+- Standort Mannheim — persönliche Beratung im Rhein-Neckar-Raum
+- Zweiter Standort Ankara — direkter Zugang zu türkischen Strafgerichten und Behörden`,
+    faqDE: [
+      {
+        question: "Ich habe eine Vorladung aus der Türkei erhalten. Was soll ich tun?",
+        answer: "Handeln Sie nicht unüberlegt und reisen Sie auf keinen Fall in die Türkei, bevor Sie Ihren Status kennen. Kontaktieren Sie uns zuerst — bevor Sie auf die Vorladung antworten oder irgendwelche Schritte unternehmen. Wir analysieren die Situation, prüfen ob ein Haftbefehl oder Reiseverbot vorliegt und legen den sichersten Weg fest."
+      },
+      {
+        question: "Kann ich in die Türkei einreisen, wenn gegen mich ein Verfahren läuft?",
+        answer: "Das hängt davon ab, ob ein Reiseverbot (Yurt Dışı Çıkış Yasağı) oder Haftbefehl (Tutuklama Müzekkeresi) vorliegt. In manchen Fällen ist die Einreise möglich, in anderen droht unmittelbare Festnahme am Flughafen. Wir prüfen Ihren Status, bevor Sie reisen — das ist in jedem Fall unverzichtbar."
+      },
+      {
+        question: "Kann ich in einem türkischen Strafverfahren vertreten werden, ohne selbst zu erscheinen?",
+        answer: "In den meisten Verfahren ja. Mit einer Prozessvollmacht (Vekaletname) vertreten wir Sie vor türkischen Strafgerichten. Ob eine persönliche Anwesenheit erforderlich ist, hängt vom Verfahrensstand, der Art des Delikts und dem Willen des Gerichts ab — wir klären das von Anfang an."
+      },
+      {
+        question: "Was ist eine Interpol-Rote-Ecke und wie kann sie aufgehoben werden?",
+        answer: "Eine Red Notice ist ein internationaler Fahndungsaufruf, der in allen 196 Interpol-Mitgliedsstaaten gilt. Sie schränkt Ihre Reisefreiheit erheblich ein. Wir beantragen die Überprüfung und Löschung der Ausschreibung bei der Interpol-Kommission für die Kontrolle von Dateien (CCF) und vertreten Sie in diesem spezialisierten Verfahren."
+      },
+      {
+        question: "Was passiert, wenn ich wegen des Militärdienstes gesucht werde?",
+        answer: "Wer als Bakaya (Fahnenflüchtiger) oder Yoklama Kaçağı (Erfassungsentzieher) registriert ist, riskiert bei der Einreise in die Türkei sofortige Festnahme. Wir klären Ihren Militärdienststatus über offizielle Kanäle, regeln offene Pflichten und ermöglichen Ihnen so eine sichere Einreise in die Türkei."
+      },
+      {
+        question: "Wie lange dauert ein türkisches Strafverfahren?",
+        answer: "Das hängt stark von der Art des Delikts, dem zuständigen Gericht und dem Verfahrensstand ab. Einfachere Verfahren können in 6–18 Monaten abgeschlossen werden, komplexe Fälle dauern mehrere Jahre. Wir informieren Sie realistisch und transparent über den Zeitrahmen Ihres konkreten Falls — ohne falsche Versprechen."
+      },
+      {
+        question: "Was kostet eine Strafverteidigung nach türkischem Recht?",
+        answer: "Die Kosten hängen vom Umfang des Verfahrens, der Anzahl der Instanzen und der Komplexität des Falls ab. Nach einer ersten Analyse erstellen wir Ihnen ein transparentes Angebot — ohne versteckte Kosten."
+      }
+    ]
   },
   {
     id: "tanima-ve-tenfiz",
