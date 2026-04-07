@@ -141,6 +141,7 @@ export function Testimonials() {
               </button>
               <button
                 onClick={next}
+                aria-label="Nächstes Testimonial"
                 style={{
                   width: 44,
                   height: 44,
@@ -229,9 +230,9 @@ export function Testimonials() {
               <div
                 style={{
                   fontFamily: "'Lato', sans-serif",
-                  fontSize: 12,
-                  fontWeight: 400,
-                  color: "#B8963E",
+                  fontSize: 13,
+                  fontWeight: 600,
+                  color: "#555555",
                   marginTop: 4,
                   letterSpacing: "0.06em",
                 }}

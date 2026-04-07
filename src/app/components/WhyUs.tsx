@@ -162,9 +162,9 @@ export function WhyUs() {
                     top: 28,
                     right: 32,
                     fontFamily: "'Cormorant Garamond', serif",
-                    fontSize: 64,
+                    fontSize: 14,
                     fontWeight: 300,
-                    color: "rgba(255,255,255,0.04)",
+                    color: "rgba(255,255,255,0.85)",
                     lineHeight: 1,
                     userSelect: "none",
                   }}

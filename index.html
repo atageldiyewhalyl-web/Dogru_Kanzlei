@@ -7,13 +7,13 @@
     <!-- Task 6: Preload LCP Hero Image (First Tag in Head) -->
     <link rel="preload" as="image" href="/assets/hero.avif" fetchPriority="high" type="image/avif" />
 
-    <!-- Task 2: Async CSS - No longer hashed via vite.config.ts -->
-    <link rel="preload" href="/assets/index.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
-    <noscript><link rel="stylesheet" href="/assets/index.css"></noscript>
+    <!-- Task 2: Async CSS - Build-time injected -->
+    <link rel="preload" href="/src/styles/index.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <noscript><link rel="stylesheet" href="/src/styles/index.css"></noscript>
 
     <!-- Task 1: Async Font Chain decoupling -->
-    <link rel="preload" href="/assets/cormorant-fonts.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
-    <noscript><link rel="stylesheet" href="/assets/cormorant-fonts.css"></noscript>
+    <link rel="preload" href="/src/styles/cormorant-fonts.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <noscript><link rel="stylesheet" href="/src/styles/cormorant-fonts.css"></noscript>
 
     <!-- Primary Meta Tags (overridden dynamically per page by useSEO hook) -->
     <title>Avukat Hasan Doğru | Doğru Kanzlei Mannheim</title>
@@ -62,6 +62,6 @@
 
   <body>
     <div id="root"></div>
-    <script type="module" src="/src/main.tsx"></script>
+    <script type="module" src="/src/main.tsx" defer></script>
   </body>
 </html>

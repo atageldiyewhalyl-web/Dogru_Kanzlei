@@ -24,10 +24,10 @@ export default defineConfig({
     outDir: 'build',
     rollupOptions: {
       output: {
-        // Task 2: Remove hashes from filenames for reliable async loading
-        assetFileNames: 'assets/[name].[ext]',
-        chunkFileNames: 'assets/[name].js',
-        entryFileNames: 'assets/[name].js',
+        // Task 2: Reverted to hashed filenames for proper caching
+        assetFileNames: 'assets/[name]-[hash].[ext]',
+        chunkFileNames: 'assets/[name]-[hash].js',
+        entryFileNames: 'assets/[name]-[hash].js',
         // Task 5: Eliminate Unused JS by splitting vendor libraries
         manualChunks: {
           'react-vendor': ['react', 'react-dom', 'react-router'],

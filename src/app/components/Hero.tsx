@@ -1,4 +1,3 @@
-import { motion } from "motion/react";
 import heroImage from "@/assets/hero.avif";
 import { ArrowRight, Scale, Globe, FileText } from "lucide-react";
 import { useNavigate } from "react-router";
@@ -20,15 +19,10 @@ export function Hero() {
   };
 
   return (
-    <section className="relative min-h-screen bg-[#1C3829] overflow-hidden flex flex-col justify-center pt-40 pb-0 lg:pt-0 hero-instant">
+    <section className="relative min-h-screen bg-[#1C3829] overflow-hidden flex flex-col justify-center pt-40 pb-0 lg:pt-0 hero-instant animate-in fade-in duration-500">
       {/* Background with priority for first paint */}
       <div className="absolute inset-0 z-0">
-        <motion.div
-          initial={{ opacity: 0.5 }}
-          animate={{ opacity: 1 }}
-          transition={{ duration: 0.5 }}
-          className="absolute inset-0 z-0 overflow-hidden"
-        >
+        <div className="absolute inset-0 z-0 overflow-hidden opacity-100 transition-opacity duration-500">
           {/* High-prestige background grid & gradients */}
           <div className="absolute inset-0 pointer-events-none opacity-20 bg-[linear-gradient(to_right,#B8963E_1px,transparent_1px),linear-gradient(to_bottom,#B8963E_1px,transparent_1px)] bg-[size:100px_100px] [mask-image:radial-gradient(ellipse_60%_60%_at_50%_50%,#000_10%,transparent_100%)]" />
           <div className="absolute top-0 left-0 w-full h-full bg-gradient-to-b from-[#1C3829]/70 via-[#1C3829]/40 to-[#1a3326] pointer-events-none z-0" />
@@ -44,7 +38,7 @@ export function Hero() {
             />
             <div className="absolute inset-0 bg-gradient-to-t from-[#1C3829] via-[#1C3829]/80 to-transparent" />
           </div>
-        </motion.div>
+        </div>
       </div>
 
       {/* Decorative vertical architectural line */}
@@ -53,12 +47,7 @@ export function Hero() {
       <div className="relative z-10 max-w-[1400px] mx-auto px-6 lg:px-12 w-full grid grid-cols-1 lg:grid-cols-12 gap-16 lg:gap-24 items-center flex-grow py-12 lg:py-20">
         
         {/* Left Content */}
-        <motion.div 
-          className="lg:col-span-5 flex flex-col justify-center z-20"
-          initial={{ opacity: 0, y: 30 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.8, ease: "easeOut" }}
-        >
+        <div className="lg:col-span-5 flex flex-col justify-center z-20 animate-in slide-in-from-bottom-8 duration-700 ease-out fill-mode-forwards">
           {/* Pre-title */}
           <div className="flex items-center gap-4 mb-8">
             <span className="w-12 h-[1px] bg-[#8B6E2A]" />
@@ -104,14 +93,11 @@ export function Hero() {
               {t("hero_cta_secondary")}
             </button>
           </div>
-        </motion.div>
+        </div>
 
         {/* Right Content - Hero Image */}
-        <motion.div 
-          className="lg:col-span-7 relative hidden md:flex justify-center lg:justify-end"
-          initial={{ opacity: 0.5, scale: 0.95 }}
-          animate={{ opacity: 1, scale: 1 }}
-          transition={{ duration: 0.5 }}
+        <div 
+          className="lg:col-span-7 relative hidden md:flex justify-center lg:justify-end animate-in fade-in zoom-in-95 duration-700 ease-out fill-mode-forwards"
         >
           <div className="relative w-full max-w-[480px] lg:max-w-[500px] xl:max-w-[540px] aspect-[4/5] z-10 mt-12 lg:mt-32">
             {/* Gold Frame Accent */}
@@ -138,7 +124,7 @@ export function Hero() {
 
 
           </div>
-        </motion.div>
+        </div>
       </div>
 
     </section>
