@@ -61,6 +61,7 @@ export function Blog() {
 
           <Link
             to={paths.blog}
+            aria-label={language === 'de' ? 'Alle Blogbeiträge lesen' : 'Tüm blog yazılarını oku'}
             style={{
               fontFamily: "var(--font-sans)",
               fontSize: 12,

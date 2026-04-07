@@ -1,8 +1,8 @@
 import { services } from "../data/services";
 import { Link } from "react-router";
 import { ArrowRight, MoveRight } from "lucide-react";
-import { motion } from "motion/react";
 import { useLanguage } from "../context/LanguageContext";
+import { useEffect, useRef } from "react";
 
 // Mobile background images
 import tanimaImg from "@/assets/services/tanima.avif";
@@ -11,8 +11,49 @@ import inheritanceImg from "@/assets/services/inheritance.avif";
 import custodyImg from "@/assets/services/custody.avif";
 import criminalImg from "@/assets/services/criminal.avif";
 
+// CSS for the scroll-triggered fade-in (same visual as Framer Motion whileInView)
+const fadeInStyle = `
+  .fade-in-card {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.5s ease, transform 0.5s ease;
+  }
+  .fade-in-card.visible {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  .fade-in-card:nth-child(2) { transition-delay: 0.1s; }
+  .fade-in-card:nth-child(3) { transition-delay: 0.2s; }
+  .fade-in-card:nth-child(4) { transition-delay: 0.3s; }
+  .fade-in-card:nth-child(5) { transition-delay: 0.4s; }
+`;
+
+function useFadeInOnScroll(ref: React.RefObject<HTMLDivElement | null>) {
+  useEffect(() => {
+    const container = ref.current;
+    if (!container) return;
+    const cards = container.querySelectorAll(".fade-in-card");
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add("visible");
+            observer.unobserve(entry.target);
+          }
+        });
+      },
+      { threshold: 0.1 }
+    );
+    cards.forEach((card) => observer.observe(card));
+    return () => observer.disconnect();
+  }, [ref]);
+}
+
 export function PracticeAreas() {
   const { t, language, paths } = useLanguage();
+  const gridRef = useRef<HTMLDivElement>(null);
+  useFadeInOnScroll(gridRef);
+
   // Mapping services to specific layout positions for the bento grid
   const migrations = services.find(s => s.id === "migrationsrecht");
   const tanima = services.find(s => s.id === "tanima-ve-tenfiz");
@@ -22,6 +63,7 @@ export function PracticeAreas() {
 
   return (
     <section id="hizmetler" className="bg-[#FDFCFB] py-16 md:py-24 px-6">
+      <style>{fadeInStyle}</style>
       <div className="max-w-[1200px] mx-auto">
         {/* Header */}
         <div className="flex flex-col md:flex-row md:items-end justify-between gap-8 mb-16">
@@ -45,17 +87,12 @@ export function PracticeAreas() {
         </div>
 
         {/* Bento Grid - 4 Column Logic */}
-        <div className="grid grid-cols-1 md:grid-cols-4 gap-4 md:gap-6 auto-rows-[minmax(260px,auto)]">
+        <div ref={gridRef} className="grid grid-cols-1 md:grid-cols-4 gap-4 md:gap-6 auto-rows-[minmax(260px,auto)]">
 
           {/* 1. Tanıma ve Tenfiz: Large White (3/4 width) */}
           {tanima && (
             <Link to={paths.service(tanima.id)} className="md:col-span-3 group block">
-              <motion.div
-                initial={{ opacity: 0, y: 20 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true }}
-                className="h-full bg-white p-10 md:p-14 border-l-[3px] border-[#8B6E2A] flex flex-col justify-center relative transition-all duration-500 hover:shadow-xl hover:shadow-black/[0.02] overflow-hidden"
-              >
+              <div className="fade-in-card h-full bg-white p-10 md:p-14 border-l-[3px] border-[#8B6E2A] flex flex-col justify-center relative transition-all duration-500 hover:shadow-xl hover:shadow-black/[0.02] overflow-hidden">
                 {/* Mobile Background */}
                 <div className="md:hidden absolute inset-0 z-0" aria-hidden="true">
                   <img src={tanimaImg} alt={language === 'tr' ? 'Tanıma ve Tenfiz hizmeti görseli' : 'Anerkennung und Vollstreckung Dienstleistungsbild'} width={600} height={400} loading="lazy" decoding="async" className="w-full h-full object-cover opacity-60" />
@@ -80,20 +117,14 @@ export function PracticeAreas() {
                     <ArrowRight size={20} aria-hidden="true" />
                   </div>
                 </div>
-              </motion.div>
+              </div>
             </Link>
           )}
 
           {/* 2. Migrationsrecht: Small Grey (1/4 width) */}
           {migrations && (
             <Link to={paths.service(migrations.id)} className="md:col-span-1 group block">
-              <motion.div
-                initial={{ opacity: 0, y: 20 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true }}
-                transition={{ delay: 0.1 }}
-                className="h-full bg-[#F2F2F0] p-8 flex flex-col justify-center relative transition-all duration-500 hover:bg-[#ebebe9] overflow-hidden"
-              >
+              <div className="fade-in-card h-full bg-[#F2F2F0] p-8 flex flex-col justify-center relative transition-all duration-500 hover:bg-[#ebebe9] overflow-hidden">
                 {/* Mobile Background */}
                 <div className="md:hidden absolute inset-0 z-0" aria-hidden="true">
                   <img src={migrationImg} alt="" width={600} height={400} loading="lazy" decoding="async" className="w-full h-full object-cover opacity-60" />
@@ -111,20 +142,14 @@ export function PracticeAreas() {
                     <ArrowRight size={18} strokeWidth={1} aria-hidden="true" />
                   </div>
                 </div>
-              </motion.div>
+              </div>
             </Link>
           )}
 
           {/* 3. Erbrecht: Small Grey (1/4 width) */}
           {erb && (
             <Link to={paths.service(erb.id)} className="md:col-span-1 group block">
-              <motion.div
-                initial={{ opacity: 0, y: 20 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true }}
-                transition={{ delay: 0.2 }}
-                className="h-full bg-[#F2F2F0] p-8 flex flex-col justify-center relative transition-all duration-500 hover:bg-[#ebebe9] overflow-hidden"
-              >
+              <div className="fade-in-card h-full bg-[#F2F2F0] p-8 flex flex-col justify-center relative transition-all duration-500 hover:bg-[#ebebe9] overflow-hidden">
                 {/* Mobile Background */}
                 <div className="md:hidden absolute inset-0 z-0" aria-hidden="true">
                   <img src={inheritanceImg} alt="" width={600} height={400} loading="lazy" decoding="async" className="w-full h-full object-cover opacity-60" />
@@ -142,20 +167,14 @@ export function PracticeAreas() {
                     <ArrowRight size={18} strokeWidth={1} aria-hidden="true" />
                   </div>
                 </div>
-              </motion.div>
+              </div>
             </Link>
           )}
 
           {/* 4. Sorgerecht: Small Grey (1/4 width) */}
           {sorge && (
             <Link to={paths.service(sorge.id)} className="md:col-span-1 group block">
-              <motion.div
-                initial={{ opacity: 0, y: 20 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true }}
-                transition={{ delay: 0.3 }}
-                className="h-full bg-[#F2F2F0] p-8 flex flex-col justify-center relative transition-all duration-500 hover:bg-[#ebebe9] overflow-hidden"
-              >
+              <div className="fade-in-card h-full bg-[#F2F2F0] p-8 flex flex-col justify-center relative transition-all duration-500 hover:bg-[#ebebe9] overflow-hidden">
                 {/* Mobile Background */}
                 <div className="md:hidden absolute inset-0 z-0" aria-hidden="true">
                   <img src={custodyImg} alt="" width={600} height={400} loading="lazy" decoding="async" className="w-full h-full object-cover opacity-60" />
@@ -173,20 +192,14 @@ export function PracticeAreas() {
                     <ArrowRight size={18} strokeWidth={1} aria-hidden="true" />
                   </div>
                 </div>
-              </motion.div>
+              </div>
             </Link>
           )}
 
           {/* 5. Strafrecht: Large Green (2/4 width) */}
           {straf && (
             <Link to={paths.service(straf.id)} className="md:col-span-2 group block">
-              <motion.div
-                initial={{ opacity: 0, y: 20 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true }}
-                transition={{ delay: 0.4 }}
-                className="h-full bg-[#1C3829] p-10 md:p-12 flex flex-col justify-center relative overflow-hidden transition-all duration-500 hover:brightness-110"
-              >
+              <div className="fade-in-card h-full bg-[#1C3829] p-10 md:p-12 flex flex-col justify-center relative overflow-hidden transition-all duration-500 hover:brightness-110">
                 {/* Overlay for icon mix-blend */}
                 <div className="absolute right-[-20px] bottom-[-20px] opacity-[0.03] text-white pointer-events-none hidden md:block">
                   {(() => {
@@ -213,7 +226,7 @@ export function PracticeAreas() {
                     {t("practice_view_detail")} <ArrowRight size={14} aria-hidden="true" />
                   </div>
                 </div>
-              </motion.div>
+              </div>
             </Link>
           )}
 

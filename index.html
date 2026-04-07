@@ -11,8 +11,8 @@
     <link rel="preload" href="/src/styles/index.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
     <noscript><link rel="stylesheet" href="/src/styles/index.css"></noscript>
 
-    <!-- Task 1: Async Font Chain decoupling -->
-    <link rel="preload" href="/src/styles/cormorant-fonts.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <!-- Cormorant font: fully deferred via print media trick to break critical path chain -->
+    <link rel="stylesheet" href="/src/styles/cormorant-fonts.css" media="print" onload="this.media='all'">
     <noscript><link rel="stylesheet" href="/src/styles/cormorant-fonts.css"></noscript>
 
     <!-- Primary Meta Tags (overridden dynamically per page by useSEO hook) -->
@@ -46,8 +46,7 @@
     <meta name="geo.region" content="DE-BW" />
     <meta name="geo.placename" content="Mannheim" />
 
-    <!-- Resource Hints (Task 5) -->
-    <link rel="dns-prefetch" href="https://fonts.googleapis.com">
+    <!-- Resource Hints -->
     <link rel="preload" href="/src/assets/fonts/Inter.woff2" as="font" type="font/woff2" crossorigin="anonymous" />
     
     <!-- Critical CSS (Task 1: Above-the-fold styles) -->
