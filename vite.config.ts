@@ -79,7 +79,6 @@ export default defineConfig({
         entryFileNames: 'assets/[name]-[hash].js',
         manualChunks: {
           'react-vendor': ['react', 'react-dom', 'react-router'],
-          'framer-vendor': ['motion/react'],
           'ui-vendor': ['lucide-react']
         }
       }

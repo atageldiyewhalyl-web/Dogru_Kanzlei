@@ -19,10 +19,9 @@ export function Hero() {
   };
 
   return (
-    <section className="relative min-h-screen bg-[#1C3829] overflow-hidden flex flex-col justify-center pt-40 pb-0 lg:pt-0 hero-instant" style={{ animation: "heroFadeIn 0.5s ease forwards" }}>
+    <section className="relative min-h-screen bg-[#1C3829] overflow-hidden flex flex-col justify-center pt-40 pb-0 lg:pt-0 hero-instant">
       <style>{`
-        @keyframes heroFadeIn { from { opacity: 0; } to { opacity: 1; } }
-        @keyframes heroContentIn { from { opacity: 0; } to { opacity: 1; } }
+        @keyframes heroImageIn { from { opacity: 0; } to { opacity: 1; } }
       `}</style>
       {/* Background with priority for first paint */}
       <div className="absolute inset-0 z-0">
@@ -51,7 +50,7 @@ export function Hero() {
       <div className="relative z-10 max-w-[1400px] mx-auto px-6 lg:px-12 w-full grid grid-cols-1 lg:grid-cols-12 gap-16 lg:gap-24 items-center flex-grow py-12 lg:py-20">
         
         {/* Left Content */}
-        <div className="lg:col-span-5 flex flex-col justify-center z-20" style={{ animation: "heroContentIn 0.7s ease forwards" }}>
+        <div className="lg:col-span-5 flex flex-col justify-center z-20">
           {/* Pre-title */}
           <div className="flex items-center gap-4 mb-8">
             <span className="w-12 h-[1px] bg-[#8B6E2A]" />
@@ -102,7 +101,7 @@ export function Hero() {
         {/* Right Content - Hero Image */}
         <div 
           className="lg:col-span-7 relative hidden md:flex justify-center lg:justify-end"
-          style={{ animation: "heroContentIn 0.7s ease 0.1s forwards", opacity: 0 }}
+          style={{ animation: "heroImageIn 0.8s ease 0.2s both" }}
         >
           <div className="relative w-full max-w-[480px] lg:max-w-[500px] xl:max-w-[540px] aspect-[4/5] z-10 mt-12 lg:mt-32">
             {/* Gold Frame Accent */}
