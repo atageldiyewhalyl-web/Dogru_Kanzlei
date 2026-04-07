@@ -1,9 +1,48 @@
+import { useState } from "react";
 import { useParams, Link } from "react-router";
 import { services } from "../data/services";
-import { ArrowLeft, ArrowRight, CheckCircle2 } from "lucide-react";
-import { motion } from "motion/react";
+import { ArrowLeft, ArrowRight, CheckCircle2, ChevronDown } from "lucide-react";
+import { motion, AnimatePresence } from "motion/react";
 import { useLanguage } from "../context/LanguageContext";
 import { useSEO, SITE_URL } from "../hooks/useSEO";
+
+function FAQItem({ question, answer }: { question: string; answer: string }) {
+  const [isOpen, setIsOpen] = useState(false);
+
+  return (
+    <div className="border border-[#1C3829]/10 bg-white hover:border-[#8B6E2A]/30 transition-colors overflow-hidden">
+      <button
+        onClick={() => setIsOpen(!isOpen)}
+        className="w-full p-6 text-left flex items-center justify-between group"
+      >
+        <span className="font-serif text-lg text-[#1C3829] group-hover:text-[#8B6E2A] transition-colors">
+          {question}
+        </span>
+        <motion.div
+          animate={{ rotate: isOpen ? 180 : 0 }}
+          transition={{ duration: 0.3 }}
+          className="text-[#8B6E2A]"
+        >
+          <ChevronDown size={20} />
+        </motion.div>
+      </button>
+      <AnimatePresence>
+        {isOpen && (
+          <motion.div
+            initial={{ height: 0, opacity: 0 }}
+            animate={{ height: "auto", opacity: 1 }}
+            exit={{ height: 0, opacity: 0 }}
+            transition={{ duration: 0.3 }}
+          >
+            <div className="px-6 pb-6 font-sans text-[15px] text-[#6a6a6a] leading-relaxed border-t border-[#1C3829]/5 pt-4">
+              {answer}
+            </div>
+          </motion.div>
+        )}
+      </AnimatePresence>
+    </div>
+  );
+}
 
 export function ServiceDetail() {
   const { id } = useParams();
@@ -19,11 +58,11 @@ export function ServiceDetail() {
   useSEO({
     title: service
       ? language === 'de'
-        ? `${service.title} | Avukat Hasan Doğru`
+        ? service.seoTitleDE || `${service.title} | Avukat Hasan Doğru`
         : `${service.titleTR} | Avukat Hasan Doğru`
       : 'Seite nicht gefunden',
     description: service
-      ? (language === 'de' ? service.descriptionDE : service.description)
+      ? (language === 'de' ? (service.seoDescriptionDE || service.descriptionDE) : service.description)
       : '',
     lang: language,
     canonical: service 
@@ -125,7 +164,7 @@ export function ServiceDetail() {
                 <div className="flex items-center gap-4 mb-12">
                    <div className="w-12 h-[1px] bg-[#8B6E2A]" />
                    <h3 className="font-serif text-3xl text-[#1C3829]">
-                    {language === 'de' ? 'Unsere Expertise' : <span lang="tr">Uzmanlık Alanlarımız</span>}
+                    {language === 'de' ? (service.expertiseTitleDE || 'Unsere Expertise') : <span lang="tr">Uzmanlık Alanlarımız</span>}
                   </h3>
                 </div>
 
@@ -138,13 +177,28 @@ export function ServiceDetail() {
                           <span lang={language === 'tr' ? 'tr' : 'de'}>{item}</span>
                         </h4>
                         <p className="font-sans text-[13px] text-[#6a6a6a] leading-relaxed">
-                          {language === 'de' ? 'Professionelle Fall- und Prozessführung' : <span lang="tr">Profesyonel Dava ve Süreç Takibi</span>}
+                          {language === 'de' ? (service.id === 'familienrecht' ? 'Individuelle Beratung vor Ort' : 'Professionelle Fall- und Prozessführung') : <span lang="tr">Profesyonel Dava ve Süreç Takibi</span>}
                         </p>
                       </div>
                     </div>
                   ))}
                 </div>
               </div>
+
+              {/* FAQ Accordion Section */}
+              {language === 'de' && service.faqDE && (
+                <div className="mb-20">
+                  <div className="flex items-center gap-4 mb-12">
+                    <div className="w-12 h-[1px] bg-[#8B6E2A]" />
+                    <h3 className="font-serif text-3xl text-[#1C3829]">Häufige Fragen</h3>
+                  </div>
+                  <div className="space-y-4">
+                    {service.faqDE.map((faq: any, idx: number) => (
+                      <FAQItem key={idx} question={faq.question} answer={faq.answer} />
+                    ))}
+                  </div>
+                </div>
+              )}
 
               {/* Bottom Navigation - Inter-service connectivity */}
               <div className="flex flex-col sm:flex-row border-t border-[#1C3829]/10 pt-16 gap-8 sm:gap-0 sm:justify-between items-center group">

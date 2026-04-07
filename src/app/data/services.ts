@@ -8,10 +8,13 @@ export const services = [
     icon: Users,
     title: "Familienrecht & Scheidung",
     titleTR: "Aile Hukuku ve Boşanma",
+    seoTitleDE: "Türkisches Familienrecht & Scheidung Mannheim | Avukat Hasan Doğru",
+    seoDescriptionDE: "Scheidung nach türkischem Recht von Mannheim aus — ohne Reise in die Türkei. Avukat Hasan Doğru berät türkischstämmige Familien in Mannheim, Heidelberg und dem Rhein-Neckar-Raum.",
     description: "Almanya ile Türkiye arasındaki aile hukuku davalarında uzman hukuki danışmanlık ve temsil — boşanmadan velayete kadar.",
-    descriptionDE: "Fachkundige rechtliche Beratung und Vertretung in familienrechtlichen Angelegenheiten zwischen Deutschland und der Türkei — von der Scheidung bis zum Sorgerecht.",
+    descriptionDE: "Türkischstämmige Familien in Mannheim, Heidelberg und dem gesamten Rhein-Neckar-Raum stehen bei Scheidung, Sorgerecht oder Unterhalt oft vor einer besonderen Herausforderung: Zwei Rechtssysteme, zwei Länder, eine Familie. Das türkische Familienrecht unterscheidet sich in wesentlichen Punkten vom deutschen Recht — und erfordert einen Anwalt, der beide Seiten kennt.",
     detail: "Boşanma · Nafaka · Velayet · Mal Paylaşımı · Aile Birleşimi · Soyadı Değişikliği",
-    detailDE: "Scheidung · Unterhalt · Sorgerecht · Güterrecht · Ehegattennachzug · Namensrecht",
+    detailDE: "Ausschließlich türkisches Recht — keine Kompromisse, volle Spezialisierung · Mitglied der Ankara Barosu und registriert gemäß § 207 BRAO · Verfahren vollständig ohne Reise in die Türkei möglich · Beratung auf Türkisch und Deutsch · Standort Mannheim — persönliche Beratung im Rhein-Neckar-Raum · Zweiter Standort in Ankara für direkte Zusammenarbeit mit türkischen Gerichten",
+    expertiseTitleDE: "Warum Doğru Kanzlei für türkisches Familienrecht in Mannheim?",
     content: `Aile Hukuku — Türk-Alman aileler für aile hukuku danışmanlığı
 Boşanma, nafaka, velayet — sınır ötesinde yanınızdayız.
 
@@ -30,25 +33,57 @@ Sizin için neler yapıyoruz:
 • Boşanma Sonrası Soyadı Değişikliği — Türk hukukuna göre isim değişikliği danışmanlığı ve işlem takibi
 
 Tüm süreç boyunca yanınızdayız — güvenilir, şeffaf ve Türk-Alman aile hukukunda derin deneyimle.`,
-    contentDE: `Aile Hukuku — Familienrechtliche Beratung für Deutsch-Türken
-Scheidung, Unterhalt, Sorgerecht — wir vertreten Sie grenzüberschreitend.
-
-Familienrechtliche Angelegenheiten mit Bezug zur Türkei sind komplex — insbesondere wenn Ehepartner in verschiedenen Ländern leben, Kinder betroffen sind oder Vermögen in beiden Ländern vorhanden ist. Das türkische Familienrecht unterscheidet sich in wesentlichen Punkten vom deutschen Recht und erfordert spezialisierte grenzüberschreitende Expertise.
-
-Unsere Kanzlei begleitet Sie in allen familienrechtlichen Fragen zwischen Deutschland und der Türkei — kompetent, diskret und vollständig ohne Reise in die Türkei.
+    contentDE: `Avukat Hasan Doğru ist Mitglied der Ankara Barosu und berät ausschließlich im türkischen Recht. Unsere Kanzlei in Mannheim begleitet Sie in allen familienrechtlichen Fragen mit Bezug zur Türkei — kompetent, diskret und vollständig ohne Reise in die Türkei.
 
 Was wir für Sie tun:
-• Scheidung in der Türkei aus Deutschland einreichen — Vollständige Einleitung und Begleitung des türkischen Scheidungsverfahrens ohne Ihre persönliche Anwesenheit
-• Einvernehmliche Scheidung Türkei (Anlaşmalı Boşanma) — Schnelle und kostengünstige Abwicklung bei beiderseitigem Einverständnis, inklusive Scheidungsfolgenvereinbarung
-• Streitige Scheidung Türkei (Çekişmeli Boşanma) — Konsequente Interessenvertretung bei strittigen Scheidungsverfahren vor türkischen Gerichten
-• Unterhalt nach türkischem Recht (Nafaka) — Beratung und Durchsetzung bei Trennungsunterhalt (Tedbir Nafakası), Kindesunterhalt (İştirak Nafakası) und nachehelichem Unterhalt (Yoksulluk Nafakası)
-• Sorgerecht Türkei (Velayet Davası) — Vertretung in türkischen Sorgerechtverfahren sowie internationale Durchsetzung von Sorge- und Umgangsrechtsurteilen
-• Güterrecht / Zugewinnausgleich Türkei (Edinilmiş Mallara Katılma) — Beratung zur Vermögensaufteilung nach türkischem Güterrecht bei Scheidung
-• Ehegattennachzug aus der Türkei — Rechtliche Begleitung beim Familiennachzug und Ehegattenvisum nach Deutschland
-• Namensrecht nach Scheidung Türkei — Beratung und Abwicklung der Namensänderung nach türkischem Recht
 
-Wir begleiten Sie durch den gesamten Prozess — zuverlässig, transparent und mit langjähriger Erfahrung im deutsch-türkischen Familienrecht.`
+• Scheidung in der Türkei aus Deutschland einreichen (Boşanma Davası)
+Viele türkischstämmige Paare in Mannheim möchten ihre Ehe nach türkischem Recht scheiden lassen — ohne dafür in die Türkei reisen zu müssen. Wir leiten das gesamte türkische Scheidungsverfahren von Deutschland aus ein, vertreten Sie vor türkischen Gerichten per Vollmacht und begleiten Sie bis zum rechtskräftigen Urteil.
+
+• Einvernehmliche Scheidung Türkei (Anlaşmalı Boşanma)
+Wenn beide Ehepartner einer Scheidung zustimmen, ist eine einvernehmliche Scheidung nach türkischem Recht die schnellste und kostengünstigste Lösung. Wir bereiten die Scheidungsfolgenvereinbarung vor, klären alle offenen Punkte — Unterhalt, Sorgerecht, Vermögensaufteilung — und sorgen für einen reibungslosen Ablauf.
+
+• Streitige Scheidung Türkei (Çekişmeli Boşanma)
+Wenn keine Einigung möglich ist, vertreten wir Ihre Interessen konsequent vor türkischen Gerichten. Gerade bei grenzüberschreitenden Scheidungsverfahren zwischen Deutschland und der Türkei ist erfahrene anwaltliche Vertretung entscheidend.
+
+• Unterhalt nach türkischem Recht (Nafaka)
+Das türkische Unterhaltsrecht kennt drei Formen: Trennungsunterhalt (Tedbir Nafakası), Kindesunterhalt (İştirak Nafakası) und nachehelicher Unterhalt (Yoksulluk Nafakası). Wir beraten Sie zu Ihren Ansprüchen und setzen diese vor türkischen Gerichten durch — auch wenn der unterhaltspflichtige Elternteil in Deutschland lebt.
+
+• Sorgerecht Türkei (Velayet Davası)
+Sorgerechtsstreitigkeiten mit Türkeibezug gehören zu den komplexesten familienrechtlichen Verfahren überhaupt. Wir vertreten Sie in türkischen Sorgerechtverfahren und kümmern uns um die internationale Durchsetzung von Sorge- und Umgangsrechtsurteilen zwischen Deutschland und der Türkei.
+
+• Güterrecht / Zugewinnausgleich Türkei (Edinilmiş Mallara Katılma)
+Bei einer Scheidung stellt sich oft die Frage: Wem gehört was? Das türkische Güterrecht regelt die Vermögensaufteilung nach dem Prinzip der Errungenschaftsbeteiligung. Wir beraten Sie zur gerechten Aufteilung von Immobilien, Konten und sonstigem Vermögen in der Türkei.
+
+• Ehegattennachzug aus der Türkei
+Sie möchten Ihren Ehepartner aus der Türkei nach Deutschland holen? Wir begleiten Sie rechtlich beim Familiennachzug und der Beantragung des Ehegattenvisums — von der Vorbereitung der Unterlagen bis zur erfolgreichen Einreise.
+
+• Namensrecht nach Scheidung Türkei
+Nach einer Scheidung stellen sich Fragen zur Namensänderung nach türkischem Recht. Wir beraten Sie zu Ihren Optionen und übernehmen die Abwicklung der Namensänderung bei türkischen Behörden.`,
+    faqDE: [
+      {
+        question: "Kann ich mich in der Türkei scheiden lassen, ohne dorthin zu reisen?",
+        answer: "Ja. Mit einer notariellen Vollmacht können wir das gesamte türkische Scheidungsverfahren von Deutschland aus für Sie führen. Sie müssen nicht persönlich vor türkischen Gerichten erscheinen. Dies ist einer der häufigsten Gründe, warum türkischstämmige Familien aus Mannheim und dem Rhein-Neckar-Raum uns beauftragen."
+      },
+      {
+        question: "Wie lange dauert eine Scheidung nach türkischem Recht?",
+        answer: "Eine einvernehmliche Scheidung (Anlaşmalı Boşanma) dauert in der Regel 2–6 Monate. Eine streitige Scheidung (Çekişmeli Boşanma) kann 1–3 Jahre in Anspruch nehmen, abhängig von der Komplexität des Falles und dem zuständigen türkischen Gericht."
+      },
+      {
+        question: "Wird eine türkische Scheidung in Deutschland anerkannt?",
+        answer: "Eine in der Türkei ausgesprochene Scheidung muss in Deutschland anerkannt werden. Wir begleiten Sie durch das Anerkennungsverfahren (Tanıma ve Tenfiz) bei der zuständigen deutschen Behörde, damit Ihr Personenstand in Deutschland korrekt eingetragen wird."
+      },
+      {
+        question: "Was passiert mit dem Sorgerecht, wenn ein Elternteil in Deutschland und einer in der Türkei lebt?",
+        answer: "Grenzüberschreitende Sorgerechtsverfahren sind besonders komplex. Welches Gericht zuständig ist und welches Recht angewendet wird, hängt vom gewöhnlichen Aufenthaltsort des Kindes ab. Wir analysieren Ihren Fall und vertreten Sie vor dem zuständigen türkischen oder deutschen Gericht."
+      },
+      {
+        question: "Muss ich für eine Erstberatung nach Mannheim kommen?",
+        answer: "Nein. Wir bieten Erstberatungen auch per Telefon oder Video an. Viele unserer Mandanten aus dem gesamten Bundesgebiet betreuen wir vollständig auf Distanz."
+      }
+    ]
   },
+
   {
     id: "vollmacht-apostille",
     slugDE: "vollmacht-apostille",

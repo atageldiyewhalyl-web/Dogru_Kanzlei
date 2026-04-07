@@ -4,8 +4,7 @@ import "./styles/index.css";
 
 createRoot(document.getElementById("root")!).render(<App />);
 
-document.addEventListener('DOMContentLoaded', () => {
-  setTimeout(() => {
-    document.dispatchEvent(new Event('render-event'));
-  }, 2000);
-});
+// Trigger render-event after a delay to ensure lazy components and SEO hook have finished
+setTimeout(() => {
+  document.dispatchEvent(new Event('render-event'));
+}, 3000);
