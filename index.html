@@ -4,12 +4,11 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <!-- Task 6: Preload LCP Hero Image (First Tag in Head) -->                
+    <!-- Preload LCP Hero Image (First Tag in Head for priority) -->                
     <link rel="preload" as="image" href="/assets/hero.avif" fetchPriority="high" type="image/avif" />
 
-    <!-- Task 2: Async CSS - Build-time injected -->
-    <link rel="preload" href="/src/styles/index.css" as="style" onload="this.onload=null;this.rel='stylesheet'">  
-    <noscript><link rel="stylesheet" href="/src/styles/index.css"></noscript>
+    <!-- CSS is loaded asynchronously by the Vite makeCssAsync plugin at build time.
+         In dev mode, Vite injects CSS normally. -->
 
     <!-- Cormorant font: fully deferred via print media trick to break critical path chain -->
     <link rel="stylesheet" href="/src/styles/cormorant-fonts.css" media="print" onload="this.media='all'">
@@ -49,18 +48,37 @@
     <!-- Resource Hints -->
     <link rel="preload" href="/src/assets/fonts/Inter.woff2" as="font" type="font/woff2" crossorigin="anonymous" />
     
-    <!-- Critical CSS (Task 1: Above-the-fold styles) -->
+    <!-- Critical CSS: inline above-the-fold styles so the page background renders immediately,
+         even before the full CSS bundle loads asynchronously. -->
     <style>
       :root { --brand-green: #1C3829; --brand-gold: #B8963E; }
       body { background: var(--brand-green); margin: 0; padding: 0; font-family: sans-serif; overflow-x: hidden; }
       #root { min-height: 100vh; background: var(--brand-green); }
       header { position: fixed; top: 0; width: 100%; height: 80px; z-index: 100; transition: background 0.3s; }
       .hero-instant { background: var(--brand-green); min-height: 100vh; display: flex; align-items: center; justify-content: center; }
+      /* LCP pre-render shell styles */
+      #lcp-shell { min-height: 100vh; background: #1C3829; display: flex; align-items: center; padding-top: 80px; }
+      #lcp-shell-inner { max-width: 1400px; margin: 0 auto; padding: 48px 24px 48px 48px; width: 100%; }
+      #lcp-pre { font-family: Arial, sans-serif; font-size: 15px; font-weight: 300; color: rgba(255,255,255,0.6); line-height: 1.625; max-width: 28rem; margin: 0; }
     </style>
   </head>
 
   <body>
-    <div id="root"></div>
+    <div id="root">
+      <!--
+        Static LCP pre-render shell — painted immediately from HTML before React mounts.
+        Reduces "Element render delay" from ~2,530ms to near-zero.
+        React replaces this content on mount.
+        aria-hidden prevents screen readers from reading this duplicate content.
+      -->
+      <div id="lcp-shell" aria-hidden="true">
+        <div id="lcp-shell-inner">
+          <p id="lcp-pre">
+            Suchen Sie einen kompetenten Rechtsbeistand, der die Brücke zwischen dem deutschen und dem türkischen Rechtssystem schlägt? Als spezialisierter Avukat unterstütze ich Sie bei komplexen grenzüberschreitenden Rechtsfragen mit fundierter Fachkenntnis und langjähriger Erfahrung.
+          </p>
+        </div>
+      </div>
+    </div>
     <script type="module" src="/src/main.tsx" defer></script>
   </body>
 </html>
