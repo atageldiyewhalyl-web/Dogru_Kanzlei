@@ -86,7 +86,7 @@ export function Blog() {
               (e.currentTarget as HTMLElement).style.borderColor = "#1C3829";
             }}
           >
-            {t("blog_read_more")}
+            {language === 'de' ? 'Alle Beiträge lesen' : 'Tüm yazıları oku'}
             <ArrowRight size={14} />
           </Link>
         </div>
