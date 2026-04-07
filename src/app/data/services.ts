@@ -132,41 +132,66 @@ Nach einer Scheidung stellen sich Fragen zur Namensänderung nach türkischem Re
     icon: Shield,
     title: "Vollmacht & Apostille",
     titleTR: "Vekaletname & Apostil",
+    seoTitleDE: "Vollmacht & Apostille Türkei Mannheim | Avukat Hasan Doğru",
+    seoDescriptionDE: "Vollmacht für die Türkei aus Mannheim — korrekt, apostilliert, sofort einsatzbereit. Avukat Hasan Doğru begleitet Sie durch alle Vollmachts- und Apostilleverfahren für türkische Behörden.",
+    seoTitleTR: "Vekaletname & Apostil Türkiye Mannheim | Avukat Hasan Doğru",
+    seoDescriptionTR: "Türkiye için Almanya'dan vekaletname — doğru, apostilli, hemen kullanıma hazır. Avukat Hasan Doğru, Mannheim'dan Türk makamları için tüm vekaletname ve apostil işlemlerinde size eşlik eder.",
     description: "Türkiye'deki resmi kurum ve mahkemeler için hukuki güvenceli vekaletname ve apostilli belgeler — hızlı, güvenilir ve gereksiz seyahat olmadan.",
     descriptionDE: "Rechtssichere Vollmachten und apostillierte Dokumente für Behörden und Gerichte in der Türkei — schnell, zuverlässig und ohne unnötige Reisen.",
     detail: "Noter Onayı · Tasdik · Apostil · Konsolosluk İşlemleri · Tercüme · Hukuki Danışmanlık",
     detailDE: "Beglaubigung · Notarielle Beurkundung · Apostille · Konsularische Dienste · Übersetzung · Rechtsberatung",
-    content: `Vekaletname & Apostil — Türkiye için Vekaletname — Almanya'dan hazırlayın
-Apostil, onay, noter — her şeyi sizin için hallediyoruz.
+    content: `Vekaletname ve Apostil — Mannheim'da Türkiye İçin Vekaletname
 
-Almanya'da yaşayan ve Türkiye'deki hukuki işlemlerini çözmek isteyen kişilerin genellikle apostilli ve noter onaylı bir vekaletnameye ihtiyacı vardır. Bu belgeler olmadan Türk resmi kurumları, mahkemeler, bankalar veya noterler sizin adınıza herhangi bir işlem yapamaz — miras, taşınmaz, boşanma veya şirket kuruluşu gibi konularda bile.
+Türkiye İçin Vekaletname & Apostil Mannheim
 
-Türk kurumlarının yabancı vekaletnamelerden talep ettiği şartlar oldukça katıdır ve düzenli olarak değişmektedir. Hatalı düzenlenmiş bir belge tüm sürecinizi aylarca geciktirebilir. Vekaletnamenizin başından itibaren doğru, eksiksiz ve hukuken geçerli olmasını sağlıyoruz.
+Mannheim, Heidelberg veya Rhein-Neckar bölgesinde yaşıyor ve Türkiye'deki hukuki işlemleri halletmek istiyorsanız, genellikle apostilli noter onaylı bir vekaletnameye ihtiyaç duyarsınız. Bu belgeler olmadan Türk makamları, mahkemeler, bankalar veya noterler — miras, gayrimenkul, boşanma veya şirket kuruluşu ne olursa olsun — adınıza hiçbir işlem yapamaz.
+
+Türk makamlarının yabancı vekaletnamelerden beklentileri katıdır ve düzenli olarak değişmektedir. Yanlış düzenlenmiş bir belge tüm sürecinizi aylarca geciktirebilir. Vekaletnamenizin başından itibaren doğru, eksiksiz ve hukuken geçerli olmasını sağlıyoruz.
 
 Sizin için neler yapıyoruz:
-• Türkiye'de Hukuki İşlemler için Vekaletname — Miras, taşınmaz, boşanma, banka işlemleri ve daha fazlası için hukuki güvenceli vekaletname hazırlanması
-• Almanya'dan Türkiye için Apostil — Yetkili Alman mahkemesi veya kurumunda apostil işleminin baştan sona takibi
-• Türk Kurumları için Noter Onayı — Alman noterler ve Türk konsoloslukları ile koordinasyon
-• Tercüme ve Onay — Yeminli tercümanlar aracılığıyla Türkçe sertifikalı çeviri organizasyonu
-• Genel Vekaletname — Türkiye'deki tüm hukuki işlemler için kapsamlı vekaletname hazırlanması
-• Taşınmaz İşlemleri için Vekaletname — Türkiye'de taşınmaz alım, satım veya devri için özel vekaletname
-• Miras İşlemleri için Vekaletname — Tereke davası, veraset ilamı ve tapu devri işlemleri için
-• Banka İşlemleri için Vekaletname — Türk banka hesaplarına erişim, vefat sonrası hesap açma işlemleri
-• Mahkeme Süreçleri için Vekaletname — Hukuk ve aile davalarında Türk mahkemelerinde dava ve vekâletnamesi
-• Konsolosluk Onayı — Apostile alternatif olarak Almanya'daki Türk konsolosluğu tarafından onay
+
+- Türkiye'deki Hukuki İşlemler İçin Vekaletname
+Miras, gayrimenkul, boşanma, banka işlemleri ve daha fazlası için hukuken güvenilir vekaletnameler hazırlıyoruz.
+
+- Almanya'dan Türkiye İçin Apostil
+Yetkili Alman mahkemesi veya makamı nezdinde apostil işleminin tamamını yönetiyoruz.
+
+- Türk Makamları İçin Noter Onayı
+Alman noterleri ve Türk konsoloslukları ile koordineli çalışıyoruz.
+
+- Çeviri ve Onaylı Tercüme
+Yeminli tercümanlar aracılığıyla Türkçe sertifikalı çevirilerin organizasyonunu üstleniyoruz.
+
+- Genel Vekaletname Türkiye
+Türkiye'deki tüm hukuki işlemler için kapsamlı vekaletnameler hazırlıyoruz.
+
+- Gayrimenkul İşlemleri İçin Vekaletname
+Türkiye'deki gayrimenkul alım, satım veya devirlerinde özelleşmiş vekaletnameler düzenliyoruz.
+
+- Miras İşlemleri İçin Vekaletname
+Veraset İlamı ve tapu devri dahil miras süreçleri için vekaletname hazırlıyoruz.
+
+- Banka İşlemleri İçin Vekaletname
+Türk banka hesaplarına erişim ve vefat sonrası hesap açma işlemleri için vekaletname düzenliyoruz.
+
+- Mahkeme Yargılamaları İçin Vekaletname
+Türk mahkemelerinde medeni ve aile davalarında dava vekaletnamesi hazırlıyoruz.
+
+- Konsolosluk Onayı
+Apostile alternatif olarak Almanya'daki Türk konsolosluğu aracılığıyla onay işlemi gerçekleştiriyoruz.
 
 Önemli Uyarı:
-Türk kurumlarının güncel gerekliliklerini karşılamayan bir vekaletname, noter onaylı olsa bile reddedilir. Güncel gereklilikleri biliyoruz ve belgelerinizin ilk seferde kabul edilmesini sağlıyoruz.
-
-Tüm süreç boyunca yanınızdayız — hızlı, güvenilir ve Türk-Alman hukuki uygulamasında derin deneyimle.`,
+Türk makamlarının güncel gerekliliklerini karşılamayan bir vekaletname, noter onaylı olsa dahi reddedilir. Güncel gereklilikleri biliyoruz ve belgelerinizin ilk seferde kabul edilmesini sağlıyoruz.`,
     contentDE: `Vollmacht & Apostille — Vollmacht für die Türkei — aus Deutschland beantragen
+
 Apostille, Beglaubigung, Notar — wir erledigen alles für Sie.
 
-Wer in Deutschland lebt und rechtliche Angelegenheiten in der Türkei regeln möchte, braucht in der Regel eine notariell beglaubigte Vollmacht mit Apostille. Ohne diese Dokumente können türkische Behörden, Gerichte, Banken oder Notare keine Handlungen in Ihrem Namen vornehmen — egal ob es um Erbschaft, Immobilien, Scheidung oder Unternehmensgründung geht.
+Wer in Mannheim, Heidelberg oder dem Rhein-Neckar-Raum lebt und rechtliche Angelegenheiten in der Türkei regeln möchte, braucht in der Regel eine notariell beglaubigte Vollmacht mit Apostille. Ohne diese Dokumente können türkische Behörden, Gerichte, Banken oder Notare keine Handlungen in Ihrem Namen vornehmen — egal ob es um Erbschaft, Immobilien, Scheidung oder Unternehmensgründung geht.
 
 Die Anforderungen türkischer Behörden an ausländische Vollmachten sind streng und ändern sich regelmäßig. Ein falsch ausgestelltes Dokument kann Ihr gesamtes Verfahren um Monate verzögern. Wir stellen sicher, dass Ihre Vollmacht von Anfang an korrekt, vollständig und rechtswirksam ist.
 
 Was wir für Sie tun:
+
 • Vollmacht für Rechtsgeschäfte in der Türkei — Erstellung rechtssicherer Vollmachten für Erbschaft, Immobilien, Scheidung, Bankangelegenheiten und mehr
 • Apostille aus Deutschland für die Türkei — Begleitung des gesamten Apostille-Verfahrens beim zuständigen deutschen Gericht oder der Behörde
 • Notarielle Beglaubigung für türkische Behörden — Koordination mit deutschen Notaren und türkischen Konsulaten
@@ -181,7 +206,51 @@ Was wir für Sie tun:
 Wichtiger Hinweis:
 Eine Vollmacht, die nicht den aktuellen Anforderungen türkischer Behörden entspricht, wird zurückgewiesen – selbst mit notarieller Beglaubigung. Wir kennen die aktuellen Vorgaben und sorgen dafür, dass Ihre Dokumente im ersten Anlauf akzeptiert werden.
 
-Wir stehen Ihnen während des gesamten Prozesses zur Seite — schnell, zuverlässig und mit fundierter Erfahrung in der deutsch-türkischen Rechtspraxis.`
+Wir stehen Ihnen während des gesamten Prozesses zur Seite — schnell, zuverlässig und mit fundierter Erfahrung in der deutsch-türkischen Rechtspraxis.`,
+    faqDE: [
+      {
+        question: "Was ist eine Apostille und wofür brauche ich sie?",
+        answer: "Eine Apostille ist eine internationale Beglaubigung, die deutsche Dokumente für die Verwendung in der Türkei rechtsgültig macht. Ohne Apostille erkennen türkische Behörden, Gerichte und Banken deutsche Dokumente in der Regel nicht an."
+      },
+      {
+        question: "Kann ich eine Vollmacht für die Türkei in Deutschland ausstellen lassen?",
+        answer: "Ja. Sie können eine Vollmacht bei einem deutschen Notar beurkunden lassen — mit anschließender Apostille und beglaubigter Übersetzung ins Türkische. Wir koordinieren den gesamten Prozess und stellen sicher, dass die Vollmacht den aktuellen Anforderungen türkischer Behörden entspricht."
+      },
+      {
+        question: "Wie lange ist eine Vollmacht für die Türkei gültig?",
+        answer: "Das hängt von der Art der Vollmacht ab. Viele türkische Behörden akzeptieren Vollmachten nur, wenn sie nicht älter als 6 Monate sind. Wir beraten Sie zur optimalen Gültigkeitsdauer für Ihren konkreten Zweck."
+      },
+      {
+        question: "Was passiert, wenn meine Vollmacht von türkischen Behörden abgelehnt wird?",
+        answer: "Das passiert häufiger als man denkt — meistens wegen veralteter Formulierungen oder fehlender spezifischer Befugnisse. Wir stellen sicher, dass Ihre Vollmacht von Anfang an korrekt ausgestellt ist und alle aktuellen Anforderungen erfüllt."
+      },
+      {
+        question: "Kann ich eine Vollmacht auch über das türkische Konsulat beglaubigen lassen?",
+        answer: "Ja. Als Alternative zur Apostille kann eine Beglaubigung durch das türkische Konsulat in Deutschland erfolgen. Wir beraten Sie, welcher Weg für Ihren Fall schneller und kostengünstiger ist."
+      }
+    ],
+    faqTR: [
+      {
+        question: "Apostil nedir ve neden gereklidir?",
+        answer: "Apostil, Alman belgelerini Türkiye'de kullanım için hukuken geçerli kılan uluslararası bir onay işlemidir. Apostil olmadan Türk makamları, mahkemeler ve bankalar Alman belgelerini genellikle kabul etmez."
+      },
+      {
+        question: "Türkiye için Almanya'da vekaletname çıkarabilir miyim?",
+        answer: "Evet. Alman noterinde vekaletname onaylattırabilirsiniz — ardından apostil ve Türkçe onaylı çeviri işlemleri yapılır. Tüm süreci koordine ediyor ve vekaletnamenin güncel Türk makamı gerekliliklerini karşıladığından emin oluyoruz."
+      },
+      {
+        question: "Türkiye için vekaletname ne kadar süre geçerlidir?",
+        answer: "Bu, vekaletnamenin türüne bağlıdır. Pek çok Türk makamı yalnızca 6 aydan eski olmayan vekaletnameleri kabul etmektedir. Belirli amacınız için en uygun geçerlilik süresi konusunda danışmanlık veriyoruz."
+      },
+      {
+        question: "Vekaletnamen Türk makamlarınca reddedilirse ne olur?",
+        answer: "Bu, düşünüldüğünden daha sık yaşanır — çoğunlukla güncelliğini yitirmiş ifadeler veya eksik yetki tanımları nedeniyle. Vekaletnamenizin başından itibaren doğru düzenlenmesini ve tüm güncel gereklilikleri karşılamasını sağlıyoruz."
+      },
+      {
+        question: "Türk konsolosluğu aracılığıyla da onay yaptırabilir miyim?",
+        answer: "Evet. Apostile alternatif olarak Almanya'daki Türk konsolosluğu aracılığıyla onay yapılabilir. Hangi yolun durumunuz için daha hızlı ve uygun maliyetli olduğu konusunda danışmanlık veriyoruz."
+      }
+    ]
   },
   {
     id: "migrationsrecht",
