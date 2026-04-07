@@ -19,7 +19,7 @@ export function Hero() {
   };
 
   return (
-    <section className="relative min-h-screen bg-[#1C3829] overflow-hidden flex flex-col justify-center pt-40 pb-0 lg:pt-0 hero-instant">
+    <section className="relative min-h-screen bg-[#1C3829] overflow-hidden flex flex-col justify-center pt-40 pb-0 lg:pt-0">
       <style>{`
         @keyframes heroImageIn { from { opacity: 0; } to { opacity: 1; } }
       `}</style>
