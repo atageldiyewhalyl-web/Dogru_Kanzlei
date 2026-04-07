@@ -383,32 +383,81 @@ Was uns auszeichnet:
     titleTR: "Ceza Hukuku",
     seoTitleDE: "Türkisches Strafrecht Mannheim | Vorladung & Haftbefehl aus der Türkei | Avukat Hasan Doğru",
     seoDescriptionDE: "Vorladung, Haftbefehl oder Interpol-Ausschreibung aus der Türkei? Avukat Hasan Doğru vertritt türkischstämmige Mandanten aus Mannheim in türkischen Strafverfahren — vollständig ohne Reise in die Türkei.",
-    description: "Türkiye'deki ceza davalarında Almanya'dan uzman hukuki savunma ve temsil. Mahkeme celbi, tutuklama müzekkeresi veya Interpol bildirimi olsa — Türk ceza yargı sisteminde her adımda yanınızdayız.",
+    seoTitleTR: "Türk Ceza Hukuku Mannheim | Türkiye'den Mahkeme Celbi & Tutuklama Müzekkeresi | Avukat Hasan Doğru",
+    seoDescriptionTR: "Türkiye'den mahkeme celbi, tutuklama müzekkeresi veya Interpol arama kararı mı aldınız? Avukat Hasan Doğru, Mannheim'daki Türk müvekkilleri Türk ceza davalarında temsil eder — Türkiye'ye seyahat etmeden.",
+    description: "Türk ceza davalarında uzman savunma ve hukuki danışmanlık — doğrudan Mannheim'dan. Mahkeme celbi, tutuklama müzekkeresi veya Interpol arama kararı olsun: Türk ceza yargısında yanınızdayız.",
     descriptionDE: "Fachkundige Strafverteidigung und rechtliche Beratung in türkischen Strafverfahren — direkt aus Mannheim. Ob Vorladung, Haftbefehl oder Interpol-Ausschreibung: Wir begleiten Sie durch das türkische Strafjustizsystem.",
-    detail: "CEZA SAVUNMASI · INTERPOL / KIRMIZI KÖŞE · İADE",
+    detail: "CEZA SAVUNMASI · INTERPOL / KIRMIZI BÜLTEN · İADE",
     detailDE: "STRAFVERTEIDIGUNG · INTERPOL / ROTE ECKE · AUSLIEFERUNG",
-    content: `Türkiye'deki ceza davalarında Almanya'dan uzman hukuki savunma ve temsil — güvenilir, şeffaf ve deneyimli.
+    content: `Almanya'dan Türkiye'deki Ceza Davalarında Savunma
 
-Almanya'dan Türkiye'de Ceza Savunması
-Yurt dışında yaşayan Türkler için Türk Ceza Hukuku — celp veya tutuklama müzekkeresi aldınız mı?
+Yurt Dışındaki Türkler için Türk Ceza Hukuku — Mahkeme Celbi veya Tutuklama Müzekkeresinde Ne Yapmalı?
 
-Almanya'da yaşıyor ve Türkiye'den bir mahkeme celbi, tutuklama müzekkeresi veya Interpol bildirimi aldıysanız, ciddi bir hukuki sorunla karşı karşıyasınız demektir. Türk ceza hukuku, Alman hukukundan temelden farklıdır — uzman bir avukat olmadan, Türkiye'ye gitmeden bile ağır sonuçlarla karşılaşabilirsiniz.
+Mannheim, Heidelberg veya Rhein-Neckar bölgesinde yaşıyorsanız ve Türkiye'den mahkeme celbi, tutuklama müzekkeresi veya Interpol arama kararı aldıysanız, ciddi bir hukuki sorunla karşı karşıyasınız demektir. Türk ceza hukuku, Alman hukukundan temelden farklıdır — uzman rehberlik olmadan Türkiye'ye hiç seyahat etmeseniz bile ağır sonuçlarla karşılaşabilirsiniz.
 
-Türkiye'de devam eden bir ceza davası; pasaport yenileme sorunları, Türkiye'ye giriş yasağı, iade talepleri veya Interpol kayıtları gibi geniş çaplı sonuçlar doğurabilir. Sizi tam olarak temsil ediyoruz — Türkiye'de bizzat bulunmanıza gerek kalmadan.
+Türkiye'de devam eden bir ceza davası geniş çaplı sonuçlar doğurabilir: pasaport yenileme güçlükleri, Türkiye'ye girişte sorunlar, iade talepleri veya uluslararası arama sistemine (Interpol) kayıt. Bu süreçte zaman belirleyicidir — ne kadar erken harekete geçerseniz şansınız o kadar yüksek olur.
+
+Avukat Hasan Doğru, Ankara Barosu üyesidir ve yalnızca Türk hukuku alanında danışmanlık vermektedir. Türkiye'de bizzat bulunmanıza gerek kalmadan Türk ceza davalarında sizi tam anlamıyla temsil ediyoruz.
 
 Sizin için neler yapıyoruz:
-• Türkiye'den gelen celp veya tutuklama müzekkeresi durumunda hukuki değerlendirme
-• Türk ceza yargılamasında tam savunma temsili
-• Interpol bildirimleri ve Kırmızı Köşe işlemlerinde temsil
-• Türkiye-Almanya arasındaki iade davalarında hukuki destek
-• Uyuşturucu suçlarında danışmanlık (TCK m. 188, 191)
-• Dolandırıcılık ve güveni kötüye kullanma davalarında temsil
-• Almanya'dan Türkiye'ye suç duyurusu yapılması
-• Askerlik ihlallerine ilişkin danışmanlık (Bakaya, Yoklama Kaçağı)
-• Türk hukukuna göre siber suçlar ve internet suçlarında temsil
 
-Kapanış cümlesi:
-Tüm süreç boyunca yanınızdayız — güvenilir, şeffaf ve Türk-Alman ceza hukuku alanında derin deneyimle.`,
+- Türkiye'den Gelen Mahkeme Celbi veya Tutuklama Müzekkeresinde Durum Değerlendirmesi
+Türkiye'den evrak aldınız ve ne yapacağınızı bilmiyor musunuz? Durumunuzu derhal ve gizlilik içinde analiz ediyor — tutuklama müzekkeresi veya seyahat yasağı bulunup bulunmadığını kontrol ediyor, sonuçları açıklıyor ve bir sonraki adımı birlikte belirliyoruz. Bizimle konuşmadan önce hiçbir şey yapmayın.
+
+- Türk Ceza Yargılamasında Tam Savunma (Ceza Davası)
+İlk ifadeden karara ve gerektiğinde üst mahkeme aşamasına kadar Türk ceza yargılamalarında tam savunmayı üstleniyoruz. Dava vekaleti ile Türk ceza mahkemelerinde sizi temsil ediyoruz — Türkiye'de bizzat bulunmanız gerekmiyor. Türk Ceza Muhakemesi Kanunu'nu (CMK) biliyor ve savunmanız için her türlü hukuki imkânı kullanıyoruz.
+
+- Interpol Arama Kararları ve Kırmızı Bültenlerde Temsil (Kırmızı Bülten)
+Interpol Kırmızı Bülteni, 196 üye ülkenin tamamında seyahat özgürlüğünüzü kısıtlayabilir — her sınır geçişinde gözaltına alınmanıza neden olabilir. Arama kararının hukuka uygunluğunu inceliyor, Interpol Dosyaların Denetim Komisyonu'na (CCF) kaldırma veya askıya alma başvurusunda bulunuyor ve Interpol ile Türk makamları nezdinde sizi temsil ediyoruz.
+
+- Türkiye ile Almanya Arasındaki İade Davalarında Temsil (İade)
+Türkiye Almanya'ya resmi bir iade talebinde bulunursa, hızlı hareket etmek ve her iki ülkede uzman temsil almak kritik önem taşır. Alman makamları ve Türk mahkemeleriyle eş zamanlı koordinasyon sağlıyor, talebin kabul edilebilirliğini inceliyor ve haklarınızı korumak için elimizden geleni yapıyoruz.
+
+- Türk Hukukuna Göre Uyuşturucu Suçlarında Danışmanlık (TCK m. 188, 191)
+Türk Ceza Kanunu'na (TCK) göre uyuşturucu suçları suçun türüne bağlı olarak birkaç yıldan ağırlaştırılmış müebbet hapis cezasına kadar uzanan ağır yaptırımlarla karşılık bulmaktadır. Haklarınız ve olası ceza indirim nedenleri konusunda danışmanlık veriyor, Türk ceza mahkemelerinde kararlılıkla sizi temsil ediyoruz.
+
+- Dolandırıcılık ve Güveni Kötüye Kullanma Davalarında Temsil (Dolandırıcılık, Güveni Kötüye Kullanma)
+Türk ceza hukukuna göre dolandırıcılık ve güveni kötüye kullanma suçlamaları titiz ve dikkatli bir savunma stratejisi gerektirir. Olayı bütünüyle analiz ediyor, aklamanıza yönelik delilleri güvence altına alıyor ve Türk ceza yargılamalarında sizi temsil ediyoruz.
+
+- Almanya'dan Türkiye'de Suç Duyurusu (Suç Duyurusu)
+Türkiye'de bir suçun mağduru oldunuz mu — dolandırıcılık, gasp, hırsızlık, yaralama? Almanya'dan da suç duyurusunda bulunabilirsiniz. Yetkili Türk Cumhuriyet Savcılığı'na Suç Duyurusu'nu hazırlayıp sunuyor ve davayı sizin adınıza takip ediyoruz.
+
+- Askerlik Suçlarında Danışmanlık (Bakaya, Yoklama Kaçağı)
+Pek çok Almanya'lı Türk, hakkında arama kararı olduğundan habersiz olarak Türkiye'ye gidiyor. Bakaya (firar) veya Yoklama Kaçağı (kayıt dışı kalma) durumunda havalimanında anında gözaltına alınma riski bulunmaktadır. Resmi kanallar aracılığıyla askerlik statünüzü netleştiriyor, bekleyen yükümlülükleri çözüme kavuşturuyor ve Türkiye'ye güvenle seyahat edebilmenizi sağlıyoruz.
+
+- Türk Hukukuna Göre İnternet Suçları ve Siber Suçlarda Temsil
+Türk Ceza Kanunu; internette hakaret (TCK m. 125), sosyal medyada iftira ve gizlilik ihlallerini — yurt dışında yaşayan kişiler söz konusu olsa dahi — giderek daha sert yaptırımlarla karşılamaktadır. Türk internet suçu davalarında sanık veya mağdur olarak sizi temsil ediyoruz.
+
+- Siyasi Ceza Davaları ve Basın Özgürlüğü Suçlarında Danışmanlık
+Türkiye'de sosyal medya paylaşımları veya grup konuşmalarındaki mesajlar bile cezai kovuşturmaya konu olabilmektedir. Devleti aşağılama (TCK m. 301), terör propagandası (TMK m. 7/2) veya benzer suçlamalarla karşılaşıyorsanız, uzman bilgimizle yanınızdayız.
+
+Türkiye'den Mahkeme Celbi Aldığınızda Ne Yapmalısınız?
+
+Pek çok kişi bu durumda aynı hatayı yapıyor: Hakkında tutuklama müzekkeresi olup olmadığını bilmeden Türkiye'ye gidiyor. Bu, havalimanında anında gözaltıyla sonuçlanabilir.
+
+Doğru adımlar:
+
+Adım 1 — Statünüz netleşmeden Türkiye'ye gitmeyin.
+Adım 2 — Derhal bizimle iletişime geçin. Tutuklama müzekkeresi, seyahat yasağı veya Interpol arama kararı bulunup bulunmadığını kontrol ediyoruz.
+Adım 3 — Yürütülen davayı analiz ediyor ve seçeneklerinizi açıklıyoruz.
+Adım 4 — Birlikte bir strateji belirliyoruz — savunma, beyan veya davanın düşürülmesi.
+Adım 5 — Türk makamları ve mahkemeleri önünde sizi tam anlamıyla temsil ediyoruz — vekaletname ile, bizzat bulunmanız gerekmeden.
+
+Mannheim'da Türk Ceza Hukuku İçin Neden Doğru Kanzlei?
+
+Türk ceza hukuku; Türk Ceza Kanunu (TCK), Ceza Muhakemesi Kanunu (CMK) ve Türk yargı pratiği konusunda derinlemesine bilgi gerektiren bir uzmanlık alanıdır. Avukat Hasan Doğru, Ankara Barosu üyesi olarak Türk ceza yargısını içeriden tanımaktadır — ders kitaplarından değil, uygulamadan.
+
+Mannheim'daki büromuz, Türk ceza davalarıyla karşılaşan Rhein-Neckar bölgesindeki Türk kökenli müvekkiller için doğrudan muhataptır. Türkçe ve Almanca konuşuyoruz. Hızlı hareket ediyoruz. Ve davanın her aşamasında sizi şeffaf biçimde bilgilendiriyoruz.
+
+Bizi farklı kılan:
+
+- Yalnızca Türk hukuku — Türk ceza hukukunda uzman bilgi
+- Ankara Barosu üyesi, § 207 BRAO kapsamında kayıtlı
+- Türkiye'ye seyahat etmeden tam temsil imkânı
+- Mahkeme celbi veya tutuklama müzekkeresinde anında durum kontrolü
+- Türkçe ve Almanca danışmanlık
+- Mannheim'da yüz yüze görüşme imkânı
+- Ankara'da ikinci ofis — Türk ceza mahkemeleri ve makamlarına doğrudan erişim`,
     contentDE: `Strafverteidigung in der Türkei aus Deutschland
 
 Türkisches Strafrecht für Auslandstürken — Was tun bei Vorladung oder Haftbefehl?
@@ -506,6 +555,36 @@ Was uns auszeichnet:
       {
         question: "Was kostet eine Strafverteidigung nach türkischem Recht?",
         answer: "Die Kosten hängen vom Umfang des Verfahrens, der Anzahl der Instanzen und der Komplexität des Falls ab. Nach einer ersten Analyse erstellen wir Ihnen ein transparentes Angebot — ohne versteckte Kosten."
+      }
+    ],
+    faqTR: [
+      {
+        question: "Türkiye'den mahkeme celbi aldım. Ne yapmalıyım?",
+        answer: "Aceleci davranmayın ve statünüzü öğrenmeden Türkiye'ye gitmeyin. Mahkeme celbine yanıt vermeden veya herhangi bir adım atmadan önce bize başvurun. Durumu analiz ediyor, tutuklama müzekkeresi ya da seyahat yasağı bulunup bulunmadığını kontrol ediyor ve en güvenli yolu belirliyoruz."
+      },
+      {
+        question: "Hakkımda dava varken Türkiye'ye girebilir miyim?",
+        answer: "Bu, seyahat yasağı (Yurt Dışı Çıkış Yasağı) veya tutuklama müzekkeresi (Tutuklama Müzekkeresi) bulunup bulunmadığına bağlıdır. Bazı durumlarda giriş mümkünken bazılarında havalimanında anında gözaltı riski söz konusudur. Seyahat etmeden önce her durumda statünüzü kontrol ediyoruz — bu vazgeçilmezdir."
+      },
+      {
+        question: "Türk ceza yargılamasında bizzat bulunmadan temsil edilebilir miyim?",
+        answer: "Pek çok davada evet. Dava vekaleti (Vekaletname) ile Türk ceza mahkemelerinde sizi temsil edebiliyoruz. Bizzat katılımın gerekip gerekmediği, davanın aşamasına, suçun niteliğine ve mahkemenin takdirine bağlıdır — bunu başından netleştiriyoruz."
+      },
+      {
+        question: "Interpol Kırmızı Bülteni nedir ve nasıl kaldırılır?",
+        answer: "Kırmızı Bülten, tüm 196 Interpol üyesi ülkede geçerli uluslararası bir arama ilanıdır. Seyahat özgürlüğünüzü ciddi ölçüde kısıtlar. Interpol Dosyaların Denetim Komisyonu'na (CCF) başvurarak arama kararının incelenmesi ve kaldırılması için talepte bulunuyor, bu özel süreçte sizi temsil ediyoruz."
+      },
+      {
+        question: "Askerlik nedeniyle aranıyorsam ne olur?",
+        answer: "Bakaya (firar) veya Yoklama Kaçağı (kayıt dışı kalma) olarak tescil edilmişseniz Türkiye'ye girişte anında gözaltı riskiyle karşılaşabilirsiniz. Resmi kanallar aracılığıyla askerlik statünüzü netleştiriyor, bekleyen yükümlülükleri çözüme kavuşturuyor ve güvenli Türkiye girişini mümkün kılıyoruz."
+      },
+      {
+        question: "Bir Türk ceza davası ne kadar sürer?",
+        answer: "Bu, suçun türüne, yetkili mahkemeye ve davanın aşamasına göre büyük farklılık gösterir. Daha basit davalar 6–18 ayda sonuçlanabilirken karmaşık davalar yıllarca sürebilir. Somut davanızın zaman çizelgesi konusunda gerçekçi ve şeffaf bilgi veriyoruz — gerçekçi olmayan vaatler yapmadan."
+      },
+      {
+        question: "Türk ceza savunmasının maliyeti nedir?",
+        answer: "Maliyet, davanın kapsamına, yargılama aşaması sayısına ve karmaşıklığına bağlıdır. İlk değerlendirmenin ardından şeffaf bir teklif sunuyoruz — gizli ücret olmaksızın."
       }
     ]
   },
