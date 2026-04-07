@@ -595,46 +595,202 @@ Was uns auszeichnet:
     icon: Users,
     title: "Tanıma & Tenfiz",
     titleTR: "Tanıma ve Tenfiz",
-    description: "Almanya ile Türkiye arasındaki yabancı mahkeme kararlarının tanınması ve tenfizinde uzman hukuki danışmanlık.",
-    descriptionDE: "Spezialisierte rechtliche Beratung bei der Anerkennung und Vollstreckung ausländischer Gerichtsentscheidungen zwischen Deutschland und der Türkei.",
+    seoTitleDE: "Tanıma & Tenfiz Mannheim — Deutsche Scheidung in der Türkei anerkennen lassen | Avukat Hasan Doğru",
+    seoDescriptionDE: "Deutsche Scheidung in der Türkei anerkennen lassen — von Mannheim aus, ohne Reise. Avukat Hasan Doğru führt das Tanıma ve Tenfiz-Verfahren vollständig für Sie durch.",
+    seoTitleTR: "Tanıma ve Tenfiz Mannheim — Alman Boşanmasını Türkiye'de Tanıtmak | Avukat Hasan Doğru",
+    seoDescriptionTR: "Alman boşanma kararını Türkiye'de tanıtın — Mannheim'dan, Türkiye'ye gitmeden. Avukat Hasan Doğru, Tanıma ve Tenfiz davasını baştan sona sizin için yürütür.",
+    description: "Almanya ile Türkiye arasındaki yabancı mahkeme kararlarının tanınması ve tenfizinde uzman hukuki danışmanlık — Türkiye'ye seyahat etmeden.",
+    descriptionDE: "Spezialisierte rechtliche Beratung bei der Anerkennung und Vollstreckung ausländischer Gerichtsentscheidungen zwischen Deutschland und der Türkei — vollständig ohne Reise.",
     detail: "Boşanma Tanıma Tenfiz · Türk Boşanmasının Tanınması · Gitmeden Tanıma Tenfiz · Süre ve Maliyet · Velayet Kararları · Evlat Edinme · Genel Mahkeme Kararları",
     detailDE: "Scheidungsanerkennung · Anerkennung türkischer Urteile · Tanıma Tenfiz (Reise nicht erforderlich) · Verfahrensdauer & Kosten · Sorgerechtsbeschlüsse · Adoptionsanerkennung · Urteilsanerkennung allgemein",
-    content: `Tanıma ve Tenfiz — Almanya'daki Boşanma Kararının Türkiye'de Tanınması
+    content: `Tanıma ve Tenfiz — Alman Boşanmasını Türkiye'de Tanıtmak
+
 Yabancı mahkeme kararları Türkiye'de kendiliğinden geçerli olmaz — biz geçerli hale getiriyoruz.
 
 Almanya'da boşandıysanız, bu karar Türkiye'de otomatik olarak geçerli sayılmaz. Türk hukuku açısından evliliğinizin sona ermiş sayılabilmesi için ayrı bir mahkeme süreci gereklidir — buna Tanıma ve Tenfiz denir.
 
-Bu işlem yapılmadığında Türk makamları sizi hâlâ evli kabul eder. Bu durum; yeniden evlenme, miras ve Türkiye'deki mal varlığının devri gibi konularda ciddi sorunlara yol açabilir.
+Mannheim, Heidelberg ve Rhein-Neckar bölgesindeki Türk aileler için bu süreç çoğunlukla bilinmemektedir — ve sonuçları ağır olabilmektedir. Tanıma yapılmadan Türk makamları sizi hâlâ evli kabul eder. Bu durum; yeniden evlenme, miras ve Türkiye'deki mal varlığının devri gibi konularda ciddi sorunlara yol açabilir.
+
+Avukat Hasan Doğru, Ankara Barosu üyesidir ve yalnızca Türk hukuku alanında danışmanlık vermektedir. Tüm Tanıma ve Tenfiz sürecini sizin için yürütüyoruz — Türkiye'ye seyahat etmenize gerek kalmadan.
 
 Sizin için neler yapıyoruz:
-• Boşanma Tanıma Tenfiz — Türk mahkemelerinde Tanıma ve Tenfiz davalarında tam temsil
-• Almanya'daki Boşanmanın Türkiye'de Tanınması — Başvurunun hazırlanması ve sürecin baştan sona takibi
-• Türk Boşanmasının Almanya'da Tanınması — Türkiye'de verilen kararların Almanya'da geçerliliği için başvuru ve takip
-• Türkiye've Gitmeden Tanıma Tenfiz — Vekaletname ile tam temsil, bizzat bulunmanıza gerek yok
-• Süre ve Maliyet Danışmanlığı — Gerçekçi zaman çizelgesi ve ücretler hakkında şeffaf bilgilendirme
-• Velayet Kararlarının Tanınması — Uluslararası velayet ve kişisel ilişki kararlarının Türkiye'de icrası
-• Evlat Edinme Tanıma — Sınır ötesi evlat edinme süreçlerinde hukuki destek
-• Genel Mahkeme Kararlarının Tanınması — Diğer Alman mahkeme kararlarının Türkiye'de tanınması
 
-Tüm süreç boyunca yanınızdayız — güvenilir, şeffaf ve Türk-Alman aile hukukunda derin deneyimle.`,
+- Alman Boşanmasını Türkiye'de Tanıtmak (Tanıma)
+Almanya'da boşandıysanız ve bu boşanmanın Türkiye'de de geçerli sayılmasını istiyorsanız, yetkili Türk mahkemelerinde tam Tanıma davasını yürütüyoruz — gerekli tüm belgelerin hazırlanmasından başvuruya, kararın kesinleşmesine kadar. Türkiye'de bizzat bulunmanıza gerek yoktur.
+
+- Yabancı Kararların Türkiye'de İcrası (Tenfiz)
+Yalnızca tanıma değil, aynı zamanda nafaka ödemeleri, mal paylaşımı veya velayet kararları gibi konularda icra da söz konusuysa Tenfiz davasını açıyor ve kararın Türkiye'de icra edilebilir ve fiilen uygulanabilir hale gelmesini sağlıyoruz.
+
+- Türk Boşanmasının Almanya'da Tanınması
+Türkiye'de verilen kararlar da Almanya'da otomatik geçerlilik kazanmaz. Türkiye'de boşandıysanız ve bu boşanmanın Almanya'da resmi olarak tanınmasını istiyorsanız, koşulları inceliyor ve yetkili Alman makamı nezdinde tanıma işlemini başlatıyoruz.
+
+- Türkiye'ye Gitmeden Tanıma ve Tenfiz
+Dava vekaleti ile Türk mahkemelerinde sizi tam anlamıyla temsil ediyoruz — Türkiye'de bizzat görünmeniz gerekmiyor. Mannheim ve Almanya genelindeki pek çok müvekkilimiz süreci tamamen uzaktan yürütmektedir. Belgeler, çeviriler, mahkeme yazışmaları ve süreler — tümünü biz hallediyoruz.
+
+- Velayet Kararlarının Uluslararası Tanınması
+Alman velayet ve kişisel ilişki kararları, Türkiye'de icra edilebilmesi için ayrı bir Tanıma davası yoluyla tanınmak zorundadır. Bu davayı Türk mahkemelerinde yürütüyor ve velayet düzenlemenizin Türkiye'de de geçerliliğini sağlıyoruz.
+
+- Türkiye ile Almanya Arasında Evlat Edinme Tanıması
+Sınır ötesi evlat edinmeler, her iki ülkede de evlat edinme kararının karşılıklı olarak tanınmasını gerektirmektedir. Bu süreç karmaşıktır ve her iki ülkedeki makamlarla yakın iş birliği gerektirir. Hukuki olarak her adımda yanınızdayız.
+
+- Genel Mahkeme Kararlarının Tanınması (Genel Mahkeme Kararları)
+Yalnızca boşanma kararları değil; miras hukuku, sözleşme hukuku veya nafaka ilamları gibi diğer Alman mahkeme kararları da Türkiye'de tanınıp icra edilebilir hale getirilebilir. Davanızı inceliyor ve ilgili süreci başlatıyoruz.
+
+- Süre ve Maliyet Konusunda Şeffaf Danışmanlık
+Başından itibaren gerçekçi bir değerlendirme sunuyoruz — sürecin ne kadar süreceğini, hangi belgelerin gerektiğini, ne kadara mal olacağını. Gizli ücret yok, gerçekçi olmayan vaatler yok.
+
+Tanıma ve Tenfiz Süreci Nasıl İşler?
+
+Adım 1 — Belge Hazırlığı:
+Hangi belgelerin gerektiğini inceliyoruz — genellikle apostilli boşanma kararı ve onaylı Türkçe çevirisi — ve tüm belgelerin teminini koordine ediyoruz.
+
+Adım 2 — Başvuru:
+Tanıma talebini yetkili Türk mahkemesine (Asliye Hukuk Mahkemesi) sunuyor ve vekaleten sizin avukatınız olarak sizi temsil ediyoruz.
+
+Adım 3 — Yargılama Süreci:
+Türk mahkemesi, tanıma koşullarının karşılanıp karşılanmadığını incelemektedir — özellikle yabancı kararın kesinleşip kesinleşmediğini ve Türk kamu düzenine (ordre public) aykırı olup olmadığını.
+
+Adım 4 — Kararın Kesinleşmesi:
+Tanıma kararı kesinleştikten sonra sizi derhal bilgilendiriyoruz ve gerekli tüm sonraki adımları — örneğin Türk nüfus kayıtlarında medeni hal değişikliği — başlatıyoruz.
+
+Mannheim'da Tanıma ve Tenfiz İçin Neden Doğru Kanzlei?
+
+Tanıma ve Tenfiz davası teknik görünebilir — ve gerçekten öyledir. Belge hazırlığındaki hatalar, yanlış çeviriler veya kaçırılan süreler tüm süreci aylarca geciktirebilir ya da reddedilmesiyle sonuçlanabilir. Avukat Hasan Doğru, Türk mahkemelerinin gerekliliklerini yakından bilmekte ve başvurunuzun başından itibaren doğru olmasını sağlamaktadır.
+
+Ankara Barosu üyesi olarak Mannheim'da büroya ve Ankara'da ikinci ofise sahip olan büromuz, Rhein-Neckar bölgesindeki Türk kökenli müvekkiller için doğrudan muhataptır.
+
+Bizi farklı kılan:
+
+- Yalnızca Türk hukuku — tanıma davalarında uzman bilgi
+- Ankara Barosu üyesi, § 207 BRAO kapsamında kayıtlı
+- Türkiye'ye seyahat etmeden tam süreç yönetimi mümkün
+- Türkçe ve Almanca danışmanlık
+- Mannheim'da yüz yüze görüşme imkânı
+- Ankara'da ikinci ofis — Türk mahkemeleriyle doğrudan iş birliği`,
     contentDE: `Tanıma ve Tenfiz — Deutsche Scheidung in der Türkei anerkennen lassen
+
 Ausländische Urteile gelten in der Türkei nicht automatisch — wir machen sie rechtswirksam.
 
 Wenn Ihre Ehe in Deutschland geschieden wurde, entfaltet dieses Urteil in der Türkei nicht automatisch seine Wirkung. Damit die Scheidung auch nach türkischem Recht als wirksam gilt, ist ein gesondertes gerichtliches Verfahren erforderlich — die sogenannte Tanıma ve Tenfiz (Anerkennung und Vollstreckung).
 
-Ohne dieses Verfahren gilt Ihre Ehe vor türkischen Behörden weiterhin als bestehend. Dies kann weitreichende Folgen haben — etwa bei einer erneuten Heirat, bei erbrechtlichen Fragen oder bei der Übertragung von Vermögenswerten in der Türkei.
+Für türkischstämmige Familien in Mannheim, Heidelberg und dem Rhein-Neckar-Raum ist dieses Verfahren oft unbekannt — mit weitreichenden Konsequenzen. Ohne Tanıma gilt Ihre Ehe vor türkischen Behörden weiterhin als bestehend. Das kann bei einer erneuten Heirat, bei erbrechtlichen Fragen oder bei der Übertragung von Vermögenswerten in der Türkei zu erheblichen Problemen führen.
+
+Avukat Hasan Doğru ist Mitglied der Ankara Barosu und berät ausschließlich im türkischen Recht. Wir führen das gesamte Tanıma ve Tenfiz-Verfahren für Sie durch — vollständig ohne Reise in die Türkei.
 
 Was wir für Sie tun:
-• Scheidungsanerkennung Türkei — Vollständige Vertretung im Tanıma ve Tenfiz-Verfahren vor türkischen Gerichten
-• Deutsche Scheidung in der Türkei anerkennen lassen — Einreichung und Begleitung des gesamten Anerkennungsverfahrens
-• Türkische Scheidung in Deutschland anerkennen — Prüfung und Einleitung des Anerkennungsverfahrens für türkische Urteile in Deutschland
-• Tanıma Tenfiz ohne Reise in die Türkei — Wir vertreten Sie vollständig per Vollmacht, ohne dass Sie persönlich erscheinen müssen
-• Verfahrensdauer und Kosten — Transparente Beratung zu realistischen Zeitrahmen und anfallenden Gebühren
-• Sorgerechtsbeschlüsse anerkennen lassen — Internationale Durchsetzung von Sorge- und Umgangsrechtsurteilen
-• Adoptionsanerkennung Türkei-Deutschland — Rechtliche Begleitung bei grenzüberschreitenden Adoptionsverfahren
-• Urteilsanerkennung allgemein (Genel Mahkeme Kararları) — Anerkennung sonstiger deutscher Gerichtsentscheidungen in der Türkei
 
-Wir begleiten Sie durch den gesamten Prozess — zuverlässig, transparent und mit langjähriger Erfahrung im deutsch-türkischen Familienrecht.`
+- Deutsche Scheidung in der Türkei anerkennen lassen (Tanıma)
+Wenn Ihre Ehe in Deutschland geschieden wurde und Sie diese Scheidung auch in der Türkei wirksam machen möchten, führen wir das vollständige Tanıma-Verfahren vor den zuständigen türkischen Gerichten durch — von der Vorbereitung aller notwendigen Dokumente über die Antragstellung bis zur rechtskräftigen Anerkennung. Sie müssen nicht persönlich in der Türkei erscheinen.
+
+- Vollstreckung ausländischer Urteile in der Türkei (Tenfiz)
+Geht es nicht nur um die Anerkennung, sondern auch um die Vollstreckung eines Urteils — zum Beispiel bei Unterhaltszahlungen, Vermögensaufteilung oder Sorgerechtsentscheidungen — führen wir das Tenfiz-Verfahren ein und sorgen dafür, dass das Urteil in der Türkei vollstreckbar ist und tatsächlich umgesetzt wird.
+
+- Türkische Scheidung in Deutschland anerkennen lassen
+Auch türkische Urteile entfalten in Deutschland nicht automatisch ihre Wirkung. Wenn Sie in der Türkei geschieden wurden und diese Scheidung in Deutschland offiziell anerkannt haben möchten, prüfen wir die Voraussetzungen und leiten das Anerkennungsverfahren bei der zuständigen deutschen Behörde ein.
+
+- Tanıma Tenfiz ohne Reise in die Türkei
+Per Prozessvollmacht vertreten wir Sie vollständig vor türkischen Gerichten — kein persönliches Erscheinen in der Türkei erforderlich. Viele unserer Mandanten aus Mannheim und dem gesamten Bundesgebiet führen das Verfahren vollständig auf Distanz durch. Wir kümmern uns um Dokumente, Übersetzungen, Gerichtskorrespondenz und Fristen.
+
+- Sorgerechtsbeschlüsse international anerkennen lassen
+Deutsche Sorgerechts- und Umgangsrechtsurteile müssen in der Türkei durch ein eigenes Tanıma-Verfahren anerkannt werden, bevor sie dort vollstreckbar sind. Wir führen dieses Verfahren vor türkischen Gerichten durch und sorgen dafür, dass Ihre Sorgerechtsregelung in der Türkei Bestand hat.
+
+- Adoptionsanerkennung zwischen der Türkei und Deutschland
+Grenzüberschreitende Adoptionen erfordern die gegenseitige Anerkennung des Adoptionsbeschlusses in beiden Ländern. Dieses Verfahren ist komplex und erfordert die enge Zusammenarbeit mit Behörden in beiden Ländern. Wir begleiten Sie rechtlich durch jeden Schritt.
+
+- Allgemeine Urteilsanerkennung (Genel Mahkeme Kararları)
+Nicht nur Scheidungsurteile, sondern auch andere deutsche Gerichtsentscheidungen — etwa im Erbrecht, Vertragsrecht oder bei Unterhaltstiteln — können in der Türkei anerkannt und für vollstreckbar erklärt werden. Wir prüfen Ihren Fall und leiten das entsprechende Verfahren ein.
+
+- Transparente Beratung zu Verfahrensdauer und Kosten
+Wir geben Ihnen von Anfang an eine realistische Einschätzung — wie lange das Verfahren dauert, welche Dokumente benötigt werden, welche Kosten entstehen. Keine versteckten Gebühren, keine falschen Versprechen.
+
+Wie läuft das Tanıma ve Tenfiz-Verfahren ab?
+
+Schritt 1 — Dokumentenvorbereitung:
+Wir prüfen welche Unterlagen benötigt werden — in der Regel das Scheidungsurteil mit Apostille und beglaubigter türkischer Übersetzung — und koordinieren die Beschaffung aller Dokumente.
+
+Schritt 2 — Antragstellung:
+Wir reichen den Tanıma-Antrag beim zuständigen türkischen Gericht (Asliye Hukuk Mahkemesi) ein und vertreten Sie als Ihren bevollmächtigten Anwalt.
+
+Schritt 3 — Gerichtsverfahren:
+Das türkische Gericht prüft ob die Voraussetzungen für eine Anerkennung erfüllt sind — insbesondere ob das ausländische Urteil rechtskräftig ist und türkischen Grundsätzen (ordre public) nicht widerspricht.
+
+Schritt 4 — Rechtskräftige Anerkennung:
+Nach positiver Entscheidung wird die Anerkennung rechtskräftig. Wir informieren Sie sofort und stellen sicher, dass alle notwendigen Folgeschritte — zum Beispiel die Änderung des Personenstands in türkischen Registern — eingeleitet werden.
+
+Warum Doğru Kanzlei für Tanıma ve Tenfiz in Mannheim?
+
+Das Tanıma ve Tenfiz-Verfahren klingt technisch — und ist es auch. Fehler bei der Dokumentenvorbereitung, falsche Übersetzungen oder verpasste Fristen können das gesamte Verfahren um Monate verzögern oder zur Ablehnung führen. Avukat Hasan Doğru kennt die Anforderungen türkischer Gerichte genau und stellt sicher, dass Ihr Antrag von Anfang an korrekt ist.
+
+Als Mitglied der Ankara Barosu mit Büro in Mannheim und zweitem Standort in Ankara sind wir der direkte Ansprechpartner für türkischstämmige Mandanten im Rhein-Neckar-Raum.
+
+Was uns auszeichnet:
+
+- Ausschließlich türkisches Recht — spezialisierte Expertise im Anerkennungsverfahren
+- Mitglied der Ankara Barosu, registriert gemäß § 207 BRAO
+- Vollständiges Verfahren ohne Reise in die Türkei möglich
+- Beratung auf Türkisch und Deutsch
+- Standort Mannheim — persönliche Beratung im Rhein-Neckar-Raum
+- Zweiter Standort Ankara — direkte Zusammenarbeit mit türkischen Gerichten`,
+    faqDE: [
+      {
+        question: "Warum wird meine deutsche Scheidung in der Türkei nicht automatisch anerkannt?",
+        answer: "Die Türkei ist kein EU-Mitgliedstaat und hat keine bilateralen Abkommen mit Deutschland über die automatische Urteilsanerkennung. Jedes ausländische Urteil muss durch ein eigenständiges gerichtliches Verfahren (Tanıma) in der Türkei anerkannt werden — unabhängig davon, wie lange die Scheidung in Deutschland schon rechtskräftig ist."
+      },
+      {
+        question: "Was passiert konkret, wenn ich das Tanıma-Verfahren nicht durchführe?",
+        answer: "Ohne Tanıma gilt Ihre Ehe vor türkischen Behörden, Gerichten und Standesämtern weiterhin als bestehend. Wenn Sie in der Türkei erneut heiraten möchten, werden Sie als verheiratet geführt. Bei Erbschaftsangelegenheiten hat Ihr früherer Ehepartner möglicherweise weiterhin Ansprüche. Bei der Übertragung gemeinsamer Immobilien in der Türkei wird die Mitwirkung des früheren Ehepartners verlangt."
+      },
+      {
+        question: "Welche Dokumente brauche ich für das Tanıma-Verfahren?",
+        answer: "In der Regel benötigen Sie das rechtskräftige Scheidungsurteil mit Apostille sowie eine beglaubigte Übersetzung ins Türkische. Je nach Fall können weitere Dokumente erforderlich sein — wir prüfen Ihren konkreten Fall und erstellen eine vollständige Dokumentenliste."
+      },
+      {
+        question: "Wie lange dauert das Tanıma ve Tenfiz-Verfahren?",
+        answer: "In der Regel 3–9 Monate, abhängig vom zuständigen türkischen Gericht und dessen Auslastung. Wir informieren Sie über realistische Zeitrahmen für Ihren konkreten Fall und halten Sie in jeder Phase transparent auf dem Laufenden."
+      },
+      {
+        question: "Muss ich persönlich vor einem türkischen Gericht erscheinen?",
+        answer: "Nein. Per Vollmacht vertreten wir Sie vollständig vor türkischen Gerichten. Sie bleiben in Mannheim — wir erledigen alles in der Türkei."
+      },
+      {
+        question: "Kann das Verfahren auch für türkische Urteile in Deutschland durchgeführt werden?",
+        answer: "Ja. Auch türkische Urteile — zum Beispiel eine in der Türkei ausgesprochene Scheidung — müssen in Deutschland anerkannt werden, bevor sie dort wirksam sind. Wir prüfen die Voraussetzungen und leiten das Anerkennungsverfahren bei der zuständigen deutschen Behörde ein."
+      },
+      {
+        question: "Was kostet das Tanıma ve Tenfiz-Verfahren?",
+        answer: "Die Kosten setzen sich aus Gerichtsgebühren, Übersetzungskosten und dem Anwaltshonorar zusammen. Nach einer ersten Analyse Ihres Falls erstellen wir Ihnen ein transparentes Angebot — ohne versteckte Kosten."
+      }
+    ],
+    faqTR: [
+      {
+        question: "Alman boşanmam Türkiye'de neden otomatik olarak tanınmıyor?",
+        answer: "Türkiye AB üyesi değildir ve Almanya ile otomatik karar tanıma konusunda ikili anlaşması bulunmamaktadır. Almanya'da ne kadar süre önce boşanılmış olursa olsun, her yabancı karar bağımsız bir yargısal işlemle (Tanıma) Türkiye'de tanınmak zorundadır."
+      },
+      {
+        question: "Tanıma davası açmazsam ne olur?",
+        answer: "Tanıma yapılmadan Türk makamları, mahkemeler ve nüfus müdürlükleri sizi hâlâ evli olarak kabul eder. Türkiye'de yeniden evlenmek isterseniz evli olarak kayıtlısınızdır. Miras durumlarında eski eşinizin hak talepleri devam edebilir. Ortak Türkiye gayrimenkullerinin devrinde eski eşin katılımı talep edilir."
+      },
+      {
+        question: "Tanıma davası için hangi belgeler gerekiyor?",
+        answer: "Genellikle apostilli kesinleşmiş boşanma kararı ve onaylı Türkçe çevirisi gerekmektedir. Davaya göre ek belgeler istenebilir — somut durumunuzu inceliyor ve eksiksiz belge listesi hazırlıyoruz."
+      },
+      {
+        question: "Tanıma ve Tenfiz davası ne kadar sürer?",
+        answer: "Yetkili Türk mahkemesine ve iş yüküne göre genellikle 3–9 ay sürmektedir. Somut davanız için gerçekçi süre tahmini sunuyor ve her aşamada sizi şeffaf biçimde bilgilendiriyoruz."
+      },
+      {
+        question: "Türk mahkemesinde bizzat bulunmam gerekiyor mu?",
+        answer: "Hayır. Vekaletname ile Türk mahkemelerinde sizi tam anlamıyla temsil ediyoruz. Mannheim'da kalırsınız — Türkiye'deki her şeyi biz hallediyoruz."
+      },
+      {
+        question: "Türk kararları da Almanya'da tanıtılabilir mi?",
+        answer: "Evet. Türkiye'de verilen kararlar — örneğin Türkiye'de gerçekleştirilen boşanma — Almanya'da geçerli sayılmadan önce tanınması gerekmektedir. Koşulları inceliyor ve yetkili Alman makamı nezdinde tanıma işlemini başlatıyoruz."
+      },
+      {
+        question: "Tanıma ve Tenfiz davasının maliyeti nedir?",
+        answer: "Mahkeme harçları, çeviri giderleri ve avukatlık ücretinden oluşmaktadır. Davanızın ilk değerlendirmesinin ardından şeffaf bir teklif sunuyoruz — gizli ücret olmaksızın."
+      }
+    ]
   },
   {
     id: "mavi-kart",
