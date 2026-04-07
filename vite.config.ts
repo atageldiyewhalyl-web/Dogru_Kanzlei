@@ -7,26 +7,71 @@ import prerender from '@prerenderer/rollup-plugin'
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url))
 
-const makeCssAsync: Plugin = {
-  name: 'make-css-async',
-  transformIndexHtml: {
-    order: 'post',
-    handler(html: string) {
-      return html.replace(
-        /<link rel="stylesheet" crossorigin href="([^"]+\.css)">/g,
-        (_, href) =>
-          `<link rel="preload" as="style" href="${href}" onload="this.onload=null;this.rel='stylesheet'">` +
-          `<noscript><link rel="stylesheet" href="${href}"></noscript>`
-      );
-    },
-  },
-};
+import fs from 'fs'
+import { join } from 'path'
+
+const postBuildAdjustments: Plugin = {
+  name: 'post-build-adjustments',
+  closeBundle() {
+    const buildDir = join(__dirname, 'build')
+    const assetsDir = join(buildDir, 'assets')
+    if (!fs.existsSync(assetsDir)) return
+
+    // 1. Find actual hashed files in the build/assets directory
+    const files = fs.readdirSync(assetsDir)
+    const findHashed = (prefix: string, ext: string) => 
+      files.find((f: string) => f.startsWith(prefix) && f.endsWith(ext))
+
+    const hero = findHashed('hero', '.avif')
+    const logo = findHashed('logo', '.avif')
+    const inter = findHashed('Inter', '.woff2')
+    const cormorant = findHashed('CormorantGaramond-Regular', '.woff2')
+
+    // 2. Collect HTML files for processing
+    const htmlFiles: string[] = []
+    const collectHtml = (dir: string) => {
+      fs.readdirSync(dir, { withFileTypes: true }).forEach((entry: fs.Dirent) => {
+        const fullPath = join(dir, entry.name)
+        if (entry.isDirectory()) collectHtml(fullPath)
+        else if (entry.name.endsWith('.html')) htmlFiles.push(fullPath)
+      })
+    }
+    collectHtml(buildDir)
+
+    // 3. Process each HTML file
+    htmlFiles.forEach(filePath => {
+      let html = fs.readFileSync(filePath, 'utf8')
+
+      // A. Inject Hashed Preloads (Fonts, LCP Assets)
+      let preloads = ''
+      if (hero) preloads += `\n    <link rel="preload" as="image" href="/assets/${hero}" fetchpriority="high" type="image/avif">`
+      if (logo) preloads += `\n    <link rel="preload" as="image" href="/assets/${logo}" fetchpriority="high" type="image/avif">`
+      if (inter) preloads += `\n    <link rel="preload" href="/assets/${inter}" as="font" type="font/woff2" crossorigin="anonymous">`
+      if (cormorant) preloads += `\n    <link rel="preload" href="/assets/${cormorant}" as="font" type="font/woff2" crossorigin="anonymous">`
+      
+      html = html.replace('<!-- [POST_BUILD_INJECT_PRELOADS] -->', preloads)
+
+      // B. Ensure Async CSS (Make all CSS links non-blocking)
+      // Matches <link rel="stylesheet" followed by any attributes and pointing to /assets/*.css
+      html = html.replace(
+        /<link rel="stylesheet" [^>]*href="\/assets\/([^"]+\.css)"[^>]*>/g,
+        (_: string, file: string) => `<link rel="preload" as="style" href="/assets/${file}" onload="this.onload=null;this.rel='stylesheet'"><noscript><link rel="stylesheet" href="/assets/${file}"></noscript>`
+      )
+
+      // C. Cleanup: Remove any stale/hardcoded preloads that might have survived prerendering
+      html = html.replace(/<link rel="preload" href="\/src\/assets\/fonts\/[^"]+"[^>]*>/g, '')
+
+      fs.writeFileSync(filePath, html)
+    })
+    console.log(`[post-build-adjustments] Processed ${htmlFiles.length} HTML files with correct hashed assets.`)
+  }
+}
 
 export default defineConfig({
   plugins: [
     react(),
     tailwindcss(),
-    makeCssAsync,
+    postBuildAdjustments,
     prerender({
       routes: [
         '/de', '/tr',

@@ -4,16 +4,11 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <!-- Preload LCP Hero Image (First Tag in Head for priority) -->                
-    <link rel="preload" as="image" href="/assets/hero.avif" fetchPriority="high" type="image/avif" />
-    <link rel="preload" as="image" href="/assets/logo.avif" fetchPriority="high" type="image/avif" />
-
-    <!-- CSS is loaded asynchronously by the Vite makeCssAsync plugin at build time.
+    <!-- Critical Path Optimizations -->
+    <!-- [POST_BUILD_INJECT_PRELOADS] -->
+    
+    <!-- CSS is loaded asynchronously by the postBuildAdjustments plugin at build time.
          In dev mode, Vite injects CSS normally. -->
-
-    <!-- Cormorant font: fully deferred via print media trick to break critical path chain -->
-    <link rel="stylesheet" href="/src/styles/cormorant-fonts.css" media="print" onload="this.media='all'">
-    <noscript><link rel="stylesheet" href="/src/styles/cormorant-fonts.css"></noscript>
 
     <!-- Primary Meta Tags (overridden dynamically per page by useSEO hook) -->
     <title>Türk Avukat Mannheim | Avukat Mannheim | Avukat Hasan Doğru</title>

@@ -4,16 +4,15 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <!-- Preload LCP Hero Image (First Tag in Head for priority) -->                
-    <link rel="preload" as="image" href="/assets/hero.avif" fetchPriority="high" type="image/avif" />
-    <link rel="preload" as="image" href="/assets/logo.avif" fetchPriority="high" type="image/avif" />
-
-    <!-- CSS is loaded asynchronously by the Vite makeCssAsync plugin at build time.
+    <!-- Critical Path Optimizations -->
+    
+    <link rel="preload" as="image" href="/assets/hero-Bn0oq0cB.avif" fetchpriority="high" type="image/avif">
+    <link rel="preload" as="image" href="/assets/logo-eRLlm_XN.avif" fetchpriority="high" type="image/avif">
+    <link rel="preload" href="/assets/Inter-CMLeEau1.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+    <link rel="preload" href="/assets/CormorantGaramond-Regular-n41RAqwj.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+    
+    <!-- CSS is loaded asynchronously by the postBuildAdjustments plugin at build time.
          In dev mode, Vite injects CSS normally. -->
-
-    <!-- Cormorant font: fully deferred via print media trick to break critical path chain -->
-    <link rel="stylesheet" href="data:text/css;base64,LyogPT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09CiAgIENvcm1vcmFudCBHYXJhbW9uZCDigJQgRGVjb3VwbGVkIGZyb20gY3JpdGljYWwgcGF0aAogICA9PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT09PT0gKi8KCkBmb250LWZhY2UgewogIGZvbnQtZmFtaWx5OiAnQ29ybW9yYW50IEdhcmFtb25kJzsKICBmb250LXN0eWxlOiBub3JtYWw7CiAgZm9udC13ZWlnaHQ6IDMwMCA3MDA7CiAgZm9udC1kaXNwbGF5OiBzd2FwOwogIHNyYzogdXJsKCcvc3JjL2Fzc2V0cy9mb250cy9Db3Jtb3JhbnRHYXJhbW9uZC1SZWd1bGFyLndvZmYyJykgZm9ybWF0KCd3b2ZmMicpOwogIHVuaWNvZGUtcmFuZ2U6IFUrMDAwMC0wMEZGLCBVKzAxMDAtMDI0RiwgVSswMjUwLTAyQUYsIFUrMUUwMC0xRUZGOwp9CgpAZm9udC1mYWNlIHsKICBmb250LWZhbWlseTogJ0Nvcm1vcmFudCBHYXJhbW9uZCc7CiAgZm9udC1zdHlsZTogaXRhbGljOwogIGZvbnQtd2VpZ2h0OiAzMDAgNzAwOwogIGZvbnQtZGlzcGxheTogc3dhcDsKICBzcmM6IHVybCgnL3NyYy9hc3NldHMvZm9udHMvQ29ybW9yYW50R2FyYW1vbmQtSXRhbGljLndvZmYyJykgZm9ybWF0KCd3b2ZmMicpOwogIHVuaWNvZGUtcmFuZ2U6IFUrMDAwMC0wMEZGLCBVKzAxMDAtMDI0RiwgVSswMjUwLTAyQUYsIFUrMUUwMC0xRUZGOwp9Cg==" media="print" onload="this.media='all'">
-    <noscript></noscript>
 
     <!-- Primary Meta Tags (overridden dynamically per page by useSEO hook) -->
     <title>Türk Avukat Mannheim | Avukat Mannheim | Avukat Hasan Doğru</title>
@@ -59,11 +58,11 @@
       header { position: fixed; top: 0; width: 100%; height: 80px; z-index: 100; transition: background 0.3s; }
       .hero-instant { background: var(--brand-green); min-height: 100vh; display: flex; align-items: center; justify-content: center; }
     </style>
-    <script type="module" crossorigin src="/assets/index-BNiPmm_D.js"></script>
+    <script type="module" crossorigin src="/assets/index-DNgV7Qcp.js"></script>
     <link rel="modulepreload" crossorigin href="/assets/react-router-6-Nor5m_.js">
     <link rel="modulepreload" crossorigin href="/assets/react-core-D9_JuiPa.js">
     <link rel="modulepreload" crossorigin href="/assets/ui-vendor-E682Tb8B.js">
-    <link rel="preload" as="style" href="/assets/index-B9Kcevlm.css" onload="this.onload=null;this.rel='stylesheet'"><noscript><link rel="stylesheet" href="/assets/index-B9Kcevlm.css"></noscript>
+    <link rel="preload" as="style" href="/assets/index-CwpoP3G9.css" onload="this.onload=null;this.rel='stylesheet'"><noscript><link rel="stylesheet" href="/assets/index-CwpoP3G9.css"></noscript>
   </head>
 
   <body>
