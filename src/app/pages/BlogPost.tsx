@@ -25,8 +25,8 @@ export function BlogPost() {
   const { slug } = useParams();
   const { language, t, paths } = useLanguage();
   
-  // Find post by localized slug
-  const post = blogPosts.find((p) => p.slugDE === slug || p.slugTR === slug);
+  // Find post by localized slug or legacy slug
+  const post = blogPosts.find((p) => p.slugDE === slug || p.slugTR === slug || p.slug === slug);
 
   const altLang = language === 'de' ? 'tr' : 'de';
 
