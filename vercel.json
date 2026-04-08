@@ -71,6 +71,11 @@
     { "source": "/en/blog/:path*", "destination": "/de/blog", "permanent": true },
     { "source": "/en/blog", "destination": "/de/blog", "permanent": true },
     { "source": "/en/impressum", "destination": "/de/impressum", "permanent": true },
+    { "source": "/general-clean", "destination": "/de", "permanent": true },
+    { "source": "/tr/blogartikel", "destination": "/tr/blog", "permanent": true },
+    { "source": "/tr/arbeitsrecht", "destination": "/tr/hizmetler", "permanent": true },
+    { "source": "/de/arbeitsrecht", "destination": "/de/leistungen", "permanent": true },
+    { "source": "/arbeitsrecht", "destination": "/de/leistungen", "permanent": true },
     { "source": "/en", "destination": "/de", "permanent": true }
   ],
   "cleanUrls": true,

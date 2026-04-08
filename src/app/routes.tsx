@@ -86,6 +86,13 @@ export const router = createBrowserRouter([
   { path: "/de/category/*", loader: () => redirect("/de/blog") },
   { path: "/de/tag/*", loader: () => redirect("/de/blog") },
 
+  // Phase 4 Redirects (Cleanup & Outliers)
+  { path: "/general-clean", loader: () => redirect("/de") },
+  { path: "/tr/blogartikel", loader: () => redirect("/tr/blog") },
+  { path: "/tr/arbeitsrecht", loader: () => redirect("/tr/hizmetler") },
+  { path: "/de/arbeitsrecht", loader: () => redirect("/de/leistungen") },
+  { path: "/arbeitsrecht", loader: () => redirect("/de/leistungen") },
+
   // === German routes ===
   {
     path: "/de",
