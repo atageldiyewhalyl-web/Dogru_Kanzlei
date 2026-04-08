@@ -93,6 +93,20 @@ export const router = createBrowserRouter([
   { path: "/de/arbeitsrecht", loader: () => redirect("/de/leistungen") },
   { path: "/arbeitsrecht", loader: () => redirect("/de/leistungen") },
 
+  // Phase 5 Redirects (Specific legacy & 'en' paths)
+  { path: "/en/internationales-erbrecht", loader: () => redirect("/de/leistungen/erbrecht") },
+  { path: "/en/arbeitsrecht", loader: () => redirect("/de/leistungen") },
+  { path: "/en/erbrecht", loader: () => redirect("/de/leistungen/erbrecht") },
+  { path: "/tr/book-online", loader: () => redirect("/tr/#iletisim") },
+  { path: "/en/grundstucksrecht", loader: () => redirect("/de/leistungen/immobilienrecht") },
+  { path: "/kopyası-familienrecht-1", loader: () => redirect("/de/leistungen/familienrecht") },
+  { path: "/en/familienrecht", loader: () => redirect("/de/leistungen/familienrecht") },
+  { path: "/en/meine-vision", loader: () => redirect("/de/ueber-uns") },
+  { path: "/grundstucksrecht", loader: () => redirect("/de/leistungen/immobilienrecht") },
+  { path: "/en/kopyası-arbeitsrecht-im-türkischen-r", loader: () => redirect("/de/leistungen") },
+  { path: "/en/kopyası-home-1", loader: () => redirect("/de") },
+  { path: "/en/erbschein", loader: () => redirect("/de/leistungen/erbrecht") },
+
   // === German routes ===
   {
     path: "/de",
