@@ -88,6 +88,13 @@
     { "source": "/en/kopyası-arbeitsrecht-im-türkischen-r", "destination": "/de/leistungen", "permanent": true },
     { "source": "/en/kopyası-home-1", "destination": "/de", "permanent": true },
     { "source": "/en/erbschein", "destination": "/de/leistungen/erbrecht", "permanent": true },
+    { "source": "/category/service/:path*", "destination": "/de/leistungen", "permanent": true },
+    { "source": "/en/category/service/:path*", "destination": "/de/leistungen", "permanent": true },
+    { "source": "/xmlrpc.php", "destination": "/de", "permanent": true },
+    { "source": "/feed", "destination": "/de/blog", "permanent": true },
+    { "source": "/comments/feed", "destination": "/de/blog", "permanent": true },
+    { "source": "/:path*/feed", "destination": "/de/blog", "permanent": true },
+    { "source": "/en/contact", "destination": "/de/#iletisim", "permanent": true },
     { "source": "/en", "destination": "/de", "permanent": true }
   ],
   "cleanUrls": true,

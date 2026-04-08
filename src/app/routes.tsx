@@ -107,6 +107,14 @@ export const router = createBrowserRouter([
   { path: "/en/kopyası-home-1", loader: () => redirect("/de") },
   { path: "/en/erbschein", loader: () => redirect("/de/leistungen/erbrecht") },
 
+  // Phase 6 Redirects (Feeds & Service Categories)
+  { path: "/category/service/*", loader: () => redirect("/de/leistungen") },
+  { path: "/en/category/service/*", loader: () => redirect("/de/leistungen") },
+  { path: "/xmlrpc.php", loader: () => redirect("/de") },
+  { path: "/feed", loader: () => redirect("/de/blog") },
+  { path: "/comments/feed", loader: () => redirect("/de/blog") },
+  { path: "/en/contact", loader: () => redirect("/de/#iletisim") },
+
   // === German routes ===
   {
     path: "/de",
