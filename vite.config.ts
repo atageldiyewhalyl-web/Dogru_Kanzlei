@@ -110,8 +110,9 @@ export default defineConfig({
       ],
       renderer: '@prerenderer/renderer-puppeteer',
       rendererOptions: {
-        renderAfterDocumentEvent: 'render-event',
+        renderAfterTime: 7000,
         headless: true,
+        maxConcurrentRoutes: 3,
       },
     }),
   ],

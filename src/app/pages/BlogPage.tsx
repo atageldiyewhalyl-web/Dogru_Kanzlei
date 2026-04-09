@@ -4,9 +4,11 @@ import { motion } from "motion/react";
 import { useLanguage } from "../context/LanguageContext";
 import { useSEO, SITE_URL } from "../hooks/useSEO";
 import { blogPosts } from "../data/blogPosts";
+import { usePrerender } from "../hooks/usePrerender";
 
 export function BlogPage() {
   const { language, t, paths } = useLanguage();
+  usePrerender();
 
   useSEO({
     title: language === 'de'

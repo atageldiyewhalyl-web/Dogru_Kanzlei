@@ -5,11 +5,13 @@ import { services } from "../data/services";
 import { ArrowRight } from "lucide-react";
 import { useLanguage } from "../context/LanguageContext";
 import { useSEO, SITE_URL } from "../hooks/useSEO";
+import { usePrerender } from "../hooks/usePrerender";
 import hizmetlerBg from "../../assets/hizmetler-bg.jpg";
 
 export function Hizmetler() {
   const [hovered, setHovered] = useState<string | null>(null);
   const { language, t, paths } = useLanguage();
+  usePrerender();
 
   const servicesPath = language === 'de' ? 'leistungen' : 'hizmetler';
 

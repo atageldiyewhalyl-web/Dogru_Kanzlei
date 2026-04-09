@@ -7,6 +7,7 @@ import { blogPosts } from "../data/blogPosts";
 import { SchemaOrg } from "../components/SchemaOrg";
 import { FAQItem } from "../components/FAQItem";
 import { extractFaqsFromContent } from "../utils/schemaUtils";
+import { usePrerender } from "../hooks/usePrerender";
 
 const CALENDLY_URL = "https://calendly.com/hasand9366/30min";
 
@@ -30,6 +31,9 @@ export function BlogPost() {
   
   // Find post by localized slug or legacy slug
   const post = blogPosts.find((p) => p.slugDE === slug || p.slugTR === slug || p.slug === slug);
+
+  // Signal ready to prerenderer only if post is found
+  usePrerender(!!post);
 
   const altLang = language === 'de' ? 'tr' : 'de';
 
@@ -107,17 +111,33 @@ export function BlogPost() {
   };
 
   const explicitFaqs = language === 'de' ? post.faqDE : post.faqTR;
-  const faqs = explicitFaqs 
-    ? explicitFaqs.map(f => ({
-        "@type": "Question",
-        "name": f.question,
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": f.answer
-        }
-      }))
-    : extractFaqsFromContent(content);
+  let faqs: any[] = [];
 
+  if (explicitFaqs && explicitFaqs.length > 0) {
+    // 1. Priority: Curated list defined in blogPosts.ts
+    faqs = explicitFaqs.map(f => ({
+      "@type": "Question",
+      "name": f.question,
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": f.answer
+      }
+    }));
+  } else {
+    // 2. Try strict extraction (only under FAQ heading)
+    const strictFaqs = extractFaqsFromContent(content, 'strict');
+    if (strictFaqs.length > 0) {
+      faqs = strictFaqs;
+    } else {
+      // 3. Try heuristic extraction (any appropriate headings)
+      const heuristicFaqs = extractFaqsFromContent(content, 'heuristic');
+      if (heuristicFaqs.length > 0) {
+        faqs = heuristicFaqs;
+      }
+    }
+  }
+
+  // 4. Final step: Only generate schema if we have quality Q&A pairs
   const faqSchema = faqs.length > 0 ? {
     "@context": "https://schema.org",
     "@type": "FAQPage",

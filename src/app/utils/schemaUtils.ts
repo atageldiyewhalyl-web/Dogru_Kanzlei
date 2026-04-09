@@ -25,45 +25,57 @@ export function truncate(text: string, maxLength: number = 300): string {
 
 /**
  * Programmatically extract FAQ pairs from a content string
- * Looks for questions in headings (## or ###) and answers in the following paragraphs
+ * @param content The markdown string to parse
+ * @param mode 'strict' looks only after an FAQ heading, 'heuristic' looks everywhere
  */
-export function extractFaqsFromContent(content: string) {
+export function extractFaqsFromContent(content: string, mode: 'strict' | 'heuristic' = 'heuristic') {
   const lines = content.split("\n").map(l => l.trim()).filter(l => l.length > 0);
-  const faqs: { name: string; acceptedAnswer: { "@type": string; text: string } }[] = [];
+  const faqs: any[] = [];
+  
+  let inFaqSection = false;
 
   for (let i = 0; i < lines.length; i++) {
     const line = lines[i];
     
-    // Explicit FAQ section trigger - skip until we find this if it exists, or just keep extracting
-    const isExplicitFaqHeading = 
+    // Detection of FAQ section heading
+    const isFaqHeading = 
       line.toLowerCase().includes("sıkça sorulan sorular") || 
       line.toLowerCase().includes("häufige fragen") ||
       line.toLowerCase().includes("faq");
 
-    // Check if line looks like a question (Heading or bold at start)
+    if (isFaqHeading) {
+      inFaqSection = true;
+      continue;
+    }
+
+    // Capture logic
+    const shouldExtract = mode === 'heuristic' || (mode === 'strict' && inFaqSection);
+    if (!shouldExtract) continue;
+
+    // Check if line looks like a question
     const isQuestion = 
       line.startsWith("###") || 
       line.startsWith("##") || 
       (line.startsWith("**") && line.endsWith("**") && line.length < 200) ||
       (line.endsWith("?") && line.length < 150);
 
-    if (isQuestion && !isExplicitFaqHeading) {
+    if (isQuestion) {
       const questionText = line.replace(/^[#*\s]+|[#*\s]+$/g, "");
       
-      // Look for the answer in the next few lines (skip empty lines)
       let answerText = "";
+      // Search following lines for the first paragraph longer than 20 chars
       for (let j = i + 1; j < Math.min(i + 4, lines.length); j++) {
         const potentialAnswer = lines[j];
-        if (potentialAnswer.startsWith("#")) break; // Found next heading
+        if (potentialAnswer.startsWith("#")) break;
         
-        answerText = potentialAnswer.replace(/[*_]/g, "");
-        if (answerText.length > 20) {
-          i = j; // Advance main loop
+        const cleanAnswer = potentialAnswer.replace(/[*_]/g, "");
+        if (cleanAnswer.length > 20) {
+          answerText = cleanAnswer;
+          i = j; // Advance main loop to avoid re-parsing answer as question
           break;
         }
       }
       
-      // If it's a valid question/answer pair
       if (questionText.length > 5 && answerText.length > 10) {
         faqs.push({
           "@type": "Question",

@@ -4,7 +4,5 @@ import "./styles/index.css";
 
 createRoot(document.getElementById("root")!).render(<App />);
 
-// Trigger render-event after a delay to ensure lazy components and SEO hook have finished
-setTimeout(() => {
-  document.dispatchEvent(new Event('render-event'));
-}, 3000);
+// The 'render-event' is now dispatched by individual page components 
+// via the usePrerender hook to ensure content-specific rendering.

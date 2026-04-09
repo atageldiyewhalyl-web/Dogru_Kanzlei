@@ -7,6 +7,7 @@ import { useLanguage } from "../context/LanguageContext";
 import { useSEO, SITE_URL } from "../hooks/useSEO";
 import { SchemaOrg } from "../components/SchemaOrg";
 import { FAQItem } from "../components/FAQItem";
+import { usePrerender } from "../hooks/usePrerender";
 
 
 const renderFormattedContent = (text: string) => {
@@ -63,6 +64,9 @@ export function ServiceDetail() {
   
   // Find service by localized slug
   const service = services.find((s) => s.slugDE === id || s.slugTR === id);
+
+  // Signal ready to prerenderer only if service is found
+  usePrerender(!!service);
 
   const servicesSegment = language === 'de' ? 'leistungen' : 'hizmetler';
   const altLang = language === 'de' ? 'tr' : 'de';

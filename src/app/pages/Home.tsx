@@ -7,6 +7,7 @@ import { Contact } from "../components/Contact";
 import { useLanguage } from "../context/LanguageContext";
 import { useSEO, SITE_URL } from "../hooks/useSEO";
 import { SchemaOrg } from "../components/SchemaOrg";
+import { usePrerender } from "../hooks/usePrerender";
 
 const HOME_SCHEMA = {
   "@context": "https://schema.org",
@@ -44,6 +45,7 @@ const HOME_SCHEMA = {
 
 export function Home() {
   const { language } = useLanguage();
+  usePrerender();
 
   useSEO({
     title: language === 'de'

@@ -1,9 +1,11 @@
 import { useLanguage } from "../context/LanguageContext";
 import { useSEO, SITE_URL } from "../hooks/useSEO";
 import { Link } from "react-router";
+import { usePrerender } from "../hooks/usePrerender";
 
 export function Datenschutz() {
   const { language, t, paths } = useLanguage();
+  usePrerender();
 
   const segment = language === 'de' ? 'datenschutz' : 'gizlilik-politikasi';
   const altSegment = language === 'de' ? 'gizlilik-politikasi' : 'datenschutz';

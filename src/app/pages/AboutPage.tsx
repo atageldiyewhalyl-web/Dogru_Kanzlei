@@ -1,9 +1,11 @@
 import { About } from "../components/About";
 import { useLanguage } from "../context/LanguageContext";
 import { useSEO, SITE_URL } from "../hooks/useSEO";
+import { usePrerender } from "../hooks/usePrerender";
 
 export function AboutPage() {
   const { language } = useLanguage();
+  usePrerender();
   const aboutPath = language === 'de' ? 'ueber-uns' : 'hakkimizda';
 
   useSEO({

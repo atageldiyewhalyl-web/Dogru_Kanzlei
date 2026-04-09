@@ -1,9 +1,11 @@
 import { useLanguage } from "../context/LanguageContext";
 import { useSEO, SITE_URL } from "../hooks/useSEO";
 import { Link } from "react-router";
+import { usePrerender } from "../hooks/usePrerender";
 
 export function Impressum() {
   const { language, t, paths } = useLanguage();
+  usePrerender();
 
   const segment = language === 'de' ? 'impressum' : 'yasal-bilgiler';
   const altSegment = language === 'de' ? 'yasal-bilgiler' : 'impressum';
