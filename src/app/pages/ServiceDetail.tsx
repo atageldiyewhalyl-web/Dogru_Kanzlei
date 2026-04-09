@@ -5,44 +5,9 @@ import { ArrowLeft, ArrowRight, CheckCircle2, ChevronDown } from "lucide-react";
 import { motion, AnimatePresence } from "motion/react";
 import { useLanguage } from "../context/LanguageContext";
 import { useSEO, SITE_URL } from "../hooks/useSEO";
+import { SchemaOrg } from "../components/SchemaOrg";
+import { FAQItem } from "../components/FAQItem";
 
-function FAQItem({ question, answer }: { question: string; answer: string }) {
-  const [isOpen, setIsOpen] = useState(false);
-
-  return (
-    <div className="border border-[#1C3829]/10 bg-white hover:border-[#8B6E2A]/30 transition-colors overflow-hidden">
-      <button
-        onClick={() => setIsOpen(!isOpen)}
-        className="w-full p-6 text-left flex items-center justify-between group"
-      >
-        <span className="font-serif text-lg text-[#1C3829] group-hover:text-[#8B6E2A] transition-colors">
-          {question}
-        </span>
-        <motion.div
-          animate={{ rotate: isOpen ? 180 : 0 }}
-          transition={{ duration: 0.3 }}
-          className="text-[#8B6E2A]"
-        >
-          <ChevronDown size={20} />
-        </motion.div>
-      </button>
-      <AnimatePresence>
-        {isOpen && (
-          <motion.div
-            initial={{ height: 0, opacity: 0 }}
-            animate={{ height: "auto", opacity: 1 }}
-            exit={{ height: 0, opacity: 0 }}
-            transition={{ duration: 0.3 }}
-          >
-            <div className="px-6 pb-6 font-sans text-[15px] text-[#6a6a6a] leading-relaxed border-t border-[#1C3829]/5 pt-4">
-              {answer}
-            </div>
-          </motion.div>
-        )}
-      </AnimatePresence>
-    </div>
-  );
-}
 
 const renderFormattedContent = (text: string) => {
   const paragraphs = text.split('\n\n');
@@ -148,8 +113,23 @@ export function ServiceDetail() {
   const detail = language === 'de' ? service.detailDE : service.detail;
   const content = language === 'de' ? (service.contentDE || service.content) : service.content;
 
+  const serviceSchema = {
+    "@context": "https://schema.org",
+    "@type": "Service",
+    "name": title,
+    "provider": {
+      "@type": "LegalService",
+      "name": "Doğru Kanzlei",
+      "url": "https://hasandogru.de"
+    },
+    "areaServed": ["DE", "TR"],
+    "description": description,
+    "availableLanguage": ["Turkish", "German", "English"]
+  };
+
   return (
     <div className="bg-[#F7F5F0] min-h-screen pt-32 pb-24">
+      <SchemaOrg data={serviceSchema} />
       <div className="max-w-[1400px] mx-auto px-6 lg:px-12">
         {/* Breadcrumb - Elevated */}
         <nav aria-label="Breadcrumb" className="mb-16">

@@ -4,6 +4,9 @@ import { motion } from "motion/react";
 import { useLanguage } from "../context/LanguageContext";
 import { useSEO, SITE_URL } from "../hooks/useSEO";
 import { blogPosts } from "../data/blogPosts";
+import { SchemaOrg } from "../components/SchemaOrg";
+import { FAQItem } from "../components/FAQItem";
+import { extractFaqsFromContent } from "../utils/schemaUtils";
 
 const CALENDLY_URL = "https://calendly.com/hasand9366/30min";
 
@@ -45,6 +48,9 @@ export function BlogPost() {
     canonical: post 
       ? `${SITE_URL}/${language}/blog/${language === 'de' ? post.slugDE : post.slugTR}` 
       : undefined,
+    keywords: post
+      ? (language === 'de' ? post.keywordsDE : post.keywordsTR)
+      : undefined,
     alternateLang: post ? {
       lang: altLang,
       href: `${SITE_URL}/${altLang}/blog/${altLang === 'de' ? post.slugDE : post.slugTR}`,
@@ -73,8 +79,55 @@ export function BlogPost() {
   // Find related posts (same category, excluding current)
   const related = blogPosts.filter((p) => p.slug !== slug).slice(0, 2);
 
+  const articleSchema = {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "headline": title,
+    "datePublished": post.publishedAt,
+    "dateModified": post.publishedAt,
+    "author": {
+      "@type": "Person",
+      "name": "Hasan Doğru",
+      "jobTitle": "Avukat",
+      "worksFor": {
+        "@type": "LegalService",
+        "name": "Doğru Kanzlei"
+      }
+    },
+    "publisher": {
+      "@type": "LegalService",
+      "name": "Doğru Kanzlei",
+      "url": "https://hasandogru.de"
+    },
+    "inLanguage": language,
+    "about": {
+      "@type": "LegalService",
+      "name": category
+    }
+  };
+
+  const explicitFaqs = language === 'de' ? post.faqDE : post.faqTR;
+  const faqs = explicitFaqs 
+    ? explicitFaqs.map(f => ({
+        "@type": "Question",
+        "name": f.question,
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": f.answer
+        }
+      }))
+    : extractFaqsFromContent(content);
+
+  const faqSchema = faqs.length > 0 ? {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": faqs
+  } : null;
+
   return (
     <div className="bg-[#F7F5F0] pt-32 pb-20">
+      <SchemaOrg data={articleSchema} id="schema-article" />
+      {faqSchema && <SchemaOrg data={faqSchema} id="schema-faq" />}
       <article className="max-w-3xl mx-auto px-6 lg:px-12">
         {/* Breadcrumb */}
         <nav aria-label="Breadcrumb" className="mb-8">
@@ -143,19 +196,41 @@ export function BlogPost() {
                 
                 if (!trimmedLine) return <div key={idx} className="h-4" />;
 
-                // Handle Headers
+                // Handle Horizontal Rules
+                if (trimmedLine === '---') {
+                  return <hr key={idx} className="my-12 border-[#e8e4dc]" />;
+                }
+
+                // Handle Headers (Check ### before ##)
                 if (trimmedLine.startsWith('###')) {
                   return (
-                    <h3 key={idx} className="font-serif text-2xl text-[#1C3829] mt-10 mb-4">
-                      {processInlineStyles(trimmedLine.replace('###', '').trim())}
+                    <h3 key={idx} className="font-serif text-2xl text-[#1C3829] mt-10 mb-4 font-semibold tracking-tight">
+                      {processInlineStyles(trimmedLine.replace(/###/g, '').trim())}
                     </h3>
+                  );
+                }
+
+                if (trimmedLine.startsWith('##')) {
+                  return (
+                    <h2 key={idx} className="font-serif text-3xl text-[#1C3829] mt-16 mb-8 border-b border-[#e8e4dc] pb-4 font-medium tracking-tight">
+                      {processInlineStyles(trimmedLine.replace(/##/g, '').trim())}
+                    </h2>
+                  );
+                }
+
+                // Handle Blockquotes
+                if (trimmedLine.startsWith('> ')) {
+                  return (
+                    <blockquote key={idx} className="border-l-4 border-[#8B6E2A] pl-6 py-3 my-12 italic text-[#1C3829] font-serif text-xl bg-[#F0EEE6]/50 pr-6 rounded-r-lg shadow-sm">
+                      {processInlineStyles(trimmedLine.replace('> ', '').trim())}
+                    </blockquote>
                   );
                 }
 
                 // Handle List Items
                 if (trimmedLine.startsWith('- ')) {
                   return (
-                    <li key={idx} className="ml-6 mb-2 list-disc">
+                    <li key={idx} className="ml-6 mb-3 list-disc text-[#4a4a4a]">
                       {processInlineStyles(trimmedLine.replace('- ', '').trim())}
                     </li>
                   );
@@ -163,13 +238,30 @@ export function BlogPost() {
 
                 // Normal Paragraph
                 return (
-                  <p key={idx} className="mb-4">
+                  <p key={idx} className="mb-6 last:mb-0">
                     {processInlineStyles(trimmedLine)}
                   </p>
                 );
               })}
             </span>
           </div>
+
+          {/* Explicit FAQ Section */}
+          {explicitFaqs && explicitFaqs.length > 0 && (
+            <div className="mt-20">
+              <div className="flex items-center gap-4 mb-10">
+                <div className="w-12 h-[1px] bg-[#8B6E2A]" />
+                <h3 className="font-serif text-3xl text-[#1C3829]">
+                  {language === 'de' ? 'Häufige Fragen' : <span lang="tr">Sıkça Sorulan Sorular</span>}
+                </h3>
+              </div>
+              <div className="space-y-4">
+                {explicitFaqs.map((faq, idx) => (
+                  <FAQItem key={idx} question={faq.question} answer={faq.answer} />
+                ))}
+              </div>
+            </div>
+          )}
 
           {/* CTA */}
           <div className="mt-16 p-8 md:p-12 bg-[#1C3829] border-l-4 border-[#8B6E2A]">

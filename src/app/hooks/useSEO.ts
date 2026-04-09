@@ -12,6 +12,7 @@ interface SEOConfig {
   alternateLang?: { lang: string; href: string };
   xDefault?: string;
   noindex?: boolean;
+  keywords?: string;
 }
 
 function setMetaTag(property: string, content: string, isName = false) {
@@ -46,6 +47,11 @@ export function useSEO(config: SEOConfig) {
 
     // Description
     setMetaTag('description', config.description, true);
+
+    // Keywords
+    if (config.keywords) {
+      setMetaTag('keywords', config.keywords, true);
+    }
 
     // Canonical
     const canonicalUrl = config.canonical || window.location.origin + window.location.pathname;
