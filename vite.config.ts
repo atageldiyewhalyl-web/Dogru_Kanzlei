@@ -61,6 +61,13 @@ const postBuildAdjustments: Plugin = {
       // C. Cleanup: Remove any stale/hardcoded preloads that might have survived prerendering
       html = html.replace(/<link rel="preload" href="\/src\/assets\/fonts\/[^"]+"[^>]*>/g, '')
 
+      // D. Agent-Friendly Formatting (Un-minify HTML for better parsing by AI crawlers)
+      // We insert newlines after structural tags to avoid the "single-line HTML" issue.
+      html = html
+        .replace(/>(\s*)<([a-zA-Z1-6!/])/g, '>\n<$2') // Simple newline between any adjacent tags
+        .replace(/(<\/div>|<\/p>|<\/header>|<\/section>|<\/article>|<\/li>|<\/h[1-6]>|<\/nav>|<\/footer>|<div id="root">|<article[^>]*>)/g, '$1\n')
+        .replace(/\n\s*\n/g, '\n') // Remove excessive empty lines
+
       fs.writeFileSync(filePath, html)
     })
     console.log(`[post-build-adjustments] Processed ${htmlFiles.length} HTML files with correct hashed assets.`)
