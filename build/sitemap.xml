@@ -452,6 +452,114 @@
     <priority>0.6</priority>
   </url>
 
+  <!-- Blog Post: Blue Card Rights -->
+  <url>
+    <loc>https://www.hasandogru.de/de/blog/blaue-karte-tuerkei-erbrecht-immobilien</loc>
+    <xhtml:link rel="alternate" hreflang="de" href="https://www.hasandogru.de/de/blog/blaue-karte-tuerkei-erbrecht-immobilien" />
+    <xhtml:link rel="alternate" hreflang="tr" href="https://www.hasandogru.de/tr/blog/mavi-kart-turkiye-miras-tasinmaz-haklari" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.hasandogru.de/de/blog/blaue-karte-tuerkei-erbrecht-immobilien" />
+    <lastmod>2026-04-10</lastmod>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://www.hasandogru.de/tr/blog/mavi-kart-turkiye-miras-tasinmaz-haklari</loc>
+    <xhtml:link rel="alternate" hreflang="de" href="https://www.hasandogru.de/de/blog/blaue-karte-tuerkei-erbrecht-immobilien" />
+    <xhtml:link rel="alternate" hreflang="tr" href="https://www.hasandogru.de/tr/blog/mavi-kart-turkiye-miras-tasinmaz-haklari" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.hasandogru.de/de/blog/blaue-karte-tuerkei-erbrecht-immobilien" />
+    <lastmod>2026-04-10</lastmod>
+    <priority>0.6</priority>
+  </url>
+
+  <!-- Blog Post: Criminal Defense -->
+  <url>
+    <loc>https://www.hasandogru.de/de/blog/strafverfahren-tuerkei-verteidigung-deutschland</loc>
+    <xhtml:link rel="alternate" hreflang="de" href="https://www.hasandogru.de/de/blog/strafverfahren-tuerkei-verteidigung-deutschland" />
+    <xhtml:link rel="alternate" hreflang="tr" href="https://www.hasandogru.de/tr/blog/turkiye-ceza-davasi-almanya-savunma" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.hasandogru.de/de/blog/strafverfahren-tuerkei-verteidigung-deutschland" />
+    <lastmod>2026-04-10</lastmod>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://www.hasandogru.de/tr/blog/turkiye-ceza-davasi-almanya-savunma</loc>
+    <xhtml:link rel="alternate" hreflang="de" href="https://www.hasandogru.de/de/blog/strafverfahren-tuerkei-verteidigung-deutschland" />
+    <xhtml:link rel="alternate" hreflang="tr" href="https://www.hasandogru.de/tr/blog/turkiye-ceza-davasi-almanya-savunma" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.hasandogru.de/de/blog/strafverfahren-tuerkei-verteidigung-deutschland" />
+    <lastmod>2026-04-10</lastmod>
+    <priority>0.6</priority>
+  </url>
+
+  <!-- Blog Post: Debt Collection -->
+  <url>
+    <loc>https://www.hasandogru.de/de/blog/deutschland-tuerkei-forderungseinzug-zwangsvollstreckung</loc>
+    <xhtml:link rel="alternate" hreflang="de" href="https://www.hasandogru.de/de/blog/deutschland-tuerkei-forderungseinzug-zwangsvollstreckung" />
+    <xhtml:link rel="alternate" hreflang="tr" href="https://www.hasandogru.de/tr/blog/almanya-turkiye-alacak-tahsili-icra" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.hasandogru.de/de/blog/deutschland-tuerkei-forderungseinzug-zwangsvollstreckung" />
+    <lastmod>2026-04-10</lastmod>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://www.hasandogru.de/tr/blog/almanya-turkiye-alacak-tahsili-icra</loc>
+    <xhtml:link rel="alternate" hreflang="de" href="https://www.hasandogru.de/de/blog/deutschland-tuerkei-forderungseinzug-zwangsvollstreckung" />
+    <xhtml:link rel="alternate" hreflang="tr" href="https://www.hasandogru.de/tr/blog/almanya-turkiye-alacak-tahsili-icra" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.hasandogru.de/de/blog/deutschland-tuerkei-forderungseinzug-zwangsvollstreckung" />
+    <lastmod>2026-04-10</lastmod>
+    <priority>0.6</priority>
+  </url>
+
+  <!-- Blog Post: Joint Custody -->
+  <url>
+    <loc>https://www.hasandogru.de/de/blog/deutschland-gemeinsames-sorgerecht-tuerkei-anerkennung</loc>
+    <xhtml:link rel="alternate" hreflang="de" href="https://www.hasandogru.de/de/blog/deutschland-gemeinsames-sorgerecht-tuerkei-anerkennung" />
+    <xhtml:link rel="alternate" hreflang="tr" href="https://www.hasandogru.de/tr/blog/almanya-ortak-velayet-turkiye-tenfiz" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.hasandogru.de/de/blog/deutschland-gemeinsames-sorgerecht-tuerkei-anerkennung" />
+    <lastmod>2026-04-10</lastmod>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://www.hasandogru.de/tr/blog/almanya-ortak-velayet-turkiye-tenfiz</loc>
+    <xhtml:link rel="alternate" hreflang="de" href="https://www.hasandogru.de/de/blog/deutschland-gemeinsames-sorgerecht-tuerkei-anerkennung" />
+    <xhtml:link rel="alternate" hreflang="tr" href="https://www.hasandogru.de/tr/blog/almanya-ortak-velayet-turkiye-tenfiz" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.hasandogru.de/de/blog/deutschland-gemeinsames-sorgerecht-tuerkei-anerkennung" />
+    <lastmod>2026-04-10</lastmod>
+    <priority>0.6</priority>
+  </url>
+
+  <!-- Blog Post: Muris Muvazaasi -->
+  <url>
+    <loc>https://www.hasandogru.de/de/blog/deutschland-muris-muvazaasi-tapu-annullierung</loc>
+    <xhtml:link rel="alternate" hreflang="de" href="https://www.hasandogru.de/de/blog/deutschland-muris-muvazaasi-tapu-annullierung" />
+    <xhtml:link rel="alternate" hreflang="tr" href="https://www.hasandogru.de/tr/blog/almanya-muris-muvazaasi-tapu-iptali" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.hasandogru.de/de/blog/deutschland-muris-muvazaasi-tapu-annullierung" />
+    <lastmod>2026-04-10</lastmod>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://www.hasandogru.de/tr/blog/almanya-muris-muvazaasi-tapu-iptali</loc>
+    <xhtml:link rel="alternate" hreflang="de" href="https://www.hasandogru.de/de/blog/deutschland-muris-muvazaasi-tapu-annullierung" />
+    <xhtml:link rel="alternate" hreflang="tr" href="https://www.hasandogru.de/tr/blog/almanya-muris-muvazaasi-tapu-iptali" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.hasandogru.de/de/blog/deutschland-muris-muvazaasi-tapu-annullierung" />
+    <lastmod>2026-04-10</lastmod>
+    <priority>0.6</priority>
+  </url>
+
+  <!-- Blog Post: Property Division -->
+  <url>
+    <loc>https://www.hasandogru.de/de/blog/almanya-scheidung-tuerkei-vermoegensaufteilung</loc>
+    <xhtml:link rel="alternate" hreflang="de" href="https://www.hasandogru.de/de/blog/almanya-scheidung-tuerkei-vermoegensaufteilung" />
+    <xhtml:link rel="alternate" hreflang="tr" href="https://www.hasandogru.de/tr/blog/almanya-bosanma-turkiye-mal-paylasimi" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.hasandogru.de/de/blog/almanya-scheidung-tuerkei-vermoegensaufteilung" />
+    <lastmod>2026-04-09</lastmod>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://www.hasandogru.de/tr/blog/almanya-bosanma-turkiye-mal-paylasimi</loc>
+    <xhtml:link rel="alternate" hreflang="de" href="https://www.hasandogru.de/de/blog/almanya-scheidung-tuerkei-vermoegensaufteilung" />
+    <xhtml:link rel="alternate" hreflang="tr" href="https://www.hasandogru.de/tr/blog/almanya-bosanma-turkiye-mal-paylasimi" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.hasandogru.de/de/blog/almanya-scheidung-tuerkei-vermoegensaufteilung" />
+    <lastmod>2026-04-09</lastmod>
+    <priority>0.6</priority>
+  </url>
+
   <!-- Legal Pages -->
   <url>
     <loc>https://www.hasandogru.de/de/datenschutz</loc>
