@@ -53,6 +53,26 @@
       #root { min-height: 100vh; background: var(--brand-green); }
       header { position: fixed; top: 0; width: 100%; height: 80px; z-index: 100; transition: background 0.3s; }
     </style>
+
+    <script>
+      // Detection script to fix invisible content in static snapshots
+      if (navigator.userAgent.includes('HeadlessChrome') || window.__PRERENDER__) {
+        const style = document.createElement('style');
+        style.textContent = `
+          /* Target Framer Motion elements stuck at opacity: 0 during hydration */
+          [style*="opacity: 0"], [style*="opacity:0"], [style*="opacity: 0;"], [style*="opacity:0;"] { 
+            opacity: 1 !important; 
+            visibility: visible !important;
+          }
+          /* Snap all animations to final state and disable transitions for the static shutter */
+          * { 
+            transition: none !important; 
+            animation: none !important; 
+          }
+        `;
+        document.head.appendChild(style);
+      }
+    </script>
   </head>
 
   <body>
