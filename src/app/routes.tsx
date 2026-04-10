@@ -51,6 +51,8 @@ export const router = createBrowserRouter([
   { path: "/registration", loader: () => redirect("/de") },
   { path: "/tr/familienrecht", loader: () => redirect("/tr/hizmetler/aile-hukuku") },
   { path: "/tr/immobilienrecht", loader: () => redirect("/tr/hizmetler/gayrimenkul-hukuku") },
+  { path: "/tr/schuldrecht", loader: () => redirect("/tr/hizmetler") },
+  { path: "/tr/schlüsselthemen", loader: () => redirect("/tr/hizmetler") },
   { path: "/kopyası-internati", loader: () => redirect("/de/leistungen/immobilienrecht") },
 
   // Phase 2 Redirects
