@@ -50,6 +50,7 @@ export const router = createBrowserRouter([
   { path: "/contact-8", loader: () => redirect("/de/#iletisim") },
   { path: "/registration", loader: () => redirect("/de") },
   { path: "/tr/familienrecht", loader: () => redirect("/tr/hizmetler/aile-hukuku") },
+  { path: "/tr/immobilienrecht", loader: () => redirect("/tr/hizmetler/gayrimenkul-hukuku") },
   { path: "/kopyası-internati", loader: () => redirect("/de/leistungen/immobilienrecht") },
 
   // Phase 2 Redirects

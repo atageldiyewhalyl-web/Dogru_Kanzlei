@@ -33,6 +33,7 @@
     { "source": "/contact-8", "destination": "/de/#iletisim", "permanent": true },
     { "source": "/registration", "destination": "/de", "permanent": true },
     { "source": "/tr/familienrecht", "destination": "/tr/hizmetler/aile-hukuku", "permanent": true },
+    { "source": "/tr/immobilienrecht", "destination": "/tr/hizmetler/gayrimenkul-hukuku", "permanent": true },
     { "source": "/kopyası-internati", "destination": "/de/leistungen/immobilienrecht", "permanent": true },
     { "source": "/de/blog/bosanma-rehberi-tuerkiye", "destination": "/de/blog/scheidung-tuerkei-ohne-reise", "permanent": true },
     { "source": "/de/blog/gayrimenkul-haklari", "destination": "/de/blog/immobilienrechte-tuerkei", "permanent": true },
