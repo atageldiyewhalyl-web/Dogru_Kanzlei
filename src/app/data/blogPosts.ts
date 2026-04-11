@@ -2369,6 +2369,550 @@ Türk vatandaşlığından çıkan kişilerin Türkiye'deki haklarını koruyan 
     keywordsTR: "Mavi kartlıların hakları Türkiye, mavi kart miras hakkı, mavi kart gayrimenkul alımı, TVK madde 28 haklar, mavi kartlıların vatandaşlık hakları",
   },
   {
+    slug: "vekaletname-rehberi-almanya",
+    slugDE: "tuerkische-vekaletname-deutschland",
+    slugTR: "almanya-da-vekaletname-cikarma-rehberi",
+    titleDE: "Türkische Vollmacht aus Deutschland: Notar, Apostille und Konsulat – Der vollständige Leitfaden (2026)",
+    titleTR: "Almanya'da Türk Vekaletnamesi: Noter, Apostil ve Konsolosluk Rehberi (2026)",
+    excerptDE: "Ihr umfassender Leitfaden zur Erstellung einer rechtssicheren türkischen Vollmacht in Deutschland. Konsulatsweg vs. deutscher Notar, Apostille-Verfahren und Fehlervermeidung.",
+    excerptTR: "Almanya'da Türkiye için geçerli vekaletname çıkarma rehberi. Konsolosluk ve Alman noteri yolları, apostil süreci, gerekli belgeler ve dikkat edilmesi gerekenler.",
+    contentDE: `**RECHTLICHER HINWEIS:** Dieser Artikel befasst sich ausschließlich mit dem türkischen Recht. Eine Beratung zum deutschen Recht (z.B. deutsches Erbrecht, Familienrecht nach BGB oder deutsches Migrationsrecht) findet in unserer Kanzlei nicht statt.
+
+---
+
+Sie leben in Deutschland und müssen in der Türkei eine rechtliche Angelegenheit regeln — ohne selbst hinzureisen. Ob Grundbuchübertragung, Erbschaft, Scheidungsklage, Tanıma-Tenfiz-Verfahren oder Bankgeschäfte: In allen diesen Fällen brauchen Sie zunächst dasselbe Dokument: eine **türkisch rechtsgültige Vollmacht (Vekâletname).**
+
+Aber wie stellt man in Deutschland eine Vollmacht aus, die in der Türkei tatsächlich akzeptiert wird? Muss man zum türkischen Konsulat? Reicht ein deutscher Notar? Was ist eine Apostille, und wo bekommt man sie? Und was muss im Vollmachtstext stehen, damit die Türkei das Dokument nicht zurückweist?
+
+Dieser Leitfaden beantwortet alle diese Fragen Schritt für Schritt — für türkischstämmige Menschen in Deutschland, die türkische Rechtsgeschäfte von hier aus erledigen möchten.
+
+---
+
+## Was ist eine Vekâletname und warum ist sie so wichtig?
+
+Eine Vekâletname ist eine notarielle Vollmacht, mit der eine Person (Vollmachtgeber / Müvekkil) eine andere Person (Bevollmächtigter / Vekil) ermächtigt, in ihrem Namen bestimmte rechtliche Handlungen vorzunehmen. Im türkischen Recht ist für viele Vorgänge keine persönliche Anwesenheit erforderlich — vorausgesetzt, es liegt eine ordnungsgemäße Vollmacht vor.
+
+Für in Deutschland lebende Türken ist die Vekâletname insbesondere in folgenden Situationen unverzichtbar:
+
+- **Tanıma-ve-Tenfiz-Verfahren** (Anerkennung einer deutschen Scheidung in der Türkei ohne Reise)
+- **Grundbuchgeschäfte** (Verkauf, Übertragung oder Belastung türkischer Immobilien)
+- **Erbschaftsangelegenheiten** (Erbschein, Nachlassaufteilung, Immobilienübertragung)
+- **Scheidungsklage** (Beauftragung eines Anwalts für ein Scheidungsverfahren in der Türkei)
+- **Bankgeschäfte** (Verfügungen über türkische Konten)
+- **Gesellschaftsrechtliche Vorgänge** (Unterzeichnungsvollmacht, Anteilsübertragung)
+- **Fahrzeugkauf oder -verkauf**
+- **Allgemeine Anwaltsvollmacht** (für sämtliche rechtliche Vorgänge in der Türkei)
+
+Eine fehlerhafte oder unvollständige Vollmacht führt in der Praxis dazu, dass türkische Gerichte, Grundbuchämter oder Behörden die Vollmacht zurückweisen — mit erheblichem Zeit- und Kostenaufwand als Folge.
+
+---
+
+## Die zwei Wege zur türkisch gültigen Vollmacht in Deutschland
+
+In Deutschland gibt es zwei Möglichkeiten, eine in der Türkei rechtsgültige Vollmacht auszustellen: **über das türkische Konsulat** oder **über einen deutschen Notar mit Apostille.** Beide Wege sind rechtlich anerkannt, unterscheiden sich aber in Aufwand, Kosten und Eignung je nach Situation.
+
+---
+
+## Weg 1: Türkisches Konsulat
+
+### Warum ist dies der sicherste Weg?
+
+Vollmachten, die bei türkischen Konsulaten ausgestellt werden, werden direkt nach türkischem Notarrecht erstellt und im Datenbanksystem der türkischen Notarkammer (Türkiye Noterler Birliği) erfasst. Das bedeutet:
+
+- **Keine zusätzliche Apostille erforderlich**
+- **Keine beglaubigte Übersetzung ins Türkische erforderlich**
+- Das Dokument wird von türkischen Gerichten, Notaren und Behörden **direkt akzeptiert**
+- Das Verfahren ist **zuverlässig und vorhersehbar**
+
+Für rechtlich sensible Vorgänge wie Grundstücksübertragungen, Scheidungsklagen, Tanıma-Tenfiz und Erbschaftsangelegenheiten ist der Konsulatsweg daher **grundsätzlich zu bevorzugen.**
+
+### Türkische Konsulate in Deutschland
+
+Die Republik Türkei unterhält in Deutschland Konsulate in 13 Städten:
+
+Berlin, Düsseldorf, Köln, Essen, Frankfurt, Hamburg, Stuttgart, Hannover, Karlsruhe, Mainz, München, Münster, Nürnberg
+
+Wenn Sie in Mannheim oder der Metropolregion Rhein-Neckar leben, sind das Konsulat **Karlsruhe** oder **Stuttgart** Ihre nächstgelegenen Anlaufstellen.
+
+### Termin und Ablauf
+
+1. **Termin vereinbaren:** Online über die Konsulatswebsite oder über konsolosluk.gov.tr. In Stoßzeiten können Termine mehrere Wochen im Voraus vergeben sein — planen Sie ausreichend Vorlauf ein.
+
+2. **Was Sie mitbringen müssen:**
+   - Gültiger türkischer Personalausweis (T.C. Kimlik Kartı) oder Mavi Kart (bevorzugt) bzw. türkischer Reisepass
+   - Name, Nachname und **türkische Identifikationsnummer (T.C. Kimlik No)** des Bevollmächtigten — bei Anwaltsvollmacht: Name des Anwalts, zugehörige Anwaltskammer (Baro) und **Kammernummer (Baro Sicil No)**
+   - Informationen über den Gegenstand der Vollmacht (welche Immobilie, welches Verfahren, welche Bank)
+   - Lichtbild: Bei Grundbuch-, Fahrzeug-, Scheidungs- und Tanıma-Tenfiz-Vollmachten sind **2 aktuelle Passfotos** Pflicht
+
+3. **Vollmachtstext:** Die Konsulate verfügen über Standardformulare. Für rechtlich anspruchsvolle Verfahren (Tanıma-Tenfiz, Güterrecht, spezielle Bankgeschäfte) empfehlen wir dringend, den Vollmachtstext **vorab mit Ihrem Anwalt zu erarbeiten** und fertig ausformuliert mitzubringen. Ein unvollständiger Text führt zur Zurückweisung in der Türkei.
+
+4. **Form der Beurkundung:** Das türkische Recht unterscheidet zwischen Vollmachten in „Beurkundungsform" (*düzenleme şekli*) und solchen in „Beglaubigungsform" (*onaylama şekli*). Vollmachten für Grundstücksgeschäfte müssen in Beurkundungsform und auf Deutsch abgefasst sein. Das Konsulat informiert Sie über die jeweils erforderliche Form.
+
+---
+
+## Weg 2: Deutscher Notar + Apostille
+
+### Wann kommt dieser Weg in Frage?
+
+- Wenn der nächste Konsulatsterm zu weit entfernt ist und die Angelegenheit dringend ist
+- Wenn Sie keinen einfachen Zugang zum türkischen Konsulat haben
+- Wenn Ihr Anwalt oder Ihr Rechtsbüro diesen Weg empfohlen hat
+
+### Reicht ein deutscher Notar allein?
+
+**Nein.** Eine beim deutschen Notar erstellte Vollmacht ist in der Türkei ohne Apostille **nicht gültig.** Das ist ein häufiger Fehler, der zur Ablehnung des Dokuments in der Türkei führt.
+
+Nach Anbringung der Apostille ist das Dokument in der Türkei grundsätzlich anerkannt — erfordert aber noch einen weiteren Schritt: eine **beglaubigte türkische Übersetzung.**
+
+### Schritt für Schritt: Deutscher Notar + Apostille
+
+**Schritt 1 — Vollmachtstext vorbereiten**
+
+Deutsche Notare verfügen über keine türkischen Vollmachtsvorlagen. Sie müssen den Vollmachtstext **selbst vorbereiten und dem Notar mitbringen.** Dieser Text muss nach türkischem Recht formuliert sein. Verwenden Sie dabei nicht einfach Standardformulierungen — ein zu allgemein gehaltener Text kann in der Türkei als unzureichend zurückgewiesen werden.
+
+Besonders wichtige Formulierungen:
+
+- Bei Anwaltsvollmacht: *„Klage zu erheben und zu verfolgen, Rechtsmittel einzulegen, auf Ansprüche zu verzichten, Vergleiche zu schließen"* — türkisches Äquivalent muss entsprechend präzise sein
+- Bei Tanıma-Tenfiz: *„Tanıma ve tenfiz davası açmaya ve takip etmeye"* muss ausdrücklich enthalten sein
+- Bei Grundstücksgeschäften: Katastraldaten der Immobilie (Ada, Parsel, İl, İlçe) im Text angeben
+
+**Schritt 2 — Beurkundung beim deutschen Notar**
+
+Sie müssen persönlich erscheinen und einen gültigen Ausweis mitbringen. Eine Vollmacht kann nicht per Post oder online unterzeichnet werden. Die bevollmächtigte Person muss nicht anwesend sein.
+
+Für bestimmte Vorgänge (Grundstücke, Scheidung) ist eine **Beurkundung auf Deutsch** erforderlich, und es können Passfotos verlangt werden. Klären Sie diese Details vorab mit dem Notar.
+
+**Schritt 3 — Apostille beantragen**
+
+Die vom deutschen Notar erstellte Vollmacht muss mit einer Apostille versehen werden. In Deutschland wird die Apostille für Notarurkunden beim zuständigen **Oberlandesgericht** beantragt.
+
+In Baden-Württemberg — also für Menschen in Mannheim, Karlsruhe, Heidelberg und Umgebung — ist das **Oberlandesgericht Karlsruhe** zuständig.
+
+In anderen Bundesländern kann die zuständige Stelle variieren (z. B. Oberlandesgericht, Landgericht oder zuständiges Ministerium). Der Notar informiert Sie über die richtige Stelle.
+
+**Für den Apostille-Antrag benötigen Sie in der Regel:**
+- Das Original der zu beglaubigenden Urkunde
+- Ein Antragsformular (auf der Website des OLG verfügbar)
+- Die anfallende Bearbeitungsgebühr
+
+Die Bearbeitungszeit beträgt je nach Auslastung wenige Tage bis mehrere Wochen.
+
+**Schritt 4 — Beglaubigte türkische Übersetzung**
+
+Die apostillierte Vollmacht muss in der Türkei von einem zugelassenen vereidigten Übersetzer ins Türkische übersetzt und notariell beglaubigt werden. Dies kann Ihr türkischer Anwalt koordinieren. Die Dokumente werden per Post oder Kurier übermittelt.
+
+---
+
+## Konsulat oder Notar — Was ist besser?
+
+| | **Türkisches Konsulat** | **Deutscher Notar + Apostille** |
+|---|---|---|
+| Apostille erforderlich? | Nein | Ja |
+| Türkische Übersetzung erforderlich? | Nein | Ja |
+| Termindauer | Oft 2–4 Wochen Vorlauf | In der Regel 1–2 Wochen |
+| Zuverlässigkeit | Sehr hoch | Hoch (mit Apostille + Übersetzung) |
+| Passfoto erforderlich? | Bei bestimmten Vollmachtstypen | Bei bestimmten Vollmachtstypen |
+| Empfohlen für | Grundbuch, Scheidung, Tanıma-Tenfiz | Wenn Konsulat nicht erreichbar / dringend |
+
+**Empfehlung:** Wenn die Zeit es erlaubt, wählen Sie den Konsulatsweg. Falls dringend oder das Konsulat schwer erreichbar ist, ist der Weg über deutschen Notar + Apostille ebenfalls sicher — vorausgesetzt, der Vollmachtstext ist korrekt formuliert.
+
+---
+
+## Besondere Anforderungen je nach Vollmachtstyp
+
+### Vollmacht für Tanıma-Tenfiz-Verfahren
+
+Dies ist eine der häufigsten Vollmachtsarten für in Deutschland lebende Türken. Damit ein Anwalt in der Türkei ein Anerkennungsverfahren für eine deutsche Scheidung einleiten kann, muss die Vollmacht **ausdrücklich** folgende Befugnisse enthalten:
+
+- Klage auf Tanıma ve Tenfiz zu erheben
+- Das Verfahren in allen Instanzen zu verfolgen
+- An Verhandlungen teilzunehmen
+- Verzicht, Anerkennung und Vergleich zu erklären
+
+Fehlt auch nur eine dieser Befugnisse, kann das Gericht die Vollmacht als unzureichend zurückweisen. Passfotos are bei dieser Vollmachtsart Pflicht.
+
+### Vollmacht für Grundbuchgeschäfte (Tapu)
+
+Für den Verkauf, die Übertragung oder Belastung türkischer Immobilien:
+
+- Die **Katastraldaten** der Immobilie (Ada, Parsel, İl, İlçe) müssen im Vollmachtstext genannt sein
+- Die Vollmacht muss in **Beurkundungsform** und auf **Deutsch** erstellt werden
+- 2 aktuelle **Passfotos** sind Pflicht
+- Der Konsulatsweg wird **dringend empfohlen**
+
+### Erbschaftsvollmacht
+
+Für Erbschaftsverfahren in der Türkei (Erbschein, Nachlassaufteilung, Grundbuchübertragung):
+
+- Die Vollmacht muss ausdrücklich die Befugnis zur Ausstellung eines Erbscheins (Veraset İlamı) enthalten
+- Befugnisse zur Nachlassaufteilung und Immobilienübertragung sind separat aufzuführen
+- Bei mehreren Erben muss jeder eine eigene Vollmacht ausstellen
+
+### Scheidungsvollmacht
+
+Für eine Scheidungsklage in der Türkei über einen Anwalt:
+
+- Name, Nachname, Anwaltskammer und **Kammernummer** des Anwalts sind Pflichtangaben
+- Der Vollmachtsinhalt unterscheidet sich je nach einvernehmlicher oder streitiger Scheidung
+- 2 aktuelle Passfotos sind Pflicht
+- Der Konsulatsweg wird empfohlen
+
+### Bank- und allgemeine Geschäftsvollmacht
+
+Für Verfügungen über türkische Bankkonten:
+
+- Name der Bank und Kontonummer sollten nach Möglichkeit angegeben werden
+- Einige Banken verlangen ein eigenes Vollmachtsformular — fragen Sie vorab bei der zuständigen Filiale nach
+
+---
+
+## Wann verliert eine Vollmacht ihre Gültigkeit?
+
+Eine Vekâletname endet in folgenden Fällen:
+
+- **Widerruf (Azil):** Der Vollmachtgeber kann die Vollmacht jederzeit durch eine Widerrufserklärung (Azilname) widerrufen. Dies kann beim Konsulat oder bei jedem türkischen Notar erfolgen.
+- **Rücktritt (İstifa):** Der Bevollmächtigte kann die Vollmacht durch schriftliche Erklärung an das Gericht oder die zuständige Stelle zurückgeben.
+- **Tod:** Der Tod von Vollmachtgeber oder Bevollmächtigtem beendet die Vollmacht automatisch.
+
+Zur **Gültigkeitsdauer:** Türkische Vollmachten sind grundsätzlich zeitlich unbegrenzt. Allerdings akzeptieren manche Stellen (insbesondere Grundbuchämter und Banken) nur Vollmachten, die nicht älter als ein bestimmtes Datum sind. Fragen Sie vorab bei der zuständigen Stelle nach.
+
+---
+
+## Wie übermitteln Sie die Vollmacht nach Deutschland?
+
+Sie müssen die Vollmacht nicht persönlich nach Deutschland bringen. Folgende Übermittlungswege sind möglich:
+
+- **Kurier (DHL, UPS usw.):** Die sicherste und zuverlässigste Methode. Das Original wird direkt an Ihren Anwalt übermittelt.
+- **Einschreiben:** Einschreiben per Post ist möglich, birgt jedoch ein Verlustrisiko.
+- **Digitale Vorabkopie:** Für vorbereitende Schritte kann eine eingescannte Kopie ausreichen — das Original muss jedoch spätestens zur Einreichung beim Gericht oder der Behörde vorliegen. Klären Sie das mit Ihrem Anwalt im Voraus.
+
+---
+
+## Häufig gestellte Fragen
+
+**Muss ich für die Konsulats-Vollmacht in die Türkei reisen?**
+Nein. Sie gehen zum türkischen Konsulat in Deutschland (z. B. Karlsruhe oder Stuttgart), und die dort erstellte Vollmacht ist in der Türkei ohne weitere Schritte gültig.
+
+**Ist eine Vollmacht vom deutschen Notar in der Türkei gültig?**
+Ja, aber nur mit Apostille und beglaubigter türkischer Übersetzung. Ohne Apostille wird das Dokument in der Türkei nicht akzeptiert.
+
+**Wo beantrage ich die Apostille in Baden-Württemberg?**
+Beim Oberlandesgericht Karlsruhe. In anderen Bundesländern variiert die zuständige Stelle — Ihr Notar informiert Sie.
+
+**Wer sollte den Vollmachtstext verfassen?**
+Idealerweise ein Anwalt mit Kenntnissen im türkischen Recht. Standardformulare sind beim Konsulat erhältlich, aber für rechtlich anspruchsvolle Vorgänge (Grundbuch, Klage, Erbschaft) ist ein anwaltlich formulierter Text deutlich sicherer.
+
+**Sind Passfotos Pflicht?**
+Nicht bei jeder Vollmacht. Bei Grundbuch-, Fahrzeug-, Scheidungs- und Tanıma-Tenfiz-Vollmachten sind 2 aktuelle Passfotos Pflicht. Fragen Sie vorab beim Konsulat oder Ihrem Anwalt nach.
+
+**Wie lange dauert es bis die Vollmacht ausgestellt wird?**
+Beim Konsulat am Termintag meist noch am selben Tag. Beim deutschen Notar: wenige Tage für die Beurkundung, weitere Tage bis Wochen für die Apostille.
+
+**Soll ich eine allgemeine oder eine spezifische Vollmacht ausstellen?**
+Möglichst eine auf den konkreten Vorgang **zugeschnittene** Vollmacht. Allgemeine Vollmachten werden von manchen Stellen (insbesondere Grundbuchämtern) nicht akzeptiert.
+
+**Kann I die Vollmacht per Post nach Turkey schicken?**
+Ja — per Einschreiben oder Kurier (empfohlen) an Ihren Anwalt in der Türkei.
+
+---
+
+## Unser Service: Vollmachtstext gemeinsam erarbeiten
+
+Das häufigste Problem bei Vollmachten aus Deutschland ist ein fehlerhafter oder unvollständiger Text. Eine abgewiesene Vollmacht bedeutet Neuanfang — Zeit- und Kostenaufwand inklusive.
+
+Als Kanzlei in Mannheim mit Kenntnissen beider Rechtssysteme:
+
+- **Erarbeiten wir den Vollmachtstext gemeinsam** — passend für Ihr konkretes Anliegen
+- **Informieren wir Sie genau**, welche Unterlagen Sie zum Konsulat oder deutschen Notar mitbringen müssen
+- **Koordinieren wir Apostille und Übersetzung**
+- **Vertreten wir Sie in der Türkei** — mit der Vollmacht, die wir gemeinsam erarbeitet haben
+
+**Avukat Hasan Doğru | Doğru Kanzlei**
+📍 R1 2-3, 68161 Mannheim
+📞 +49 176 612 21210
+✉️ info@hasandogru.de
+💬 Auch per WhatsApp erreichbar
+
+*Mo–Sa: 09:00–18:00 | Beratung auf Deutsch und Türkisch*
+
+---
+
+*Dieser Artikel dient ausschließlich der allgemeinen Information und stellt keine Rechtsberatung dar. Für eine auf Ihren individuellen Fall zugeschnittene Einschätzung nehmen Sie bitte Kontakt mit uns auf. Die Kanzlei berät ausschließlich im türkischen Recht gemäß §207 BRAO.*`,
+    contentTR: `**YASAL UYARI:** Bu makale yalnızca Türk hukuku ile ilgilidir. Büromuzda Alman hukuku (örneğin Alman miras hukuku, BGB uyarınca aile hukuku veya Alman göç hukuku) konusunda danışmanlık verilmemektedir.
+
+---
+
+Almanya'da yaşıyorsunuz ve Türkiye'de bir hukuki işlem yaptırmanız gerekiyor. Tapu devri, miras, boşanma davası, tanıma-tenfiz, banka işlemleri, şirket işlemleri... Bunların hepsinde ortak bir ilk adım var: **vekâletname.**
+
+Peki Almanya'da Türkiye için geçerli bir vekâletname nasıl çıkartılır? Türk konsolosluğuna mı gitmeniz gerekiyor? Alman noteri de yeterli mi? Apostil ne demek ve nerede yaptırılır? Vekâletname metni nasıl hazırlanmalı ki Türkiye'de geçersiz sayılmasın?
+
+Bu rehberde tüm bu soruları adım adım yanıtlıyoruz. Almanya'da yaşayan Türk vatandaşları için hem konsolosluk yolu hem de Alman noter yolu ayrıntılı biçimde ele alınmaktadır.
+
+---
+
+## Vekâletname Nedir ve Neden Bu Kadar Önemlidir?
+
+Vekâletname, bir kişinin (vekâlet veren / müvekkil) başka bir kişiyi (vekil) belirli hukuki işlemleri yapması için yetkilendirdiği resmi belgedir. Türk hukukunda pek çok işlem, tarafın bizzat bulunmasını gerektirmez — ancak bu durumda yetkili bir vekâletname zorunludur.
+
+Almanya'da yaşayan Türk vatandaşları için vekâletname özellikle şu durumlarda kritik önem taşır:
+
+- **Tanıma ve tenfiz davası** açılması (Türkiye'ye gitmeden Almanya'daki boşanmayı Türkiye'de geçerli kılmak)
+- **Tapu işlemleri** (Türkiye'deki gayrimenkulün satışı, devri, ipotek işlemleri)
+- **Miras işlemleri** (veraset ilamı çıkarılması, miras paylaşımı, taşınmaz devri)
+- **Boşanma davası** (Türkiye'de avukat aracılığıyla boşanma)
+- **Banka işlemleri** (Türkiye'deki banka hesaplarına ilişkin işlemler)
+- **Şirket işlemleri** (Türkiye'deki şirkete yönelik imza, devir, temsil yetkileri)
+- **Araç alım-satımı**
+- **Genel avukatlık vekâleti** (Türkiye'deki her türlü hukuki işlem için avukata yetki)
+
+Vekâletnamenin eksik veya hatalı düzenlenmesi, Türkiye'deki mahkeme veya kurumun işlemi reddetmesine — dolayısıyla ciddi zaman ve maliyet kayıplarına — yol açabilir.
+
+---
+
+## Almanya'da Vekâletname Çıkarmanın İki Yolu
+
+Almanya'da Türkiye için geçerli bir vekâletname çıkartmanın iki temel yolu vardır: **Türk konsolosluğu** ve **Alman noter.** Her ikisinin de avantajları, dezavantajları ve dikkat edilmesi gereken farklı noktaları vardır.
+
+---
+
+## 1. Yol: Türk Konsolosluğu Üzerinden Vekâletname
+
+### Neden En Güvenli Yoldur?
+
+Türk konsolosluklarında düzenlenen vekâletnameler doğrudan Türk noterlik hukuku çerçevesinde düzenlenir ve Türkiye Noterler Birliği veri tabanına kaydedilir. Bu nedenle:
+
+- Türkiye'de **ekstra apostil veya tercüme işlemine gerek yoktur**
+- Belge Türkiye'deki tüm mahkeme, noter ve resmi kurumlarca **doğrudan kabul edilir**
+- İşlem süreci daha **öngörülebilirdir**
+
+Bu nedenle, özellikle boşanma davası, tapu işlemleri ve tanıma-tenfiz gibi hassas hukuki işlemler için **konsolosluk yolu her zaman öncelikli tercih** olmalıdır.
+
+### Almanya'daki Türk Konsoloslukları
+
+Türkiye Cumhuriyeti'nin Almanya'da 13 şehirde konsolosluğu bulunmaktadır:
+
+Berlin, Düsseldorf, Köln, Essen, Frankfurt, Hamburg, Stuttgart, Hannover, Karlsruhe, Mainz, Münih, Münster, Nürnberg
+
+Mannheim'da yaşıyorsanız size en yakın konsolosluk **Karlsruhe** veya **Stuttgart** konsolosluğudur.
+
+### Konsoloslukta Randevu ve Süreç
+
+1. **Randevu alın:** Konsolosluğun web sitesinden veya konsolosluk.gov.tr üzerinden online randevu alınır. Yoğun dönemlerde randevu tarihleri birkaç haftayı bulabilir; erken randevu almanızı öneririz.
+
+2. **Hazırlamanız gerekenler:**
+   - Geçerli T.C. kimlik kartı veya Mavi Kart (pasaport da kabul edilir, ancak T.C. kimlik kartı tercih edilir)
+   - Vekilin adı, soyadı ve **T.C. kimlik numarası** (avukata vekâlet verilecekse: avukatın baro adı ve **baro sicil numarası**)
+   - Yapılacak işlemin türüne ilişkin bilgiler (hangi taşınmaz, hangi dava, hangi banka vb.)
+   - Fotoğraf: Tapu işlemleri, araç alım-satımı, boşanma ve tanıma-tenfiz vekâletnamelerinde **2 adet güncel vesikalık fotoğraf** zorunludur
+
+3. **Vekâletname metni:** Konsolosluklarda matbu (hazır) vekâletname metinleri bulunmaktadır. Ancak özel yetkiler gerektiren işlemler için (örneğin tanıma-tenfiz, mal paylaşımı, özel banka işlemleri) **kendi hazırladığınız metni avukatınızla birlikte önceden düzenlemeniz** çok daha güvenlidir. Eksik yetki, Türkiye'de işlemin reddedilmesine yol açabilir.
+
+4. **Düzenleme ve onay şekli:** Türk hukukuna göre bazı vekâletnameler "düzenleme şeklinde" (Alman noter dilinde: *Beurkundung*), bazıları ise "onaylama şeklinde" (*Beglaubigung*) düzenlenir. Tapu işlemlerine ilişkin vekâletnameler mutlaka düzenleme şeklinde olmalıdır ve bu durumda vekâletnamenin Almanca düzenlenmesi gerekmektedir.
+
+---
+
+## 2. Yol: Alman Noteri Üzerinden Vekâletname + Apostil
+
+### Ne Zaman Bu Yola Başvurulur?
+
+- Konsolosluk randevusu çok ilerideyse ve işleminiz acilse
+- Konsolosluğa ulaşmakta güçlük çekiyorsanız
+- Avukatınız veya hukuk büronuz bu yönde tavsiye verdiyse
+
+### Alman Noteri Yeterli mi?
+
+Alman noterinde düzenlenen vekâletname, **apostil şerhi eklenmeden Türkiye'de geçerli olmaz.** Bu kritik bir ayrıntıdır ve pek çok kişi apostil adımını atlayarak belgesinin Türkiye'de reddedilmesiyle karşılaşır.
+
+Apostil eklendikten sonra ise belge Türkiye'de geçerlilik kazanır — ancak ek bir adım daha gereklidir: **Türkçe yeminli tercüme.**
+
+### Adım Adım: Alman Noter + Apostil Süreci
+
+**Adım 1 — Vekâletname metnini hazırlayın**
+
+Alman noterin elinde Türkçe vekâletname örneği bulunmaz. Bu nedenle vekâletname metnini **siz hazırlayıp notere götürmeniz** gerekir. Bu metin Türk hukukuna uygun biçimde kaleme alınmış olmalıdır; aksi takdirde Türkiye'de eksik yetki nedeniyle işlem reddedilebilir.
+
+Özellikle dikkat edilmesi gereken ifadeler:
+
+- Avukatlık vekâletnamelerinde: *"davayı açmaya ve takip etmeye, Yargıtay'da temyize gitmeye, feragat etmeye, kabul etmeye, sulh olmaya"* gibi özel yetkilerin açıkça yazılması
+- Tanıma-tenfiz vekâletnamesinde: *"tanıma ve tenfiz davası açmaya ve takip etmeye"* ifadesinin açıkça yer alması
+- Tapu işlemlerinde: taşınmazın tapu bilgilerinin (ada, parsel, il, ilçe) vekâletname metninde belirtilmesi
+
+**Adım 2 — Alman noterinde imzalatın**
+
+Notere bizzat gitmeniz ve kimliğinizi (T.C. kimlik kartı veya pasaport) ibraz etmeniz zorunludur. Vekâletname posta yoluyla veya çevrimiçi imzalanamaz. Vekile ait kişinin noterde bulunmasına gerek yoktur.
+
+Bazı işlemler için (tapu, boşanma vb.) noterin **Almanca düzenleme** yapması gerektiğini ve bazı durumlarda **fotoğraf** eklenmesi gerekebileceğini unutmayın. Bu detayları notere önceden sorun.
+
+**Adım 3 — Apostil şerhi alın**
+
+Alman noterin imzaladığı belgeye apostil şerhi eklenmesi gerekir. Almanya'da apostil işlemi, belgeyi düzenleyen noterin bağlı olduğu **Oberlandesgericht (bölge mahkemesi)** tarafından yapılır.
+
+Baden-Württemberg'de — yani Mannheim, Karlsruhe, Heidelberg ve çevresinde — apostil işlemi **Oberlandesgericht Karlsruhe**'dan yaptırılır.
+
+Bazı eyaletlerde ise bu yetki Landgericht veya yetkili bakanlıkta olabilir. Hangi makama başvuracağınızı notere sorun.
+
+**Apostil işlemi için genellikle şunlar gerekir:**
+- Apostil yaptırılacak belgenin aslı
+- Başvuru formu (mahkemenin web sitesinden temin edilebilir)
+- İşlem ücreti (eyalete ve belge türüne göre değişir)
+
+Apostil süresi birkaç gün ile birkaç hafta arasında değişebilir.
+
+**Adım 4 — Türkçe yeminli tercüme**
+
+Apostil eklenen belge Türkiye'de Türkçeye çevrilmeli ve noter onayından geçmelidir. Bu işlemi Türkiye'deki avukatınız veya yeminli tercüman yaptırır. Belgeyi ona posta veya kurye ile gönderebilirsiniz.
+
+---
+
+## Konsolosluk mu, Alman Noteri mi? Hangisi Daha İyi?
+
+| | **Konsolosluk** | **Alman Noteri + Apostil** |
+|---|---|---|
+| Türkiye'de ek işlem gerekir mi? | Hayır | Evet (tercüme + noter onayı) |
+| Apostil şerhi gerekir mi? | Hayır | Evet |
+| Randevu süresi | Uzun olabilir (2-4 hafta) | Genellikle 1-2 hafta |
+| Güvenilirlik | Çok yüksek | Yüksek (apostil + tercüme ile) |
+| Fotoğraf gereksinimi | Bazı vekâletnamelerde zorunlu | Bazı vekâletnamelerde zorunlu |
+| Tavsiye edilen durumlar | Tapu, boşanma, tanıma-tenfiz | Acil durumlarda veya konsolosluğa erişim zorsa |
+
+**Genel tavsiye:** Zaman baskısı yoksa konsolosluk yolunu tercih edin. Acilse veya konsolosluğa erişim güçse, Alman noter + apostil yolu da geçerli ve güvenilirdir — ancak vekâletname metninin doğru hazırlanması kritiktir.
+
+---
+
+## Vekâletname Türlerine Göre Özel Dikkat Edilmesi Gerekenler
+
+### Tanıma ve Tenfiz Vekâletnamesi
+
+Bu, Almanya'da yaşayan kişilerin en sık ihtiyaç duyduğu vekâletname türlerinden biridir. Almanya'da boşananların Türkiye'de tanıma ve tenfiz davası açtırabilmesi için avukata verecekleri vekâletnamede şu yetkiler **açıkça** bulunmalıdır:
+
+- Tanıma ve tenfiz davası açmaya
+- Davayı her aşamada takip etmeye
+- Duruşmalara katılmaya
+- Feragat, kabul ve sulh yetkisi
+
+Bu yetkilerin eksik olması durumunda mahkeme vekâletnameyi yetersiz bulabilir ve davayı ilerletmeyebilir. Fotoğraf eklenmesi de bu vekâletname türünde zorunludur.
+
+### Tapu İşlemleri Vekâletnamesi
+
+Türkiye'deki gayrimenkulün satışı, devri veya ipotek işlemleri için verilen vekâletnamelerde:
+
+- Taşınmazın **tapu bilgileri** (ada, parsel, il, ilçe) vekâletname metninde yer almalıdır
+- Vekâletname **düzenleme şeklinde** düzenlenmeli, Almanca hazırlanmalıdır
+- 2 adet **güncel vesikalık fotoğraf** zorunludur
+- Konsolosluk yoluyla alınması **şiddetle tavsiye edilir**
+
+### Miras Vekâletnamesi
+
+Türkiye'de miras işlemleri yürütülecekse (veraset ilamı, intikal, paylaşım):
+
+- Vekile mirasçılık belgesi çıkarma yetkisi açıkça verilmelidir
+- Miras paylaşımı ve taşınmaz devri yetkileri ayrıca belirtilmelidir
+- Birden fazla mirasçı varsa her birinin ayrı vekâletname düzenlemesi gerekebilir
+
+### Boşanma Vekâletnamesi
+
+Türkiye'de avukat aracılığıyla boşanma davası açılacaksa:
+
+- Avukatın adı, soyadı, baro adı ve **baro sicil numarası** zorunludur
+- Boşanma, anlaşmalı veya çekişmeli olmasına göre vekâletname içeriği farklılaşır
+- 2 adet güncel fotoğraf zorunludur
+- Konsolosluk yolu tercih edilmelidir
+
+### Banka ve Genel İşlem Vekâletnamesi
+
+Türkiye'deki banka hesabına ilişkin (para çekme, transfer, hesap kapatma) işlemler için:
+
+- İlgili bankanın adı ve hesap bilgileri mümkünse belirtilmelidir
+- Bazı bankalar kendi özel vekâletname formatlarını talep edebilir; işlem öncesinde ilgili banka şubesini arayarak bilgi alın
+
+---
+
+## Vekâletname Geçerliliğini Kaybeder mi?
+
+Vekâletname, aşağıdaki durumlarda sona erer:
+
+- **Azil:** Vekâlet veren, avukata ya da vekile azilname (iptal belgesi) göndererek vekâleti geri alabilir. Azilname konsolosluğa veya Türkiye'deki herhangi bir notere başvurularak düzenlenir.
+- **İstifa:** Vekil, görevi kabul etmemek ya da devam etmemek isterse mahkeme veya ilgili kuruma yazılı bildirimle vekâletten çekilebilir.
+- **Ölüm:** Vekâlet veren veya vekilin ölümü vekâlet ilişkisini kendiliğinden sona erdirir.
+
+Vekâletnamenin **süresi** konusunda önemli bir nokta: Türk hukukunda vekâletnameler kural olarak süresizdir, ancak bazı kurumlar (özellikle bankalar ve tapu müdürlükleri) belirli bir süreden eski vekâletnameleri kabul etmeyebilir. İşlem yapmadan önce ilgili kuruma güncel vekâletname gerekip gerekmediğini sorun.
+
+---
+
+## Vekâletnameyi Türkiye'ye Nasıl Gönderirsiniz?
+
+Vekâletnameyi bizzat götürmek zorunda değilsiniz. Aşağıdaki yöntemlerle gönderebilirsiniz:
+
+- **Kurye (DHL, UPS vb.):** En yaygın ve güvenilir yol. Orijinal belgeler zarfla avukatınıza gönderilir.
+- **Posta:** Taahhütlü posta da kabul edilir, ancak kayıp riski nedeniyle kurye önerilir.
+- **Avukatın Almanya'ya gelmesi:** Bazı durumlarda avukat veya büro temsilcisi belgeyi bizzat teslim alabilir.
+
+Vekâletnamenin dijital (taranmış) kopyasıyla işlem başlatılabilir mi? Bazı mahkemeler ön işlemlerde dijital kopyayı kabul eder, ancak orijinal belge nihayetinde sunulmalıdır. Bu konuyu avukatınızla önceden netleştirin.
+
+---
+
+## Sıkça Sorulan Sorular
+
+**Konsolosluk vekâletnamesi için Türkiye'ye gitmem gerekir mi?**
+Hayır. Almanya'daki herhangi bir Türk konsolosluğuna bizzat giderek vekâletname düzenletebilirsiniz. Bu vekâletname, ayrıca apostil veya tercüme gereksiz olmaksızın Türkiye'de doğrudan geçerlidir.
+
+**Alman noterinden aldığım vekâletname Türkiye'de geçerli mi?**
+Apostil şerhi eklenmesi ve Türkçeye yeminli tercümesi yapılması koşuluyla evet, geçerlidir. Apostilsiz Alman noter vekâletnamesi Türkiye'de kabul edilmez.
+
+**Almanya'da apostil işlemini nerede yaptırabilirim?**
+Baden-Württemberg'de (Mannheim, Karlsruhe, Heidelberg bölgesi) apostil işlemi Oberlandesgericht Karlsruhe'dan yapılır. Diğer eyaletlerde yetkili makam farklı olabilir; notere sorun.
+
+**Vekâletname metnini kim hazırlamalı?**
+İdeal olarak Türk hukukunu bilen bir avukat hazırlamalıdır. Hazır (matbu) metinler konsoloslukta mevcuttur, ancak özel hukuki işlemler için (tapu, dava, miras) avukat tarafından hazırlanmış metin daha güvenlidir. Eksik yetki, Türkiye'de işlemin reddedilmesine neden olabilir.
+
+**Vekâletname için fotoğraf şart mı?**
+Her vekâletname türü için değil, ancak tapu işlemleri, araç alım-satımı, boşanma ve tanıma-tenfiz vekâletnamelerinde fotoğraf zorunludur. Emin olmak için önceden konsolosluğa veya avukatınıza sorun.
+
+**Vekâletnameyi posta ile Türkiye'ye gönderebilir miyim?**
+Evet, taahhütlü posta veya kurye ile gönderebilirsiniz. Kurye daha güvenlidir.
+
+**Vekâletname ne kadar sürede çıkar?**
+Konsoloslukta randevu günü genellikle aynı gün düzenlenir. Alman noteri yoluyla ise noter işlemi birkaç gün içinde tamamlanabilir, apostil ise birkaç gün ile birkaç hafta arasında sürer.
+
+**Avukata genel vekâletname mi, özel vekâletname mi vermeli?**
+Mümkün olduğunca **işleme özel** vekâletname verin. Genel vekâletname bazı kurumlarca (özellikle tapu müdürlükleri) kabul edilmez. Avukatınızla hangi yetkilerin vekâletnamede yer alması gerektiğini önceden netleştirin.
+
+---
+
+## Bize Ulaşın: Vekâletname Metnini Birlikte Hazırlayalım
+
+Almanya'da Türkiye için vekâletname çıkartmanın en sık karşılaşılan sorunu, metni yanlış veya eksik hazırlamaktır. Yanlış hazırlanan bir vekâletname Türkiye'de reddedilir; yeniden başlamak hem zaman hem de para kaybettirir.
+
+Mannheim'da Türk ve Alman hukukunu bilen bir büro olarak:
+
+- Durumunuza uygun **vekâletname metnini birlikte hazırlarız**
+- Konsolosluğa veya Alman notere hangi bilgileri götürmeniz gerektiğini net biçimde bildiririz
+- Apostil ve tercüme sürecini koordine ederiz
+- Türkiye'deki işlemleri, gönderilen vekâletname ile bizzat takip ederiz
+
+**Avukat Hasan Doğru | Doğru Kanzlei**
+📍 R1 2-3, 68161 Mannheim
+📞 +49 176 612 21210
+✉️ info@hasandogru.de
+💬 WhatsApp üzerinden de ulaşabilirsiniz
+
+*Mo–Sa: 09:00–18:00 | Türkçe ve Almanca hizmet*
+
+---
+
+*Bu makale genel bilgi amaçlıdır ve hukuki danışmanlık niteliği taşımaz. Durumunuza özgü değerlendirme için lütfen bizimle iletişime geçin. Büromuz yalnızca Türk hukuku alanında danışmanlık vermektedir.*`,
+    category: "Vekâletname · Apostil · Türk Hukuku",
+    categoryDE: "Vollmacht · Apostille · Türkisches Recht",
+    image: vekaletnameImg,
+    dateDE: "Nisan 2026",
+    dateTR: "Nisan 2026",
+    readTimeDE: "20 Min. Lesezeit",
+    readTimeTR: "20 dk okuma",
+    publishedAt: "2026-04-12",
+    keywordsDE: "Türkische Vekaletname Deutschland, Vollmacht Konsulat Türkei, Notar Vollmacht Türkei Apostille, Vollmacht Muster Türkei, Anwaltsvollmacht Türkei Mannheim, Tanıma Tenfiz Vekaleti",
+    keywordsTR: "Almanya'da vekaletname çıkarma, konsolosluk vekaletname randevu, Alman noterinden vekalet apostil, vekaletname örneği Türkiye, avukat vekaletnamesi nasıl verilir, tanıma tenfiz vekaleti",
+  },
+  {
     slug: "vorladung-haftbefehl-tuerkei",
     slugDE: "vorladung-haftbefehl-tuerkei",
     slugTR: "turkiye-den-tebligat-veya-yakalama-karari",
