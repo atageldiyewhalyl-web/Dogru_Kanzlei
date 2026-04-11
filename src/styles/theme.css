@@ -173,7 +173,7 @@
   }
 
   .blog-table th {
-    @apply px-6 py-4 font-serif font-semibold tracking-wide border-b border-white/10 first:rounded-tl-xl last:rounded-tr-xl;
+    @apply px-6 py-4 font-serif font-semibold tracking-wide border-b border-white/10 first:rounded-tl-xl last:rounded-tr-xl text-white;
   }
 
   .blog-table td {

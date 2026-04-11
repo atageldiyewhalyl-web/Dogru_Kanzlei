@@ -16,7 +16,7 @@ function processInlineStyles(text: string) {
   return parts.map((part, i) => {
     if (part.startsWith('**') && part.endsWith('**')) {
       return (
-        <strong key={i} className="font-bold text-[#1C3829] border-b border-[#B8963E]/20">
+        <strong key={i} className="font-bold border-b border-[#B8963E]/20">
           {part.slice(2, -2)}
         </strong>
       );

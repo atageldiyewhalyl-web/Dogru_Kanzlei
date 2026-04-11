@@ -2588,32 +2588,6 @@ Sie müssen die Vollmacht nicht persönlich nach Deutschland bringen. Folgende �
 
 ---
 
-## Häufig gestellte Fragen
-
-**Muss ich für die Konsulats-Vollmacht in die Türkei reisen?**
-Nein. Sie gehen zum türkischen Konsulat in Deutschland (z. B. Karlsruhe oder Stuttgart), und die dort erstellte Vollmacht ist in der Türkei ohne weitere Schritte gültig.
-
-**Ist eine Vollmacht vom deutschen Notar in der Türkei gültig?**
-Ja, aber nur mit Apostille und beglaubigter türkischer Übersetzung. Ohne Apostille wird das Dokument in der Türkei nicht akzeptiert.
-
-**Wo beantrage ich die Apostille in Baden-Württemberg?**
-Beim Oberlandesgericht Karlsruhe. In anderen Bundesländern variiert die zuständige Stelle — Ihr Notar informiert Sie.
-
-**Wer sollte den Vollmachtstext verfassen?**
-Idealerweise ein Anwalt mit Kenntnissen im türkischen Recht. Standardformulare sind beim Konsulat erhältlich, aber für rechtlich anspruchsvolle Vorgänge (Grundbuch, Klage, Erbschaft) ist ein anwaltlich formulierter Text deutlich sicherer.
-
-**Sind Passfotos Pflicht?**
-Nicht bei jeder Vollmacht. Bei Grundbuch-, Fahrzeug-, Scheidungs- und Tanıma-Tenfiz-Vollmachten sind 2 aktuelle Passfotos Pflicht. Fragen Sie vorab beim Konsulat oder Ihrem Anwalt nach.
-
-**Wie lange dauert es bis die Vollmacht ausgestellt wird?**
-Beim Konsulat am Termintag meist noch am selben Tag. Beim deutschen Notar: wenige Tage für die Beurkundung, weitere Tage bis Wochen für die Apostille.
-
-**Soll ich eine allgemeine oder eine spezifische Vollmacht ausstellen?**
-Möglichst eine auf den konkreten Vorgang **zugeschnittene** Vollmacht. Allgemeine Vollmachten werden von manchen Stellen (insbesondere Grundbuchämtern) nicht akzeptiert.
-
-**Kann I die Vollmacht per Post nach Turkey schicken?**
-Ja — per Einschreiben oder Kurier (empfohlen) an Ihren Anwalt in der Türkei.
-
 ---
 
 ## Unser Service: Vollmachtstext gemeinsam erarbeiten
@@ -2851,32 +2825,6 @@ Vekâletnamenin dijital (taranmış) kopyasıyla işlem başlatılabilir mi? Baz
 
 ---
 
-## Sıkça Sorulan Sorular
-
-**Konsolosluk vekâletnamesi için Türkiye'ye gitmem gerekir mi?**
-Hayır. Almanya'daki herhangi bir Türk konsolosluğuna bizzat giderek vekâletname düzenletebilirsiniz. Bu vekâletname, ayrıca apostil veya tercüme gereksiz olmaksızın Türkiye'de doğrudan geçerlidir.
-
-**Alman noterinden aldığım vekâletname Türkiye'de geçerli mi?**
-Apostil şerhi eklenmesi ve Türkçeye yeminli tercümesi yapılması koşuluyla evet, geçerlidir. Apostilsiz Alman noter vekâletnamesi Türkiye'de kabul edilmez.
-
-**Almanya'da apostil işlemini nerede yaptırabilirim?**
-Baden-Württemberg'de (Mannheim, Karlsruhe, Heidelberg bölgesi) apostil işlemi Oberlandesgericht Karlsruhe'dan yapılır. Diğer eyaletlerde yetkili makam farklı olabilir; notere sorun.
-
-**Vekâletname metnini kim hazırlamalı?**
-İdeal olarak Türk hukukunu bilen bir avukat hazırlamalıdır. Hazır (matbu) metinler konsoloslukta mevcuttur, ancak özel hukuki işlemler için (tapu, dava, miras) avukat tarafından hazırlanmış metin daha güvenlidir. Eksik yetki, Türkiye'de işlemin reddedilmesine neden olabilir.
-
-**Vekâletname için fotoğraf şart mı?**
-Her vekâletname türü için değil, ancak tapu işlemleri, araç alım-satımı, boşanma ve tanıma-tenfiz vekâletnamelerinde fotoğraf zorunludur. Emin olmak için önceden konsolosluğa veya avukatınıza sorun.
-
-**Vekâletnameyi posta ile Türkiye'ye gönderebilir miyim?**
-Evet, taahhütlü posta veya kurye ile gönderebilirsiniz. Kurye daha güvenlidir.
-
-**Vekâletname ne kadar sürede çıkar?**
-Konsoloslukta randevu günü genellikle aynı gün düzenlenir. Alman noteri yoluyla ise noter işlemi birkaç gün içinde tamamlanabilir, apostil ise birkaç gün ile birkaç hafta arasında sürer.
-
-**Avukata genel vekâletname mi, özel vekâletname mi vermeli?**
-Mümkün olduğunca **işleme özel** vekâletname verin. Genel vekâletname bazı kurumlarca (özellikle tapu müdürlükleri) kabul edilmez. Avukatınızla hangi yetkilerin vekâletnamede yer alması gerektiğini önceden netleştirin.
-
 ---
 
 ## Bize Ulaşın: Vekâletname Metnini Birlikte Hazırlayalım
@@ -2911,6 +2859,74 @@ Mannheim'da Türk ve Alman hukukunu bilen bir büro olarak:
     publishedAt: "2026-04-12",
     keywordsDE: "Türkische Vekaletname Deutschland, Vollmacht Konsulat Türkei, Notar Vollmacht Türkei Apostille, Vollmacht Muster Türkei, Anwaltsvollmacht Türkei Mannheim, Tanıma Tenfiz Vekaleti",
     keywordsTR: "Almanya'da vekaletname çıkarma, konsolosluk vekaletname randevu, Alman noterinden vekalet apostil, vekaletname örneği Türkiye, avukat vekaletnamesi nasıl verilir, tanıma tenfiz vekaleti",
+    faqTR: [
+      {
+        question: "Konsolosluk vekâletnamesi için Türkiye'ye gitmem gerekir mi?",
+        answer: "Hayır. Almanya'daki herhangi bir Türk konsolosluğuna bizzat giderek vekâletname düzenletebilirsiniz. Bu vekâletname, ayrıca apostil veya tercüme gereksiz olmaksızın Türkiye'de doğrudan geçerlidir."
+      },
+      {
+        question: "Alman noterinden aldığım vekâletname Türkiye'de geçerli mi?",
+        answer: "Apostil şerhi eklenmesi ve Türkçeye yeminli tercümesi yapılması koşuluyla evet, geçerlidir. Apostilsiz Alman noter vekâletnamesi Türkiye'de kabul edilmez."
+      },
+      {
+        question: "Almanya'da apostil işlemini nerede yaptırabilirim?",
+        answer: "Baden-Württemberg'de (Mannheim, Karlsruhe, Heidelberg bölgesi) apostil işlemi Oberlandesgericht Karlsruhe'dan yapılır. Diğer eyaletlerde yetkili makam farklı olabilir; notere sorun."
+      },
+      {
+        question: "Vekâletname metnini kim hazırlamalı?",
+        answer: "İdeal olarak Türk hukukunu bilen bir avukat hazırlamalıdır. Hazır (matbu) metinler konsoloslukta mevcuttur, ancak özel hukuki işlemler için (tapu, dava, miras) avukat tarafından hazırlanmış metin daha güvenlidir. Eksik yetki, Türkiye'de işlemin reddedilmesine neden olabilir."
+      },
+      {
+        question: "Vekâletname için fotoğraf şart mı?",
+        answer: "Her vekâletname türü için değil, ancak tapu işlemleri, araç alım-satımı, boşanma ve tanıma-tenfiz vekâletnamelerinde fotoğraf zorunludur. Emin olmak için önceden konsolosluğa veya avukatınıza sorun."
+      },
+      {
+        question: "Vekâletnameyi posta ile Türkiye'ye gönderebilir miyim?",
+        answer: "Evet, taahhütlü posta veya kurye ile gönderebilirsiniz. Kurye daha güvenlidir."
+      },
+      {
+        question: "Vekâletname ne kadar sürede çıkar?",
+        answer: "Konsoloslukta randevu günü genellikle aynı gün düzenlenir. Alman noteri yoluyla ise noter işlemi birkaç gün içinde tamamlanabilir, apostil ise birkaç gün ile birkaç hafta arasında sürer."
+      },
+      {
+        question: "Avukata genel vekâletname mi, özel vekâletname mi vermeli?",
+        answer: "Mümkün olduğunca işleme özel vekâletname verin. Genel vekâletname bazı kurumlarca (özellikle tapu müdürlükleri) kabul edilmez. Avukatınızla hangi yetkilerin vekâletnamede yer alması gerektiğini önceden netleştirin."
+      }
+    ],
+    faqDE: [
+      {
+        question: "Muss ich für die Konsulats-Vollmacht in die Türkei reisen?",
+        answer: "Nein. Sie gehen zum türkischen Konsulat in Deutschland (z. B. Karlsruhe oder Stuttgart), und die dort erstellte Vollmacht ist in der Türkei ohne weitere Schritte gültig."
+      },
+      {
+        question: "Ist eine Vollmacht vom deutschen Notar in der Türkei gültig?",
+        answer: "Ja, aber nur mit Apostille und beglaubigter türkischer Übersetzung. Ohne Apostille wird das Dokument in der Türkei nicht akzeptiert."
+      },
+      {
+        question: "Wo beantrage ich die Apostille in Baden-Württemberg?",
+        answer: "Beim Oberlandesgericht Karlsruhe. In anderen Bundesländern variiert die zuständige Stelle — Ihr Notar informiert Sie."
+      },
+      {
+        question: "Wer sollte den Vollmachtstext verfassen?",
+        answer: "Idealerweise ein Anwalt mit Kenntnissen im türkischen Recht. Standardformulare sind beim Konsulat erhältlich, aber für rechtlich anspruchsvolle Vorgänge (Grundbuch, Klage, Erbschaft) ist ein anwaltlich formulierter Text deutlich sicherer."
+      },
+      {
+        question: "Sind Passfotos Pflicht?",
+        answer: "Nicht bei jeder Vollmacht. Bei Grundbuch-, Fahrzeug-, Scheidungs- und Tanıma-Tenfiz-Vollmachten sind 2 aktuelle Passfotos Pflicht. Fragen Sie vorab beim Konsulat oder Ihrem Anwalt nach."
+      },
+      {
+        question: "Wie lange dauert es bis die Vollmacht ausgestellt wird?",
+        answer: "Beim Konsulat am Termintag meist noch am selben Tag. Beim deutschen Notar: wenige Tage für die Beurkundung, weitere Tage bis Wochen für die Apostille."
+      },
+      {
+        question: "Soll ich eine allgemeine oder eine spezifische Vollmacht ausstellen?",
+        answer: "Möglichst eine auf den konkreten Vorgang zugeschnittene Vollmacht. Allgemeine Vollmachten werden von manchen Stellen (insbesondere Grundbuchämtern) nicht akzeptiert."
+      },
+      {
+        question: "Kann ich die Vollmacht per Post in die Türkei schicken?",
+        answer: "Ja — per Einschreiben oder Kurier (empfohlen) an Ihren Anwalt in der Türkei."
+      }
+    ]
   },
   {
     slug: "vorladung-haftbefehl-tuerkei",
@@ -2956,106 +2972,593 @@ Türkiye'deki ceza dosyalarınızı Almanya'dan vekalet vererek takip edebilirsi
     slug: "suc-duyurusu-tuerkei-rehberi",
     slugDE: "strafanzeige-tuerkei-rehber",
     slugTR: "turkiye-de-suc-duyurusu-rehberi",
-    titleDE: "Strafanzeige in der Türkei aus Deutschland erstatten",
-    titleTR: "Almanya'dan Türkiye'deki Bir Suç İçin Şikayetçi Olmak: Suç Duyurusu Rehberi",
-    excerptDE: "Opfer einer Straftat in der Türkei geworden? Wir erklären die Strafanzeige (Suç Duyurusu) nach türkischem Recht.",
-    excerptTR: "Türkiye'de mağdur olduğunuz suçlar için Almanya'dan nasıl suç duyurusunda bulunabilirsiniz?",
+    titleDE: "Strafanzeige in der Türkei aus Deutschland stellen: Der vollständige Leitfaden (2026)",
+    titleTR: "Almanya'dan Türkiye'deki Bir Suç İçin Şikayetçi Olmak: Suç Duyurusu Rehberi (2026)",
+    excerptDE: "Vollständiger Leitfaden zur Strafanzeige in der Türkei aus Deutschland. Verfahren, Fristen (6 Monate) und Beweissicherung nach türkischem Recht.",
+    excerptTR: "Almanya'dan Türkiye'de suç duyurusu nasıl yapılır? Şikayet süreleri, konsolosluk işlemleri ve savcılık süreci hakkında 2026 güncel rehber.",
     contentDE: `**RECHTLICHER HINWEIS:** Dieser Artikel befasst sich ausschließlich mit dem türkischen Recht. Eine Beratung zum deutschen Recht (z.B. deutsches Erbrecht, Familienrecht nach BGB oder deutsches Migrationsrecht) findet in unserer Kanzlei nicht statt.
 
-### Anzeige in der Türkei
+In der Türkei wurde eine Straftat gegen Sie begangen. Vielleicht hat ein Verwandter Erbschaftsbetrug begangen. Vielleicht hat ein Geschäftspartner Sie um Ihr Geld gebracht. Vielleicht wurden Sie in sozialen Medien beleidigt oder bedroht. Vielleicht hat jemand Ihre türkische Immobilie ohne Ihre Zustimmung übertragen.
 
-Wenn Sie in der Türkei Opfer eines Betrugs oder einer anderen Straftat geworden sind, können Sie über einen Avukat Strafanzeige (**Suç Duyurusu**) bei der zuständigen türkischen Staatsanwaltschaft erstatten.
+Sie leben in Deutschland. Sie können oder wollen nicht in die Türkei reisen. Was können Sie tun?
 
-**Rechtsgrundlage**: CMK Art. 158.
+Dieser Leitfaden richtet sich an in Deutschland lebende Menschen, die wegen einer in der Türkei gegen sie begangenen Straftat rechtlich vorgehen möchten. Was ist eine Strafanzeige im türkischen Recht, wie wird sie aus Deutschland gestellt, welche Unterlagen sind erforderlich, welche Fristen gelten — und wie läuft das Verfahren danach ab? All das erklären wir Schritt für Schritt.
 
-**Doğru Kanzlei**: Wir formulieren Ihre Anzeige und verfolgen das Ermittlungsverfahren in der Türkei für Sie.`,
+---
+
+## Strafanzeige und Strafantrag: Was ist der Unterschied?
+
+Im türkischen Strafrecht gibt es eine wichtige Unterscheidung zwischen **Suç Duyurusu** (allgemeine Strafanzeige) und **Şikayet** (Strafantrag).
+
+### Suç Duyurusu (Strafanzeige / Anzeige)
+Eine Strafanzeige kann von jeder Person erstattet werden, die Kenntnis von einer Straftat hat — auch ohne selbst Opfer zu sein. Die Staatsanwaltschaft entscheidet dann, ob sie von Amts wegen ermittelt.
+
+### Şikayet (Strafantrag)
+Der Strafantrag ist das Recht des unmittelbaren Opfers. Bei bestimmten Delikten — sogenannten **antragspflichtigen Straftaten** — kann die Staatsanwaltschaft ohne Strafantrag des Opfers nicht ermitteln.
+
+**Beispiele:** Beleidigung, einfache Bedrohung, fahrlässige Körperverletzung, Hausfriedensbruch.
+
+---
+
+## Fristen: Der wichtigste Punkt überhaupt
+
+**Bei antragspflichtigen Straftaten beträgt die Antragsfrist 6 Monate ab Kenntnis der Tat oder des Täters.** Nach Ablauf dieser Frist verfällt das Antragsrecht — die Staatsanwaltschaft kann das Verfahren nicht mehr einleiten.
+
+**Önemli:** Sichern Sie Beweise mit Zeitstempel (Screenshots, E-Mails, Dokumente). Das hilft, den Beginn der Antragsfrist zu belegen.
+
+---
+
+## Wie stellt man aus Deutschland eine Strafanzeige in der Türkei?
+
+1. **Über das türkische Konsulat**: Sie reichen Ihre Antragsschrift beim Konsulat ein, welches diese an die zuständige Staatsanwaltschaft weiterleitet.
+2. **Über einen türkischen Anwalt**: Mit einer Vollmacht kann Ihr Anwalt die Anzeige direkt bei der Staatsanwaltschaft einreichen. Dies ist der schnellste Weg.
+3. **Per Post**: Die Antragsschrift kann schriftlich gesendet werden, birgt aber Zustellungsrisiken.
+
+---
+
+## Was muss die Antragsschrift enthalten?
+
+- **Adressat**: Die zuständige Staatsanwaltschaft (Cumhuriyet Başsavcılığı).
+- **Angaben zum Antragsteller**: Name, T.C. Kimlik No, Adresse.
+- **Angaben zum Beschuldigten**: Name, Adresse (falls bekannt).
+- **Sachverhaltsschilderung**: Chronologische Darstellung der Ereignisse.
+- **Beweise**: Liste der beigefügten Beweismittel.
+
+---
+
+## Häufige Deliktsbereiche
+
+### Betrug (TCK Art. 157–158)
+Gelderschleichung durch fingierte Immobiliengeschäfte, Identitätstäuschung oder Internetbetrug.
+### Beleidigung und Bedrohung (TCK Art. 125, 106)
+Straftaten über WhatsApp, Telefon oder soziale Medien.
+### Erbschafts- und Grundbuchbetrug
+Übertragung von Immobilien mit gefälschten Dokumenten durch Verwandte oder Bekannte.
+
+---
+
+## Wie läuft das Verfahren in der Türkei ab?
+
+1. **Ermittlungsphase**: Die Staatsanwaltschaft prüft den Verdacht. Bei Ablehnung ergeht ein Einstellungsbescheid (KYOK).
+2. **Rechte als Antragsteller (Müşteki)**: Akteneinsicht, Vorlage von Beweisen und Beschwerderecht.
+3. **Müssen Sie in die Türkei reisen?**: Nein. Aussagen können über das türkische Konsulat im Rechtshilfeweg aufgenommen werden.
+4. **Schlichtungsverfahren (Uzlaştırma)**: Bei bestimmten Delikten wird ein Schlichtungsversuch unternommen.
+
+---
+
+## Ihr nächster Schritt
+
+In der Türkei wurde eine Straftat gegen Sie begangen — und Sie sind in Deutschland. Das Wichtigste, was Sie jetzt tun können: **Zeitverlust vermeiden und einen Anwalt konsultieren, bevor die 6-Monats-Frist abläuft.**
+
+**Avukat Hasan Doğru | Doğru Kanzlei**
+📍 R1 2-3, 68161 Mannheim
+📞 +49 176 612 21210
+✉️ info@hasandogru.de
+💬 Auch per WhatsApp erreichbar
+
+*Mo–Sa: 09:00–18:00 | Beratung auf Deutsch und Türkisch*
+
+---
+
+*Dieser Artikel dient ausschließlich der allgemeinen Information und stellt keine Rechtsberatung dar. Die Kanzlei berät ausschließlich im türkischen Recht gemäß §207 BRAO.*`,
     contentTR: `**YASAL UYARI:** Bu makale yalnızca Türk hukuku ile ilgilidir. Büromuzda Alman hukuku (örneğin Alman miras hukuku, BGB uyarınca aile hukuku veya Alman göç hukuku) konusunda danışmanlık verilmemektedir.
 
-### Türkiye'de Suç Duyurusu
+Türkiye'de size karşı bir suç işlendi. Belki Türkiye'deki bir akrabanız miras dolandırıcılığı yaptı. Belki bir iş ortağınız sizi dolandırdı. Belki sosyal medyada size hakaret edildi ya da tehdit edildildiniz. Belki Türkiye'deki bir kişi size ait taşınmazı haksız biçimde devretti.
 
-Türkiye'deki suç mağduriyetleriniz için Almanya'dan vekaletle suç duyurusunda bulunabilirsiniz.`,
-    category: "Ceza Hukuku",
-    categoryDE: "Strafrecht",
+Siz Almanya'dasınız. Türkiye'ye gidemiyorsunuz ya da gitmek istemiyorsunuz. Peki ne yapabilirsiniz?
+
+Bu rehber, Almanya'da yaşayan ve Türkiye'de kendilerine karşı işlenen bir suç nedeniyle hukuki yollara başvurmak isteyen kişiler için hazırlandı. Suç duyurusu nedir, Almanya'dan nasıl yapılır, hangi belgeler gereklidir, şikayet süreleri nelerdir ve sonrasında süreç nasıl işler — hepsini adım adım açıklıyoruz.
+
+---
+
+## Suç Duyurusu ve Şikayet: Fark Nedir?
+
+### Suç Duyurusu (İhbar)
+Suç duyurusu, suçun işlendiğinden haberdar olan kişilerin bunu yetkili makamlara bildirmesidir. Savcılık re'sen soruşturma başlatıp başlatmamaya karar verir.
+
+### Şikayet
+Şikayet, suçun doğrudan mağdurunun yetkili makamlara başvurmasıdır. Bazı suçlar yalnızca şikayet üzerine soruşturulur.
+
+**Şikayete bağlı suçlar:** Hakaret, tehdit (basit hal), taksirle yaralama, konut dokunulmazlığının ihlali.
+**Re'sen soruşturulan suçlar:** Dolandırıcılık, ağır yaralama, resmi belgede sahtecilik.
+
+---
+
+## Şikayet Süreleri: Dikkat Etmeniz Gereken En Kritik Nokta
+
+**Şikayete bağlı suçlarda şikayet süresi, suçun veya failin öğrenildiği tarihten itibaren 6 aydır.** Bu süre geçtikten sonra şikayet hakkı düşer. Re'sen soruşturulan suçlarda (dolandırıcılık vb.) genel zamanaşımı süreleri (8-15 yıl) geçerlidir.
+
+---
+
+## Almanya'dan Türkiye'de Şikayet: Hangi Yollar Var?
+
+1. **Türk Konsolosluğu Üzerinden Şikayet**: Şikayet dilekçenizi konsolosluğa sunarak ilgili savcılığa iletilmesini sağlayabilirsiniz.
+2. **Avukat Aracılığıyla Doğrudan Savcılığa Başvuru**: Türkiye'ye gitmeksizin avukatınız aracılığıyla en hızlı ve doğrudan şikayet yoludur.
+3. **Posta Yoluyla Başvuru**: Dilekçe savcılığa posta ile gönderilebilir (riskleri mevcuttur).
+
+---
+
+## Suç Duyurusu Dilekçesi Nasıl Hazırlanır?
+
+Dilekçede şunlar bulunmalıdır:
+- **Başlık**: İlgili Cumhuriyet Başsavcılığı'na hitaben.
+- **Kimlik Bilgileri**: Şikayetçi ve biliniyorsa şüpheli bilgileri.
+- **Olayın Anlatımı**: Tarih, yer ve eylem ayrıntıları.
+- **Deliller**: Yazışmalar, dekontlar, ekran görüntüleri vb.
+- **Talep**: Soruşturma açılması talebi.
+
+---
+
+## Şikayet Sonrasında Süreç Nasıl İşler?
+
+1. **Soruşturma Aşaması**: Savcılık delilleri toplar. Kovuşturmaya yer olmadığına dair karar (KYOK) verilirse 15 gün içinde itiraz edilebilir.
+2. **Müşteki Sıfatı**: Dosyaya erişim ve ek delil sunma hakkı kazanılır.
+3. **İfade Verme**: Türkiye'ye gitmeden konsolosluk aracılığıyla istinabe yoluyla ifade verilebilir.
+4. **Uzlaştırma**: Bazı suçlarda savcılık dosyayı uzlaştırma bürosuna gönderir.
+
+---
+
+## Bir Sonraki Adımınız
+
+Türkiye'de size karşı bir suç işlendi ve Almanya'dasınız. Yapmanız gereken ilk şey, 6 aylık şikayet süresini aklınızda tutarak **vakit kaybetmeden bir avukattan değerlendirme almaktır.**
+
+**Avukat Hasan Doğru | Doğru Kanzlei**
+📍 R1 2-3, 68161 Mannheim
+📞 +49 176 612 21210
+✉️ info@hasandogru.de
+💬 WhatsApp üzerinden de ulaşabilirsiniz
+
+*Mo–Sa: 09:00–18:00 | Türkçe ve Almanca hizmet*
+
+---
+
+*Bu makale genel bilgi amaçlıdır ve hukuki danışmanlık niteliği taşımaz. Büromuz yalnızca Türk hukuku alanında danışmanlık vermektedir.*`,
+    category: "Ceza Hukuku · Suç Duyurusu · Türk Hukuku",
+    categoryDE: "Strafrecht · Strafanzeige · Türkisches Recht",
     image: criminalComplaintImg,
-    dateDE: "2. April 2026",
-    dateTR: "2 Nisan 2026",
-    readTimeDE: "6 Min. Lesezeit",
-    readTimeTR: "6 dk okuma",
-    publishedAt: "2026-04-02",
+    dateDE: "Nisan 2026",
+    dateTR: "Nisan 2026",
+    readTimeDE: "18 Min. Lesezeit",
+    readTimeTR: "18 dk okuma",
+    publishedAt: "2026-04-12",
     keywordsDE: "Suç Duyurusu Türkei aus Deutschland, Strafanzeige Türkei Betrug, Ermittlungsverfahren Türkei Anwalt, Strafrecht Türkei Anzeige, Opferrechte Türkei",
     keywordsTR: "Türkiye'de suç duyurusu nasıl yapılır, Almanya'dan şikayetçi olmak, dolandırıcılık suç duyurusu Türkiye, ceza soruşturması takibi avukat, şikayet dilekçesi örneği",
+    faqTR: [
+      {
+        question: "Almanya'dan Türkiye'deki bir kişi hakkında şikayetçi olabilir miyim?",
+        answer: "Evet. Türk vatandaşı olup olmamanızdan bağımsız olarak, Türkiye'de size karşı işlenen suçlar için Türk savcılığına şikayetçi olabilirsiniz. Almanya'dan avukat aracılığıyla bu işlemi yapmanız mümkündür."
+      },
+      {
+        question: "Türkiye'ye gitmem gerekiyor mu?",
+        answer: "Hayır. Avukatınıza vekâletname vererek şikayet dilekçesini sundurup süreci takip ettirebilirsiniz. İfadeniz gerekirse Almanya'daki konsolosluk aracılığıyla istinabe yoluyla alınabilir."
+      },
+      {
+        question: "Şikayet süresi ne kadardır?",
+        answer: "Şikayete bağlı suçlarda suçu veya faili öğrendiğiniz tarihten itibaren 6 ay. Re'sen soruşturulan suçlarda (dolandırıcılık, sahtecilik vb.) genel zamanaşımı süreleri geçerlidir (8-15 yıl)."
+      },
+      {
+        question: "Şikayetimi konsolosluktan yapabilir miyim?",
+        answer: "Evet. Almanya'daki Türk konsolosluğuna şikayet dilekçenizi sunabilirsiniz; konsolosluk bunu ilgili savcılığa iletir."
+      },
+      {
+        question: "Whatsapp veya sosyal medya üzerinden gelen tehdit veya hakaret şikayet konusu olabilir mi?",
+        answer: "Evet. Ekran görüntüleri, tarih ve gönderici bilgisiyle birlikte delil olarak sunulabilir. Ancak hakaret suçu şikayete bağlı olduğundan 6 aylık süreyi kaçırmayın."
+      },
+      {
+        question: "Maddi zararımı nasıl talep ederim?",
+        answer: "Ceza davasına katılan sıfatıyla tazminat talebinde bulunabilirsiniz. Ayrıca Türkiye'de ayrı bir hukuk (tazminat) davası açmak da mümkündür."
+      },
+      {
+        question: "Savcılık soruşturmaya yer olmadığına karar verirse ne olur?",
+        answer: "KYOK kararına karşı 15 gün içinde sulh ceza hâkimliğine itiraz edebilirsiniz. İtiraz avukatınız aracılığıyla yapılır."
+      }
+    ],
+    faqDE: [
+      {
+        question: "Kann ich aus Deutschland eine Strafanzeige gegen jemanden in der Türkei stellen?",
+        answer: "Ja. Als Opfer einer in der Türkei begangenen Straftat können Sie — unabhängig von Ihrer Staatsangehörigkeit — bei der türkischen Staatsanwaltschaft Anzeige erstatten. Das geht aus Deutschland über einen Anwalt mit Vollmacht."
+      },
+      {
+        question: "Muss ich dafür in die Türkei reisen?",
+        answer: "Nein. Mit einer Vollmacht kann Ihr Anwalt die Antragsschrift einreichen und das Verfahren vollständig führen. Sollte eine Aussage nötig sein, ist diese über das türkische Konsulat in Deutschland im Rechtshilfeweg möglich."
+      },
+      {
+        question: "Wie lange dauert das Ermittlungsverfahren?",
+        answer: "Das ist stark fallabhängig. Einfache Fälle können in wenigen Monaten abgeschlossen werden; komplexe Fälle dauern oft ein bis mehrere Jahre."
+      },
+      {
+        question: "Was ist, wenn die Staatsanwaltschaft das Verfahren einstellt?",
+        answer: "Sie können innerhalb von 15 Tagen Beschwerde beim Sulh Ceza Hâkimliği einlegen. Ihr Anwalt prüft, ob eine Beschwerde erfolgversprechend ist."
+      },
+      {
+        question: "Kann ich Schadensersatz fordern?",
+        answer: "Ja — als Nebenkläger im Strafverfahren oder durch eine separate Zivilklage in der Türkei. Wenn der Täter Vermögenswerte in der Türkei hat, ist die dortige Vollstreckung effektiver."
+      },
+      {
+        question: "Was ist die 6-Monats-Frist genau?",
+        answer: "Sie gilt für antragspflichtige Straftaten und beginnt ab dem Zeitpunkt, an dem Sie die Tat und den Täter kennen. Bei Unkenntnis des Täters beginnt die Frist erst mit dessen Identifizierung."
+      },
+      {
+        question: "Kann mich der Beschuldigte auch gegen mich anzeigen?",
+        answer: "Theoretisch ist das möglich. In der Praxis werden unbegründete Gegenanzeigen von der Staatsanwaltschaft meist schnell abgetrennt. Ihr Anwalt kann dieses Risiko im Vorfeld bewerten."
+      }
+    ]
   },
+
   {
     slug: "bosanma-rehberi-tuerkiye",
     slugDE: "scheidung-tuerkei-ohne-reise",
     slugTR: "turkiye-de-bosanma-rehberi",
-    titleDE: "Scheidung in der Türkei ohne Reise",
-    titleTR: "Almanya'dan Türkiye'de Boşanma: Anlaşmalı ve Çekişmeli Boşanma Rehberi",
-    excerptDE: "Scheidung in der Türkei aus Deutschland einreichen nach türkischem Zivilgesetzbuch (TMK).",
-    excerptTR: "Türkiye'ye gitmeden Almanya'dan boşanma davası nasıl açılır? Yasal şartlar ve süreçler.",
+    titleDE: "Scheidung in der Türkei aus Deutschland: Einvernehmlich oder streitig – Der vollständige Leitfaden (2026)",
+    titleTR: "Almanya'dan Türkiye'de Boşanma: Anlaşmalı ve Çekişmeli Boşanma Rehberi (2026)",
+    excerptDE: "Vollständiger Leitfaden zur Scheidung in der Türkei für in Deutschland lebende Türken. Einvernehmliche vs. streitige Scheidung, Kosten und Ablauf.",
+    excerptTR: "Almanya'da yaşayanlar için Türkiye'de boşanma rehberi. Anlaşmalı ve çekişmeli boşanma farkları, SEGBİS ile duruşmaya katılım ve mal paylaşımı.",
     contentDE: `**RECHTLICHER HINWEIS:** Dieser Artikel befasst sich ausschließlich mit dem türkischen Recht. Eine Beratung zum deutschen Recht (z.B. deutsches Erbrecht, Familienrecht nach BGB oder deutsches Migrationsrecht) findet in unserer Kanzlei nicht statt.
 
-### Scheidung nach türkischem Recht
+Sie leben in Deutschland. Die Entscheidung, Ihre Ehe zu beenden, ist gefallen. Aber vor Ihnen stehen mehrere Fragen — und keine einfache Antwort:
 
-Eine Scheidung kann direkt vor türkischen Familiengerichten beantragt werden.
+Sollen Sie sich in Deutschland oder in der Türkei scheiden lassen? Müssen Sie dafür in die Türkei reisen? Was passiert, wenn Sie und Ihr Partner sich einig sind — und was, wenn nicht? Wie werden Sorgerecht, Unterhalt und Vermögensaufteilung nach türkischem Recht geregelt?
 
-**Rechtsgrundlage**: TMK Art. 166.
+Dieser Leitfaden richtet sich an in Deutschland lebende Türken, die eine Scheidung nach türkischem Recht in Betracht ziehen. Er erklärt die Unterschiede zwischen einvernehmlicher und streitiger Scheidung, wie das Verfahren aus Deutschland geführt werden kann und welche kritischen Fehler Sie vermeiden sollten.
 
-- **Anlaşmalı Boşanma**: Einvernehmliche Scheidung via Anwaltsprotokoll.
-- **Çekişmeli Boşanma**: Streitige Scheidung.
+---
 
-**Doğru Kanzlei**: Wir vertreten Sie in allen Phasen des türkischen Boşanma-Verfahrens.`,
+## Die Grundsatzfrage: Deutschland oder Türkei — wo sollten Sie sich scheiden lassen?
+
+Das ist die erste Frage, die fast jeder stellt — und die Antwort hängt vollständig von Ihrer persönlichen Situation ab.
+
+### Scheidung in Deutschland
+
+Bei einer Scheidung vor einem deutschen Familiengericht gilt deutsches Recht. In Deutschland ist in der Regel:
+
+- Anwaltspflicht für beide Parteien
+- Das Trennungsjahr Voraussetzung (auch bei einvernehmlicher Scheidung meist erforderlich)
+- Die Verfahrensdauer 6 Monate bis 1,5 Jahre
+- Das deutsche Urteil in der Türkei **nicht automatisch gültig** — ein separates Tanıma-Tenfiz-Verfahren ist erforderlich
+
+### Scheidung in der Türkei
+
+Auch wenn Sie in Deutschland leben, können Sie in der Türkei klagen. Türkisches Recht wird angewendet. Vorteile:
+
+- Bei einvernehmlicher Scheidung sehr kurze Verfahrensdauer (1–3 Monate)
+- Das türkische Urteil wird direkt im Personenstandsregister eingetragen — kein Tanıma-Tenfiz erforderlich
+- Sorgerecht, Unterhalt und Vermögensaufteilung werden nach türkischem Recht geregelt
+- Das Verfahren kann per Vollmacht geführt werden — ohne Reise in die Türkei (insbesondere bei streitiger Scheidung)
+
+### Was ist in Ihrer Situation sinnvoll?
+
+| | **Situation** | **Empfehlung** |
+|---|---|---|
+| 1 | Beide türkische Staatsbürger, Einigkeit über alle Punkte | Einvernehmliche Scheidung in der Türkei — schnell und übersichtlich |
+| 2 | Trennungsverfahren in Deutschland bereits eingeleitet | Scheidung in Deutschland, danach Tanıma-Tenfiz |
+| 3 | Immobilien in der Türkei, Vermögensaufteilung nötig | Scheidung oder Güterrechtsklage in der Türkei |
+| 4 | Partner lebt in der Türkei, kein Einvernehmen | Streitige Klage in der Türkei |
+| 5 | Beide in Deutschland, kein Einvernehmen | Deutschland oder Türkei — anwaltliche Einzelfallbewertung notwendig |
+
+Als Faustregel: **Wenn beide Parteien sich einig sind, ist eine einvernehmliche Scheidung in der Türkei meist der schnellste und günstigste Weg.**
+
+---
+
+## Einvernehmliche Scheidung nach türkischem Recht (ZGB Art. 166/3)
+
+Die einvernehmliche Scheidung setzt voraus, dass sich die Parteien über die Scheidung selbst und über alle Scheidungsfolgen geeinigt haben. Das türkische Zivilgesetzbuch (TMK) regelt dies in Art. 166 Abs. 3.
+
+### Voraussetzungen
+
+**1. Die Ehe muss mindestens 1 Jahr bestanden haben.**
+Bei einer Ehe unter einem Jahr ist der Weg zur einvernehmlichen Scheidung gesperrt. Die Parteien können sich zwar einigen, müssen das Verfahren aber technisch als streitige Scheidung einleiten. Das Gericht kann die Einigung jedoch berücksichtigen und zügig entscheiden.
+
+**2. Einigkeit über alle Scheidungsfolgen.**
+Es reicht nicht, gemeinsam „Ja" zur Scheidung zu sagen. Es muss auch Einigkeit über Sorgerecht, Unterhalt, Vermögensaufteilung, Schadensersatz und alle weiteren Punkte bestehen. Diese Einigung muss schriftlich in einem **Scheidungsprotokoll (Boşanma Protokolü)** festgehalten werden.
+
+**3. Das Gericht muss beide Parteien persönlich anhören.**
+Das ist die wichtigste praktische Hürde bei der einvernehmlichen Scheidung aus Deutschland. Das türkische Zivilgesetzbuch verpflichtet den Richter, beide Parteien persönlich zu hören. Das bedeutet: Bei der einvernehmlichen Scheidung ist **mindestens eine Teilnahme an der Verhandlung** erforderlich.
+
+### Muss ich für eine einvernehmliche Scheidung in die Türkei reisen?
+
+Die ehrliche Antwort lautet: **teilweise** — aber es gibt Wege, das zu umgehen.
+
+- **SEGBİS (Video-Anhörungssystem):** Türkische Familiengerichte können die Parteien über SEGBİS per Videokonferenz anhören. Dieses System wird zunehmend von Gerichten akzeptiert.
+- **Rechtshilfe über das Konsulat (İstinabe):** Wenn Sie nicht reisen können, kann Ihre Aussage über das türkische Generalkonsulat in Deutschland aufgenommen werden. Dieses Verfahren dauert länger, ist aber möglich.
+- **Streitige Klage mit einvernehmlichem Hintergrund:** Manche Anwälte führen eine Scheidung, bei der sich die Parteien einig sind, technisch als streitige Klage mit dem Klagegrund „schwerwiegende Zerrüttung der ehelichen Lebensgemeinschaft". Dies ermöglicht eine Scheidung ohne Reise in die Türkei.
+
+### Das Scheidungsprotokoll — warum es so entscheidend ist
+
+Das Scheidungsprotokoll (Boşanma Protokolü) ist das Herzstück der einvernehmlichen Scheidung. Es legt alle Scheidungsfolgen schriftlich fest. Folgende Punkte müssen geregelt sein:
+
+- **Sorgerecht (Velayet):** Wer erhält das Sorgerecht für gemeinsame Kinder?
+- **Umgangsrecht (Kişisel İlişki):** Wann und wie oft hat der nicht sorgeberechtigte Elternteil Kontakt?
+- **Kindesunterhalt (İştirak Nafakası):** Wie hoch ist der monatliche Unterhalt?
+- **Ehegattenunterhalt (Yoksulluk Nafakası):** Wird einem der Ehegatten Unterhalt gewährt?
+- **Vermögensaufteilung (Mal Paylaşımı):** Wie werden Immobilien und Konten in der Türkei aufgeteilt?
+
+Ein fehlerhaft oder unvollständig erstelltes Protokoll wird vom Richter abgelehnt. Das Protokoll muss daher von einem Anwalt mit Kenntnissen im türkischen Familienrecht erstellt werden.
+
+---
+
+## Streitige Scheidung nach türkischem Recht
+
+Eine streitige Scheidung wird eingeleitet, wenn die Parteien sich weder über die Scheidung selbst noch über deren Folgen einigen können.
+
+### Scheidungsgründe
+
+- **Ehebruch (TMK Art. 161)**
+- **Lebensgefährdung, grobe Misshandlung oder schwere Ehrverletzung (TMK Art. 162)**
+- **Straftat und ehrloses Leben (TMK Art. 163)**
+- **Verlassen (TMK Art. 164)**
+- **Geisteskrankheit (TMK Art. 165)**
+- **Schwerwiegende Zerrüttung der ehelichen Lebensgemeinschaft (TMK Art. 166/1-2)** (Der häufigste Grund)
+
+### Streitige Scheidung aus Deutschland — Muss ich in die Türkei?
+
+**Bei streitigen Verfahren gilt grundsätzlich: Ihr Anwalt vertritt Sie — eine persönliche Anwesenheit ist nicht erforderlich.** Ihr Anwalt nimmt an allen Verhandlungen teil, präsentiert die Beweise und übermittelt Ihre Erklärungen. Sie verfolgen das Verfahren aus Deutschland.
+
+---
+
+## Zuständiges Gericht: Wo wird in der Türkei geklagt?
+
+**Bei streitiger Scheidung** ist das Familiengericht am Wohnort eines der Ehegatten veya am letzten gemeinsamen Wohnsitz zuständig. **Bei einvernehmlicher Scheidung** können die Parteien das Familiengericht frei wählen.
+
+---
+
+## Scheidungsfolgen: Sorgerecht, Unterhalt, Vermögen
+
+### Sorgerecht (Velayet)
+Türkische Gerichte entscheiden über das Sorgerecht nach dem **Kindeswohl-Prinzip.** Ihr Wohnsitz in Deutschland wirkt sich nicht grundsätzlich negativ auf Ihren Sorgerechtswunsch aus.
+
+### Unterhalt (Nafaka)
+- **Kindesunterhalt (İştirak Nafakası)**
+- **Ehegattenunterhalt (Yoksulluk Nafakası)**
+- **Vorläufiger Unterhalt (Tedbir Nafakası)** (Während des laufenden Verfahrens)
+
+### Vermögensaufteilung (Mal Paylaşımı)
+Seit 2002 gilt in der Türkei das gesetzliche Güterrecht der **Errungemschaftsgemeinschaft.** Immobilien in der Türkei müssen zwingend vor türkischen Gerichten aufgeteilt werden.
+
+---
+
+## Die häufigsten Fehler von in Deutschland lebenden Türken
+
+1. **In Deutschland klagen, ohne die türkischen Konsequenzen zu bedenken.**
+2. **Scheidungsprotokoll ohne Anwalt erstellen.**
+3. **Vollmacht mit unzureichendem Inhalt.**
+4. **Vermögensaufteilung vertagen.**
+
+---
+
+## Ihr nächster Schritt
+
+Eine Scheidung aus Deutschland ist rechtlich möglich, ohne in die Türkei zu reisen. Der entscheidende Faktor ist die richtige rechtliche Begleitung von Anfang an.
+
+**Avukat Hasan Doğru | Doğru Kanzlei**
+📍 R1 2-3, 68161 Mannheim
+📞 +49 176 612 21210
+✉️ info@hasandogru.de
+💬 Auch per WhatsApp erreichbar
+
+*Mo–Sa: 09:00–18:00 | Beratung auf Deutsch und Türkisch*
+
+---
+
+*Dieser Artikel dient ausschließlich der allgemeinen Information und stellt keine Rechtsberatung dar. Die Kanzlei berät ausschließlich im türkischen Recht gemäß §207 BRAO.*`,
     contentTR: `**YASAL UYARI:** Bu makale yalnızca Türk hukuku ile ilgilidir. Büromuzda Alman hukuku (örneğin Alman miras hukuku, BGB uyarınca aile hukuku veya Alman göç hukuku) konusunda danışmanlık verilmemektedir.
 
-### Türkiye'de Boşanma Davası
+Almanya'da yaşıyorsunuz. Evliliğinizi bitirme kararı verdiniz. Ama önünüzde birden fazla seçenek var ve hangisinin sizin için doğru olduğunu bilmiyorsunuz:
 
-Süreci Almanya'dan vekaletle yönetmek mümkündür. 
+Almanya'da mı boşanmalısınız, yoksa Türkiye'de mi? Türkiye'de boşanmak için Türkiye'ye gitmek zorunda mısınız? Eşinizle anlaşabiliyorsanız süreç nasıl işliyor? Anlaşamıyorsanız ne olacak? Velayet, nafaka, mal paylaşımı — bunlar Türkiye'de nasıl karara bağlanıyor?
 
-**Hukuki Dayanak**: TMK m. 166.`,
-    category: "Aile Hukuku",
-    categoryDE: "Familienrecht",
+Bu rehber, Almanya'da yaşayan ve Türkiye'de boşanmayı düşünen kişiler için hazırlandı. Türk hukukuna göre anlaşmalı ve çekişmeli boşanma arasındaki farkları, Almanya'dan bu sürecin nasıl yürütüleceğini ve dikkat etmeniz gereken kritik noktaları kapsamlı biçimde ele alıyoruz.
+
+---
+
+## Önce Temel Soru: Almanya'da mı, Türkiye'de mi Boşanmalısınız?
+
+Bu soru, Almanya'da yaşayan pek çok kişinin ilk sorduğu sorudur — ve doğru cevap tamamen kişisel koşullarınıza bağlıdır.
+
+### Almanya'da Boşanmak
+
+Almanya'da bir aile mahkemesinde (Familiengericht) boşanırsanız, Alman hukuku uygulanır. Almanya'da boşanma süreci genellikle:
+
+- Her iki tarafın da avukatla temsil edilmesini zorunlu kılar
+- Trennjahr (1 yıl ayrı yaşama) şartını arar
+- Ortalama 6 ay ile 1,5 yıl sürer
+- Kararın Türkiye'de geçerli sayılması için **ayrıca tanıma ve tenfiz davası** gerekir
+
+### Türkiye'de Boşanmak
+
+Almanya'da yaşasanız dahi Türkiye'de boşanma davası açabilirsiniz. Türk hukuku uygulanır. Avantajlar:
+
+- Anlaşmalı davada süreç çok daha hızlıdır (1-3 ay)
+- Türkiye'de kesinleşen karar doğrudan nüfus kaydına işlenir; tanıma-tenfiz gerekmez
+- Velayet, nafaka ve mal paylaşımı Türk hukukuna göre karara bağlanır
+- Türkiye'ye gitmeden, vekâletname ile süreç yürütülebilir
+
+### Peki Hangisi Sizin İçin Daha Uygun?
+
+| | **Durum** | **Öneri** |
+|---|---|---|
+| 1 | Her iki taraf da Türk vatandaşı, anlaşabiliyorsunuz | Türkiye'de anlaşmalı boşanma — hızlı ve temiz |
+| 2 | Almanya'da zaten ayrılık süreci başladı | Almanya'da boşanıp ardından tanıma-tenfiz |
+| 3 | Türkiye'de mülkünüz var, mal paylaşımı lazım | Türkiye'de boşanma veya eş zamanlı dava |
+| 4 | Eşiniz Türkiye'de yaşıyor, anlaşamıyorsunuz | Türkiye'de çekişmeli dava |
+| 5 | Eşiniz Almanya'da, anlaşamıyorsunuz | Almanya veya Türkiye — avukattan değerlendirme şart |
+
+Genel bir kural olarak: **taraflar anlaşabiliyorsa Türkiye'de anlaşmalı boşanma çoğu zaman en hızlı ve en az maliyetli yoldur.**
+
+---
+
+## Türk Hukukunda Anlaşmalı Boşanma (TMK Madde 166/3)
+
+Anlaşmalı boşanma, tarafların boşanma kararı ve boşanmanın tüm sonuçları üzerinde mutabık kaldığı boşanma türüdür.
+
+### Anlaşmalı Boşanmanın Koşulları
+
+1. **Evlilik en az 1 yıl sürmüş olmalıdır.**
+2. **Taraflar boşanmanın tüm sonuçlarında anlaşmış olmalıdır.** (Velayet, nafaka, mal paylaşımı vb.)
+3. **Hâkim her iki tarafı bizzat dinlemelidir.**
+
+### Almanya'dan Anlaşmalı Boşanma: Türkiye'ye Gitmek Zorunda mısınız?
+
+- **SEGBİS (Ses ve Görüntü Bilişim Sistemi):** Türkiye'deki aile mahkemeleri, SEGBİS aracılığıyla tarafları Almanya'dan video bağlantısıyla dinleyebilir.
+- **İstinabe yolu:** Almanya'daki Türk konsolosluğu aracılığıyla ifadeniz alınabilir.
+- **Çekişmeli yoldan anlaşmalı boşanma:** Dava çekişmeli olarak açılır ama protokol sunulur. Bu yol Türkiye'ye gitmeksizin boşanmayı mümkün kılabilir.
+
+### Boşanma Protokolü Nedir ve Neden Bu Kadar Önemlidir?
+
+Boşanma protokolü, tarafların boşanmanın tüm sonuçlarını yazılı olarak düzenlediği belgedir. Müşterek çocukların velayeti, nafakalar ve mal paylaşımı detayları burada yer alır. Protokolün mutlaka Türk aile hukukunu bilen bir avukat tarafından hazırlanması gerekir.
+
+---
+
+## Türk Hukukunda Çekişmeli Boşanma
+
+Çekişmeli boşanma, tarafların boşanma ya da boşanmanın sonuçları konusunda anlaşamadığı durumlarda açılan davadır.
+
+### Çekişmeli Boşanma Sebepleri
+
+- **Zina (TMK m. 161)**
+- **Hayata kast, pek kötü muamele (TMK m. 162)**
+- **Suç işleme ve haysiyetsiz hayat sürme (TMK m. 163)**
+- **Terk (TMK m. 164)**
+- **Akıl hastalığı (TMK m. 165)**
+- **Evlilik birliğinin temelinden sarsılması (TMK m. 166/1-2)** (Genel sebep)
+
+### Almanya'dan Çekişmeli Boşanma: Türkiye'ye Gitmeden Mümkün mü?
+
+**Çekişmeli davalarda kural olarak avukat sizi temsil edebilir; bizzat duruşmaya katılmanıza gerek yoktur.** Siz Almanya'dan süreci takip edersiniz; avukatınız tüm duruşmalara katılır ve delilleri sunar.
+
+---
+
+## Boşanmanın Hukuki Sonuçları: Velayet, Nafaka, Mal Paylaşımı
+
+### Velayet
+Türk mahkemeleri velayet kararını **çocuğun üstün yararı** ilkesine göre verir. Almanya'da yaşamanız velayet talebinizi olumsuz etkilemez.
+
+### Nafaka
+- **İştirak nafakası:** Çocuk için ödenen nafaka.
+- **Yoksulluk nafakası:** Eşlerden birine bağlanan nafaka.
+- **Tedbir nafakası:** Dava süresince ödenen geçici nafaka.
+
+### Mal Paylaşımı
+Türkiye'de 2002 yılından itibaren yasal mal rejimi **edinilmiş mallara katılma** rejimidir. Türkiye'deki taşınmazların paylaşımı mutlaka Türk mahkemelerinde görülür.
+
+---
+
+## Almanya'da Yaşayanların En Sık Yaptığı Hatalar
+
+1. **Türkiye'ye sormadan Almanya'da davayı açmak.**
+2. **Protokolü avukatsız hazırlamak.**
+3. **Vekâletname metnini eksik bırakmak.**
+4. **Mal paylaşımını ertelemek.**
+
+---
+
+## Bir Sonraki Adımınız
+
+Sürecin en kritik adımı doğru hukuki danışmanlık almaktır. Mannheim'da Türk hukukunu bilen bir büro olarak tüm süreci sizin adınıza yönetiyoruz.
+
+**Avukat Hasan Doğru | Doğru Kanzlei**
+📍 R1 2-3, 68161 Mannheim
+📞 +49 176 612 21210
+✉️ info@hasandogru.de
+💬 WhatsApp üzerinden de ulaşabilirsiniz
+
+*Mo–Sa: 09:00–18:00 | Türkçe ve Almanca hizmet*
+
+---
+
+*Bu makale genel bilgi amaçlıdır ve hukuki danışmanlık niteliği taşımaz. Büromuz yalnızca Türk hukuku alanında danışmanlık vermektedir.*`,
+    category: "Boşanma · Aile Hukuku · Türk Hukuku",
+    categoryDE: "Scheidung · Familienrecht · Türkisches Recht",
     image: divorceImg,
-    dateDE: "2. April 2026",
-    dateTR: "2 Nisan 2026",
-    readTimeDE: "8 Min. Lesezeit",
-    readTimeTR: "8 dk okuma",
-    publishedAt: "2026-04-02",
+    dateDE: "Nisan 2026",
+    dateTR: "Nisan 2026",
+    readTimeDE: "22 Min. Lesezeit",
+    readTimeTR: "22 dk okuma",
+    publishedAt: "2026-04-12",
     keywordsDE: "Scheidung Türkei ohne Reise, Einvernehmliche Scheidung Türkei, Anlaşmalı Boşanma Protokoll, Scheidungsanwalt Türkei Mannheim, Boşanma davası vekalet",
     keywordsTR: "Türkiye'ye gitmeden boşanma davası, Almanya'dan anlaşmalı boşanma, boşanma protokolü nasıl hazırlanır, çekişmeli boşanma süreci, boşanma avukatı ücretleri",
-  },
-  {
-    slug: "vekaletname-rehberi-almanya",
-    slugDE: "tuerkische-vekaletname-deutschland",
-    slugTR: "almanya-da-vekaletname-cikarma-rehberi",
-    titleDE: "Türkische Vollmacht (Vekaletname) in Deutschland",
-    titleTR: "Almanya'da Türk Vekaletnamesi: Noter, Apostil ve Konsolosluk Rehberi",
-    excerptDE: "Vekaletname in Deutschland erstellen — Schritte nach türkischem Notariatsrecht.",
-    excerptTR: "Almanya'da nasıl vekaletname çıkarılır? Apostil ve tercüme süreçleri.",
-    contentDE: `**RECHTLICHER HINWEIS:** Dieser Artikel befasst sich ausschließlich mit dem türkischen Recht. Eine Beratung zum deutschen Recht (z.B. deutsches Erbrecht, Familienrecht nach BGB oder deutsches Migrationsrecht) findet in unserer Kanzlei nicht statt.
-
-### Die Vekaletname
-
-Für Rechtsgeschäfte in der Türkei benötigen Sie eine formelle Vollmacht (**Vekaletname**).
-
-**Verfahren**:
-- Über ein türkisches Konsulat.
-- Über einen deutschen Notar mit anschließender Apostille und Übersetzung.
-
-**Doğru Kanzlei**: Wir stellen Ihnen die passenden Textvorlagen für Ihre türkische Vollmacht zur Verfügung.`,
-    contentTR: `**YASAL UYARI:** Bu makale yalnızca Türk hukuku ile ilgilidir. Büromuzda Alman hukuku (örneğin Alman miras hukuku, BGB uyarınca aile hukuku veya Alman göç hukuku) konusunda danışmanlık verilmemektedir.
-
-### Vekaletname İşlemleri
-
-Türkiye'deki işlemleriniz için gerekli olan yetki belgesidir.`,
-    category: "Hukuki Danışmanlık",
-    categoryDE: "Rechtsberatung",
-    image: vekaletnameImg,
-    dateDE: "2. April 2026",
-    dateTR: "2 Nisan 2026",
-    readTimeDE: "6 Min. Lesezeit",
-    readTimeTR: "6 dk okuma",
-    publishedAt: "2026-04-02",
-    keywordsDE: "Türkische Vekaletname Deutschland, Vollmacht Konsulat Türkei, Notar Vollmacht Türkei Apostille, Vollmacht Muster Türkei, Anwaltsvollmacht Türkei Mannheim",
-    keywordsTR: "Almanya'da vekaletname çıkarma, konsolosluk vekaletname randevu, Alman noterinden vekalet apostil, vekaletname örneği Türkiye, avukat vekaletnamesi nasıl verilir",
+    faqTR: [
+      {
+        question: "Almanya'da yaşıyorum, Türkiye'de boşanma davası açabilir miyim?",
+        answer: "Evet. Türk vatandaşı olmanız yeterlidir. Avukatınıza vekâletname verirseniz Türkiye'ye gitmeden dava açılabilir."
+      },
+      {
+        question: "Anlaşmalı boşanmada kesinlikle Türkiye'ye gitmem gerekiyor mu?",
+        answer: "Hukuki olarak hâkimin tarafları bizzat dinlemesi zorunludur. Ancak SEGBİS sistemi veya konsolosluk istinabesi yoluyla bu zorunluluk bazı mahkemelerde aşılabilir. Avukatınızla birlikte değerlendirin. Türkiye'ye gidemiyorsanız çekişmeli yoldan anlaşmalı boşanma da bir seçenektir."
+      },
+      {
+        question: "Çekişmeli boşanmada avukatım beni temsil edebilir mi?",
+        answer: "Evet. Çekişmeli davalarda avukat temsili yeterlidir. Mahkemenin sizi bizzat dinlemesine karar verdiği durumlarda SEGBİS veya istinabe yoluna başvurulabilir."
+      },
+      {
+        question: "Türkiye'de boşanırsam kararı Almanya'da tanıtmam gerekiyor mu?",
+        answer: "Evet, Almanya'da yeniden evlenmek istiyorsanız Türk boşanma kararının Almanya'da tanınması gerekebilir. Bu işlem FamFG § 107 kapsamında eyalet adalet makamlarınca yürütülür."
+      },
+      {
+        question: "Eşim Türkiye'de yaşıyor, ben Almanya'dayım. Türkiye'de çekişmeli boşanma açsam tebligat nasıl yapılır?",
+        answer: "Tebligat Türkiye'deki eşinizin adresine yapılır. Türkiye'de yaşayan kişiye iç tebligat yapıldığı için bu süreç görece hızlıdır. Avukatla temsil ediliyorsa daha da hızlanır."
+      },
+      {
+        question: "Boşanma protokolü hazırlamamız ne kadar sürer?",
+        answer: "Taraflar temel konularda anlaşıyorsa avukatın yönlendirmesiyle protokol 1-2 hafta içinde hazırlanabilir. Mal paylaşımı detayları karmaşıksa daha uzun sürebilir."
+      },
+      {
+        question: "Türkiye'deki taşınmazımı mal paylaşımına dahil edebilir miyim?",
+        answer: "Evet. Evlilik süresince edinilmiş taşınmazlar kural olarak mal paylaşımına dahildir. Tapu müdürlüğü nezdinde işlem yapılabilmesi için ya boşanma protokolüne yazılmalı ya da ayrı bir mal paylaşımı davası açılmalıdır."
+      },
+      {
+        question: "Her iki taraf da Almanya'da yaşıyorsa hangi ülkede boşanmak daha mantıklı?",
+        answer: "Bu durumda her iki seçenek de mümkündür. Almanya'da boşanıp tanıma-tenfiz açmak ile Türkiye'de avukat aracılığıyla boşanmak arasındaki tercih; süre, maliyet, Türkiye'deki mal varlığı ve tarafların koşullarına göre değişir. Avukatınızla somut durumunuzu değerlendirin."
+      }
+    ],
+    faqDE: [
+      {
+        question: "Ich lebe in Deutschland. Kann ich in der Türkei eine Scheidungsklage einreichen?",
+        answer: "Ja. Als türkischer Staatsangehöriger können Sie in der Türkei klagen. Mit einer Vollmacht kann Ihr Anwalt das Verfahren vollständig in Ihrem Namen führen."
+      },
+      {
+        question: "Muss ich für eine einvernehmliche Scheidung zwingend in die Türkei reisen?",
+        answer: "Rechtlich gesehen muss der Richter beide Parteien persönlich anhören. Über SEGBİS (Video) oder Rechtshilfe über das Konsulat kann diese Pflicht aber in vielen Fällen ohne Reise erfüllt werden. Fragen Sie Ihren Anwalt nach der Praxis des zuständigen Gerichts."
+      },
+      {
+        question: "Kann mein Anwalt mich bei einer streitigen Scheidung vollständig vertreten?",
+        answer: "Ja. Bei streitigen Verfahren ist die anwaltliche Vertretung grundsätzlich ausreichend. In Ausnahmefällen, in denen das Gericht eine persönliche Anhörung anordnet, ist SEGBİS oder Rechtshilfe über das Konsulat möglich."
+      },
+      {
+        question: "Muss ein türkisches Scheidungsurteil in Deutschland anerkannt werden?",
+        answer: "Ja, wenn Sie in Deutschland erneut heiraten möchten oder der Personenstand in Deutschland geändert werden soll, ist ein Anerkennungsverfahren nach § 107 FamFG bei der zuständigen Landesjustizverwaltung erforderlich."
+      },
+      {
+        question: "Mein Partner lebt in der Türkei und zahlt keinen Unterhalt. Was kann ich tun?",
+        answer: "Zunächst benötigen Sie ein Tenfiz-Urteil in der Türkei, falls das Unterhaltsurteil aus Deutschland stammt. Bei einem türkischen Unterhaltsurteil kann direkt die Zwangsvollstreckung in der Türkei beantragt werden — Pfändung von Bankkonten, Gehalt oder Immobilien. Bei beharrlicher Verweigerung droht nach türkischem Recht Beugehaft."
+      },
+      {
+        question: "Wie lange dauert das Scheidungsprotokoll zu erstellen?",
+        answer: "Wenn die Parteien grundsätzlich einig sind, kann ein Anwalt das Protokoll in 1–2 Wochen ausarbeiten. Bei komplexen Vermögensverhältnissen kann es länger dauern."
+      },
+      {
+        question: "Wir besitzen beide Immobilien in der Türkei. Wie regeln wir das?",
+        answer: "Diese Frage ist Teil der Vermögensaufteilung. Wenn das Protokoll die Immobilien regelt und der Richter genehmigt, kann die Übertragung direkt beim türkischen Grundbuchamt (Tapu Müdürlüğü) beantragt werden. Ist das nicht der Fall, ist eine separate Güterrechtsklage erforderlich."
+      }
+    ]
   },
 ];
