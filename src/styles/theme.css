@@ -158,6 +158,35 @@
     font-weight: var(--font-weight-normal);
     line-height: 1.5;
   }
+
+  /* Premium Blog Table Styling */
+  .blog-table-wrapper {
+    @apply my-12 overflow-x-auto rounded-xl border border-brand-green/10 bg-white shadow-sm ring-1 ring-black/5;
+  }
+
+  .blog-table {
+    @apply w-full border-collapse text-left text-sm md:text-base;
+  }
+
+  .blog-table thead tr {
+    @apply bg-brand-green text-white;
+  }
+
+  .blog-table th {
+    @apply px-6 py-4 font-serif font-semibold tracking-wide border-b border-white/10 first:rounded-tl-xl last:rounded-tr-xl;
+  }
+
+  .blog-table td {
+    @apply px-6 py-4 text-[#444] leading-relaxed border-b border-brand-green/5;
+  }
+
+  .blog-table tbody tr:last-child td {
+    @apply border-b-0;
+  }
+
+  .blog-table tbody tr {
+    @apply transition-colors duration-200 hover:bg-[#F7F5F0];
+  }
 }
 
 /* Language-specific typographic refinements */

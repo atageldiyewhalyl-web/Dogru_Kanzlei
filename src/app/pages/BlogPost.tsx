@@ -241,115 +241,184 @@ export function BlogPost() {
           <div className="max-w-[720px] mx-auto">
             <div className="prose prose-xl prose-stone max-w-none font-sans text-[#333] leading-[1.9] font-[450] selection:bg-[#B8963E]/20">
               <div lang={language === 'tr' ? 'tr' : 'de'}>
-                {content.split('\n').map((line, idx) => {
-                  const trimmedLine = line.trim();
-                  
-                  if (!trimmedLine) return <div key={idx} className="h-6" />;
+            <div className="prose prose-xl prose-stone max-w-none font-sans text-[#333] leading-[1.9] font-[450] selection:bg-[#B8963E]/20">
+              <div lang={language === 'tr' ? 'tr' : 'de'}>
+                {(() => {
+                  const lines = content.split('\n');
+                  const renderedElements = [];
+                  let i = 0;
+                  let foundFirstParagraph = false;
 
-                  // Handle Horizontal Rules - more decorative
-                  if (trimmedLine === '---') {
-                    return (
-                      <div key={idx} className="flex justify-center items-center gap-4 my-20">
-                        <div className="w-16 h-[1px] bg-[#1C3829]/10" />
-                        <div className="w-2 h-2 rounded-full border border-[#8B6E2A]" />
-                        <div className="w-16 h-[1px] bg-[#1C3829]/10" />
-                      </div>
-                    );
-                  }
+                  while (i < lines.length) {
+                    const line = lines[i];
+                    const trimmedLine = line.trim();
 
-                  // Handle Headers (Large & elegant)
-                  if (trimmedLine.startsWith('###')) {
-                    return (
-                      <h3 key={idx} className="font-serif text-2xl md:text-3xl text-[#1C3829] mt-16 mb-8 font-semibold tracking-tight leading-snug">
-                        {processInlineStyles(trimmedLine.replace(/###/g, '').trim())}
-                      </h3>
-                    );
-                  }
+                    // 1. Handle Empty Lines
+                    if (!trimmedLine) {
+                      renderedElements.push(<div key={`empty-${i}`} className="h-6" />);
+                      i++;
+                      continue;
+                    }
 
-                  if (trimmedLine.startsWith('##')) {
-                    return (
-                      <motion.h2 
-                        initial={{ opacity: 0, x: -10 }}
-                        whileInView={{ opacity: 1, x: 0 }}
-                        viewport={{ once: true, margin: "-100px" }}
-                        key={idx} 
-                        className="font-serif text-3xl md:text-4xl text-[#1C3829] mt-24 mb-12 font-medium tracking-tight relative pb-6 border-b border-[#1C3829]/5"
-                      >
-                        <span className="absolute bottom-0 left-0 w-16 h-1 bg-[#8B6E2A]" />
-                        {processInlineStyles(trimmedLine.replace(/##/g, '').trim())}
-                      </motion.h2>
-                    );
-                  }
+                    // 2. Handle Tables
+                    if (trimmedLine.startsWith('|')) {
+                      const tableRows = [];
+                      while (i < lines.length && lines[i].trim().startsWith('|')) {
+                        const rowCells = lines[i]
+                          .split('|')
+                          .filter((_, idx, arr) => idx > 0 && idx < arr.length - 1)
+                          .map(cell => cell.trim());
+                        
+                        // Skip separator rows (|---|---|)
+                        if (!rowCells.every(cell => cell.match(/^:?-+:?$/))) {
+                          tableRows.push(rowCells);
+                        }
+                        i++;
+                      }
 
-                  // Handle Blockquotes - elegant & academic
-                  if (trimmedLine.startsWith('> ')) {
-                    return (
-                      <blockquote key={idx} className="relative border-none pl-12 py-10 my-20 italic text-[#1C3829]/90 font-serif text-2xl bg-white shadow-sm ring-1 ring-black/5 rounded-xl pr-10">
-                        <Quote className="absolute top-6 left-6 text-[#B8963E]/20 w-12 h-12 -z-10" />
-                        {processInlineStyles(trimmedLine.replace('> ', '').trim())}
-                      </blockquote>
-                    );
-                  }
+                      if (tableRows.length > 0) {
+                        const [header, ...body] = tableRows;
+                        renderedElements.push(
+                          <div key={`table-${i}`} className="blog-table-wrapper">
+                            <table className="blog-table">
+                              <thead>
+                                <tr>
+                                  {header.map((cell, cellIdx) => (
+                                    <th key={cellIdx}>
+                                      {processInlineStyles(cell)}
+                                    </th>
+                                  ))}
+                                </tr>
+                              </thead>
+                              <tbody>
+                                {body.map((row, rowIdx) => (
+                                  <tr key={rowIdx}>
+                                    {row.map((cell, cellIdx) => (
+                                      <td key={cellIdx}>
+                                        {processInlineStyles(cell)}
+                                      </td>
+                                    ))}
+                                  </tr>
+                                ))}
+                              </tbody>
+                            </table>
+                          </div>
+                        );
+                      }
+                      continue;
+                    }
 
-                  // Handle List Items
-                  if (trimmedLine.startsWith('- ')) {
-                    return (
-                      <li key={idx} className="ml-2 pl-4 mb-4 list-none relative text-[#444]">
-                        <span className="absolute left-[-1.5rem] top-[0.6rem] w-1.5 h-1.5 rounded-full bg-[#8B6E2A]/60" />
-                        <span className="inline-block transition-transform duration-300 hover:translate-x-1">
-                          {processInlineStyles(trimmedLine.replace('- ', '').trim())}
-                        </span>
-                      </li>
-                    );
-                  }
-                  
-                  if (/^\d+\./.test(trimmedLine)) {
-                     return (
-                        <div key={idx} className="ml-2 pl-4 mb-6 relative text-[#444] flex gap-4">
+                    // 3. Handle Other Blocks
+                    let element = null;
+
+                    // Horizontal Rules
+                    if (trimmedLine === '---') {
+                      element = (
+                        <div key={i} className="flex justify-center items-center gap-4 my-20">
+                          <div className="w-16 h-[1px] bg-[#1C3829]/10" />
+                          <div className="w-2 h-2 rounded-full border border-[#8B6E2A]" />
+                          <div className="w-16 h-[1px] bg-[#1C3829]/10" />
+                        </div>
+                      );
+                    }
+                    // Headers
+                    else if (trimmedLine.startsWith('###')) {
+                      element = (
+                        <h3 key={i} className="font-serif text-2xl md:text-3xl text-[#1C3829] mt-16 mb-8 font-semibold tracking-tight leading-snug">
+                          {processInlineStyles(trimmedLine.replace(/###/g, '').trim())}
+                        </h3>
+                      );
+                    }
+                    else if (trimmedLine.startsWith('##')) {
+                      element = (
+                        <motion.h2 
+                          initial={{ opacity: 0, x: -10 }}
+                          whileInView={{ opacity: 1, x: 0 }}
+                          viewport={{ once: true, margin: "-100px" }}
+                          key={i} 
+                          className="font-serif text-3xl md:text-4xl text-[#1C3829] mt-24 mb-12 font-medium tracking-tight relative pb-6 border-b border-[#1C3829]/5"
+                        >
+                          <span className="absolute bottom-0 left-0 w-16 h-1 bg-[#8B6E2A]" />
+                          {processInlineStyles(trimmedLine.replace(/##/g, '').trim())}
+                        </motion.h2>
+                      );
+                    }
+                    // Blockquotes
+                    else if (trimmedLine.startsWith('> ')) {
+                      element = (
+                        <blockquote key={i} className="relative border-none pl-12 py-10 my-20 italic text-[#1C3829]/90 font-serif text-2xl bg-white shadow-sm ring-1 ring-black/5 rounded-xl pr-10">
+                          <Quote className="absolute top-6 left-6 text-[#B8963E]/20 w-12 h-12 -z-10" />
+                          {processInlineStyles(trimmedLine.replace('> ', '').trim())}
+                        </blockquote>
+                      );
+                    }
+                    // List Items
+                    else if (trimmedLine.startsWith('- ')) {
+                      element = (
+                        <li key={i} className="ml-2 pl-4 mb-4 list-none relative text-[#444]">
+                          <span className="absolute left-[-1.5rem] top-[0.6rem] w-1.5 h-1.5 rounded-full bg-[#8B6E2A]/60" />
+                          <span className="inline-block transition-transform duration-300 hover:translate-x-1">
+                            {processInlineStyles(trimmedLine.replace('- ', '').trim())}
+                          </span>
+                        </li>
+                      );
+                    }
+                    // Number Lists
+                    else if (/^\d+\./.test(trimmedLine)) {
+                      element = (
+                        <div key={i} className="ml-2 pl-4 mb-6 relative text-[#444] flex gap-4">
                            <span className="font-serif text-[#8B6E2A] italic text-xl font-bold min-w-[1.5rem]">{trimmedLine.match(/^\d+/)?.[0]}.</span>
                            <span className="pt-0.5">{processInlineStyles(trimmedLine.replace(/^\d+\.\s*/, '').trim())}</span>
                         </div>
-                     )
+                      );
+                    }
+                    // Skip H1 Titles (already rendered in header)
+                    else if (trimmedLine.startsWith('# ')) {
+                      i++;
+                      continue;
+                    }
+                    // Paragraphs
+                    else {
+                      if (!foundFirstParagraph) {
+                        foundFirstParagraph = true;
+                        element = (
+                          <div key={i} className="mb-8 last:mb-0 text-lg md:text-xl relative">
+                            <style dangerouslySetInnerHTML={{ __html: `
+                              .drop-cap-text::first-letter {
+                                float: left;
+                                font-size: 4.8rem;
+                                line-height: 1;
+                                padding-right: 0.8rem;
+                                padding-top: 0.4rem;
+                                color: #1C3829;
+                                font-family: serif;
+                                font-weight: 700;
+                                height: 0.85em;
+                              }
+                            `}} />
+                            <div className="drop-cap-text text-[#222]">
+                              {processInlineStyles(trimmedLine)}
+                            </div>
+                            <div className="clear-both" />
+                          </div>
+                        );
+                      } else {
+                        element = (
+                          <p key={i} className="mb-8 last:mb-0 text-[19px] md:text-[21px] text-[#444]">
+                            {processInlineStyles(trimmedLine)}
+                          </p>
+                        );
+                      }
+                    }
+
+                    renderedElements.push(element);
+                    i++;
                   }
 
-                  // Drop Cap for first paragraph
-                  const isParagraph = !trimmedLine.startsWith('#') && !trimmedLine.startsWith('>') && !trimmedLine.startsWith('-') && !trimmedLine.startsWith('---') && !/^\d+\./.test(trimmedLine);
-                  
-                  // Skip duplication of Title if it's rendered as H1 in MD
-                  if (trimmedLine.startsWith('# ')) return null;
-
-                  if (isParagraph && !hasFoundFirstParagraph) {
-                    hasFoundFirstParagraph = true;
-                    return (
-                      <div key={idx} className="mb-8 last:mb-0 text-lg md:text-xl relative">
-                        <style dangerouslySetInnerHTML={{ __html: `
-                          .drop-cap-text::first-letter {
-                            float: left;
-                            font-size: 4.8rem;
-                            line-height: 1;
-                            padding-right: 0.8rem;
-                            padding-top: 0.4rem;
-                            color: #1C3829;
-                            font-family: serif;
-                            font-weight: 700;
-                            height: 0.85em;
-                          }
-                        `}} />
-                        <div className="drop-cap-text text-[#222]">
-                          {processInlineStyles(trimmedLine)}
-                        </div>
-                        <div className="clear-both" />
-                      </div>
-                    );
-                  }
-
-                  // Normal Paragraph
-                  return (
-                    <p key={idx} className="mb-8 last:mb-0 text-[19px] md:text-[21px] text-[#444]">
-                      {processInlineStyles(trimmedLine)}
-                    </p>
-                  );
-                })}
+                  return renderedElements;
+                })()}
+              </div>
+            </div>
               </div>
             </div>
 
