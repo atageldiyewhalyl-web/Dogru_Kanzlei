@@ -41,6 +41,785 @@ export interface BlogPost {
 
 export const blogPosts: BlogPost[] = [
   {
+    slug: "almanya-bosanma-tanima-tenfiz-davasi-rehberi",
+    slugDE: "deutschland-scheidung-anerkennung-tuerkei-tanima-tenfiz",
+    slugTR: "almanya-bosanma-tanima-tenfiz-davasi-rehberi",
+    titleDE: "In Deutschland geschieden – Was jetzt in der Türkei? Der vollständige Leitfaden zu Tanıma & Tenfiz (2026)",
+    titleTR: "Almanya'da Boşandım, Türkiye'de Tanıma Tenfiz Davası Nasıl Açılır? (2026 Güncel Rehber)",
+    excerptDE: "Anerkennung deutscher Scheidungsurteile in der Türkei (Tanıma ve Tenfiz). Ein umfassender Leitfaden zu Personenstand, Vermögensaufteilung, Sorgerecht und Unterhalt.",
+    excerptTR: "Almanya'da boşanan Türk vatandaşları için Türkiye'de tanıma ve tenfiz davası rehberi. Nüfus kaydı, miras hakları, mal paylaşımı ve velayet süreçleri.",
+    contentDE: `**RECHTLICHER HINWEIS:** Dieser Artikel befasst sich ausschließlich mit dem türkischen Recht. Eine Beratung zum deutschen Recht findet in unserer Kanzlei nicht statt.
+
+---
+
+Sie sind in Deutschland geschieden. Das Scheidungsurteil liegt vor, die Sache scheint erledigt. Dann, Monate später, stellen Sie bei einem Behördengang in der Türkei fest: **In der Türkei gelten Sie offiziell noch als verheiratet.**
+
+Das ist kein Einzelfall. Hunderttausende türkischstämmige Menschen in Deutschland wissen nicht, dass ein deutsches Scheidungsurteil in der Türkei **nicht automatisch gilt**. Um Ihren Personenstandsstatus in der Türkei zu aktualisieren, erneut heiraten zu können, Vermögen zu regeln, Unterhaltsansprüche durchzusetzen oder Sorgerechtsfragen zu klären, ist ein gesondertes Anerkennungsverfahren vor einem türkischen Gericht erforderlich — das sogenannte **Tanıma ve Tenfiz**-Verfahren.
+
+Dieser Leitfaden erklärt Ihnen als Person mit Wohnsitz in Deutschland umfassend, wie Sie dieses Verfahren vollständig von hier aus durchführen können — **ohne Reise in die Türkei** — und was bei Vermögensaufteilung, Sorgerecht und Unterhalt zu beachten ist.
+
+---
+
+## Tanıma vs. Tenfiz: Was ist der Unterschied?
+
+Diese beiden Begriffe werden häufig verwechselt, und die falsche Einschätzung kann dazu führen, dass die falsche Klage erhoben wird — mit entsprechendem Rechtsverlust.
+
+### Tanıma (Anerkennung)
+
+Tanıma bedeutet, dass das deutsche Urteil in der Türkei als rechtskräftig anerkannt wird — es erlangt damit die gleiche Wirkung wie ein türkisches Gerichtsurteil. Wenn Ihr Scheidungsurteil **ausschließlich die Scheidung** ausspricht und keinerlei vollstreckbare Regelungen zu Sorgerecht, Unterhalt oder Schadensersatz enthält, ist ein Tanıma-Verfahren ausreichend. Das Ergebnis: Ihr Personenstand wird in der Türkei auf „geschieden" geändert.
+
+### Tenfiz (Vollstreckbarerklärung)
+
+Tenfiz geht einen Schritt weiter. Es ermöglicht, dass das ausländische Urteil in der Türkei **vollstreckt** werden kann. Wenn das deutsche Urteil neben der Scheidung auch Regelungen zu Unterhalt, Sorgerecht, Schadensersatz oder Vermögensaufteilung enthält, müssen diese Regelungen durch Tenfiz in der Türkei vollstreckbar gemacht werden.
+
+Ohne Tenfiz kann ein Unterhaltsurteil in der Türkei nicht vollstreckt werden. Ein Sorgerechtsbeschluss wird türkischen Behörden gegenüber nicht anerkannt. Eine Vermögensregelung bleibt wirkungslos.
+
+### Was passiert in der Praxis?
+
+Die meisten deutschen Scheidungsurteile enthalten sowohl die Scheidung als auch Regelungen zu Unterhalt, Sorgerecht oder Vermögen. Ihr Anwalt wird daher in der Regel beide Verfahren gemeinsam beantragen. Welche Klage die richtige ist, hängt stets vom konkreten Inhalt Ihres Urteils ab und muss individuell bewertet werden.
+
+---
+
+## Was passiert, wenn Sie nichts unternehmen?
+
+Die Konsequenzen können weit über eine formale Unannehmlichkeit hinausgehen:
+
+**Personenstand:** In der Türkei gelten Sie weiterhin als verheiratet. Eine erneute Heirat ist nicht möglich. Wichtig: Das deutsche Standesamt kann bei einer erneuten Heirat eine türkische Ehefähigkeitsbescheinigung verlangen — wenn Sie in der Türkei noch als verheiratet geführt werden, erhalten Sie diese nicht.
+
+**Erbrecht:** Ihr Ex-Partner bleibt in der Türkei gesetzlicher Erbberechtigter. Sollten Sie versterben, können Ihre Immobilien, Bankkonten und sonstigen Vermögenswerte in der Türkei an diese Person fallen. Es gibt dokumentierte Fälle, in denen Ex-Partner einen Erbschein (Veraset ilamı) erlangt und damit Vermögen übertragen haben.
+
+**Vermögen in der Türkei:** Wenn Sie Immobilien, Grundstücke oder Bankkonten in der Türkei besitzen, kann Ihr Ex-Partner Ansprüche darauf geltend machen. Tapu Müdürlüğü (Grundbuchamt) und Banken akzeptieren ohne abgeschlossenes Tanıma-Tenfiz-Verfahren keine ausländischen Gerichtsurteile.
+
+**Unterhalt und Sorgerecht:** Ein deutsches Unterhaltsurteil ist in der Türkei ohne Tenfiz nicht vollstreckbar. Sorgerechtsbeschlüsse werden von türkischen Behörden nicht anerkannt. Das bedeutet: Ihr Ex-Partner kann sich in der Türkei faktisch über das Urteil hinwegsetzen.
+
+**Kinder:** Ohne anerkannten Sorgerechtsbeschluss kann es bei Reisepässen, Schulanmeldungen und Reisegenehmigungen für Ihre Kinder in der Türkei zu erheblichen bürokratischen Problemen kommen.
+
+---
+
+## Welche Dokumente werden benötigt?
+
+Das ist die häufigste praktische Hürde für Menschen, die in Deutschland leben. Folgende Unterlagen aus Deutschland benötigt Ihr türkischer Anwalt:
+
+### 1. Scheidungsurteil (Scheidungsbeschluss)
+
+Das Original des Scheidungsurteils des zuständigen deutschen Familiengerichts, mit Stempel and Originalunterschrift. Eine Kopie oder ein Ausdruck aus dem Internet wird nicht akzeptiert. Sie müssen eine beglaubigte Ausfertigung beim Gericht anfordern.
+
+### 2. Rechtskraftvermerk
+
+Dies ist das wichtigste und am häufigsten übersehene Dokument — und für viele türkische Anwälte ohne Deutschland-Erfahrung unbekannt. Der Rechtskraftvermerk ist der amtliche Nachweis, dass das Urteil nicht mehr angefochten werden kann — also rechtskräftig ist. Türkische Gerichte akzeptieren das Scheidungsurteil ohne diesen Vermerk nicht, da sie die Rechtskraft als Verfahrensvoraussetzung prüfen müssen.
+
+Den Rechtskraftvermerk erhalten Sie beim Familiengericht, das das Scheidungsurteil erlassen hat. Er wird in der Regel gegen eine Gebühr auf einer separaten Seite oder auf dem Urteil selbst ausgestellt.
+
+### 3. Apostille
+
+Da Deutschland dem Haager Übereinkommen zur Befreiung ausländischer öffentlicher Urkunden von der Legalisation angehört, können Dokumente mit einer Apostille versehen werden. Die Apostille bestätigt die Echtheit des Dokuments und ermöglicht seine offizielle Anerkennung in der Türkei.
+
+In Baden-Württemberg — also wenn Sie in Mannheim oder Umgebung leben — wird die Apostille beim Oberlandesgericht Karlsruhe beantragt. In anderen Bundesländern ist die zuständige Behörde unterschiedlich (z. B. Regierungspräsidium oder Oberlandesgericht).
+
+### 4. Beglaubigte türkische Übersetzung
+
+Alle Dokumente müssen von einem in der Türkei zugelassenen, vereidigten Übersetzer ins Türkische übersetzt und notariell beglaubigt werden. Diese Übersetzung kann in der Türkei angefertigt werden; die Dokumente können postalisch oder digital übermittelt werden.
+
+### 5. Vollmacht (Vekâletname)
+
+Um das Verfahren ohne persönliche Anwesenheit in der Türkei führen zu können, erteilen Sie Ihrem Anwalt eine notarielle Vollmacht, die ausdrücklich die Befugnis zur Tanıma ve Tenfiz enthält. Diese Vollmacht kann bei einem deutschen Notar errichtet werden — zum Beispiel in Mannheim. Wichtig: Die Vollmacht muss explizit die Begriffe „Tanıma ve Tenfiz davası" enthalten; eine allgemeine Prozessvollmacht kann von einzelnen Gerichten als unzureichend betrachtet werden.
+
+---
+
+## Schritt für Schritt: So läuft das Verfahren ab
+
+### Schritt 1 — Dokumente beschaffen
+
+Sie fordern beim zuständigen deutschen Familiengericht das Scheidungsurteil (beglaubigte Ausfertigung) und den Rechtskraftvermerk an. Anschließend lassen Sie die Apostille beim zuständigen Oberlandesgericht anbringen. Dieser Schritt dauert je nach Gerichtsauslastung einige Wochen.
+
+### Schritt 2 — Vollmacht beim deutschen Notar
+
+Sie erteilen Ihrem türkischen Anwalt beim deutschen Notar eine Vollmacht. In Mannheim und Umgebung ist dies problemlos möglich. Eine Reise in die Türkei ist nicht erforderlich.
+
+### Schritt 3 — Beglaubigte Übersetzung
+
+Die Unterlagen werden durch einen in der Türkei zugelassenen vereidigten Übersetzer ins Türkische übersetzt und notariell beglaubigt.
+
+### Schritt 4 — Klageerhebung
+
+Ihr Anwalt erhebt beim zuständigen türkischen Familiengericht Klage auf Anerkennung (Tanıma) und/oder Vollstreckbarerklärung (Tenfiz). Haben Sie keinen festen Wohnsitz in der Türkei, kann die Klage bei den Familiengerichten in Istanbul, Ankara oder İzmir erhoben werden.
+
+### Schritt 5 — Zustellungsphase
+
+Die Zustellung an die Gegenseite ist die zeitaufwendigste Phase des Verfahrens. Ist die Adresse der Gegenseite bekannt und sind beide Parteien anwaltlich vertreten, kann diese Phase in wenigen Wochen abgeschlossen sein. Ist die Adresse unbekannt oder weigert sich die Gegenseite, die Zustellung anzunehmen, kann das Verfahren erheblich verlängert werden. Die korrekte Angabe der Zustelladresse ist daher von entscheidender Bedeutung.
+
+### Schritt 6 — Verhandlung und Urteil
+
+Ihr Anwalt nimmt an allen Verhandlungen für Sie teil. Eine persönliche Anwesenheit in der Türkei ist nicht erforderlich.
+
+### Schritt 7 — Personenstandsänderung
+
+Nach Rechtskraft des Urteils wird das Standesamt (Nüfus Müdürlüğü) in der Türkei informiert und Ihr Personenstand auf „geschieden" geändert.
+
+**Durchschnittliche Dauer:** Bei vollständigen Unterlagen und anwaltlicher Vertretung beider Parteien in der Regel **3 bis 6 Monate.** Bei Zustellungsproblemen kann sich das Verfahren auf bis zu 12 Monate verlängern.
+
+---
+
+## Die Standesamt-Alternative: Geht es auch ohne Gericht?
+
+Durch eine Gesetzesänderung im Jahr 2017 (Ergänzung des türkischen Personenstandsgesetzes Nr. 5490) ist es unter bestimmten Voraussetzungen möglich, die Anerkennung einer ausländischen Scheidung **ohne Gerichtsverfahren** direkt beim türkischen Standesamt (Nüfus Müdürlüğü) oder über das türkische Konsulat zu beantragen. Das ist eine wichtige Erleichterung, die viele nicht kennen.
+
+### Wann ist dieser Weg möglich?
+
+Dieser Weg steht offen, wenn **alle** folgenden Voraussetzungen erfüllt sind:
+
+- Das ausländische Urteil enthält **ausschließlich die Scheidung** — keine vollstreckbaren Regelungen zu Unterhalt, Sorgerecht oder Schadensersatz
+- **Beide Parteien beantragen gemeinsam** die Eintragung beim Standesamt
+- Alle erforderlichen Dokumente (apostilliertes Scheidungsurteil, Rechtskraftvermerk, beglaubigte Übersetzung) liegen vollständig vor
+
+### Wann funktioniert dieser Weg nicht?
+
+In folgenden Fällen ist der Gerichtsweg zwingend:
+
+- Die Gegenseite ist nicht kooperativ oder verweigert den gemeinsamen Antrag
+- Das Urteil enthält Regelungen zu Unterhalt, Sorgerecht, Schadensersatz oder Vermögen
+- Der Antrag beim Standesamt wird abgelehnt (dann bleibt nur der Klageweg)
+
+### Antrag über das türkische Konsulat in Deutschland
+
+Für in Deutschland lebende Personen besteht auch die Möglichkeit, den Antrag über das türkische Generalkonsulat (z. B. in Frankfurt, Stuttgart oder Köln) zu stellen, sofern alle Voraussetzungen erfüllt sind. Auch hierbei ist anwaltliche Begleitung empfehlenswert, um Fehler und Ablehnungen zu vermeiden.
+
+---
+
+## Vermögensaufteilung: Was passiert mit Immobilien in der Türkei?
+
+Viele in Deutschland lebende Türken besitzen Immobilien, Grundstücke oder andere Vermögenswerte in der Türkei. Die Regelung dieser Vermögenswerte nach einer Scheidung ist eng mit dem Tanıma-Tenfiz-Verfahren verknüpft.
+
+### Das deutsche Gericht hat eine Vermögensregelung getroffen
+
+Hat das deutsche Familiengericht neben der Scheidung auch eine Vermögensaufteilung beschlossen, muss diese Regelung durch **Tenfiz** in der Türkei vollstreckbar gemacht werden. Ohne Tenfiz werden weder das Grundbuchamt (Tapu Müdürlüğü) noch Banken eine Übertragung oder sonstige Verfügung auf Basis des deutschen Urteils vornehmen. Selbst wenn das Urteil die Übertragung einer türkischen Immobilie anordnet, ist dies ohne Tenfiz in der Türkei nicht durchsetzbar.
+
+### Das deutsche Gericht hat keine Vermögensregelung für die Türkei getroffen
+
+Hat das deutsche Gericht nur die Scheidung ausgesprochen und keine Regelung für in der Türkei befindliche Vermögenswerte getroffen, ist in der Türkei ein separates **Güterrechtsverfahren** (Mal rejiminin tasfiyesi davası) erforderlich. Dieses setzt voraus, dass die Scheidung zunächst durch Tanıma in der Türkei anerkannt wurde.
+
+Wichtiger Zeitpunkt: Bei der türkischen Vermögensaufteilung kommt es auf den **Zeitpunkt der Klageerhebung in Deutschland** an — also auf das Datum, an dem das deutsche Scheidungsverfahren eingeleitet wurde. Denn nur die bis zu diesem Datum erworbenen Vermögenswerte fallen in den Aufteilungsbereich. Je später Sie die Tanıma-Klage in der Türkei erheben, desto mehr kann dieser Zeitraum zu Ihrem Nachteil verschoben wirken.
+
+### Einstweilige Verfügung: Kann Ihr Ex-Partner Immobilien in der Türkei verkaufen?
+
+Wenn Sie befürchten, dass die Gegenseite türkische Immobilien veräußert, bevor das Verfahren abgeschlossen ist, können Sie beim türkischen Gericht eine **einstweilige Verfügung** (İhtiyati Tedbir) beantragen. Diese bewirkt, dass ein Verfügungsverbot im Grundbuch eingetragen wird, das Verkauf, Übertragung und Belastung der Immobilie verhindert. Gerade wenn die Gegenseite in der Türkei lebt, ist diese Sicherungsmaßnahme oft dringend geboten.
+
+---
+
+## Sorgerecht: Gilt der deutsche Sorgerechtsbeschluss in der Türkei?
+
+Wenn Kinder im Spiel sind, gewinnt das Tanıma-Tenfiz-Verfahren eine besondere Dringlichkeit.
+
+### Anerkennung des deutschen Sorgerechtsbeschlusses
+
+Ein deutscher Sorgerechtsbeschluss — ob alleiniges oder gemeinsames Sorgerecht — gilt in der Türkei nicht automatisch. Ohne Tenfiz wird er von türkischen Behörden nicht berücksichtigt. Das hat konkrete Folgen:
+
+- Reisepässe für das Kind können in der Türkei ohne Zustimmung beider Elternteile nicht ausgestellt werden
+- Auslandsreisen des Kindes von der Türkei aus setzen die Einwilligung beider Eltern voraus
+- Es besteht das Risiko, dass der andere Elternteil das Kind in der Türkei zurückhält
+
+### Gemeinsames Sorgerecht
+
+In Deutschland ist gemeinsames Sorgerecht die Regel. Auch ein solcher Beschluss kann durch Tenfiz in der Türkei wirksam gemacht werden, sodass die Rechte beider Elternteile bei türkischen Behörden geschützt sind.
+
+### Internationale Kindesentführung
+
+Wenn ein Elternteil das Kind ohne Zustimmung des anderen nach Deutschland bringt oder in der Türkei zurückhält, ist dies ein Fall von internationaler Kindesentführung. Sowohl Deutschland als auch die Türkei sind Vertragsstaaten des Haager Übereinkommens über die zivilrechtlichen Aspekte internationaler Kindesentführung (HKÜ). In solchen Fällen ist sofortiges anwaltliches Handeln erforderlich.
+
+---
+
+## Unterhalt: Deutsches Unterhaltsurteil in der Türkei vollstrecken
+
+Hat das deutsche Gericht Unterhaltszahlungen angeordnet und hat Ihr Ex-Partner Vermögen oder Einkommen in der Türkei, können Sie dieses Urteil in der Türkei vollstrecken — aber **nur nach Tenfiz.**
+
+### Welche Unterhaltsformen können vollstreckt werden?
+
+- **Ehegattenunterhalt** (Yoksulluk nafakası): Unterhalt, der dem geschiedenen Ehegatten zugesprochen wurde
+- **Kindesunterhalt** (İştirak nafakası): Unterhalt für minderjährige Kinder
+
+Der **vorläufige Unterhalt** während des laufenden Scheidungsverfahrens (Tedbir nafakası) kann hingegen nicht Gegenstand des Tenfiz sein, da er nur während des schwebenden Verfahrens gilt und nicht nach Rechtskraft der Scheidung.
+
+### Was passiert bei Nichtzahlung nach Tenfiz?
+
+Nach Erlangung des Tenfiz-Urteils kann über ein türkisches Vollstreckungsgericht (İcra Müdürlüğü) die Zwangsvollstreckung beantragt werden. Verfügt Ihr Ex-Partner über türkische Bankkonten, ein Gehalt oder Immobilien, können diese gepfändet werden. Das türkische Recht sieht bei beharrlicher Nichtzahlung von Unterhalt auch **Beugehaft** (Tazyik hapsi) vor — ein ernstzunehmendes Druckmittel.
+
+### Ex-Partner ist nach Türkei gezogen oder geflohen
+
+Dies ist eine häufige Konstellation unter in Deutschland lebenden Türken. Wenn Ihr Ex-Partner nach der Scheidung in die Türkei gezogen ist oder das Land verlassen hat, ist der Weg über Tenfiz und anschließende Zwangsvollstreckung in der Türkei der richtige. Handeln Sie in diesen Fällen zügig: Je früher die Tenfiz-Klage erhoben und eine einstweilige Verfügung beantragt wird, desto geringer das Risiko eines Vermögensentzugs.
+
+---
+
+## Müssen Sie für dieses Verfahren in die Türkei reisen?
+
+**Nein.** Das ist einer der größten Vorteile, wenn Sie in Deutschland leben.
+
+Mit einer Vollmacht, die Sie beim deutschen Notar erteilen, kann Ihr türkischer Anwalt das gesamte Verfahren in Ihrem Namen führen. Sie müssen an keiner Verhandlung persönlich teilnehmen.
+
+Wir sind als im UYAP-System registrierte Anwälte in der Lage, Ihre türkischen Gerichtsverfahren in Echtzeit aus Deutschland zu überwachen. Verhandlungstermine, Dokumentenstatus, Zustellungsfortschritt — all das beobachten wir laufend, während Sie in Mannheim oder anderswo in Deutschland Ihrem Alltag nachgehen.
+
+---
+
+## Was uns von türkischen Kanzleien unterscheidet
+
+Wenn Sie eine Kanzlei beauftragen, die ausschließlich in der Türkei tätig ist, können folgende Probleme auftreten:
+
+- Mangelnde Kenntnis des deutschen Dokumentensystems: Was ist der Rechtskraftvermerk? Wie beantragt man die Apostille in Baden-Württemberg? Wie wird eine Vollmacht beim deutschen Notar korrekt errichtet? Diese praktischen Details sind von der Türkei aus schwer zu überblicken.
+- Kommunikationsbarrieren: Türkischsprachige Korrespondenz, Zeitverschiebung, verzögerte Rückmeldungen, erschwerte Rückfragen.
+- Fehlende oder falsche Dokumente führen zur Verlängerung oder Abweisung der Klage.
+
+**Unser Büro in Mannheim bedeutet:**
+
+- **Wir begleiten den deutschen Dokumentenprozess aktiv.** Welche Unterlagen von welchem Gericht, wo die Apostille beantragt wird, wie die Vollmacht beim deutschen Notar korrekt formuliert wird — das klären wir gemeinsam, auf Deutsch oder Türkisch.
+- **Doppelte Zulassung.** Wir sind Mitglied der Rechtsanwaltskammer Karlsruhe (§207 BRAO) sowie der Anwaltskammer Ankara. Wir vertreten Sie direkt vor türkischen Gerichten — ohne Zwischenhändler, ohne Mehrkosten durch Kooperationspartner.
+- **UYAP-Zugang in Echtzeit.** Wir überwachen den Stand Ihrer türkischen Gerichtsverfahren direkt aus Deutschland — Verhandlungstermine, Zustellungsstatus, Entscheidungen.
+- **Deutsch und Türkisch.** Wir kommunizieren fließend in beiden Sprachen. Kein Übersetzungsaufwand, keine Missverständnisse.
+- **Über 70 Google-Bewertungen, 5,0 Sterne.** Die Erfahrungen unserer Mandanten sprechen für sich.
+
+---
+
+## Häufig gestellte Fragen
+
+**Ich bin in Deutschland geschieden, gelte aber in der Türkei noch als verheiratet. Was muss ich tun?**
+Sie müssen beim türkischen Familiengericht eine Tanıma-Klage erheben. Das ist kein neues Scheidungsverfahren, sondern ein eigenständiges Verfahren zur Anerkennung des deutschen Urteils. Eine Reise in die Türkei ist nicht erforderlich — eine notarielle Vollmacht genügt.
+
+**Muss mein Ex-Partner am Verfahren teilnehmen?**
+Nein. Das Verfahren kann einseitig eingeleitet werden. Die Gegenseite wird zugestellt; aktive Mitwirkung ist nicht erforderlich. Sind beide Parteien einverstanden und enthält das Urteil nur die Scheidung, kann alternativ der Standesamt-Weg geprüft werden.
+
+**Wie lange dauert das Verfahren?**
+Bei vollständigen Unterlagen und anwaltlicher Vertretung beider Parteien durchschnittlich 3–6 Monate. Zustellungsproblemen kann das Verfahren auf bis zu 12 Monate verlängern.
+
+**Wo erhalte ich den Rechtskraftvermerk?**
+Beim Familiengericht, das das Scheidungsurteil erlassen hat. Sie beantragen ihn schriftlich, in der Regel gegen eine geringe Gebühr. Teilen Sie dem Gericht mit, dass der Vermerk für ein internationales Anerkennungsverfahren in der Türkei benötigt wird — dann wird die Apostille in der Regel direkt miterstellt oder empfohlen.
+
+**Kann ich die Anerkennung über das Standesamt ohne Gericht erledigen?**
+In bestimmten Fällen ja — wenn das Urteil ausschließlich die Scheidung ausspricht und beide Parteien gemeinsam beantragen. Enthält das Urteil Regelungen zu Unterhalt, Sorgerecht oder Vermögen, oder ist die Gegenseite nicht kooperativ, ist der Gerichtsweg zwingend.
+
+**Mein Ex-Partner lebt in der Türkei und zahlt keinen Unterhalt. Was kann ich tun?**
+Sie benötigen zunächst ein Tenfiz-Urteil in der Türkei. Danach kann über das türkische Vollstreckungsgericht die Zwangsvollstreckung beantragt werden — Pfändung von Bankkonten, Gehalt oder Immobilien. Bei beharrlicher Zahlungsverweigerung droht nach türkischem Recht Beugehaft.
+
+**Ich war mit einem deutschen Staatsbürger verheiratet. Gilt das auch für mich?**
+Ja, wenn Sie die türkische Staatsangehörigkeit besitzen oder Inhaber eines Mavi Kart sind. Wenn Sie in Deutschland erneut heiraten möchten, kann das Standesamt eine türkische Ehefähigkeitsbescheinigung verlangen — und dafür müssen Sie in der Türkei als geschieden eingetragen sein.
+
+**Mein Ex-Partner könnte die Immobilie in der Türkei verkaufen. Was kann ich tun?**
+Beantragen Sie beim türkischen Gericht eine einstweilige Verfügung (İhtiyati Tedbir). Diese bewirkt ein Verfügungsverbot im Grundbuch und verhindert Verkauf oder Belastung der Immobilie, solange das Verfahren läuft.
+
+**Ich bin Mavi Kart-Inhaber, aber kein türkischer Staatsangehöriger mehr. Gilt das für mich?**
+Ja. Das Tanıma-Tenfiz-Verfahren ist auch für Mavi Kart-Inhaber relevant, insbesondere wenn Sie wieder heiraten möchten oder Vermögen in der Türkei haben.
+
+---
+
+## Ihr nächster Schritt
+
+Sie müssen nicht in die Türkei fliegen, keinen Urlaub nehmen und keine Monate auf Rückmeldungen warten.
+
+Stellen Sie die Unterlagen zusammen, kontaktieren Sie uns — den Rest erledigen wir.
+
+**Avukat Hasan Doğru | Doğru Kanzlei**
+📍 R1 2-3, 68161 Mannheim
+📞 +49 176 612 21210
+✉️ info@hasandogru.de
+💬 Auch per WhatsApp erreichbar
+
+*Mo–Sa: 09:00–18:00 | Beratung auf Deutsch und Türkisch*
+
+---
+
+*Dieser Artikel dient ausschließlich der allgemeinen Information und stellt keine Rechtsberatung dar. Für eine auf Ihren individuellen Fall zugeschnittene Einschätzung nehmen Sie bitte Kontakt mit uns auf. Die Kanzlei berät ausschließlich im türkischen Recht gemäß §207 BRAO.*`,
+    contentTR: `**YASAL UYARI:** Bu makale yalnızca Türk hukukuna ilişkindir. Büromuzda Alman hukuku konusunda danışmanlık verilmemektedir.
+
+---
+
+Almanya'da boşandınız. Mahkeme kararını elinize aldınız, rahatladınız. Ama birkaç ay sonra Türkiye'deki bir işlem sırasında şok edici bir gerçekle yüzleştiniz: **Türkiye'de hâlâ evli görünüyorsunuz.**
+
+Bu, Almanya'da yaşayan yüz binlerce Türk vatandaşının bilmeden düştüğü hukuki bir tuzaktır. Alman mahkemesinin verdiği boşanma kararı, Türkiye'de otomatik olarak geçerli olmaz. Türkiye'de nüfus kaydınızın güncellenmesi, yeniden evlenebilmeniz, mal paylaşımı yapabilmeniz, nafaka ve velayet kararlarını Türkiye'de uygulayabilmeniz için ayrı bir hukuki adım atmanız zorunludur: **tanıma ve tenfiz davası.**
+
+Bu rehberde, Almanya'da yaşayan biri olarak bu süreci Türkiye'ye adım atmadan nasıl tamamlayabileceğinizi, hangi belgelere ihtiyaç duyduğunuzu, alternatif yolları ve mal paylaşımı, velayet, nafaka gibi bağlantılı konuları kapsamlı biçimde ele alıyoruz.
+
+---
+
+## Tanıma mı, Tenfiz mi? İkisi Arasındaki Kritik Fark
+
+Bu iki kavram sıkça birbirine karıştırılır ve yanlış anlaşılması davanın yanlış türde açılmasına — dolayısıyla hak kayıplarına — yol açabilir.
+
+### Tanıma Davası
+
+Tanıma davası, yabancı bir mahkeme tarafından verilen kararın Türkiye'de **kesin hüküm** olarak kabul edilmesini sağlar. Yani Alman mahkemesinin verdiği boşanma kararı, tanıma davası sonucunda Türk mahkemesinin kararı ile eşdeğer hale gelir.
+
+Almanya'daki boşanma kararı **yalnızca boşanmayı** içeriyorsa — velayet, nafaka, tazminat veya mal paylaşımı gibi icrai nitelikte ek hükümler yoksa — tanıma davası açmak yeterlidir. Tanıma kararı kesinleştikten sonra nüfus müdürlüğüne bildirim yapılır ve medeni haliniz "evli"den "boşanmış"a güncellenir.
+
+### Tenfiz Davası
+
+Tenfiz davası ise kararın yalnızca tanınmasından bir adım öteye geçer. Yabancı mahkeme kararının Türkiye'de **icra edilebilir** hale gelmesini sağlar. Almanya mahkemesi boşanmanın yanı sıra nafakaya, velayete, tazminata veya mal paylaşımına da hükmetmişse bu kararların Türkiye'de uygulanabilmesi için tenfiz zorunludur.
+
+Tenfiz olmadan nafaka kararı Türkiye'de icraya konulamaz. Velayet kararı tanınmaz. Mal paylaşımı hükmü tapu müdürlüklerince işleme konulmaz.
+
+### Uygulamada Ne Olur?
+
+Almanya'daki boşanma kararlarının büyük çoğunluğu hem boşanma hükmünü hem de ek düzenlemeleri (nafaka, velayet vb.) birlikte içerir. Bu nedenle avukatınız genellikle her iki davayı da birlikte açar. Hangi davanın açılacağı tamamen kararın içeriğine bağlıdır ve her dosya ayrı değerlendirilmelidir.
+
+---
+
+## Tanıma ve Tenfiz Yapmazsanız Ne Olur?
+
+Bu adımı ertelemek ya da atlamak, yıllar sonra ortaya çıkabilecek ciddi ve çoğu zaman telafisi güç sonuçlar doğurabilir:
+
+**Medeni hal sorunu:** Türkiye nüfus kayıtlarında hâlâ evli görünürsünüz. Bu durum yeniden evlenmenizi engeller. Üstelik Almanya'daki Standesamt bile bazen yeniden evlenme başvurusunda Türk makamlarından evlenme ehliyet belgesi talep edebilir — bu belgede Türkiye'de boşanmış görünmüyorsanız evlenemezsiniz.
+
+**Miras riski:** Boşandığınız eş, Türkiye'de yasal mirasçınız olmaya devam eder. Türkiye'de vefat etmeniz durumunda mülkleriniz, banka hesaplarınız ve diğer varlıklarınız bu kişiye intikal edebilir. Üstelik bu durumu kötüye kullanan ve veraset ilamı çıkartan vakalar mevcuttur.
+
+**Mal ve mülk sorunları:** Türkiye'de gayrimenkulünüz, araziniz veya banka hesabınız varsa eski eşiniz bunlar üzerinde hak iddiasında bulunabilir. Tapu müdürlükleri ve bankalar, yabancı mahkeme kararını tanıma-tenfiz işlemi yapılmadan dikkate almaz.
+
+**Nafaka ve velayet sorunları:** Almanya'da nafakaya veya velayete ilişkin mahkeme kararı aldıysanız bu kararlar Türkiye'de tenfiz edilmeden uygulanamaz. Eski eşinizin Türkiye'de malvarlığı varsa nafaka borcu bu yolla tahsil edilemez.
+
+**Çocuklarla ilgili sorunlar:** Velayet kararı tenfiz edilmemişse çocuğunuzun Türkiye'deki pasaport başvurusu, seyahat izni ve okul kayıt işlemlerinde ciddi bürokratik engeller çıkabilir.
+
+---
+
+## Almanya'ya Özgü: Hangi Belgeler Gerekiyor?
+
+Türkiye'deki avukatınızın mahkemeye sunması için Almanya'dan temin etmeniz gereken belgeler şunlardır. Bu belgelerin her birinin nasıl temin edileceği, Almanya'daki pek çok kişi için en büyük pratik sorundur.
+
+### 1. Scheidungsurteil / Scheidungsbeschluss (Boşanma Kararı)
+
+Almanya aile mahkemesinin verdiği boşanma kararının aslı. Karar, mühürlü ve ıslak imzalı olmalıdır. Kararın fotokopisi veya dijital baskısı kabul edilmez; ilgili aile mahkemesinden resmi suret talep etmeniz gerekir.
+
+### 2. Rechtskraftvermerk (Kesinleşme Şerhi)
+
+Bu, Almanya'ya özgü en kritik belge olup Türkiye'deki pek çok avukat tarafından yeteri kadar bilinmez. Kesinleşme şerhi, boşanma kararının artık itiraz edilemez hale geldiğini — yani kesinleştiğini — belgeleyen resmi nottur. Türk mahkemeleri bu şerh olmadan davayı kabul etmez, zira kesinleşmemiş bir karara dayanarak tanıma veya tenfiz kararı veremezler.
+
+Rechtskraftvermerk'i boşanma kararını veren aile mahkemesinden talep edebilirsiniz. Mahkeme bu şerhi kararın arkasına ayrı bir sayfayla ekler.
+
+### 3. Apostil Şerhi
+
+Almanya, Lahey Apostil Sözleşmesi'ne taraf olduğundan belgelerinize apostil şerhi ekletmeniz mümkündür. Apostil, belgenin uluslararası düzeyde geçerliliğini onaylar ve Türkiye'de resmi olarak kabul edilmesini sağlar.
+
+Apostil işlemi Almanya'da her eyaletin yetkili makamında (genellikle Oberlandesgericht veya Regierungspräsidium) yapılır. Baden-Württemberg'de, yani Mannheim'da yaşıyorsanız apostil işlemini Karlsruhe'deki Oberlandesgericht'ten yaptırabilirsiniz.
+
+### 4. Yeminli Türkçe Tercüme
+
+Tüm belgelerin Türkiye'de yetkilendirilmiş yeminli tercüman tarafından Türkçeye çevrilmesi ve noterce onaylanması zorunludur. Bu tercümeyi Almanya'dan Türkiye'deki tercümana göndermek mümkündür; tercüman noter kanalıyla onay alır.
+
+### 5. Vekâletname
+
+Türkiye'ye gitmeden davayı sürdürebilmek için avukatınıza **tanıma ve tenfiz** yetkisini açıkça içeren bir vekâletname vermeniz gerekir. Bu vekâletnameyi Almanya'daki herhangi bir noterde düzenlettirmeniz mümkündür. Vekâletnamede "tanıma ve tenfiz davası açma ve takip etme" yetkisinin açıkça belirtilmesi şarttır; genel yetkili vekâletname bazı mahkemeler tarafından yeterli kabul edilmeyebilir.
+
+---
+
+## Süreç Nasıl İşler? Adım Adım
+
+### Adım 1 — Belgelerin Toplanması
+
+Almanya'daki aile mahkemesinden Scheidungsurteil ve Rechtskraftvermerk belgelerini talep edersiniz. Belgelere apostil şerhi ekletirsiniz. Bu aşamada mahkeme bürokrasisi zaman alabilir; özellikle yoğun dönemlerde mahkemeden yanıt birkaç haftayı bulabilir.
+
+### Adım 2 — Almanya'dan Vekâletname
+
+Mannheim'daki veya bulunduğunuz şehirdeki Alman noterinde avukatınıza vekâletname düzenlenir. Türkiye've gitmenize gerek yoktur. Vekâletnameye tercüme ekletmeniz gerekip gerekmediğini noterden öğrenin; bazı Türk mahkemeleri apostilli Alman vekâletnamelerini doğrudan kabul ederken bazıları apostilli Türkçe çeviri de isteyebilir.
+
+### Adım 3 — Yeminli Türkçe Tercüme
+
+Scheidungsurteil, Rechtskraftvermerk ve diğer belgelerin tamamı Türkiye'de geçerli yeminli tercüman aracılığıyla Türkçeye çevrilir.
+
+### Adım 4 — Dava Açılması
+
+Avukatınız yetkili Türk aile mahkemesine tanıma ve/veya tenfiz davası açar. Yetkili mahkeme, davacının Türkiye'deki ikametine göre belirlenir. Türkiye'de sabit ikamet adresiniz yoksa dava İstanbul, Ankara veya İzmir mahkemelerinde açılabilir.
+
+### Adım 5 — Tebligat Süreci
+
+Davanın en uzun ve en belirsiz aşamasıdır. Mahkeme, karşı tarafa tebligat yapılmasını bekler. Karşı tarafın adresi biliniyorsa ve her iki taraf da avukatla temsil ediliyorsa bu aşama birkaç haftada tamamlanabilir. Karşı tarafın adresi bilinmiyorsa, yurt dışında yaşıyorsa veya tebligatı kasıtlı olarak almıyorsa süreç aylar hatta yıllar sürebilir. Bu nedenle tebligat adresinin doğru bildirilmesi kritik önem taşır.
+
+### Adım 6 — Mahkeme Duruşmaları
+
+Türkiye'ye gitmenize gerek yoktur; avukatınız tüm duruşmalara sizin adınıza katılır.
+
+### Adım 7 — Karar ve Nüfus Kaydı
+
+Mahkeme tanıma ve/veya tenfiz kararını verdikten sonra bu karar kesinleşir ve ilgili nüfus müdürlüğüne bildirim yapılır. Medeni haliniz "boşanmış" olarak güncellenir.
+
+**Ortalama Süre:** Belgelerin eksiksiz olması ve her iki tarafın avukatla temsil edilmesi durumunda **3 ila 6 ay.** Tebligat sorunu yaşanırsa bu süre 12 aya kadar uzayabilir.
+
+---
+
+## Nüfus Müdürlüğü Yolu: Mahkemeye Gitmeden Tanıma Mümkün mü?
+
+2017 yılında 5490 sayılı Nüfus Hizmetleri Kanunu'na eklenen maddeyle birlikte belirli koşullarda tanıma işlemi mahkeme kararına gerek olmaksızın nüfus müdürlüğü aracılığıyla da yapılabilir hale geldi. Bu önemli bir kolaylıktır ve pek çok kişi bu yolun farkında değildir.
+
+### Nüfus Müdürlüğü Yolu Ne Zaman Geçerli?
+
+Bu yol yalnızca aşağıdaki koşulların **tamamının** sağlanması durumunda mümkündür:
+
+- Yabancı mahkeme kararı **yalnızca boşanmayı** içermelidir (nafaka, velayet veya tazminat gibi ek hükümler bulunmamalıdır)
+- **Her iki taraf birlikte** nüfus müdürlüğüne başvurmalıdır
+- Gerekli belgeler eksiksiz sunulmalıdır (apostilli boşanma kararı, kesinleşme şerhi, yeminli Türkçe tercüme)
+
+### Nüfus Müdürlüğü Yolu Ne Zaman İşe Yaramaz?
+
+Aşağıdaki durumlarda bu yol kapalıdır ve mahkeme davası zorunludur:
+
+- Eski eşiniz birlikte başvurmak istemiyorsa
+- Karar nafaka, velayet, tazminat veya mal paylaşımı hükmü içeriyorsa
+- Nüfus müdürlüğü başvurunuzu reddettiyse (bu durumda yine mahkeme yoluna gidilir)
+
+### Almanya'dan Nüfus Müdürlüğü Başvurusu
+
+Türkiye'deki Türk konsolosluğu üzerinden de başvuru yapılabilmektedir. Ancak eski eşinizin koşullara uyması ve belgelerinizin eksiksiz olması gerektiğini unutmayın. Bu süreçte de bir avukattan destek almak, başvurunun reddedilmesi riskini azaltır.
+
+---
+
+## Mal Paylaşımı: Almanya'da Boşanma Sonrası Türkiye'deki Mülkler Ne Olur?
+
+Almanya'da boşanan pek çok çiftin Türkiye'de gayrimenkulü, arazisi veya diğer varlıkları bulunmaktadır. Bu varlıkların paylaşımı, tanıma-tenfiz davasıyla doğrudan bağlantılıdır ve dikkatli yönetilmezse ciddi hak kayıplarına yol açabilir.
+
+### Almanya Mahkemesi Mal Paylaşımına Karar Verdiyse
+
+Alman mahkemesi boşanmayla birlikte mal paylaşımına da hükmettiyse bu kararın Türkiye'de uygulanabilmesi için **tenfiz davası** açılması zorunludur. Tenfiz kararı olmadan tapu müdürlükleri ve bankalar yabancı mahkeme kararını dikkate almaz. Türkiye'deki bir taşınmazın devri için dahi tenfiz şarttır.
+
+### Almanya Mahkemesi Mal Paylaşımına Karar Vermediyse
+
+Alman mahkemesi yalnızca boşanmaya hükmetmiş, Türkiye'deki mallara ilişkin bir düzenleme yapmamışsa durum farklıdır. Bu durumda Türkiye'de ayrı bir **mal rejiminin tasfiyesi davası** açılması gerekir. Ancak bu dava, boşanmanın önce Türkiye'de tanınmasını gerektirir.
+
+Kritik bir zaman detayı: Türkiye'deki mal paylaşımında esas alınan tarih, Almanya'da **boşanma davasının açıldığı tarihtir.** Bu tarihten sonra edinilen mallar kapsam dışında kalır. Dolayısıyla tanıma davası ne kadar geç açılırsa mal paylaşımı kapsamı o kadar daralabilir.
+
+### İhtiyati Tedbir: Eski Eşiniz Türkiye'deki Malları Satabilir mi?
+
+Boşanma sürecinde ya da sonrasında Türkiye'deki mal varlıklarını korumak istiyorsanız **ihtiyati tedbir** kararı talep edebilirsiniz. Tanıma veya mal paylaşımı davası açıldığında mahkemeden taşınmazların tapu kaydına tedbir konulmasını talep edebilirsiniz. Bu tedbir, taşınmazın satışını, devrini ve üzerinde işlem yapılmasını engeller. Bu önlem özellikle eski eşin Türkiye'de yaşadığı durumlarda kritik önem taşır.
+
+---
+
+## Velayet: Almanya'daki Karar Türkiye'de Geçerli mi?
+
+Çocuklarınız söz konusu olduğunda tanıma ve tenfiz meselesi çok daha hassas ve acil bir hal alır.
+
+### Alman Mahkemesinin Velayet Kararı
+
+Almanya'da aile mahkemesi velayeti ebeveynlerden birine ya da her ikisine birlikte vermişse bu karar Türkiye'de tenfiz edilmeden Türk makamlarınca tanınmaz. Tenfiz edilmemişse:
+
+- Çocuğun Türkiye'deki pasaport başvurusu, diğer ebeveynin onayı olmadan yapılamaz
+- Çocuğun Türkiye'ye seyahati için her iki ebeveynin de rızası aranır
+- Yurt dışına çıkış yasağı veya çocuğun alıkonulması gibi durumlarla karşılaşılabilir
+
+### Ortak Velayet
+
+Almanya'da yaygın bir düzenleme olan ortak velayet kararı da Türkiye'de tenfiz yoluyla geçerli kılınabilir. Bu sayede her iki ebeveynin de Türkiye'deki işlemlerde hakkı korunmuş olur.
+
+### Uluslararası Çocuk Kaçırma
+
+Velayete sahip ebeveynin izni olmadan çocuğun Türkiye'ye götürülmesi, Türkiye ve Almanya'nın her ikisinin de taraf olduğu Lahey Sözleşmesi kapsamında uluslararası çocuk kaçırma sayılır. Bu durumlarda acil hukuki müdahale gereklidir.
+
+---
+
+## Nafaka: Almanya'daki Nafaka Kararını Türkiye'de Uygulayabilir misiniz?
+
+Alman mahkemesi boşanmayla birlikte nafakaya hükmettiyse ve eski eşinizin Türkiye'de malvarlığı ya da geliri varsa, bu nafaka kararını Türkiye'de icra edebilirsiniz — **ancak tenfiz kararı almış olmanız şartıyla.**
+
+### Hangi Nafaka Türleri Tenfize Konu Olur?
+
+- **Yoksulluk nafakası:** Boşanan eşe bağlanan nafaka
+- **İştirak nafakası:** Çocuk için bağlanan nafaka
+
+Tenfiz davası açılırken boşanmanın kesinleşmemiş olduğu dönemde bağlanan tedbir nafakası tenfize konu edilemez; zira bu nafaka boşanma kesinleşmeden önce geçici olarak hüküm ifade eder.
+
+### Nafaka Ödenmezse Ne Olur?
+
+Tenfiz kararı aldıktan sonra nafaka icra dairesine başvurularak tahsil edilebilir. Eski eşinizin Türkiye'de banka hesabı, maaşı veya gayrimenkulü varsa bunlara haciz uygulanabilir. Türk hukukunda nafaka borcunu ödememeye **tazyik hapsi** uygulanabilir — bu, ciddi bir yaptırımdır.
+
+### Eski Eş Türkiye'ye Kaçtıysa?
+
+Bu, özellikle Almanya'da yaşayan kişilerin karşılaştığı bir senaryodur. Eski eşiniz Türkiye'ye taşındıysa veya kaçtıysa nafaka ve tazminat alacaklarınızı Türkiye'deki tenfiz davası ve ardından icra takibiyle takip etmeniz mümkündür. Bunun için yetkili bir avukat aracılığıyla ihtiyati tedbir talep etmek ve tenfiz davasını geciktirmeden açmak büyük önem taşır.
+
+---
+
+## Türkiye've Gitmeden Bu Davayı Açabilir misiniz?
+
+**Evet.** Ve bu, Almanya'da yaşamanın sağladığı en büyük pratik avantajdır.
+
+Türkiye'deki avukatınıza Almanya'daki noter aracılığıyla vekâletname verirseniz, dava süreci boyunca hiçbir duruşmaya bizzat katılmanız gerekmez. Avukatınız tüm işlemleri sizin adınıza yürütür.
+
+Biz, UYAP sistemine kayıtlı avukat olarak dava dosyalarını gerçek zamanlı olarak Almanya'dan takip ediyoruz. Mahkeme günleri, belge durumu, tebligat aşaması — hepsini siz Mannheim'daki hayatınıza devam ederken biz Türkiye'deki mahkemelerde yönetiyoruz.
+
+---
+
+## Almanya'da Bir Avukattan Hizmet Almanın Farkı
+
+Türkiye'deki bir hukuk bürosundan hizmet aldığınızda karşılaşabileceğiniz sorunlar:
+
+- Almanya'daki belge süreçlerini tam bilmiyorlar. Rechtskraftvermerk nedir, Baden-Württemberg'de apostil nerede yaptırılır, Alman noterde vekâletname nasıl düzenlenir — bunlar Türkiye'den bilmesi güç pratik detaylardır.
+- İletişim farkı: Türkçe yazışma, saat farkı, geri dönüş gecikmesi ve süreci takip edememe.
+- Belge eksikliği nedeniyle dava uzar veya reddedilir.
+
+**Mannheim'da bulunmamız şu anlama gelir:**
+
+- Almanya'daki belge süreçlerini birlikte yürütürüz. Hangi mahkemeden ne alacaksınız, apostili nerede yaptırırsınız, Alman noterde vekâletname nasıl düzenlenir — hepsini sizinle adım adım çözüyoruz.
+- **Çift baro üyeliğimiz var.** Ankara Barosu ve Karlsruhe Barosu'na (§207 BRAO) kayıtlıyız. Türkiye'deki mahkemelerde bizzat temsil ediyoruz; hiçbir aracı yok.
+- **UYAP erişimimiz var.** Türk mahkemelerini Almanya'dan gerçek zamanlı takip ediyoruz. Duruşma tarihleri, tebligat durumu, karar aşaması — hepsini anlık görüyoruz.
+- **Türkçe ve Almanca iletişim.** İki dilde de akıcı hizmet veriyoruz. Türkçe bilmiyorsanız ya da Almanca yazışmayı tercih ediyorsanız her iki şekilde de çalışıyoruz.
+- **70+ Google değerlendirmesi, 5,0 yıldız.** Müvekkil memnuniyeti en iyi referansımızdır.
+
+---
+
+## Bir Sonraki Adımınız
+
+Almanya'dan Türkiye'deki boşanma kararınızı tanıtmak için Türkiye'ye gitmenize, izin almanıza ya da yıllarca beklemenize gerek yok.
+
+Belgelerinizi toparlayın, bize ulaşın — gerisini biz halledelim.
+
+**Avukat Hasan Doğru | Doğru Kanzlei**
+📍 R1 2-3, 68161 Mannheim
+📞 +49 176 612 21210
+✉️ info@hasandogru.de
+💬 WhatsApp üzerinden de ulaşabilirsiniz.
+
+*Mo–Sa: 09:00–18:00 | Türkçe ve Almanca hizmet*
+
+---
+
+*Bu makale genel bilgi amaçlıdır ve hukuki danışmanlık niteliği taşımaz. Durumunuza özgü değerlendirme için lütfen bizimle iletişime geçin. Büromuz yalnızca Türk hukuku alanında danışmanlık verilmemektedir.*`,
+    category: "Tanıma ve Tenfiz",
+    categoryDE: "Scheidungsanerkennung",
+    image: tanimaTenfizImg,
+    dateDE: "11. April 2026",
+    dateTR: "11 Nisan 2026",
+    readTimeDE: "8 Min. Lesezeit",
+    readTimeTR: "8 dk okuma",
+    publishedAt: "2026-04-11",
+    keywordsDE: "Scheidung in Deutschland Anerkennung Türkei, Tanıma Tenfiz davası belgeler, Türkisches Recht Mannheim, Unterhalt vollstrecken Türkei, Sorgerecht Türkei Anerkennung",
+    keywordsTR: "Almanya boşanma tanıma tenfiz, kesinleşme şerhi nedir, tanıma tenfiz davası ne kadar sürer, yurt dışı boşanma nüfus kaydı, tanıma tenfiz avukatı ankara",
+    faqDE: [
+      {
+        question: "Ich bin in Deutschland geschieden, gelte aber in der Türkei noch als verheiratet. Was muss ich tun?",
+        answer: "Sie müssen beim türkischen Familiengericht eine Tanıma-Klage erheben. Dies ist kein neues Scheidungsverfahren, sondern ein eigenständiges Verfahren zur Anerkennung des deutschen Urteils. Eine Reise in die Türkei ist nicht erforderlich; der Prozess kann vollständig über eine Anwaltsvollmacht abgewickelt werden."
+      },
+      {
+        question: "Kann ich die Klage alleine einreichen? Benötige ich die Zustimmung meines Ex-Partners?",
+        answer: "Nein, die Mitwirkung des Ex-Partners ist nicht zwingend erforderlich. Die Klage kann einseitig eingereicht werden. Dem Ex-Partner wird die Klage zugestellt, er muss jedoch nicht am Verfahren teilnehmen. Wenn beide Parteien einverstanden sind und das Urteil nur die Scheidung betrifft, kann alternativ der Weg über das Standesamt geprüft werden."
+      },
+      {
+        question: "Wie lange dauert ein Tanıma ve Tenfiz Verfahren?",
+        answer: "Bei vollständigen Unterlagen und wenn beide Seiten anwaltlich vertreten sind, dauert es durchschnittlich 3-6 Monate. Wenn die Adresse der Gegenseite unbekannt ist oder Zustellungsprobleme auftreten, kann sich der Zeitraum auf bis zu 12 Monate verlängern."
+      },
+      {
+        question: "Woher bekomme ich den Rechtskraftvermerk?",
+        answer: "Diesen beantragen Sie schriftlich bei dem deutschen Familiengericht, das das Scheidungsurteil erlassen hat. Das Gericht stellt diesen Vermerk gegen eine Gebühr aus. Geben Sie unbedingt an, dass das Dokument mit einer Apostille versehen sein muss."
+      },
+      {
+        question: "Kann ich mich aufgrund der Gesetzesänderung von 2017 an das Standesamt wenden?",
+        answer: "Ja, wenn Sie nur ein Scheidungsurteil haben und beide Parteien den Antrag gemeinsam stellen können. Wenn jedoch zusätzliche Regelungen wie Sorgerecht, Unterhalt oder Entschädigung vorliegen oder der Ex-Partner nicht gemeinsam beantragen möchte, ist das gerichtliche Verfahren zwingend erforderlich."
+      },
+      {
+        question: "Ich habe Immobilien in der Türkei, kann mein Ex-Partner diese verkaufen?",
+        answer: "Vor Einleitung des Tanıma-Tenfiz-Verfahrens können Sie beim Gericht eine einstweilige Verfügung beantragen. Diese sorgt dafür, dass ein Sperrvermerk im Grundbuch eingetragen wird, der Verkauf, Übertragung und ähnliche Transaktionen verhindert."
+      },
+      {
+        question: "Ich habe einen deutschen Staatsbürger in Deutschland geheiratet und mich vor einem deutschen Gericht scheiden lassen. Muss ich dieses Verfahren auch durchführen?",
+        answer: "Ja. Wenn Sie die türkische Staatsangehörigkeit besitzen oder Inhaber der Blaue Karte (Mavi Kart) sind, gilt dies auch für Sie. Wenn Sie in Deutschland erneut heiraten möchten, kann das Standesamt eine türkische Ehefähigkeitsbescheinigung verlangen; wenn Sie in der Türkei nicht als geschieden geführt werden, können Sie nicht erneut heiraten."
+      },
+      {
+        question: "Ich habe ein Unterhaltsurteil, aber mein Ex-Partner lebt in der Türkei und möchte nicht zahlen. Was kann ich tun?",
+        answer: "Zunächst müssen Sie in der Türkei ein Tenfiz-Verfahren einleiten und anschließend das Vollstreckungsverfahren starten. Bankkonten, Gehalt oder Immobilien des Ex-Partners in der Türkei können gepfändet werden. Zudem kann bei Nichtzahlung von Unterhalt eine Beugehaft drohen."
+      }
+    ],
+    faqTR: [
+      {
+        question: "Almanya'da boşandım ama Türkiye'de evli görünüyorum. Ne yapmalıyım?",
+        answer: "Türk aile mahkemesinde tanıma davası açmanız gerekiyor. Bu dava yeni bir boşanma davası değildir; Almanya'daki kararı Türkiye'de geçerli kılmak için açılan ayrı bir davadır. Türkiye'ye gitmenize gerek yok, avukat vekâletnamesiyle tüm süreç yürütülür."
+      },
+      {
+        question: "Davayı tek başıma açabilir miyim? Eski eşimin onayı gerekiyor mu?",
+        answer: "Hayır, eski eşinizin katılımı zorunlu değildir. Dava tek taraflı açılabilir. Eski eşinize tebligat yapılır ancak katılmak zorunda değildir. Eğer her iki taraf da anlaşmalıysa ve karar yalnızca boşanmayı içeriyorsa, mahkeme yerine nüfus müdürlüğü yolunu da değerlendirebilirsiniz."
+      },
+      {
+        question: "Tanıma ve tenfiz davası ne kadar sürer?",
+        answer: "Belgelerin eksiksiz olması ve her iki tarafın avukatla temsil edilmesi durumunda ortalama 3-6 ay sürer. Karşı tarafın adresi bilinmiyorsa ya da tebligat sorunları yaşanırsa bu süre 12 aya kadar uzayabilir."
+      },
+      {
+        question: "Rechtskraftvermerk'i nereden alırım?",
+        answer: "Boşanma kararını veren Alman aile mahkemesine yazılı olarak başvurarak talep edersiniz. Mahkeme bu şerhi ücret karşılığında düzenler. Alacağınız belgenin apostil şerhli olması gerektiğini de belirtin."
+      },
+      {
+        question: "2017'de yapılan değişiklikle nüfus müdürlüğüne başvurabilir miyim?",
+        answer: "Yalnızca boşanma kararı aldıysanız ve her iki taraf birlikte başvurabiliyorsa evet, nüfus müdürlüğü üzerinden işlem yapılabilir. Ancak velayet, nafaka veya tazminat gibi ek hükümler varsa ya da eski eşiniz birlikte başvurmak istemiyorsa mahkeme davası zorunludur."
+      },
+      {
+        question: "Türkiye'de mülküm var, eski eşim satabilir mi?",
+        answer: "Tanıma-tenfiz davası açılmadan önce mahkemeden ihtiyati tedbir kararı talep edebilirsiniz. Bu karar, taşınmazın tapu kaydına şerh düşülmesini sağlar ve satış, devir gibi işlemleri engeller."
+      },
+      {
+        question: "Almanya'da bir Alman vatandaşıyla evlendim ve Alman mahkemesinde boşandım. Ben de bu davayı açmak zorunda mıyım?",
+        answer: "Evet. Türk vatandaşlığınız varsa ya da Mavi Kart (eski Türk vatandaşı) sahibiyseniz bu işlem sizin için de geçerlidir. Almanya'da yeniden evlenmek istediğinizde Standesamt, Türk makamlarından evlenme ehliyet belgesi isteyebilir; bu belgede Türkiye'de boşanmış görünmüyorsanız evlenemezsiniz."
+      },
+      {
+        question: "Nafaka kararım var ama eski eşim Türkiye'de yaşıyor ve ödemek istemiyor. Ne yapabilirim?",
+        answer: "Önce Türkiye'de tenfiz davası açmanız, ardından icra takibi başlatmanız gerekir. Eski eşinizin Türkiye'deki banka hesaplarına, maaşına veya taşınmazlarına haciz uygulanabilir. Aynı zamanda nafaka borcunu ödememe halinde tazyik hapsi de söz konusu olabilir."
+      }
+    ]
+  },
+  {
+    slug: "veraset-ilami-nedir-nasil-alinir",
+    slugDE: "erbschein-tuerkei-beantragen-verfahren",
+    slugTR: "veraset-ilami-nedir-nasil-alinir",
+    titleDE: "Erbschein (Veraset İlamı) in der Türkei: Definition, Bedeutung und Verfahren",
+    titleTR: "Veraset İlamı (Mirasçılık Belgesi): Nedir, Nasıl Alınır ve Önemi",
+    excerptDE: "Was ist ein Erbschein in der Türkei? Erfahren Sie alles über den Antragsprozess für EU-Bürger, die Kosten und die rechtliche Bedeutung bei Immobilienübertagungen.",
+    excerptTR: "Veraset ilamı nedir, nereden alınır? Noter ve mahkeme süreçleri, gerekli belgeler ve miras paylaşımındaki kritik önemi hakkında kapsamlı rehber.",
+    contentDE: `**RECHTLICHER HINWEIS:** Dieser Artikel befasst sich ausschließlich mit dem türkischen Recht. Eine Beratung zum deutschen Recht findet in unserer Kanzlei nicht statt.
+
+# Erbschein (Veraset İlamı): Definition und Bedeutung
+
+Ein Erbschein ist ein offizielles Dokument, das nach dem Tod einer Person ausgestellt wird und angibt, wer die Erben sind und wie der Nachlass verteilt werden soll. Dieses Dokument spielt eine entscheidende Rolle bei der rechtlichen Übertragung des Erbes und trägt dazu bei, die Rechte der Erben zu schützen. Es ist von großer Bedeutung, um rechtliche Unsicherheiten bei Erbschaftstransaktionen zu beseitigen und die berechtigten Personen eindeutig zu identifizieren. Was also ist ein Erbschein, wie erhält man ihn und warum ist er so wichtig? In diesem Artikel finden Sie die Antworten auf diese Fragen und erfahren Einzelheiten über den rechtlichen Rahmen des Erbscheins.
+
+---
+
+## Was ist ein Erbschein?
+Ein Erbschein ist ein rechtliches Dokument, das nach dem Tod einer Person erforderlich ist, um die hinterlassenen Güter und Rechte auf die rechtmäßigen Erben zu übertragen. Dieses Dokument wird erstellt, um mögliche Streitigkeiten unter den Erben zu vermeiden und eine gerechte Verteilung des Erbes zu gewährleisten. Transparenz und Gerechtigkeit bei der Übertragung des Erbes werden durch die Ausstellung eines Erbscheins ermöglicht. Der Erbschein ist eine Art offizielles Erbdokument, das festlegt, an wen und in welchem Verhältnis das Erbe verteilt wird, und dieses Dokument ist ein wichtiger Schritt zum Schutz der gesetzlichen Rechte der Erben.
+
+### Rechtliche Grundlage des Erbscheins
+Der Erbschein wird im Rahmen des türkischen Zivilgesetzbuchs und des Erbrechts geregelt. Diese Gesetze schreiben die Einholung eines Erbscheins vor, um die Erben zu bestimmen und das Erbe aufzuteilen, um sicherzustellen, dass das Erbe in Übereinstimmung mit den rechtlichen Verfahren übertragen wird. Während die Gesetze die Rechte der Erben schützen, zielen sie auch darauf ab, rechtliche Probleme zu verhindern, die bei der Übertragung des Erbes auftreten können. Der Erbschein, der eine rechtliche Grundlage hat, garantiert, dass Erbschaftstransaktionen auf einer offiziellen und legalen Basis durchgeführt werden.
+
+---
+
+## Wie bekommt man einen Erbschein?
+Um einen Erbschein zu erhalten, müssen bestimmte Schritte befolgt werden. Dieser Prozess ist wichtig, um die Erben rechtlich anzuerkennen und sicherzustellen, dass das Erbe auf die richtigen Personen übertragen wird. Hier sind die grundlegenden Schritte, die Sie in diesem Prozess berücksichtigen sollten:
+
+### Erforderliche Dokumente
+Vor der Beantragung eines Erbscheins ist es wichtig, dass die erforderlichen Unterlagen vollständig vorbereitet sind. In der Regel werden Dokumente wie ein Auszug aus dem Personenstandsregister, eine Sterbeurkunde und ein Antragschreiben verlangt. Diese Dokumente sind notwendig, um die Identität der Erben und den Umfang des Erbes eindeutig festzustellen. Die korrekte und vollständige Vorbereitung der Dokumente ist entscheidend für die Beschleunigung des Antragsprozesses und die Vermeidung möglicher Probleme.
+
+### Bewerbungsprozess
+Ein Antrag auf Erteilung eines Erbscheins kann bei den zuständigen Gerichten oder Notaren gestellt werden. Im Allgemeinen ist das Friedensgericht am Wohnsitz des Antragstellers zuständig. Besteht unter den Erben kein Streit, ist das Verfahren schneller. Besteht jedoch ein Streit zwischen den Erben, entscheidet das Gericht nach einer eingehenden Prüfung. Die eingehende Prüfung durch das Gericht stellt sicher, dass die Rechte aller Parteien gerecht geschützt werden und das Erbe innerhalb des rechtlichen Rahmens übertragen wird.
+
+### Gebühr für den Erbschein
+Für die Erteilung eines Erbscheins ist eine Gebühr zu entrichten. Diese Gebühr kann je nach Ort des Antrags und der Anzahl der Dokumente variieren. Darüber hinaus kann für Transaktionen bei Notaren eine Notargebühr verlangt werden. Daher ist es wichtig, sich vor der Antragstellung über die aktuellen Gebühren zu informieren. Die Kenntnis der Gebühren ist wichtig für die Planung des Antragsprozesses und zur Vermeidung unerwarteter Kosten.
+
+---
+
+## Bedeutung des Erbscheins
+Der Erbschein ist äußerst wichtig, damit Erbschaftstransaktionen im Einklang mit dem Gesetz ablaufen. Die Übertragung des Erbes innerhalb des rechtlichen Rahmens und der Schutz der Berechtigten werden durch die Einholung dieses Dokuments gewährleistet. Hier sind die Hauptgründe für die Bedeutung des Erbscheins:
+
+### Bietet rechtliche Sicherheit
+Der Erbschein stellt sicher, dass das Erbe innerhalb des rechtlichen Rahmens übertragen wird und trägt zum Schutz der Rechte der Erben bei. Dieses Dokument dokumentiert die Rechte der Erben und verhindert mögliche rechtliche Streitigkeiten. Die Gewährleistung von Rechtssicherheit stellt sicher, dass Erbschaftstransaktionen reibungslos ablaufen und stellt sicher, dass Erben nicht benachteiligt werden. Gleichzeitig ist es wichtig, um rechtliche Probleme zu verhindern, die bei der Übertragung des Erbes auftreten können.
+
+### Gewährleistet eine gerechte Verteilung des Erbes
+Der Erbschein sorgt für eine gerechte Verteilung des Erbes. Dieses Dokument legt fest, wer die Erben sind und zu welchem Anteil sie am Erbe beteiligt sind. Auf diese Weise werden mögliche Streitigkeiten unter den Erben vermieden. Eine gerechte Verteilung des Erbes spielt eine entscheidende Rolle für den Frieden in der Familie und die Vermeidung langfristiger Streitigkeiten unter den Erben.
+
+---
+
+## Beispiel für einen Erbschein
+Da der Erbschein ein offizielles Dokument ist, wird er in einem bestimmten Format erstellt. Er enthält in der Regel Informationen wie die Daten der verstorbenen Person, die Identitätsdaten der Erben und die Verteilungsquoten des Erbes. Diese Informationen sind wichtig, um Transparenz und Klarheit bei der Übertragung des Erbes zu gewährleisten. Ein Beispiel für einen Erbschein könnte wie folgt aussehen:
+
+VERASET İLAMIDIR (ERBSCHEIN)
+
+Erblasser: Vorname Nachname, T.C. Identitätsnummer, Geburtsdatum, Sterbedatum
+
+Erben:
+1. Vorname Nachname, T.C. Identitätsnummer, Anteilquote
+2. Vorname Nachname, T.C. Identitätsnummer, Anteilquote
+
+Verteilung des Erbes: Es wird unter den oben genannten Erben in den festgelegten Anteilen verteilt.
+
+Dieses Beispiel dient dazu, die Struktur eines Erbscheins zu verdeullichen. Ein echter Erbschein muss ein vom Gericht oder Notar beglaubigtes offizielles Dokument sein, und die offizielle Beglaubigung ist für die Gültigkeit des Dokuments unerlässlich.
+
+---
+
+## Fazit
+Ein Erbschein ist notwendig, damit Erbschaftstransaktionen rechtmäßig und fair ablaufen. Die Gewährleistung des rechtlichen Rahmens bei der Übertragung des Erbes und der Schutz der Rechte der Erben werden durch die Einholung dieses Dokuments ermöglicht. Dieses Dokument schützt die Rechte der Erben und regelt gleichzeitig die Verteilung des Erbes. Es ist wichtig, die erforderlichen Dokumente für die Einholung des Erbscheins vorzubereiten und den Antragsprozess korrekt zu verfolgen. Um Streitigkeiten unter den Erben zu vermeiden und eine gerechte Verteilung des Erbes zu gewährleisten, ist die Einholung eines Erbscheins erforderlich. Die Wahrung von Gerechtigkeit und Recht bei Erbschaftstransaktionen ist durch die Einholung des Erbscheins möglich, und dieses Dokument spielt eine entscheidende Rolle bei der Übertragung des Erbes.`,
+    contentTR: `**YASAL UYARI:** Bu makale yalnızca Türk hukukuna ilişkindir. Büromuzda Alman hukuku konusunda danışmanlık verilmemektedir.
+
+# Veraset İlamı: Tanım ve Önemi
+
+Veraset ilamı, bir kişinin vefatının ardından, mirasçılarının kimler olduğunu ve mirasın nasıl paylaştırılacağını belirten resmi bir belgedir. Bu belge, mirasın yasal olarak devredilmesi sürecinde kritik bir rol oynar ve mirasçıların haklarının korunmasına yardımcı olur. Miras işlemlerinde hukuki belirsizliklerin ortadan kalkması ve hak sahibi kişilerin net bir şekilde ortaya konulması açısından büyük bir önem taşır. Peki, veraset ilamı nedir, nasıl alınır ve neden bu kadar önemlidir? İşte bu makalede bu soruların yanıtlarını bulacaksınız ve veraset ilamının hukuki çerçevesine dair detayları öğreneceksiniz.
+
+---
+
+## Veraset İlamı Nedir?
+Veraset ilamı, bir kişinin ölümünden sonra, geride bıraktığı malların ve hakların yasal mirasçılarına devredilmesi için gereken hukuki bir belgedir. Bu belge, mirasçılar arasında çıkabilecek olası anlaşmazlıkları önlemek ve mirasın adil bir şekilde dağıtılmasını sağlamak amacıyla düzenlenir. Mirasın devrinde şeffaflık ve adaletin sağlanması, veraset ilamının düzenlenmesiyle mümkün olur. Veraset ilamı, mirasın kimlere ve hangi oranlarda dağıtılacağını belirten bir tür resmi miras belgesidir ve bu belge, mirasçıların yasal haklarının korunmasına yönelik önemli bir adımdır.
+
+### Veraset İlamının Hukuki Dayanağı
+Veraset ilamı, Türk Medeni Kanunu ve Miras Hukuku çerçevesinde düzenlenir. Bu kanunlar, mirasın yasal süreçlere uygun bir şekilde devredilmesini sağlamak amacıyla, mirasçıların belirlenmesi ve mirasın paylaştırılması için veraset ilamının alınmasını zorunlu kılar. Kanunlar, mirasçıların haklarını korurken, aynı zamanda mirasın devrinde yaşanabilecek hukuki sorunları da önlemeyi amaçlar. Hukuki dayanağı olan veraset ilamı, miras işlemlerinin resmi ve yasal bir zeminde gerçekleştirilmesini garanti altına alır.
+
+---
+
+## Veraset İlamı Nasıl Alınır?
+Veraset ilamı almak için belirli adımların izlenmesi gerekmektedir. Bu süreç, mirasçıların yasal olarak tanınması ve mirasın doğru kişilere devredilmesini sağlamak için önemlidir. İşte bu süreçte dikkate almanız gereken temel adımlar:
+
+### Gerekli Belgeler
+Veraset ilamı başvurusu yapmadan önce, gerekli belgelerin eksiksiz bir şekilde hazırlanması önemlidir. Genellikle, nüfus kayıt örneği, ölüm belgesi ve başvuru dilekçesi gibi belgeler talep edilir. Bu belgeler, mirasçılarının kimliğini ve mirasın kapsamını net bir şekilde ortaya koymak için gereklidir. Belgelerin doğru ve eksiksiz hazırlanması, başvuru sürecinin hızlandırılması ve olası aksaklıkların önüne geçilmesi açısından kritiktir.
+
+### Başvuru Süreci
+Veraset ilamı almak için başvuru, yetkili mahkemelere veya noterliklere yapılabilir. Genellikle, başvuru sahibinin ikametgahının bulunduğu yerdeki Sulh Hukuk Mahkemesi yetkilidir. Başvuru sırasında, mirasçılar arasında bir anlaşmazlık yoksa süreç daha hızlı ilerler. Ancak, mirasçıların arasında bir anlaşmazlık söz konusuysa, mahkeme detaylı bir inceleme yaparak karar verir. Mahkemenin yapacağı detaylı inceleme, tüm tarafların haklarının adil bir şekilde korunmasını ve mirasın yasal çerçevede devredilmesini sağlar.
+
+### Veraset İlamı Ücreti
+Veraset ilamı almak için ödenmesi gereken bir ücret bulunmaktadır. Bu ücret, başvurunun yapıldığı yere ve belge sayısına göre değişiklik gösterebilir. Ayrıca, noterliklerde yapılan işlemler için noter ücreti de talep edilebilir. Bu nedenle, başvuru öncesinde güncel ücretler hakkında bilgi almak önemlidir. Ücretlerin bilinmesi, başvuru sürecinin planlanması ve beklenmedik masraflarla karşılaşılmaması açısından önem taşır.
+
+---
+
+## Veraset İlamının Önemi
+Veraset ilamı, miras işlemlerinin hukuka uygun bir şekilde gerçekleşmesi için son derece önemlidir. Mirasın yasal çerçevede devredilmesi ve hak sahiplerinin korunması, bu belgenin alınmasıyla sağlanır. İşte veraset ilamının başlıca önemi:
+
+### Hukuki Güvence Sağlar
+Veraset ilamı, mirasın yasal çerçevede devredilmesini sağlar ve mirasçıların haklarının korunmasına yardımcı olur. Bu belge, mirasçıların haklarını belgeleyerek, olası hukuki anlaşmazlıkların önüne geçer. Hukuki güvence sağlanması, miras işlemlerinin sorunsuz bir şekilde yürütülmesi ve mirasçıların mağduriyet yaşamamasını temin eder. Aynı zamanda, mirasın devrinde yaşanabilecek hukuki sorunların önlenmesi açısından da önemlidir.
+
+### Mirasın Adil Paylaştırılmasını Sağlar
+Veraset ilamı, mirasın adil bir şekilde paylaştırılmasını sağlar. Bu belge, mirasçıların kimler olduğunu ve hangi oranlarda mirastan pay alacaklarını belirler. Böylece, mirasçılar arasında çıkabilecek anlaşmazlıkların önüne geçilir. Mirasın adil bir şekilde paylaştırılması, aile içi huzurun sağlanması ve mirasçıların arasında uzun süreli anlaşmazlıkların önlenmesi açısından kritik bir rol oynar.
+
+---
+
+## Veraset İlamı Örneği
+Veraset ilamı, resmi bir belge olduğu için belirli bir formatta hazırlanır. Genellikle, miras bırakan kişinin bilgileri, mirasçıların kimlik bilgileri ve mirasın paylaştırılma oranları gibi bilgileri içerir. Bu bilgiler, mirasın devrinde şeffaflık ve netlik sağlanması açısından önemlidir. Örnek bir veraset ilamı şu şekilde olabilir:
+
+VERASET İLAMIDIR
+
+Miras Bırakan: Adı Soyadı, T.C. Kimlik No, Doğum Tarihi, Ölüm Tarihi
+
+Mirasçılar:
+1. Adı Soyadı, T.C. Kimlik No, Pay Oranı
+2. Adı Soyadı, T.C. Kimlik No, Pay Oranı
+
+Mirasın Paylaştırılması: Yukarıda belirtilen mirasçılar arasında, belirlenen oranlarda paylaştırılacaktır.
+
+Bu örnek, veraset ilamının nasıl bir yapıya sahip olduğunu göstermek amacıyla verilmiştir. Gerçek bir veraset ilamı, mahkeme veya noter tarafından onaylanmış resmi bir belge olmalıdır ve resmi onay, belgenin geçerliliği için esastır.
+
+---
+
+## Sonuç
+Veraset ilamı, miras işlemlerinin hukuka uygun ve adil bir şekilde gerçekleşmesi için gereklidir. Mirasın devrinde hukuki çerçevenin sağlanması ve mirasçıların haklarının korunması, bu belgenin alınmasıyla mümkün olur. Bu belge, mirasçıların haklarını korurken, mirasın paylaştırılmasını da düzenler. Veraset ilamı almak için gerekli belgelerin hazırlanması ve başvuru sürecinin doğru bir şekilde takip edilmesi önemlidir. Mirasçılar arasında anlaşmazlıkların önüne geçmek ve mirasın adil bir şekilde dağıtılmasını sağlamak için veraset ilamının alınması gereklidir. Miras işlemlerinde adaletin ve hukukun gözetilmesi, veraset ilamının alınmasıyla mümkün olur ve bu belge, mirasın devrinde kritik bir rol oynar.`,
+    category: "Miras Hukuku",
+    categoryDE: "Erbrecht",
+    image: verasetIlamiImg,
+    dateDE: "11. April 2026",
+    dateTR: "11 Nisan 2026",
+    readTimeDE: "6 Min. Lesezeit",
+    readTimeTR: "6 dk okuma",
+    publishedAt: "2026-04-11",
+    keywordsDE: "Erbschein Türkei beantragen, Veraset Ilami Kosten, türkisches Erbrecht für Deutsche, Immobilienüberschreibung Türkei Erbe, Anwalt Mannheim türkisches Recht",
+    keywordsTR: "veraset ilamı nasıl alınır, veraset ilamı örneği, veraset ilamı ücreti 2026, mirasçılık belgesi nereden alınır, e-devlet veraset ilamı sorgulama",
+    faqDE: [
+      {
+        question: "Müssen alle Erben gemeinsam den türkischen Erbschein beantragen?",
+        answer: "Nein. Jeder gesetzliche Erbe kann den Erbschein (Veraset İlamı) einzeln beim Notar oder beim zuständigen Friedenszivilgericht in der Türkei beantragen. Das ausgestellte Dokument weist dann alle berechtigten Erben und deren Anteile aus."
+      },
+      {
+        question: "Gilt ein deutscher Erbschein auch in der Türkei?",
+        answer: "Ein deutscher Erbschein entfaltet in der Türkei keine automatische Wirkung. Da die Türkei kein Mitglied der EU-Erbrechtsverordnung ist, muss für Immobilien in der Türkei entweder ein neuer türkischer Erbschein beantragt oder der deutsche Erbeschein in einem Anerkennungsverfahren (Tenfiz) gerichtlich bestätigt werden."
+      },
+      {
+        question: "Wie lange dauert es, einen Erbschein in der Türkei zu erhalten?",
+        answer: "Wenn keine Unstimmigkeiten vorliegen und alle Erben im türkischen Personenstandsregister eingetragen sind, kann der Erbschein bei einem Notar in wenigen Minuten ausgestellt werden. Muss ein Gericht entscheiden (z.B. bei Auslandsbezug), kann das Verfahren einige Wochen bis Monate dauern."
+      }
+    ],
+    faqTR: [
+      {
+        question: "Veraset ilamı almak için tüm mirasçıların başvurusu gerekir mi?",
+        answer: "Hayır. Mirasçılardan herhangi biri tek başına başvurarak tüm mirasçıları gösteren mirasçılık belgesini alabilir. Diğer mirasçıların bizzat bulunmasına veya onayına gerek yoktur."
+      },
+      {
+        question: "Noterden veraset ilamı alınamazsa ne yapılmalıdır?",
+        answer: "Eğer mirasçılar arasında soybağı uyuşmazlığı varsa veya mirasçılardan biri yabancı uyruklu ise noterler belge veremez. Bu durumda 'hasımlı' veya 'hasımsız' veraset davası açmak üzere Sulh Hukuk Mahkemesine başvurulmalıdır."
+      },
+      {
+        question: "E-devletten alınan veraset ilamı resmi işlemlerde geçerli mi?",
+        answer: "Evet. E-devlet üzerinden 'Veraset İlamı Sorgulama' yapılarak alınan barkodlu belgeler, mahkemeler ve bankalar dahil birçok resmi kurumda geçerli bir belge olarak kabul edilmektedir."
+      }
+    ]
+  },
+  {
     slug: "mavi-kart-turkiye-miras-tasinmaz-haklari",
     slugDE: "blaue-karte-tuerkei-erbrecht-immobilien",
     slugTR: "mavi-kart-turkiye-miras-tasinmaz-haklari",
@@ -1256,6 +2035,8 @@ Türkiye'de ya da Almanya'da miras konusunda bir sorunuz varsa, ilk görüşmeyi
     readTimeDE: "12 Min. Lesezeit",
     readTimeTR: "13 dk okuma",
     publishedAt: "2026-03-15",
+    keywordsDE: "Erbrecht Türkei Deutschland, Veraset İlamı beantragen, Erbschein Türkei, Erbschaftsteuer Türkei Fristen, Türkisches Erbrecht Beratung Mannheim",
+    keywordsTR: "Türkiye miras hukuku Almanya, veraset ilamı nasıl alınır, miras vergisi Türkiye süreler, Almanya'dan miras davası, Türk miras avukatı",
   },
   {
     slug: "uluslararasi-bosanma",
@@ -1338,6 +2119,8 @@ Uluslararası boşanma davaları ve tanıma-tenfiz süreçleri bizim uzmanlık a
     readTimeDE: "10 Min. Lesezeit",
     readTimeTR: "10 dk okuma",
     publishedAt: "2026-03-02",
+    keywordsDE: "Internationale Scheidung Türkei, Tanıma Tenfiz davası, Anerkennung Scheidung Ausland, Scheidungsrecht Türkei, Avukat Hasan Doğru Mannheim",
+    keywordsTR: "Uluslararası boşanma Türkiye, tanıma tenfiz davası nasıl açılır, Almanya boşanma Türkiye geçerlilik, Türk aile hukuku, boşanma avukatı Mannheim",
   },
   {
     slug: "gayrimenkul-haklari",
@@ -1405,6 +2188,8 @@ Türkiye'deki taşınmaz hukukuna hakimiz ve işlemlerinizi doğrudan Türk maka
     readTimeDE: "8 Min. Lesezeit",
     readTimeTR: "8 dk okuma",
     publishedAt: "2026-04-02",
+    keywordsDE: "Immobilienkauf Türkei Rechte, Tapu Prüfung Türkei, Grunderwerbsteuer Türkei, Vollmacht Immobilien Türkei, Immobilienrecht Anwalt Türkei",
+    keywordsTR: "Türkiye'de taşınmaz edinimi yabancılar, tapu sorgulama nasıl yapılır, emlak vergisi Türkiye, vekaletle tapu devri, gayrimenkul avukatı",
   },
   {
     slug: "tanima-tenfiz-rehberi",
@@ -1456,6 +2241,8 @@ Türkiye'deki aile mahkemeleri nezdindeki süreci bizzat yönetiyoruz.`,
     readTimeDE: "6 Min. Lesezeit",
     readTimeTR: "6 dk okuma",
     publishedAt: "2026-04-02",
+    keywordsDE: "Tanıma ve Tenfiz Deutschland, Scheidung Türkei Anerkennung, MÖHUK Art 50, Familienrecht Türkei Anwalt, Scheidung Deutschland Türkei Register",
+    keywordsTR: "Tanıma ve tenfiz davası Almanya, boşanma kararı Türkiye'de tanıtma, kesinleşme şerhi apostil, aile mahkemesi tanıma davası, tanıma tenfiz avukatı",
   },
   {
     slug: "sakli-pay-tenkis-davasi",
@@ -1498,6 +2285,8 @@ Saklı payınız ihlal edilmişse, öğrenmeden itibaren 1 yıl içinde **Tenkis
     readTimeDE: "8 Min. Lesezeit",
     readTimeTR: "8 dk okuma",
     publishedAt: "2026-04-02",
+    keywordsDE: "Saklı Pay Erbrecht Türkei, Pflichtteil verletzen Türkei, Tenkis Davası Klage, Herabsetzungsklage Türkei, Erbrecht Anwalt Mannheim Ankara",
+    keywordsTR: "Saklı pay nedir Türk hukuku, tenkis davası şartları, miras payı ihlali dava, miras hukuku uzmanı, tenkis davası ne kadar sürer",
   },
   {
     slug: "izale-i-suyu-paylasim-davasi",
@@ -1535,6 +2324,8 @@ Paydaşlar arasında paylaşılamayan taşınmazlar için Sulh Hukuk Mahkemesi'n
     readTimeDE: "7 Min. Lesezeit",
     readTimeTR: "7 dk okuma",
     publishedAt: "2026-04-02",
+    keywordsDE: "Ortaklığın Giderilmesi davası, İzale-i Şüyu Klage Türkei, Teilungsklage Immobilien Türkei, Versteigerung Haus Türkei Erbe, Miteigentum auflösen Türkei",
+    keywordsTR: "İzale-i şüyu davası nedir, ortaklığın giderilmesi davası süreci, miras kalan evin satışı mahkeme, izale-i şuyu davası ne kadar sürer, satış yoluyla ortaklığın giderilmesi",
   },
   {
     slug: "mavi-kart-haklari-rehberi",
@@ -1574,6 +2365,8 @@ Türk vatandaşlığından çıkan kişilerin Türkiye'deki haklarını koruyan 
     readTimeDE: "5 Min. Lesezeit",
     readTimeTR: "5 dk okuma",
     publishedAt: "2026-04-02",
+    keywordsDE: "Mavi Kart Rechte Türkei, 5901 TVK Madde 28, Erbrecht Mavi Kart Inhaber, Immobilienkauf Mavi Kart, Staatsangehörigkeit Türkei Mavi Kart",
+    keywordsTR: "Mavi kartlıların hakları Türkiye, mavi kart miras hakkı, mavi kart gayrimenkul alımı, TVK madde 28 haklar, mavi kartlıların vatandaşlık hakları",
   },
   {
     slug: "vorladung-haftbefehl-tuerkei",
@@ -1612,6 +2405,8 @@ Türkiye'deki ceza dosyalarınızı Almanya'dan vekalet vererek takip edebilirsi
     readTimeDE: "7 Min. Lesezeit",
     readTimeTR: "7 dk okuma",
     publishedAt: "2026-04-02",
+    keywordsDE: "Yakalama Kararı Türkei, Haftbefehl Türkei was tun, Strafverfahren Türkei Verteidigung, Strafrecht Anwalt Türkei Mannheim, Vorladung Türkei Post",
+    keywordsTR: "Türkiye yakalama kararı sorgulama, hakkımda dava var mı Türkiye, Almanya'dan ceza davası savunma, ceza avukatı Mannheim Ankara, yakalama kararı nasıl kaldırılır",
   },
   {
     slug: "suc-duyurusu-tuerkei-rehberi",
@@ -1643,6 +2438,8 @@ Türkiye'deki suç mağduriyetleriniz için Almanya'dan vekaletle suç duyurusun
     readTimeDE: "6 Min. Lesezeit",
     readTimeTR: "6 dk okuma",
     publishedAt: "2026-04-02",
+    keywordsDE: "Suç Duyurusu Türkei aus Deutschland, Strafanzeige Türkei Betrug, Ermittlungsverfahren Türkei Anwalt, Strafrecht Türkei Anzeige, Opferrechte Türkei",
+    keywordsTR: "Türkiye'de suç duyurusu nasıl yapılır, Almanya'dan şikayetçi olmak, dolandırıcılık suç duyurusu Türkiye, ceza soruşturması takibi avukat, şikayet dilekçesi örneği",
   },
   {
     slug: "bosanma-rehberi-tuerkiye",
@@ -1679,6 +2476,8 @@ Süreci Almanya'dan vekaletle yönetmek mümkündür.
     readTimeDE: "8 Min. Lesezeit",
     readTimeTR: "8 dk okuma",
     publishedAt: "2026-04-02",
+    keywordsDE: "Scheidung Türkei ohne Reise, Einvernehmliche Scheidung Türkei, Anlaşmalı Boşanma Protokoll, Scheidungsanwalt Türkei Mannheim, Boşanma davası vekalet",
+    keywordsTR: "Türkiye'ye gitmeden boşanma davası, Almanya'dan anlaşmalı boşanma, boşanma protokolü nasıl hazırlanır, çekişmeli boşanma süreci, boşanma avukatı ücretleri",
   },
   {
     slug: "vekaletname-rehberi-almanya",
@@ -1712,5 +2511,7 @@ Türkiye'deki işlemleriniz için gerekli olan yetki belgesidir.`,
     readTimeDE: "6 Min. Lesezeit",
     readTimeTR: "6 dk okuma",
     publishedAt: "2026-04-02",
+    keywordsDE: "Türkische Vekaletname Deutschland, Vollmacht Konsulat Türkei, Notar Vollmacht Türkei Apostille, Vollmacht Muster Türkei, Anwaltsvollmacht Türkei Mannheim",
+    keywordsTR: "Almanya'da vekaletname çıkarma, konsolosluk vekaletname randevu, Alman noterinden vekalet apostil, vekaletname örneği Türkiye, avukat vekaletnamesi nasıl verilir",
   },
 ];

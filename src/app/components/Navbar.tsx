@@ -77,7 +77,8 @@ export function Navbar() {
     }
   };
 
-  const isLight = (scrolled || !isHome) && !mobileOpen;
+  const isBlog = pathname.includes('/blog/');
+  const isLight = !isHome || scrolled || mobileOpen || isBlog;
 
   return (
     <header
@@ -86,7 +87,7 @@ export function Navbar() {
         top: 0,
         left: 0,
         right: 0,
-        zIndex: 100,
+        zIndex: 1000,
         transition: "background 0.3s, box-shadow 0.3s",
         background: isLight ? "#ffffff" : "transparent",
         boxShadow: isLight ? "0 1px 24px rgba(0,0,0,0.07)" : "none",
