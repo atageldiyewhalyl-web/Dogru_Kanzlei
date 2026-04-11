@@ -95,6 +95,8 @@ export default defineConfig({
         '/de/leistungen/sorgerecht', '/tr/hizmetler/velayet',
         '/de/leistungen/immobilienrecht', '/tr/hizmetler/gayrimenkul-hukuku',
         '/de/blog', '/tr/blog',
+        '/de/blog/deutschland-scheidung-anerkennung-tuerkei-tanima-tenfiz', '/tr/blog/almanya-bosanma-tanima-tenfiz-davasi-rehberi',
+        '/de/blog/erbschein-tuerkei-beantragen-verfahren', '/tr/blog/veraset-ilami-nedir-nasil-alinir',
         '/de/blog/almanya-scheidung-tuerkei-vermoegensaufteilung', '/tr/blog/almanya-bosanma-turkiye-mal-paylasimi',
         '/de/blog/deutschland-muris-muvazaasi-tapu-annullierung', '/tr/blog/almanya-muris-muvazaasi-tapu-iptali',
         '/de/blog/deutschland-gemeinsames-sorgerecht-tuerkei-anerkennung', '/tr/blog/almanya-ortak-velayet-turkiye-tenfiz',
