@@ -119,7 +119,7 @@ export function ServiceDetail() {
 
   const serviceSchema = {
     "@context": "https://schema.org",
-    "@type": "Service",
+    "@type": "LegalService",
     "name": title,
     "provider": {
       "@type": "LegalService",
@@ -128,12 +128,53 @@ export function ServiceDetail() {
     },
     "areaServed": ["DE", "CH", "AT", "TR"],
     "description": description,
-    "availableLanguage": ["Turkish", "German", "English"]
+    "availableLanguage": ["Turkish", "German"]
+  };
+
+  const faqItems = language === 'de' ? service.faqDE : service.faqTR;
+  const faqSchema = faqItems && faqItems.length > 0 ? {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": faqItems.map((faq: any) => ({
+      "@type": "Question",
+      "name": faq.question,
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": faq.answer
+      }
+    }))
+  } : null;
+
+  const breadcrumbSchema = {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      {
+        "@type": "ListItem",
+        "position": 1,
+        "name": language === 'de' ? "Startseite" : "Ana Sayfa",
+        "item": `https://www.hasandogru.de/${language}`
+      },
+      {
+        "@type": "ListItem",
+        "position": 2,
+        "name": language === 'de' ? "Leistungen" : "Hizmetler",
+        "item": `https://www.hasandogru.de/${language}/${servicesSegment}`
+      },
+      {
+        "@type": "ListItem",
+        "position": 3,
+        "name": title,
+        "item": `https://www.hasandogru.de/${language}/${servicesSegment}/${language === 'de' ? service.slugDE : service.slugTR}`
+      }
+    ]
   };
 
   return (
     <div className="bg-[#F7F5F0] min-h-screen pt-32 pb-24">
       <SchemaOrg data={serviceSchema} />
+      <SchemaOrg data={breadcrumbSchema} id="schema-org-breadcrumb" />
+      {faqSchema && <SchemaOrg data={faqSchema} id="schema-org-faq" />}
       <div className="max-w-[1400px] mx-auto px-6 lg:px-12">
         {/* Breadcrumb - Elevated */}
         <nav aria-label="Breadcrumb" className="mb-16">

@@ -35,8 +35,11 @@ export function Hero() {
             <img
               src={heroImage}
               alt=""
-              width={1024}
-              height={1280}
+              width={622}
+              height={528}
+              loading="eager"
+              fetchPriority="high"
+              decoding="sync"
               className="w-full h-full object-cover object-top opacity-30 mix-blend-overlay"
             />
             <div className="absolute inset-0 bg-gradient-to-t from-[#1C3829] via-[#1C3829]/80 to-transparent" />

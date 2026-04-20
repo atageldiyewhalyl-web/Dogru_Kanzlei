@@ -4265,4 +4265,1576 @@ Sürecin en kritik adımı doğru hukuki danışmanlık almaktır. Mannheim'da T
       }
     ]
   },
+
+  // ─── POST 1: Scheidungsanwalt Mannheim ────────────────────────────────────
+  {
+    slug: "scheidungsanwalt-mannheim",
+    slugDE: "scheidungsanwalt-mannheim",
+    slugTR: "mannheim-bosanma-avukati",
+    titleDE: "Scheidungsanwalt Mannheim: Ablauf, Kosten und türkisch-deutsche Besonderheiten",
+    titleTR: "Mannheim'da Boşanma Avukatı: Süreç, Masraflar ve Türk-Alman Özellikleri",
+    excerptDE: "Sie suchen einen Scheidungsanwalt in Mannheim? Hier erfahren Sie, wie eine Scheidung abläuft, was sie kostet — und was bei türkisch-deutschen Ehen zusätzlich gilt.",
+    excerptTR: "Mannheim'da boşanma avukatı mı arıyorsunuz? Sürecin nasıl işlediğini, maliyetleri ve Türk-Alman evliliklerinde geçerli olan ek kuralları öğrenin.",
+    contentDE: `Sie haben sich getrennt und fragen sich, wie das jetzt weitergehen soll. Welche Schritte müssen Sie wann einleiten? Was kostet eine Scheidung in Mannheim ungefähr? Und wenn Sie oder Ihr Partner türkische Staatsbürger sind: Was ist dann anders?
+
+Ich erkläre Ihnen den Ablauf ohne Umwege.
+
+## Kein Anwalt, keine Scheidung — so funktioniert es in Deutschland
+
+Eine Scheidung läuft in Deutschland immer über das Familiengericht. Das bedeutet: Mindestens ein Ehepartner braucht einen Rechtsanwalt, der den Scheidungsantrag stellt. Der andere kann ohne Anwalt erscheinen — er kann aber keinen eigenen Antrag stellen.
+
+Das Zuständige Gericht in Mannheim ist das Amtsgericht Mannheim, Familienabteilung.
+
+## Schritt für Schritt: So läuft eine Scheidung ab
+
+**Das Trennungsjahr.** Bevor ein Gericht die Scheidung ausspricht, müssen Sie mindestens ein Jahr getrennt gelebt haben. "Getrennt" heißt nicht zwingend, dass jemand ausgezogen ist. Es reicht, wenn die Ehe faktisch beendet ist: kein gemeinsames Wirtschaften, keine eheliche Gemeinschaft. Manche Paare trennen sich in derselben Wohnung — das ist möglich, aber oft schwierig zu beweisen.
+
+**Scheidungsantrag.** Nach dem Trennungsjahr reicht ein Anwalt beim Familiengericht Mannheim den Scheidungsantrag ein. Der andere Partner bekommt ihn zugestellt.
+
+**Versorgungsausgleich.** Das Gericht teilt automatisch die Rentenansprüche auf, die während der Ehe erworben wurden. Das klingt einfacher als es ist — besonders wenn einer der Partner in der Türkei Rentenansprüche aufgebaut hat. Dort gibt es eine eigene Rentenversicherung (SGK), und die Abstimmung zwischen deutschem und türkischem System dauert.
+
+**Gerichtstermin.** Wenn nichts mehr strittig ist, dauert der Termin selbst oft unter 30 Minuten. Das Gericht prüft, ob das Trennungsjahr vorliegt, und spricht die Scheidung aus.
+
+## Was eine Scheidung in Mannheim kostet
+
+Die Kosten hängen vom Streitwert ab. Der Streitwert ergibt sich aus dem gemeinsamen Monatsnettoeinkommen. Grobe Orientierung:
+
+- Einvernehmliche Scheidung, ein Anwalt: 1.500 bis 2.500 Euro
+- Streitige Scheidung mit Unterhalt, Sorgerecht oder Zugewinnausgleich: 3.000 Euro aufwärts — manchmal deutlich mehr
+
+Wer wenig verdient, kann Verfahrenskostenhilfe beantragen. Das Gericht übernimmt dann die Kosten und stellt einen Anwalt.
+
+## Türkisch-deutsche Ehen: Drei Dinge, die anders laufen
+
+**Welches Scheidungsrecht gilt?** Nach der EU-Verordnung Rom III gilt grundsätzlich das Recht des Landes, in dem Sie leben. Für in Deutschland lebende Paare also deutsches Recht — außer Sie haben vorher ausdrücklich eine andere Rechtswahl getroffen.
+
+**Das Scheidungsurteil in der Türkei anerkennen lassen.** Wenn Sie nach der deutschen Scheidung in der Türkei erneut heiraten oder Ihren Personenstand im türkischen Register ändern möchten, brauchen Sie ein Anerkennungsverfahren in der Türkei — ein sogenanntes Tanıma-Tenfiz-Verfahren vor einem türkischen Gericht.
+
+**Türkische Immobilien.** Wenn einer der Partner Grundbesitz in der Türkei hat, wird die Vermögensaufteilung komplizierter. Türkisches und deutsches Güterrecht unterscheiden sich erheblich. Das sollte früh besprochen werden.
+
+## Warum manche Scheidungen ewig dauern
+
+Meistens liegt es am Versorgungsausgleich — besonders wenn ausländische Rentenansprüche im Spiel sind. Der Austausch mit türkischen Behörden läuft oft langsam. Dazu kommen Streitigkeiten über Unterhalt oder Sorgerecht, die das Verfahren aufblähen können.
+
+Eine einvernehmliche Scheidung mit einer vorab unterschriebenen Scheidungsfolgenvereinbarung ist deutlich schneller. Wenn beide Seiten die wesentlichen Punkte — Unterhalt, Kinder, Wohnung, Vermögen — vorab klar regeln, kann die Scheidung in 3 bis 6 Monaten durch sein.
+
+## Wie die Doğru Kanzlei helfen kann
+
+Rechtsanwalt Hasan Doğru ist sowohl bei der Ankara Barosu als auch bei der Rechtsanwaltskammer Karlsruhe (§207 BRAO) zugelassen. Er kennt beide Rechtssysteme und berät auf Deutsch und Türkisch — auch zu Fragen rund um Tanıma-Tenfiz, türkische Immobilien und grenzüberschreitende Unterhaltsansprüche.`,
+    contentTR: `Ayrıldınız ve bundan sonra ne yapmanız gerektiğini merak ediyorsunuz. Hangi adımları ne zaman atmalısınız? Mannheim'da bir boşanma yaklaşık ne kadar tutar? Siz ya da eşiniz Türk vatandaşıysanız ne değişir?
+
+Süreci doğrudan açıklıyorum.
+
+## Avukatsız Boşanma Olmaz — Almanya'da Böyle İşliyor
+
+Almanya'da boşanma her zaman mahkeme yoluyla gerçekleşir. En az bir eşin avukat tutup boşanma dilekçesi sunması şarttır. Diğer taraf avukatsız katılabilir, ancak kendi talebini sunamaz.
+
+Mannheim'da yetkili mahkeme Amtsgericht Mannheim Aile Hukuku Dairesidir.
+
+## Adım Adım Boşanma Süreci
+
+**Ayrılık yılı.** Mahkeme boşanma kararı vermeden önce çiftlerin en az bir yıl ayrı yaşamış olması gerekir. "Ayrı yaşamak" birinin mutlaka taşınması anlamına gelmez. Fiilen evlilik sona ermişse — ortak ev yönetimi yok, evlilik birlikteliği yok — yeter. Bazı çiftler aynı evde ayrı yaşar; bu mümkün ama ispat açısından zordur.
+
+**Boşanma dilekçesi.** Ayrılık yılının ardından avukat, Mannheim Aile Mahkemesi'ne boşanma dilekçesini sunar. Diğer tarafa tebligat yapılır.
+
+**Emeklilik hakları paylaşımı (Versorgungsausgleich).** Mahkeme, evlilik süresince biriktirilen emeklilik haklarını otomatik olarak paylaştırır. Türkiye'deki SGK primleri de devreye girince Alman ve Türk sistemleri arasındaki koordinasyon zaman alabilir.
+
+**Duruşma.** Tartışmalı nokta yoksa duruşma genellikle 30 dakikadan kısa sürer. Mahkeme ayrılık yılını teyit eder ve boşanma kararını verir.
+
+## Mannheim'da Boşanmanın Maliyeti
+
+Masraflar dava değerine göre belirlenir; dava değeri ise çiftin ortak aylık net gelirine göre hesaplanır. Genel bir tablo:
+
+- Anlaşmalı boşanma, bir avukat: 1.500–2.500 Euro
+- Nafaka, velayet veya mal paylaşımı konusunda çekişmeli boşanma: 3.000 Euro ve üzeri
+
+Düşük gelirli kişiler Verfahrenskostenhilfe (dava yardımı) başvurabilir.
+
+## Türk-Alman Evliliklerinde Üç Farklı Durum
+
+**Hangi hukuk uygulanır?** AB Roma III Tüzüğü uyarınca, Almanya'da yaşayan çiftlere kural olarak Alman hukuku uygulanır; önceden başka bir hukuku seçmedilerse.
+
+**Türkiye'de tanıma davası.** Alman boşanmasının ardından Türkiye'de yeniden evlenmek ya da Türk nüfus kaydını güncellemek istiyorsanız, Türk mahkemesinde Tanıma-Tenfiz davası açmanız gerekir.
+
+**Türk gayrimenkulleri.** Taraflardan birinin Türkiye'de mülkü varsa mal paylaşımı karmaşıklaşır. Türk ve Alman mal rejimi hukuku arasındaki fark büyüktür; bu konuyu erken ele almak önemlidir.
+
+## Doğru Kanzlei Nasıl Yardımcı Olur
+
+Avukat Hasan Doğru, hem Ankara Barosu hem de Karlsruhe Barosu'na (§207 BRAO) kayıtlıdır. Her iki hukuk sistemini bilen Hasan Doğru, Tanıma-Tenfiz, Türk mülkleri ve sınır ötesi nafaka konularında da danışmanlık sunmaktadır.`,
+    category: "family-law",
+    categoryDE: "Familienrecht",
+    image: divorceImg,
+    dateDE: "21. April 2026",
+    dateTR: "21 Nisan 2026",
+    readTimeDE: "7 Min. Lesezeit",
+    readTimeTR: "7 dk okuma",
+    publishedAt: "2026-04-21",
+    keywordsDE: "scheidungsanwalt mannheim, scheidung mannheim, scheidungskosten mannheim, türkisch deutsche scheidung, scheidungsverfahren deutschland",
+    keywordsTR: "mannheim boşanma avukatı, almanya boşanma süreci, türk alman boşanma, boşanma masrafları almanya",
+    faqDE: [
+      {
+        question: "Brauche ich einen Scheidungsanwalt in Mannheim, wenn wir uns einig sind?",
+        answer: "Ja, mindestens einer der Partner braucht einen Anwalt, um den Scheidungsantrag beim Familiengericht Mannheim einzureichen. Der andere kann ohne Anwalt erscheinen, kann aber keinen eigenen Antrag stellen."
+      },
+      {
+        question: "Wie lange dauert eine Scheidung in Mannheim?",
+        answer: "Bei einer einvernehmlichen Scheidung ohne offene Streitpunkte rechnen Sie ab Antragseinreichung mit 3 bis 6 Monaten. Gibt es Auseinandersetzungen über Unterhalt, Sorgerecht oder Vermögen, kann es 1 bis 3 Jahre dauern."
+      },
+      {
+        question: "Muss ich beim Scheidungstermin persönlich erscheinen?",
+        answer: "Grundsätzlich ja. In Ausnahmefällen — etwa bei Aufenthalt im Ausland — kann das Gericht eine Ausnahme genehmigen oder die Anhörung per Video durchführen."
+      },
+      {
+        question: "Wir haben in der Türkei geheiratet. Zählt das in Deutschland?",
+        answer: "Ja. Eine in der Türkei wirksam geschlossene Ehe wird in Deutschland anerkannt. Sie können die Scheidung dann beim deutschen Familiengericht beantragen."
+      },
+      {
+        question: "Was passiert mit meiner Rente in der Türkei bei der Scheidung?",
+        answer: "Türkische SGK-Rentenansprüche fließen in den deutschen Versorgungsausgleich ein. Das erfordert Abstimmung mit türkischen Behörden, was das Verfahren verlängern kann. Sprechen Sie Ihren Anwalt früh darauf an."
+      }
+    ],
+    faqTR: [
+      {
+        question: "Anlaşmalı boşanmada Mannheim'da avukat tutmam gerekiyor mu?",
+        answer: "Evet, en az bir tarafın avukat tutması zorunludur. Diğer taraf avukatsız duruşmaya katılabilir ancak kendi talebini sunamaz."
+      },
+      {
+        question: "Mannheim'da boşanma ne kadar sürer?",
+        answer: "Tartışmasız, anlaşmalı bir boşanma dilekçenin sunulmasından itibaren genellikle 3–6 ay içinde sonuçlanır. Nafaka, velayet veya mülk anlaşmazlığı varsa 1–3 yıl sürebilir."
+      },
+      {
+        question: "Türkiye'de evlendik. Bu evlilik Almanya'da geçerli mi?",
+        answer: "Evet. Türk hukukuna göre geçerli şekilde Türkiye'de yapılan bir evlilik Almanya'da tanınır ve boşanma Alman mahkemesinde talep edilebilir."
+      }
+    ],
+    ctaTitleDE: "Scheidungsberatung in Mannheim",
+    ctaTitleTR: "Mannheim'da Boşanma Danışmanlığı",
+    ctaDescriptionDE: "Fragen zur Scheidung — besonders bei türkisch-deutschen Sachverhalten? Wir beraten auf Deutsch und Türkisch.",
+    ctaDescriptionTR: "Boşanma konusunda sorularınız mı var? Almanca ve Türkçe danışmanlık sunuyoruz."
+  },
+
+  // ─── POST 2: Familienrecht Beratung Mannheim ───────────────────────────────
+  {
+    slug: "familienrecht-beratung-mannheim",
+    slugDE: "familienrecht-beratung-mannheim",
+    slugTR: "mannheim-aile-hukuku-danismanligi",
+    titleDE: "Familienrecht Beratung Mannheim: Was kostet eine Erstberatung und wann lohnt sie sich?",
+    titleTR: "Mannheim'da Aile Hukuku Danışmanlığı: İlk Görüşme Ne Kadar Tutar ve Ne Zaman Gereklidir?",
+    excerptDE: "Familienrecht Beratung in Mannheim: Was kostet eine Erstberatung, welche Themen deckt sie ab, und was ist bei türkisch-deutschen Familien anders?",
+    excerptTR: "Mannheim'da aile hukuku danışmanlığı: ilk görüşme ne kadar tutar, hangi konuları kapsar ve Türk-Alman ailelerde ne farklıdır?",
+    contentDE: `Familienrechtliche Probleme tauchen meistens dann auf, wenn man sie am wenigsten gebrauchen kann. Trennung, Streit ums Kind, ausbleibender Unterhalt — und dann weiß man nicht, wo man anfangen soll.
+
+Eine anwaltliche Erstberatung ist der einfachste erste Schritt. Sie dauert meist eine Stunde und beantwortet die Frage, die die meisten am meisten beschäftigt: Was kann ich überhaupt tun?
+
+## Was eine Erstberatung im Familienrecht bringt
+
+Nach einem Gespräch mit einem Familienrechtler wissen Sie drei Dinge, die Sie vorher nicht wussten:
+
+Erstens, welches Recht auf Ihre Situation anwendbar ist. Bei Familien mit Bezug zur Türkei ist das nicht immer klar. Deutsches oder türkisches Recht? Welches Gericht ist zuständig? Das hängt davon ab, wo die Beteiligten leben, wo geheiratet wurde, wo die Kinder sind.
+
+Zweitens, welche konkreten Ansprüche Sie haben — oder gegen Sie bestehen könnten.
+
+Drittens, ob eine außergerichtliche Einigung möglich ist. Die meisten Familienrechtler sagen Ihnen ehrlich, ob ein Anruf beim Anwalt der Gegenseite mehr bringt als ein Gerichtsverfahren.
+
+## Was kostet eine Familienrecht-Beratung in Mannheim?
+
+Das Rechtsanwaltsvergütungsgesetz (RVG) begrenzt die Erstberatungsgebühr auf maximal 190 Euro zuzüglich Mehrwertsteuer. Viele Anwälte verlangen weniger. Es lohnt sich, vorher anzurufen und zu fragen.
+
+Wenn Sie wenig verdienen, haben Sie möglicherweise Anspruch auf Beratungshilfe. Mit einem Beratungshilfeschein — ausgestellt vom Amtsgericht Mannheim — zahlen Sie beim Anwalt nur 15 Euro. Voraussetzung ist, dass Ihr Einkommen unter einer bestimmten Grenze liegt und Sie keine Rechtsschutzversicherung haben, die die Kosten deckt.
+
+Haben Sie eine Rechtsschutzversicherung, rufen Sie vor dem Anwalttermin bei Ihrer Versicherung an. Erstberatungskosten sind häufig inbegriffen.
+
+## Die häufigsten Familienrechtsthemen in Mannheim
+
+**Scheidung und Trennung.** Das klassische Thema. Wichtig dabei: die Scheidung selbst ist oft der unkompliziertere Teil. Was die meisten Paare länger beschäftigt, sind die Folgen — Unterhalt, Wohnung, Vermögen, Kinder.
+
+**Kindesunterhalt.** Der Kindesunterhalt richtet sich nach der Düsseldorfer Tabelle. Das klingt einfach, wird aber schwierig, wenn der zahlungspflichtige Elternteil in der Türkei lebt oder wechselnde Einkommen hat.
+
+**Sorgerecht und Umgang.** Nach der Trennung behalten verheiratete Eltern grundsätzlich das gemeinsame Sorgerecht. Probleme entstehen, wenn die Kommunikation nicht mehr funktioniert oder ein Elternteil mit dem Kind ins Ausland ziehen möchte.
+
+**Ehegattenunterhalt.** Nicht automatisch. Ob und wie viel Unterhalt nach der Scheidung gezahlt werden muss, hängt von Ehedauer, Erwerbstätigkeit und gemeinsamen Kindern ab.
+
+## Was bei türkisch-deutschen Familien oft anders ist
+
+Das ist ein Punkt, der in vielen allgemeinen Ratgebern untergeht. Wenn Ihre Familie einen Bezug zur Türkei hat — Staatsangehörigkeit, Wohnort, Immobilien, Rentenpunkte — können sich die Fragen deutlich verschieben.
+
+Typische Konstellationen, die uns in der Kanzlei oft begegnen:
+
+Ein Partner lebt in der Türkei und zahlt keinen Unterhalt. Was hilft dann: ein deutsches Urteil plus Tenfiz-Verfahren in der Türkei, oder direkt eine Klage in der Türkei? Beides hat Vor- und Nachteile.
+
+Die Scheidung ist in Deutschland durch, aber in der Türkei gilt man noch als verheiratet. Das Tanıma-Tenfiz-Verfahren löst das — aber es kostet Zeit und Geld.
+
+Ein Elternteil will mit dem Kind in die Türkei. Bei gemeinsamem Sorgerecht ist das ohne Zustimmung des anderen nicht erlaubt. Was passiert, wenn er oder sie trotzdem geht? Dann wird es schnell zu einem Fall nach dem Haager Kindesentführungsübereinkommen.
+
+## Wann man nicht warten sollte
+
+Es gibt Situationen, in denen jede Woche zählt. Wenn der andere Elternteil mit dem Kind verreisen will. Wenn Sie seit Monaten keinen Unterhalt bekommen und über Rückforderungen nachdenken. Wenn Sie eine Kündigung der Ehewohnung bekommen haben und nicht sicher sind, ob die rechtmäßig ist.
+
+Eine Erstberatung schafft Klarheit. Das hilft — auch wenn danach kein Gerichtsverfahren folgt.`,
+    contentTR: `Aile hukuku sorunları genellikle en az ihtiyaç duyduğunuz anda ortaya çıkar. Ayrılık, çocuk meselesi, ödenmeyen nafaka — ve nereden başlayacağınızı bilmiyorsunuzdur.
+
+Bir avukatla ilk görüşme, en basit ilk adımdır. Genellikle bir saat sürer ve çoğu kişinin en çok merak ettiği soruyu yanıtlar: Ne yapabilirim?
+
+## İlk Görüşme Ne İşe Yarar?
+
+Bir aile hukukçusuyla görüştükten sonra üç şeyi bilirsiniz:
+
+Birincisi, durumunuza hangi hukukun uygulanacağını. Türkiye bağlantılı ailelerde bu her zaman açık değildir. Alman mı Türk hukuku mu? Hangi mahkeme yetkili? Bu, tarafların nerede yaşadığına, nerede evlenildiğine ve çocukların nerede olduğuna bağlıdır.
+
+İkincisi, sahip olduğunuz — ya da size karşı ileri sürülebilecek — somut hakları.
+
+Üçüncüsü, mahkeme dışı uzlaşmanın mümkün olup olmadığını. Deneyimli bir aile hukukçusu, dava açmadan bir çözüme ulaşıp ulaşılamayacağını size dürüstçe söyler.
+
+## Mannheim'da Aile Hukuku Danışması Ne Kadar Tutar?
+
+Alman Avukatlık Ücret Kanunu (RVG) ilk danışma ücretini maksimum 190 Euro + KDV ile sınırlar. Birçok avukat daha az alır; önceden sormak mantıklıdır.
+
+Düşük gelirli iseniz Beratungshilfe hakkından yararlanabilirsiniz. Mannheim Asliye Mahkemesi'nden alınan belgeyle avukatta yalnızca 15 Euro ödersiniz.
+
+## Türk-Alman Ailelerde Sıkça Karşılaşılan Durumlar
+
+Türkiye ile bağlantılı ailelerde tablo farklılaşır. Büromuzda sık karşılaştığımız durumlar:
+
+Eş Türkiye'de yaşıyor ve nafaka ödemiyor. Ne işe yarar: Alman kararı + Türkiye'de Tenfiz davası mı, yoksa doğrudan Türkiye'de dava mı? Her ikisinin avantaj ve dezavantajları var.
+
+Almanya'da boşanma tamamlandı ama Türkiye'de hâlâ evli görünüyorsunuz. Tanıma-Tenfiz davası bu sorunu çözer ancak zaman ve masraf gerektirir.
+
+Bir ebeveyn çocukla Türkiye'ye gitmek istiyor. Müşterek velayette diğer ebeveynin onayı olmadan bu mümkün değildir. Yine de gidilirse, Lahey Sözleşmesi kapsamında bir dava söz konusu olabilir.
+
+## Ne Zaman Beklememelisiniz?
+
+Bazı durumlarda her hafta önemlidir. Diğer ebeveyn çocukla yurt dışına çıkmak istiyorsa. Aylardır nafaka almıyorsanız. Evlilik konutu konusunda belirsizlik varsa.
+
+Bir görüşme netlik sağlar — hatta ardından dava açılmasa bile.`,
+    category: "family-law",
+    categoryDE: "Familienrecht",
+    image: criminalDefenseTurkeyImg,
+    dateDE: "21. April 2026",
+    dateTR: "21 Nisan 2026",
+    readTimeDE: "6 Min. Lesezeit",
+    readTimeTR: "6 dk okuma",
+    publishedAt: "2026-04-21",
+    keywordsDE: "familienrecht beratung mannheim, familienanwalt mannheim, erstberatung familienrecht mannheim, familienrecht mannheim kosten, türkisches familienrecht",
+    keywordsTR: "mannheim aile hukuku danışmanlığı, aile avukatı mannheim, türk alman aile hukuku, ilk görüşme aile hukuku",
+    faqDE: [
+      {
+        question: "Was kostet eine Erstberatung im Familienrecht in Mannheim?",
+        answer: "Maximal 190 Euro plus Mehrwertsteuer nach dem RVG. Mit Beratungshilfeschein (beim Amtsgericht Mannheim erhältlich) zahlen Sie nur 15 Euro. Viele Anwälte verlangen weniger als den Höchstsatz."
+      },
+      {
+        question: "Muss ich beim Familiengericht Mannheim einen Anwalt haben?",
+        answer: "Für Anträge und Verhandlungen gilt Anwaltszwang. Für eine einfache Beratung können Sie ohne Anwalt kommen — aber dann gibt es keinen Anwalt, der für Sie spricht."
+      },
+      {
+        question: "Mein Ex-Partner lebt in der Türkei und zahlt keinen Unterhalt. Was sind meine Optionen?",
+        answer: "Sie können in Deutschland klagen und das Urteil dann per Tenfiz-Verfahren in der Türkei vollstrecken lassen. Alternativ klagen Sie direkt in der Türkei. Welcher Weg schneller geht, hängt von der konkreten Situation ab."
+      },
+      {
+        question: "Wie läuft eine Familienrecht-Beratung ab?",
+        answer: "Sie schildern Ihre Situation, der Anwalt erklärt die Rechtslage, zeigt Optionen auf und schätzt ein, was realistisch ist. Am Ende wissen Sie, ob und wie Sie weiter vorgehen sollten."
+      }
+    ],
+    faqTR: [
+      {
+        question: "Mannheim'da aile hukuku ilk görüşmesi ne kadar tutar?",
+        answer: "RVG'ye göre maksimum 190 Euro + KDV. Beratungshilfe belgesiyle yalnızca 15 Euro. Birçok avukat tavan ücretten daha az alır."
+      },
+      {
+        question: "Türkiye'deki eski eşim nafaka ödemiyor, seçeneklerim neler?",
+        answer: "Almanya'da dava açıp kararı Türkiye'de Tenfiz davası yoluyla icra ettirebilirsiniz. Ya da doğrudan Türkiye'de dava açabilirsiniz. Hangisinin daha hızlı sonuç vereceği somut duruma bağlıdır."
+      }
+    ],
+    ctaTitleDE: "Familienrecht-Erstberatung in Mannheim",
+    ctaTitleTR: "Mannheim'da Aile Hukuku Danışmanlığı",
+    ctaDescriptionDE: "Sie haben eine Frage zum Familienrecht — besonders mit türkischem Bezug? Wir beraten auf Deutsch und Türkisch.",
+    ctaDescriptionTR: "Aile hukukuyla ilgili sorularınız mı var? Almanca ve Türkçe danışmanlık sunuyoruz."
+  },
+
+  // ─── POST 3: Sorgerecht Anwalt Mannheim ────────────────────────────────────
+  {
+    slug: "sorgerecht-anwalt-mannheim",
+    slugDE: "sorgerecht-anwalt-mannheim",
+    slugTR: "mannheim-velayet-avukati",
+    titleDE: "Sorgerecht Anwalt Mannheim: Alleinsorge, Umgang und Auslandsreisen mit dem Kind",
+    titleTR: "Mannheim'da Velayet Avukatı: Tek Velayet, Ziyaret Hakkı ve Çocukla Yurt Dışı Seyahati",
+    excerptDE: "Streit ums Sorgerecht in Mannheim? Wann gibt es Alleinsorge, wie wird der Umgang geregelt, und was passiert, wenn ein Elternteil mit dem Kind ins Ausland reisen will?",
+    excerptTR: "Mannheim'da velayet uyuşmazlığı mı? Mahkeme ne zaman tek velayet verir, ziyaret hakkı nasıl düzenlenir ve bir ebeveyn çocukla yurt dışına gitmek isterse ne olur?",
+    contentDE: `Das Sorgerecht ist das Thema, bei dem Eltern sich am häufigsten uneinig sind — und bei dem die rechtliche Lage am häufigsten missverstanden wird.
+
+Manche glauben, die Mutter bekommt automatisch das alleinige Sorgerecht. Andere denken, man kann als Vater nichts ausrichten. Beides stimmt nicht.
+
+## Was gemeinsames Sorgerecht in der Praxis bedeutet
+
+Bei verheirateten Eltern gilt das gemeinsame Sorgerecht automatisch. Es bleibt auch nach der Scheidung bestehen — das ist der gesetzliche Regelfall in Deutschland.
+
+Das gemeinsame Sorgerecht bedeutet: Beide Elternteile müssen bei allen wesentlichen Entscheidungen zustimmen. Schulwahl, medizinische Eingriffe, Umzug ins Ausland, Religionszugehörigkeit, Reisepässe. Bei kleineren Alltagsentscheidungen entscheidet der Elternteil, bei dem das Kind gerade ist.
+
+Das funktioniert gut, wenn die Kommunikation noch halbwegs klappt. Es funktioniert schlecht, wenn Eltern sich über jeden Schritt streiten.
+
+## Wann bekommt ein Elternteil das alleinige Sorgerecht?
+
+Das Familiengericht überträgt das alleinige Sorgerecht nur, wenn das Kindeswohl es erfordert. Beispiele, die das Gericht ernst nimmt:
+
+Das Kind ist häuslicher Gewalt ausgesetzt. Ein Elternteil ist aus psychischen oder suchtbedingten Gründen dauerhaft nicht erziehungsfähig. Die Kommunikation ist so zerrüttet, dass jede gemeinsame Entscheidung dem Kind schadet.
+
+Was nicht reicht: Der Elternteil ist mir unsympathisch. Wir streiten uns viel. Er zahlt keinen Unterhalt. All das ist unangenehm, aber keine Grundlage für das alleinige Sorgerecht.
+
+## Das Umgangsrecht: Recht des Kindes, nicht Druckmittel
+
+Das Umgangsrecht gehört dem Kind, nicht dem Elternteil. Das klingt nach Sprachregelung, hat aber praktische Konsequenzen. Selbst wenn ein Elternteil den Unterhalt nicht zahlt, darf der andere den Umgang nicht einfach verweigern. Unterhalt und Umgang sind rechtlich unabhängig voneinander.
+
+Der Umgang wird entweder einvernehmlich geregelt oder per Gerichtsbeschluss. Wenn sich die Eltern nicht einigen können, legt das Familiengericht Zeiten, Abhol- und Rückgabeorte und Ferienregelungen fest.
+
+## Auslandsreise mit dem Kind: Wann brauchen Sie eine Erlaubnis?
+
+Das ist der Punkt, an dem es in türkisch-deutschen Familien am häufigsten eskaliert.
+
+Bei gemeinsamem Sorgerecht darf kein Elternteil das Kind ohne Zustimmung des anderen dauerhaft ins Ausland mitnehmen. Für Urlaubsreisen ins Ausland gilt: Bei kürzeren Reisen (weniger als 6 Wochen) ohne Rückkehrabsicht reicht in der Praxis die Zustimmung des anderen Elternteils — am besten schriftlich. Für einen dauerhaften Umzug mit dem Kind brauchen Sie die Zustimmung des anderen Elternteils oder einen Gerichtsbeschluss.
+
+Reist ein Elternteil ohne Zustimmung mit dem Kind aus, ist das rechtlich eine internationale Kindesentführung — auch wenn es sich um einen leiblichen Elternteil handelt. Die Türkei hat das Haager Kindesentführungsübereinkommen unterzeichnet, was grundsätzlich Rückführungsanträge ermöglicht.
+
+Wenn Sie in einer solchen Situation sind oder sie befürchten: Holen Sie sofort anwaltliche Hilfe. Je länger das Kind im Ausland ist, desto schwieriger wird die Rückführung.
+
+## Türkisch-deutsches Sorgerecht: Was noch dazu kommt
+
+Ein türkisches Sorgerechtsurteil gilt in Deutschland nicht automatisch. Es muss in einem eigenen Verfahren anerkannt werden. Dasselbe gilt umgekehrt: Ein deutsches Sorgerechtsurteil braucht in der Türkei ein Tenfiz-Verfahren, bevor es vollstreckbar ist.
+
+Das bedeutet in der Praxis: Wenn Sie in Deutschland ein Sorgerechtsurteil erstreiten, hat das in der Türkei zunächst keine direkte Wirkung. Das muss separat beantragt werden. Die Doğru Kanzlei übernimmt diese Verfahren auf beiden Seiten.
+
+## Was ein Sorgerechtsverfahren kostet
+
+Das Gericht setzt den Verfahrenswert oft auf 3.000 bis 4.000 Euro fest. Anwalts- und Gerichtsgebühren zusammen ergeben bei einem unkomplizierten Fall ohne Sachverständigengutachten oft 800 bis 1.500 Euro. Mit Gutachten mehr.
+
+Bei geringem Einkommen ist Verfahrenskostenhilfe möglich.`,
+    contentTR: `Velayet, ebeveynlerin en sık anlaşmazlığa düştüğü konudur — ve hukuki durumun en çok yanlış anlaşıldığı alandır.
+
+Kimileri annenin otomatik olarak tek velayeti aldığını sanır. Kimileri ise babanın hiçbir hakkının olmadığını düşünür. İkisi de doğru değildir.
+
+## Müşterek Velayet Pratikte Ne Anlama Gelir?
+
+Evli ebeveynlerde müşterek velayet otomatik olarak geçerlidir. Boşanmanın ardından da kural olarak devam eder — Almanya'da yasal standart budur.
+
+Müşterek velayet şu demektir: Tüm önemli kararlar için her iki ebeveynin onayı gerekir. Okul seçimi, tıbbi müdahaleler, yurt dışına taşınma, din eğitimi, pasaport. Günlük küçük kararları ise o anda çocukla birlikte olan ebeveyn verir.
+
+İletişim işe yarıyorsa bu düzen çalışır. Her adımda tartışma varsa çalışmaz.
+
+## Mahkeme Ne Zaman Tek Velayeti Verir?
+
+Aile mahkemesi, tek velayeti yalnızca çocuğun yararını gerektirdiği durumlarda devreder:
+
+Çocuk aile içi şiddete maruz kalıyor. Bir ebeveyn psikolojik veya bağımlılık nedenlerinden kalıcı olarak ebeveynlik yapamıyor. İletişim çökmüş, her ortak karar çocuğa zarar veriyor.
+
+Yeterli olmayan gerekçeler: Eski eşimi sevmiyorum. Çok kavga ediyoruz. Nafaka ödemiyor. Bunlar rahatsız edici ama tek velayet için yeterli değildir.
+
+## Ziyaret Hakkı: Çocuğun Hakkı, Baskı Aracı Değil
+
+Ziyaret hakkı çocuğa aittir, ebeveyne değil. Pratikte şu anlama gelir: Nafaka ödenmiyor olsa bile diğer ebeveyn ziyaret hakkını bloke edemez. Nafaka ve ziyaret hakkı hukuken birbirinden bağımsızdır.
+
+Ziyaret ya anlaşmayla ya da mahkeme kararıyla düzenlenir.
+
+## Çocukla Yurt Dışına Seyahat: Ne Zaman İzin Gerekir?
+
+Türk-Alman ailelerde en sık kriz yaratan noktadır.
+
+Müşterek velayette, hiçbir ebeveyn diğerinin onayı olmadan çocuğu kalıcı olarak yurt dışına götüremez. Kısa tatiller için diğer ebeveynin yazılı onayı pratik açıdan yeterlidir. Kalıcı taşınma için diğer ebeveynin onayı ya da mahkeme kararı şarttır.
+
+Onay alınmadan çocuğun yurt dışına çıkarılması, biyolojik ebeveyn olsa bile uluslararası çocuk kaçırma sayılır. Türkiye Lahey Sözleşmesi'ni imzalamıştır — bu teorik olarak iade taleplerini mümkün kılar.
+
+Böyle bir durumla karşı karşıyaysanız: hemen hukuki yardım alın. Çocuk ne kadar uzun süre yurt dışında kalırsa iade o kadar zorlaşır.
+
+## Doğru Kanzlei'nin Rolü
+
+Türk mahkemesindeki bir velayet kararı Almanya'da otomatik olarak geçerli değildir. Tanıma davası açılması gerekir. Aynısı tersi için de geçerlidir: Alman kararı, Türkiye'de Tenfiz davası olmadan icra edilemez. Doğru Kanzlei her iki taraftaki bu süreçleri yürütmektedir.`,
+    category: "family-law",
+    categoryDE: "Familienrecht",
+    image: jointCustodyImg,
+    dateDE: "21. April 2026",
+    dateTR: "21 Nisan 2026",
+    readTimeDE: "8 Min. Lesezeit",
+    readTimeTR: "8 dk okuma",
+    publishedAt: "2026-04-21",
+    keywordsDE: "sorgerecht anwalt mannheim, sorgerecht mannheim, alleinsorge beantragen, umgangsrecht mannheim, türkisches sorgerecht, kind ausland mitnehmen",
+    keywordsTR: "mannheim velayet avukatı, tek velayet almanya, ziyaret hakkı mannheim, türk alman velayet, çocuk yurt dışı izin",
+    faqDE: [
+      {
+        question: "Bekommt die Mutter automatisch das Sorgerecht nach der Scheidung?",
+        answer: "Nein. Bei verheirateten Eltern bleibt das gemeinsame Sorgerecht nach der Scheidung bestehen. Das alleinige Sorgerecht gibt es nur, wenn ein Gericht es ausdrücklich überträgt — und dafür braucht es mehr als nur den Wunsch eines Elternteils."
+      },
+      {
+        question: "Kann ich den Umgang verweigern, weil mein Ex keinen Unterhalt zahlt?",
+        answer: "Nein. Umgangsrecht und Unterhaltsrecht sind voneinander unabhängig. Wenn Sie den Umgang verweigern, kann das gerichtliche Konsequenzen für Sie haben. Gegen ausbleibenden Unterhalt müssen Sie separat vorgehen."
+      },
+      {
+        question: "Mein Kind hat die türkische Staatsbürgerschaft. Welches Recht gilt beim Sorgerecht?",
+        answer: "Maßgeblich ist der gewöhnliche Aufenthaltsort des Kindes. Lebt das Kind in Deutschland, gilt deutsches Recht — unabhängig von der Staatsbürgerschaft."
+      },
+      {
+        question: "Darf ich mit meinem Kind in die Türkei fliegen, ohne den Ex zu fragen?",
+        answer: "Für Urlaubsreisen empfiehlt sich die schriftliche Zustimmung. Bei einem dauerhaften Umzug ist die Zustimmung des anderen Elternteils oder ein Gerichtsbeschluss notwendig. Ohne beides kann das als Kindesentführung gewertet werden."
+      }
+    ],
+    faqTR: [
+      {
+        question: "Boşanmanın ardından anne otomatik olarak velayeti mi alır?",
+        answer: "Hayır. Evli ebeveynlerde müşterek velayet boşanmadan sonra da devam eder. Tek velayet, yalnızca mahkeme tarafından açıkça devredilirse mümkündür — ve bunun için bir ebeveynin isteği yetmez."
+      },
+      {
+        question: "Eski eşim nafaka ödemediği için ziyaret hakkını reddedebilir miyim?",
+        answer: "Hayır. Ziyaret hakkı ve nafaka hukuken birbirinden bağımsızdır. Ziyareti engellerseniz hukuki sonuçlar doğabilir. Ödenmeyen nafaka için ayrı işlem başlatmanız gerekir."
+      },
+      {
+        question: "Sormadan çocukla Türkiye'ye gidebilir miyim?",
+        answer: "Tatil amaçlı kısa seyahatler için yazılı onay almanız tavsiye edilir. Kalıcı taşınma için diğer ebeveynin onayı ya da mahkeme kararı şarttır. Bu olmadan çocuk kaçırma kapsamında değerlendirilebilir."
+      }
+    ],
+    ctaTitleDE: "Sorgerechtsberatung in Mannheim",
+    ctaTitleTR: "Mannheim'da Velayet Danışmanlığı",
+    ctaDescriptionDE: "Sorgerechtsstreit — besonders mit Bezug zur Türkei? Wir kennen beide Systeme und beraten auf Deutsch und Türkisch.",
+    ctaDescriptionTR: "Velayet uyuşmazlığı mı var? Her iki hukuk sistemini bilen ekibimiz Almanca ve Türkçe danışmanlık sunuyor."
+  },
+
+  // ─── POST 4: Vollmacht auf Türkisch ────────────────────────────────────────
+  {
+    slug: "vollmacht-auf-tuerkisch",
+    slugDE: "vollmacht-auf-tuerkisch",
+    slugTR: "turkce-vekaletname-nasil-cikarilir",
+    titleDE: "Vollmacht auf Türkisch: Was Sie wirklich brauchen und welche Fehler teuer werden",
+    titleTR: "Türkçe Vekaletname: Gerçekten Neye İhtiyacınız Var ve Hangi Hatalar Pahalıya Mal Olur?",
+    excerptDE: "Vollmacht auf Türkisch ausstellen: Konsulat oder deutscher Notar? Was muss im Text stehen? Und welche häufigen Fehler führen dazu, dass türkische Behörden das Dokument ablehnen?",
+    excerptTR: "Türkçe vekaletname çıkarma: konsolosluk mu, Alman noteri mi? Metinde ne yazmalı? Türk kurumlarının belgeyi reddetmesine yol açan yaygın hatalar neler?",
+    contentDE: `Wer in Deutschland lebt und in der Türkei etwas regeln muss — Immobilienverkauf, Erbschaft, Gerichtsverfahren, Bankgeschäfte — kommt meistens nicht drum herum: Er braucht eine türkische Vollmacht, die sogenannte Vekâletname.
+
+Das Problem dabei ist nicht, dass man eine Vollmacht braucht. Das Problem ist, dass viele Vollmachten falsch sind. Und das merkt man oft erst dann, wenn der türkische Notar oder die Behörde das Dokument zurückweist.
+
+Hier erkläre ich, was wirklich funktioniert.
+
+## Was eine Vollmacht auf Türkisch von einer deutschen unterscheidet
+
+In Deutschland reicht für viele Vollmachten ein schriftliches Dokument mit Unterschrift. In der Türkei ist das anders. Für die meisten rechtlich relevanten Vorgänge brauchen Sie eine **notariell beurkundete Vekâletname** — entweder ausgestellt vom türkischen Konsulat oder durch einen deutschen Notar plus Apostille plus beglaubigte Übersetzung.
+
+Das ist kein bürokratischer Zufall. Die Türkei schützt sich damit vor gefälschten Vollmachten, besonders bei Immobilien- und Erbschaftsgeschäften.
+
+## Wann brauchen Sie eine türkische Vollmacht?
+
+Immer dann, wenn Sie von Deutschland aus jemanden in der Türkei bevollmächtigen möchten, um in Ihrem Namen zu handeln. Häufige Anlässe:
+
+- Immobilienverkauf oder -übertragung in der Türkei (Tapu Devri)
+- Erbschaftsangelegenheiten — Veraset ilamı, Aufteilung, Übertragung
+- Einreichung einer Scheidungsklage in der Türkei durch einen türkischen Anwalt
+- Tanıma-Tenfiz-Verfahren — Anerkennung eines deutschen Urteils in der Türkei
+- Bankgeschäfte auf türkischen Konten
+- An- oder Abmeldung eines Fahrzeugs in der Türkei
+
+## Konsulat oder deutscher Notar — was ist besser?
+
+**Türkisches Konsulat.** Das ist der einfachere Weg. Die Konsulate in Frankfurt, Berlin, Stuttgart, München und anderen Städten können Vekâletnamen direkt auf Türkisch ausstellen. Das Ergebnis ist in der Türkei ohne Apostille oder Übersetzung sofort gültig.
+
+Der Nachteil: Termine sind oft Monate im Voraus ausgebucht, und Sie müssen persönlich erscheinen.
+
+**Deutscher Notar.** Möglich, aber aufwendiger. Der Notar beurkundet auf Deutsch, dann brauchen Sie eine Apostille beim Landgericht oder der Bezirksregierung und eine beglaubigte Übersetzung ins Türkische durch einen staatlich vereidigten Dolmetscher. Erst das komplette Paket (Original + Apostille + Übersetzung) gilt in der Türkei.
+
+Der Nachteil: Teurer, zeitintensiver und fehleranfälliger — weil bei jedem Schritt etwas schiefgehen kann.
+
+## Was in der Vollmacht stehen muss
+
+Das ist der entscheidende Punkt. In der Türkei gilt: Nur was in der Vollmacht ausdrücklich steht, darf der Bevollmächtigte tun. Keine pauschalen Formulierungen wie "alle Angelegenheiten in der Türkei regeln".
+
+Wenn die Vollmacht für einen Immobilienverkauf ist, muss sie explizit Folgendes enthalten: Befugnis zum Verkauf der konkreten Immobilie (mit Adresse und Tapu-Nummer), Befugnis zur Unterzeichnung aller notwendigen Dokumente beim Tapu-Amt und Befugnis, den Verkaufspreis zu empfangen.
+
+Fehlt auch nur einer dieser Punkte, kann der türkische Notar oder das Grundbuchamt die Vollmacht ablehnen.
+
+## Die häufigsten Fehler
+
+**Zu vage formuliert.** "Alle Angelegenheiten vertreten" reicht nicht. Türkische Behörden verlangen Spezifität.
+
+**Falscher Übersetzer.** Für die Apostille-Variante brauchen Sie einen staatlich vereidigten Übersetzer (in Deutschland: staatlich geprüfter und beeidigter Übersetzer). Eine normale Übersetzungsfirma reicht nicht.
+
+**Vergessene Identitätsnachweise.** Die Vollmacht muss in der Türkei dem Handelsregister oder Grundbuchamt vorgelegt werden, oft zusammen mit dem türkischen Nüfus-Dokument oder Reisepass des Vollmachtgebers.
+
+**Verjährte Vollmacht.** Immobilienvollmachten verlieren in der Türkei nach einigen Jahren ihre Gültigkeit (je nach Behörde unterschiedlich). Prüfen Sie vor einem Immobiliengeschäft, ob eine alte Vollmacht noch anerkannt wird.
+
+## Wer formuliert den Text?
+
+Das ist die Stelle, an der ein Anwalt mit Kenntnissen des türkischen Rechts hilft. Kein Textbaustein aus dem Internet. Keine Übersetzung einer deutschen Vollmacht. Der Text muss nach türkischem Recht formuliert sein — passgenau für den konkreten Zweck.
+
+In der Doğru Kanzlei formulieren wir Vekâletname-Texte auf Türkisch, die türkische Notare und Behörden tatsächlich akzeptieren.`,
+    contentTR: `Almanya'da yaşayıp Türkiye'de bir şeyler halletmeniz gerekiyorsa — gayrimenkul satışı, miras, dava, bankacılık — çoğunlukla kaçış yoktur: Türk hukukuna uygun bir vekaletname, yani Vekâletname gerekir.
+
+Sorun vekaletname gerektirmesi değildir. Sorun, pek çok vekaleetnamenin hatalı olmasıdır. Bunu çoğu zaman Türk noteri ya da kurum belgeyi reddettiğinde anlarsınız.
+
+Bu yazıda gerçekten ne işe yaradığını açıklıyorum.
+
+## Türk Vekaletnamesi Neden Farklı?
+
+Almanya'da pek çok yetki belgesi için imzalı yazılı bir belge yeterlidir. Türkiye'de durum farklıdır. Çoğu hukuki işlem için noter onaylı Vekâletname şarttır — ya Türk konsolosluğu tarafından düzenlenmiş ya da Alman noteri + apostil + yeminli çeviri şeklinde hazırlanmış.
+
+Bu bir tesadüf değil. Türkiye, özellikle gayrimenkul ve miras işlemlerinde sahte vekaletnamelere karşı önlem alıyor.
+
+## Ne Zaman Türkçe Vekaletname Gerekir?
+
+Almanya'dan Türkiye'de biri adına işlem yaptırmak istediğinizde. Yaygın durumlar:
+
+- Türkiye'deki gayrimenkul satışı veya devri (Tapu Devri)
+- Miras işlemleri — veraset ilamı, taksim, devir
+- Türkiye'de boşanma davası açtırmak için Türk avukata yetki vermek
+- Tanıma-Tenfiz davası — Alman mahkeme kararının Türkiye'de tanınması
+- Türk banka hesapları üzerinde işlem yaptırmak
+- Türkiye'de araç tescil veya silme işlemi
+
+## Konsolosluk mu, Alman Noteri mi?
+
+**Türk Konsolosluğu.** Daha kolay yoldur. Frankfurt, Berlin, Stuttgart, Münih ve diğer şehirlerdeki konsolosluklar doğrudan Türkçe Vekâletname düzenleyebilir. Sonuç, apostil veya çeviri gerektirmeksizin Türkiye'de anında geçerlidir.
+
+Dezavantaj: Randevular çoğu zaman aylarca önceden dolmaktadır ve bizzat gitmeniz gerekir.
+
+**Alman Noteri.** Mümkündür ancak daha zahmetlidir. Noter Almanca düzenleme yapar; ardından Landgericht veya Bezirksregierung'dan apostil alınır ve devlet yeminli bir tercüman tarafından Türkçe'ye çevrilir. Türkiye'de geçerli olması için tüm paketin (asıl + apostil + çeviri) tam olması gerekir.
+
+Dezavantaj: Daha pahalı, daha zaman alıcı ve her adımda hata riski daha yüksektir.
+
+## Vekaletnamede Ne Yazmalı?
+
+Bu kritik noktadır. Türkiye'de kural şudur: Vekaletnamede açıkça yazılan şeyleri vekil yapabilir. "Türkiye'deki tüm işleri halletmek" gibi genel ifadeler kabul edilmez.
+
+Gayrimenkul satışı için vekaletname şunları açıkça içermelidir: Söz konusu taşınmazı satma yetkisi (adres ve tapu numarasıyla birlikte), tapu dairesinde gerekli belgeleri imzalama yetkisi, satış bedelini tahsil etme yetkisi.
+
+Bu maddelerden biri eksikse Türk noteri veya tapu müdürlüğü belgeyi reddedebilir.
+
+## En Sık Yapılan Hatalar
+
+**Muğlak ifadeler.** "Tüm işleri temsil etmek" yetmez. Türk kurumları özgüllük ister.
+
+**Yanlış tercüman.** Apostil yolunu seçtiyseniz devlet yeminli tercüman gerekir. Sıradan çeviri bürosu yetmez.
+
+**Eski vekaletname.** Gayrimenkul vekaletnameleri Türkiye'de belirli bir süre sonra geçerliliğini yitirebilir. İşlem öncesinde eski vekaletnamenin hâlâ kabul edilip edilmeyeceğini kontrol edin.
+
+## Metni Kim Yazmalı?
+
+İşte burada Türk hukukunu bilen bir avukat devreye girer. İnternetten bulunan hazır şablonlar değil. Alman vekaletnamelerinin çevirisi değil. Metin, Türk hukukuna göre — somut amaca özel olarak — kaleme alınmalıdır.
+
+Doğru Kanzlei olarak, Türk noterler ve kurumların gerçekten kabul ettiği Vekâletname metinleri hazırlıyoruz.`,
+    category: "legal-documents",
+    categoryDE: "Rechtsdokumente",
+    image: vekaletnameImg,
+    dateDE: "21. April 2026",
+    dateTR: "21 Nisan 2026",
+    readTimeDE: "7 Min. Lesezeit",
+    readTimeTR: "7 dk okuma",
+    publishedAt: "2026-04-21",
+    keywordsDE: "vollmacht auf türkisch, türkische vollmacht, vekâletname deutschland, vollmacht türkei konsulat, türkische vollmacht apostille, vekâletname text",
+    keywordsTR: "türkçe vekaletname, almanya vekaletname nasıl çıkarılır, konsolosluk vekaletname, apostil türkiye, vekâletname metin örneği",
+    faqDE: [
+      {
+        question: "Kann ich eine Vollmacht auf Türkisch einfach selbst übersetzen?",
+        answer: "Nein. Eine selbst übersetzte Vollmacht wird von türkischen Behörden nicht anerkannt. Sie brauchen entweder eine Beurkundung durch das türkische Konsulat oder eine beglaubigte Übersetzung durch einen staatlich vereidigten Dolmetscher."
+      },
+      {
+        question: "Wie lange ist eine türkische Vollmacht gültig?",
+        answer: "Das hängt vom Verwendungszweck und der Behörde ab. Bei Immobiliengeschäften gibt es in der Praxis oft eine Grenze von 3 bis 5 Jahren. Prüfen Sie vor einem Geschäft, ob eine ältere Vollmacht noch anerkannt wird."
+      },
+      {
+        question: "Welche türkischen Konsulate in Deutschland können Vollmachten ausstellen?",
+        answer: "Alle türkischen Generalkonsulate: Frankfurt, Berlin, Hamburg, München, Stuttgart, Karlsruhe, Mainz, Hannover, Düsseldorf, Köln, Nürnberg und das Konsulat in Münster."
+      },
+      {
+        question: "Was kostet eine Vekâletname beim türkischen Konsulat?",
+        answer: "Die Konsulatsgebühr liegt je nach Umfang bei etwa 30 bis 80 Euro. Dazu kommen mögliche Kosten für Dolmetscher oder notwendige Unterlagen."
+      },
+      {
+        question: "Ich bin in Deutschland und kann nicht persönlich zum Konsulat. Was sind meine Optionen?",
+        answer: "Sie können den Weg über den deutschen Notar wählen: Beurkundung auf Deutsch, dann Apostille und beglaubigte Übersetzung. Das ist aufwendiger, funktioniert aber ohne Konsulatsbesuch. Sprechen Sie uns an, wir begleiten Sie durch den Prozess."
+      }
+    ],
+    faqTR: [
+      {
+        question: "Türkçe vekaletnameyi kendim tercüme edebilir miyim?",
+        answer: "Hayır. Öz çeviri Türk kurumları tarafından kabul edilmez. Ya Türk konsolosluğunda düzenleme yaptırmalısınız ya da devlet yeminli tercüman onaylı çeviri kullanmalısınız."
+      },
+      {
+        question: "Türkçe vekaletname ne kadar süre geçerlidir?",
+        answer: "Kullanım amacına ve kuruma göre değişir. Gayrimenkul işlemlerinde pratikte genellikle 3–5 yıllık sınır uygulanır. İşlem öncesinde eski bir vekaleetnamenin kabul edilip edilmeyeceğini kontrol edin."
+      },
+      {
+        question: "Almanya'da hangi konsolosluklar vekaletname düzenleyebilir?",
+        answer: "Tüm Türk Başkonsoloslukları: Frankfurt, Berlin, Hamburg, Münih, Stuttgart, Karlsruhe, Mainz, Hannover, Düsseldorf, Köln, Nürnberg ve Münster."
+      },
+      {
+        question: "Konsolosluğa bizzat gidemiyorum. Ne yapabilirim?",
+        answer: "Alman noteri yolunu seçebilirsiniz: Almanca düzenleme, ardından apostil ve yeminli çeviri. Daha zahmetlidir ama konsolosluk ziyareti gerektirmez. Süreç için bize danışabilirsiniz."
+      }
+    ],
+    ctaTitleDE: "Vollmacht auf Türkisch richtig aufsetzen",
+    ctaTitleTR: "Türkçe Vekaletnameyi Doğru Hazırlayın",
+    ctaDescriptionDE: "Wir formulieren Ihre Vekâletname auf Türkisch — zweckgebunden, rechtssicher und von türkischen Behörden anerkannt.",
+    ctaDescriptionTR: "Amacınıza özel, Türk kurumlarınca kabul edilen Vekâletname metnini sizin için hazırlıyoruz."
+  },
+
+  // ─── POST 5: Mietrecht Mannheim ────────────────────────────────────────────
+  {
+    slug: "mietrecht-mannheim",
+    slugDE: "mietrecht-mannheim",
+    slugTR: "mannheim-kira-hukuku",
+    titleDE: "Mietrecht Mannheim: Kündigung, Kaution und was Mieter wirklich wissen müssen",
+    titleTR: "Mannheim'da Kira Hukuku: Fesih, Depozito ve Kiracıların Gerçekten Bilmesi Gerekenler",
+    excerptDE: "Mietrecht in Mannheim: Wann ist eine Kündigung des Vermieters wirksam? Wie bekommen Sie Ihre Kaution zurück? Und welche Renovierungsklauseln müssen Mieter nicht erfüllen?",
+    excerptTR: "Mannheim'da kira hukuku: Ev sahibinin feshi ne zaman geçerlidir? Depozitonuzu nasıl geri alırsınız? Hangi tamirat hükümleri kiracılar için bağlayıcı değildir?",
+    contentDE: `Mietrecht ist das Rechtsgebiet, bei dem die meisten Menschen irgendwann einmal landen — ob als Mieter oder als Vermieter. In Mannheim, wo die Wohnungsnachfrage hoch ist, kommt es besonders häufig zu Streitigkeiten über Kündigungen, Kautionseinbehalte und Nebenkostenabrechnungen.
+
+Ich erkläre Ihnen die wichtigsten Punkte ohne den üblichen Fachjargon.
+
+## Kündigung durch den Vermieter: Was gilt?
+
+Der Vermieter kann ein unbefristetes Mietverhältnis nicht einfach so kündigen. Er braucht immer einen gesetzlich anerkannten Grund.
+
+**Eigenbedarf.** Der häufigste Kündigungsgrund. Der Vermieter oder ein naher Familienangehöriger möchte die Wohnung selbst nutzen. Die Kündigung muss schriftlich sein und den Eigenbedarf konkret benennen — wer zieht ein, aus welchem Grund. Pauschale Formulierungen reichen nicht.
+
+**Erhebliche Pflichtverletzung.** Gemeint sind Dinge wie dauerhafter Mietrückstand von mehr als zwei Monatsmieten, schwere Ruhestörungen oder absichtliche Beschädigungen der Wohnung.
+
+**Wirtschaftliche Verwertung.** Dieser Grund ist rechtlich komplex und in der Praxis selten erfolgreich. Der Vermieter muss nachweisen, dass er ohne Kündigung erhebliche wirtschaftliche Nachteile erleidet.
+
+Ohne einen dieser Gründe ist die Kündigung unwirksam — auch wenn sie schriftlich ist.
+
+### Kündigungsfristen in Mannheim
+
+Die Kündigungsfrist richtet sich nach der Wohndauer:
+
+- Bis zu 5 Jahren in der Wohnung: 3 Monate
+- 5 bis 8 Jahre: 6 Monate
+- Mehr als 8 Jahre: 9 Monate
+
+Die Kündigung muss schriftlich beim Mieter ankommen — und zwar bis zum dritten Werktag des Monats, damit dieser Monat bei der Fristberechnung zählt.
+
+### Widerspruch gegen die Kündigung
+
+Wenn Ihnen die Kündigung zugestellt wurde, haben Sie in bestimmten Fällen das Recht auf Widerspruch — zum Beispiel wenn ein Umzug für Sie oder Familienangehörige aus gesundheitlichen Gründen unzumutbar ist, Sie keinen angemessenen Ersatzwohnraum in Mannheim finden oder Sie schon sehr lange in der Wohnung wohnen. Der Widerspruch muss schriftlich und spätestens 2 Monate vor Ablauf der Kündigungsfrist eingelegt werden.
+
+## Die Kaution: Was der Vermieter darf und was nicht
+
+Die Kaution darf höchstens drei Monatsnettokaltmieten betragen. Der Vermieter muss das Geld getrennt von seinem eigenen Vermögen anlegen — auf einem Treuhandkonto oder als gesondertes Sparbuch.
+
+Nach dem Auszug hat er in der Regel bis zu sechs Monate Zeit, die Kaution abzurechnen und zurückzuzahlen. Er darf Teile einbehalten, wenn er konkrete, nachweisbare Ansprüche hat — etwa für tatsächliche Schäden (die über normale Abnutzung hinausgehen), offene Mietzahlungen oder ausstehende Betriebskostenposten.
+
+**Normale Abnutzung** muss er hinnehmen. Das sind Dinge wie vergilbte Wände nach Jahren normalen Wohnens, leichte Kratzer im Parkett oder minimale Schäden, die beim gewöhnlichen Gebrauch entstehen.
+
+Wenn die sechs Monate vergangen sind und keine Abrechnung kommt, können Sie auf Rückzahlung der gesamten Kaution klagen.
+
+## Schönheitsreparaturen: Die meisten Klauseln sind unwirksam
+
+Das überrascht viele Mieter. Sie glauben, am Ende der Mietzeit renovieren zu müssen — weil es im Vertrag steht. Aber der Bundesgerichtshof hat in einer Reihe von Entscheidungen festgelegt, dass viele solcher Klauseln unwirksam sind.
+
+Unwirksam sind insbesondere:
+
+Starre Renovierungsfristen. Wenn der Vertrag sagt "Die Küche ist alle 3 Jahre zu streichen", ist das ohne Rücksicht auf den tatsächlichen Zustand der Wohnung. Solche Klauseln sind nach der BGH-Rechtsprechung regelmäßig unwirksam.
+
+Renovierungspflicht bei unrenovierten Wohnungen. Wer eine unrenovierte Wohnung bezogen hat, muss bei Auszug grundsätzlich nicht renovieren — egal was der Vertrag sagt.
+
+Farbvorgaben. Klauseln, die bestimmte Farben oder Materialien vorschreiben, sind häufig unwirksam.
+
+Was folgt daraus: Wenn Ihr Vertrag eine dieser Klauseln enthält, sollten Sie vor dem Auszug prüfen lassen, ob sie überhaupt gilt — bevor Sie Geld für eine Renovierung ausgeben, die Sie rechtlich nicht schulden.
+
+## Nebenkostenabrechnung: Was der Vermieter verlangen darf
+
+Die Nebenkostenabrechnung muss innerhalb von 12 Monaten nach Ende des Abrechnungszeitraums vorliegen. Kommt sie zu spät, verliert der Vermieter seinen Anspruch auf Nachzahlungen — auch wenn Sie tatsächlich zu wenig gezahlt hätten.
+
+Welche Kosten umgelegt werden dürfen, ist in der Betriebskostenverordnung (BetrKV) abschließend geregelt. Was dort nicht steht — Verwaltungskosten, Instandhaltung, Reparaturen — darf nicht auf den Mieter umgelegt werden.
+
+Als Mieter haben Sie das Recht, die Originalbelege zur Abrechnung einzusehen. Fragen Sie danach, wenn Ihnen etwas unklar ist.
+
+## Mieterhöhung in Mannheim: Was ist erlaubt?
+
+Der Vermieter kann die Miete nur bis zur ortsüblichen Vergleichsmiete erhöhen. In Mannheim ist das im Mannheimer Mietspiegel dokumentiert, den Sie online oder beim Amt für Stadtentwicklung abrufen können.
+
+Dazu kommt die Kappungsgrenze: Innerhalb von drei Jahren darf die Miete maximal um 15 Prozent steigen. Mannheim gilt als Gebiet mit angespanntem Wohnungsmarkt, weshalb diese Grenze gilt.
+
+Eine Mieterhöhung muss schriftlich begründet werden — mit Verweis auf den Mietspiegel oder Vergleichswohnungen. Ohne diese Begründung sind Sie nicht verpflichtet, die höhere Miete zu zahlen.
+
+## Rechtsschutzversicherung oder Mieterverein?
+
+Wenn Sie eine Rechtsschutzversicherung haben, sind viele mietrechtliche Streitigkeiten abgedeckt. Fragen Sie vorher bei Ihrer Versicherung an.
+
+Der Mieterverein Mannheim bietet Mitgliedern Beratung zu einem Jahresbeitrag. Für einfache Fragen ist das eine günstige Option.
+
+Wenn die Sache komplizierter ist — Eigenbedarfskündigung, einbehaltene Kaution, Diskriminierung — empfiehlt sich ein Rechtsanwalt für Mietrecht.`,
+    contentTR: `Kira hukuku, er ya da geç herkesin karşılaştığı hukuk alanıdır — ister kiracı ister ev sahibi olsun. Konut talebinin yüksek olduğu Mannheim'da, fesih, depozito kesintileri ve yan gider hesaplamaları konularında çok sık anlaşmazlık yaşanıyor.
+
+En önemli noktaları teknik jargon olmadan açıklıyorum.
+
+## Ev Sahibinin Feshi: Hangi Kurallar Geçerli?
+
+Ev sahibi, süresiz bir kira sözleşmesini gerekçesiz feshedemez. Her zaman yasal olarak tanınan bir gerekçeye ihtiyacı vardır.
+
+**Kendi ihtiyacı (Eigenbedarf).** En yaygın fesih gerekçesi. Ev sahibi ya da bir yakın aile üyesi daireyi bizzat kullanmak istiyor. Fesih yazılı olmalı ve kimin neden taşınacağını somut biçimde belirtmelidir.
+
+**Ağır yükümlülük ihlali.** İki aylık kirayı aşan süregelen borç, ciddi gürültü şikâyetleri ya da bilinçli zarar verme gibi durumlar.
+
+Bu gerekçeler olmadan fesih, yazılı olsa bile geçersizdir.
+
+### Mannheim'da Fesih Süreleri
+
+Kirada kalma süresine göre:
+
+- 5 yıla kadar: 3 ay
+- 5–8 yıl: 6 ay
+- 8 yıldan fazla: 9 ay
+
+Fesih, ayın üçüncü iş günü akşamına kadar kiracıya ulaşmalıdır.
+
+### Feshe İtiraz Hakkı
+
+Bazı durumlarda feshe itiraz edebilirsiniz — sağlık sorunları nedeniyle taşınma olanaksız olduğunda, Mannheim'da makul alternatif konut bulamadığınızda ya da çok uzun süredir aynı dairede oturduğunuzda. İtiraz yazılı yapılmalı ve fesih süresinin bitmesinden en geç 2 ay önce ev sahibine iletilmelidir.
+
+## Depozito: Ne Kadar, Ne Zaman Geri Alınır?
+
+Depozito, aylık net kira bedelinin en fazla üç katı olabilir. Ev sahibi bu parayı kendi parasından ayrı tutmakla yükümlüdür.
+
+Çıkıştan sonra ev sahibinin genellikle altı aya kadar depozitoyu hesaplayıp geri ödemesi gerekir. Somut, kanıtlanabilir talepleri varsa — gerçek hasar, açık kira borcu veya ek gider alacakları — bir kısmını mahsup edebilir.
+
+**Normal yıpranmayı** kabul etmek zorundadır. Yıllarca normal yaşamadan kaynaklanan sararmış duvarlar, parkedeki hafif çizikler — bunlar kiracıya yüklenemez.
+
+Altı ay geçip hesaplama gelmediyse, tüm depozito için geri ödeme davası açabilirsiniz.
+
+## Kozmetik Tamirat: Sözleşmede Yazsa Bile Çoğu Hüküm Geçersiz
+
+Bu pek çok kiracıyı şaşırtıyor. Sözleşmede yazıyor diye çıkarken zorunlu tamirat yapacaklarını sanıyorlar. Ancak Alman Federal Mahkemesi (BGH) pek çok kararında bu tür hükümlerin büyük çoğunluğunun geçersiz olduğunu hükme bağlamıştır.
+
+Özellikle geçersiz olanlar:
+
+Sabit tamirat süreleri. Sözleşme "mutfak her 3 yılda bir boyanacak" diyorsa, bu dairenin gerçek durumuna bakılmaksızın bir yükümlülük dayatmaktır — BGH içtihadına göre kural olarak geçersizdir.
+
+Tadilatsız teslim alınan dairelerde çıkış tamiratı zorunluluğu. Tadilatsız bir daireyi devraldıysanız, sözleşme ne derse desin çıkışta tamirat yapmak zorunda değilsiniz.
+
+Sonuç: Sözleşmenizde bu hükümler varsa, para harcamadan önce gerçekten bağlayıcı olup olmadığını bir avukata inceletin.
+
+## Kira Artışı Mannheim'da Ne Kadar Olabilir?
+
+Ev sahibi, kirayı yalnızca piyasa emsal kira bedeline kadar artırabilir. Mannheim'da bu rakam Mannheimer Mietspiegel'de belgelenmiştir.
+
+Ayrıca üç yıllık dönemde kira artışı maksimum yüzde on beşle sınırlıdır. Mannheim, konut piyasasının gerilim altında olduğu bir bölge olarak bu sınıra tabidir.
+
+Kira artışı talebi gerekçeli ve yazılı olmalıdır. Gerekçe yoksa artırılan kira bedelini ödemek zorunda değilsiniz.`,
+    category: "tenant-law",
+    categoryDE: "Mietrecht",
+    image: realEstateImg,
+    dateDE: "21. April 2026",
+    dateTR: "21 Nisan 2026",
+    readTimeDE: "9 Min. Lesezeit",
+    readTimeTR: "9 dk okuma",
+    publishedAt: "2026-04-21",
+    keywordsDE: "mietrecht mannheim, kündigung mietrecht mannheim, kaution zurückfordern, schönheitsreparaturen unwirksam, mieterhöhung mannheim, eigenbedarfskündigung mannheim",
+    keywordsTR: "mannheim kira hukuku, kiracı hakları almanya, depozito geri alma, fesih hakkı ev sahibi, kira artışı mannheim, tamirat zorunluluğu kira",
+    faqDE: [
+      {
+        question: "Darf mein Vermieter mir kündigen, weil er die Wohnung verkaufen will?",
+        answer: "Nicht direkt. Ein geplanter Verkauf ist kein eigenständiger Kündigungsgrund. Wenn der Käufer jedoch Eigenbedarf anmeldet, kann nach dem Kauf eine Eigenbedarfskündigung ausgesprochen werden — mit den gesetzlichen Fristen."
+      },
+      {
+        question: "Mein Vermieter behält meine Kaution ohne Begründung ein. Was kann ich tun?",
+        answer: "Fordern Sie schriftlich eine detaillierte Abrechnung. Gibt er keine oder eine unzureichende Begründung, können Sie auf Rückzahlung klagen. Die Beweislast für berechtigte Einbehalte liegt beim Vermieter."
+      },
+      {
+        question: "Muss ich die Wohnung streichen, wenn ich ausziehe?",
+        answer: "Nur wenn Ihr Mietvertrag eine wirksame Renovierungsklausel enthält. Viele Klauseln sind nach der BGH-Rechtsprechung unwirksam. Lassen Sie den Vertrag prüfen, bevor Sie investieren."
+      },
+      {
+        question: "Was ist der Mannheimer Mietspiegel?",
+        answer: "Der Mannheimer Mietspiegel ist eine Übersicht der ortsüblichen Vergleichsmieten in Mannheim, unterteilt nach Lage, Baujahr und Ausstattung. Er ist die Grundlage für Mieterhöhungsverlangen und kann beim Amt für Stadtentwicklung oder online abgerufen werden."
+      },
+      {
+        question: "Wie lange habe ich nach dem Auszug Zeit, die Kaution zurückzufordern?",
+        answer: "Die Verjährungsfrist für Kautionsrückforderungen beträgt in der Regel 3 Jahre, beginnend ab Ende des Jahres, in dem der Anspruch entstanden ist. Warten Sie aber nicht so lange — je früher Sie handeln, desto besser."
+      }
+    ],
+    faqTR: [
+      {
+        question: "Ev sahibim satmak istediği için beni çıkarabilir mi?",
+        answer: "Doğrudan değil. Satış planı başlı başına bir fesih gerekçesi değildir. Ancak yeni alıcı kendi ihtiyacını ileri sürerse, satışın ardından yasal süreler dahilinde fesih bildirimi yapılabilir."
+      },
+      {
+        question: "Ev sahibim gerekçe belirtmeden depozitoyu kesiyor. Ne yapabilirim?",
+        answer: "Yazılı olarak ayrıntılı hesaplama talep edin. Yeterli gerekçe sunmazsa geri ödeme davası açabilirsiniz. Kesintilerin haklılığını ispat yükü ev sahibine aittir."
+      },
+      {
+        question: "Çıkarken daireyi boyatmak zorunda mıyım?",
+        answer: "Yalnızca sözleşmenizde geçerli bir tamirat hükmü varsa. Birçok hüküm BGH içtihadına göre geçersizdir. Harcama yapmadan önce sözleşmenizi inceletin."
+      },
+      {
+        question: "Mannheimer Mietspiegel nedir?",
+        answer: "Mannheim'daki piyasa emsal kira bedellerini konum, yapım yılı ve donanım kategorisine göre gösteren bir kılavuzdur. Kira artışı taleplerinin dayanağıdır ve çevrimiçi ya da Stadtentwicklung ofisinden temin edilebilir."
+      }
+    ],
+    ctaTitleDE: "Mietrechtliche Beratung in Mannheim",
+    ctaTitleTR: "Mannheim'da Kira Hukuku Danışmanlığı",
+    ctaDescriptionDE: "Kündigung bekommen? Kaution einbehalten? Renovierungsklausel im Vertrag? Wir prüfen Ihren Fall und erklären Ihre Rechte.",
+    ctaDescriptionTR: "Fesih mi aldınız? Depozitonuz mu kesiliyor? Sözleşmede tamirat hükmü mü var? Durumunuzu inceler, haklarınızı açıklarız."
+  },
+
+  // ─── POST 6: Kind Türkei mitnehmen ────────────────────────────────────────
+  {
+    slug: "kind-tuerkei-mitnehmen-sorgerecht",
+    slugDE: "kind-tuerkei-mitnehmen-sorgerecht",
+    slugTR: "cocukla-turkiyeye-gitmek-velayet",
+    titleDE: "Kann mein Kind alleine in die Türkei fliegen? Was Eltern mit Sorgerecht wissen müssen",
+    titleTR: "Çocuğum Türkiye'ye Yalnız Uçabilir mi? Velayeti Olan Ebeveynlerin Bilmesi Gerekenler",
+    excerptDE: "Kind in die Türkei mitnehmen mit Sorgerecht: Welche Dokumente braucht ein Kind, wann darf ein Elternteil allein reisen, und was passiert bei fehlenden Papieren am Flughafen?",
+    excerptTR: "Velayetle çocuğu Türkiye'ye götürmek: Çocuğun hangi belgelere ihtiyacı var, hangi ebeveyn tek başına seyahat edebilir ve havalimanında eksik evrak olursa ne olur?",
+    contentDE: `Istanbul, Flughafen Antalya, Sommer. Eine Mutter steht am Schalter mit ihrem siebenjährigen Sohn. Der Vater lebt in Deutschland, gemeinsames Sorgerecht. Sie hat kein schriftliches Einverständnis dabei. Der Beamte schlägt die Akte auf und erklärt ihr, dass das Kind so nicht einreisen kann.
+
+Das ist kein Einzelfall. Es passiert jedes Jahr mehrfach — und meistens hätte man es mit einem Blatt Papier verhindern können.
+
+## Was türkische Behörden bei Kindern verlangen
+
+Die Türkei hat seit einigen Jahren strengere Kontrollen bei der Einreise von Kindern eingeführt, besonders wenn nur ein Elternteil dabei ist. Was konkret verlangt wird, variiert je nach Grenzbeamten und Flughafen — aber das sind die Unterlagen, die Sie vorbereiten sollten:
+
+Wenn nur ein Elternteil reist: eine notariell beglaubigte Einverständniserklärung des anderen Elternteils, übersetzt ins Türkische. Der Reisepass des Kindes. Im besten Fall auch eine Kopie des Sorgerechtsurteils oder der Sorgerechtsurkunde.
+
+Wenn das Kind alleine reist (zum Beispiel zu den Großeltern): Dann gelten noch strengere Regeln. Die Fluggesellschaft hat eigene Anforderungen (sogenanntes "Unaccompanied Minor"-Protokoll), und am türkischen Flughafen erwartet Sie in der Regel eine Person, die vorab offiziell angemeldet wurde.
+
+## Reist das Kind mit beiden Elternteilen — kein Problem
+
+Wenn Vater und Mutter gemeinsam reisen, gibt es in der Regel keine Schwierigkeiten. Türkische Grenzbehörden prüfen die Familienzugehörigkeit in solchen Fällen selten.
+
+## Was "gemeinsames Sorgerecht" bei einer Türkeireise bedeutet
+
+Das ist der Punkt, der viele Eltern überrascht. Wenn in Deutschland gemeinsames Sorgerecht gilt, bedeutet das: Beide Elternteile müssen einer Auslandsreise des Kindes grundsätzlich zustimmen. Das steht nicht explizit im Gesetz — aber es folgt daraus, dass eine längere Auslandsreise eine "wesentliche Angelegenheit" des Kindes ist.
+
+Für kurze Urlaubsreisen (ein paar Wochen) wird das in Deutschland in der Praxis nicht so streng gehandhabt. Aber türkische Behörden schauen auf türkisches Recht — und die sind strenger.
+
+**Was Sie konkret tun sollten:** Holen Sie vor jeder Reise in die Türkei die schriftliche Zustimmung des anderen Elternteils. Lassen Sie diese beim Notar beglaubigen und ins Türkische übersetzen. Das klingt aufwendig, ist aber ein Nachmittag Arbeit — und erspart Ihnen eine Situation wie die am Antalya-Flughafen.
+
+## Was wenn der andere Elternteil die Zustimmung verweigert?
+
+Das ist leider kein seltenes Szenario. Der andere Elternteil verweigert die Unterschrift, obwohl die Reise völlig harmlos ist — Sommerferien bei den Großeltern, Familientreffen.
+
+In diesem Fall können Sie beim Familiengericht eine einstweilige Verfügung beantragen, mit der das Gericht die fehlende Zustimmung ersetzt. Das geht schneller als viele denken — in dringenden Fällen auch ohne langen Prozess.
+
+## Was, wenn ein Elternteil das Kind ohne Zustimmung in die Türkei bringt?
+
+Dann wird die Situation juristisch ernst.
+
+Wenn ein Elternteil das Kind ohne Wissen oder Zustimmung des anderen in die Türkei bringt und es dort behält, ist das nach deutschem und türkischem Recht eine internationale Kindesentführung — auch wenn es sich um den leiblichen Vater oder die leibliche Mutter handelt.
+
+Das Haager Kindesentführungsübereinkommen (HKÜ) regelt die Rückführung zwischen Deutschland und der Türkei. Beide Länder haben es unterzeichnet. Die Praxis ist aber nicht einfach: Türkische Gerichte müssen der Rückführung zustimmen, und das kann dauern.
+
+Wenn Sie in dieser Situation sind: Handeln Sie sofort. Jede Woche, die vergeht, macht die Rückführung schwieriger — weil Gerichte nach längerer Zeit stärker das "Wohlbefinden des Kindes in der aktuellen Umgebung" gewichten.
+
+## Kann ein Kind alleine in die Türkei fliegen?
+
+Ja — aber mit klaren Rahmenbedingungen.
+
+Fluggesellschaften haben eigene "Unaccompanied Minor"-Protokolle (UM-Protokoll). Bei den meisten Airlines können Kinder ab 5 oder 6 Jahren alleine fliegen, wenn sie als begleitetes Einzelkind angemeldet werden. Das kostet meistens eine zusätzliche Gebühr, und das Kind wird vom Personal betreut.
+
+Am türkischen Zielflughafen muss jemand das Kind abholen — und diese Person muss vorab namentlich bekannt sein. Türkische Behörden prüfen das in der Regel streng.
+
+Beide Elternteile müssen bei gemeinsamem Sorgerecht zustimmen, dass das Kind alleine fliegt. Das ist keine formale Frage — es ist eine echte Anforderung.
+
+## Was wenn das Kind nur die türkische Staatsangehörigkeit hat?
+
+Türkische Staatsangehörige können mit türkischem Pass in die Türkei einreisen. Aber auch hier gelten die Regeln: Ein Kind alleine oder mit nur einem Elternteil braucht — je nach Konstellation — die Nachweise über Sorgerecht und Einverständnis des anderen Elternteils.`,
+    contentTR: `İstanbul, Antalya Havalimanı, yaz. Bir anne yedi yaşındaki oğluyla gişede bekliyor. Baba Almanya'da, müşterek velayet var. Annenin yanında yazılı bir izin yok. Görevli dosyasına bakıyor ve çocuğun bu şekilde giriş yapamayacağını söylüyor.
+
+Bu münferit bir vaka değil. Her yıl birkaç kez yaşanıyor — ve çoğu zaman tek bir sayfa kağıt yeterli olurdu.
+
+## Türk Makamları Çocuklardan Ne İstiyor?
+
+Türkiye, özellikle yalnızca bir ebeveynin refakat ettiği durumlarda çocukların girişinde son yıllarda denetimleri sıkılaştırdı. Tam olarak ne istendiği sınır görevlisine ve havalimanına göre değişebilir — ancak şu belgeleri hazır bulundurmalısınız:
+
+Yalnızca bir ebeveyn seyahat ediyorsa: Diğer ebeveynin noter onaylı, Türkçe tercüme edilmiş muvafakatname belgesi. Çocuğun pasaportu. Mümkünse velayet kararının bir kopyası.
+
+Çocuk tek başına seyahat ediyorsa: Kurallar daha da sıkıdır. Havayolunun kendi "Refakatsiz Küçük" protokolü (Unaccompanied Minor) geçerlidir; Türk havalimanında önceden resmi olarak bildirilen bir kişi çocuğu karşılamak zorundadır.
+
+## Müşterek Velayet Türkiye Seyahatinde Ne Anlama Gelir?
+
+Bu, pek çok ebeveyni şaşırtan noktadır. Almanya'da müşterek velayet geçerliyse her iki ebeveynin çocuğun yurt dışı seyahatine onay vermesi gerekir. Türk makamları Türk hukukuna göre değerlendirir — ve bu konuda daha katıdır.
+
+**Pratik tavsiye:** Her Türkiye seyahatinden önce diğer ebeveynin yazılı onayını alın. Noterde onaylayıp Türkçeye çevirin. Kulağa zahmetli geliyor ama bir öğleden sonralık iş — ve Antalya Havalimanı'ndaki durumu yaşamamanızı sağlar.
+
+## Diğer Ebeveyn Onay Vermiyorsa Ne Olur?
+
+Ne yazık ki nadir değil. Aile mahkemesinden ihtiyati tedbir talep edebilirsiniz; mahkeme eksik onayın yerine geçen kararı verebilir. Acil durumlarda uzun bir dava beklemek gerekmez.
+
+## Bir Ebeveyn Çocuğu İzinsiz Türkiye'ye Götürürse Ne Olur?
+
+Hukuki açıdan ciddi bir duruma girilir. Diğer ebeveynin haberi veya onayı olmadan çocuğun Türkiye'ye götürülmesi ve orada tutulması — biyolojik ebeveyn olsa bile — Alman ve Türk hukukuna göre uluslararası çocuk kaçırma sayılır.
+
+Lahey Sözleşmesi Almanya ve Türkiye arasında iade sürecini düzenler. Her iki ülke de sözleşmeyi imzalamıştır. Ancak pratikte: Türk mahkemelerinin iade onaylaması zaman alabilir ve ne kadar uzun beklenir se o kadar zorlaşır.
+
+## Çocuk Tek Başına Türkiye'ye Uçabilir mi?
+
+Evet — ancak net çerçeveler dahilinde.
+
+Havayollarının kendi "Refakatsiz Küçük" protokolleri vardır. Çoğu havayolunda 5 veya 6 yaşından itibaren çocuklar kayıtlı refakatsiz yolcu olarak uçabilir; personel gözetim altında tutar.
+
+Türk varış havalimanında birinin çocuğu karşılaması şarttır — ve bu kişinin önceden bildirilmesi gerekir.
+
+Müşterek velayette her iki ebeveyn de çocuğun tek başına uçmasına onay vermelidir.`,
+    category: "family-law",
+    categoryDE: "Familienrecht",
+    image: jointCustodyImg,
+    dateDE: "21. April 2026",
+    dateTR: "21 Nisan 2026",
+    readTimeDE: "8 Min. Lesezeit",
+    readTimeTR: "8 dk okuma",
+    publishedAt: "2026-04-21",
+    keywordsDE: "kind türkei mitnehmen, sorgerecht türkei reise, kind alleine türkei fliegen, einverständniserklärung türkei kind, kindesentführung türkei sorgerecht",
+    keywordsTR: "cocuk turkiyeye gotürmek velayet, turkiye seyahat velayet izin, refakatsiz küçük uçuş, çocuk kaçırma türkiye almanya",
+    faqDE: [
+      {
+        question: "Was brauche ich, wenn ich mit meinem Kind alleine in die Türkei fliege?",
+        answer: "Eine notariell beglaubigte Einverständniserklärung des anderen Elternteils, übersetzt ins Türkische, dazu der Reisepass des Kindes. Im besten Fall auch eine Kopie des Sorgerechtsurteils. Was genau am Flughafen verlangt wird, variiert — aber mit diesen Dokumenten sind Sie auf der sicheren Seite."
+      },
+      {
+        question: "Mein Ex verweigert die Zustimmung zur Türkeireise. Was kann ich tun?",
+        answer: "Sie können beim Familiengericht beantragen, dass das Gericht die fehlende Zustimmung ersetzt. Das geht in dringenden Fällen auch mit einer einstweiligen Verfügung, ohne langes Verfahren."
+      },
+      {
+        question: "Was gilt, wenn das Kind nur die türkische Staatsangehörigkeit hat?",
+        answer: "Das Kind kann mit türkischem Pass einreisen. Die Regeln zu Sorgerecht und Einverständnis des anderen Elternteils gelten trotzdem — Staatsangehörigkeit ändert nichts an den Anforderungen der Grenzbehörden."
+      },
+      {
+        question: "Meine Ex-Frau hat das Kind in die Türkei mitgenommen und kommt nicht zurück. Was tue ich?",
+        answer: "Handeln Sie sofort. Kontaktieren Sie einen Anwalt und stellen Sie über das Bundesamt für Justiz einen Rückführungsantrag nach dem Haager Kindesentführungsübereinkommen. Je schneller, desto besser — türkische Gerichte gewichten nach längerer Zeit die aktuelle Lebenssituation des Kindes stärker."
+      }
+    ],
+    faqTR: [
+      {
+        question: "Çocuğumla tek başıma Türkiye'ye uçarken ne gerekiyor?",
+        answer: "Diğer ebeveynin noter onaylı, Türkçe çevrilmiş muvafakatnamesi ve çocuğun pasaportu. Mümkünse velayet kararının kopyası. Tam olarak ne istendiği havalimanına göre değişebilir ancak bu belgelerle güvende olursunuz."
+      },
+      {
+        question: "Eski eşim Türkiye seyahatine onay vermiyor. Ne yapabilirim?",
+        answer: "Aile mahkemesinden eksik onayın yerine geçen karar talep edebilirsiniz. Acil durumlarda uzun dava beklemeksizin ihtiyati tedbir mümkündür."
+      },
+      {
+        question: "Eski eşim çocuğu Türkiye'ye götürdü ve geri dönmüyor. Ne yapmalıyım?",
+        answer: "Derhal harekete geçin. Bir avukata danışın ve Federal Adalet Dairesi aracılığıyla Lahey Sözleşmesi kapsamında iade talebi başlatın. Ne kadar hızlı olursanız o kadar iyi — Türk mahkemeleri zaman geçtikçe çocuğun mevcut yaşam ortamına daha fazla ağırlık verir."
+      }
+    ],
+    ctaTitleDE: "Fragen zur Türkeireise mit Kind",
+    ctaTitleTR: "Çocukla Türkiye Seyahati Hakkında Sorularınız mı Var?",
+    ctaDescriptionDE: "Einverständniserklärung, Sorgerecht, Rückführungsantrag — wir kennen beide Rechtssysteme und helfen auf Deutsch und Türkisch.",
+    ctaDescriptionTR: "Muvafakatname, velayet, iade talebi — her iki hukuk sistemini bilen ekibimiz Almanca ve Türkçe yardımcı olmaktadır."
+  },
+
+  // ─── POST 7: Was kostet ein Anwalt für türkisches Recht ────────────────────
+  {
+    slug: "was-kostet-anwalt-tuerkisches-recht",
+    slugDE: "was-kostet-anwalt-tuerkisches-recht",
+    slugTR: "turk-hukuku-avukat-ucretleri",
+    titleDE: "Was kostet ein Anwalt für türkisches Recht? Die ehrliche Antwort",
+    titleTR: "Türk Hukuku için Avukat Ücreti Ne Kadar? Dürüst Yanıt",
+    excerptDE: "Was kostet ein Anwalt für türkisches Recht wirklich? Stundensatz, Pauschalgebühren, Prozesskostenhilfe — niemand veröffentlicht das. Wir tun es.",
+    excerptTR: "Türk hukuku için avukat gerçekten ne kadar tutar? Saatlik ücret, sabit ücretler, dava yardımı — kimse bunu yayımlamıyor. Biz yapıyoruz.",
+    contentDE: `Die meisten Menschen googeln das privat und finden: nichts Konkretes. Anwaltskanzleien veröffentlichen keine Preislisten. Ratgeberseiten weichen aus. Also fragt man nicht — und geht vielleicht gar nicht erst zum Anwalt, weil man nicht weiß, ob man es sich leisten kann.
+
+Das ist schade. Denn die Antwort ist nicht so komplex, wie viele denken.
+
+## Wie Anwaltsgebühren in Deutschland funktionieren
+
+Anwälte in Deutschland berechnen ihre Gebühren entweder nach dem Rechtsanwaltsvergütungsgesetz (RVG) oder nach Zeitaufwand oder einer Vereinbarung über Pauschalgebühren.
+
+Das RVG gibt es seit Jahrzehnten. Es legt fest, wie viel ein Anwalt für bestimmte Tätigkeiten berechnen darf — abhängig vom Streit- oder Gegenstandswert. Bei einer Scheidung mit einem Gegenstandswert von 20.000 Euro ergibt sich daraus ein bestimmter Betrag. Bei einer Erbschaftsangelegenheit mit einem Nachlass von 80.000 Euro ein anderer.
+
+Der Vorteil des RVG: Gebühren sind vorhersehbar. Der Nachteil: Bei kleinen Streitwerten kann das RVG für den Anwalt zu wenig ergeben — weshalb viele lieber Stundensätze vereinbaren.
+
+## Was kostet eine Erstberatung zu türkischem Recht?
+
+Die Erstberatungsgebühr ist gesetzlich auf maximal 190 Euro zuzüglich Mehrwertsteuer begrenzt. Das gilt unabhängig davon, ob es um deutsches oder türkisches Recht geht.
+
+In der Praxis verlangen viele Anwälte weniger — 80 bis 150 Euro für ein einstündiges Gespräch ist ein realistischer Bereich. Manche bieten eine kostenlose Kurzberatung von 15 bis 20 Minuten an.
+
+Mit Beratungshilfe (wenn Ihr Einkommen unter einer bestimmten Grenze liegt) zahlen Sie nur 15 Euro — für Erstberatungen zu türkischem Recht wie zu jedem anderen Rechtsgebiet.
+
+## Was kosten konkrete Leistungen? Eine ehrliche Übersicht
+
+**Vollmacht auf Türkisch formulieren lassen:** Für einen Anwalt, der den türkischen Text der Vekâletname nach türkischem Recht verfasst, liegen die Kosten typischerweise zwischen 100 und 300 Euro — je nach Umfang und Komplexität.
+
+**Tanıma-Tenfiz-Verfahren begleiten (Anerkennung eines deutschen Urteils in der Türkei):** Das ist ein mehrstufiger Prozess — Antrag beim türkischen Gericht, Koordination mit türkischen Kollegen, Übersetzungen. Realistisch: 500 bis 1.500 Euro für die anwaltliche Begleitung in Deutschland, dazu kommen türkische Anwalts- und Gerichtskosten.
+
+**Erbschaftsangelegenheit in der Türkei (Veraset ilamı, Grundbuchübertragung):** Kommt stark auf die Größe des Nachlasses und die Anzahl der Erben an. Für eine einfache Erbschaftsabwicklung ohne Streit: 400 bis 800 Euro für die anwaltliche Beratung in Deutschland. Hinzu kommen die türkischen Notarkosten und Grundbuchgebühren.
+
+**Scheidungsverfahren mit türkischem Bezug:** Eine Scheidung in Deutschland mit anschließendem Tanıma-Tenfiz-Verfahren in der Türkei kostet mehr als eine rein deutsche Scheidung. RVG-Gebühren für die deutsche Scheidung: 1.500 bis 3.000 Euro (je nach Streitwert). Das türkische Verfahren kommt separat dazu.
+
+**Sorgerechtsstreit mit Türkeibezug:** Das ist einer der teuersten Bereiche — weil er oft eskaliert, Gutachten erfordert und sich über lange Zeit zieht. Reine Anwaltskosten in Deutschland können schnell 3.000 bis 8.000 Euro erreichen, bei streitigen Verfahren auch mehr.
+
+## Wann zahlt die Rechtsschutzversicherung?
+
+Wenn Sie eine Rechtsschutzversicherung haben, deckt sie in der Regel Familienrechts- und Mietrechtssachen — aber nicht immer. Prüfen Sie Ihren Vertrag: Manche Policen schließen Scheidungsverfahren explizit aus. Und internationale Sachverhalte (türkisches Recht) sind manchmal ausgenommen oder erfordern eine separate Deckungsanfrage.
+
+Rufen Sie vor dem Anwalttermin bei Ihrer Versicherung an und lassen Sie sich die Deckung schriftlich bestätigen.
+
+## Wann gibt es Prozesskostenhilfe?
+
+Wenn Ihr Einkommen und Vermögen unterhalb bestimmter Grenzen liegt, können Sie beim Gericht Prozesskostenhilfe beantragen. Das Gericht übernimmt dann die Gerichts- und Anwaltskosten ganz oder teilweise. Die Prozesskostenhilfe gilt auch für Verfahren mit Bezug zu türkischem Recht — solange das Verfahren in Deutschland stattfindet.
+
+## Die ehrlichste Antwort
+
+Was ein Anwalt für türkisches Recht kostet, hängt davon ab, was Sie brauchen. Für eine einfache Beratung oder die Formulierung einer Vollmacht zahlen Sie wenig — 100 bis 300 Euro. Für ein langes Gerichtsverfahren mit türkischem Bezug können es mehrere tausend Euro werden.
+
+Was keine Kanzlei vorab sagen kann: wie komplex Ihr Fall wird. Manche Erbschaftssachen sind in zwei Beratungsgesprächen erledigt. Andere enden im Streit zwischen mehreren Erben und dauern Jahre.
+
+Am besten: Vereinbaren Sie eine Erstberatung, schildern Sie Ihren Fall und fragen Sie direkt nach den zu erwartenden Kosten. Ein seriöser Anwalt gibt Ihnen eine ehrliche Einschätzung.`,
+    contentTR: `Çoğu insan bunu özel olarak araştırır ve şunu bulur: somut hiçbir şey. Hukuk büroları fiyat listesi yayımlamaz. Rehber siteler yanıt vermekten kaçınır. Sonunda sormaktan vazgeçilir — ve belki hiç avukata gidilmez, çünkü karşılanıp karşılanamayacağı bilinmez.
+
+Bu üzücü. Çünkü yanıt, çoğunun düşündüğü kadar karmaşık değil.
+
+## Almanya'da Avukat Ücretleri Nasıl Hesaplanır?
+
+Almanya'daki avukatlar ücretlerini ya Avukatlık Ücret Kanunu'na (RVG) ya saatlik hesaba ya da sabit ücret anlaşmasına göre belirler.
+
+RVG on yıllardır geçerlidir. Belirli işlemler için avukatın talep edebileceği tutarı — dava değerine bağlı olarak — belirler. 20.000 Euro değerindeki bir boşanma davası belirli bir ücret doğurur. 80.000 Euro'luk bir miras için farklı bir ücret.
+
+## Türk Hukukuyla İlgili İlk Danışma Ne Kadar Tutar?
+
+İlk danışma ücreti yasal olarak maksimum 190 Euro + KDV ile sınırlıdır. Bu, Türk ya da Alman hukuku fark etmeksizin geçerlidir.
+
+Pratikte birçok avukat daha az alır — saatlik bir görüşme için 80 ile 150 Euro arası gerçekçi bir aralıktır. Beratungshilfe belgeniz varsa yalnızca 15 Euro ödersiniz.
+
+## Somut Hizmetler Ne Kadar Tutar? Dürüst Bir Genel Bakış
+
+**Türkçe vekaletname metni hazırlatmak:** Türk hukukuna göre Vekâletname metni hazırlayan bir avukat için genellikle 100 ile 300 Euro arasında ücret ödenir — kapsamına ve karmaşıklığına bağlı olarak.
+
+**Tanıma-Tenfiz sürecini yönetmek:** Çok aşamalı bir süreçtir. Almanya'daki avukatlık danışmanlığı için gerçekçi beklenti: 500 ile 1.500 Euro. Türkiye'deki avukat ve mahkeme masrafları ayrıca eklenir.
+
+**Türkiye'deki miras işlemleri:** Mirasın büyüklüğüne ve mirasçı sayısına göre önemli ölçüde değişir. Çekişmesiz basit bir miras için Almanya'daki danışmanlık: 400 ile 800 Euro. Türk noter ve tapu ücretleri ayrıca hesaba katılmalıdır.
+
+**Türkiye bağlantılı boşanma:** RVG'ye göre Almanya'daki boşanma: 1.500 ile 3.000 Euro (dava değerine bağlı). Türkiye'deki Tanıma-Tenfiz davası ayrıca eklenir.
+
+**Türkiye bağlantılı velayet uyuşmazlığı:** En pahalı alanlardan biridir. Türkiye bağlantılı çekişmeli davalarda Almanya'daki avukatlık masrafları hızla 3.000 ile 8.000 Euro'ya, hatta üzerine çıkabilir.
+
+## Dürüst Yanıt
+
+Türk hukuku için avukat ücreti neye ihtiyacınız olduğuna bağlıdır. Basit bir danışma veya vekaletname için az ödersiniz — 100 ile 300 Euro. Türkiye bağlantılı uzun bir dava süreci birkaç bin Euro'ya ulaşabilir.
+
+En iyi yol: İlk görüşmeyi ayarlayın, durumunuzu anlatın ve beklenen masrafları doğrudan sorun. Ciddi bir avukat dürüst bir değerlendirme yapar.`,
+    category: "legal-info",
+    categoryDE: "Rechtsinformationen",
+    image: criminalDefenseImg,
+    dateDE: "21. April 2026",
+    dateTR: "21 Nisan 2026",
+    readTimeDE: "7 Min. Lesezeit",
+    readTimeTR: "7 dk okuma",
+    publishedAt: "2026-04-21",
+    keywordsDE: "türkischer anwalt kosten, was kostet anwalt türkisches recht, anwaltskosten türkisches recht, erstberatung türkisches recht kosten, türkisches recht anwalt preis",
+    keywordsTR: "türk hukuku avukat ücreti, avukat masrafları türk hukuku, ilk danışma ücreti türk avukat, vekâletname avukat ücret",
+    faqDE: [
+      {
+        question: "Was kostet eine Erstberatung zu türkischem Recht?",
+        answer: "Maximal 190 Euro plus Mehrwertsteuer — das ist der gesetzliche Höchstsatz nach dem RVG. Viele Anwälte verlangen weniger. Mit Beratungshilfeschein zahlen Sie nur 15 Euro."
+      },
+      {
+        question: "Übernimmt die Rechtsschutzversicherung Kosten für türkisches Recht?",
+        answer: "Das hängt von Ihrer Police ab. Manche decken internationale Sachverhalte, andere nicht. Rufen Sie vor dem Anwalttermin bei Ihrer Versicherung an und lassen Sie sich die Deckung schriftlich bestätigen."
+      },
+      {
+        question: "Gibt es Prozesskostenhilfe für Verfahren mit türkischem Recht?",
+        answer: "Ja, wenn das Verfahren in Deutschland stattfindet und Ihr Einkommen und Vermögen unter den gesetzlichen Grenzen liegt. Das gilt für alle Rechtsgebiete, auch wenn türkisches Recht eine Rolle spielt."
+      },
+      {
+        question: "Warum veröffentlichen Anwälte keine Preislisten?",
+        answer: "Weil die Kosten stark vom Einzelfall abhängen. Ein Anwalt kann vorab sagen, was eine Erstberatung kostet — aber nicht, wie komplex Ihr Fall wird. Fragen Sie direkt und lassen Sie sich eine ehrliche Einschätzung geben."
+      }
+    ],
+    faqTR: [
+      {
+        question: "Türk hukukuyla ilgili ilk danışma ne kadar tutar?",
+        answer: "RVG'ye göre yasal tavan 190 Euro + KDV'dir. Birçok avukat daha az alır. Beratungshilfe belgesiyle yalnızca 15 Euro ödersiniz."
+      },
+      {
+        question: "Hukuki koruma sigortası Türk hukuku masraflarını karşılar mı?",
+        answer: "Poliçenize bağlıdır. Bazıları uluslararası durumları kapsar, bazıları kapsamaz. Avukat randevusundan önce sigortanızı arayın ve kapsamı yazılı olarak teyit ettirin."
+      },
+      {
+        question: "Avukatlar neden fiyat listesi yayımlamıyor?",
+        answer: "Çünkü masraflar büyük ölçüde davaya özgüdür. Bir avukat ilk danışma ücretini önceden söyleyebilir — ancak davanızın ne kadar karmaşık olacağını bilemez. Doğrudan sorun ve dürüst bir değerlendirme isteyin."
+      }
+    ],
+    ctaTitleDE: "Was kostet Ihr Fall? Fragen Sie uns.",
+    ctaTitleTR: "Davanız Ne Kadar Tutar? Bize Sorun.",
+    ctaDescriptionDE: "Wir sagen Ihnen beim ersten Gespräch ehrlich, was Sie für Ihren konkreten Fall erwarten können — ohne Überraschungen.",
+    ctaDescriptionTR: "İlk görüşmede somut davanız için dürüstçe ne beklemeniz gerektiğini söylüyoruz — sürpriz yok."
+  },
+
+  // ─── POST 8: Türkisches Testament in Deutschland ───────────────────────────
+  {
+    slug: "tuerkisches-testament-deutschland",
+    slugDE: "tuerkisches-testament-deutschland",
+    slugTR: "turk-vasiyetnamesi-almanya",
+    titleDE: "Mein Vater hat ein türkisches Testament gemacht. Gilt das auch in Deutschland?",
+    titleTR: "Babam Türkçe Vasiyetname Yazdı. Bu Almanya'da da Geçerli mi?",
+    excerptDE: "Türkisches Testament in Deutschland: Wann ist es gültig, wann nicht, und was müssen Erben in Deutschland sofort tun, wenn sie ein handgeschriebenes türkisches Dokument finden?",
+    excerptTR: "Türk vasiyetnamesi Almanya'da: Ne zaman geçerli, ne zaman değil ve Almanya'daki mirasçılar el yazılı bir Türk belgesi bulduğunda hemen ne yapmalı?",
+    contentDE: `Sie rufen in der Kanzlei an. Ihr Vater ist gestorben — in der Türkei oder in Deutschland, das variiert. Beim Durchsehen seiner Sachen finden Sie ein handgeschriebenes Dokument auf Türkisch. "Mein letzter Wille", steht oben. Darunter Namen, Immobilien, Konten, eine Unterschrift.
+
+Ist das ein gültiges Testament? Gilt es in Deutschland? Was müssen Sie jetzt tun?
+
+Das sind echte Fragen — und sie kommen häufig.
+
+## Testamentsformen in der Türkei
+
+Das türkische Recht kennt drei Testamentsformen:
+
+Das notarielle Testament wird vor einem türkischen Notar in Anwesenheit von zwei Zeugen errichtet. Es ist die sicherste Form — weil der Notar die Identität des Erblassers prüft, den Text verliest und alles dokumentiert.
+
+Das eigenhändige Testament — der türkische Begriff ist el yazılı vasiyetname — muss vollständig handgeschrieben, datiert und eigenhändig unterschrieben sein. Kein gedruckter Text, kein Computer. Ist auch nur ein Teil maschinell geschrieben, ist das gesamte Testament ungültig.
+
+Das mündliche Testament gilt nur in echten Ausnahmesituationen: unmittelbare Todesgefahr, kein Notar erreichbar. Es erlischt automatisch, sobald die Gefahrensituation endet.
+
+## Wann gilt ein türkisches Testament in Deutschland?
+
+Das hängt davon ab, welches Erbrecht anwendbar ist — und das ist die erste Frage, die ein Anwalt stellt.
+
+Seit 2015 gilt in Europa die EU-Erbrechtsverordnung Nr. 650/2012. Grundregel: Das Recht des Landes gilt, in dem der Erblasser zuletzt seinen gewöhnlichen Aufenthalt hatte.
+
+Hat Ihr Vater zuletzt in Deutschland gelebt: deutsches Erbrecht gilt — sowohl für Vermögen in Deutschland als auch für Vermögen in der Türkei (mit Einschränkungen).
+
+Hat er zuletzt in der Türkei gelebt: türkisches Erbrecht gilt.
+
+Hat er ein eigenhändiges Testament nach türkischem Recht errichtet, das den Formanforderungen entspricht — vollständig handgeschrieben, datiert, unterschrieben — ist es grundsätzlich gültig. Ob ein deutsches Gericht oder Nachlassgericht es anerkennt, hängt dann davon ab, ob die Formalien stimmen.
+
+## Was "gilt" konkret bedeutet
+
+Selbst wenn das türkische Testament formal gültig ist, bedeutet das nicht, dass Sie in Deutschland damit direkt handeln können. Sie brauchen in der Regel:
+
+Für Erbschaftsangelegenheiten in Deutschland einen deutschen Erbschein oder ein europäisches Nachlasszeugnis. Das türkische Testament alleine reicht dem deutschen Nachlassgericht meistens nicht.
+
+Für Erbschaftsangelegenheiten in der Türkei einen türkischen Erbschein (Veraset ilamı). Das ist ein türkisches Gerichtsverfahren — und dafür brauchen Sie entweder selbst in der Türkei aktiv zu werden oder dort einen Anwalt zu bevollmächtigen.
+
+## Was wenn das Testament Geschwister oder andere Erben benachteiligt?
+
+Das ist ein heikler Punkt — und in türkisch-deutschen Familien häufig.
+
+Im türkischen Erbrecht gibt es wie im deutschen einen gesetzlichen Pflichtteil (türkisch: saklı pay). Kinder haben Anspruch auf die Hälfte ihres gesetzlichen Erbteils, auch wenn das Testament ihnen weniger oder nichts zuweist.
+
+Wenn ein türkisches Testament den Pflichtteil unterschreitet, können die übergangenen Erben eine Pflichtteilsergänzungsklage (tenkis davası) vor einem türkischen Gericht erheben. Diese Klage muss innerhalb bestimmter Fristen eingereicht werden — verstreicht die Frist, verfällt der Anspruch.
+
+## Was tun Sie jetzt mit dem handgeschriebenen Dokument?
+
+Lassen Sie es nicht liegen. Auch wenn Sie im Moment nicht wissen, was es bedeutet.
+
+Erstens: Fotografieren Sie das Dokument und sichern Sie das Original.
+
+Zweitens: Prüfen Sie, ob die Formerfordernisse erfüllt sind — vollständig handgeschrieben? Datiert? Unterschrieben? Wenn auch nur ein Teil gedruckt ist, ist das türkische Testament nach türkischem Recht ungültig.
+
+Drittens: Sprechen Sie mit einem Anwalt, der türkisches Erbrecht kennt. Nicht weil Sie unbedingt streiten wollen — sondern weil Fristen laufen. Im türkischen Erbrecht gibt es Fristen für die Ausschlagung der Erbschaft, Fristen für die Anfechtung von Verfügungen und Fristen für Pflichtteilsklagen. Wer zu lange wartet, verliert Ansprüche, die er rechtlich hätte.
+
+## Ein häufiges Missverständnis
+
+Viele glauben: "Ein türkisches Testament regelt nur das Vermögen in der Türkei." Das stimmt nicht. Ein gültiges Testament kann grundsätzlich den gesamten Nachlass regeln — in der Türkei und in Deutschland — sofern das Erbrecht des richtigen Landes angewendet wird.
+
+Das macht Nachlässe mit Bezug zu beiden Ländern komplex. Aber es bedeutet auch: Ein gut gemachtes Testament kann viel Streit verhindern.`,
+    contentTR: `Büroyu arıyorsunuz. Babanız vefat etti — Türkiye'de mi Almanya'da mı, bu değişiyor. Eşyalarını incelerken Türkçe el yazılı bir belge buluyorsunuz. Üstte "Son irade ve vasiyetim" yazıyor. Altında isimler, taşınmazlar, hesaplar, bir imza.
+
+Bu geçerli bir vasiyetname mi? Almanya'da geçerli mi? Şimdi ne yapmanız gerekiyor?
+
+Bunlar gerçek sorular — ve sık soruluyorlar.
+
+## Türkiye'de Vasiyetname Biçimleri
+
+Türk hukuku üç vasiyetname biçimini tanır:
+
+Resmi vasiyetname, Türk noterin huzurunda iki tanık eşliğinde düzenlenir. En güvenli biçimdir — noter kimliği doğrular, metni okur, her şeyi belgeler.
+
+El yazılı vasiyetname — Türkçesi el yazılı vasiyetname — başından sonuna kadar tamamen el yazısıyla yazılmış, tarihli ve bizzat imzalı olmak zorundadır. Hiçbir basılı metin, hiçbir bilgisayar kabul edilmez. Tek bir bölüm bile makineyle yazılmışsa vasiyetin tamamı geçersizdir.
+
+Sözlü vasiyetname yalnızca gerçek istisnai durumlarda geçerlidir: ölüm tehlikesi, noter ulaşılamıyor. Tehlike ortadan kalktığında otomatik olarak hükmünü yitirir.
+
+## Türk Vasiyetnamesi Almanya'da Ne Zaman Geçerlidir?
+
+Bu, hangi miras hukukunun uygulanacağına bağlıdır — bir avukatın sorduğu ilk soru budur.
+
+2015'ten itibaren Avrupa'da AB Miras Tüzüğü No. 650/2012 geçerlidir. Temel kural: Miras bırakanın en son ikamet ettiği ülkenin hukuku uygulanır.
+
+Babanız en son Almanya'da yaşıyorsa: Alman hukuku geçerlidir — hem Almanya'daki hem de Türkiye'deki mal varlığı için (bazı kısıtlamalarla).
+
+Babanız en son Türkiye'de yaşıyorsa: Türk hukuku geçerlidir.
+
+Türk hukukuna göre el yazılı vasiyetnamenin biçimsel gerekliliklerini karşılıyorsa — tamamen el yazısıyla yazılmış, tarihli, imzalı — prensipte geçerlidir.
+
+## "Geçerli" Somut Olarak Ne Anlama Gelir?
+
+Türk vasiyetnamesi biçimsel açıdan geçerli olsa bile Almanya'da bununla doğrudan işlem yapamazsınız. Genellikle şunlara ihtiyacınız olur:
+
+Almanya'daki miras işlemleri için Alman miras belgesi (Erbschein) veya Avrupa Miras Sertifikası. Türk vasiyetnamesi tek başına Alman veraset mahkemesine genellikle yetmez.
+
+Türkiye'deki miras işlemleri için Türk veraset ilamı. Bu bir Türk mahkeme sürecidir — ya bizzat Türkiye'de bulunmanız ya da orada bir avukatı yetkilendirmeniz gerekir.
+
+## Vasiyetname Diğer Mirasçıları Mağdur Ediyorsa Ne Olur?
+
+Bu hassas bir noktadır — ve Türk-Alman ailelerde sıkça karşılaşılır.
+
+Türk miras hukukunda da Alman hukukunda olduğu gibi yasal saklı pay (saklı pay) vardır. Çocukların yasal miras payının yarısına hakkı vardır; vasiyetname onlara daha azını ya da hiçbir şey bırakmasa bile.
+
+Türk vasiyetnamesi saklı payı ihlal ediyorsa, atlanan mirasçılar Türk mahkemesinde tenkis davası açabilir. Bu dava belirli süreler içinde açılmalıdır — süre geçerse hak düşer.
+
+## El Yazılı Belgeyle Şimdi Ne Yapmalısınız?
+
+Bırakmayın. Şu an ne anlama geldiğini bilmeseniz bile.
+
+Birincisi: Belgeyi fotoğraflayın ve aslını saklayın.
+
+İkincisi: Biçimsel gerekliliklerin karşılanıp karşılanmadığını kontrol edin — tamamen el yazısıyla mı? Tarihli mi? İmzalı mı? Tek bir bölüm bile yazıcıdan çıkmışsa Türk hukukuna göre geçersizdir.
+
+Üçüncüsü: Türk miras hukukunu bilen bir avukatla görüşün. Mutlaka anlaşmazlık çıkacak diye değil — çünkü süreler işliyor. Mirası reddetmek için süreler var. Tasarruflara itiraz etmek için süreler var. Tenkis davası açmak için süreler var. Çok bekleyenler hukuken sahip oldukları hakları kaybeder.`,
+    category: "inheritance-law",
+    categoryDE: "Erbrecht",
+    image: inheritanceLawImg,
+    dateDE: "21. April 2026",
+    dateTR: "21 Nisan 2026",
+    readTimeDE: "8 Min. Lesezeit",
+    readTimeTR: "8 dk okuma",
+    publishedAt: "2026-04-21",
+    keywordsDE: "türkisches testament deutschland, türkisches erbrecht deutschland, testament türkei gültig, el yazılı vasiyetname almanya, türkisches testament anerkennen",
+    keywordsTR: "türk vasiyetnamesi almanya, el yazılı vasiyetname geçerli mi, türkiye almanya miras, tenkis davası almanya, türk miras hukuku",
+    faqDE: [
+      {
+        question: "Gilt ein handgeschriebenes türkisches Testament automatisch in Deutschland?",
+        answer: "Nicht automatisch. Es hängt davon ab, welches Erbrecht anwendbar ist, ob das Testament die Formerfordernisse erfüllt und ob ein deutsches Nachlassgericht es anerkennt. In der Regel brauchen Sie zusätzlich einen deutschen Erbschein oder ein europäisches Nachlasszeugnis."
+      },
+      {
+        question: "Was passiert, wenn mein Vater in Deutschland lebte, aber ein türkisches Testament hinterlassen hat?",
+        answer: "Wenn er zuletzt in Deutschland lebte, gilt nach der EU-Erbrechtsverordnung grundsätzlich deutsches Erbrecht. Das türkische Testament muss dann nach deutschen Maßstäben beurteilt werden — Form, Inhalt, Pflichtteilsrechte."
+      },
+      {
+        question: "Mein Vater hat mir im Testament alles hinterlassen, mein Bruder geht leer aus. Ist das rechtens?",
+        answer: "Nicht unbedingt. Sowohl das türkische als auch das deutsche Erbrecht kennen einen Pflichtteil. Ihr Bruder könnte Ansprüche haben, selbst wenn das Testament ihn nicht erwähnt. Dafür gibt es Fristen — handeln Sie schnell."
+      },
+      {
+        question: "Wo reiche ich ein türkisches Testament in Deutschland ein?",
+        answer: "Bei dem für den letzten Wohnsitz des Erblassers zuständigen Nachlassgericht (in der Regel das Amtsgericht). Das Gericht eröffnet das Testament und benachrichtigt die Erben."
+      }
+    ],
+    faqTR: [
+      {
+        question: "El yazılı Türk vasiyetnamesi Almanya'da otomatik olarak geçerli midir?",
+        answer: "Otomatik olarak geçerli değil. Hangi miras hukukunun uygulanacağına, vasiyetnamenin biçimsel gereklilikleri karşılayıp karşılamadığına ve Alman veraset mahkemesinin onu tanıyıp tanımayacağına bağlıdır. Genellikle ek olarak Alman miras belgesi (Erbschein) veya Avrupa Miras Sertifikası gerekir."
+      },
+      {
+        question: "Babam bana her şeyi bıraktı, kardeşim vasiyette yok. Bu hukuka uygun mu?",
+        answer: "Mutlaka değil. Hem Türk hem Alman hukuku saklı pay tanır. Kardeşinizin, vasiyetnamenin onu anmasa bile hakları olabilir. Bunun için süreler vardır — hızlı hareket edin."
+      },
+      {
+        question: "Türk vasiyetnamesini Almanya'da nereye teslim etmem gerekiyor?",
+        answer: "Miras bırakanın son ikametgahının bağlı olduğu veraset mahkemesine (genellikle Amtsgericht). Mahkeme vasiyetnameyi açar ve mirasçılara bildirir."
+      }
+    ],
+    ctaTitleDE: "Türkisches Testament gefunden? Wir helfen.",
+    ctaTitleTR: "Türk Vasiyetnamesi mi Buldunuz? Yardımcı Oluyoruz.",
+    ctaDescriptionDE: "Türkisches Erbrecht in Deutschland — ein komplexes Thema mit echten Fristen. Sprechen Sie uns an, bevor Ansprüche verfallen.",
+    ctaDescriptionTR: "Almanya'da Türk miras hukuku — gerçek süreleri olan karmaşık bir konu. Haklar düşmeden önce bize ulaşın."
+  },
+
+  // ─── POST 9: Scheidung Türkei Dauer und Kosten ─────────────────────────────
+  {
+    slug: "scheidung-tuerkei-dauer-kosten",
+    slugDE: "scheidung-tuerkei-dauer-kosten",
+    slugTR: "turkiyede-bosanma-suresi-maliyeti",
+    titleDE: "Scheidung in der Türkei: Wie lange dauert es wirklich, und was kostet es?",
+    titleTR: "Türkiye'de Boşanma: Gerçekte Ne Kadar Sürer ve Ne Kadar Tutar?",
+    excerptDE: "Scheidung in der Türkei: 3 Monate oder 3 Jahre? Was kostet ein türkischer Anwalt, was das Gericht? Die direkte Antwort ohne Umschweife.",
+    excerptTR: "Türkiye'de boşanma: 3 ay mı 3 yıl mı? Türk avukat ne kadar tutar, mahkeme ne kadar? Doğrudan yanıt.",
+    contentDE: `Drei Monate bei einer einvernehmlichen Scheidung. Bis zu drei Jahre, wenn einer der Partner nicht kooperiert oder der Fall kompliziert ist.
+
+Das ist die kurze Antwort auf die Frage nach der Dauer. Jetzt die längere.
+
+## Wie eine Scheidung in der Türkei abläuft
+
+Das türkische Familienrecht unterscheidet zwei Arten der Scheidung:
+
+**Anlaşmalı boşanma — die einvernehmliche Scheidung.** Voraussetzung ist, dass die Ehe mindestens ein Jahr gedauert hat. Beide Partner müssen persönlich vor Gericht erscheinen — oder durch einen bevollmächtigten Anwalt vertreten sein — und einem gemeinsam ausgearbeiteten Scheidungsprotokoll (protokol) zustimmen. Darin stehen: Unterhalt, Sorgerecht, Umgang, Vermögensaufteilung.
+
+Wenn das Protokoll vollständig ist und beide zustimmen, spricht der Richter die Scheidung in der Regel bei einem einzigen Termin aus. Gesamtdauer ab Einreichung: typischerweise 2 bis 4 Monate.
+
+**Çekişmeli boşanma — die streitige Scheidung.** Wenn ein Partner die Scheidung ablehnt oder die Folgesachen nicht geregelt sind, wird es ein Gerichtsverfahren mit mehreren Terminen, oft Gutachten und manchmal Jahren Warterei. 1 bis 3 Jahre sind realistisch, in besonders streitigen Fällen auch länger.
+
+## Was eine Scheidung in der Türkei kostet
+
+Das ist die Frage, die viele stellen und auf die sie selten eine klare Antwort bekommen.
+
+**Türkischer Anwalt.** Die türkische Anwaltskammer (Türkiye Barolar Birliği) gibt jährlich Mindestgebührentabellen heraus. Für eine einvernehmliche Scheidung liegen die Anwaltsgebühren in der Türkei typischerweise zwischen 5.000 und 15.000 türkischer Lira — je nach Anwalt, Kanzlei und Stadt. Das entspricht aktuell grob 130 bis 400 Euro (Stand 2026, Kurs kann variieren).
+
+Für streitige Scheidungen steigen die Kosten erheblich — je nach Komplexität und Dauer des Verfahrens.
+
+**Gerichtskosten.** Die türkischen Gerichtskosten für Scheidungen sind relativ niedrig — typischerweise unter 1.000 Lira für einfache Verfahren. Dazu kommen eventuell Kosten für Übersetzungen, Sachverständige oder Vollstreckungsmaßnahmen.
+
+**Was in Deutschland dazukommt.** Wenn Sie in Deutschland leben und die Scheidung in der Türkei durchführen lassen, fallen in Deutschland Kosten für die Koordination mit dem türkischen Anwalt, die Übersetzung von Dokumenten und — falls nötig — ein Tanıma-Verfahren zur Anerkennung der türkischen Scheidung in Deutschland an. Das ist ein separates Verfahren vor einem deutschen Gericht, das in der Regel 300 bis 800 Euro kostet.
+
+## Muss ich persönlich in die Türkei reisen?
+
+Bei der einvernehmlichen Scheidung in der Regel nicht — wenn Sie einen türkischen Anwalt mit einer Vekâletname (Vollmacht) bevollmächtigen. Der Anwalt erscheint dann für Sie vor Gericht.
+
+Bei der streitigen Scheidung kann das Gericht eine persönliche Anhörung anordnen. Ob das in Ihrem Fall nötig ist, hängt von den konkreten Umständen ab.
+
+## Scheidung in der Türkei oder in Deutschland — was ist besser?
+
+Das ist keine allgemeine Frage mit einer allgemeinen Antwort. Es hängt davon ab, wo Sie und Ihr Partner leben, wo Ihre Kinder sind, wo Ihr Vermögen ist und welche rechtlichen Konsequenzen die Scheidung haben soll.
+
+Wenn Sie in Deutschland leben: Eine Scheidung in Deutschland ist in vielen Fällen einfacher, weil sie direkt in das deutsche System eingebettet ist. Die Anerkennung in der Türkei (Tanıma-Tenfiz) ist dann ein zusätzlicher Schritt.
+
+Wenn Sie oder Ihr Partner in der Türkei leben: Eine Scheidung in der Türkei kann sinnvoller sein — weil das Urteil dort sofort vollstreckbar ist und keine separates Tanıma-Verfahren braucht.
+
+Oft ist der entscheidende Faktor: Wo lebt das Kind? Das Gericht dort hat in der Regel die bessere Möglichkeit, Sorgerecht und Unterhalt zu regeln.
+
+## Was mit einem türkischen Scheidungsurteil in Deutschland passiert
+
+Ein türkisches Scheidungsurteil gilt in Deutschland nicht automatisch. Es muss in einem Anerkennungsverfahren nach § 107 FamFG von der zuständigen Landesjustizverwaltung anerkannt werden.
+
+Das Verfahren ist bürokratisch, aber in der Regel nicht schwierig — wenn das türkische Urteil formal korrekt ist. Es dauert typischerweise 3 bis 6 Monate.
+
+Ohne diese Anerkennung gilt man in Deutschland noch als verheiratet — auch wenn man in der Türkei rechtskräftig geschieden ist.`,
+    contentTR: `Anlaşmalı boşanmada üç ay. Taraflardan biri işbirliği yapmıyorsa ya da dava karmaşıksa üç yıla kadar.
+
+Süre sorusunun kısa yanıtı bu. Şimdi uzun yanıtı.
+
+## Türkiye'de Boşanma Nasıl İşler?
+
+Türk aile hukuku iki tür boşanmayı ayırt eder:
+
+**Anlaşmalı boşanma.** Evliliğin en az bir yıl sürmüş olması gerekir. Her iki taraf mahkemede bizzat ya da vekâletname ile yetkilendirilen avukat aracılığıyla hazırlanan boşanma protokolünü onaylamalıdır. Protokolde nafaka, velayet, ziyaret hakkı ve mal paylaşımı yer alır.
+
+Protokol eksiksiz ve her iki tarafın onayı mevcutsa, hâkim genellikle tek celsede boşanmayı hükme bağlar. Dilekçenin sunulmasından itibaren toplam süre: genellikle 2 ile 4 ay.
+
+**Çekişmeli boşanma.** Taraflardan biri boşanmayı reddediyorsa ya da sonuçlar konusunda anlaşmazlık varsa, birden fazla duruşmalı, çoğu kez bilirkişi gerektiren ve bazen yıllara uzayan bir yargılama söz konusu olur. 1 ile 3 yıl gerçekçidir; özellikle çekişmeli davalarda daha uzun da sürebilir.
+
+## Türkiye'de Boşanma Ne Kadar Tutar?
+
+Pek çok kişinin sorduğu ve nadiren net yanıt aldığı soru budur.
+
+**Türk avukatı.** Türkiye Barolar Birliği her yıl asgari ücret tarifesi yayımlar. Anlaşmalı boşanma için Türkiye'deki avukatlık ücretleri genellikle 5.000 ile 15.000 Türk Lirası arasında değişir — avukata, bürosu ve şehre göre. Bu, 2026 itibarıyla yaklaşık 130 ile 400 Euro'ya denk düşüyor (kur değişkendir).
+
+Çekişmeli boşanmalarda masraflar karmaşıklığa ve süreye bağlı olarak önemli ölçüde artar.
+
+**Mahkeme masrafları.** Türk mahkeme masrafları boşanma davaları için görece düşüktür — basit davalar için genellikle 1.000 Lira'nın altında. Buna çeviri, bilirkişi veya icra masrafları eklenebilir.
+
+**Almanya'dan eklenecekler.** Almanya'da yaşıyorsanız ve boşanmayı Türkiye'de yaptırıyorsanız, Türk avukatıyla koordinasyon, belge çevirisi ve — gerekirse — Türk boşanma kararının Almanya'da tanınması için Tanıma davası masrafları eklenir. Bu ayrı bir Alman mahkeme sürecidir ve genellikle 300 ile 800 Euro tutar.
+
+## Kişisel Olarak Türkiye'ye Gitmem Gerekiyor mu?
+
+Anlaşmalı boşanmada genellikle gerekmiyor — Vekâletname ile bir Türk avukatı yetkilendirirseniz avukat mahkemede sizi temsil eder.
+
+Çekişmeli boşanmada mahkeme bizzat dinleme isteyebilir. Bu somut koşullara bağlıdır.
+
+## Türkiye'deki Boşanma Kararı Almanya'da Ne Anlama Gelir?
+
+Türk boşanma kararı Almanya'da otomatik olarak geçerli değildir. § 107 FamFG kapsamında ilgili Eyalet Adalet İdaresi tarafından tanınması gerekir.
+
+Süreç bürokratiktir ama Türk kararı biçimsel açıdan doğruysa genellikle güç değildir. Tipik olarak 3 ile 6 ay sürer.
+
+Bu tanıma olmadan Türkiye'de kesinleşmiş boşanma kararı olsa bile Almanya'da hâlâ evli sayılırsınız.`,
+    category: "family-law",
+    categoryDE: "Familienrecht",
+    image: divorceImg,
+    dateDE: "21. April 2026",
+    dateTR: "21 Nisan 2026",
+    readTimeDE: "7 Min. Lesezeit",
+    readTimeTR: "7 dk okuma",
+    publishedAt: "2026-04-21",
+    keywordsDE: "scheidung türkei dauer, scheidung türkei kosten, scheidung türkei wie lange, türkische scheidung anerkennung deutschland, anwalt scheidung türkei",
+    keywordsTR: "türkiyede bosanma suresi, türkiyede bosanma masraflari, anlaşmalı boşanma türkiye, türk boşanma kararı almanya tanıma",
+    faqDE: [
+      {
+        question: "Wie lange dauert eine einvernehmliche Scheidung in der Türkei?",
+        answer: "Typischerweise 2 bis 4 Monate ab Einreichung des Antrags beim türkischen Familiengericht — vorausgesetzt, das Scheidungsprotokoll ist vollständig und beide Partner stimmen zu."
+      },
+      {
+        question: "Muss ich für eine Scheidung in der Türkei persönlich dort erscheinen?",
+        answer: "Bei einer einvernehmlichen Scheidung nicht zwingend — wenn Sie einen türkischen Anwalt per Vekâletname bevollmächtigen. Bei einer streitigen Scheidung kann das Gericht eine persönliche Anhörung anordnen."
+      },
+      {
+        question: "Wie viel kostet ein türkischer Anwalt für eine Scheidung?",
+        answer: "Für eine einvernehmliche Scheidung in der Türkei typischerweise 5.000 bis 15.000 türkische Lira — aktuell grob 130 bis 400 Euro. Für streitige Verfahren steigen die Kosten erheblich."
+      },
+      {
+        question: "Gilt meine türkische Scheidung automatisch in Deutschland?",
+        answer: "Nein. Ein türkisches Scheidungsurteil muss in Deutschland nach § 107 FamFG anerkannt werden. Das dauert in der Regel 3 bis 6 Monate. Ohne diese Anerkennung gelten Sie in Deutschland noch als verheiratet."
+      },
+      {
+        question: "Ist es besser, in der Türkei oder in Deutschland zu scheiden?",
+        answer: "Das hängt davon ab, wo Sie und Ihr Partner leben, wo die Kinder sind und wo das Vermögen liegt. Es gibt keine allgemeine Antwort. Ein Anwalt kann das für Ihren konkreten Fall einschätzen."
+      }
+    ],
+    faqTR: [
+      {
+        question: "Türkiye'de anlaşmalı boşanma ne kadar sürer?",
+        answer: "Türk aile mahkemesine dilekçe sunulmasından itibaren tipik olarak 2 ile 4 ay — boşanma protokolü eksiksizse ve her iki taraf onaylıyorsa."
+      },
+      {
+        question: "Türkiye'deki boşanma için bizzat orada bulunmam gerekiyor mu?",
+        answer: "Anlaşmalı boşanmada zorunlu değil — Vekâletname ile Türk avukatı yetkilendirirseniz avukat sizi mahkemede temsil eder. Çekişmeli boşanmada mahkeme bizzat dinleme isteyebilir."
+      },
+      {
+        question: "Türk boşanma kararım Almanya'da otomatik geçerli mi?",
+        answer: "Hayır. Türk boşanma kararı Almanya'da § 107 FamFG kapsamında tanınmalıdır. Genellikle 3 ile 6 ay sürer. Bu tanıma olmadan Almanya'da hâlâ evli sayılırsınız."
+      }
+    ],
+    ctaTitleDE: "Scheidung in der Türkei — wir koordinieren beides",
+    ctaTitleTR: "Türkiye'de Boşanma — İki Tarafı Birden Koordine Ediyoruz",
+    ctaDescriptionDE: "Türkische Scheidung plus Anerkennung in Deutschland — wir kennen beide Systeme und beraten auf Deutsch und Türkisch.",
+    ctaDescriptionTR: "Türk boşanması artı Almanya'da tanıma — her iki sistemi biliyor, Almanca ve Türkçe danışmanlık sunuyoruz."
+  },
+
+  // ─── POST 10: Erstberatung türkischer Anwalt ───────────────────────────────
+  {
+    slug: "tuerkischer-anwalt-mannheim-erstberatung",
+    slugDE: "tuerkischer-anwalt-mannheim-erstberatung",
+    slugTR: "mannheim-turk-avukat-ilk-gorusme",
+    titleDE: "Beim ersten Gespräch mit einem türkischen Anwalt: Was bringt mir was?",
+    titleTR: "Türk Bir Avukatla İlk Görüşmede: Neyi Nasıl Değerlendirmelisiniz?",
+    excerptDE: "Türkischer Anwalt Mannheim Erstberatung: Was passiert im ersten Gespräch, welche Dokumente sollen Sie mitbringen, und woran erkennen Sie, ob ein Anwalt wirklich türkisches Recht beherrscht?",
+    excerptTR: "Mannheim'da Türk avukatla ilk görüşme: İlk görüşmede neler olur, hangi belgeleri getirmeniz gerekir ve bir avukatın gerçekten Türk hukukunu bilip bilmediğini nasıl anlarsınız?",
+    contentDE: `Die meisten Menschen gehen zum ersten Mal zu einem Anwalt, wenn die Lage schon etwas eskaliert ist. Dann ist man nervös, weiß nicht genau, was man sagen soll, und verlässt das Gespräch manchmal verwirrt — obwohl der Anwalt formell alles richtig gemacht hat.
+
+Das muss nicht so sein. Hier erkläre ich, was bei der Erstberatung eines türkischen Anwalts passiert und wie Sie das Gespräch so führen, dass Sie am Ende wirklich wissen, wo Sie stehen.
+
+## Was in einer Erstberatung passiert — realistisch beschrieben
+
+Eine Erstberatung ist kein Beratungsgespräch im weiteren Sinne. Sie ist ein Erstgespräch zur Einschätzung. Das heißt: Der Anwalt hört zu, stellt Fragen, ordnet Ihren Fall rechtlich ein und erklärt, was aus seiner Sicht die sinnvollen nächsten Schritte sind.
+
+Was er Ihnen am Ende eines guten Erstgesprächs sagen kann:
+- Welches Recht auf Ihren Fall anwendbar ist
+- Ob und welche Ansprüche Sie haben (oder gegen Sie bestehen könnten)
+- Was realistische Optionen sind — und welche davon Zeit und Geld kostet
+- Ob Sie überhaupt einen Anwalt brauchen oder ob sich die Sache anders lösen lässt
+
+Was er Ihnen nicht versprechen wird — und wenn er es tut, sollten Sie vorsichtig sein: Garantien über den Ausgang. Kein seriöser Anwalt sagt "das gewinnen Sie sicher".
+
+## Was Sie vorbereiten sollten
+
+Je besser vorbereitet Sie kommen, desto mehr bekommen Sie aus dem Gespräch. Das bedeutet nicht: einen mehrseitigen Bericht schreiben. Es bedeutet: die wesentlichen Fakten im Kopf haben und relevante Dokumente dabei.
+
+Für die meisten türkisch-deutschen Rechtsfragen hilft es, mitzubringen:
+
+Personaldokumente. Ihren Personalausweis oder Reisepass, türkischen Nüfus-Auszug falls vorhanden. Bei Familiensachen die Heiratsurkunde, eventuell Geburtsurkunden der Kinder.
+
+Relevante Schriftstücke. Wenn es um eine Erbschaft geht: das Testament, den türkischen Veraset-Bescheid, Tapu-Dokumente. Bei Scheidung: den Scheidungsbeschluss oder laufende Anträge. Bei einer Vollmacht: das bestehende Dokument.
+
+Eine Zeitlinie. Wann ist was passiert? Wann hat Ihr Vater das Testament gemacht? Wann hat sich die Ehe getrennt? Wann kam der Brief vom Gericht? Das hilft dem Anwalt, Fristen zu erkennen.
+
+## Woran erkennen Sie, ob ein Anwalt türkisches Recht wirklich beherrscht?
+
+Das ist eine berechtigt schwierige Frage — weil "türkisches Recht" kein offizieller Fachanwaltstitel in Deutschland ist. Jeder Anwalt, der in Deutschland zugelassen ist, darf grundsätzlich über türkisches Recht beraten.
+
+Was einen Unterschied macht:
+
+Zulassung bei einer türkischen Rechtsanwaltskammer. Wenn ein Anwalt zusätzlich zu seiner deutschen Zulassung auch bei einer türkischen Barosu zugelassen ist, darf er in der Türkei vor Gericht auftreten. Das ist ein konkreter Hinweis auf echte Kenntnisse des türkischen Systems.
+
+Erfahrung mit konkreten Verfahren. Fragen Sie: "Haben Sie schon ein Tanıma-Tenfiz-Verfahren begleitet? Haben Sie schon türkische Immobilien in einem Erbschaftsfall abgewickelt?" Antworten, die klar und konkret sind, sprechen für echte Praxiserfahrung.
+
+Kommunikation. Kann der Anwalt auf Türkisch kommunizieren — mit Ihnen, aber auch mit türkischen Gerichten und Anwälten? Das ist kein reines Komfortmerkmal: Türkische Behörden kommunizieren auf Türkisch.
+
+## Was Sie nach der Erstberatung wissen sollten
+
+Wenn Sie nach einem einstündigen Gespräch nicht wissen, ob und wie Ihre Sache weitergeht, war das Gespräch nicht hilfreich genug. Das kann am Anwalt liegen — oder daran, dass Sie den Fall noch nicht vollständig geschildert haben.
+
+Fragen Sie am Ende direkt: "Was ist der nächste Schritt für mich?" Und: "Was kostet dieser nächste Schritt ungefähr?"
+
+Ein Anwalt, der auf diese Fragen ausweicht, macht sich keinen Gefallen.
+
+## Türkischer Anwalt in Mannheim: Was die Doğru Kanzlei anbietet
+
+Rechtsanwalt Hasan Doğru ist sowohl bei der Rechtsanwaltskammer Karlsruhe (§ 207 BRAO) als auch bei der Ankara Barosu zugelassen. Das bedeutet: Er ist berechtigt, in der Türkei vor Gericht aufzutreten, nicht nur zu beraten.
+
+Die Erstberatung findet auf Deutsch oder Türkisch statt — je nachdem, was für Sie angenehmer ist. Im Anschluss bekommen Sie eine klare Einschätzung: was Ihre Lage rechtlich bedeutet, welche Optionen realistisch sind und was der nächste Schritt ist.`,
+    contentTR: `Çoğu insan ilk kez avukata gittiğinde durum biraz tırmanmış oluyor. Sinirlisiniz, ne söyleyeceğinizi tam bilmiyorsunuz ve bazen görüşmeden daha da kafanız karışmış ayrılıyorsunuz — avukat biçimsel açıdan her şeyi doğru yapmış olsa da.
+
+Bu böyle olmak zorunda değil. Burada, Türk bir avukatla ilk görüşmede neler yaşandığını ve görüşmeyi, çıkarken gerçekten nerede durduğunuzu bileceğiniz şekilde nasıl yönlendirebileceğinizi açıklıyorum.
+
+## İlk Görüşmede Gerçekte Ne Olur?
+
+İlk danışma geniş anlamda bir rehberlik görüşmesi değildir. İlk değerlendirme görüşmesidir. Avukat dinler, sorular sorar, davanızı hukuki açıdan sınıflandırır ve en uygun sonraki adımların neler olduğunu açıklar.
+
+İyi bir ilk görüşmenin sonunda avukatın size söyleyebilecekleri:
+- Davanıza hangi hukukun uygulanacağı
+- Hangi haklarınız olduğu — ya da size karşı ne ileri sürülebileceği
+- Gerçekçi seçeneklerin neler olduğu ve hangilerinin zaman ve para gerektirdiği
+- Gerçekten avukata ihtiyacınız olup olmadığı ya da konunun başka türlü çözülüp çözülemeyeceği
+
+Söylemeyeceği — ve söylüyorsa dikkatli olun: Sonucu garantilemek. Ciddi hiçbir avukat "bunu kesinlikle kazanırsınız" demez.
+
+## Ne Hazırlamalısınız?
+
+Ne kadar hazırlıklı gelirseniz görüşmeden o kadar çok şey alırsınız. Bu çok sayfalık rapor yazmak demek değil — önemli gerçekleri aklınızda tutmak ve ilgili belgeleri getirmek demek.
+
+Çoğu Türk-Alman hukuki sorusu için şunları getirmeniz yardımcı olur:
+
+Kimlik belgeleri. Pasaportunuz, varsa Türk nüfus cüzdanı ya da nüfus kaydı. Aile davalarında evlilik cüzdanı, mümkünse çocukların doğum belgeleri.
+
+İlgili belgeler. Miras söz konusuysa: vasiyetname, Türk veraset ilamı, tapu belgeleri. Boşanma söz konusuysa: boşanma kararı ya da sürmekte olan talepler. Vekaletname söz konusuysa: mevcut belge.
+
+Zaman çizelgesi. Ne zaman ne oldu? Babanız vasiyeti ne zaman yazdı? Evlilik ne zaman bozuldu? Mahkeme mektubu ne zaman geldi? Bu, avukatın süreleri fark etmesine yardımcı olur.
+
+## Bir Avukatın Türk Hukukunu Gerçekten Bilip Bilmediğini Nasıl Anlarsınız?
+
+Bu haklı ve zor bir sorudur — çünkü "Türk hukuku" Almanya'da resmi bir uzmanlık unvanı değildir. Almanya'da ruhsat sahibi her avukat prensipte Türk hukuku hakkında danışmanlık verebilir.
+
+Fark yaratan şeyler:
+
+Türk barosuna üyelik. Bir avukat Alman ruhsatına ek olarak bir Türk Barosu'na da kayıtlıysa, Türkiye'de mahkemede temsil yetkisine sahiptir. Bu, Türk sistemine dair gerçek bilginin somut bir göstergesidir.
+
+Somut deneyim. Sorun: "Daha önce Tanıma-Tenfiz sürecini yürüttünüz mü? Miras davasında Türk tapu işlemlerini gerçekleştirdiniz mi?" Net ve somut yanıtlar gerçek pratik deneyimi gösterir.
+
+İletişim. Avukat Türkçe iletişim kurabiliyor mu — sizinle, ama aynı zamanda Türk mahkeme ve avukatlarıyla? Bu yalnızca konfor meselesi değil: Türk kurumları Türkçe iletişim kurar.
+
+## İlk Görüşmeden Sonra Ne Bilmeniz Gerekir?
+
+Saatlik bir görüşmenin ardından davanızın nasıl ilerleyeceğini bilmiyorsanız, görüşme yeterince verimli değildi. Bu avukattan kaynaklanıyor olabilir — ya da davayı henüz tam olarak anlatmamış olabilirsiniz.
+
+Sonunda doğrudan sorun: "Benim için bir sonraki adım ne?" Ve: "Bu adım yaklaşık ne kadar tutar?"
+
+Bu sorudan kaçınan bir avukat kendine iyilik etmiyor.
+
+## Mannheim'da Türk Avukat: Doğru Kanzlei Ne Sunuyor?
+
+Avukat Hasan Doğru, hem Karlsruhe Barosu'na (§207 BRAO) hem de Ankara Barosu'na kayıtlıdır. Bu, yalnızca danışmanlık vermekle kalmayıp Türkiye'de mahkemede temsil yetkisine sahip olduğu anlamına gelir.
+
+İlk görüşme Almanca veya Türkçe yapılır — hangisi sizin için daha rahatsanız. Ardından net bir değerlendirme alırsınız: hukuki durumunuz ne anlama geliyor, gerçekçi seçenekler neler ve bir sonraki adım ne.`,
+    category: "legal-info",
+    categoryDE: "Rechtsinformationen",
+    image: criminalDefenseTurkeyImg,
+    dateDE: "21. April 2026",
+    dateTR: "21 Nisan 2026",
+    readTimeDE: "8 Min. Lesezeit",
+    readTimeTR: "8 dk okuma",
+    publishedAt: "2026-04-21",
+    keywordsDE: "türkischer anwalt mannheim, türkischer anwalt erstberatung, anwalt türkisches recht mannheim, türkischer rechtsanwalt erstgespräch, türkisch deutscher anwalt",
+    keywordsTR: "mannheim türk avukat, türk avukat ilk görüşme, türk hukuku avukat mannheim, türk alman avukat ilk danışma",
+    faqDE: [
+      {
+        question: "Was kostet die Erstberatung bei einem türkischen Anwalt in Mannheim?",
+        answer: "Maximal 190 Euro plus Mehrwertsteuer nach dem RVG. Mit Beratungshilfeschein (beim Amtsgericht erhältlich) nur 15 Euro. Fragen Sie vorher, was konkret berechnet wird."
+      },
+      {
+        question: "Was ist der Unterschied zwischen einem Anwalt mit türkischer Barosu-Zulassung und einem ohne?",
+        answer: "Ein Anwalt mit Zulassung bei einer türkischen Barosu ist berechtigt, in der Türkei vor Gericht aufzutreten — nicht nur zu beraten. Das ist relevant, wenn Ihr Fall türkische Gerichtsverfahren erfordert, zum Beispiel Tanıma-Tenfiz oder türkische Erbschaftsangelegenheiten."
+      },
+      {
+        question: "Welche Dokumente soll ich zur Erstberatung mitbringen?",
+        answer: "Personalausweis oder Reisepass, türkischer Nüfus-Auszug falls vorhanden, und alle Dokumente, die direkt mit Ihrem Anliegen zusammenhängen — Testament, Scheidungsbeschluss, Mietvertrag, Vollmacht. Eine kurze Zeitlinie der Ereignisse hilft dem Anwalt, schneller einzusteigen."
+      },
+      {
+        question: "Kann ich die Erstberatung auch auf Türkisch führen?",
+        answer: "Bei der Doğru Kanzlei ja. Das Gespräch findet auf Deutsch oder Türkisch statt — je nachdem, was für Sie angenehmer ist."
+      }
+    ],
+    faqTR: [
+      {
+        question: "Mannheim'da Türk avukatla ilk görüşme ne kadar tutar?",
+        answer: "RVG'ye göre maksimum 190 Euro + KDV. Beratungshilfe belgesiyle yalnızca 15 Euro. Önceden ne kadar ücret alındığını sormanızı öneririm."
+      },
+      {
+        question: "Türk barosuna kayıtlı avukat ile kayıtsız arasındaki fark nedir?",
+        answer: "Türk barosuna kayıtlı avukat Türkiye'de mahkemede temsil yetkisine sahiptir — yalnızca danışmanlık vermekle kalmaz. Tanıma-Tenfiz veya Türkiye'deki miras işlemleri gibi Türk mahkeme süreçleri gerekiyorsa bu önemlidir."
+      },
+      {
+        question: "İlk görüşmeye hangi belgeleri getirmeliyim?",
+        answer: "Pasaport veya kimlik belgesi, varsa Türk nüfus cüzdanı ve doğrudan ilginizi ilgilendiren tüm belgeler — vasiyetname, boşanma kararı, kira sözleşmesi, vekaletname. Olayların kısa bir zaman çizelgesi avukatın daha hızlı değerlendirme yapmasına yardımcı olur."
+      },
+      {
+        question: "İlk görüşmeyi Türkçe yapabilir miyim?",
+        answer: "Doğru Kanzlei'de evet. Görüşme Almanca veya Türkçe yapılabilir — hangisi sizin için daha rahatsanız."
+      }
+    ],
+    ctaTitleDE: "Erstgespräch mit einem türkischen Anwalt in Mannheim",
+    ctaTitleTR: "Mannheim'da Türk Avukatla İlk Görüşme",
+    ctaDescriptionDE: "Rechtsanwalt Hasan Doğru ist bei der Ankara Barosu und der Rechtsanwaltskammer Karlsruhe zugelassen. Erstberatung auf Deutsch oder Türkisch.",
+    ctaDescriptionTR: "Avukat Hasan Doğru, Ankara Barosu ve Karlsruhe Barosu'na kayıtlıdır. İlk görüşme Almanca veya Türkçe yapılabilir."
+  },
 ];

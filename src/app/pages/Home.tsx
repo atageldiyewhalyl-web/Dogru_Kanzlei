@@ -16,9 +16,10 @@ const HOME_SCHEMA = {
   "alternateName": "Avukat Hasan Doğru",
   "url": "https://hasandogru.de",
   "logo": "https://www.hasandogru.de/assets/logo-eRLlm_XN.avif",
-  "description": "Türkisches Recht spezialisierte Kanzlei in Mannheim. Beratung in Erbrecht, Familienrecht, Strafrecht und Migrationsrecht zwischen Deutschland, der Schweiz und der Türkei.",
+  "image": "https://www.hasandogru.de/assets/hero-Bn0oq0cB.avif",
+  "description": "Auf türkisches Recht spezialisierte Kanzlei in Mannheim. Beratung in Erbrecht, Familienrecht, Strafrecht und Migrationsrecht zwischen Deutschland, der Schweiz und der Türkei.",
   "areaServed": ["DE", "CH", "AT", "TR"],
-  "availableLanguage": ["Turkish", "German", "English"],
+  "availableLanguage": ["Turkish", "German"],
   "priceRange": "$$",
   "telephone": "+4917661221210",
   "email": "info@hasandogru.de",
@@ -34,13 +35,41 @@ const HOME_SCHEMA = {
     "latitude": 49.4875,
     "longitude": 8.4660
   },
-  "openingHoursSpecification": {
-    "@type": "OpeningHoursSpecification",
-    "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"],
-    "opens": "09:00",
-    "closes": "18:00"
+  "openingHoursSpecification": [
+    {
+      "@type": "OpeningHoursSpecification",
+      "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"],
+      "opens": "09:00",
+      "closes": "18:00"
+    }
+  ],
+  "aggregateRating": {
+    "@type": "AggregateRating",
+    "ratingValue": "5.0",
+    "reviewCount": "70",
+    "bestRating": "5",
+    "worstRating": "1"
   },
-  "sameAs": []
+  "sameAs": [
+    "https://maps.app.goo.gl/GujBeApHPpj1Vzjd9",
+    "https://www.anwalt.de/hasan-dogru",
+    "https://kilimgazetesi.de/haber/avukat-hasan-dogru-mannheim-da-turk-hukukunda-kopru-gorevi-ustleniyor"
+  ]
+};
+
+const PERSON_SCHEMA = {
+  "@context": "https://schema.org",
+  "@type": "Person",
+  "name": "Hasan Doğru",
+  "jobTitle": "Rechtsanwalt / Avukat",
+  "worksFor": { "@type": "LegalService", "name": "Doğru Kanzlei" },
+  "memberOf": [
+    { "@type": "Organization", "name": "Ankara Barosu", "identifier": "47068" },
+    { "@type": "Organization", "name": "Rechtsanwaltskammer Karlsruhe" }
+  ],
+  "knowsLanguage": ["Turkish", "German", "English"],
+  "url": "https://hasandogru.de/de/ueber-uns",
+  "image": "https://www.hasandogru.de/assets/hero-Bn0oq0cB.avif"
 };
 
 export function Home() {
@@ -49,7 +78,7 @@ export function Home() {
 
   useSEO({
     title: language === 'de'
-      ? 'Türk Avukat Mannheim | Avukat Mannheim | Avukat Hasan Doğru'
+      ? 'Türkischer Anwalt Mannheim | Avukat Hasan Doğru | Doğru Kanzlei'
       : 'Türk Avukat Mannheim | Mannheim Türk Avukatlar | Avukat Hasan Doğru',
     description: language === 'de'
       ? 'Türkischer Anwalt in Mannheim für türkisches Recht. Avukat Hasan Doğru berät türkischstämmige Familien in Deutschland und der Schweiz zu Scheidung, Erbrecht und türkischem Familienrecht — ohne Reise in die Türkei.'
@@ -65,6 +94,7 @@ export function Home() {
   return (
     <>
       <SchemaOrg data={HOME_SCHEMA} />
+      <SchemaOrg data={PERSON_SCHEMA} id="schema-org-person" />
       <Hero />
       <PracticeAreas />
       <WhyUs />
