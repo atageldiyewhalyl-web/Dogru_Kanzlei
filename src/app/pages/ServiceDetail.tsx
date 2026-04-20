@@ -126,7 +126,7 @@ export function ServiceDetail() {
       "name": "Doğru Kanzlei",
       "url": "https://hasandogru.de"
     },
-    "areaServed": ["DE", "TR"],
+    "areaServed": ["DE", "CH", "AT", "TR"],
     "description": description,
     "availableLanguage": ["Turkish", "German", "English"]
   };

@@ -16,8 +16,8 @@ const HOME_SCHEMA = {
   "alternateName": "Avukat Hasan Doğru",
   "url": "https://hasandogru.de",
   "logo": "https://www.hasandogru.de/assets/logo-eRLlm_XN.avif",
-  "description": "Türkisches Recht spezialisierte Kanzlei in Mannheim. Beratung in Erbrecht, Familienrecht, Strafrecht und Migrationsrecht zwischen Deutschland und der Türkei.",
-  "areaServed": ["DE", "TR"],
+  "description": "Türkisches Recht spezialisierte Kanzlei in Mannheim. Beratung in Erbrecht, Familienrecht, Strafrecht und Migrationsrecht zwischen Deutschland, der Schweiz und der Türkei.",
+  "areaServed": ["DE", "CH", "AT", "TR"],
   "availableLanguage": ["Turkish", "German", "English"],
   "priceRange": "$$",
   "telephone": "+4917661221210",
@@ -52,8 +52,8 @@ export function Home() {
       ? 'Türk Avukat Mannheim | Avukat Mannheim | Avukat Hasan Doğru'
       : 'Türk Avukat Mannheim | Mannheim Türk Avukatlar | Avukat Hasan Doğru',
     description: language === 'de'
-      ? 'Türkischer Anwalt in Mannheim für türkisches Recht. Avukat Hasan Doğru berät türkischstämmige Familien in Mannheim zu Scheidung, Erbrecht und türkischem Familienrecht — ohne Reise in die Türkei.'
-      : 'Mannheim\'da Türk avukat arıyorsanız doğru yerdesiniz. Avukat Hasan Doğru, boşanma, miras ve Türk hukuku konularında Almanya\'dan hizmet verir. Türkiye\'ye seyahat gerekmez.',
+      ? 'Türkischer Anwalt in Mannheim für türkisches Recht. Avukat Hasan Doğru berät türkischstämmige Familien in Deutschland und der Schweiz zu Scheidung, Erbrecht und türkischem Familienrecht — ohne Reise in die Türkei.'
+      : 'Almanya ve İsviçre\'deki Türk avukatı arıyorsanız doğru yerdesiniz. Avukat Hasan Doğru, boşanma, miras ve Türk hukuku konularında Almanya\'dan hizmet verir. Türkiye\'ye seyahat gerekmez.',
     lang: language,
     canonical: `${SITE_URL}/${language}`,
     alternateLang: {

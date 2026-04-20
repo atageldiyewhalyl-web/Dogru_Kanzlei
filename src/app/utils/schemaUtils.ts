@@ -11,7 +11,7 @@ export const LEGAL_SERVICE_BASE = {
   "priceRange": "$$",
   "telephone": "+4917661221210",
   "email": "info@hasandogru.de",
-  "areaServed": ["DE", "TR"],
+  "areaServed": ["DE", "CH", "AT", "TR"],
   "availableLanguage": ["Turkish", "German", "English"],
 };
 

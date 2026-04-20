@@ -76,11 +76,17 @@ export function useSEO(config: SEOConfig) {
     setMetaTag('twitter:description', config.description, true);
     setMetaTag('twitter:image', finalOgImage, true);
 
-    // Lang alternates
-    const langAlternateHreflang = config.lang === 'de' ? 'tr' : 'de';
+    // Lang alternates — country-specific codes for broader geo-targeting
     if (config.alternateLang) {
       setLinkTag('alternate', config.alternateLang.href, { hreflang: config.alternateLang.lang });
       setLinkTag('alternate', canonicalUrl, { hreflang: config.lang });
+    }
+
+    // German-speaking regions: DE, CH, AT all served by the /de version
+    if (config.lang === 'de') {
+      setLinkTag('alternate', canonicalUrl, { hreflang: 'de-DE' });
+      setLinkTag('alternate', canonicalUrl, { hreflang: 'de-CH' });
+      setLinkTag('alternate', canonicalUrl, { hreflang: 'de-AT' });
     }
 
     // x-default hreflang (always points to German version)
