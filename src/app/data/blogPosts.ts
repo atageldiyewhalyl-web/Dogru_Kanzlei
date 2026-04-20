@@ -15,6 +15,10 @@ import debtCollectionImg from "@/assets/debt_collection_law.png";
 import criminalDefenseImg from "@/assets/criminal_defense_law.png";
 import blueCardImg from "@/assets/blue_card_rights_law.png";
 
+import criminalDefenseTurkeyImg from "@/assets/criminal_defense_turkey.png";
+import blueCardProfessionalImg from "@/assets/blue_card_professional.png";
+import inheritanceLawImg from "@/assets/inheritance_fraud_law.png";
+
 export interface BlogPost {
   slug: string;
   slugDE: string;
@@ -37,9 +41,709 @@ export interface BlogPost {
   keywordsTR?: string;
   faqDE?: { question: string; answer: string }[];
   faqTR?: { question: string; answer: string }[];
+  ctaTitleDE?: string;
+  ctaTitleTR?: string;
+  ctaDescriptionDE?: string;
+  ctaDescriptionTR?: string;
 }
 
 export const blogPosts: BlogPost[] = [
+  {
+    slug: "almanya-turkiye-miras-hukuku-rehberi",
+    slugDE: "erbschaft-tuerkei-deutschland-ratgeber",
+    slugTR: "almanya-turkiye-miras-hukuku-rehberi",
+    titleDE: "Türkisches Erbe aus Deutschland regeln | Welche Rechte haben Erben?",
+    titleTR: "Almanya'da Yaşarken Türkiye'de Miras mı Kaldı? Haklarınızı Kaybetmemek İçin Ne Yapmalısınız?",
+    excerptDE: "In Deutschland leben und in der Türkei erben? Erfahren Sie alles über Fristen, Erbausschlagung, Pflichtteilsrechte und die EU-Erbrechtsverordnung.",
+    excerptTR: "Almanya'da yaşarken Türkiye'deki miras haklarınızı nasıl koruyacağınızı öğrenin. Veraset ilamı, miras reddi ve tenkis davası hakkında kapsamlı rehber.",
+    contentDE: `In Deutschland lebende türkische Staatsangehörige können sowohl in der Türkei als auch in Deutschland Eigentum besitzen — und türkische Verwandte können Vermögen unterschiedlichster Art hinterlassen. Diese grenzüberschreitenden Verflechtungen führen im Erbfall zu rechtlich äußerst komplexen Situationen.
+
+Die wichtigste Tatsache vorab: Das Erbrecht ist voller Fristen. Eine versäumte Frist kann den Verlust eines Rechts bedeuten — oder im schlimmsten Fall die ungewollte Übernahme von Schulden. Als bei der Ankara Barosu und der Rechtsanwaltskammer Karlsruhe (§207 BRAO) zugelassener Anwalt berät die Doğru Kanzlei sowohl zu türkischen Erbrechtsangelegenheiten als auch zu den aufenthalts- und steuerrechtlichen Folgen in Deutschland.
+
+## Die EU-Erbrechtsverordnung 650/2012
+
+Seit dem 17. August 2015 gilt zwischen den EU-Mitgliedstaaten — mit Ausnahme Dänemarks — die EU-Erbrechtsverordnung Nr. 650/2012. Nach der wichtigsten Bestimmung der Verordnung gilt grundsätzlich das Recht des Staates, in dem der Erblasser seinen letzten gewöhnlichen Aufenthalt hatte. Für türkische Staatsangehörige, die in Deutschland leben, hat dies eine entscheidende Konsequenz: Ihr Nachlass unterliegt im Regelfall deutschem Erbrecht.
+
+Die Verordnung eröffnet jedoch auch die Möglichkeit einer Rechtswahl zugunsten des Heimatrechts. Ein in Deutschland lebender türkischer Staatsangehöriger kann durch ein notariell beurkundetes Testament oder einen Erbvertrag bestimmen, dass auf seinen Nachlass türkisches Erbrecht Anwendung findet.
+
+## Grundprinzipien des türkischen Erbrechts
+
+Das türkische Erbrecht ist in den Artikeln 495–682 des Türkischen Zivilgesetzbuchs (TMK) geregelt und weist gegenüber dem deutschen BGB wesentliche Unterschiede auf.
+
+**Gesetzliche Erben**
+Die erste Ordnung bilden die Abkömmlinge des Erblassers, die zu gleichen Teilen erben. Die zweite Ordnung besteht aus den Eltern des Erblassers und deren Abkömmlingen. Der überlebende Ehegatte kann zusammen mit jeder Ordnung erben.
+
+**Pflichtteil (Saklı Pay)**
+Für Abkömmlinge beträgt der Pflichtteil die Hälfte des gesetzlichen Erbteils, für jeden Elternteil ein Viertel. Wird dieser Anteil durch Testament oder Verfügungen zu Lebzeiten unterschritten, entsteht das Recht auf Erhebung einer Pflichtteilsergänzungsklage.
+
+**Testamentsformen**
+Das notarielle Testament wird in Anwesenheit eines Notars, zweier Zeugen und des Erblassers errichtet. Das eigenhändige Testament muss von Anfang bis Ende handschriftlich verfasst und unterschrieben sein — maschinell geschriebene Texte sind ungültig. Das mündliche Testament ist nur in außerordentlichen Ausnahmesituationen mit unmittelbarer Todesgefahr gültig.
+
+## Anwendung türkischen Rechts nach MÖHUK
+
+Die Türkei regelt ihr internationales Privatrecht im MÖHUK, Gesetz Nr. 5718. Nach Artikel 20 MÖHUK unterliegen Erbsachen dem Heimatrecht des Erblassers zum Zeitpunkt seines Todes. Diese Regelung weicht vom Anknüpfungspunkt des letzten gewöhnlichen Aufenthalts der EU-Erbrechtsverordnung ab und erzeugt einen bedeutsamen Konfliktpunkt. Dies macht die Errichtung eines Testaments, das in beiden Ländern auf seine Wirksamkeit geprüft wurde, besonders wichtig.
+
+## Immobilien in der Türkei aus Deutschland verkaufen
+
+Kann ich meine Immobilie in der Türkei verkaufen, ohne dorthin zu reisen? Die Antwort lautet: Ja — jedoch nur mit einer korrekt ausgestellten Vollmacht (Vekaletname). Eine Vollmacht kann beim türkischen Konsulat in Deutschland oder bei einem deutschen Notar ausgestellt werden. Dabei ist zu beachten: Allgemeine Vollmachten, die von einem deutschen Notar ausgestellt wurden, werden vom türkischen Grundbuchamt häufig nicht anerkannt.
+
+Auf den Verkaufserlös kann in der Türkei Wertzuwachssteuer anfallen — insbesondere wenn seit dem Erwerb der Immobilie noch keine fünf Jahre vergangen sind, kann dies einen erheblichen Betrag ausmachen. Im Rahmen des deutsch-türkischen Doppelbesteuerungsabkommens ist außerdem gesondert zu prüfen, ob in Deutschland eine Steuerpflicht entsteht.
+
+## Erbausschlagung: Wenn das Erbe mehr Schulden als Vermögen enthält
+
+Im türkischen Recht müssen Sie nichts tun, um ein Erbe anzunehmen. Wenn Sie es nicht fristgerecht ausschlagen, gelten Sie als Erbe — einschließlich aller Schulden.
+
+Nach Artikel 605 TMK können Erben das Erbe innerhalb von drei Monaten nach Kenntnis vom Tod des Erblassers und ihrer Erbenstellung ausschlagen. Diese Frist gilt auch für in Deutschland lebende Erben und wird in der Regel nicht verlängert. Die Erbausschlagung erfolgt durch einen formellen Antrag beim türkischen Gericht. Ihr Anwalt kann diesen Schritt über das UYAP-System aus Mannheim in Ihrem Namen durchführen.
+
+## Pflichtteilsergänzungsklage: Was tun, wenn Ihr Pflichtteil verletzt wurde?
+
+Eines der häufigsten Erbstreitigkeiten: Der Erblasser hat in seinen letzten Lebensjahren Immobilien in der Türkei auf bestimmte Erben oder Dritte übertragen — und in Deutschland lebende andere Erben sind dadurch um einen Großteil ihres Erbteils gebracht worden.
+
+Das türkische Erbrecht sieht gegen diesen Missstand einen klaren Schutzmechanismus vor: die Tenkis Davası (Pflichtteilsergänzungsklage). Nach Artikel 560 TMK kann die Aufhebung von Verfügungen, die den Pflichtteil verletzen, gerichtlich beantragt werden. Das Recht auf Erhebung der Klage muss innerhalb von einem Jahr ab Kenntnis der Pflichtteilsverletzung, spätestens jedoch innerhalb von zehn Jahren ab Eröffnung des Testaments ausgeübt werden. Die Doğru Kanzlei kann über das UYAP-System auf türkische Verfahrensakten zugreifen und das Pflichtteilsergänzungsverfahren aus dem Mannheimer Büro heraus führen.
+
+---
+
+**Holen Sie sich jetzt eine kostenlose Ersteinschätzung für Ihren grenzüberschreitenden Erbfall | Mannheim: +49 176 6122 1210 | Ankara: +90 533 237 59 18 | hasandogru.de**
+
+Avukat Hasan Doğru | Doğru Kanzlei | Ankara Barosu (Sicil No: 47068) & Rechtsanwaltskammer Karlsruhe (§207 BRAO)
+
+*Dieser Artikel dient ausschließlich der allgemeinen Information und stellt keine Rechtsberatung dar. Für eine auf Ihren individuellen Fall zugeschnittene Einschätzung nehmen Sie bitte Kontakt mit uns auf. Die Kanzlei berät ausschließlich im türkischen Recht gemäß §207 BRAO.*`,
+    contentTR: `Almanya'da yaşayan Türk vatandaşları, hem Türkiye'de hem de Almanya'da mülke sahip olabilmekte; Türkiye'deki akrabaları ise çeşitli varlıklar bırakabilmektedir. Bu kesişen bağlar, miras söz konusu olduğunda son derece karmaşık hukuki durumların ortaya çıkmasına yol açmaktadır.
+
+En önemli gerçek şudur: Miras hukuku sürelerle doludur. Kaçırılan bir süre, kullanılmayan bir hak anlamına gelebilir — hatta bazen miras yoluyla devralınan beklenmedik borçlar anlamına gelebilir. Bu rehberde hem hukuki çerçeveyi hem de işler ters gittiğinde ne yapmanız gerektiğini ele alacağız.
+
+→ Cezai kovuşturmaların miras üzerindeki etkilerini de araştırıyorsanız: [Türkiye'deki Ceza Davaları rehberimize](/tr/blog/turkiye-ceza-davasi-tutuklama-karari-almanya-savunma) bakınız.
+
+## AB Miras Tüzüğü 650/2012
+
+Avrupa Birliği üyesi devletler arasında (Danimarka hariç) 17 Ağustos 2015 tarihinden bu yana 650/2012 sayılı AB Miras Tüzüğü uygulanmaktadır. Tüzük'ün en önemli hükmüne göre, kural olarak kişinin son alışılagelen ikametgâhının bulunduğu devletin hukuku uygulanmaktadır. Almanya'da yaşayan Türk vatandaşlarının mirası, varsayılan olarak Alman miras hukukuna tabidir. Ancak Tüzük, hukuk seçimi (Rechtswahl) imkânı da tanımaktadır: Almanya'da yaşayan bir Türk vatandaşı noter huzurunda Türk miras hukukunun uygulanmasını seçebilmektedir.
+
+## Türk Miras Hukukunun Temel İlkeleri
+
+Türk miras hukuku 4721 sayılı Türk Medeni Kanunu'nun (TMK) 495-682. maddeleriyle düzenlenmektedir.
+
+**Yasal Mirasçılar**
+Birinci zümreyi murisin altsoyu oluşturmaktadır; bunlar eşit paylarda miras alırlar. İkinci zümreyi murisin anne ve babası ile onların altsoyu oluşturmaktadır. Sağ kalan eş her zümreyle birlikte miras alabilmektedir.
+
+**Saklı Pay (Mahfuz Hisse)**
+Altsoy için yasal miras payının 1/2'si, anne ve babanın her biri için 1/4'ü saklı pay olarak korunmaktadır. Bu pay vasiyetname veya yaşarken yapılan miras tasarrufları yoluyla ihlal edilmesi halinde tenkis davası açma hakkı doğmaktadır.
+
+**Vasiyetname Türleri**
+Resmî vasiyetname noter, iki tanık ve murisin huzurunda düzenlenmektedir. El yazılı vasiyetname başından sonuna kadar murisin el yazısıyla yazılmış ve imzalanmış olmalıdır; bilgisayarla yazılanlar geçersizdir. Sözlü vasiyetname ise yalnızca ölüm tehlikesinin yakın olduğu istisnai durumlarda geçerlidir.
+
+## MÖHUK Kapsamında Türk Hukukunun Uygulanması
+
+Türkiye uluslararası özel hukukunu 5718 sayılı MÖHUK ile düzenlemektedir. MÖHUK'un 20. maddesi uyarınca miras işlemleri miras bırakanın ölüm anındaki millî hukukuna tabi tutulmaktadır. Bu hüküm, AB Miras Tüzüğü'nün benimsediği son alışılagelen ikametgâh ölçütünden farklı bir çözüm üretmekte ve önemli bir çatışma noktası doğurmaktadır. Her iki ülkede de geçerliliği test edilmiş biçimde hazırlanmış bir vasiyetname düzenlenmesi bu nedenle büyük önem taşımaktadır.
+
+## Türkiye'deki Mülkü Almanya'dan Satmak
+
+Almanya'da yaşayan Türk vatandaşlarının en sık sorduğu sorulardan biri şudur: Türkiye'deki mülkümü Türkiye'ye gitmeden satabilir miyim? Yanıt: Evet — ancak doğru şekilde düzenlenmiş bir vekaletname (noter onaylı vekâlet belgesi) şartıyla.
+
+Vekaletname, Almanya'daki bir Türk konsolosluğunda ya da Alman bir noterde düzenlenebilir. Ancak dikkat edilmesi gereken kritik bir nokta vardır: Türkiye'deki tapu işlemleri için kullanılacak vekaletnamenin Türk hukukunun öngördüğü şekil koşullarını eksiksiz karşılaması gerekmektedir. Almanya'da bir Alman noter tarafından düzenlenen genel vekaletnameler çoğu zaman Türk tapu sicili tarafından kabul edilmemektedir.
+
+Satıştan elde edilen gelir üzerinden Türkiye'de değer artış kazancı vergisi doğabilmektedir; özellikle mülkün ediniminden itibaren beş yıl geçmemişse bu vergi önemli bir kalem oluşturabilir. Almanya-Türkiye arasındaki çifte vergilendirmeyi önleme anlaşması çerçevesinde Almanya'da da vergi yükümlülüğü doğup doğmayacağı ayrıca değerlendirilmelidir.
+
+## Miras Reddi: Borçlu Bir Mirası Reddetmek
+
+Türk hukukunda mirası kabul etmek için herhangi bir işlem yapmanıza gerek yoktur. Süresi içinde reddetmezseniz mirası kabul etmiş sayılırsınız — borçlarıyla birlikte.
+
+TMK'nın 605. maddesi uyarınca mirasçılar, miras bırakanın ölümünü ve kendilerinin mirasçı olduğunu öğrendikleri tarihten itibaren üç ay içinde mirası reddedebilirler. Bu süre Almanya'da yaşayan mirasçılar için de geçerlidir ve kural olarak uzatılmaz. Miras bırakanın vefatından haberdar olduğunuz andan itibaren bir avukata danışmanız ve üç aylık süreyi boşa harcamamanız kritik önem taşımaktadır. Miras reddi Türk mahkemesine sunulan resmi bir dilekçeyle gerçekleştirilmektedir; avukatınız bu işlemi UYAP sistemi aracılığıyla Mannheim ofisinden sizin adınıza yürütebilmektedir.
+
+## Tenkis Davası: Saklı Payınız İhlal Edildiyse Ne Yaparsınız?
+
+Türkiye'deki en çok görülen miras uyuşmazlıklarından biri şu senaryodur: Miras bırakan hayatının son dönemlerinde Türkiye'deki mülklerini belirli mirasçılara ya da üçüncü kişilere devretmiş; Almanya'da yaşayan diğer mirasçılar ise miras paylarının büyük bölümünden yoksun kalmıştır.
+
+Türk miras hukuku bu duruma karşı açık bir koruma mekanizması öngörmektedir: tenkis davası. TMK'nın 560. maddesi uyarınca, saklı payı ihlal eden tasarrufların iptali için dava açılabilmektedir. Tenkis davası açma hakkı; mirasçının tasarrufdan ve saklı payının ihlal edildiğinden haberdar olmasından itibaren bir yıl, her halükarda vasiyetnamenin açılmasından itibaren on yıl içinde kullanılmalıdır. Doğru Kanzlei olarak UYAP sistemi aracılığıyla Mannheim ofisimizden tenkis davası sürecini yürütebilmekteyiz.
+
+---
+
+**Sınır ötesi miras davanız için ücretsiz ön değerlendirme alın | Mannheim: +49 176 6122 1210 | Ankara: +90 533 237 59 18 | hasandogru.de**
+
+Avukat Hasan Doğru | Doğru Kanzlei | Ankara Barosu (Sicil No: 47068) & Rechtsanwaltskammer Karlsruhe (§207 BRAO)
+
+*Bu makale genel bilgi amaçlıdır ve hukuki danışmanlık niteliği taşımaz. Durumunuza özgü değerlendirme için lütfen bizimle iletişime geçin. Büromuzda yalnızca Türk hukuku alanında danışmanlık verilmektedir.*`,
+    category: "Miras Hukuku",
+    categoryDE: "Erbrecht",
+    image: inheritanceLawImg,
+    dateDE: "22. April 2026",
+    dateTR: "22 Nisan 2026",
+    readTimeDE: "9 Min. Lesezeit",
+    readTimeTR: "9 dk okuma",
+    publishedAt: "2026-04-22",
+    keywordsDE: "Erbschaft Türkei Deutschland, türkisches Erbrecht Deutschland, Immobilien Türkei verkaufen aus Deutschland, Erbausschlagung türkisches Recht, Pflichtteilsklage Türkei",
+    keywordsTR: "Türkiye miras hukuku Almanya, Almanya'dan Türkiye miras takibi, Türkiye tapu devri Almanya, miras reddi Türk hukuku, tenkis davası Almanya",
+    faqDE: [
+      {
+        question: "Was passiert mit der Immobilie eines in Deutschland verstorbenen türkischen Staatsangehörigen in der Türkei?",
+        answer: "Für die Immobilie in der Türkei muss beim türkischen Gericht ein Erbschein beantragt und eine Grundbucheintragung vorgenommen werden. Die EU-Erbrechtsverordnung gilt in der Türkei nicht — es findet türkisches Recht Anwendung."
+      },
+      {
+        question: "Kann ich in Deutschland ein Testament mit Wahl des türkischen Rechts errichten?",
+        answer: "Ja. Im Rahmen von Artikel 22 der EU-Erbrechtsverordnung können Sie unter Berufung auf Ihre türkische Staatsangehörigkeit ein wirksames Testament errichten, das türkisches Erbrecht wählt. Dies muss in Deutschland notariell beurkundet werden."
+      },
+      {
+        question: "Kann ich die türkische Immobilie aus Deutschland verkaufen?",
+        answer: "Ja — jedoch nur mit einer korrekt ausgestellten Vollmacht, die die formellen Anforderungen des türkischen Rechts erfüllt. Die Doğru Kanzlei kann diesen Prozess aus Mannheim in Ihrem Namen abwickeln."
+      },
+      {
+        question: "Wie lange habe ich Zeit, ein Erbe auszuschlagen?",
+        answer: "Nach türkischem Recht drei Monate — ab dem Zeitpunkt, an dem Sie von Ihrem Erbrecht Kenntnis erlangt haben. Nach Ablauf dieser Frist gelten Sie als Erbe — einschließlich aller Schulden."
+      },
+      {
+        question: "Muss ich für eine Pflichtteilsergänzungsklage in die Türkei reisen?",
+        answer: "Nein. Die Doğru Kanzlei kann die Pflichtteilsergänzungsklage über das UYAP-System aus Mannheim führen. Damit keine Fristen versäumt werden, sollten Sie jedoch so früh wie möglich handeln."
+      }
+    ],
+    faqTR: [
+      {
+        question: "Almanya'da ölen bir Türk vatandaşının Türkiye'deki taşınmazı ne olur?",
+        answer: "Türkiye'deki taşınmaz için Türk mahkemesinden veraset ilamı alınması ve tapu siciline tescil yapılması gerekmektedir. AB Miras Tüzüğü Türkiye'de geçerli değildir; Türk hukuku uygulanır."
+      },
+      {
+        question: "Türkiye'deki mülkü Almanya'dan satabilir miyim?",
+        answer: "Evet — ancak Türk hukukunun öngördüğü şekil koşullarını karşılayan, doğru düzenlenmiş bir vekaletname şartıyla. Doğru Kanzlei bu süreci Mannheim ofisinden sizin adınıza yürütebilmektedir."
+      },
+      {
+        question: "Mirası reddetmek için ne kadar sürem var?",
+        answer: "Türk hukukuna göre üç ay. Bu süre, mirasçı olduğunuzu öğrendiğiniz tarihten itibaren işlemeye başlar. Süre geçtikten sonra reddetme hakkınız düşer ve borçlar da dahil mirası kabul etmiş sayılırsınız."
+      },
+      {
+        question: "Tenkis davası açmak için Türkiye'ye gitmek zorunda mıyım?",
+        answer: "Hayır. Doğru Kanzlei, UYAP sistemi aracılığıyla tenkis davasını Mannheim ofisinden yürütebilmektedir. Ancak süre aşımına uğramamak için en kısa sürede harekete geçilmesi gerekmektedir."
+      }
+    ],
+    ctaTitleDE: "Haben Sie Fragen zum türkischen Erbrecht?",
+    ctaTitleTR: "Türkiye'deki Miras Haklarınız İçin Buradayız",
+    ctaDescriptionDE: "Wir unterstützen Sie bei der Durchsetzung Ihrer Erbansprüche in der Türkei direkt aus Deutschland – rechtssicher und effizient.",
+    ctaDescriptionTR: "Türkiye'deki miras haklarınızı korumak ve mülk devir işlemlerinizi Almanya'dan yönetmek için profesyonel destek sunuyoruz."
+  },
+  {
+    slug: "turk-muhendis-profesyonel-almanya-mavi-kart-rehberi",
+    slugDE: "blaue-karte-eu-beantragen-tuerkische-fachkraefte",
+    slugTR: "turk-muhendis-profesyonel-almanya-mavi-kart-rehberi",
+    titleDE: "Blaue Karte EU beantragen | Was türkische Fachkräfte wissen müssen",
+    titleTR: "Türk Mühendis ve Profesyoneller Almanya Mavi Kartı Nasıl Alır?",
+    excerptDE: "Die Blaue Karte EU ist der schnellste Weg für türkische Fachkräfte nach Deutschland. Erfahren Sie alles über Voraussetzungen, Gehaltsschwellen und das Verfahren.",
+    excerptTR: "Almanya Mavi Kart (Blaue Karte EU) Türk mühendisler ve profesyoneller için en hızlı çalışma izni yoludur. Maaş eşikleri ve başvuru adımlarını öğrenin.",
+    contentDE: `Deutschland setzt seit Jahren auf gezielte Einwanderungspolitik, um den Fachkräftemangel zu bekämpfen. Eines der attraktivsten Instrumente dabei ist die Blaue Karte EU — sie ermöglicht hochqualifizierten Fachkräften aus Drittstaaten einen beschleunigten Zugang zum deutschen und europäischen Arbeitsmarkt.
+
+Für türkische Ingenieure, Softwareentwickler, Ärzte und andere Berufsgruppen ist die Blaue Karte EU einer der vielversprechendsten Wege, um in Deutschland Fuß zu fassen. Doch der Weg ist nicht immer geradlinig. Diplomanerkennung, Gehaltsschwellen, Ablehnungsbescheide und Jobverlust sind Punkte, an denen viele Antragsteller scheitern oder Rechtsverluste erleiden.
+
+Als bei der Ankara Barosu und der Rechtsanwaltskammer Karlsruhe (§207 BRAO) zugelassener Anwalt berät die Doğru Kanzlei Mandanten sowohl im türkischen Recht als auch in allen aufenthaltsrechtlichen Fragen mit Bezug zu türkischen Staatsangehörigen in Deutschland — einschließlich der gesamten Blaue-Karte-EU-Verfahren.
+
+## Was ist die Blaue Karte EU?
+
+Die Blaue Karte EU basiert auf § 18b AufenthG, mit dem die EU-Richtlinie 2012/98/EU umgesetzt wird. Im Vergleich zu regulären Arbeitsgenehmigungen wird die Blaue Karte EU deutlich schneller bearbeitet und bietet den außergewöhnlich schnellen Weg zur Niederlassungserlaubnis: in der Regel nach 33 Monaten, bei Nachweis von Deutschkenntnissen auf B1-Niveau sogar nach nur 21 Monaten.
+
+## Wer kann die Blaue Karte EU beantragen? Voraussetzungen
+
+**Bildungsvoraussetzung**
+Sie benötigen einen anerkannten Hochschulabschluss einer anerkannten Universität oder einen als gleichwertig anerkannten Hochschulabschluss. Für türkische Abschlüsse empfiehlt sich eine Prüfung über die Datenbank anabin.de sowie das KÜDÖS-System.
+
+**Jobangebot**
+Sie benötigen einen verbindlichen Arbeitsvertrag oder ein konkretes Stellenangebot eines deutschen Arbeitgebers.
+
+**Mindestgehalt**
+Für das Jahr 2024 gilt eine Mindestgehaltsgrenze von 45.300 Euro brutto jährlich für allgemeine Berufe. In Mangelberufen wie Ingenieurwesen, IT, Mathematik, Medizin und Naturwissenschaften liegt die Grenze bei 35.100 Euro brutto jährlich. Die Schwellenwerte werden jährlich angepasst.
+
+**Weitere Voraussetzungen**
+Ihr Reisepass muss zum Zeitpunkt der Antragstellung noch mindestens drei Jahre ab dem Antragsdatum gültig sein. Außerdem darf kein Vorstrafenregister vorliegen und eine ausreichende Krankenversicherung muss nachgewiesen werden.
+
+## Erforderliche Unterlagen
+
+Ausgefülltes Antragsformular (Vordruck Aufenthaltstitel)
+Gültiger Reisepass (mit beglaubigter Kopie)
+Zwei biometrische Passfotos
+Hochschulzeugnis (mit beglaubigter deutscher Übersetzung)
+Anerkennungsbescheid (falls erforderlich)
+Arbeitsvertrag oder Stellenangebot in Deutschland
+Krankenversicherungsnachweis
+Wohnungsnachweis (Anmeldebescheinigung) oder Wohnungszusage
+Führungszeugnis aus der Türkei (Adli Sicil Belgesi; mit beglaubigter deutscher Übersetzung)
+
+## Der Antragsprozess: Schritt für Schritt
+
+**Schritt 1: Einreise mit Visum**
+Personen, die aus der Türkei nach Deutschland kommen, müssen ein nationales Visum (Nationales Visum) für Erwerbstätigkeit beim deutschen Konsulat in Istanbul oder Ankara beantragen. Die Wartezeiten für Termine können drei bis sechs Monate betragen.
+
+**Schritt 2: Antrag bei der Ausländerbehörde**
+Nach der Einreise ist der Antrag bei der Ausländerbehörde des Wohnortes zu stellen. In Mannheim befindet sich diese Behörde im Rathaus E5.
+
+**Schritt 3: Anerkennungsbescheid (falls erforderlich)**
+Bei reglementierten Berufen oder Abschlüssen von Universitäten, die nicht automatisch anerkannt werden, kann ein Anerkennungsbescheid erforderlich sein. Da dieser Prozess Zeit in Anspruch nimmt, empfiehlt es sich, ihn vor der eigentlichen Antragstellung abzuschließen.
+
+**Schritt 4: Entgegennahme der Blauen Karte EU**
+Nach Einreichung der vollständigen Unterlagen prüft die Ausländerbehörde den Antrag. Bei Genehmigung wird die Blaue Karte EU ausgestellt. Die Karte ist in der Regel vier Jahre gültig.
+
+## Diplomanerkennung: Der häufigste Stolperstein für türkische Absolventen
+
+Bei nicht reglementierten Berufen können Sie über die Datenbank anabin.de prüfen, ob Ihr Abschluss anerkannt wird. Abschlüsse von Institutionen mit dem Status H+ werden in der Regel direkt anerkannt.
+
+Bei reglementierten Berufen — Medizin, Recht, Pharmazie, Lehramt, Architektur — ist ein formeller Anerkennungsbescheid zwingend erforderlich. Dieser Prozess wird von der Zentralstelle für ausländisches Bildungswesen (ZAB) durchgeführt und kann vier bis sechs Monate dauern.
+
+## Familiennachzug mit der Blauen Karte EU
+
+Im Rahmen von §§ 29 und 30 AufenthG können Ehepartner und minderjährige Kinder unter bestimmten Voraussetzungen nach Deutschland nachziehen. Anders als bei regulären Aufenthaltstiteln entfällt für Inhaber der Blauen Karte EU die Pflicht des Ehepartners, vor der Einreise Deutschkenntnisse nachzuweisen. Der Ehepartner erhält zudem sofort nach der Einreise eine Arbeitserlaubnis.
+
+## Niederlassungserlaubnis: Der schnelle Weg zum dauerhaften Aufenthaltsrecht
+
+Unter allgemeinen Voraussetzungen reichen 33 Monate ununterbrochene Beschäftigung mit vollständigen Sozialversicherungsbeiträgen. Mit einem Deutschzertifikat auf B1-Niveau verkürzt sich diese Frist auf lediglich 21 Monate.
+
+## Mobilität innerhalb der EU mit der Blauen Karte EU
+
+Nach 18 Monaten Beschäftigung als Inhaber der Blauen Karte EU können Sie in anderen EU-Mitgliedstaaten nach Beschäftigungsmöglichkeiten suchen. In dem neuen Land kann erneut eine Blaue Karte EU beantragt werden.
+
+## Was passiert, wenn Ihr Arbeitgeber Ihnen kündigt?
+
+Dies ist eines der größten Sorgenthemen für Inhaber der Blauen Karte EU. Die Blaue Karte EU ist direkt an einen bestimmten Arbeitgeber geknüpft. Wenn Ihr Arbeitsverhältnis endet, wird Ihre Blaue Karte EU nicht automatisch ungültig — aber Sie sind verpflichtet, die Ausländerbehörde unverzüglich zu informieren.
+
+Nach § 18b AufenthG haben Sie nach dem Jobverlust drei Monate Zeit, eine neue Stelle zu finden und die Ausländerbehörde zu benachrichtigen. Finden Sie innerhalb dieser drei Monate keine neue Beschäftigung, kann Ihre Blaue Karte EU widerrufen werden. Sie haben Anspruch auf Arbeitslosengeld (ALG I) — beantragen Sie es sofort bei der Agentur für Arbeit. Die Doğru Kanzlei unterstützt Sie aus Mannheim heraus beim Schutz Ihres Aufenthaltsstatus nach einem Jobverlust.
+
+## Was tun, wenn Ihr Antrag auf die Blaue Karte EU abgelehnt wird?
+
+Die häufigsten Ablehnungsgründe sind: Nichterfüllung der Gehaltsschwellen, fehlender oder unvollständiger Anerkennungsbescheid, unvollständige oder fehlerhafte Unterlagen sowie ein als unzureichend bewerteter Arbeitsvertrag.
+
+Gegen den Ablehnungsbescheid kann Widerspruch eingelegt werden. Die Widerspruchsfrist beträgt in der Regel einen Monat ab Zustellung. Da diese Frist sehr kurz ist, sollten Sie unmittelbar nach Erhalt des Ablehnungsbescheids einen Anwalt konsultieren.
+
+## Selbstständigkeit und Blaue Karte EU: Können Sie als Freelancer arbeiten?
+
+Die Blaue Karte EU ist für abhängige Beschäftigung konzipiert und deckt selbstständige Tätigkeiten grundsätzlich nicht ab. Wenn Sie vollständig als Freelancer arbeiten möchten, müssen Sie in Deutschland einen gesonderten Aufenthaltstitel nach § 21 AufenthG beantragen. Eine selbstständige Tätigkeit ohne Meldung bei der Ausländerbehörde kann Ihren Aufenthaltstitel gefährden.
+
+## Häufige Fehler bei der Beantragung der Blauen Karte EU
+
+**Diplomanerkennung vernachlässigen:** Prüfen Sie unbedingt vor der Antragstellung, ob Ihre türkische Universität in Deutschland anerkannt wird.
+**Gehaltsschwelle nicht erfüllen:** Stellen Sie sicher, dass das Bruttogehalt in Ihrem Vertrag die aktuelle Schwelle überschreitet.
+**Visumsantrag verzögern:** Beantragen Sie Ihren Termin aufgrund langer Wartezeiten so früh wie möglich.
+**Dokumente nicht ins Deutsche übersetzen lassen:** Alle türkischen Dokumente müssen mit beglaubigten deutschen Übersetzungen eingereicht werden.
+**Jobverlust zu spät melden:** Handeln Sie nach einer Kündigung sofort — die Dreimonatsfrist lässt keinen Spielraum für Verzögerungen.
+**Ohne Genehmigung freelancen:** Selbstständige Tätigkeiten ohne Zustimmung der Ausländerbehörde können Ihren Aufenthaltsstatus gefährden.
+
+---
+
+**Holen Sie sich jetzt eine kostenlose Ersteinschätzung für Ihre Blaue Karte EU | Mannheim: +49 176 6122 1210 | Ankara: +90 533 237 59 18 | hasandogru.de**
+
+Avukat Hasan Doğru | Doğru Kanzlei | Ankara Barosu (Sicil No: 47068) & Rechtsanwaltskammer Karlsruhe (§207 BRAO)
+
+*Dieser Artikel dient ausschließlich der allgemeinen Information und stellt keine Rechtsberatung dar. Für eine auf Ihren individuellen Fall zugeschnittene Einschätzung nehmen Sie bitte Kontakt mit uns auf. Die Kanzlei berät ausschließlich im türkischen Recht gemäß §207 BRAO.*`,
+    contentTR: `Almanya, nitelikli işgücü açığını kapatmak amacıyla yıllardır çeşitli çekici göç politikaları uygulamaktadır. Bu politikaların en cazip araçlarından biri olan Avrupa Birliği Mavi Kartı (Blaue Karte EU), yüksek nitelikli üçüncü ülke vatandaşlarına Almanya'da ve diğer AB üyesi devletlerde hızlandırılmış biçimde oturma ve çalışma izni edinme imkânı sunmaktadır.
+
+Türk mühendisler, yazılım geliştiriciler, doktorlar ve diğer meslek grupları için Blaue Karte EU, Almanya'da kariyer inşa etmenin en avantajlı yollarından birini temsil etmektedir. Ancak süreç göründüğü kadar kolay değildir. Diploma denkliği, maaş eşikleri, başvuru redleri ve iş kaybı gibi kritik noktalarda pek çok kişi hak kaybı yaşamaktadır. Bu rehberde yalnızca başvuru adımlarını değil, işlerin ters gittiği anlarda ne yapmanız gerektiğini de ele alacağız.
+
+→ Not: Bu yazı, Alman makamlarınca verilen Blaue Karte EU'yu kapsamaktadır. Türk vatandaşlığını kaybedenlere Türkiye tarafından verilen Türk Mavi Kartı için ayrı bir rehberimiz mevcuttur.
+
+## Mavi Kart Nedir?
+
+Avrupa Birliği Mavi Kartı (Blaue Karte EU), 2012/98/EU sayılı AB Direktifi'ni uygulayan Almanya'nın Aufenthaltsgesetz (AufenthG) §18b hükmüne dayanmaktadır. Standart çalışma izinlerine kıyasla çok daha hızlı işleme tabi tutulmakta ve olağandışı derecede hızlı bir kalıcı oturma iznine geçiş imkânı sunmaktadır: kural olarak 33 ay, Almanca B1 dil belgesine sahip olunması halinde ise yalnızca 21 ay.
+
+## Kimler Başvurabilir?
+
+**Eğitim Koşulu**
+Tanınmış bir üniversiteden alınmış lisans diplomasına sahip olmak ya da denkliği tescil edilmiş bir yükseköğretim derecesine sahip olmak zorunludur. Türkiye'deki dereceler için anabin.de veri tabanı ve KÜDÖS sistemi üzerinden araştırma yapılması önerilmektedir.
+
+**İş Teklifi Koşulu**
+Almanya'da bir işverenle imzalanmış bağlayıcı iş sözleşmesi ya da somut ve kesin bir iş teklifine sahip olunması gerekmektedir.
+
+**Asgari Maaş Koşulu**
+2024 yılı itibarıyla genel meslekler için yıllık brüt 45.300 Euro eşiği uygulanmaktadır. Mühendislik, bilişim, matematik, tıp ve doğa bilimleri gibi alanlarda bu eşik 35.100 Euro olarak belirlenmiştir. Eşikler her yıl revize edilmektedir; başvuru öncesinde güncel rakamlar mutlaka kontrol edilmelidir.
+
+## Gerekli Belgeler
+
+Düzgünce doldurulmuş başvuru formu (Vordruck Aufenthaltstitel)
+Geçerli pasaport (onaylı fotokopi ile birlikte)
+İki adet biyometrik fotoğraf
+Üniversite diploması (noter onaylı Almanca tercümesi ile birlikte)
+Diploma denklik belgesi (gerekli hallerde)
+Almanya'da iş sözleşmesi ya da iş teklifi mektubu
+Sağlık sigortası belgesi
+İkametgâh belgesi (Anmeldebescheinigung) veya konut taahhüt mektubu
+Türkiye'den alınan sabıka kaydı (Adli Sicil Belgesi; noter onaylı Almanca tercümeli)
+
+## Başvuru Süreci: Adım Adım
+
+**Adım 1: Almanya'ya Vize ile Giriş**
+Türkiye'den Almanya'ya gelen kişilerin Alman Konsolosluğu'ndan ulusal vize (Nationales Visum) almaları gerekmektedir. Konsolosluklardaki randevu bekleme süreleri 3-6 aya kadar çıkabilmektedir; bu nedenle erken başvuru şarttır.
+
+**Adım 2: Yabancılar Dairesine Başvuru**
+Almanya'ya ulaştıktan sonra ikamet edilen şehrin Ausländerbehörde'sine başvurulması gerekmektedir. Mannheim'da bu birim Rathaus E5'te bulunmaktadır.
+
+**Adım 3: Denklik Belgesi (Gerektiğinde)**
+Bazı düzenlenmiş mesleklerde ya da Almanya tarafından otomatik olarak tanınmayan üniversitelerden mezun olunması durumunda denklik belgesi alınması zorunlu olabilmektedir.
+
+**Adım 4: Mavi Kartın Teslim Alınması**
+Eksiksiz başvuru dosyasının sunulmasının ardından Yabancılar Dairesi değerlendirme yapacaktır. Onay halinde Blaue Karte EU etiketli oturma izni kartı teslim edilmektedir. Kart genellikle dört yıl süreyle geçerlidir.
+
+## Diploma Denkliği: Türk Mezunların En Sık Takıldığı Nokta
+
+Düzenlenmemiş mesleklerde — yazılım geliştirme, mühendislik, ekonomi gibi alanlarda — diplomanın Almanya tarafından tanınıp tanınmadığını anabin.de veri tabanı üzerinden kontrol edebilirsiniz. H+ statüsündeki kurumlardan alınan dereceler genellikle doğrudan tanınmaktadır.
+
+Düzenlenmiş mesleklerde ise — tıp, hukuk, eczacılık, öğretmenlik, mimarlık — resmi denklik belgesi zorunludur. Bu süreç Zentralstelle für ausländisches Bildungswesen (ZAB) tarafından yürütülmektedir ve 4 ila 6 ay sürebilmektedir.
+
+ODTÜ, Boğaziçi, İTÜ ve Hacettepe gibi köklü üniversitelerden alınan mühendislik ve tıp diplomaları büyük çoğunlukla sorunsuz tanınmaktadır. Doğru Kanzlei olarak diploma denkliği sürecinde hangi kuruma başvurmanız gerektiği konusunda Mannheim ofisimizden danışmanlık sunmaktayız.
+
+## Mavi Kart ile Aile Birleşimi
+
+AufenthG §29 ve §30 hükümleri çerçevesinde eş ve reşit olmayan çocuklar belirli koşullar altında Almanya'ya getirilebilmektedir. Standart oturma izinlerinden farklı olarak, eşin Almanya'ya gelmeden önce Almanca öğrenme zorunluluğu Mavi Kart sahipleri için uygulanmamaktadır. Eş, Almanya'ya gelir gelmez çalışma iznine de sahip olmaktadır.
+
+## Kalıcı Oturma İznine (Niederlassungserlaubnis) Geçiş
+
+Genel koşullar altında 33 ay aralıksız çalışma ve sosyal sigorta primlerini eksiksiz ödeme, Almanca B1 belgesiyle ise 21 ay yeterlidir.
+
+## Mavi Kart ile AB Çapında Hareketlilik
+
+18 ay boyunca Mavi Kart sahibi olarak çalışıldıktan sonra diğer AB üyesi devletlerde istihdam fırsatı aranabilmektedir. Yeni ülkede de Mavi Kart başvurusunda bulunulabilmekte; bu süreç standart göç prosedürlerine kıyasla çok daha hızlı ilerlemektedir.
+
+## İşvereniniz Sizi İşten Çıkarırsa Ne Olur?
+
+Mavi Kart doğrudan belirli bir işverene bağlıdır. İş ilişkiniz sona erdiğinde Mavi Kartınız otomatik olarak geçersiz hale gelmez; ancak durumu derhal yabancılar dairesine bildirme yükümlülüğünüz doğmaktadır.
+
+AufenthG §18b uyarınca iş kaybı halinde size tanınan süre üç aydır. Bu üç ay içinde yeni bir iş bulmanız ve yabancılar dairesini bilgilendirmeniz gerekmektedir. İşsizlik sigortasına (Arbeitslosengeld) başvurma hakkınız bulunmaktadır. Eğer Niederlassungserlaubnis için gereken asgari süreyi tamamlamışsanız, kalıcı oturma iznine geçiş için başvurabilirsiniz. Doğru Kanzlei olarak iş kaybı sonrası oturma izninin korunması konusunda kapsamlı danışmanlık sunmaktayız.
+
+## Mavi Kart Başvurusu Reddedilirse Ne Olur?
+
+En sık görülen red gerekçeleri: maaş eşiğinin karşılanmaması, diploma denkliğinin tamamlanmamış olması, eksik veya hatalı belgeler ve iş sözleşmesinin yetersiz bulunması.
+
+Red kararına karşı Widerspruch (itiraz) yoluna başvurulabilmektedir. İtiraz süresi genellikle tebliğden itibaren bir aydır. Bu süre son derece kısa olduğundan red kararını aldığınız andan itibaren vakit kaybetmeden bir avukata danışmanız kritik önem taşımaktadır. Doğru Kanzlei olarak Mavi Kart red kararlarına itiraz süreçlerinde müvekkillerimize Mannheim ofisimizden hukuki destek sunmaktayız.
+
+## Serbest Meslek ve Mavi Kart: Freelancer Olabilir misiniz?
+
+Mavi Kart ücretli çalışma için tasarlanmıştır ve doğası gereği serbest meslek faaliyetini kapsamaz. Mavi Kart sahipleri, sahip oldukları Mavi Kart kapsamında freelance ya da serbest meslek faaliyeti yürütemezler. Tam zamanlı freelance çalışmak istiyorsanız § 21 AufenthG kapsamında ayrı bir oturma izni türüne başvurmanız gerekmektedir.
+
+Serbest meslek ile ücretli çalışma arasındaki hukuki sınır Almanya'da son derece önemlidir. Yabancılar dairesine bildirim yapmadan serbest faaliyet yürütmek oturma izninizi tehlikeye atabilmektedir.
+
+## Mavi Kart Başvurularında Sık Yapılan Hatalar
+
+**Diploma denkliğini ihmal etmek:** Başvurudan önce üniversitenin tanınıp tanınmadığı kesinlikle teyit edilmelidir.
+**Maaş eşiğini karşılamamak:** Brüt yıllık maaşın güncel eşiğin üzerinde olduğundan emin olunmalıdır.
+**Vize başvurusunu geciktirmek:** Randevu bekleme süreleri nedeniyle en kısa sürede başvurulmalıdır.
+**Belgeleri Almanca'ya çevirtmemek:** Tüm Türkçe belgeler yeminli tercüman onaylı Almanca tercümeleriyle sunulmalıdır.
+**İş kaybını geç bildirmek:** İşten çıkarıldığınızda üç aylık süreyi boşa harcamamak için derhal harekete geçin.
+**Serbest çalışmaya izinsiz başlamak:** Yabancılar dairesinin onayı olmadan freelance faaliyet yürütmek oturma izninizi tehlikeye atabilir.
+
+---
+
+**Türkiye'deki ceza davanız için ücretsiz ön değerlendirme alın | Mannheim: +49 176 6122 1210 | Ankara: +90 533 237 59 18 | hasandogru.de**
+
+Avukat Hasan Doğru | Doğru Kanzlei | Ankara Barosu (Sicil No: 47068) & Rechtsanwaltskammer Karlsruhe (§207 BRAO)
+
+*Bu makale genel bilgi amaçlıdır ve hukuki danışmanlık niteliği taşımaz. Durumunuza özgü değerlendirme için lütfen bizimle iletişime geçin. Büromuzda yalnızca Türk hukuku alanında danışmanlık verilmektedir.*`,
+    category: "Mavi Kart",
+    categoryDE: "Blaue Karte",
+    image: blueCardProfessionalImg,
+    dateDE: "21. April 2026",
+    dateTR: "21 Nisan 2026",
+    readTimeDE: "8 Min. Lesezeit",
+    readTimeTR: "8 dk okuma",
+    publishedAt: "2026-04-21",
+    keywordsDE: "Blaue Karte EU beantragen, Blaue Karte EU Voraussetzungen, türkische Fachkräfte Deutschland, Blaue Karte EU abgelehnt, Diplomanerkennung Deutschland Türkei",
+    keywordsTR: "Almanya mavi kart, Blaue Karte EU, Türk mühendis Almanya, çalışma izni Almanya, kalıcı oturma izni, diploma denklik Almanya",
+    faqDE: [
+      {
+        question: "Wie lange dauert die Bearbeitung eines Antrags auf die Blaue Karte EU?",
+        answer: "Die Ausländerbehörde entscheidet in der Regel innerhalb von vier bis acht Wochen. Wenn zuvor noch ein Visum beantragt und der Anerkennungsprozess abgeschlossen werden muss, kann sich der Gesamtprozess auf sechs bis zwölf Monate erstrecken."
+      },
+      {
+        question: "Kann ich mit der Blauen Karte EU den Arbeitgeber wechseln?",
+        answer: "In den ersten zwei Jahren ist für einen Arbeitgeberwechsel die Genehmigung der Ausländerbehörde erforderlich. Nach zwei Jahren können Sie den Arbeitgeber ohne Genehmigung wechseln."
+      },
+      {
+        question: "Ich wurde gekündigt — was passiert mit meiner Blauen Karte EU?",
+        answer: "Sie haben drei Monate Zeit, eine neue Stelle zu finden und die Ausländerbehörde zu informieren. Wenden Sie sich sofort an einen Anwalt — dieser Prozess erfordert schnelles Handeln."
+      },
+      {
+        question: "Mein Antrag auf die Blaue Karte EU wurde abgelehnt — was kann ich tun?",
+        answer: "Sie können innerhalb eines Monats nach Zustellung des Bescheids Widerspruch einlegen. Je nach Ablehnungsgrund stehen Ihnen außerdem der Weg zum Verwaltungsgericht oder eine erneute Antragstellung nach Behebung der Mängel offen."
+      }
+    ],
+    faqTR: [
+      {
+        question: "Mavi Kart başvurusu ne kadar sürer?",
+        answer: "Almanya'daki Yabancılar Dairesi ortalama 4-8 hafta içinde karar vermektedir. Vize ve denklik işlemlerini de hesaba katarsanız toplam süreç 6-12 aya uzayabilir."
+      },
+      {
+        question: "Mavi Kart sahibiyken iş değiştirebilir miyim?",
+        answer: "İlk iki yılda iş değişikliği için Yabancılar Dairesi'nin onayı gerekmektedir. İki yılın ardından herhangi bir onay almaksızın iş değişikliği yapabilirsiniz."
+      },
+      {
+        question: "İşten çıkarıldım, Mavi Kartım ne olur?",
+        answer: "Üç ayınız var. Bu süre içinde yeni bir iş bulmanız ve yabancılar dairesini bilgilendirmeniz gerekmektedir. Derhal bir avukata danışın."
+      },
+      {
+        question: "Mavi Kart başvurum reddedildi, ne yapabilirim?",
+        answer: "Tebliğden itibaren bir ay içinde Widerspruch (itiraz) hakkınızı kullanabilirsiniz. Red gerekçesine göre idare mahkemesine başvurma ya da eksiklikleri gidererek yeniden başvurma seçenekleri de mevcuttur."
+      }
+    ]
+  },
+  {
+    slug: "turkiye-ceza-davasi-tutuklama-karari-almanya-savunma",
+    slugDE: "strafverfahren-tuerkei-haftbefehl-verteidigung-deutschland",
+    slugTR: "turkiye-ceza-davasi-tutuklama-karari-almanya-savunma",
+    titleDE: "Haftbefehl oder Anklage in der Türkei | Können Sie sich aus Deutschland verteidigen?",
+    titleTR: "Türkiye'de Ceza Davası veya Tutuklama Kararı Var mı? Almanya'dan Savunmanızı Yürütebilir misiniz?",
+    excerptDE: "Haftbefehl oder Strafverfahren in der Türkei? Erfahren Sie, wie Sie Ihre Verteidigung von Deutschland aus führen können, ohne in die Türkei reisen zu müssen.",
+    excerptTR: "Türkiye'de hakkınızda ceza davası veya tutuklama kararı mı var? Almanya'dan Türkiye'ye gitmeden nasıl savunma yapabileceğinizi öğrenin.",
+    contentDE: `**RECHTLICHER HINWEIS:** Dieser Artikel befasst sich ausschließlich mit dem türkischen Recht. Eine Beratung zum deutschen Recht findet in unserer Kanzlei nicht statt.
+
+---
+
+Hunderttausende türkische Staatsangehörige, die in Deutschland leben, sehen sich mitunter mit strafrechtlichen Ermittlungen oder Strafverfolgungsmaßnahmen in der Türkei konfrontiert – oft völlig unvorbereitet. Manchmal wohnt jemand seit Jahren hier, geht seinem Alltag nach, und weiß nicht einmal, dass in der Türkei ein Verfahren gegen ihn läuft.
+
+Das liegt häufig an Zustellungsproblemen, nicht aktualisierten Adressen in der Türkei oder schlicht daran, dass keine Verbindung zu den türkischen Behörden mehr besteht. Ob Sie in Mannheim, Frankfurt, Berlin oder einer anderen Stadt in Deutschland leben – ein Strafverfahren in der Türkei kann sowohl Ihren rechtlichen Status dort als auch Ihren Aufenthaltstitel, Ihre Niederlassungserlaubnis oder Ihre Einbürgerung in Deutschland direkt gefährden.
+
+Als bei der Ankara Barosu und der Rechtsanwaltskammer Karlsruhe (§207 BRAO) zugelassener Anwalt berät und vertritt Hasan Doğru Mandanten sowohl im türkischen Recht als auch in allen deutsch-türkischen grenzüberschreitenden Rechtsfragen – einschließlich der aufenthalts- und staatsangehörigkeitsrechtlichen Folgen türkischer Strafverfahren.
+
+→ Wenn Sie sich auch über strafrechtliche Risiken in Bezug auf Erbschaft oder Vermögen informieren möchten: Lesen Sie unseren [Ratgeber zum deutsch-türkischen Erbrecht](/de/blog/erbrecht-leitfaden-tuerkei).
+
+## Grundlagen des türkischen Strafrechts
+
+Das türkische Strafrecht ist im Türkischen Strafgesetzbuch (TCK), Gesetz Nr. 5237, geregelt, das 2005 in Kraft getreten ist. Die strafprozessuale Seite regelt die Strafprozessordnung (CMK), Gesetz Nr. 5271.
+
+Das türkische Strafverfahren gliedert sich im Wesentlichen in drei Phasen. Die erste Phase ist das Ermittlungsverfahren: Es wird von der Staatsanwaltschaft geleitet und umfasst Beweiserhebung, Vernehmungen sowie Entscheidungen über Untersuchungshaft. In der zweiten Phase, dem Hauptverfahren, wird die Anklageschrift beim Gericht eingereicht und die Hauptverhandlung beginnt. In der dritten Phase ergeht das Urteil – Verurteilung, Freispruch oder Strafaussetzung sind möglich – und dagegen kann Berufung sowie Revision beim Yargıtay eingelegt werden.
+
+## Strafverfahren in der Türkei aus Deutschland führen
+
+Die erste Frage, die sich stellt, lautet: Muss ich in die Türkei reisen? Die Antwort hängt von der Art des Verfahrens, seinem aktuellen Stand und dem rechtlichen Status des Beschuldigten ab.
+
+Im türkischen Strafverfahren ist grundsätzlich die persönliche Anwesenheit des Beschuldigten bei den Verhandlungen vorgeschrieben. Allerdings erlaubt § 196 CMK unter bestimmten Voraussetzungen, dass der Beschuldigte durch seinen Anwalt vertreten wird. In manchen Fällen ist auch eine Aussage per Video- und Tonübertragung über das sogenannte SEGBİS-System möglich.
+
+Avukat Hasan Doğru von der Doğru Kanzlei verfolgt Verhandlungen in der Türkei, greift über das UYAP-System direkt auf Verfahrensakten zu und empfängt offizielle Zustellungen über UETS — und vertritt Ihre Interessen vollständig aus Mannheim heraus, ohne dass Sie persönlich erscheinen müssen.
+
+## Häufige Straftatbestände bei in Deutschland lebenden türkischen Staatsangehörigen
+
+**Beleidigung und Verleumdung (TCK Art. 125–131):** Verfahren wegen Social-Media-Beiträgen, Messenger-Nachrichten und Online-Inhalten haben in den letzten Jahren deutlich zugenommen.
+**Betrug und schwerer Betrug (TCK Art. 157–158):** Häufig im Zusammenhang mit Streitigkeiten aus Geschäftsbeziehungen.
+**Drogenkonsum und -handel (TCK Art. 188–191):** Ein Bereich mit erheblichen Strafandrohungen – betroffen sind Personen, die während eines Türkeibesuchs festgenommen wurden oder wegen einer früheren Anschuldigung verfolgt werden.
+**Bedrohung und Erpressung (TCK Art. 106–107):** Entstehen häufig aus familiären oder geschäftlichen Konflikten.
+**Steuerhinterziehung und Wirtschaftsdelikte:** Relevant für Personen mit unternehmerischer Tätigkeit in der Türkei.
+**Cyberkriminalität (TCK Art. 243–245):** Hacking, unberechtigter Datenzugriff und ähnliche Handlungen fallen hierunter.
+**Häusliche Gewalt (TCK Art. 86):** Kommt häufig bei Streitigkeiten mit früheren Ehepartnern oder Familienmitgliedern in der Türkei vor.
+
+## Das Zustellungsproblem: Das Risiko, unwissentlich verurteilt zu werden
+
+Eines der kritischsten Probleme für in Deutschland lebende türkische Staatsangehörige ist die Frage der Zustellung. Wenn in der Türkei ein Verfahren eingeleitet wird, ist die Benachrichtigung der betroffenen Person durch förmliche Zustellung gesetzlich vorgeschrieben. In der Praxis kommt es dabei jedoch zu erheblichen Problemen.
+
+Zustellungen an eine alte Adresse in der Türkei können als wirksam gelten, selbst wenn die Person längst im Ausland lebt. Nach § 21 des türkischen Zustellungsgesetzes (Tebligat Kanunu, Gesetz Nr. 7201) kann, wenn die Person nicht erreichbar ist, die Zustellung beim Nachbarn hinterlassen oder über den Dorfvorsteher (Muhtar) bewirkt werden. Das gilt rechtlich als wirksam – auch dann, wenn die betroffene Person davon tatsächlich nie erfahren hat.
+
+Als wichtige Verteidigungsstrategie gilt: Wer im Ausland lebt und aufgrund einer fehlerhaften Zustellung nichts von seinem Verfahren wusste, kann nach § 40 CMK einen Antrag auf Wiedereinsetzung in den vorigen Stand stellen. Dass der Verteidiger dabei sofort handelt, ist für die Wahrung dieses Rechts entscheidend.
+
+## Reisepass und Grenzrisiko: Was passiert, wenn Sie in die Türkei einreisen?
+
+Wenn gegen Sie in der Türkei ein Haftbefehl besteht oder Ihre Daten im nationalen Fahndungssystem (GBT) erfasst sind, werden Sie bei der Einreise an der Grenze oder am Flughafen sofort identifiziert und festgehalten. Das passiert unabhängig davon, ob Sie einen deutschen oder einen türkischen Pass verwenden — die türkischen Grenzbehörden gleichen beide Pässe mit dem GBT-System ab.
+
+Bevor Sie die Türkei besuchen, sollte über das UYAP-System oder das e-Devlet-Portal geprüft werden, ob Verfahren gegen Sie vorliegen. Avukat Hasan Doğru kann diese Abfrage direkt aus Mannheim für Sie durchführen. Darüber hinaus kann ein bestehender Haftbefehl unter bestimmten Voraussetzungen durch Ihren Anwalt beim zuständigen türkischen Gericht angefochten oder ausgesetzt werden — noch bevor Sie die Türkei betreten.
+
+## Interpol Red Notice: Was passiert, wenn der Haftbefehl international wird?
+
+Wenn ein türkisches Gericht einen Haftbefehl erlässt und die Person im Ausland lebt, besteht das Risiko, dass die türkischen Behörden Interpol einschalten und eine Red Notice beantragen. Eine Interpol Red Notice ist kein internationaler Haftbefehl im rechtlichen Sinne — sie verpflichtet Mitgliedsstaaten nicht zur Festnahme — aber sie erzeugt erheblichen Druck und schränkt die Reisefreiheit massiv ein.
+
+Interpol verfügt über eine unabhängige Kontrollkommission (CCF). Bei dieser Kommission können Betroffene einen Antrag auf Löschung oder Sperrung der Red Notice stellen — insbesondere dann, wenn das zugrundeliegende Verfahren politisch motiviert ist, die rechtsstaatlichen Mindeststandards nicht erfüllt oder die Zustellung nachweislich fehlerhaft war.
+
+Als bei der Ankara Barosu und der Rechtsanwaltskammer Karlsruhe (§207 BRAO) zugelassener Anwalt kann Hasan Doğru diese Verfahren sowohl auf türkischer als auch auf internationaler Ebene koordinieren. Je früher Sie handeln, desto besser.
+
+## Rechte des Beschuldigten: Die wichtigsten Garantien nach der CMK
+
+**Das Schweigerecht** ist in § 147 CMK verankert. Aussagen können als Beweise gegen Sie verwendet werden. Deshalb sollten Sie ohne anwaltliche Beratung keinerlei Angaben machen.
+**Das Recht auf einen Verteidiger** ist in §§ 149 und 150 CMK geregelt. Jeder Beschuldigte hat das Recht, von einem Anwalt seiner Wahl vertreten zu werden. Gespräche mit dem Anwalt unterliegen der Vertraulichkeit.
+**Das Recht auf ein faires Verfahren** ist durch Art. 36 der türkischen Verfassung und Art. 6 der EMRK garantiert. Es umfasst das Recht auf Verhandlung innerhalb angemessener Frist, vor einem unabhängigen Gericht, auf Konfrontation mit Belastungszeugen sowie auf die Möglichkeit, entlastende Beweise vorzulegen.
+**Das Recht auf einen Dolmetscher** ist nach § 202 CMK vorgeschrieben: Wer kein Türkisch spricht oder es nicht ausreichend versteht, hat Anspruch auf einen kostenlosen Dolmetscher.
+
+## Aussetzung der Urteilsverkündung (HAGB) und Strafaussetzung zur Bewährung
+
+Die Aussetzung der Urteilsverkündung (HAGB) ist in § 231 CMK geregelt. Liegen bestimmte Voraussetzungen vor, kann das Gericht die Verkündung des Urteils für fünf Jahre aussetzen. Hält der Beschuldigte die Auflagen ein, wird das Verfahren eingestellt. Das Strafregister bleibt sauber — was besonders wichtig ist, um Auswirkungen auf den Aufenthaltstitel, die Niederlassungserlaubnis oder die Einbürgerung in Deutschland zu vermeiden.
+
+Die Strafaussetzung zur Bewährung nach § 51 TCK kann bei Verurteilungen zu Freiheitsstrafen von bis zu zwei Jahren angewendet werden und verhindert, dass die Strafe tatsächlich im Gefängnis verbüßt werden muss.
+
+## Täter-Opfer-Ausgleich und Einstellung des Verfahrens
+
+Das in § 253 CMK geregelte Ausgleichsverfahren ist bei bestimmten Straftatbeständen anwendbar. Einigen sich die Parteien, wird das Verfahren eingestellt. Zu den ausgleichsfähigen Straftaten zählen unter anderem Beleidigung, einfache Körperverletzung, fahrlässige Körperverletzung sowie bestimmte Eigentumsdelikte.
+
+## Berufung und Revision beim Yargıtay
+
+Das türkische Rechtsmittelsystem im Strafverfahren ist zweistufig aufgebaut. Gegen das Urteil des erstinstanzlichen Gerichts kann beim regionalen Berufungsgericht (BAM) Berufung eingelegt werden. Gegen Entscheidungen des BAM wiederum ist Revision beim Yargıtay möglich — allerdings nur wegen Rechtsverletzungen, nicht wegen des Sachverhalts.
+
+## Fernzugang zu türkischen Gerichten über UYAP
+
+Das Nationale Justiz-Informationsnetzwerk (UYAP) ermöglicht es Anwälten, Schriftsätze elektronisch bei türkischen Gerichten einzureichen, Verfahrensakten online einzusehen und Verhandlungstermine in Echtzeit zu verfolgen. Dank der Integration mit UETS und KEP kann die Doğru Kanzlei türkische Mandanten direkt aus dem Mannheimer Büro heraus vor türkischen Gerichten vertreten.
+
+## Türkische Verurteilung und Ihr Aufenthaltsrecht in Deutschland
+
+Das deutsche Aufenthaltsgesetz (AufenthG) sieht in §§ 54 und 55 klare Regelungen vor, wann eine Straftat — auch eine im Ausland begangene — aufenthaltsrechtliche Konsequenzen hat.
+
+Eine Niederlassungserlaubnis kann nach § 51 Abs. 1 Nr. 5 AufenthG erlöschen, wenn Sie sich länger als sechs Monate außerhalb Deutschlands aufhalten — etwa weil Sie in der Türkei inhaftiert sind. Darüber hinaus kann die Ausländerbehörde die Niederlassungserlaubnis nach § 52 AufenthG widerrufen, wenn aufgrund einer Verurteilung im Ausland schwerwiegende Gründe der öffentlichen Sicherheit vorliegen.
+
+Nach § 54 Abs. 1 AufenthG besteht ein zwingender Ausweisungsgrund, wenn jemand wegen einer vorsätzlichen Straftat zu einer Freiheitsstrafe von mindestens zwei Jahren — ohne Bewährung — verurteilt wurde. Bei bestimmten schweren Delikten gilt dasselbe bereits ab einem Jahr.
+
+Wer die deutsche Staatsbürgerschaft beantragt, muss nachweisen, dass er nicht wegen einer Straftat verurteilt wurde. Nach § 10 StAG führen Verurteilungen zu mehr als 90 Tagessätzen Geldstrafe oder zu Freiheitsstrafen von mehr als drei Monaten auf Bewährung zum Ausschluss. Eine türkische Verurteilung, die in Deutschland anerkannt wird, kann einen laufenden Einbürgerungsantrag sofort zum Scheitern bringen.
+
+---
+
+**Holen Sie sich jetzt eine kostenlose Ersteinschätzung für Ihr Strafverfahren in der Türkei | Mannheim: +49 176 6122 1210 | Ankara: +90 533 237 59 18 | hasandogru.de**
+
+Avukat Hasan Doğru | Doğru Kanzlei | Ankara Barosu (Sicil No: 47068) & Rechtsanwaltskammer Karlsruhe (§207 BRAO)
+
+*Dieser Artikel dient ausschließlich der allgemeinen Information und stellt keine Rechtsberatung dar. Für eine auf Ihren individuellen Fall zugeschnittene Einschätzung nehmen Sie bitte Kontakt mit uns auf. Die Kanzlei berät ausschließlich im türkischen Recht gemäß §207 BRAO.*`,
+    contentTR: `**YASAL UYARI:** Bu makale yalnızca Türk hukukuna ilişkindir. Büromuzda Alman hukuku konusunda danışmanlık verilmemektedir.
+
+---
+
+Almanya'da yaşayan yüz binlerce Türk vatandaşı, zaman zaman Türkiye'de başlatılan ceza soruşturmaları veya kovuşturmalarıyla karşı karşıya kalmaktadır. Ve çoğu zaman bunu yıllarca bilmez.
+
+Almanya'da hayatını sürdüren, işine gücüne bakan biri, Türkiye'de aleyhine açılmış bir dava bulunduğundan habersiz olabilmektedir. Bu durum; tebligat sorunları, Türkiye'deki adres güncellemelerinin yapılmamış olması ya da dijital bir bağlantının kurulamamış olmasından kaynaklanmaktadır. Mannheim'da, Frankfurt'ta, Berlin'de ya da Almanya'nın herhangi bir şehrinde yaşıyor olmanız fark etmez — Türkiye'deki bir ceza davası hem oradaki hukuki konumunuzu hem de buradaki oturma izninizi, Niederlassungserlaubnis'inizi veya vatandaşlık sürecinizi doğrudan etkileyebilir.
+
+Bu rehberde şunları ele alacağız: Türk ceza yargılamasının temel aşamaları, sanık olarak haklarınız, tebligat sorunlarının hukuki boyutu, Almanya'dan nasıl savunma yürütebileceğiniz, Interpol Red Notice durumunda ne yapmanız gerektiği — ve bu süreçte Ankara Barosu ve Rechtsanwaltskammer Karlsruhe'ye (§207 BRAO) kayıtlı, her iki hukuk sistemine hâkim bir avukattan neden destek almanız gerektiği.
+
+→ Miras veya mal varlığı üzerindeki cezai riskleri de araştırıyorsanız: [Türkiye-Almanya Miras Hukuku rehberimize](/tr/blog/miras-hukuku-rehberi) göz atın.
+
+## Türk Ceza Hukukuna Genel Bakış
+
+Türkiye'de ceza hukuku, 2005 yılında yürürlüğe giren 5237 sayılı Türk Ceza Kanunu (TCK) çerçevesinde düzenlenmektedir. Ceza yargılamasının usul boyutu ise 5271 sayılı Ceza Muhakemesi Kanunu (CMK) ile düzenlenmektedir.
+
+Türk ceza yargılaması üç temel aşamadan oluşur. İlk aşama olan soruşturma; Cumhuriyet Savcısı tarafından yürütülmekte, delil toplama, ifade alma ve tutukluluk kararları bu aşamada gerçekleşmektedir. İkinci aşama olan kovuşturmada iddianame mahkemeye sunulmakta ve duruşmalar başlamaktadır. Üçüncü aşama olan karar aşamasında mahkûmiyet, beraat veya ceza erteleme gibi sonuçlara ulaşılmakta; bu kararlara karşı istinaf ve Yargıtay nezdinde kanun yoluna başvurulabilmektedir.
+
+## Türkiye'deki Ceza Davasını Almanya'dan Yönetmek
+
+Almanya'da yaşayan bir Türk vatandaşı olarak Türkiye'de ceza davasıyla karşılaştığınızda aklınıza gelen ilk soru şudur: Türkiye'ye gitmek zorunda mıyım? Bu sorunun yanıtı; davanın türüne, bulunduğu aşamaya ve hukuki statünüze göre değişmektedir.
+
+Türk ceza yargılamasında kural olarak sanığın duruşmalara bizzat katılması gerekmektedir. Ancak CMK'nın 196. maddesi, belirli koşullar altında sanığın avukatı aracılığıyla temsil edilmesine imkân tanımaktadır. Bunun yanı sıra bazı hallerde ses ve görüntü nakli yoluyla — yani SEGBİS sistemiyle — ifade alınması da mümkündür.
+
+Ankara Barosu ve Rechtsanwaltskammer Karlsruhe'ye (§207 BRAO) kayıtlı avukat olarak Doğru Kanzlei, Türkiye'deki duruşmaları takip eder, UYAP sistemi üzerinden dava dosyasına doğrudan erişir ve UETS aracılığıyla resmi tebligatları alır — Mannheim ofisinden, siz Türkiye'ye adım atmadan. Bu hem Türk hukuku hem de Almanya-Türkiye sınır ötesi etkiler bakımından kapsamlı temsil ve danışmanlık imkânı sağlar.
+
+## Almanya'daki Türklerin Türkiye'de En Sık Karşılaştığı Suç Tipleri
+
+**Hakaret ve iftira (TCK m.125–131):** Sosyal medya paylaşımları, mesajlaşma uygulamaları ve çevrimiçi içerikler nedeniyle açılan davalar son yıllarda ciddi biçimde artmıştır.
+**Dolandırıcılık ve nitelikli dolandırıcılık (TCK m.157–158):** Ticari ilişkilerden doğan anlaşmazlıklarda sıklıkla karşımıza çıkmaktadır.
+**Uyuşturucu kullanımı ve ticareti (TCK m.188–191):** Türkiye ziyareti sırasında gözaltına alınan ya da geçmişteki bir suçlamadan yargılanan kişileri etkileyen, ağır yaptırımlar öngören bir alan.
+**Tehdit ve şantaj (TCK m.106–107):** Genellikle aile içi ya da ticari anlaşmazlıklardan kaynaklanmaktadır.
+**Vergi kaçakçılığı ve ekonomik suçlar:** Türkiye'de ticari faaliyeti olan kişileri doğrudan ilgilendirmektedir.
+**Bilişim suçları (TCK m.243–245):** Hacking, izinsiz veri erişimi gibi eylemler bu kapsamda değerlendirilmektedir.
+**Aile içi şiddet (TCK m.86):** Türkiye'deki eski eş ya da aile üyeleriyle yaşanan anlaşmazlıklarda sıkça gündeme gelmektedir.
+
+## Tebligat Sorunu: Habersizce Mahkûm Olma Riski
+
+Almanya'da yaşayan Türk vatandaşları için en kritik sorunların başında tebligat meselesi gelmektedir. Türkiye'de dava açıldığında, ilgili kişinin tebligatla haberdar edilmesi yasal bir zorunluluktur. Ancak uygulamada işler her zaman bu şekilde yürümez.
+
+Türkiye'deki eski adrese yapılan tebligatlar, kişi yurt dışında ikamet etmesine karşın hukuken geçerli sayılabilmektedir. 7201 sayılı Tebligat Kanunu'nun 21. maddesi uyarınca, kişiye ulaşılamaması durumunda tebligat kapı komşusuna bırakılabilmekte ya da muhtar aracılığıyla yapılabilmektedir. Tebligat size gerçek anlamda ulaşmamış olsa bile bu, hukuken geçerli kabul edilebilmektedir.
+
+Aynı kanunun 25. maddesi yurt dışı tebligata ilişkin özel hükümler içermektedir. Yurt dışındaki Türk vatandaşlarına tebligat, ilgili devletin yetkili makamları aracılığıyla yapılmalıdır. Ancak uygulamada bu kurallara her zaman titizlikle uyulmamaktadır.
+
+Önemli bir savunma stratejisi: Yurt dışında ikamet edip usule aykırı tebligat nedeniyle davadan haberdar olmayan kişiler, CMK'nın 40. maddesi kapsamında eski hale getirme başvurusunda bulunabilir. Avukatın derhal harekete geçmesi, bu hakkın kullanılması için hayati önem taşımaktadır.
+
+## Pasaport ve Sınır Riski: Türkiye'ye Girişte Ne Olur?
+
+Doğru Kanzlei'ye en sık ulaşan sorulardan biri şudur: Türkiye'ye gidebilir miyim — yoksa havalimanında mı tutuklanırım?
+
+Bu endişe son derece yerindedir. Türkiye'de hakkınızda bir tutuklama kararı varsa ya da verileriniz ulusal sorgu sistemine (GBT) işlenmişse, sınırda veya havalimanında giriş yapar yapmaz tespit edilir ve gözaltına alınırsınız. Bu durum ister Alman pasaportu ister Türk pasaportu kullanın fark etmez — Türk sınır yetkilileri her iki pasaportu da GBT sistemi üzerinden sorgular.
+
+En tehlikeli senaryo, hakkında dava açıldığından haberi olmayan kişilerin başına gelir. Bir yakınının cenazesine ya da aile ziyaretine gitmek için uçağa binen biri, havalimanında tutuklandığında ne hazırlığı ne de hukuki desteği olmaz.
+
+Türkiye'ye seyahat etmeden önce UYAP sistemi veya e-Devlet üzerinden hakkınızda aktif bir dava ya da tutuklama kararı bulunup bulunmadığını mutlaka kontrol ettirin. En güvenli yol, bu sorguyu UYAP erişimi olan kayıtlı bir avukat aracılığıyla yaptırmaktır. Avukat Hasan Doğru bu sorgulamayı doğrudan Mannheim ofisinden sizin adınıza gerçekleştirebilmektedir. Bunun yanı sıra mevcut bir tutuklama kararı belirli koşullar altında avukatınız tarafından ilgili Türk mahkemesinde itiraz yoluyla durdurulabilir ya da kaldırılabilir — siz Türkiye'ye adım atmadan önce.
+
+## Interpol Red Notice: Tutuklama Kararı Uluslararası Boyut Kazanırsa Ne Olur?
+
+Türkiye'de tutuklama kararı çıkarılan ve yurt dışında yaşayan bir kişi için Türk makamlarının Interpol'e başvurarak Red Notice talep etme riski her zaman mevcuttur. Interpol Red Notice hukuki anlamda uluslararası bir tutuklama müzekkeresi değildir — üye devletleri yasal olarak gözaltına almakla yükümlü kılmaz. Ancak pratikte sonuçları son derece ağır olabilmektedir.
+
+Red Notice'in somut anlamı şudur: İsminiz, dünya genelinde sınır yetkililerinin erişebildiği Interpol veritabanına kaydedilir. Pek çok ülkeye — bazı AB ülkeleri dahil — girişte sorgulama, sorguya çekme veya geçici gözaltı yaşanabilir. Almanya'da Interpol Red Notice tek başına otomatik tutuklama sebebi oluşturmaz; zira Alman iade hukukunun kendi gereklilikleri vardır. Bununla birlikte Red Notice, ciddi bir baskı unsuru yaratır ve seyahat özgürlüğünü büyük ölçüde kısıtlar.
+
+Interpol Red Notice'e nasıl itiraz edilir? Interpol'ün bağımsız bir denetim organı vardır: Dosyaların Kontrolü için Interpol Komisyonu (CCF). Bu komisyona başvurarak Red Notice'in silinmesi veya askıya alınması talep edilebilir. Özellikle şu durumlarda başvuru güçlüdür: altta yatan davanın siyasi motivasyonlu olması, hukuk devleti asgari standartlarını karşılamaması ya da tebligatın hatalı yapıldığının belgelenebilmesi.
+
+CCF önündeki süreç teknik ve karmaşıktır; eksiksiz dava belgesiyle desteklenmiş, gerekçeli bir başvuru hazırlanmasını gerektirmektedir. Ankara Barosu ve Rechtsanwaltskammer Karlsruhe'ye (§207 BRAO) kayıtlı avukat olarak Hasan Doğru, bu süreçleri hem Türk hukuku hem de uluslararası düzeyde koordineli biçimde yürütebilmektedir. Ne kadar erken harekete geçerseniz sonuç o kadar iyi olur.
+
+## Sanık Haklarınız: CMK Kapsamında Temel Güvenceler
+
+**Susma hakkı** CMK'nın 147. maddesiyle güvence altına alınmıştır. Verilen her ifade aleyhte delil olarak kullanılabilir. Bu nedenle hukuki danışmanlık almadan herhangi bir beyanda bulunmamak büyük önem taşımaktadır.
+**Müdafi hakkı** CMK'nın 149. ve 150. maddelerinde düzenlenmiştir. Her sanık, seçtiği bir avukat tarafından temsil edilme hakkına sahiptir.
+**Adil yargılanma hakkı** Anayasa'nın 36. maddesi ve AİHS'in 6. maddesiyle güvence altına alınmıştır. Bu hak; makul sürede yargılanma, bağımsız bir mahkeme önünde yargılanma, aleyhte tanıklarla yüzleşme ve lehte delil sunabilme güvencelerini kapsamaktadır.
+**Tercüman hakkı** CMK'nın 202. maddesi uyarınca, Türkçe bilmeyen ya da yeterince anlamayan sanığa ücretsiz tercüman sağlanması zorunludur.
+
+## Hükmün Açıklanmasının Geri Bırakılması (HAGB) ve Erteleme
+
+CMK'nın 231. maddesiyle düzenlenen HAGB, belirli koşulların bir arada bulunması halinde mahkemenin verdiği mahkûmiyet kararının açıklanmasını beş yıl süreyle erteleyen bir kurumdur. Sanık bu süre zarfında denetimli serbestlik altında kalır; süreyi ihlalsiz tamamlarsa dava düşer. Sabıka kaydı temiz kalır — bu da Almanya'daki oturma izninizi, Niederlassungserlaubnis'inizi ya da vatandaşlık başvurunuzu tehdit edecek süreçlerin önüne geçer.
+
+TCK'nın 51. maddesiyle düzenlenen erteleme ise iki yıl veya daha az hapis cezasına mahkûm edilen sanıklara uygulanabilmekte ve cezanın fiilen cezaevinde çekilmesinin önüne geçmektedir.
+
+## Uzlaşma ve Kovuşturmadan Vazgeçme
+
+CMK'nın 253. maddesiyle düzenlenen uzlaşma prosedürü belirli suç tipleri için uygulanabilmektedir. Savcılık, suçun uzlaşmaya elverişli olduğunu değerlendirdiğinde tarafları uzlaşma görüşmesine davet eder. Uzlaşma sağlandığında dava düşmektedir. Hakaret, basit yaralama, taksirle yaralama ve bazı mülkiyet suçları bu kapsamda değerlendirilebilmektedir.
+
+## Temyiz ve Yargıtay
+
+Türk ceza yargılamasında kanun yolları iki aşamalıdır. İlk derece mahkemesi kararına karşı Bölge Adliye Mahkemesi (BAM) nezdinde istinaf yoluna başvurulabilmektedir. BAM kararlarına karşı ise yalnızca hukuka aykırılık gerekçesiyle Yargıtay'a temyiz başvurusunda bulunulabilmektedir.
+
+## UYAP ile Uzaktan Dava Takibi
+
+Ulusal Yargı Ağı Bilişim Sistemi (UYAP), avukatlara Türkiye'deki mahkemelere elektronik ortamda dilekçe sunma, dava dosyasına çevrimiçi erişim ve duruşma tarihlerini gerçek zamanlı takip etme imkânı sağlamaktadır. UETS ve KEP sistemiyle entegre çalışan UYAP sayesinde Doğru Kanzlei, Mannheim ofisinden Türkiye'deki davaları fiziksel varlık gerekmeksizin doğrudan yürütebilmektedir.
+
+## Almanya'daki Hukuki Statünüzü Korumak
+
+Almanya'nın yabancılar hukukunu düzenleyen AufenthG, §§ 54 ve 55 kapsamında yurt dışında işlenen suçların da oturma hakkını nasıl etkileyebileceğini net biçimde ortaya koymaktadır.
+
+Niederlassungserlaubnis (süresiz oturma izni), AufenthG § 51 f.1 n.5 uyarınca Almanya dışında altı aydan fazla kalınması halinde — örneğin Türkiye'de tutuklu bulunulması nedeniyle — kendiligenden geçersiz hale gelebilmektedir.
+
+Süreli oturma izni (Aufenthaltserlaubnis) açısından ise AufenthG § 54 f.1 uyarınca, kişi kasıtlı bir suç nedeniyle ertelemesiz en az iki yıl hapis cezasına çarptırılmışsa zorunlu sınır dışı etme gerekçesi oluşmaktadır.
+
+Vatandaşlık başvurusu açısından ise StAG § 10 uyarınca, 90 günlük adli para cezasını veya ertelemeli üç aylık hapis cezasını aşan mahkûmiyetler başvuruyu engellemektedir. Almanya'da tanınan bir Türk mahkûmiyeti, devam eden bir vatandaşlık başvurusunu anında çökertebilir.
+
+---
+
+**Türkiye'deki ceza davanız için ücretsiz ön değerlendirme alın | Mannheim: +49 176 6122 1210 | Ankara: +90 533 237 59 18 | hasandogru.de**
+
+Avukat Hasan Doğru | Doğru Kanzlei | Ankara Barosu (Sicil No: 47068) & Rechtsanwaltskammer Karlsruhe (§207 BRAO)
+
+*Bu makale genel bilgi amaçlıdır ve hukuki danışmanlık niteliği taşımaz. Durumunuza özgü değerlendirme için lütfen bizimle iletişime geçin. Büromuzda yalnızca Türk hukuku alanında danışmanlık verilmektedir.*`,
+    category: "Ceza Hukuku",
+    categoryDE: "Strafrecht",
+    image: criminalDefenseTurkeyImg,
+    dateDE: "20. April 2026",
+    dateTR: "20 Nisan 2026",
+    readTimeDE: "10 Min. Lesezeit",
+    readTimeTR: "10 dk okuma",
+    publishedAt: "2026-04-20",
+    keywordsDE: "Türkei Strafverfahren Deutschland, Haftbefehl Türkei Deutschland, Interpol Red Notice Türkei, Reisepass Türkei Risiko, AufenthG Verurteilung",
+    keywordsTR: "Türkiye ceza davası Almanya, tutuklama kararı Türkiye, Almanya'dan savunma, Interpol Red Notice Türkiye, pasaport sınır riski Türkiye",
+    faqDE: [
+      {
+        question: "Wie erfahre ich, ob in der Türkei ein Strafverfahren gegen mich läuft?",
+        answer: "Sie können über das UYAP-Bürgerportal oder das e-Devlet-Portal nach Verfahren gegen Sie suchen. Der sicherste Weg ist jedoch, über die Doğru Kanzlei eine vollständige UYAP-Abfrage durchführen zu lassen — direkt aus Mannheim."
+      },
+      {
+        question: "Kann ein Strafverfahren in der Türkei meinen Aufenthaltstitel in Deutschland gefährden?",
+        answer: "Ja. Verurteilungen, die bestimmte Schwellen nach § 54 AufenthG überschreiten, können den Aufenthaltstitel gefährden oder zum zwingenden Ausweisungsgrund werden. Bereits bei einer Verurteilung zu einem Jahr Freiheitsstrafen ohne Bewährung ist das Aufenthaltsrecht ernsthaft gefährdet."
+      },
+      {
+        question: "Was ist eine Interpol Red Notice und was soll ich tun, wenn eine gegen mich besteht?",
+        answer: "Eine Interpol Red Notice ist eine weltweite Fahndungsausschreibung auf Antrag türkischer Behörden. Sie kann bei der Interpol CCF angefochten werden — insbesondere wenn das Verfahren rechtsstaatlichen Mindeststandards nicht entspricht. Wenden Sie sich sofort an einen Anwalt."
+      },
+      {
+        question: "Muss ich in die Türkei reisen?",
+        answer: "Nicht für jedes Verfahren. Ihr Anwalt kann Sie in den meisten Fällen nach § 196 CMK vertreten oder eine Aussage per SEGBİS aus Deutschland erwirken."
+      },
+      {
+        question: "Werde ich am türkischen Flughafen festgehalten, wenn gegen mich ein Haftbefehl besteht?",
+        answer: "Ja — wenn Ihre Daten im türkischen Fahndungssystem GBT erfasst sind, werden Sie bei der Einreise sofort identifiziert, unabhängig davon ob Sie mit einem deutschen oder türkischen Pass reisen."
+      }
+    ],
+    faqTR: [
+      {
+        question: "Türkiye'de hakkımda dava açılıp açılmadığını nasıl öğrenebilirim?",
+        answer: "UYAP Vatandaş Portalı veya e-Devlet üzerinden sorgulama yapabilirsiniz. Ancak en güvenli yol, Doğru Kanzlei aracılığıyla kapsamlı bir UYAP araması yaptırmaktır — doğrudan Mannheim ofisinden."
+      },
+      {
+        question: "Türkiye'deki ceza davası Almanya'daki oturma iznimi etkiler mi?",
+        answer: "Evet. AufenthG § 54 kapsamında belirli eşikleri aşan mahkûmiyetler oturma izninizi tehlikeye atabilir ya da zorunlu sınır dışı etme gerekçesi oluşturabilir. Ertelemesiz bir yıl hapis cezasında bile oturma hakkınız ciddi tehlike altına girer."
+      },
+      {
+        question: "Interpol Red Notice nedir ve hakkımda varsa ne yapmalıyım?",
+        answer: "Interpol Red Notice, Türk makamlarının talebiyle düzenlenen dünya genelinde bir arama kaydıdı. Davanın hukuk devleti standartlarını karşılamaması veya tebligatın hatalı yapıldığının kanıtlanması durumunda Interpol CCF'ye itiraz başvurusunda bulunulabilir. Hemen bir avukata başvurun."
+      },
+      {
+        question: "Türkiye'ye gitmek zorunda mıyım?",
+        answer: "Her dava için değil. Avukatınız çoğu durumda CMK m.196 kapsamında sizi temsil edebilir ya da SEGBİS aracılığıyla uzaktan ifade vermenizi sağlayabilir."
+      },
+      {
+        question: "Türkiye'ye gidersem havalimanında tutuklanır mıyım?",
+        answer: "Hakkınızda GBT sistemine işlenmiş bir tutuklama kararı varsa evet — ister Alman ister Türk pasaportu kullanın. Türkiye'ye seyahat etmeden önce mutlaka UYAP üzerinden bir avukat aracılığıyla kontrol ettirin."
+      }
+    ]
+  },
   {
     slug: "almanya-bosanma-tanima-tenfiz-davasi-rehberi",
     slugDE: "deutschland-scheidung-anerkennung-tuerkei-tanima-tenfiz",
@@ -572,7 +1276,7 @@ Belgelerinizi toparlayın, bize ulaşın — gerisini biz halledelim.
 
 ---
 
-*Bu makale genel bilgi amaçlıdır ve hukuki danışmanlık niteliği taşımaz. Durumunuza özgü değerlendirme için lütfen bizimle iletişime geçin. Büromuz yalnızca Türk hukuku alanında danışmanlık verilmemektedir.*`,
+*Bu makale genel bilgi amaçlıdır ve hukuki danışmanlık niteliği taşımaz. Durumunuza özgü değerlendirme için lütfen bizimle iletişime geçin. Büromuzda yalnızca Türk hukuku alanında danışmanlık verilmektedir.*`,
     category: "Tanıma ve Tenfiz",
     categoryDE: "Scheidungsanerkennung",
     image: tanimaTenfizImg,

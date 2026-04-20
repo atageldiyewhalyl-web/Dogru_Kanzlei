@@ -443,13 +443,17 @@ export function BlogPost() {
             <div className="mt-32 p-10 md:p-16 bg-[#1C3829] rounded-2xl shadow-xl border-t-8 border-[#8B6E2A] relative overflow-hidden group">
               <div className="absolute top-[-100px] right-[-100px] w-64 h-64 bg-white/5 rounded-full blur-3xl transition-transform duration-1000 group-hover:scale-150" />
               <h3 className="font-serif text-3xl text-white mb-6 relative z-10 tracking-tight">
-                {language === 'de' ? 'Haben Sie Fragen zu diesem Thema?' : <span lang="tr">Tanıma ve Tenfiz İşlemleriniz İçin Buradayız</span>}
+                <span lang={language === 'tr' ? 'tr' : 'de'}>
+                  {language === 'de' 
+                    ? (post.ctaTitleDE || 'Haben Sie Fragen zu diesem Thema?') 
+                    : (post.ctaTitleTR || 'Tanıma ve Tenfiz İşlemleriniz İçin Buradayız')}
+                </span>
               </h3>
               <p className="font-sans text-lg text-white/70 mb-10 leading-relaxed relative z-10 max-w-xl">
                 <span lang={language === 'tr' ? 'tr' : 'de'}>
                   {language === 'de'
-                    ? 'Profitieren Sie von unserer doppelten Zulassung in Deutschland und der Türkei. Kontaktieren Sie uns for eine erste Einschätzung.'
-                    : 'Almanya ve Türkiye\'deki çift baro üyeliğimiz ve UYAP tecrübemizle süreci sizin adınıza en hızlı şekilde sonuçlandırıyoruz.'}
+                    ? (post.ctaDescriptionDE || 'Profitieren Sie von unserer doppelten Zulassung in Deutschland und der Türkei. Kontaktieren Sie uns for eine erste Einschätzung.')
+                    : (post.ctaDescriptionTR || 'Almanya ve Türkiye\'deki çift baro üyeliğimiz ve UYAP tecrübemizle süreci sizin adınıza en hızlı şekilde sonuçlandırıyoruz.')}
                 </span>
               </p>
               <a

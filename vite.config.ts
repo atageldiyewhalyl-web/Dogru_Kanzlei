@@ -95,6 +95,8 @@ export default defineConfig({
         '/de/leistungen/sorgerecht', '/tr/hizmetler/velayet',
         '/de/leistungen/immobilienrecht', '/tr/hizmetler/gayrimenkul-hukuku',
         '/de/blog', '/tr/blog',
+        '/de/blog/strafverfahren-tuerkei-haftbefehl-verteidigung-deutschland', '/tr/blog/turkiye-ceza-davasi-tutuklama-karari-almanya-savunma',
+        '/de/blog/blaue-karte-eu-beantragen-tuerkische-fachkraefte', '/tr/blog/turk-muhendis-profesyonel-almanya-mavi-kart-rehberi',
         '/de/blog/deutschland-scheidung-anerkennung-tuerkei-tanima-tenfiz', '/tr/blog/almanya-bosanma-tanima-tenfiz-davasi-rehberi',
         '/de/blog/erbschein-tuerkei-beantragen-verfahren', '/tr/blog/veraset-ilami-nedir-nasil-alinir',
         '/de/blog/almanya-scheidung-tuerkei-vermoegensaufteilung', '/tr/blog/almanya-bosanma-turkiye-mal-paylasimi',
