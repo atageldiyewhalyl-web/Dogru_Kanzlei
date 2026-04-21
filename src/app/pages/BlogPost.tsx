@@ -223,19 +223,14 @@ export function BlogPost() {
           </div>
 
           {/* Hero Image with slight parallax or zoom entrance hint */}
-          <motion.div 
-            initial={{ opacity: 0, scale: 1.02 }}
-            animate={{ opacity: 1, scale: 1 }}
-            transition={{ duration: 1.2, ease: "easeOut" }}
-            className="overflow-hidden mb-20 shadow-2xl relative group rounded-lg"
-          >
+          <div className="overflow-hidden mb-20 shadow-2xl relative group rounded-lg">
             <div className="absolute inset-0 bg-black/5 group-hover:bg-transparent transition-colors duration-700 pointer-events-none z-10" />
             <img
               src={post.image}
               alt={title}
               className="w-full h-auto max-h-[70vh] object-contain block mx-auto"
             />
-          </motion.div>
+          </div>
 
           {/* Dual-width content strategy: headers can go wide, text stays readable */}
           <div className="max-w-[720px] mx-auto">
@@ -331,16 +326,13 @@ export function BlogPost() {
                     }
                     else if (trimmedLine.startsWith('##')) {
                       element = (
-                        <motion.h2 
-                          initial={{ opacity: 0, x: -10 }}
-                          whileInView={{ opacity: 1, x: 0 }}
-                          viewport={{ once: true, margin: "-100px" }}
+                        <h2 
                           key={i} 
                           className="font-serif text-3xl md:text-4xl text-[#1C3829] mt-24 mb-12 font-medium tracking-tight relative pb-6 border-b border-[#1C3829]/5"
                         >
                           <span className="absolute bottom-0 left-0 w-16 h-1 bg-[#8B6E2A]" />
                           {processInlineStyles(trimmedLine.replace(/##/g, '').trim())}
-                        </motion.h2>
+                        </h2>
                       );
                     }
                     // Blockquotes

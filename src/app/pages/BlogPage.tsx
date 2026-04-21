@@ -29,12 +29,7 @@ export function BlogPage() {
     <div className="bg-[#FDFCFB] pt-40 pb-20">
       <div className="max-w-[1100px] mx-auto px-6 lg:px-12">
         {/* Header */}
-        <motion.div
-          initial={{ opacity: 0, y: 20 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.8 }}
-          className="mb-20"
-        >
+        <div className="mb-20">
           <div className="flex items-center gap-4 mb-10">
             <div className="w-10 h-[1px] bg-[#8B6E2A]" />
             <span className="font-sans text-[10px] font-bold tracking-[0.2em] text-[#7A5F20] uppercase">
@@ -46,17 +41,13 @@ export function BlogPage() {
             <br />
             <em className="italic font-normal">{t("blog_subtitle")}</em>
           </h1>
-        </motion.div>
+        </div>
 
         {/* Blog Grid */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
-          {blogPosts.map((post, idx) => (
-            <motion.article
+          {blogPosts.map((post) => (
+            <article
               key={post.slug}
-              initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              transition={{ duration: 0.5, delay: idx * 0.1 }}
               className="text-left"
             >
               <Link to={paths.blogPost(post.slug)} className="group block no-justify">
@@ -105,7 +96,7 @@ export function BlogPage() {
                   <ArrowRight size={13} className="transition-transform duration-300 group-hover:translate-x-1" />
                 </div>
               </Link>
-            </motion.article>
+            </article>
           ))}
         </div>
       </div>
