@@ -61,7 +61,7 @@ export function Blog() {
 
           <Link
             to={paths.blog}
-            aria-label={language === 'de' ? 'Alle Blogbeiträge lesen' : 'Tüm blog yazılarını oku'}
+            aria-label={language === 'de' ? 'Alle Blogbeiträge lesen' : language === 'tr' ? 'Tüm blog yazılarını oku' : 'Read all blog posts'}
             style={{
               fontFamily: "var(--font-sans)",
               fontSize: 12,
@@ -86,7 +86,7 @@ export function Blog() {
               (e.currentTarget as HTMLElement).style.borderColor = "#1C3829";
             }}
           >
-            {language === 'de' ? 'Alle Beiträge lesen' : 'Tüm yazıları oku'}
+            {language === 'de' ? 'Alle Beiträge lesen' : language === 'tr' ? 'Tüm yazıları oku' : 'Read all articles'}
             <ArrowRight size={14} />
           </Link>
         </div>
@@ -114,7 +114,7 @@ export function Blog() {
                 >
                   <img
                     src={post.image}
-                    alt={language === 'de' ? post.titleDE : post.titleTR}
+                    alt={language === 'de' ? post.titleDE : language === 'tr' ? post.titleTR : post.titleDE}
                     loading="lazy"
                     style={{
                       width: "100%",
@@ -147,7 +147,7 @@ export function Blog() {
                       color: "#B8963E",
                     }}
                   >
-                    {language === 'de' ? post.categoryDE : post.category}
+                    {language === 'de' ? post.categoryDE : language === 'tr' ? post.category : post.categoryDE}
                   </span>
                   <span
                     style={{
@@ -166,7 +166,7 @@ export function Blog() {
                       color: "#888680",
                     }}
                   >
-                    {language === 'de' ? post.dateDE : post.dateTR}
+                    {language === 'de' ? post.dateDE : language === 'tr' ? post.dateTR : post.dateDE}
                   </span>
                 </div>
 
@@ -184,7 +184,7 @@ export function Blog() {
                   }}
                   className="group-hover:!text-[#B8963E] no-justify"
                 >
-                  {language === 'de' ? post.titleDE : post.titleTR}
+                  {language === 'de' ? post.titleDE : language === 'tr' ? post.titleTR : post.titleDE}
                 </h3>
 
                 <p
@@ -199,7 +199,7 @@ export function Blog() {
                   }}
                   className="no-justify"
                 >
-                  {language === 'de' ? post.excerptDE : post.excerptTR}
+                  {language === 'de' ? post.excerptDE : language === 'tr' ? post.excerptTR : post.excerptDE}
                 </p>
 
                 <div

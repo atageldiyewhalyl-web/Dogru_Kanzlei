@@ -13,16 +13,25 @@ export function BlogPage() {
   useSEO({
     title: language === 'de'
       ? 'Blog & Aktuelles | Avukat Hasan Doğru'
-      : 'Blog & Güncel | Avukat Hasan Doğru',
+      : language === 'tr'
+        ? 'Blog & Güncel | Avukat Hasan Doğru'
+        : 'Blog & Updates | Avukat Hasan Doğru',
     description: language === 'de'
       ? 'Rechtliche Entwicklungen und Fachartikel zu türkischem und deutschem Recht. Informieren Sie sich über aktuelle Themen im Familienrecht, Erbrecht und mehr.'
-      : 'Türk ve Alman hukuku alanında güncel gelişmeler ve uzman makaleleri. Aile hukuku, miras hukuku ve daha fazlası hakkında bilgi edinin.',
+      : language === 'tr'
+        ? 'Türk ve Alman hukuku alanında güncel gelişmeler ve uzman makaleleri. Aile hukuku, miras hukuku ve daha fazlası hakkında bilgi edinin.'
+        : 'Legal updates and expert articles on Turkish and German law. Read about family law, inheritance law, and more.',
     lang: language,
     canonical: `${SITE_URL}/${language}/blog`,
     alternateLang: {
-      lang: language === 'de' ? 'tr' : 'de',
-      href: `${SITE_URL}/${language === 'de' ? 'tr' : 'de'}/blog`,
+      lang: language === 'de' ? 'tr' : language === 'tr' ? 'de' : 'de',
+      href: language === 'de'
+        ? `${SITE_URL}/tr/blog`
+        : language === 'tr'
+          ? `${SITE_URL}/de/blog`
+          : `${SITE_URL}/de/blog`,
     },
+    xDefault: `${SITE_URL}/de/blog`,
   });
 
   return (
@@ -55,7 +64,7 @@ export function BlogPage() {
                 <div className="overflow-hidden mb-6 h-[220px] bg-[#e8e4dc]">
                   <img
                     src={post.image}
-                    alt={language === 'de' ? post.titleDE : post.titleTR}
+                    alt={language === 'de' ? post.titleDE : language === 'tr' ? post.titleTR : post.titleDE}
                     loading="lazy"
                     className="w-full h-full object-cover block transition-transform duration-500 group-hover:scale-[1.04]"
                   />
@@ -79,14 +88,14 @@ export function BlogPage() {
                 {/* Title */}
                 <h2 className="font-serif text-[22px] font-semibold text-[#1C3829] leading-[1.3] mb-3 group-hover:text-[#7A5F20] transition-colors text-left no-justify">
                   <span lang={language === 'tr' ? 'tr' : 'de'}>
-                    {language === 'de' ? post.titleDE : post.titleTR}
+                    {language === 'de' ? post.titleDE : language === 'tr' ? post.titleTR : post.titleDE}
                   </span>
                 </h2>
 
                 {/* Excerpt */}
                 <p className="font-sans text-sm font-light text-[#6a6a6a] leading-[1.7] mb-5 text-left no-justify">
                   <span lang={language === 'tr' ? 'tr' : 'de'}>
-                    {language === 'de' ? post.excerptDE : post.excerptTR}
+                    {language === 'de' ? post.excerptDE : language === 'tr' ? post.excerptTR : post.excerptDE}
                   </span>
                 </p>
 

@@ -12,7 +12,7 @@ export function Layout() {
   const { pathname } = useLocation();
 
   // Derive language from URL path
-  const language = pathname.startsWith('/tr') ? 'tr' : pathname.startsWith('/de') ? 'de' : null;
+  const language = pathname.startsWith('/tr') ? 'tr' : pathname.startsWith('/de') ? 'de' : pathname.startsWith('/en') ? 'en' : null;
   if (!language) {
     return <Navigate to="/de" replace />;
   }
@@ -24,7 +24,8 @@ export function Layout() {
   // Sync HTML lang attribute immediately on render/path change
   useEffect(() => {
     if (language) {
-      document.documentElement.lang = language;
+      // Map 'en' locale to proper BCP-47 tag
+      document.documentElement.lang = language === 'de' ? 'de' : language === 'tr' ? 'tr' : 'en';
     }
   }, [language]);
 

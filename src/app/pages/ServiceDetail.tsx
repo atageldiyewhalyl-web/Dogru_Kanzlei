@@ -24,7 +24,9 @@ const renderFormattedContent = (text: string) => {
           const isHeaderLine = 
             trimmed.includes('Sizin için neler') ||
             trimmed.includes('Was wir für Sie') ||
+            trimmed.includes('What we do for you') ||
             trimmed.includes('Warum Doğru') ||
+            trimmed.includes('Why Doğru') ||
             trimmed.includes('Neden Doğru');
 
           if (isHeaderLine) {
@@ -68,39 +70,44 @@ export function ServiceDetail() {
   // Signal ready to prerenderer only if service is found
   usePrerender(!!service);
 
-  const servicesSegment = language === 'de' ? 'leistungen' : 'hizmetler';
-  const altLang = language === 'de' ? 'tr' : 'de';
+  const servicesSegment = language === 'de' ? 'leistungen' : language === 'tr' ? 'hizmetler' : 'services';
+  const altLang = language === 'de' ? 'tr' : language === 'tr' ? 'de' : 'de';
   const altServicesSegment = altLang === 'de' ? 'leistungen' : 'hizmetler';
 
   useSEO({
     title: service
       ? language === 'de'
         ? service.seoTitleDE || `${service.title} | Avukat Hasan Doğru`
-        : service.seoTitleTR || `${service.titleTR} | Avukat Hasan Doğru`
-      : 'Seite nicht gefunden',
+        : language === 'tr'
+          ? service.seoTitleTR || `${service.titleTR} | Avukat Hasan Doğru`
+          : (service as any).seoTitleEN || `${(service as any).titleEN ?? service.title} | Avukat Hasan Doğru`
+      : 'Page not found',
     description: service
       ? language === 'de'
         ? service.seoDescriptionDE || service.descriptionDE
-        : service.seoDescriptionTR || service.description
+        : language === 'tr'
+          ? service.seoDescriptionTR || service.description
+          : (service as any).seoDescriptionEN || (service as any).descriptionEN || service.descriptionDE
       : '',
     lang: language,
     canonical: service 
-      ? `${SITE_URL}/${language}/${servicesSegment}/${language === 'de' ? service.slugDE : service.slugTR}` 
+      ? `${SITE_URL}/${language}/${servicesSegment}/${language === 'de' ? service.slugDE : language === 'tr' ? service.slugTR : service.slugDE}` 
       : undefined,
     alternateLang: service ? {
       lang: altLang,
       href: `${SITE_URL}/${altLang}/${altServicesSegment}/${altLang === 'de' ? service.slugDE : service.slugTR}`,
     } : undefined,
+    xDefault: service ? `${SITE_URL}/de/leistungen/${service.slugDE}` : undefined,
   });
 
   if (!service) {
     return (
       <div className="min-h-[60vh] flex flex-col items-center justify-center p-8 bg-[#F7F5F0]">
         <h2 className="font-serif text-3xl text-[#1C3829] mb-4">
-          {language === 'de' ? 'Leistung nicht gefunden' : 'Hizmet Bulunamadı'}
+          {language === 'de' ? 'Leistung nicht gefunden' : language === 'tr' ? 'Hizmet Bulunamadı' : 'Service Not Found'}
         </h2>
         <Link to={paths.home} className="text-[#B8963E] font-bold flex items-center gap-2">
-          <ArrowLeft size={16} /> {language === 'de' ? 'Zur Startseite' : 'Ana Sayfaya Dön'}
+          <ArrowLeft size={16} /> {language === 'de' ? 'Zur Startseite' : language === 'tr' ? 'Ana Sayfaya Dön' : 'Back to Home'}
         </Link>
       </div>
     );
@@ -111,11 +118,12 @@ export function ServiceDetail() {
   const prevService = services[(currentIndex - 1 + services.length) % services.length];
 
   const Icon = service.icon;
-  const title = language === 'de' ? service.title : service.titleTR;
-  const altTitle = language === 'de' ? service.titleTR : service.title;
-  const description = language === 'de' ? service.descriptionDE : service.description;
-  const detail = language === 'de' ? service.detailDE : service.detail;
-  const content = language === 'de' ? (service.contentDE || service.content) : service.content;
+  const svc = service as any;
+  const title = language === 'de' ? service.title : language === 'tr' ? service.titleTR : svc.titleEN ?? service.title;
+  const altTitle = language === 'de' ? service.titleTR : language === 'tr' ? service.title : service.titleTR;
+  const description = language === 'de' ? service.descriptionDE : language === 'tr' ? service.description : svc.descriptionEN ?? service.descriptionDE;
+  const detail = language === 'de' ? service.detailDE : language === 'tr' ? service.detail : svc.detailEN ?? service.detailDE;
+  const content = language === 'de' ? (service.contentDE || service.content) : language === 'tr' ? service.content : (svc.contentEN || service.contentDE || service.content);
 
   const serviceSchema = {
     "@context": "https://schema.org",
@@ -131,7 +139,7 @@ export function ServiceDetail() {
     "availableLanguage": ["Turkish", "German"]
   };
 
-  const faqItems = language === 'de' ? service.faqDE : service.faqTR;
+  const faqItems = language === 'de' ? service.faqDE : language === 'tr' ? service.faqTR : (svc.faqEN ?? service.faqDE);
   const faqSchema = faqItems && faqItems.length > 0 ? {
     "@context": "https://schema.org",
     "@type": "FAQPage",
@@ -208,7 +216,7 @@ export function ServiceDetail() {
               </div>
               <div className="flex-grow">
                 <span className="font-sans text-[12px] font-bold tracking-[0.25em] uppercase text-[#7A5F20] block mb-4">
-                  <span lang={language === 'de' ? 'tr' : 'de'}>{altTitle}</span>
+                  <span lang={language === 'de' ? 'tr' : language === 'en' ? 'tr' : 'de'}>{altTitle}</span>
                 </span>
                 <h1 className="font-serif text-5xl md:text-6xl lg:text-7xl text-[#1C3829] font-medium leading-[1.1] tracking-tight">
                   <span lang={language === 'tr' ? 'tr' : 'de'}>{title}</span>
@@ -254,9 +262,11 @@ export function ServiceDetail() {
                           <span lang={language === 'tr' ? 'tr' : 'de'}>{item}</span>
                         </h4>
                         <p className="font-sans text-[13px] text-[#6a6a6a] leading-relaxed">
-                          {language === 'de' 
-                            ? (service.id === 'familienrecht' ? 'Individuelle Beratung vor Ort' : 'Professionelle Fall- und Prozessführung') 
-                            : (service.id === 'familienrecht' ? <span lang="tr">Bireysel ve Yerinde Danışmalık</span> : <span lang="tr">Profesyonel Dava ve Süreç Takibi</span>)}
+                          {language === 'de'
+                            ? (service.id === 'familienrecht' ? 'Individuelle Beratung vor Ort' : 'Professionelle Fall- und Prozessführung')
+                            : language === 'tr'
+                              ? (service.id === 'familienrecht' ? <span lang="tr">Bireysel ve Yerinde Danışmalık</span> : <span lang="tr">Profesyonel Dava ve Süreç Takibi</span>)
+                              : (service.id === 'familienrecht' ? 'Individual on-site consultation' : 'Professional case & process management')}
                         </p>
                       </div>
                     </div>
@@ -265,16 +275,16 @@ export function ServiceDetail() {
               </div>
 
                {/* FAQ Accordion Section */}
-              {((language === 'de' && service.faqDE) || (language === 'tr' && service.faqTR)) && (
+              {((language === 'de' && service.faqDE) || (language === 'tr' && service.faqTR) || (language === 'en' && svc.faqEN)) && (
                 <div className="mb-20">
                   <div className="flex items-center gap-4 mb-12">
                     <div className="w-12 h-[1px] bg-[#8B6E2A]" />
                     <h3 className="font-serif text-3xl text-[#1C3829]">
-                      {language === 'de' ? 'Häufige Fragen' : <span lang="tr">Sıkça Sorulan Sorular</span>}
+                      {language === 'de' ? 'Häufige Fragen' : language === 'tr' ? <span lang="tr">Sıkça Sorulan Sorular</span> : 'Frequently Asked Questions'}
                     </h3>
                   </div>
                   <div className="space-y-4">
-                    {(language === 'de' ? service.faqDE : service.faqTR).map((faq: any, idx: number) => (
+                    {(faqItems ?? []).map((faq: any, idx: number) => (
                       <FAQItem key={idx} question={faq.question} answer={faq.answer} />
                     ))}
                   </div>
@@ -288,10 +298,10 @@ export function ServiceDetail() {
                   className="flex flex-col items-center sm:items-start group/btn max-w-[200px]"
                 >
                   <span className="font-sans text-[10px] font-bold tracking-widest text-[#6a6a6a] uppercase mb-3 flex items-center gap-2 group-hover/btn:text-[#7A5F20] transition-colors">
-                    <ArrowLeft size={12} /> {language === 'de' ? 'VORHERIGE' : <span lang="tr">ÖNCEKİ</span>}
+                    <ArrowLeft size={12} /> {language === 'de' ? 'PREVIOUS' : language === 'tr' ? <span lang="tr">ÖNCEKİ</span> : 'PREVIOUS'}
                   </span>
                   <span className="font-serif text-lg text-[#1C3829] text-center sm:text-left leading-tight group-hover/btn:text-[#7A5F20] transition-colors">
-                    <span lang={language === 'tr' ? 'tr' : 'de'}>{language === 'de' ? prevService.title : prevService.titleTR}</span>
+                    <span lang={language === 'tr' ? 'tr' : language === 'en' ? 'en' : 'de'}>{language === 'de' ? prevService.title : language === 'tr' ? prevService.titleTR : (prevService as any).titleEN ?? prevService.title}</span>
                   </span>
                 </Link>
 
@@ -302,10 +312,10 @@ export function ServiceDetail() {
                   className="flex flex-col items-center sm:items-end group/btn max-w-[200px] text-right"
                 >
                   <span className="font-sans text-[10px] font-bold tracking-widest text-[#6a6a6a] uppercase mb-3 flex items-center gap-2 group-hover/btn:text-[#7A5F20] transition-colors">
-                    {language === 'de' ? 'NÄCHSTE' : <span lang="tr">SONRAKİ</span>} <ArrowRight className="w-3 h-3" />
+                    {language === 'de' ? 'NEXT' : language === 'tr' ? <span lang="tr">SONRAKİ</span> : 'NEXT'} <ArrowRight className="w-3 h-3" />
                   </span>
                   <span className="font-serif text-lg text-[#1C3829] text-center sm:text-right leading-tight group-hover/btn:text-[#7A5F20] transition-colors">
-                    <span lang={language === 'tr' ? 'tr' : 'de'}>{language === 'de' ? nextService.title : nextService.titleTR}</span>
+                    <span lang={language === 'tr' ? 'tr' : language === 'en' ? 'en' : 'de'}>{language === 'de' ? nextService.title : language === 'tr' ? nextService.titleTR : (nextService as any).titleEN ?? nextService.title}</span>
                   </span>
                 </Link>
               </div>
@@ -317,7 +327,7 @@ export function ServiceDetail() {
                 {/* Other Services List */}
                 <div className="bg-white p-10 shadow-sm border border-[#1C3829]/5">
                   <h4 className="font-serif text-2xl text-[#1C3829] mb-8 pb-4 border-b border-[#1C3829]/5">
-                    {language === 'de' ? 'Weitere Fachgebiete' : <span lang="tr">Diğer Uzmanlıklar</span>}
+                    {language === 'de' ? 'Weitere Fachgebiete' : language === 'tr' ? <span lang="tr">Diğer Uzmanlıklar</span> : 'Other Practice Areas'}
                   </h4>
                   <div className="space-y-3">
                     {services.filter(s => s.id !== id).map((s) => (
@@ -329,7 +339,7 @@ export function ServiceDetail() {
                         <div className="flex items-center gap-4">
                           <s.icon size={18} className="text-[#6a6a6a] group-hover:text-[#7A5F20] transition-colors" />
                           <span className="font-sans text-[13px] font-bold tracking-wide text-[#4a4a4a] group-hover:text-[#1C3829] transition-colors">
-                            <span lang={language === 'tr' ? 'tr' : 'de'}>{language === 'de' ? s.title : s.titleTR}</span>
+                            <span lang={language === 'tr' ? 'tr' : language === 'en' ? 'en' : 'de'}>{language === 'de' ? s.title : language === 'tr' ? s.titleTR : (s as any).titleEN ?? s.title}</span>
                           </span>
                         </div>
                         <ArrowRight size={14} className="text-[#8B6E2A]/0 group-hover:text-[#8B6E2A]/100 transition-all -translate-x-2 group-hover:translate-x-0" />
@@ -345,7 +355,7 @@ export function ServiceDetail() {
                   
                   <div className="relative z-10">
                     <h5 className="font-serif text-2xl mb-4 leading-tight">
-                      {language === 'de' ? 'Brauchen Sie rechtliche Hilfe?' : <span lang="tr">Hukuki Yardıma mı İhtiyacınız Var?</span>}
+                      {language === 'de' ? 'Brauchen Sie rechtliche Hilfe?' : language === 'tr' ? <span lang="tr">Hukuki Yardıma mı İhtiyacınız Var?</span> : 'Do you need legal help?'}
                     </h5>
                     <p className="font-sans text-[14px] text-white/70 mb-10 leading-relaxed font-light">
                       <span lang={language === 'tr' ? 'tr' : 'de'}>
@@ -358,7 +368,7 @@ export function ServiceDetail() {
                       to={paths.contact}
                       className="group flex items-center justify-center gap-3 w-full py-5 bg-[#8B6E2A] text-white font-sans text-[11px] font-bold tracking-[0.2em] uppercase transition-all hover:bg-[#7A5F20]"
                     >
-                      {language === 'de' ? 'ZUM KONTAKT' : <span lang="tr">BİZE ULAŞIN</span>}
+                      {language === 'de' ? 'ZUM KONTAKT' : language === 'tr' ? <span lang="tr">BİZE ULAŞIN</span> : 'GET IN TOUCH'}
                       <ArrowRight size={14} className="group-hover:translate-x-1 transition-transform" />
                     </Link>
                   </div>

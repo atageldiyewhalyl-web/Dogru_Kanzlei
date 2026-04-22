@@ -184,7 +184,7 @@ export function Contact() {
                   }}
                 >
                   <Lock size={18} />
-                  {language === 'de' ? 'Cookie-Einwilligung erforderlich' : 'Çerez izni gerekli'}
+                  {language === 'de' ? 'Cookie-Einwilligung erforderlich' : language === 'tr' ? 'Çerez izni gerekli' : 'Cookie consent required'}
                 </button>
               )}
 

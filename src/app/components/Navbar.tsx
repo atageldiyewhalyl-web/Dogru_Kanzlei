@@ -155,7 +155,7 @@ export function Navbar() {
         </Link>
 
         {/* Desktop Nav */}
-        <nav className="hidden lg:flex items-center gap-8" aria-label={language === 'de' ? 'Hauptnavigation' : 'Ana navigasyon'}>
+        <nav className="hidden lg:flex items-center gap-8" aria-label={language === 'de' ? 'Hauptnavigation' : language === 'tr' ? 'Ana navigasyon' : 'Main navigation'}>
           {navLinks.map((link) => (
             <button
               key={link.href}
@@ -184,27 +184,36 @@ export function Navbar() {
 
           <div style={{ width: 1, height: 18, background: isLight ? "#e0e0e0" : "rgba(255,255,255,0.2)" }} />
 
-          {/* Language Switcher */}
-          <button
-            onClick={() => setLanguage(language === "tr" ? "de" : "tr")}
-            aria-label={language === 'de' ? 'Sprache zu Türkisch wechseln' : 'Dili Almanca yap'}
-            style={{
-              display: "flex",
-              alignItems: "center",
-              gap: 5,
-              background: "none",
-              border: "none",
-              cursor: "pointer",
-              fontFamily: "var(--font-sans)",
-              fontSize: 11,
-              fontWeight: 700,
-              color: isLight ? "#3a3a3a" : "#ffffff",
-              textTransform: "uppercase",
-            }}
-          >
+          {/* Language Switcher — 3-way */}
+          <div style={{ display: 'flex', alignItems: 'center', gap: 6 }}>
             <Globe size={13} color="#7A5F20" aria-hidden="true" />
-            {language === 'de' ? 'TR' : 'DE'}
-          </button>
+            {(['de', 'tr', 'en'] as const).map((lang, idx) => (
+              <>
+                {idx > 0 && <span style={{ color: isLight ? '#d0d0d0' : 'rgba(255,255,255,0.3)', fontSize: 10 }}>|</span>}
+                <button
+                  key={lang}
+                  onClick={() => setLanguage(lang)}
+                  aria-label={`Switch language to ${lang.toUpperCase()}`}
+                  aria-current={language === lang ? 'true' : undefined}
+                  style={{
+                    background: 'none',
+                    border: 'none',
+                    cursor: 'pointer',
+                    fontFamily: 'var(--font-sans)',
+                    fontSize: 11,
+                    fontWeight: 700,
+                    letterSpacing: '0.05em',
+                    textTransform: 'uppercase',
+                    color: language === lang ? '#7A5F20' : isLight ? '#3a3a3a' : 'rgba(255,255,255,0.9)',
+                    padding: '4px 2px',
+                    transition: 'color 0.2s',
+                  }}
+                >
+                  {lang.toUpperCase()}
+                </button>
+              </>
+            ))}
+          </div>
 
           <button
             onClick={() => window.open(CALENDLY_URL, "_blank")}
@@ -237,25 +246,32 @@ export function Navbar() {
 
         {/* Mobile Menu Button */}
         <div className="flex items-center gap-4 lg:hidden">
-           <button
-            onClick={() => setLanguage(language === "tr" ? "de" : "tr")}
-            aria-label={language === 'de' ? 'Sprache zu Türkisch wechseln' : 'Dili Almanca yap'}
-            style={{
-              display: "flex",
-              alignItems: "center",
-              gap: 4,
-              background: "none",
-              border: "none",
-              cursor: "pointer",
-              fontFamily: "'Lato', sans-serif",
-              fontSize: 12,
-              fontWeight: 700,
-              color: isLight ? "#3a3a3a" : "#ffffff",
-              textTransform: "uppercase",
-            }}
-          >
-            {language === 'de' ? 'TR' : 'DE'}
-          </button>
+           {/* Mobile Language Switcher — 3-way */}
+           <div style={{ display: 'flex', alignItems: 'center', gap: 4 }}>
+            {(['de', 'tr', 'en'] as const).map((lang, idx) => (
+              <>
+                {idx > 0 && <span style={{ color: isLight ? '#d0d0d0' : 'rgba(255,255,255,0.4)', fontSize: 10 }}>|</span>}
+                <button
+                  key={lang}
+                  onClick={() => setLanguage(lang)}
+                  aria-label={`Switch language to ${lang.toUpperCase()}`}
+                  style={{
+                    background: 'none',
+                    border: 'none',
+                    cursor: 'pointer',
+                    fontFamily: "'Lato', sans-serif",
+                    fontSize: 12,
+                    fontWeight: 700,
+                    color: language === lang ? '#7A5F20' : isLight ? '#3a3a3a' : '#ffffff',
+                    textTransform: 'uppercase',
+                    padding: '2px',
+                  }}
+                >
+                  {lang.toUpperCase()}
+                </button>
+              </>
+            ))}
+          </div>
           <button
             onClick={() => setMobileOpen(!mobileOpen)}
             aria-label={mobileOpen ? 'Hauptmenü schließen' : 'Hauptmenü öffnen'}
@@ -287,7 +303,7 @@ export function Navbar() {
 
           <div className={`mt-auto pt-8 border-t border-white/10 transition-all duration-500 delay-500 ${mobileOpen ? "opacity-100 translate-y-0" : "opacity-0 translate-y-4"}`}>
             <p className="font-sans text-[11px] text-white/50 tracking-[0.2em] uppercase mb-4">
-              {language === 'de' ? 'Direkter Kontakt' : 'Doğrudan İletişim'}
+              {language === 'de' ? 'Direkter Kontakt' : language === 'tr' ? 'Doğrudan İletişim' : 'Direct Contact'}
             </p>
             <p className="font-sans text-white mb-1">info@hasandogru.de</p>
             <p className="font-sans text-white mb-2">Avukat.hasandogru@outlook.de</p>

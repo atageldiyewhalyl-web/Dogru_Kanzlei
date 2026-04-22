@@ -95,7 +95,7 @@ export function PracticeAreas() {
               <div className="fade-in-card h-full bg-white p-10 md:p-14 border-l-[3px] border-[#8B6E2A] flex flex-col justify-center relative transition-all duration-500 hover:shadow-xl hover:shadow-black/[0.02] overflow-hidden">
                 {/* Mobile Background */}
                 <div className="md:hidden absolute inset-0 z-0" aria-hidden="true">
-                  <img src={tanimaImg} alt={language === 'tr' ? 'Tanıma ve Tenfiz hizmeti görseli' : 'Anerkennung und Vollstreckung Dienstleistungsbild'} width={600} height={400} loading="lazy" decoding="async" className="w-full h-full object-cover opacity-60" />
+                  <img src={tanimaImg} alt={language === 'tr' ? 'Tanıma ve Tenfiz hizmeti görseli' : language === 'en' ? 'Recognition and Enforcement service image' : 'Anerkennung und Vollstreckung Dienstleistungsbild'} width={600} height={400} loading="lazy" decoding="async" className="w-full h-full object-cover opacity-60" />
                   <div className="absolute inset-0 bg-gradient-to-t from-[#1C3829] via-[#1C3829]/70 to-transparent" />
                 </div>
 
@@ -108,10 +108,10 @@ export function PracticeAreas() {
                     })()}
                   </div>
                   <h3 className="font-serif text-3xl md:text-4xl text-white md:text-[#1C3829] mb-6">
-                    {language === "tr" ? tanima.titleTR : tanima.title}
+                    {language === "tr" ? tanima.titleTR : language === "en" ? (tanima as any).titleEN ?? tanima.title : tanima.title}
                   </h3>
                   <p className="font-sans text-[15px] text-white/90 md:text-[#6a6a6a] leading-relaxed font-light max-w-2xl">
-                    {language === "tr" ? tanima.description : tanima.descriptionDE}
+                    {language === "tr" ? tanima.description : language === "en" ? (tanima as any).descriptionEN ?? tanima.descriptionDE : tanima.descriptionDE}
                   </p>
                   <div className="absolute bottom-10 right-10 text-white md:text-[#1C3829] opacity-0 group-hover:opacity-100 transition-all duration-500 group-hover:translate-x-1">
                     <ArrowRight size={20} aria-hidden="true" />
@@ -133,10 +133,10 @@ export function PracticeAreas() {
 
                 <div className="relative z-10">
                   <h3 className="font-serif text-xl text-white md:text-[#1C3829] mb-4">
-                    {language === "tr" ? migrations.titleTR : migrations.title}
+                    {language === "tr" ? migrations.titleTR : language === "en" ? (migrations as any).titleEN ?? migrations.title : migrations.title}
                   </h3>
                   <p className="font-sans text-[13px] text-white/90 md:text-[#6a6a6a] leading-relaxed font-light line-clamp-4">
-                    {language === "tr" ? migrations.description : migrations.descriptionDE}
+                    {language === "tr" ? migrations.description : language === "en" ? (migrations as any).descriptionEN ?? migrations.descriptionDE : migrations.descriptionDE}
                   </p>
                   <div className="mt-6 text-white md:text-[#1C3829] group-hover:text-[#B8963E] transition-all duration-500 group-hover:translate-x-1">
                     <ArrowRight size={18} strokeWidth={1} aria-hidden="true" />
@@ -158,10 +158,10 @@ export function PracticeAreas() {
 
                 <div className="relative z-10">
                   <h3 className="font-serif text-xl text-white md:text-[#1C3829] mb-4">
-                    {language === "tr" ? erb.titleTR : erb.title}
+                    {language === "tr" ? erb.titleTR : language === "en" ? (erb as any).titleEN ?? erb.title : erb.title}
                   </h3>
                   <p className="font-sans text-[13px] text-white/90 md:text-[#6a6a6a] leading-relaxed font-light line-clamp-4">
-                    {language === "tr" ? erb.description : erb.descriptionDE}
+                    {language === "tr" ? erb.description : language === "en" ? (erb as any).descriptionEN ?? erb.descriptionDE : erb.descriptionDE}
                   </p>
                   <div className="mt-6 text-white md:text-[#1C3829] group-hover:text-[#B8963E] transition-all duration-500 group-hover:translate-x-1">
                     <ArrowRight size={18} strokeWidth={1} aria-hidden="true" />
@@ -183,10 +183,10 @@ export function PracticeAreas() {
 
                 <div className="relative z-10">
                   <h3 className="font-serif text-xl text-white md:text-[#1C3829] mb-4">
-                    {language === "tr" ? sorge.titleTR : sorge.title}
+                    {language === "tr" ? sorge.titleTR : language === "en" ? (sorge as any).titleEN ?? sorge.title : sorge.title}
                   </h3>
                   <p className="font-sans text-[13px] text-white/90 md:text-[#6a6a6a] leading-relaxed font-light line-clamp-4">
-                    {language === "tr" ? sorge.description : sorge.descriptionDE}
+                    {language === "tr" ? sorge.description : language === "en" ? (sorge as any).descriptionEN ?? sorge.descriptionDE : sorge.descriptionDE}
                   </p>
                   <div className="mt-6 text-white md:text-[#1C3829] group-hover:text-[#B8963E] transition-all duration-500 group-hover:translate-x-1">
                     <ArrowRight size={18} strokeWidth={1} aria-hidden="true" />
@@ -217,10 +217,10 @@ export function PracticeAreas() {
 
                 <div className="relative z-10">
                   <h3 className="font-serif text-2xl md:text-3xl text-white mb-6">
-                    {language === "tr" ? straf.titleTR : straf.title}
+                    {language === "tr" ? straf.titleTR : language === "en" ? (straf as any).titleEN ?? straf.title : straf.title}
                   </h3>
                   <p className="font-sans text-[14px] text-white/70 leading-relaxed font-light max-w-md">
-                    {language === "tr" ? straf.description : straf.descriptionDE}
+                    {language === "tr" ? straf.description : language === "en" ? (straf as any).descriptionEN ?? straf.descriptionDE : straf.descriptionDE}
                   </p>
                   <div className="mt-8 inline-flex items-center gap-3 text-[#B8963E] font-sans text-[9px] font-bold tracking-widest uppercase hover:text-white transition-all duration-500 group-hover:translate-x-1">
                     {t("practice_view_detail")} <ArrowRight size={14} aria-hidden="true" />

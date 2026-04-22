@@ -129,6 +129,13 @@ export default defineConfig({
         '/de/blog/tuerkischer-anwalt-mannheim-erstberatung', '/tr/blog/mannheim-turk-avukat-ilk-gorusme',
         '/de/datenschutz', '/tr/gizlilik-politikasi',
         '/de/impressum', '/tr/yasal-bilgiler',
+         // English routes
+        '/en', '/en/about', '/en/services', '/en/blog',
+        '/en/services/familienrecht', '/en/services/vollmacht-apostille',
+        '/en/services/migrationsrecht', '/en/services/strafrecht',
+        '/en/services/tanima-ve-tenfiz', '/en/services/mavi-kart',
+        '/en/services/icra-ve-iflas', '/en/services/erbrecht',
+        '/en/services/sorgerecht', '/en/services/immobilienrecht',
       ],
       renderer: '@prerenderer/renderer-puppeteer',
       rendererOptions: {

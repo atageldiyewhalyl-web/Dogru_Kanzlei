@@ -1,4 +1,136 @@
 export const translations = {
+  en: {
+    // Navigation
+    nav_home: "Home",
+    nav_about: "About",
+    nav_services: "Services",
+    nav_why_us: "Why Us?",
+    nav_blog: "Blog",
+    nav_contact: "Contact",
+    nav_cta: "Get Consultation",
+
+    // Hero Section
+    hero_title_pre: "Avukat",
+    hero_title_main: "Hasan Doğru",
+    hero_subtitle: "Turkish Law Specialist",
+    hero_description: "Looking for a qualified legal advisor who bridges the German and Turkish legal systems? As a specialized Avukat, I support you in complex cross-border legal matters with expert knowledge and years of experience.",
+    hero_cta_primary: "Get Advice Now",
+    hero_cta_secondary: "Our Services",
+
+    // Stats Card
+    stats_years_title: "15 Years of Experience",
+    stats_years_subtitle: "Built on Trust and Expertise",
+
+    // Lawyer Card
+    lawyer_role: "Turkish Law Specialist",
+
+    // Service Teasers
+    service_01_title: "Cross-Border Law",
+    service_01_subtitle: "Germany – Turkey",
+    service_02_title: "Corporate Advisory",
+    service_02_subtitle: "Commercial & Corporate Law",
+    service_03_title: "Effective Representation",
+    service_03_subtitle: "Authoritative Advocacy",
+
+    // Why Us
+    why_us_badge: "Why Us?",
+    why_us_title: "Why",
+    why_us_subtitle: "DOĞRU KANZLEİ?",
+    why_us_description: "You live in Germany — your legal matters are in Turkey. We are present on both sides. Here is why:",
+    why_us_point_01_title: "Digital Access to Turkish Courts",
+    why_us_point_01_desc: "As an Avukat registered in the UYAP system, I manage your Turkish legal proceedings in real time from Germany. Court hearings, document tracking, case status — everything handled remotely on your behalf. You never need to travel to Turkey in person.",
+    why_us_point_02_title: "Dual Bar Admission",
+    why_us_point_02_desc: "As a member of both the Ankara Bar Association and the Karlsruhe Bar Association (§207 BRAO), I represent you directly before Turkish courts — without intermediaries or third-party partners. While other firms rely on external lawyers in Turkey, I act myself. This saves time, costs, and communication losses.",
+    why_us_point_03_title: "70+ Google Reviews · 5.0 Stars",
+    why_us_point_03_desc: "Over 70 clients have shared their experiences — with a perfect score of 5.0 out of 5 stars. This is no coincidence; it is the result of consistent, personal, and results-oriented work. See for yourself.",
+    why_us_point_04_title: "Office in Ankara",
+    why_us_point_04_desc: "In addition to our office in Germany, we have a real office in Ankara. This means direct access to Turkish courts, notaries, and authorities — and the ability to act quickly on-site when it matters. No outsourcing. No detours.",
+
+    // About Section
+    about_badge: "ABOUT US",
+    about_title: "About Me",
+    about_subtitle: "Avukat Hasan Doğru",
+    about_p1: "Before entering the legal profession, I spent nearly a decade in the Turkish security services — in an operational special unit that demanded the highest discipline, resilience, and a deep understanding of the Turkish legal system. Those years shaped me: I learned to act precisely under pressure, to analyze complex situations rapidly, and to take responsibility for others. I bring exactly that to every case I handle today.",
+    about_p2: "Even during my active service I began my studies in parallel — first Public Administration at Anadolu University, then Law (LL.B.) at Cyprus International University. After being admitted as an Avukat at the Ankara Bar Association (Ankara Barosu, Registration No. 47068), I relocated to Germany.",
+    about_p3: "Since registering with the Karlsruhe Bar Association under §207 BRAO, I advise and represent clients from our offices in Mannheim and Ankara — exclusively in Turkish law and international law. Directly, personally, without intermediaries.",
+    about_p4: "What distinguishes me: through my dual admission, I am authorized to represent clients directly before Turkish courts and authorities — without my clients needing to travel to Turkey. Over 70 Google reviews with 5.0 stars reflect the trust my clients place in me every day.",
+    about_cred_01: "Member of Ankara Bar Association",
+    about_cred_02: "Karlsruhe Bar Association — §207 BRAO",
+    about_cred_03: "Direct Representation Before Turkish Courts",
+    about_cred_04: "Offices in Mannheim & Ankara",
+    about_signature_role: "Founder & Principal",
+    about_press_badge: "PRESS",
+    about_press_title: "In the Press",
+    about_press_subtitle: "Doğru Kanzlei",
+    about_press_body: "A press feature on the professional journey of Avukat Hasan Doğru and the opening of Doğru Kanzlei — the first Turkish-law specialist firm in the Rhine-Neckar region.",
+    about_newsletter_alt: "Press clipping — Avukat Hasan Doğru and the opening of Doğru Kanzlei",
+
+    // Practice Areas
+    practice_badge: "Our Areas of Expertise",
+    practice_title: "Comprehensive Legal",
+    practice_subtitle: "Advice",
+    practice_view_all: "VIEW ALL",
+    practice_view_detail: "VIEW DETAILS",
+
+    // Contact Section
+    contact_badge: "Contact",
+    contact_title: "Get in",
+    contact_subtitle: "Touch",
+    contact_description: "Contact us for a professional legal assessment of your case. We analyze your situation and show you the safest path forward.",
+    contact_form_title: "Consultation Request",
+    contact_form_name: "Full Name *",
+    contact_form_email: "Email *",
+    contact_form_phone: "Phone",
+    contact_form_area: "Legal Area",
+    contact_form_area_placeholder: "Please select...",
+    contact_form_message: "Your Message *",
+    contact_form_submit: "Send Message",
+    contact_success_title: "Message Received",
+    contact_success_p: "We will get back to you as soon as possible. Thank you.",
+    contact_office_hours_tr: "Mon–Fri: 09:00 – 18:00",
+    contact_office_hours_de: "Mon–Sat: 09:00 – 18:00",
+    contact_languages_badge: "Service Languages",
+    contact_calendly_btn: "Book Appointment",
+    contact_whatsapp_btn: "Contact via WhatsApp",
+    contact_direct_title: "Direct Contact",
+    contact_direct_p: "Reach us directly or schedule a call at a time that suits you.",
+
+    // Testimonials
+    testimonials_badge: "Client Reviews",
+    testimonials_title: "What Our",
+    testimonials_subtitle: "Clients Say",
+    testimonial_1_name: "Hatice Kul",
+    testimonial_1_area: "Recognition & Enforcement",
+    testimonial_1_text: "I would like to sincerely thank Mr. Doğru for his outstanding support in my Tanıma ve Tenfiz case. From the very beginning I felt extremely well taken care of. I particularly appreciate his friendly, respectful and understanding manner. He gives confidence in difficult situations.",
+    testimonial_2_name: "İnci Şen",
+    testimonial_2_area: "Turkish Law",
+    testimonial_2_text: "Top law firm, highly recommended! A competent, technically proficient and empathetic Avukat who supported me extremely successfully in two proceedings in Turkey. Many thanks for the excellent work!",
+    testimonial_3_name: "Tuğçe Garip",
+    testimonial_3_area: "International Law",
+    testimonial_3_text: "Mr. Hasan is an Avukat who truly does his job brilliantly. He listened attentively and provided very detailed information about both the Turkish and German aspects of my case with his knowledge and experience.",
+    testimonial_4_name: "Abdi Durna",
+    testimonial_4_area: "General Advisory",
+    testimonial_4_text: "One of the best lawyers I have ever met. Very kind and friendly, works with great precision. Simply the best!",
+    testimonial_5_name: "Erkan Yerlii",
+    testimonial_5_area: "Advisory",
+    testimonial_5_text: "For the first time I experienced a lawyer who is not profit-driven but genuinely wants to help. Mr. Hasan's approach to solutions and his promptness are commendable. Definitely recommended.",
+    testimonial_6_name: "Mirsat Şahin",
+    testimonial_6_area: "Citizenship & Turkish Law",
+    testimonial_6_text: "During my time in Germany he helped me a great deal with both my cases in Turkey and legal matters here. I owe him sincere gratitude.",
+
+    // Blog Section
+    blog_badge: "Blog & Updates",
+    blog_title: "Legal Developments",
+    blog_subtitle: "and Articles",
+    blog_read_more: "Read More",
+
+    // Footer
+    footer_description: "Your legal bridge between Germany and Turkey. Professional advice with over 15 years of experience.",
+    footer_quick_links: "Quick Links",
+    footer_contact_info: "Contact Information",
+    footer_legal: "Legal",
+    footer_rights: "All rights reserved."
+  },
   tr: {
     // Navigation
     nav_home: "Ana Sayfa",
@@ -62,6 +194,8 @@ export const translations = {
     about_press_badge: "BASINDA BİZ",
     about_press_title: "Haberlerde",
     about_press_subtitle: "Doğru Kanzlei",
+    about_press_body: "Avukat Hasan Doğru'nun profesyonel yolculuğu ve Doğru Kanzlei'nin büro açılışına dair basında yer alan haber kupürü.",
+    about_newsletter_alt: "Haber bülteni kupürü — Avukat Hasan Doğru ve Doğru Kanzlei büro açılışı haberi",
 
     // Practice Areas
     practice_badge: "Uzmanlık Alanlarımız",
@@ -192,6 +326,8 @@ export const translations = {
     about_press_badge: "PRESSE",
     about_press_title: "In der Presse",
     about_press_subtitle: "Doğru Kanzlei",
+    about_press_body: "Ein Pressebericht über den professionellen Werdegang von Avukat Hasan Doğru und die Eröffnung der Doğru Kanzlei — der ersten auf türkisches Recht spezialisierten Kanzlei im Rhein-Neckar-Raum.",
+    about_newsletter_alt: "Zeitungsartikel — Avukat Hasan Doğru und die Eröffnung der Doğru Kanzlei",
 
     // Practice Areas
     practice_badge: "Unsere Fachgebiete",

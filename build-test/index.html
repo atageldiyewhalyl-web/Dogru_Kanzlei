@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="de">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Critical Path Optimizations -->
+    <!-- [POST_BUILD_INJECT_PRELOADS] -->
+    
+    <!-- CSS is loaded asynchronously by the postBuildAdjustments plugin at build time.
+         In dev mode, Vite injects CSS normally. -->
+
+    <!-- Primary Meta Tags (overridden dynamically per page by useSEO hook) -->
+    <title>Türk Avukat Mannheim | Avukat Mannheim | Avukat Hasan Doğru</title>
+    <meta name="description" content="Türkischer Anwalt in Mannheim für türkisches Recht. Avukat Hasan Doğru berät türkischstämmige Familien in Mannheim zu Scheidung, Erbrecht und türkischem Familienrecht — ohne Reise in die Türkei." />
+    <meta name="robots" content="index, follow" />
+
+    <!-- Hreflang (defaults, overridden per page) -->
+    <link rel="alternate" hreflang="de" href="https://www.hasandogru.de/de" />
+    <link rel="alternate" hreflang="de-DE" href="https://www.hasandogru.de/de" />
+    <link rel="alternate" hreflang="de-CH" href="https://www.hasandogru.de/de" />
+    <link rel="alternate" hreflang="de-AT" href="https://www.hasandogru.de/de" />
+    <link rel="alternate" hreflang="tr" href="https://www.hasandogru.de/tr" />
+    <link rel="alternate" hreflang="x-default" href="https://www.hasandogru.de/de" />
+
+    <!-- Canonical (overridden per page) -->
+    <link rel="canonical" href="https://www.hasandogru.de/de" />
+
+    <!-- Open Graph -->
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="Doğru Kanzlei" />
+    <meta property="og:title" content="Türk Avukat Mannheim | Avukat Mannheim | Avukat Hasan Doğru" />
+    <meta property="og:description" content="Türkischer Anwalt in Mannheim für türkisches Recht. Avukat Hasan Doğru berät türkischstämmige Familien in Mannheim zu Scheidung, Erbrecht und türkischem Familienrecht — ohne Reise in die Türkei." />
+    <meta property="og:url" content="https://www.hasandogru.de" />
+    <meta property="og:locale" content="de_DE" />
+    <meta property="og:locale:alternate" content="tr_TR" />
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Türk Avukat Mannheim | Avukat Mannheim | Avukat Hasan Doğru" />
+    <meta name="twitter:description" content="Türkischer Anwalt in Mannheim für türkisches Recht. Avukat Hasan Doğru berät türkischstämmige Familien in Mannheim zu Scheidung, Erbrecht und türkischem Familienrecht — ohne Reise in die Türkei." />
+
+    <!-- Geo Tags (Local SEO) -->
+    <meta name="geo.region" content="DE" />
+    <meta name="geo.placename" content="Mannheim, Deutschland" />
+
+    <!-- Resource Hints -->
+    <link rel="preload" href="/assets/Inter-CMLeEau1.woff2" as="font" type="font/woff2" crossorigin="anonymous" />
+    <link rel="preload" href="/assets/CormorantGaramond-Regular-n41RAqwj.woff2" as="font" type="font/woff2" crossorigin="anonymous" />
+    
+    <!-- Critical CSS: inline only safe, non-layout-breaking styles to ensure the page background 
+         renders immediately without causing layout shifts (CLS). -->
+    <style>
+      :root { --brand-green: #1C3829; --brand-gold: #B8963E; }
+      body { background: var(--brand-green); margin: 0; padding: 0; font-family: sans-serif; overflow-x: hidden; }
+      #root { min-height: 100vh; background: var(--brand-green); }
+      header { position: fixed; top: 0; width: 100%; height: 80px; z-index: 100; transition: background 0.3s; }
+    </style>
+
+    <script>
+      // Detection script to fix invisible content in static snapshots
+      if (navigator.userAgent.includes('HeadlessChrome') || window.__PRERENDER__) {
+        const style = document.createElement('style');
+        style.textContent = `
+          /* Target Framer Motion elements stuck at opacity: 0 during hydration */
+          [style*="opacity: 0"], [style*="opacity:0"], [style*="opacity: 0;"], [style*="opacity:0;"] { 
+            opacity: 1 !important; 
+            visibility: visible !important;
+          }
+          /* Snap all animations to final state and disable transitions for the static shutter */
+          * { 
+            transition: none !important; 
+            animation: none !important; 
+          }
+        `;
+        document.head.appendChild(style);
+      }
+    </script>
+    <script type="module" crossorigin src="/assets/index-BzAxjlha.js"></script>
+    <link rel="stylesheet" crossorigin href="/assets/index-CNFGlfcf.css">
+  </head>
+
+  <body>
+    <div id="root"></div>
+  </body>
+</html>

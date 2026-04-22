@@ -378,7 +378,7 @@ export function Footer() {
               onMouseEnter={(e) => ((e.target as HTMLElement).style.color = "rgba(255,255,255,0.4)")}
               onMouseLeave={(e) => ((e.target as HTMLElement).style.color = "rgba(255,255,255,0.2)")}
             >
-              {language === 'de' ? 'Cookie-Einstellungen' : 'Çerez Ayarları'}
+              {language === 'de' ? 'Cookie-Einstellungen' : language === 'tr' ? 'Çerez Ayarları' : 'Cookie Settings'}
             </button>
           </div>
         </div>

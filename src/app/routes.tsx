@@ -76,10 +76,8 @@ export const router = createBrowserRouter([
   { path: "/about/*", loader: () => redirect("/de/ueber-uns") },
   { path: "/contact", loader: () => redirect("/de/#iletisim") },
   { path: "/contact-2", loader: () => redirect("/de/#iletisim") },
-  { path: "/en/about", loader: () => redirect("/de/ueber-uns") },
-  { path: "/en/service", loader: () => redirect("/de/leistungen") },
-  { path: "/en/blog", loader: () => redirect("/de/blog") },
-  { path: "/en/blog/*", loader: () => redirect("/de/blog") },
+  // /en/about, /en/blog now handled by the /en Layout route group — no redirect needed
+  { path: "/en/service", loader: () => redirect("/de/leistungen") }, // legacy typo — different from /en/services
   { path: "/en/impressum", loader: () => redirect("/de/impressum") },
   { path: "/en/contact-2", loader: () => redirect("/de/#iletisim") },
   { path: "/tr/contact-2", loader: () => redirect("/tr/#iletisim") },
@@ -117,6 +115,24 @@ export const router = createBrowserRouter([
   { path: "/feed", loader: () => redirect("/de/blog") },
   { path: "/comments/feed", loader: () => redirect("/de/blog") },
   { path: "/en/contact", loader: () => redirect("/de/#iletisim") },
+
+  // === English routes ===
+  {
+    path: "/en",
+    Component: Layout,
+    children: [
+      { index: true, Component: Home },
+      { path: "services", Component: Loadable(Hizmetler) },
+      { path: "services/:id", Component: Loadable(ServiceDetail) },
+      { path: "about", Component: Loadable(AboutPage) },
+      { path: "blog", Component: Loadable(BlogPage) },
+      // Blog detail: no English content yet — redirect to German equivalent
+      { path: "blog/:slug", loader: ({ params }: any) => redirect(`/de/blog/${params.slug}`) },
+      // Legal pages redirect to German equivalents
+      { path: "privacy", loader: () => redirect("/de/datenschutz") },
+      { path: "legal", loader: () => redirect("/de/impressum") },
+    ],
+  },
 
   // === German routes ===
   {

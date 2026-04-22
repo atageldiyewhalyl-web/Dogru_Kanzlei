@@ -13,21 +13,30 @@ export function Hizmetler() {
   const { language, t, paths } = useLanguage();
   usePrerender();
 
-  const servicesPath = language === 'de' ? 'leistungen' : 'hizmetler';
+  const servicesPath = language === 'de' ? 'leistungen' : language === 'tr' ? 'hizmetler' : 'services';
 
   useSEO({
     title: language === 'de'
       ? 'Unsere Leistungen | Avukat Hasan Doğru'
-      : 'Hizmetlerimiz | Avukat Hasan Doğru',
+      : language === 'tr'
+        ? 'Hizmetlerimiz | Avukat Hasan Doğru'
+        : 'Our Legal Services | Avukat Hasan Doğru',
     description: language === 'de'
       ? 'Rechtsberatung in Familienrecht, Erbrecht, Strafrecht und internationalem Recht. Kanzlei Doğru in Mannheim und Ankara.'
-      : 'Aile hukuku, miras hukuku, ceza hukuku ve uluslararası hukuk alanlarında hukuki danışmanlık. Mannheim ve Ankara\'da Doğru Kanzlei.',
+      : language === 'tr'
+        ? 'Aile hukuku, miras hukuku, ceza hukuku ve uluslararası hukuk alanlarında hukuki danışmanlık. Mannheim ve Ankara\'da Doğru Kanzlei.'
+        : 'Legal advice in Turkish family law, inheritance law, criminal law and cross-border matters. Doğru Kanzlei in Mannheim and Ankara.',
     lang: language,
     canonical: `${SITE_URL}/${language}/${servicesPath}`,
     alternateLang: {
-      lang: language === 'de' ? 'tr' : 'de',
-      href: `${SITE_URL}/${language === 'de' ? 'tr/hizmetler' : 'de/leistungen'}`,
+      lang: language === 'de' ? 'tr' : language === 'tr' ? 'de' : 'de',
+      href: language === 'de'
+        ? `${SITE_URL}/tr/hizmetler`
+        : language === 'tr'
+          ? `${SITE_URL}/de/leistungen`
+          : `${SITE_URL}/de/leistungen`,
     },
+    xDefault: `${SITE_URL}/de/leistungen`,
   });
 
   return (
@@ -60,7 +69,9 @@ export function Hizmetler() {
           >
             {language === 'de'
               ? 'Umfassende rechtliche Beratung für Ihre Angelegenheiten in der Türkei — direkt aus Deutschland. Jeden Fall bewerten wir individuell und bieten die effektivste Lösung.'
-              : 'Türkiye\'deki hukuki sorunlarınız için Almanya\'dan kapsamlı danışmanlık sunuyoruz. Her davayı bireysel olarak değerlendiriyor, en etkin çözümü sağlıyoruz.'}
+              : language === 'tr'
+                ? 'Türkiye\'deki hukuki sorunlarınız için Almanya\'dan kapsamlı danışmanlık sunuyoruz. Her davayı bireysel olarak değerlendiriyor, en etkin çözümü sağlıyoruz.'
+                : 'Comprehensive legal advice for your Turkish law matters — directly from Germany. We assess every case individually and provide the most effective solution.'}
           </motion.p>
         </div>
       </div>
@@ -92,15 +103,15 @@ export function Hizmetler() {
 
                 {/* Category */}
                 <div className="font-sans text-[10px] font-bold tracking-[0.2em] text-[#7A5F20] uppercase mb-4">
-                  <span lang={language === 'tr' ? 'tr' : 'de'}>
-                    {language === 'de' ? service.title : service.titleTR}
+                  <span lang={language === 'tr' ? 'tr' : language === 'en' ? 'en' : 'de'}>
+                    {language === 'de' ? service.title : language === 'tr' ? service.titleTR : (service as any).titleEN ?? service.title}
                   </span>
                 </div>
 
                 {/* Title */}
                 <h3 className="font-serif text-[32px] md:text-[36px] text-[#1C3829] leading-tight mb-8">
-                  <span lang={language === 'tr' ? 'tr' : 'de'}>
-                    {language === 'de' ? service.title : service.titleTR}
+                  <span lang={language === 'tr' ? 'tr' : language === 'en' ? 'en' : 'de'}>
+                    {language === 'de' ? service.title : language === 'tr' ? service.titleTR : (service as any).titleEN ?? service.title}
                   </span>
                 </h3>
 
@@ -110,14 +121,14 @@ export function Hizmetler() {
                 {/* Description */}
                 <p className="font-sans text-[14px] text-[#6a6a6a] leading-relaxed font-light mb-10 line-clamp-3">
                   <span lang={language === 'tr' ? 'tr' : 'de'}>
-                    {language === 'de' ? service.descriptionDE : service.description}
+                    {language === 'de' ? service.descriptionDE : language === 'tr' ? service.description : (service as any).descriptionEN ?? service.descriptionDE}
                   </span>
                 </p>
 
                 {/* Details / Scope */}
                 <div className="font-sans text-[9px] font-medium tracking-[0.1em] text-[#aaa8a0] uppercase mb-10">
                   <span lang={language === 'tr' ? 'tr' : 'de'}>
-                    {language === 'de' ? service.detailDE : service.detail}
+                    {language === 'de' ? service.detailDE : language === 'tr' ? service.detail : (service as any).detailEN ?? service.detailDE}
                   </span>
                 </div>
 
@@ -143,14 +154,18 @@ export function Hizmetler() {
             <h2 className="font-serif text-3xl md:text-5xl text-white mb-8 leading-tight">
               {language === 'de' ? (
                 <>Grenzüberschreitende <br /> <em className="italic text-[#8B6E2A] font-normal">Rechtslösungen</em></>
-              ) : (
+              ) : language === 'tr' ? (
                 <><span lang="tr">Uluslararası Hukukta</span> <br /> <em className="italic text-[#8B6E2A] font-normal"><span lang="tr">Sınır Tanımayan Çözümler</span></em></>
+              ) : (
+                <>Cross-Border <br /> <em className="italic text-[#8B6E2A] font-normal">Legal Solutions</em></>
               )}
             </h2>
             <p className="font-sans text-white/50 text-lg mb-0 leading-relaxed font-light">
               {language === 'de'
                 ? 'Mit unseren Büros in Mannheim und Ankara bieten wir fachkundige Beratung in beiden Rechtssystemen.'
-                : <span lang="tr">'Mannheim ve Ankara ofislerimizle her iki ülkenin hukuk sisteminde uzman danışmanlık sağlıyoruz.'</span>}
+                : language === 'tr'
+                  ? <span lang="tr">'Mannheim ve Ankara ofislerimizle her iki ülkenin hukuk sisteminde uzman danışmanlık sağlıyoruz.'</span>
+                  : 'With offices in Mannheim and Ankara, we provide expert advice in both legal systems.'}
             </p>
           </div>
           <div className="relative z-10 flex-shrink-0">
@@ -158,7 +173,7 @@ export function Hizmetler() {
               to={paths.contact}
               className="inline-flex items-center gap-4 bg-[#8B6E2A] text-white font-sans text-[11px] font-bold tracking-[0.2em] uppercase px-12 py-6 hover:bg-[#7A5F20] transition-all"
             >
-              {language === 'de' ? 'JETZT BERATEN LASSEN' : <span lang="tr">ŞİMDİ DANIŞIN</span>} <ArrowRight size={16} />
+              {language === 'de' ? 'JETZT BERATEN LASSEN' : language === 'tr' ? <span lang="tr">ŞİMDİ DANIŞIN</span> : 'GET ADVICE NOW'} <ArrowRight size={16} />
             </Link>
           </div>
         </div>

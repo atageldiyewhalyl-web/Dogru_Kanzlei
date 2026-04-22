@@ -8,7 +8,7 @@ interface SEOConfig {
   canonical?: string;
   ogImage?: string;
   ogType?: string;
-  lang: 'de' | 'tr';
+  lang: 'de' | 'tr' | 'en';
   alternateLang?: { lang: string; href: string };
   xDefault?: string;
   noindex?: boolean;
@@ -62,8 +62,14 @@ export function useSEO(config: SEOConfig) {
     setMetaTag('og:description', config.description);
     setMetaTag('og:url', canonicalUrl);
     setMetaTag('og:type', config.ogType || 'website');
-    setMetaTag('og:locale', config.lang === 'de' ? 'de_DE' : 'tr_TR');
-    setMetaTag('og:locale:alternate', config.lang === 'de' ? 'tr_TR' : 'de_DE');
+    const ogLocale = config.lang === 'de' ? 'de_DE' : config.lang === 'tr' ? 'tr_TR' : 'en_US';
+    setMetaTag('og:locale', ogLocale);
+    // Set alternates for the other two locales
+    if (config.lang === 'en') {
+      setMetaTag('og:locale:alternate', 'de_DE');
+    } else {
+      setMetaTag('og:locale:alternate', config.lang === 'de' ? 'tr_TR' : 'de_DE');
+    }
     setMetaTag('og:site_name', 'Doğru Kanzlei');
     const defaultOgImage = `${SITE_URL}/logo.png`;
     const finalOgImage = config.ogImage || defaultOgImage;
@@ -89,7 +95,12 @@ export function useSEO(config: SEOConfig) {
       setLinkTag('alternate', canonicalUrl, { hreflang: 'de-AT' });
     }
 
-    // x-default hreflang (always points to German version)
+    // English hreflang (no region-specific variants)
+    if (config.lang === 'en') {
+      setLinkTag('alternate', canonicalUrl, { hreflang: 'en' });
+    }
+
+    // x-default hreflang (always points to German /de version)
     const xDefaultUrl = config.xDefault || (config.lang === 'de' ? canonicalUrl : config.alternateLang?.href);
     if (xDefaultUrl) {
       setLinkTag('alternate', xDefaultUrl, { hreflang: 'x-default' });

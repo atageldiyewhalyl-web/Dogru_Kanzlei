@@ -265,7 +265,7 @@ export function About() {
                 maxWidth: 650,
               }}
             >
-              {t("about_p1").split("—")[0]}... {t("about_signature_role")} <span lang="tr">Hasan Doğru</span>'nun profesyonel yolculuğu ve büro açılışına dair basında yer alan haber kupürü.
+              {t("about_press_body")}
             </p>
           </div>
 
@@ -290,7 +290,7 @@ export function About() {
             >
               <img
                 src={newsletterImage}
-                alt="Haber bülteni kupürü - Avukat Hasan Doğru ve Doğru Kanzlei büro açılışı haberi"
+                alt={t("about_newsletter_alt")}
                 style={{
                   width: "100%",
                   height: "auto",

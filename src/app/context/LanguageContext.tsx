@@ -1,10 +1,10 @@
-import React, { createContext, useContext, useMemo, useEffect } from 'react';
+import React, { createContext, useContext, useMemo } from 'react';
 import { useNavigate, useLocation } from 'react-router';
 import { translations, TranslationKeys } from '../data/translations';
 import { services } from '../data/services';
 import { blogPosts } from '../data/blogPosts';
 
-type Language = 'tr' | 'de';
+type Language = 'tr' | 'de' | 'en';
 
 interface LanguageContextType {
   language: Language;
@@ -33,7 +33,7 @@ const LanguageContext = createContext<LanguageContextType | undefined>(undefined
 function translatePath(path: string, fromLang: Language, toLang: Language): string {
   let newPath = path.replace(`/${fromLang}`, `/${toLang}`);
 
-  // 1. Static base segments
+  // 1. Static base segments — all 6 direction pairs
   if (fromLang === 'tr' && toLang === 'de') {
     newPath = newPath.replace('/hizmetler', '/leistungen');
     newPath = newPath.replace('/gizlilik-politikasi', '/datenschutz');
@@ -44,14 +44,34 @@ function translatePath(path: string, fromLang: Language, toLang: Language): stri
     newPath = newPath.replace('/datenschutz', '/gizlilik-politikasi');
     newPath = newPath.replace('/impressum', '/yasal-bilgiler');
     newPath = newPath.replace('/ueber-uns', '/hakkimizda');
+  } else if (fromLang === 'en' && toLang === 'de') {
+    newPath = newPath.replace('/services', '/leistungen');
+    newPath = newPath.replace('/privacy', '/datenschutz');
+    newPath = newPath.replace('/legal', '/impressum');
+    newPath = newPath.replace('/about', '/ueber-uns');
+  } else if (fromLang === 'en' && toLang === 'tr') {
+    newPath = newPath.replace('/services', '/hizmetler');
+    newPath = newPath.replace('/privacy', '/gizlilik-politikasi');
+    newPath = newPath.replace('/legal', '/yasal-bilgiler');
+    newPath = newPath.replace('/about', '/hakkimizda');
+  } else if (fromLang === 'de' && toLang === 'en') {
+    newPath = newPath.replace('/leistungen', '/services');
+    newPath = newPath.replace('/datenschutz', '/privacy');
+    newPath = newPath.replace('/impressum', '/legal');
+    newPath = newPath.replace('/ueber-uns', '/about');
+  } else if (fromLang === 'tr' && toLang === 'en') {
+    newPath = newPath.replace('/hizmetler', '/services');
+    newPath = newPath.replace('/gizlilik-politikasi', '/privacy');
+    newPath = newPath.replace('/yasal-bilgiler', '/legal');
+    newPath = newPath.replace('/hakkimizda', '/about');
   }
 
-  // 2. Dynamic slugs (Services)
-  const servicesSegment = toLang === 'de' ? '/leistungen/' : '/hizmetler/';
-  if (newPath.includes(servicesSegment)) {
+  // 2. Dynamic slugs (Services) — only translate for de/tr pairs
+  const servicesSegment = toLang === 'de' ? '/leistungen/' : toLang === 'tr' ? '/hizmetler/' : null;
+  if (servicesSegment && newPath.includes(servicesSegment)) {
     const slug = newPath.split(servicesSegment)[1]?.split(/[?#]/)[0];
     if (slug) {
-      const service = services.find(s => 
+      const service = services.find(s =>
         fromLang === 'de' ? s.slugDE === slug : s.slugTR === slug
       );
       if (service) {
@@ -66,7 +86,7 @@ function translatePath(path: string, fromLang: Language, toLang: Language): stri
   if (newPath.includes(blogSegment)) {
     const slug = newPath.split(blogSegment)[1]?.split(/[?#]/)[0];
     if (slug) {
-      const post = blogPosts.find(p => 
+      const post = blogPosts.find(p =>
         fromLang === 'de' ? p.slugDE === slug : p.slugTR === slug
       );
       if (post) {
@@ -95,25 +115,48 @@ export const LanguageProvider: React.FC<{ language: Language; children: React.Re
 
   const paths: LocalePaths = useMemo(() => {
     const prefix = `/${language}`;
-    const servicesSegment = language === 'de' ? 'leistungen' : 'hizmetler';
+    const servicesSegment = language === 'de' ? 'leistungen' : language === 'tr' ? 'hizmetler' : 'services';
 
     return {
       home: prefix,
       services: `${prefix}/${servicesSegment}`,
       service: (id: string) => {
         const s = services.find(serv => serv.id === id);
+        if (language === 'en') {
+          // Use DE slug for English routes (same slug, different prefix)
+          const slug = s ? s.slugDE : id;
+          return `/en/services/${slug}`;
+        }
         const slug = s ? (language === 'de' ? s.slugDE : s.slugTR) : id;
         return `${prefix}/${servicesSegment}/${slug}`;
       },
       blog: `${prefix}/blog`,
       blogPost: (origSlug: string) => {
+        if (language === 'en') {
+          // English blog detail pages redirect to German — use DE slug
+          const p = blogPosts.find(post => post.slug === origSlug);
+          const slug = p ? p.slugDE : origSlug;
+          return `/de/blog/${slug}`;
+        }
         const p = blogPosts.find(post => post.slug === origSlug);
         const slug = p ? (language === 'de' ? p.slugDE : p.slugTR) : origSlug;
         return `${prefix}/blog/${slug}`;
       },
-      datenschutz: language === 'de' ? `${prefix}/datenschutz` : `${prefix}/gizlilik-politikasi`,
-      impressum: language === 'de' ? `${prefix}/impressum` : `${prefix}/yasal-bilgiler`,
-      about: language === 'de' ? `${prefix}/ueber-uns` : `${prefix}/hakkimizda`,
+      datenschutz: language === 'de'
+        ? `${prefix}/datenschutz`
+        : language === 'tr'
+          ? `${prefix}/gizlilik-politikasi`
+          : `/de/datenschutz`,
+      impressum: language === 'de'
+        ? `${prefix}/impressum`
+        : language === 'tr'
+          ? `${prefix}/yasal-bilgiler`
+          : `/de/impressum`,
+      about: language === 'de'
+        ? `${prefix}/ueber-uns`
+        : language === 'tr'
+          ? `${prefix}/hakkimizda`
+          : `${prefix}/about`,
       whyUs: `${prefix}/#neden-biz`,
       blogSection: `${prefix}/#blog`,
       contact: `${prefix}/#iletisim`,
