@@ -3,7 +3,7 @@ import { ArrowRight, Scale, Globe, FileText } from "lucide-react";
 import { useNavigate } from "react-router";
 import { useLanguage } from "../context/LanguageContext";
 
-const CALENDLY_URL = "https://calendly.com/hasand9366/30min";
+const WHATSAPP_URL = "https://wa.me/4917661221210";
 
 export function Hero() {
   const navigate = useNavigate();
@@ -84,7 +84,7 @@ export function Hero() {
           {/* CTA Buttons - Dark Green/Gold Blocks */}
           <div className="flex flex-wrap gap-5">
             <button 
-              onClick={() => window.open(CALENDLY_URL, "_blank")}
+              onClick={() => window.open(WHATSAPP_URL, "_blank")}
               aria-label={t("hero_cta_primary")}
               className="group relative overflow-hidden bg-[#8B6E2A] text-white font-sans text-[11px] font-bold tracking-[0.15em] uppercase px-10 py-5 transition-all hover:bg-[#7A5F20] flex items-center gap-3"
             >

@@ -4,7 +4,7 @@ import { Link, useLocation, useNavigate } from "react-router";
 import { useLanguage } from "../context/LanguageContext";
 import logoImage from "@/assets/logo.avif";
 
-const CALENDLY_URL = "https://calendly.com/hasand9366/30min";
+const WHATSAPP_URL = "https://wa.me/4917661221210";
 
 export function Navbar() {
   const [scrolled, setScrolled] = useState(false);
@@ -216,7 +216,7 @@ export function Navbar() {
           </div>
 
           <button
-            onClick={() => window.open(CALENDLY_URL, "_blank")}
+            onClick={() => window.open(WHATSAPP_URL, "_blank")}
             style={{
               fontFamily: "var(--font-sans)",
               fontSize: 10,
@@ -309,7 +309,7 @@ export function Navbar() {
             <p className="font-sans text-white mb-2">Avukat.hasandogru@outlook.de</p>
             <p className="font-sans text-white mb-8">+4917661221210</p>
             <button
-              onClick={() => window.open(CALENDLY_URL, "_blank")}
+              onClick={() => window.open(WHATSAPP_URL, "_blank")}
               className="w-full bg-[#8B6E2A] text-white font-sans text-xs font-bold tracking-[0.15em] uppercase py-5 text-center transition-colors hover:bg-[#7A5F20]"
             >
               {t("nav_cta")}

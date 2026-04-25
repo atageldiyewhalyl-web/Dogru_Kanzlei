@@ -87,10 +87,14 @@ function translatePath(path: string, fromLang: Language, toLang: Language): stri
     const slug = newPath.split(blogSegment)[1]?.split(/[?#]/)[0];
     if (slug) {
       const post = blogPosts.find(p =>
-        fromLang === 'de' ? p.slugDE === slug : p.slugTR === slug
+        fromLang === 'de' ? p.slugDE === slug : fromLang === 'tr' ? p.slugTR === slug : p.slugEN === slug
       );
       if (post) {
-        const newSlug = toLang === 'de' ? post.slugDE : post.slugTR;
+        const hasEnglishBlog = Boolean(post.slugEN && post.contentEN?.trim());
+        if (toLang === 'en' && !hasEnglishBlog) {
+          return '/en/blog';
+        }
+        const newSlug = toLang === 'de' ? post.slugDE : toLang === 'tr' ? post.slugTR : post.slugEN;
         newPath = newPath.replace(slug, newSlug);
       }
     }
@@ -132,14 +136,11 @@ export const LanguageProvider: React.FC<{ language: Language; children: React.Re
       },
       blog: `${prefix}/blog`,
       blogPost: (origSlug: string) => {
-        if (language === 'en') {
-          // English blog detail pages redirect to German — use DE slug
-          const p = blogPosts.find(post => post.slug === origSlug);
-          const slug = p ? p.slugDE : origSlug;
-          return `/de/blog/${slug}`;
-        }
         const p = blogPosts.find(post => post.slug === origSlug);
-        const slug = p ? (language === 'de' ? p.slugDE : p.slugTR) : origSlug;
+        if (language === 'en' && p && !(p.slugEN && p.contentEN?.trim())) {
+          return `${prefix}/blog`;
+        }
+        const slug = p ? (language === 'de' ? p.slugDE : language === 'tr' ? p.slugTR : p.slugEN) : origSlug;
         return `${prefix}/blog/${slug}`;
       },
       datenschutz: language === 'de'

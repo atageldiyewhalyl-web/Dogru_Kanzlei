@@ -9,19 +9,42 @@ import { FAQItem } from "../components/FAQItem";
 import { extractFaqsFromContent } from "../utils/schemaUtils";
 import { usePrerender } from "../hooks/usePrerender";
 
-const CALENDLY_URL = "https://calendly.com/hasand9366/30min";
+const WHATSAPP_URL = "https://wa.me/4917661221210";
 
 function processInlineStyles(text: string) {
-  const parts = text.split(/(\*\*.*?\*\*)/g);
-  return parts.map((part, i) => {
-    if (part.startsWith('**') && part.endsWith('**')) {
+  // First split by bold markers
+  const boldParts = text.split(/(\*\*.*?\*\*)/g);
+
+  return boldParts.map((boldPart, i) => {
+    if (boldPart.startsWith('**') && boldPart.endsWith('**')) {
       return (
-        <strong key={i} className="font-bold border-b border-[#B8963E]/20">
-          {part.slice(2, -2)}
+        <strong key={`bold-${i}`} className="font-bold border-b border-[#B8963E]/20">
+          {boldPart.slice(2, -2)}
         </strong>
       );
     }
-    return part;
+
+    // Now split the non-bold part by link markers [text](url)
+    const linkParts = boldPart.split(/(\[.*?\]\(.*?\))/g);
+
+    return linkParts.map((linkPart, j) => {
+      const linkMatch = linkPart.match(/^\[(.*?)\]\((.*?)\)$/);
+      if (linkMatch) {
+        const [, linkText, linkUrl] = linkMatch;
+        return (
+          <a
+            key={`link-${i}-${j}`}
+            href={linkUrl}
+            target={linkUrl.startsWith('/') ? "_self" : "_blank"}
+            rel={linkUrl.startsWith('/') ? "" : "noopener noreferrer"}
+            className="text-[#8B6E2A] hover:text-[#1C3829] underline decoration-[#8B6E2A]/30 underline-offset-4 transition-colors font-semibold"
+          >
+            {linkText}
+          </a>
+        );
+      }
+      return linkPart;
+    });
   });
 }
 
@@ -37,55 +60,138 @@ export function BlogPost() {
   });
 
   // Find post by localized slug or legacy slug
-  const post = blogPosts.find((p) => p.slugDE === slug || p.slugTR === slug || p.slug === slug);
+  const post = blogPosts.find((p) => p.slugDE === slug || p.slugTR === slug || p.slugEN === slug || p.slug === slug);
+  const hasEnglishContent = Boolean(post?.slugEN && post?.contentEN?.trim());
+  const isAvailable = Boolean(post && (language !== 'en' || hasEnglishContent));
 
   // Signal ready to prerenderer only if post is found
-  usePrerender(!!post);
+  usePrerender(isAvailable);
 
   const altLang = language === 'de' ? 'tr' : 'de';
+  const currentCategory = post ? (language === 'de' ? post.categoryDE : language === 'tr' ? post.category : post.categoryEN) : '';
+  const currentMetaTitle = post ? (language === 'de' ? post.metaTitleDE : language === 'tr' ? post.metaTitleTR : post.metaTitleEN) : undefined;
+  const currentSchemaHeadline = post ? (language === 'de' ? post.schemaHeadlineDE : language === 'tr' ? post.schemaHeadlineTR : post.schemaHeadlineEN) : undefined;
+  const currentPublishedAt = post
+    ? (language === 'de'
+      ? (post.publishedAtDE || post.publishedAt)
+      : language === 'tr'
+        ? (post.publishedAtTR || post.publishedAt)
+        : (post.publishedAtEN || post.publishedAt))
+    : undefined;
+  const currentModifiedAt = post
+    ? (language === 'de'
+      ? (post.modifiedAtDE || post.modifiedAt || currentPublishedAt)
+      : language === 'tr'
+        ? (post.modifiedAtTR || post.modifiedAt || currentPublishedAt)
+        : (post.modifiedAtEN || post.modifiedAt || currentPublishedAt))
+    : undefined;
+  const currentDescription = post
+    ? (language === 'de'
+      ? (post.metaDescriptionDE || post.excerptDE)
+      : language === 'tr'
+        ? (post.metaDescriptionTR || post.excerptTR)
+        : (post.metaDescriptionEN || post.excerptEN))
+    : '';
+  const currentImage = post?.slugTR === 'almanya-turkiye-alacak-tahsili-icra'
+    ? `${SITE_URL}/assets/debt_collection_law-BB5vtc8j.png`
+    : post?.slugTR === 'almanya-turkiye-miras-hukuku-rehberi'
+      ? `${SITE_URL}/assets/inheritance_fraud_law-BxjZQ9m1.png`
+      : post?.slugTR === 'veraset-ilami-nedir-nasil-alinir' && language !== 'tr'
+        ? `${SITE_URL}/assets/inheritance_fraud_law-BxjZQ9m1.png`
+      : post?.image;
+  const currentArticleAuthor = post?.slugTR === 'almanya-turkiye-alacak-tahsili-icra'
+    ? 'Av. Hasan Doğru'
+    : post?.slugTR === 'almanya-turkiye-miras-hukuku-rehberi'
+      ? 'Av. Hasan Doğru'
+      : post?.slugTR === 'veraset-ilami-nedir-nasil-alinir'
+        ? 'Av. Hasan Doğru'
+      : post?.slugTR === 'tanima-tenfiz-rehberi'
+        ? 'Av. Hasan Doğru'
+      : language === 'tr' ? 'Av. Hasan Doğru' : 'Hasan Doğru';
+  const currentArticleTags = post?.slugTR === 'almanya-turkiye-alacak-tahsili-icra'
+    ? language === 'de'
+      ? ['Forderungseinzug Türkei', 'Zwangsvollstreckung Türkei', 'Deutschland Türkei Recht']
+      : language === 'tr'
+        ? ['alacak tahsili', 'icra takibi', 'Almanya Türkiye hukuk']
+        : ['debt collection Turkey', 'enforce judgment Turkey', 'Turkish law Germany']
+    : post?.slugTR === 'almanya-turkiye-miras-hukuku-rehberi'
+      ? language === 'de'
+        ? ['Erbschaft Türkei', 'Türkisches Erbrecht', 'Erbschein Türkei', 'Nachlassspaltung']
+        : language === 'tr'
+          ? ['Miras Hukuku', 'Türkiye Almanya Miras', 'Veraset İlamı', 'Tenkis Davası', 'Muris Muvazaası']
+          : ['Turkish Inheritance', 'Turkish Inheritance Law', 'Inheriting Property Turkey', 'Turkish Probate']
+      : post?.slugTR === 'veraset-ilami-nedir-nasil-alinir'
+        ? language === 'de'
+          ? ['Erbschein Türkei', 'Veraset İlamı', 'Türkisches Erbrecht', 'Mavi Kart Erbschein']
+          : language === 'tr'
+          ? ['Veraset İlamı', 'Mirasçılık Belgesi', 'Miras Hukuku Almanya', 'Mavi Kart Miras']
+          : ['Turkish Inheritance Certificate', 'Veraset İlamı', 'Turkish Probate', 'Blue Card Inheritance']
+      : post?.slugTR === 'tanima-tenfiz-rehberi'
+        ? language === 'de'
+          ? ['Anerkennung Scheidung Türkei', 'Tanıma Tenfiz', 'Hinkende Ehe', '§ 107 FamFG']
+          : language === 'tr'
+            ? ['Tanıma Tenfiz', 'Almanya Boşanma Türkiye', 'MÖHUK', 'Yabancı Mahkeme Kararı']
+            : ['Recognition German Divorce Turkey', 'Tanıma Tenfiz', 'Turkish Family Law']
+    : undefined;
 
   useSEO({
-    title: post
-      ? language === 'de'
+    title: isAvailable && post
+      ? currentMetaTitle || (language === 'de'
         ? `${post.titleDE} | Doğru Kanzlei Blog`
-        : `${post.titleTR} | Doğru Kanzlei Blog`
-      : 'Artikel nicht gefunden',
-    description: post
-      ? (language === 'de' ? post.excerptDE : post.excerptTR)
-      : '',
+        : language === 'tr'
+          ? `${post.titleTR} | Doğru Kanzlei Blog`
+          : `${post.titleEN} | Doğru Kanzlei Blog`)
+      : language === 'de' ? 'Artikel nicht gefunden' : language === 'tr' ? 'Makale Bulunamadı' : 'Article Not Found',
+    description: isAvailable ? currentDescription : '',
     lang: language,
     ogType: 'article',
-    ogImage: post?.image,
-    canonical: post 
-      ? `${SITE_URL}/${language}/blog/${language === 'de' ? post.slugDE : post.slugTR}` 
+    ogImage: isAvailable ? currentImage : undefined,
+    canonical: isAvailable && post
+      ? `${SITE_URL}/${language}/blog/${language === 'de' ? post.slugDE : language === 'tr' ? post.slugTR : post.slugEN}`
       : undefined,
-    keywords: post
-      ? (language === 'de' ? post.keywordsDE : post.keywordsTR)
+    keywords: isAvailable && post
+      ? (language === 'de' ? post.keywordsDE : language === 'tr' ? post.keywordsTR : post.keywordsEN)
       : undefined,
-    alternateLang: post ? {
-      lang: altLang,
-      href: `${SITE_URL}/${altLang}/blog/${altLang === 'de' ? post.slugDE : post.slugTR}`,
+    alternateLang: isAvailable && post ? {
+      lang: language === 'de' ? 'tr' : 'de',
+      href: `${SITE_URL}/${language === 'de' ? 'tr' : 'de'}/blog/${language === 'de' ? post.slugTR : post.slugDE}`,
+    } : undefined,
+    alternateLangs: isAvailable && post ? [
+      { lang: 'tr', href: `${SITE_URL}/tr/blog/${post.slugTR}` },
+      { lang: 'de', href: `${SITE_URL}/de/blog/${post.slugDE}` },
+      { lang: 'de-DE', href: `${SITE_URL}/de/blog/${post.slugDE}` },
+      { lang: 'de-CH', href: `${SITE_URL}/de/blog/${post.slugDE}` },
+      { lang: 'de-AT', href: `${SITE_URL}/de/blog/${post.slugDE}` },
+      ...(hasEnglishContent ? [{ lang: 'en', href: `${SITE_URL}/en/blog/${post.slugEN}` }] : []),
+    ] : undefined,
+    xDefault: isAvailable && post ? `${SITE_URL}/de/blog/${post.slugDE}` : undefined,
+    article: isAvailable && post ? {
+      publishedTime: `${currentPublishedAt}T00:00:00+00:00`,
+      modifiedTime: `${currentModifiedAt}T00:00:00+00:00`,
+      author: currentArticleAuthor,
+      section: currentCategory,
+      tags: currentArticleTags,
     } : undefined,
   });
 
-  if (!post) {
+  if (!isAvailable || !post) {
     return (
       <div className="min-h-[60vh] flex flex-col items-center justify-center p-8 bg-[#F7F5F0]">
         <h2 className="font-serif text-3xl text-[#1C3829] mb-4">
-          {language === 'de' ? 'Artikel nicht gefunden' : 'Makale Bulunamadı'}
+          {language === 'de' ? 'Artikel nicht gefunden' : language === 'tr' ? 'Makale Bulunamadı' : 'Article Not Found'}
         </h2>
         <Link to={paths.blog} className="text-[#B8963E] font-bold flex items-center gap-2">
-          <ArrowLeft size={16} /> {language === 'de' ? 'Zurück zum Blog' : 'Blog\'a Dön'}
+          <ArrowLeft size={16} /> {language === 'de' ? 'Zurück zum Blog' : language === 'tr' ? 'Blog\'a Dön' : 'Back to Blog'}
         </Link>
       </div>
     );
   }
 
-  const title = language === 'de' ? post.titleDE : post.titleTR;
-  const content = language === 'de' ? post.contentDE : post.contentTR;
-  const date = language === 'de' ? post.dateDE : post.dateTR;
-  const readTime = language === 'de' ? post.readTimeDE : post.readTimeTR;
-  const category = language === 'de' ? post.categoryDE : post.category;
+  const title = language === 'de' ? post.titleDE : language === 'tr' ? post.titleTR : post.titleEN;
+  const content = language === 'de' ? post.contentDE : language === 'tr' ? post.contentTR : post.contentEN || '';
+  const date = language === 'de' ? post.dateDE : language === 'tr' ? post.dateTR : post.dateEN;
+  const readTime = language === 'de' ? post.readTimeDE : language === 'tr' ? post.readTimeTR : post.readTimeEN;
+  const category = language === 'de' ? post.categoryDE : language === 'tr' ? post.category : post.categoryEN;
 
   // Find related posts (same category, excluding current)
   const related = blogPosts.filter((p) => p.slug !== slug).slice(0, 2);
@@ -93,22 +199,27 @@ export function BlogPost() {
   const articleSchema = {
     "@context": "https://schema.org",
     "@type": "Article",
-    "headline": title,
-    "datePublished": post.publishedAt,
-    "dateModified": post.publishedAt,
+    "headline": currentSchemaHeadline || title,
+    "description": currentDescription,
+    "image": currentImage?.startsWith('http') ? currentImage : `${SITE_URL}${currentImage}`,
+    "datePublished": currentPublishedAt,
+    "dateModified": currentModifiedAt,
     "author": {
       "@type": "Person",
-      "name": "Hasan Doğru",
-      "jobTitle": "Avukat",
-      "worksFor": {
-        "@type": "LegalService",
-        "name": "Doğru Kanzlei"
-      }
+      "name": currentArticleAuthor,
+      "url": `${SITE_URL}/${language === 'tr' ? 'tr/hakkimizda' : language === 'de' ? 'de/ueber-uns' : 'en/about'}`
     },
     "publisher": {
-      "@type": "LegalService",
+      "@type": "Organization",
       "name": "Doğru Kanzlei",
-      "url": "https://hasandogru.de"
+      "logo": {
+        "@type": "ImageObject",
+        "url": `${SITE_URL}/assets/logo-eRLlm_XN.avif`
+      }
+    },
+    "mainEntityOfPage": {
+      "@type": "WebPage",
+      "@id": `${SITE_URL}/${language}/blog/${language === 'de' ? post.slugDE : language === 'tr' ? post.slugTR : post.slugEN}`
     },
     "inLanguage": language,
     "about": {
@@ -117,7 +228,7 @@ export function BlogPost() {
     }
   };
 
-  const explicitFaqs = language === 'de' ? post.faqDE : post.faqTR;
+  const explicitFaqs = language === 'de' ? post.faqDE : language === 'tr' ? post.faqTR : post.faqEN;
   let faqs: any[] = [];
 
   if (explicitFaqs && explicitFaqs.length > 0) {
@@ -154,7 +265,7 @@ export function BlogPost() {
   let hasFoundFirstParagraph = false;
 
   return (
-    <div className="bg-[#F7F5F0] min-h-screen">
+    <div className="bg-[#F7F5F0] min-h-screen overflow-x-hidden">
       {/* Progress Bar */}
       <motion.div
         className="fixed top-0 left-0 right-0 h-1 bg-[#8B6E2A] origin-left z-[1001]"
@@ -165,9 +276,9 @@ export function BlogPost() {
       {faqSchema && <SchemaOrg data={faqSchema} id="schema-faq" />}
       
       <div style={{ paddingTop: '200px', paddingBottom: '80px', position: 'relative', zIndex: 0 }}>
-        <article className="max-w-4xl mx-auto px-6 lg:px-12" style={{ display: 'flex', flexDirection: 'column' }}>
-          <div className="mb-10 text-center" style={{ position: 'relative', display: 'block' }}>
-            <ol className="inline-flex items-center gap-2 font-sans text-xs tracking-[0.2em] uppercase">
+        <article className="w-full min-w-0 max-w-4xl mx-auto px-6 lg:px-12 box-border" style={{ display: 'flex', flexDirection: 'column' }}>
+          <div className="mb-10 text-center min-w-0 max-w-full" style={{ position: 'relative', display: 'block' }}>
+            <ol className="inline-flex max-w-full flex-wrap items-center justify-center gap-2 font-sans text-xs tracking-[0.2em] uppercase">
               <li>
                 <Link to={paths.home} className="text-[#6a6a6a] hover:text-[#7A5F20] transition-colors">
                   {t("nav_home")}
@@ -180,11 +291,11 @@ export function BlogPost() {
                 </Link>
               </li>
               <li className="text-[#6a6a6a]">/</li>
-              <li className="text-[#1C3829] font-bold truncate max-w-[200px]">{title}</li>
+              <li className="text-[#1C3829] font-bold max-w-full break-words sm:truncate sm:max-w-[200px]">{title}</li>
             </ol>
           </div>
 
-          <div className="mb-16 text-center" style={{ position: 'relative', display: 'block' }}>
+          <div className="mb-16 text-center min-w-0 max-w-full" style={{ position: 'relative', display: 'block' }}>
             {/* Category */}
             <div className="flex items-center justify-center gap-3 mb-8">
               <span className="w-8 h-[1px] bg-[#8B6E2A]" />
@@ -195,8 +306,8 @@ export function BlogPost() {
             </div>
 
             {/* Title */}
-            <h1 className="font-serif text-[clamp(24px,5vw,48px)] text-[#1C3829] leading-[1.2] font-medium mb-10 tracking-tight text-center" style={{ position: 'relative', display: 'block' }}>
-              <span lang={language === 'tr' ? 'tr' : 'de'}>{title}</span>
+            <h1 className="font-serif text-[clamp(21px,6.5vw,48px)] md:text-[clamp(24px,5vw,48px)] text-[#1C3829] leading-[1.2] font-medium mb-10 tracking-tight text-center w-full min-w-0 max-w-full" style={{ position: 'relative', display: 'block', whiteSpace: 'normal', overflowWrap: 'anywhere', wordBreak: 'break-word', hyphens: 'auto', maxWidth: '100%', boxSizing: 'border-box' }}>
+              <span className="block max-w-[18ch] sm:max-w-none mx-auto" lang={language === 'tr' ? 'tr' : language === 'de' ? 'de' : 'en'} style={{ whiteSpace: 'normal', overflowWrap: 'anywhere', wordBreak: 'break-word', hyphens: 'auto' }}>{title}</span>
             </h1>
 
             {/* Meta information aligned for premium feel */}
@@ -420,7 +531,7 @@ export function BlogPost() {
                 <div className="flex items-center gap-6 mb-12">
                   <div className="w-16 h-[2px] bg-[#8B6E2A]" />
                   <h3 className="font-serif text-3xl md:text-4xl text-[#1C3829]">
-                    {language === 'de' ? 'Häufige Fragen' : <span lang="tr">Sıkça Sorulan Sorular</span>}
+                    {language === 'de' ? 'Häufige Fragen' : language === 'tr' ? <span lang="tr">Sıkça Sorulan Sorular</span> : 'Frequently Asked Questions'}
                   </h3>
                 </div>
                 <div className="space-y-6">
@@ -438,18 +549,22 @@ export function BlogPost() {
                 <span lang={language === 'tr' ? 'tr' : 'de'}>
                   {language === 'de' 
                     ? (post.ctaTitleDE || 'Haben Sie Fragen zu diesem Thema?') 
-                    : (post.ctaTitleTR || 'Tanıma ve Tenfiz İşlemleriniz İçin Buradayız')}
+                    : language === 'tr'
+                      ? (post.ctaTitleTR || 'Tanıma ve Tenfiz İşlemleriniz İçin Buradayız')
+                      : (post.ctaTitleEN || 'We Are Here for Your Criminal Defence Needs')}
                 </span>
               </h3>
               <p className="font-sans text-lg text-white/70 mb-10 leading-relaxed relative z-10 max-w-xl">
                 <span lang={language === 'tr' ? 'tr' : 'de'}>
                   {language === 'de'
                     ? (post.ctaDescriptionDE || 'Profitieren Sie von unserer doppelten Zulassung in Deutschland und der Türkei. Kontaktieren Sie uns for eine erste Einschätzung.')
-                    : (post.ctaDescriptionTR || 'Almanya ve Türkiye\'deki çift baro üyeliğimiz ve UYAP tecrübemizle süreci sizin adınıza en hızlı şekilde sonuçlandırıyoruz.')}
+                    : language === 'tr'
+                      ? (post.ctaDescriptionTR || 'Almanya ve Türkiye\'deki çift baro üyeliğimiz ve UYAP tecrübemizle süreci sizin adınıza en hızlı şekilde sonuçlandırıyoruz.')
+                      : (post.ctaDescriptionEN || 'Take advantage of our dual admission in Germany and Turkey. Contact us for an initial assessment.')}
                 </span>
               </p>
               <a
-                href={CALENDLY_URL}
+                href={WHATSAPP_URL}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="relative z-10 inline-block bg-[#8B6E2A] text-white font-sans text-[12px] font-bold tracking-[0.2em] uppercase px-12 py-5 rounded-full hover:bg-white hover:text-[#1C3829] transition-all duration-300 shadow-lg active:scale-95"
@@ -466,7 +581,7 @@ export function BlogPost() {
             <div className="max-w-4xl mx-auto px-6 lg:px-12">
               <h3 className="font-serif text-3xl text-[#1C3829] mb-12 flex items-center gap-4">
                 <span className="w-2 h-2 rounded-full bg-[#8B6E2A]" />
-                {language === 'de' ? 'Weitere Artikel' : <span lang="tr">İlginizi Çekebilecek Diğer Konular</span>}
+                {language === 'de' ? 'Weitere Artikel' : language === 'tr' ? <span lang="tr">İlginizi Çekebilecek Diğer Konular</span> : 'Other Related Articles'}
               </h3>
               <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
                 {related.map((r) => (
@@ -474,23 +589,23 @@ export function BlogPost() {
                     <div className="overflow-hidden mb-6 aspect-[16/10] bg-[#e8e4dc] shadow-md group-hover:shadow-xl transition-shadow duration-500 rounded-lg">
                       <img
                         src={r.image}
-                        alt={language === 'de' ? r.titleDE : r.titleTR}
+                        alt={language === 'de' ? r.titleDE : language === 'tr' ? r.titleTR : r.titleEN}
                         loading="lazy"
                         className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
                       />
                     </div>
                     <span className="font-sans text-[11px] font-bold tracking-[0.2em] uppercase text-[#7A5F20] mb-3 inline-block">
                       <span lang={language === 'tr' ? 'tr' : 'de'}>
-                        {language === 'de' ? r.categoryDE : r.category}
+                        {language === 'de' ? r.categoryDE : language === 'tr' ? r.category : r.categoryEN}
                       </span>
                     </span>
                     <h4 className="font-serif text-2xl text-[#1C3829] group-hover:text-[#B8963E] transition-colors leading-[1.3] grow">
                       <span lang={language === 'tr' ? 'tr' : 'de'}>
-                        {language === 'de' ? r.titleDE : r.titleTR}
+                        {language === 'de' ? r.titleDE : language === 'tr' ? r.titleTR : r.titleEN}
                       </span>
                     </h4>
                     <div className="mt-6 flex items-center gap-2 text-[#B8963E] font-bold text-xs uppercase tracking-widest opacity-0 group-hover:opacity-100 transition-opacity">
-                      {language === 'de' ? 'Weiterlesen' : 'Tamamını Oku'} <ArrowLeft size={14} className="rotate-180" />
+                      {language === 'de' ? 'Weiterlesen' : language === 'tr' ? 'Tamamını Oku' : 'Read More'} <ArrowLeft size={14} className="rotate-180" />
                     </div>
                   </Link>
                 ))}

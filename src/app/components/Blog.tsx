@@ -114,7 +114,7 @@ export function Blog() {
                 >
                   <img
                     src={post.image}
-                    alt={language === 'de' ? post.titleDE : language === 'tr' ? post.titleTR : post.titleDE}
+                    alt={language === 'de' ? post.titleDE : language === 'tr' ? post.titleTR : post.titleEN || post.titleDE}
                     loading="lazy"
                     style={{
                       width: "100%",
@@ -147,7 +147,7 @@ export function Blog() {
                       color: "#B8963E",
                     }}
                   >
-                    {language === 'de' ? post.categoryDE : language === 'tr' ? post.category : post.categoryDE}
+                    {language === 'de' ? post.categoryDE : language === 'tr' ? post.category : post.categoryEN || post.categoryDE}
                   </span>
                   <span
                     style={{
@@ -166,7 +166,7 @@ export function Blog() {
                       color: "#888680",
                     }}
                   >
-                    {language === 'de' ? post.dateDE : language === 'tr' ? post.dateTR : post.dateDE}
+                    {language === 'de' ? post.dateDE : language === 'tr' ? post.dateTR : post.dateEN || post.dateDE}
                   </span>
                 </div>
 
@@ -184,7 +184,7 @@ export function Blog() {
                   }}
                   className="group-hover:!text-[#B8963E] no-justify"
                 >
-                  {language === 'de' ? post.titleDE : language === 'tr' ? post.titleTR : post.titleDE}
+                  {language === 'de' ? post.titleDE : language === 'tr' ? post.titleTR : post.titleEN || post.titleDE}
                 </h3>
 
                 <p
@@ -199,7 +199,7 @@ export function Blog() {
                   }}
                   className="no-justify"
                 >
-                  {language === 'de' ? post.excerptDE : language === 'tr' ? post.excerptTR : post.excerptDE}
+                  {language === 'de' ? post.excerptDE : language === 'tr' ? post.excerptTR : post.excerptEN || post.excerptDE}
                 </p>
 
                 <div

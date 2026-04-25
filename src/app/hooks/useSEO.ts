@@ -10,9 +10,17 @@ interface SEOConfig {
   ogType?: string;
   lang: 'de' | 'tr' | 'en';
   alternateLang?: { lang: string; href: string };
+  alternateLangs?: { lang: string; href: string }[];
   xDefault?: string;
   noindex?: boolean;
   keywords?: string;
+  article?: {
+    publishedTime?: string;
+    modifiedTime?: string;
+    author?: string;
+    section?: string;
+    tags?: string[];
+  };
 }
 
 function setMetaTag(property: string, content: string, isName = false) {
@@ -62,7 +70,7 @@ export function useSEO(config: SEOConfig) {
     setMetaTag('og:description', config.description);
     setMetaTag('og:url', canonicalUrl);
     setMetaTag('og:type', config.ogType || 'website');
-    const ogLocale = config.lang === 'de' ? 'de_DE' : config.lang === 'tr' ? 'tr_TR' : 'en_US';
+    const ogLocale = config.lang === 'de' ? 'de_DE' : config.lang === 'tr' ? 'tr_TR' : 'en_GB';
     setMetaTag('og:locale', ogLocale);
     // Set alternates for the other two locales
     if (config.lang === 'en') {
@@ -72,9 +80,32 @@ export function useSEO(config: SEOConfig) {
     }
     setMetaTag('og:site_name', 'Doğru Kanzlei');
     const defaultOgImage = `${SITE_URL}/logo.png`;
-    const finalOgImage = config.ogImage || defaultOgImage;
+    const rawOgImage = config.ogImage || defaultOgImage;
+    const finalOgImage = rawOgImage.startsWith('http') ? rawOgImage : `${SITE_URL}${rawOgImage}`;
 
     setMetaTag('og:image', finalOgImage);
+
+    if (config.article) {
+      if (config.article.publishedTime) {
+        setMetaTag('article:published_time', config.article.publishedTime);
+      }
+      if (config.article.modifiedTime) {
+        setMetaTag('article:modified_time', config.article.modifiedTime);
+      }
+      if (config.article.author) {
+        setMetaTag('article:author', config.article.author);
+      }
+      if (config.article.section) {
+        setMetaTag('article:section', config.article.section);
+      }
+      document.querySelectorAll('meta[property="article:tag"]').forEach((el) => el.remove());
+      config.article.tags?.forEach((tag) => {
+        const el = document.createElement('meta');
+        el.setAttribute('property', 'article:tag');
+        el.content = tag;
+        document.head.appendChild(el);
+      });
+    }
 
     // Twitter Card
     setMetaTag('twitter:card', 'summary_large_image', true);
@@ -86,6 +117,12 @@ export function useSEO(config: SEOConfig) {
     if (config.alternateLang) {
       setLinkTag('alternate', config.alternateLang.href, { hreflang: config.alternateLang.lang });
       setLinkTag('alternate', canonicalUrl, { hreflang: config.lang });
+    }
+
+    if (config.alternateLangs) {
+      config.alternateLangs.forEach((alternate) => {
+        setLinkTag('alternate', alternate.href, { hreflang: alternate.lang });
+      });
     }
 
     // German-speaking regions: DE, CH, AT all served by the /de version
@@ -112,7 +149,7 @@ export function useSEO(config: SEOConfig) {
     } else {
       setMetaTag('robots', 'index, follow', true);
     }
-  }, [config.title, config.description, config.canonical, config.ogImage, config.ogType, config.lang, config.alternateLang, config.noindex]);
+  }, [config.title, config.description, config.canonical, config.ogImage, config.ogType, config.lang, config.alternateLang, config.alternateLangs, config.noindex, config.article]);
 }
 
 export { SITE_URL };

@@ -23,28 +23,55 @@ export interface BlogPost {
   slug: string;
   slugDE: string;
   slugTR: string;
+  slugEN: string;
   titleDE: string;
   titleTR: string;
+  titleEN: string;
   excerptDE: string;
   excerptTR: string;
+  excerptEN: string;
   contentDE: string;
   contentTR: string;
+  contentEN: string;
   category: string;
   categoryDE: string;
+  categoryEN: string;
   image: string;
   dateDE: string;
   dateTR: string;
+  dateEN: string;
   readTimeDE: string;
   readTimeTR: string;
+  readTimeEN: string;
   publishedAt: string; // ISO date for sitemap
+  modifiedAt?: string; // ISO date for article schema
+  publishedAtDE?: string;
+  publishedAtTR?: string;
+  publishedAtEN?: string;
+  modifiedAtDE?: string;
+  modifiedAtTR?: string;
+  modifiedAtEN?: string;
   keywordsDE?: string;
   keywordsTR?: string;
+  keywordsEN?: string;
+  metaTitleDE?: string;
+  metaTitleTR?: string;
+  metaTitleEN?: string;
+  metaDescriptionDE?: string;
+  metaDescriptionTR?: string;
+  metaDescriptionEN?: string;
+  schemaHeadlineDE?: string;
+  schemaHeadlineTR?: string;
+  schemaHeadlineEN?: string;
   faqDE?: { question: string; answer: string }[];
   faqTR?: { question: string; answer: string }[];
+  faqEN?: { question: string; answer: string }[];
   ctaTitleDE?: string;
   ctaTitleTR?: string;
+  ctaTitleEN?: string;
   ctaDescriptionDE?: string;
   ctaDescriptionTR?: string;
+  ctaDescriptionEN?: string;
 }
 
 export const blogPosts: BlogPost[] = [
@@ -52,170 +79,1230 @@ export const blogPosts: BlogPost[] = [
     slug: "almanya-turkiye-miras-hukuku-rehberi",
     slugDE: "erbschaft-tuerkei-deutschland-ratgeber",
     slugTR: "almanya-turkiye-miras-hukuku-rehberi",
-    titleDE: "Türkisches Erbe aus Deutschland regeln | Welche Rechte haben Erben?",
-    titleTR: "Almanya'da Yaşarken Türkiye'de Miras mı Kaldı? Haklarınızı Kaybetmemek İçin Ne Yapmalısınız?",
-    excerptDE: "In Deutschland leben und in der Türkei erben? Erfahren Sie alles über Fristen, Erbausschlagung, Pflichtteilsrechte und die EU-Erbrechtsverordnung.",
-    excerptTR: "Almanya'da yaşarken Türkiye'deki miras haklarınızı nasıl koruyacağınızı öğrenin. Veraset ilamı, miras reddi ve tenkis davası hakkında kapsamlı rehber.",
-    contentDE: `In Deutschland lebende türkische Staatsangehörige können sowohl in der Türkei als auch in Deutschland Eigentum besitzen — und türkische Verwandte können Vermögen unterschiedlichster Art hinterlassen. Diese grenzüberschreitenden Verflechtungen führen im Erbfall zu rechtlich äußerst komplexen Situationen.
-
-Die wichtigste Tatsache vorab: Das Erbrecht ist voller Fristen. Eine versäumte Frist kann den Verlust eines Rechts bedeuten — oder im schlimmsten Fall die ungewollte Übernahme von Schulden. Als bei der Ankara Barosu und der Rechtsanwaltskammer Karlsruhe (§207 BRAO) zugelassener Anwalt berät die Doğru Kanzlei sowohl zu türkischen Erbrechtsangelegenheiten als auch zu den aufenthalts- und steuerrechtlichen Folgen in Deutschland.
-
-## Die EU-Erbrechtsverordnung 650/2012
-
-Seit dem 17. August 2015 gilt zwischen den EU-Mitgliedstaaten — mit Ausnahme Dänemarks — die EU-Erbrechtsverordnung Nr. 650/2012. Nach der wichtigsten Bestimmung der Verordnung gilt grundsätzlich das Recht des Staates, in dem der Erblasser seinen letzten gewöhnlichen Aufenthalt hatte. Für türkische Staatsangehörige, die in Deutschland leben, hat dies eine entscheidende Konsequenz: Ihr Nachlass unterliegt im Regelfall deutschem Erbrecht.
-
-Die Verordnung eröffnet jedoch auch die Möglichkeit einer Rechtswahl zugunsten des Heimatrechts. Ein in Deutschland lebender türkischer Staatsangehöriger kann durch ein notariell beurkundetes Testament oder einen Erbvertrag bestimmen, dass auf seinen Nachlass türkisches Erbrecht Anwendung findet.
-
-## Grundprinzipien des türkischen Erbrechts
-
-Das türkische Erbrecht ist in den Artikeln 495–682 des Türkischen Zivilgesetzbuchs (TMK) geregelt und weist gegenüber dem deutschen BGB wesentliche Unterschiede auf.
-
-**Gesetzliche Erben**
-Die erste Ordnung bilden die Abkömmlinge des Erblassers, die zu gleichen Teilen erben. Die zweite Ordnung besteht aus den Eltern des Erblassers und deren Abkömmlingen. Der überlebende Ehegatte kann zusammen mit jeder Ordnung erben.
-
-**Pflichtteil (Saklı Pay)**
-Für Abkömmlinge beträgt der Pflichtteil die Hälfte des gesetzlichen Erbteils, für jeden Elternteil ein Viertel. Wird dieser Anteil durch Testament oder Verfügungen zu Lebzeiten unterschritten, entsteht das Recht auf Erhebung einer Pflichtteilsergänzungsklage.
-
-**Testamentsformen**
-Das notarielle Testament wird in Anwesenheit eines Notars, zweier Zeugen und des Erblassers errichtet. Das eigenhändige Testament muss von Anfang bis Ende handschriftlich verfasst und unterschrieben sein — maschinell geschriebene Texte sind ungültig. Das mündliche Testament ist nur in außerordentlichen Ausnahmesituationen mit unmittelbarer Todesgefahr gültig.
-
-## Anwendung türkischen Rechts nach MÖHUK
-
-Die Türkei regelt ihr internationales Privatrecht im MÖHUK, Gesetz Nr. 5718. Nach Artikel 20 MÖHUK unterliegen Erbsachen dem Heimatrecht des Erblassers zum Zeitpunkt seines Todes. Diese Regelung weicht vom Anknüpfungspunkt des letzten gewöhnlichen Aufenthalts der EU-Erbrechtsverordnung ab und erzeugt einen bedeutsamen Konfliktpunkt. Dies macht die Errichtung eines Testaments, das in beiden Ländern auf seine Wirksamkeit geprüft wurde, besonders wichtig.
-
-## Immobilien in der Türkei aus Deutschland verkaufen
-
-Kann ich meine Immobilie in der Türkei verkaufen, ohne dorthin zu reisen? Die Antwort lautet: Ja — jedoch nur mit einer korrekt ausgestellten Vollmacht (Vekaletname). Eine Vollmacht kann beim türkischen Konsulat in Deutschland oder bei einem deutschen Notar ausgestellt werden. Dabei ist zu beachten: Allgemeine Vollmachten, die von einem deutschen Notar ausgestellt wurden, werden vom türkischen Grundbuchamt häufig nicht anerkannt.
-
-Auf den Verkaufserlös kann in der Türkei Wertzuwachssteuer anfallen — insbesondere wenn seit dem Erwerb der Immobilie noch keine fünf Jahre vergangen sind, kann dies einen erheblichen Betrag ausmachen. Im Rahmen des deutsch-türkischen Doppelbesteuerungsabkommens ist außerdem gesondert zu prüfen, ob in Deutschland eine Steuerpflicht entsteht.
-
-## Erbausschlagung: Wenn das Erbe mehr Schulden als Vermögen enthält
-
-Im türkischen Recht müssen Sie nichts tun, um ein Erbe anzunehmen. Wenn Sie es nicht fristgerecht ausschlagen, gelten Sie als Erbe — einschließlich aller Schulden.
-
-Nach Artikel 605 TMK können Erben das Erbe innerhalb von drei Monaten nach Kenntnis vom Tod des Erblassers und ihrer Erbenstellung ausschlagen. Diese Frist gilt auch für in Deutschland lebende Erben und wird in der Regel nicht verlängert. Die Erbausschlagung erfolgt durch einen formellen Antrag beim türkischen Gericht. Ihr Anwalt kann diesen Schritt über das UYAP-System aus Mannheim in Ihrem Namen durchführen.
-
-## Pflichtteilsergänzungsklage: Was tun, wenn Ihr Pflichtteil verletzt wurde?
-
-Eines der häufigsten Erbstreitigkeiten: Der Erblasser hat in seinen letzten Lebensjahren Immobilien in der Türkei auf bestimmte Erben oder Dritte übertragen — und in Deutschland lebende andere Erben sind dadurch um einen Großteil ihres Erbteils gebracht worden.
-
-Das türkische Erbrecht sieht gegen diesen Missstand einen klaren Schutzmechanismus vor: die Tenkis Davası (Pflichtteilsergänzungsklage). Nach Artikel 560 TMK kann die Aufhebung von Verfügungen, die den Pflichtteil verletzen, gerichtlich beantragt werden. Das Recht auf Erhebung der Klage muss innerhalb von einem Jahr ab Kenntnis der Pflichtteilsverletzung, spätestens jedoch innerhalb von zehn Jahren ab Eröffnung des Testaments ausgeübt werden. Die Doğru Kanzlei kann über das UYAP-System auf türkische Verfahrensakten zugreifen und das Pflichtteilsergänzungsverfahren aus dem Mannheimer Büro heraus führen.
+    slugEN: "turkish-inheritance-germany-guide",
+    titleDE: "Erbschaft Türkei: Was Erben in Deutschland wirklich wissen müssen",
+    titleTR: "Almanya'da Yaşarken Türkiye'de Miras Kaldı mı? Haklarınızı Kaybetmeden Bilmeniz Gereken Her Şey",
+    titleEN: "Turkish Inheritance from Germany — The Complete Legal Guide 2026",
+    excerptDE: "Von Nachlassspaltung und Erbschein über Doppelbesteuerung und Pflichtteilsklage bis zur verdeckten Vermögensverschiebung — der vollständige Leitfaden für deutsch-türkische Erbfälle 2026.",
+    excerptTR: "Veraset ilamından muris muvazaasına, veraset vergisinden izale-i şuyuya — Almanya'dan Türkiye'deki mirası eksiksiz yönetme rehberi.",
+    excerptEN: "From the split estate problem and Turkish probate certificate to inheritance tax, forced heirship claims, and fraudulent property transfers — everything you need to manage a Turkish inheritance from Germany without flying to Istanbul.",
+    metaTitleDE: "Erbschaft Türkei: Vollständiger Leitfaden für Erben in Deutschland 2026",
+    metaTitleTR: "Almanya'da Yaşarken Türkiye'de Miras: Eksiksiz Hukuki Rehber 2026",
+    metaTitleEN: "Turkish Inheritance from Germany: The Complete Legal Guide 2026",
+    metaDescriptionDE: "Immobilie in der Türkei geerbt? Erbschein, Erbschaftsteuer, Doppelbesteuerung, Nachlassspaltung, Erbausschlagung, Pflichtteilsklage und Muris Muvazaası — alles was Erben in Deutschland wissen müssen. Doğru Kanzlei.",
+    metaDescriptionTR: "Almanya'dan Türkiye'deki mirası nasıl takip edersiniz? Veraset ilamı, tenkis davası, muris muvazaası, veraset vergisi, izale-i şuyu ve miras reddi — tüm süreçler adım adım. Doğru Kanzlei.",
+    metaDescriptionEN: "Inherited property in Turkey while living in Germany? Learn about the split estate problem, Turkish probate certificate, inheritance tax, forced heirship claims, fraudulent transfers (Muris Muvazaası), and how to manage everything remotely. Doğru Kanzlei.",
+    schemaHeadlineDE: "Erbschaft Türkei: Vollständiger Leitfaden für Erben in Deutschland 2026",
+    schemaHeadlineTR: "Almanya'da Yaşarken Türkiye'de Miras: Eksiksiz Hukuki Rehber 2026",
+    schemaHeadlineEN: "Turkish Inheritance from Germany: The Complete Legal Guide 2026",
+    contentDE: `**RECHTLICHER HINWEIS:** Dieser Artikel befasst sich ausschließlich mit dem türkischen Recht. Die Doğru Kanzlei berät gemäß § 207 BRAO ausschließlich im türkischen Recht.
 
 ---
 
-**Holen Sie sich jetzt eine kostenlose Ersteinschätzung für Ihren grenzüberschreitenden Erbfall | Mannheim: +49 176 6122 1210 | Ankara: +90 533 237 59 18 | hasandogru.de**
+Ein typisches Szenario: Die Eltern sind aus der Türkei nach Deutschland gekommen, haben dort Jahrzehnte gelebt — und in der alten Heimat noch ein Haus oder ein Grundstück behalten. Wenn sie versterben, stehen die in Deutschland lebenden Kinder plötzlich vor einem komplexen Geflecht aus türkischem Erbrecht, deutschen Steuervorschriften und Behördenanforderungen auf beiden Seiten.
 
-Avukat Hasan Doğru | Doğru Kanzlei | Ankara Barosu (Sicil No: 47068) & Rechtsanwaltskammer Karlsruhe (§207 BRAO)
+Was klingt wie eine administrative Formalität, ist in der Praxis oft ein jahrelanger Prozess — mit Fristen, die man nicht kennt, Dokumenten, die man nicht hat, und Steueranforderungen, die man nicht erwartet hat.
 
-*Dieser Artikel dient ausschließlich der allgemeinen Information und stellt keine Rechtsberatung dar. Für eine auf Ihren individuellen Fall zugeschnittene Einschätzung nehmen Sie bitte Kontakt mit uns auf. Die Kanzlei berät ausschließlich im türkischen Recht gemäß §207 BRAO.*`,
-    contentTR: `Almanya'da yaşayan Türk vatandaşları, hem Türkiye'de hem de Almanya'da mülke sahip olabilmekte; Türkiye'deki akrabaları ise çeşitli varlıklar bırakabilmektedir. Bu kesişen bağlar, miras söz konusu olduğunda son derece karmaşık hukuki durumların ortaya çıkmasına yol açmaktadır.
-
-En önemli gerçek şudur: Miras hukuku sürelerle doludur. Kaçırılan bir süre, kullanılmayan bir hak anlamına gelebilir — hatta bazen miras yoluyla devralınan beklenmedik borçlar anlamına gelebilir. Bu rehberde hem hukuki çerçeveyi hem de işler ters gittiğinde ne yapmanız gerektiğini ele alacağız.
-
-→ Cezai kovuşturmaların miras üzerindeki etkilerini de araştırıyorsanız: [Türkiye'deki Ceza Davaları rehberimize](/tr/blog/turkiye-ceza-davasi-tutuklama-karari-almanya-savunma) bakınız.
-
-## AB Miras Tüzüğü 650/2012
-
-Avrupa Birliği üyesi devletler arasında (Danimarka hariç) 17 Ağustos 2015 tarihinden bu yana 650/2012 sayılı AB Miras Tüzüğü uygulanmaktadır. Tüzük'ün en önemli hükmüne göre, kural olarak kişinin son alışılagelen ikametgâhının bulunduğu devletin hukuku uygulanmaktadır. Almanya'da yaşayan Türk vatandaşlarının mirası, varsayılan olarak Alman miras hukukuna tabidir. Ancak Tüzük, hukuk seçimi (Rechtswahl) imkânı da tanımaktadır: Almanya'da yaşayan bir Türk vatandaşı noter huzurunda Türk miras hukukunun uygulanmasını seçebilmektedir.
-
-## Türk Miras Hukukunun Temel İlkeleri
-
-Türk miras hukuku 4721 sayılı Türk Medeni Kanunu'nun (TMK) 495-682. maddeleriyle düzenlenmektedir.
-
-**Yasal Mirasçılar**
-Birinci zümreyi murisin altsoyu oluşturmaktadır; bunlar eşit paylarda miras alırlar. İkinci zümreyi murisin anne ve babası ile onların altsoyu oluşturmaktadır. Sağ kalan eş her zümreyle birlikte miras alabilmektedir.
-
-**Saklı Pay (Mahfuz Hisse)**
-Altsoy için yasal miras payının 1/2'si, anne ve babanın her biri için 1/4'ü saklı pay olarak korunmaktadır. Bu pay vasiyetname veya yaşarken yapılan miras tasarrufları yoluyla ihlal edilmesi halinde tenkis davası açma hakkı doğmaktadır.
-
-**Vasiyetname Türleri**
-Resmî vasiyetname noter, iki tanık ve murisin huzurunda düzenlenmektedir. El yazılı vasiyetname başından sonuna kadar murisin el yazısıyla yazılmış ve imzalanmış olmalıdır; bilgisayarla yazılanlar geçersizdir. Sözlü vasiyetname ise yalnızca ölüm tehlikesinin yakın olduğu istisnai durumlarda geçerlidir.
-
-## MÖHUK Kapsamında Türk Hukukunun Uygulanması
-
-Türkiye uluslararası özel hukukunu 5718 sayılı MÖHUK ile düzenlemektedir. MÖHUK'un 20. maddesi uyarınca miras işlemleri miras bırakanın ölüm anındaki millî hukukuna tabi tutulmaktadır. Bu hüküm, AB Miras Tüzüğü'nün benimsediği son alışılagelen ikametgâh ölçütünden farklı bir çözüm üretmekte ve önemli bir çatışma noktası doğurmaktadır. Her iki ülkede de geçerliliği test edilmiş biçimde hazırlanmış bir vasiyetname düzenlenmesi bu nedenle büyük önem taşımaktadır.
-
-## Türkiye'deki Mülkü Almanya'dan Satmak
-
-Almanya'da yaşayan Türk vatandaşlarının en sık sorduğu sorulardan biri şudur: Türkiye'deki mülkümü Türkiye'ye gitmeden satabilir miyim? Yanıt: Evet — ancak doğru şekilde düzenlenmiş bir vekaletname (noter onaylı vekâlet belgesi) şartıyla.
-
-Vekaletname, Almanya'daki bir Türk konsolosluğunda ya da Alman bir noterde düzenlenebilir. Ancak dikkat edilmesi gereken kritik bir nokta vardır: Türkiye'deki tapu işlemleri için kullanılacak vekaletnamenin Türk hukukunun öngördüğü şekil koşullarını eksiksiz karşılaması gerekmektedir. Almanya'da bir Alman noter tarafından düzenlenen genel vekaletnameler çoğu zaman Türk tapu sicili tarafından kabul edilmemektedir.
-
-Satıştan elde edilen gelir üzerinden Türkiye'de değer artış kazancı vergisi doğabilmektedir; özellikle mülkün ediniminden itibaren beş yıl geçmemişse bu vergi önemli bir kalem oluşturabilir. Almanya-Türkiye arasındaki çifte vergilendirmeyi önleme anlaşması çerçevesinde Almanya'da da vergi yükümlülüğü doğup doğmayacağı ayrıca değerlendirilmelidir.
-
-## Miras Reddi: Borçlu Bir Mirası Reddetmek
-
-Türk hukukunda mirası kabul etmek için herhangi bir işlem yapmanıza gerek yoktur. Süresi içinde reddetmezseniz mirası kabul etmiş sayılırsınız — borçlarıyla birlikte.
-
-TMK'nın 605. maddesi uyarınca mirasçılar, miras bırakanın ölümünü ve kendilerinin mirasçı olduğunu öğrendikleri tarihten itibaren üç ay içinde mirası reddedebilirler. Bu süre Almanya'da yaşayan mirasçılar için de geçerlidir ve kural olarak uzatılmaz. Miras bırakanın vefatından haberdar olduğunuz andan itibaren bir avukata danışmanız ve üç aylık süreyi boşa harcamamanız kritik önem taşımaktadır. Miras reddi Türk mahkemesine sunulan resmi bir dilekçeyle gerçekleştirilmektedir; avukatınız bu işlemi UYAP sistemi aracılığıyla Mannheim ofisinden sizin adınıza yürütebilmektedir.
-
-## Tenkis Davası: Saklı Payınız İhlal Edildiyse Ne Yaparsınız?
-
-Türkiye'deki en çok görülen miras uyuşmazlıklarından biri şu senaryodur: Miras bırakan hayatının son dönemlerinde Türkiye'deki mülklerini belirli mirasçılara ya da üçüncü kişilere devretmiş; Almanya'da yaşayan diğer mirasçılar ise miras paylarının büyük bölümünden yoksun kalmıştır.
-
-Türk miras hukuku bu duruma karşı açık bir koruma mekanizması öngörmektedir: tenkis davası. TMK'nın 560. maddesi uyarınca, saklı payı ihlal eden tasarrufların iptali için dava açılabilmektedir. Tenkis davası açma hakkı; mirasçının tasarrufdan ve saklı payının ihlal edildiğinden haberdar olmasından itibaren bir yıl, her halükarda vasiyetnamenin açılmasından itibaren on yıl içinde kullanılmalıdır. Doğru Kanzlei olarak UYAP sistemi aracılığıyla Mannheim ofisimizden tenkis davası sürecini yürütebilmekteyiz.
+Dieser Leitfaden erklärt, was Sie wissen müssen — bevor die Fristen ablaufen.
 
 ---
 
-**Sınır ötesi miras davanız için ücretsiz ön değerlendirme alın | Mannheim: +49 176 6122 1210 | Ankara: +90 533 237 59 18 | hasandogru.de**
+## 1. Welches Recht gilt? Nachlassspaltung im deutsch-türkischen Erbfall
 
-Avukat Hasan Doğru | Doğru Kanzlei | Ankara Barosu (Sicil No: 47068) & Rechtsanwaltskammer Karlsruhe (§207 BRAO)
+Die erste und wichtigste Frage bei jedem deutsch-türkischen Erbfall lautet: Welches Erbrecht gilt überhaupt?
 
-*Bu makale genel bilgi amaçlıdır ve hukuki danışmanlık niteliği taşımaz. Durumunuza özgü değerlendirme için lütfen bizimle iletişime geçin. Büromuzda yalnızca Türk hukuku alanında danışmanlık verilmektedir.*`,
+Die Antwort ist komplexer als erwartet — und hängt davon ab, welche Art von Vermögen betroffen ist.
+
+### Das Nachlassabkommen von 1929 — Vorrang vor der EU-Erbrechtsverordnung
+
+Der deutsch-türkische Konsularvertrag vom 28. Mai 1929 und die als Anlage dazu abgeschlossene Nachlassvereinbarung regeln grenzüberschreitende Erbfälle zwischen beiden Ländern. Da die Türkei kein EU-Mitglied ist, geht dieses Abkommen der EU-Erbrechtsverordnung 650/2012 vor — und zwar mit einer klaren Unterscheidung:
+
+**Beweglicher Nachlass (Bankkonten, Fahrzeuge, Schmuck, Wertpapiere):**
+Das Erbrecht des Heimatstaats des Erblassers gilt. Für einen türkischen Staatsangehörigen mit Wohnsitz in Deutschland gilt somit türkisches Erbrecht für dessen Bankkonten — auch wenn diese in Deutschland geführt werden.
+
+**Unbeweglicher Nachlass (Immobilien, Grundstücke):**
+Es gilt das Recht des Belegenheitsortes — also das Recht des Landes, in dem die Immobilie liegt. Für ein Ferienhaus in Antalya gilt türkisches Erbrecht, auch wenn der Erblasser sein ganzes Leben in Deutschland gelebt hat.
+
+Diese doppelte Anknüpfung führt zur **Nachlassspaltung**: Auf denselben Erbfall werden verschiedene Rechtsordnungen angewendet. Das OLG Köln (Beschluss vom 21.02.2014, Az. 2 Wx 30/14) und das OLG Hamm (Beschluss vom 21.03.2019, Az. 10 B 31/17) haben dies ausdrücklich bestätigt.
+
+### Praktische Konsequenz: Unterschiedliche Erbquoten
+
+Die Nachlassspaltung führt oft zu überraschenden Ergebnissen. Ein Beispiel:
+
+Ein türkischer Staatsbürger lebt in Deutschland, hat kein Testament hinterlassen. Er hinterlässt eine Ehefrau, zwei Kinder sowie ein Bankkonto in Deutschland und ein Ferienhaus in der Türkei.
+
+- **Bankkonto (bewegliches Vermögen):** Türkisches Erbrecht → Ehefrau 1/4, Kinder teilen sich 3/4
+- **Ferienhaus Türkei (unbewegliches Vermögen):** Türkisches Erbrecht → gleiche Quoten (da Erblasser türkischer Staatsbürger)
+
+Wäre der Erblasser hingegen deutscher Staatsbürger gewesen:
+- **Bankkonto (bewegliches Vermögen):** Deutsches Erbrecht → Ehefrau 1/2, Kinder teilen sich 1/2
+- **Ferienhaus Türkei (unbewegliches Vermögen):** Türkisches Erbrecht → Ehefrau 1/4, Kinder 3/4
+
+Die Ehefrau steht beim deutschen Recht deutlich besser als beim türkischen. Das ist der praktische Grund, warum eine frühzeitige Testament-Gestaltung — die beide Rechtsordnungen berücksichtigt — so wichtig ist.
+
+### Doppelstaater: Welches Recht gilt?
+
+Bei deutschen Staatsangehörigen mit zusätzlich türkischer Staatsangehörigkeit (Doppelstaater) gilt nach Art. 5 EGBGB die effektive Staatsangehörigkeit — in der Praxis die des gewöhnlichen Aufenthalts. Für jemanden, der in Deutschland lebt, ist das typischerweise die deutsche Staatsangehörigkeit. Für Immobilien in der Türkei bleibt es dennoch beim türkischen Recht (Belegenheitsprinzip).
+
+---
+
+## 2. Türkisches Erbrecht: Die wesentlichen Grundsätze
+
+Da für Immobilien in der Türkei stets türkisches Erbrecht gilt, müssen in Deutschland lebende Erben die Grundprinzipien kennen.
+
+### Gesetzliche Erbquoten nach türkischem Recht (TMK Art. 495–502)
+
+| Situation | Ehegattenanteil | Kinderanteil |
+|---|---|---|
+| Mit Kindern | 1/4 | 3/4 (gleichmäßig geteilt) |
+| Ohne Kinder, mit Eltern | 1/2 | — (Eltern erhalten 1/2) |
+| Ohne Kinder, ohne Eltern | 3/4 | — |
+| Alleiniger Erbe | alles | — |
+
+**Wichtig:** Türkisches Recht kennt **keine** Unterscheidung zwischen ehelichen und nichtehelichen Kindern — alle erben gleich. Ebenso gibt es keinen Unterschied zwischen Söhnen und Töchtern.
+
+### Pflichtteil (Saklı Pay / Mahfuz Hisse)
+
+Das türkische Recht schützt bestimmte Erben durch einen unentziehbaren Pflichtteil:
+
+- **Abkömmlinge (Kinder, Enkel):** Jeweils die Hälfte des gesetzlichen Erbteils
+- **Eltern:** Jeweils ein Viertel des gesetzlichen Erbteils
+- **Ehegatte:** Immer der volle gesetzliche Erbteil (gilt als Pflichtteil)
+
+Der Erblasser darf über diesen Pflichtteil hinaus frei verfügen. Verletzt ein Testament oder eine lebzeitige Übertragung den Pflichtteil, entsteht das Recht auf eine **Herabsetzungsklage (Tenkis Davası)** — das türkische Äquivalent der deutschen Pflichtteilsergänzungsklage.
+
+### Testamentsformen im türkischen Recht
+
+**Öffentliches Testament (Resmî Vasiyetname):** Errichtet vor einem Notar in Anwesenheit von zwei Zeugen. Sicherste Form.
+
+**Eigenhändiges Testament (El Yazılı Vasiyetname):** Vollständig handgeschrieben, datiert und eigenhändig unterschrieben. Maschinenschrift oder Computer ungültig. Datum muss Tag, Monat und Jahr enthalten.
+
+**Mündliches Testament:** Nur in Ausnahmesituationen mit unmittelbarer Todesgefahr gültig; erlischt nach einem Monat, wenn die Notsituation beendet ist.
+
+**Gilt ein deutsches Testament in der Türkei?**
+
+Für bewegliche Nachlassgegenstände kann ein deutsches Testament mit Apostille anerkannt werden. Für Immobilien in der Türkei gilt türkisches Recht — ein deutsches Testament ändert die anwendbaren Erbquoten nicht. Ein in Deutschland errichtetes Testament kann jedoch die **Rechtswahl** für das auf den beweglichen Nachlass anwendbare Erbrecht enthalten, sofern der Erblasser die Option nach der EU-Erbrechtsverordnung nutzt. Für türkische Immobilien bleibt es beim türkischen Erbrecht.
+
+**Empfehlung:** Für Erblasser mit Vermögen in beiden Ländern empfiehlt sich ein sorgfältig abgestimmtes Testament, das die Anforderungen beider Rechtsordnungen berücksichtigt. Dies vermeidet Nachlassspaltungsprobleme und schützt den überlebenden Ehegatten.
+
+---
+
+## 3. Der türkische Erbschein (Veraset İlamı) — Warum der deutsche nicht reicht
+
+Der türkische Erbschein ist das wichtigste Dokument im türkischen Nachlassverfahren. Ohne ihn ist keine Grundbuchumschreibung, keine Bankfreigabe und keine steuerliche Abwicklung möglich.
+
+### Warum ein deutscher Erbschein nicht ausreicht
+
+Türkische Grundbuchämter akzeptieren für Immobilien **ausnahmslos** den türkischen Erbschein. Selbst ein apostillierter und beglaubigt übersetzter deutscher Erbschein wird für Immobilienübertragungen nicht anerkannt. Dies ist durch ständige Praxis der türkischen Behörden und durch Rechtsprechung gefestigt.
+
+Für bewegliches Vermögen (Bankkonten) kann ein türkischer Erbschein ausreichen, wenn er apostilliert oder durch die türkische Auslandsvertretung beglaubigt ist. In der Praxis verlangen türkische Banken jedoch häufig ebenfalls einen türkischen Erbschein.
+
+**Konsequenz:** Wer in der Türkei geerbt hat — Immobilien oder bewegliches Vermögen — kommt am türkischen Erbschein in der Regel nicht vorbei.
+
+### Wie wird der türkische Erbschein beantragt?
+
+Der Antrag wird beim türkischen **Sulh Hukuk Mahkemesi** (Friedensgericht) am letzten Wohnsitz des Erblassers in der Türkei oder bei einem türkischen Notar gestellt. In Deutschland lebende Erben können dies über einen bevollmächtigten Anwalt erledigen — eine Reise in die Türkei ist nicht erforderlich.
+
+**Besonderheit für Nicht-Türken:** Ausländische Staatsangehörige (z.B. rein deutsche Staatsbürger) können den türkischen Erbschein nicht über einen Notar erhalten, da türkische Notare nur auf die türkische Einwohnerdatei (MERNİS) zugreifen können. Sie müssen den Gerichtsweg nehmen.
+
+### Erforderliche Dokumente
+
+- Internationale Sterbeurkunde des Erblassers (mit Apostille)
+- Nachweis der Familienverhältnisse (Geburtsurkunden, Heiratsurkunden — apostilliert und beglaubigt übersetzt)
+- Reisepässe aller Erben
+- Türkische Steuernummer (Vergi Kimlik Numarası) für jeden Erben
+- Vollmacht für den Anwalt (vom türkischen Konsulat in Deutschland ausgestellt)
+
+**Gut zu wissen:** Für türkische Staatsbürger als Erben ist die Steuernummer bereits über die TC-Identifikationsnummer vorhanden. Für Deutsche als Erben muss eine türkische Steuernummer eigens beantragt werden — dies kann der Anwalt erledigen.
+
+---
+
+## 4. Erbschaftsteuer in der Türkei — Was wirklich auf Sie zukommt
+
+### Wer muss in der Türkei Erbschaftsteuer zahlen?
+
+Die türkische Erbschaftsteuer (Veraset ve İntikal Vergisi) folgt dem Belegenheitsprinzip: Alle Vermögenswerte, die sich in der Türkei befinden, unterliegen der türkischen Erbschaftsteuer — unabhängig von der Staatsangehörigkeit des Erben. Erbt ein Deutscher eine Immobilie in Antalya, fällt türkische Erbschaftsteuer an.
+
+Zusätzlich unterliegen türkische Staatsangehörige als Erben der türkischen Erbschaftsteuer auch für Auslandsvermögen — es sei denn, der Erblasser ist kein türkischer Staatsbürger und das Vermögen liegt nicht in der Türkei.
+
+### Aktuelle Freibeträge und Steuersätze (2026)
+
+Ab 1. Januar 2026 gelten folgende Freibeträge (57 Seri No'lu Genel Tebliğ vom 31.12.2025):
+
+| Erbengruppe | Freibetrag 2026 |
+|---|---|
+| Abkömmlinge (Kinder, Enkel) und Ehegatte — je Person | 2.907.136 TL |
+| Nur Ehegatte (keine Abkömmlinge) | 5.817.845 TL |
+| Schenkungen und sonstige unentgeltliche Zuwendungen | 66.935 TL |
+
+Auf den den Freibetrag übersteigenden Betrag werden folgende Steuersätze angewendet:
+
+| Steuerpflichtiger Erwerb (Matrize) | Steuersatz |
+|---|---|
+| Erste Stufe | 1% |
+| Zweite Stufe | 3% |
+| Dritte Stufe | 5% |
+| Vierte Stufe | 7% |
+| Fünfte Stufe und darüber | 10% |
+
+Die Türkei ist damit im internationalen Vergleich ein Niedrigsteuerland für Erbschaften. Der Spitzensteuersatz von 10% wird erst bei sehr hohen Beträgen erreicht.
+
+### Fristen für die Steuererklärung
+
+Die Abgabefrist für die türkische Erbschaftsteuererklärung hängt vom Aufenthaltsort der Beteiligten ab:
+
+- Erblasser stirbt in der Türkei, Erbe lebt in der Türkei: **4 Monate**
+- Erblasser stirbt in der Türkei, Erbe lebt in Deutschland: **6 Monate**
+- Erblasser stirbt in Deutschland, Erbe lebt in der Türkei: **6 Monate**
+- Erblasser stirbt in Deutschland, Erbe lebt in Deutschland: **8 Monate**
+
+**Kritisch:** Erst nach Zahlung der Erbschaftsteuer stellt das türkische Finanzamt die **Unbedenklichkeitsbescheinigung (İlişik Yoktur Yazısı)** aus. Ohne dieses Dokument kann weder die Grundbuchumschreibung noch die Freigabe von Bankkonten erfolgen.
+
+### Das Doppelbesteuerungsproblem — und der Weg heraus
+
+Deutschland und die Türkei haben **kein spezielles Doppelbesteuerungsabkommen für die Erbschaftsteuer**. Das DBA von 2011 gilt ausschließlich für Einkommen- und Körperschaftsteuer — nicht für Erbschaftsteuer.
+
+Dies bedeutet: Wer in Deutschland wohnhaft ist und in der Türkei erbt, kann sowohl in der Türkei als auch in Deutschland steuerpflichtig sein. Beide Länder haben unterschiedliche Anknüpfungspunkte:
+
+- **Türkei:** Knüpft an die türkische Staatsangehörigkeit des Erben und die Belegenheit des Vermögens an
+- **Deutschland:** Knüpft an den Wohnsitz des Erblassers oder des Erben an (§ 2 ErbStG)
+
+**Der gesetzliche Ausweg: § 21 ErbStG**
+
+Wenn keine Doppelbesteuerungsabkommen existieren, ermöglicht § 21 Erbschaftsteuergesetz die **Anrechnung** der in der Türkei gezahlten Erbschaftsteuer auf die deutsche Steuer. Diese Anrechnung erfolgt jedoch:
+- nur auf ausdrücklichen **Antrag** — das Finanzamt rechnet nicht automatisch an
+- nur bis zur Höhe der deutschen Steuer auf dasselbe Vermögen
+- nur gegen **Nachweis** der tatsächlich gezahlten türkischen Steuer
+
+**Praktische Maßnahmen:**
+1. Alle türkischen Steuerbescheide und Zahlungsbelege sorgfältig aufbewahren
+2. Diese Dokumente apostillieren und beglaubigt ins Deutsche übersetzen lassen
+3. Bei der deutschen Erbschaftsteuererklärung ausdrücklich die Anrechnung nach § 21 ErbStG beantragen
+
+Eine vollständige Doppelbesteuerung lässt sich auf diesem Weg zwar nicht in jedem Fall vermeiden, aber zumindest erheblich reduzieren.
+
+---
+
+## 5. Erbausschlagung — Wenn das Erbe mehr Schulden als Wert hat
+
+Das türkische Recht kennt einen Grundsatz, den viele Erben nicht kennen: **Wer das Erbe nicht fristgerecht ausschlägt, hat es angenommen — einschließlich aller Schulden des Erblassers.**
+
+### Die 3-Monats-Frist
+
+Nach türkischem Recht (TMK Art. 605) beträgt die Frist zur Erbausschlagung **3 Monate** ab dem Zeitpunkt, zu dem der Erbe von der Erbschaft und seiner Erbenstellung Kenntnis erlangt. Diese Frist gilt auch für in Deutschland lebende Erben und wird in der Praxis nicht verlängert.
+
+Die Ausschlagung muss beim zuständigen Sulh Hukuk Mahkemesi (Friedensgericht) erklärt werden. Ein bevollmächtigter Anwalt kann dies in Ihrem Namen erledigen.
+
+### Warum die Ausschlagung wichtig sein kann
+
+Falls der Erblasser in der Türkei Schulden hatte — Hypotheken, Steuerschulden, Verbindlichkeiten gegenüber Gläubigern — gehen diese auf die Erben über. Wer das Erbe annimmt, haftet mit seinem persönlichen Vermögen für diese Schulden.
+
+**Vor einer Entscheidung sollten Sie prüfen lassen:**
+- Hypotheken und Pfandrechte auf Immobilien (über Tapu-Abfrage)
+- Bankverbindlichkeiten und Kredite
+- Steuerschulden beim türkischen Finanzamt
+- Offene Verbindlichkeiten gegenüber Dritten
+
+Ergibt die Überprüfung, dass die Schulden den Nachlass übersteigen, empfiehlt sich die Erbausschlagung. Bei Unsicherheit kann ein Anwalt alternativ zunächst **ihtiyaten reddi miras** (vorläufige Ausschlagung unter Vorbehalt) beantragen, um Zeit für eine vollständige Prüfung zu gewinnen.
+
+---
+
+## 6. Pflichtteilsklage (Tenkis Davası) — Wenn Ihr Erbteil verletzt wurde
+
+Eines der häufigsten Probleme bei deutsch-türkischen Erbfällen: Der Erblasser hat in seinen letzten Lebensjahren Immobilien in der Türkei an einzelne Erben oder Dritte übertragen — und die in Deutschland lebenden anderen Erben werden um ihren gesetzlichen Anteil gebracht.
+
+Das türkische Erbrecht schützt dagegen durch die **Tenkis Davası** (Herabsetzungsklage / Pflichtteilsergänzungsklage).
+
+### Was kann angefochten werden?
+
+- Lebzeitige Übertragungen, die den Pflichtteil der anderen Erben verletzen
+- Testamentarische Verfügungen, die pflichtteils-berechtigte Erben benachteiligen
+- Schenkungen, die in den letzten Jahren vor dem Tod vorgenommen wurden
+
+### Fristen — Achtung
+
+Die Tenkis Davası muss erhoben werden:
+- Innerhalb von **1 Jahr** ab Kenntnis von der Pflichtteilsverletzung
+- In jedem Fall innerhalb von **10 Jahren** ab Eröffnung des Testaments oder Öffnung des Erbfalls
+
+Diese Fristen sind Ausschlussfristen — nach Ablauf ist das Klagerecht unwiederbringlich verloren. Wenn Sie den Verdacht haben, dass Ihr Pflichtteil verletzt wurde, sollten Sie sofort handeln.
+
+### Kann ich als Erbe in Deutschland klagen?
+
+Ja. Durch eine beim türkischen Konsulat ausgestellte Sondervollmacht kann Ihr Anwalt die Klage in der Türkei für Sie einreichen und führen — ohne dass Sie in die Türkei reisen müssen. Die Klage wird beim Asliye Hukuk Mahkemesi (Zivilgericht) am letzten Wohnsitz des Erblassers in der Türkei eingereicht.
+
+---
+
+## 7. Muris Muvazaası — Wenn Vermögen vor dem Tod verschoben wurde
+
+Dies ist das Thema, über das kaum jemand spricht — und das in der Praxis bei deutsch-türkischen Erbfällen sehr häufig vorkommt.
+
+### Was bedeutet Muris Muvazaası?
+
+**Muris Muvazaası** bezeichnet eine Sonderkonstellation des türkischen Erbrechts: Der Erblasser hat eine Immobilie oder andere Vermögenswerte zu Lebzeiten auf eine Person — häufig einen bestimmten Erben oder einen Dritten — übertragen, dabei jedoch eine tatsächlich gewollte **Schenkung** im Grundbuch als **Kauf** ausgewiesen. Ziel ist es, den übrigen Erben ihre Rechte zu entziehen und gleichzeitig die Pflichtteilsklage zu umgehen (die bei einer offen deklarierten Schenkung möglich wäre).
+
+**Typische Fallkonstellationen:**
+- Der Vater überträgt vor dem Tod alle Immobilien auf den Sohn — als „Kauf" eingetragen, tatsächlich ohne Gegenleistung
+- Ein Elternteil überträgt Vermögen zugunsten der Kinder aus einer zweiten Ehe, zum Nachteil der Kinder aus erster Ehe
+- Töchter werden durch Übertragungen auf Söhne benachteiligt
+
+### Das entscheidende Merkmal: Keine Verjährung
+
+Die Klage wegen Muris Muvazaası unterliegt **keiner Verjährungsfrist**. Sie kann nach dem Tod des Erblassers jederzeit erhoben werden — auch wenn die Übertragung 20 oder 30 Jahre zurückliegt. Dies unterscheidet sie von der Tenkis Davası, die an strenge Fristen gebunden ist.
+
+Einzige Bedingung: Die Klage kann nur **nach** dem Tod des Erblassers erhoben werden.
+
+### Wie wird die Klage geführt?
+
+Die Klage auf Grundbuchberichtigung (Tapu İptali ve Tescil Davası) wird beim Asliye Hukuk Mahkemesi am Belegenheitsort der Immobilie eingereicht. Jeder betroffene Erbe kann die Klage **einzeln und unabhängig** von anderen Miterben führen.
+
+**Beweisführung:** Die Beweislast liegt beim klagenden Erben. Typische Beweismittel:
+
+- Der offensichtliche Missverhältnis zwischen dem im Grundbuch eingetragenen Kaufpreis und dem tatsächlichen Marktwert
+- Fehlende Zahlungsfähigkeit des angeblichen Käufers
+- Familieninterne Konstellationen (z.B. der Vater hatte keinen wirtschaftlichen Grund, sein Haus zu verkaufen)
+- Zeugenaussagen
+- Kontoauszüge und Bankunterlagen
+
+**Einstweilige Verfügung (İhtiyati Tedbir):** Unbedingt gleichzeitig mit der Klage zu beantragen, um eine Weiterveräußerung der Immobilie an Dritte während des laufenden Verfahrens zu verhindern. Ohne diese Sicherungsmaßnahme kann ein bösgläubiger Dritter die Immobilie erwerben, was die Durchsetzung des Anspruchs erheblich erschwert.
+
+**Aus Deutschland heraus klagen:** Mit einer speziellen Vollmacht — die ausdrücklich die Befugnis zur Klageerhebung, Prozessführung und Beantragung einstweiliger Verfügungen enthält — kann der Anwalt diese Klage vollständig in Ihrem Namen führen.
+
+---
+
+## 8. Erbengemeinschaft und Teilungsklage — Wenn Miterben nicht kooperieren
+
+Wenn mehrere Erben vorhanden sind, entsteht automatisch eine **Erbengemeinschaft (Miras Ortaklığı)**. Das bedeutet: Alle Erben sind gemeinsam Eigentümer der Immobilie, können sie aber nur gemeinsam verwalten und verkaufen.
+
+### Das Problem: Blockade durch einen Miterben
+
+Für den Verkauf einer geerbten Immobilie in der Türkei ist die **Zustimmung aller Miterben** erforderlich. Verweigert nur einer seine Unterschrift, ist der Verkauf blockiert. In der Praxis betrifft dies häufig Konstellationen, bei denen ein Teil der Erben in der Türkei lebt und andere in Deutschland — mit unterschiedlichen Vorstellungen über Nutzung, Verkauf oder Aufteilung.
+
+### Die Lösung: İzale-i Şuyu (Teilungsklage)
+
+**Jeder einzelne Miterbe** kann eine İzale-i Şuyu-Klage (Aufhebung der Gemeinschaft) beim türkischen Gericht einreichen — ohne Zustimmung der anderen. Das Gericht entscheidet dann:
+
+- Ist eine **physische Aufteilung** der Immobilie möglich? (Selten bei bebauten Grundstücken)
+- Wenn nicht: Zwangsverkauf der Immobilie im Wege einer **öffentlichen Versteigerung** und anteilige Auszahlung des Erlöses
+
+**Wichtig:** Auch diese Klage kann durch einen bevollmächtigten Anwalt aus Deutschland heraus geführt werden.
+
+**Vor der Klage:** Es empfiehlt sich, die steuerliche Situation (Erbschaftsteuer bezahlt? Unbedenklichkeitsbescheinigung erteilt?) und die korrekte Grundbuchlage (alle Erben eingetragen?) zu prüfen, um Verzögerungen im Klageverfahren zu vermeiden.
+
+---
+
+## 9. Immobilie in der Türkei aus Deutschland verkaufen
+
+Nach der Grundbuchumschreibung auf die Erben stellt sich häufig die Frage: Wie verkauft man eine Immobilie in der Türkei, ohne dorthin zu reisen?
+
+### Vollmacht — Der Schlüssel
+
+Der Verkauf ist über eine **türkische Kaufvollmacht (Vekaletname)** möglich, die beim türkischen Konsulat in Deutschland auf Türkisch erstellt wird. Diese Vollmacht ist sofort in der Türkei gültig — keine Apostille erforderlich. Mehr zu Form und Inhalt türkischer Vollmachten finden Sie im Beitrag [Vollmacht auf Türkisch](/de/blog/vollmacht-auf-tuerkisch).
+
+**Achtung:** Eine beim deutschen Notar ausgestellte Vollmacht wird vom türkischen Grundbuchamt für Immobilientransaktionen in der Regel nicht akzeptiert. Die Vollmacht muss zwingend beim türkischen Konsulat erstellt werden.
+
+Die Vollmacht muss ausdrücklich enthalten:
+- Adresse und Tapu-Daten der Immobilie
+- Vollmacht zum Verkauf und zur Eigentumsübertragung
+- Vollmacht zum Empfang des Kaufpreises
+- Vollmacht zur Vertretung gegenüber Finanzamt und Grundbuchamt
+
+### Steuerliche Konsequenzen beim Verkauf
+
+In der Türkei fällt Wertzuwachssteuer (Değer Artış Kazancı) an, wenn die Immobilie weniger als **5 Jahre** nach dem Erbgang verkauft wird. Die Fünf-Jahres-Frist beginnt mit dem Datum der Erbschaft, nicht mit dem Kaufdatum des Erblassers.
+
+Auf den Verkaufserlös in Deutschland kann zusätzlich Einkommensteuer anfallen, wenn die Spekulationsfrist (10 Jahre ab Anschaffung) noch nicht abgelaufen ist. Da der Erbgang als Anschaffung gilt, ist dies bei kurzfristigen Verkäufen zu prüfen.
+
+---
+
+## 10. Schritt für Schritt: So gehen Sie bei einer türkischen Erbschaft vor
+
+**Schritt 1 — Sofort nach dem Todesfall (innerhalb der ersten Wochen):**
+- Bewerten Sie grob, ob Schulden den Nachlass übersteigen könnten
+- Stellen Sie eine Fristüberwachung für die 3-Monats-Erbausschlagungsfrist sicher
+- Erteilen Sie einem Anwalt eine Sondervollmacht beim türkischen Konsulat
+
+**Schritt 2 — Erbschein beantragen:**
+- Ihr Anwalt beantragt den türkischen Erbschein beim Sulh Hukuk Mahkemesi
+- Alle ausländischen Dokumente (Sterbeurkunde, Familiendokumente) werden apostilliert und übersetzt
+
+**Schritt 3 — Erbschaftsteuererklärung:**
+- Fristgerechte Einreichung beim türkischen Finanzamt (4–8 Monate je nach Konstellation)
+- Zahlung der Erbschaftsteuer
+- Erhalt der Unbedenklichkeitsbescheinigung
+
+**Schritt 4 — Grundbuchumschreibung:**
+- Antrag über WEBTAPU (Online-System des türkischen Katasteramts)
+- Alle Erben oder ihr bevollmächtigter Vertreter müssen handeln
+
+**Schritt 5 — Prüfung auf Ansprüche:**
+- Wurde Ihr Pflichtteil durch Vermögensübertragungen verletzt? → Tenkis Davası prüfen
+- Verdacht auf verdeckte Schenkungen als Kauf getarnt? → Muris Muvazaası prüfen
+- Miterben kooperieren nicht? → İzale-i Şuyu prüfen
+
+**Schritt 6 — Deutsche Erbschaftsteuererklärung:**
+- In Deutschland Erbschaftsteuer erklären (wenn in Deutschland unbeschränkt steuerpflichtig)
+- Antrag auf Anrechnung der türkischen Steuer nach § 21 ErbStG stellen
+- Türkische Steuerbescheide und Zahlungsbelege beifügen (apostilliert und übersetzt)
+
+---
+
+## Türkische Erbschaft aus Deutschland abwickeln — mit der Doğru Kanzlei
+
+[Die Doğru Kanzlei](/de/leistungen/erbrecht) ist bei der **Anwaltskammer Ankara** und der **Rechtsanwaltskammer Karlsruhe** (§ 207 BRAO) zugelassen. Wir führen türkische Erbsachen direkt — kein Umweg über einen weiteren türkischen Anwalt, dem Sie blind vertrauen müssen.
+
+Wir verwalten den Zugriff auf UYAP (türkisches Justizportal) über das Anwaltsportal, überwachen Fristen in Echtzeit und koordinieren alle Behördengänge in der Türkei von unserem Büro in Mannheim aus.
+
+**Was wir für Sie übernehmen:**
+- Beschaffung des türkischen Erbscheins (Sulh Hukuk Mahkemesi oder Notar)
+- Erbschaftsteuererklärung und Kommunikation mit dem türkischen Finanzamt
+- Grundbuchumschreibung (WEBTAPU-Verfahren)
+- Tenkis Davası (Pflichtteilsklage) bei Pflichtteilsverletzung
+- Muris Muvazaası-Klage bei verdeckten Schenkungen
+- İzale-i Şuyu-Klage bei blockierten Erbengemeinschaften
+- Immobilienverkauf durch Sondervollmacht
+- Beratung zur Anrechnung türkischer Erbschaftsteuer nach § 21 ErbStG
+
+---
+
+> **RECHTLICHER HINWEIS:** Dieser Artikel dient allgemeinen Informationszwecken und ersetzt keine rechtliche Beratung. Für Ihren konkreten Fall wenden Sie sich an Av. Hasan Doğru bei der Doğru Kanzlei.`,
+    contentTR: `**YASAL UYARI:** Bu makale yalnızca Türk hukukuna ilişkin genel bilgi amaçlıdır. Doğru Kanzlei, §207 BRAO kapsamında yalnızca Türk hukuku konularında danışmanlık vermektedir.
+
+---
+
+Almanya'da yaşayan Türk vatandaşları her yıl aynı ikilemle karşılaşıyor: Türkiye'deki bir akrabanın vefatının ardından miras süreci başlıyor, ancak ne yapmaları gerektiğini bilmiyorlar. Türkiye'ye gitmek zorunda mılar? Hangi belgeleri temin etmeleri gerekiyor? Haklarını nasıl koruyacaklar?
+
+Bu rehber, Almanya'dan Türkiye'deki miras sürecini yönetmek isteyen herkes için hazırlandı. Hukuki çerçeveden somut adımlara, kritik sürelerden dava yollarına kadar bilmeniz gereken her şey burada. Miras işlemleri için vekaletname hazırlığı gerekiyorsa ayrıca [vekâletname nasıl çıkarılır](/tr/blog/turkce-vekaletname-nasil-cikarilir) rehberimizi de inceleyebilirsiniz.
+
+---
+
+## 1. Hangi Ülkenin Hukuku Geçerli? AB Miras Tüzüğü ve MÖHUK
+
+Almanya-Türkiye mirası söz konusu olduğunda ilk ve en temel soru şudur: Hangi ülkenin hukuku uygulanır?
+
+### AB Miras Tüzüğü 650/2012
+
+17 Ağustos 2015'ten itibaren AB üyesi devletler arasında (Danimarka hariç) geçerli olan AB Miras Tüzüğü'ne göre, kural olarak kişinin **son alışılagelen ikametgâhının bulunduğu devletin hukuku** uygulanır. Almanya'da yaşayan bir Türk vatandaşının mirası varsayılan olarak **Alman miras hukukuna** tabidir.
+
+Ancak Tüzük, **hukuk seçimi (Rechtswahl/Professio Iuris)** imkânı da tanır: Almanya'da yaşayan bir Türk vatandaşı, noter huzurunda düzenlenen vasiyetname veya ölüme bağlı tasarrufla Türk miras hukukunun uygulanmasını seçebilir. Bu seçim, özellikle Türkiye'de taşınmazı olan kişiler için büyük önem taşır.
+
+### MÖHUK Kapsamında Türk Hukuku
+
+Türkiye'nin uluslararası özel hukukunu düzenleyen MÖHUK (5718 sayılı Kanun) m.20'ye göre, miras işlemleri miras bırakanın ölüm anındaki millî hukukuna tabidir. Türk vatandaşları için bu Türk hukuku demektir.
+
+Ancak kritik istisna şudur: **Türkiye'deki taşınmaz mallar için her zaman Türk hukuku uygulanır (lex rei sitae).** Bu kural, miras bırakanın Alman ya da Türk vatandaşı olmasından bağımsız geçerlidir. Dolayısıyla Türkiye'deki bir daire ya da arsa, miras bırakan kim olursa olsun, Türk miras hukukuna göre paylaşılır.
+
+### Nachlassspaltung: Mirasın Bölünmesi Sorunu
+
+Bu iki farklı hukuk sisteminin bir arada uygulanması, **miras bölünmesi (nachlassspaltung / tereke bölünmesi)** sorununu doğurur. Almanya'daki banka hesabı Alman hukukuna, Türkiye'deki taşınmaz Türk hukukuna göre paylaşılır. Bu durum özellikle eş ile çocuklar arasındaki paylaşım oranlarında çarpıcı farklara yol açabilir.
+
+**Pratik öneri:** Her iki ülkede de taşınmazı olan kişiler için, her iki hukuk sisteminin gerekliliklerini karşılayan **çifte geçerli vasiyetname** hazırlatılması önerilir. Bu vasiyetnamenin hem Türk hem Alman noteri tarafından değil, her iki hukuku bilen bir avukat tarafından hazırlanması kritiktir.
+
+---
+
+## 2. Türk Miras Hukukunun Temel İlkeleri
+
+Türk miras hukuku, 4721 sayılı Türk Medeni Kanunu'nun (TMK) 495–682. maddeleriyle düzenlenmektedir.
+
+### Yasal Mirasçılar ve Miras Payları
+
+**Birinci zümre:** Miras bırakanın altsoyu — çocuklar ve torunlar. Bunlar eşit paylarda miras alır. Sağ kalan eş, çocuklarla birlikte miras bırakanın payının **1/4'ünü** alır.
+
+**İkinci zümre:** Miras bırakanın anne ve babası ile onların altsoyu. Altsoy yoksa sağ kalan eş, anne-babayla birlikte mirasın **1/2'sini** alır.
+
+**Üçüncü zümre:** Büyükanne ve büyükbabalar ile onların altsoyu.
+
+Altsoy ve üstsoy yoksa sağ kalan eş **mirası tamamen** alır.
+
+### Saklı Pay (Mahfuz Hisse)
+
+Türk hukuku, belirli mirasçıların payını koruma altına almıştır. Bu paya **saklı pay** denir:
+
+- **Altsoy (çocuklar, torunlar):** Yasal miras payının **1/2'si**
+- **Anne-baba:** Her biri için yasal payın **1/4'ü**
+- **Sağ kalan eş:** Birlikte miras aldığı gruba göre değişir — her zaman yasal payının tamamı saklı pay kabul edilir
+
+Miras bırakan, vasiyetname veya yaşarken yaptığı devirlerle bu saklı payları ihlal edemez. İhlal halinde mirasçıların **tenkis davası** açma hakkı doğar.
+
+### Vasiyetname Türleri
+
+**Resmî vasiyetname:** Notar, iki tanık ve miras bırakan huzurunda düzenlenir. En güvenli yöntemdir.
+
+**El yazılı vasiyetname:** Başından sonuna kadar miras bırakanın el yazısıyla yazılmış ve imzalanmış olmalıdır. Bilgisayarla yazılan metinler geçersizdir. Tarih mutlaka yazılmalıdır.
+
+**Sözlü vasiyetname:** Yalnızca yakın ölüm tehlikesi durumunda geçerlidir; bu tehlike ortadan kalktıktan sonra 1 ay içinde yazılı vasiyetname yapılmazsa geçersiz olur.
+
+**Almanya'da yapılan vasiyetname Türkiye'de geçerli mi?** Taşınır mallar için evet; ancak Türkiye'deki taşınmazlar için her zaman Türk hukuku geçerlidir. Almanya'da düzenlenen vasiyetnamenin Türkiye'de kullanılabilmesi için **apostil ve yeminli Türkçe çeviri** şarttır.
+
+---
+
+## 3. Veraset İlamı: Mirasın Kapısını Açan Belge
+
+Türkiye'deki miras sürecinde her şey bu belgeyle başlar.
+
+### Veraset İlamı Nedir?
+
+Veraset ilamı (mirasçılık belgesi), kimin hangi oranda mirasçı olduğunu gösteren ve tapu dairesi, bankalar ile vergi dairesi gibi tüm resmi kurumlar tarafından aranan belgedir. Tapu intikali, banka hesaplarının çözülmesi ve vergi beyannamesi verilmesi için bu belge zorunludur.
+
+### Kimden Alınır?
+
+- **Türkiye'deki Sulh Hukuk Mahkemesi veya herhangi bir noterden** alınabilir
+- Almanya'da yaşayan mirasçılar **Türkiye'ye gitmeden**, avukat aracılığıyla veraset ilamı aldırabilir
+
+### Alman Vatandaşları İçin Kritik Fark
+
+Türk vatandaşı olmayan mirasçılar (örneğin Alman vatandaşları) noter üzerinden veraset ilamı alamaz. Türk noterleri yalnızca MERNİS (Türk nüfus kayıt sistemi) üzerinden aile bağını doğrulayabilir; Alman aile kayıtlarına erişimleri yoktur. Bu nedenle **tüm yabancı uyruklu mirasçılar mahkeme kanalıyla** veraset ilamı almak zorundadır.
+
+### Gerekli Belgeler
+
+- Miras bırakanın ölüm belgesi (apostilli, Türkçe yeminli çevirili)
+- Mirasçıların kimlik belgeleri ve nüfus kayıtları
+- Aile bağını gösteren resmi belgeler (doğum cüzdanı, evlilik cüzdanı vb.)
+- Avukata verilecek özel yetkili vekâletname
+
+### Alman Erbschein Türkiye'de Geçerli mi?
+
+Hayır. Alman mahkemelerinin verdiği Erbschein (miras belgesi), Türkiye'deki taşınmazlar için **kesinlikle geçerli değildir**. Tapu müdürlüğü Alman belgelerini kabul etmez. Bu nedenle hem Almanya'da hem Türkiye'de miras varsa **her iki ülkede ayrı ayrı** mirasçılık belgesi alınması gerekir.
+
+---
+
+## 4. Veraset Vergisi: Türkiye'de Ne Kadar Ödersiniz?
+
+### 2026 Yılı İstisna Tutarları
+
+1 Ocak 2026 tarihinden itibaren geçerli olan güncel rakamlara göre (57 Seri No'lu Veraset ve İntikal Vergisi Kanunu Genel Tebliği):
+
+| Mirasçı | 2026 İstisna Tutarı |
+|---|---|
+| Füruğ (çocuklar) ve eş — her biri için | 2.907.136 TL |
+| Sadece eş (füruğ yoksa) | 5.817.845 TL |
+| İvazsız intikaller (bağış vb.) | 66.935 TL |
+
+Bu tutarların üzerindeki miras payları aşağıdaki kademeli tarifeye göre vergilendirilir:
+
+| Matrah Dilimi | Vergi Oranı |
+|---|---|
+| İlk dilim | %1 |
+| İkinci dilim | %3 |
+| Üçüncü dilim | %5 |
+| Dördüncü dilim | %7 |
+| Beşinci dilim ve üzeri | %10 |
+
+### Beyanname Süreleri
+
+- **Ölüm Türkiye'de, mirasçılar Türkiye'de:** Ölüm tarihinden itibaren **4 ay**
+- **Ölüm Türkiye'de, mirasçılar yurt dışında (Almanya gibi):** **6 ay**
+- **Ölüm yurt dışında, mirasçılar Türkiye'de:** **6 ay**
+- **Ölüm yurt dışında, mirasçılar da yurt dışında:** **8 ay**
+
+Bu sürelerin kaçırılması para cezasına ve gecikme faizine yol açar. Tapu intikali, vergi ilişiksiz belgesi (İlişik Yoktur Yazısı) alınmadan gerçekleştirilemez.
+
+### Çifte Vergilendirme Tehlikesi
+
+Türkiye ile Almanya arasında **miras vergisi alanında çifte vergilendirmeyi önleme anlaşması bulunmamaktadır.** İki ülke arasındaki 2011 tarihli Çifte Vergilendirme Anlaşması yalnızca gelir ve kurumlar vergilerini kapsar; veraset vergisini kapsamaz.
+
+Bu nedenle Almanya'da yaşayan mirasçılar Türkiye'deki miraslarının hem Türkiye'de hem de Almanya'da vergilendirilebileceğini bilmelidir. Türkiye'de ödenen vergi, Almanya'da mahsup talebinde bulunulabilir; ancak bu prosedür dikkatli takip gerektirmektedir.
+
+**Pratik önlem:** Türkiye'deki miras vergisi ödeme makbuzlarını ve Türkçe vergi belgelerini apostilli ve yeminli çevirili olarak saklayın. Almanya'daki vergi dairesine mahsup talebi için bu belgeler zorunludur.
+
+---
+
+## 5. Miras Reddi: Borçlu Mirastan Nasıl Kaçınırsınız?
+
+Türk hukukunda miras otomatik olarak kabul edilmiş sayılır. Reddetmek için aktif adım atılması gerekir.
+
+### 3 Aylık Süre
+
+TMK m.605 uyarınca, mirasçılar **ölümü ve mirasçı olduklarını öğrendikten itibaren 3 ay içinde** mirası reddedebilir. Bu süre geçirilirse miras — borçlar dahil — kabul edilmiş sayılır.
+
+Bu 3 aylık süre, Almanya'da yaşayan mirasçılar için de aynı şekilde geçerlidir. Uzatılması son derece sınırlı koşullara bağlıdır.
+
+### Nasıl Reddedilir?
+
+Reddi miras, **miras bırakanın son yerleşim yerindeki Sulh Hukuk Mahkemesi'ne** yazılı dilekçeyle yapılır. Almanya'daki mirasçılar bu başvuruyu avukat aracılığıyla yapabilir. Ayrıca konsolosluk üzerinden Türkiye'deki mahkemeye iletim de mümkündür.
+
+### Mirasın Borçlu Olup Olmadığı Nasıl Anlaşılır?
+
+Miras bırakanın mal varlığı ve borçlarını öğrenmek için:
+- Türkiye'deki tapu kayıtları sorgulanabilir (WEBTAPU)
+- Bankalardan hesap bilgisi talep edilebilir
+- Vergi dairesinden vergi borcu sorgulama yapılabilir
+- Noterden tereke tespiti davası açılabilir
+
+Bu araştırma 3 aylık süre dolmadan tamamlanmalıdır. Aksi halde **ihtiyaten reddi miras** başvurusunda bulunulup ardından araştırma sürdürülebilir.
+
+---
+
+## 6. Tenkis Davası: Saklı Payınız İhlal Edildiyse
+
+Almanya'da yaşayan mirasçıların en sık karşılaştığı sorun şudur: Miras bırakan, hayatının son yıllarında Türkiye'deki taşınmazlarını belirli kişilere devretmiş — ve Almanya'daki diğer mirasçılar miras paylarının büyük bölümünden yoksun bırakılmıştır.
+
+### Tenkis Davası Nedir?
+
+TMK m.560 uyarınca, miras bırakanın saklı paylı mirasçıların zorunlu payını ihlal eden tasarruflarına karşı **tenkis davası** açılabilir. Bu dava ile fazla tasarrufun iptali ve saklı payın teslimi talep edilir.
+
+Tenkis davası hem **yaşarken yapılan devirler** (tapuda satış veya bağış gösterilen işlemler) hem de **vasiyetname hükümleri** için geçerlidir.
+
+### Süre Sınırı
+
+Tenkis davası açma hakkı:
+- Saklı payın ihlal edildiğini **öğrendiğiniz tarihten itibaren 1 yıl**
+- Her hâlde vasiyetnamenin açıldığı tarihten veya diğer tasarruflarda mirasın açılmasından itibaren **10 yıl**
+
+içinde kullanılmalıdır. Bu süreler hak düşürücü sürelerdir; aşılması durumunda dava hakkı tamamen ortadan kalkar.
+
+### Almanya'dan Tenkis Davası Açılabilir mi?
+
+Evet. Konsolosluktan düzenlenecek özel yetkili vekâletname ile avukatınız bu davayı Türkiye'de sizin adınıza açabilir ve takip edebilir. Türkiye'ye gitmenize gerek yoktur. Doğru Kanzlei olarak UYAP avukat portalı üzerinden dava dosyalarına Mannheim ofisimizden doğrudan erişiyor ve duruşmalara katılıyoruz.
+
+---
+
+## 7. Muris Muvazaası: Mirastan Mal Kaçırıldıysa
+
+Bu dava, Almanya'daki Türk ailelerinin miras uyuşmazlıklarında en sık gündeme gelen konulardan biridir — ve maalesef en az bilinenidir.
+
+### Muris Muvazaası Nedir?
+
+Miras bırakanın, mirasçılarından mal kaçırmak amacıyla gerçekte **bağışlamak istediği** taşınmazı tapuda **satış** olarak göstermesidir. Görünürdeki işlem satış, gizli amaç ise bağıştır. Bu yolla hem tenkis davası hakkı engellenmekte hem de mirasçılar hak ettikleri paylardan yoksun bırakılmaktadır.
+
+**Yaygın örnekler:**
+- Babanın kız çocuklarından mal kaçırarak erkek çocuklara devretmesi
+- Eski evlilikten olan çocuklardan mal kaçırarak yeni eşten olan çocuklara bırakması
+- Taşınmazın sembolik bedelle üçüncü bir kişiye satış göstererek devredilmesi
+- Ölünceye kadar bakma sözleşmesi kılığına büründürülen mal devirleri
+
+### Muris Muvazaasının Özelliği: Zamanaşımı Yoktur
+
+Bu dava, **herhangi bir zamanaşımı veya hak düşürücü süreye tabi değildir.** Miras bırakanın ölümünden sonra her zaman açılabilir. Devrin üzerinden 10, 20, hatta 30 yıl geçmiş olması davayı açmaya engel teşkil etmez.
+
+Yalnızca miras bırakan hayatta iken dava açılamaz.
+
+### İspat Yükü
+
+İspat yükü davacı mirasçıdadır. Muvazaanın varlığını destekleyen unsurlar:
+- Miras bırakanın satış yapmasını gerektirecek ekonomik bir ihtiyacının bulunmaması
+- Alıcının satın alma gücüne sahip olmaması
+- Devredilen taşınmazın rayiç değerinin çok altında gösterilmesi
+- Tanık beyanları
+- Tapu kayıtları ve aile içi yazışmalar
+
+### Almanya'dan Bu Dava Açılabilir mi?
+
+Evet. Konsolosluktan **"tapu iptali ve tescil davası açma, takip etme, ihtiyati tedbir talep etme"** yetkilerini açıkça içeren özel yetkili vekâletname düzenlenerek avukatınız bu davayı Türkiye'de açabilir. Dava, taşınmazın bulunduğu yerdeki **Asliye Hukuk Mahkemesi'nde** görülür.
+
+**İhtiyati tedbir talebi kritik öneme sahiptir:** Dava süresince taşınmazın üçüncü kişilere devredilmesini engellemek için mahkemeden ihtiyati tedbir kararı alınmalıdır. Bu adım atılmadan açılan davalarda taşınmazın el değiştirmesi ciddi hak kayıplarına yol açabilir.
+
+---
+
+## 8. Miras Ortaklığı ve İzale-i Şuyu: Mirasçılar Anlaşamıyorsa
+
+Türkiye'de taşınmaz mirası genellikle tek bir kişiye değil, birden fazla mirasçıya birlikte kalır. Bu durum **miras ortaklığı (miras iştirak halinde mülkiyet)** olarak adlandırılır.
+
+### Miras Ortaklığında Ne Olur?
+
+- Taşınmazı **satmak için tüm mirasçıların onayı** gerekir
+- Birinin bile itirazı satışı engeller
+- Kira sözleşmesi yapılması, tapu üzerinde işlem yapılması da tüm mirasçıların birlikteliğini gerektirir
+- Anlaşmazlık çözülene kadar taşınmaz atıl kalabilir
+
+Bu durum özellikle Almanya'daki ve Türkiye'deki mirasçılar arasında çok sık yaşanır.
+
+### İzale-i Şuyu Davası
+
+Mirasçılar anlaşamıyorsa herhangi bir mirasçı **izale-i şuyu (ortaklığın giderilmesi) davası** açabilir. Bu dava ile:
+
+- Taşınmaz **ayni taksim** yoluyla fiziksel olarak bölünebilir (müstakil parsellere ayrılır)
+- Bölünmesi mümkün değilse **açık artırmayla satılır** ve satış bedeli miras paylarına göre dağıtılır
+
+**Önemli:** Bu davayı tek bir mirasçı diğerlerinin onayı olmadan açabilir. Almanya'daki bir mirasçı, avukat aracılığıyla Türkiye'ye gitmeden bu davayı başlatabilir.
+
+### Taşınmaz Satılmadan Önce Ne Yapılmalı?
+
+İzale-i şuyu davası başlamadan önce miras paylarının doğru belirlenmesi ve tapu kaydının güncel olması önemlidir. Tapu üzerindeki hatalar, miras paylarındaki anlaşmazlıklar ve birikmiş vergi borçları önceden tespit edilmeli ve çözülmelidir.
+
+---
+
+## 9. Türkiye'deki Taşınmazı Almanya'dan Satmak
+
+Mirasta kalan taşınmazı satmak istiyorsunuz ama Türkiye'ye gidemiyorsunuz. Bu mümkün mü?
+
+### Evet — Ancak Doğru Vekâletname Şarttır
+
+Türkiye'deki tapu işlemleri için **tapu satış vekâletnamesi** gereklidir. Bu vekâletname Almanya'daki Türk konsolosluğundan Türkçe olarak düzenlenmelidir.
+
+Dikkat: **Alman noter tarafından düzenlenen genel vekâletnameler** Türk tapu idaresi tarafından çoğunlukla kabul edilmez. Tapu işlemi için kullanılacak vekâletnamede şu unsurlar mutlaka yer almalıdır: taşınmazın tam adresi ve tapu bilgileri, satış ve devir yetkisi, bedel tahsil yetkisi, vergi dairesinde temsil yetkisi.
+
+### Satışta Vergi Yükümlülüğü
+
+Türkiye'de taşınmaz satışından elde edilen kazanç, taşınmazın **ediniminden itibaren 5 yıl geçmemişse** değer artış kazancı vergisine tabidir. Bu vergi, miras yoluyla edinilen taşınmazlarda **miras tarihinden** itibaren hesaplanır.
+
+Türk Lirası cinsinden elde edilen satış bedeli Almanya'ya transfer edildiğinde, Almanya'da da kur farkına dayalı gelir vergisi yükümlülüğü doğabilir. Bu nedenle satış öncesinde her iki ülkedeki vergi sonuçlarının bir avukat tarafından değerlendirilmesi önerilir.
+
+---
+
+## 10. Almanya'dan Türkiye'deki Miras Süreci: Adım Adım
+
+Tüm bu bilgileri pratik bir rehbere dönüştürürsek:
+
+**Adım 1 — Ölümü öğrendikten sonra ilk 3 ay:**
+- Miras bırakanın mal varlığını ve borçlarını araştırın
+- Mirası kabul veya reddetme kararı verin
+- Reddi miras yapacaksanız avukatınız aracılığıyla Sulh Hukuk Mahkemesi'ne başvurun
+- Muris muvazaası veya saklı pay ihlali şüphesi varsa avukatınızı bilgilendirin
+
+**Adım 2 — Konsolosluğa gidin:**
+- Türkiye'deki en yakın konsolosluğa randevu alın
+- Avukatınıza miras işlemleri için **özel yetkili vekâletname** düzenleyin
+- Vekâletnamede tüm yetkilerin açıkça belirtilmesine dikkat edin
+
+**Adım 3 — Veraset ilamı:**
+- Avukatınız Sulh Hukuk Mahkemesi'nden veraset ilamı alır
+- Alman vatandaşı mirasçılar için mahkeme yolu zorunludur
+
+**Adım 4 — Veraset vergisi beyannamesi:**
+- Ölümden itibaren 4–8 ay içinde (konumunuza göre değişir) vergi dairesine beyanname verilir
+- Vergi ödendikten sonra **İlişik Yoktur Yazısı** alınır
+
+**Adım 5 — Tapu intikali:**
+- WEBTAPU üzerinden başvuru yapılır
+- Belge tamamlanınca tapu müdürlüğünde intikal gerçekleştirilir
+- Tüm bu işlemler avukat aracılığıyla uzaktan yürütülür
+
+**Adım 6 — Anlaşmazlık varsa:**
+- Tenkis davası (saklı pay ihlali)
+- Muris muvazaası davası (mal kaçırma)
+- İzale-i şuyu davası (mirasçılar arasında anlaşmazlık)
+- Bu davalar Türkiye'ye gitmeden açılabilir
+
+---
+
+## 11. Doğru Kanzlei ile Türkiye'deki Mirasınızı Almanya'dan Yönetin
+
+[Doğru Kanzlei](/tr/hizmetler/miras-hukuku) olarak, hem **Ankara Barosu** hem de **Karlsruhe Barosu** (§207 BRAO) üyesiyiz. Bu çift üyelik, Türkiye'deki miras davalarını aracı olmadan — doğrudan Mannheim ofisimizden — yürütmemizi sağlar.
+
+UYAP avukat portalı üzerinden Türkiye'deki tüm dava dosyalarına gerçek zamanlı erişiyoruz. Duruşmalara katılıyor, tapu müdürlüğü ve vergi dairesi işlemlerini takip ediyor ve sizi her aşamada bilgilendiriyoruz. Türkiye'deki ceza dosyalarının miras sürecine etkisi gibi bağlantılı riskler için [Türkiye ceza davası Almanya savunma](/tr/blog/turkiye-ceza-davasi-almanya-savunma) yazımızı da okuyabilirsiniz.
+
+**Müvekkillerimiz için üstlendiğimiz işler:**
+- Veraset ilamı alınması (mahkeme veya noter kanalıyla)
+- Tenkis davası açılması ve takibi
+- Muris muvazaası davası açılması ve takibi
+- İzale-i şuyu davası açılması ve takibi
+- Veraset vergisi beyannamesi ve İlişik Yoktur Yazısı
+- Tapu intikali
+- Taşınmaz satışı için vekâletname ve süreç yönetimi
+- Çifte vergilendirme değerlendirmesi
+
+---
+
+> **YASAL UYARI:** Bu makale genel bilgi amaçlıdır ve hukuki danışmanlık yerine geçmez. Bireysel durumunuz için Av. Hasan Doğru'ya danışmanızı öneririz.`,
+    contentEN: `**LEGAL NOTICE:** This article addresses Turkish law exclusively. Doğru Kanzlei advises on Turkish law under § 207 BRAO and does not advise on German domestic law.
+
+---
+
+The scenario plays out in families across Germany every year. A parent who emigrated from Turkey decades ago passes away. The children — born or raised in Germany, working in Germany, living their lives in Germany — suddenly discover that their parent still owned an apartment in Istanbul or a plot of land in Antalya. What now?
+
+What follows is rarely straightforward. Two legal systems collide. Documents must be apostilled and translated. Tax declarations must be filed in a country many of them have never worked in professionally. Family members in Turkey and Germany may have different ideas about what should happen to the property. And behind all of this, deadlines are running.
+
+This guide explains what you need to know and — crucially — what you need to do.
+
+---
+
+## 1. The Split Estate Problem — Which Country's Law Applies?
+
+The first thing to understand about a German-Turkish inheritance is that it almost always involves two different legal systems operating simultaneously.
+
+### The Rule That Surprises Everyone
+
+For any real estate located in Turkey, **Turkish law governs the inheritance** — regardless of the deceased's nationality, regardless of where they lived, and regardless of what any foreign will says. This is the **lex rei sitae** principle (the law of the place where the property is located), embedded in the 1929 German-Turkish Consular Convention (§§ 14(2), 18) and confirmed repeatedly by German courts, including the OLG Köln in 2014 and the OLG Hamm in 2019.
+
+For movable assets — bank accounts, vehicles, investments — the law of the deceased's nationality applies. A Turkish national who lived in Germany: their bank accounts are governed by Turkish law. A German national who owned a holiday apartment in Antalya: that apartment is governed by Turkish law, even though everything else about the estate is German.
+
+This creates what lawyers call a **split estate (Nachlassspaltung)**: the same inheritance is divided between two legal systems. The practical consequence is that the inheritance shares and procedures differ depending on what type of asset you are dealing with.
+
+### Why This Matters in Practice
+
+Consider a concrete example. A Turkish-born father lived in Germany for 30 years, holds Turkish nationality, and dies without a will. He leaves behind a wife, two adult children, a German bank account and a property in Turkey.
+
+- **German bank account (movable, Turkish nationality):** Turkish law applies → wife receives 1/4, children share 3/4
+- **Turkish property (immovable, located in Turkey):** Turkish law applies → same result
+
+Now change the scenario: the father had already acquired German citizenship. Same family, same assets.
+
+- **German bank account (movable, German nationality):** German law applies → wife receives 1/2, children share 1/2
+- **Turkish property (immovable, located in Turkey):** Turkish law still applies → wife receives 1/4, children share 3/4
+
+The wife's position changes dramatically depending on which asset is in question. This is the split estate problem in action — and it is the reason why thoughtful estate planning that accounts for both legal systems matters so much.
+
+### The EU Succession Regulation Does Not Apply to Turkey
+
+The EU Succession Regulation (No. 650/2012), which would generally apply the law of the deceased's last habitual residence to the entire estate, does not bind Turkey. Turkey is not an EU member state, and the bilateral 1929 Convention takes precedence. No choice-of-law clause in a European will or European Certificate of Succession changes the applicable law for Turkish real estate.
+
+---
+
+## 2. Turkish Inheritance Law — What You Need to Know
+
+Since Turkish law governs all real estate in Turkey, heirs need to understand its core principles.
+
+### Legal Heirs and Their Shares (Turkish Civil Code Art. 495–502)
+
+| Situation | Spouse's share | Children's share |
+|---|---|---|
+| With children | 1/4 | 3/4 (equally divided) |
+| No children, with parents | 1/2 | — (parents share 1/2) |
+| No children, no parents | 3/4 | — |
+| Sole heir | Everything | — |
+
+Turkish law makes no distinction between sons and daughters — all children inherit equally. Children born outside of marriage have the same inheritance rights as those born within it.
+
+### Forced Heirship (Saklı Pay / Reserved Shares)
+
+Turkish inheritance law protects certain heirs with a reserved share (saklı pay) that cannot be taken away by will or lifetime gifts:
+
+- **Descendants (children, grandchildren):** Half of their statutory share
+- **Parents:** One quarter of their statutory share each
+- **Surviving spouse:** Always the full statutory share
+
+If a will or a lifetime transfer reduces a forced heir's share below this minimum, they have the right to bring a **forced heirship claim (Tenkis Davası)** to recover the shortfall.
+
+### Wills in Turkey — Three Valid Forms
+
+**Notarial will (Resmî Vasiyetname):** Executed before a Turkish notary with two witnesses. The most secure form.
+
+**Holographic will (El Yazılı Vasiyetname):** Written entirely in the testator's own handwriting, signed and dated (day, month and year). Typed or computer-written text is invalid.
+
+**Oral will:** Valid only in life-threatening emergencies; expires one month after the emergency ends if no written will is made.
+
+### Does a German Will Work for Turkish Property?
+
+Not for determining the applicable law. Turkish law governs Turkish real estate regardless of what any foreign will says. A German will cannot override Turkish forced heirship rules or change the distribution of Turkish property.
+
+However, a foreign will can be **submitted as evidence** of the testator's wishes. For it to be considered by a Turkish court, it must be apostilled and officially translated into Turkish by a certified translator.
+
+For anyone with assets in both countries, the recommended approach is a **dual-jurisdiction will** — one document that specifically addresses Turkish assets under Turkish law, and another (or the same document, appropriately drafted) addressing German assets. This is best prepared by a lawyer who understands both systems.
+
+---
+
+## 3. The Turkish Inheritance Certificate (Veraset İlamı) — Why a German Probate Document Is Not Enough
+
+Everything in a Turkish inheritance process flows from this one document. Without it, nothing moves.
+
+### What Is the Veraset İlamı?
+
+The Veraset İlamı (also called Mirasçılık Belgesi — Certificate of Heirship) is an official document issued by a Turkish court or notary that identifies who the legal heirs are and in what proportions they inherit. It is required for:
+
+- Title deed transfer at the Turkish Land Registry
+- Release of bank accounts at Turkish banks
+- Filing the inheritance tax declaration
+- Initiating any court proceedings related to the estate
+
+### Why a German Erbschein Does Not Work
+
+For Turkish real estate, Turkish land registry offices accept **exclusively** the Turkish Veraset İlamı. A German Erbschein — even if apostilled and officially translated — is not accepted for property title transfers. This catches many families completely off guard.
+
+For movable assets (bank accounts), a German Erbschein with apostille is theoretically sufficient under Article 14 of the 1929 Convention. In practice, however, Turkish banks frequently insist on the Turkish certificate as well. The safest approach is always to obtain the Turkish certificate.
+
+### The Special Rule for Foreign Nationals as Heirs
+
+Turkish nationals inheriting from Turkish nationals can sometimes obtain the Veraset İlamı directly from a notary. Foreign nationals — or cases involving foreign family records — cannot. Turkish notaries can only verify family relationships through the Turkish civil registry (MERNİS), which does not contain foreign records. **All foreign heirs must go through the Turkish court process** to obtain the Veraset İlamı.
+
+### What Documents Are Required
+
+- International death certificate (apostilled and officially translated into Turkish)
+- Family relationship documents: birth certificates, marriage certificates (apostilled and officially translated)
+- Valid passports of all heirs
+- Turkish Tax ID Number (Vergi Kimlik Numarası) for every heir — obtainable by a lawyer on your behalf
+- Power of Attorney granted to your lawyer at a Turkish consulate in Germany
+
+If you need background on Turkish powers of attorney, our German-language guide to [Vollmacht auf Türkisch](/de/blog/vollmacht-auf-tuerkisch) explains the consular process in detail.
+
+### How Long Does It Take?
+
+Under normal circumstances, obtaining the Veraset İlamı takes between 4 and 12 weeks, depending on court backlog and the completeness of documentation submitted.
+
+---
+
+## 4. Turkish Inheritance Tax — What to Expect and When to Pay
+
+### Who Pays Turkish Inheritance Tax?
+
+Turkish inheritance tax (Veraset ve İntikal Vergisi) applies to all assets located in Turkey — regardless of the heir's nationality or country of residence. If you inherit a property in Antalya, Turkish inheritance tax applies whether you live in Germany, the UK or Australia.
+
+For Turkish nationals as heirs, the tax also applies to assets inherited outside Turkey. Foreign nationals are liable only for assets located in Turkey.
+
+### 2026 Tax Rates and Exemptions
+
+The following figures are drawn from General Communiqué No. 57, published in the Official Gazette on 31 December 2025:
+
+| Category | 2026 Exemption Amount |
+|---|---|
+| Spouse and each child | 2,907,136 TL |
+| Surviving spouse (no descendants) | 5,817,845 TL |
+| Gifts and other gratuitous transfers | 66,935 TL |
+
+| Band | Rate |
+|---|---|
+| First band | 1% |
+| Second band | 3% |
+| Third band | 5% |
+| Fourth band | 7% |
+| Fifth band and above | 10% |
+
+Turkey is a low-tax jurisdiction for inheritance by international standards — the maximum rate of 10% is reached only on very large estates. For most family inheritances, the effective tax rate is 1–3%.
+
+### Filing Deadlines
+
+| Situation | Deadline |
+|---|---|
+| Death in Turkey, heirs in Turkey | 4 months |
+| Death in Turkey, heirs abroad (Germany) | 6 months |
+| Death abroad, heirs in Turkey | 6 months |
+| Death abroad, heirs also abroad | 8 months |
+
+**Critical:** You cannot transfer the title deed or unfreeze bank accounts until the tax is paid and the tax authority issues a **clearance certificate (İlişik Yoktur Yazısı)**. This certificate is the gateway to completing the inheritance.
+
+### The Double Taxation Risk — and How to Reduce It
+
+Germany and Turkey have **no double taxation agreement for inheritance tax**. The bilateral DTA of 2011 covers income and corporate tax only — not inheritance. This means that if you are resident in Germany and inherit Turkish assets, both countries may tax the same inheritance.
+
+Germany taxes heirs based on the residence of the heir or the deceased. Turkey taxes based on the location of the assets and the nationality of the heir. These criteria can overlap significantly.
+
+**The practical solution under German law (§ 21 ErbStG):** The Turkish inheritance tax paid can be credited against the German inheritance tax — but only if:
+- You make a specific application to the German tax office (it is not applied automatically)
+- You can prove what you paid in Turkey (original tax assessments, payment receipts, apostilled and officially translated)
+- The credit is capped at the German tax attributable to the same asset
+
+Keep all Turkish tax documents — original assessments, payment receipts, and the clearance certificate — apostilled and officially translated. You will need them for the German inheritance tax return.
+
+---
+
+## 5. Rejecting an Inheritance — When the Debts Outweigh the Assets
+
+A fact many heirs do not know: **under Turkish law, if you do not actively reject an inheritance, you have accepted it** — including all debts of the deceased.
+
+### The 3-Month Deadline
+
+Turkish Civil Code Article 605 gives heirs **3 months** from learning of the death and their status as heir to formally reject the inheritance. This applies equally to heirs living in Germany. The period is not automatically extended for people living abroad.
+
+Once this deadline passes, the inheritance is deemed accepted. The heir becomes personally liable for the deceased's debts — including mortgages, tax liabilities, and private debts.
+
+### Before You Decide: What to Investigate
+
+Before the 3-month deadline, a thorough investigation of the estate's liabilities is essential:
+
+- Outstanding mortgages and charges on the property (via land registry search — Tapu query)
+- Bank loans and credit card debts
+- Unpaid property tax (Emlak Vergisi)
+- Outstanding Turkish income tax liabilities
+- Debts to private creditors
+
+If the liabilities clearly exceed the assets, rejection is the right course. If uncertain, your lawyer can apply for **provisional rejection under reservation** (ihtiyaten reddi miras), which buys time for a more thorough assessment.
+
+### How to Reject
+
+The rejection declaration must be filed with the Turkish Civil Court of Peace (Sulh Hukuk Mahkemesi) at the deceased's last place of residence in Turkey. Your lawyer can do this on your behalf — no travel required.
+
+---
+
+## 6. Forced Heirship Claims (Tenkis Davası) — When Your Share Has Been Reduced
+
+One of the most common scenarios in German-Turkish inheritance cases: the deceased transferred Turkish property to one child or to a third party during their lifetime, leaving the other heirs with far less than they are legally entitled to.
+
+### What the Law Protects
+
+Turkish law guarantees that spouses, children and sometimes parents cannot be completely cut out of an inheritance. These reserved shares (saklı pay) are:
+
+- **Each child:** Half of their statutory legal share
+- **Each parent (where applicable):** One quarter of their statutory share
+- **Surviving spouse:** The full statutory share
+
+If lifetime transfers or testamentary dispositions reduce anyone's share below these minimums, the affected heirs can bring a **Tenkis Davası (Reduction / Forced Heirship Claim)** to restore their rightful portion.
+
+### What Can Be Challenged
+
+- Lifetime property transfers that were genuine gifts but registered as sales
+- Testamentary dispositions that leave protected heirs below their reserved share
+- Gifts made in the years before death that eroded the estate
+
+### Strict Time Limits Apply
+
+Unlike the fraudulent transfer claim described in the next section, the Tenkis Davası has firm deadlines:
+
+- **1 year** from the date you learn that your forced share has been violated
+- **10 years** from the date the will was opened (for testamentary dispositions) or from the death (for other dispositions) — whichever comes first
+
+These are absolute cut-off dates. Missing them permanently extinguishes the right to bring the claim. If you suspect your forced share has been violated, act immediately.
+
+### Managing This Claim from Germany
+
+With a suitable power of attorney, your lawyer can file and conduct the Tenkis Davası in Turkey entirely on your behalf. The claim is filed at the civil court at the deceased's last place of residence in Turkey.
+
+---
+
+## 7. Muris Muvazaası — When Property Was Hidden Before Death
+
+This is the issue that almost no English-language guide covers clearly — and yet it is one of the most common problems affecting Turkish diaspora families in Germany.
+
+### What Is Muris Muvazaası?
+
+Muris Muvazaası — often translated as **inheritance fraud** or **fraudulent conveyance** — refers to a situation where the deceased transferred property before their death to a favoured person (typically one child, a new spouse, or a third party), but disguised the transfer as a **sale** rather than a gift. The land registry shows a sale. No money actually changed hands, or the price was far below market value. The real intention was a gift — used to deprive the other heirs of their rights.
+
+This is common in Turkish families where:
+- One child is favoured over others — often a son over daughters
+- Children from a first marriage are cut out in favour of children from a second marriage
+- A property is transferred to avoid estate claims after death
+- The "buyer" is a university student or otherwise clearly had no means to purchase
+
+### The Most Important Feature: No Time Limit
+
+Unlike the Tenkis Davası, a **Muris Muvazaası claim has no statute of limitations**. It can be brought at any time after the deceased's death — even if the transfer took place 20 or 30 years ago. The reasoning is that the underlying transfer is void from the beginning, so the right to challenge it does not expire.
+
+The only condition: the claim can only be brought **after** the deceased has died.
+
+### How the Claim Works
+
+The claim is a **title deed cancellation and re-registration lawsuit (Tapu İptali ve Tescil Davası)**, filed at the civil court of first instance (Asliye Hukuk Mahkemesi) at the location of the property. Each heir can bring the claim independently — you do not need the co-operation of other heirs.
+
+**Burden of proof** lies with the claimant heir. Key evidence includes:
+
+- The discrepancy between the official sale price and actual market value (supported by an expert valuation)
+- Evidence that the "buyer" had no realistic means to pay the stated price (bank records, income documents)
+- Witness testimony about family relationships and the context of the transfer
+- Comparison of the transfer with normal patterns of the area and family circumstances
+
+**Injunctive relief (İhtiyati Tedbir) is essential:** File for a precautionary injunction at the same time as the main claim. This prevents the property from being transferred to a third party while the lawsuit is pending. If the property changes hands to a bona fide purchaser before you obtain the injunction, recovering it becomes significantly harder.
+
+### Bringing This Claim from Germany
+
+With a power of attorney that explicitly includes authority to file lawsuits, seek injunctive relief, and conduct legal proceedings, your lawyer can bring this claim entirely in Turkey on your behalf. You do not need to travel to Turkey.
+
+---
+
+## 8. The Co-Heir Problem — When Agreement Is Impossible
+
+When a property is inherited by multiple heirs, a **joint ownership community (Miras Ortaklığı)** is automatically created. The property cannot be sold, mortgaged or significantly altered without the agreement of all heirs.
+
+### Why This Creates Problems
+
+Co-heir disputes are extremely common in German-Turkish families. Some heirs live in Germany and want to sell. Others live in Turkey and want to keep the property, use it for rental income, or have an emotional attachment to it. One person's refusal blocks everyone.
+
+There is no automatic resolution mechanism — unless a court is involved.
+
+### The Partition Lawsuit (İzale-i Şuyu)
+
+**Any single co-heir** — acting alone, without the consent of the others — can file an İzale-i Şuyu (Dissolution of Partnership / Partition) lawsuit. The court then orders either:
+
+1. **Physical division** of the property: possible only when the property can genuinely be divided into separate units without losing significant value (rare for flats and houses)
+2. **Compulsory public auction**: the property is sold to the highest bidder, and the proceeds are divided proportionally among all heirs
+
+The auction route is by far the most common outcome for urban apartments and houses.
+
+**Filing from Germany:** Your lawyer can file and conduct the İzale-i Şuyu proceedings without you needing to appear in Turkey.
+
+**Before filing:** Ensure the inheritance has been formally registered in the land registry (title deed transfer completed, inheritance tax paid) and that the shares of all heirs are correctly reflected. Filing a partition claim on an unregistered inheritance creates complications.
+
+---
+
+## 9. Selling an Inherited Turkish Property from Germany
+
+Once the title deed transfer is complete, many heirs want to sell the property rather than maintain it from abroad. This is entirely possible without travelling to Turkey.
+
+### The Power of Attorney Route
+
+A **sale power of attorney (Tapu Satış Vekaletnamesi)** issued at a Turkish consulate in Germany authorises your lawyer or another trusted person to sell the property in your name. The consulate-issued document is valid in Turkey immediately — no apostille required.
+
+**Important:** A power of attorney issued by a German notary is generally not accepted by Turkish land registry offices for property sales. The document must be issued at the Turkish consulate.
+
+The power of attorney for a property sale must specifically include:
+- Full address and title deed details (Tapu bilgileri) of the property
+- Authority to sell, sign the sale agreement, and transfer title
+- Authority to receive the sale proceeds
+- Authority to represent the seller at the tax office and land registry
+
+### Tax on the Sale
+
+**Turkish capital gains tax** may apply if the property is sold within **5 years** of the inheritance (the date the title deed was transferred to the heir). If the 5-year period has passed, the sale is exempt.
+
+If the property is sold within 5 years, the gain is calculated as the sale price minus the official declared value at the time of inheritance (which appears on the inheritance tax assessment). The applicable rates are the personal income tax brackets — currently ranging from 15% to 40%.
+
+In Germany, the inherited property may also be subject to German capital gains tax under the Spekulationsfrist rules (10-year period). Since inheritance counts as acquisition, selling shortly after inheriting may generate a taxable gain in Germany as well. Both countries should be assessed before completing the sale.
+
+---
+
+## 10. Step by Step — Managing a Turkish Inheritance from Germany
+
+**Step 1 — Immediately (within the first weeks):**
+Investigate the estate. What properties exist? What debts? Request a land registry search (Tapu query). Start the 3-month countdown for potential inheritance rejection.
+
+**Step 2 — Issue a Power of Attorney:**
+Visit your nearest Turkish consulate in Germany. Consulates with notarial functions exist in Frankfurt, Berlin, Stuttgart, Munich, Cologne, Hamburg, Hanover, Karlsruhe, Münster and Nuremberg. Have a comprehensive power of attorney drawn up in Turkish, covering all estate proceedings including litigation authority.
+
+**Step 3 — Obtain the Veraset İlamı:**
+Your lawyer petitions the Turkish court. All foreign documents must be apostilled and officially translated into Turkish. Expect 4–12 weeks.
+
+**Step 4 — File the inheritance tax declaration:**
+Deadline: 4–8 months depending on your specific situation. Pay the tax and obtain the İlişik Yoktur Yazısı (clearance certificate).
+
+**Step 5 — Transfer the title deed:**
+Apply through WEBTAPU (online system of the Turkish Cadastral Office). The title deed is transferred to the heirs' names.
+
+**Step 6 — Assess whether claims exist:**
+- Was your forced share violated? → Tenkis Davası (1-year deadline from knowledge)
+- Was property transferred as a disguised gift before death? → Muris Muvazaası (no time limit — but act before property changes hands again)
+- Are co-heirs blocking the sale? → İzale-i Şuyu (partition lawsuit)
+
+**Step 7 — German inheritance tax return:**
+Declare the Turkish inheritance in Germany. Apply for credit of Turkish inheritance tax under § 21 ErbStG. Attach original Turkish tax documents, apostilled and translated.
+
+---
+
+## Handle Your Turkish Inheritance with Doğru Kanzlei
+
+[Doğru Kanzlei](/en/services/erbrecht) holds dual bar membership with the **Ankara Bar Association** and the **Karlsruhe Bar Association** (§ 207 BRAO). We handle Turkish inheritance proceedings directly — without a relay through a third-party Turkish law firm you have never met.
+
+We access UYAP (Turkey's Justice Portal) through the attorney portal, monitor all filing deadlines in real time, and manage every step of the process from our office in Mannheim. Attorney Hasan Doğru spent approximately a decade as a member of Turkey's Special Operations (Özel Harekat) unit before his legal career — giving our estate litigation work a perspective on how Turkish institutions operate that very few lawyers can match.
+
+**What we handle for clients across Germany:**
+- Turkish probate certificate (Veraset İlamı) — court and notary routes
+- Inheritance tax declaration and clearance certificate (İlişik Yoktur Yazısı)
+- Title deed transfer (WEBTAPU process)
+- Forced heirship claims (Tenkis Davası)
+- Fraudulent transfer claims (Muris Muvazaası — Tapu İptali ve Tescil Davası)
+- Partition lawsuits (İzale-i Şuyu)
+- Property sale power of attorney and transaction management
+- Double taxation assessment and German § 21 ErbStG credit strategy
+
+---
+
+> **LEGAL NOTICE:** This article is for general information only and does not constitute legal advice. For your specific situation, contact Av. Hasan Doğru at Doğru Kanzlei.`,
     category: "Miras Hukuku",
     categoryDE: "Erbrecht",
+    categoryEN: "Inheritance Law",
     image: inheritanceLawImg,
-    dateDE: "20. April 2026",
-    dateTR: "20 Nisan 2026",
-    readTimeDE: "9 Min. Lesezeit",
-    readTimeTR: "9 dk okuma",
+    dateDE: "24. April 2026",
+    dateTR: "24 Nisan 2026",
+    dateEN: "April 24, 2026",
+    readTimeDE: "16 Min. Lesezeit",
+    readTimeTR: "16 dk okuma",
+    readTimeEN: "17 min read",
     publishedAt: "2026-04-20",
-    keywordsDE: "Erbschaft Türkei Deutschland, türkisches Erbrecht Deutschland, Immobilien Türkei verkaufen aus Deutschland, Erbausschlagung türkisches Recht, Pflichtteilsklage Türkei",
-    keywordsTR: "Türkiye miras hukuku Almanya, Almanya'dan Türkiye miras takibi, Türkiye tapu devri Almanya, miras reddi Türk hukuku, tenkis davası Almanya",
+    modifiedAt: "2026-04-24",
+    publishedAtDE: "2026-04-20",
+    publishedAtTR: "2026-04-20",
+    publishedAtEN: "2026-04-24",
+    modifiedAtDE: "2026-04-24",
+    modifiedAtTR: "2026-04-24",
+    modifiedAtEN: "2026-04-24",
+    keywordsDE: "Erbschaft Türkei Deutschland, Immobilie in der Türkei geerbt, türkisches Erbrecht, Erbschein Türkei, Erbschaftsteuer Türkei, Nachlassspaltung Türkei Deutschland, Erbausschlagung Türkei, Pflichtteil Türkei, erben in der Türkei als Deutscher, Tenkis Davası Deutschland, Muris Muvazaası Erklärung, Erbengemeinschaft Türkei aufteilen, türkisches Testament anerkennen, Doppelbesteuerung Erbschaft Türkei",
+    keywordsTR: "almanya türkiye miras hukuku, türkiye'de miras kaldı almanya, veraset ilamı almanya, tenkis davası almanya'dan, muris muvazaası almanya, miras reddi türkiye süresi, türkiye'deki mülkü almanya'dan satmak, izale-i şuyu almanya, veraset vergisi türkiye 2026, almanya'dan türkiye miras avukatı, miras ortaklığı çözümü, saklı pay ihlali dava",
+    keywordsEN: "Turkish inheritance Germany, inheriting property Turkey Germany, Turkish inheritance law foreigners, Veraset İlamı how to get, Turkish inheritance tax 2026, Turkish forced heirship, Muris Muvazaası English, split estate Turkey Germany, reject Turkish inheritance, Turkish inheritance dispute, Tenkis Davası English, Turkish will Germany valid, Turkish inheritance certificate abroad, Power of Attorney Turkey inheritance",
     faqDE: [
       {
-        question: "Was passiert mit der Immobilie eines in Deutschland verstorbenen türkischen Staatsangehörigen in der Türkei?",
-        answer: "Für die Immobilie in der Türkei muss beim türkischen Gericht ein Erbschein beantragt und eine Grundbucheintragung vorgenommen werden. Die EU-Erbrechtsverordnung gilt in der Türkei nicht — es findet türkisches Recht Anwendung."
+        question: "Welches Erbrecht gilt für eine Immobilie in der Türkei?",
+        answer: "Für Immobilien in der Türkei gilt immer türkisches Erbrecht — unabhängig davon, ob der Erblasser Türke oder Deutscher war. Dieses sogenannte Belegenheitsprinzip (lex rei sitae) ergibt sich aus §§ 14 Abs. 2, 18 des deutsch-türkischen Konsularvertrags von 1929 und ist durch OLG-Rechtsprechung bestätigt (OLG Köln, Beschluss vom 21.02.2014, Az. 2 Wx 30/14). Für bewegliches Vermögen (Bankkonten, Fahrzeuge) gilt dagegen das Erbrecht des Heimatstaats des Erblassers."
       },
       {
-        question: "Kann ich in Deutschland ein Testament mit Wahl des türkischen Rechts errichten?",
-        answer: "Ja. Im Rahmen von Artikel 22 der EU-Erbrechtsverordnung können Sie unter Berufung auf Ihre türkische Staatsangehörigkeit ein wirksames Testament errichten, das türkisches Erbrecht wählt. Dies muss in Deutschland notariell beurkundet werden."
+        question: "Gilt der deutsche Erbschein in der Türkei?",
+        answer: "Für Immobilien in der Türkei gilt der deutsche Erbschein nicht. Türkische Grundbuchämter akzeptieren ausschließlich einen türkischen Erbschein (Veraset İlamı). Für bewegliches Vermögen (Bankkonten) kann ein deutscher Erbschein mit Apostille ausreichen, in der Praxis verlangen türkische Banken jedoch häufig ebenfalls einen türkischen Erbschein. Sowohl türkischer als auch deutscher Erbschein können beantragt werden — ein Anwalt kann beide Verfahren aus Deutschland heraus führen."
+      },
+      {
+        question: "Muss ich als Erbe in Deutschland türkische Erbschaftsteuer zahlen?",
+        answer: "Ja. Wenn sich der Nachlass (Immobilien, Bankkonten) in der Türkei befindet, fällt in der Türkei Erbschaftsteuer an — unabhängig von der Staatsangehörigkeit des Erben. Die Steuererklärung muss innerhalb von 4–6 Monaten nach dem Erbfall beim zuständigen türkischen Finanzamt eingereicht werden. Erst nach Zahlung der Steuer stellt das Finanzamt die Unbedenklichkeitsbescheinigung aus, die für die Grundbuchumschreibung erforderlich ist."
+      },
+      {
+        question: "Droht Doppelbesteuerung bei einer Erbschaft aus der Türkei?",
+        answer: "Ja, das Risiko besteht. Deutschland und die Türkei haben kein Doppelbesteuerungsabkommen speziell für die Erbschaftsteuer. Das bestehende DBA von 2011 gilt nur für Einkommen- und Körperschaftsteuer. Als Abhilfe kann die in der Türkei gezahlte Erbschaftsteuer nach § 21 ErbStG auf die deutsche Erbschaftsteuer angerechnet werden — aber nur auf Antrag und nur bis zur Höhe der deutschen Steuer. Wichtig: Alle türkischen Steuerbescheide und Zahlungsbelege müssen apostilliert und beglaubigt übersetzt aufbewahrt werden."
+      },
+      {
+        question: "Was ist Muris Muvazaası und kann man dagegen klagen?",
+        answer: "Muris Muvazaası bezeichnet den Fall, dass der Erblasser sein Vermögen vor dem Tod zu Gunsten einzelner Erben oder Dritter übertragen hat — dabei eine tatsächlich gewollte Schenkung im Grundbuch als Kauf ausgewiesen wurde, um die übrigen Erben zu benachteiligen. Diese Klage unterliegt keiner Verjährungsfrist und kann nach dem Tod des Erblassers jederzeit erhoben werden. In Deutschland lebende Erben können diese Klage durch einen bevollmächtigten Anwalt ohne Reise in die Türkei führen."
+      },
+      {
+        question: "Wie lange habe ich Zeit, eine türkische Erbschaft auszuschlagen?",
+        answer: "Nach türkischem Recht (TMK Art. 605) beträgt die Frist zur Erbausschlagung 3 Monate ab Kenntnis vom Tod des Erblassers und der eigenen Erbenstellung. Diese Frist gilt auch für in Deutschland lebende Erben und wird in der Regel nicht verlängert. Die Ausschlagung muss beim zuständigen türkischen Friedensgericht (Sulh Hukuk Mahkemesi) beantragt werden — dies kann über einen Bevollmächtigten ohne persönliche Reise in die Türkei erfolgen."
+      },
+      {
+        question: "Was ist eine Erbengemeinschaft in der Türkei und wie löst man sie auf?",
+        answer: "Wenn mehrere Erben vorhanden sind, entsteht automatisch eine Erbengemeinschaft (Miras Ortaklığı). Für den Verkauf einer Immobilie ist die Zustimmung aller Miterben erforderlich. Verweigert ein Miterbe seine Zustimmung, kann jeder einzelne Miterbe eine Teilungsklage (İzale-i Şuyu) einreichen. Das Gericht ordnet dann entweder die physische Aufteilung oder — häufiger — den Zwangsverkauf und die anteilige Auszahlung des Erlöses an. Diese Klage kann in Deutschland lebenden Erben durch einen bevollmächtigten Anwalt erhoben werden."
       },
       {
         question: "Kann ich die türkische Immobilie aus Deutschland verkaufen?",
-        answer: "Ja — jedoch nur mit einer korrekt ausgestellten Vollmacht, die die formellen Anforderungen des türkischen Rechts erfüllt. Die Doğru Kanzlei kann diesen Prozess aus Mannheim in Ihrem Namen abwickeln."
-      },
-      {
-        question: "Wie lange habe ich Zeit, ein Erbe auszuschlagen?",
-        answer: "Nach türkischem Recht drei Monate — ab dem Zeitpunkt, an dem Sie von Ihrem Erbrecht Kenntnis erlangt haben. Nach Ablauf dieser Frist gelten Sie als Erbe — einschließlich aller Schulden."
-      },
-      {
-        question: "Muss ich für eine Pflichtteilsergänzungsklage in die Türkei reisen?",
-        answer: "Nein. Die Doğru Kanzlei kann die Pflichtteilsergänzungsklage über das UYAP-System aus Mannheim führen. Damit keine Fristen versäumt werden, sollten Sie jedoch so früh wie möglich handeln."
+        answer: "Ja — vorausgesetzt, Sie haben eine ordnungsgemäß erstellte türkische Kaufvollmacht (Vekaletname). Diese wird beim türkischen Konsulat in Deutschland auf Türkisch ausgestellt und ist ohne Apostille sofort in der Türkei verwendbar. Wichtig: Eine beim deutschen Notar erstellte Generalvollmacht wird vom türkischen Grundbuchamt in der Regel nicht akzeptiert. Für den Verkauf einer geerbten Immobilie muss zudem zuvor die Erbschaftsteuer bezahlt und die Grundbuchumschreibung durchgeführt worden sein."
       }
     ],
     faqTR: [
       {
-        question: "Almanya'da ölen bir Türk vatandaşının Türkiye'deki taşınmazı ne olur?",
-        answer: "Türkiye'deki taşınmaz için Türk mahkemesinden veraset ilamı alınması ve tapu siciline tescil yapılması gerekmektedir. AB Miras Tüzüğü Türkiye'de geçerli değildir; Türk hukuku uygulanır."
+        question: "Türkiye'deki mirası Almanya'dan takip edebilir miyim?",
+        answer: "Evet. Almanya'daki Türk konsolosluğuna giderek avukatınıza özel yetkili vekâletname düzenleyebilirsiniz. Avukatınız veraset ilamı alınması, tapu intikali, vergi beyannamesi ve dava süreçleri dahil tüm işlemleri Türkiye'ye gitmeden sizin adınıza yürütebilir. Doğru Kanzlei olarak UYAP avukat portalı üzerinden Türkiye'deki miras dosyalarınıza Mannheim ofisimizden doğrudan erişiyoruz."
       },
       {
-        question: "Türkiye'deki mülkü Almanya'dan satabilir miyim?",
-        answer: "Evet — ancak Türk hukukunun öngördüğü şekil koşullarını karşılayan, doğru düzenlenmiş bir vekaletname şartıyla. Doğru Kanzlei bu süreci Mannheim ofisinden sizin adınıza yürütebilmektedir."
+        question: "Veraset ilamı nedir ve nasıl alınır?",
+        answer: "Veraset ilamı (mirasçılık belgesi), kimin hangi oranda mirasçı olduğunu gösteren resmi belgedir. Türkiye'deki Sulh Hukuk Mahkemesi veya noterden alınır. Almanya'da yaşayan mirasçılar bizzat Türkiye'ye gitmeden, avukat aracılığıyla bu belgeyi aldırabilir. Türk vatandaşı olmayan mirasçılar (Alman vatandaşları) noter üzerinden değil, mahkeme kanalıyla başvurmalıdır."
       },
       {
-        question: "Mirası reddetmek için ne kadar sürem var?",
-        answer: "Türk hukukuna göre üç ay. Bu süre, mirasçı olduğunuzu öğrendiğiniz tarihten itibaren işlemeye başlar. Süre geçtikten sonra reddetme hakkınız düşer ve borçlar da dahil mirası kabul etmiş sayılırsınız."
+        question: "Muris muvazaası nedir ve Almanya'dan dava açılabilir mi?",
+        answer: "Muris muvazaası, miras bırakanın mirasçılarından mal kaçırmak amacıyla gerçekte bağışlamak istediği taşınmazı tapuda satış olarak göstermesidir. Bu dava zamanaşımına tabi değildir — miras bırakanın ölümünden sonra her zaman açılabilir. Almanya'da yaşayan mirasçılar konsolosluktan özel yetkili vekâletname düzenleyerek Türkiye'ye gitmeden bu davayı açabilir ve takip edebilir."
       },
       {
-        question: "Tenkis davası açmak için Türkiye'ye gitmek zorunda mıyım?",
-        answer: "Hayır. Doğru Kanzlei, UYAP sistemi aracılığıyla tenkis davasını Mannheim ofisinden yürütebilmektedir. Ancak süre aşımına uğramamak için en kısa sürede harekete geçilmesi gerekmektedir."
+        question: "Tenkis davası nedir ve süresi ne zaman dolar?",
+        answer: "Tenkis davası, miras bırakanın yaşarken veya vasiyetname ile saklı paylı mirasçıların zorunlu payını ihlal eden tasarruflarına karşı açılan davadır. Saklı payın ihlal edildiğini öğrenen tarihten itibaren 1 yıl, her hâlde vasiyetnamenin açılması veya diğer tasarruflarda mirasın açılmasından itibaren 10 yıl içinde açılmalıdır. Almanya'dan avukat aracılığıyla takip edilebilir."
+      },
+      {
+        question: "Türkiye'deki mirası reddetmezsem ne olur?",
+        answer: "Türk hukukuna göre mirası reddedilmedikçe otomatik olarak kabul edilmiş sayılır. Bu, miras bırakanın borçlarını da devraldığınız anlamına gelir. Reddi miras için ölümü ve mirasçılığı öğrenmeden itibaren 3 ay içinde Sulh Hukuk Mahkemesi'ne başvurmanız gerekir. Bu süre kaçırılırsa borçlardan şahsen sorumlu olunabilir. Almanya'da yaşayan mirasçılar bu başvuruyu konsolosluk aracılığıyla da yapabilir."
+      },
+      {
+        question: "Türkiye'de veraset vergisi ne kadar? Almanya ile çifte vergi ödenir mi?",
+        answer: "Türkiye'de veraset vergisi %1 ile %10 arasında değişir. 2026 yılı için füruğ ve eşten her birine isabet eden miras hissesinde 2.907.136 TL istisna uygulanır. Kritik bilgi: Türkiye ile Almanya arasında miras vergisi alanında çifte vergilendirmeyi önleme anlaşması bulunmamaktadır. Bu nedenle aynı miras hem Türkiye'de hem Almanya'da vergilendirilebilir; ancak Türkiye'de ödenen vergi Almanya'da mahsup edilebilir."
+      },
+      {
+        question: "Mirasçılar arasında anlaşmazlık varsa ne yapılır?",
+        answer: "Mirasçılar arasında miras malı paylaşımında uzlaşı sağlanamazsa, izale-i şuyu davası (ortaklığın giderilmesi) açılabilir. Bu dava, taşınmazın mahkeme kararıyla satışa çıkarılmasını ve satış bedelinin mirasçılar arasında paylaştırılmasını sağlar. Almanya'da yaşayan mirasçılar bu davayı avukat aracılığıyla Türkiye'ye gitmeden açabilir ve takip edebilir."
+      },
+      {
+        question: "Almanya'da yapılan vasiyetname Türkiye'de geçerli midir?",
+        answer: "Türkiye'deki taşınmaz mallar söz konusu olduğunda, Almanya'da düzenlenen vasiyetname Türk hukukuna göre değerlendirilir. Türkiye'deki gayrimenkul için her zaman Türk miras hukuku uygulanır (lex rei sitae ilkesi). Almanya'daki vasiyetname Türkiye'de kullanılmak isteniyorsa apostil ve yeminli Türkçe çeviri gereklidir. Her iki ülkede geçerli olacak vasiyetname için her iki hukuk sistemini kapsayan bir vasiyetname hazırlanması önerilir."
       }
     ],
-    ctaTitleDE: "Haben Sie Fragen zum türkischen Erbrecht?",
-    ctaTitleTR: "Türkiye'deki Miras Haklarınız İçin Buradayız",
-    ctaDescriptionDE: "Wir unterstützen Sie bei der Durchsetzung Ihrer Erbansprüche in der Türkei direkt aus Deutschland – rechtssicher und effizient.",
-    ctaDescriptionTR: "Türkiye'deki miras haklarınızı korumak ve mülk devir işlemlerinizi Almanya'dan yönetmek için profesyonel destek sunuyoruz."
+    faqEN: [
+      {
+        question: "Which country's law governs a property inherited in Turkey?",
+        answer: "For real estate located in Turkey, Turkish law always applies — regardless of the deceased's nationality or where they lived. This is the lex rei sitae principle, confirmed by the 1929 German-Turkish Consular Convention and by German court decisions (OLG Köln, 21 February 2014). For movable assets (bank accounts, vehicles), the law of the deceased's nationality applies. This split creates what lawyers call a 'divided estate', where two different legal systems govern the same inheritance."
+      },
+      {
+        question: "Does a German probate certificate (Erbschein) work in Turkey?",
+        answer: "No — not for real estate. Turkish land registry offices exclusively accept a Turkish Certificate of Inheritance (Veraset İlamı) for property title transfers. For bank accounts, a German Erbschein with apostille may suffice in theory, but in practice Turkish banks frequently require the Turkish certificate as well. Foreign heirs — including German nationals — must go through the Turkish court process to obtain a Veraset İlamı, since Turkish notaries cannot verify foreign family records."
+      },
+      {
+        question: "Do I have to travel to Turkey to handle an inheritance?",
+        answer: "No. With a properly drafted Power of Attorney (Vekaletname), issued at the Turkish consulate in Germany, your lawyer can handle the entire process in Turkey on your behalf — including obtaining the inheritance certificate, filing tax declarations, transferring the title deed, and managing court proceedings. You do not need to travel to Turkey."
+      },
+      {
+        question: "How much is Turkish inheritance tax and when must it be paid?",
+        answer: "Turkish inheritance tax (Veraset ve İntikal Vergisi) is progressive, ranging from 1% to 10% for close relatives. For 2026, the exemption for spouses and each child is 2,907,136 TL per person. Tax declarations must be filed within 4–8 months of the death, depending on where the deceased and heirs are located. For heirs living in Germany and a death occurring abroad, the deadline is typically 8 months. The title deed transfer cannot proceed until the tax is paid and a clearance certificate is obtained."
+      },
+      {
+        question: "What is Muris Muvazaası and can I challenge it?",
+        answer: "Muris Muvazaası (inheritance fraud / fraudulent conveyance) refers to the practice where the deceased transferred property to a favoured heir or third party disguised as a sale — when in reality no money changed hands, or the price was far below market value. This is done to deprive other heirs of their inheritance rights. Unlike the forced heirship claim (Tenkis Davası), a Muris Muvazaası claim has no statute of limitations — it can be brought at any time after the deceased's death. Heirs living in Germany can pursue this through an authorised lawyer without travelling to Turkey."
+      },
+      {
+        question: "How long do I have to reject a Turkish inheritance?",
+        answer: "Under Turkish Civil Code Article 605, the period to reject an inheritance is 3 months from learning of the death and your entitlement as an heir. This applies equally to heirs living in Germany. If you fail to reject within this period, the inheritance — including all debts — is automatically accepted. The rejection must be filed with the Turkish Civil Court of Peace (Sulh Hukuk Mahkemesi) and can be done through a lawyer without you needing to travel to Turkey."
+      },
+      {
+        question: "What happens if the co-heirs cannot agree on selling or dividing the Turkish property?",
+        answer: "When multiple heirs inherit jointly, they form a co-heir community (Miras Ortaklığı). Selling the property requires all heirs to agree. If one heir blocks the sale, any single heir can file a partition lawsuit (İzale-i Şuyu). The court will then either order a physical division of the property — which is rare for built properties — or a forced sale at public auction, with proceeds divided proportionally. This lawsuit can be initiated by a lawyer in Turkey without any heir travelling there."
+      },
+      {
+        question: "Is a will made in Germany valid for Turkish property?",
+        answer: "For Turkish real estate, Turkish law always applies regardless of any foreign will. A German will cannot change the applicable law for property located in Turkey, nor can it override the forced heirship shares guaranteed by Turkish law. A foreign will may be relevant for identifying heirs and, once apostilled and translated, can be submitted to Turkish courts. However, for comprehensive estate planning covering assets in both countries, a dual-jurisdiction will drafted by a lawyer familiar with both systems is strongly recommended."
+      }
+    ],
+    ctaTitleDE: "Ihre türkische Erbschaft — handeln Sie bevor Fristen ablaufen",
+    ctaTitleTR: "Türkiye'deki Miras Haklarınız — Süreleri Kaçırmadan Harekete Geçin",
+    ctaTitleEN: "Your Turkish Inheritance — Act Before Deadlines Expire",
+    ctaDescriptionDE: "Ihr nächster Schritt mit der Doğru Kanzlei — Ihrem Türkisches Erbrecht Spezialisten aus Mannheim:",
+    ctaDescriptionTR: "Doğru Kanzlei ile bir sonraki adımınız — Mannheim'daki Türk Miras Hukuku uzmanınız:",
+    ctaDescriptionEN: "Your next step with Doğru Kanzlei — your Turkish Inheritance Law specialist from Mannheim:"
   },
   {
     slug: "turk-muhendis-profesyonel-almanya-mavi-kart-rehberi",
@@ -1358,170 +2445,1082 @@ Belgelerinizi toparlayın, bize ulaşın — gerisini biz halledelim.
   },
   {
     slug: "veraset-ilami-nedir-nasil-alinir",
-    slugDE: "erbschein-tuerkei-beantragen-verfahren",
+    slugDE: "erbschein-tuerkei-deutschland-beantragen",
     slugTR: "veraset-ilami-nedir-nasil-alinir",
-    titleDE: "Erbschein (Veraset İlamı) in der Türkei: Definition, Bedeutung und Verfahren",
-    titleTR: "Veraset İlamı (Mirasçılık Belgesi): Nedir, Nasıl Alınır ve Önemi",
-    excerptDE: "Was ist ein Erbschein in der Türkei? Erfahren Sie alles über den Antragsprozess für EU-Bürger, die Kosten und die rechtliche Bedeutung bei Immobilienübertagungen.",
-    excerptTR: "Veraset ilamı nedir, nereden alınır? Noter ve mahkeme süreçleri, gerekli belgeler ve miras paylaşımındaki kritik önemi hakkında kapsamlı rehber.",
-    contentDE: `**RECHTLICHER HINWEIS:** Dieser Artikel befasst sich ausschließlich mit dem türkischen Recht. Eine Beratung zum deutschen Recht findet in unserer Kanzlei nicht statt.
-
-# Erbschein (Veraset İlamı): Definition und Bedeutung
-
-Ein Erbschein ist ein offizielles Dokument, das nach dem Tod einer Person ausgestellt wird und angibt, wer die Erben sind und wie der Nachlass verteilt werden soll. Dieses Dokument spielt eine entscheidende Rolle bei der rechtlichen Übertragung des Erbes und trägt dazu bei, die Rechte der Erben zu schützen. Es ist von großer Bedeutung, um rechtliche Unsicherheiten bei Erbschaftstransaktionen zu beseitigen und die berechtigten Personen eindeutig zu identifizieren. Was also ist ein Erbschein, wie erhält man ihn und warum ist er so wichtig? In diesem Artikel finden Sie die Antworten auf diese Fragen und erfahren Einzelheiten über den rechtlichen Rahmen des Erbscheins.
-
----
-
-## Was ist ein Erbschein?
-Ein Erbschein ist ein rechtliches Dokument, das nach dem Tod einer Person erforderlich ist, um die hinterlassenen Güter und Rechte auf die rechtmäßigen Erben zu übertragen. Dieses Dokument wird erstellt, um mögliche Streitigkeiten unter den Erben zu vermeiden und eine gerechte Verteilung des Erbes zu gewährleisten. Transparenz und Gerechtigkeit bei der Übertragung des Erbes werden durch die Ausstellung eines Erbscheins ermöglicht. Der Erbschein ist eine Art offizielles Erbdokument, das festlegt, an wen und in welchem Verhältnis das Erbe verteilt wird, und dieses Dokument ist ein wichtiger Schritt zum Schutz der gesetzlichen Rechte der Erben.
-
-### Rechtliche Grundlage des Erbscheins
-Der Erbschein wird im Rahmen des türkischen Zivilgesetzbuchs und des Erbrechts geregelt. Diese Gesetze schreiben die Einholung eines Erbscheins vor, um die Erben zu bestimmen und das Erbe aufzuteilen, um sicherzustellen, dass das Erbe in Übereinstimmung mit den rechtlichen Verfahren übertragen wird. Während die Gesetze die Rechte der Erben schützen, zielen sie auch darauf ab, rechtliche Probleme zu verhindern, die bei der Übertragung des Erbes auftreten können. Der Erbschein, der eine rechtliche Grundlage hat, garantiert, dass Erbschaftstransaktionen auf einer offiziellen und legalen Basis durchgeführt werden.
-
----
-
-## Wie bekommt man einen Erbschein?
-Um einen Erbschein zu erhalten, müssen bestimmte Schritte befolgt werden. Dieser Prozess ist wichtig, um die Erben rechtlich anzuerkennen und sicherzustellen, dass das Erbe auf die richtigen Personen übertragen wird. Hier sind die grundlegenden Schritte, die Sie in diesem Prozess berücksichtigen sollten:
-
-### Erforderliche Dokumente
-Vor der Beantragung eines Erbscheins ist es wichtig, dass die erforderlichen Unterlagen vollständig vorbereitet sind. In der Regel werden Dokumente wie ein Auszug aus dem Personenstandsregister, eine Sterbeurkunde und ein Antragschreiben verlangt. Diese Dokumente sind notwendig, um die Identität der Erben und den Umfang des Erbes eindeutig festzustellen. Die korrekte und vollständige Vorbereitung der Dokumente ist entscheidend für die Beschleunigung des Antragsprozesses und die Vermeidung möglicher Probleme.
-
-### Bewerbungsprozess
-Ein Antrag auf Erteilung eines Erbscheins kann bei den zuständigen Gerichten oder Notaren gestellt werden. Im Allgemeinen ist das Friedensgericht am Wohnsitz des Antragstellers zuständig. Besteht unter den Erben kein Streit, ist das Verfahren schneller. Besteht jedoch ein Streit zwischen den Erben, entscheidet das Gericht nach einer eingehenden Prüfung. Die eingehende Prüfung durch das Gericht stellt sicher, dass die Rechte aller Parteien gerecht geschützt werden und das Erbe innerhalb des rechtlichen Rahmens übertragen wird.
-
-### Gebühr für den Erbschein
-Für die Erteilung eines Erbscheins ist eine Gebühr zu entrichten. Diese Gebühr kann je nach Ort des Antrags und der Anzahl der Dokumente variieren. Darüber hinaus kann für Transaktionen bei Notaren eine Notargebühr verlangt werden. Daher ist es wichtig, sich vor der Antragstellung über die aktuellen Gebühren zu informieren. Die Kenntnis der Gebühren ist wichtig für die Planung des Antragsprozesses und zur Vermeidung unerwarteter Kosten.
+    slugEN: "turkish-inheritance-certificate-germany-guide",
+    titleDE: "Türkischen Erbschein (Veraset İlamı) aus Deutschland beantragen — Vollständiger Leitfaden 2026",
+    titleTR: "Veraset İlamı (Mirasçılık Belgesi) Nedir, Nasıl Alınır? Almanya'dan Eksiksiz Rehber 2026",
+    titleEN: "Turkish Certificate of Inheritance (Veraset İlamı) from Germany — Complete Guide 2026",
+    excerptDE: "Notar oder Gericht, Mavi-Kart-Inhaber, Apostille, Vollmacht vom Konsulat, Kosten und Dauer — und warum der deutsche Erbschein für türkische Immobilien nicht ausreicht.",
+    excerptTR: "Noter mi, mahkeme mi? Mavi kartlılar nasıl başvurur? Alman Erbschein Türkiye'de geçerli mi? Almanya'dan veraset ilamı hakkında bilmeniz gereken her şey.",
+    excerptEN: "Notary or court, Blue Card holders, whether a German Erbschein works in Turkey, the European Certificate of Succession gap, apostille, power of attorney, costs and timeline — everything you need to manage the Turkish probate process from Germany.",
+    metaTitleDE: "Erbschein Türkei aus Deutschland beantragen: Vollständiger Leitfaden 2026",
+    metaDescriptionDE: "Türkischer Erbschein (Veraset İlamı) aus Deutschland beantragen: Notar oder Gericht, Mavi-Kart-Inhaber, gilt der deutsche Erbschein in der Türkei, Apostille, Vollmacht, Kosten und Dauer — der vollständige Leitfaden. Doğru Kanzlei.",
+    schemaHeadlineDE: "Erbschein Türkei aus Deutschland beantragen: Vollständiger Leitfaden 2026",
+    metaTitleTR: "Veraset İlamı (Mirasçılık Belgesi): Almanya'dan Eksiksiz Rehber 2026",
+    metaTitleEN: "Turkish Certificate of Inheritance (Veraset İlamı) from Germany: Complete Guide 2026",
+    metaDescriptionTR: "Veraset ilamı nedir, noter mi mahkeme mi, mavi kartlılar nasıl alır, Alman Erbschein Türkiye'de geçerli mi? Almanya'dan adım adım veraset ilamı rehberi. Doğru Kanzlei.",
+    metaDescriptionEN: "How to get a Turkish Certificate of Inheritance (Veraset İlamı) from Germany: notary vs court, Blue Card holders, does a German Erbschein work in Turkey, power of attorney, documents, costs and timeline — complete guide by Doğru Kanzlei.",
+    schemaHeadlineTR: "Veraset İlamı (Mirasçılık Belgesi): Almanya'dan Eksiksiz Rehber 2026",
+    schemaHeadlineEN: "Turkish Certificate of Inheritance (Veraset İlamı) from Germany: Complete Guide 2026",
+    contentDE: `**RECHTLICHER HINWEIS:** Dieser Artikel befasst sich ausschließlich mit dem türkischen Recht. Die Doğru Kanzlei berät gemäß § 207 BRAO ausschließlich im türkischen Recht.
 
 ---
 
-## Bedeutung des Erbscheins
-Der Erbschein ist äußerst wichtig, damit Erbschaftstransaktionen im Einklang mit dem Gesetz ablaufen. Die Übertragung des Erbes innerhalb des rechtlichen Rahmens und der Schutz der Berechtigten werden durch die Einholung dieses Dokuments gewährleistet. Hier sind die Hauptgründe für die Bedeutung des Erbscheins:
+Ein Familienmitglied verstirbt in der Türkei oder hinterlässt dort Vermögen. Die Erben in Deutschland wissen, dass irgendetwas mit dem türkischen Grundbuch und den Bankkonten geregelt werden muss. Beim Grundbuchamt in der Türkei erfahren sie dann: Ohne türkischen Erbschein läuft gar nichts.
 
-### Bietet rechtliche Sicherheit
-Der Erbschein stellt sicher, dass das Erbe innerhalb des rechtlichen Rahmens übertragen wird und trägt zum Schutz der Rechte der Erben bei. Dieses Dokument dokumentiert die Rechte der Erben und verhindert mögliche rechtliche Streitigkeiten. Die Gewährleistung von Rechtssicherheit stellt sicher, dass Erbschaftstransaktionen reibungslos ablaufen und stellt sicher, dass Erben nicht benachteiligt werden. Gleichzeitig ist es wichtig, um rechtliche Probleme zu verhindern, die bei der Übertragung des Erbes auftreten können.
+Der türkische Erbschein — auf Türkisch Veraset İlamı oder Mirasçılık Belgesi — ist das zentrale Dokument jeder türkischen Nachlassabwicklung. Ohne ihn öffnen türkische Banken keine Konten, türkische Grundbuchämter nehmen keine Umschreibungen vor, und das Finanzamt nimmt keine Erbschaftsteuererklärung entgegen.
 
-### Gewährleistet eine gerechte Verteilung des Erbes
-Der Erbschein sorgt für eine gerechte Verteilung des Erbes. Dieses Dokument legt fest, wer die Erben sind und zu welchem Anteil sie am Erbe beteiligt sind. Auf diese Weise werden mögliche Streitigkeiten unter den Erben vermieden. Eine gerechte Verteilung des Erbes spielt eine entscheidende Rolle für den Frieden in der Familie und die Vermeidung langfristiger Streitigkeiten unter den Erben.
+Dieser Leitfaden erklärt, wie Sie den türkischen Erbschein aus Deutschland beantragen — ohne in die Türkei reisen zu müssen, und ohne sich durch eine deutsche Behörde leiten zu lassen, die das türkische System nicht kennt.
 
 ---
 
-## Beispiel für einen Erbschein
-Da der Erbschein ein offizielles Dokument ist, wird er in einem bestimmten Format erstellt. Er enthält in der Regel Informationen wie die Daten der verstorbenen Person, die Identitätsdaten der Erben und die Verteilungsquoten des Erbes. Diese Informationen sind wichtig, um Transparenz und Klarheit bei der Übertragung des Erbes zu gewährleisten. Ein Beispiel für einen Erbschein könnte wie folgt aussehen:
+## 1. Was ist der türkische Erbschein (Veraset İlamı)?
 
-VERASET İLAMIDIR (ERBSCHEIN)
+Der türkische Erbschein — Veraset İlamı (wörtlich: Erbschaftsurteil) oder Mirasçılık Belgesi (Erbschaftszeugnis) — ist das amtliche Dokument, das festhält, wer nach türkischem Erbrecht Erbe ist und welchen Anteil jeder Erbe erhält.
 
-Erblasser: Vorname Nachname, T.C. Identitätsnummer, Geburtsdatum, Sterbedatum
+Rechtsgrundlage ist Art. 598 des türkischen Zivilgesetzbuches (Türk Medeni Kanunu — TMK). Zuständig für die Ausstellung sind das türkische Friedensgericht (Sulh Hukuk Mahkemesi) oder — unter bestimmten Voraussetzungen — ein türkischer Notar.
 
-Erben:
-1. Vorname Nachname, T.C. Identitätsnummer, Anteilquote
-2. Vorname Nachname, T.C. Identitätsnummer, Anteilquote
+### Wofür wird der Erbschein benötigt?
 
-Verteilung des Erbes: Es wird unter den oben genannten Erben in den festgelegten Anteilen verteilt.
+Ohne türkischen Erbschein ist in der Türkei Folgendes nicht möglich:
 
-Dieses Beispiel dient dazu, die Struktur eines Erbscheins zu verdeullichen. Ein echter Erbschein muss ein vom Gericht oder Notar beglaubigtes offizielles Dokument sein, und die offizielle Beglaubigung ist für die Gültigkeit des Dokuments unerlässlich.
+- **Grundbuchumschreibung (Tapu Intikali):** Eintragung der Erben im Grundbuch für geerbte Immobilien
+- **Bankkonten:** Freigabe eingefrorener Konten oder Übertragung auf die Erben
+- **Erbschaftsteuererklärung:** Das Finanzamt verlangt den Erbschein vor Bearbeitung
+- **Fahrzeugummeldung:** Ummeldung geerbter Fahrzeuge beim Straßenverkehrsamt
+- **Gerichtsverfahren:** Nachweis der Erbenstellung in Nachlassstreitigkeiten (Tenkis, Muris Muvazaası, İzale-i Şuyu)
 
----
+### Declaratorische, nicht konstitutive Wirkung
 
-## Fazit
-Ein Erbschein ist notwendig, damit Erbschaftstransaktionen rechtmäßig und fair ablaufen. Die Gewährleistung des rechtlichen Rahmens bei der Übertragung des Erbes und der Schutz der Rechte der Erben werden durch die Einholung dieses Dokuments ermöglicht. Dieses Dokument schützt die Rechte der Erben und regelt gleichzeitig die Verteilung des Erbes. Es ist wichtig, die erforderlichen Dokumente für die Einholung des Erbscheins vorzubereiten und den Antragsprozess korrekt zu verfolgen. Um Streitigkeiten unter den Erben zu vermeiden und eine gerechte Verteilung des Erbes zu gewährleisten, ist die Einholung eines Erbscheins erforderlich. Die Wahrung von Gerechtigkeit und Recht bei Erbschaftstransaktionen ist durch die Einholung des Erbscheins möglich, und dieses Dokument spielt eine entscheidende Rolle bei der Übertragung des Erbes.`,
-    contentTR: `**YASAL UYARI:** Bu makale yalnızca Türk hukukuna ilişkindir. Büromuzda Alman hukuku konusunda danışmanlık verilmemektedir.
-
-# Veraset İlamı: Tanım ve Önemi
-
-Veraset ilamı, bir kişinin vefatının ardından, mirasçılarının kimler olduğunu ve mirasın nasıl paylaştırılacağını belirten resmi bir belgedir. Bu belge, mirasın yasal olarak devredilmesi sürecinde kritik bir rol oynar ve mirasçıların haklarının korunmasına yardımcı olur. Miras işlemlerinde hukuki belirsizliklerin ortadan kalkması ve hak sahibi kişilerin net bir şekilde ortaya konulması açısından büyük bir önem taşır. Peki, veraset ilamı nedir, nasıl alınır ve neden bu kadar önemlidir? İşte bu makalede bu soruların yanıtlarını bulacaksınız ve veraset ilamının hukuki çerçevesine dair detayları öğreneceksiniz.
+Wie im deutschen Recht hat der türkische Erbschein deklaratorische (feststellende), keine konstitutive (begründende) Wirkung. Das Erbrecht entsteht mit dem Tod des Erblassers — der Erbschein macht es nur gegenüber Dritten nachweisbar. Er kann — ebenfalls wie der deutsche Erbschein — jederzeit angefochten und korrigiert werden (Anfechtungsverfahren: Veraset İlamının İptali Davası).
 
 ---
 
-## Veraset İlamı Nedir?
-Veraset ilamı, bir kişinin ölümünden sonra, geride bıraktığı malların ve hakların yasal mirasçılarına devredilmesi için gereken hukuki bir belgedir. Bu belge, mirasçılar arasında çıkabilecek olası anlaşmazlıkları önlemek ve mirasın adil bir şekilde dağıtılmasını sağlamak amacıyla düzenlenir. Mirasın devrinde şeffaflık ve adaletin sağlanması, veraset ilamının düzenlenmesiyle mümkün olur. Veraset ilamı, mirasın kimlere ve hangi oranlarda dağıtılacağını belirten bir tür resmi miras belgesidir ve bu belge, mirasçıların yasal haklarının korunmasına yönelik önemli bir adımdır.
+## 2. Notar oder Friedensgericht — Welcher Weg führt zum türkischen Erbschein?
 
-### Veraset İlamının Hukuki Dayanağı
-Veraset ilamı, Türk Medeni Kanunu ve Miras Hukuku çerçevesinde düzenlenir. Bu kanunlar, mirasın yasal süreçlere uygun bir şekilde devredilmesini sağlamak amacıyla, mirasçıların belirlenmesi ve mirasın paylaştırılması için veraset ilamının alınmasını zorunlu kılar. Kanunlar, mirasçıların haklarını korurken, aynı zamanda mirasın devrinde yaşanabilecek hukuki sorunları da önlemeyi amaçlar. Hukuki dayanağı olan veraset ilamı, miras işlemlerinin resmi ve yasal bir zeminde gerçekleştirilmesini garanti altına alır.
+Seit 2011 können türkische Erbscheine sowohl vom Friedensgericht als auch vom Notar ausgestellt werden. Welcher Weg für Sie gilt, hängt entscheidend von den Beteiligten ab.
 
----
+### Weg A: Türkischer Notar (Schnellweg — nur unter bestimmten Voraussetzungen)
 
-## Veraset İlamı Nasıl Alınır?
-Veraset ilamı almak için belirli adımların izlenmesi gerekmektedir. Bu süreç, mirasçıların yasal olarak tanınması ve mirasın doğru kişilere devredilmesini sağlamak için önemlidir. İşte bu süreçte dikkate almanız gereken temel adımlar:
+Beim Notar dauert das Verfahren meist **wenige Minuten bis einen Werktag**. Der Notar greift direkt auf das türkische Personenstandsregister (MERNİS) zu und stellt den Erbschein auf der Basis dieser Daten aus.
 
-### Gerekli Belgeler
-Veraset ilamı başvurusu yapmadan önce, gerekli belgelerin eksiksiz bir şekilde hazırlanması önemlidir. Genellikle, nüfus kayıt örneği, ölüm belgesi ve başvuru dilekçesi gibi belgeler talep edilir. Bu belgeler, mirasçılarının kimliğini ve mirasın kapsamını net bir şekilde ortaya koymak için gereklidir. Belgelerin doğru ve eksiksiz hazırlanması, başvuru sürecinin hızlandırılması ve olası aksaklıkların önüne geçilmesi açısından kritiktir.
+**Voraussetzungen für den Notarweg:**
+- Alle Erben sind **türkische Staatsangehörige**
+- Der Erblasser war **türkischer Staatsangehöriger**
+- Die Personenstandsregister sind **eindeutig und vollständig**
+- Es liegt **kein Testament** vor
 
-### Başvuru Süreci
-Veraset ilamı almak için başvuru, yetkili mahkemelere veya noterliklere yapılabilir. Genellikle, başvuru sahibinin ikametgahının bulunduğu yerdeki Sulh Hukuk Mahkemesi yetkilidir. Başvuru sırasında, mirasçılar arasında bir anlaşmazlık yoksa süreç daha hızlı ilerler. Ancak, mirasçıların arasında bir anlaşmazlık söz konusuysa, mahkeme detaylı bir inceleme yaparak karar verir. Mahkemenin yapacağı detaylı inceleme, tüm tarafların haklarının adil bir şekilde korunmasını ve mirasın yasal çerçevede devredilmesini sağlar.
+> ⚠️ **Kritisch für Erben in Deutschland:** Sobald auch **nur ein** Beteiligter — Erblasser oder Erbe — eine ausländische Staatsangehörigkeit hat (inkl. deutsche Staatsangehörigkeit), entfällt die Zuständigkeit des türkischen Notars vollständig. Rechtsgrundlage: Art. 71/B Abs. 3 Notariatsgesetz (Noterlik Kanunu). Der Notar darf in diesem Fall den Erbschein nicht ausstellen — unabhängig davon, wie überschaubar der Fall erscheint.
 
-### Veraset İlamı Ücreti
-Veraset ilamı almak için ödenmesi gereken bir ücret bulunmaktadır. Bu ücret, başvurunun yapıldığı yere ve belge sayısına göre değişiklik gösterebilir. Ayrıca, noterliklerde yapılan işlemler için noter ücreti de talep edilebilir. Bu nedenle, başvuru öncesinde güncel ücretler hakkında bilgi almak önemlidir. Ücretlerin bilinmesi, başvuru sürecinin planlanması ve beklenmedik masraflarla karşılaşılmaması açısından önem taşır.
+### Weg B: Türkisches Friedensgericht (Sulh Hukuk Mahkemesi — für die meisten Fälle mit Deutschlandbezug)
 
----
+Das Friedensgericht ist zuständig, wenn:
+- Ein Erbe oder der Erblasser **Ausländer** ist (dt. Staatsangehörigkeit, Mavi-Kart-Inhaber, Doppelstaater)
+- Die Personenstandsregister **Unklarheiten** aufweisen
+- Ein **Testament** vorhanden ist
+- Die Erbenstellung **streitig** ist
 
-## Veraset İlamının Önemi
-Veraset ilamı, miras işlemlerinin hukuka uygun bir şekilde gerçekleşmesi için son derece önemlidir. Mirasın yasal çerçevede devredilmesi ve hak sahiplerinin korunması, bu belgenin alınmasıyla sağlanır. İşte veraset ilamının başlıca önemi:
+**Zuständiges Gericht:** Jedes türkische Friedensgericht ist örtlich zuständig — des letzten Wohnsitzes des Erblassers, des Wohnsitzes eines der Erben oder des Belegenheitsortes des Grundstücks. Das ermöglicht eine flexible Wahl.
 
-### Hukuki Güvence Sağlar
-Veraset ilamı, mirasın yasal çerçevede devredilmesini sağlar ve mirasçıların haklarının korunmasına yardımcı olur. Bu belge, mirasçıların haklarını belgeleyerek, olası hukuki anlaşmazlıkların önüne geçer. Hukuki güvence sağlanması, miras işlemlerinin sorunsuz bir şekilde yürütülmesi ve mirasçıların mağduriyet yaşamamasını temin eder. Aynı zamanda, mirasın devrinde yaşanabilecek hukuki sorunların önlenmesi açısından da önemlidir.
+**Verfahrensdauer:**
+- Einfache Fälle (alle Beteiligten bekannt, Unterlagen vollständig): 2–6 Wochen
+- Fälle mit ausländischen Erben, Zustellungserfordernissen oder Registerunklarheiten: 2–4 Monate
 
-### Mirasın Adil Paylaştırılmasını Sağlar
-Veraset ilamı, mirasın adil bir şekilde paylaştırılmasını sağlar. Bu belge, mirasçıların kimler olduğunu ve hangi oranlarda mirastan pay alacaklarını belirler. Böylece, mirasçılar arasında çıkabilecek anlaşmazlıkların önüne geçilir. Mirasın adil bir şekilde paylaştırılması, aile içi huzurun sağlanması ve mirasçıların arasında uzun süreli anlaşmazlıkların önlenmesi açısından kritik bir rol oynar.
+### Kostenvergleich 2026
 
----
+| Ausstellungsstelle | Kosten (ca.) | Dauer |
+|---|---|---|
+| Türkischer Notar | ~3.000 TL | Gleicher Tag (nur bei rein türk. Beteiligten) |
+| Friedensgericht | ~3.500–4.000 TL | 2 Wochen – 4 Monate |
 
-## Veraset İlamı Örneği
-Veraset ilamı, resmi bir belge olduğu için belirli bir formatta hazırlanır. Genellikle, miras bırakan kişinin bilgileri, mirasçıların kimlik bilgileri ve mirasın paylaştırılma oranları gibi bilgileri içerir. Bu bilgiler, mirasın devrinde şeffaflık ve netlik sağlanması açısından önemlidir. Örnek bir veraset ilamı şu şekilde olabilir:
-
-VERASET İLAMIDIR
-
-Miras Bırakan: Adı Soyadı, T.C. Kimlik No, Doğum Tarihi, Ölüm Tarihi
-
-Mirasçılar:
-1. Adı Soyadı, T.C. Kimlik No, Pay Oranı
-2. Adı Soyadı, T.C. Kimlik No, Pay Oranı
-
-Mirasın Paylaştırılması: Yukarıda belirtilen mirasçılar arasında, belirlenen oranlarda paylaştırılacaktır.
-
-Bu örnek, veraset ilamının nasıl bir yapıya sahip olduğunu göstermek amacıyla verilmiştir. Gerçek bir veraset ilamı, mahkeme veya noter tarafından onaylanmış resmi bir belge olmalıdır ve resmi onay, belgenin geçerliliği için esastır.
+Hinzu kommen in Deutschland: Konsulatsgebühren für die Vollmacht, Apostille-Gebühren und beglaubigte Übersetzungskosten (zusammen ca. 200–500 €).
 
 ---
 
-## Sonuç
-Veraset ilamı, miras işlemlerinin hukuka uygun ve adil bir şekilde gerçekleşmesi için gereklidir. Mirasın devrinde hukuki çerçevenin sağlanması ve mirasçıların haklarının korunması, bu belgenin alınmasıyla mümkün olur. Bu belge, mirasçıların haklarını korurken, mirasın paylaştırılmasını da düzenler. Veraset ilamı almak için gerekli belgelerin hazırlanması ve başvuru sürecinin doğru bir şekilde takip edilmesi önemlidir. Mirasçılar arasında anlaşmazlıkların önüne geçmek ve mirasın adil bir şekilde dağıtılmasını sağlamak için veraset ilamının alınması gereklidir. Miras işlemlerinde adaletin ve hukukun gözetilmesi, veraset ilamının alınmasıyla mümkün olur ve bu belge, mirasın devrinde kritik bir rol oynar.`,
+## 3. Die besondere Situation: Mavi-Kart-Inhaber und deutsche Staatsangehörige
+
+Dieser Abschnitt ist für die meisten Leser dieses Artikels der wichtigste — und wird in den meisten Leitfäden unzureichend erklärt.
+
+### Mavi-Kart-Inhaber (Ehemalige türkische Staatsangehörige)
+
+Mavi-Kart-Inhaber haben die türkische Staatsangehörigkeit aufgegeben, behalten aber bestimmte Rechte (z.B. Eigentumsrecht an türkischen Immobilien). Für die Erbscheinsausstellung gilt jedoch:
+
+**Mavi-Kart-Inhaber können den türkischen Erbschein nicht beim Notar beantragen.** Der Grund ist doppelt:
+
+1. **Rechtlich:** Art. 71/B Abs. 3 Notariatsgesetz schließt Ausländer — und Mavi-Kart-Inhaber sind rechtlich Ausländer — vom Notarweg aus.
+2. **Technisch:** Bei der Aufgabe der türkischen Staatsangehörigkeit wird der Eintrag im Personenstandsregister (Nüfus) geschlossen. Der Notar kann über MERNİS die Verwandtschaftsverhältnisse nicht mehr feststellen.
+
+**Konsequenz:** Mavi-Kart-Inhaber müssen zwingend beim Friedensgericht beantragen. Von dort aus kann der Prozess vollständig über einen bevollmächtigten Anwalt geführt werden.
+
+### Reine deutsche Staatsangehörige (ohne türkischen Hintergrund)
+
+Für Erben ohne jede türkische Staatsangehörigkeit gilt dasselbe: Der Notarweg ist ausgeschlossen. Das Friedensgericht ist zwingend zuständig.
+
+**Zusätzlich erforderliche Unterlagen für ausländische Erben:**
+
+| Dokument | Apostille erforderlich? | Beglaubigte Übersetzung ins Türkische? |
+|---|---|---|
+| Deutsche Sterbeurkunde | Ja | Ja (vereidigter Übersetzer) |
+| Deutscher Reisepass / Personalausweis | Nein | Nein |
+| Geburtsurkunde (dt. ausgestellt) | Ja | Ja |
+| Heiratsurkunde (dt. ausgestellt) | Ja | Ja |
+| Wohnsitznachweis (Anmeldebescheinigung) | Ggf. | Ggf. |
+| Türkischer Nüfus-Registerauszug (falls vorhanden) | Nein | Nein |
+
+**Wichtig:** In der Praxis entstehen die meisten Verzögerungen nicht durch das Gerichtsverfahren selbst, sondern durch fehlende oder fehlerhafte Apostillen und Übersetzungen. Diese Dokumente sollten vor Antragstellung vollständig vorbereitet sein.
+
+### Türkische Steuernummer für ausländische Erben
+
+Ausländische Erben (einschließlich Mavi-Kart-Inhaber) benötigen für alle Behördenverfahren in der Türkei eine türkische Steuernummer (Vergi Kimlik Numarası). Diese kann Ihr Anwalt in der Türkei auf der Basis Ihres Reisepasses für Sie beantragen — ein persönliches Erscheinen in der Türkei ist dafür nicht erforderlich.
+
+---
+
+## 4. Gilt der deutsche Erbschein in der Türkei?
+
+Dies ist die am häufigsten gestellte Frage von Erben in Deutschland — und die Antwort ist differenzierter als erwartet.
+
+### Rechtsrahmen: Das Nachlassabkommen von 1929
+
+Das Rechtsverhältnis zwischen Deutschland und der Türkei in Nachlasssachen wird durch die Anlage zu Art. 20 des deutsch-türkischen Konsularvertrags vom 28. Mai 1929 geregelt — das sogenannte Nachlassabkommen. Dieses Abkommen gilt bis heute und geht der EU-Erbrechtsverordnung (Nr. 650/2012) vor, da die Türkei kein EU-Mitglied ist.
+
+### Entscheidungsmatrix: Welcher Erbschein wofür?
+
+| Situation | Nachlassart | Welcher Erbschein wird benötigt? |
+|---|---|---|
+| Türkischer Erblasser, Nachlass in Türkei | Immobilien (Tapu) | Türkischer Erbschein — zwingend |
+| Türkischer Erblasser, Nachlass in Türkei | Bankkonten | Türkischer Erbschein — praktisch immer |
+| Türkischer Erblasser, Nachlass in Deutschland | Bankkonten | Türkischer Erbschein (§ 14 NA) reicht aus, wenn apostilliert/beglaubigt |
+| Türkischer Erblasser, Nachlass in Deutschland | Immobilien | Deutscher Erbschein (§ 14 II i.V.m. § 17 NA) — Fremdrechtserbschein nach § 2369 BGB |
+| Deutscher Erblasser, Nachlass in Türkei | Immobilien | Türkischer Erbschein — zwingend |
+| Deutscher Erblasser, Nachlass in Türkei | Bankkonten | Dt. Erbschein mit Apostille nach § 17 NA reicht theoretisch; Banken verlangen oft trotzdem türkischen |
+| Deutscher Erblasser, Nachlass in Deutschland | Alle | Deutscher Erbschein |
+
+### Für Immobilien in der Türkei: Immer türkischer Erbschein
+
+Das ist die entscheidende Aussage dieses Abschnitts: **Türkische Grundbuchämter akzeptieren für Immobilientransaktionen ausschließlich den türkischen Erbschein.** Ein apostillierter und übersetzter deutscher Erbschein, ein Europäisches Nachlasszeugnis oder eine notarielle Bestätigung aus Deutschland reichen nicht aus. Grundlage: Türkisches Recht wendet für Immobilien stets das Belegenheitsprinzip (lex rei sitae) an.
+
+### Der Fremdrechtserbschein (§ 2369 BGB) — Was steckt dahinter?
+
+Deutsche Nachlassgerichte können Erbscheine nach türkischem Recht ausstellen — sogenannte Fremdrechtserbscheine gemäß § 2369 BGB. Dies ist sinnvoll, wenn der Erblasser türkischer Staatsangehöriger war und in Deutschland bewegliches Vermögen (Bankkonten) hinterlassen hat.
+
+Dieser Fremdrechtserbschein ist jedoch:
+- Gegenständlich beschränkt: gilt nur für in Deutschland befindliche Nachlasswerte
+- Territorial beschränkt: entfaltet in der Türkei keine unmittelbare Wirkung für dort befindliches Vermögen
+
+Türkische Friedensgerichte richten sich bei der Ausstellung des türkischen Erbscheins **häufig nach dem deutschen Fremdrechtserbschein** als Orientierung — aber das Gericht stellt dann eigenständig einen türkischen Erbschein aus. Der Fremdrechtserbschein selbst gilt nicht in der Türkei.
+
+---
+
+## 5. Schritt für Schritt: Türkischen Erbschein aus Deutschland beantragen
+
+### Schritt 1 — Konstellation prüfen
+
+Klären Sie zunächst: Welche Staatsangehörigkeiten haben alle Beteiligten? Was befindet sich im Nachlass — Immobilien, Bankkonten, Fahrzeuge? Gibt es ein Testament? Gibt es Registerunklarheiten? Die Antworten bestimmen, welchen Weg (Notar oder Gericht) Ihr Anwalt einschlagen muss.
+
+### Schritt 2 — Vollmacht beim türkischen Konsulat ausstellen lassen
+
+Gehen Sie zum nächsten türkischen Konsulat. In Deutschland befinden sich türkische Konsulate in: Frankfurt, Berlin, Stuttgart, München, Köln, Hamburg, Hannover, Karlsruhe, Münster und Nürnberg.
+
+Bringen Sie Ihren Reisepass mit. Lassen Sie eine **Sondervollmacht (Vekaletname) auf Türkisch** ausstellen. Diese ist ohne Apostille sofort in der Türkei verwendbar. Mehr dazu finden Sie in unserem Beitrag zur [Vollmacht auf Türkisch](/de/blog/vollmacht-auf-tuerkisch).
+
+Die Vollmacht muss ausdrücklich folgende Befugnisse enthalten:
+
+- Beantragung des Erbscheins beim Notar oder Gericht
+- Akteneinsicht und Prozessführung
+- Vertretung beim Finanzamt (Erbschaftsteuererklärung)
+- WEBTAPU-Antrag und Grundbuchumschreibung
+- Bankkorrespondenz und Kontofreigabe
+- Ggf. Beantragung einstweiliger Verfügungen
+
+> ⚠️ **Häufigster Fehler:** Eine allgemeine Vollmacht reicht für das türkische Erbscheinsverfahren nicht aus. Lassen Sie Ihren Anwalt den Vollmachtstext vorab prüfen und ggf. anpassen.
+
+### Schritt 3 — Deutsche Dokumente vorbereiten
+
+Alle deutschen Urkunden müssen **apostilliert** und durch einen **vereidigten Übersetzer** ins Türkische übersetzt werden. Beides muss vorliegen, bevor Ihr Anwalt in der Türkei aktiv werden kann.
+
+**Apostille beantragen:** Beim Regierungspräsidium des jeweiligen Bundeslandes (je nach Art des Dokuments). Sterbeurkunden: beim zuständigen Standesamt mit anschließender Apostille beim Regierungspräsidium.
+
+**Vereidigter Übersetzer:** Achten Sie darauf, dass der Übersetzer staatlich vereidigt ist (in Deutschland: allgemein beeidigt für die türkische Sprache). Nicht jede Übersetzungsagentur erfüllt diese Anforderung.
+
+### Schritt 4 — Ihr Anwalt stellt den Antrag in der Türkei
+
+Mit Vollmacht und Unterlagen stellt Ihr Anwalt beim zuständigen Friedensgericht (oder bei entsprechenden Voraussetzungen beim Notar) den Erbscheinsantrag. Bei ausländischen Beteiligten muss das Gericht eine Zustellung an diese Personen veranlassen — das verlängert das Verfahren, ist aber bei bevollmächtigtem Anwalt meist unproblematisch.
+
+Nach Erteilung des Erbscheins gilt er unbefristet — es gibt keine Verfallsfrist.
+
+### Schritt 5 — Folgeschritte nach dem Erbschein
+
+Der Erbschein ist der Schlüssel, nicht das Ende. Was folgt:
+
+**Erbschaftsteuererklärung:** Beim türkischen Finanzamt am letzten Wohnsitz des Erblassers. Frist für Erben in Deutschland: 6 Monate ab Todesfall (wenn sowohl Erblasser als auch Erben im Ausland: 8 Monate).
+
+**Unbedenklichkeitsbescheinigung (İlişik Yoktur Yazısı):** Nach Zahlung der Erbschaftsteuer stellt das Finanzamt dieses Dokument aus. Ohne es ist keine Grundbuchumschreibung möglich.
+
+**Grundbuchumschreibung (WEBTAPU):** Online-Antrag über das türkische Kadasterwesen-Portal. Ihr Anwalt führt diesen Schritt mit der Vollmacht durch.
+
+**Bankkonten:** Jede Bank hat eigene interne Verfahren. In der Regel werden Erbschein, Steuerbescheid und Unbedenklichkeitsbescheinigung verlangt.
+
+---
+
+## 6. Der Fremdrechtserbschein in Deutschland — Wann lohnt er sich?
+
+Wenn der Erblasser türkischer Staatsangehöriger war und in Deutschland Bankkonten oder anderes bewegliches Vermögen hinterlassen hat, können die Erben beim deutschen Nachlassgericht (Amtsgericht) einen Erbschein nach **türkischem Recht** beantragen — den Fremdrechtserbschein gemäß § 2369 BGB.
+
+**Wann ist das sinnvoll?**
+- Bankkonten in Deutschland stehen im Vordergrund
+- Der türkische Erbschein für Türkei-Vermögen läuft parallel
+
+**Was kostet der Fremdrechtserbschein?**
+Die Gebühren richten sich nach dem Gegenstandswert (Nachlasswert in Deutschland). Bei deutschen Nachlassgerichten entstehen typischerweise Gerichtsgebühren nach GNotKG.
+
+**Wichtig:** Der Fremdrechtserbschein gilt nur für das in Deutschland befindliche bewegliche Vermögen — nicht für türkische Nachlasswerte. Er kann aber als Beweisstück bei türkischen Friedensgerichten eingereicht werden, die sich häufig an seinen Quoten orientieren.
+
+---
+
+## 7. Häufige Fehler — und wie Sie sie vermeiden
+
+**Fehler 1: Beim Notar antragen, obwohl ein Erbe Ausländer ist**
+Türkische Notare lehnen in diesen Fällen ab. Wertvolle Zeit geht verloren. Klären Sie die Beteiligtenstruktur vorab mit einem Anwalt.
+
+**Fehler 2: Deutschen Erbschein beim türkischen Grundbuchamt vorlegen**
+Das Grundbuchamt lehnt ab. Die einzige Lösung ist der türkische Erbschein — kein Apostillieren, kein Übersetzen des deutschen Dokuments hilft.
+
+**Fehler 3: Apostille und Übersetzung nicht vorab vorbereiten**
+Das sind die häufigsten Verzögerungsursachen. Ein Anwalt in der Türkei kann ohne vollständige apostillierte und übersetzte Unterlagen nicht handeln.
+
+**Fehler 4: Vollmacht ohne ausreichende Spezifizierung**
+Eine allgemeine „Generalvollmacht" vom deutschen Notar, die nicht beim türkischen Konsulat erstellt wurde, wird vom türkischen Friedensgericht in der Regel nicht akzeptiert. Die Vollmacht muss konsularisch und auf Türkisch sein.
+
+**Fehler 5: Erbschaftsteuerfristen nicht beachten**
+Die Steuerfrist läuft ab dem Todestag — unabhängig davon, wann der Erbschein ausgestellt wurde. Ein verspäteter Antrag schützt nicht vor Säumniszuschlägen.
+
+**Fehler 6: Türkische Steuernummer vergessen**
+Ausländische Erben brauchen eine türkische Steuernummer für Steuererklärung, Grundbuchumschreibung und Banken. Ohne sie stockt jeder Folgeschritt.
+
+---
+
+## 8. Fünf typische Konstellationen — und was in jedem Fall zu tun ist
+
+### Konstellation A: Türkischer Erblasser, alle Erben türkische Staatsbürger
+→ Notarweg möglich (wenn keine Testamente, keine Registerprobleme). Anwalt holt mit einfacher konsularischer Vollmacht den Erbschein am selben Tag.
+
+### Konstellation B: Türkischer Erblasser, ein Erbe ist Mavi-Kart-Inhaber
+→ Notarweg ausgeschlossen. Friedensgericht zwingend. Mavi-Kart-Inhaber benötigt apostillierte Dokumente. Dauer: 4–10 Wochen bei vollständigen Unterlagen.
+
+### Konstellation C: Türkischer Erblasser, ein Erbe ist rein deutsch
+→ Notarweg ausgeschlossen. Friedensgericht. Zusätzlich: Deutscher Erbe braucht türkische Steuernummer, apostillierte deutsche Urkunden und ggf. einen deutschen Fremdrechtserbschein für die deutschen Bankkonten parallel.
+
+### Konstellation D: Deutscher Erblasser, Immobilie in der Türkei
+→ Türkischer Erbschein beim Friedensgericht zwingend. Gleichzeitig: Für deutsche Vermögenswerte normaler deutscher Erbschein beim Nachlassgericht. Für das türkische Bankkonto kann der apostillierte deutsche Erbschein gem. § 14 Nachlassabkommen ausreichen — in der Praxis aber oft nicht.
+
+### Konstellation E: Alle Beteiligten in Deutschland, Erblasser in Türkei verstorben
+→ Türkischer Erbschein beim Friedensgericht. Deutsche Sterbeurkunde (falls in Deutschland ausgestellt) oder türkische Sterbeurkunde. Vollmacht über Konsulat. Vollständige Abwicklung aus Deutschland ohne Türkeireise möglich.
+
+---
+
+## 9. Türkischen Erbschein aus Deutschland — mit der Doğru Kanzlei
+
+[Die Doğru Kanzlei](https://www.hasandogru.de/de/leistungen/erbrecht) ist bei der **Anwaltskammer Ankara** und der **Rechtsanwaltskammer Karlsruhe** (§ 207 BRAO) zugelassen — mit direktem Zugang zum türkischen UYAP-Anwaltsportal. Wir führen das türkische Erbscheinsverfahren von unserem Büro in Mannheim aus — ohne Umweg über einen weiteren Anwalt in der Türkei, dem Sie vertrauen müssen.
+
+Für den Gesamtzusammenhang einer türkischen Erbschaft aus Deutschland lesen Sie auch unseren [Erbschaft Türkei Gesamtleitfaden](/de/blog/erbschaft-tuerkei-deutschland-ratgeber).
+
+**Was wir für Sie übernehmen:**
+- Prüfung der Konstellation (Notar oder Gericht, welche Dokumente werden benötigt)
+- Vorbereitung und Prüfung des Vollmachtstexts für das Konsulat
+- Koordination von Apostille und vereidigter Übersetzung
+- Beantragung des türkischen Erbscheins beim Friedensgericht oder Notar
+- Türkische Steuernummer für ausländische Erben
+- Erbschaftsteuererklärung und Unbedenklichkeitsbescheinigung
+- Grundbuchumschreibung über WEBTAPU
+- Bankkorrespondenz und Kontofreigabe
+- Parallelkoordination mit deutschen Stellen bei Bedarf (Fremdrechtserbschein, Nachlassgericht)
+
+
+Diesen Leitfaden haben wir auch auf Türkisch veröffentlicht:
+[Veraset İlamı Nedir, Nasıl Alınır? Almanya'dan Eksiksiz Rehber →](https://www.hasandogru.de/tr/blog/veraset-ilami-nedir-nasil-alinir)
+
+---
+
+## Häufig gestellte Fragen
+
+**Was ist der türkische Erbschein und wofür brauche ich ihn?**
+Der Veraset İlamı ist der amtliche Nachweis der Erbenstellung in der Türkei. Ohne ihn sind Grundbuchumschreibung, Bankkontofreigabe und Erbschaftsteuererklärung in der Türkei nicht möglich.
+
+**Gilt der deutsche Erbschein in der Türkei?**
+Für Immobilien: Nein. Türkische Grundbuchämter verlangen zwingend den türkischen Erbschein. Für Bankkonten: theoretisch möglich (gem. § 14 Nachlassabkommen), in der Praxis aber oft nicht akzeptiert.
+
+**Muss ich für den türkischen Erbschein in die Türkei reisen?**
+Nein. Mit einer konsularischen Vollmacht führt Ihr Anwalt den gesamten Prozess in der Türkei für Sie.
+
+**Kann der türkische Notar den Erbschein ausstellen, wenn ein Erbe Deutscher ist?**
+Nein. Art. 71/B Abs. 3 Notariatsgesetz schließt den Notarweg bei ausländischer Beteiligung aus. Das Friedensgericht ist zuständig. Gleiches gilt für Mavi-Kart-Inhaber.
+
+**Was ist der Unterschied zwischen türkischem und deutschem Erbschein?**
+Beide weisen die Erbenstellung nach — aber jeder nur im eigenen Land. Für türkisches Vermögen ist der türkische Erbschein erforderlich; für deutsches Vermögen der deutsche. Bei türkischem Erblasser mit Bankkonten in Deutschland kann der apostillierte türkische Erbschein genügen.
+
+**Wie lange dauert das Verfahren?**
+Beim Notar (nur rein türkische Beteiligte): gleicher Tag. Beim Friedensgericht: 2–6 Wochen in einfachen Fällen; 2–4 Monate bei ausländischen Erben oder Registerunklarheiten.
+
+**Was kostet der türkische Erbschein 2026?**
+Notar: ca. 3.000 TL. Gericht: ca. 3.500–4.000 TL. Hinzu kommen Apostille, Übersetzung und Konsulatsgebühren (ca. 200–500 €).
+
+**Was passiert nach dem Erbschein?**
+Erbschaftsteuererklärung → Unbedenklichkeitsbescheinigung → Grundbuchumschreibung (WEBTAPU) → Bankkonten → Fahrzeugummeldung. Alle Schritte führt Ihr Anwalt mit der Vollmacht.
+
+---
+
+*Dieser Artikel dient allgemeinen Informationszwecken und ersetzt keine rechtliche Beratung. Für Ihren konkreten Fall wenden Sie sich an Av. Hasan Doğru bei der Doğru Kanzlei.*`,
+    contentTR: `**YASAL UYARI:** Bu makale yalnızca Türk hukukuna ilişkin genel bilgi amaçlıdır. Doğru Kanzlei, §207 BRAO kapsamında yalnızca Türk hukuku konularında danışmanlık vermektedir.
+
+---
+
+Almanya'da yaşarken Türkiye'de bir yakınınızı kaybettiğinizde, keder bir yana, bir de karşınıza karmaşık görünen hukuki süreçler çıkar. Bankalar hesaplara erişim istemiyor. Tapu müdürlüğü işlem yapmıyor. Vergi dairesi beyanname bekliyor. Ve herkes size aynı şeyi söylüyor: "Önce veraset ilamı lazım."
+
+Peki bu belge tam olarak nedir? Nasıl alınır? Türkiye'ye gitmek zorunda mısınız? Mavi kartlı olduğunuz için noter sizi geri mi çeviriyor? Almanya'da aldığınız Erbschein işe yarar mı?
+
+Bu rehber, tüm bu soruların yanıtlarını veriyor.
+
+---
+
+## 1. Veraset İlamı (Mirasçılık Belgesi) Nedir?
+
+Veraset ilamı — halk arasında hâlâ bu eski adıyla anılır, resmi adı artık **mirasçılık belgesi**dir — bir kişinin vefatının ardından kimlerin yasal mirasçı olduğunu ve her mirasçının mirastan aldığı payı gösteren resmi belgedir.
+
+Türk Medeni Kanunu m.598 uyarınca sulh hukuk mahkemesi veya noterlikçe düzenlenir. Belgenin hukuki niteliği önemli bir ayrım taşır: veraset ilamı **bildirici** bir belgedir, **kurucu** değil. Yani miras hakkınız miras bırakanın ölümüyle zaten doğar — veraset ilamı bu hakkı üçüncü kişilere karşı kanıtlamanızı sağlar.
+
+### Veraset İlamı Ne İçin Gereklidir?
+
+Bu belge olmadan şu işlemlerin hiçbirini yapamazsınız:
+
+- **Tapu intikali:** Miras kalan taşınmazları adınıza tescil ettirmek
+- **Banka hesapları:** Vefat edenin hesaplarına erişim veya devir
+- **Araç devri:** Miras kalan araçların trafik tescil işlemleri
+- **Veraset vergisi beyannamesi:** Vergi dairesine zorunlu bildirim
+- **Dava süreçleri:** Tenkis, muris muvazaası veya izale-i şuyu gibi davalarda mirasçılık sıfatının ispatı
+
+### "Eski" ve "Yeni" İsim Karışıklığı
+
+2002'de yürürlüğe giren Türk Medeni Kanunu ile belgenin resmi adı "mirasçılık belgesi" olarak değişti. Ancak uygulamada avukatlar, mahkemeler ve halk hâlâ "veraset ilamı" terimini kullanmaya devam etmektedir. Her iki isim de aynı belgeye işaret eder.
+
+---
+
+## 2. Veraset İlamı Nereden Alınır? Noter mi, Mahkeme mi?
+
+Bu sorunun cevabı sizin durumunuza göre değişir. İki yol var — ve birini seçemeyebilirsiniz.
+
+### Yol A: Noterden (Hızlı Yol)
+
+Tüm koşullar uygunsa noter işlemi **aynı gün, 15–30 dakika içinde** tamamlanır. Türkiye'deki herhangi bir noter başvuruyu kabul edebilir — miras bırakanın son ikametgahına gitmenize gerek yoktur.
+
+**Noterden başvuru için ön koşullar:**
+- Tüm mirasçılar Türk vatandaşı (ya da T.C. vatandaşlığını sürdüren çifte vatandaş)
+- Miras bırakan da Türk vatandaşı
+- Nüfus kayıtları (MERNİS) eksiksiz ve açık
+- Vasiyetname yok
+
+**İstenen belgeler (noterden):**
+- Başvuranın T.C. kimlik kartı (ya da pasaportu)
+- Miras bırakanın T.C. kimlik numarası
+
+Belgeler tam olduğunda noter MERNİS sistemine bağlanarak nüfus kayıtlarını sorgular, soybağını tespit eder ve mirasçılık belgesini aynı anda düzenler.
+
+### Yol B: Sulh Hukuk Mahkemesinden (Zorunlu Yol)
+
+Aşağıdaki durumların **herhangi biri** geçerliyse noter işlem yapamaz ve mahkemeye başvurmanız zorunludur (Noterlik Kanunu m.71/B-4):
+
+| Durum | Neden noter yapamaz? |
+|---|---|
+| Mirasçılardan biri yabancı uyruklu | MERNİS yabancı kayıtlara erişemez |
+| Mavi kartlı mirasçı | Nüfus kaydı kapatılmış, yabancılık unsuru var |
+| Çifte vatandaş mirasçı | Yabancılık unsuru taşır |
+| Nüfus kayıtlarında belirsizlik | Soybağı tespit edilemiyor |
+| Vasiyetname mevcut | Kanun gereği mahkeme yetkisi |
+| Muris veya mirasçı evlatlık | Özel hukuki durum |
+| Muris 04.04.1926 öncesi vefat etmiş | TMK öncesi kayıtlar |
+
+Mahkeme başvurusu birkaç hafta ile birkaç ay arasında sürebilir. Yetkili mahkeme esnektir: murisin son yerleşim yeri veya mirasçılardan herhangi birinin yerleşim yeri sulh hukuk mahkemesi yetkilidir. Yani Türkiye'nin herhangi bir ilindeki sulh hukuk mahkemesine başvurabilirsiniz.
+
+### 2026 Yılı Ücretleri
+
+| Başvuru Yeri | Ücret (2026) | Süre |
+|---|---|---|
+| Noterden | ~3.000 TL | Aynı gün (15–30 dakika) |
+| Sulh Hukuk Mahkemesinden | ~3.500–4.000 TL | 2 hafta – 4 ay |
+
+Bu ücretler sabit olup mirasın değerine göre değişmez. Avukatlık ücreti ve vekâletname masrafları ayrıdır.
+
+---
+
+## 3. Mavi Kartlılar ve Yabancı Uyruklu Mirasçılar İçin Özel Durum
+
+Bu bölüm, Almanya'daki Türk topluluğunu en çok etkileyen konulardan biridir ve çoğu rehberde yeterince açıklanmaz.
+
+### Mavi Kart Nedir?
+
+Mavi kart, doğumla Türk vatandaşı olup sonradan izin alarak Türk vatandaşlığından çıkan kişilere verilen belgedir. Mavi kart sahipleri çoğu Türk vatandaşı hakkına sahip olmaya devam eder — ancak hukuki açıdan Türk vatandaşı sayılmazlar.
+
+### Mavi Kartlılar Noterden Veraset İlamı Alabilir mi?
+
+**Hayır, genel olarak alamazlar.** İki temel nedeni var:
+
+1. **Hukuki engel:** Noterlik Kanunu m.71/B-4 uyarınca, başvuranın yabancılık unsuru taşıması durumunda noter yetkisiz kalır. Mavi kart sahipleri T.C. vatandaşı olmadığından bu kapsama girer.
+
+2. **Teknik engel:** Türk vatandaşlığından çıkıldığında nüfus aile kütüğündeki kayıt kapatılır. Noter MERNİS sisteminde bu kişinin soybağını artık göremez — dolayısıyla mirasçılık belgesi düzenleyemez.
+
+Bazı noterlerin mavi kartlılara belge düzenlediğine dair vakalar bildirilmiş olsa da bu durum istisnaidir ve hukuki açıdan tartışmalıdır. **Güvenli yol her zaman Sulh Hukuk Mahkemesi'ne başvurmaktır.**
+
+### Alman Vatandaşı Mirasçılar
+
+Mirasçılar arasında Türk vatandaşlığı taşımayan bir Alman vatandaşı varsa durum nettir: **noter bu durumda mirasçılık belgesi düzenleyemez.** Almanya'da doğmuş, hiç Türk vatandaşlığı olmamış bir kişi için mahkeme zorunludur.
+
+Bu kişilerin başvuruda sunması gereken ek belgeler:
+- Pasaport fotokopisi (konsolosça onaylı)
+- Nüfus ve ikametgah belgesi (Anmeldebescheinigung — apostilli)
+- Soybağını kanıtlayan belgeler (doğum belgesi, evlilik belgesi — apostilli ve yeminli Türkçe çevirili)
+
+---
+
+## 4. Almanya'dan Veraset İlamı: Türkiye'ye Gitmek Zorunda mısınız?
+
+**Hayır.** Almanya'dan, Türkiye'ye gitmeden veraset ilamı almak tamamen mümkündür.
+
+### Adım Adım: Almanya'dan Veraset İlamı Süreci
+
+**Adım 1 — Konsolosluğa gidin ve vekâletname düzenleyin**
+
+Almanya'daki Türk konsolosluklarından birine gidin (Frankfurt, Berlin, Stuttgart, Münih, Köln, Hamburg, Hannover, Karlsruhe, Münster veya Nürnberg). Yanınızda pasaportunuz olmalı.
+
+Avukatınıza düzenleyeceğiniz vekâletnamede şu yetkilerin **açıkça belirtilmesi** kritiktir:
+- Veraset ilamı (mirasçılık belgesi) çıkarma
+- Sulh hukuk mahkemesinde dava açma ve takip etme
+- Tapuda intikal işlemi yapma
+- Vergi dairesinde beyanname verme
+- Banka işlemlerini yürütme
+- İhtiyati tedbir talep etme
+
+Genel bir vekâletname yeterli değildir. Her yetkinin tek tek sayılması gerekir. Vekâletname süreci için ayrıca [Türkçe vekâletname nasıl çıkarılır](/tr/blog/turkce-vekaletname-nasil-cikarilir) rehberimize bakabilirsiniz.
+
+**Adım 2 — Gerekli belgeleri hazırlayın**
+
+Almanya'da düzenlenen belgeler Türkiye'de kullanılabilmesi için **apostil şerhi** almalı ve **yeminli tercüman** tarafından Türkçeye çevrilmelidir.
+
+| Belge | Apostil Gerekli mi? | Türkçe Çeviri Gerekli mi? |
+|---|---|---|
+| Ölüm belgesi (Almanya'dan) | Evet | Evet (yeminli) |
+| Nüfus kayıt örneği (Türkiye'den) | Hayır | Hayır |
+| Pasaport fotokopisi | Hayır | Hayır |
+| Doğum belgesi (Almanya'dan) | Evet | Evet (yeminli) |
+| Evlilik belgesi (Almanya'dan) | Evet | Evet (yeminli) |
+| Alman Erbschein (taşınırlar için) | Evet | Evet (yeminli) |
+
+**Adım 3 — Avukatınız başvuruyu yapar**
+
+Vekâletname ve belgeler avukatınıza iletildikten sonra, avukatınız Türkiye'deki ilgili notere veya sulh hukuk mahkemesine başvurur. Durum uygunsa noterden aynı gün belge alınabilir. Mahkeme gerektiren durumlarda süreç birkaç haftaya uzayabilir.
+
+**Adım 4 — Belgeyi alın ve sonraki işlemlere geçin**
+
+Veraset ilamı alındıktan sonra avukatınız süreci devam ettirir: vergi beyannamesi, tapu intikali, banka işlemleri. Türkiye'deki miras sürecinin tamamı için [Almanya'da yaşarken Türkiye'de miras rehberimizi](/tr/blog/almanya-turkiye-miras-hukuku-rehberi) okuyabilirsiniz.
+
+> ⚠️ **Önemli:** Vekâletnamede yetki eksikliği, Türkiye'deki miras sürecinde en sık karşılaşılan gecikme nedenidir. Konsoloslukta düzenlenen vekâletname onaylanmadan önce avukatınıza danışarak gerekli yetkilerin tamamının metne girdiğini teyit edin.
+
+---
+
+## 5. Alman Erbschein Türkiye'de Geçerli mi?
+
+Bu, Almanya'daki Türk ailelerinin en sık sorduğu sorulardan biridir — ve cevap çoğunlukla beklediklerinden farklıdır.
+
+### Taşınmaz Mallar (Tapu) İçin: Hayır
+
+Türk tapu müdürlükleri taşınmaz devri için **yalnızca Türkiye'de düzenlenmiş mirasçılık belgesini** kabul eder. Apostilli ve yeminli çevirili Alman Erbschein tapu işlemi için geçerli değildir. Bu uygulama Türk Konsolosluk Sözleşmesi'nden (1929) kaynaklanmakta olup Türk mahkeme içtihatlarıyla da sabittir.
+
+### Taşınır Mallar (Banka Hesabı) İçin: Teoride Evet, Pratikte Değişken
+
+1929 tarihli Türk-Alman Konsolosluk Anlaşması'nın 14. maddesi uyarınca, miras bırakan Türk vatandaşıysa ve Almanya'da yalnızca taşınır mal (banka hesabı) bırakmışsa, apostilli Türk veraset ilamı Almanya'da bu hesaplar için kullanılabilir. Tersine, Türkiye'deki taşınır mallar için apostilli Alman Erbschein teorik olarak kabul edilebilir.
+
+Ancak Türk bankalar pratikte yine de Türkiye'de düzenlenmiş mirasçılık belgesi istemektedir. **En güvenli ve evrensel çözüm her zaman Türkiye'de veraset ilamı almaktır.**
+
+### E-Devlet Üzerinden Veraset İlamı Sorgulama
+
+2026 itibarıyla e-Devlet portalı (e-devlet.gov.tr) üzerinden mevcut veraset ilamlarınızı sorgulamak ve dijital kopyasını görüntülemek mümkündür. Ancak bu dijital görüntüleme tapu tescili gibi resmi işlemler için yeterli değildir — fiziki veya onaylı örnek gerekmektedir.
+
+---
+
+## 6. Veraset İlamı Alındıktan Sonra Ne Yapılır?
+
+Veraset ilamı almak tek başına miras mallarının size geçmesini sağlamaz. Sonraki adımlar sırasıyla şöyle işler:
+
+### Adım 1: Veraset ve İntikal Vergisi Beyannamesi
+
+**Süre sınırı kritiktir:** Murisin ölümünden itibaren yurt dışındaki mirasçılar için **6 ay** (hem ölüm hem mirasçılar yurt dışındaysa **8 ay**) içinde vergi dairesine beyanname verilmelidir. Bu süre kaçırılırsa para cezası ve gecikme faizi uygulanır.
+
+Verginin ödenmesi ardından vergi dairesi **İlişik Yoktur Yazısı** (vergi ilişiği kesme belgesi) düzenler. Bu belge olmadan tapu intikali yapılamaz.
+
+### Adım 2: Tapu İntikali (WEBTAPU)
+
+WEBTAPU (webtapu.tkgm.gov.tr) üzerinden online başvuru yapılabilir. Avukatınız vekâletname kapsamında bu işlemi de sizin adınıza yürütebilir.
+
+Tapu intikalinden sonra taşınmaz mirasçılar adına "elbirliği mülkiyeti" olarak tescil edilir. Satış için tüm mirasçıların katılımı gerekirken tapu tescili için tek mirasçının başvurusu yeterlidir.
+
+### Adım 3: Banka Hesapları
+
+Her banka kendi prosedürüne sahiptir. Genel olarak:
+- Veraset ilamı (mirasçılık belgesi)
+- Vergi ilişiği kesme belgesi
+- Tüm mirasçıların birlikte başvurusu
+
+gerekmektedir. Birden fazla mirasçı varsa ve anlaşmazlık çıkıyorsa, ayrı hesaplar için ayrı avukat aracılığıyla işlem yapılabilir.
+
+### Adım 4: Araç Devri
+
+Miras kalan araç için veraset ilamı ve vergi ilişiği kesme belgesiyle trafik tescil müdürlüğüne başvurulur. Avukat vekâletname kapsamında bu işlemi de yürütebilir.
+
+---
+
+## 7. Veraset İlamının İptali: Ne Zaman Geçersiz Olur?
+
+Veraset ilamı kesin hüküm niteliği taşımaz. TMK m.598/3 uyarınca mirasçılık belgesinin geçersizliği her zaman ileri sürülebilir.
+
+### Hangi Hallerde İptal Edilebilir?
+
+- Belgede yer almayan ancak gerçekte mirasçı olan kişilerin bulunması
+- Belgede gösterilen mirasçılardan birinin gerçekte mirasçı olmaması
+- Soybağı tespitinde hata veya eksik kayıt
+- Vasiyetnamenin sonradan ortaya çıkması
+
+### İptal Davası Nerede Açılır?
+
+Veraset ilamı iptali davası, herhangi bir mirasçının yerleşim yerindeki **Asliye Hukuk Mahkemesi'nde** açılır. Davalı olarak diğer tüm mirasçılar gösterilir. Dava sonucunda hem hatalı belge iptal edilir hem de yeni mirasçılık belgesi düzenlenmesi talep edilir.
+
+---
+
+## 8. Yaygın Hatalar ve Kaçınma Yolları
+
+Almanya'dan veraset ilamı sürecini yürütenlerin en sık yaptığı hatalar şunlardır:
+
+**1. Vekâletname yetkilerini eksik yazmak**
+Konsoloslukta "genel vekâletname" düzenletmek yeterli değildir. Tapu, banka, mahkeme ve vergi yetkilerinin tek tek belirtilmesi şarttır.
+
+**2. Apostil ve çeviri işlemlerini atlayıp Almanya'dan belge göndermek**
+Türkiye'deki mahkeme veya noter, apostilsiz ve yeminli çevirisiz belgeler üzerinde işlem yapamaz. Her yabancı belge için bu iki adım zorunludur.
+
+**3. Mavi kartlı olarak notere gidip geri çevrilmek ve süreci kaybetmek**
+Mavi kartlıların doğrudan mahkemeye gitmesi gerektiğini bilmeden notere gidip vakit kaybetmesi çok yaygın bir hatadır. Avukat yönlendirmesiyle bu süreci baştan doğru yönetebilirsiniz.
+
+**4. Vergi beyanname süresini kaçırmak**
+Veraset ilamı alındıktan sonra "zaten belge var, acele yok" düşüncesiyle vergi süresini kaçırmak ciddi cezalara yol açar. Beyanname süresi veraset ilamından değil, **murisin ölümünden** itibaren işler.
+
+**5. Alman Erbschein'ı tapuya götürmek**
+Türk tapu müdürlükleri Alman Erbschein kabul etmez. Bu belgeyle giden mirasçılar ellerini boş döner ve süreci sıfırlamak zorunda kalır.
+
+---
+
+## 9. Veraset İlamı ve Sonrasındaki Süreç İçin Sıkça Karşılaşılan Senaryolar
+
+### Senaryo A: Tüm mirasçılar Türk vatandaşı, vasiyetname yok, nüfus kayıtları eksiksiz
+→ En basit durum. Avukatınız herhangi bir noterden aynı gün belgeni alır.
+
+### Senaryo B: Mirasçılardan biri Almanya doğumlu Alman vatandaşı
+→ Mahkeme zorunludur. Alman mirasçının apostilli belgeleri (pasaport, doğum belgesi, ikametgah belgesi) yeminli Türkçe çeviriyle mahkemeye sunulur. Süre 4–12 hafta.
+
+### Senaryo C: Miras bırakan Almanya'da vefat etti, Türkiye'de taşınmazı var
+→ Almanya'daki ölüm belgesi apostilli ve yeminli çevirili olarak Türkiye'ye gönderilir. Hem Türk hem Alman veraset ilamı alınması gerekebilir (taşınır/taşınmaz ayrımına göre). Avukat her iki ülkedeki süreci koordineli yönetmeli.
+
+### Senaryo D: Miras bırakan mavi kartlı, mirasçılar Türk vatandaşı
+→ Miras bırakanın Türk vatandaşlığından çıkması durumu karmaşıklaştırır. Hangi ülke hukukunun uygulanacağı mal varlığının niteliğine göre belirlenir. Uzman avukat değerlendirmesi zorunludur.
+
+### Senaryo E: Mirasçılar arasında anlaşmazlık var
+→ Veraset ilamı yine de alınabilir — tek bir mirasçının başvurusu yeterlidir. Paylaşım anlaşmazlığı ayrı bir dava konusudur (izale-i şuyu veya tenkis).
+
+---
+
+## 10. Doğru Kanzlei ile Almanya'dan Veraset İlamı Sürecinizi Yönetin
+
+[Doğru Kanzlei](https://www.hasandogru.de/tr/hizmetler/miras-hukuku) olarak, hem **Ankara Barosu** hem de **Karlsruhe Barosu** (§207 BRAO) üyesiyiz. Bu çift üyelik sayesinde Türkiye'deki miras süreçlerini herhangi bir aracı olmadan, UYAP avukat portalı üzerinden Mannheim ofisimizden doğrudan yönetiyoruz.
+
+Almanya'daki konsolosluklarda tüm şehirlerde müvekkillerimize vekâletname sürecinde rehberlik ediyoruz. Belgelerin apostil ve çeviri aşamasından sulh hukuk mahkemesi başvurusuna, vergi beyannamesinden tapu intikaline kadar tüm adımları sizin adınıza takip ediyoruz.
+
+**Almanya'dan yönettiğimiz veraset ilamı süreçleri:**
+- Noterden veya mahkemeden mirasçılık belgesi alınması
+- Mavi kartlı ve yabancı uyruklu mirasçılar için özel başvuru
+- Apostil ve yeminli çeviri koordinasyonu
+- Veraset ve intikal vergisi beyannamesi
+- İlişik yoktur yazısı temini
+- WEBTAPU üzerinden tapu intikali
+- Banka ve araç devir işlemleri
+
+
+---
+
+## Sıkça Sorulan Sorular
+
+**Veraset ilamı nedir ve ne işe yarar?**
+Kimin ne oranda mirasçı olduğunu gösteren resmi belgedir. Tapu intikali, banka hesabı devri, araç tescili ve veraset vergisi beyannamesi için zorunludur.
+
+**Veraset ilamını noterden mi yoksa mahkemeden mi almalıyım?**
+Tüm mirasçılar Türk vatandaşıysa ve nüfus kayıtları açıksa noter tercih edilir — aynı gün, ~3.000 TL. Mavi kartlı, yabancı uyruklu veya çifte vatandaş mirasçı varsa mahkeme zorunludur — birkaç hafta, ~3.500–4.000 TL.
+
+**Mavi kartlı mirasçı veraset ilamını nereden alır?**
+Doğrudan Sulh Hukuk Mahkemesinden. Noterlik Kanunu m.71/B-4 uyarınca mavi kartlılar için noter yetkisiz kalır. Almanya'dan konsolosluk vekâletnamesiyle avukat aracılığıyla başvuru yapılabilir.
+
+**Almanya'dan Türkiye'ye gitmeden veraset ilamı alınabilir mi?**
+Evet. Konsolosluktan özel yetkili vekâletname düzenleyerek avukatınız tüm süreci sizin adınıza yürütür.
+
+**Alman Erbschein Türkiye'de geçerli midir?**
+Tapu işlemleri için hayır. Türk tapu müdürlükleri yalnızca Türkiye'de düzenlenmiş mirasçılık belgesini kabul eder. Banka hesapları için teorik olarak kabul edilebilir ancak pratikte Türk bankalar yine de Türk belgesi ister.
+
+**Veraset ilamı almak için tüm mirasçıların başvurması gerekir mi?**
+Hayır. Tek bir mirasçının başvurusu yeterlidir. Belgede tüm mirasçılar ve payları gösterilir.
+
+**Veraset ilamı 2026 yılında ne kadara mal olur?**
+Noterden ~3.000 TL (aynı gün). Sulh Hukuk Mahkemesinden ~3.500–4.000 TL (birkaç hafta–ay). Avukatlık ve apostil masrafları ayrıdır.
+
+**Veraset ilamı alındıktan sonra ne yapılır?**
+Sırasıyla: Vergi beyannamesi (6–8 ay içinde) → İlişik Yoktur Yazısı → Tapu intikali (WEBTAPU) → Banka işlemleri → Araç devri.
+
+**Veraset ilamı iptal edilebilir mi?**
+Evet. TMK m.598/3 uyarınca geçersizliği her zaman ileri sürülebilir. İptal davası Asliye Hukuk Mahkemesinde açılır.
+
+---
+
+*Bu makale genel bilgi amaçlıdır ve hukuki danışmanlık yerine geçmez. Kendi durumunuz için Av. Hasan Doğru'ya danışmanızı öneririz.*`,
+    contentEN: `**LEGAL NOTICE:** This article addresses Turkish law exclusively. Doğru Kanzlei advises on Turkish law under § 207 BRAO and does not advise on German domestic law.
+
+---
+
+Someone in your family has passed away in Turkey, or left assets there. You are sitting in Germany trying to figure out what comes next. You have heard the phrase "Veraset İlamı" mentioned by a relative, by a bank, or by the land registry office. You are not sure what it is, who issues it, whether you have to fly to Turkey to get it, or whether the probate certificate you already have from Germany is enough.
+
+It is probably not enough. This guide explains why — and exactly what you need to do instead.
+
+---
+
+## 1. What Is the Turkish Certificate of Inheritance?
+
+The Turkish Certificate of Inheritance — Veraset İlamı in Turkish, also called Mirasçılık Belgesi (Certificate of Heirship) — is the official document that formally identifies who the legal heirs of the deceased are and what share of the estate each heir is entitled to receive.
+
+It is issued under Article 598 of the Turkish Civil Code (Türk Medeni Kanunu) by either the Turkish Civil Court of Peace (Sulh Hukuk Mahkemesi) or, in straightforward cases involving only Turkish nationals, by a Turkish notary.
+
+### Why Is It Required?
+
+Without the Turkish Certificate of Inheritance, none of the following is possible in Turkey:
+
+- **Property title transfer (Tapu intikali):** Registering inherited real estate in the heirs' names
+- **Bank accounts:** Accessing frozen accounts or transferring funds belonging to the deceased
+- **Inheritance tax declaration:** The tax office requires this certificate before processing declarations
+- **Vehicle re-registration:** Transferring inherited vehicles at the traffic registry
+- **Legal proceedings:** Proving heirship in estate disputes (forced heirship claims, fraudulent transfer lawsuits, partition proceedings)
+
+### What the Certificate Is and Is Not
+
+The certificate is **declaratory** — it declares who is already an heir (heirship arises automatically on death), it does not create heirship. This matters for one important reason: obtaining the certificate does not mean you have accepted the inheritance. You can still reject it within the three-month rejection window after you become aware of your status as heir and the death. Neither obtaining the certificate nor filing a tax declaration constitutes acceptance.
+
+The certificate is also **not final** — it can be challenged and corrected at any time through an annulment lawsuit (Veraset İlamının İptali Davası) before the Court of First Instance (Asliye Hukuk Mahkemesi).
+
+---
+
+## 2. Notary or Court — Which Route Do You Take?
+
+Since 2011, the Turkish Certificate of Inheritance can be issued either by a Turkish notary or by the Civil Court of Peace. Which route applies to you depends on who is involved in the inheritance.
+
+### Route A: Turkish Notary (Fast track — available only under specific conditions)
+
+When all conditions are met, the notary can issue the certificate on the **same day in 15–30 minutes**. The notary accesses the Turkish civil registry (MERNİS) electronically to verify the family tree and calculates the legal shares accordingly.
+
+**Conditions for the notary route — all must apply:**
+- All heirs hold Turkish nationality
+- The deceased held Turkish nationality
+- The civil registry records are complete and unambiguous
+- No will exists
+
+> ⚠️ **Critical for anyone reading this from Germany:** The moment **even a single** party involved — whether the deceased or any heir — holds a foreign nationality (including German nationality), holds a Blue Card (Mavi Kart), or is a dual national, the Turkish notary **loses jurisdiction entirely**. This is not discretionary. Article 71/B(3) of the Turkish Notaries Act (Noterlik Kanunu) makes this an absolute rule. The notary cannot issue the certificate in these cases even if everything else is straightforward.
+
+### Route B: Civil Court of Peace (Sulh Hukuk Mahkemesi — required in most cases with a Germany connection)
+
+The court route is mandatory when:
+- Any heir or the deceased holds a foreign nationality (German, British, Dutch, etc.)
+- Any heir is a Blue Card (Mavi Kart) holder
+- Any heir is a dual national (Turkish + German)
+- Civil registry records are unclear or incomplete
+- A will exists
+- The heirship is disputed
+
+**Which court?** Any Turkish Civil Court of Peace has jurisdiction — at the deceased's last place of residence, at any heir's place of residence, or at the location of inherited property. This flexibility is useful: your lawyer can file in whichever city is most practical.
+
+**Timeline:**
+- Straightforward cases with all documents ready: 2–6 weeks
+- Cases with foreign heirs, service of process requirements, or registry complications: 2–4 months
+
+### Cost Comparison 2026
+
+| Route | Approximate Cost | Timeline |
+|---|---|---|
+| Turkish notary | ~3,000 TL | Same day (only Turkish nationals) |
+| Civil Court of Peace | ~3,500–4,000 TL | 2 weeks to 4 months |
+
+These fees are fixed — they do not scale with the value of the estate. Additional costs from Germany include: Turkish consulate fees for the power of attorney, apostille fees, and certified translation costs (combined typically €200–500).
+
+---
+
+## 3. Blue Card (Mavi Kart) Holders — A Special Situation Rarely Explained
+
+If you or anyone else involved in the inheritance holds a Blue Card, this section is the most important one for you. Almost no English-language guide addresses this clearly.
+
+### What Is a Blue Card (Mavi Kart)?
+
+The Blue Card is an official identity document issued to former Turkish citizens — people who were Turkish nationals by birth but renounced their Turkish citizenship with government permission. It is also issued to their descendants up to the third degree.
+
+Blue Card holders retain most of the rights of Turkish citizens — they can live, work, and own property in Turkey. But they are legally classified as foreign nationals. They are not Turkish citizens.
+
+### The Inheritance Certificate Problem for Blue Card Holders
+
+**Blue Card holders cannot obtain the Turkish Certificate of Inheritance from a notary.** There are two reasons for this:
+
+**Legal reason:** Article 71/B(3) of the Notaries Act excludes anyone with a foreign status — and Blue Card holders are legally foreign nationals — from the notary route.
+
+**Technical reason:** When someone renounces Turkish citizenship, their record in the civil registry (Nüfus) is closed. The notary accesses the MERNİS database to trace family relationships — but for Blue Card holders, that record no longer exists in the active registry. The notary physically cannot verify the family connection.
+
+**Consequence:** Blue Card holders must go through the Civil Court of Peace. The good news: this can be done entirely through a lawyer with a power of attorney from Germany. No travel to Turkey required.
+
+### What Blue Card Holders Need to Bring
+
+Unlike Turkish nationals, Blue Card holders must provide additional documentation to the court that proves family relationships through other means:
+
+- Blue Card itself
+- Foreign passport (apostilled copy)
+- Birth certificate (apostilled and certified translated into Turkish)
+- Marriage certificate if applicable (apostilled and certified translated)
+- Any document linking the Blue Card holder to the deceased
+
+---
+
+## 4. Does a German Erbschein (Probate Certificate) Work in Turkey?
+
+This is the question asked most often — and the answer is more nuanced than most people expect.
+
+### The Legal Framework: The 1929 Convention
+
+The relationship between Germany and Turkey on estate matters is governed by the Annex to Article 20 of the German-Turkish Consular Convention of 28 May 1929 — the so-called Nachlassabkommen (Estate Agreement). This agreement remains in force today and takes precedence over the EU Succession Regulation, since Turkey is not an EU member state.
+
+### The Decision Matrix: Which Certificate for What?
+
+| Situation | Asset Type | What Is Needed? |
+|---|---|---|
+| Turkish deceased, assets in Turkey | Real estate (Tapu) | Turkish certificate — always required |
+| Turkish deceased, assets in Turkey | Bank accounts | Turkish certificate — almost always required in practice |
+| Turkish deceased, assets in Germany | Bank accounts | Turkish certificate (apostilled) may suffice under § 14 of the Convention |
+| Turkish deceased, assets in Germany | Real estate | German Erbschein (foreign-law certificate under § 2369 BGB) |
+| German deceased, assets in Turkey | Real estate | Turkish certificate — always required |
+| German deceased, assets in Turkey | Bank accounts | Apostilled German Erbschein may suffice under § 14; in practice Turkish banks often demand the Turkish certificate |
+| German deceased, assets in Germany | All | German Erbschein |
+
+### For Turkish Real Estate: Always the Turkish Certificate
+
+This is the critical point: **Turkish land registries will not accept a German Erbschein, an apostilled and translated German probate document, or a European Certificate of Succession for property title transfers.** The only document that works is the Turkish Certificate of Inheritance. This is confirmed by consistent practice of Turkish land registries and is grounded in the lex rei sitae principle — Turkish property is always governed by Turkish law.
+
+### The European Certificate of Succession Gap
+
+Many EU citizens in Germany are unaware of this: the **EU Succession Regulation (No. 650/2012)** does not apply in Turkey. Turkey is not an EU member state and the Regulation has no binding effect there. This means:
+
+- A European Certificate of Succession is not recognised by Turkish authorities
+- A choice-of-law clause in a German will selecting German law to govern the estate does NOT affect Turkish real estate — Turkish law applies regardless
+- EU succession planning that works within Germany may fail entirely when Turkish assets are involved
+
+If you are an EU citizen with assets in both Germany and Turkey, you need to plan for both legal systems separately. A Turkish will or an internationally coordinated estate plan is far more effective than a single German will.
+
+---
+
+## 5. Step by Step: Getting the Turkish Certificate of Inheritance from Germany
+
+### Step 1 — Assess Your Situation
+
+Before doing anything else, establish: What nationalities do all involved parties hold? What is in the Turkish estate — real estate, bank accounts, vehicles, company shares? Is there a will? Are there any civil registry complications (name discrepancies, children from different marriages, adoptions)?
+
+The answers determine whether a notary or court is needed, and what documents must be prepared. A brief consultation with a lawyer before you start saves significant time.
+
+### Step 2 — Issue a Power of Attorney at the Turkish Consulate
+
+Go to the nearest Turkish consulate in Germany. Consulates with notarial functions are located in Frankfurt, Berlin, Stuttgart, Munich, Cologne, Hamburg, Hanover, Karlsruhe, Münster and Nuremberg.
+
+Bring your valid passport. Have a **Sondervollmacht (special power of attorney) drawn up in Turkish**. This document is immediately valid in Turkey without an apostille — it is one of the few documents that does not require further certification. For German-language background on the document itself, see our [power of attorney guide](/de/blog/vollmacht-auf-tuerkisch).
+
+The power of attorney must explicitly authorise the following:
+
+- Filing the application for the Certificate of Inheritance at notary or court
+- Reviewing and accessing the case file
+- Representing you before the tax office (inheritance tax declaration)
+- Filing the WEBTAPU application and completing the title deed transfer
+- Bank correspondence and account release
+- Initiating court proceedings if necessary (forced heirship, fraudulent transfer, partition)
+
+> ⚠️ **Common mistake:** A general power of attorney — even one notarised in Germany — is not sufficient for Turkish court and land registry proceedings. The document must be issued at the Turkish consulate, in Turkish. Your lawyer should review the text before you go.
+
+### Step 3 — Prepare Your Documents
+
+All foreign documents (issued outside Turkey) must be **apostilled** and **certified translated into Turkish** by a sworn translator before they can be used in Turkish legal proceedings.
+
+| Document | Apostille Required? | Certified Turkish Translation Required? |
+|---|---|---|
+| Death certificate (issued abroad) | Yes | Yes |
+| Passport copy | No | No |
+| Birth certificate (issued abroad) | Yes | Yes |
+| Marriage certificate (issued abroad) | Yes | Yes |
+| German Erbschein (if relevant) | Yes | Yes |
+| Turkish civil registry extract (Nüfus) | No | No |
+
+**How to get an apostille in Germany:** Contact the relevant Regierungspräsidium (regional government authority) for the type of document. Death certificates from civil registry offices (Standesamt) need the apostille from the responsible Regierungspräsidium.
+
+**Sworn translator:** Ensure the translator is state-certified (in Germany: "allgemein beeidigt" for Turkish). Not every translation agency meets this standard. Ask your lawyer which translators they work with.
+
+### Step 4 — Your Lawyer Files in Turkey
+
+With the power of attorney and documents in hand, your lawyer in Turkey files the application. For court cases involving foreign heirs, the court must formally serve notice on the parties — your lawyer handles this. Once the certificate is issued, it has no expiry date — it remains valid indefinitely unless successfully challenged.
+
+### Step 5 — What Follows the Certificate
+
+The certificate is the key that unlocks everything else — but it is not the end of the process.
+
+**Inheritance tax declaration:** Must be filed at the Turkish tax office at the deceased's last place of residence. Deadline for heirs living abroad: 6 months from the date of death (8 months if both the deceased and all heirs were abroad). File even if the court process is still ongoing — the deadline runs from the death, not from the certificate.
+
+**Tax clearance certificate (İlişik Yoktur Yazısı / İlişik Kesme Belgesi):** Issued by the tax office after the inheritance tax is paid. Without it, no title deed transfer can proceed.
+
+**Title deed transfer (WEBTAPU):** Online application through Turkey's land cadastre system. Your lawyer manages this with the power of attorney.
+
+**Bank accounts:** Each bank has its own internal procedure. Generally: the certificate, tax declaration and clearance certificate are required. All heirs may need to participate if there are multiple.
+
+**Vehicles:** Re-registration at the traffic registry office.
+
+---
+
+## 6. Common Mistakes — and How to Avoid Them
+
+**Mistake 1: Going to a Turkish notary as a foreign national or Blue Card holder**
+The notary will turn you away. This is a very common experience that wastes weeks of time. Always assess nationality first.
+
+**Mistake 2: Presenting a German Erbschein to a Turkish land registry**
+It will not be accepted for property transfers. The only solution is the Turkish certificate — no amount of apostilling, translating or notarising the German document changes this.
+
+**Mistake 3: Assuming the European Certificate of Succession works in Turkey**
+It does not. Turkey is not bound by the EU Succession Regulation. Turkish real estate is always governed by Turkish law.
+
+**Mistake 4: Getting a general power of attorney from a German notary**
+Turkish courts and land registries generally do not accept a general German notarial power of attorney. The document must be issued at the Turkish consulate in Turkish.
+
+**Mistake 5: Missing the inheritance tax deadline**
+The deadline runs from the date of death — not from when the certificate is issued. Filing late results in penalties and interest. File the tax declaration even if the court process is still in progress.
+
+**Mistake 6: Forgetting the Turkish Tax ID Number**
+Foreign heirs need a Turkish Tax ID Number (Vergi Kimlik Numarası) for every step of the process — tax declaration, title deed transfer, bank access. Your lawyer can obtain this on your behalf without you needing to appear in Turkey.
+
+**Mistake 7: Not getting an injunctive order when a dispute is possible**
+If you suspect a family member may attempt to sell or transfer an asset before the estate is properly settled, ask your lawyer to apply for a precautionary injunction (ihtiyati tedbir) at the same time as the Certificate of Inheritance application. This prevents the asset from changing hands during the proceedings.
+
+---
+
+## 7. Five Common Scenarios — What to Do in Each Case
+
+### Scenario A: All heirs are Turkish nationals, estate is in Turkey, no will
+→ Notary route is available. Lawyer obtains the certificate on the same day with a consular power of attorney. Fastest and simplest.
+
+### Scenario B: One heir is a German national (never held Turkish citizenship)
+→ Court route mandatory. Apostilled German documents required. Your lawyer files at any Civil Court of Peace in Turkey. Timeline: 4–10 weeks with complete documents.
+
+### Scenario C: You are a Blue Card (Mavi Kart) holder
+→ Court route mandatory — notary cannot access your closed registry. Apostilled documents proving family relationships needed. Manageable from Germany through a lawyer. Timeline: 4–12 weeks.
+
+### Scenario D: The deceased was a German national who owned a flat in Istanbul
+→ Turkish certificate from the court — mandatory for the Tapu transfer. For German assets, a German Erbschein from the German Nachlassgericht. Two parallel processes. Both can be managed through lawyers in their respective countries.
+
+### Scenario E: The deceased lived in Germany but was Turkish national, estate split between both countries
+→ Turkish certificate needed for Turkish assets. For German bank accounts, an apostilled Turkish certificate may suffice under the 1929 Convention. For German real estate, a German Erbschein. Coordinate both processes through lawyers in both jurisdictions to avoid missing any deadlines.
+
+---
+
+## 8. Handle the Turkish Certificate of Inheritance with Doğru Kanzlei
+
+[Doğru Kanzlei](https://www.hasandogru.de/en/services/erbrecht) holds dual bar membership with the **Ankara Bar Association** and the **Karlsruhe Bar Association** (§ 207 BRAO). We access Turkey's UYAP attorney portal directly from our Mannheim office — no third-party relay through a separate Turkish law firm.
+
+Founding attorney **Av. Hasan Doğru** spent approximately a decade as a member of Turkey's Special Operations unit (Özel Harekat) before his legal career — giving our estate work a practical understanding of Turkish institutional processes that purely academic training does not provide.
+
+For the broader inheritance process, see our [Turkish inheritance general guide](/en/blog/turkish-inheritance-germany-guide).
+
+**What we manage for clients across Germany and beyond:**
+- Situation assessment: notary or court route, document checklist
+- Power of attorney text review and consulate preparation
+- Apostille coordination and certified translation sourcing
+- Turkish Certificate of Inheritance application — notary or Civil Court of Peace
+- Turkish Tax ID Number for foreign heirs
+- Inheritance tax declaration and tax clearance certificate
+- WEBTAPU title deed transfer
+- Bank account release
+- Parallel coordination with German lawyers or tax advisers where needed
+
+---
+
+## Frequently Asked Questions
+
+**What is the Turkish Certificate of Inheritance?**
+It is the official document identifying who the legal heirs are and their shares. Without it, no Tapu transfer, bank access or tax filing is possible in Turkey. Issued by a Turkish notary or Civil Court of Peace.
+
+**Can a Turkish notary issue the certificate if one heir is German?**
+No. Under Article 71/B(3) of the Turkish Notaries Act, the notary loses jurisdiction whenever any party holds a foreign nationality. The court is mandatory.
+
+**Do I have to travel to Turkey?**
+No. A power of attorney from the Turkish consulate in Germany allows your lawyer to manage everything in Turkey.
+
+**Does my German Erbschein work in Turkey?**
+For real estate: No — Turkish land registries only accept the Turkish certificate. For bank accounts: possibly, under the 1929 Convention, but in practice Turkish banks often require the Turkish certificate anyway.
+
+**Does the European Certificate of Succession work in Turkey?**
+No. Turkey is not bound by the EU Succession Regulation. Turkish real estate is always governed by Turkish law regardless.
+
+**I have a Blue Card (Mavi Kart). Can I use a notary?**
+No. Blue Card holders must use the Civil Court of Peace — the notary cannot access your closed civil registry records. Your lawyer can manage this from Germany.
+
+**How long does it take?**
+Via notary (Turkish nationals only): same day. Via court: 2–6 weeks in straightforward cases; 2–4 months with foreign heirs.
+
+**What does it cost?**
+Notary: ~3,000 TL. Court: ~3,500–4,000 TL. Plus Germany-side costs: consulate, apostille, certified translation (approx. €200–500).
+
+**What happens after the certificate?**
+Inheritance tax declaration (6–8 month deadline from death) → Tax clearance certificate → Tapu transfer (WEBTAPU) → Bank accounts → Vehicles. All managed by your lawyer with the power of attorney.
+
+---
+
+*This article is for general information only and does not constitute legal advice. For your specific situation, contact Av. Hasan Doğru at Doğru Kanzlei.*`,
     category: "Miras Hukuku",
     categoryDE: "Erbrecht",
+    categoryEN: "Inheritance Law",
     image: verasetIlamiImg,
-    dateDE: "11. April 2026",
-    dateTR: "11 Nisan 2026",
-    readTimeDE: "6 Min. Lesezeit",
-    readTimeTR: "6 dk okuma",
+    dateDE: "24. April 2026",
+    dateTR: "24 Nisan 2026",
+    dateEN: "24 April 2026",
+    readTimeDE: "17 Min. Lesezeit",
+    readTimeTR: "17 dk okuma",
+    readTimeEN: "17 min read",
     publishedAt: "2026-04-11",
-    keywordsDE: "Erbschein Türkei beantragen, Veraset Ilami Kosten, türkisches Erbrecht für Deutsche, Immobilienüberschreibung Türkei Erbe, Anwalt Mannheim türkisches Recht",
-    keywordsTR: "veraset ilamı nasıl alınır, veraset ilamı örneği, veraset ilamı ücreti 2026, mirasçılık belgesi nereden alınır, e-devlet veraset ilamı sorgulama",
+    publishedAtDE: "2026-04-24",
+    publishedAtEN: "2026-04-24",
+    modifiedAtDE: "2026-04-24",
+    modifiedAtEN: "2026-04-24",
+    modifiedAtTR: "2026-04-24",
+    keywordsDE: "Erbschein Türkei beantragen, türkischer Erbschein Deutschland, Veraset İlamı Deutschland, Erbschein Türkei Notar oder Gericht, Mavi Kart Erbschein, gilt deutscher Erbschein in Türkei, Erbschein Türkei Apostille, Erbschein Türkei Vollmacht Konsulat, Erbschein Türkei Kosten 2026, türkischer Erbschein Ausländer, Erbschein Türkei Dauer, Fremdrechtserbschein Türkei",
+    keywordsTR: "veraset ilamı nedir nasıl alınır, mirasçılık belgesi almanya, veraset ilamı almanya'dan nasıl alınır, veraset ilamı noter mi mahkeme mi, mavi kartlı veraset ilamı, alman erbschein türkiye'de geçerli mi, yurt dışından veraset ilamı, veraset ilamı iptali, e-devlet veraset ilamı, veraset ilamı ücreti 2026, yabancı uyruklu mirasçı veraset ilamı, veraset ilamı ne kadar sürer",
+    keywordsEN: "Turkish certificate of inheritance Germany, Veraset İlamı how to get from Germany, Turkish inheritance certificate foreigners, Turkish probate certificate abroad, Blue Card Mavi Kart inheritance certificate, does German Erbschein work Turkey, Turkish inheritance certificate notary or court, Veraset İlamı power of attorney Germany, Turkish inheritance certificate cost 2026, Turkish inheritance certificate timeline, European Certificate of Succession Turkey",
     faqDE: [
       {
-        question: "Müssen alle Erben gemeinsam den türkischen Erbschein beantragen?",
-        answer: "Nein. Jeder gesetzliche Erbe kann den Erbschein (Veraset İlamı) einzeln beim Notar oder beim zuständigen Friedenszivilgericht in der Türkei beantragen. Das ausgestellte Dokument weist dann alle berechtigten Erben und deren Anteile aus."
+        question: "Was ist der türkische Erbschein (Veraset İlamı) und wofür wird er benötigt?",
+        answer: "Der türkische Erbschein (Veraset İlamı, auch Mirasçılık Belgesi) ist das amtliche Dokument, das nachweist, wer nach türkischem Erbrecht Erbe ist und welchen Anteil jeder Erbe erhält. Er wird vom türkischen Friedensgericht (Sulh Hukuk Mahkemesi) oder — in einfachen Fällen — vom türkischen Notar ausgestellt. Ohne dieses Dokument ist keine Grundbuchumschreibung (Tapu), keine Bankkontofreigabe und keine Erbschaftsteuererklärung in der Türkei möglich."
       },
       {
-        question: "Gilt ein deutscher Erbschein auch in der Türkei?",
-        answer: "Ein deutscher Erbschein entfaltet in der Türkei keine automatische Wirkung. Da die Türkei kein Mitglied der EU-Erbrechtsverordnung ist, muss für Immobilien in der Türkei entweder ein neuer türkischer Erbschein beantragt oder der deutsche Erbeschein in einem Anerkennungsverfahren (Tenfiz) gerichtlich bestätigt werden."
+        question: "Gilt der deutsche Erbschein in der Türkei?",
+        answer: "Für Immobilien (Tapu) in der Türkei: Nein. Türkische Grundbuchämter akzeptieren ausschließlich den türkischen Erbschein. Für bewegliches Vermögen (Bankkonten) in der Türkei: Theoretisch ja — gemäß § 14 des deutsch-türkischen Nachlassabkommens von 1929 kann ein apostillierter oder konsularisch beglaubigter deutscher Erbschein für bewegliche Nachlassgegenstände ausreichen. In der Praxis verlangen türkische Banken aber häufig dennoch den türkischen Erbschein. Empfehlung: Immer den türkischen Erbschein beantragen."
       },
       {
-        question: "Wie lange dauert es, einen Erbschein in der Türkei zu erhalten?",
-        answer: "Wenn keine Unstimmigkeiten vorliegen und alle Erben im türkischen Personenstandsregister eingetragen sind, kann der Erbschein bei einem Notar in wenigen Minuten ausgestellt werden. Muss ein Gericht entscheiden (z.B. bei Auslandsbezug), kann das Verfahren einige Wochen bis Monate dauern."
+        question: "Muss ich als Erbe in Deutschland für den türkischen Erbschein in die Türkei reisen?",
+        answer: "Nein. Mit einer beim türkischen Konsulat in Deutschland ausgestellten Sondervollmacht (Vekaletname) kann Ihr Anwalt den gesamten Prozess in der Türkei für Sie führen — einschließlich Erbscheinsantrag, Steuererklärung, Grundbuchumschreibung und Bankverfahren. Eine Reise in die Türkei ist in den meisten Fällen nicht erforderlich."
+      },
+      {
+        question: "Kann ein türkischer Notar den Erbschein ausstellen, wenn ein Erbe Deutscher ist?",
+        answer: "Nein. Gemäß Art. 71/B Abs. 3 türkisches Notariatsgesetz (Noterlik Kanunu) sind türkische Notare für die Erbscheinsausstellung nicht zuständig, sobald am Erbfall ein Ausländer beteiligt ist — egal ob als Erblasser oder als Erbe. In diesem Fall muss der Erbschein zwingend beim türkischen Friedensgericht (Sulh Hukuk Mahkemesi) beantragt werden. Gleiches gilt für Mavi-Kart-Inhaber."
+      },
+      {
+        question: "Was ist der Unterschied zwischen türkischem Erbschein und deutschem Erbschein in einem deutsch-türkischen Erbfall?",
+        answer: "Im deutsch-türkischen Erbfall können beide Erbscheine erforderlich sein: Der türkische Erbschein (Veraset İlamı) wird für alle Nachlasswerte in der Türkei benötigt — Immobilien und Bankkonten. Der deutsche Erbschein ist für Nachlasswerte in Deutschland erforderlich. Bei türkischem Erblasser mit Bankkonten in Deutschland kann ein apostillierter türkischer Erbschein gem. § 14 Nachlassabkommen ausreichen. Bei türkischem Erblasser mit Immobilien in Deutschland wird ein deutscher Erbschein benötigt (sog. Fremdrechtserbschein nach § 2369 BGB)."
+      },
+      {
+        question: "Wie lange dauert es, einen türkischen Erbschein aus Deutschland zu beantragen?",
+        answer: "Beim Notar (nur bei rein türkischen Beteiligten): am selben Tag, 15–30 Minuten. Beim Friedensgericht (Sulh Hukuk Mahkemesi): in einfachen Fällen 2–6 Wochen. Bei Beteiligung ausländischer Erben, unklaren Nüfusregistern oder Zustellungsproblemen: 2–4 Monate. Die häufigsten Verzögerungsursachen aus Deutschland heraus sind: fehlende Apostillen, unvollständige Übersetzungen und Registerabweichungen (Namensschreibung, Geburtsort)."
+      },
+      {
+        question: "Welche Vollmacht brauche ich für den türkischen Erbschein aus Deutschland?",
+        answer: "Eine Sondervollmacht (Vekaletname) in türkischer Sprache, ausgestellt beim türkischen Konsulat in Deutschland — ohne Apostille, direkt in der Türkei verwendbar. Die Vollmacht muss explizit folgende Befugnisse enthalten: Erbscheinsantrag beim Notar oder Gericht, Akteneinsicht, Vertretung vor Behörden, Erbschaftsteuererklärung, Tapu-Umschreibung, Bankverfahren und — falls nötig — Einleitung von Gerichtsverfahren. Eine allgemeine Vollmacht reicht nicht aus."
+      },
+      {
+        question: "Was kostet ein türkischer Erbschein 2026?",
+        answer: "Beim türkischen Notar: ca. 3.000 TL (Festbetrag, unabhängig vom Nachlasswert) — nur bei rein türkischen Beteiligten möglich. Beim Friedensgericht: ca. 3.500–4.000 TL inklusive Gerichtsgebühren und Auslagenvorschuss. Hinzu kommen in Deutschland: Konsulatsgebühren für die Vollmacht, Apostille-Gebühren und Kosten für beglaubigte Übersetzungen. Diese Nebenkosten können 200–500 € betragen."
+      },
+      {
+        question: "Was passiert nach der Ausstellung des türkischen Erbscheins?",
+        answer: "Nach dem Erbschein folgen: 1) Erbschaftsteuererklärung beim türkischen Finanzamt (für Erben in Deutschland: Frist 6–8 Monate ab Todesfall), 2) Zahlung der Erbschaftsteuer und Erhalt der Unbedenklichkeitsbescheinigung (İlişik Yoktur Yazısı), 3) Grundbuchumschreibung (Intikal) über WEBTAPU, 4) Freigabe der Bankkonten, 5) Fahrzeugummeldung beim Straßenverkehrsamt. Alle Schritte können durch einen bevollmächtigten Anwalt aus Deutschland heraus geführt werden."
       }
     ],
     faqTR: [
       {
-        question: "Veraset ilamı almak için tüm mirasçıların başvurusu gerekir mi?",
-        answer: "Hayır. Mirasçılardan herhangi biri tek başına başvurarak tüm mirasçıları gösteren mirasçılık belgesini alabilir. Diğer mirasçıların bizzat bulunmasına veya onayına gerek yoktur."
+        question: "Veraset ilamı nedir ve ne işe yarar?",
+        answer: "Veraset ilamı (mirasçılık belgesi), bir kişinin vefatından sonra kimlerin yasal mirasçı olduğunu ve miras paylarının ne olduğunu gösteren resmi belgedir. Türk Medeni Kanunu m.598'e göre sulh hukuk mahkemesi veya noterlikçe düzenlenir. Bu belge olmadan tapu intikali, banka hesaplarına erişim, araç devri ve veraset vergisi beyannamesi yapılamaz."
       },
       {
-        question: "Noterden veraset ilamı alınamazsa ne yapılmalıdır?",
-        answer: "Eğer mirasçılar arasında soybağı uyuşmazlığı varsa veya mirasçılardan biri yabancı uyruklu ise noterler belge veremez. Bu durumda 'hasımlı' veya 'hasımsız' veraset davası açmak üzere Sulh Hukuk Mahkemesine başvurulmalıdır."
+        question: "Veraset ilamını noterden mi yoksa mahkemeden mi almalıyım?",
+        answer: "Her iki yol da mümkündür ancak durum bazında farklılık gösterir. Noterden: Tüm mirasçılar Türk vatandaşıysa, nüfus kayıtları açık ve eksiksizse, vasiyetname yoksa — işlem aynı gün, yaklaşık 3.000 TL. Mahkemeden (Sulh Hukuk Mahkemesi): Mavi kartlı, yabancı uyruklu veya çifte vatandaş mirasçılar varsa, nüfus kayıtlarında belirsizlik varsa veya vasiyetname mevcutsa — birkaç hafta ile birkaç ay, yaklaşık 3.500–4.000 TL."
       },
       {
-        question: "E-devletten alınan veraset ilamı resmi işlemlerde geçerli mi?",
-        answer: "Evet. E-devlet üzerinden 'Veraset İlamı Sorgulama' yapılarak alınan barkodlu belgeler, mahkemeler ve bankalar dahil birçok resmi kurumda geçerli bir belge olarak kabul edilmektedir."
+        question: "Mavi kartlı (Türk vatandaşlığından çıkmış) kişi veraset ilamını nereden alır?",
+        answer: "Mavi kartlı kişiler noterden veraset ilamı alamaz. Noterlik Kanunu m.71/B-4 uyarınca, başvuranın yabancılık unsuru taşıması durumunda noter yetkisiz kalır. Mavi kart sahiplerinin nüfus kayıtları da kapatıldığından noter MERNİS üzerinden soybağını tespit edemez. Bu kişilerin Sulh Hukuk Mahkemesine başvurması zorunludur. Almanya'daki konsolosluğundan vekâletname düzenleyerek avukat aracılığıyla bu işlemi Türkiye'ye gitmeden gerçekleştirebilirler."
+      },
+      {
+        question: "Almanya'dan Türkiye'ye gitmeden veraset ilamı alınabilir mi?",
+        answer: "Evet. Almanya'daki Türk konsolosluğundan avukata özel yetkili vekâletname düzenleyerek tüm süreci Türkiye'ye gitmeden yürütebilirsiniz. Vekâletnamede 'mirasçılık belgesi çıkarma, tapuda intikal, vergi beyannamesi ve dava açma' yetkilerinin açıkça belirtilmesi önemlidir. Doğru Kanzlei olarak UYAP avukat portalı üzerinden bu süreçleri Mannheim ofisimizden doğrudan yönetiyoruz."
+      },
+      {
+        question: "Alman Erbschein (veraset ilamı) Türkiye'de geçerli midir?",
+        answer: "Taşınmaz mallar (tapu) için hayır — Türk tapu müdürlükleri yalnızca Türkiye'de düzenlenmiş veraset ilamını (mirasçılık belgesini) kabul eder. Taşınır mallar (banka hesabı) için Türk-Alman Konsolosluk Anlaşması'nın 14. maddesi uyarınca apostilli Alman veraset ilamı teorik olarak yeterli olabilir; ancak Türk bankalar pratikte yine de Türk mirasçılık belgesini talep etmektedir. En güvenli yol her zaman Türkiye'de veraset ilamı almaktır."
+      },
+      {
+        question: "Veraset ilamı almak için tüm mirasçıların birlikte başvurması gerekir mi?",
+        answer: "Hayır. Mirasçılardan herhangi biri, diğerlerinin onayını almadan tek başına veraset ilamı için başvurabilir. Alınan belgede tüm yasal mirasçıların isimleri ve payları gösterilir. Bu özellik özellikle Almanya'da yaşayanlar için büyük kolaylık sağlar — diğer mirasçıların koordinasyonunu beklemeden süreci başlatabilirsiniz."
+      },
+      {
+        question: "Veraset ilamı ne kadar sürer?",
+        answer: "Noterden: Belgeler tam olduğunda aynı gün, 15–30 dakika içinde. Sulh Hukuk Mahkemesinden: Basit davalarda 2–4 hafta; yabancı uyruklu mirasçı tebligatı veya nüfus kayıt karmaşıklığı varsa 2–4 aya kadar uzayabilir. Yurt dışından avukat aracılığıyla başvurulduğunda, belgelerin eksiksiz hazırlanması ve apostil işlemlerinin önceden tamamlanması süreci önemli ölçüde kısaltır."
+      },
+      {
+        question: "Veraset ilamı 2026 yılında ne kadar ücretlidir?",
+        answer: "Noterden: Yaklaşık 3.000 TL (sabit ücret, mirasın değerine göre değişmez). Sulh Hukuk Mahkemesinden: Harç ve gider avansı dahil 3.500–4.000 TL civarında; süreç daha uzun ama belge hukuki açıdan daha güçlüdür. Bu ücretlere avukatlık vekâletnamesi ve apostil masrafları dahil değildir."
+      },
+      {
+        question: "Veraset ilamı alındıktan sonra ne yapılması gerekir?",
+        answer: "Sırasıyla: 1) Veraset ve intikal vergisi beyannamesi (ölümden itibaren yurt dışındaki mirasçılar için 6–8 ay içinde vergi dairesine), 2) Vergi ödendikten sonra İlişik Yoktur Yazısı (vergi ilişiği kesme belgesi) alınması, 3) WEBTAPU üzerinden tapu intikali başvurusu, 4) Banka hesapları için ilgili bankalara başvuru. Araç intikali için trafik tescil müdürlüğüne ayrıca başvurulur."
       }
-    ]
+    ],
+    faqEN: [
+      {
+        question: "What is the Turkish Certificate of Inheritance (Veraset İlamı)?",
+        answer: "The Turkish Certificate of Inheritance — Veraset İlamı or Mirasçılık Belgesi — is the official document that identifies who the legal heirs are and what share of the estate each heir receives. It is issued by a Turkish Civil Court of Peace (Sulh Hukuk Mahkemesi) or, in simpler cases involving only Turkish nationals, by a Turkish notary. Without this certificate, no property title transfer, bank account access, or inheritance tax filing can take place in Turkey."
+      },
+      {
+        question: "Can a Turkish notary issue the Certificate of Inheritance if one heir is German?",
+        answer: "No. Under Article 71/B(3) of the Turkish Notaries Act (Noterlik Kanunu), Turkish notaries lose jurisdiction to issue the Certificate of Inheritance as soon as any party involved — whether the deceased or any heir — holds a foreign nationality. This applies to German nationals, Blue Card (Mavi Kart) holders, and dual nationals. In all such cases, the certificate must be obtained through the Turkish Civil Court of Peace."
+      },
+      {
+        question: "Do I have to travel to Turkey to get the Turkish Certificate of Inheritance?",
+        answer: "No. With a power of attorney (Vekaletname) issued at a Turkish consulate in Germany — in Turkish, without apostille — your lawyer can manage the entire process in Turkey on your behalf. This includes filing the court application, obtaining the certificate, submitting the inheritance tax declaration, and completing the title deed transfer. You do not need to travel to Turkey."
+      },
+      {
+        question: "Does the German Erbschein (probate certificate) work in Turkey?",
+        answer: "For property (real estate / Tapu): No. Turkish land registries accept only the Turkish Certificate of Inheritance for title transfers. For bank accounts (movable assets): under the 1929 German-Turkish Consular Convention (§ 14), an apostilled German Erbschein may theoretically suffice. In practice, Turkish banks often still require the Turkish certificate. The safest approach is always to obtain the Turkish certificate — it works everywhere."
+      },
+      {
+        question: "Does the European Certificate of Succession work in Turkey?",
+        answer: "No. The EU Succession Regulation (No. 650/2012) does not bind Turkey, which is not an EU member state. Turkish land registries do not accept European Certificates of Succession for property transfers. Turkish real estate is always governed exclusively by Turkish law, regardless of any European succession document or choice-of-law provision in a foreign will."
+      },
+      {
+        question: "What is a Blue Card (Mavi Kart) holder and how does it affect the Turkish inheritance certificate?",
+        answer: "A Blue Card (Mavi Kart) is held by former Turkish citizens who renounced their Turkish nationality with government permission. They retain most rights of Turkish citizens but are legally classified as foreign nationals. For inheritance certificate purposes, Blue Card holders cannot use a Turkish notary — their civil registry records were closed when they gave up citizenship, so the notary cannot verify family ties through MERNİS. They must apply through the Civil Court of Peace, which can be done through an authorised lawyer without travelling to Turkey."
+      },
+      {
+        question: "How long does it take to get the Turkish Certificate of Inheritance from Germany?",
+        answer: "Via notary (only for all-Turkish-national cases): same day, 15–30 minutes. Via Civil Court of Peace: 2–6 weeks in straightforward cases. With foreign heirs, unclear registries, or service of process issues: 2–4 months. The most common cause of delay from Germany is incomplete apostille chains or missing certified translations — not the court process itself."
+      },
+      {
+        question: "What documents do I need for the Turkish Certificate of Inheritance from Germany?",
+        answer: "Required documents typically include: death certificate (apostilled and certified translated into Turkish if issued abroad), proof of kinship — birth and marriage certificates (apostilled and certified translated), passport copies of all heirs, Turkish Tax ID Number for each heir (obtainable by your lawyer), and a power of attorney issued at the Turkish consulate. Exact requirements vary by case — a lawyer should review your specific constellation before you prepare documents."
+      },
+      {
+        question: "What happens after I get the Turkish Certificate of Inheritance?",
+        answer: "After obtaining the certificate, the process continues: inheritance tax declaration filed at the Turkish tax office (deadline: 6–8 months from the date of death depending on where the deceased and heirs were located), payment of inheritance tax, obtaining the tax clearance certificate (İlişik Yoktur Yazısı), title deed transfer through WEBTAPU (Turkish Land Registry online system), bank account release, and vehicle re-registration if applicable. All steps can be managed by your lawyer using the power of attorney."
+      }
+    ],
   },
   {
     slug: "mavi-kart-turkiye-miras-tasinmaz-haklari",
@@ -1887,182 +3886,716 @@ Ankara Barosu üyeliğimiz ve Karlsruhe Barosu kaydımız sayesinde Türkiye'dek
     slug: "almanya-turkiye-alacak-tahsili-icra",
     slugDE: "deutschland-tuerkei-forderungseinzug-zwangsvollstreckung",
     slugTR: "almanya-turkiye-alacak-tahsili-icra",
-    titleDE: "Forderungseinzug & Zwangsvollstreckung in der Türkei | Fremdwährungsforderungen",
-    titleTR: "Almanya'dan Türkiye'de Alacak Tahsili ve İcra Takibi | Yabancı Para Alacağı",
-    excerptDE: "Treiben Sie Ihre Forderungen gegen Schuldner in der Türkei ein. Unser Leitfaden zur Zwangsvollstreckung, Annullierung des Widerspruchs und BGH-Urteile aus Deutschland. Direkte Vertretung aus Mannheim.",
-    excerptTR: "Türkiye'deki borçlunuzdan alacağınızı tahsil edin. Almanya'dan icra takibi başlatma, itirazın iptali ve Yargıtay kararlarıyla rehber. Mannheim'dan doğrudan temsil.",
-    contentDE: `**RECHTLICHER HINWEIS:** Dieser Artikel befasst sich ausschließlich mit dem türkischen Recht. Eine Beratung zum deutschen Recht findet in unserer Kanzlei nicht statt.
-
-# Forderungseinzug in der Türkei aus Deutschland: Leitfaden zur Zwangsvollstreckung
-
-### Einleitung: Treiben Sie Ihre Forderungen in der Türkei ein
-Viele in Deutschland lebende Staatsbürger haben Personen in der Türkei Darlehen gewährt, Immobilien verkauft oder geschäftliche Beziehungen unterhalten, konnten ihre Forderungen jedoch bisher nicht einziehen. Dieser Leitfaden behandelt die rechtlichen Wege des Forderungseinzugs in der Türkei aus Deutschland im Lichte der Rechtsprechung des türkischen Kassationshofs.
-
----
-
-### 1. Die Zwangsvollstreckung ohne Gerichtstitel (İlamsız İcra)
-Nach dem türkischen Vollstreckungs- und Konkursgesetz können Sie ohne vorheriges Gerichtsurteil direkt beim Vollstreckungsamt ein Verfahren einleiten. Hierfür genügt eine Vollmacht für Ihren Anwalt in der Türkei.
-
-Dem Schuldner wird ein Zahlungsbefehl zugestellt. Wenn dieser nicht innerhalb von 7 Tagen widerspricht, wird das Verfahren rechtskräftig und die Sachpfändung kann eingeleitet werden.
+    slugEN: "debt-collection-turkey-from-germany",
+    titleDE: "Forderungseinzug & Zwangsvollstreckung in der Türkei: Vollständiger Leitfaden für Gläubiger aus Deutschland 2026",
+    titleTR: "Almanya'dan Türkiye'de Alacak Tahsili ve İcra Takibi: Eksiksiz Hukuki Rehber 2026",
+    titleEN: "Debt Collection in Turkey from Germany: Complete Legal Guide 2026",
+    metaTitleDE: "Forderungseinzug Türkei aus Deutschland: Vollständiger Leitfaden 2026",
+    metaTitleTR: "Almanya'dan Türkiye'de Alacak Tahsili: Eksiksiz Hukuki Rehber 2026",
+    metaTitleEN: "Debt Collection in Turkey from Germany: Legal Guide 2026",
+    metaDescriptionDE: "Offene Forderung in der Türkei? So vollstrecken Sie als Gläubiger in Deutschland: Mahnverfahren, UYAP-Vermögensabfrage, Arrest und Euro-Kurssicherung. Doğru Kanzlei.",
+    metaDescriptionTR: "Almanya'dan Türkiye'deki alacağınızı nasıl tahsil edersiniz? İlamsız icra, ihtiyati haciz, UYAP varlık sorgusu ve Euro alacağında kur farkı hakkı. Doğru Kanzlei.",
+    metaDescriptionEN: "Creditor based in Germany with a debtor in Turkey? How to enforce without a court judgment, freeze assets via UYAP, and protect your Euro claim. Doğru Kanzlei.",
+    excerptDE: "Was tun, wenn Ihr Schuldner in der Türkei sitzt? Vollstreckung ohne Gerichtstitel, UYAP-Vermögensabfrage, dinglicher Arrest und Euro-Kurssicherung — alles aus Deutschland, ohne Anreise.",
+    excerptTR: "Euro alacağınızı nasıl korursunuz, borçlunun varlıklarını UYAP ile nasıl tespit edersiniz ve Almanya'dan Türkiye'de icra takibini adım adım nasıl başlatırsınız — mahkeme kararı olmadan.",
+    excerptEN: "Your debtor is in Turkey. Their assets are in Turkey. Here is how you recover what you are owed — without a court judgment, without travelling, and without losing your Euro claim to currency depreciation.",
+    contentDE: `**RECHTLICHER HINWEIS:** Dieser Artikel befasst sich ausschließlich mit dem türkischen Recht. Die Doğru Kanzlei berät gemäß § 207 BRAO ausschließlich im türkischen Recht. Eine Beratung oder Vertretung im deutschen Recht findet nicht statt.
 
 ---
 
-### 2. Klage auf Aufhebung des Widerspruchs & 20% Entschädigung
-Widerspricht der Schuldner unberechtigt, muss der Gläubiger eine Klage auf Aufhebung des Widerspruchs erheben. Der größte Vorteil dieser Klage ist, dass der Schuldner zur Zahlung einer "Vollstreckungsentschädigung" von mindestens 20 % der Forderung verurteilt wird.
+Ein Mannheimer Unternehmer hatte einem türkischen Geschäftspartner 30.000 Euro für eine gemeinsame Immobilientransaktion übergeben. Schriftlicher Vertrag, Überweisungsbelege, WhatsApp-Nachrichten — alles vorhanden. Als der Partner nicht zahlte, wandte er sich an einen deutschen Anwalt. Der Rat: Mahnverfahren einleiten, Vollstreckungsbescheid erwirken. Drei Monate später stellte sich heraus, dass dieser Vollstreckungsbescheid in der Türkei nicht vollstreckbar war. Die türkischen Gerichte lehnten die Anerkennung ab — zu Recht, wie wir erklären werden.
 
-> **Yargıtay 19. HD, 2019/4412 E.:**
-> "Ist die Forderung bestimmt, muss bei unberechtigtem Widerspruch gegen den Schuldner eine Vollstreckungsentschädigung in Höhe von 20 % verhängt werden."
+Viele in Deutschland lebende Menschen — ob türkischstämmig oder deutsche Staatsangehörige mit Geschäftsbeziehungen in die Türkei — stehen vor demselben Problem: Der Schuldner sitzt in der Türkei, hat dort Immobilien, Bankkonten und Fahrzeuge, und dennoch kommt das Geld nicht. Der Instinkt, in Deutschland zu klagen, ist verständlich. Er führt aber oft in eine Sackgasse.
 
----
-
-### 3. Vollstreckung deutscher Gerichtsurteile in der Türkei
-Falls Sie bereits einen Vollstreckungsbescheid aus Deutschland haben, muss dieser in der Türkei zunächst im Rahmen einer "Anerkennungs- und Vollstreckungsklage" (Tenfiz) bestätigt werden. Beachten Sie jedoch, dass deutsche Vollstreckungsbescheide aus Mahnverfahren oft nicht direkt für eine Tenfiz-Klage geeignet sind, da sie nicht auf einem streitigen Verfahren basieren.
-
-In vielen Fällen ist es daher schneller, direkt ein neues Vollstreckungsverfahren in der Türkei ohne Gerichtstitel einzuleiten.
+Dieser Leitfaden erklärt, wie das türkische Vollstreckungsrecht tatsächlich funktioniert, welche Instrumente Ihnen als in Deutschland ansässigem Gläubiger zur Verfügung stehen — und welche Fehler Sie unbedingt vermeiden sollten. Alle Angaben beziehen sich auf den Stand des türkischen Rechts im Jahr 2026. Wer zugleich Vermögen, Erbfälle oder Immobilien in der Türkei einordnen muss, findet ergänzend unseren Beitrag zum [türkisches Erbrecht aus Deutschland](/de/blog/erbschaft-tuerkei-deutschland-ratgeber).
 
 ---
 
-### 4. Fremdwährungsforderungen und Wechselkursrisiken
-Wenn Sie ein Darlehen in Euro gewährt haben, haben Sie nach Art. 99 des türkischen Obligationenrechts das Recht, den Wechselkurs zum Zeitpunkt der tatsächlichen Zahlung zu verlangen. Dies schützt den Gläubiger vor Währungsschwankungen der Türkischen Lira.
+## Das türkische Vollstreckungsrecht: Grundbegriffe für deutsche Gläubiger
+
+Das türkische Vollstreckungssystem ist im Vollstreckungs- und Konkursgesetz (İcra ve İflas Kanunu, kurz İİK) geregelt und unterscheidet sich grundlegend vom deutschen Recht. Das wichtigste Unterscheidungsmerkmal: In der Türkei ist es möglich, ein Vollstreckungsverfahren einzuleiten, **ohne zuvor ein Gerichtsurteil zu erwirken**. Dieses Instrument heißt İlamsız İcra Takibi — Vollstreckung ohne Gerichtstitel.
+
+Daneben gibt es die İlamlı İcra Takibi, die Vollstreckung auf Grundlage eines bereits vorliegenden Gerichtstitels. Diese greift, wenn Sie bereits ein anerkennungsfähiges ausländisches Urteil oder ein türkisches Gerichtsurteil haben.
+
+Für die meisten in Deutschland ansässigen Gläubiger ist die **Vollstreckung ohne Gerichtstitel der schnellste und effizienteste Einstieg** — insbesondere dann, wenn kein deutsches Urteil vorliegt oder wenn der vorhandene deutsche Titel (z. B. ein Vollstreckungsbescheid) in der Türkei nicht anerkennungsfähig ist.
+
+> ⚠️ **Wichtig:** Ein Vollstreckungsbescheid aus dem deutschen Mahnverfahren ist in der Türkei **nicht** anerkennungsfähig und kann nicht als Grundlage für eine Vollstreckungsklage (Tenfiz Davası) dienen. Der türkische Kassationshof (Yargıtay) hat dies mehrfach und eindeutig bestätigt, weil das Mahnverfahren kein streitiges Verfahren darstellt. Wer diesen Weg versucht, verliert wertvolle Zeit.
 
 ---
 
-### 5. Häufig gestellte Fragen (FAQ)
+## Vollstreckung ohne Gerichtstitel (İlamsız İcra Takibi): So funktioniert es
 
-**Ich weiß nicht, ob der Schuldner Vermögen in der Türkei hat. Was kann man tun?**
-Über das elektronische UYAP-System können wir alle Immobilien, Bankkonten, Fahrzeuge und Rentenregistrierungen des Schuldners abfragen und sofort pfänden.
+Das Vollstreckungsverfahren ohne Gerichtstitel ist das Herzstück des türkischen Forderungseinzugs für ausländische Gläubiger. Es funktioniert wie folgt:
 
-**Wie lange dauert das Verfahren?**
-Widerspricht der Schuldner nicht, ist das Verfahren oft in 15-20 Tagen rechtskräftig. Bei einem Widerspruch kann der anschließende Prozess je nach Arbeitsbelastung des Gerichts 1-2 Jahre dauern.
+**Schritt 1 — Vollmacht (Vekaletname):** Sie lassen bei einem deutschen Notar oder beim türkischen Generalkonsulat eine notarielle Vollmacht ausstellen, die Ihren türkischen Anwalt zur Einleitung von Vollstreckungsverfahren bevollmächtigt. Das Dokument muss ins Türkische übersetzt und mit einer Apostille nach dem Haager Apostilleübereinkommen versehen sein. Weitere Informationen zur Vollmacht finden Sie in unserem Beitrag [Vollmacht auf Türkisch ausstellen](/de/blog/vollmacht-auf-tuerkisch).
 
-**Kann ich deutsche Dokumente als Beweis verwenden?**
-Ja. Diese müssen jedoch von einem beeidigten Dolmetscher ins Türkische übersetzt und gegebenenfalls mit einer Apostille versehen werden.
+**Schritt 2 — Vollstreckungsantrag:** Ihr Anwalt stellt beim zuständigen türkischen Vollstreckungsamt (İcra Dairesi) — am Wohnsitz des Schuldners oder am Ort der Vertragserfüllung — einen Vollstreckungsantrag. Bei Euro-Forderungen wird gemäß Art. 58 Abs. 3 İİK der türkische Lira-Gegenwert angegeben, verbunden mit dem ausdrücklichen Vermerk „Kurs am tatsächlichen Zahlungstag" (fiili ödeme tarihindeki kur).
 
----
+**Schritt 3 — Zahlungsbefehl (Ödeme Emri):** Das Vollstreckungsamt stellt dem Schuldner einen Zahlungsbefehl zu. Der Schuldner hat 7 Tage Zeit, Widerspruch einzulegen.
 
-### 6. Die Doğru Kanzlei Strategie
-Als Doğru Kanzlei leiten wir den Prozess in Mannheim ein und führen die Vollstreckung über unser Büro in Ankara direkt aus. Ohne Zwischenschaltung externer Anwälte verwalten wir den gesamten Prozess transparent aus einer Hand.`,
-    contentTR: `**YASAL UYARI:** Bu makale yalnızca Türk hukukuna ilişkindir. Büromuzda Alman hukuku konusunda danışmanlık verilmemektedir.
+**Schritt 4 — Keine Einspruch:** Legt der Schuldner keinen Widerspruch ein, wird der Zahlungsbefehl rechtskräftig. Ihr Anwalt leitet sofort die UYAP-Vermögensabfrage ein und beantragt die Pfändung aller festgestellten Vermögenswerte.
 
-# Almanya'dan Türkiye'de Alacak Tahsili: İcra Takibi Rehberi
-
-### Giriş: Türkiye'deki Alacaklarınızı Tahsil Edin
-Almanya'da yaşayan birçok vatandaşımız, Türkiye'deki kişilere borç vermiş, gayrimenkul satmış veya ticari ilişki kurmuş ancak alacağını tahsil edememiştir. Bu rehberde, Almanya'dan Türkiye'de alacak tahsilinin hukuki yollarını ve Yargıtay kararları ışığında izlenmesi gereken stratejileri ele alacağız.
+**Schritt 5 — Pfändung und Verwertung:** Bankkonten werden eingefroren, Immobilien mit einer Pfändungsnotiz im Grundbuch versehen, Fahrzeuge gesperrt. Zahlt der Schuldner weiterhin nicht, werden die gepfändeten Vermögenswerte öffentlich versteigert.
 
 ---
 
-### 1. İlamsız İcra Takibi: Mahkeme Kararı Olmadan Takip Başlatma
-İcra ve İflas Kanunu uyarınca, herhangi bir mahkeme kararı olmaksızın doğrudan icra dairesine başvurarak ilamsız icra takibi başlatabilirsiniz. Bunun için Türkiye'deki avukatınıza vekâletname çıkarmanız yeterlidir.
+## UYAP: Die digitale Vermögensermittlung in der Türkei
 
-Borçluya ödeme emri tebliğ edilir. Borçlu 7 gün içinde itiraz etmezse, takip kesinleşir ve haciz işlemlerine geçilir.
+Eines der stärksten Instrumente im türkischen Vollstreckungsrecht ist das **UYAP-System** (Ulusal Yargı Ağı Bilişim Sistemi — Nationales Justizinformationsnetz). Über UYAP kann Ihr Anwalt unmittelbar nach Einleitung des Verfahrens sämtliche Vermögenswerte des Schuldners digital abfragen — ohne separaten Gerichtsbeschluss.
 
----
+| Vermögensart | Quelldatenbank | Typische Pfändungsdauer |
+|---|---|---|
+| Immobilien (Haus, Grundstück, Gewerbe) | TAKPAS (Grundbuchamt) | 1–3 Werktage |
+| Bankkonten (alle türkischen Banken) | BDDK-Schnittstelle | 1–2 Werktage |
+| Fahrzeuge (Pkw, Lkw, Motorrad) | Verkehrsregistrierung | 2–3 Werktage |
+| Rentenansprüche / Gehalt | SGK-Datenbank | 3–5 Werktage |
+| Unternehmensanteile | Handelsregistrierung | 5–7 Werktage |
 
-### 2. İtirazın İptali Davası ve %20 İcra İnkar Tazminatı
-Borçlu haksız yere itiraz ederse, alacaklı olarak itirazın iptali davası açmanız gerekir. Bu davanın en büyük avantajı, borçlunun alacağın %20'sinden az olmamak üzere icra inkar tazminatına mahkum edilmesidir.
+Diese Abfragen sind digital und zentral — ein erheblicher Vorteil gegenüber Deutschland, wo Gläubiger in der Regel aufwändig recherchieren müssen, bei welchem Institut der Schuldner Konten führt. In der Türkei läuft alles über eine einzige Schnittstelle.
 
-> **Yargıtay 19. HD, 2019/4412 E.:**
-> "İtirazın iptali davasında alacağın likit (belirli) olması halinde, haksız itiraz eden borçlu aleyhine %20 oranında icra inkar tazminatına hükmedilmesi gerekir."
-
----
-
-### 3. Almanya'dan Verilen Mahkeme Kararının Türkiye'de İcrası
-Eğer Almanya'da bir mahkeme kararı (*Vollstreckungsbescheid*) aldıysanız, bunun Türkiye'de icra edilmesi için önce "tenfiz" davası açılması gerekir. Ancak, Alman *Mahnverfahren* (ödeme emri prosedürü) sonucu alınan kararlar Yargıtay tarafından doğrudan tenfize elverişli bulunmayabilir.
-
-Bu nedenle, Türkiye'de doğrudan ilamsız icra takibi başlatmak genellikle daha hızlı ve etkili bir yoldur.
+> ⚠️ **Wichtig:** Besteht die Gefahr, dass der Schuldner Vermögen auf Dritte überträgt — etwa auf Familienangehörige oder verbundene Unternehmen — sollten Sie **vor** der formellen Einleitung des Vollstreckungsverfahrens einen dinglichen Arrest (İhtiyati Haciz) beantragen. Einmal rechtswirksam übertragenes Immobilienvermögen ist kaum zurückzuerlangen.
 
 ---
 
-### 4. Yabancı Para Alacağında Kur Farkı Sorunu
-Türkiye'deki borçlunuza Euro cinsinden borç verdiyseniz, TBK m.99 uyarınca fiili ödeme tarihindeki kuru talep etme hakkınız bulunmaktadır. Bu, kur dalgalanmalarına karşı alacaklıyı koruyan önemli bir haktır.
+## Der dingliche Arrest (İhtiyati Haciz): Vermögen sichern bevor es zu spät ist
+
+Der dingliche Arrest ist das türkische Äquivalent zum deutschen einstweiligen Verfügungsarrest. Er ermöglicht es, die Vermögenswerte des Schuldners vorläufig einzufrieren, bevor das Hauptverfahren abgeschlossen ist. Geregelt in Art. 257 ff. İİK, ist er ein zentrales Instrument für grenzüberschreitende Forderungen.
+
+**Voraussetzungen für den dinglichen Arrest:**
+
+- Die Forderung muss fällig und belegt sein (Vertrag, Rechnung, Schuldschein, Überweisungsbeleg).
+- Es muss ein Arrestgrund vorliegen. Für ausländische Gläubiger besonders relevant: **Hat der Schuldner keinen festen Wohnsitz in der Türkei, gilt dies allein als Arrestgrund** (Art. 257 Abs. 2 İİK). Das betrifft also jeden Fall, in dem der Schuldner zwar Vermögen in der Türkei hat, aber offiziell im Ausland gemeldet ist.
+- Der Gläubiger muss in der Regel eine Sicherheitsleistung von 10–15 % der Forderungssumme hinterlegen.
+
+Nach Erlass des Arrestbeschlusses werden die festgestellten Vermögenswerte sofort gesperrt. Der Schuldner kann bis zur Entscheidung in der Hauptsache nicht mehr über sie verfügen.
+
+**Kombination mit dem Vollstreckungsverfahren:** In der Praxis empfiehlt es sich, den Arrestantrag und den Vollstreckungsantrag gleichzeitig zu stellen. So werden Vermögenswerte bereits in den ersten Tagen gesichert, während das formelle Verfahren läuft.
 
 ---
 
-### 5. Sıkça Sorulan Sorular
+## Widerspruch des Schuldners: Klage auf Aufhebung des Widerspruchs und 20 % Entschädigung
 
-**Borçlunun Türkiye'de nesi olduğunu bilmiyorum, ne yapabiliriz?**
-UYAP sistemi üzerinden borçlunun tüm taşınmazları (TAKPAS), banka hesapları, araçları ve SGK kayıtları avukatınız tarafından sorgulanabilir ve anında haciz konulabilir.
+Legt der Schuldner innerhalb der 7-tägigen Frist Widerspruch gegen den Zahlungsbefehl ein, ruht das Vollstreckungsverfahren. Der Gläubiger hat dann zwei Möglichkeiten:
 
-**Dava ne kadar sürer?**
-İlamsız takipte borçlu itiraz etmezse takip 15-20 gün içinde kesinleşir. İtiraz halinde açılacak dava ise mahkemenin iş yüküne göre 1-2 yıl sürebilir.
+**Option 1 — Aufhebung des Widerspruchs (İtirazın Kaldırılması):** Liegt ein unterschriebener Schuldschein, ein Wechsel oder ein notariell beglaubigtes Schuldanerkenntnis vor, kann der Anwalt beim Vollstreckungsgericht beantragen, den Widerspruch in einem vereinfachten Verfahren aufzuheben. Dies ist schneller als eine ordentliche Klage.
 
-**Almanca belgelerim var, bunları kullanabilir miyim?**
-Evet. Ancak bu belgelerin yeminli tercüman tarafından Türkçeye çevrilmesi ve gerekirse Apostil şerhi alınması gerekmektedir.
+**Option 2 — Klage auf Aufhebung des Widerspruchs (İtirazın İptali Davası):** Fehlen die für Option 1 erforderlichen Dokumente, wird vor dem zuständigen Zivilgericht Klage erhoben. Stellt das Gericht fest, dass der Widerspruch unbegründet war, hat dies zwei Konsequenzen:
+
+- Das Vollstreckungsverfahren wird fortgesetzt.
+- Der Schuldner wird zur Zahlung einer **Vollstreckungsentschädigung von mindestens 20 % der Forderungssumme** verurteilt — zusätzlich zur Hauptforderung.
+
+> **Yargıtay 19. Hukuk Dairesi, 2019/4412 E.:** „Ist die Forderung bestimmt und belegt, muss bei unberechtigtem Widerspruch gegen den Schuldner eine Vollstreckungsentschädigung in Höhe von 20 % verhängt werden."
+
+Diese 20-%-Regelung ist kein Strafschadensersatz im angelsächsischen Sinne — sie ist eine gesetzlich vorgeschriebene Mindestentschädigung, die das türkische Recht bewusst eingesetzt hat, um unbegründete Widersprüche zu sanktionieren. Bei einer Forderung von 50.000 Euro bedeutet das eine zusätzliche Verurteilung von mindestens 10.000 Euro — allein wegen des haltlosen Widerspruchs.
 
 ---
 
-### 6. Doğru Kanzlei Farkı
-Doğru Kanzlei olarak Mannheim ofisimizden vekâletname sürecini başlatır, Ankara ofisimiz üzerinden doğrudan icra dairesine başvururuz. Aracı avukata gerek kalmadan tüm süreci şeffaf bir şekilde yönetiyoruz.`,
+## Vollstreckung eines deutschen Gerichtsurteils in der Türkei: Tenfiz Davası
+
+Haben Sie bereits ein rechtskräftiges deutsches Gerichtsurteil — also ein Urteil aus einem streitigen Verfahren, nicht einen Vollstreckungsbescheid — kann dieses in der Türkei anerkannt und vollstreckt werden. Das Verfahren heißt **Tenfiz Davası** (Anerkennungs- und Vollstreckungsklage) und ist in Art. 50 ff. MÖHUK (Milletlerarası Özel Hukuk ve Usul Hukuku Hakkında Kanun, Gesetz Nr. 5718) geregelt.
+
+**Voraussetzungen für die Anerkennung:**
+
+1. Das Urteil muss rechtskräftig sein (Rechtskraftvermerk erforderlich).
+2. Es muss mit einer Apostille versehen und ins Türkische übersetzt sein.
+3. Zwischen Deutschland und der Türkei muss faktische Gegenseitigkeit bestehen (das ist der Fall).
+4. Das Urteil darf nicht gegen den türkischen ordre public verstoßen.
+5. Der Beklagte muss ordnungsgemäß geladen worden sein.
+
+Das türkische Gericht überprüft dabei **nicht** die inhaltliche Richtigkeit des deutschen Urteils — es prüft ausschließlich diese formellen Voraussetzungen.
+
+| Vollstreckungsweg | Voraussetzung | Dauer | Empfehlung |
+|---|---|---|---|
+| Direkte İlamsız İcra (ohne Titel) | Schriftlicher Vertrag / Beleg | 1–4 Wochen (wenn kein Widerspruch) | Erster Schritt für die meisten Fälle |
+| Tenfiz eines deutschen Urteils | Rechtskräftiges Urteil + Apostille | 6–18 Monate | Wenn ein streitiges Urteil vorliegt |
+| Vollstreckungsbescheid aus Mahnverfahren | Nicht anwendbar | — | Nicht geeignet — Yargıtay lehnt ab |
+| İhtiyati Haciz (Arrest) | Fälligkeit + Arrestgrund | Tage | Parallel zum Hauptverfahren |
+
+---
+
+## Euro-Forderungen und Wechselkursschutz: Art. 99 türk. OR
+
+Haben Sie Ihrem Schuldner einen Betrag in Euro geliehen oder in Euro fakturiert, schützt Sie das türkische Recht vor dem Kursverlust der türkischen Lira — wenn Sie diesen Schutz korrekt geltend machen.
+
+**Art. 99 des türkischen Obligationenrechts (Türk Borçlar Kanunu)** bestimmt: Ist eine Geldschuld in ausländischer Währung vereinbart, kann der Gläubiger bei Zahlungsverzug den Wechselkurs **zum Zeitpunkt der tatsächlichen Zahlung** verlangen — nicht den Kurs bei Fälligkeit.
+
+Was das in der Praxis bedeutet, zeigt folgendes Rechenbeispiel:
+
+| Zeitpunkt | Betrag (Euro) | EUR/TRY-Kurs | TL-Gegenwert |
+|---|---|---|---|
+| Darlehensauszahlung 2022 | 25.000 € | 18,00 | 450.000 TL |
+| Tatsächliche Zahlung 2026 | 25.000 € | 38,00 | 950.000 TL |
+| **Kursgewinn zugunsten Gläubiger** | — | — | **+ 500.000 TL** |
+
+Damit dieser Schutz greift, **muss** in der Vollstreckungsanforderung (Takip Talebi) ausdrücklich vermerkt werden: „fiili ödeme tarihindeki kur" (Kurs am tatsächlichen Zahlungstag). Fehlt dieser Vermerk, rechnet das Vollstreckungsamt automatisch mit dem Kurs vom Einleitungsdatum — ein teurer Fehler, der im Nachhinein nicht korrigiert werden kann.
+
+> ⚠️ **Wichtig:** Gleichzeitig ist zu beachten, dass der Zahlungsbefehl selbst in türkischer Lira ausgestellt werden muss. Der Lira-Gegenwert der Euro-Forderung ist im Vollstreckungsantrag anzugeben. Wird der Zahlungsbefehl fälschlicherweise in Euro ausgestellt, ist er nichtig und kann auf Antrag des Schuldners aufgehoben werden (Art. 58 Abs. 3 İİK). Diese technische Anforderung ist einer der häufigsten Fehler bei der Eigenregie.
+
+---
+
+## Schritt für Schritt: Forderungseinzug aus Deutschland ohne Anreise
+
+Das gesamte Verfahren kann von Deutschland aus geführt werden. Hier ist der vollständige Ablauf:
+
+**1. Vollmacht ausstellen lassen**
+Gehen Sie zu einem deutschen Notar oder zum türkischen Generalkonsulat (in Frankfurt, Berlin, Hamburg, Köln, München, Stuttgart oder Düsseldorf). Die Vollmacht muss die Befugnis zur Einleitung von Vollstreckungsverfahren, zum Abschluss von Vergleichen und zur Beantragung von Arresten enthalten. Anschließend Apostille besorgen und ins Türkische übersetzen lassen.
+
+**2. Unterlagen zusammenstellen**
+Sämtliche Beweise für die Forderung: Verträge, Rechnungen, Überweisungsbelege, E-Mails, WhatsApp-Nachrichten (soweit relevant). Deutsche Dokumente müssen von einem beeidigten Übersetzer ins Türkische übersetzt werden.
+
+**3. UYAP-Vorabrecherche und Arrestentscheidung**
+Ihr Anwalt prüft anhand der verfügbaren Informationen, welche Vermögenswerte der Schuldner in der Türkei voraussichtlich hat. Bei Verdacht auf Vermögenstransfer: Arrestantrag vor Vollstreckungseinleitung.
+
+**4. Vollstreckungsantrag einreichen**
+Ihr Anwalt stellt den Antrag beim zuständigen İcra Dairesi. Der Zahlungsbefehl wird dem Schuldner zugestellt.
+
+**5. Sieben-Tage-Frist und Reaktion**
+Kein Widerspruch → sofortige Pfändung. Widerspruch → Klage auf Aufhebung mit 20-%-Entschädigungsrisiko für den Schuldner.
+
+**6. Pfändung und Verwertung**
+Pfändung von Bankkonten, Immobilien und Fahrzeugen per UYAP. Bei Zahlungsunfähigkeit: Versteigerung der gepfändeten Güter.
+
+**7. Laufende Information**
+Die Doğru Kanzlei informiert Sie in jeder Phase auf Deutsch — per E-Mail, Telefon oder WhatsApp.
+
+---
+
+## Die Doğru Kanzlei: Doppelzulassung, ein Verfahren, keine Umwege
+
+Das Kernproblem bei der Vollstreckung in der Türkei aus Deutschland ist strukturell: Sie brauchen einen Anwalt, der beide Rechtssysteme kennt, in beiden Ländern präsent ist und keine Zeit mit Zwischenkommunikation verliert.
+
+Die Doğru Kanzlei ist sowohl bei der **Ankara Barosu** (Anwaltskammer Ankara, Reg.-Nr. 47068) als auch bei der **Rechtsanwaltskammer Karlsruhe** gemäß **§ 207 BRAO** zugelassen. Das bedeutet:
+
+- Direktvertretung vor türkischen Vollstreckungsämtern und Gerichten — ohne Zwischenschaltung eines lokalen Partneranwalts.
+- Kommunikation und Aktenführung vollständig auf Deutsch.
+- Mannheimer Büro für persönliche Beratung, Ankaraner Büro für die operative Vollstreckung.
+- Ein Ansprechpartner. Eine Akte. Keine Informationsverluste.
+
+Av. Hasan Doğru verfügt zudem über rund 10 Jahre Erfahrung als Angehöriger der türkischen Özel Harekat (Sonderoperationseinheit der Nationalpolizei). Dieses institutionelle Wissen — über Behördenstrukturen, Zustellungswege und Vermögensermittlung — ist ein praktischer Vorteil, der in keiner Gesetzessammlung steht.
+
+Mehr zur Struktur unserer Arbeit finden Sie auf [unsere Leistungen](/de/leistungen); Informationen zur Doppelzulassung und zum Team stehen unter [Über die Doğru Kanzlei](/de/ueber-uns).
+
+---
+
+> **RECHTLICHER HINWEIS:** Dieser Artikel dient ausschließlich der allgemeinen Information über das türkische Recht und stellt keine Rechtsberatung dar. Die Doğru Kanzlei berät gemäß § 207 BRAO ausschließlich im türkischen Recht. Jeder Fall ist individuell — für eine auf Ihre Situation zugeschnittene Einschätzung wenden Sie sich bitte an einen zugelassenen Anwalt.`,
+    contentEN: `**Legal Notice:** This article addresses Turkish law exclusively. Doğru Kanzlei advises on Turkish law under § 207 BRAO and does not advise on German domestic law.
+
+---
+
+A business owner in Frankfurt lent €40,000 to a Turkish supplier for upfront production costs. The agreement was in writing. Bank transfers were documented. When the goods never arrived and the supplier stopped responding, the business owner did what seemed obvious: he started a German court process. After seven months, he had a Vollstreckungsbescheid — the German equivalent of a default judgment obtained through the postal court process. He then discovered that this document was worthless in Turkey. Turkish courts refused to recognise it. He had spent seven months and several thousand euros going in entirely the wrong direction.
+
+This is not an unusual story. Thousands of people in Germany — Turkish-German diaspora members, German nationals with business ties to Turkey, Dutch and Scandinavian creditors with Turkish debtors — face this situation every year. The instinct to act within the German system is understandable. But when the debtor and their assets are in Turkey, the German legal system ends at the border.
+
+This guide explains how the Turkish enforcement system actually works, what tools are available to you as a creditor based abroad, and how to move efficiently — protecting your claim from the day you decide to act. If your Turkish legal matter also involves inherited assets or family property, our [Turkish inheritance law guide](/en/blog/turkish-inheritance-germany-guide) gives useful background on related asset and power-of-attorney issues.
+
+---
+
+## How Turkish Enforcement Law Works: The Basics
+
+Turkish enforcement law is governed primarily by the İcra ve İflas Kanunu — the Enforcement and Bankruptcy Act (referred to here as the EBA). The most important thing to understand upfront is something that does not exist in German or most Western European legal systems: **the ability to begin enforcement proceedings without any court judgment at all**.
+
+This procedure is called **İlamsız İcra Takibi** — literally "non-titled enforcement." You do not need a Turkish court ruling, a German court ruling, or any other judicial decision to initiate it. You file a request with the Turkish enforcement office (İcra Dairesi), the enforcement office issues a payment order to the debtor, and if the debtor does not object within 7 days, seizure of assets begins.
+
+The second type of enforcement is **İlamlı İcra Takibi** — "titled enforcement" — which is used when you already have a court judgment: either a Turkish one, or a foreign judgment that has been formally recognised in Turkey through a recognition and enforcement action (Tenfiz Davası, explained below).
+
+For most creditors based in Germany, İlamsız İcra — enforcement without a prior judgment — is the fastest starting point. The one important caveat is that the debtor has the right to object within 7 days, which pauses the process. We explain what happens then — including a significant financial penalty for unfounded objections — in the section below.
+
+> ⚠️ **Important:** A German Vollstreckungsbescheid (payment order from the Mahnverfahren postal court process) is **not** a litigated judgment and cannot be recognised in Turkey. The Turkish Court of Cassation (Yargıtay) has ruled on this repeatedly and consistently. If you are considering this route, stop — it will cost you time and money with no result in Turkey. Starting fresh with İlamsız İcra in Turkey is almost always faster.
+
+---
+
+## Non-Titled Enforcement (İlamsız İcra Takibi): Step by Step
+
+Here is exactly what happens when enforcement proceedings are initiated in Turkey on your behalf:
+
+**Step 1 — Power of Attorney (Vekaletname)**
+You visit a German notary or the Turkish Consulate General in your city (in Germany: Frankfurt, Berlin, Hamburg, Cologne, Munich, Stuttgart, or Düsseldorf) and have a notarised power of attorney drawn up, authorising your Turkish lawyer to initiate enforcement proceedings, apply for precautionary attachments, and enter into settlements. The document must be translated into Turkish and apostilled under the Hague Apostille Convention.
+
+**Step 2 — Enforcement Request**
+Your lawyer files the enforcement request (Takip Talebi) with the İcra Dairesi at the debtor's registered place of residence or the place where the contract was to be performed. For Euro-denominated claims, the Turkish Lira equivalent is stated, along with the explicit notation that payment is to be made at "the exchange rate on the date of actual payment" (fiili ödeme tarihindeki kur) — a critical phrase that protects your claim against currency loss. We explain this in detail below.
+
+**Step 3 — Payment Order (Ödeme Emri)**
+The enforcement office sends the payment order to the debtor. The debtor has exactly 7 days from the date of service to object. If service cannot be effected at the known address, your lawyer can request alternative service methods.
+
+**Step 4 — No Objection: Enforcement Becomes Final**
+If 7 days pass without objection, the payment order becomes final (kesinleşme). Your lawyer immediately initiates a UYAP asset query (see next section) and applies for the seizure of all identified assets.
+
+**Step 5 — Seizure**
+Bank accounts are frozen, a charge is registered against any real estate in the land registry, and vehicles are blocked. These actions happen digitally through UYAP — typically within a few working days of the enforcement becoming final.
+
+**Step 6 — Realisation**
+If the debtor still does not pay voluntarily, seized assets are sold at public auction. The proceeds are used to satisfy the debt, with enforcement costs and interest recovered first.
+
+---
+
+## UYAP: Turkey's Digital Asset Discovery System
+
+One of the most powerful — and least understood — features of the Turkish enforcement system is UYAP (Ulusal Yargı Ağı Bilişim Sistemi — National Judicial Information Network). Once enforcement proceedings are initiated, your lawyer gains electronic access to a comprehensive cross-database query covering every registered asset in the debtor's name across Turkey.
+
+This is structurally different from Germany, where creditors must typically guess which banks the debtor uses and write to each separately. In Turkey, a single UYAP query covers everything:
+
+| Asset Type | Source Database | Typical Freeze Timeline |
+|---|---|---|
+| Real estate (flats, land, commercial) | TAKPAS (land registry) | 1–3 working days |
+| Bank accounts (all Turkish banks) | BDDK banking interface | 1–2 working days |
+| Vehicles (cars, trucks, motorbikes) | Traffic registration | 2–3 working days |
+| Salary / pension entitlements | SGK social security system | 3–5 working days |
+| Company shares | Trade registry | 5–7 working days |
+
+No separate court order is needed for these queries — they flow automatically from the initiation of enforcement proceedings. The speed and comprehensiveness of this system is a significant advantage over debt recovery in most Western European jurisdictions.
+
+> ⚠️ **Important:** If you have reason to believe the debtor may transfer assets to family members or associated companies before enforcement is finalised, apply for a precautionary attachment (İhtiyati Haciz — explained in the next section) **before** or **simultaneously with** the main enforcement request. Once real estate has been transferred to a good-faith third party, recovering it becomes extremely difficult.
+
+---
+
+## Precautionary Attachment (İhtiyati Haciz): Freezing Assets Before It Is Too Late
+
+A precautionary attachment — İhtiyati Haciz in Turkish — is a provisional court order that freezes the debtor's assets while the main proceedings are ongoing. Think of it as the Turkish equivalent of a Mareva injunction (freezing order) in English law, or a saisie conservatoire in French law. It is governed by Arts. 257–268 of the Turkish EBA.
+
+**When can you apply for one?**
+
+The grounds for a precautionary attachment are:
+
+- Your claim is due and supported by documentation (contract, invoice, bank transfer confirmation, promissory note).
+- There is a specific risk that the debtor will conceal or transfer assets — or the debtor has no permanent registered address in Turkey.
+
+That last point is critically important for creditors based abroad. **Under Art. 257(2) of the EBA, a debtor having no permanent place of residence in Turkey is alone sufficient grounds for a precautionary attachment** — no additional evidence of asset flight is needed. Many creditors in Germany do not know this. If your Turkish debtor is living and working in Turkey but is not permanently registered there, or if you simply cannot confirm their address, this provision may apply immediately.
+
+**What does it cover?**
+
+A precautionary attachment can be placed on real estate (recorded in the land registry, preventing sale or mortgage), bank accounts (frozen for the amount of the claim), and vehicles (blocked from transfer). The attachment remains in place until the main proceedings conclude.
+
+**What does it cost?**
+
+The applicant typically provides a security deposit of around 10–15% of the claim value. This is returned at the end of proceedings if the attachment is upheld.
+
+**When to apply:**
+
+In most cases, the precautionary attachment should be requested at the same time as the main enforcement request — or earlier if the risk of asset transfer is acute. Once assets are gone, the strongest legal position in the world does not help you recover them.
+
+---
+
+## If the Debtor Objects: The 20% Penalty Mechanism
+
+If the debtor objects to the payment order within 7 days, the enforcement proceedings pause (but any precautionary attachment already granted remains in place). You then have two options:
+
+**Option 1 — Summary Objection Removal (İtirazın Kaldırılması)**
+If you hold a signed promissory note, a notarised acknowledgement of debt, or a commercial bill of exchange, your lawyer can apply to the enforcement court to remove the objection in a summary (non-full-trial) hearing. This is faster than a full civil action.
+
+**Option 2 — Civil Action to Annul the Objection (İtirazın İptali Davası)**
+If Option 1 is not available — because the debt is based on a contract, invoice or bank transfer rather than a negotiable instrument — your lawyer files a civil claim in the general courts. If the court finds the debtor's objection was unfounded, two things happen:
+
+- The enforcement proceedings resume from where they stopped.
+- The debtor is ordered to pay a **statutory enforcement penalty of at least 20% of the principal claim** — on top of the full debt, interest, and costs.
+
+This 20% penalty is not a punitive damages award in the common law sense. It is a mandatory minimum prescribed directly by Turkish law, and it cannot be reduced by the court below that threshold. The purpose is explicit: to deter debtors from filing objections as a delay tactic.
+
+On a €30,000 claim, that is an additional €6,000 minimum. On a €100,000 claim, €20,000 minimum. In practice, this mechanism means that a debtor who has no real defence is financially better off not objecting at all.
+
+> **Yargıtay (Court of Cassation) 19th Civil Division, 2019/4412 E.:** Where the claim is liquidated and documented, an unfounded objection must result in an enforcement penalty of no less than 20% of the claim amount — awarded as a matter of law, not discretion.
+
+---
+
+## Enforcing a German Court Judgment in Turkey: The Recognition Process
+
+If you already have a German court judgment — obtained through full adversarial proceedings, not the Mahnverfahren postal process — you can have it recognised and enforced in Turkey. The procedure is called **Tenfiz Davası** (recognition and enforcement action) and is governed by Arts. 50–59 of Turkish Private International Law Act No. 5718 (MÖHUK).
+
+**What the Turkish court checks:**
+
+1. The judgment is final and enforceable in Germany (you will need a Rechtskraftvermerk — certificate of finality — and an Apostille).
+2. It is translated into Turkish by a sworn translator.
+3. Factual reciprocity exists between Germany and Turkey (it does).
+4. The judgment does not violate Turkish public policy (ordre public).
+5. The defendant was properly served and had the opportunity to defend.
+
+The Turkish court does **not** re-examine the merits of the German decision. It is a formal procedural check only.
+
+**The critical distinction — again:**
+
+| German document | Enforceable in Turkey via Tenfiz? |
+|---|---|
+| Litigated judgment (Urteil) with Rechtskraftvermerk + Apostille | Yes |
+| Vollstreckungsbescheid from Mahnverfahren | No — not a litigated judgment |
+| Settlement agreement approved by court (Prozessvergleich) | Potentially yes — depends on form |
+
+**Strategic recommendation:** If you do not yet have a German judgment, starting İlamsız İcra in Turkey directly is almost always faster than obtaining a German judgment and then pursuing Tenfiz. The Tenfiz route adds 6–18 months to the process and requires additional costs. Use it only if you already have a German litigated judgment in hand.
+
+---
+
+## Euro Claims and Currency Protection: Art. 99 Turkish Code of Obligations
+
+If your claim is denominated in Euros — a loan, a contract price, an invoice — Turkish law gives you a mechanism to ensure the debtor bears the full cost of Turkish Lira depreciation between the date of default and the date of actual payment.
+
+**Art. 99 of the Turkish Code of Obligations (Türk Borçlar Kanunu)** provides: where a monetary obligation is expressed in foreign currency, a debtor in default must satisfy the claim at the exchange rate prevailing on the **date of actual payment** — not the rate at the original due date.
+
+In practice this means the longer the debtor delays, the more they owe in Lira terms. The Lira exchange rate risk is transferred entirely to the debtor once they enter default.
+
+| Event | Amount | EUR/TRY Rate | TRY Equivalent |
+|---|---|---|---|
+| Loan disbursed (2022) | €25,000 | 18.00 | 450,000 TL |
+| Actual payment ordered (2026) | €25,000 | 38.00 | 950,000 TL |
+| **Currency difference borne by debtor** | — | — | **+500,000 TL** |
+
+**How to activate this protection:**
+
+The enforcement request (Takip Talebi) filed with the İcra Dairesi must explicitly state the phrase **"fiili ödeme tarihindeki kur"** — "the exchange rate on the date of actual payment." Without this phrase, the enforcement office automatically applies the exchange rate on the date the proceedings were filed. This omission cannot be corrected after the fact, and on large Euro claims it can represent a loss of tens of thousands of Euros.
+
+This is one of several technical requirements in the Turkish enforcement request that, if missed, cannot be remedied later. It is among the most compelling reasons to use a lawyer with specific expertise in Turkish enforcement law rather than a general practitioner.
+
+---
+
+## Step-by-Step: How to Start Debt Collection in Turkey from Germany
+
+Here is the complete process from your first decision to act through to receiving payment — entirely manageable from Germany without a single trip to Turkey.
+
+**Step 1 — Gather your evidence**
+Collect every document relating to the debt: signed contracts, invoices, bank transfer confirmations, email chains, WhatsApp messages (screenshots with metadata). German-language documents will need to be translated into Turkish by a sworn translator. Apostilles are required for officially certified German documents.
+
+**Step 2 — Assess the asset situation**
+Before initiating proceedings, consider whether you have any information about the debtor's assets in Turkey. Even a rough sense — "I know they own a flat in Ankara" — helps your lawyer decide whether to apply for a precautionary attachment simultaneously. If you have no information, UYAP will provide a full picture once proceedings begin.
+
+**Step 3 — Issue the power of attorney (Vekaletname)**
+Visit a German notary or Turkish Consulate General. The Vekaletname must specifically authorise enforcement proceedings, precautionary attachments, and settlements. It must be apostilled and translated into Turkish. Your lawyer can provide the exact wording required.
+
+**Step 4 — File the enforcement request**
+Your lawyer files the Takip Talebi with the İcra Dairesi. The Euro claim is expressed in Turkish Lira at the current rate, with the "actual payment date rate" notation. If precautionary attachment is warranted, that application is filed simultaneously.
+
+**Step 5 — Payment order issued and 7-day window**
+The İcra Dairesi serves the Ödeme Emri on the debtor. If no objection is filed within 7 days, enforcement becomes final and seizure begins. If the debtor objects, your lawyer proceeds with İtirazın İptali Davası — with the 20% penalty exposure for the debtor.
+
+**Step 6 — UYAP asset query and seizure**
+Your lawyer runs the UYAP query across all asset categories. Freeze orders are placed on bank accounts, real estate charges registered, and vehicles blocked — typically within a few working days.
+
+**Step 7 — Recovery**
+Frozen bank funds are transferred directly to the enforcement file. Real estate and vehicles are sold at public auction if the debtor does not pay voluntarily from other sources. Enforcement costs and legal fees are recovered from the debtor on top of the principal.
+
+**Step 8 — Updates throughout**
+You receive regular updates in English or German at every key stage — service of the payment order, debtor's response, seizure confirmations, auction dates, and final transfer of funds.
+
+---
+
+## Doğru Kanzlei: Dual Bar Membership, One File, No Relay
+
+The structural problem with cross-border enforcement is almost always the same: creditors end up dealing with two separate lawyers who do not communicate well with each other — one in their home country who does not know Turkish law, and one in Turkey who cannot communicate in the creditor's language. Documents get lost between them. Instructions are misunderstood. Deadlines are missed.
+
+Doğru Kanzlei is built to eliminate this problem. Av. Hasan Doğru holds dual bar membership with the **Ankara Bar Association** (registration no. 47068) and the **Karlsruhe Bar Association** under **§ 207 BRAO** as a registered foreign lawyer in Germany. This means:
+
+- Direct representation before Turkish İcra Daireleri (enforcement offices) and civil courts — no relay through a separate Turkish law firm.
+- All client communication in English and German — no translation losses, no misunderstood instructions.
+- Mannheim office for in-person consultations; Ankara office for on-the-ground enforcement.
+- One file. One lawyer. One point of contact throughout the entire process.
+
+Av. Hasan Doğru spent approximately 10 years as a member of the Turkish National Police's Özel Harekat (Special Operations) unit before entering legal practice. That institutional experience — understanding how Turkish authorities operate, how assets are registered, how enforcement offices work in practice — provides a practical depth that is not found in textbooks and is rarely available through a standard referral to a Turkish lawyer.
+
+Learn more about the firm's cross-border work on [our services](/en/services), or read more [About Doğru Kanzlei](/en/about).
+
+---
+
+> **Legal Notice:** This article addresses Turkish law exclusively and is intended for general information purposes only. It does not constitute legal advice. Doğru Kanzlei advises on Turkish law under § 207 BRAO and does not advise on German domestic law. Every case is different — please consult a qualified lawyer for advice specific to your situation.`,
+    contentTR: `**YASAL UYARI:** Bu makale yalnızca Türk hukukuna ilişkin genel bilgi amaçlıdır. Doğru Kanzlei, §207 BRAO kapsamında yalnızca Türk hukuku konularında danışmanlık vermektedir. Alman hukuku konusunda danışmanlık verilmemektedir.
+
+---
+
+Mannheim'da oturan Mehmet Bey, dört yıl önce Ankara'daki eski ortağına 25.000 Euro borç vermişti. Hem yazılı sözleşme vardı hem de havale dekontları. Ama para bir türlü gelmedi. Önce bahaneler, sonra sessizlik. Avukata gittiğinde aldığı ilk cevap şu oldu: "Almanya'da dava açabilirsiniz." Ancak borçlu Türkiye'de, taşınmazları Türkiye'de ve parası Türkiye'de. Almanya'da kazanılan bir karar, Türkiye'de otomatik olarak icra edilmiyordu.
+
+Almanya'da yaşayan on binlerce vatandaşımız bu durumla karşılaşıyor. Türkiye'deki bir yakınına borç veriyor, gayrimenkul satıyor ya da ticari ilişki kuruyor. Ancak iş alacağı tahsil etmeye geldiğinde, iki ülke arasındaki hukuki boşluk devreye giriyor. Almanya'dan açılan dava Türkiye'de geçerli mi? Türkiye'de avukat tutmak için Türkiye'ye gitmek gerekiyor mu? Borçlunun orada malı var mı, nasıl öğrenilir?
+
+Bu rehberde bu soruların tamamını yanıtlıyoruz. Türk hukukunun size sunduğu araçları, Yargıtay kararlarını ve adım adım izlemeniz gereken süreci düz bir dille anlatıyoruz. Türkiye'deki malvarlığı ve miras süreçleriyle bağlantılı konular için ayrıca [Türkiye miras hukuku rehberi](/tr/blog/almanya-turkiye-miras-hukuku-rehberi) yazımıza da göz atabilirsiniz. Okuyun, haklarınızı öğrenin ve karar verin.
+
+---
+
+## Türkiye'de İcra Hukuku Nasıl İşler? Temel Kavramlar
+
+Türkiye'de bir alacağı tahsil etmek için iki ana yol vardır: mahkeme kararına dayanan ilamlı icra ve mahkeme kararı olmaksızın başlatılan ilamsız icra. Almanya'dan alacak tahsili yapmak isteyenler için bu ikinci yol — ilamsız icra — genellikle çok daha hızlı ve etkili bir başlangıç noktasıdır.
+
+**İlamlı icra** (ilamlı icra takibi): Elinizdeki bir mahkeme kararını (Türkiye'de veya yurt dışında verilmiş, ancak tenfiz edilmiş) icra dairesine sunarak doğrudan haciz işlemi başlatılmasıdır. Bunun için önce mahkeme kararı gerekir.
+
+**İlamsız icra** (ilamsız icra takibi): Elinizdeki herhangi bir belgeye (sözleşme, senet, havale dekontu) dayanarak — hatta bazen belgesiz olarak — doğrudan icra dairesine başvurularak borçluya ödeme emri gönderilmesidir. Mahkeme kararı gerekmez.
+
+Bu ayrım çok önemlidir. Almanya'da uzun yıllar uğraşarak elde etmeye çalıştığınız bir Vollstreckungsbescheid (icra emri), Türk hukukunda doğrudan icraya konulamaz çünkü Alman Mahnverfahren süreci çekişmeli bir yargılama değildir — Yargıtay bu kararların tenfizine elverişli olmadığına defalarca hükmetmiştir. Oysa Türkiye'de sıfırdan başlatacağınız ilamsız icra takibi, çoğu zaman çok daha kısa sürede sonuç verir.
+
+---
+
+## İlamsız İcra Takibi: Mahkeme Kararı Olmadan Türkiye'de Haciz
+
+İlamsız icra takibi, İcra ve İflas Kanunu'nun (İİK) 42. ve devamı maddelerinde düzenlenmiştir. Süreç şu şekilde işler:
+
+**1. Vekâletname:** Almanya'daki bir notere veya Türk Konsolosluğuna giderek Türkiye'deki avukatınıza özel vekâletname düzenlenir. Bu belgede icra takibi için gereken yetkiler açıkça yazılı olmalıdır.
+
+**2. Takip Talebi:** Avukatınız, borçlunun yerleşim yeri veya sözleşmenin yapıldığı yerdeki icra dairesine takip talebi sunar. Euro alacaklarında, İİK m.58/3 uyarınca alacağın Türk lirası karşılığı ve "fiili ödeme tarihindeki kur" kaydı belirtilir.
+
+**3. Ödeme Emri:** İcra dairesi, borçluya bir ödeme emri (ödeme emri) gönderir. Borçlunun bu emre 7 gün içinde itiraz etme hakkı vardır.
+
+**4. İtiraz Yoksa:** 7 gün dolup borçlu itiraz etmezse, takip kesinleşir. Avukatınız, UYAP sistemi üzerinden borçlunun tüm mal varlığını sorgular ve haciz işlemi başlar: banka hesapları, taşınmazlar, araçlar.
+
+**5. Haciz:** Banka hesapları ve taşınmazlar üzerindeki elektronik haciz işlemleri, UYAP entegrasyonu sayesinde genellikle birkaç gün içinde tamamlanır. Borçlunun maaşına, kira gelirlerine ve aracına da haciz konulabilir.
+
+> ⚠️ **Önemli:** Euro veya başka bir döviz cinsinden olan alacaklarda, ödeme emri TL karşılığıyla düzenlenmelidir. Bunun unutulması durumunda ödeme emri kamu düzenine aykırılık gerekçesiyle iptal edilebilir (Yargıtay HGK, 2024). Bu teknik detayı doğru yapılandırmak kritik önem taşır.
+
+---
+
+## Borçlu İtiraz Ederse: İtirazın İptali Davası ve %20 Tazminat
+
+Borçlu ödeme emrine 7 gün içinde itiraz ederse, ilamsız icra takibi otomatik olarak durur. Bu noktada iki seçeneğiniz vardır:
+
+**Seçenek 1 — İtirazın Kaldırılması:** Elinizde noter onaylı senet, imzalı sözleşme veya borçlunun borcunu kabul ettiğini gösteren bir belge varsa, icra mahkemesine başvurarak itirazın kaldırılmasını talep edebilirsiniz. Bu, daha hızlı bir süreçtir.
+
+**Seçenek 2 — İtirazın İptali Davası:** Belirtilen belgeler yoksa veya itirazın kaldırılması reddedilirse, genel mahkemede itirazın iptali davası açılır. Bu dava, alacaklı açısından son derece güçlü bir araçtır. Mahkeme borçlunun haksız itiraz ettiğine karar verirse:
+
+- İcra takibi kaldığı yerden devam eder.
+- Borçlu, alacak miktarının **%20'sinden az olmamak üzere** icra inkar tazminatına (cezai yaptırım) mahkûm edilir.
+
+> **Yargıtay 19. Hukuk Dairesi, 2019/4412 E.:** "İtirazın iptali davasında alacağın likit (belirli) olması halinde, haksız itiraz eden borçlu aleyhine %20 oranında icra inkar tazminatına hükmedilmesi gerekir."
+
+Bu tazminat, borçluyu gereksiz itiraz etmekten caydıran en etkili yasal araçlardan biridir. Özellikle büyük miktarlı Euro alacaklarında bu fark onlarca bin Euro'ya ulaşabilmektedir.
+
+---
+
+## UYAP ile Borçlunun Varlıklarını Tespit Etmek
+
+Türkiye'deki en büyük sorunlardan biri şudur: borçlunun Türkiye'de mal varlığı olup olmadığını bilmiyorsunuz. Oysa bu artık çözülmüş bir problem.
+
+Türk avukatınız, **UYAP** (Ulusal Yargı Ağı Bilişim Sistemi) üzerinden borçlunun adına kayıtlı şu bilgilere erişebilir:
+
+| Varlık Türü | Kaynak Sistem | Haciz Süresi |
+|---|---|---|
+| Tapu (ev, arsa, dükkan) | TAKPAS | 1–3 iş günü |
+| Banka hesapları | BDDK entegrasyonu | 1–2 iş günü |
+| Araçlar | Trafik Müdürlüğü kaydı | 2–3 iş günü |
+| SGK / maaş | SGK sistemi | 3–5 iş günü |
+| Şirket hisseleri | Ticaret Sicili sorgusu | 5–7 iş günü |
+
+Bu sorgular için mahkeme kararı gerekmez; icra takibi başlatılınca avukat doğrudan erişim sağlar. Tespitle eş zamanlı olarak ihtiyati haciz (aşağıda açıklanmıştır) talep edilebilir.
+
+> ⚠️ **Önemli:** Borçlunun varlıklarını başkasına devredebileceğinden şüpheleniyorsanız, icra takibinden **önce** ihtiyati haciz başvurusunda bulunmanız önerilir. Bir kez devredilen taşınmaz, iyi niyetli alıcı koruması nedeniyle geri almak son derece güçleşir.
+
+---
+
+## İhtiyati Haciz: Borçlunun Malını Kaçırmasını Önleme
+
+**İhtiyati haciz**, bir dava veya icra takibi sürerken borçlunun malvarlığını gizlemesini, satmasını ya da devretmesini engellemek için mahkemeden alınan geçici bir tedbir kararıdır. İİK m.257 ve devamı maddelerinde düzenlenmiştir.
+
+İhtiyati haciz kararı alınabilmesi için:
+- Alacağın likit (belirli bir rakama ulaşmış) veya yakın zamanda belirlenebilir olması,
+- Borçlunun mallarını kaçırabileceğine dair somut bir şüphe bulunması veya borçlunun Türkiye'de yerleşim yerinin olmaması gerekir.
+
+Yurt dışında yaşayan alacaklılar için özellikle önemli bir avantaj şudur: **borçlunun Türkiye'de yerleşim yeri olmaması tek başına ihtiyati haciz için gerekçe oluşturabilir.** Bu, Almanya'da oturan alacaklıların çoğu zaman görmezden geldiği kritik bir hukuki araçtır.
+
+Haciz uygulanan varlıklar — taşınmazlar, banka hesapları, araçlar — dava sonuçlanana veya icra takibi kesinleşene kadar dondurulur. Bu süreçte borçlu bu varlıklar üzerinde tasarruf edemez.
+
+---
+
+## Almanya'da Alınan Mahkeme Kararının Türkiye'de İcrası: Tenfiz Davası
+
+Almanya'da bir mahkeme kararı (esas yargılama sonucunda verilen gerekçeli karar) aldıysanız, bunu Türkiye'de de icra ettirebilirsiniz — ancak bunun için önce **tenfiz davası** açılması zorunludur.
+
+Tenfiz davası, 5718 sayılı Milletlerarası Özel Hukuk ve Usul Hukuku Hakkında Kanun'un (MÖHUK) 50. maddesi kapsamında yürütülür. Mahkeme, yabancı kararın usul şartlarını (karşılıklılık, kamu düzenine aykırılık olmaması, kesinleşme, tebligat) denetler.
+
+**Almanya ile ilgili kritik not:** Alman mahkemelerinin esas yargılama sonucunda verdiği kararlar (Urteil) tenfize uygundur. Ancak Mahnverfahren sürecinde çıkan Vollstreckungsbescheid (ödeme emri/icra emri) çekişmeli değildir ve Yargıtay bu kararların tenfizini defalarca reddetmiştir. Bu yüzden Vollstreckungsbescheid ile Türkiye'ye gitmek zaman kaybıdır.
+
+**En pratik strateji:** Eğer elinizde henüz Alman mahkemesi kararı yoksa, Türkiye'de doğrudan ilamsız icra takibi başlatmak çoğu zaman 6–12 ay kazandırır.
+
+| Yol | Süre | Türkiye'ye Gitmek Gerekiyor mu? | Notlar |
+|---|---|---|---|
+| Almanya'da dava → tenfiz → Türkiye'de icra | 2–4 yıl | Hayır | Vollstreckungsbescheid işe yaramaz |
+| Türkiye'de doğrudan ilamsız icra | 1–3 ay (itiraz yoksa) | Hayır | En hızlı yol |
+| Türkiye'de itirazın iptali davası | 1–2 yıl | Hayır | İtiraz halinde, +%20 tazminat hakkı |
+| İhtiyati haciz + ilamsız icra | Hemen + 1–3 ay | Hayır | Varlık kaçırma riski varsa önerilen |
+
+---
+
+## Euro Alacağında Kur Farkı Hakkı: TBK Madde 99
+
+Borçluya Euro cinsinden borç verdiyseniz veya Euro üzerinden anlaştıysanız, Türkiye'de icra takibi başlatırken önemli bir hakkınız bulunmaktadır.
+
+Türk Borçlar Kanunu'nun 99. maddesi şunu söyler: Ülke parası dışında bir para birimiyle belirlenen borç, eğer sözleşmede "aynen ödeme" kaydı yoksa borçlu ödeme günündeki kura göre TL olarak da ödeyebilir. Ancak borçlu gecikirse, alacaklı **fiili ödeme tarihindeki kuru** talep etme hakkına sahiptir.
+
+Bu, son yıllarda Türk lirasının Euro karşısında ciddi değer kayıpları yaşadığı göz önüne alındığında alacaklılar için son derece önemli bir koruma mekanizmasıdır. Örnek verelim:
+
+- 2022'de 25.000 Euro borç verdiydiniz, o günün kuru 18 TL/Euro idi: 450.000 TL.
+- 2026'da tahsilat anında kur 38 TL/Euro ise: 950.000 TL.
+- Fark: 500.000 TL — bu farkın tamamı TBK m.99 kapsamında talep edilebilir.
+
+Bu hakkın kullanılabilmesi için icra takip talebine "fiili ödeme tarihindeki kur üzerinden" ibaresi açıkça yazılmalıdır. Aksi halde icra dairesi bu kaydı kendiliğinden uygulamaz.
+
+---
+
+## Türkiye'ye Gitmeden İcra Nasıl Başlatılır? Adım Adım
+
+Almanya'dan Türkiye'de icra başlatmak için fiziksel olarak Türkiye'ye gitmenize gerek yoktur. Süreç şu şekilde ilerler:
+
+**1. Adım — Vekâletname Düzenleyin**
+Mannheim'daki veya herhangi bir Alman şehirdeki Türk Konsolosluğuna ya da bir notere gidin. İcra takibi için gerekli yetkileri içeren özel bir vekâletname düzenleyin. Bu belgenin Türkçe olması ve apostil şerhi taşıması gerekir. Vekâletname hakkında daha fazla bilgi için [vekâletname nasıl çıkarılır](/tr/blog/turkce-vekaletname-nasil-cikarilir) başlıklı rehberimizi okuyun.
+
+**2. Adım — Belgeleri Hazırlayın**
+Elinizdeki Almanca belgeler (sözleşmeler, havale dekontları, WhatsApp yazışmaları dahil) yeminli tercüman tarafından Türkçeye çevrilir. Resmi belgeler için apostil alınır.
+
+**3. Adım — İcra Takibini Başlatın**
+Avukatınız, icra dairesine takip talebi sunar. Takip talebi ile birlikte — şartlar uygunsa — ihtiyati haciz de talep edilir.
+
+**4. Adım — UYAP Sorgusu ve Haciz**
+Ödeme emri tebliği ardından borçlu itiraz etmezse, avukatınız UYAP üzerinden varlık sorgusu yapar ve haciz kararları çıkarır. Banka hesapları, taşınmazlar ve araçlar dondurulur.
+
+**5. Adım — Paraya Çevirme**
+Haciz konulan mallar satışa çıkarılır ve satış bedelinden alacağınız ödenir. Banka hesaplarındaki hacizde ise para doğrudan icra dosyasına aktarılır.
+
+**6. Adım — Sizi Bilgilendiririz**
+Tüm bu süreç boyunca avukatınız sizi e-posta veya WhatsApp üzerinden bilgilendirir. Türkiye'ye gitmenizi gerektiren bir adım yoktur.
+
+---
+
+## Doğru Kanzlei Farkı: İki Baroya Kayıtlı, Tek Büro
+
+Almanya'da yaşayan vatandaşlarımızın Türkiye'deki hukuki süreçlerde karşılaştığı en büyük sorun, iki farklı sistemin arasında sıkışıp kalmaktır. Türkiye'de bir avukat tutuyorsunuz, ama bu avukat sizi Almanya'dan takip edemiyor. Mannheim'da bir avukata gidiyorsunuz, ama bu avukat Türk icra hukukunu bilmiyor.
+
+[Doğru Kanzlei](https://www.hasandogru.de/tr/hizmetler), bu sorunu yapısal olarak çözmektedir. Mannheim ofisimiz ve Ankara ofisimiz tek bir bürodur. Av. Hasan Doğru, hem **Ankara Barosu** (Sicil No: 47068) hem de **Karlsruhe Rechtsanwaltskammer** bünyesinde §207 BRAO kapsamında kayıtlıdır. Bu çift baro üyeliği sayesinde:
+
+- Aracı avukata gerek kalmaz.
+- Vekâletnamenizi Mannheim ofisimize getirirsiniz, icra işlemi Ankara'dan yürütülür.
+- Tüm süreç Türkçe ve Almanca iletişimle şeffaf biçimde takip edilir.
+- Bilgi kopukluğu yaşanmaz, dosyanız tek elden yönetilir.
+
+Av. Hasan Doğru'nun Türk Emniyet Genel Müdürlüğü bünyesindeki Özel Harekat biriminde yaklaşık 10 yıl geçirmesi, kurumsal yapıları ve hukuki süreçlerin pratiğini yakından tanımasını sağlamıştır. Bu deneyim, özellikle borçlunun varlıklarını gizlemeye çalıştığı veya tebligatı engellemek istediği durumlarda stratejik avantaj yaratmaktadır.
+
+Alacak tahsili ve icra alanındaki çalışma kapsamımız için [hizmet sayfamız](/tr/hizmetler) üzerinden bilgi alabilir; ekibimizin yapısı ve çift baro kaydı hakkında [Doğru Kanzlei hakkında](/tr/hakkimizda) sayfasını inceleyebilirsiniz.
+
+---
+
+> **YASAL UYARI:** Bu makale yalnızca Türk hukukuna ilişkin genel bilgi amaçlıdır ve hukuki danışmanlık yerine geçmez. Doğru Kanzlei, §207 BRAO kapsamında yalnızca Türk hukuku konularında danışmanlık vermektedir. Her davanın koşulları farklıdır; kendi durumunuza uygun hukuki tavsiye almak için lütfen bir avukata başvurun.`,
     category: "İcra ve İflas Hukuku",
     categoryDE: "Zwangsvollstreckungsrecht",
+    categoryEN: "Enforcement & Debt Recovery Law",
     image: debtCollectionImg,
-    dateDE: "10. April 2026",
-    dateTR: "10 Nisan 2026",
-    readTimeDE: "7 Min. Lesezeit",
-    readTimeTR: "7 dk okuma",
-    publishedAt: "2026-04-10",
-    keywordsDE: "Forderungseinzug Deutschland Türkei, Zwangsvollstreckung Türkei, Fremdwährungsforderung Vollstreckung, Anwalt Schuldeneintreibung Türkei Mannheim",
-    keywordsTR: "Almanya'dan Türkiye icra takibi, Türkiye alacak tahsili, yabancı para alacağı icra, Almanya Türkiye borç tahsili avukat",
+    dateDE: "24. April 2026",
+    dateTR: "24 Nisan 2026",
+    dateEN: "24 April 2026",
+    readTimeDE: "8 Min. Lesezeit",
+    readTimeTR: "8 dk okuma",
+    readTimeEN: "8 min read",
+    publishedAt: "2026-04-24",
+    keywordsDE: "forderungseinzug türkei, zwangsvollstreckung türkei deutschland, inkasso türkei anwalt, deutschen vollstreckungsbescheid türkei, schuldner türkei vermögen pfänden, tenfiz davası türkei, mahnverfahren türkei, deutschsprachiger anwalt türkisches recht, fremdwährungsforderung euro türkei",
+    keywordsTR: "almanya türkiye alacak tahsili, türkiye icra takibi avukat, ilamsız icra takibi almanya, itirazın iptali davası, ihtiyati haciz, uyap haciz sorgulama, euro alacağı kur farkı, tenfiz davası almanya, yurt dışından türkiye icra",
+    keywordsEN: "debt collection turkey from germany, enforce judgment turkey, turkish debt collection lawyer, ilamsız icra takibi foreign creditor, recognition enforcement foreign judgment turkey möhuk, uyap asset search turkey debtor, turkish enforcement law 2026, precautionary attachment turkey ihtiyati haciz, euro claim turkey exchange rate tbk 99, dual bar german turkish lawyer",
     faqDE: [
       {
-        question: "Ist ein deutsches gemeinsames Sorgerecht in der Türkei direkt gültig?",
-        answer: "Nein. Ein deutsches Sorgerechtsurteil entfaltet in der Türkei keine automatische Wirkung. Es muss zunächst durch ein türkisches Gericht im Rahmen eines Tenfiz-Verfahrens (Vollstreckbarerklärung) anerkannt werden, bevor es in der Türkei rechtliche Wirkung entfaltet."
+        question: "Ist ein deutscher Vollstreckungsbescheid in der Türkei vollstreckbar?",
+        answer: "Nein. Ein Vollstreckungsbescheid aus dem deutschen Mahnverfahren ist in der Türkei nicht anerkennungsfähig, weil er auf keinem streitigen Verfahren basiert. Der türkische Kassationshof (Yargıtay) hat dies in mehreren Entscheidungen bestätigt. Effektiver ist es, in der Türkei direkt ein Vollstreckungsverfahren ohne Gerichtstitel (İlamsız İcra Takibi) einzuleiten — ohne vorherige Klage in Deutschland."
       },
       {
-        question: "Wurde gemeinsames Sorgerecht in der Türkei früher grundsätzlich abgelehnt?",
-        answer: "Ja. Vor 2016 lehnte der Yargıtay (2. Zivilkammer) die Anerkennung gemeinsamer Sorgerechtsentscheidungen konsequent ab, da das türkische Recht (TMK Art. 336) vorsah, dass das Sorgerecht bei einer Scheidung nur einem Elternteil übertragen werden kann. Gemeinsames Sorgerecht galt als Verstoß gegen die türkische öffentliche Ordnung."
+        question: "Wie kann ich eine Forderung in der Türkei einziehen, wenn ich in Deutschland wohne?",
+        answer: "Sie können in der Türkei ein Vollstreckungsverfahren ohne Gerichtstitel (İlamsız İcra Takibi) einleiten, ohne nach Deutschland oder in die Türkei reisen zu müssen. Dafür genügt eine notarielle Vollmacht (Vekaletname), die Sie in Deutschland bei einem Notar oder türkischen Konsulat ausstellen lassen. Die Doğru Kanzlei, mit Büros in Mannheim und Ankara, übernimmt das gesamte Verfahren direkt — ohne Zwischenschaltung eines weiteren Anwalts in der Türkei."
       },
       {
-        question: "Hat sich die Rechtslage zum gemeinsamen Sorgerecht in der Türkei geändert?",
-        answer: "Ja, seit 2016. Mit dem Gesetz Nr. 6684 ratifizierte die Türkei das Zusatzprotokoll zum Europäischen Übereinkommen über den Umgang mit Kindern, wodurch das Konzept des gemeinsamen Sorgerechts indirekt ins türkische Recht eingeführt wurde. Daraufhin entschied der Yargıtay (2. HD, 2016/15771 E., 2017/1737 K.), dass ausländische Sorgerechtsurteile nicht mehr pauschal als ordre-public-widrig abgelehnt werden dürfen, sondern im Einzelfall am Kindeswohl gemessen werden müssen."
+        question: "Wie finde ich heraus, ob mein Schuldner Vermögen in der Türkei hat?",
+        answer: "Über das türkische elektronische Justizsystem UYAP (Ulusal Yargı Ağı Bilişim Sistemi) kann Ihr Anwalt in der Türkei sämtliche Immobilien, Bankkonten, Fahrzeuge und Rentenregistrierungen des Schuldners abfragen — alles digital, ohne dass ein Gerichtsbeschluss vorab erforderlich ist. Sobald das Vollstreckungsverfahren eingeleitet ist, kann gleichzeitig ein dinglicher Arrest (İhtiyati Haciz) auf alle festgestellten Vermögenswerte beantragt werden."
       },
       {
-        question: "Was ist der Unterschied zwischen Aufenthaltsbestimmungsrecht und gemeinsamem Sorgerecht bei der Anerkennung in der Türkei?",
-        answer: "Im deutschen Recht wird das Aufenthaltsbestimmungsrecht — also das Recht zu entscheiden, wo das Kind lebt — häufig nur einem Elternteil übertragen, auch wenn das Sorgerecht gemeinsam bleibt. Türkische Gerichte müssen diese Unterscheidung bei der Vollstreckbarerklärung berücksichtigen, da sie erhebliche Auswirkungen darauf hat, wie das Urteil im türkischen Kontext umgesetzt wird."
+        question: "Was passiert, wenn der Schuldner gegen den Zahlungsbefehl Widerspruch einlegt?",
+        answer: "Legt der Schuldner innerhalb von 7 Tagen Widerspruch ein, ruht das Vollstreckungsverfahren. Der Gläubiger muss dann eine Klage auf Aufhebung des Widerspruchs (İtirazın İptali Davası) einreichen. Stellt das Gericht fest, dass der Widerspruch unbegründet war, wird der Schuldner zur Zahlung einer Vollstreckungsentschädigung in Höhe von mindestens 20 % der Forderung verurteilt — zusätzlich zur Hauptforderung (Yargıtay 19. HD, 2019/4412 E.)."
       },
       {
-        question: "Kann das Kind nach Anerkennung des gemeinsamen Sorgerechts dauerhaft in die Türkei gebracht werden?",
-        answer: "Nein. Gemeinsames Sorgerecht bedeutet, dass beide Elternteile Mitspracherecht beim Aufwachsen des Kindes haben. Eine dauerhafte Verlegung des Wohnsitzes des Kindes in die Türkei erfordert entweder die Zustimmung beider Elternteile oder eine gerichtliche Entscheidung. Ein eigenmächtiges Verbringen des Kindes kann nach dem Haager Übereinkommen über internationale Kindesentführung strafbar sein."
+        question: "Kann ich ein rechtskräftiges deutsches Gerichtsurteil in der Türkei vollstrecken?",
+        answer: "Ja, aber nicht direkt. Ein in Deutschland durch streitiges Verfahren ergangenes, rechtskräftiges Urteil (Urteil mit Rechtskraftvermerk und Apostille) muss zunächst in der Türkei durch eine Anerkennungs- und Vollstreckungsklage (Tenfiz Davası) nach Art. 50 ff. MÖHUK anerkannt werden. Erst danach ist es in der Türkei vollstreckungsfähig. Wichtig: Ein Vollstreckungsbescheid aus dem Mahnverfahren erfüllt diese Voraussetzungen nicht."
       },
       {
-        question: "Wie lange dauert das Tenfiz-Verfahren für Sorgerechtsurteile?",
-        answer: "Bei richtiger rechtlicher Strategie dauert das Verfahren in der Regel 6 bis 12 Monate. Die tatsächliche Dauer hängt maßgeblich von den Zustellungsprozessen ab, insbesondere wenn die andere Partei in Deutschland ansässig ist."
+        question: "Was ist ein dinglicher Arrest (İhtiyati Haciz) und wann sollte ich ihn beantragen?",
+        answer: "Der dingliche Arrest (İhtiyati Haciz) ist eine vorläufige Sicherungsmaßnahme, mit der das Gericht die Vermögenswerte des Schuldners — Immobilien, Konten, Fahrzeuge — einfriert, bevor das Verfahren abgeschlossen ist. Er verhindert, dass der Schuldner Vermögen auf Dritte überträgt. Besonders relevant: Hat der Schuldner keinen festen Wohnsitz in der Türkei, reicht das allein als Arrestgrund aus. Ein Anwalt sollte diesen Antrag so früh wie möglich stellen."
       },
       {
-        question: "Was muss der Tenfiz-Antrag für ein deutsches Sorgerechtsurteil enthalten?",
-        answer: "Der Antrag muss eine detaillierte Erläuterung enthalten, wie die deutschen Sorgerechtskonzepte — insbesondere gemeinsames Sorgerecht und Aufenthaltsbestimmungsrecht — ihren türkischen rechtlichen Entsprechungen zugeordnet werden. Zudem sollte auf aktuelle Yargıtay-Rechtsprechung nach 2016 Bezug genommen werden, um eine Ablehnung als ordre-public-widrig zu vermeiden."
+        question: "Wie schütze ich meine Euro-Forderung vor dem Kursverlust der türkischen Lira?",
+        answer: "Nach Art. 99 des türkischen Obligationenrechts (Türk Borçlar Kanunu) haben Sie als Gläubiger das Recht, den Wechselkurs zum Zeitpunkt der tatsächlichen Zahlung zu verlangen — nicht den Kurs bei Fälligkeit. Verzögert der Schuldner die Zahlung, trägt er das gesamte Währungsrisiko. Damit dies gilt, muss in der Vollstreckungsanforderung ausdrücklich der 'Kurs am tatsächlichen Zahlungstag' angegeben werden. Ohne diesen Vermerk rechnet das Vollstreckungsamt automatisch den Kurs vom Einleitungsdatum."
+      },
+      {
+        question: "Muss ich für die Vollstreckung in die Türkei reisen?",
+        answer: "Nein. Das gesamte Vollstreckungsverfahren in der Türkei kann aus Deutschland heraus geführt werden. Sie benötigen lediglich eine notarielle Vollmacht (Vekaletname), die Sie bei einem deutschen Notar oder türkischen Konsulat ausstellen lassen. Die Doğru Kanzlei ist sowohl bei der Ankara Barosu als auch bei der Rechtsanwaltskammer Karlsruhe (§ 207 BRAO) zugelassen und vertritt Sie direkt vor türkischen Vollstreckungsämtern — ohne Zwischenanwalt."
+      },
+      {
+        question: "Wie lange dauert das Vollstreckungsverfahren in der Türkei?",
+        answer: "Legt der Schuldner keinen Widerspruch ein, wird der Zahlungsbefehl nach 7 Tagen rechtskräftig. Die Pfändung von Bankkonten und Immobilien erfolgt danach in der Regel innerhalb weniger Werktage über UYAP. Wird Widerspruch eingelegt und muss eine Klage erhoben werden, kann das Verfahren je nach Arbeitsbelastung des Gerichts 1 bis 2 Jahre dauern. Der dingliche Arrest kann jedoch sofort beantragt werden, um Vermögen bereits während des Verfahrens zu sichern."
       }
     ],
     faqTR: [
       {
-        question: "Almanya'da verilen bir ortak velayet kararı Türkiye'de doğrudan geçerli mi?",
-        answer: "Hayır. Almanya'da verilen bir ortak velayet kararı Türkiye'de doğrudan geçerli değildir. Türkiye'de hukuki sonuç doğurabilmesi için önce bir Türk mahkemesi tarafından tenfiz edilmesi (Vollstreckbarerklärung) gerekir."
+        question: "Almanya'da yaşıyorum, Türkiye'deki alacağımı nasıl tahsil edebilirim?",
+        answer: "Türkiye'deki borçluya karşı Türk İcra ve İflas Kanunu kapsamında ilamsız icra takibi başlatabilirsiniz. Bunun için Türkiye'de kayıtlı bir avukata vekâletname vermeniz yeterlidir; Almanya'ya mahkeme kararı almak için gitmenize gerek yoktur. Mannheim ve Ankara'da ofisi bulunan Doğru Kanzlei, bu süreci Almanya'dan başlatmanızı sağlar."
       },
       {
-        question: "Türkiye'de ortak velayet eskiden temelden reddediliyor muydu?",
-        answer: "Evet. 2016 yılından önce Yargıtay, Türk hukukunda velayetin boşanma halinde sadece bir ebeveyne verilebileceği esasını gerekçe göstererek, yabancı ortak velayet kararlarını 'kamu düzenine aykırılık' nedeniyle reddediyordu."
+        question: "Almanya'da aldığım Vollstreckungsbescheid (icra emri) Türkiye'de geçerli mi?",
+        answer: "Hayır, Alman Mahnverfahren süreciyle alınan Vollstreckungsbescheid, Türkiye'de doğrudan icraya konulamaz. Yargıtay kararları, bu tür kararların tenfize elverişli olmadığını açıkça ortaya koymaktadır. Çünkü Mahnverfahren çekişmeli bir yargılama değildir. Bu nedenle Türkiye'de sıfırdan ilamsız icra takibi başlatmak çoğu zaman hem daha hızlı hem de daha etkili bir yoldur."
       },
       {
-        question: "Türkiye'de ortak velayet konusundaki hukuki durum değişti mi?",
-        answer: "Evet, 2016'dan bu yana değişti. Çocuklarla Kişisel İlişki Kurulmasına Dair Avrupa Sözleşmesi'nin onaylanmasıyla ortak velayet kavramı dolaylı olarak Türk hukukuna girdi. Yargıtay artık bu kararların vaka bazında çocuk yararına göre değerlendirilmesine karar vermiştir."
+        question: "Borçlunun Türkiye'de mal varlığı olup olmadığını nasıl öğrenebilirim?",
+        answer: "Türkiye'deki avukatınız, UYAP (Ulusal Yargı Ağı Bilişim Sistemi) üzerinden borçlunun tüm taşınmaz mülklerini (TAKPAS sorgusu), banka hesaplarını, araçlarını ve SGK kayıtlarını elektronik olarak sorgulayabilir. Takip başlar başlamaz bu varlıklara ihtiyati haciz (geçici el koyma) konulabilir, böylece borçlunun malları üçüncü kişilere devretmesi önlenebilir."
       },
       {
-        question: "Tenfiz sürecinde yerleşim yeri belirleme hakkı ile ortak velayet arasındaki fark nedir?",
-        answer: "Alman hukukunda velayet ortak kalsa bile, çocuğun nerede yaşayacağına karar verme hakkı genellikle tek bir ebeveyne verilir. Türk mahkemeleri tenfiz sürecinde bu ayrımı dikkate almalıdır; çünkü bu durum kararın Türkiye'deki uygulama biçimini etkiler."
+        question: "Türkiye'de icra takibinde borçlu itiraz ederse ne olur?",
+        answer: "Borçlu ödeme emrini tebliğ aldıktan sonra 7 gün içinde itiraz edebilir. İtiraz edilmesi halinde itirazın iptali davası açmanız gerekir. Bu davanın en önemli avantajı, mahkemenin borçlunun haksız itiraz ettiğini tespit etmesi durumunda alacağın %20'sinden az olmamak üzere icra inkar tazminatına hükmedilmesidir (Yargıtay 19. HD, 2019/4412 E.)."
       },
       {
-        question: "Ortak velayet tanındıktan sonra çocuk kalıcı olarak Türkiye'ye getirilebilir mi?",
-        answer: "Hayır. Ortak velayet, her iki ebeveynin de çocuğun yetiştirilmesi konusunda söz hakkı olması demektir. Çocuğun yerleşim yerinin Türkiye'ye taşınması ya her iki ebeveynin rızasını ya da mahkeme kararını gerektirir. Diğer ebeveynin onayı olmadan çocuğun Türkiye'ye getirilmesi suç teşkil edebilir."
+        question: "Euro cinsinden alacağımı Türkiye'de Euro olarak tahsil edebilir miyim?",
+        answer: "Türk İcra ve İflas Kanunu'nun 58. maddesi uyarınca, ilamsız icra takibinde ödeme emri yalnızca Türk lirası cinsinden düzenlenebilir; ancak takip talebinde 'fiili ödeme tarihindeki kur' kaydı düşüldüğünde, Türk Borçlar Kanunu m.99 çerçevesinde kur artışından doğan fark da tahsil edilir. Bu, Euro alacaklarında Türk lirasının değer kaybına karşı önemli bir güvencedir."
       },
       {
-        question: "Velayet kararları için tenfiz davası ne kadar sürer?",
-        answer: "Doğru hukuki strateji ile bu süreç genellikle 6 ila 12 ay sürer. Süreyi belirleyen en önemli faktör, tebligat süreçlerinin hızıdır."
+        question: "İcra takibi ne kadar sürer?",
+        answer: "Borçlu itiraz etmezse, ödeme emrinin tebliğinden itibaren 7 gün içinde takip kesinleşir ve haciz işlemlerine geçilebilir. Banka hesaplarına ve taşınmazlara elektronik haciz genellikle birkaç gün içinde tamamlanır. Borçlunun itiraz etmesi durumunda açılacak itirazın iptali davası, mahkeme iş yüküne bağlı olarak 1 ila 2 yıl sürebilir."
       },
       {
-        question: "Alman velayet kararı için tenfiz dilekçesi neleri içermelidir?",
-        answer: "Dilekçe, Alman velayet kavramlarının Türk hukukundaki karşılıkları ile nasıl ilişkilendirildiğine dair detaylı açıklamalar içermelidir. Ayrıca, reddedilme riskini önlemek için 2016 sonrası güncel Yargıtay içtihatlarına atıf yapılmalıdır."
+        question: "Almanca belgelerimi Türkiye'de icra takibinde kullanabilir miyim?",
+        answer: "Evet. Ancak Alman mahkemesi kararları, sözleşmeler ve diğer resmi belgeler yeminli tercüman tarafından Türkçeye çevrilmeli ve apostil şerhi ile onaylanmalıdır. Apostil, Lahey Sözleşmesi kapsamında Almanya'da noterden veya yetkili makamdan alınmaktadır."
+      },
+      {
+        question: "İhtiyati haciz (geçici el koyma) nedir ve ne zaman başvurulur?",
+        answer: "İhtiyati haciz, borçlunun dava veya icra takibi sürerken mallarını gizlemesini ya da devretmesini önlemek amacıyla mahkemeden alınan geçici bir tedbir kararıdır. Özellikle borçlunun varlıklarını başkasına devredeceğine dair ciddi şüphe varsa, icra takibine başlamadan önce bu yola başvurulabilir. Uygulama; taşınmazlar, banka hesapları ve araçlar üzerinde yapılabilmektedir."
+      },
+      {
+        question: "Türkiye'de icra takibi başlatmak için Türkiye'ye gitmem gerekiyor mu?",
+        answer: "Hayır. Almanya'dan notere giderek düzenleyeceğiniz vekâletname ile avukatınıza yetki vermeniz yeterlidir. Doğru Kanzlei, hem Ankara Barosu hem de Karlsruhe Barosu'na kayıtlı olduğundan (§207 BRAO), tüm icra işlemlerini siz Almanya'dayken doğrudan Türk icra dairelerinden yürütebilmektedir."
       }
-    ]
+    ],
+    faqEN: [
+      {
+        question: "How do I collect a debt from someone in Turkey when I live in Germany?",
+        answer: "You can initiate enforcement proceedings in Turkey without a court judgment — a procedure called İlamsız İcra Takibi (non-titled enforcement). All you need is a notarised power of attorney (Vekaletname) authorising a Turkish lawyer to act on your behalf. You do not need to travel to Turkey. Doğru Kanzlei, with offices in Mannheim and Ankara, manages the entire process directly from Germany."
+      },
+      {
+        question: "Can I enforce a German court order in Turkey?",
+        answer: "It depends on the type of order. A German payment order (Vollstreckungsbescheid) obtained through the Mahnverfahren process is NOT enforceable in Turkey — the Turkish Court of Cassation (Yargıtay) has ruled repeatedly that these non-litigated orders do not meet recognition requirements. However, a fully litigated German court judgment (Urteil) can be recognised and enforced in Turkey through a recognition and enforcement action (Tenfiz Davası) under Art. 50 of Turkish Private International Law (MÖHUK)."
+      },
+      {
+        question: "How can I find out if my debtor has assets in Turkey?",
+        answer: "Once enforcement proceedings are initiated, your lawyer can query all of the debtor's registered assets — real estate, bank accounts at every Turkish bank, vehicles, and pension records — through UYAP (Ulusal Yargı Ağı Bilişim Sistemi), Turkey's national digital court system. No separate court order is needed for this search. Results typically come back within hours, and assets can be frozen immediately via a precautionary attachment (İhtiyati Haciz)."
+      },
+      {
+        question: "What is İlamsız İcra Takibi?",
+        answer: "İlamsız İcra Takibi is a Turkish enforcement procedure that allows a creditor to initiate asset seizure proceedings without first obtaining a court judgment — similar in concept to pre-judgment attachment in some common law systems, but broader. Your lawyer files a request with the Turkish enforcement office (İcra Dairesi), which issues a payment order (Ödeme Emri) to the debtor. If the debtor does not object within 7 days, the order becomes final and enforcement — including bank account freezes and real estate charges — begins immediately."
+      },
+      {
+        question: "What happens if the debtor objects to the payment order?",
+        answer: "If the debtor objects within 7 days, the enforcement proceedings pause. You then need to file an action to annul the objection (İtirazın İptali Davası) in civil court. If the court finds the objection was unfounded, the debtor is ordered to pay a statutory penalty of at least 20% of the original claim — on top of the full debt. This penalty is designed to deter frivolous objections and is awarded as a matter of law, not judicial discretion."
+      },
+      {
+        question: "What is a precautionary attachment (İhtiyati Haciz) and do I need one?",
+        answer: "A precautionary attachment (İhtiyati Haciz) is a provisional court order that freezes the debtor's assets — real estate, bank accounts, vehicles — before the main proceedings conclude. It prevents the debtor from transferring property to third parties while the case is ongoing. Crucially, under Art. 257(2) of the Turkish Enforcement and Bankruptcy Act, a debtor having no permanent residence in Turkey is itself sufficient grounds for a precautionary attachment. If you suspect the debtor may move assets, apply for the attachment before or simultaneously with the main enforcement request."
+      },
+      {
+        question: "My claim is in Euros. Will I lose money due to Turkish Lira depreciation?",
+        answer: "Not necessarily. Under Art. 99 of the Turkish Code of Obligations (Türk Borçlar Kanunu), if a debt is denominated in foreign currency and the debtor is in default, you are entitled to claim the exchange rate at the date of actual payment — not the rate when the debt fell due. This means the full currency depreciation between the default date and the payment date falls on the debtor, not you. To activate this protection, your lawyer must explicitly state 'the exchange rate at the date of actual payment' (fiili ödeme tarihindeki kur) in the enforcement request. If this phrase is omitted, the enforcement office will apply the rate at the date of filing — potentially costing you tens of thousands of Euros on a large claim."
+      },
+      {
+        question: "Do I need to travel to Turkey to start enforcement proceedings?",
+        answer: "No. A notarised power of attorney (Vekaletname) — issued at a German notary or Turkish consulate in Germany — is all that is needed to authorise your Turkish lawyer. Doğru Kanzlei holds dual bar membership with the Ankara Bar Association and the Karlsruhe Bar Association (§ 207 BRAO), enabling direct representation before Turkish enforcement offices without any relay through a secondary Turkish lawyer. The entire process is managed remotely, with updates provided in English and German."
+      },
+      {
+        question: "How long does debt collection in Turkey take?",
+        answer: "If the debtor does not object, enforcement becomes final 7 days after the payment order is served. Bank account and real estate freezes via UYAP typically follow within a few working days. If the debtor objects and court proceedings are needed, the process can take 1 to 2 years depending on the court's caseload. A precautionary attachment can be obtained in days regardless of the main proceedings, ensuring assets are secured throughout."
+      }
+    ],
+    ctaTitleDE: "Haben Sie offene Forderungen in der Türkei?",
+    ctaTitleTR: "Türkiye'deki Alacaklarınız İçin Harekete Geçin",
+    ctaTitleEN: "Do you have a debtor in Turkey?",
+    ctaDescriptionDE: "Wir unterstützen Sie beim Forderungseinzug direkt aus Mannheim – schnell, digital und rechtssicher.",
+    ctaDescriptionTR: "Türkiye'deki alacaklarınızı Euro bazında koruyarak tahsil etmek için profesyonel destek sunuyoruz.",
+    ctaDescriptionEN: "We handle Turkish enforcement proceedings from Mannheim and Ankara, with direct representation and clear English communication."
   },
   {
     slug: "almanya-ortak-velayet-turkiye-tenfiz",
@@ -2897,56 +5430,121 @@ Türkiye'deki taşınmaz hukukuna hakimiz ve işlemlerinizi doğrudan Türk maka
   },
   {
     slug: "tanima-tenfiz-rehberi",
-    slugDE: "tanima-tenfiz-leitfaden",
+    slugDE: "anerkennung-scheidung-tuerkei-deutschland",
     slugTR: "tanima-tenfiz-rehberi",
-    titleDE: "Tanıma ve Tenfiz: Warum Ihre deutsche Scheidung in der Türkei nicht gilt",
-    titleTR: "Tanıma ve Tenfiz: Almanya'daki Boşanma Kararınız Türkiye'de Neden Geçersiz?",
-    excerptDE: "In Deutschland geschieden, in der Türkei noch verheiratet? Wir erklären das Anerkennungsverfahren nach türkischem Recht.",
-    excerptTR: "Almanya'daki boşanma kararınızı Türkiye'de nasıl tanıtabilirsiniz? Tanıma ve tenfiz davası süreçlerini açıklıyoruz.",
-    contentDE: `**RECHTLICHER HINWEIS:** Dieser Artikel befasst sich ausschließlich mit dem türkischen Recht. Eine Beratung zum deutschen Recht (z.B. deutsches Erbrecht, Familienrecht nach BGB oder deutsches Migrationsrecht) findet in unserer Kanzlei nicht statt.
-
-### Das Problem: Statusdiskrepanz
-
-Viele Menschen in Deutschland sind hier rechtskräftig geschieden, gelten aber in der Türkei weiterhin als verheiratet. Dies hat Folgen für das Erbrecht und erneute Eheschließungen in der Türkei.
-
-**Rechtsgrundlage**: MÖHUK Art. 50–59.
-
-### Voraussetzungen für die Anerkennung in der Türkei
-
-1. **Rechtskraft**: Das deutsche Urteil muss rechtskräftig sein.
-2. **Apostille**: Bestätigung der Echtheit des Dokuments.
-3. **Kein Verstoß gegen den Ordre Public**: Das Urteil darf nicht gegen fundamentale Werte des türkischen Rechts verstoßen.
-
-### Dauer und Kosten
-
-Das Verfahren vor dem türkischen Familiengericht dauert in der Regel **3 bis 6 Monate**. Wenn beide Parteien durch Anwälte vertreten sind, kann es deutlich schneller gehen.
-
-**Doğru Kanzlei: Direkte Vertretung vor türkischen Gerichten**
-Wir führen Tanıma-Tenfiz-Verfahren persönlich vor dem türkischen Familiengericht – ohne Drittvermittlung.`,
-    contentTR: `**YASAL UYARI:** Bu makale yalnızca Türk hukuku ile ilgilidir. Büromuzda Alman hukuku (örneğin Alman miras hukuku, BGB uyarınca aile hukuku veya Alman göç hukuku) konusunda danışmanlık verilmemektedir.
-
-### Almanya'da Boşanmış, Türkiye'de Hala Evli
-
-Alman mahkemesinin boşanma kararı Türkiye'de otomatik olarak tanınmaz. Bu kararın nüfus kayıtlarına işlenmesi için **Tanıma ve Tenfiz** davası açılmalıdır.
-
-### Şartlar
-
-- **Kesinleşme Şerhi**: Kararın kesinleşmiş olması.
-- **Apostil**: Alman makamlarından alınan doğrulama şerhi.
-- **Onaylı Tercüme**: Belgelerin Türkçeye çevrilmiş olması.
-
-**Neden Dogru Kanzlei?**
-Türkiye'deki aile mahkemeleri nezdindeki süreci bizzat yönetiyoruz.`,
+    slugEN: "recognition-german-divorce-turkey-guide",
+    titleDE: "In Deutschland geschieden — in der Türkei noch verheiratet? Das Tanıma Tenfiz-Verfahren 2026",
+    titleTR: "Almanya'da Boşandınız, Türkiye'de Hala Evli mi Görünüyorsunuz? Tanıma ve Tenfiz Rehberi 2026",
+    titleEN: "",
+    excerptDE: "Warum das deutsche Scheidungsurteil in der Türkei nicht gilt, welche zwei Wege zur Anerkennung führen, was mit Unterhalt und Sorgerecht passiert — und was auf dem Spiel steht, wenn Sie nichts tun.",
+    excerptTR: "Tanıma ile tenfiz arasındaki fark, dava açmadan konsolosluk yolu, MÖHUK şartları, nafaka ve velayet tenfizi — Almanya'dan Türkiye'ye gitmeden nasıl yapılır?",
+    excerptEN: "",
+    metaTitleDE: "Deutsche Scheidung in der Türkei anerkennen lassen: Vollständiger Leitfaden 2026",
+    metaTitleTR: "Tanıma ve Tenfiz: Almanya Boşanma Kararı Türkiye'de Nasıl Geçerli Olur? (2026)",
+    metaTitleEN: "",
+    metaDescriptionDE: "In Deutschland geschieden, aber in der Türkei noch als verheiratet eingetragen? Tanıma Tenfiz: Anerkennungsverfahren, Unterlagen, Verwaltungsweg ohne Gericht, Unterhalt und Sorgerecht — alles was Sie wissen müssen. Doğru Kanzlei.",
+    metaDescriptionTR: "Almanya'da boşandınız, Türkiye'de hala evli mi görünüyorsunuz? Tanıma ve tenfiz davası nedir, şartları nelerdir, dava açmadan konsolosluktan nasıl yapılır, nafaka ve velayet tenfizi — adım adım rehber. Doğru Kanzlei.",
+    metaDescriptionEN: "",
+    schemaHeadlineDE: "Deutsche Scheidung in der Türkei anerkennen lassen: Vollständiger Leitfaden 2026",
+    schemaHeadlineTR: "Tanıma ve Tenfiz: Almanya Boşanma Kararı Türkiye'de Nasıl Geçerli Olur? (2026)",
+    schemaHeadlineEN: "",
+    contentDE: "**RECHTLICHER HINWEIS:** Dieser Artikel befasst sich ausschließlich mit dem türkischen Recht. Die Doğru Kanzlei berät gemäß § 207 BRAO ausschließlich im türkischen Recht.\n\n---\n\nDie Scheidung in Deutschland ist durch. Das Gericht hat entschieden, das Urteil ist rechtskräftig, das Leben geht weiter. Dann, oft Jahre später, stellt sich jemand vor dem türkischen Standesamt vor oder checkt die eigenen Nüfus-Daten — und sieht: verheiratet. Immer noch verheiratet.\n\nIn Deutschland ist man geschieden. In der Türkei ist man verheiratet. Beide Aussagen sind zur gleichen Zeit wahr. Die Rechtswissenschaft nennt das „hinkende Ehe\" (türkisch: topal evlilik). Hinkend, weil das Rechtsverhältnis in zwei Ländern unterschiedlich beurteilt wird. Und hinken kann man damit lange, wenn man nichts unternimmt.\n\nDieser Leitfaden erklärt, was zu tun ist.\n\n---\n\n## 1. Warum gilt das deutsche Scheidungsurteil nicht automatisch in der Türkei?\n\nDas Prinzip ist so alt wie das Völkerrecht selbst: Gerichtsentscheidungen eines Staates entfalten unmittelbare Rechtswirkung nur im Hoheitsgebiet dieses Staates. Das deutsche Amtsgericht hat die Ehe nach deutschem Recht aufgelöst — und das gilt in Deutschland. Für türkische Behörden, Standesämter und Register existiert diese Entscheidung nicht, bis sie förmlich anerkannt wurde.\n\nDas ist kein Versehen des Systems. Es ist Absicht: Jeder Staat entscheidet selbst, welche ausländischen Hoheitsakte er auf seinem Territorium anerkennt und unter welchen Bedingungen.\n\nDie Konsequenz für türkische Staatsangehörige in Deutschland: Auch nach Jahren einer rechtskräftigen deutschen Scheidung steht im türkischen Nüfus (Personenstandsregister) weiterhin „verheiratet\". Diese Diskrepanz ist kein bloßer Verwaltungsfehler — sie hat handfeste rechtliche Folgen, die teuer werden können.\n\n### Was auf dem Spiel steht, wenn Sie nichts tun\n\n**Wieder heiraten geht nicht:** Nach türkischem Zivilrecht kann eine bestehende Ehe nicht erneut eingegangen werden. Wer in der Türkei standesamtlich heiraten will — oder wer in Deutschland heiraten will und dafür ein türkisches Ehefähigkeitszeugnis benötigt — wird auf die fehlende Anerkennung stoßen.\n\n**Der frühere Ehegatte bleibt gesetzlicher Erbe in der Türkei:** Solange die Scheidung im Nüfus nicht eingetragen ist, besteht das gesetzliche Erbrecht des früheren Ehegatten für in der Türkei belegene Vermögenswerte fort. Der frühere Ehepartner könnte sich nach Ihrem Tod als Erbe ausgeben und — solange keine Anerkennung vorliegt — formal recht behalten.\n\n**Kinder bekommen möglicherweise den falschen Namen:** Ein Kind, das nach der deutschen Scheidung mit einem neuen Partner geboren wird, kann im türkischen Register unter Umständen dem früheren Ehepartner zugeordnet werden. Das führt zu langwierigen Abstammungsklagen.\n\n**Deutsches Unterhaltsurteil ist in der Türkei nicht vollstreckbar:** Wer auf türkischen Vermögen des unterhaltspflichtigen Ex-Partners zugreifen will, braucht Tenfiz — die Vollstreckbarerklärung. Ohne sie: keine Pfändung, kein Zugriff.\n\n---\n\n## 2. Tanıma und Tenfiz — Zwei Begriffe, die Sie kennen müssen\n\nDas türkische Anerkennungsrecht unterscheidet zwischen zwei Verfahren. Welches in Ihrem Fall nötig ist, hängt vom Inhalt des deutschen Urteils ab.\n\n### Tanıma — Anerkennung (MÖHUK Art. 58)\n\nTanıma bedeutet, dass das türkische Gericht dem deutschen Urteil in der Türkei Rechtskraft zuerkennt — also feststellt, dass es dort gilt. Das Urteil wird damit zur kesin hüküm (rechtskräftigen Entscheidung) für türkische Zwecke.\n\nFür die bloße Eintragung der Scheidung im türkischen Nüfus-Register (Personenstandsregister) genügt in den meisten Fällen Tanıma. Denn es geht nur darum, den Familienstand zu ändern — keine Zwangsvollstreckung, kein Geldzugriff.\n\nEin wesentlicher Unterschied zur Tenfiz: Bei Tanıma wird das Gegenseitigkeitserfordernis (Mütekabiliyet) **nicht** geprüft.\n\n### Tenfiz — Vollstreckbarerklärung (MÖHUK Art. 50-57)\n\nTenfiz macht das deutsche Urteil in der Türkei vollstreckbar — als ob es ein türkisches Urteil wäre. Nötig ist das überall dort, wo das Urteil eine Leistung anordnet, die in der Türkei durchgesetzt werden soll.\n\n**Wann ist Tenfiz erforderlich?**\n- Deutsches Unterhaltsurteil, Vollstreckung in der Türkei gewünscht\n- Schadensersatz- oder Schmerzensgeldurteil aus dem Scheidungsverfahren\n- Güterrechtliche Auseinandersetzung mit Bezug auf Türkei-Vermögen\n- Sorgerechtsentscheidung (mit Einschränkungen — dazu später)\n\nBei Tenfiz wird das Gegenseitigkeitserfordernis geprüft. Deutschland und die Türkei stehen in einem Verhältnis der faktischen Gegenseitigkeit — dieses Erfordernis ist daher in der Praxis kein Hindernis.\n\n### Entscheidungstabelle: Was brauchen Sie?\n\n| Was steht im deutschen Urteil? | Was brauchen Sie? |\n|---|---|\n| Nur Scheidungsausspruch | Tanıma reicht |\n| Scheidung + Unterhalt | Tanıma + Tenfiz |\n| Scheidung + Sorgerecht | Tanıma + Tenfiz (mit Einschränkungen) |\n| Scheidung + Schadensersatz | Tanıma + Tenfiz |\n| Scheidung + Güterregelung | Tanıma + Tenfiz |\n\n> ⚠️ **Wichtig:** Ein Tenfiz-Beschluss enthält die Tanıma bereits. Sie müssen nicht zwei getrennte Verfahren führen. Ein einheitlicher Tanıma-Tenfiz-Antrag deckt beides ab.\n\n---\n\n## 3. Zwei Wege zur Anerkennung: Verwaltung oder Gericht?\n\n### Weg A: Verwaltungsweg (Art. 27/A NHK) — Ohne Gericht\n\nSeit 2017 sieht das türkische Einwohnermeldegesetz (NHK Art. 27/A) vor, dass ausländische Scheidungsurteile unter bestimmten Voraussetzungen **ohne Gerichtsverfahren** im Nüfus-Register eingetragen werden können.\n\n**Wer kann diesen Weg nutzen?**\n\nBeide früheren Ehegatten müssen gemeinsam — persönlich oder durch einen bevollmächtigten Anwalt — beim **türkischen Konsulat** (Ausland) oder der **zuständigen Nüfus Müdürlüğü** (in der Türkei) vorstellig werden.\n\nVereinfachung seit 2020: Ein Ehegatte kann auch allein vorsprechen, wenn der andere verstorben oder ausländischer Staatsangehöriger ist.\n\n**Voraussetzungen für den Verwaltungsweg:**\n- Ausländisches Urteil ist rechtskräftig\n- Apostille liegt vor\n- Beglaubigte türkische Übersetzung liegt vor\n- Das Urteil enthält **keine** vollstreckungsbedürftigen Regelungen zu Unterhalt, Sorgerecht oder Gütertrennung — oder diese werden nicht geltend gemacht\n- Beide Parteien sind bereit zu kooperieren\n\n**Was dieser Weg nicht kann:**\n- Unterhaltsregelungen vollstreckbar machen\n- Sorgerechtsentscheidungen für die Türkei verbindlich machen\n- Güterrechtliche Ansprüche in der Türkei durchsetzen\n\n**Praxis:** Der Verwaltungsweg ist oft deutlich schneller (Wochen statt Monate). Er ist jedoch nur das richtige Instrument, wenn es ausschließlich um die Statusänderung im Nüfus geht — nicht um Vollstreckung.\n\n### Weg B: Gerichtsverfahren (Tanıma Tenfiz Davası) vor dem Familiengericht\n\nWenn der Verwaltungsweg nicht möglich ist — weil der Ex-Partner nicht kooperiert oder weil Unterhalts-/Sorgerechts-/Güterregelungen durchgesetzt werden sollen — muss das türkische Familiengericht angerufen werden.\n\n**Zuständiges Gericht (MÖHUK Art. 51):**\n- Familiengericht am Wohnsitz des Beklagten in der Türkei\n- Kein türkischer Wohnsitz des Beklagten: wahlweise Ankara, İstanbul oder İzmir Familiengericht\n\nDas Verfahren läuft im vereinfachten Verfahren (Basit Yargılama Usulü). Das Gericht prüft **nicht** die inhaltliche Richtigkeit des deutschen Urteils (Revisionsprüfungsverbot). Es prüft nur, ob die Anerkennungsvoraussetzungen erfüllt sind.\n\n---\n\n## 4. Anerkennungsvoraussetzungen im türkischen Recht (MÖHUK Art. 54)\n\nDas türkische Gericht prüft folgende Punkte. Sind sie erfüllt, muss es anerkennen.\n\n### 1. Rechtskraft des deutschen Urteils (Voraussetzung — MÖHUK Art. 50)\n\nDas Scheidungsurteil muss in Deutschland rechtskräftig sein. Der Rechtskraftvermerk (Scheidungsbeschluss mit „Rechtskräftig seit...\" oder separater Rechtskraftbescheinigung) ist das entscheidende Dokument. Fehlt er, scheitert der Antrag formell.\n\n### 2. Gegenseitigkeit / Mütekabiliyet (nur für Tenfiz — MÖHUK Art. 54/a)\n\nNur bei der Tenfiz erforderlich. Deutschland und die Türkei stehen in faktischer Gegenseitigkeit — dieses Erfordernis ist in der Praxis kein Hindernis. Bei reiner Tanıma (Statusänderung) wird Gegenseitigkeit nicht geprüft.\n\n### 3. Keine Verletzung türkischer Ausschließlichkeitszuständigkeit (MÖHUK Art. 54/b)\n\nDas deutsche Gericht darf keine Angelegenheit entschieden haben, für die ausschließlich türkische Gerichte zuständig sind. Für Scheidungssachen ist das kein Problem. Immobilienrechtliche Anordnungen über in der Türkei belegene Grundstücke könnten problematisch sein.\n\n### 4. Kein Verstoß gegen den türkischen ordre public (MÖHUK Art. 54/c)\n\nDas Urteil und seine Wirkungen dürfen den türkischen Grundwerten nicht widersprechen. Standardmäßige deutsche Scheidungsurteile scheitern hier nicht. Extreme Einzelfälle könnten schwierig sein.\n\nDas Gericht kann einen ordre-public-widrigen Teil ablehnen, den Rest aber anerkennen.\n\n### 5. Gewährung rechtlichen Gehörs (MÖHUK Art. 54/ç)\n\nDer Beklagte muss vor dem deutschen Gericht ordnungsgemäß geladen oder vertreten worden sein. Wer ohne Kenntnis in seiner Abwesenheit geschieden wurde und dies rügen möchte, kann das im türkischen Verfahren geltend machen — aber nur wenn er es aktiv einwendet. Das Gericht prüft es nicht von Amts wegen.\n\n---\n\n## 5. Das doppelte Anerkennungsproblem: Türkei und Deutschland\n\nHier liegt ein Aspekt, der in der deutschen Praxis häufig übersehen wird: Die Anerkennung läuft in **beide Richtungen** — und jede muss separat beantragt werden.\n\n### Deutsche Scheidung → Türkei anerkennen (Tanıma Tenfiz)\n\nDas ist der Hauptgegenstand dieses Artikels. Ein in Deutschland rechtskräftiges Scheidungsurteil muss im türkischen Tanıma Tenfiz-Verfahren anerkannt werden, um in der Türkei Wirkung zu entfalten.\n\n### Türkische Scheidung → Deutschland anerkennen (§ 107 FamFG)\n\nDer umgekehrte Fall ist ebenfalls häufig: Wer in der Türkei geschieden wurde, ist damit automatisch in Deutschland noch nicht geschieden.\n\nTürkische Scheidungsurteile müssen in Deutschland gemäß **§ 107 FamFG** anerkannt werden. Zuständig ist die **Landesjustizverwaltung** — in den meisten Bundesländern in der Praxis der Präsident des **Oberlandesgerichts** (OLG).\n\n**Ausnahme Heimatstaatenentscheidung (§ 107 Abs. 1 S. 2 FamFG):** Wenn beide Ehegatten zum Zeitpunkt der Entscheidung **ausschließlich** türkische Staatsangehörige waren und die Scheidung in der Türkei erfolgt ist, ist keine förmliche Anerkennung nach § 107 FamFG erforderlich. Bestehen Zweifel (z.B. bei Doppelstaatern), empfiehlt sich gleichwohl ein Anerkennungsantrag.\n\n**Kosten des § 107 FamFG-Verfahrens:** Je nach Einkommen 10 bis 305 Euro (nach JVKostG).\n\n**Was § 107 FamFG nicht abdeckt:** Wie das türkische Verfahren erstreckt sich die deutsche Anerkennung nach § 107 FamFG ausschließlich auf den Scheidungsausspruch. Unterhalt, Sorgerecht und Versorgungsausgleich aus dem türkischen Urteil müssen in Deutschland separat vor dem Familiengericht geltend gemacht werden.\n\n---\n\n## 6. Erforderliche Unterlagen im Überblick\n\n### Aus Deutschland beschaffen\n\n| Dokument | Bezeichnung | Woher? |\n|---|---|---|\n| Scheidungsurteil im Original | Scheidungsbeschluss | Amtsgericht, das die Scheidung ausgesprochen hat |\n| Rechtskraftvermerk | Rechtskraftbescheinigung / Rechtskräftig seit... | Auf dem Beschluss selbst oder als gesondertes Schreiben des Gerichts |\n| Apostille | Apostille nach Haager Übereinkommen | Je nach Bundesland: Regierungspräsidium, Landgericht, OLG oder Justizministerium |\n| Beglaubigte türkische Übersetzung | Türkçe onaylı tercüme | Vereidigter Übersetzer (in Deutschland oder der Türkei zugelassen) |\n\n> ⚠️ **Kritischer Fehler, den viele machen:** Apostille und Rechtskraftvermerk sind zwei verschiedene Dokumente. Die Apostille beglaubigt die Echtheit des Dokuments international. Der Rechtskraftvermerk bestätigt, dass das Urteil rechtskräftig ist. Beide müssen vorliegen — fehlt eines, scheitert der Antrag.\n\n### Für das Gerichtsverfahren zusätzlich\n\n- Türkische Nüfus-Kayıt-Auszüge beider Parteien (aus der Türkei oder über e-Devlet)\n- Reisepasskopien beider Parteien\n- **Fotobeglaubigte Sondervollmacht (Vekaletname)** — beim türkischen Konsulat in Deutschland ausgestellt, auf Türkisch, enthält ausdrücklich: Befugnis zur Tanıma Tenfiz-Klage, Entgegennahme von Zustellungen, Vertretung vor allen türkischen Behörden\n\n---\n\n## 7. Ohne Türkeireise: Der Vollmachtsweg aus Deutschland\n\nDas gesamte türkische Anerkennungsverfahren kann aus Deutschland heraus geführt werden — ohne persönliche Anwesenheit in der Türkei.\n\n**Schritt 1: Vollmacht beim türkischen Konsulat ausstellen lassen**\n\nGehen Sie zu einem türkischen Konsulat in Deutschland (Frankfurt, Berlin, Stuttgart, München, Köln, Hamburg, Hannover, Karlsruhe, Münster oder Nürnberg). Mit Ihrem Reisepass lassen Sie dort eine **Sondervollmacht auf Türkisch** ausstellen.\n\nDiese Vollmacht muss folgende Befugnisse ausdrücklich enthalten:\n- Einreichung der Tanıma Tenfiz-Klage und Verfahrensführung\n- Entgegennahme von gerichtlichen Zustellungen\n- Vertretung vor türkischen Gerichten, Einwohnermeldebehörden und dem Konsulat\n- Ggf.: Beantragung einstweiliger Maßnahmen (ihtiyati tedbir)\n\nDiese Vollmacht ist in der Türkei ohne Apostille sofort verwendbar.\n\n**Schritt 2: Unterlagen vorbereiten**\n\nApostille + Rechtskraftvermerk + beglaubigte türkische Übersetzung + Nüfus-Auszüge.\n\n**Schritt 3: Anwalt reicht Klage in der Türkei ein**\n\nIhr Anwalt wählt das zuständige türkische Familiengericht und stellt den Antrag. Bei kooperativem Ex-Partner: 1-3 Monate. Bei Zustellungserfordernissen ins Ausland: 6-12+ Monate.\n\n---\n\n## 8. Unterhalt, Sorgerecht, Gütertrennung — Die Besonderheiten\n\n### Unterhalt\n\nEin deutsches Unterhaltsurteil kann in der Türkei nach erfolgter Tenfiz zwangsweise durchgesetzt werden. Die Instrumente der türkischen Zwangsvollstreckung:\n\n- **E-Haciz** (elektronische Pfändung): Alle türkischen Bankkonten des Schuldners werden online gesperrt\n- **Tapu-Pfändung**: Grundbucheinträge auf Immobilien\n- **Lohnpfändung**: Bis zu einem Viertel des Nettogehalts, bei Unterhaltsschulden höhere Anteile möglich\n\nDer in Euro oder einer anderen Fremdwährung lautende Unterhalt kann in der Türkei entweder in der Originalwährung oder zum TCMB-Tageskurs in Lira vollstreckt werden. Unterhaltsansprüche aus einem Urteil verjähren in der Türkei nach 10 Jahren.\n\n### Sorgerecht\n\nDas Sorgerecht ist der heikelste Bereich. Türkische Gerichte sind **nicht verpflichtet**, ausländische Sorgerechtsentscheidungen ohne weitere Prüfung anzuerkennen. Das Wohlergehen des Kindes (çocuğun üstün yararı) ist der absolute Vorrang — und das türkische Gericht kann die Sorgerechtsfrage bei Einwendung einer Partei **neu beurteilen**.\n\nDas bedeutet konkret: Eine in Deutschland gerichtlich festgelegte Sorgerechtsregelung kann in der Türkei bestätigt, aber auch abgeändert werden. Wer das Sorgerecht in der Türkei durchsetzen will, muss mit einer inhaltlichen Überprüfung rechnen.\n\nPraktische Folgen einer fehlenden Anerkennung: Ohne Sorgerechtsanerkennung in der Türkei kann der Ex-Partner Probleme bei Reisepässen, Schulanmeldungen und Auslandsreisen des Kindes verursachen.\n\n### Güterregelung und Vermögensauseinandersetzung\n\nEnthält das deutsche Urteil Regelungen zur Aufteilung in der Türkei belegener Immobilien oder sonstiger Vermögenswerte, muss dieser Teil Tenfiz-Gegenstand sein. Türkische Grundbuchämter (Tapu) akzeptieren ausländische Urteile für Immobilientransaktionen nur nach Tenfiz.\n\n**Kritische Timing-Frage:** Das türkische Güterrecht berechnet die „ehelich erworbenen Güter\" (edinilmiş mallar) bis zum Zeitpunkt des deutschen Scheidungsantrags. Wer erst Jahre nach der deutschen Scheidung in der Türkei Tanıma beantragt und dann zusätzlich Güterrechtsforderungen erheben will, riskiert, dass zwischenzeitlich erworbenes Vermögen des Ex-Partners noch als eheliches Gut gilt. Die Tanıma-Klage und eine eventuelle Güterrechtklage sollten deshalb zeitnah und koordiniert geführt werden.\n\n---\n\n## 9. Häufige Fehler — und wie man sie vermeidet\n\n**Fehler 1: Kein Rechtskraftvermerk besorgt**\nDas ist der häufigste Fehler. Das Scheidungsurteil allein reicht nicht — der Rechtskraftvermerk ist ein eigenständiges Dokument oder ein Stempel auf dem Beschluss, der bescheinigt, dass keine Rechtsmittel mehr eingelegt werden können.\n\n**Fehler 2: Apostille fehlt oder ist für das falsche Dokument beantragt**\nDie Apostille muss auf dem Dokument angebracht sein, das in der Türkei vorgelegt wird — also auf dem Scheidungsbeschluss mit Rechtskraftvermerk. Eine Apostille auf einem anderen Dokument hilft nicht.\n\n**Fehler 3: Übersetzung nicht durch vereidigten Übersetzer**\nTürkische Gerichte und Konsulate akzeptieren keine Übersetzungen von normalen Agenturen. Es muss ein staatlich beeidigter / vereidigter Übersetzer sein (in Deutschland: allgemein beeidigt für Türkisch).\n\n**Fehler 4: Allgemeine Vollmacht statt Sondervollmacht**\nEine allgemeine Generalvollmacht reicht für das Tanıma Tenfiz-Verfahren nicht aus. Die Vollmacht muss explizit die Befugnis zur Klageerhebung, Entgegennahme von Zustellungen und Vertretung vor türkischen Gerichten enthalten.\n\n**Fehler 5: Zu lange warten**\nJe länger Sie warten, desto mehr Probleme können entstehen: Der Ex-Partner könnte türkische Vermögenswerte veräußern, Heirats- und Erbschaftsfragen eskalieren. Es gibt keine absolute Ausschlussfrist, aber die praktischen Risiken wachsen mit der Zeit.\n\n**Fehler 6: Türkische Scheidung in Deutschland nicht nach § 107 FamFG anerkennen lassen**\nWer in der Türkei geschieden wurde, muss das türkische Urteil in Deutschland beim OLG nach § 107 FamFG anerkennen lassen — wenn nicht die Heimatstaatenausnahme greift (beide ausschließlich türkische Staatsangehörige). Ohne Anerkennung gilt man in Deutschland weiterhin als verheiratet.\n\n---\n\n## 10. Ihre Scheidungsanerkennung — mit der Doğru Kanzlei aus Deutschland\n\n[Die Doğru Kanzlei](https://www.hasandogru.de/de/leistungen/familienrecht) ist bei der **Anwaltskammer Ankara** und der **Rechtsanwaltskammer Karlsruhe** (§ 207 BRAO) zugelassen. Tanıma Tenfiz-Verfahren führen wir direkt über das UYAP-Anwaltsportal von unserem Mannheimer Büro aus — ohne Umweg über einen weiteren türkischen Anwalt.\n\n**Was wir für Sie übernehmen:**\n- Prüfung: Verwaltungsweg (Art. 27/A NHK) oder Gericht?\n- Sondervollmacht: Vollmachtstext für das Konsulat vorbereiten und prüfen\n- Unterlagenkoordination: Apostille, Rechtskraftvermerk, Übersetzung\n- Tanıma Tenfiz-Klage einreichen und vor türkischem Familiengericht führen\n- Unterhalt: Tenfiz-Antrag und anschließende Vollstreckung in der Türkei\n- Sorgerecht: Tenfiz-Antrag mit Strategie zur Minimierung türkischer Neubeurteilung\n- Güterrecht: Koordinierung mit Güterrechtklage, falls nötig\n- Türkische Scheidung in Deutschland: Begleitung des § 107 FamFG-Verfahrens beim OLG\n\nDiesen Leitfaden haben wir auch auf Türkisch veröffentlicht:\n[Tanıma ve Tenfiz Rehberi →](https://www.hasandogru.de/tr/blog/tanima-tenfiz-rehberi)\n\n---\n\n## Häufig gestellte Fragen\n\n**Warum gilt meine deutsche Scheidung nicht in der Türkei?**\nGerichtsentscheidungen gelten nur im eigenen Hoheitsgebiet. Das deutsche Urteil muss im türkischen Tanıma Tenfiz-Verfahren anerkannt werden.\n\n**Was ist der Unterschied zwischen Tanıma und Tenfiz?**\nTanıma: Anerkennung der Rechtskraft — reicht für die Nüfus-Eintragung. Tenfiz: Vollstreckbarerklärung — nötig für Unterhalt, Schadensersatz und Gütertrennung.\n\n**Kann die Anerkennung ohne Gericht erfolgen?**\nJa, auf dem Verwaltungsweg nach Art. 27/A NHK — aber nur wenn beide Parteien kooperieren und keine vollstreckungsbedürftigen Regelungen durchgesetzt werden sollen.\n\n**Welche Unterlagen brauche ich?**\nScheidungsbeschluss + Rechtskraftvermerk + Apostille + beglaubigte türkische Übersetzung + Nüfus-Auszüge + fotobeglaubigte Sondervollmacht vom Konsulat.\n\n**Wie lange dauert das Verfahren?**\nVerwaltungsweg: Wochen. Beide anwaltlich vertreten: 1-3 Monate. Auslandszustellung nötig: 6-12+ Monate.\n\n**Muss ich in die Türkei reisen?**\nNein. Mit einer Konsulats-Sondervollmacht führt Ihr Anwalt alles in der Türkei.\n\n**Was passiert mit dem deutschen Unterhaltsurteil?**\nOhne Tenfiz kann es in der Türkei nicht vollstreckt werden. Nach Tenfiz: E-Haciz, Immobilien- und Lohnpfändung möglich.\n\n**Was passiert mit dem Sorgerecht?**\nNach Tenfiz kann es in der Türkei durchgesetzt werden — aber das türkische Gericht kann es bei Einwendungen einer Partei inhaltlich neu beurteilen.\n\n**Was ist, wenn ich in der Türkei geschieden wurde — gilt das in Deutschland?**\nNein, nicht automatisch. Türkische Scheidungsurteile müssen in Deutschland nach § 107 FamFG beim OLG anerkannt werden (Ausnahme: beide Parteien waren ausschließlich türkische Staatsangehörige).\n\n**Was sind die Folgen, wenn ich gar nichts tue?**\nIn der Türkei gelten Sie weiterhin als verheiratet: kein Wiederheirat, Ex-Partner bleibt Erbe, deutsches Unterhaltsurteil ist nicht vollstreckbar.\n\n---\n\n*Dieser Artikel dient allgemeinen Informationszwecken und ersetzt keine rechtliche Beratung. Für Ihren konkreten Fall wenden Sie sich an Av. Hasan Doğru bei der Doğru Kanzlei.*",
+    contentTR: "**YASAL UYARI:** Bu makale yalnızca Türk hukukuna ilişkin genel bilgi amaçlıdır. Doğru Kanzlei, §207 BRAO kapsamında yalnızca Türk hukuku konularında danışmanlık vermektedir.\n\n---\n\nAlmanya'da yıllarca süren bir dava sonucunda boşanma kararını aldınız. Artık hukuken özgür olduğunuzu düşünerek ileriye bakıyorsunuz. Sonra Türkiye'de bir işlem yapmak istiyorsunuz — belki yeniden evlenmek, belki miras işlemi, belki mal paylaşımı — ve bir anda gerçekle yüz yüze geliyorsunuz: Türkiye'deki nüfus kayıtlarında hâlâ \"evli\" görünüyorsunuz.\n\nBu durum bir \"kayıt hatası\" değil. Uluslararası özel hukuk literatüründe **\"topal evlilik\" (limping marriage)** olarak adlandırılan bu olgu, iki farklı ülke hukuk sisteminin birbirini tanımamasından kaynaklanır ve zincirleme hukuki sorunların başlangıç noktasıdır.\n\nÇözüm: Tanıma ve Tenfiz davası — ya da belirli koşullarda daha hızlı bir yol.\n\n---\n\n## 1. Neden Almanya'daki Boşanma Kararı Türkiye'de Otomatik Geçerli Değil?\n\nHer devlet mahkemesinin kararı yalnızca o devletin egemenlik alanında hüküm ifade eder. Alman Aile Mahkemesi'nin (Amtsgericht) verdiği boşanma kararı, Almanya sınırları içinde kesin ve bağlayıcıdır; ancak Türkiye'ye hiçbir etkisi yoktur — ta ki Türk mahkemelerince veya yetkili idari makamca tanınana kadar.\n\nTürkiye'de nüfus müdürlüğü, bu yabancı kararı görmezden gelir. Medeni durum \"evli\" olarak kalmaya devam eder. Bu \"kayıt hatası\" görünümü aslında ciddi hukuki sonuçlar doğurur:\n\n- **Yeniden evlenemezsiniz:** Türk Medeni Kanunu'na göre geçerli bir evlilik hukuken sona ermeden ikinci evlilik yapılamaz\n- **Eski eşiniz mirasçınız olmaya devam eder:** Nüfus kaydı güncellenmediği sürece eski eşiniz Türkiye'deki varlıklarınız üzerinde mirasçı sıfatını korur\n- **Çocuk sorunları:** Boşanmadan sonra başka bir eşten olan çocuğunuz, nüfus kaydında eski eşinizin çocuğu olarak görünebilir; bu durum soybağının reddi ve babalık davası süreçlerine yol açar\n- **Almanya'daki nafaka-tazminat kararları Türkiye'de icra edilemez:** Tenfiz yapılmadan Türkiye'deki borçlunun mal varlıklarına haciz konamaz\n\n---\n\n## 2. Tanıma ve Tenfiz: İki Farklı Kavram, İki Farklı Sonuç\n\nBu iki kavram sıkça birbirine karıştırılır. Aralarındaki farkı anlamak, hangi hukuki yola başvurmanız gerektiğini belirler.\n\n### Tanıma (MÖHUK m.58)\n\nTanıma, yabancı mahkeme kararının **kesin hüküm** ve **kesin delil** etkisinin Türkiye'de kabul edilmesidir. Karar icra gerektirmeyen bir sonuç içeriyorsa — yani bir şeyin *yapılmasını* emretmiyorsa — tanıma yeterlidir.\n\nBoşanma olgusunun Türkiye'de geçerli sayılması ve nüfus kaydının \"boşanmış\" olarak güncellenmesi için **çoğu zaman tanıma yeterlidir.**\n\nTanımada karşılıklılık (mütekabiliyet) şartı **aranmaz.**\n\n### Tenfiz (MÖHUK m.50-57)\n\nTenfiz, yabancı mahkeme kararına **icra edilebilirlik** vasfı kazandırılmasıdır. Karar bir şeyin yapılmasını emrediyorsa — nafaka ödemesi, tazminat, mal devri — Türkiye'de icra edilebilmesi için tenfiz zorunludur.\n\nTenfizde karşılıklılık (mütekabiliyet) şartı **aranır.** Almanya, Lahey Sözleşmesi'ne ve çeşitli adli yardımlaşma anlaşmalarına taraf olduğundan, Almanya'da verilen kararların Türkiye'de tenfizinde bu şart pratikte sorun teşkil etmez.\n\n### Hangi Durum Neyi Gerektirir?\n\n| Almanya'daki Kararda Ne Var? | Gereken |\n|---|---|\n| Yalnızca boşanma hükmü | Tanıma yeterli |\n| Boşanma + nafaka | Tanıma + tenfiz |\n| Boşanma + velayet | Tanıma + tenfiz |\n| Boşanma + maddi/manevi tazminat | Tanıma + tenfiz |\n| Boşanma + mal paylaşımı | Tanıma + tenfiz |\n| Boşanma + tüm bunlar | Tanıma + tenfiz (birleşik dava) |\n\n> ⚠️ **Önemli:** Tenfiz kararı verildiğinde, tanıma kararını da kapsayacak şekilde hüküm ifade eder. Dolayısıyla nafaka veya tazminat da içeren kararlarda ayrı ayrı iki dava açmak gerekmez; birleşik tanıma-tenfiz davası açılır.\n\n---\n\n## 3. İki Yol: Dava mı, Konsolosluk/Nüfus Müdürlüğü mü?\n\n2017 yılında Nüfus Hizmetleri Kanunu'na eklenen **m.27/A** ile yabancı boşanma kararlarının dava açılmaksızın idari yoldan Türkiye'de tescil ettirilebilmesinin önü açıldı. Bu yol, bazı durumlarda çok daha hızlı ve maliyetsizdir.\n\n### Yol A: İdari Tescil (Konsolosluk / Nüfus Müdürlüğü)\n\n**Kimler başvurabilir?**\n- Her iki taraf da birlikte başvurursa (bizzat veya vekilleri aracılığıyla)\n- Bir taraf yabancı uyruklu ise Türk vatandaşı olan taraf tek başına başvurabilir\n- Bir taraf vefat etmişse sağ kalan taraf tek başına başvurabilir\n\n**Nereye başvurulur?**\n- Almanya'daki Türk konsolosluğu (yurt dışında)\n- Taraflardan birinin yerleşim yeri il nüfus müdürlüğü (Türkiye'de)\n- Ankara, İstanbul, İzmir, Bursa, Antalya vb. büyük illerin nüfus müdürlükleri\n\n**Şartlar:**\n- Yabancı karar kesinleşmiş olmalı\n- Apostil şerhi alınmış olmalı\n- Kararın noter veya konsolosluk onaylı yeminli Türkçe çevirisi hazır olmalı\n- Başvuru bizzat veya avukat vekâletnamesiyle yapılmalı\n\n**Bu yolun sınırları:**\n- Yalnızca boşanma olgusunu tescil eder\n- Nafaka, velayet, tazminat, mal paylaşımı gibi hükümler bu yolla icra edilebilir hale gelmez\n- Eski eş birlikte başvurmayı reddederse bu yol kapanır — dava zorunlu olur\n\n### Yol B: Tanıma-Tenfiz Davası (Aile Mahkemesi)\n\nEski eş birlikte başvurmuyorsa, ya da nafaka/velayet/tazminat gibi icra gerektiren hükümlerin de geçerliliği sağlanmak isteniyorsa, **Aile Mahkemesi'nde dava açmak** gerekir.\n\nDavanın açılacağı yetkili mahkeme (MÖHUK m.51):\n- Davalının Türkiye'deki yerleşim yeri Aile Mahkemesi\n- Davalının Türkiye'de yerleşim yeri yoksa Ankara, İstanbul veya İzmir Aile Mahkemelerinden biri (davacının seçimine göre)\n\nDava basit yargılama usulüne tabidir. Türk mahkemesi, yabancı kararın **esasına girmez** (revizyon yasağı — MÖHUK m.54). Yalnızca aşağıdaki şartların sağlanıp sağlanmadığını denetler.\n\n---\n\n## 4. Tanıma-Tenfiz Şartları (MÖHUK m.54)\n\nTürk mahkemesi tanıma-tenfiz kararı verebilmesi için şu koşulların sağlandığını tespit etmek zorundadır:\n\n### 1. Kararın Kesinleşmiş Olması (Ön Koşul — MÖHUK m.50)\n\nAlman mahkemesinin boşanma kararının kesinleşmiş olması zorunludur. Temyiz aşamasındaki veya henüz kesinleşmemiş kararlar tanıma-tenfize konu olamaz.\n\nAlmanya'da \"Rechtskraftvermerk\" (kesinleşme şerhi) kararın üzerinde veya ayrı bir belgede yer alır. Bu belge olmadan Türk mahkemesi dava şartı eksikliği nedeniyle davayı usulden reddedebilir.\n\n### 2. Karşılıklılık (Mütekabiliyet) — Yalnızca Tenfiz İçin (MÖHUK m.54/a)\n\nAlmanya, Türk mahkeme kararlarının tenfizini mümkün kılan uygulamaya sahip bir devlettir. Bu şart, Almanya-Türkiye hattında pratikte sorun teşkil etmez.\n\nDikkat: Karşılıklılık şartı **yalnızca tenfiz için aranır.** Sadece tanıma talep ediliyorsa bu şart aranmaz (MÖHUK m.58).\n\n### 3. Münhasır Yetki İhlali Olmaması (MÖHUK m.54/b)\n\nAlman mahkemesinin verdiği karar, Türk mahkemelerinin münhasır yetkisine giren bir konuyu kapsamamalıdır.\n\nBoşanma davaları açısından bu şart genellikle sorun yaratmaz. Ancak Türkiye'deki bir taşınmaz üzerindeki aynî haklara ilişkin kararlar (örneğin tapu devri hükmü) münhasır yetki kapsamında sorun yaratabilir.\n\n### 4. Kamu Düzenine Aykırı Olmaması (MÖHUK m.54/c)\n\nKararın Türkiye'de uygulanmasının Türk kamu düzenine açıkça aykırı sonuçlar doğurmaması gerekir.\n\nAlmanya'da verilen standart boşanma kararları bu engele takılmaz. Ancak Türk hukukunun temel ilkeleriyle bağdaşmayan bazı düzenlemeler kamu düzeni gerekçesiyle reddedilebilir.\n\nÖnemli not: Türk mahkemesi kamu düzenine aykırılık gerekçesiyle kararın tamamını değil, yalnızca aykırı bulunan kısmını reddedebilir; kalan kısımlar için tanıma-tenfiz kararı verebilir.\n\n### 5. Savunma Hakkına Riayet Edilmiş Olması (MÖHUK m.54/ç)\n\nAleyhine tenfiz istenen taraf, Alman mahkemesinde usulüne uygun şekilde davet edilmiş veya temsil edilmiş olmalıdır. Gıyabi karar verilmişse, o ülke kanunlarına göre savunma hakkı güvencelerinin sağlanmış olması gerekir.\n\nBu şart **davalının itirazına bağlıdır.** Davalı Türk mahkemesinde bu itirazı ileri sürmezse, mahkeme kendiliğinden araştırıp reddetmez.\n\n---\n\n## 5. Gerekli Belgeler: Almanya'dan Temin Edilecekler\n\nTanıma-tenfiz davası veya idari tescil için Almanya'dan şu belgeler temin edilmelidir:\n\n### Almanya'dan Alınacak Belgeler\n\n| Belge | Almancası | Nasıl Alınır? |\n|---|---|---|\n| Boşanma kararı aslı | Scheidungsbeschluss | Kararı veren Amtsgericht'ten |\n| Kesinleşme şerhi | Rechtskraftvermerk | Kararın üstünde veya ayrı belgede |\n| Apostil | Apostille | İlgili Regierungspräsidium'dan |\n| Yeminli Türkçe çeviri | Beglaubigte Übersetzung | Türkiye'de tanınan yeminli tercüman |\n\n> ⚠️ **Kritik Detay:** Apostil, belgenin Almanya'daki resmi makamca onaylandığını uluslararası düzeyde kabul ettiren şerhtir. Apostil almadan gönderilen belgeler Türk mahkemesince kabul edilmez. Apostil için doğru makam mahkemenin bulunduğu eyalete göre değişir (Regierungspräsidium, Oberlandesgericht vb.).\n\n### Dava İçin Ek Belgeler\n\n- Tarafların nüfus kayıt örnekleri (e-Devlet'ten veya Türkiye'deki nüfus müdürlüğünden)\n- Pasaport/kimlik fotokopisi\n- **Fotoğraflı özel vekaletname** — içinde açıkça şu yetkilerin bulunması şarttır: \"tanıma ve tenfiz davası açmak, takip etmek, kabul etmek veya feragat etmek\"\n\n---\n\n## 6. Almanya'dan Türkiye'ye Gitmeden Tanıma-Tenfiz\n\nBu sürecin tamamı Türkiye'ye gitmeden yönetilebilir.\n\n### Konsolosluktan Vekâletname\n\nAlmanya'daki Türk konsolosluğuna gidin (Frankfurt, Berlin, Stuttgart, Münih, Köln, Hamburg, Hannover, Karlsruhe, Münster veya Nürnberg). Pasaportunuzla birlikte, avukatınıza **\"tanıma ve tenfiz davası açma, takip etme ve sonuçlandırma\"** yetkisini içeren fotoğraflı özel vekâletname düzenleyin.\n\nBu vekâletname Türkiye'de apostile gerek kalmadan doğrudan kullanılabilir.\n\n### Davanın Hızını Belirleyen Faktör: Tebligat\n\nTanıma-tenfiz davalarında en uzun süreyi genellikle yurt içi veya yurt dışı tebligat belirler:\n\n| Tebligat Durumu | Tahmini Süre |\n|---|---|\n| Her iki taraf da Türkiye'de avukatla temsil ediliyorsa | 1-2 ay |\n| Davacı temsil ediliyor, davalı yurt içinde adresli | 3-6 ay |\n| Davalı Almanya'daysa (yurt dışı tebligat) | 6-12+ ay |\n| Davalının adresi bilinmiyorsa (ilanen tebligat) | 12+ ay |\n\n**Pratik çözüm:** Eski eşinizin de bir avukata vekâlet verip davayı kabul etmesi, süreci dramatik biçimde kısaltır (1-2 aya iner). Bu konuyu eski eşinizle görüşmek zaman kazandırır.\n\n---\n\n## 7. Nafaka, Velayet ve Tazminat: Özel Durumlar\n\n### Almanya'daki Nafaka Kararının Türkiye'de Tahsili\n\nAlmanya'da hükmedilen nafaka, Türkiye'de tenfiz edilmeden **icraya konulamaz.** Tenfiz kararı alındıktan sonra:\n\n- Borçlunun Türkiye'deki **banka hesaplarına e-haciz** konulabilir\n- **Taşınmaz ve araçlar** üzerine haciz işletilebilir\n- Borçlu Türkiye'de çalışıyorsa **maaşının 1/4'üne** haciz uygulanabilir\n\nTenfiz edilen nafaka alacağı 10 yıllık zamanaşımına tabidir.\n\n### Velayet Kararı: En Karmaşık Kısım\n\nAlmanya'da verilen velayet kararları Türkiye'de tenfiz yoluyla geçerli hale getirilebilir; ancak önemli bir sınır var: **Türk mahkemesi velayet kararını doğrudan tanımak zorunda değildir.**\n\nMÖHUK gereği çocuğun menfaatini ilgilendiren kararlar kamu düzeni kapsamında değerlendirilir. Taraflardan birinin itirazı halinde mahkeme, çocuğun üstün yararı ilkesi çerçevesinde velayeti **yeniden** inceleyebilir ve Almanya'daki karardan farklı bir karar verebilir.\n\nPratik sonuçlar: Velayet kararı tenfiz edilmeden;\n- Çocuk pasaport işlemlerinde her iki ebeveyn de imza gerekebilir\n- Çocuğun yurt dışına çıkışında sorunlar yaşanabilir\n- Okul kaydı gibi resmi işlemlerde anlaşmazlıklar ortaya çıkabilir\n\n### Maddi ve Manevi Tazminat\n\nAlmanya'da hükmedilen tazminatlar da tenfiz gerektiren kararlardandır. Tenfiz kararı alındıktan sonra aynı icra prosedürleri uygulanır.\n\nEuro cinsinden tazminat Türkiye'de nasıl tahsil edilir? İcra takibinde \"aynen Euro olarak\" talep edilebilir; ya da takip tarihindeki TCMB efektif satış kuru üzerinden Türk Lirası karşılığı istenebilir.\n\n---\n\n## 8. Mal Paylaşımı ile Tanıma-Tenfizin İlişkisi\n\nBu ilişki pratikte çok önemli bir zamanlama meselesine yol açar.\n\n### Mal Paylaşımında Kritik Tarih: Boşanma Davasının Açıldığı Gün\n\nTürkiye'de mal paylaşımı davası açıldığında, mahkeme Alman mahkemesinde boşanma davasının **açıldığı tarihe** bakar — bu tarih, Türkiye'deki \"edinilmiş mallara katılma\" döneminin sona erdiği gün sayılır.\n\nYani Almanya'da boşanmadan yıllar sonra Türkiye'de tanıma-tenfiz yapıp ardından mal paylaşımı davası açmak istiyorsanız, aradan geçen sürede elde edilen mallar \"edinilmiş mal\" kapsamına girmeye devam ediyor olabilir — bu da hak kaybına yol açabilir.\n\n> ⚠️ **Kritik Uyarı:** Türkiye'de Türkiye'ye ait taşınmazlar veya diğer varlıklar üzerinde mal paylaşımı davası açmak istiyorsanız, tanıma-tenfiz davası ile mal paylaşımı davasını **eş zamanlı** açmayı değerlendirin. Süreçlerin farklı zamanlarda açılması ciddi hak kayıplarına yol açabilir.\n\n---\n\n## 9. Kadınlar İçin İddet Müddeti\n\nTürk Medeni Kanunu m.132 uyarınca, boşanan kadın için **300 günlük bekleme süresi** (iddet müddeti) uygulanır. Bu süre, yabancı mahkeme kararının kesinleştiği tarihten itibaren başlar — tanıma kararından değil.\n\nTanıma davası açılmadan önce 300 gün zaten geçmişse sorun yoktur. Geçmemişse, evlenmeden önce \"İddet Müddetinin Kaldırılması\" davası açılması ya da bu sürenin dolmasını beklemeniz gerekir.\n\nErkekler için herhangi bir bekleme süresi öngörülmemektedir.\n\n---\n\n## 10. Almanya'dan Tanıma-Tenfiz: Doğru Kanzlei ile\n\n[Doğru Kanzlei](https://www.hasandogru.de/tr/hizmetler/aile-hukuku) olarak, hem **Ankara Barosu** hem de **Karlsruhe Barosu** (§207 BRAO) üyesiyiz. Bu çift üyelik, Türkiye'deki tanıma-tenfiz davalarını UYAP avukat portalı üzerinden Mannheim ofisimizden doğrudan yönetmemizi sağlar. Hiçbir aracı Türk hukuk bürosuna ihtiyaç duymadan.\n\n**Almanya'dan yönettiğimiz tanıma-tenfiz süreçleri:**\n- Almanya'dan alınacak belgelerin (apostil, kesinleşme şerhi) temin sürecinde yönlendirme\n- Konsolosluktan fotoğraflı özel vekâletname düzenlenmesine rehberlik\n- İdari tescil (27/A) mi, yoksa dava mı açılacağının değerlendirilmesi\n- Tanıma ve/veya tenfiz davasının Türkiye'de açılması ve takibi\n- Nafaka, tazminat ve velayet kararlarının tenfizi\n- Mal paylaşımı davası ile eş zamanlı tanıma-tenfiz koordinasyonu\n- İddet müddeti değerlendirmesi\n\nBu makaleyi Almanca okuyanlar için:\n[Anerkennung der deutschen Scheidung in der Türkei →](https://www.hasandogru.de/de/blog/anerkennung-scheidung-tuerkei-deutschland)\n\n---\n\n## Sıkça Sorulan Sorular\n\n**Almanya'da boşandım, Türkiye'de neden hala evli görünüyorum?**\nAlman mahkeme kararı Türkiye'de kendiliğinden hüküm doğurmaz. Nüfus kaydının güncellenmesi için tanıma-tenfiz davası veya 27/A kapsamında idari başvuru gerekir.\n\n**Tanıma ile tenfiz arasındaki fark nedir?**\nTanıma: Boşanmanın nüfus kayıtlarına işlenmesi için yeterli. Tenfiz: Nafaka, velayet, tazminat gibi icra gerektiren hükümler için şart.\n\n**Dava açmadan konsolosluktan yapılabilir mi?**\nEvet — iki tarafın birlikte başvurması koşuluyla. Eski eş reddederse veya nafaka/velayet de söz konusuysa dava zorunludur.\n\n**Hangi belgeler gerekli?**\nBoşanma kararı aslı + kesinleşme şerhi + apostil + yeminli Türkçe çeviri + nüfus kayıt örnekleri + fotoğraflı özel vekâletname.\n\n**Tanıma-tenfiz davası ne kadar sürer?**\nHer iki taraf avukatla temsil edilirse 1-2 ay. Yurt dışı tebligat gerekirse 6-12 ay veya daha uzun.\n\n**Almanya'daki nafaka Türkiye'de geçerli olur mu?**\nTenfiz kararı olmadan hayır. Tenfizden sonra Türkiye'de icra takibi başlatılabilir.\n\n**Almanya'daki velayet kararı Türkiye'de otomatik geçerli mi?**\nHayır. Tenfiz edilmesi gerekir; ancak Türk mahkemesi çocuğun üstün yararı çerçevesinde bağımsız değerlendirme yapabilir.\n\n**Tanıma-tenfiz yapılmazsa ne olur?**\nTürkiye'de evli görünürsünüz, yeniden evlenemezsiniz, eski eş mirasçı olmaya devam eder, nafaka-tazminat Türkiye'de icra edilemez.\n\n**Türkiye'ye gitmeden dava açılabilir mi?**\nEvet. Konsolosluktan alınan fotoğraflı özel vekâletname ile avukatınız tüm süreci yönetir.\n\n---\n\n*Bu makale genel bilgi amaçlıdır ve hukuki danışmanlık yerine geçmez. Bireysel durumunuz için Av. Hasan Doğru'ya danışmanızı öneririz.*",
+    contentEN: "",
     category: "Aile Hukuku",
     categoryDE: "Familienrecht",
+    categoryEN: "Family Law",
     image: tanimaTenfizImg,
-    dateDE: "2. April 2026",
-    dateTR: "2 Nisan 2026",
-    readTimeDE: "6 Min. Lesezeit",
-    readTimeTR: "6 dk okuma",
+    dateDE: "24. April 2026",
+    dateTR: "24 Nisan 2026",
+    dateEN: "",
+    readTimeDE: "17 Min. Lesezeit",
+    readTimeTR: "17 dk okuma",
+    readTimeEN: "",
     publishedAt: "2026-04-02",
-    keywordsDE: "Tanıma ve Tenfiz Deutschland, Scheidung Türkei Anerkennung, MÖHUK Art 50, Familienrecht Türkei Anwalt, Scheidung Deutschland Türkei Register",
-    keywordsTR: "Tanıma ve tenfiz davası Almanya, boşanma kararı Türkiye'de tanıtma, kesinleşme şerhi apostil, aile mahkemesi tanıma davası, tanıma tenfiz avukatı",
+    publishedAtDE: "2026-04-24",
+    publishedAtTR: "2026-04-02",
+    modifiedAtDE: "2026-04-24",
+    modifiedAtTR: "2026-04-24",
+    keywordsDE: "deutsche Scheidung Türkei anerkennen, Anerkennung Scheidung Türkei Deutschland, Tanıma Tenfiz Deutschland, Scheidungsurteil Türkei anerkennen, türkische Scheidung Deutschland anerkennen § 107 FamFG, hinkende Ehe Türkei, Anerkennung Scheidung Türkei ohne Gericht, Unterhalt Türkei vollstrecken, Sorgerecht Türkei anerkennen, Apostille Scheidungsurteil Türkei, Scheidung Türkei nüfus, türkisches Personenstandsregister Scheidung",
+    keywordsTR: "tanıma tenfiz almanya boşanma, almanya boşanma kararı türkiye geçerli, tanıma tenfiz davası nasıl açılır, tanıma tenfiz şartları 2026, tanıma tenfiz belgeleri, tanıma tenfiz dava açmadan konsolosluk, tanıma tenfiz nafaka velayet, almanya'da boşandım türkiye'de evliyim, topal evlilik türkiye, tanıma tenfiz süre ne kadar, tanıma tenfiz mal paylaşımı, iddet müddeti tanıma tenfiz, MÖHUK 54 tanıma tenfiz",
+    keywordsEN: "",
+    faqDE: [
+      {
+            "question": "Warum gilt meine deutsche Scheidung nicht automatisch in der Türkei?",
+            "answer": "Gerichtsurteile entfalten unmittelbare Rechtswirkungen grundsätzlich nur im Hoheitsgebiet des Staates, in dem sie erlassen wurden. Ein rechtskräftiges deutsches Scheidungsurteil aktualisiert das türkische Nüfus-Register nicht automatisch; dafür ist ein türkisches Anerkennungsverfahren erforderlich."
+      },
+      {
+            "question": "Was ist der Unterschied zwischen Tanıma (Anerkennung) und Tenfiz (Vollstreckbarerklärung)?",
+            "answer": "Tanıma erkennt die Rechtskraft des deutschen Urteils in der Türkei an und reicht meist für die Eintragung der Scheidung im Nüfus-Register. Tenfiz erklärt das Urteil zusätzlich für vollstreckbar und ist erforderlich, wenn Unterhalt, Schadensersatz oder güterrechtliche Regelungen in der Türkei durchgesetzt werden sollen."
+      },
+      {
+            "question": "Kann die Anerkennung ohne Gericht erfolgen?",
+            "answer": "Ja, unter bestimmten Voraussetzungen. Nach Art. 27/A des türkischen Einwohnermeldegesetzes können ausländische Scheidungsurteile ohne Gerichtsverfahren eingetragen werden, wenn beide Parteien gemeinsam beim türkischen Konsulat oder der zuständigen Einwohnermeldebehörde erscheinen oder vertreten werden."
+      },
+      {
+            "question": "Welche Unterlagen benötige ich für die Anerkennung in der Türkei?",
+            "answer": "Benötigt werden der Scheidungsbeschluss mit Rechtskraftvermerk im Original, Apostille, beglaubigte türkische Übersetzung, türkische Personenstandsregisterauszüge, Reisepasskopien und für das Gerichtsverfahren eine fotobeglaubigte Sondervollmacht vom türkischen Konsulat."
+      },
+      {
+            "question": "Wie lange dauert das Anerkennungsverfahren in der Türkei?",
+            "answer": "Der Verwaltungsweg dauert bei Kooperation beider Parteien meist einige Wochen. Ein Gerichtsverfahren mit beidseitiger anwaltlicher Vertretung dauert häufig 1-3 Monate. Bei internationaler Zustellung an eine im Ausland lebende Partei kann das Verfahren 6-12 Monate oder länger dauern."
+      },
+      {
+            "question": "Muss ich für das türkische Anerkennungsverfahren in die Türkei reisen?",
+            "answer": "Nein. Mit einer beim türkischen Konsulat in Deutschland ausgestellten Sondervollmacht kann Ihr Anwalt das gesamte Verfahren in der Türkei für Sie durchführen."
+      },
+      {
+            "question": "Gilt mein in der Türkei anerkanntes deutsches Scheidungsurteil auch für Deutschland — und umgekehrt?",
+            "answer": "Nein, nicht automatisch. Für die Türkei muss ein deutsches Scheidungsurteil im Tanıma-Tenfiz-Verfahren anerkannt werden. Umgekehrt müssen türkische Scheidungsurteile in Deutschland regelmäßig nach § 107 FamFG bei der Landesjustizverwaltung beziehungsweise dem OLG anerkannt werden."
+      },
+      {
+            "question": "Was passiert mit dem deutschen Unterhaltsurteil in der Türkei?",
+            "answer": "Ein deutsches Unterhaltsurteil entfaltet in der Türkei ohne Tenfiz keine Vollstreckungswirkung. Nach erfolgreicher Tenfiz kann der Unterhalt in der Türkei durch Pfändung von Bankkonten, Immobilien, Fahrzeugen oder Lohn vollstreckt werden."
+      },
+      {
+            "question": "Was sind die Folgen, wenn ich die Anerkennung in der Türkei unterlasse?",
+            "answer": "Sie gelten in der Türkei weiterhin als verheiratet. Dadurch können Wiederheirat, Erbrecht, Kinderregistrierung und Vollstreckung von Unterhalts- oder Scheidungsfolgeentscheidungen erhebliche Probleme verursachen."
+      }
+],
+    faqTR: [
+      {
+            "question": "Almanya'da boşandım, Türkiye'de neden hala evli görünüyorum?",
+            "answer": "Her ülkenin mahkeme kararı yalnızca o ülkenin hukuk sistemi içinde geçerlidir. Alman mahkemesinin boşanma kararı Türkiye'de kendiliğinden sonuç doğurmaz. Türkiye'de nüfus kayıtlarının güncellenmesi ve boşanmanın hukuken geçerli sayılması için ya Tanıma-Tenfiz davası açılması ya da Nüfus Hizmetleri Kanunu m.27/A kapsamında konsolosluk veya nüfus müdürlüğüne başvurulması gerekir."
+      },
+      {
+            "question": "Tanıma ve tenfiz arasındaki fark nedir?",
+            "answer": "Tanıma: Yabancı mahkeme kararının Türkiye'de geçerli sayılması, kesin hüküm kuvveti kazanmasıdır. Boşanmanın nüfus kayıtlarına işlenmesi için çoğunlukla tanıma yeterlidir. Tenfiz: Yabancı mahkeme kararının Türkiye'de icra edilebilir hale getirilmesidir. Nafaka, tazminat veya mal paylaşımı gibi icra gerektiren hükümler için tenfiz zorunludur."
+      },
+      {
+            "question": "Almanya boşanmasını dava açmadan Türkiye'de geçerli kılmak mümkün mü?",
+            "answer": "Evet, belirli koşullarda. Nüfus Hizmetleri Kanunu m.27/A uyarınca, her iki tarafın da birlikte başvurması halinde konsolosluğa veya Türkiye'deki nüfus müdürlüğüne başvurarak dava açmadan boşanmayı tescil ettirmek mümkündür. Eski eş birlikte başvurmayı reddederse veya kararında nafaka, velayet ya da tazminat gibi icra gerektiren hükümler varsa dava açmak zorunlu olur."
+      },
+      {
+            "question": "Tanıma-tenfiz davası için hangi belgeler gerekli?",
+            "answer": "Almanya'dan alınacak belgeler: boşanma kararı aslı (Scheidungsbeschluss), kesinleşme şerhi (Rechtskraftvermerk), apostil şerhi ve tüm belgelerin yeminli Türkçe çevirisi. Dava için ayrıca tarafların nüfus kayıt örnekleri, kimlik belgeleri ve tanıma-tenfiz davası açma yetkisini içeren fotoğraflı özel vekaletname gerekir."
+      },
+      {
+            "question": "Tanıma-tenfiz davası ne kadar sürer?",
+            "answer": "Her iki taraf da Türkiye'deki davada temsil edilirse süreç genellikle 1-2 ayda tamamlanabilir. Yalnızca bir taraf başvurursa ve diğer taraf Almanya'daysa yurt dışı tebligat nedeniyle 6-12 ay veya daha uzun sürebilir. Konsolosluk/nüfus müdürlüğü yoluyla idari tescil ise iki tarafın birlikte başvurması halinde birkaç hafta sürebilir."
+      },
+      {
+            "question": "Almanya'daki nafaka kararı Türkiye'de geçerli midir?",
+            "answer": "Hayır, kendiliğinden değil. Almanya'da hükmedilen iştirak nafakası, yoksulluk nafakası veya çocuk nafakası Türkiye'de tenfiz edilmeden icra edilemez. Tenfiz davası kazanılırsa nafaka Türkiye'de icraya konulabilir."
+      },
+      {
+            "question": "Almanya'daki velayet kararı Türkiye'de geçerli olur mu?",
+            "answer": "Tenfiz davası ile geçerli hale getirilebilir; ancak Türk mahkemesi velayet kararını doğrudan tanımak zorunda değildir. Taraflardan birinin itirazı halinde mahkeme, çocuğun üstün yararı ilkesi çerçevesinde velayeti yeniden değerlendirebilir."
+      },
+      {
+            "question": "Tanıma-tenfiz yapılmazsa ne olur?",
+            "answer": "Türkiye'de hala evli görünürsünüz ve yeniden evlenemezsiniz. Eski eşiniz Türkiye'deki mal varlığınız üzerinde mirasçı sıfatını ileri sürebilir. Almanya'daki nafaka ve tazminat kararları Türkiye'de icraya konulamaz."
+      },
+      {
+            "question": "Almanya'dan Türkiye'ye gitmeden tanıma-tenfiz davası açılabilir mi?",
+            "answer": "Evet. Almanya'daki Türk konsolosluğunda tanıma ve tenfiz davası açma ve takip etme yetkisini içeren fotoğraflı özel vekaletname düzenleyebilirsiniz. Avukatınız bu vekaletname ile Türkiye'ye gitmeden davayı açar, takip eder ve sonuçlandırır."
+      }
+],
   },
   {
     slug: "sakli-pay-tenkis-davasi",

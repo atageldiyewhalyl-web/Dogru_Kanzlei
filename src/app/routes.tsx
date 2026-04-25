@@ -126,8 +126,7 @@ export const router = createBrowserRouter([
       { path: "services/:id", Component: Loadable(ServiceDetail) },
       { path: "about", Component: Loadable(AboutPage) },
       { path: "blog", Component: Loadable(BlogPage) },
-      // Blog detail: no English content yet — redirect to German equivalent
-      { path: "blog/:slug", loader: ({ params }: any) => redirect(`/de/blog/${params.slug}`) },
+      { path: "blog/:slug", Component: Loadable(BlogPost) },
       // Legal pages redirect to German equivalents
       { path: "privacy", loader: () => redirect("/de/datenschutz") },
       { path: "legal", loader: () => redirect("/de/impressum") },
