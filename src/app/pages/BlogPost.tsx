@@ -172,6 +172,7 @@ export function BlogPost() {
       section: currentCategory,
       tags: currentArticleTags,
     } : undefined,
+    noindex: !isAvailable,
   });
 
   if (!isAvailable || !post) {
