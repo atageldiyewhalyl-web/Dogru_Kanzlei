@@ -3,7 +3,6 @@ import path from 'path'
 import { fileURLToPath } from 'url'
 import tailwindcss from '@tailwindcss/vite'
 import react from '@vitejs/plugin-react'
-import prerender from '@prerenderer/rollup-plugin'
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url))
 
@@ -74,78 +73,114 @@ const postBuildAdjustments: Plugin = {
   }
 }
 
+const sitemapPrerenderRepair: Plugin = {
+  name: 'sitemap-prerender-repair',
+  async closeBundle() {
+    const buildDir = join(__dirname, 'build')
+    const sitemapPath = join(buildDir, 'sitemap.xml')
+    const indexPath = join(buildDir, 'index.html')
+    if (!fs.existsSync(sitemapPath) || !fs.existsSync(indexPath)) return
+
+    const [{ default: puppeteer }, http, { createReadStream }] = await Promise.all([
+      import('puppeteer'),
+      import('http'),
+      import('fs'),
+    ])
+
+    const sitemap = fs.readFileSync(sitemapPath, 'utf8')
+    const routes = Array.from(sitemap.matchAll(/<loc>https:\/\/www\.hasandogru\.de([^<]+)<\/loc>/g))
+      .map((match) => match[1])
+      .filter((route, index, all) => all.indexOf(route) === index)
+
+    if (!routes.length) return
+
+    const mimeTypes: Record<string, string> = {
+      '.html': 'text/html; charset=utf-8',
+      '.js': 'application/javascript; charset=utf-8',
+      '.css': 'text/css; charset=utf-8',
+      '.xml': 'application/xml; charset=utf-8',
+      '.txt': 'text/plain; charset=utf-8',
+      '.json': 'application/json; charset=utf-8',
+      '.png': 'image/png',
+      '.jpg': 'image/jpeg',
+      '.jpeg': 'image/jpeg',
+      '.avif': 'image/avif',
+      '.webm': 'video/webm',
+      '.woff2': 'font/woff2',
+      '.ico': 'image/x-icon',
+    }
+
+    const server = http.createServer((req, res) => {
+      const url = new URL(req.url || '/', 'http://127.0.0.1')
+      let requestedPath = decodeURIComponent(url.pathname)
+      let filePath = join(buildDir, requestedPath)
+
+      if (fs.existsSync(filePath) && fs.statSync(filePath).isDirectory()) {
+        filePath = join(filePath, 'index.html')
+      }
+
+      if (!fs.existsSync(filePath)) {
+        filePath = indexPath
+      }
+
+      const ext = path.extname(filePath)
+      res.setHeader('Content-Type', mimeTypes[ext] || 'application/octet-stream')
+      createReadStream(filePath).pipe(res)
+    })
+
+    await new Promise<void>((resolve) => server.listen(4179, '127.0.0.1', resolve))
+
+    const browser = await puppeteer.launch({
+      headless: true,
+      args: ['--no-sandbox', '--disable-setuid-sandbox'],
+    })
+
+    try {
+      const page = await browser.newPage()
+      await page.setViewport({ width: 1440, height: 1000 })
+
+      for (const route of routes) {
+        const target = `http://127.0.0.1:4179${route}`
+        await page.goto(target, { waitUntil: 'networkidle0', timeout: 30000 })
+        try {
+          await page.waitForSelector('#prerender-ready', { timeout: 10000 })
+        } catch {
+          // Some non-React fallback states do not expose the ready marker.
+        }
+
+        const html = await page.content()
+        const outputPath = join(buildDir, route, 'index.html')
+        fs.mkdirSync(path.dirname(outputPath), { recursive: true })
+        fs.writeFileSync(outputPath, html)
+      }
+
+      const removeStaleDuplicateDirs = (dir: string) => {
+        fs.readdirSync(dir, { withFileTypes: true }).forEach((entry) => {
+          const fullPath = join(dir, entry.name)
+          if (!entry.isDirectory()) return
+          if (/ \d+$/.test(entry.name)) {
+            fs.rmSync(fullPath, { recursive: true, force: true })
+            return
+          }
+          removeStaleDuplicateDirs(fullPath)
+        })
+      }
+      removeStaleDuplicateDirs(buildDir)
+
+      console.log(`[sitemap-prerender-repair] Ensured ${routes.length} sitemap routes have HTML files.`)
+    } finally {
+      await browser.close()
+      await new Promise<void>((resolve) => server.close(() => resolve()))
+    }
+  }
+}
+
 export default defineConfig({
   plugins: [
     react(),
     tailwindcss(),
     postBuildAdjustments,
-    prerender({
-      routes: [
-        '/de', '/tr',
-        '/de/ueber-uns', '/tr/hakkimizda',
-        '/de/leistungen', '/tr/hizmetler',
-        '/de/leistungen/familienrecht', '/tr/hizmetler/aile-hukuku',
-        '/de/leistungen/vollmacht-apostille', '/tr/hizmetler/vekaletname-ve-apostil',
-        '/de/leistungen/migrationsrecht', '/tr/hizmetler/goc-hukuku',
-        '/de/leistungen/strafrecht', '/tr/hizmetler/ceza-hukuku',
-        '/de/leistungen/tanima-ve-tenfiz', '/tr/hizmetler/tanima-ve-tenfiz',
-        '/de/leistungen/mavi-kart', '/tr/hizmetler/mavi-kart',
-        '/de/leistungen/icra-ve-iflas', '/tr/hizmetler/icra-ve-iflas',
-        '/de/leistungen/erbrecht', '/tr/hizmetler/miras-hukuku',
-        '/de/leistungen/sorgerecht', '/tr/hizmetler/velayet',
-        '/de/leistungen/immobilienrecht', '/tr/hizmetler/gayrimenkul-hukuku',
-        '/de/blog', '/tr/blog',
-        '/de/blog/strafverfahren-tuerkei-haftbefehl-verteidigung-deutschland', '/tr/blog/turkiye-ceza-davasi-tutuklama-karari-almanya-savunma',
-        '/de/blog/erbschaft-tuerkei-deutschland-ratgeber', '/tr/blog/almanya-turkiye-miras-hukuku-rehberi',
-        '/de/blog/deutschland-scheidung-anerkennung-tuerkei-tanima-tenfiz', '/tr/blog/almanya-bosanma-tanima-tenfiz-davasi-rehberi',
-        '/de/blog/erbschein-tuerkei-deutschland-beantragen', '/tr/blog/veraset-ilami-nedir-nasil-alinir',
-        '/en/blog/turkish-inheritance-certificate-germany-guide',
-        '/de/blog/almanya-scheidung-tuerkei-vermoegensaufteilung', '/tr/blog/almanya-bosanma-turkiye-mal-paylasimi',
-        '/de/blog/deutschland-muris-muvazaasi-tapu-annullierung', '/tr/blog/almanya-muris-muvazaasi-tapu-iptali',
-        '/de/blog/deutschland-gemeinsames-sorgerecht-tuerkei-anerkennung', '/tr/blog/almanya-ortak-velayet-turkiye-tenfiz',
-        '/de/blog/deutschland-tuerkei-forderungseinzug-zwangsvollstreckung', '/tr/blog/almanya-turkiye-alacak-tahsili-icra',
-        '/de/blog/strafverfahren-tuerkei-verteidigung-deutschland', '/tr/blog/turkiye-ceza-davasi-almanya-savunma',
-        '/de/blog/blaue-karte-tuerkei-erbrecht-immobilien', '/tr/blog/mavi-kart-turkiye-miras-tasinmaz-haklari',
-        '/de/blog/erbrecht-leitfaden-tuerkei', '/tr/blog/miras-hukuku-rehberi',
-        '/de/blog/internationale-scheidung-tuerkei', '/tr/blog/uluslararasi-bosanma',
-        '/de/blog/immobilienrechte-tuerkei', '/tr/blog/gayrimenkul-haklari',
-        '/de/blog/anerkennung-scheidung-tuerkei-deutschland', '/tr/blog/tanima-tenfiz-rehberi',
-        '/de/blog/pflichtteil-herabsetzungsklage-tuerkei', '/tr/blog/sakli-pay-tenkis-davasi',
-        '/de/blog/teilungsklage-immobilien-tuerkei', '/tr/blog/izale-i-suyu-paylasim-davasi',
-        '/de/blog/mavi-kart-rechte-tuerkei', '/tr/blog/mavi-kart-haklari-rehberi',
-        '/de/blog/vorladung-haftbefehl-tuerkei', '/tr/blog/turkiye-den-tebligat-veya-yakalama-karari',
-        '/de/blog/strafanzeige-tuerkei-rehber', '/tr/blog/turkiye-de-suc-duyurusu-rehberi',
-        '/de/blog/scheidung-tuerkei-ohne-reise', '/tr/blog/turkiye-de-bosanma-rehberi',
-        '/de/blog/tuerkische-vekaletname-deutschland', '/tr/blog/almanya-da-vekaletname-cikarma-rehberi',
-        '/de/blog/scheidungsanwalt-mannheim', '/tr/blog/mannheim-bosanma-avukati',
-        '/de/blog/familienrecht-beratung-mannheim', '/tr/blog/mannheim-aile-hukuku-danismanligi',
-        '/de/blog/sorgerecht-anwalt-mannheim', '/tr/blog/mannheim-velayet-avukati',
-        '/de/blog/vollmacht-auf-tuerkisch', '/tr/blog/turkce-vekaletname-nasil-cikarilir',
-        '/de/blog/mietrecht-mannheim', '/tr/blog/mannheim-kira-hukuku',
-        '/de/blog/kind-tuerkei-mitnehmen-sorgerecht', '/tr/blog/cocukla-turkiyeye-gitmek-velayet',
-        '/de/blog/was-kostet-anwalt-tuerkisches-recht', '/tr/blog/turk-hukuku-avukat-ucretleri',
-        '/de/blog/tuerkisches-testament-deutschland', '/tr/blog/turk-vasiyetnamesi-almanya',
-        '/de/blog/scheidung-tuerkei-dauer-kosten', '/tr/blog/turkiyede-bosanma-suresi-maliyeti',
-        '/de/blog/tuerkischer-anwalt-mannheim-erstberatung', '/tr/blog/mannheim-turk-avukat-ilk-gorusme',
-        '/de/datenschutz', '/tr/gizlilik-politikasi',
-        '/de/impressum', '/tr/yasal-bilgiler',
-         // English routes
-        '/en', '/en/about', '/en/services', '/en/blog',
-        '/en/services/familienrecht', '/en/services/vollmacht-apostille',
-        '/en/services/migrationsrecht', '/en/services/strafrecht',
-        '/en/services/tanima-ve-tenfiz', '/en/services/mavi-kart',
-        '/en/services/icra-ve-iflas', '/en/services/erbrecht',
-        '/en/services/sorgerecht', '/en/services/immobilienrecht',
-        '/en/blog/debt-collection-turkey-from-germany',
-        '/en/blog/turkish-inheritance-germany-guide',
-      ],
-      renderer: '@prerenderer/renderer-puppeteer',
-      rendererOptions: {
-        renderAfterTime: 7000,
-        headless: true,
-        maxConcurrentRoutes: 3,
-      },
-    }),
+    sitemapPrerenderRepair,
   ],
   resolve: {
     alias: {

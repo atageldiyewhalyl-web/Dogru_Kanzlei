@@ -9,11 +9,11 @@ export const services = [
     title: "Familienrecht & Scheidung",
     titleTR: "Aile Hukuku ve Boşanma",
     titleEN: "Family Law & Divorce",
-    descriptionEN: "Turkish-origin families in Germany often face a dual challenge with divorce, custody, or maintenance: two legal systems, two countries, one family. Turkish family law differs significantly from German law — and requires a lawyer who knows both sides.",
-    detailEN: "Turkish law only · Ankara Bar member · Full process without travel to Turkey · Advice in Turkish & English · Mannheim office · Second office in Ankara",
-    seoTitleEN: "Turkish Family Law Mannheim | Divorce & Custody | Doğru Kanzlei",
-    seoDescriptionEN: "Turkish-speaking families in Germany facing divorce, custody or maintenance issues with a Turkish dimension. Avukat Hasan Doğru advises from Mannheim — without travel to Turkey.",
-    expertiseTitleEN: "Why Doğru Kanzlei for Turkish Family Law?",
+    descriptionEN: "Turkish-origin families across Germany often face a dual challenge with divorce, custody, or maintenance: two legal systems, two countries, one family. Turkish family law differs significantly from German law and requires a lawyer who understands both sides.",
+    detailEN: "Turkish law only · Ankara Bar member and §207 BRAO registration · Full process without travel to Turkey · Advice in Turkish, German and English · Available throughout Germany by phone, video and WhatsApp · Mannheim and Ankara offices for direct coordination with Turkish courts",
+    seoTitleEN: "Turkish Divorce Lawyer Germany | Family Law & Tanima Tenfiz | Hasan Doğru",
+    seoDescriptionEN: "Turkish family law for clients in Germany: divorce in Turkey, custody, maintenance and recognition of German divorce judgments. No travel to Turkey required.",
+    expertiseTitleEN: "Why Doğru Kanzlei for Germany-Turkey Family Law?",
     contentEN: `Family Law & Divorce — Turkish Family Law from Mannheim
 
 Turkish Family Law & Divorce — Mannheim
@@ -49,36 +49,36 @@ Would you like to bring your spouse from Turkey to Germany? We provide legal sup
 After a divorce, questions arise about name changes under Turkish law. We advise on your options and handle the name change process with Turkish authorities.`,
     faqEN: [
       {
-        question: "Can I get divorced in Turkey without travelling there?",
-        answer: "Yes. With a notarial power of attorney, we can conduct the entire Turkish divorce procedure from Germany on your behalf. You do not need to appear personally before Turkish courts. This is one of the most common reasons Turkish-origin families from Mannheim and the Rhine-Neckar region instruct us."
+        question: "Is my German divorce valid in Turkey?",
+        answer: "No, not automatically. A German divorce decision usually needs to be recognised in Turkey before your marital status is updated there. Depending on the decision, Tanıma, Tenfiz or a combined procedure may be required."
       },
       {
-        question: "How long does a divorce under Turkish law take?",
-        answer: "A consensual divorce (Anlaşmalı Boşanma) generally takes 2–6 months. A contested divorce (Çekişmeli Boşanma) can take 1–3 years, depending on the complexity of the case and the Turkish court responsible."
+        question: "Do I need to travel to Turkey for a custody case?",
+        answer: "In many cases, no. With the right power of attorney, we can prepare filings, coordinate documents and communicate with Turkish courts. Whether personal attendance is required depends on the facts of the case and the competent court."
       },
       {
-        question: "Is a Turkish divorce recognised in Germany?",
-        answer: "A divorce granted in Turkey must be recognised in Germany. We guide you through the recognition procedure (Tanıma ve Tenfiz) at the competent German authority so that your marital status is correctly recorded in Germany."
+        question: "Can maintenance be enforced in Turkey?",
+        answer: "Yes, if the legal requirements are met. German maintenance decisions or arrangements often need to be made enforceable in Turkey through Tenfiz before enforcement measures can be considered."
       },
       {
-        question: "What happens with custody if one parent lives in Germany and the other in Turkey?",
-        answer: "Cross-border custody proceedings are particularly complex. Which court has jurisdiction and which law applies depends on the child's habitual residence. We analyse your case and represent you before the competent Turkish or German court."
+        question: "How much does an initial consultation cost?",
+        answer: "The cost depends on the scope of your case and the documents that need to be reviewed. Before the consultation, you receive clear information about the fee and what will be assessed."
       },
       {
-        question: "Do I need to come to Mannheim for an initial consultation?",
-        answer: "No. We also offer initial consultations by telephone or video. We advise many of our clients from across Germany entirely remotely."
+        question: "Which documents do I need for Tanıma & Tenfiz?",
+        answer: "Usually you need the German divorce decision, proof that it is final, an apostille, a certified Turkish translation and a suitable power of attorney. We check your specific decision and tell you which documents are required."
       }
     ],
-    seoTitleDE: "Scheidungsanwalt Mannheim | Türkisches Familienrecht | Doğru Kanzlei",
-    seoDescriptionDE: "Scheidung nach türkischem Recht von Mannheim aus — ohne Reise in die Türkei. Avukat Hasan Doğru berät türkischstämmige Familien in Mannheim zu Familienrecht, Scheidung, Unterhalt und Sorgerecht.",
-    seoTitleTR: "Türk Boşanma Avukatı Almanya | Boşanma Avukatı Mannheim | Avukat Hasan Doğru",
-    seoDescriptionTR: "Mannheim'dan Türkiye'de boşanma — Türkiye'ye gitmeden. Avukat Hasan Doğru, boşanma, nafaka ve velayet davalarında Almanya'daki Türk ailelere Türk hukuku danışmanlığı verir.",
-    description: "Mannheim, Heidelberg ve Rhein-Neckar bölgesindeki Türk aileler; boşanma, velayet veya nafaka konularında sıklıkla çift taraflı bir zorlukla karşılaşır — iki hukuk sistemi, iki ülke, bir aile.",
-    descriptionDE: "Türkischstämmige Familien in Mannheim, Heidelberg und dem gesamten Rhein-Neckar-Raum stehen bei Scheidung, Sorgerecht oder Unterhalt oft vor einer besonderen Herausforderung: Zwei Rechtssysteme, zwei Länder, eine Familie. Das türkische Familienrecht unterscheidet sich in wesentlichen Punkten vom deutschen Recht — und erfordert einen Anwalt, der beide Seiten kennt.",
-    detail: "Yalnızca Türk hukuku — uzlaşmasız uzmanlaşma · Ankara Barosu üyesi, § 207 BRAO kapsamında kayıtlı · Türkiye'ye seyahat etmeden tam süreç yönetimi · Türkçe ve Almanca danışmanlık · Mannheim'da yüz yüze görüşme imkânı · Ankara'da ikinci ofis — Türk mahkemeleriyle doğrudan iş birliği",
-    detailDE: "Ausschließlich türkisches Recht — keine Kompromisse, volle Spezialisierung · Mitglied der Ankara Barosu und registriert gemäß § 207 BRAO · Verfahren vollständig ohne Reise in die Türkei möglich · Beratung auf Türkisch und Deutsch · Standort Mannheim — persönliche Beratung im Rhein-Neckar-Raum · Zweiter Standort in Ankara für direkte Zusammenarbeit mit türkischen Gerichten",
-    expertiseTitleDE: "Warum Doğru Kanzlei für türkisches Familienrecht in Mannheim?",
-    expertiseTitleTR: "Mannheim'da Türk Aile Hukuku İçin Neden Doğru Kanzlei?",
+    seoTitleDE: "Türkisches Familienrecht Deutschland | Scheidung Türkei | Doğru Kanzlei",
+    seoDescriptionDE: "Scheidung, Sorgerecht, Unterhalt und Tanıma Tenfiz mit Türkeibezug für Mandanten in ganz Deutschland — ohne Reise in die Türkei.",
+    seoTitleTR: "Almanya Türk Boşanma Avukatı | Aile Hukuku & Tanıma Tenfiz | Hasan Doğru",
+    seoDescriptionTR: "Almanya'daki Türk aileler için Türkiye bağlantılı boşanma, velayet, nafaka ve tanıma-tenfiz. Türkiye'ye gitmeden Mannheim ve Ankara'dan hukuki destek.",
+    description: "Almanya genelindeki Türk aileler; boşanma, velayet veya nafaka konularında sıklıkla çift taraflı bir zorlukla karşılaşır: iki hukuk sistemi, iki ülke, bir aile. Türk aile hukuku, Alman hukukundan önemli noktalarda ayrılır ve iki tarafı da bilen bir avukat gerektirir.",
+    descriptionDE: "Türkischstämmige Familien in ganz Deutschland stehen bei Scheidung, Sorgerecht oder Unterhalt mit Türkeibezug oft vor einer besonderen Herausforderung: Zwei Rechtssysteme, zwei Länder, eine Familie. Das türkische Familienrecht unterscheidet sich in wesentlichen Punkten vom deutschen Recht — und erfordert einen Anwalt, der beide Seiten kennt.",
+    detail: "Yalnızca Türk hukuku — tam uzmanlaşma · Ankara Barosu üyesi, § 207 BRAO kapsamında kayıtlı · Türkiye'ye seyahat etmeden süreç yönetimi · Türkçe ve Almanca danışmanlık · Almanya genelinde telefon, video ve WhatsApp ile ulaşılabilir · Mannheim ve Ankara ofisleriyle Türk mahkemeleriyle doğrudan iş birliği",
+    detailDE: "Ausschließlich türkisches Recht — keine Kompromisse, volle Spezialisierung · Mitglied der Ankara Barosu und registriert gemäß § 207 BRAO · Verfahren vollständig ohne Reise in die Türkei möglich · Beratung auf Türkisch und Deutsch · Deutschlandweite Betreuung per Telefon oder Video · Standorte Mannheim und Ankara für direkte Zusammenarbeit mit türkischen Gerichten",
+    expertiseTitleDE: "Warum Doğru Kanzlei für türkisches Familienrecht mit Deutschland-Türkei-Bezug?",
+    expertiseTitleTR: "Türkiye Bağlantılı Aile Hukukunda Neden Doğru Kanzlei?",
     content: `Aile Hukuku ve Boşanma — Mannheim'da Türk Aile Hukuku
 
 Türk Aile Hukuku & Boşanma Mannheim
@@ -141,46 +141,46 @@ Sie möchten Ihren Ehepartner aus der Türkei nach Deutschland holen? Wir beglei
 Nach einer Scheidung stellen sich Fragen zur Namensänderung nach türkischem Recht. Wir beraten Sie zu Ihren Optionen und übernehmen die Abwicklung der Namensänderung bei türkischen Behörden.`,
     faqDE: [
       {
-        question: "Kann ich mich in der Türkei scheiden lassen, ohne dorthin zu reisen?",
-        answer: "Ja. Mit einer notariellen Vollmacht können wir das gesamte türkische Scheidungsverfahren von Deutschland aus für Sie führen. Sie müssen nicht persönlich vor türkischen Gerichten erscheinen. Dies ist einer der häufigsten Gründe, warum türkischstämmige Familien aus Mannheim und dem Rhein-Neckar-Raum uns beauftragen."
+        question: "Gilt meine deutsche Scheidung in der Türkei?",
+        answer: "Nein, nicht automatisch. Eine in Deutschland ausgesprochene Scheidung muss in der Türkei anerkannt werden, damit Ihr Personenstand dort korrekt als geschieden eingetragen wird. Je nach Inhalt des deutschen Beschlusses kommt Tanıma, Tenfiz oder ein kombiniertes Verfahren in Betracht."
       },
       {
-        question: "Wie lange dauert eine Scheidung nach türkischem Recht?",
-        answer: "Eine einvernehmliche Scheidung (Anlaşmalı Boşanma) dauert in der Regel 2–6 Monate. Eine streitige Scheidung (Çekişmeli Boşanma) kann 1–3 Jahre in Anspruch nehmen, abhängig von der Komplexität des Falles und dem zuständigen türkischen Gericht."
+        question: "Muss ich für ein Sorgerechtsverfahren in die Türkei reisen?",
+        answer: "In vielen Fällen ist keine Reise in die Türkei erforderlich. Mit einer geeigneten Vollmacht können wir das Verfahren vorbereiten, einreichen und mit den türkischen Gerichten koordinieren. Ob ein persönliches Erscheinen nötig ist, hängt vom Einzelfall und vom zuständigen Gericht ab."
       },
       {
-        question: "Wird eine türkische Scheidung in Deutschland anerkannt?",
-        answer: "Eine in der Türkei ausgesprochene Scheidung muss in Deutschland anerkannt werden. Wir begleiten Sie durch das Anerkennungsverfahren (Tanıma ve Tenfiz) bei der zuständigen deutschen Behörde, damit Ihr Personenstand in Deutschland korrekt eingetragen wird."
+        question: "Kann ich Unterhalt in der Türkei durchsetzen?",
+        answer: "Ja, wenn die rechtlichen Voraussetzungen erfüllt sind. Deutsche Unterhaltsentscheidungen oder Unterhaltsregelungen müssen in der Türkei regelmäßig über Tenfiz vollstreckbar gemacht werden. Danach können Vollstreckungsmaßnahmen in der Türkei geprüft und eingeleitet werden."
       },
       {
-        question: "Was passiert mit dem Sorgerecht, wenn ein Elternteil in Deutschland und einer in der Türkei lebt?",
-        answer: "Grenzüberschreitende Sorgerechtsverfahren sind besonders komplex. Welches Gericht zuständig ist und welches Recht angewendet wird, hängt vom gewöhnlichen Aufenthaltsort des Kindes ab. Wir analysieren Ihren Fall und vertreten Sie vor dem zuständigen türkischen oder deutschen Gericht."
+        question: "Was kostet eine Erstberatung?",
+        answer: "Die Kosten hängen vom Umfang Ihres Falls ab. In der Erstberatung prüfen wir Ihre Ausgangslage, die relevanten Unterlagen und den sinnvollsten nächsten Schritt. Sie erhalten vorab eine klare Information zu den Kosten der Beratung."
       },
       {
-        question: "Muss ich für eine Erstberatung nach Mannheim kommen?",
-        answer: "Nein. Wir bieten Erstberatungen auch per Telefon oder Video an. Viele unserer Mandanten aus dem gesamten Bundesgebiet betreuen wir vollständig auf Distanz."
+        question: "Welche Unterlagen brauche ich für Tanıma & Tenfiz?",
+        answer: "Typischerweise benötigen Sie den deutschen Scheidungsbeschluss, den Rechtskraftvermerk, eine Apostille, eine beglaubigte türkische Übersetzung und eine geeignete Vollmacht. Welche Dokumente genau erforderlich sind, prüfen wir anhand Ihres Beschlusses."
       }
     ],
     faqTR: [
       {
-        question: "Türkiye'ye gitmeden Türkiye'de boşanabilir miyim?",
-        answer: "Evet. Noter tasdikli bir vekaletname ile tüm Türk boşanma sürecini Almanya'dan sizin adınıza yürütebiliriz. Türk mahkemelerinde bizzat bulunmanız gerekmez. Bu, Mannheim ve Rhein-Neckar bölgesinden bize başvuran Türk ailelerin en sık dile getirdiği nedenlerden biridir."
+        question: "Almanya'daki boşanma kararım Türkiye'de geçerli mi?",
+        answer: "Hayır, otomatik olarak geçerli olmaz. Almanya'da verilen boşanma kararının Türkiye'de nüfus kayıtlarına işlenebilmesi için genellikle Tanıma veya Tenfiz süreci gerekir. Kararınızı inceleyerek hangi yolun gerekli olduğunu belirliyoruz."
       },
       {
-        question: "Türk hukukuna göre boşanma ne kadar sürer?",
-        answer: "Anlaşmalı boşanma (Anlaşmalı Boşanma) genellikle 2–6 ay sürer. Çekişmeli boşanma (Çekişmeli Boşanma) ise davanın karmaşıklığına ve ilgili Türk mahkemesine bağlı olarak 1–3 yıl sürebilir."
+        question: "Velayet davası için Türkiye'ye gitmem gerekir mi?",
+        answer: "Birçok dosyada Türkiye'ye gitmeden işlem yapılabilir. Uygun bir vekaletname ile başvuru, belge hazırlığı ve Türk mahkemeleriyle koordinasyon tarafımızdan yürütülebilir. Kişisel katılım gerekip gerekmediği dosyanın içeriğine ve mahkemeye bağlıdır."
       },
       {
-        question: "Türkiye'de gerçekleşen boşanma Almanya'da tanınır mı?",
-        answer: "Türkiye'de verilen boşanma kararının Almanya'da tanınması gerekmektedir. Yetkili Alman makamı nezdinde tanıma ve tenfiz sürecinde (Tanıma ve Tenfiz) size eşlik ediyoruz; böylece medeni haliniz Almanya'da doğru şekilde tescil edilir."
+        question: "Nafakayı Türkiye'de tahsil edebilir miyim?",
+        answer: "Evet, hukuki şartlar sağlanıyorsa nafaka kararının Türkiye'de icrası mümkündür. Alman mahkemesi kararı veya nafaka düzenlemesi için çoğu zaman Tenfiz süreci gerekir; ardından Türkiye'deki icra yolları değerlendirilebilir."
       },
       {
-        question: "Ebeveynlerden biri Almanya'da, diğeri Türkiye'de yaşıyorsa velayet nasıl belirlenir?",
-        answer: "Sınır ötesi velayet davaları son derece karmaşıktır. Hangi mahkemenin yetkili olduğu ve hangi hukukun uygulanacağı, çocuğun mutad meskenine bağlıdır. Davanızı analiz ediyor ve sizi yetkili Türk veya Alman mahkemesinde temsil ediyoruz."
+        question: "İlk danışma ücreti ne kadar?",
+        answer: "Ücret, dosyanın kapsamına ve incelenecek belgelere göre değişir. İlk değerlendirmede durumunuzu, mevcut kararları ve en doğru sonraki adımı netleştiririz. Danışma ücreti konusunda görüşmeden önce açık bilgi verilir."
       },
       {
-        question: "İlk danışma için Mannheim'a gelmem gerekiyor mu?",
-        answer: "Hayır. İlk danışmayı telefon veya video görüşmesi yoluyla da gerçekleştirebilirsiniz. Almanya'nın dört bir yanından pek çok müvekkilimize tamamen uzaktan hizmet veriyoruz."
+        question: "Tanıma ve Tenfiz için hangi belgeler gerekir?",
+        answer: "Genellikle boşanma kararı, kesinleşme şerhi, apostil, yeminli Türkçe tercüme ve uygun vekaletname gerekir. Dosyanızdaki kararın içeriğine göre ek belgeler gerekip gerekmediğini ayrıca kontrol ediyoruz."
       }
     ]
   },
@@ -194,10 +194,10 @@ Nach einer Scheidung stellen sich Fragen zur Namensänderung nach türkischem Re
     title: "Vollmacht & Apostille",
     titleTR: "Vekaletname & Apostil",
     titleEN: "Power of Attorney & Apostille",
-    descriptionEN: "Legally secure powers of attorney and apostilled documents for Turkish authorities and courts — fast, reliable, and without unnecessary travel.",
+    descriptionEN: "Power of attorney for Turkey from Germany, notarised powers, apostilles and certified documents for Turkish authorities — prepared correctly and without unnecessary travel.",
     detailEN: "Notarisation · Legalisation · Apostille · Consular services · Translation · Legal advice",
-    seoTitleEN: "Power of Attorney for Turkey from Germany | Apostille | Doğru Kanzlei",
-    seoDescriptionEN: "Power of attorney for Turkey from Mannheim — correct, apostilled, ready to use. Avukat Hasan Doğru guides you through all power of attorney and apostille procedures for Turkish authorities.",
+    seoTitleEN: "Power of Attorney for Turkey | Apostille Documents | Doğru Kanzlei",
+    seoDescriptionEN: "Power of attorney for Turkey, general powers, property and inheritance powers, apostille documents and Turkish document certification from Germany.",
     expertiseTitleEN: "Why Doğru Kanzlei for Powers of Attorney for Turkey?",
     contentEN: `Power of Attorney & Apostille — Power of Attorney for Turkey from Germany
 
@@ -265,12 +265,12 @@ We support you throughout the entire process — fast, reliable and with well-fo
         answer: "Yes. As an alternative to the apostille, certification can be done through the Turkish consulate in Germany. We advise which route is faster and more cost-effective for your situation."
       }
     ],
-    seoTitleDE: "Türkische Vollmacht Mannheim | Apostille Türkei | Doğru Kanzlei",
-    seoDescriptionDE: "Vollmacht für die Türkei aus Mannheim — korrekt, apostilliert, sofort einsatzbereit. Avukat Hasan Doğru begleitet Sie durch alle Vollmachts- und Apostilleverfahren für türkische Behörden.",
-    seoTitleTR: "Vekaletname & Apostil Türkiye Mannheim | Almanya'dan Türkiye Vekaletnamesi | Avukat Hasan Doğru",
-    seoDescriptionTR: "Türkiye için Almanya'dan vekaletname — doğru, apostilli, hemen kullanıma hazır. Avukat Hasan Doğru, Mannheim'dan Türk makamları için tüm vekaletname ve apostil işlemlerinde size eşlik eder.",
-    description: "Türkiye'deki resmi kurum ve mahkemeler için hukuki güvenceli vekaletname ve apostilli belgeler — hızlı, güvenilir ve gereksiz seyahat olmadan.",
-    descriptionDE: "Rechtssichere Vollmachten und apostillierte Dokumente für Behörden und Gerichte in der Türkei — schnell, zuverlässig und ohne unnötige Reisen.",
+    seoTitleDE: "Vollmacht für die Türkei | Generalvollmacht & Apostille | Doğru Kanzlei",
+    seoDescriptionDE: "Vollmacht für die Türkei aus Deutschland: Generalvollmacht Türkei, notarielle Vollmacht Türkei, Apostille Türkei Dokumente, Immobilien- und Erbschaftsvollmacht.",
+    seoTitleTR: "Vekaletname Almanya Nasıl Çıkarılır | Apostil Almanya Türkiye | Hasan Doğru",
+    seoDescriptionTR: "Vekaletname Almanya nasıl çıkarılır? Tapu, miras, banka ve mahkeme işlemleri için vekaletname; apostil Almanya Türkiye süreciyle birlikte hazırlanır.",
+    description: "Vekaletname Almanya nasıl çıkarılır? Türkiye'deki resmi kurum, tapu, miras, banka ve mahkeme işlemleri için vekaletname ve apostil Almanya Türkiye sürecini doğru şekilde hazırlıyoruz.",
+    descriptionDE: "Vollmacht für die Türkei aus Deutschland: notarielle Vollmacht Türkei, Generalvollmacht Türkei und Apostille Türkei Dokumente für Immobilien, Erbschaft, Bank, Gericht und Behörden.",
     detail: "Noter Onayı · Tasdik · Apostil · Konsolosluk İşlemleri · Tercüme · Hukuki Danışmanlık",
     detailDE: "Beglaubigung · Notarielle Beurkundung · Apostille · Konsularische Dienste · Übersetzung · Rechtsberatung",
     content: `Vekaletname ve Apostil — Mannheim'da Türkiye İçin Vekaletname
@@ -342,46 +342,46 @@ Eine Vollmacht, die nicht den aktuellen Anforderungen türkischer Behörden ents
 Wir stehen Ihnen während des gesamten Prozesses zur Seite — schnell, zuverlässig und mit fundierter Erfahrung in der deutsch-türkischen Rechtspraxis.`,
     faqDE: [
       {
-        question: "Was ist eine Apostille und wofür brauche ich sie?",
-        answer: "Eine Apostille ist eine internationale Beglaubigung, die deutsche Dokumente für die Verwendung in der Türkei rechtsgültig macht. Ohne Apostille erkennen türkische Behörden, Gerichte und Banken deutsche Dokumente in der Regel nicht an."
+        question: "Was ist eine Apostille Türkei Dokumente und wofür brauche ich sie?",
+        answer: "Eine Apostille ist eine internationale Beglaubigung, die deutsche Urkunden für die Verwendung in der Türkei bestätigt. Wenn Sie türkische Dokumente beglaubigen oder deutsche Dokumente bei türkischen Behörden nutzen möchten, müssen Apostille, Übersetzung und Zweck zusammenpassen."
       },
       {
-        question: "Kann ich eine Vollmacht für die Türkei in Deutschland ausstellen lassen?",
-        answer: "Ja. Sie können eine Vollmacht bei einem deutschen Notar beurkunden lassen — mit anschließender Apostille und beglaubigter Übersetzung ins Türkische. Wir koordinieren den gesamten Prozess und stellen sicher, dass die Vollmacht den aktuellen Anforderungen türkischer Behörden entspricht."
+        question: "Kann ich eine notarielle Vollmacht Türkei in Deutschland ausstellen lassen?",
+        answer: "Ja. Eine Vollmacht für die Türkei kann in Deutschland notariell beurkundet oder beglaubigt werden. Danach folgen je nach Fall Apostille, beglaubigte Übersetzung oder Konsularweg. Wir prüfen, welche Form für türkische Behörden akzeptiert wird."
       },
       {
-        question: "Wie lange ist eine Vollmacht für die Türkei gültig?",
-        answer: "Das hängt von der Art der Vollmacht ab. Viele türkische Behörden akzeptieren Vollmachten nur, wenn sie nicht älter als 6 Monate sind. Wir beraten Sie zur optimalen Gültigkeitsdauer für Ihren konkreten Zweck."
+        question: "Wann brauche ich eine Generalvollmacht Türkei?",
+        answer: "Eine Generalvollmacht Türkei kann sinnvoll sein, wenn mehrere Angelegenheiten in der Türkei geregelt werden sollen. Trotzdem müssen die Befugnisse präzise formuliert sein, weil türkische Behörden pauschale oder unklare Vollmachten ablehnen können."
       },
       {
-        question: "Was passiert, wenn meine Vollmacht von türkischen Behörden abgelehnt wird?",
-        answer: "Das passiert häufiger als man denkt — meistens wegen veralteter Formulierungen oder fehlender spezifischer Befugnisse. Wir stellen sicher, dass Ihre Vollmacht von Anfang an korrekt ausgestellt ist und alle aktuellen Anforderungen erfüllt."
+        question: "Welche Vollmacht brauche ich für Immobilien Türkei?",
+        answer: "Für Kauf, Verkauf, Tapu-Übertragung oder Verwaltung von Immobilien in der Türkei ist meist eine spezielle Vollmacht für Immobilien Türkei erforderlich. Die Vollmacht muss die konkrete Handlung und die Befugnisse für Grundbuch- und Notarvorgänge enthalten."
       },
       {
-        question: "Kann ich eine Vollmacht auch über das türkische Konsulat beglaubigen lassen?",
-        answer: "Ja. Als Alternative zur Apostille kann eine Beglaubigung durch das türkische Konsulat in Deutschland erfolgen. Wir beraten Sie, welcher Weg für Ihren Fall schneller und kostengünstiger ist."
+        question: "Welche Vollmacht brauche ich für Erbschaft Türkei?",
+        answer: "Für Veraset İlamı, Nachlassabwicklung, Bankzugriff oder Tapu-Übertragung nach einem Todesfall wird häufig eine Vollmacht für Erbschaft Türkei benötigt. Wir prüfen, welche Befugnisse im konkreten Fall aufgenommen werden müssen."
       }
     ],
     faqTR: [
       {
-        question: "Apostil nedir ve neden gereklidir?",
-        answer: "Apostil, Alman belgelerini Türkiye'de kullanım için hukuken geçerli kılan uluslararası bir onay işlemidir. Apostil olmadan Türk makamları, mahkemeler ve bankalar Alman belgelerini genellikle kabul etmez."
+        question: "Vekaletname Almanya nasıl çıkarılır?",
+        answer: "Türkiye için vekaletname Almanya'da noterde düzenlenebilir. İşleme göre apostil, yeminli tercüme veya Türk konsolosluğu yolu gerekebilir. Tapu, miras, banka veya mahkeme işlemi için metindeki yetkilerin doğru yazılması çok önemlidir."
       },
       {
-        question: "Türkiye için Almanya'da vekaletname çıkarabilir miyim?",
-        answer: "Evet. Alman noterinde vekaletname onaylattırabilirsiniz — ardından apostil ve Türkçe onaylı çeviri işlemleri yapılır. Tüm süreci koordine ediyor ve vekaletnamenin güncel Türk makamı gerekliliklerini karşıladığından emin oluyoruz."
+        question: "Apostil Almanya Türkiye işlemi ne zaman gerekir?",
+        answer: "Almanya'da düzenlenen bir belgenin Türkiye'de kullanılabilmesi için çoğu zaman apostil gerekir. Apostil Almanya Türkiye sürecinde belgenin türü, yetkili makam ve tercüme ihtiyacı birlikte değerlendirilmelidir."
       },
       {
-        question: "Türkiye için vekaletname ne kadar süre geçerlidir?",
-        answer: "Bu, vekaletnamenin türüne bağlıdır. Pek çok Türk makamı yalnızca 6 aydan eski olmayan vekaletnameleri kabul etmektedir. Belirli amacınız için en uygun geçerlilik süresi konusunda danışmanlık veriyoruz."
+        question: "Tapu vekaletname Almanya'dan çıkarılabilir mi?",
+        answer: "Evet. Türkiye'deki taşınmaz alım, satım veya devir işlemleri için Almanya'dan tapu vekaletnamesi hazırlanabilir. Vekaletnamede taşınmaz işlemleri için gerekli yetkilerin açık ve Türk makamlarınca kabul edilebilir şekilde yer alması gerekir."
       },
       {
-        question: "Vekaletnamen Türk makamlarınca reddedilirse ne olur?",
-        answer: "Bu, düşünüldüğünden daha sık yaşanır — çoğunlukla güncelliğini yitirmiş ifadeler veya eksik yetki tanımları nedeniyle. Vekaletnamenizin başından itibaren doğru düzenlenmesini ve tüm güncel gereklilikleri karşılamasını sağlıyoruz."
+        question: "Miras vekaletname Almanya'da nasıl hazırlanır?",
+        answer: "Veraset ilamı, miras paylaşımı, tapu devri veya banka işlemleri için miras vekaletnamesi Almanya'da hazırlanabilir. Hangi yetkilerin gerekli olduğunu dosyanızdaki miras işlemlerine göre kontrol ediyoruz."
       },
       {
-        question: "Türk konsolosluğu aracılığıyla da onay yaptırabilir miyim?",
-        answer: "Evet. Apostile alternatif olarak Almanya'daki Türk konsolosluğu aracılığıyla onay yapılabilir. Hangi yolun durumunuz için daha hızlı ve uygun maliyetli olduğu konusunda danışmanlık veriyoruz."
+        question: "Vekaletname reddedilirse ne olur?",
+        answer: "Vekaletname Türk makamlarınca reddedilirse işlem gecikir ve çoğu zaman belgenin yeniden hazırlanması gerekir. En sık nedenler eksik yetki, hatalı tercüme, eksik apostil veya güncel olmayan metindir."
       }
     ]
   },
@@ -574,8 +574,8 @@ Was uns auszeichnet:
     titleTR: "Ceza Hukuku",
     titleEN: "Criminal Law",
     descriptionEN: "Expert criminal defence and legal advice in Turkish criminal proceedings — directly from Mannheim. Whether it's a summons, arrest warrant or Interpol notice: we guide you through the Turkish criminal justice system.",
-    seoTitleEN: "Turkish Criminal Law Mannheim | Summons & Arrest Warrant | Doğru Kanzlei",
-    seoDescriptionEN: "Received a summons, arrest warrant or Interpol notice from Turkey? Avukat Hasan Doğru represents Turkish-origin clients from Mannheim in Turkish criminal proceedings — without travel.",
+    seoTitleEN: "Turkish Criminal Defence Germany | Interpol Red Notice Lawyer | Doğru Kanzlei",
+    seoDescriptionEN: "Summons, arrest warrant, Interpol Red Notice or extradition request from Turkey? Turkish criminal defence from Germany without unnecessary travel.",
     expertiseTitleEN: "Why Doğru Kanzlei for Turkish Criminal Law?",
     contentEN: `Criminal Defence in Turkish Proceedings from Germany
 
@@ -675,12 +675,12 @@ What distinguishes us:
         answer: "Costs depend on the scope of proceedings, the number of instances and the complexity of the case. After an initial analysis we provide you with a transparent quote — no hidden costs."
       }
     ],
-    seoTitleDE: "Strafrecht Türkei Mannheim | Vorladung & Haftbefehl | Doğru Kanzlei",
-    seoDescriptionDE: "Vorladung, Haftbefehl oder Interpol-Ausschreibung aus der Türkei? Avukat Hasan Doğru vertritt türkischstämmige Mandanten aus Mannheim in türkischen Strafverfahren — ohne Reise.",
-    seoTitleTR: "Türk Ceza Hukuku Mannheim | Türkiye'den Mahkeme Celbi | Avukat Hasan Doğru",
-    seoDescriptionTR: "Türkiye'den mahkeme celbi, tutuklama müzekkeresi veya Interpol arama kararı mı aldınız? Avukat Hasan Doğru, Mannheim'daki Türk müvekkilleri Türk ceza davalarında temsil eder — Türkiye'ye seyahat etmeden.",
-    description: "Türk ceza davalarında uzman savunma ve hukuki danışmanlık — doğrudan Mannheim'dan. Mahkeme celbi, tutuklama müzekkeresi veya Interpol arama kararı olsun: Türk ceza yargısında yanınızdayız.",
-    descriptionDE: "Fachkundige Strafverteidigung und rechtliche Beratung in türkischen Strafverfahren — direkt aus Mannheim. Ob Vorladung, Haftbefehl oder Interpol-Ausschreibung: Wir begleiten Sie durch das türkische Strafjustizsystem.",
+    seoTitleDE: "Strafverteidiger türkisches Recht | Vorladung Türkei | Doğru Kanzlei",
+    seoDescriptionDE: "Vorladung Türkei Deutschland, Haftbefehl Türkei, Interpol Red Notice Anwalt oder Auslieferung Türkei Deutschland: türkisches Strafrecht ohne Reise klären.",
+    seoTitleTR: "Ceza Avukatı Almanya | Interpol Arama Bülteni | Hasan Doğru",
+    seoDescriptionTR: "Türkiye'den mahkeme celbi, tutuklama müzekkeresi, Interpol arama bülteni Almanya veya askerlik kaçağı Almanya avukat desteği: seyahatsiz takip.",
+    description: "Türkiye'deki ceza dosyalarında Almanya'dan savunma ve danışmanlık: mahkeme celbi, tutuklama müzekkeresi, Interpol arama bülteni, iade ve askerlik konularında statünüzü seyahat etmeden kontrol ediyoruz.",
+    descriptionDE: "Strafverteidiger türkisches Recht: Vorladung Türkei Deutschland, Haftbefehl Türkei, Interpol Red Notice oder Auslieferung Türkei Deutschland? Wir prüfen Ihren Status und begleiten türkische Strafverfahren ohne unnötige Reise.",
     detail: "CEZA SAVUNMASI · INTERPOL / KIRMIZI BÜLTEN · İADE",
     detailDE: "STRAFVERTEIDIGUNG · INTERPOL / ROTE ECKE · AUSLIEFERUNG",
     content: `Almanya'dan Türkiye'deki Ceza Davalarında Savunma
@@ -823,28 +823,28 @@ Was uns auszeichnet:
 - Zweiter Standort Ankara — direkter Zugang zu türkischen Strafgerichten und Behörden`,
     faqDE: [
       {
-        question: "Ich habe eine Vorladung aus der Türkei erhalten. Was soll ich tun?",
-        answer: "Handeln Sie nicht unüberlegt und reisen Sie auf keinen Fall in die Türkei, bevor Sie Ihren Status kennen. Kontaktieren Sie uns zuerst — bevor Sie auf die Vorladung antworten oder irgendwelche Schritte unternehmen. Wir analysieren die Situation, prüfen ob ein Haftbefehl oder Reiseverbot vorliegt und legen den sichersten Weg fest."
+        question: "Was tun bei einer Vorladung Türkei Deutschland?",
+        answer: "Reisen Sie nicht vorschnell in die Türkei und antworten Sie nicht ohne Prüfung. Wir analysieren die Vorladung, prüfen den Aktenstand und klären, ob ein Haftbefehl, Reiseverbot oder weiteres Risiko besteht."
       },
       {
-        question: "Kann ich in die Türkei einreisen, wenn gegen mich ein Verfahren läuft?",
-        answer: "Das hängt davon ab, ob ein Reiseverbot (Yurt Dışı Çıkış Yasağı) oder Haftbefehl (Tutuklama Müzekkeresi) vorliegt. In manchen Fällen ist die Einreise möglich, in anderen droht unmittelbare Festnahme am Flughafen. Wir prüfen Ihren Status, bevor Sie reisen — das ist in jedem Fall unverzichtbar."
+        question: "Wie prüfe ich einen Haftbefehl Türkei?",
+        answer: "Ein Haftbefehl Türkei sollte über anwaltliche Akteneinsicht und offizielle Wege geprüft werden. Wir klären, ob eine Tutuklama Müzekkeresi, ein Reiseverbot oder ein anderer Eintrag vorliegt und welche Schritte vor einer Reise sinnvoll sind."
       },
       {
-        question: "Kann ich in einem türkischen Strafverfahren vertreten werden, ohne selbst zu erscheinen?",
-        answer: "In den meisten Verfahren ja. Mit einer Prozessvollmacht (Vekaletname) vertreten wir Sie vor türkischen Strafgerichten. Ob eine persönliche Anwesenheit erforderlich ist, hängt vom Verfahrensstand, der Art des Delikts und dem Willen des Gerichts ab — wir klären das von Anfang an."
+        question: "Was macht ein Interpol Red Notice Anwalt?",
+        answer: "Ein Interpol Red Notice Anwalt prüft die Grundlage der Ausschreibung, bereitet Anträge auf Überprüfung, Sperrung oder Löschung vor und koordiniert die Verteidigung gegenüber Interpol, deutschen Stellen und türkischen Behörden."
       },
       {
-        question: "Was ist eine Interpol-Rote-Ecke und wie kann sie aufgehoben werden?",
-        answer: "Eine Red Notice ist ein internationaler Fahndungsaufruf, der in allen 196 Interpol-Mitgliedsstaaten gilt. Sie schränkt Ihre Reisefreiheit erheblich ein. Wir beantragen die Überprüfung und Löschung der Ausschreibung bei der Interpol-Kommission für die Kontrolle von Dateien (CCF) und vertreten Sie in diesem spezialisierten Verfahren."
+        question: "Wie läuft Auslieferung Türkei Deutschland ab?",
+        answer: "Bei Auslieferung Türkei Deutschland müssen deutsche Behörden und das türkische Strafverfahren parallel betrachtet werden. Wir prüfen den türkischen Hintergrund, koordinieren die Verteidigungsstrategie und klären, welche Unterlagen und Einwände relevant sind."
       },
       {
-        question: "Was passiert, wenn ich wegen des Militärdienstes gesucht werde?",
-        answer: "Wer als Bakaya (Fahnenflüchtiger) oder Yoklama Kaçağı (Erfassungsentzieher) registriert ist, riskiert bei der Einreise in die Türkei sofortige Festnahme. Wir klären Ihren Militärdienststatus über offizielle Kanäle, regeln offene Pflichten und ermöglichen Ihnen so eine sichere Einreise in die Türkei."
+        question: "Brauche ich einen Militärdienst Türkei Anwalt?",
+        answer: "Wenn Bakaya, Yoklama Kaçağı oder ein offener Militärdienststatus im Raum steht, sollte der Status vor jeder Türkei-Reise geprüft werden. Wir klären die Lage und besprechen die Optionen für eine sichere Lösung."
       },
       {
-        question: "Wie lange dauert ein türkisches Strafverfahren?",
-        answer: "Das hängt stark von der Art des Delikts, dem zuständigen Gericht und dem Verfahrensstand ab. Einfachere Verfahren können in 6–18 Monaten abgeschlossen werden, komplexe Fälle dauern mehrere Jahre. Wir informieren Sie realistisch und transparent über den Zeitrahmen Ihres konkreten Falls — ohne falsche Versprechen."
+        question: "Kann ich türkisches Strafrecht ohne Reise klären?",
+        answer: "Viele erste Schritte sind ohne Reise möglich: Statusprüfung, Akteneinsicht, Dokumentenprüfung, Vollmacht und strategische Vorbereitung. Ob eine persönliche Anwesenheit später nötig wird, hängt vom konkreten Verfahren ab."
       },
       {
         question: "Was kostet eine Strafverteidigung nach türkischem Recht?",
@@ -853,28 +853,28 @@ Was uns auszeichnet:
     ],
     faqTR: [
       {
-        question: "Türkiye'den mahkeme celbi aldım. Ne yapmalıyım?",
-        answer: "Aceleci davranmayın ve statünüzü öğrenmeden Türkiye'ye gitmeyin. Mahkeme celbine yanıt vermeden veya herhangi bir adım atmadan önce bize başvurun. Durumu analiz ediyor, tutuklama müzekkeresi ya da seyahat yasağı bulunup bulunmadığını kontrol ediyor ve en güvenli yolu belirliyoruz."
+        question: "Ceza avukatı Almanya'dan Türkiye'de beni temsil edebilir mi?",
+        answer: "Birçok Türk ceza dosyasında ilk değerlendirme, statü kontrolü, vekaletname ve savunma hazırlığı Almanya'dan yapılabilir. Kişisel katılım gerekip gerekmediği dosyanın aşamasına ve mahkemenin kararına bağlıdır."
       },
       {
-        question: "Hakkımda dava varken Türkiye'ye girebilir miyim?",
-        answer: "Bu, seyahat yasağı (Yurt Dışı Çıkış Yasağı) veya tutuklama müzekkeresi (Tutuklama Müzekkeresi) bulunup bulunmadığına bağlıdır. Bazı durumlarda giriş mümkünken bazılarında havalimanında anında gözaltı riski söz konusudur. Seyahat etmeden önce her durumda statünüzü kontrol ediyoruz — bu vazgeçilmezdir."
+        question: "Interpol arama bülteni Almanya'da ne anlama gelir?",
+        answer: "Interpol arama bülteni seyahat özgürlüğünüzü etkileyebilir ve sınır geçişlerinde gözaltı riskine yol açabilir. Bültenin hukuki dayanağını inceliyor, gerekli hallerde inceleme veya kaldırma başvuruları için strateji hazırlıyoruz."
       },
       {
-        question: "Türk ceza yargılamasında bizzat bulunmadan temsil edilebilir miyim?",
-        answer: "Pek çok davada evet. Dava vekaleti (Vekaletname) ile Türk ceza mahkemelerinde sizi temsil edebiliyoruz. Bizzat katılımın gerekip gerekmediği, davanın aşamasına, suçun niteliğine ve mahkemenin takdirine bağlıdır — bunu başından netleştiriyoruz."
+        question: "Tutuklama müzekkeresi varsa Türkiye'ye girebilir miyim?",
+        answer: "Tutuklama müzekkeresi veya seyahat yasağı varsa Türkiye'ye girişte havalimanında gözaltı riski doğabilir. Seyahat etmeden önce statünüzün avukat aracılığıyla kontrol edilmesi gerekir."
       },
       {
-        question: "Interpol Kırmızı Bülteni nedir ve nasıl kaldırılır?",
-        answer: "Kırmızı Bülten, tüm 196 Interpol üyesi ülkede geçerli uluslararası bir arama ilanıdır. Seyahat özgürlüğünüzü ciddi ölçüde kısıtlar. Interpol Dosyaların Denetim Komisyonu'na (CCF) başvurarak arama kararının incelenmesi ve kaldırılması için talepte bulunuyor, bu özel süreçte sizi temsil ediyoruz."
+        question: "Askerlik kaçağı Almanya avukat desteği ne sağlar?",
+        answer: "Askerlik kaçağı, bakaya veya yoklama kaçağı durumunda Türkiye'ye giriş riskleri ve resmi kayıtlar kontrol edilmelidir. Avukat desteğiyle statünüz netleştirilir ve sonraki adımlar planlanır."
       },
       {
-        question: "Askerlik nedeniyle aranıyorsam ne olur?",
-        answer: "Bakaya (firar) veya Yoklama Kaçağı (kayıt dışı kalma) olarak tescil edilmişseniz Türkiye'ye girişte anında gözaltı riskiyle karşılaşabilirsiniz. Resmi kanallar aracılığıyla askerlik statünüzü netleştiriyor, bekleyen yükümlülükleri çözüme kavuşturuyor ve güvenli Türkiye girişini mümkün kılıyoruz."
+        question: "Bakaya Almanya durumunda ne olur?",
+        answer: "Bakaya kaydı olan kişiler Türkiye'ye girişte idari veya adli risklerle karşılaşabilir. Önce resmi durumun tespit edilmesi, ardından yükümlülüklerin ve güvenli hareket planının belirlenmesi gerekir."
       },
       {
-        question: "Bir Türk ceza davası ne kadar sürer?",
-        answer: "Bu, suçun türüne, yetkili mahkemeye ve davanın aşamasına göre büyük farklılık gösterir. Daha basit davalar 6–18 ayda sonuçlanabilirken karmaşık davalar yıllarca sürebilir. Somut davanızın zaman çizelgesi konusunda gerçekçi ve şeffaf bilgi veriyoruz — gerçekçi olmayan vaatler yapmadan."
+        question: "Türkiye ceza davası Almanya'dan takip edilebilir mi?",
+        answer: "Evet, birçok işlem vekaletname, dijital dosya takibi ve avukat temsili ile Almanya'dan hazırlanabilir. Ancak duruşmaya katılım veya ifade gerekip gerekmediği dosyanın türüne göre ayrıca değerlendirilir."
       },
       {
         question: "Türk ceza savunmasının maliyeti nedir?",
@@ -890,9 +890,9 @@ Was uns auszeichnet:
     title: "Tanıma & Tenfiz",
     titleTR: "Tanıma ve Tenfiz",
     titleEN: "Recognition & Enforcement",
-    descriptionEN: "Specialist legal advice on the recognition and enforcement of foreign court decisions between Germany and Turkey — fully handled from Germany, without travel.",
-    seoTitleEN: "Recognition & Enforcement of Foreign Judgments | Germany-Turkey | Doğru Kanzlei",
-    seoDescriptionEN: "Have your German divorce recognised in Turkey — from Mannheim, without travel. Avukat Hasan Doğru manages the entire Tanıma ve Tenfiz procedure for you.",
+    descriptionEN: "Your German divorce is not automatically valid in Turkey. We handle recognition and enforcement of German divorce decisions in Turkey — fully from Germany, without travel.",
+    seoTitleEN: "Recognise German Divorce in Turkey | Tanima Tenfiz | Doğru Kanzlei",
+    seoDescriptionEN: "Still considered married in Turkey after a German divorce? We handle the Tanıma & Tenfiz procedure from Germany, without travel to Turkey.",
     expertiseTitleEN: "Why Doğru Kanzlei for Recognition & Enforcement?",
     contentEN: `Recognition & Enforcement — Having a German Divorce Recognised in Turkey
 
@@ -987,12 +987,12 @@ What distinguishes us:
         answer: "Costs consist of court fees, translation costs and legal fees. After an initial analysis of your case we provide a transparent quote — no hidden costs."
       }
     ],
-    seoTitleDE: "Tanıma & Tenfiz Mannheim | Urteil Türkei anerkennen | Doğru Kanzlei",
-    seoDescriptionDE: "Deutsche Scheidung in der Türkei anerkennen lassen — von Mannheim aus, ohne Reise. Avukat Hasan Doğru führt das Tanıma ve Tenfiz-Verfahren vollständig für Sie durch.",
-    seoTitleTR: "Tanıma ve Tenfiz Mannheim | Alman Boşanmasını Türkiye'de Tanıtmak | Avukat Hasan Doğru",
-    seoDescriptionTR: "Alman boşanma kararını Türkiye'de tanıtın — Mannheim'dan, Türkiye'ye gitmeden. Avukat Hasan Doğru, Tanıma ve Tenfiz davasını baştan sona sizin için yürütür.",
-    description: "Almanya ile Türkiye arasındaki yabancı mahkeme kararlarının tanınması ve tenfizinde uzman hukuki danışmanlık — Türkiye'ye seyahat etmeden.",
-    descriptionDE: "Spezialisierte rechtliche Beratung bei der Anerkennung und Vollstreckung ausländischer Gerichtsentscheidungen zwischen Deutschland und der Türkei — vollständig ohne Reise.",
+    seoTitleDE: "Deutsche Scheidung in der Türkei anerkennen | Doğru Kanzlei",
+    seoDescriptionDE: "Ihre Ehe gilt in der Türkei noch als bestehend? Wir führen das Tanıma-Verfahren vollständig durch — ohne Reise. Ankara Barosu · 5,0 Sterne · Jetzt anfragen.",
+    seoTitleTR: "Almanya'daki Boşanmayı Türkiye'de Tanıtmak | Tanıma Tenfiz | Hasan Doğru",
+    seoDescriptionTR: "Almanya'da boşandınız ama Türkiye'de hâlâ evli mi görünüyorsunuz? Tanıma ve Tenfiz sürecini Türkiye'ye gitmeden sizin için yürütüyoruz.",
+    description: "Almanya'da verilen boşanma kararları Türkiye'de kendiliğinden geçerli olmaz. Tanıma ve Tenfiz sürecini Almanya'dan, Türkiye'ye seyahat etmeden yürütüyoruz.",
+    descriptionDE: "Ihre deutsche Scheidung gilt in der Türkei nicht automatisch. Wir führen Tanıma und Tenfiz vollständig aus Deutschland heraus durch — ohne Reise in die Türkei.",
     detail: "Boşanma Tanıma Tenfiz · Türk Boşanmasının Tanınması · Gitmeden Tanıma Tenfiz · Süre ve Maliyet · Velayet Kararları · Evlat Edinme · Genel Mahkeme Kararları",
     detailDE: "Scheidungsanerkennung · Anerkennung türkischer Urteile · Tanıma Tenfiz (Reise nicht erforderlich) · Verfahrensdauer & Kosten · Sorgerechtsbeschlüsse · Adoptionsanerkennung · Urteilsanerkennung allgemein",
     content: `Tanıma ve Tenfiz — Alman Boşanmasını Türkiye'de Tanıtmak
@@ -1515,9 +1515,9 @@ Wir vertreten Ihre Interessen konsequent und verfolgen Ihre Forderungen in der T
     title: "Erbrecht",
     titleTR: "Miras Hukuku",
     titleEN: "Inheritance Law",
-    descriptionEN: "When a family member dies leaving assets in Turkey — real estate, bank accounts, land — families of Turkish origin face the complexity of two legal systems. We manage the entire Turkish inheritance process from Germany.",
-    seoTitleEN: "Turkish Inheritance Law Mannheim | Estate in Turkey | Doğru Kanzlei",
-    seoDescriptionEN: "When a family member leaves assets in Turkey — real estate, bank accounts, land — we manage the entire Turkish inheritance process from Germany. Avukat Hasan Doğru.",
+    descriptionEN: "Inherited property, land or bank accounts in Turkey? We manage Turkish inheritance law matters from Germany, including certificate of inheritance, rejection deadlines, tax and land registry transfer.",
+    seoTitleEN: "Turkish Inheritance Lawyer Germany | Estate in Turkey | Doğru Kanzlei",
+    seoDescriptionEN: "Turkish inheritance lawyer for heirs in Germany: certificate of inheritance, land registry transfer, inheritance rejection deadline, tax and compulsory share in Turkey.",
     expertiseTitleEN: "Why Doğru Kanzlei for Turkish Inheritance Law?",
     contentEN: `Inheritance Law — Turkish Inheritance Law from Mannheim
 
@@ -1590,12 +1590,12 @@ What distinguishes us:
         answer: "The duration depends on the complexity of the estate, whether there are disputes and the workload of the competent Turkish court. Straightforward cases can be concluded within a few months; contested inheritance disputes can take several years. We give you a realistic assessment for your specific situation."
       }
     ],
-    seoTitleDE: "Türkisches Erbrecht Mannheim | Veraset İlamı | Doğru Kanzlei",
-    seoDescriptionDE: "Erbschaft in der Türkei von Mannheim aus regeln — ohne Reise. Avukat Hasan Doğru berät türkischstämmige Familien zu Veraset İlamı, Tapu-Übertragung und türkischem Erbrecht.",
-    seoTitleTR: "Türk Miras Avukatı Almanya | Miras Hukuku Mannheim | Avukat Hasan Doğru",
-    seoDescriptionTR: "Türkiye'deki mirası Almanya'dan halledin — seyahat etmeden. Avukat Hasan Doğru, Mannheim'daki Türk ailelere Veraset İlamı, tapu devri ve miras hukuku konularında danışmanlık verir.",
-    description: "Miras Hukuku — Mannheim'da Türk Miras Hukuku. Bir yakınınız vefat ettiğinde ve Türkiye'de mülk, banka hesabı veya arazi bıraktığında — Mannheim, Heidelberg ve Rhein-Neckar bölgesindeki Türk aileler karmaşık bir görevle karşı karşıya kalır.",
-    descriptionDE: "Wenn ein Angehöriger stirbt und Vermögen in der Türkei hinterlässt — Immobilien, Bankkonten, Grundstücke — stehen türkischstämmige Familien in Mannheim, Heidelberg und dem Rhein-Neckar-Raum vor einer komplexen Aufgabe: Zwei Rechtssysteme, zwei Länder, oft wenig Zeit.",
+    seoTitleDE: "Erbrecht Türkei Anwalt | Erbschaft Türkei Deutschland | Doğru Kanzlei",
+    seoDescriptionDE: "Erbschaft in der Türkei aus Deutschland regeln: Erbschein Türkei beantragen, Erbausschlagung Türkei Frist, Erbschaftssteuer Türkei, Pflichtteil Türkei.",
+    seoTitleTR: "Miras Avukatı Almanya | Reddi Miras ve Saklı Pay Türkiye | Hasan Doğru",
+    seoDescriptionTR: "Miras avukatı Almanya: Türkiye'de miras kalan mal, veraset ilamı Almanya, reddi miras Almanya, saklı pay, tenkis davası ve veraset vergisi.",
+    description: "Türkiye'de miras kalan mal, tapu, banka hesabı veya borç mu var? Miras avukatı Almanya desteğiyle veraset ilamı, tapu devri, reddi miras, saklı pay ve veraset vergisi süreçlerini yürütüyoruz.",
+    descriptionDE: "Erbschaft Türkei Deutschland: Immobilien, Bankkonten oder Grundstücke in der Türkei geerbt? Wir regeln türkisches Erbrecht, Erbschein, Erbausschlagung, Pflichtteil und Erbschaftssteuer ohne Reise.",
     detail: "Veraset İlamı · Tapu Devri · Saklı Pay · Mirasın Reddi · İzale-i Şüyu · Veraset Vergisi",
     detailDE: "Erbschein · Grundbuchübertragung · Pflichtteil · Erbausschlagung · Teilungsklage · Erbschaftsteuer",
     expertiseTitleDE: "Warum Doğru Kanzlei für türkisches Erbrecht in Mannheim?",
@@ -1668,46 +1668,46 @@ Ein wirksames Testament nach türkischem Recht ist der beste Schutz vor spätere
 Vorweggenommene Erbfolge durch Schenkungen oder Erbverträge nach türkischem Recht — wir beraten Sie zur rechtssicheren Gestaltung und zu den steuerlichen Konsequenzen.`,
     faqDE: [
       {
-        question: "Was ist eine Veraset İlamı und wozu brauche ich sie?",
-        answer: "Die Veraset İlamı ist das türkische Erbschaftszeugnis. Es weist aus, wer nach türkischem Recht Erbe ist und zu welchem Anteil. Ohne dieses Dokument können Sie in der Türkei weder auf Bankkonten noch auf Immobilien zugreifen. Wir beantragen es für Sie — ohne dass Sie dafür in die Türkei reisen müssen."
+        question: "Wie kann ich einen Erbschein Türkei beantragen?",
+        answer: "Der türkische Erbschein heißt Veraset İlamı. Er weist aus, wer nach türkischem Recht Erbe ist und zu welchem Anteil. Ohne dieses Dokument können Sie in der Türkei meist weder auf Bankkonten noch auf Immobilien zugreifen. Wir beantragen den Erbschein Türkei für Sie, ohne dass Sie dafür reisen müssen."
       },
       {
-        question: "Wie lange habe ich Zeit, eine türkische Erbschaft anzunehmen oder auszuschlagen?",
-        answer: "Die Frist zur Erbausschlagung beträgt nach türkischem Recht 3 Monate ab Kenntnis des Erbfalls. Diese Frist ist streng — wer sie versäumt, gilt automatisch als Erbe, auch wenn Schulden vorhanden sind. Kontaktieren Sie uns so früh wie möglich."
+        question: "Wie lang ist die Erbausschlagung Türkei Frist?",
+        answer: "Die Frist zur Erbausschlagung in der Türkei beträgt nach türkischem Recht regelmäßig 3 Monate ab Kenntnis des Erbfalls. Diese Frist ist streng. Wer sie versäumt, kann als Erbe gelten und im schlimmsten Fall für Schulden des Erblassers haften."
       },
       {
         question: "Muss ich für das Erbverfahren in die Türkei reisen?",
-        answer: "Nein. Mit einer notariellen Vollmacht können wir das gesamte türkische Erbverfahren von Deutschland aus für Sie führen — Veraset İlamı, Grundbuchübertragung, Bankkonten, Erbschaftsteuer."
+        answer: "Nein. Mit einer notariellen Vollmacht können wir das türkische Erbverfahren von Deutschland aus für Sie führen, darunter Veraset İlamı, Grundbuchübertragung, Bankkonten, Erbschaftssteuer Türkei und gerichtliche Schritte."
       },
       {
-        question: "Gilt mein deutsches Testament auch in der Türkei?",
-        answer: "Nicht automatisch. Ein deutsches Testament muss in der Türkei anerkannt werden und darf das türkische Pflichtteilsrecht (Mahfuz Hisse) nicht verletzen. Wir prüfen die Wirksamkeit Ihres Testaments nach türkischem Recht und beraten Sie zu eventuell notwendigen Anpassungen."
+        question: "Was bedeutet Pflichtteil Türkei?",
+        answer: "Das türkische Erbrecht schützt bestimmte Angehörige durch Pflichtteilsrechte. Wenn Pflichtteilsberechtigte übergangen wurden oder Schenkungen den Pflichtteil verletzen, kann eine Tenkis Davası in Betracht kommen. Wir prüfen Ihre Ansprüche nach türkischem Recht."
       },
       {
-        question: "Was kostet das türkische Erbverfahren?",
-        answer: "Die Kosten hängen vom Umfang des Nachlasses und der Komplexität des Verfahrens ab. Wir erstellen Ihnen nach einer ersten Analyse ein transparentes Angebot — ohne versteckte Kosten."
+        question: "Welche Erbschaftssteuer Türkei fällt an?",
+        answer: "Bei Erbschaften in der Türkei kann Veraset ve İntikal Vergisi anfallen. Höhe, Fristen und Erklärungspflichten hängen vom Nachlass, Verwandtschaftsgrad und Wohnsitz ab. Wir prüfen die steuerlichen Pflichten im Rahmen des Erbverfahrens."
       }
     ],
     faqTR: [
       {
-        question: "Veraset İlamı nedir ve neden gereklidir?",
-        answer: "Veraset İlamı, Türk hukukuna göre kimin mirasçı olduğunu ve hangi oranda pay aldığını belgeleyen Türk mirasçılık belgesidir. Bu belge olmadan Türkiye'deki banka hesaplarına veya gayrimenkullere erişmek mümkün değildir. Türkiye'ye seyahat etmenize gerek kalmadan bu belgeyi sizin adınıza temin ediyoruz."
+        question: "Veraset ilamı Almanya'dan alınabilir mi?",
+        answer: "Evet. Veraset ilamı, Türk hukukuna göre kimin mirasçı olduğunu ve hangi oranda pay aldığını gösteren belgedir. Türkiye'deki banka hesapları, tapu ve miras işlemleri için gereklidir. Seyahat etmeden sizin adınıza süreci yürütebiliyoruz."
       },
       {
-        question: "Türk mirasını kabul etmek veya reddetmek için ne kadar sürem var?",
-        answer: "Türk hukukuna göre mirayı reddetme süresi, miras hakkının öğrenilmesinden itibaren 3 aydır. Bu süre kesindir — süreyi kaçıranlar, borç olsa bile otomatik olarak mirasçı sayılır. Mümkün olan en erken aşamada bizimle iletişime geçin."
+        question: "Reddi miras Almanya'dan yapılabilir mi?",
+        answer: "Evet, ancak süre çok önemlidir. Türk hukukuna göre reddi miras süresi genellikle mirasın öğrenilmesinden itibaren 3 aydır. Süre kaçırılırsa, borç olsa bile mirasçı sayılma riski doğabilir."
       },
       {
         question: "Miras işlemleri için Türkiye'ye gitmem gerekiyor mu?",
-        answer: "Hayır. Noter tasdikli bir vekaletname ile Veraset İlamı, tapu devri, banka hesapları ve veraset vergisi dahil tüm Türk miras sürecini Almanya'dan sizin adınıza yürütebiliyoruz."
+        answer: "Hayır. Noter tasdikli vekaletname ile veraset ilamı, tapu devri, banka hesapları, veraset vergisi ve mahkeme işlemleri dahil birçok Türk miras sürecini Almanya'dan yürütebiliyoruz."
       },
       {
-        question: "Alman vasiyetnamen Türkiye'de geçerli mi?",
-        answer: "Otomatik olarak geçerli değildir. Alman vasiyetnamesi Türkiye'de tanınmalı ve Türk saklı pay hukukunu (Mahfuz Hisse) ihlal etmemelidir. Vasiyetnamenizin Türk hukukuna göre geçerliliğini inceliyor ve gerektiğinde düzenleme yapılması konusunda sizi bilgilendiriyoruz."
+        question: "Saklı pay Almanya'da yaşayan mirasçılar için geçerli mi?",
+        answer: "Türkiye'deki miras malları bakımından Türk saklı pay kuralları önemli olabilir. Saklı pay ihlali varsa tenkis davası gündeme gelebilir. Dosyanıza göre hangi hakların ileri sürülebileceğini inceliyoruz."
       },
       {
-        question: "Türk miras işlemlerinin maliyeti nedir?",
-        answer: "Maliyet, miras kapsamına ve sürecin karmaşıklığına bağlıdır. İlk analiz sonrasında şeffaf bir teklif sunuyoruz — gizli ücret olmaksızın."
+        question: "Veraset vergisi Almanya'da yaşayan mirasçılar için nasıl işler?",
+        answer: "Türkiye'deki miraslarda veraset ve intikal vergisi gündeme gelebilir. Süreler, beyanname ve ödeme yükümlülükleri mirasın içeriğine ve mirasçının durumuna göre değişir. Bu süreci miras dosyasıyla birlikte değerlendiriyoruz."
       }
     ]
   },
