@@ -148,7 +148,13 @@ const sitemapPrerenderRepair: Plugin = {
           // Some non-React fallback states do not expose the ready marker.
         }
 
-        const html = await page.content()
+        let html = await page.content()
+        // GTM injects its loader script at runtime. Prerender snapshots should keep
+        // the canonical snippet, not serialize the injected script a second time.
+        html = html.replace(
+          /<script\b[^>]*src=["']https:\/\/www\.googletagmanager\.com\/gtm\.js\?id=GTM-TVTXQ7M7[^"']*["'][^>]*><\/script>/g,
+          ''
+        )
         const outputPath = join(buildDir, route, 'index.html')
         fs.mkdirSync(path.dirname(outputPath), { recursive: true })
         fs.writeFileSync(outputPath, html)
