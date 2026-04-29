@@ -219,7 +219,6 @@ export function Footer() {
                  <Mail size={14} color="#8B6E2A" style={{ marginTop: 4 }} />
                  <div style={{ display: "flex", flexDirection: "column", gap: 4 }}>
                    <a href="mailto:info@hasandogru.de" style={{ color: "inherit", textDecoration: "none" }}>info@hasandogru.de</a>
-                   <a href="mailto:Avukat.hasandogru@outlook.de" style={{ color: "inherit", textDecoration: "none" }}>Avukat.hasandogru@outlook.de</a>
                  </div>
                </div>
                <div style={{ display: "flex", alignItems: "center", gap: 10, marginBottom: 14 }}>

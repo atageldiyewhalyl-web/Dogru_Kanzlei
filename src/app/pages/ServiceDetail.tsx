@@ -76,8 +76,6 @@ export function ServiceDetail() {
   usePrerender(!!service);
 
   const servicesSegment = language === 'de' ? 'leistungen' : language === 'tr' ? 'hizmetler' : 'services';
-  const altLang = language === 'de' ? 'tr' : language === 'tr' ? 'de' : 'de';
-  const altServicesSegment = altLang === 'de' ? 'leistungen' : 'hizmetler';
 
   useSEO({
     title: service
@@ -98,10 +96,14 @@ export function ServiceDetail() {
     canonical: service 
       ? `${SITE_URL}/${language}/${servicesSegment}/${language === 'de' ? service.slugDE : language === 'tr' ? service.slugTR : service.slugDE}` 
       : undefined,
-    alternateLang: service ? {
-      lang: altLang,
-      href: `${SITE_URL}/${altLang}/${altServicesSegment}/${altLang === 'de' ? service.slugDE : service.slugTR}`,
-    } : undefined,
+    alternateLangs: service ? [
+      { lang: 'de', href: `${SITE_URL}/de/leistungen/${service.slugDE}` },
+      { lang: 'de-DE', href: `${SITE_URL}/de/leistungen/${service.slugDE}` },
+      { lang: 'de-CH', href: `${SITE_URL}/de/leistungen/${service.slugDE}` },
+      { lang: 'de-AT', href: `${SITE_URL}/de/leistungen/${service.slugDE}` },
+      { lang: 'tr', href: `${SITE_URL}/tr/hizmetler/${service.slugTR}` },
+      { lang: 'en', href: `${SITE_URL}/en/services/${service.slugDE}` },
+    ] : undefined,
     xDefault: service ? `${SITE_URL}/de/leistungen/${service.slugDE}` : undefined,
   });
 
@@ -118,7 +120,7 @@ export function ServiceDetail() {
     );
   }
 
-  const currentIndex = services.findIndex((s) => s.id === id);
+  const currentIndex = services.findIndex((s) => s.id === service.id);
   const nextService = services[(currentIndex + 1) % services.length];
   const prevService = services[(currentIndex - 1 + services.length) % services.length];
 
@@ -161,7 +163,7 @@ export function ServiceDetail() {
       )
       : isTanimaLandingPage
       ? familyLawText(
-        'Deutsche Scheidung in der Türkei anerkennen lassen?',
+        'Scheidung Türkei anerkennen lassen?',
         'Almanya’daki boşanmanız Türkiye’de hâlâ geçerli değil mi?',
         'Need your German divorce recognised in Turkey?'
       )
@@ -428,7 +430,7 @@ export function ServiceDetail() {
   ];
   const tanimaOutcomes = [
     familyLawText('Meine Scheidung gilt nicht in der Türkei', 'Almanya’da boşandım, Türkiye’de geçerli mi?', 'My German divorce is not valid in Turkey'),
-    familyLawText('Deutsche Scheidung in der Türkei anerkennen', 'Alman boşanmasını Türkiye’de tanıtmak', 'Recognise a German divorce in Turkey'),
+    familyLawText('Scheidung Türkei anerkennen', 'Alman boşanmasını Türkiye’de tanıtmak', 'Recognise a German divorce in Turkey'),
     familyLawText('Tanıma oder Tenfiz: welchen Weg brauche ich?', 'Tanıma mı Tenfiz mi gerekiyor?', 'Tanıma or Tenfiz: which route do I need?'),
     familyLawText('Ohne Reise den Personenstand klären', 'Seyahate gerek kalmadan nüfus kaydını düzeltmek', 'Fix marital status without travelling')
   ];
@@ -953,7 +955,7 @@ export function ServiceDetail() {
       ? familyLawText('Die Frist zur Erbausschlagung in der Türkei beträgt 3 Monate.', 'Türkiye’de reddi miras süresi 3 aydır.', 'The deadline to reject an inheritance in Turkey is 3 months.')
     : isVollmachtLandingPage
       ? familyLawText('Apostille beantragen ist nicht dasselbe wie eine verwendbare Türkei-Vollmacht.', 'Apostil almak, Türkiye’de kullanılabilir vekaletname hazırlamakla aynı şey değildir.', 'Getting an apostille is not the same as preparing a usable Turkey power of attorney.')
-    : familyLawText('Deutsche Scheidung in der Türkei anerkennen lassen?', 'Almanya’daki boşanma kararınız Türkiye’de geçerli mi?', 'Need your German divorce recognised in Turkey?');
+    : familyLawText('Scheidung Türkei anerkennen lassen?', 'Almanya’daki boşanma kararınız Türkiye’de geçerli mi?', 'Need your German divorce recognised in Turkey?');
   const landingInlineText = isTanimaLandingPage
     ? familyLawText(
       'Das kann bei Wiederheirat, Erbschaft, Immobilien, Bankgeschäften oder Unterhalt zu echten Folgeproblemen führen. Genau deshalb ist die Anerkennung nicht nur Formalität, sondern oft der nächste notwendige Schritt nach der Scheidung in Deutschland.',
@@ -1121,7 +1123,7 @@ export function ServiceDetail() {
           {language === 'de' ? 'Weitere Fachgebiete' : language === 'tr' ? <span lang="tr">Diğer Uzmanlıklar</span> : 'Other Practice Areas'}
         </h4>
         <div className="space-y-3">
-          {services.filter(s => s.id !== id).map((s) => (
+          {services.filter(s => s.id !== service.id).map((s) => (
             <Link
               key={s.id}
               to={paths.service(s.id)}

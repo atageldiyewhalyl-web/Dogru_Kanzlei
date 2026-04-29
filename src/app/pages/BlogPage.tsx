@@ -26,14 +26,14 @@ export function BlogPage() {
         : 'Legal updates and expert articles on Turkish and German law. Read about family law, inheritance law, and more.',
     lang: language,
     canonical: `${SITE_URL}/${language}/blog`,
-    alternateLang: {
-      lang: language === 'de' ? 'tr' : language === 'tr' ? 'de' : 'de',
-      href: language === 'de'
-        ? `${SITE_URL}/tr/blog`
-        : language === 'tr'
-          ? `${SITE_URL}/de/blog`
-          : `${SITE_URL}/de/blog`,
-    },
+    alternateLangs: [
+      { lang: 'de', href: `${SITE_URL}/de/blog` },
+      { lang: 'de-DE', href: `${SITE_URL}/de/blog` },
+      { lang: 'de-CH', href: `${SITE_URL}/de/blog` },
+      { lang: 'de-AT', href: `${SITE_URL}/de/blog` },
+      { lang: 'tr', href: `${SITE_URL}/tr/blog` },
+      { lang: 'en', href: `${SITE_URL}/en/blog` },
+    ],
     xDefault: `${SITE_URL}/de/blog`,
   });
 

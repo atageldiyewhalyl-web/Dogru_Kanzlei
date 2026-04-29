@@ -125,7 +125,7 @@ export const translations = {
     blog_read_more: "Read More",
 
     // Footer
-    footer_description: "Your legal bridge between Germany and Turkey. Professional advice with over 15 years of experience.",
+    footer_description: "Your legal bridge between Germany and Turkey. Professional advice with long-standing professional and legal experience.",
     footer_quick_links: "Quick Links",
     footer_contact_info: "Contact Information",
     footer_legal: "Legal",
@@ -257,7 +257,7 @@ export const translations = {
     blog_read_more: "Devamını Oku",
 
     // Footer
-    footer_description: "Almanya ve Türkiye arasındaki hukuki köprünüz. 15 yılı aşkın deneyimle profesyonel danışmanlık.",
+    footer_description: "Almanya ve Türkiye arasındaki hukuki köprünüz. Uzun yıllara dayanan mesleki ve hukuki deneyimle profesyonel danışmanlık.",
     footer_quick_links: "Hızlı Bağlantılar",
     footer_contact_info: "İletişim Bilgileri",
     footer_legal: "Yasal",
@@ -389,7 +389,7 @@ export const translations = {
     blog_read_more: "Weiterlesen",
 
     // Footer
-    footer_description: "Ihre rechtliche Brücke zwischen Deutschland und der Türkei. Professionelle Beratung mit über 15 Jahren Erfahrung.",
+    footer_description: "Ihre rechtliche Brücke zwischen Deutschland und der Türkei. Professionelle Beratung mit langjähriger beruflicher und juristischer Erfahrung.",
     footer_quick_links: "Schnelllinks",
     footer_contact_info: "Kontaktinformationen",
     footer_legal: "Rechtliches",

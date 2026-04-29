@@ -675,12 +675,12 @@ What distinguishes us:
         answer: "Costs depend on the scope of proceedings, the number of instances and the complexity of the case. After an initial analysis we provide you with a transparent quote — no hidden costs."
       }
     ],
-    seoTitleDE: "Strafverteidiger türkisches Recht | Vorladung Türkei | Doğru Kanzlei",
-    seoDescriptionDE: "Vorladung Türkei Deutschland, Haftbefehl Türkei, Interpol Red Notice Anwalt oder Auslieferung Türkei Deutschland: türkisches Strafrecht ohne Reise klären.",
+    seoTitleDE: "Strafrecht Türkei Anwalt Deutschland | Doğru Kanzlei",
+    seoDescriptionDE: "Strafrecht Türkei Anwalt Deutschland: Vorladung, Haftbefehl, Interpol Red Notice oder Auslieferung Türkei Deutschland ohne unnötige Reise klären.",
     seoTitleTR: "Ceza Avukatı Almanya | Interpol Arama Bülteni | Hasan Doğru",
     seoDescriptionTR: "Türkiye'den mahkeme celbi, tutuklama müzekkeresi, Interpol arama bülteni Almanya veya askerlik kaçağı Almanya avukat desteği: seyahatsiz takip.",
     description: "Türkiye'deki ceza dosyalarında Almanya'dan savunma ve danışmanlık: mahkeme celbi, tutuklama müzekkeresi, Interpol arama bülteni, iade ve askerlik konularında statünüzü seyahat etmeden kontrol ediyoruz.",
-    descriptionDE: "Strafverteidiger türkisches Recht: Vorladung Türkei Deutschland, Haftbefehl Türkei, Interpol Red Notice oder Auslieferung Türkei Deutschland? Wir prüfen Ihren Status und begleiten türkische Strafverfahren ohne unnötige Reise.",
+    descriptionDE: "Strafrecht Türkei Anwalt Deutschland: Vorladung Türkei Deutschland, Haftbefehl Türkei, Interpol Red Notice oder Auslieferung Türkei Deutschland? Wir prüfen Ihren Status und begleiten türkische Strafverfahren ohne unnötige Reise.",
     detail: "CEZA SAVUNMASI · INTERPOL / KIRMIZI BÜLTEN · İADE",
     detailDE: "STRAFVERTEIDIGUNG · INTERPOL / ROTE ECKE · AUSLIEFERUNG",
     content: `Almanya'dan Türkiye'deki Ceza Davalarında Savunma
@@ -752,11 +752,13 @@ Bizi farklı kılan:
 - Türkçe ve Almanca danışmanlık
 - Mannheim'da yüz yüze görüşme imkânı
 - Ankara'da ikinci ofis — Türk ceza mahkemeleri ve makamlarına doğrudan erişim`,
-    contentDE: `Strafverteidigung in der Türkei aus Deutschland
+    contentDE: `Strafrecht Türkei Anwalt Deutschland — Strafverteidigung in der Türkei aus Deutschland
 
 Türkisches Strafrecht für Auslandstürken — Was tun bei Vorladung oder Haftbefehl?
 
 Wenn Sie in Mannheim, Heidelberg oder dem Rhein-Neckar-Raum leben und eine Vorladung, einen Haftbefehl oder eine Interpol-Ausschreibung aus der Türkei erhalten haben, stehen Sie vor einer ernsthaften rechtlichen Herausforderung. Das türkische Strafrecht unterscheidet sich grundlegend vom deutschen — ohne fachkundige Begleitung riskieren Sie schwerwiegende Konsequenzen, auch ohne jemals in die Türkei zu reisen.
+
+Als Strafrecht Türkei Anwalt Deutschland begleiten wir Mandanten in Deutschland bei türkischen Strafverfahren, Akteneinsicht, Statusprüfung, Verteidigungsstrategie und Kommunikation mit türkischen Strafgerichten.
 
 Ein laufendes Strafverfahren in der Türkei kann weitreichende Folgen haben: Einschränkungen bei der Passverlängerung, Probleme bei der Einreise in die Türkei, Auslieferungsanträge oder Einträge im internationalen Fahndungssystem (Interpol). Zeit ist dabei entscheidend — je früher Sie handeln, desto besser stehen Ihre Chancen.
 
@@ -987,14 +989,14 @@ What distinguishes us:
         answer: "Costs consist of court fees, translation costs and legal fees. After an initial analysis of your case we provide a transparent quote — no hidden costs."
       }
     ],
-    seoTitleDE: "Deutsche Scheidung in der Türkei anerkennen | Doğru Kanzlei",
-    seoDescriptionDE: "Ihre Ehe gilt in der Türkei noch als bestehend? Wir führen das Tanıma-Verfahren vollständig durch — ohne Reise. Ankara Barosu · 5,0 Sterne · Jetzt anfragen.",
+    seoTitleDE: "Scheidung Türkei anerkennen Anwalt | Tanıma Tenfiz Anwalt Deutschland",
+    seoDescriptionDE: "Scheidung Türkei anerkennen Anwalt und Tanıma Tenfiz Anwalt Deutschland: Wir führen das Anerkennungsverfahren für deutsche Scheidungsurteile vollständig durch — ohne Reise.",
     seoTitleTR: "Almanya'daki Boşanmayı Türkiye'de Tanıtmak | Tanıma Tenfiz | Hasan Doğru",
     seoDescriptionTR: "Almanya'da boşandınız ama Türkiye'de hâlâ evli mi görünüyorsunuz? Tanıma ve Tenfiz sürecini Türkiye'ye gitmeden sizin için yürütüyoruz.",
     description: "Almanya'da verilen boşanma kararları Türkiye'de kendiliğinden geçerli olmaz. Tanıma ve Tenfiz sürecini Almanya'dan, Türkiye'ye seyahat etmeden yürütüyoruz.",
     descriptionDE: "Ihre deutsche Scheidung gilt in der Türkei nicht automatisch. Wir führen Tanıma und Tenfiz vollständig aus Deutschland heraus durch — ohne Reise in die Türkei.",
     detail: "Boşanma Tanıma Tenfiz · Türk Boşanmasının Tanınması · Gitmeden Tanıma Tenfiz · Süre ve Maliyet · Velayet Kararları · Evlat Edinme · Genel Mahkeme Kararları",
-    detailDE: "Scheidungsanerkennung · Anerkennung türkischer Urteile · Tanıma Tenfiz (Reise nicht erforderlich) · Verfahrensdauer & Kosten · Sorgerechtsbeschlüsse · Adoptionsanerkennung · Urteilsanerkennung allgemein",
+    detailDE: "Scheidung Türkei anerkennen Anwalt · Tanıma Tenfiz Anwalt Deutschland · Anerkennung türkischer Urteile · Reise nicht erforderlich · Verfahrensdauer & Kosten · Sorgerechtsbeschlüsse · Adoptionsanerkennung",
     content: `Tanıma ve Tenfiz — Alman Boşanmasını Türkiye'de Tanıtmak
 
 Yabancı mahkeme kararları Türkiye'de kendiliğinden geçerli olmaz — biz geçerli hale getiriyoruz.
@@ -1059,11 +1061,13 @@ Bizi farklı kılan:
 - Türkçe ve Almanca danışmanlık
 - Mannheim'da yüz yüze görüşme imkânı
 - Ankara'da ikinci ofis — Türk mahkemeleriyle doğrudan iş birliği`,
-    contentDE: `Tanıma ve Tenfiz — Deutsche Scheidung in der Türkei anerkennen lassen
+    contentDE: `Tanıma ve Tenfiz — Scheidung Türkei anerkennen Anwalt
 
 Ausländische Urteile gelten in der Türkei nicht automatisch — wir machen sie rechtswirksam.
 
 Wenn Ihre Ehe in Deutschland geschieden wurde, entfaltet dieses Urteil in der Türkei nicht automatisch seine Wirkung. Damit die Scheidung auch nach türkischem Recht als wirksam gilt, ist ein gesondertes gerichtliches Verfahren erforderlich — die sogenannte Tanıma ve Tenfiz (Anerkennung und Vollstreckung).
+
+Als Scheidung Türkei anerkennen Anwalt und Tanıma Tenfiz Anwalt Deutschland begleiten wir Mandanten aus Deutschland bei der Anerkennung deutscher Scheidungsurteile in der Türkei — von der Dokumentenprüfung bis zur rechtskräftigen Eintragung.
 
 Für türkischstämmige Familien in Mannheim, Heidelberg und dem Rhein-Neckar-Raum ist dieses Verfahren oft unbekannt — mit weitreichenden Konsequenzen. Ohne Tanıma gilt Ihre Ehe vor türkischen Behörden weiterhin als bestehend. Das kann bei einer erneuten Heirat, bei erbrechtlichen Fragen oder bei der Übertragung von Vermögenswerten in der Türkei zu erheblichen Problemen führen.
 

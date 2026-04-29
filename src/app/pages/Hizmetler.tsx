@@ -28,14 +28,14 @@ export function Hizmetler() {
         : 'Legal advice in Turkish family law, inheritance law, criminal law and cross-border matters. Doğru Kanzlei in Mannheim and Ankara.',
     lang: language,
     canonical: `${SITE_URL}/${language}/${servicesPath}`,
-    alternateLang: {
-      lang: language === 'de' ? 'tr' : language === 'tr' ? 'de' : 'de',
-      href: language === 'de'
-        ? `${SITE_URL}/tr/hizmetler`
-        : language === 'tr'
-          ? `${SITE_URL}/de/leistungen`
-          : `${SITE_URL}/de/leistungen`,
-    },
+    alternateLangs: [
+      { lang: 'de', href: `${SITE_URL}/de/leistungen` },
+      { lang: 'de-DE', href: `${SITE_URL}/de/leistungen` },
+      { lang: 'de-CH', href: `${SITE_URL}/de/leistungen` },
+      { lang: 'de-AT', href: `${SITE_URL}/de/leistungen` },
+      { lang: 'tr', href: `${SITE_URL}/tr/hizmetler` },
+      { lang: 'en', href: `${SITE_URL}/en/services` },
+    ],
     xDefault: `${SITE_URL}/de/leistungen`,
   });
 

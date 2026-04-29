@@ -6,7 +6,7 @@ import { useEffect, useRef } from "react";
 
 // Mobile background images
 import tanimaImg from "@/assets/services/tanima.avif";
-import migrationImg from "@/assets/services/migration.avif";
+import familyLawImg from "@/assets/blog_divorce.png";
 import inheritanceImg from "@/assets/services/inheritance.avif";
 import custodyImg from "@/assets/services/custody.avif";
 import criminalImg from "@/assets/services/criminal.avif";
@@ -55,7 +55,7 @@ export function PracticeAreas() {
   useFadeInOnScroll(gridRef);
 
   // Mapping services to specific layout positions for the bento grid
-  const migrations = services.find(s => s.id === "migrationsrecht");
+  const familyLaw = services.find(s => s.id === "familienrecht");
   const tanima = services.find(s => s.id === "tanima-ve-tenfiz");
   const straf = services.find(s => s.id === "strafrecht");
   const erb = services.find(s => s.id === "erbrecht");
@@ -121,22 +121,22 @@ export function PracticeAreas() {
             </Link>
           )}
 
-          {/* 2. Migrationsrecht: Small Grey (1/4 width) */}
-          {migrations && (
-            <Link to={paths.service(migrations.id)} className="md:col-span-1 group block">
+          {/* 2. Familienrecht: Small Grey (1/4 width) */}
+          {familyLaw && (
+            <Link to={paths.service(familyLaw.id)} className="md:col-span-1 group block">
               <div className="fade-in-card h-full bg-[#F2F2F0] p-8 flex flex-col justify-center relative transition-all duration-500 hover:bg-[#ebebe9] overflow-hidden">
                 {/* Mobile Background */}
                 <div className="md:hidden absolute inset-0 z-0" aria-hidden="true">
-                  <img src={migrationImg} alt="" width={600} height={400} loading="lazy" decoding="async" className="w-full h-full object-cover opacity-60" />
+                  <img src={familyLawImg} alt="" width={600} height={400} loading="lazy" decoding="async" className="w-full h-full object-cover opacity-60" />
                   <div className="absolute inset-0 bg-gradient-to-t from-[#1C3829] via-[#1C3829]/70 to-transparent" />
                 </div>
 
                 <div className="relative z-10">
                   <h3 className="font-serif text-xl text-white md:text-[#1C3829] mb-4">
-                    {language === "tr" ? migrations.titleTR : language === "en" ? (migrations as any).titleEN ?? migrations.title : migrations.title}
+                    {language === "tr" ? familyLaw.titleTR : language === "en" ? (familyLaw as any).titleEN ?? familyLaw.title : familyLaw.title}
                   </h3>
                   <p className="font-sans text-[13px] text-white/90 md:text-[#6a6a6a] leading-relaxed font-light line-clamp-4">
-                    {language === "tr" ? migrations.description : language === "en" ? (migrations as any).descriptionEN ?? migrations.descriptionDE : migrations.descriptionDE}
+                    {language === "tr" ? familyLaw.description : language === "en" ? (familyLaw as any).descriptionEN ?? familyLaw.descriptionDE : familyLaw.descriptionDE}
                   </p>
                   <div className="mt-6 text-white md:text-[#1C3829] group-hover:text-[#B8963E] transition-all duration-500 group-hover:translate-x-1">
                     <ArrowRight size={18} strokeWidth={1} aria-hidden="true" />

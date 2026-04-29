@@ -306,7 +306,6 @@ export function Navbar() {
               {language === 'de' ? 'Direkter Kontakt' : language === 'tr' ? 'Doğrudan İletişim' : 'Direct Contact'}
             </p>
             <p className="font-sans text-white mb-1">info@hasandogru.de</p>
-            <p className="font-sans text-white mb-2">Avukat.hasandogru@outlook.de</p>
             <p className="font-sans text-white mb-8">+4917661221210</p>
             <button
               onClick={() => window.open(WHATSAPP_URL, "_blank")}

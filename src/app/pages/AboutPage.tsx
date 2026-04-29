@@ -26,14 +26,14 @@ export function AboutPage() {
         : 'Learn about Avukat Hasan Doğru, dual-licensed Turkish law specialist with offices in Mannheim and Ankara.',
     lang: language,
     canonical: `${SITE_URL}/${language}/${aboutPath}`,
-    alternateLang: {
-      lang: language === 'de' ? 'tr' : language === 'tr' ? 'de' : 'de',
-      href: language === 'de'
-        ? `${SITE_URL}/tr/hakkimizda`
-        : language === 'tr'
-          ? `${SITE_URL}/de/ueber-uns`
-          : `${SITE_URL}/de/ueber-uns`,
-    },
+    alternateLangs: [
+      { lang: 'de', href: `${SITE_URL}/de/ueber-uns` },
+      { lang: 'de-DE', href: `${SITE_URL}/de/ueber-uns` },
+      { lang: 'de-CH', href: `${SITE_URL}/de/ueber-uns` },
+      { lang: 'de-AT', href: `${SITE_URL}/de/ueber-uns` },
+      { lang: 'tr', href: `${SITE_URL}/tr/hakkimizda` },
+      { lang: 'en', href: `${SITE_URL}/en/about` },
+    ],
     xDefault: `${SITE_URL}/de/ueber-uns`,
   });
 

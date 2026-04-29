@@ -6,7 +6,6 @@ import { useEffect } from "react";
 import { LanguageProvider } from "../context/LanguageContext";
 import { ConsentProvider } from "../context/ConsentContext";
 import { CookieBanner } from "./CookieBanner";
-import { SchemaOrg } from "./SchemaOrg";
 
 export function Layout() {
   const { pathname } = useLocation();
@@ -44,7 +43,6 @@ export function Layout() {
           }}
         >
           <ScrollRestoration />
-          <SchemaOrg />
           <Navbar />
           <main style={{ flex: 1 }}>
             <Outlet />

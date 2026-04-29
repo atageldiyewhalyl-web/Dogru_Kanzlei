@@ -89,10 +89,14 @@ export function Home() {
         : 'Turkish law specialist in Mannheim advising Turkish-speaking families in Germany, Switzerland and Austria on divorce, inheritance and Turkish family law — without travelling to Turkey.',
     lang: language,
     canonical: `${SITE_URL}/${language}`,
-    alternateLang: {
-      lang: language === 'de' ? 'tr' : language === 'tr' ? 'de' : 'de',
-      href: language === 'de' ? `${SITE_URL}/tr` : language === 'tr' ? `${SITE_URL}/de` : `${SITE_URL}/de`,
-    },
+    alternateLangs: [
+      { lang: 'de', href: `${SITE_URL}/de` },
+      { lang: 'de-DE', href: `${SITE_URL}/de` },
+      { lang: 'de-CH', href: `${SITE_URL}/de` },
+      { lang: 'de-AT', href: `${SITE_URL}/de` },
+      { lang: 'tr', href: `${SITE_URL}/tr` },
+      { lang: 'en', href: `${SITE_URL}/en` },
+    ],
     xDefault: `${SITE_URL}/de`,
   });
 

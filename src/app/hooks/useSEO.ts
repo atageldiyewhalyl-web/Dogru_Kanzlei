@@ -72,12 +72,16 @@ export function useSEO(config: SEOConfig) {
     setMetaTag('og:type', config.ogType || 'website');
     const ogLocale = config.lang === 'de' ? 'de_DE' : config.lang === 'tr' ? 'tr_TR' : 'en_GB';
     setMetaTag('og:locale', ogLocale);
-    // Set alternates for the other two locales
-    if (config.lang === 'en') {
-      setMetaTag('og:locale:alternate', 'de_DE');
-    } else {
-      setMetaTag('og:locale:alternate', config.lang === 'de' ? 'tr_TR' : 'de_DE');
-    }
+    document.querySelectorAll('meta[property="og:locale:alternate"]').forEach((el) => el.remove());
+    const localeMap = { de: 'de_DE', tr: 'tr_TR', en: 'en_GB' } as const;
+    (['de', 'tr', 'en'] as const)
+      .filter((lang) => lang !== config.lang)
+      .forEach((lang) => {
+        const el = document.createElement('meta');
+        el.setAttribute('property', 'og:locale:alternate');
+        el.content = localeMap[lang];
+        document.head.appendChild(el);
+      });
     setMetaTag('og:site_name', 'Doğru Kanzlei');
     const defaultOgImage = `${SITE_URL}/logo.png`;
     const rawOgImage = config.ogImage || defaultOgImage;

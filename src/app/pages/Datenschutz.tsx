@@ -62,7 +62,7 @@ export function Datenschutz() {
                 Verantwortlich für die Datenverarbeitung auf dieser Website ist:<br />
                 Hasan Doğru<br />
                 R1 2-3, 68161 Mannheim<br />
-                E-Mail: info@hasandogru.de, Avukat.hasandogru@outlook.de<br />
+                E-Mail: info@hasandogru.de<br />
                 Telefon: +49 176 61221210
               </p>
 
@@ -139,7 +139,7 @@ export function Datenschutz() {
                 Bu web sitesindeki veri işlemeden sorumlu olan kişi:<br />
                 Hasan Doğru<br />
                 R1 2-3, 68161 Mannheim<br />
-                E-posta: info@hasandogru.de, Avukat.hasandogru@outlook.de<br />
+                E-posta: info@hasandogru.de<br />
                 Telefon: +49 176 61221210
               </p>
 
