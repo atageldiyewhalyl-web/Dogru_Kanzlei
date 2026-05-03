@@ -62,6 +62,9 @@ export function BlogPost() {
   // Find post by localized slug or legacy slug
   const post = blogPosts.find((p) => p.slugDE === slug || p.slugTR === slug || p.slugEN === slug || p.slug === slug);
   const hasEnglishContent = Boolean(post?.slugEN && post?.contentEN?.trim());
+  const hasEnglishAlternate = Boolean(
+    post?.slugEN && (hasEnglishContent || post.slugTR === 'almanya-ortak-velayet-turkiye-tenfiz')
+  );
   const isAvailable = Boolean(post && (language !== 'en' || hasEnglishContent));
 
   // Signal ready to prerenderer only if post is found
@@ -70,6 +73,13 @@ export function BlogPost() {
   const altLang = language === 'de' ? 'tr' : 'de';
   const currentCategory = post ? (language === 'de' ? post.categoryDE : language === 'tr' ? post.category : post.categoryEN) : '';
   const currentMetaTitle = post ? (language === 'de' ? post.metaTitleDE : language === 'tr' ? post.metaTitleTR : post.metaTitleEN) : undefined;
+  const currentOgTitle = post?.slugTR === 'almanya-ortak-velayet-turkiye-tenfiz'
+    ? language === 'de'
+      ? 'Gemeinsames Sorgerecht aus Deutschland: Anerkennung in der Türkei 2026'
+      : language === 'tr'
+        ? "Almanya'dan Verilen Ortak Velayet Kararı Türkiye'de Tenfiz Edilir mi? 2026"
+        : 'Joint Custody from Germany: Does It Apply in Turkey? (2026 Guide)'
+    : undefined;
   const currentSchemaHeadline = post ? (language === 'de' ? post.schemaHeadlineDE : language === 'tr' ? post.schemaHeadlineTR : post.schemaHeadlineEN) : undefined;
   const currentPublishedAt = post
     ? (language === 'de'
@@ -96,6 +106,8 @@ export function BlogPost() {
     ? `${SITE_URL}/assets/debt_collection_law-BB5vtc8j.png`
     : post?.slugTR === 'almanya-turkiye-miras-hukuku-rehberi'
       ? `${SITE_URL}/assets/inheritance_fraud_law-BxjZQ9m1.png`
+      : post?.slugTR === 'almanya-ortak-velayet-turkiye-tenfiz'
+        ? `${SITE_URL}/assets/joint_custody_law-B-FOZxII.png`
       : post?.slugTR === 'veraset-ilami-nedir-nasil-alinir' && language !== 'tr'
         ? `${SITE_URL}/assets/inheritance_fraud_law-BxjZQ9m1.png`
       : post?.image;
@@ -106,6 +118,8 @@ export function BlogPost() {
       : post?.slugTR === 'veraset-ilami-nedir-nasil-alinir'
         ? 'Av. Hasan Doğru'
       : post?.slugTR === 'tanima-tenfiz-rehberi'
+        ? 'Av. Hasan Doğru'
+      : post?.slugTR === 'almanya-ortak-velayet-turkiye-tenfiz'
         ? 'Av. Hasan Doğru'
       : language === 'tr' ? 'Av. Hasan Doğru' : 'Hasan Doğru';
   const currentArticleTags = post?.slugTR === 'almanya-turkiye-alacak-tahsili-icra'
@@ -132,6 +146,12 @@ export function BlogPost() {
           : language === 'tr'
             ? ['Tanıma Tenfiz', 'Almanya Boşanma Türkiye', 'MÖHUK', 'Yabancı Mahkeme Kararı']
             : ['Recognition German Divorce Turkey', 'Tanıma Tenfiz', 'Turkish Family Law']
+        : post?.slugTR === 'almanya-ortak-velayet-turkiye-tenfiz'
+          ? language === 'de'
+            ? ['Gemeinsames Sorgerecht', 'Türkei Anerkennung', 'Tenfiz']
+            : language === 'tr'
+              ? ['Ortak Velayet', 'Tenfiz', 'Türkiye Almanya Aile Hukuku']
+              : ['Joint Custody Turkey', 'Tenfiz', 'Turkish Family Law Germany']
     : undefined;
 
   useSEO({
@@ -145,6 +165,7 @@ export function BlogPost() {
     description: isAvailable ? currentDescription : '',
     lang: language,
     ogType: 'article',
+    ogTitle: currentOgTitle,
     ogImage: isAvailable ? currentImage : undefined,
     canonical: isAvailable && post
       ? `${SITE_URL}/${language}/blog/${language === 'de' ? post.slugDE : language === 'tr' ? post.slugTR : post.slugEN}`
@@ -162,7 +183,7 @@ export function BlogPost() {
       { lang: 'de-DE', href: `${SITE_URL}/de/blog/${post.slugDE}` },
       { lang: 'de-CH', href: `${SITE_URL}/de/blog/${post.slugDE}` },
       { lang: 'de-AT', href: `${SITE_URL}/de/blog/${post.slugDE}` },
-      ...(hasEnglishContent ? [{ lang: 'en', href: `${SITE_URL}/en/blog/${post.slugEN}` }] : []),
+      ...(hasEnglishAlternate ? [{ lang: 'en', href: `${SITE_URL}/en/blog/${post.slugEN}` }] : []),
     ] : undefined,
     xDefault: isAvailable && post ? `${SITE_URL}/de/blog/${post.slugDE}` : undefined,
     article: isAvailable && post ? {
@@ -194,8 +215,22 @@ export function BlogPost() {
   const readTime = language === 'de' ? post.readTimeDE : language === 'tr' ? post.readTimeTR : post.readTimeEN;
   const category = language === 'de' ? post.categoryDE : language === 'tr' ? post.category : post.categoryEN;
 
-  // Find related posts (same category, excluding current)
-  const related = blogPosts.filter((p) => p.slug !== slug).slice(0, 2);
+  const related = post.slugTR === 'almanya-ortak-velayet-turkiye-tenfiz'
+    ? blogPosts.filter((p) => language === 'tr'
+      ? [
+        'almanya-turkiye-miras-hukuku-rehberi',
+        'turkiye-ceza-davasi-almanya-savunma',
+      ].includes(p.slugTR)
+      : language === 'en'
+        ? [
+          'turkish-inheritance-germany-guide',
+          'turkish-criminal-case-defence-from-germany',
+        ].includes(p.slugEN || '')
+        : [
+        'erbschaft-tuerkei-deutschland-ratgeber',
+        'strafverfahren-tuerkei-haftbefehl-verteidigung-deutschland',
+      ].includes(p.slugDE))
+    : blogPosts.filter((p) => p.slug !== slug).slice(0, 2);
 
   const articleSchema = {
     "@context": "https://schema.org",
@@ -586,7 +621,7 @@ export function BlogPost() {
               </h3>
               <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
                 {related.map((r) => (
-                  <Link key={r.slug} to={paths.blogPost(language === 'de' ? r.slugDE : r.slugTR)} className="group block h-full flex flex-col">
+                  <Link key={r.slug} to={paths.blogPost(r.slug)} className="group block h-full flex flex-col">
                     <div className="overflow-hidden mb-6 aspect-[16/10] bg-[#e8e4dc] shadow-md group-hover:shadow-xl transition-shadow duration-500 rounded-lg">
                       <img
                         src={r.image}

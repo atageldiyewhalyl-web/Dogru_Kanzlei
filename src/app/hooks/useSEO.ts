@@ -7,6 +7,7 @@ interface SEOConfig {
   description: string;
   canonical?: string;
   ogImage?: string;
+  ogTitle?: string;
   ogType?: string;
   lang: 'de' | 'tr' | 'en';
   alternateLang?: { lang: string; href: string };
@@ -50,6 +51,8 @@ function setLinkTag(rel: string, href: string, attrs: Record<string, string> = {
 
 export function useSEO(config: SEOConfig) {
   useEffect(() => {
+    document.querySelectorAll('link[rel="canonical"], link[rel="alternate"][hreflang]').forEach((el) => el.remove());
+
     // Title
     document.title = config.title;
 
@@ -59,6 +62,8 @@ export function useSEO(config: SEOConfig) {
     // Keywords
     if (config.keywords) {
       setMetaTag('keywords', config.keywords, true);
+    } else {
+      document.querySelector('meta[name="keywords"]')?.remove();
     }
 
     // Canonical
@@ -66,7 +71,7 @@ export function useSEO(config: SEOConfig) {
     setLinkTag('canonical', canonicalUrl);
 
     // Open Graph
-    setMetaTag('og:title', config.title);
+    setMetaTag('og:title', config.ogTitle || config.title);
     setMetaTag('og:description', config.description);
     setMetaTag('og:url', canonicalUrl);
     setMetaTag('og:type', config.ogType || 'website');
@@ -109,6 +114,8 @@ export function useSEO(config: SEOConfig) {
         el.content = tag;
         document.head.appendChild(el);
       });
+    } else {
+      document.querySelectorAll('meta[property^="article:"]').forEach((el) => el.remove());
     }
 
     // Twitter Card
@@ -153,7 +160,7 @@ export function useSEO(config: SEOConfig) {
     } else {
       setMetaTag('robots', 'index, follow', true);
     }
-  }, [config.title, config.description, config.canonical, config.ogImage, config.ogType, config.lang, config.alternateLang, config.alternateLangs, config.noindex, config.article]);
+  }, [config.title, config.description, config.canonical, config.ogImage, config.ogTitle, config.ogType, config.lang, config.alternateLang, config.alternateLangs, config.xDefault, config.noindex, config.keywords, config.article]);
 }
 
 export { SITE_URL };
