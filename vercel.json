@@ -1,7 +1,6 @@
 {
-  "framework": null,
-  "installCommand": "echo skipping install",
-  "buildCommand": "echo skipping build",
+  "framework": "vite",
+  "buildCommand": "npm run build",
   "outputDirectory": "build",
   "headers": [
     {
@@ -76,7 +75,6 @@
     { "source": "/about/:path*", "destination": "/de/ueber-uns", "permanent": true },
     { "source": "/about", "destination": "/de/ueber-uns", "permanent": true },
     { "source": "/de/about", "destination": "/de/ueber-uns", "permanent": true },
-    { "source": "/en/about", "destination": "/de/ueber-uns", "permanent": true },
     { "source": "/contact", "destination": "/de/#iletisim", "permanent": true },
     { "source": "/contact-2", "destination": "/de/#iletisim", "permanent": true },
     { "source": "/de/contact-2", "destination": "/de/#iletisim", "permanent": true },
@@ -84,8 +82,6 @@
     { "source": "/tr/contact-2", "destination": "/tr/#iletisim", "permanent": true },
     { "source": "/en/service", "destination": "/de/leistungen", "permanent": true },
     { "source": "/de/service", "destination": "/de/leistungen", "permanent": true },
-    { "source": "/en/blog/:path*", "destination": "/de/blog", "permanent": true },
-    { "source": "/en/blog", "destination": "/de/blog", "permanent": true },
     { "source": "/en/impressum", "destination": "/de/impressum", "permanent": true },
     { "source": "/general-clean", "destination": "/de", "permanent": true },
     { "source": "/tr/blogartikel", "destination": "/tr/blog", "permanent": true },
@@ -110,8 +106,7 @@
     { "source": "/feed", "destination": "/de/blog", "permanent": true },
     { "source": "/comments/feed", "destination": "/de/blog", "permanent": true },
     { "source": "/:path*/feed", "destination": "/de/blog", "permanent": true },
-    { "source": "/en/contact", "destination": "/de/#iletisim", "permanent": true },
-    { "source": "/en", "destination": "/de", "permanent": true }
+    { "source": "/en/contact", "destination": "/de/#iletisim", "permanent": true }
   ],
   "cleanUrls": true,
   "trailingSlash": false,
