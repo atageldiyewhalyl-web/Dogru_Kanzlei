@@ -81,8 +81,7 @@ const sitemapPrerenderRepair: Plugin = {
     const indexPath = join(buildDir, 'index.html')
     if (!fs.existsSync(sitemapPath) || !fs.existsSync(indexPath)) return
 
-    const [{ default: puppeteer }, http, { createReadStream }] = await Promise.all([
-      import('puppeteer'),
+    const [http, { createReadStream }] = await Promise.all([
       import('http'),
       import('fs'),
     ])
@@ -130,10 +129,29 @@ const sitemapPrerenderRepair: Plugin = {
 
     await new Promise<void>((resolve) => server.listen(4179, '127.0.0.1', resolve))
 
-    const browser = await puppeteer.launch({
-      headless: true,
-      args: ['--no-sandbox', '--disable-setuid-sandbox'],
-    })
+    const launchBrowser = async () => {
+      if (process.env.VERCEL) {
+        const [{ default: puppeteerCore }, { default: chromium }] = await Promise.all([
+          import('puppeteer-core'),
+          import('@sparticuz/chromium'),
+        ])
+
+        return puppeteerCore.launch({
+          args: [...chromium.args, '--no-sandbox', '--disable-setuid-sandbox'],
+          defaultViewport: { width: 1440, height: 1000 },
+          executablePath: await chromium.executablePath(),
+          headless: chromium.headless,
+        })
+      }
+
+      const { default: puppeteer } = await import('puppeteer')
+      return puppeteer.launch({
+        headless: true,
+        args: ['--no-sandbox', '--disable-setuid-sandbox'],
+      })
+    }
+
+    const browser = await launchBrowser()
 
     try {
       const page = await browser.newPage()
