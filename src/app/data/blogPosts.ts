@@ -75,6 +75,520 @@ export interface BlogPost {
 
 export const blogPosts: BlogPost[] = [
   {
+    slug: "tck-191-kdae-auslandstuerken",
+    slugDE: "tck-191-kdae-auslandstuerken",
+    slugTR: "tck-191-kdae-yurt-disinda-yasayan-turkler",
+    slugEN: "tck-191-kdae-turks-abroad",
+    titleDE: "TCK Art. 191 und KDAE: Was Auslandstürken vor der Einreise wissen müssen",
+    titleTR: "TCK 191 ve KDAE: Yurt Dışında Yaşayan Türkler Türkiye'ye Gitmeden Önce Ne Bilmeli?",
+    titleEN: "Drug Case in Turkey: TCK Article 191, KDAE and Missing Service of Process",
+    excerptDE: "Ein KDAE-Beschluss wegen Drogenbesitzes zum Eigenkonsum kann in der Türkei jahrelang unbemerkt bleiben. Warum Zustellung, UYAP-Prüfung und rechtzeitige Verteidigung für Auslandstürken entscheidend sind.",
+    excerptTR: "Kullanmak için uyuşturucu bulundurma nedeniyle verilen KDAE kararı yurt dışında yaşayan kişiler tarafından yıllarca fark edilmeyebilir. Tebligat, UYAP kontrolü ve zamanında savunma neden önemlidir?",
+    excerptEN: "A TCK Article 191 drug case in Turkey can move from KDAE to criminal charges without the suspect in Germany ever being notified. Learn why UYAP checks, service defects and early defence matter.",
+    metaTitleDE: "TCK Art. 191 und KDAE: FAQ für Auslandstürken | Doğru Kanzlei",
+    metaTitleTR: "TCK 191 ve KDAE: Yurt Dışındaki Türkler İçin SSS | Doğru Kanzlei",
+    metaTitleEN: "TCK Article 191 and KDAE: Drug Case in Turkey | Doğru Kanzlei",
+    metaDescriptionDE: "KDAE-Beschluss, Denetimli Serbestlik, unwirksame Zustellung und UYAP-Prüfung: Was in Deutschland lebende Türken bei TCK Art. 191 vor einer Türkei-Reise wissen müssen.",
+    metaDescriptionTR: "KDAE kararı, denetimli serbestlik, usulsüz tebligat ve UYAP kontrolü: Almanya'da yaşayan Türklerin TCK 191 dosyalarında bilmesi gerekenler.",
+    metaDescriptionEN: "TCK Article 191, KDAE, Denetimli Serbestlik and missing service of process: what Turkish Germans should check before travelling to Turkey.",
+    schemaHeadlineDE: "Häufige Fragen zu TCK Art. 191 und KDAE für Auslandstürken",
+    schemaHeadlineTR: "Yurt Dışında Yaşayan Türkler İçin TCK 191 ve KDAE Hakkında Sık Sorulan Sorular",
+    schemaHeadlineEN: "TCK Article 191 and the KDAE Problem for Turkish Germans",
+    contentDE: `**RECHTLICHER HINWEIS:** Dieser Artikel befasst sich ausschließlich mit dem türkischen Recht. Die Doğru Kanzlei berät gemäß § 207 BRAO ausschließlich im türkischen Recht.
+
+---
+
+Ein Verfahren nach **TCK Art. 191** beginnt häufig unscheinbar: Bei einer Kontrolle in der Türkei wird eine geringe Menge Betäubungsmittel festgestellt, die Staatsanwaltschaft wertet den Vorwurf als Besitz zum Eigenkonsum, und der Betroffene reist später zurück nach Deutschland.
+
+Das Problem entsteht oft erst danach. Die türkische Staatsanwaltschaft erlässt einen **KDAE-Beschluss** und verbindet ihn mit Bewährungsauflagen der **Denetimli Serbestlik**. Wenn die Zustellung an eine alte Adresse in der Türkei geht oder öffentlich bekannt gemacht wird, erfährt der Betroffene in Deutschland davon häufig nichts. Jahre später kann aus dem ursprünglichen Aufschub eine Anklage, ein Abwesenheitsurteil oder ein Haftbefehl werden.
+
+Dieser FAQ-Beitrag erklärt die wichtigsten Fragen für in Deutschland lebende türkische Staatsangehörige und Personen mit Türkei-Bezug.
+
+## Was ist ein KDAE-Beschluss und was bedeutet er für mich?
+
+KDAE steht für **Kamu Davasının Açılmasının Ertelenmesi**. Auf Deutsch bedeutet das: Aufschub der Anklageerhebung.
+
+Bei erstmaligem Drogenbesitz zum Eigenkonsum nach **TCK Art. 191** erhebt die Staatsanwaltschaft nicht sofort Anklage. Sie schiebt die Anklage in der Regel für **5 Jahre** auf. In dieser Zeit muss der Betroffene Bewährungsauflagen erfüllen, die über die Denetimli Serbestlik organisiert werden.
+
+Werden diese Auflagen nicht erfüllt, kann die Staatsanwaltschaft nach Ablauf der Frist Anklage erheben. Besonders gefährlich ist: Das kann auch dann passieren, wenn der Betroffene faktisch nie erfahren hat, dass solche Auflagen gegen ihn bestehen.
+
+## Kann ein Strafverfahren gegen mich laufen, ohne dass ich davon weiß?
+
+Ja. Genau darin liegt das Kernproblem für viele in Deutschland lebende Türken.
+
+Die türkischen Behörden müssen den KDAE-Beschluss zustellen. In der Praxis wird dafür aber häufig die letzte bekannte türkische Adresse verwendet. Wenn dort niemand erreichbar ist, kann es zu einer öffentlichen Zustellung kommen, der sogenannten **İlanen Tebligat**.
+
+Formal gilt die Zustellung dann als erfolgt. Praktisch liest ein in Mannheim, Berlin oder Köln lebender Betroffener keine türkische Bekanntmachungszeitung und erfährt vom Verfahren oft erst bei der Einreise in die Türkei, am Flughafen oder bei einer Polizeikontrolle.
+
+## Was passiert, wenn ich die Bewährungsauflagen nicht erfüllt habe?
+
+Wenn die Aufschubfrist von 5 Jahren abläuft und die Auflagen als nicht erfüllt gelten, kann die Staatsanwaltschaft nach **TCK Art. 191/4** Anklage erheben. Der Strafrahmen kann dann deutlich schwerer wiegen als der ursprüngliche Eindruck des Verfahrens vermuten lässt.
+
+In der Praxis drohen:
+
+- Anklage wegen Verstoßes gegen TCK Art. 191
+- Abwesenheitsverfahren
+- Abwesenheitsurteil
+- Haftbefehl oder Vorführungsbefehl
+- Festnahme- oder Kontrollrisiko bei Einreise in die Türkei
+
+Für die Verteidigung ist entscheidend, ob die Nichterfüllung der Auflagen **schuldhaft** war. Wenn der KDAE-Beschluss nicht wirksam zugestellt wurde, fehlt häufig genau dieses Verschulden. Dann kann die darauf gestützte Verfahrensfortsetzung angegriffen werden.
+
+## Kann ich in die Türkei reisen, wenn ich nicht weiß, ob ein Verfahren gegen mich läuft?
+
+Ohne vorherige Prüfung sollten Sie nicht einreisen.
+
+Über das türkische Gerichtsinformationssystem **UYAP** kann ein bevollmächtigter Avukat prüfen, ob offene Ermittlungsverfahren, Strafverfahren, Haftbefehle, Vorführungsbefehle oder KDAE-Beschlüsse gegen Sie vorliegen. Diese Prüfung kann oft innerhalb weniger Stunden erfolgen.
+
+Der entscheidende Unterschied: Von Deutschland aus kann man reagieren, bevor die Reise beginnt. Am Flughafen in der Türkei beginnt die Prüfung zu spät. Dann entscheidet nicht mehr Ihre Planung, sondern der aktuelle Registerstand.
+
+## Was kann ich tun, wenn der KDAE-Beschluss nicht wirksam zugestellt wurde?
+
+Eine fehlerhafte Zustellung kann nach **Tebligat Kanunu Art. 32** unwirksam sein. Rechtlich bedeutet das: Die Frist und die daran geknüpften Folgen dürfen nicht so behandelt werden, als hätte der Betroffene ordnungsgemäß Kenntnis erhalten.
+
+Ihr Avukat kann beim zuständigen Gericht oder bei der zuständigen Staatsanwaltschaft beantragen, dass die unwirksame Zustellung festgestellt wird. Ziel ist, den KDAE-Beschluss ordnungsgemäß neu zustellen zu lassen und die Verteidigungsrechte wiederherzustellen.
+
+Je nach Verfahrensstand kommen insbesondere in Betracht:
+
+- Akteneinsicht über UYAP
+- Antrag auf Feststellung der unwirksamen Zustellung
+- Antrag auf ordnungsgemäße Neuzustellung
+- Antrag, die Auflagen nachträglich erfüllen zu können
+- Einspruch oder Rechtsmittel gegen ein Abwesenheitsurteil
+- **Eski Hale İade** nach CMK Art. 42, wenn Fristen ohne eigenes Verschulden versäumt wurden
+
+## Kann ich die türkischen Bewährungsauflagen von Deutschland aus erfüllen?
+
+In der Regel nicht.
+
+Die **Denetimli Serbestlik Müdürlüğü** ist eine türkische Behörde. Die Maßnahmen sind auf die Durchführung in der Türkei zugeschnitten. Zwischen Deutschland und der Türkei besteht kein praktisch funktionierendes System, mit dem solche Bewährungsmaßnahmen einfach nach Deutschland übertragen werden.
+
+Diese tatsächliche Unmöglichkeit ist ein wichtiger Verteidigungsansatz. Ein Beschuldigter darf nicht dafür bestraft werden, dass er eine Auflage nicht erfüllt hat, von der er nichts wusste und die er aus dem Ausland faktisch nicht erfüllen konnte.
+
+## Wie schnell muss ich handeln?
+
+So schnell wie möglich, besonders wenn eine Reise in die Türkei geplant ist.
+
+Jeder Tag, an dem ein offenes Verfahren unbearbeitet bleibt, erhöht das Risiko, dass aus einem KDAE-Beschluss ein aktives Strafverfahren, ein Urteil oder ein Haftbefehl wird. Wer in der Türkei geboren ist, früher dort gemeldet war oder jemals polizeilich erfasst wurde, sollte vor einer Reise eine UYAP-Prüfung beauftragen.
+
+## Kurz zusammengefasst
+
+Ein KDAE-Beschluss nach TCK Art. 191 ist kein harmloser Verwaltungsakt. Er kann für Auslandstürken gefährlich werden, wenn Zustellungen an alte türkische Adressen gehen und Bewährungsauflagen unbemerkt verstreichen.
+
+Die wichtigste Schutzmaßnahme ist eine frühzeitige **UYAP-Prüfung** und eine anwaltliche Bewertung der Zustellung. Wenn die Zustellung unwirksam war, kann die Verteidigung genau dort ansetzen.`,
+    contentTR: `**HUKUKİ UYARI:** Bu yazı yalnızca Türk hukukuna ilişkindir. Doğru Kanzlei, § 207 BRAO kapsamında Türk hukuku alanında danışmanlık ve temsil hizmeti verir.
+
+---
+
+Almanya'da yaşıyorsunuz. Yıllar önce Türkiye'de kullanmak için uyuşturucu bulundurma nedeniyle hakkınızda soruşturma başlatıldı. Cumhuriyet savcısı bir **KDAE kararı** verdi ve size denetimli serbestlik yükümlülükleri yükledi. Fakat siz bundan hiç haberdar olmadınız.
+
+Şimdi aleyhinize bir ceza davası yürütülüyor olabilir. Türkiye'ye bir sonraki girişinizde gözaltı, yakalama veya tutuklama riskiyle karşılaşabilirsiniz.
+
+Bu yazı, **TCK Madde 191** kapsamındaki KDAE ve tebligat sorununu Almanya'da yaşayan Türkler açısından açıklamaktadır.
+
+## 1. Sorun: Haberiniz olmayan bir ceza davası
+
+TCK Madde 191, kişisel kullanım amacıyla uyuşturucu veya uyarıcı madde bulundurmayı düzenler. Uyuşturucu ticareti suçundan (**TCK Madde 188**) farklı olarak, ilk kez işlenen kişisel kullanım dosyalarında sistem genellikle doğrudan dava açılmasıyla başlamaz.
+
+Bunun yerine savcılık, **Kamu Davasının Açılmasının Ertelenmesi** kararı verir. Kısaca **KDAE**. Bu kararla birlikte şüpheli tedavi ve denetimli serbestlik yükümlülüklerine tabi tutulur.
+
+Almanya'da yaşayan kişiler için sorun burada başlar. Savcılık KDAE kararını verir ve denetimli serbestlik şartlarını belirler. Bu kararın şüpheliye tebliğ edilmesi gerekir. Ancak şüpheli Almanya'da yaşıyorsa ve tebligat doğru şekilde yapılmazsa, kişi bu şartlardan haberdar olmaz. Haberdar olmadığı şartları da yerine getiremez.
+
+Beş yıllık erteleme süresi sonunda savcılık, yükümlülüklerin yerine getirilmediğini tespit eder ve dava açar. En kötü ihtimalde yoklukta karar veya yakalama kararı çıkar. Almanya'daki kişi bunların hiçbirinden haberdar olmaz; ta ki Türkiye'ye girişte havalimanında durdurulana kadar.
+
+## 2. Hukuki çerçeve: TCK Madde 191
+
+**TCK Madde 191/1:** Kullanmak için uyuşturucu veya uyarıcı madde satın almak, kabul etmek, bulundurmak ya da kullanmak. Ceza: 2 yıldan 5 yıla kadar hapis.
+
+**TCK Madde 191/2:** İlk dosyada kamu davasının açılmasının ertelenmesine karar verilir. Bu erteleme süresi 5 yıldır ve CMK Madde 171'deki olağan şartlar aranmaz.
+
+**TCK Madde 191/3:** Erteleme süresi boyunca şüpheli, belirlenen yükümlülüklere ve denetimli serbestlik tedbirlerine uymak zorundadır.
+
+**TCK Madde 191/4(a):** Yükümlülükler yerine getirilmezse kamu davası açılır.
+
+**TCK Madde 191/4(b):** Erteleme süresi içinde yeniden uyuşturucu kullanma veya bulundurma suçu işlenirse kamu davası açılır.
+
+Tebligat bakımından özellikle şu hükümler önemlidir:
+
+- **Tebligat Kanunu Madde 25:** Yurt dışında yaşayan Türk vatandaşlarına diplomatik kanallar aracılığıyla tebligat.
+- **Tebligat Kanunu Madde 28:** İlanen tebligat, yalnızca son çare olarak.
+- **Tebligat Kanunu Madde 32:** Usulsüz tebligat geçersizdir.
+- **CMK Madde 145/1:** Sanık, bazı durumlarda müdafii aracılığıyla yokluğunda temsil edilebilir.
+- **CMK Madde 42:** Kusuru olmadan süreyi kaçıran kişi için eski hale iade.
+
+## 3. Tebligatlar neden başarısız oluyor?
+
+Uygulamada KDAE kararlarının yurt dışında yaşayan şüphelilere tebliğinde üç temel sorun görülür.
+
+Birincisi, savcılık çoğu zaman kişinin yurt dışında yaşayıp yaşamadığını yeterince araştırmaz. Son bilinen Türkiye adresi kullanılır. Bu adreste kimseye ulaşılamazsa ilanen tebligata gidilir. Almanya'da yaşayan kişinin hiç okumayacağı bir Türk gazetesinde yapılan ilan, dosyada tebligat yapılmış gibi görünür.
+
+İkincisi, savcılık kişinin Almanya'da yaşadığını bilse bile Tebligat Kanunu Madde 25 uyarınca diplomatik tebligat yapılması gerekir. Bu süreç aylar sürebildiği için uygulamada bazen atlanır.
+
+Üçüncüsü, KDAE kararları mahkeme hükmü değil savcılık kararıdır. Bu nedenle tebligatta gösterilen özen, iddianame veya mahkeme kararı tebligatlarına göre pratikte daha düşük kalabilir.
+
+Sonuç şudur: Almanya'daki şüpheli KDAE kararını bilmez, denetimli serbestlik şartlarını bilmez, bunları yerine getirme imkanı bulamaz ve 5 yıllık süre sonunda otomatik olarak yargılanmaya başlar.
+
+## 4. Savunma stratejisi: Tebligat eksikliği
+
+Savunmanın merkezi noktası usulsüz tebligattır. KDAE kararının şüpheliye usulüne uygun tebliğ edilmediği gösterilebilirse şu argümanlar ileri sürülebilir:
+
+Birincisi: Şüpheli denetimli serbestlik yükümlülüklerinden haberdar olmadığı için bunları yerine getirememiştir. Bu nedenle ihlal kendisine kusur olarak yüklenemez.
+
+İkincisi: TCK Madde 191/4 uyarınca dava açılabilmesi için yükümlülüklere kusurlu şekilde aykırı davranılmış olması gerekir. Geçerli tebligat yoksa kusur unsuru da tartışmalıdır.
+
+Üçüncüsü: Adil yargılanma hakkı, kişinin kendisi hakkındaki süreçten haberdar olmasını gerektirir. Bu hak Anayasa Madde 36 ve AİHS Madde 6 kapsamında korunur.
+
+Pratikte atılacak adımlar:
+
+- **UYAP dosya incelemesi:** Avukatınız dosyayı ve tebligat evrakını inceler. Diplomatik tebligat denendi mi? Doğrudan ilanen tebligata mı gidildi?
+- **Yurt dışı ikamet belgeleri:** Almanya'dan ikamet belgesi, iş sözleşmesi, oturma izni veya vatandaşlık belgeleri hazırlanır.
+- **Mahkemeye başvuru:** Tebligatın geçersizliğinin tespiti ve KDAE kararının yeniden usulüne uygun tebliği talep edilir.
+- **Gerekirse eski hale iade:** Yoklukta karar verilmişse CMK Madde 42 kapsamında eski hale iade talep edilebilir.
+
+## 5. Hukuki düzenlemelere kısa bakış
+
+Maddi hukuk:
+
+- TCK Madde 191/1 — Kullanmak için uyuşturucu bulundurma, 2 ila 5 yıl hapis
+- TCK Madde 191/2 — İlk dosyada zorunlu KDAE, 5 yıllık erteleme
+- TCK Madde 191/3 — Erteleme süresinde denetimli serbestlik yükümlülüğü
+- TCK Madde 191/4(a) — Yükümlülük ihlalinde dava açılması
+- TCK Madde 191/4(b) — Yeniden suç işlenmesi halinde dava açılması
+
+Usul hukuku:
+
+- CMK Madde 145/1 — Sanığın yokluğunda müdafii ile temsil
+- CMK Madde 42 — Eski hale iade
+- CMK Madde 231 — Hükmün açıklanmasının geri bırakılması
+
+Tebligat hukuku:
+
+- Tebligat Kanunu Madde 25 — Yurt dışındaki Türk vatandaşlarına diplomatik tebligat
+- Tebligat Kanunu Madde 28 — İlanen tebligatın son çare olması
+- Tebligat Kanunu Madde 32 — Usulsüz tebligatın geçersizliği
+
+Anayasal ve uluslararası güvenceler:
+
+- Anayasa Madde 36 — Hak arama özgürlüğü ve adil yargılanma hakkı
+- AİHS Madde 6 — Adil yargılanma hakkı
+- AİHS Madde 13 — Etkili başvuru yolu
+
+## 6. Tipik bir örnek
+
+Bay M. 32 yaşında ve 8 yıldır Almanya'da yaşıyor. Alman vatandaşlığı ve Mavi Kartı var. 2019 yılında Türkiye tatilinde polis kontrolünde az miktarda esrarla yakalanıyor. Cumhuriyet savcılığı TCK Madde 191 kapsamında soruşturma başlatıyor.
+
+Savcılık 5 yıllık KDAE kararı veriyor ve denetimli serbestlik şartları belirliyor: düzenli uyuşturucu testleri ve ilgili müdürlükte görüşmeler. KDAE kararı, Bay M.'nin son bilinen Türkiye adresi olan Ankara'daki aile evine tebliğ ediliyor. Oysa Bay M. yıllardır Mannheim'da yaşıyor. Ailesi belgeyi imzalıyor ama oğluna iletmiyor.
+
+Bay M. şartlardan haberdar olmadığı için yükümlülükleri yerine getirmiyor. 2024 yılında savcılık iddianame düzenliyor. Dosya Asliye Ceza Mahkemesi'ne gidiyor. 2025 yılında Bay M. ailesiyle Türkiye'ye gitmek istiyor. Avukatı UYAP kontrolü yaptığında 2 ila 5 yıl hapis tehdidi olan açık bir ceza davası bulunduğunu görüyor.
+
+Çözüm: Avukat dosyadaki tebligat evrakını inceler. Bay M.'nin Almanya'da kayıtlı olduğu açıkça gösterilebildiği halde Tebligat Kanunu Madde 25 uyarınca diplomatik tebligat yapılmadığı tespit edilir. Avukat mahkemeye başvurarak KDAE tebligatının geçersiz olduğunu, yükümlülüklerin kusurlu şekilde ihlal edilmediğini ve KDAE kararının yeniden usulüne uygun tebliğ edilmesi gerektiğini ileri sürer.
+
+## 7. Özel sorun: Denetimli serbestlik yurt dışından yerine getirilemiyor
+
+TCK Madde 191 dosyalarında yurt dışında yaşayan kişiler bakımından ayrı bir sorun daha vardır: **Denetimli Serbestlik Müdürlüğü** Türkiye'de yetkili bir kurumdur. Almanya'da uygulama yapmaz.
+
+Almanya ile Türkiye arasında bu tür denetimli serbestlik tedbirlerinin otomatik devrine ilişkin fiilen işleyen bir sistem bulunmamaktadır. Bu nedenle kişi şartlardan haberdar olsa bile, Almanya'da çalışıp yaşarken Türkiye'deki denetimli serbestlik yükümlülüklerini yerine getirmesi pratikte mümkün olmayabilir.
+
+Savunma argümanı şudur: Yurt dışından yerine getirmenin fiilen imkansız olması bağımsız bir savunma nedenidir. Şüpheli, kendisinin yaratmadığı yapısal bir boşluk nedeniyle cezalandırılmamalıdır.
+
+## 8. Türkiye'ye seyahat etmeden önce ne yapmalısınız?
+
+Türkiye'ye gitmeden önce dosya durumunuz mutlaka kontrol edilmelidir.
+
+- Türkiye'de işlem yapabilecek bir avukata vekaletname verin.
+- Avukatınız UYAP üzerinden açık dosya, yakalama kararı veya KDAE kararı olup olmadığını kontrol etsin.
+- Açık dosya varsa tebligat evrakı ve dosya içeriği incelensin.
+- Savunma stratejisi seyahatten önce belirlensin.
+- Durum netleşmeden Türkiye'ye seyahat etmeyin.
+
+**UYAP sorgusu tamamlanmadan Türkiye'ye seyahat etmeyin.** TCK Madde 191 kapsamındaki açık bir dosya, havalimanında gözaltı veya yakalama riski doğurabilir.
+
+## 9. Doğru Kanzlei: Almanya'dan Türkiye'deki ceza savunması
+
+Yurt dışında yaşayan şüpheliler bakımından TCK Madde 191 dosyaları iki uzmanlığı birlikte gerektirir: Türk ceza mahkemelerinde işlem yapabilecek bir avukat ve Almanya'da yaşayan Türklerin tebligat, UYAP ve denetimli serbestlik sorunlarını bilen bir hukukçu.
+
+Ankara Barosu üyesi ve Karlsruhe Barosu'na § 207 BRAO kapsamında kayıtlı Avukat Hasan Doğru, Türkiye'deki ceza dosyalarında müvekkillerini temsil eder. UYAP üzerinden dosya durumunuzu gerçek zamanlı kontrol edebilir. Savunma için öncelikle Türkiye'ye gitmeniz gerekmez.
+
+## Sıkça Sorulan Sorular
+
+### KDAE kararı nedir ve benim için ne anlama gelir?
+
+KDAE, Kamu Davasının Açılmasının Ertelenmesi demektir. TCK Madde 191 kapsamında ilk kez kişisel kullanım amacıyla uyuşturucu bulundurma dosyasında savcılık hemen dava açmaz; kamu davasını 5 yıl erteler. Bu süre içinde denetimli serbestlik yükümlülükleri yerine getirilmelidir.
+
+### Haberim olmadan aleyhime dava açılabilir mi?
+
+Evet. Savcılık KDAE kararını çoğu zaman son bilinen Türkiye adresine tebliğ eder. Eğer o adreste kimseye ulaşılamazsa ilanen tebligat yapılabilir. Almanya'da yaşayan kişi bu ilanı fiilen görmez, fakat dosyada tebligat yapılmış görünebilir.
+
+### Denetimli serbestlik şartlarını yerine getirmediysem ne olur?
+
+5 yıllık erteleme süresi şartlar yerine getirilmeden sona ererse savcılık TCK Madde 191/4 uyarınca iddianame düzenleyebilir. 2 ila 5 yıl hapis cezası gündeme gelebilir. Savunma açısından belirleyici soru, yükümlülüğün kusurlu şekilde ihlal edilip edilmediğidir.
+
+### Dava olup olmadığını bilmeden Türkiye'ye seyahat edebilir miyim?
+
+Öncesinde UYAP kontrolü yaptırmadan seyahat etmemelisiniz. Yetkili bir avukat, açık dava, yakalama kararı veya KDAE kararı olup olmadığını UYAP üzerinden kontrol edebilir.
+
+### KDAE kararı usulsüz tebliğ edildiyse ne yapılabilir?
+
+Tebligat Kanunu Madde 32 uyarınca usulsüz tebligat geçersizdir. Avukatınız tebligatın geçersizliğinin tespitini, KDAE kararının yeniden tebliğini ve gerekiyorsa eski hale iade talebini ileri sürebilir.
+
+### Denetimli serbestlik şartlarını Almanya'dan yerine getirebilir miyim?
+
+Kural olarak hayır. Denetimli Serbestlik Müdürlüğü Türkiye'de yetkili bir kurumdur. Almanya'dan yerine getirmenin fiilen imkansız olması savunmada ayrıca ileri sürülebilir.
+
+### Ne kadar hızlı hareket etmem gerekir?
+
+Mümkün olan en kısa sürede. Özellikle Türkiye'ye seyahat planlıyorsanız UYAP kontrolü hemen yapılmalıdır. Açık bir dosya bekletildikçe yakalama kararı veya yoklukta karar riski artar.
+
+**Yasal uyarı:** Bu makale yalnızca genel bilgilendirme amaçlıdır ve somut olayda hukuki danışmanlık yerine geçmez.`,
+    contentEN: `**LEGAL NOTICE:** This article concerns Turkish law only. Doğru Kanzlei advises and represents clients exclusively in Turkish law and international law under Sec. 207 BRAO.
+
+---
+
+You live in Germany. Years ago, criminal proceedings for drug possession were initiated against you in Turkey. The prosecutor issued a **KDAE decision** and imposed probation conditions, but you never found out.
+
+Now a criminal case may be running against you. You may risk detention or arrest the next time you enter Turkey.
+
+This article explains the **TCK Article 191** and **KDAE** problem for Turkish Germans and other people living abroad with a Turkey-related criminal file.
+
+## 1. The problem: criminal proceedings you do not know about
+
+TCK Article 191 governs possession of narcotics for personal use. Unlike trafficking offences under **TCK Article 188**, a first-time personal-use case does not usually begin with immediate criminal charges.
+
+Instead, the prosecution is deferred. In Turkish this is called **Kamu Davasının Açılmasının Ertelenmesi**, abbreviated as **KDAE**. The suspect is placed under treatment and supervision conditions, known as **Tedavi ve Denetimli Serbestlik**.
+
+The problem for suspects living in Germany is service of process. The prosecutor issues the KDAE decision and orders the probation conditions. This decision must be served on the suspect. If the suspect lives in Germany and service fails, or is never attempted correctly, they never learn of the conditions.
+
+As a result, they cannot fulfil them. Once the five-year probation period expires, the prosecutor records that the conditions were not met and files charges. In the worst case, a judgment is entered in absentia or an arrest warrant is issued. The suspect in Germany hears nothing of this until they are stopped at a Turkish airport on their next visit.
+
+## 2. Legal framework: TCK Article 191 in detail
+
+**TCK Article 191/1:** Purchasing, accepting, possessing or using narcotic or stimulant substances for personal use. Penalty: 2 to 5 years imprisonment.
+
+**TCK Article 191/2:** For a first offence, prosecution is mandatorily deferred for 5 years. The usual prerequisites under CMK Article 171 do not apply in the same way.
+
+**TCK Article 191/3:** During the deferral period, the suspect must comply with the imposed obligations and supervision measures.
+
+**TCK Article 191/4(a):** If the obligations are not fulfilled during the deferral period, criminal charges are filed.
+
+**TCK Article 191/4(b):** If the suspect reoffends during the deferral period, criminal charges are filed.
+
+Service of process is mainly governed by:
+
+- **Tebligat Kanunu Article 25:** Service on Turkish nationals residing abroad via diplomatic channels.
+- **Tebligat Kanunu Article 28:** Public notice, or İlanen Tebligat, only as a last resort.
+- **Tebligat Kanunu Article 32:** Defective service is invalid.
+- **CMK Article 145/1:** The accused may be represented by counsel in their absence in certain procedural situations.
+- **CMK Article 42:** Reinstatement, or Eski Hale İade, where a deadline was missed without fault.
+
+## 3. Why service of process regularly fails
+
+In practice, service of KDAE decisions on suspects living abroad fails for several reasons.
+
+First, prosecutors often do not check whether the suspect lives abroad. They use the last known Turkish address. If no one is reachable there, public notice may be ordered: publication in a Turkish newspaper that the suspect in Germany will never read.
+
+Second, even when the prosecutor knows that the suspect lives in Germany, service should normally be effected through diplomatic channels under Tebligat Kanunu Article 25. This process takes time and is sometimes bypassed for practical reasons.
+
+Third, KDAE decisions are prosecutorial decisions rather than court judgments. In practice, the level of care applied to service may be lower than for indictments or court judgments.
+
+The result is serious: the suspect in Germany has no knowledge of the KDAE decision, no knowledge of the probation conditions, no opportunity to comply, and is automatically charged when the five-year period expires.
+
+## 4. Defence strategy: defective service as the central argument
+
+The defence focuses on defective service. If it can be shown that the KDAE decision was not properly served on the suspect, several arguments become available.
+
+First, the probation conditions could not be fulfilled because the suspect had no knowledge of them. Non-compliance is therefore not attributable to the suspect.
+
+Second, charges under Article 191/4 presuppose that the suspect culpably failed to comply with the conditions. Without valid service, culpability is highly contestable.
+
+Third, the right to a fair trial requires that the suspect be aware of the proceedings against them. This is protected by Anayasa Article 36 and ECHR Article 6.
+
+Practical steps include:
+
+- **UYAP file review:** Your Avukat reviews the case file and service records. Was service properly attempted? Was the diplomatic route used? Or was public notice ordered directly?
+- **Proof of residence abroad:** German registration certificate, employment contract, residence permit, citizenship documents and other proof showing that the suspect lived in Germany at the relevant time.
+- **Application to the court:** Defence counsel applies for a finding that service was invalid and requests proper re-service of the KDAE decision.
+- **Reinstatement if needed:** If a judgment in absentia has already been entered, the lawyer can apply for reinstatement under CMK Article 42.
+
+## 5. Legal framework at a glance
+
+Substantive law:
+
+- TCK Article 191/1 — Personal-use possession, 2 to 5 years imprisonment
+- TCK Article 191/2 — Mandatory KDAE for first offence, 5-year deferral
+- TCK Article 191/3 — Obligation to comply with Denetimli Serbestlik during the deferral
+- TCK Article 191/4(a) — Charges upon non-compliance
+- TCK Article 191/4(b) — Charges upon reoffending
+
+Procedural law:
+
+- CMK Article 145/1 — Representation by defence counsel in the accused's absence
+- CMK Article 42 — Eski Hale İade, reinstatement
+- CMK Article 231 — HAGB, suspension of announcement of judgment
+
+Service of process:
+
+- Tebligat Kanunu Article 25 — Service on Turkish nationals abroad via diplomatic channels
+- Tebligat Kanunu Article 28 — Public notice only as a last resort
+- Tebligat Kanunu Article 32 — Defective service is invalid
+
+Constitutional and international guarantees:
+
+- Anayasa Article 36 — Right to seek justice and right to a fair trial
+- ECHR Article 6 — Right to a fair trial
+- ECHR Article 13 — Right to an effective remedy
+
+## 6. A typical real-world case
+
+Mr M. is 32 and has lived in Germany for 8 years. He has German citizenship and a Mavi Kart. In 2019, during a holiday in Turkey, he was stopped in a police check and found with a small amount of cannabis. The prosecutor opened an investigation under TCK Article 191.
+
+The prosecutor issued a KDAE decision with a 5-year deferral and ordered Denetimli Serbestlik: regular drug screenings and counselling sessions at the responsible authority. Service of the KDAE decision was effected at Mr M.'s last known Turkish address, his parents' flat in Ankara. Mr M. had lived in Mannheim for years. His parents signed for the document but did not forward it to him.
+
+Mr M. did not comply with the conditions because he knew nothing about them. In 2024, the prosecutor filed charges. Criminal proceedings are now pending before the Asliye Ceza Mahkemesi. In 2025, Mr M. wants to travel to Turkey with his family. A UYAP check by his Avukat reveals an open criminal case with a possible sentence of 2 to 5 years.
+
+Resolution: The Avukat reviews the service records in the case file. Service was effected at the Turkish address even though Mr M. was demonstrably registered in Germany. Service via the diplomatic route under Tebligat Kanunu Article 25 was never attempted. The lawyer submits that service of the KDAE decision was invalid and that Mr M. did not culpably breach the conditions. He applies for proper re-service of the KDAE decision and for a new opportunity to fulfil the probation conditions.
+
+## 7. A specific issue: probation conditions cannot be fulfilled abroad
+
+A central problem in TCK Article 191 proceedings against suspects living abroad is that the **Denetimli Serbestlik Müdürlüğü** is a Turkish authority with jurisdiction only within Turkey.
+
+There is no functioning bilateral mechanism between Germany and Turkey that automatically transfers these supervision measures to Germany. This means that even if the suspect were informed of the conditions, they may not be able to comply with them while living and working in Germany.
+
+The defence argument is clear: the impossibility of compliance from abroad is an independent ground of defence. The suspect must not be penalised for a structural gap that was not of their making.
+
+## 8. What you should do before travelling to Turkey
+
+Before travelling to Turkey, the case status should be checked.
+
+- Appoint an Avukat in Turkey with a power of attorney.
+- Your Avukat carries out a UYAP search for open proceedings, arrest warrants and KDAE decisions.
+- If proceedings are open, your Avukat reviews the file and service records.
+- The defence strategy is established before the trip.
+- Travel to Turkey only once the situation is clarified.
+
+**Do not travel to Turkey before the UYAP check is complete.** An open TCK Article 191 case can lead to detention at the airport.
+
+## 9. Doğru Kanzlei: criminal defence in Turkey from Germany
+
+TCK Article 191 proceedings against suspects living abroad require two things: an Avukat who can appear before Turkish criminal courts and a lawyer who understands the specific situation of Turkish Germans, especially the service-of-process problem and the impossibility of fulfilling supervision conditions from abroad.
+
+As a member of the Ankara Bar Association and the Karlsruhe Bar Association under Sec. 207 BRAO, Avukat Hasan Doğru represents clients before Turkish criminal courts. Through UYAP, your case status can be checked in real time. You do not need to travel to Turkey before the defence strategy is clarified.
+
+## Frequently Asked Questions
+
+### What is a KDAE decision and what does it mean for me?
+
+KDAE stands for Kamu Davasının Açılmasının Ertelenmesi, or deferral of prosecution. For first-time personal-use drug possession under TCK Article 191, the prosecutor does not immediately bring criminal charges. Instead, charges are deferred for 5 years. During this period, probation conditions must be met.
+
+### Can criminal proceedings be running against me without my knowledge?
+
+Yes. This is the core problem for Turkish nationals and Turkish Germans living in Germany. The prosecutor is required to serve the KDAE decision, but often uses the last known Turkish address. If no one is reachable there, public notice may be ordered. Formally this can appear as valid service, even though the person in Germany never actually learned about it.
+
+### What happens if I did not fulfil the probation conditions?
+
+Once the 5-year deferral period expires without the conditions being fulfilled, the prosecutor may file charges under TCK Article 191/4. A prison sentence of 2 to 5 years may be at stake. The key question for the defence is whether the non-compliance was culpable. If service was invalid, culpability can be challenged.
+
+### Can I travel to Turkey if I do not know whether proceedings are running against me?
+
+You should not enter Turkey without a prior UYAP check. Through UYAP, an authorised Avukat can check in real time whether there are open proceedings, arrest warrants or KDAE decisions against you. This check should be completed before travel.
+
+### What can I do if the KDAE decision was not validly served?
+
+Defective service is invalid under Tebligat Kanunu Article 32. Your Avukat can apply to the competent court for a finding that service was invalid and for the KDAE decision to be properly re-served. If a judgment in absentia has already been entered, reinstatement under CMK Article 42 may be available.
+
+### Can I fulfil Turkish probation conditions from Germany?
+
+As a rule, no. The Denetimli Serbestlik Müdürlüğü is a Turkish authority and has no jurisdiction in Germany. The practical impossibility of compliance from abroad can become an independent defence argument.
+
+### How quickly do I need to act?
+
+As quickly as possible. Every day an open case goes unaddressed increases the risk of an arrest warrant or judgment in absentia. If you plan to visit Turkey in the coming months, commission the UYAP check immediately.
+
+**Legal notice:** This article is for general information purposes only and does not constitute legal advice in an individual case.`,
+    category: "Ceza Hukuku",
+    categoryDE: "Strafrecht",
+    categoryEN: "Criminal Law",
+    image: criminalDefenseTurkeyImg,
+    dateDE: "11. Mai 2026",
+    dateTR: "11 Mayıs 2026",
+    dateEN: "11 May 2026",
+    readTimeDE: "8 Min. Lesezeit",
+    readTimeTR: "13 dk okuma",
+    readTimeEN: "13 min read",
+    publishedAt: "2026-05-11",
+    modifiedAt: "2026-05-11",
+    keywordsDE: "TCK Art. 191, KDAE, Kamu Davasının Açılmasının Ertelenmesi, Denetimli Serbestlik, UYAP Prüfung, Auslandstürken Strafverfahren Türkei, Haftbefehl Türkei Einreise",
+    keywordsTR: "TCK 191, KDAE, Kamu Davasının Açılmasının Ertelenmesi, denetimli serbestlik, UYAP kontrolü, yurtdışında yaşayan Türkler ceza dosyası",
+    keywordsEN: "TCK Article 191, KDAE, drug case Turkey, Turkish criminal law Germany, UYAP check, Denetimli Serbestlik, defective service Turkey, arrest warrant Turkey",
+    faqDE: [
+      {
+        question: "Was ist ein KDAE-Beschluss?",
+        answer: "KDAE steht für Kamu Davasının Açılmasının Ertelenmesi, also den Aufschub der Anklageerhebung. Bei erstmaligem Drogenbesitz zum Eigenkonsum nach TCK Art. 191 wird die Anklage meist für 5 Jahre aufgeschoben und mit Denetimli-Serbestlik-Auflagen verbunden."
+      },
+      {
+        question: "Kann ein TCK-191-Verfahren gegen mich laufen, ohne dass ich davon weiß?",
+        answer: "Ja. Zustellungen gehen häufig an alte türkische Adressen oder erfolgen öffentlich durch İlanen Tebligat. Formal kann die Zustellung dann als erfolgt gelten, obwohl der Betroffene in Deutschland tatsächlich nichts davon erfahren hat."
+      },
+      {
+        question: "Was passiert, wenn Denetimli-Serbestlik-Auflagen nicht erfüllt wurden?",
+        answer: "Nach Ablauf der Aufschubfrist kann die Staatsanwaltschaft nach TCK Art. 191/4 Anklage erheben. Je nach Verfahrensstand drohen Abwesenheitsverfahren, Urteil, Vorführungsbefehl oder Haftbefehl."
+      },
+      {
+        question: "Sollte ich vor einer Türkei-Reise eine UYAP-Prüfung machen lassen?",
+        answer: "Ja. Eine UYAP-Prüfung durch einen bevollmächtigten Avukat kann vor der Reise klären, ob offene Verfahren, KDAE-Beschlüsse oder Haftbefehle bestehen. Am Flughafen ist es dafür meist zu spät."
+      },
+      {
+        question: "Was hilft bei unwirksamer Zustellung?",
+        answer: "Wenn die Zustellung fehlerhaft war, kann nach Tebligat Kanunu Art. 32 geltend gemacht werden, dass Fristen und Folgen nicht wirksam ausgelöst wurden. Je nach Lage kommen Neuzustellung, Wiedereinsetzung oder Angriffe gegen Abwesenheitsentscheidungen in Betracht."
+      }
+    ],
+    faqTR: [
+      {
+        question: "KDAE kararı nedir?",
+        answer: "KDAE, Kamu Davasının Açılmasının Ertelenmesi demektir. TCK 191 kapsamındaki ilk kullanmak için uyuşturucu bulundurma dosyalarında savcılık çoğu zaman davayı 5 yıl erteler ve denetimli serbestlik yükümlülükleri belirler."
+      },
+      {
+        question: "Haberim olmadan Türkiye'de TCK 191 dosyası yürüyebilir mi?",
+        answer: "Evet. Tebligat eski Türkiye adresine gönderilmiş veya ilanen yapılmış olabilir. Kişi Almanya'da yaşadığı için fiilen haberdar olmayabilir."
+      },
+      {
+        question: "Denetimli serbestlik yerine getirilmediyse ne olur?",
+        answer: "Süre sonunda yükümlülüklerin yerine getirilmediği kabul edilirse savcılık TCK 191/4 kapsamında dava açabilir. Yakalama, zorla getirme veya yoklukta karar riski doğabilir."
+      },
+      {
+        question: "Türkiye'ye gitmeden önce UYAP kontrolü gerekli mi?",
+        answer: "Evet. Yetkili avukat UYAP üzerinden açık dosya, KDAE kararı veya yakalama kararı olup olmadığını kontrol edebilir."
+      }
+    ],
+    faqEN: [
+      {
+        question: "What is a KDAE decision?",
+        answer: "KDAE stands for Kamu Davasının Açılmasının Ertelenmesi, or deferral of prosecution. In a first-time personal-use drug possession case under TCK Article 191, the prosecutor usually defers charges for 5 years and imposes probation conditions."
+      },
+      {
+        question: "Can a TCK Article 191 case be running against me without my knowledge?",
+        answer: "Yes. KDAE decisions are often served at an old Turkish address or by public notice. A person living in Germany may never actually learn about the decision, even though the file shows service as completed."
+      },
+      {
+        question: "What happens if I did not fulfil the probation conditions?",
+        answer: "If the 5-year deferral period expires and the conditions are recorded as unmet, the prosecutor may file charges under TCK Article 191/4. A sentence of 2 to 5 years imprisonment may be at stake."
+      },
+      {
+        question: "Should I get a UYAP check before travelling to Turkey?",
+        answer: "Yes. An authorised Avukat can check UYAP for open proceedings, arrest warrants and KDAE decisions before you travel. Once you are at a Turkish airport, the risk is already immediate."
+      },
+      {
+        question: "What can be done if the KDAE decision was not validly served?",
+        answer: "Defective service can be challenged under Tebligat Kanunu Article 32. Depending on the stage of the case, defence counsel may request proper re-service, reinstatement or challenge decisions made in absentia."
+      }
+    ],
+    ctaTitleDE: "Vor der Türkei-Reise: UYAP-Prüfung beauftragen",
+    ctaTitleTR: "Türkiye Seyahatinden Önce UYAP Kontrolü",
+    ctaTitleEN: "Before travelling to Turkey: request a UYAP check",
+    ctaDescriptionDE: "Wir prüfen über UYAP, ob KDAE-Beschlüsse, Strafverfahren oder Haftbefehle gegen Sie vorliegen, und bewerten die Zustellung nach türkischem Recht.",
+    ctaDescriptionTR: "UYAP üzerinden KDAE kararı, ceza dosyası veya yakalama kararı olup olmadığını kontrol ediyor ve tebligatı Türk hukuku açısından değerlendiriyoruz.",
+    ctaDescriptionEN: "We check whether KDAE decisions, criminal proceedings or arrest warrants exist in UYAP and assess service of process under Turkish law."
+  },
+  {
     slug: "almanya-turkiye-miras-hukuku-rehberi",
     slugDE: "erbschaft-tuerkei-deutschland-ratgeber",
     slugTR: "almanya-turkiye-miras-hukuku-rehberi",

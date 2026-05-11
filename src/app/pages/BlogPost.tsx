@@ -230,7 +230,9 @@ export function BlogPost() {
         'erbschaft-tuerkei-deutschland-ratgeber',
         'strafverfahren-tuerkei-haftbefehl-verteidigung-deutschland',
       ].includes(p.slugDE))
-    : blogPosts.filter((p) => p.slug !== slug).slice(0, 2);
+    : blogPosts
+      .filter((p) => p !== post && (language !== 'en' || Boolean(p.slugEN && p.contentEN?.trim())))
+      .slice(0, 2);
 
   const articleSchema = {
     "@context": "https://schema.org",

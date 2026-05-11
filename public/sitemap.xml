@@ -548,6 +548,44 @@
     <priority>0.8</priority>
   </url>
 
+  <!-- Blog Post: TCK Art. 191 und KDAE -->
+  <url>
+    <loc>https://www.hasandogru.de/de/blog/tck-191-kdae-auslandstuerken</loc>
+    <xhtml:link rel="alternate" hreflang="de" href="https://www.hasandogru.de/de/blog/tck-191-kdae-auslandstuerken" />
+    <xhtml:link rel="alternate" hreflang="de-DE" href="https://www.hasandogru.de/de/blog/tck-191-kdae-auslandstuerken" />
+    <xhtml:link rel="alternate" hreflang="de-CH" href="https://www.hasandogru.de/de/blog/tck-191-kdae-auslandstuerken" />
+    <xhtml:link rel="alternate" hreflang="de-AT" href="https://www.hasandogru.de/de/blog/tck-191-kdae-auslandstuerken" />
+    <xhtml:link rel="alternate" hreflang="tr" href="https://www.hasandogru.de/tr/blog/tck-191-kdae-yurt-disinda-yasayan-turkler" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.hasandogru.de/en/blog/tck-191-kdae-turks-abroad" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.hasandogru.de/de/blog/tck-191-kdae-auslandstuerken" />
+    <lastmod>2026-05-11</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.hasandogru.de/tr/blog/tck-191-kdae-yurt-disinda-yasayan-turkler</loc>
+    <xhtml:link rel="alternate" hreflang="de" href="https://www.hasandogru.de/de/blog/tck-191-kdae-auslandstuerken" />
+    <xhtml:link rel="alternate" hreflang="de-DE" href="https://www.hasandogru.de/de/blog/tck-191-kdae-auslandstuerken" />
+    <xhtml:link rel="alternate" hreflang="de-CH" href="https://www.hasandogru.de/de/blog/tck-191-kdae-auslandstuerken" />
+    <xhtml:link rel="alternate" hreflang="de-AT" href="https://www.hasandogru.de/de/blog/tck-191-kdae-auslandstuerken" />
+    <xhtml:link rel="alternate" hreflang="tr" href="https://www.hasandogru.de/tr/blog/tck-191-kdae-yurt-disinda-yasayan-turkler" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.hasandogru.de/en/blog/tck-191-kdae-turks-abroad" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.hasandogru.de/de/blog/tck-191-kdae-auslandstuerken" />
+    <lastmod>2026-05-11</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.hasandogru.de/en/blog/tck-191-kdae-turks-abroad</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.hasandogru.de/en/blog/tck-191-kdae-turks-abroad" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://www.hasandogru.de/de/blog/tck-191-kdae-auslandstuerken" />
+    <xhtml:link rel="alternate" hreflang="de-DE" href="https://www.hasandogru.de/de/blog/tck-191-kdae-auslandstuerken" />
+    <xhtml:link rel="alternate" hreflang="de-CH" href="https://www.hasandogru.de/de/blog/tck-191-kdae-auslandstuerken" />
+    <xhtml:link rel="alternate" hreflang="de-AT" href="https://www.hasandogru.de/de/blog/tck-191-kdae-auslandstuerken" />
+    <xhtml:link rel="alternate" hreflang="tr" href="https://www.hasandogru.de/tr/blog/tck-191-kdae-yurt-disinda-yasayan-turkler" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.hasandogru.de/de/blog/tck-191-kdae-auslandstuerken" />
+    <lastmod>2026-05-11</lastmod>
+    <priority>0.7</priority>
+  </url>
+
   <!-- Blog Post: Erbrecht Leitfaden -->
   <url>
     <loc>https://www.hasandogru.de/de/blog/erbrecht-leitfaden-tuerkei</loc>
