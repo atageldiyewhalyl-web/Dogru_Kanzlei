@@ -12,6 +12,7 @@ interface SEOConfig {
   lang: 'de' | 'tr' | 'en';
   alternateLang?: { lang: string; href: string };
   alternateLangs?: { lang: string; href: string }[];
+  exactHreflangs?: boolean;
   xDefault?: string;
   noindex?: boolean;
   keywords?: string;
@@ -137,7 +138,7 @@ export function useSEO(config: SEOConfig) {
     }
 
     // German-speaking regions: DE, CH, AT all served by the /de version
-    if (config.lang === 'de') {
+    if (config.lang === 'de' && !config.exactHreflangs) {
       setLinkTag('alternate', canonicalUrl, { hreflang: 'de-DE' });
       setLinkTag('alternate', canonicalUrl, { hreflang: 'de-CH' });
       setLinkTag('alternate', canonicalUrl, { hreflang: 'de-AT' });
@@ -160,7 +161,7 @@ export function useSEO(config: SEOConfig) {
     } else {
       setMetaTag('robots', 'index, follow', true);
     }
-  }, [config.title, config.description, config.canonical, config.ogImage, config.ogTitle, config.ogType, config.lang, config.alternateLang, config.alternateLangs, config.xDefault, config.noindex, config.keywords, config.article]);
+  }, [config.title, config.description, config.canonical, config.ogImage, config.ogTitle, config.ogType, config.lang, config.alternateLang, config.alternateLangs, config.exactHreflangs, config.xDefault, config.noindex, config.keywords, config.article]);
 }
 
 export { SITE_URL };

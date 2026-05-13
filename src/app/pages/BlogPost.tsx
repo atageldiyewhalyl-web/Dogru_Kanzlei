@@ -104,6 +104,8 @@ export function BlogPost() {
     : '';
   const currentImage = post?.slugTR === 'almanya-turkiye-alacak-tahsili-icra'
     ? `${SITE_URL}/assets/debt_collection_law-BB5vtc8j.png`
+    : post?.schemaImage
+      ? post.schemaImage
     : post?.slugTR === 'almanya-turkiye-miras-hukuku-rehberi'
       ? `${SITE_URL}/assets/inheritance_fraud_law-BxjZQ9m1.png`
       : post?.slugTR === 'almanya-ortak-velayet-turkiye-tenfiz'
@@ -111,7 +113,9 @@ export function BlogPost() {
       : post?.slugTR === 'veraset-ilami-nedir-nasil-alinir' && language !== 'tr'
         ? `${SITE_URL}/assets/inheritance_fraud_law-BxjZQ9m1.png`
       : post?.image;
-  const currentArticleAuthor = post?.slugTR === 'almanya-turkiye-alacak-tahsili-icra'
+  const currentArticleAuthor = post?.slugTR === 'almanya-bosanma-turkiye-tanima-tenfiz'
+    ? 'Av. Hasan Doğru'
+    : post?.slugTR === 'almanya-turkiye-alacak-tahsili-icra'
     ? 'Av. Hasan Doğru'
     : post?.slugTR === 'almanya-turkiye-miras-hukuku-rehberi'
       ? 'Av. Hasan Doğru'
@@ -122,7 +126,10 @@ export function BlogPost() {
       : post?.slugTR === 'almanya-ortak-velayet-turkiye-tenfiz'
         ? 'Av. Hasan Doğru'
       : language === 'tr' ? 'Av. Hasan Doğru' : 'Hasan Doğru';
-  const currentArticleTags = post?.slugTR === 'almanya-turkiye-alacak-tahsili-icra'
+  const explicitArticleTags = post
+    ? (language === 'de' ? post.articleTagsDE : language === 'tr' ? post.articleTagsTR : post.articleTagsEN)
+    : undefined;
+  const currentArticleTags = explicitArticleTags || (post?.slugTR === 'almanya-turkiye-alacak-tahsili-icra'
     ? language === 'de'
       ? ['Forderungseinzug Türkei', 'Zwangsvollstreckung Türkei', 'Deutschland Türkei Recht']
       : language === 'tr'
@@ -152,7 +159,14 @@ export function BlogPost() {
             : language === 'tr'
               ? ['Ortak Velayet', 'Tenfiz', 'Türkiye Almanya Aile Hukuku']
               : ['Joint Custody Turkey', 'Tenfiz', 'Turkish Family Law Germany']
-    : undefined;
+    : undefined);
+  const currentArticleSection = post
+    ? (language === 'de'
+      ? (post.articleSectionDE || currentCategory)
+      : language === 'tr'
+        ? (post.articleSectionTR || currentCategory)
+        : (post.articleSectionEN || currentCategory))
+    : '';
 
   useSEO({
     title: isAvailable && post
@@ -173,24 +187,27 @@ export function BlogPost() {
     keywords: isAvailable && post
       ? (language === 'de' ? post.keywordsDE : language === 'tr' ? post.keywordsTR : post.keywordsEN)
       : undefined,
-    alternateLang: isAvailable && post ? {
+    alternateLang: isAvailable && post && !post.exactHreflangs ? {
       lang: language === 'de' ? 'tr' : 'de',
       href: `${SITE_URL}/${language === 'de' ? 'tr' : 'de'}/blog/${language === 'de' ? post.slugTR : post.slugDE}`,
     } : undefined,
     alternateLangs: isAvailable && post ? [
       { lang: 'tr', href: `${SITE_URL}/tr/blog/${post.slugTR}` },
       { lang: 'de', href: `${SITE_URL}/de/blog/${post.slugDE}` },
-      { lang: 'de-DE', href: `${SITE_URL}/de/blog/${post.slugDE}` },
-      { lang: 'de-CH', href: `${SITE_URL}/de/blog/${post.slugDE}` },
-      { lang: 'de-AT', href: `${SITE_URL}/de/blog/${post.slugDE}` },
+      ...(post.exactHreflangs ? [] : [
+        { lang: 'de-DE', href: `${SITE_URL}/de/blog/${post.slugDE}` },
+        { lang: 'de-CH', href: `${SITE_URL}/de/blog/${post.slugDE}` },
+        { lang: 'de-AT', href: `${SITE_URL}/de/blog/${post.slugDE}` },
+      ]),
       ...(hasEnglishAlternate ? [{ lang: 'en', href: `${SITE_URL}/en/blog/${post.slugEN}` }] : []),
     ] : undefined,
+    exactHreflangs: Boolean(post?.exactHreflangs),
     xDefault: isAvailable && post ? `${SITE_URL}/de/blog/${post.slugDE}` : undefined,
     article: isAvailable && post ? {
       publishedTime: `${currentPublishedAt}T00:00:00+00:00`,
       modifiedTime: `${currentModifiedAt}T00:00:00+00:00`,
       author: currentArticleAuthor,
-      section: currentCategory,
+      section: currentArticleSection,
       tags: currentArticleTags,
     } : undefined,
     noindex: !isAvailable,
@@ -260,10 +277,12 @@ export function BlogPost() {
       "@id": `${SITE_URL}/${language}/blog/${language === 'de' ? post.slugDE : language === 'tr' ? post.slugTR : post.slugEN}`
     },
     "inLanguage": language,
-    "about": {
+    ...(post.exactSchema ? {} : {
+      "about": {
       "@type": "LegalService",
       "name": category
-    }
+      }
+    })
   };
 
   const explicitFaqs = language === 'de' ? post.faqDE : language === 'tr' ? post.faqTR : post.faqEN;

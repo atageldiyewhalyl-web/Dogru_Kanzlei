@@ -62,6 +62,15 @@ export interface BlogPost {
   schemaHeadlineDE?: string;
   schemaHeadlineTR?: string;
   schemaHeadlineEN?: string;
+  articleSectionDE?: string;
+  articleSectionTR?: string;
+  articleSectionEN?: string;
+  articleTagsDE?: string[];
+  articleTagsTR?: string[];
+  articleTagsEN?: string[];
+  exactHreflangs?: boolean;
+  exactSchema?: boolean;
+  schemaImage?: string;
   faqDE?: { question: string; answer: string }[];
   faqTR?: { question: string; answer: string }[];
   faqEN?: { question: string; answer: string }[];
@@ -74,6 +83,831 @@ export interface BlogPost {
 }
 
 export const blogPosts: BlogPost[] = [
+  {
+    slug: "deutsche-scheidung-tuerkei-anerkennen-tanima-tenfiz",
+    slugDE: "deutsche-scheidung-tuerkei-anerkennen-tanima-tenfiz",
+    slugTR: "almanya-bosanma-turkiye-tanima-tenfiz",
+    slugEN: "german-divorce-recognition-turkey-tanima-tenfiz",
+    titleDE: "Deutsche Scheidung in der Türkei anerkennen lassen: Tanıma & Tenfiz — Verfahren, Fristen, Kosten und häufige Fehler (MÖHUK Art. 50–59)",
+    titleTR: "Almanya'da Boşandım, Türkiye'de Hâlâ Evli Görünüyorum: Tanıma ve Tenfiz Davası Rehberi (2026)",
+    titleEN: "German Divorce Recognition in Turkey: The Complete Tanıma & Tenfiz Guide (2026)",
+    excerptDE: "Sie haben sich in Deutschland scheiden lassen — aber in der Türkei gelten Sie weiterhin als verheiratet? Dieser Rechtstipp erklärt das Tanıma-ve-Tenfiz-Verfahren Schritt für Schritt.",
+    excerptTR: "Alman mahkemesinde boşandınız — ama Türk nüfus kütüğünde hâlâ \"evli\" yazıyor. Bu rehber, tanıma ve tenfiz davasını adım adım açıklıyor ve Türkiye'ye gitmeden sorunu nasıl çözebileceğinizi anlatıyor.",
+    excerptEN: "Divorced in Germany but still legally married in Turkey? This guide explains the tanıma and tenfiz process step by step — what it is, how long it takes, what it costs, and how to do it without travelling to Turkey.",
+    metaTitleDE: "Deutsche Scheidung Türkei anerkennen: Tanıma Tenfiz 2026 — Verfahren & Kosten",
+    metaTitleTR: "Almanya Boşanma Türkiye Tanıma Tenfiz: Adım Adım Rehber 2026",
+    metaTitleEN: "German Divorce Recognition in Turkey: Tanıma Tenfiz Guide 2026",
+    metaDescriptionDE: "In Deutschland geschieden, in der Türkei noch verheiratet? Das Tanıma-Tenfiz-Verfahren Schritt für Schritt — Kosten, Fristen, häufige Fehler und direkter Anwalt.",
+    metaDescriptionTR: "Almanya'da boşandınız ama Türkiye'de hâlâ evli görünüyorsunuz. Tanıma tenfiz davası ile nüfus kaydınızı düzeltin — belgeler, süreç ve 2026 bilgileri.",
+    metaDescriptionEN: "Divorced in Germany but still married in Turkey? Learn how to get your German divorce recognised through tanıma tenfiz — process, costs, and how to avoid the most common mistakes.",
+    schemaHeadlineDE: "Deutsche Scheidung in der Türkei anerkennen lassen: Tanıma & Tenfiz 2026 — Verfahren, Fristen, Kosten",
+    schemaHeadlineTR: "Almanya'da Boşandım, Türkiye'de Hâlâ Evli Görünüyorum: Tanıma ve Tenfiz Davası Rehberi 2026",
+    schemaHeadlineEN: "German Divorce Recognition in Turkey: The Complete Tanıma & Tenfiz Guide (2026)",
+    articleSectionDE: "Familienrecht",
+    articleSectionTR: "Aile Hukuku",
+    articleSectionEN: "Family Law",
+    articleTagsDE: ["Tanıma Tenfiz", "deutsche Scheidung Türkei", "MÖHUK"],
+    articleTagsTR: ["tanıma tenfiz", "almanya boşanma türkiye", "MÖHUK"],
+    articleTagsEN: ["tanima tenfiz", "German divorce Turkey", "MOHUK"],
+    exactHreflangs: true,
+    exactSchema: true,
+    schemaImage: "https://www.hasandogru.de/assets/inheritance_fraud_law-BxjZQ9m1.png",
+    contentDE: `> *Dieser Artikel befasst sich ausschließlich mit dem türkischen Recht. Die Doğru Kanzlei berät gemäß § 207 BRAO ausschließlich im türkischen Recht.*
+
+---
+
+Eine Situation, die Hunderttausende betrifft: Türkische Staatsangehörige oder ehemalige türkische Staatsangehörige — darunter viele Mavi-Kart-Inhaber (türkische Staatsbürger, die eine andere Staatsbürgerschaft angenommen haben, aber ihre Verbindung zur Türkei rechtlich aufrechterhalten) — lassen sich in Deutschland scheiden. Das deutsche Familiengericht spricht die Scheidung aus, der Beschluss wird rechtskräftig — das Verfahren ist abgeschlossen.
+
+Was viele nicht wissen: Diese deutsche Scheidung hat in der Türkei keinerlei Wirkung. Im türkischen Personenstandsregister (Nüfus Müdürlüğü) bleiben die Betroffenen als *evli* (verheiratet) eingetragen. Das Standesamt kann auf Anfrage keine Ehefähigkeitsbescheinigung ausstellen, solange die Scheidung in der Türkei nicht förmlich anerkannt ist — auch wenn Sie längst die deutsche Staatsbürgerschaft besitzen.
+
+Um diese Rechtslage zu bereinigen, ist ein förmliches Verfahren in der Türkei erforderlich: die **Tanıma** (Anerkennung) bzw. **Tenfiz** (Vollstreckbarerklärung) des deutschen Scheidungsbeschlusses, geregelt in MÖHUK Art. 50–59.
+
+---
+
+## Das Problem: In Deutschland geschieden, in der Türkei noch verheiratet
+
+Die Konsequenzen einer fehlenden Tanıma sind weitreichend:
+
+Erstens können Sie in der Türkei nicht erneut heiraten — selbst dann nicht, wenn Sie inzwischen die deutsche Staatsbürgerschaft besitzen. Möchten Sie in Deutschland erneut heiraten, verlangt das Standesamt eine Ehefähigkeitsbescheinigung aus der Türkei, die das türkische Konsulat ohne anerkannte Scheidung nicht ausstellt.
+
+Zweitens bleiben Sie im türkischen Erbrecht Erbe Ihres geschiedenen Ehegatten — und umgekehrt. Nach türkischem Erbrecht ist der Ehegatte gesetzlicher Erbe. Ohne Tanıma besteht diese Erbenstellung fort, auch wenn das deutsche Scheidungsurteil seit Jahren rechtskräftig ist.
+
+Drittens bleiben während der Ehezeit in der Türkei erworbene Vermögenswerte dem ehelichen Güterrecht (Edinilmiş Mallara Katılma Rejimi) unterworfen. Der Güterstand endet nach türkischem Recht erst mit der Rechtskraft der Tanıma.
+
+Viertens wird ein Kind, das nach der deutschen Scheidung geboren wird, automatisch dem früheren Ehegatten im türkischen Personenstandsregister zugeordnet — mit erheblichen Konsequenzen für das Unterhalts- und Sorgerecht nach türkischem Recht.
+
+> ⚠️ **Wichtig:** Je länger Sie warten, desto größer werden die Risiken. Der geschiedene Ehegatte könnte versterben — und Sie erben nach türkischem Recht als (formal eingetragener) Ehegatte. Oder: Die einjährige Frist für den Zugewinnausgleich in der Türkei läuft ab — und Ihre Vermögensansprüche erlöschen unwiederbringlich.
+
+---
+
+## Rechtsgrundlagen: MÖHUK Art. 50–59
+
+Gesetzliche Grundlage ist das 5718 sayılı Milletlerarası Özel Hukuk ve Usul Hukuku Hakkında Kanun (MÖHUK) — das türkische Internationale Privatrechtsgesetz.
+
+**Art. 50:** Voraussetzungen der Tenfiz (Vollstreckbarerklärung).
+
+**Art. 51:** Zuständigkeit — Familiengericht (Aile Mahkemesi) am letzten Wohnsitz des Antragsgegners in der Türkei. Hat der Antragsgegner keinen Wohnsitz in der Türkei, kann die Klage in Ankara, Istanbul oder Izmir erhoben werden.
+
+**Art. 52:** Antrag und erforderliche Unterlagen.
+
+**Art. 53:** Mündliche Verhandlung — Ladung beider Parteien.
+
+**Art. 54:** Die vier materiellen Voraussetzungen: Gegenseitigkeit, keine ausschließliche türkische Zuständigkeit, kein Verstoß gegen den *ordre public*, Wahrung des rechtlichen Gehörs.
+
+**Art. 58:** Tanıma (Anerkennung) — vereinfachte Anerkennung ohne Vollstreckungswirkung.
+
+**Art. 59:** Tanıma als Vorfrage in anderen Verfahren — relevant, wenn Erbschaft oder Güterrecht vor türkischen Gerichten geklärt werden soll.
+
+Weitere relevante Norm: Nüfus Hizmetleri Kanunu Art. 27/A (eingefügt durch Gesetz Nr. 7039, 2017) — verwaltungsrechtliche Eintragung über das Konsulat.
+
+---
+
+## Tanıma oder Tenfiz? Der Unterschied in der Praxis
+
+**Tanıma (Anerkennung) — Art. 58 MÖHUK**
+
+Die Tanıma bewirkt, dass der deutsche Scheidungsbeschluss in der Türkei als rechtskräftig anerkannt wird. Es entfaltet Feststellungswirkung: Die Ehe gilt als aufgelöst, das Personenstandsregister wird aktualisiert. Eine Tanıma genügt, wenn der deutsche Scheidungsbeschluss keine vollstreckbaren Nebenentscheidungen enthält — also weder Unterhalt noch Sorgerecht regelt.
+
+**Tenfiz (Vollstreckbarerklärung) — Art. 50–54 MÖHUK**
+
+Die Tenfiz geht weiter: Sie macht den deutschen Beschluss in der Türkei vollstreckbar. Dies ist erforderlich, wenn der Beschluss Regelungen zum Unterhalt (Nafaka), Sorgerecht (Velayet), Zugewinnausgleich oder zu Schadensersatz enthält, die in der Türkei durchgesetzt werden sollen. Die Tenfiz umfasst automatisch auch die Tanıma.
+
+**Praxishinweis:** In den meisten Fällen empfiehlt es sich, Tanıma und Tenfiz gemeinsam zu beantragen — auch wenn der Schwerpunkt auf der Statusänderung liegt. So sind spätere Unterhalts- oder Sorgerechtsfragen gleich miterfasst, ohne dass ein weiteres Verfahren erforderlich wird.
+
+---
+
+## Die vier materiellen Voraussetzungen (Art. 54 MÖHUK)
+
+### a) Gegenseitigkeit (Karşılıklılık)
+
+Zwischen Deutschland und der Türkei besteht faktische Gegenseitigkeit. Deutsche Gerichte erkennen türkische Urteile an (vgl. §§ 108, 109 FamFG), und türkische Gerichte erkennen deutsche Urteile an. Dies ist ständige Rechtsprechung des Yargıtay 2. Hukuk Dairesi und in der Praxis unstreitig.
+
+### b) Keine ausschließliche Zuständigkeit türkischer Gerichte
+
+Der deutsche Scheidungsbeschluss darf nicht in eine Materie fallen, die ausschließlich türkischen Gerichten vorbehalten ist. Bei Scheidungen ist dies unproblematisch: Das türkische Recht erkennt die internationale Zuständigkeit des Gerichts am gewöhnlichen Aufenthalt der Ehegatten an.
+
+### c) Kein Verstoß gegen den ordre public (Kamu Düzeni)
+
+Das deutsche Scheidungsurteil darf nicht gegen grundlegende Wertungen der türkischen Rechtsordnung verstoßen. Bei regulären Scheidungsverfahren wird dies stets verneint. Der Yargıtay 2. Hukuk Dairesi hat in zahlreichen Entscheidungen bestätigt, dass deutsche Scheidungsbeschlüsse grundsätzlich nicht gegen den türkischen ordre public verstoßen.
+
+### d) Wahrung des rechtlichen Gehörs (Savunma Hakkı)
+
+Dem Antragsgegner muss im deutschen Verfahren ordnungsgemäß Gehör gewährt worden sein. War der Antragsgegner anwaltlich vertreten, persönlich erschienen oder hat auf die Ladung nicht reagiert, ist diese Voraussetzung erfüllt. Problematisch wird es nur, wenn die Zustellung des Scheidungsantrags im deutschen Verfahren fehlerhaft war.
+
+---
+
+## Sonderweg seit 2017: Konsularische Eintragung (Art. 27/A Nüfus Hizmetleri Kanunu)
+
+Seit der Gesetzesänderung 2017 besteht eine verwaltungsrechtliche Alternative zur gerichtlichen Tanıma: Beide Ehegatten können gemeinsam beim zuständigen türkischen Konsulat (z.B. Generalkonsulat Karlsruhe, Frankfurt oder Stuttgart) die Eintragung der Scheidung in das Personenstandsregister beantragen.
+
+**Voraussetzungen:** Beide Ehegatten müssen persönlich beim Konsulat erscheinen. Der deutsche Scheidungsbeschluss muss rechtskräftig sein, mit Apostille versehen und von einem vereidigten Übersetzer ins Türkische übersetzt worden sein.
+
+**Wichtige Einschränkungen:** Dieser Weg erfasst ausschließlich den Scheidungsstatus. Unterhalt, Sorgerecht, Güterrecht oder Schadensersatz werden nicht berücksichtigt. Verweigert der frühere Ehegatte die Mitwirkung oder ist er unauffindbar, scheidet dieser Weg aus.
+
+> ⚠️ **Wichtig:** Der Konsularweg eignet sich nur dann, wenn beide Parteien vollständig einig sind und keine Vermögensansprüche in der Türkei bestehen. Sobald Güterrecht, Unterhalt oder türkische Immobilien eine Rolle spielen, ist der Gerichtsweg über Tanıma-Tenfiz die einzig rechtssichere Option.
+
+---
+
+## Schritt-für-Schritt: Das gerichtliche Tanıma-Tenfiz-Verfahren
+
+### Schritt 1 — Unterlagen in Deutschland beschaffen
+
+Benötigt werden:
+- Beglaubigte Ausfertigung des deutschen Scheidungsbeschlusses
+- Rechtskraftbescheinigung (Kesinleşme Şerhi) vom deutschen Familiengericht
+- Apostille vom zuständigen Oberlandesgericht — **nicht** vom Amtsgericht oder Notar
+- Vereidigte türkische Übersetzung aller Dokumente
+
+### Schritt 2 — Vollmacht (Vekaletname) erteilen
+
+Mit einer notariellen Vollmacht bevollmächtigen Sie einen Avukat in der Türkei, das Verfahren für Sie zu führen. Die Vollmacht wird beim deutschen Notar erstellt — anschließend ist eine Apostille sowie eine türkische Übersetzung erforderlich. Alternativ kann die Vollmacht direkt beim türkischen Konsulat erstellt werden; dann entfällt die Apostille.
+
+### Schritt 3 — Klageerhebung beim Aile Mahkemesi
+
+Ihr Avukat reicht die Tanıma-Tenfiz-Klage beim zuständigen Familiengericht ein. Zuständig ist grundsätzlich das Gericht am Wohnsitz des Antragsgegners in der Türkei. Hat der Antragsgegner keinen Wohnsitz in der Türkei, kann die Klage in Ankara, Istanbul oder Izmir erhoben werden (Art. 51 MÖHUK).
+
+### Schritt 4 — Zustellung an den Antragsgegner
+
+Dies ist regelmäßig der zeitaufwendigste Verfahrensschritt. Lebt der Antragsgegner in der Türkei, erfolgt die Zustellung über das Gericht. Lebt er in Deutschland, muss die Zustellung über das Haager Zustellungsübereinkommen (1965) oder die bilaterale Vereinbarung zwischen Deutschland und der Türkei erfolgen — eine Auslandszustellung kann 3–6 Monate dauern.
+
+**Praxishinweis:** Die effizienteste Lösung ist, wenn beide Parteien jeweils einen Avukat in der Türkei bevollmächtigen. So entfällt die Auslandszustellung vollständig, und das Verfahren kann in wenigen Wochen abgeschlossen werden.
+
+### Schritt 5 — Mündliche Verhandlung
+
+Das Gericht prüft die materiellen Voraussetzungen (Art. 54 MÖHUK). In der Regel genügen eine bis zwei Sitzungen. Die persönliche Anwesenheit der Parteien ist nicht erforderlich — die Vertretung durch bevollmächtigte Avukate ist ausreichend.
+
+### Schritt 6 — Urteil und Rechtskraft
+
+Das Gericht spricht die Tanıma und/oder Tenfiz aus. Nach Ablauf der Rechtsmittelfrist (2 Wochen İstinaf / Berufung) wird das Urteil rechtskräftig.
+
+### Schritt 7 — Aktualisierung des Personenstandsregisters
+
+Mit dem rechtskräftigen Tanıma-Urteil wird das Nüfus Müdürlüğü angewiesen, den Familienstand von *evli* (verheiratet) auf *boşanmış* (geschieden) zu ändern. Dieser letzte Schritt erfolgt in der Regel innerhalb weniger Tage.
+
+---
+
+## Verfahrensdauer und Kosten (2026)
+
+| Szenario | Geschätzte Dauer |
+|---|---|
+| Beide Parteien anwaltlich in der Türkei vertreten | 2–4 Monate |
+| Einseitige Klage, Zustellung in der Türkei | 3–6 Monate |
+| Zustellung nach Deutschland (Auslandszustellung) | 6–12 Monate |
+| Öffentliche Zustellung (Adresse unbekannt) | 8–14 Monate |
+
+| Kostenart | Geschätzter Betrag |
+|---|---|
+| Gerichtskosten (Maktu Harç, 2026) | 3.000 – 5.000 TL |
+| Apostille (pro Dokument) | 25 – 50 EUR |
+| Vereidigte Übersetzung | 150 – 300 EUR |
+| Anwaltshonorar | Nach individueller Vereinbarung |
+
+---
+
+## Die fünf häufigsten Fehler — und wie Sie sie vermeiden
+
+**Fehler 1: „Ich bin doch schon geschieden — wozu brauche ich das?"**
+Die deutsche Scheidung hat in der Türkei keine Wirkung. Ohne Tanıma bleiben Sie im türkischen Register verheiratet — mit allen erbrechtlichen und güterrechtlichen Konsequenzen.
+
+**Fehler 2: Zu langes Warten**
+Je länger Sie warten, desto größer die Risiken: Der frühere Ehegatte könnte versterben, und Sie würden nach türkischem Recht als Ehegatte erben. Oder umgekehrt. Außerdem läuft die einjährige Frist für den Zugewinnausgleich in der Türkei. Diese Frist beginnt nicht mit der deutschen Scheidung, sondern mit der Rechtskraft der türkischen Tanıma.
+
+**Fehler 3: Fehlende oder fehlerhafte Apostille**
+Die Apostille muss vom zuständigen Oberlandesgericht (OLG) angebracht werden — nicht vom Amtsgericht, nicht vom Notar. Häufig werden Dokumente mit ungültiger oder fehlender Apostille eingereicht, was zur Ablehnung führt.
+
+**Fehler 4: Unvollständige Übersetzung**
+Der gesamte deutsche Scheidungsbeschluss — einschließlich Tatbestand und Entscheidungsgründe — muss übersetzt werden. Eine Teilübersetzung genügt nicht und kann zur Verfahrensverzögerung führen.
+
+**Fehler 5: Nur Tanıma ohne Tenfiz beantragt**
+Wenn im deutschen Beschluss Unterhalt oder Sorgerecht geregelt ist und Sie diese Regelungen in der Türkei durchsetzen möchten, brauchen Sie die Tenfiz — nicht nur die Tanıma.
+
+---
+
+## Sonderfall: Güterrecht und Zugewinnausgleich in der Türkei
+
+Ein häufig übersehener Aspekt: Wenn die Eheleute während der Ehezeit Vermögen in der Türkei erworben haben (z.B. Immobilien, Fahrzeuge, Bankguthaben), muss der güterrechtliche Ausgleich (Edinilmiş Mallara Katılma Rejiminin Tasfiyesi) in der Türkei gesondert geltend gemacht werden.
+
+> ⚠️ **Wichtig — einjährige Ausschlussfrist:** Die Verjährungsfrist für den Zugewinnausgleich beginnt nicht mit Rechtskraft der deutschen Scheidung, sondern mit Rechtskraft der **türkischen Tanıma**. Dies entspricht der ständigen Rechtsprechung des Yargıtay 8. Hukuk Dairesi. Versäumen Sie diese Frist, verlieren Sie Ihre Ansprüche auf türkisches Vermögen dauerhaft. Daher ist es dringend empfehlenswert, die Tanıma-Tenfiz-Klage und die Mal-Paylaşımı-Klage (Güterrechtsklage) gleichzeitig zu erheben.
+
+---
+
+## Doğru Kanzlei: Direkte Vertretung — ohne Kooperationspartner
+
+Viele Kanzleien in Deutschland vermitteln Tanıma-Tenfiz-Verfahren an Kooperationspartner in der Türkei weiter. Das bedeutet: doppelte Kommunikationswege, Informationsverluste, höhere Kosten und längere Verfahrensdauer.
+
+[Die Doğru Kanzlei](https://www.hasandogru.de/de/leistungen) arbeitet anders: Als Mitglied der Rechtsanwaltskammer Ankara (Ankara Barosu, Sicil-Nr. 47068) und registriert bei der Rechtsanwaltskammer Karlsruhe gemäß § 207 BRAO vertritt Av. Hasan Doğru Mandanten persönlich vor türkischen Familiengerichten — direkt, ohne Drittvermittlung. Über das UYAP-Gerichtssystem werden Verfahrensstatus, Fristen und Zustellungen in Echtzeit aus Deutschland überwacht.
+
+Für Mandanten bedeutet das: Ein Ansprechpartner in Deutschland, der gleichzeitig vor dem türkischen Gericht steht. Keine Reise in die Türkei erforderlich. Keine Kooperationspartner-Kosten. Schnellere Verfahrensabwicklung durch direkte Kommunikation mit dem Gericht.
+
+[Kostenlose Ersteinschätzung bei der Doğru Kanzlei anfragen →](https://calendly.com/hasand9366/30min)
+
+---
+
+Diesen Artikel haben wir auch auf Türkisch veröffentlicht:
+[Almanya'da Boşandım, Türkiye'de Hâlâ Evli Görünüyorum: Tanıma ve Tenfiz Rehberi →](/tr/blog/almanya-bosanma-turkiye-tanima-tenfiz)
+
+Und auf Englisch für englischsprachige Familienmitglieder:
+[German Divorce Recognition in Turkey: Complete Guide 2026 →](/en/blog/german-divorce-recognition-turkey-tanima-tenfiz)
+
+---
+
+## Häufig gestellte Fragen
+
+**Was passiert, wenn ich die deutsche Scheidung in der Türkei nicht anerkennen lasse?**
+Ohne Tanıma-Tenfiz-Verfahren bleiben Sie im türkischen Personenstandsregister als verheiratet eingetragen. Sie können in der Türkei nicht erneut heiraten, das Erbrecht des früheren Ehegatten bleibt bestehen, und Vermögensansprüche im türkischen Güterrecht können nicht geltend gemacht werden.
+
+**Was ist der Unterschied zwischen Tanıma und Tenfiz?**
+Tanıma (Art. 58 MÖHUK) ist die bloße Anerkennung des deutschen Scheidungsbeschlusses — sie aktualisiert das Personenstandsregister. Tenfiz (Art. 50–54 MÖHUK) macht den Beschluss zusätzlich vollstreckbar, was für Unterhalt, Sorgerecht oder Zugewinnausgleich erforderlich ist. Die Tenfiz schließt die Tanıma automatisch ein.
+
+**Wie lange dauert das Verfahren?**
+Je nach Zustellungssituation 2 bis 14 Monate. Am schnellsten geht es, wenn beide Parteien in der Türkei anwaltlich vertreten sind — dann sind 2–4 Monate realistisch.
+
+**Muss ich in die Türkei reisen?**
+Nein. Eine notarielle Vollmacht (Vekaletname) genügt. Die Doğru Kanzlei vertritt Sie direkt vor dem türkischen Familiengericht, ohne dass Sie reisen müssen.
+
+**Kann ich die Scheidung über das türkische Konsulat eintragen lassen?**
+Seit 2017 ist dies bei gemeinsamer Antragstellung beider Ehegatten möglich (Art. 27/A). Dieser Weg ist aber auf den Scheidungsstatus beschränkt — Unterhalt, Sorgerecht und Güterrecht können darüber nicht geregelt werden.
+
+**Was kostet das Verfahren?**
+Gerichtskosten ca. 3.000–5.000 TL, Übersetzung ca. 150–300 EUR, Apostille ca. 25–50 EUR pro Dokument. Das Anwaltshonorar wird individuell vereinbart.
+
+**Wie lange habe ich für den Zugewinnausgleich?**
+Die Frist beträgt 1 Jahr ab Rechtskraft der türkischen Tanıma — nicht ab der deutschen Scheidung. Diese Frist ist eine Ausschlussfrist; bei Versäumnis erlöschen die Ansprüche dauerhaft.
+
+**Welche Unterlagen brauche ich?**
+Beglaubigte Ausfertigung des Scheidungsbeschlusses, Rechtskraftbescheinigung, Apostille des OLG, vereidigte türkische Übersetzung und eine notarielle Vollmacht für den türkischen Anwalt.
+
+---
+
+> *Dieser Artikel befasst sich ausschließlich mit dem türkischen Recht. Die Doğru Kanzlei berät gemäß § 207 BRAO ausschließlich im türkischen Recht.*`,
+    contentTR: `> *Bu makale yalnızca Türk hukukuna ilişkin genel bilgi amaçlıdır. Doğru Kanzlei, §207 BRAO kapsamında yalnızca Türk hukuku konularında danışmanlık vermektedir.*
+
+---
+
+Almanya'da yıllarca yaşadınız. Alman mahkemesinde boşandınız, kararı aldınız, yeni hayatınıza başladınız. Peki ya Türkiye'deki nüfus kaydınız? Türk Nüfus Müdürlüğü'nde hâlâ "evli" yazıyor. Türkiye'de yeniden evlenmek istiyorsunuz — ya da Almanya'da yeni bir nikah kıymak için Türk konsolosluğundan evlenme belgesi talep ediyorsunuz. Ve o anda beklenmedik bir gerçekle karşılaşıyorsunuz: Almanya'daki boşanmanız, Türkiye için hiç olmamış gibi sayılıyor.
+
+Bu durum, her yıl Almanya'da yaşayan on binlerce Türk kökenli kişiyi şaşırtan bir hukuki gerçektir. Alman mahkemesinin verdiği boşanma kararı, Türkiye'de kendiliğinden hüküm ifade etmez. Türk hukukuna göre yabancı mahkeme kararlarının geçerlilik kazanması için Türk Aile Mahkemesi'nde ayrı bir dava açılması şarttır. Bu davaya **tanıma ve tenfiz davası** denir.
+
+Mavi Kart sahibi misiniz? Yıllardır Almanya'da yaşasanız ve Alman vatandaşlığına geçmiş olsanız dahi, Türk nüfus kaydındaki statünüz bir dava açılmadıkça değişmez. Bu rehber, tanıma-tenfiz sürecini hiç hukuki bilgisi olmayan biri de anlasın diye yazıldı.
+
+---
+
+## Neden Tanıma Tenfiz Davası Açmak Zorundasınız?
+
+Türk hukuku, yabancı mahkeme kararlarını otomatik olarak tanımaz. Her devletin kendi hukuk düzeninin egemenliğini koruması ilkesi gereği, Almanya'da verilen bir boşanma kararı, Türkiye'de geçerli olabilmek için Türk devletinin onayını almak zorundadır. Bu onay, MÖHUK (5718 sayılı Milletlerarası Özel Hukuk ve Usul Hukuku Hakkında Kanun) kapsamında Türk Aile Mahkemesi'nce verilir.
+
+Tanıma-tenfiz davası açılmadığı takdirde şu sonuçlar doğar:
+
+Türk Nüfus Müdürlüğü kayıtlarınız güncellenmez; resmen "evli" olmaya devam edersiniz. Türkiye'de yeniden evlenemezsiniz. Almanya'da yeniden evlenmek isteseniz bile Standesamt (Medeni Hal Dairesi) Türk makamlarından evlenme ehliyet belgesi ister — ve bu belge verilmez. Alman boşanmasından sonra doğan çocuklar, Türk nüfus kaydında eski eşinize bağlı tescil edilebilir. Türkiye'de edinilmiş mallar üzerinde evlilik mal rejimi devam eder. Eski eşiniz vefat ederse siz Türk hukukuna göre mirasçı sayılırsınız — ya da siz vefat ederseniz eski eşiniz sizden miras alır.
+
+> ⚠️ **Önemli:** Almanya'daki boşanma kararınız kesinleştikten sonra ne kadar beklerseniz risk o kadar büyür. Özellikle Türkiye'de ortak mal varlıkları mevcutsa, tanıma davasının ardından mal paylaşımı için yalnızca 1 yıllık süreniz bulunmaktadır. Bu süre, Alman kararından değil Türk tanıma kararından itibaren başlar.
+
+---
+
+## Tanıma mı, Tenfiz mi? Farkı Bilmek Neden Önemli?
+
+Bu iki kavram çoğu zaman birbirine karıştırılır. Hangisine ihtiyacınız olduğu, Alman boşanma kararının içeriğine göre değişir.
+
+**Tanıma (MÖHUK m. 58)** — Yabancı mahkeme kararının Türkiye'de "kesin hüküm" etkisi kazanmasıdır. Alman kararınız yalnızca boşanmayı hükme bağlıyorsa — yani nafaka, velayet ya da tazminat içermiyorsa — tanıma yeterlidir. Nüfus kaydınız "boşanmış" olarak güncellenir.
+
+**Tenfiz (MÖHUK m. 50–54)** — Yabancı mahkeme kararındaki maddi yükümlülüklerin Türkiye'de icra edilebilir hale gelmesidir. Alman kararınızda nafaka (Unterhalt), velayet (Sorgerecht), mal paylaşımı veya tazminat hükümleri varsa ve bunları Türkiye'de uygulatmak istiyorsanız tenfiz zorunludur. Tenfiz kararı, tanıma etkisini de otomatik olarak kapsar.
+
+**Pratik öneri:** Alman kararınızda bu tür ek hükümler olmasa bile, tanıma ile birlikte tenfiz talebini de yapmanızı öneririz. İleride doğabilecek nafaka veya velayet anlaşmazlıklarında ayrıca mahkemeye gitmeniz gerekmez.
+
+---
+
+## Yasal Dayanak: MÖHUK m. 50–59
+
+Tanıma ve tenfiz davalarının yasal dayanağı, 5718 sayılı Milletlerarası Özel Hukuk ve Usul Hukuku Hakkında Kanun'dur. Bilmeniz gereken temel maddeler:
+
+**Madde 50:** Tenfizin genel koşullarını düzenler.
+
+**Madde 51:** Yetkili mahkemeyi belirler. Davalının Türkiye'deki son yerleşim yeri aile mahkemesi yetkilidir. Türkiye'de yerleşim yeri yoksa dava Ankara, İstanbul veya İzmir aile mahkemelerinden birinde açılabilir.
+
+**Madde 54:** Dört temel maddi koşul: karşılıklılık (karşılıklılık ilkesi), münhasır yetki bulunmaması, kamu düzenine aykırılık olmaması ve savunma hakkının korunmuş olması.
+
+**Madde 58:** Tanıma — tenfize göre daha basit, icra kabiliyeti olmaksızın kesin hüküm etkisi doğurur.
+
+---
+
+## Dört Temel Koşul (MÖHUK m. 54)
+
+Mahkeme, tanıma veya tenfize karar verebilmek için dört koşulu inceler:
+
+**1. Karşılıklılık**
+Almanya ile Türkiye arasında fiili karşılıklılık mevcuttur. Türk mahkemeleri Alman boşanma kararlarını, Alman mahkemeleri de Türk kararlarını tanır. Bu durum Yargıtay 2. Hukuk Dairesi'nin yerleşik içtihadıyla sabittir.
+
+**2. Türk Mahkemelerinin Münhasır Yetkisinin Olmaması**
+Boşanma davalarında bu koşul hiçbir zaman sorun yaratmaz. Türk hukuku, tarafların mutad meskeninin bulunduğu yabancı mahkemenin milletlerarası yetkisini tanır.
+
+**3. Kamu Düzenine Aykırılık Olmaması**
+Standart boşanma davalarında Alman kararlar Türk kamu düzenini ihlal etmez. Bu durum Yargıtay 2. Hukuk Dairesi tarafından defalarca teyit edilmiştir.
+
+**4. Savunma Hakkının Korunmuş Olması**
+Alman davası sürecinde karşı tarafa usulüne uygun tebligat yapılmış olmalı ve hukuki dinlenilme hakkı tanınmış olmalıdır. Karşı taraf avukatla temsil edildiyse, bizzat katıldıysa ya da tebligata rağmen duruşmaya gelmediyse bu koşul yerine gelmiş sayılır.
+
+---
+
+## 2017'de Açılan Yeni Yol: Konsolosluk Başvurusu
+
+2017 yılında yürürlüğe giren 7039 sayılı Kanun ile Nüfus Hizmetleri Kanunu'na eklenen m. 27/A, bir idari alternatif sunmaktadır: Her iki eş de Almanya'daki Türk konsolosluğuna (Karlsruhe, Frankfurt veya Stuttgart Başkonsolosluğu) birlikte başvurarak boşanmanın nüfus kaydına işlenmesini talep edebilir.
+
+Bu yolun koşulları: Her iki eş de konsolosluğa bizzat gelmeli. Alman boşanma kararı kesinleşmiş olmalı, apostilli suret ve yeminli Türkçe tercümesi hazır olmalı.
+
+**Bu yolun önemli sınırlamaları:**
+
+Yalnızca boşanma statüsünü kapsar. Nafaka, velayet veya Türkiye'deki mal paylaşımı bu yolla çözülemez. Eski eşiniz başvuruyu reddederse ya da bulunamazsa bu yol kullanılamaz. Türkiye'de ortak mal varlıkları mevcutsa bu yol haklarınızı korumaz.
+
+> ⚠️ **Önemli:** Konsolosluk yolu cazip görünebilir — ama yalnızca boşanma statünüzü güncellemek istiyorsanız ve eski eşiniz tam anlaşma içindeyse geçerlidir. Türkiye'de ortak taşınmaz, araç ya da banka hesabı varsa veya nafaka/velayet konusunda anlaşmazlık söz konusuysa doğrudan mahkeme yoluna gitmeniz şarttır.
+
+---
+
+## Adım Adım: Gerichtliches Tanıma-Tenfiz Süreci
+
+**Adım 1 — Almanya'da Belgeleri Toplayın**
+
+Gerekli belgeler:
+- Alman boşanma kararının onaylı sureti
+- Kesinleşme şerhi (Rechtskraftbescheinigung) — boşanmayı veren mahkemeden alınır
+- Apostil — yetkili Eyalet Yüksek Mahkemesi'nden (Oberlandesgericht) alınır; Amtsgericht veya noterden alınan apostil geçersizdir
+- Tüm belgelerin yeminli Türkçe tercümesi
+
+**Adım 2 — Vekaletname Düzenleyin**
+
+Türkiye'deki dava için avukatınıza Türk hukukuna uygun bir vekaletname vermeniz gerekir. Vekaletname Almanya'da noter aracılığıyla düzenlenebilir; bu durumda apostil eklenmesi ve Türkçeye çevrilmesi gerekir. Alternatif olarak Türk Konsolosluğu'nda doğrudan düzenlenebilir — bu yolda apostil gerekmez.
+
+**Adım 3 — Davanın Açılması**
+
+Avukatınız, yetkili Aile Mahkemesi'nde tanıma-tenfiz davasını açar. Davalının Türkiye'de yerleşim yeri yoksa dava Ankara, İstanbul veya İzmir'de açılabilir.
+
+**Adım 4 — Tebligat**
+
+Sürecin en uzun aşamasıdır. Davalı Türkiye'de ikamet ediyorsa tebligat hızlıdır. Davalı Almanya'da yaşıyorsa tebligat Lahey Tebligat Sözleşmesi çerçevesinde 3–6 ay sürebilir. Adres bilinmiyorsa ilanen tebligat yoluna başvurulur.
+
+**En hızlı çözüm:** Her iki tarafın da Türkiye'de ayrı birer avukate vekaletname vermesi. Bu durumda yurt dışı tebligat tamamen ortadan kalkar ve dava haftalarda sonuçlanabilir.
+
+**Adım 5 — Duruşma**
+
+Mahkeme MÖHUK m. 54'teki dört koşulu inceler. Genellikle bir ile iki oturum yeterlidir. Tarafların bizzat mahkemede bulunması gerekmez.
+
+**Adım 6 — Karar ve Kesinleşme**
+
+Mahkeme tanıma ve/veya tenfiz kararını verir. İstinaf süresi (2 hafta) geçtikten sonra karar kesinleşir.
+
+**Adım 7 — Nüfus Kaydının Güncellenmesi**
+
+Kesinleşen kararla birlikte Nüfus Müdürlüğü'ne başvurulur. Aile kütüğündeki "evli" ibaresi "boşanmış" olarak güncellenir. Bu son adım genellikle birkaç gün içinde tamamlanır.
+
+---
+
+## Süre ve Maliyetler: 2026 Gerçekçi Rakamlar
+
+| Senaryo | Tahmini Süre |
+|---|---|
+| Her iki taraf Türkiye'de avukatla temsil ediliyor | 2–4 ay |
+| Tek taraflı dava, davalıya Türkiye'de tebligat | 3–6 ay |
+| Davalıya Almanya'ya uluslararası tebligat | 6–12 ay |
+| İlanen tebligat (adres bilinmiyor) | 8–14 ay |
+
+| Maliyet Kalemi | Tahmini Tutar |
+|---|---|
+| Mahkeme harcı (maktu harç, 2026) | 3.000 – 5.000 TL |
+| Apostil (belge başına) | 25 – 50 EUR |
+| Yeminli çeviri | 150 – 300 EUR |
+| Avukatlık ücreti | Bireysel anlaşmaya göre |
+
+---
+
+## En Sık Yapılan 5 Hata
+
+**Hata 1: "Ben zaten boşandım, ne gerekiyorsa oldu."**
+Almanya'daki boşanmanız Türkiye'de hüküm doğurmaz. Tanıma olmaksızın Türk nüfus kütüğünde "evli" olmaya devam edersiniz.
+
+**Hata 2: Beklemek.**
+Ne kadar beklerseniz risk o kadar büyür. Mal paylaşımı için 1 yıllık süreyi kaçırabilirsiniz. Eski eş vefat ederse karmaşık miras sorunları doğabilir.
+
+**Hata 3: Yanlış merciden apostil almak.**
+Apostil, yetkili Oberlandesgericht'ten alınmalıdır. Amtsgericht'ten veya noterden alınan apostil Türk mahkemesince kabul edilmez.
+
+**Hata 4: Eksik çeviri.**
+Boşanma kararının tamamı çevrilmelidir; kısmi çeviri reddedilir.
+
+**Hata 5: Nafaka veya velayet hükümlerini atlamak.**
+Kararınızda bu hükümler varsa ve Türkiye'de uygulatmak istiyorsanız tenfiz zorunludur. Yalnızca tanıma almanız durumunda bu haklar icra edilemez.
+
+---
+
+## Gözden Kaçan Konu: Türkiye'deki Mal Paylaşımı
+
+Evlilik süresinde Türkiye'de edinilmiş ortak mallar (taşınmaz, araç, banka hesabı vb.) mevcutsa, bunların paylaşımı için ayrı bir **mal paylaşımı davası** (Edinilmiş Mallara Katılma Rejiminin Tasfiyesi) açmak gerekir.
+
+> ⚠️ **Kritik süre:** Bu dava için süre, Alman boşanma kararının kesinleşmesinden değil, **Türkiye'deki tanıma kararının kesinleşmesinden itibaren 1 yıldır.** Yargıtay 8. Hukuk Dairesi'nin yerleşik içtihadına göre zamanaşımı süresi ancak bu tarihle başlar. Bu süreyi kaçırırsanız Türkiye'deki mal paylaşımı haklarınızı kalıcı olarak yitirebilirsiniz.
+
+Bu nedenle tanıma-tenfiz davası ile mal paylaşımı davasını eş zamanlı açmanızı kesinlikle tavsiye ederiz.
+
+---
+
+## Doğru Kanzlei: Doğrudan Temsil — Aracısız, Türkiye'ye Gitmeden
+
+Almanya'daki pek çok büro, tanıma-tenfiz davalarını Türkiye'deki ortak hukuk bürolarına havale eder. Bu demektir ki: iki ayrı irtibat noktası, bilgi kaybı, ek masraf ve uzayan süreçler.
+
+[Doğru Kanzlei](https://www.hasandogru.de/tr/hizmetler) farklı çalışır. Av. Hasan Doğru, Ankara Barosu üyesidir (Sicil No: 47068) ve Karlsruhe Rechtsanwaltskammer'a §207 BRAO kapsamında kayıtlıdır. Bu çift baro üyeliği, Türkiye'deki herhangi bir ortak büro aracılığına gerek kalmaksızın sizi doğrudan Türk Aile Mahkemesi'nde temsil etmesi anlamına gelir. UYAP sistemi üzerinden dava durumunu, tebligat süreçlerini ve duruşma tarihlerini Almanya'dan gerçek zamanlı olarak takip eder.
+
+Sizin için bu şu anlama gelir: Türkiye'ye seyahat zorunluluğu yok. Tek bir muhatap — hem Almanya'da yanınızda hem Türk mahkemesinde önünüzde. Aracı büro maliyeti yok. Doğrudan iletişim nedeniyle daha hızlı süreç.
+
+[Doğru Kanzlei ile Ücretsiz Ön Görüşme Talep Edin →](https://calendly.com/hasand9366/30min)
+
+---
+
+Bu makaleyi Almanca okuyanlar için de yayınladık:
+[Deutsche Scheidung in der Türkei anerkennen: Tanıma & Tenfiz 2026 →](/de/blog/deutsche-scheidung-tuerkei-anerkennen-tanima-tenfiz)
+
+Bu makaleyi İngilizce okuyanlar için de yayınladık:
+[German Divorce Recognition in Turkey: Complete Guide 2026 →](/en/blog/german-divorce-recognition-turkey-tanima-tenfiz)
+
+---
+
+## Sıkça Sorulan Sorular
+
+**Almanya'da boşandım, Türkiye'de hâlâ evli görünüyorum ne yapmalıyım?**
+Alman boşanma kararı Türkiye'de otomatik olarak geçerli olmaz. MÖHUK m. 50-59 kapsamında Türk Aile Mahkemesi'nde tanıma veya tenfiz davası açmanız gerekir. Doğru Kanzlei, Türkiye'ye gitmeksizin bu süreci sizin adınıza yürütür.
+
+**Tanıma ve tenfiz arasındaki fark nedir?**
+Tanıma, Alman kararının Türkiye'de kesin hüküm etkisi kazanmasını — yani nüfus kaydının güncellenmesini — sağlar. Tenfiz ise karardaki nafaka, velayet veya tazminat gibi hükümlerin Türk icra organları aracılığıyla uygulanmasını mümkün kılar.
+
+**Tanıma tenfiz ne kadar sürer 2026?**
+Her iki taraf da Türkiye'de avukatla temsil ediliyorsa 2-4 ay. Davalıya yurt dışı tebligat gerekiyorsa 6-12 ay. İlanen tebligat gerekirse 8-14 ay.
+
+**Türkiye'ye gitmem gerekiyor mu?**
+Hayır. Vekaletname ile Türk avukatınız sizi mahkemede temsil eder.
+
+**Konsolosluk yoluyla boşanma kaydı yaptırabilir miyim?**
+Nüfus Hizmetleri Kanunu m. 27/A kapsamında her iki eş birlikte başvurursa idari yoldan kayıt güncellenebilir. Ancak bu yol yalnızca boşanma statüsünü kapsar.
+
+**Mavi Kart sahibi olarak dava açabilir miyim?**
+Evet. Mavi Kart sahipleri Türkiye ile hukuki bağlarını korur ve aynı süreçten yararlanabilir.
+
+**Türkiye'deki mal paylaşımı için ne kadar sürem var?**
+Türkiye'deki tanıma kararının kesinleşmesinden itibaren 1 yıl. Alman boşanma kararından değil.
+
+**Hangi belgeler gerekli?**
+Alman boşanma kararının onaylı sureti, kesinleşme şerhi, OLG'den apostil, yeminli Türkçe tercüme ve vekaletname.
+
+---
+
+> *Bu makale yalnızca Türk hukukuna ilişkin genel bilgi amaçlıdır. Doğru Kanzlei, §207 BRAO kapsamında yalnızca Türk hukuku konularında danışmanlık vermektedir.*`,
+    contentEN: `> *This article addresses Turkish law exclusively. Doğru Kanzlei advises on Turkish law under § 207 BRAO and does not advise on German domestic law.*
+
+---
+
+You finalised your divorce in Germany. The court issued the decree. Life moved on. But then something unexpected happens — you try to remarry in Turkey, or you need a Turkish civil status certificate, or a family member mentions your name still appears as "married" in the Turkish population registry. And you discover something that surprises almost everyone: a German divorce has no automatic legal effect in Turkey.
+
+This is not a bureaucratic technicality. It is a legal reality that affects hundreds of thousands of Turkish nationals and former Turkish nationals (including Blue Card holders — those who adopted another citizenship but retained their Turkish legal ties) living across Germany, the Netherlands, the UK, Scandinavia, and beyond.
+
+Until your German divorce is formally recognised by a Turkish court — through a process called **tanıma** (recognition) or **tenfiz** (enforcement) — you remain legally married under Turkish law. The Turkish civil registry lists you as *evli* (married). And the consequences, as this guide explains, are far-reaching.
+
+---
+
+## Why Your German Divorce Doesn't Count in Turkey
+
+Turkey does not automatically accept court decisions from other countries. This is not unique to Turkey — most legal systems require foreign judgments to go through a formal recognition process before they take effect domestically.
+
+In Turkey, the legal framework for recognising foreign court decisions is the MOHUK — the International Private and Procedural Law Act (Law No. 5718, Arts. 50–59). Until a Turkish family court formally issues a tanıma or tenfiz decision, your German divorce simply does not exist in the eyes of Turkish law.
+
+The practical consequences of not acting are serious:
+
+You cannot legally remarry in Turkey. Even if you have German citizenship and want to remarry in Germany, the German civil registry office (Standesamt) will often ask for a Turkish certificate of marital capacity — which Turkish authorities will not issue while you are still listed as married.
+
+Your former spouse remains your legal heir under Turkish inheritance law, and you remain theirs. Turkish inheritance law gives the surviving spouse a statutory share of the estate. Without tanıma, that entitlement survives the German divorce.
+
+Any property acquired in Turkey during the marriage remains subject to Turkish matrimonial property rules. The marital property regime ends only when the tanıma decision becomes final in Turkey — not when the German court issues the divorce.
+
+Children born after your German divorce may still be registered to your former spouse in the Turkish civil registry, creating complications for custody and child support under Turkish law.
+
+> ⚠️ **Important:** If your former spouse passes away before your tanıma is completed, you could inherit from them under Turkish law — or they could inherit from you. The longer you wait, the more complex and financially significant this risk becomes.
+
+---
+
+## Tanıma vs Tenfiz — Which Do You Need?
+
+These two terms sound similar but serve different purposes. Which one you need depends on what your German divorce decree contains.
+
+**Tanıma (Recognition) — MOHUK Art. 58**
+
+Tanıma means the German court's decision is accepted as final and binding in Turkey. It updates your civil registry status from *evli* (married) to *boşanmış* (divorced). If your German decree only grants the divorce itself — with no financial orders such as alimony or property division — tanıma alone is sufficient. Think of it like having a probate decision in the UK recognised abroad: it is declaratory, not executable.
+
+**Tenfiz (Enforcement) — MOHUK Art. 50–54**
+
+Tenfiz goes one step further. It makes the specific orders in your German decree — alimony (nafaka), custody (velayet), property division, or compensation — enforceable by Turkish courts and enforcement agencies. If you want to collect alimony payments or enforce a custody arrangement through the Turkish legal system, you need tenfiz. Importantly, tenfiz automatically includes tanıma.
+
+**Practical advice:** Even if your German decree contains only the divorce itself, it is worth requesting both tanıma and tenfiz together in a single petition. Future disputes over financial matters are common, and having the decree already declared enforceable saves you from filing a second case later.
+
+---
+
+## The Legal Basis: MOHUK Arts. 50–59
+
+The recognition and enforcement of foreign court decisions in Turkey is governed by MOHUK — Law No. 5718 on International Private and Procedural Law. The key provisions:
+
+**Art. 50:** General conditions for tenfiz (enforcement).
+
+**Art. 51:** Which court has jurisdiction — the family court (Aile Mahkemesi) at the respondent's last place of residence in Turkey. If the respondent has no address in Turkey, the case can be filed in Ankara, Istanbul, or Izmir.
+
+**Art. 54:** The four material conditions that must all be satisfied: reciprocity, no exclusive Turkish jurisdiction, no violation of Turkish public policy, and the right to be heard.
+
+**Art. 58:** Tanıma — simplified recognition without the enforcement element.
+
+**2017 amendment — Population Services Law Art. 27/A:** Administrative registration at the consulate when both spouses apply jointly.
+
+---
+
+## The Four Conditions the Court Will Check
+
+Before granting tanıma or tenfiz, the Turkish family court checks four requirements:
+
+**1. Reciprocity**
+German and Turkish courts mutually recognise each other's decisions. This is well-established in Turkish case law (Yargıtay, Turkish Court of Cassation, 2nd Civil Division) and never causes problems in German-Turkish divorce cases.
+
+**2. No Exclusive Turkish Jurisdiction**
+Turkish courts do not claim exclusive jurisdiction over international divorces where the spouses lived abroad. This condition is automatically satisfied in the vast majority of German divorce cases.
+
+**3. No Violation of Turkish Public Policy**
+Standard German divorce proceedings do not conflict with the fundamental principles of the Turkish legal system. Turkish courts have consistently confirmed this in hundreds of decisions involving German divorce decrees.
+
+**4. The Right to Be Heard**
+The respondent must have been properly notified during the German proceedings and given the opportunity to participate. If the respondent had a lawyer in Germany, appeared in person, or simply did not respond after being properly served, this condition is met. Problems arise only where the German service of process was procedurally flawed.
+
+---
+
+## The Consulate Route: Faster, but Limited
+
+Since a 2017 change in Turkish law (Population Services Law Art. 27/A), there is an administrative shortcut available: both spouses can appear jointly at a Turkish consulate in Germany — Karlsruhe, Frankfurt, or Stuttgart, for example — and request that the divorce be registered in the Turkish civil registry.
+
+**What you need:** Both spouses must appear in person. The German divorce decree must be final, apostilled, and accompanied by a sworn Turkish translation.
+
+**What this covers:** Only the civil registry update — your status changes from married to divorced.
+
+**What this does NOT cover:** Alimony, custody, property division in Turkey, or any other financial or parental arrangement. If your former spouse refuses to cooperate or cannot be located, this route is simply unavailable.
+
+> ⚠️ **Important:** The consulate route is a useful shortcut when both parties are cooperative and there are no Turkish assets or outstanding financial matters. If there are properties, bank accounts, or pension entitlements in Turkey from the marriage — or if your former spouse is unresponsive — you need the full court process.
+
+---
+
+## Step by Step: The Court Process for Tanıma / Tenfiz
+
+### Step 1 — Gather Your Documents in Germany
+
+You will need:
+- A certified copy of the German divorce decree (beglaubigte Ausfertigung)
+- A certificate of finality (Rechtskraftbescheinigung) from the German family court
+- An apostille from the relevant Regional Court of Appeal (Oberlandesgericht) — not from the local court (Amtsgericht) or a notary
+- A sworn Turkish translation of all documents
+
+### Step 2 — Grant a Power of Attorney (Vekaletname)
+
+A vekaletname is a notarised power of attorney that authorises your Turkish lawyer to act on your behalf before the Turkish court. You can have it prepared at a German notary (it will then need an apostille and Turkish translation), or directly at the Turkish consulate, which is usually faster and requires no apostille.
+
+### Step 3 — Filing the Case
+
+Your Turkish lawyer files the tanıma-tenfiz petition at the competent family court. If the respondent has no address in Turkey, the case can be filed in Ankara, Istanbul, or Izmir.
+
+### Step 4 — Service of Process
+
+This is typically the longest part of the process. If the respondent lives in Turkey, service is handled domestically by the court. If the respondent lives in Germany, service must go through the Hague Service Convention (1965) or a bilateral arrangement between Germany and Turkey — this can take 3–6 months. If the address is unknown, public service adds a further 2–4 months.
+
+**The fastest approach:** Both parties appoint a lawyer in Turkey. Service then goes from lawyer to lawyer — the international route is bypassed entirely, and the case can conclude in a matter of weeks.
+
+### Step 5 — Court Hearing
+
+The judge reviews the four conditions under MOHUK Art. 54. One or two hearings are typically sufficient. Neither party needs to appear in person.
+
+### Step 6 — Judgment and Finality
+
+The court issues the tanıma or tenfiz decision. After a two-week appeal period (İstinaf), the decision becomes final.
+
+### Step 7 — Civil Registry Update
+
+The final tanıma decision is sent to the Turkish civil registry (Nüfus Müdürlüğü), which updates your status to divorced. This typically takes a few days.
+
+---
+
+## How Long Does It Take and What Does It Cost?
+
+| Scenario | Estimated Duration |
+|---|---|
+| Both parties represented by lawyers in Turkey | 2–4 months |
+| Single applicant, respondent served in Turkey | 3–6 months |
+| International service to Germany | 6–12 months |
+| Public service (address unknown) | 8–14 months |
+
+| Cost Item | Estimated Amount |
+|---|---|
+| Turkish court fee (Maktu Harç, 2026) | 3,000 – 5,000 TL |
+| Apostille (per document) | €25 – 50 |
+| Sworn Turkish translation | €150 – 300 |
+| Legal fee | By individual agreement |
+
+---
+
+## The Five Most Common Mistakes
+
+**Mistake 1: "I'm already divorced — why do I need to do anything else?"**
+Your German divorce has no legal effect in Turkey. Without tanıma, you remain married under Turkish law — with all the inheritance and property consequences that come with it.
+
+**Mistake 2: Waiting too long**
+Every year you wait increases your exposure. The one-year deadline for property division claims in Turkey runs from the Turkish tanıma decision, not the German divorce. Your former spouse's death could trigger inheritance rights you did not expect to have — or lose.
+
+**Mistake 3: Getting the apostille from the wrong authority**
+The apostille must come from the Oberlandesgericht (Regional Court of Appeal) — not the Amtsgericht (local court) or a notary. Documents with an incorrect apostille will be rejected by the Turkish court.
+
+**Mistake 4: Incomplete translation**
+The entire German divorce decree — including the statement of facts and reasoning — must be translated in full. A partial translation is not accepted.
+
+**Mistake 5: Filing tanıma without tenfiz when financial orders exist**
+If your German decree includes alimony or custody arrangements and you want to enforce them in Turkey, you need tenfiz. Tanıma alone will not make those orders executable.
+
+---
+
+## The Property Division Deadline You May Not Know About
+
+If you and your former spouse acquired property in Turkey during the marriage — real estate, vehicles, bank accounts — you have the right to claim your share. This is called Edinilmiş Mallara Katılma Rejiminin Tasfiyesi (the dissolution of the acquired property regime).
+
+> ⚠️ **Critical deadline:** The one-year limitation period for this claim starts from the date the tanıma decision becomes final in Turkey — NOT from the date of the German divorce. This is settled case law from the Yargıtay (Turkish Court of Cassation, 8th Civil Division). If you miss this window, your right to Turkish marital assets is permanently extinguished. File the property division claim at the same time as your tanıma petition.
+
+---
+
+## Doğru Kanzlei: Direct Representation — No Third Parties, No Travel
+
+Many law firms in Germany handling Turkish matters refer tanıma-tenfiz cases to cooperation partners in Turkey. That means two points of contact, potential communication gaps, higher combined fees, and slower turnaround.
+
+[Doğru Kanzlei](https://www.hasandogru.de/en/services) works differently. Av. Hasan Doğru holds full membership with the Ankara Bar Association (Sicil No: 47068) and is registered with the Karlsruhe Bar Association under § 207 BRAO. This dual membership means he can represent you directly before Turkish family courts — with no cooperation partner in between. He monitors case status, deadlines, and service of process in real time via the UYAP court system from Germany.
+
+What this means for you: no travel to Turkey, one point of contact for the full process, no cooperation partner mark-up, and faster case handling through direct court communication.
+
+[Request a Free Initial Assessment with Doğru Kanzlei →](https://calendly.com/hasand9366/30min)
+
+---
+
+This guide is also available in Turkish:
+[Almanya'da Boşandım, Türkiye'de Hâlâ Evli Görünüyorum: Tanıma ve Tenfiz Rehberi →](/tr/blog/almanya-bosanma-turkiye-tanima-tenfiz)
+
+And in German for German-speaking family members or advisers:
+[Deutsche Scheidung in der Türkei anerkennen: Tanıma & Tenfiz 2026 →](/de/blog/deutsche-scheidung-tuerkei-anerkennen-tanima-tenfiz)
+
+---
+
+## Frequently Asked Questions
+
+**Do I have to travel to Turkey to get my German divorce recognised?**
+No. You grant a notarised power of attorney (vekaletname) to a Turkish lawyer, who represents you before the Turkish family court. Doğru Kanzlei holds dual bar membership in Turkey and Germany and can handle the full process from Germany.
+
+**What happens if I don't register my German divorce in Turkey?**
+You remain legally married in the Turkish civil registry. You cannot remarry in Turkey. Your former spouse retains inheritance rights under Turkish law — and you retain theirs. Property from the marriage in Turkey remains subject to marital property rules.
+
+**What is the difference between tanıma and tenfiz?**
+Tanıma (Art. 58 MOHUK) recognises the German decree and updates your civil status. Tenfiz (Art. 50–54 MOHUK) makes specific orders in the decree — alimony, custody, property division — enforceable through Turkish authorities. Tenfiz includes tanıma automatically.
+
+**How long does the process take in 2026?**
+2–4 months if both parties appoint Turkish lawyers. 6–12 months if international service to Germany is required. Up to 14 months if the respondent's address is unknown.
+
+**What documents do I need?**
+Certified copy of the divorce decree, certificate of finality, apostille from the Oberlandesgericht, sworn Turkish translation of all documents, and a notarised power of attorney for your Turkish lawyer.
+
+**Can I use the Turkish consulate instead of going to court?**
+Yes, since 2017, if both spouses apply jointly at a Turkish consulate. But this covers only the civil registry update — not alimony, custody, or property in Turkey.
+
+**How long do I have to claim property in Turkey?**
+One year from the date the tanıma decision becomes final in Turkey — not from the German divorce. File the property division claim alongside your tanıma petition to avoid losing these rights.
+
+**Does my German divorce affect Turkish inheritance automatically?**
+No. Until tanıma is granted, your former spouse remains your legal heir under Turkish law — and vice versa. A death before tanıma is completed can create complex and unwanted inheritance situations.
+
+---
+
+> *This article addresses Turkish law exclusively. Doğru Kanzlei advises on Turkish law under § 207 BRAO and does not advise on German domestic law.*`,
+    category: "Aile Hukuku / Uluslararası Özel Hukuk",
+    categoryDE: "Familienrecht / Internationales Privatrecht",
+    categoryEN: "Family Law / International Private Law",
+    image: inheritanceFraudImg,
+    dateDE: "14. Mai 2026",
+    dateTR: "14 Mayıs 2026",
+    dateEN: "14 May 2026",
+    readTimeDE: "14 Min. Lesezeit",
+    readTimeTR: "14 dk okuma",
+    readTimeEN: "14 min read",
+    publishedAt: "2026-05-14",
+    modifiedAt: "2026-05-14",
+    keywordsDE: "deutsche Scheidung Türkei anerkennen, tanıma tenfiz Verfahren, Scheidung Türkei anerkennen lassen, MÖHUK Art 50-59, Apostille Scheidungsbeschluss Türkei, konsularische Eintragung Scheidung, Anwalt Türkei Deutschland, Zugewinnausgleich nach Tanıma, deutsches Personenstandsregister Türkei, Tenfiz Kosten 2026",
+    keywordsTR: "tanıma tenfiz davası, almanya boşanma türkiye tanıma, yurt dışı boşanma tanıma, möhuk 50-59, aile mahkemesi tenfiz, mavi kart boşanma türkiye, mal paylaşımı tanıma sonrası, konsolosluk boşanma kaydı, vekaletname tenfiz, almanya boşandım türkiye evli",
+    keywordsEN: "recognition German divorce Turkey, tanima tenfiz Germany divorce, German divorce recognition Turkey MOHUK, Turkish civil registry divorce, apostille divorce Turkey, Turkish family court foreign divorce, Blue Card holders divorce Turkey, property division after tanıma, remarry Turkey after German divorce, tanima tenfiz 2026",
+    faqDE: [
+      {
+        question: "Was passiert, wenn ich die deutsche Scheidung in der Türkei nicht anerkennen lasse?",
+        answer: "Ohne Tanıma-Tenfiz-Verfahren bleiben Sie im türkischen Personenstandsregister als verheiratet eingetragen. Sie können in der Türkei nicht erneut heiraten. Erbrechte und Güterrechte des geschiedenen Ehegatten bleiben nach türkischem Recht bestehen. Kinder, die nach der deutschen Scheidung geboren werden, können dem früheren Ehegatten im türkischen Register zugeordnet werden."
+      },
+      {
+        question: "Was ist der Unterschied zwischen Tanıma und Tenfiz?",
+        answer: "Tanıma (Anerkennung, MÖHUK Art. 58) bewirkt, dass der deutsche Scheidungsbeschluss in der Türkei Rechtskraftwirkung entfaltet und das Personenstandsregister aktualisiert wird. Tenfiz (Vollstreckbarerklärung, MÖHUK Art. 50–54) ist zusätzlich erforderlich, wenn der deutsche Beschluss vollstreckbare Regelungen wie Unterhalt, Sorgerecht oder Zugewinnausgleich enthält, die in der Türkei durchgesetzt werden sollen. Die Tenfiz schließt die Tanıma automatisch ein."
+      },
+      {
+        question: "Wie lange dauert das Tanıma-Tenfiz-Verfahren 2026?",
+        answer: "Die Verfahrensdauer hängt davon ab, wie schnell die Zustellung an den Antragsgegner erfolgt. Sind beide Parteien anwaltlich in der Türkei vertreten, dauert das Verfahren 2–4 Monate. Bei Zustellung in der Türkei 3–6 Monate. Bei Auslandszustellung nach Deutschland 6–12 Monate. Bei öffentlicher Zustellung (unbekannte Adresse) 8–14 Monate."
+      },
+      {
+        question: "Muss ich für das Tanıma-Tenfiz-Verfahren in die Türkei reisen?",
+        answer: "Nein. Mit einer notariell beglaubigten Vollmacht (Vekaletname) kann ein türkischer Anwalt Sie vor dem türkischen Familiengericht vertreten. Die Doğru Kanzlei ist sowohl bei der Ankara Barosu (Sicil-Nr. 47068) als auch bei der Rechtsanwaltskammer Karlsruhe (§ 207 BRAO) zugelassen und vertritt Sie direkt — ohne Kooperationspartner."
+      },
+      {
+        question: "Kann ich die Scheidung über das türkische Konsulat in Deutschland eintragen lassen?",
+        answer: "Ja, seit der Gesetzesänderung 2017 (Nüfus Hizmetleri Kanunu Art. 27/A) können beide Ehegatten gemeinsam beim türkischen Konsulat die Eintragung der Scheidung ins Personenstandsregister beantragen. Dieser Weg erfasst jedoch ausschließlich den Scheidungsstatus — Unterhalt, Sorgerecht oder Zugewinnausgleich können auf diesem Weg nicht geregelt werden."
+      },
+      {
+        question: "Was kostet die Anerkennung einer deutschen Scheidung in der Türkei?",
+        answer: "Die türkischen Gerichtskosten (Maktu Harç) betragen derzeit ca. 3.000–5.000 TL. Hinzu kommen Übersetzungskosten (ca. 150–300 EUR), Apostille-Gebühren (ca. 25–50 EUR pro Dokument) sowie das Anwaltshonorar nach individueller Vereinbarung. Insgesamt sollten Sie mit Gesamtkosten im mittleren dreistelligen Euro-Bereich rechnen, je nach Komplexität des Falls."
+      },
+      {
+        question: "Wie lange habe ich nach der Tanıma für den Zugewinnausgleich in der Türkei?",
+        answer: "Die Verjährungsfrist für den güterrechtlichen Ausgleich (Edinilmiş Mallara Katılma Rejiminin Tasfiyesi) beginnt nicht mit der deutschen Scheidung, sondern mit der Rechtskraft der Tanıma in der Türkei — und beträgt 1 Jahr. Dies entspricht der ständigen Rechtsprechung des Yargıtay 8. Hukuk Dairesi. Versäumen Sie diese Frist, verlieren Sie Ihre Ansprüche auf türkische Vermögenswerte dauerhaft."
+      },
+      {
+        question: "Welche Unterlagen brauche ich für das Tanıma-Tenfiz-Verfahren?",
+        answer: "Erforderlich sind: beglaubigte Ausfertigung des deutschen Scheidungsbeschlusses, Rechtskraftbescheinigung vom deutschen Familiengericht, Apostille des zuständigen Oberlandesgerichts (nicht vom Amtsgericht oder Notar), vereidigte türkische Übersetzung aller Dokumente sowie eine notarielle Vollmacht (Vekaletname) für den türkischen Anwalt."
+      }
+    ],
+    faqTR: [
+      {
+        question: "Almanya'da boşandım Türkiye'de hâlâ evli görünüyorum ne yapmalıyım?",
+        answer: "Almanya'da verilen boşanma kararı Türkiye'de kendiliğinden hüküm ifade etmez. MÖHUK m. 50-59 kapsamında Türk Aile Mahkemesi'nde tanıma veya tenfiz davası açmanız gerekir. Doğru Kanzlei, Ankara Barosu üyesi olarak Türkiye'ye gitmeksizin bu davayı Almanya'dan sizin adınıza yürütür."
+      },
+      {
+        question: "Tanıma ve tenfiz arasındaki fark nedir?",
+        answer: "Tanıma (MÖHUK m. 58), yabancı mahkeme kararının Türkiye'de kesin hüküm etkisi kazanmasını sağlar ve nüfus kaydınızı günceller. Tenfiz (MÖHUK m. 50-54) ise karardaki nafaka, velayet veya tazminat gibi maddi yükümlülükleri Türkiye'de icra edilebilir hale getirir. Yalnızca boşanma statüsünüz güncellenecekse tanıma yeterlidir; maddi hükümleri uygulatmak istiyorsanız tenfiz de gereklidir."
+      },
+      {
+        question: "Tanıma tenfiz davası ne kadar sürer 2026?",
+        answer: "Her iki taraf Türkiye'de avukatla temsil ediliyorsa 2-4 ay. Davalı Türkiye'deyse 3-6 ay. Davalıya yurt dışına tebligat gerekiyorsa 6-12 ay. Adres bilinmiyorsa ilanen tebligat nedeniyle 8-14 ay sürebilir. En hızlı çözüm her iki tarafın da Türkiye'de ayrı birer avukate vekaletname vermesidir."
+      },
+      {
+        question: "Tanıma tenfiz için Türkiye'ye gitmem gerekiyor mu?",
+        answer: "Hayır. Türkiye'deki bir avukate vekaletname vererek davayı Almanya'dan yürütmek mümkündür. Doğru Kanzlei, Ankara Barosu üyesi (Sicil No: 47068) olarak sizi doğrudan Türk mahkemelerinde temsil eder. Vekaletname Almanya'da noter veya Türk Konsolosluğu'nda düzenlenebilir."
+      },
+      {
+        question: "Konsolosluk yoluyla boşanma kaydı yaptırabilir miyim?",
+        answer: "Evet, Nüfus Hizmetleri Kanunu m. 27/A kapsamında her iki eş konsolosluğa birlikte başvurursa nüfus kaydı idari yoldan güncellenebilir. Ancak bu yol yalnızca boşanma statüsünü kapsar. Nafaka, velayet veya Türkiye'deki mal paylaşımı için mahkeme yolu şarttır."
+      },
+      {
+        question: "Mavi Kart sahibi olarak tanıma tenfiz davası açabilir miyim?",
+        answer: "Evet. Mavi Kart (pembe kart) sahipleri Türkiye ile hukuki bağlarını koruduklarından tanıma tenfiz davası açabilirler. Nüfus Müdürlüğü'ndeki kayıtlarının güncellenmesi için aynı süreç geçerlidir."
+      },
+      {
+        question: "Türkiye'deki mal paylaşımı için ne kadar sürem var?",
+        answer: "Mal paylaşımı davası için süre, Alman boşanma kararından değil Türkiye'deki tanıma kararının kesinleşmesinden itibaren 1 yıldır. Yargıtay 8. Hukuk Dairesi'nin yerleşik içtihadına göre bu süre ancak tanıma kararıyla başlar. Bu nedenle tanıma davası ile mal paylaşımı davasını eş zamanlı açmanızı kesinlikle tavsiye ederiz."
+      },
+      {
+        question: "Tanıma tenfiz için hangi belgeler gerekli?",
+        answer: "Gerekli belgeler: Alman boşanma kararının onaylı sureti, kesinleşme şerhi (Rechtskraftbescheinigung), yetkili Eyalet Yüksek Mahkemesi'nden (Oberlandesgericht) apostil — Amtsgericht'ten alınan apostil geçerli değildir — tüm belgelerin yeminli Türkçe tercümesi ve avukata verilecek vekaletname."
+      }
+    ],
+    faqEN: [
+      {
+        question: "Do I have to travel to Turkey to get my German divorce recognised?",
+        answer: "No. You do not need to travel to Turkey. You grant a power of attorney (vekaletname) to a Turkish lawyer, who then represents you directly before the Turkish Family Court. Doğru Kanzlei holds dual bar membership in both Turkey (Ankara Bar Association) and Germany (Karlsruhe Bar, §207 BRAO) and can represent you in Turkish courts without any travel on your part."
+      },
+      {
+        question: "What happens if I don't register my German divorce in Turkey?",
+        answer: "Without tanıma, you remain listed as married in the Turkish civil registry (Nüfus Müdürlüğü). You cannot legally remarry in Turkey. Your former spouse remains your legal heir under Turkish inheritance law — and vice versa. Property acquired during the marriage in Turkey remains subject to marital property rules. Children born after the German divorce may be registered under your former spouse in the Turkish civil registry."
+      },
+      {
+        question: "What is the difference between tanıma and tenfiz?",
+        answer: "Tanıma (recognition, MOHUK Art. 58) means the German divorce decree is accepted as final in Turkey — your civil registry status is updated to divorced. Tenfiz (enforcement, MOHUK Art. 50–54) goes further: it makes the decree's specific orders — such as alimony, custody, or property division — enforceable by Turkish authorities. If your German decree only grants the divorce itself, tanıma alone is sufficient. If it contains financial or custody orders you want enforced in Turkey, you need tenfiz as well."
+      },
+      {
+        question: "How long does tanıma tenfiz take in 2026?",
+        answer: "The timeline depends primarily on how quickly the other party can be served. If both parties appoint lawyers in Turkey, the process typically takes 2–4 months. If the other party lives in Turkey and can be served directly, 3–6 months. If the other party lives in Germany and must be served internationally, 6–12 months. If their address is unknown, public service (ilan yoluyla tebligat) adds 2–4 months, bringing the total to 8–14 months."
+      },
+      {
+        question: "What documents do I need for tanıma tenfiz?",
+        answer: "You will need: a certified copy of the German divorce decree, a certificate of finality (Rechtskraftbescheinigung) from the German family court, an apostille stamp from the relevant Regional Court of Appeal (Oberlandesgericht — not the local court or a notary), a sworn Turkish translation of all documents, and a notarised power of attorney (vekaletname) for your Turkish lawyer."
+      },
+      {
+        question: "Can I get my German divorce registered through the Turkish consulate?",
+        answer: "Yes, since a 2017 law change (Population Services Law Art. 27/A), both spouses can jointly apply at a Turkish consulate to update the civil registry. However, this administrative route only covers the divorce status. It does not address alimony, custody, or property division in Turkey. If your former spouse refuses to cooperate or cannot be located, this route is not available."
+      },
+      {
+        question: "How long do I have to claim property division in Turkey after tanıma?",
+        answer: "The limitation period for property division claims in Turkey (Edinilmiş Mallara Katılma Rejiminin Tasfiyesi) is 1 year — but it runs from the date the tanıma decision becomes final in Turkey, not from the date of the German divorce. This is established case law from the Yargıtay (Turkish Court of Cassation). Missing this deadline means permanently losing your claims to Turkish marital assets. It is strongly recommended to file the property division case at the same time as the tanıma petition."
+      },
+      {
+        question: "Does my German divorce automatically affect Turkish inheritance rights?",
+        answer: "No. Under Turkish law, your former spouse remains your legal heir — and you remain theirs — until a Turkish court formally recognises the divorce through tanıma. This means if your former spouse passes away before tanıma is completed, you may be considered their heir under Turkish law, and vice versa. This is one of the most important reasons to act without delay."
+      }
+    ],
+    ctaTitleDE: "Tanıma-Tenfiz-Verfahren direkt aus Deutschland",
+    ctaTitleTR: "Tanıma ve Tenfiz İşlemleriniz İçin Buradayız",
+    ctaTitleEN: "German Divorce Recognition in Turkey",
+    ctaDescriptionDE: "Doğru Kanzlei vertritt Sie direkt vor türkischen Familiengerichten — ohne Kooperationspartner und ohne Reise in die Türkei.",
+    ctaDescriptionTR: "Almanya ve Türkiye'deki çift baro üyeliğimiz ve UYAP tecrübemizle süreci sizin adınıza en hızlı şekilde sonuçlandırıyoruz.",
+    ctaDescriptionEN: "Doğru Kanzlei can represent you directly before Turkish family courts — no travel, no third-party handoff."
+  },
   {
     slug: "tck-191-kdae-auslandstuerken",
     slugDE: "tck-191-kdae-auslandstuerken",

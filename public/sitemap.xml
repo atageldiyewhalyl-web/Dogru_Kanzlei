@@ -1352,6 +1352,35 @@
     <priority>0.6</priority>
   </url>
 
+  <!-- Blog Post: Deutsche Scheidung in der Türkei anerkennen / Tanıma Tenfiz -->
+  <url>
+    <loc>https://www.hasandogru.de/de/blog/deutsche-scheidung-tuerkei-anerkennen-tanima-tenfiz</loc>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://www.hasandogru.de/tr/blog/almanya-bosanma-turkiye-tanima-tenfiz" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://www.hasandogru.de/de/blog/deutsche-scheidung-tuerkei-anerkennen-tanima-tenfiz" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.hasandogru.de/en/blog/german-divorce-recognition-turkey-tanima-tenfiz" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.hasandogru.de/de/blog/deutsche-scheidung-tuerkei-anerkennen-tanima-tenfiz" />
+    <lastmod>2026-05-14</lastmod>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://www.hasandogru.de/tr/blog/almanya-bosanma-turkiye-tanima-tenfiz</loc>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://www.hasandogru.de/tr/blog/almanya-bosanma-turkiye-tanima-tenfiz" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://www.hasandogru.de/de/blog/deutsche-scheidung-tuerkei-anerkennen-tanima-tenfiz" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.hasandogru.de/en/blog/german-divorce-recognition-turkey-tanima-tenfiz" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.hasandogru.de/de/blog/deutsche-scheidung-tuerkei-anerkennen-tanima-tenfiz" />
+    <lastmod>2026-05-14</lastmod>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://www.hasandogru.de/en/blog/german-divorce-recognition-turkey-tanima-tenfiz</loc>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://www.hasandogru.de/tr/blog/almanya-bosanma-turkiye-tanima-tenfiz" />
+    <xhtml:link rel="alternate" hreflang="de" href="https://www.hasandogru.de/de/blog/deutsche-scheidung-tuerkei-anerkennen-tanima-tenfiz" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.hasandogru.de/en/blog/german-divorce-recognition-turkey-tanima-tenfiz" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.hasandogru.de/de/blog/deutsche-scheidung-tuerkei-anerkennen-tanima-tenfiz" />
+    <lastmod>2026-05-14</lastmod>
+    <priority>0.6</priority>
+  </url>
+
   <!-- Legal Pages -->
 
 </urlset>
