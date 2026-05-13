@@ -157,9 +157,9 @@ const sitemapPrerenderRepair: Plugin = {
       const page = await browser.newPage()
       await page.setViewport({ width: 1440, height: 1000 })
 
-      for (const route of routes) {
+      for (const [index, route] of routes.entries()) {
         const target = `http://127.0.0.1:4179${route}`
-        await page.goto(target, { waitUntil: 'networkidle0', timeout: 30000 })
+        await page.goto(target, { waitUntil: 'domcontentloaded', timeout: 15000 })
         try {
           await page.waitForSelector('#prerender-ready', { timeout: 10000 })
         } catch {
@@ -176,6 +176,10 @@ const sitemapPrerenderRepair: Plugin = {
         const outputPath = join(buildDir, route, 'index.html')
         fs.mkdirSync(path.dirname(outputPath), { recursive: true })
         fs.writeFileSync(outputPath, html)
+
+        if ((index + 1) % 25 === 0 || index + 1 === routes.length) {
+          console.log(`[sitemap-prerender-repair] Rendered ${index + 1}/${routes.length} routes.`)
+        }
       }
 
       const removeStaleDuplicateDirs = (dir: string) => {
