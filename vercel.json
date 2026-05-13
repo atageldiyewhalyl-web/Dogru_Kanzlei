@@ -106,7 +106,19 @@
     { "source": "/feed", "destination": "/de/blog", "permanent": true },
     { "source": "/comments/feed", "destination": "/de/blog", "permanent": true },
     { "source": "/:path*/feed", "destination": "/de/blog", "permanent": true },
-    { "source": "/en/contact", "destination": "/de/#iletisim", "permanent": true }
+    { "source": "/en/contact", "destination": "/de/#iletisim", "permanent": true },
+
+    // EN service slug redirects: old German slugs → new English slugs
+    { "source": "/en/services/familienrecht", "destination": "/en/services/family-law", "permanent": true },
+    { "source": "/en/services/vollmacht-apostille", "destination": "/en/services/power-of-attorney", "permanent": true },
+    { "source": "/en/services/migrationsrecht", "destination": "/en/services/migration-law", "permanent": true },
+    { "source": "/en/services/strafrecht", "destination": "/en/services/criminal-law", "permanent": true },
+    { "source": "/en/services/tanima-ve-tenfiz", "destination": "/en/services/recognition-enforcement", "permanent": true },
+    { "source": "/en/services/mavi-kart", "destination": "/en/services/mavi-kart", "permanent": true },
+    { "source": "/en/services/icra-ve-iflas", "destination": "/en/services/debt-enforcement", "permanent": true },
+    { "source": "/en/services/erbrecht", "destination": "/en/services/inheritance-law", "permanent": true },
+    { "source": "/en/services/sorgerecht", "destination": "/en/services/child-custody", "permanent": true },
+    { "source": "/en/services/immobilienrecht", "destination": "/en/services/property-law", "permanent": true }
   ],
   "cleanUrls": true,
   "trailingSlash": false,

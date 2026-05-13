@@ -127,7 +127,7 @@
     <xhtml:link rel="alternate" hreflang="de-CH" href="https://www.hasandogru.de/de/leistungen/familienrecht" />
     <xhtml:link rel="alternate" hreflang="de-AT" href="https://www.hasandogru.de/de/leistungen/familienrecht" />
     <xhtml:link rel="alternate" hreflang="tr" href="https://www.hasandogru.de/tr/hizmetler/aile-hukuku" />
-    <xhtml:link rel="alternate" hreflang="en" href="https://www.hasandogru.de/en/services/familienrecht" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.hasandogru.de/en/services/family-law" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://www.hasandogru.de/de/leistungen/familienrecht" />
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
@@ -139,15 +139,15 @@
     <xhtml:link rel="alternate" hreflang="de-CH" href="https://www.hasandogru.de/de/leistungen/familienrecht" />
     <xhtml:link rel="alternate" hreflang="de-AT" href="https://www.hasandogru.de/de/leistungen/familienrecht" />
     <xhtml:link rel="alternate" hreflang="tr" href="https://www.hasandogru.de/tr/hizmetler/aile-hukuku" />
-    <xhtml:link rel="alternate" hreflang="en" href="https://www.hasandogru.de/en/services/familienrecht" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.hasandogru.de/en/services/family-law" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://www.hasandogru.de/de/leistungen/familienrecht" />
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <!-- Service EN: Familienrecht -->
   <url>
-    <loc>https://www.hasandogru.de/en/services/familienrecht</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://www.hasandogru.de/en/services/familienrecht" />
+    <loc>https://www.hasandogru.de/en/services/family-law</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.hasandogru.de/en/services/family-law" />
     <xhtml:link rel="alternate" hreflang="de" href="https://www.hasandogru.de/de/leistungen/familienrecht" />
     <xhtml:link rel="alternate" hreflang="de-DE" href="https://www.hasandogru.de/de/leistungen/familienrecht" />
     <xhtml:link rel="alternate" hreflang="de-CH" href="https://www.hasandogru.de/de/leistungen/familienrecht" />
@@ -166,7 +166,7 @@
     <xhtml:link rel="alternate" hreflang="de-CH" href="https://www.hasandogru.de/de/leistungen/vollmacht-apostille" />
     <xhtml:link rel="alternate" hreflang="de-AT" href="https://www.hasandogru.de/de/leistungen/vollmacht-apostille" />
     <xhtml:link rel="alternate" hreflang="tr" href="https://www.hasandogru.de/tr/hizmetler/vekaletname-ve-apostil" />
-    <xhtml:link rel="alternate" hreflang="en" href="https://www.hasandogru.de/en/services/vollmacht-apostille" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.hasandogru.de/en/services/power-of-attorney" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://www.hasandogru.de/de/leistungen/vollmacht-apostille" />
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
@@ -178,15 +178,15 @@
     <xhtml:link rel="alternate" hreflang="de-CH" href="https://www.hasandogru.de/de/leistungen/vollmacht-apostille" />
     <xhtml:link rel="alternate" hreflang="de-AT" href="https://www.hasandogru.de/de/leistungen/vollmacht-apostille" />
     <xhtml:link rel="alternate" hreflang="tr" href="https://www.hasandogru.de/tr/hizmetler/vekaletname-ve-apostil" />
-    <xhtml:link rel="alternate" hreflang="en" href="https://www.hasandogru.de/en/services/vollmacht-apostille" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.hasandogru.de/en/services/power-of-attorney" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://www.hasandogru.de/de/leistungen/vollmacht-apostille" />
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <!-- Service EN: Vollmacht & Apostille -->
   <url>
-    <loc>https://www.hasandogru.de/en/services/vollmacht-apostille</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://www.hasandogru.de/en/services/vollmacht-apostille" />
+    <loc>https://www.hasandogru.de/en/services/power-of-attorney</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.hasandogru.de/en/services/power-of-attorney" />
     <xhtml:link rel="alternate" hreflang="de" href="https://www.hasandogru.de/de/leistungen/vollmacht-apostille" />
     <xhtml:link rel="alternate" hreflang="de-DE" href="https://www.hasandogru.de/de/leistungen/vollmacht-apostille" />
     <xhtml:link rel="alternate" hreflang="de-CH" href="https://www.hasandogru.de/de/leistungen/vollmacht-apostille" />
@@ -205,7 +205,7 @@
     <xhtml:link rel="alternate" hreflang="de-CH" href="https://www.hasandogru.de/de/leistungen/migrationsrecht" />
     <xhtml:link rel="alternate" hreflang="de-AT" href="https://www.hasandogru.de/de/leistungen/migrationsrecht" />
     <xhtml:link rel="alternate" hreflang="tr" href="https://www.hasandogru.de/tr/hizmetler/goc-hukuku" />
-    <xhtml:link rel="alternate" hreflang="en" href="https://www.hasandogru.de/en/services/migrationsrecht" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.hasandogru.de/en/services/migration-law" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://www.hasandogru.de/de/leistungen/migrationsrecht" />
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
@@ -217,15 +217,15 @@
     <xhtml:link rel="alternate" hreflang="de-CH" href="https://www.hasandogru.de/de/leistungen/migrationsrecht" />
     <xhtml:link rel="alternate" hreflang="de-AT" href="https://www.hasandogru.de/de/leistungen/migrationsrecht" />
     <xhtml:link rel="alternate" hreflang="tr" href="https://www.hasandogru.de/tr/hizmetler/goc-hukuku" />
-    <xhtml:link rel="alternate" hreflang="en" href="https://www.hasandogru.de/en/services/migrationsrecht" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.hasandogru.de/en/services/migration-law" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://www.hasandogru.de/de/leistungen/migrationsrecht" />
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <!-- Service EN: Migrationsrecht -->
   <url>
-    <loc>https://www.hasandogru.de/en/services/migrationsrecht</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://www.hasandogru.de/en/services/migrationsrecht" />
+    <loc>https://www.hasandogru.de/en/services/migration-law</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.hasandogru.de/en/services/migration-law" />
     <xhtml:link rel="alternate" hreflang="de" href="https://www.hasandogru.de/de/leistungen/migrationsrecht" />
     <xhtml:link rel="alternate" hreflang="de-DE" href="https://www.hasandogru.de/de/leistungen/migrationsrecht" />
     <xhtml:link rel="alternate" hreflang="de-CH" href="https://www.hasandogru.de/de/leistungen/migrationsrecht" />
@@ -244,7 +244,7 @@
     <xhtml:link rel="alternate" hreflang="de-CH" href="https://www.hasandogru.de/de/leistungen/strafrecht" />
     <xhtml:link rel="alternate" hreflang="de-AT" href="https://www.hasandogru.de/de/leistungen/strafrecht" />
     <xhtml:link rel="alternate" hreflang="tr" href="https://www.hasandogru.de/tr/hizmetler/ceza-hukuku" />
-    <xhtml:link rel="alternate" hreflang="en" href="https://www.hasandogru.de/en/services/strafrecht" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.hasandogru.de/en/services/criminal-law" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://www.hasandogru.de/de/leistungen/strafrecht" />
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
@@ -256,15 +256,15 @@
     <xhtml:link rel="alternate" hreflang="de-CH" href="https://www.hasandogru.de/de/leistungen/strafrecht" />
     <xhtml:link rel="alternate" hreflang="de-AT" href="https://www.hasandogru.de/de/leistungen/strafrecht" />
     <xhtml:link rel="alternate" hreflang="tr" href="https://www.hasandogru.de/tr/hizmetler/ceza-hukuku" />
-    <xhtml:link rel="alternate" hreflang="en" href="https://www.hasandogru.de/en/services/strafrecht" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.hasandogru.de/en/services/criminal-law" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://www.hasandogru.de/de/leistungen/strafrecht" />
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <!-- Service EN: Strafrecht -->
   <url>
-    <loc>https://www.hasandogru.de/en/services/strafrecht</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://www.hasandogru.de/en/services/strafrecht" />
+    <loc>https://www.hasandogru.de/en/services/criminal-law</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.hasandogru.de/en/services/criminal-law" />
     <xhtml:link rel="alternate" hreflang="de" href="https://www.hasandogru.de/de/leistungen/strafrecht" />
     <xhtml:link rel="alternate" hreflang="de-DE" href="https://www.hasandogru.de/de/leistungen/strafrecht" />
     <xhtml:link rel="alternate" hreflang="de-CH" href="https://www.hasandogru.de/de/leistungen/strafrecht" />
@@ -283,7 +283,7 @@
     <xhtml:link rel="alternate" hreflang="de-CH" href="https://www.hasandogru.de/de/leistungen/tanima-ve-tenfiz" />
     <xhtml:link rel="alternate" hreflang="de-AT" href="https://www.hasandogru.de/de/leistungen/tanima-ve-tenfiz" />
     <xhtml:link rel="alternate" hreflang="tr" href="https://www.hasandogru.de/tr/hizmetler/tanima-ve-tenfiz" />
-    <xhtml:link rel="alternate" hreflang="en" href="https://www.hasandogru.de/en/services/tanima-ve-tenfiz" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.hasandogru.de/en/services/recognition-enforcement" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://www.hasandogru.de/de/leistungen/tanima-ve-tenfiz" />
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
@@ -295,15 +295,15 @@
     <xhtml:link rel="alternate" hreflang="de-CH" href="https://www.hasandogru.de/de/leistungen/tanima-ve-tenfiz" />
     <xhtml:link rel="alternate" hreflang="de-AT" href="https://www.hasandogru.de/de/leistungen/tanima-ve-tenfiz" />
     <xhtml:link rel="alternate" hreflang="tr" href="https://www.hasandogru.de/tr/hizmetler/tanima-ve-tenfiz" />
-    <xhtml:link rel="alternate" hreflang="en" href="https://www.hasandogru.de/en/services/tanima-ve-tenfiz" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.hasandogru.de/en/services/recognition-enforcement" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://www.hasandogru.de/de/leistungen/tanima-ve-tenfiz" />
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <!-- Service EN: Tanıma ve Tenfiz -->
   <url>
-    <loc>https://www.hasandogru.de/en/services/tanima-ve-tenfiz</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://www.hasandogru.de/en/services/tanima-ve-tenfiz" />
+    <loc>https://www.hasandogru.de/en/services/recognition-enforcement</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.hasandogru.de/en/services/recognition-enforcement" />
     <xhtml:link rel="alternate" hreflang="de" href="https://www.hasandogru.de/de/leistungen/tanima-ve-tenfiz" />
     <xhtml:link rel="alternate" hreflang="de-DE" href="https://www.hasandogru.de/de/leistungen/tanima-ve-tenfiz" />
     <xhtml:link rel="alternate" hreflang="de-CH" href="https://www.hasandogru.de/de/leistungen/tanima-ve-tenfiz" />
@@ -361,7 +361,7 @@
     <xhtml:link rel="alternate" hreflang="de-CH" href="https://www.hasandogru.de/de/leistungen/icra-ve-iflas" />
     <xhtml:link rel="alternate" hreflang="de-AT" href="https://www.hasandogru.de/de/leistungen/icra-ve-iflas" />
     <xhtml:link rel="alternate" hreflang="tr" href="https://www.hasandogru.de/tr/hizmetler/icra-ve-iflas" />
-    <xhtml:link rel="alternate" hreflang="en" href="https://www.hasandogru.de/en/services/icra-ve-iflas" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.hasandogru.de/en/services/debt-enforcement" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://www.hasandogru.de/de/leistungen/icra-ve-iflas" />
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
@@ -373,15 +373,15 @@
     <xhtml:link rel="alternate" hreflang="de-CH" href="https://www.hasandogru.de/de/leistungen/icra-ve-iflas" />
     <xhtml:link rel="alternate" hreflang="de-AT" href="https://www.hasandogru.de/de/leistungen/icra-ve-iflas" />
     <xhtml:link rel="alternate" hreflang="tr" href="https://www.hasandogru.de/tr/hizmetler/icra-ve-iflas" />
-    <xhtml:link rel="alternate" hreflang="en" href="https://www.hasandogru.de/en/services/icra-ve-iflas" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.hasandogru.de/en/services/debt-enforcement" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://www.hasandogru.de/de/leistungen/icra-ve-iflas" />
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <!-- Service EN: İcra ve İflas -->
   <url>
-    <loc>https://www.hasandogru.de/en/services/icra-ve-iflas</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://www.hasandogru.de/en/services/icra-ve-iflas" />
+    <loc>https://www.hasandogru.de/en/services/debt-enforcement</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.hasandogru.de/en/services/debt-enforcement" />
     <xhtml:link rel="alternate" hreflang="de" href="https://www.hasandogru.de/de/leistungen/icra-ve-iflas" />
     <xhtml:link rel="alternate" hreflang="de-DE" href="https://www.hasandogru.de/de/leistungen/icra-ve-iflas" />
     <xhtml:link rel="alternate" hreflang="de-CH" href="https://www.hasandogru.de/de/leistungen/icra-ve-iflas" />
@@ -400,7 +400,7 @@
     <xhtml:link rel="alternate" hreflang="de-CH" href="https://www.hasandogru.de/de/leistungen/erbrecht" />
     <xhtml:link rel="alternate" hreflang="de-AT" href="https://www.hasandogru.de/de/leistungen/erbrecht" />
     <xhtml:link rel="alternate" hreflang="tr" href="https://www.hasandogru.de/tr/hizmetler/miras-hukuku" />
-    <xhtml:link rel="alternate" hreflang="en" href="https://www.hasandogru.de/en/services/erbrecht" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.hasandogru.de/en/services/inheritance-law" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://www.hasandogru.de/de/leistungen/erbrecht" />
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
@@ -412,15 +412,15 @@
     <xhtml:link rel="alternate" hreflang="de-CH" href="https://www.hasandogru.de/de/leistungen/erbrecht" />
     <xhtml:link rel="alternate" hreflang="de-AT" href="https://www.hasandogru.de/de/leistungen/erbrecht" />
     <xhtml:link rel="alternate" hreflang="tr" href="https://www.hasandogru.de/tr/hizmetler/miras-hukuku" />
-    <xhtml:link rel="alternate" hreflang="en" href="https://www.hasandogru.de/en/services/erbrecht" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.hasandogru.de/en/services/inheritance-law" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://www.hasandogru.de/de/leistungen/erbrecht" />
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <!-- Service EN: Erbrecht -->
   <url>
-    <loc>https://www.hasandogru.de/en/services/erbrecht</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://www.hasandogru.de/en/services/erbrecht" />
+    <loc>https://www.hasandogru.de/en/services/inheritance-law</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.hasandogru.de/en/services/inheritance-law" />
     <xhtml:link rel="alternate" hreflang="de" href="https://www.hasandogru.de/de/leistungen/erbrecht" />
     <xhtml:link rel="alternate" hreflang="de-DE" href="https://www.hasandogru.de/de/leistungen/erbrecht" />
     <xhtml:link rel="alternate" hreflang="de-CH" href="https://www.hasandogru.de/de/leistungen/erbrecht" />
@@ -439,7 +439,7 @@
     <xhtml:link rel="alternate" hreflang="de-CH" href="https://www.hasandogru.de/de/leistungen/sorgerecht" />
     <xhtml:link rel="alternate" hreflang="de-AT" href="https://www.hasandogru.de/de/leistungen/sorgerecht" />
     <xhtml:link rel="alternate" hreflang="tr" href="https://www.hasandogru.de/tr/hizmetler/velayet" />
-    <xhtml:link rel="alternate" hreflang="en" href="https://www.hasandogru.de/en/services/sorgerecht" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.hasandogru.de/en/services/child-custody" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://www.hasandogru.de/de/leistungen/sorgerecht" />
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
@@ -451,15 +451,15 @@
     <xhtml:link rel="alternate" hreflang="de-CH" href="https://www.hasandogru.de/de/leistungen/sorgerecht" />
     <xhtml:link rel="alternate" hreflang="de-AT" href="https://www.hasandogru.de/de/leistungen/sorgerecht" />
     <xhtml:link rel="alternate" hreflang="tr" href="https://www.hasandogru.de/tr/hizmetler/velayet" />
-    <xhtml:link rel="alternate" hreflang="en" href="https://www.hasandogru.de/en/services/sorgerecht" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.hasandogru.de/en/services/child-custody" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://www.hasandogru.de/de/leistungen/sorgerecht" />
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <!-- Service EN: Sorgerecht -->
   <url>
-    <loc>https://www.hasandogru.de/en/services/sorgerecht</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://www.hasandogru.de/en/services/sorgerecht" />
+    <loc>https://www.hasandogru.de/en/services/child-custody</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.hasandogru.de/en/services/child-custody" />
     <xhtml:link rel="alternate" hreflang="de" href="https://www.hasandogru.de/de/leistungen/sorgerecht" />
     <xhtml:link rel="alternate" hreflang="de-DE" href="https://www.hasandogru.de/de/leistungen/sorgerecht" />
     <xhtml:link rel="alternate" hreflang="de-CH" href="https://www.hasandogru.de/de/leistungen/sorgerecht" />
@@ -478,7 +478,7 @@
     <xhtml:link rel="alternate" hreflang="de-CH" href="https://www.hasandogru.de/de/leistungen/immobilienrecht" />
     <xhtml:link rel="alternate" hreflang="de-AT" href="https://www.hasandogru.de/de/leistungen/immobilienrecht" />
     <xhtml:link rel="alternate" hreflang="tr" href="https://www.hasandogru.de/tr/hizmetler/gayrimenkul-hukuku" />
-    <xhtml:link rel="alternate" hreflang="en" href="https://www.hasandogru.de/en/services/immobilienrecht" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.hasandogru.de/en/services/property-law" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://www.hasandogru.de/de/leistungen/immobilienrecht" />
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
@@ -490,15 +490,15 @@
     <xhtml:link rel="alternate" hreflang="de-CH" href="https://www.hasandogru.de/de/leistungen/immobilienrecht" />
     <xhtml:link rel="alternate" hreflang="de-AT" href="https://www.hasandogru.de/de/leistungen/immobilienrecht" />
     <xhtml:link rel="alternate" hreflang="tr" href="https://www.hasandogru.de/tr/hizmetler/gayrimenkul-hukuku" />
-    <xhtml:link rel="alternate" hreflang="en" href="https://www.hasandogru.de/en/services/immobilienrecht" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.hasandogru.de/en/services/property-law" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://www.hasandogru.de/de/leistungen/immobilienrecht" />
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <!-- Service EN: Immobilienrecht -->
   <url>
-    <loc>https://www.hasandogru.de/en/services/immobilienrecht</loc>
-    <xhtml:link rel="alternate" hreflang="en" href="https://www.hasandogru.de/en/services/immobilienrecht" />
+    <loc>https://www.hasandogru.de/en/services/property-law</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.hasandogru.de/en/services/property-law" />
     <xhtml:link rel="alternate" hreflang="de" href="https://www.hasandogru.de/de/leistungen/immobilienrecht" />
     <xhtml:link rel="alternate" hreflang="de-DE" href="https://www.hasandogru.de/de/leistungen/immobilienrecht" />
     <xhtml:link rel="alternate" hreflang="de-CH" href="https://www.hasandogru.de/de/leistungen/immobilienrecht" />
@@ -1353,49 +1353,5 @@
   </url>
 
   <!-- Legal Pages -->
-  <url>
-    <loc>https://www.hasandogru.de/de/datenschutz</loc>
-    <xhtml:link rel="alternate" hreflang="de" href="https://www.hasandogru.de/de/datenschutz" />
-    <xhtml:link rel="alternate" hreflang="de-DE" href="https://www.hasandogru.de/de/datenschutz" />
-    <xhtml:link rel="alternate" hreflang="de-CH" href="https://www.hasandogru.de/de/datenschutz" />
-    <xhtml:link rel="alternate" hreflang="de-AT" href="https://www.hasandogru.de/de/datenschutz" />
-    <xhtml:link rel="alternate" hreflang="tr" href="https://www.hasandogru.de/tr/gizlilik-politikasi" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.hasandogru.de/de/datenschutz" />
-    <changefreq>yearly</changefreq>
-    <priority>0.3</priority>
-  </url>
-  <url>
-    <loc>https://www.hasandogru.de/tr/gizlilik-politikasi</loc>
-    <xhtml:link rel="alternate" hreflang="de" href="https://www.hasandogru.de/de/datenschutz" />
-    <xhtml:link rel="alternate" hreflang="de-DE" href="https://www.hasandogru.de/de/datenschutz" />
-    <xhtml:link rel="alternate" hreflang="de-CH" href="https://www.hasandogru.de/de/datenschutz" />
-    <xhtml:link rel="alternate" hreflang="de-AT" href="https://www.hasandogru.de/de/datenschutz" />
-    <xhtml:link rel="alternate" hreflang="tr" href="https://www.hasandogru.de/tr/gizlilik-politikasi" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.hasandogru.de/de/datenschutz" />
-    <changefreq>yearly</changefreq>
-    <priority>0.3</priority>
-  </url>
-  <url>
-    <loc>https://www.hasandogru.de/de/impressum</loc>
-    <xhtml:link rel="alternate" hreflang="de" href="https://www.hasandogru.de/de/impressum" />
-    <xhtml:link rel="alternate" hreflang="de-DE" href="https://www.hasandogru.de/de/impressum" />
-    <xhtml:link rel="alternate" hreflang="de-CH" href="https://www.hasandogru.de/de/impressum" />
-    <xhtml:link rel="alternate" hreflang="de-AT" href="https://www.hasandogru.de/de/impressum" />
-    <xhtml:link rel="alternate" hreflang="tr" href="https://www.hasandogru.de/tr/yasal-bilgiler" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.hasandogru.de/de/impressum" />
-    <changefreq>yearly</changefreq>
-    <priority>0.3</priority>
-  </url>
-  <url>
-    <loc>https://www.hasandogru.de/tr/yasal-bilgiler</loc>
-    <xhtml:link rel="alternate" hreflang="de" href="https://www.hasandogru.de/de/impressum" />
-    <xhtml:link rel="alternate" hreflang="de-DE" href="https://www.hasandogru.de/de/impressum" />
-    <xhtml:link rel="alternate" hreflang="de-CH" href="https://www.hasandogru.de/de/impressum" />
-    <xhtml:link rel="alternate" hreflang="de-AT" href="https://www.hasandogru.de/de/impressum" />
-    <xhtml:link rel="alternate" hreflang="tr" href="https://www.hasandogru.de/tr/yasal-bilgiler" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.hasandogru.de/de/impressum" />
-    <changefreq>yearly</changefreq>
-    <priority>0.3</priority>
-  </url>
 
 </urlset>

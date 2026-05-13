@@ -1,13 +1,20 @@
+import { lazy, Suspense } from "react";
 import { Hero } from "../components/Hero";
-import { PracticeAreas } from "../components/PracticeAreas";
-import { WhyUs } from "../components/WhyUs";
-import { Testimonials } from "../components/Testimonials";
-import { Blog } from "../components/Blog";
-import { Contact } from "../components/Contact";
 import { useLanguage } from "../context/LanguageContext";
 import { useSEO, SITE_URL } from "../hooks/useSEO";
 import { SchemaOrg } from "../components/SchemaOrg";
 import { usePrerender } from "../hooks/usePrerender";
+
+// Lazy load below-fold sections so they don't block the initial paint.
+// Hero is the only above-fold component — everything else defers.
+const PracticeAreas = lazy(() => import("../components/PracticeAreas").then(m => ({ default: m.PracticeAreas })));
+const WhyUs        = lazy(() => import("../components/WhyUs").then(m => ({ default: m.WhyUs })));
+const Testimonials = lazy(() => import("../components/Testimonials").then(m => ({ default: m.Testimonials })));
+const Blog         = lazy(() => import("../components/Blog").then(m => ({ default: m.Blog })));
+const Contact      = lazy(() => import("../components/Contact").then(m => ({ default: m.Contact })));
+
+// Minimal fallback that matches the background colour so there's no flash
+const SectionFallback = () => <div style={{ minHeight: "200px", background: "#1C3829" }} />;
 
 const HOME_SCHEMA = {
   "@context": "https://schema.org",
@@ -105,11 +112,21 @@ export function Home() {
       <SchemaOrg data={HOME_SCHEMA} />
       <SchemaOrg data={PERSON_SCHEMA} id="schema-org-person" />
       <Hero />
-      <PracticeAreas />
-      <WhyUs />
-      <Testimonials />
-      <Blog />
-      <Contact />
+      <Suspense fallback={<SectionFallback />}>
+        <PracticeAreas />
+      </Suspense>
+      <Suspense fallback={<SectionFallback />}>
+        <WhyUs />
+      </Suspense>
+      <Suspense fallback={<SectionFallback />}>
+        <Testimonials />
+      </Suspense>
+      <Suspense fallback={<SectionFallback />}>
+        <Blog />
+      </Suspense>
+      <Suspense fallback={<SectionFallback />}>
+        <Contact />
+      </Suspense>
     </>
   );
 }

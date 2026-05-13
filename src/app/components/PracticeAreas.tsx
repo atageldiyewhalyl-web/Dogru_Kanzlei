@@ -6,7 +6,7 @@ import { useEffect, useRef } from "react";
 
 // Mobile background images
 import tanimaImg from "@/assets/services/tanima.avif";
-import familyLawImg from "@/assets/blog_divorce.png";
+import familyLawImg from "@/assets/blog_divorce.avif";
 import inheritanceImg from "@/assets/services/inheritance.avif";
 import custodyImg from "@/assets/services/custody.avif";
 import criminalImg from "@/assets/services/criminal.avif";

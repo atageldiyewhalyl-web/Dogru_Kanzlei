@@ -69,8 +69,8 @@ export function ServiceDetail() {
   const { id } = useParams();
   const { language, t, paths } = useLanguage();
   
-  // Find service by localized slug
-  const service = services.find((s) => s.slugDE === id || s.slugTR === id);
+  // Find service by localized slug (DE, TR, or EN)
+  const service = services.find((s) => s.slugDE === id || s.slugTR === id || (s as any).slugEN === id);
 
   // Signal ready to prerenderer only if service is found
   usePrerender(!!service);
@@ -93,8 +93,8 @@ export function ServiceDetail() {
           : (service as any).seoDescriptionEN || (service as any).descriptionEN || service.descriptionDE
       : '',
     lang: language,
-    canonical: service 
-      ? `${SITE_URL}/${language}/${servicesSegment}/${language === 'de' ? service.slugDE : language === 'tr' ? service.slugTR : service.slugDE}` 
+    canonical: service
+      ? `${SITE_URL}/${language}/${servicesSegment}/${language === 'de' ? service.slugDE : language === 'tr' ? service.slugTR : ((service as any).slugEN || service.slugDE)}`
       : undefined,
     alternateLangs: service ? [
       { lang: 'de', href: `${SITE_URL}/de/leistungen/${service.slugDE}` },
@@ -102,7 +102,7 @@ export function ServiceDetail() {
       { lang: 'de-CH', href: `${SITE_URL}/de/leistungen/${service.slugDE}` },
       { lang: 'de-AT', href: `${SITE_URL}/de/leistungen/${service.slugDE}` },
       { lang: 'tr', href: `${SITE_URL}/tr/hizmetler/${service.slugTR}` },
-      { lang: 'en', href: `${SITE_URL}/en/services/${service.slugDE}` },
+      { lang: 'en', href: `${SITE_URL}/en/services/${(service as any).slugEN || service.slugDE}` },
     ] : undefined,
     xDefault: service ? `${SITE_URL}/de/leistungen/${service.slugDE}` : undefined,
   });

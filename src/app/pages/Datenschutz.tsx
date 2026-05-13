@@ -23,6 +23,7 @@ export function Datenschutz() {
       lang: language === 'de' ? 'tr' : 'de',
       href: `${SITE_URL}/${language === 'de' ? 'tr' : 'de'}/${altSegment}`,
     },
+    noindex: true,
   });
 
   return (

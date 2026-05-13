@@ -219,10 +219,41 @@ export default defineConfig({
         assetFileNames: 'assets/[name]-[hash].[ext]',
         chunkFileNames: 'assets/[name]-[hash].js',
         entryFileNames: 'assets/[name]-[hash].js',
-        manualChunks: {
-          'react-core': ['react', 'react-dom'],
-          'react-router': ['react-router'],
-          'ui-vendor': ['lucide-react']
+        manualChunks(id) {
+          // React core — always needed, cache separately
+          if (id.includes('node_modules/react/') || id.includes('node_modules/react-dom/')) {
+            return 'react-core';
+          }
+          // Router — needed on every page but separate from React
+          if (id.includes('node_modules/react-router')) {
+            return 'react-router';
+          }
+          // Framer Motion — heavy animation library, only needed when components mount
+          if (id.includes('node_modules/motion') || id.includes('node_modules/framer-motion')) {
+            return 'motion';
+          }
+          // Radix UI primitives — used across many components but not critical path
+          if (id.includes('node_modules/@radix-ui')) {
+            return 'radix-ui';
+          }
+          // MUI — if used, isolate it
+          if (id.includes('node_modules/@mui') || id.includes('node_modules/@emotion')) {
+            return 'mui';
+          }
+          // Icons — small but referenced everywhere
+          if (id.includes('node_modules/lucide-react')) {
+            return 'ui-vendor';
+          }
+          // Heavy data files — split them so they don't block the main bundle.
+          // blogPosts is 9000+ lines and only needed on Blog/BlogPost pages.
+          if (id.includes('/data/blogPosts')) {
+            return 'data-blog';
+          }
+          // services.ts is needed on Home (PracticeAreas) but now lazy-loaded,
+          // so it can live in its own chunk
+          if (id.includes('/data/services')) {
+            return 'data-services';
+          }
         }
       }
     }

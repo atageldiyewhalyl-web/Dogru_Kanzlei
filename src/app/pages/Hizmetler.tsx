@@ -6,7 +6,7 @@ import { ArrowRight } from "lucide-react";
 import { useLanguage } from "../context/LanguageContext";
 import { useSEO, SITE_URL } from "../hooks/useSEO";
 import { usePrerender } from "../hooks/usePrerender";
-import hizmetlerBg from "../../assets/hizmetler-bg.jpg";
+import hizmetlerBg from "../../assets/hizmetler-bg.avif";
 
 export function Hizmetler() {
   const [hovered, setHovered] = useState<string | null>(null);

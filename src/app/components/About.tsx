@@ -1,5 +1,5 @@
-import heroImage from "@/assets/Hero 1.png";
-import newsletterImage from "@/assets/Newsletter.png";
+import heroImage from "@/assets/Hero 1.avif";
+import newsletterImage from "@/assets/Newsletter.avif";
 import { useLanguage } from "../context/LanguageContext";
 
 export function About() {
