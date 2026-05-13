@@ -17,6 +17,7 @@ import blueCardImg from "@/assets/blue_card_rights_law.avif";
 
 import criminalDefenseTurkeyImg from "@/assets/criminal_defense_turkey.avif";
 import inheritanceLawImg from "@/assets/inheritance_fraud_law.avif";
+import { murisMuvazaasiPost } from "./murisMuvazaasiPost";
 
 export interface BlogPost {
   slug: string;
@@ -59,9 +60,16 @@ export interface BlogPost {
   metaDescriptionDE?: string;
   metaDescriptionTR?: string;
   metaDescriptionEN?: string;
+  ogDescriptionDE?: string;
+  ogDescriptionTR?: string;
+  ogDescriptionEN?: string;
   schemaHeadlineDE?: string;
   schemaHeadlineTR?: string;
   schemaHeadlineEN?: string;
+  schemaDescriptionDE?: string;
+  schemaDescriptionTR?: string;
+  schemaDescriptionEN?: string;
+  articleAuthor?: string;
   articleSectionDE?: string;
   articleSectionTR?: string;
   articleSectionEN?: string;
@@ -83,6 +91,7 @@ export interface BlogPost {
 }
 
 export const blogPosts: BlogPost[] = [
+  murisMuvazaasiPost,
   {
     slug: "deutsche-scheidung-tuerkei-anerkennen-tanima-tenfiz",
     slugDE: "deutsche-scheidung-tuerkei-anerkennen-tanima-tenfiz",

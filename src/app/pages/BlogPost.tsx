@@ -81,6 +81,20 @@ export function BlogPost() {
         : 'Joint Custody from Germany: Does It Apply in Turkey? (2026 Guide)'
     : undefined;
   const currentSchemaHeadline = post ? (language === 'de' ? post.schemaHeadlineDE : language === 'tr' ? post.schemaHeadlineTR : post.schemaHeadlineEN) : undefined;
+  const currentOgDescription = post
+    ? (language === 'de'
+      ? post.ogDescriptionDE
+      : language === 'tr'
+        ? post.ogDescriptionTR
+        : post.ogDescriptionEN)
+    : undefined;
+  const currentSchemaDescription = post
+    ? (language === 'de'
+      ? (post.schemaDescriptionDE || currentOgDescription)
+      : language === 'tr'
+        ? (post.schemaDescriptionTR || currentOgDescription)
+        : (post.schemaDescriptionEN || currentOgDescription))
+    : undefined;
   const currentPublishedAt = post
     ? (language === 'de'
       ? (post.publishedAtDE || post.publishedAt)
@@ -113,7 +127,9 @@ export function BlogPost() {
       : post?.slugTR === 'veraset-ilami-nedir-nasil-alinir' && language !== 'tr'
         ? `${SITE_URL}/assets/inheritance_fraud_law-BxjZQ9m1.png`
       : post?.image;
-  const currentArticleAuthor = post?.slugTR === 'almanya-bosanma-turkiye-tanima-tenfiz'
+  const currentArticleAuthor = post?.articleAuthor
+    ? post.articleAuthor
+    : post?.slugTR === 'almanya-bosanma-turkiye-tanima-tenfiz'
     ? 'Av. Hasan Doğru'
     : post?.slugTR === 'almanya-turkiye-alacak-tahsili-icra'
     ? 'Av. Hasan Doğru'
@@ -180,6 +196,7 @@ export function BlogPost() {
     lang: language,
     ogType: 'article',
     ogTitle: currentOgTitle,
+    ogDescription: currentOgDescription,
     ogImage: isAvailable ? currentImage : undefined,
     canonical: isAvailable && post
       ? `${SITE_URL}/${language}/blog/${language === 'de' ? post.slugDE : language === 'tr' ? post.slugTR : post.slugEN}`
@@ -255,7 +272,7 @@ export function BlogPost() {
     "@context": "https://schema.org",
     "@type": "Article",
     "headline": currentSchemaHeadline || title,
-    "description": currentDescription,
+    "description": currentSchemaDescription || currentDescription,
     "image": currentImage?.startsWith('http') ? currentImage : `${SITE_URL}${currentImage}`,
     "datePublished": currentPublishedAt,
     "dateModified": currentModifiedAt,

@@ -8,6 +8,7 @@ interface SEOConfig {
   canonical?: string;
   ogImage?: string;
   ogTitle?: string;
+  ogDescription?: string;
   ogType?: string;
   lang: 'de' | 'tr' | 'en';
   alternateLang?: { lang: string; href: string };
@@ -73,7 +74,7 @@ export function useSEO(config: SEOConfig) {
 
     // Open Graph
     setMetaTag('og:title', config.ogTitle || config.title);
-    setMetaTag('og:description', config.description);
+    setMetaTag('og:description', config.ogDescription || config.description);
     setMetaTag('og:url', canonicalUrl);
     setMetaTag('og:type', config.ogType || 'website');
     const ogLocale = config.lang === 'de' ? 'de_DE' : config.lang === 'tr' ? 'tr_TR' : 'en_GB';
@@ -161,7 +162,7 @@ export function useSEO(config: SEOConfig) {
     } else {
       setMetaTag('robots', 'index, follow', true);
     }
-  }, [config.title, config.description, config.canonical, config.ogImage, config.ogTitle, config.ogType, config.lang, config.alternateLang, config.alternateLangs, config.exactHreflangs, config.xDefault, config.noindex, config.keywords, config.article]);
+  }, [config.title, config.description, config.canonical, config.ogImage, config.ogTitle, config.ogDescription, config.ogType, config.lang, config.alternateLang, config.alternateLangs, config.exactHreflangs, config.xDefault, config.noindex, config.keywords, config.article]);
 }
 
 export { SITE_URL };
