@@ -108,7 +108,6 @@
     { "source": "/:path*/feed", "destination": "/de/blog", "permanent": true },
     { "source": "/en/contact", "destination": "/de/#iletisim", "permanent": true },
 
-    // EN service slug redirects: old German slugs → new English slugs
     { "source": "/en/services/familienrecht", "destination": "/en/services/family-law", "permanent": true },
     { "source": "/en/services/vollmacht-apostille", "destination": "/en/services/power-of-attorney", "permanent": true },
     { "source": "/en/services/migrationsrecht", "destination": "/en/services/migration-law", "permanent": true },
