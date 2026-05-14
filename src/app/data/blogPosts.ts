@@ -97,7 +97,7 @@ export const blogPosts: BlogPost[] = [
     slugDE: "deutsche-scheidung-tuerkei-anerkennen-tanima-tenfiz",
     slugTR: "almanya-bosanma-turkiye-tanima-tenfiz",
     slugEN: "german-divorce-recognition-turkey-tanima-tenfiz",
-    titleDE: "Deutsche Scheidung in der Türkei anerkennen lassen: Tanıma & Tenfiz — Verfahren, Fristen, Kosten und häufige Fehler (MÖHUK Art. 50–59)",
+    titleDE: "Deutsche Scheidung in der Türkei anerkennen: Tanıma & Tenfiz 2026",
     titleTR: "Almanya'da Boşandım, Türkiye'de Hâlâ Evli Görünüyorum: Tanıma ve Tenfiz Davası Rehberi (2026)",
     titleEN: "German Divorce Recognition in Turkey: The Complete Tanıma & Tenfiz Guide (2026)",
     excerptDE: "Sie haben sich in Deutschland scheiden lassen — aber in der Türkei gelten Sie weiterhin als verheiratet? Dieser Rechtstipp erklärt das Tanıma-ve-Tenfiz-Verfahren Schritt für Schritt.",
@@ -120,7 +120,6 @@ export const blogPosts: BlogPost[] = [
     articleTagsEN: ["tanima tenfiz", "German divorce Turkey", "MOHUK"],
     exactHreflangs: true,
     exactSchema: true,
-    schemaImage: "https://www.hasandogru.de/assets/inheritance_fraud_law-BxjZQ9m1.png",
     contentDE: `> *Dieser Artikel befasst sich ausschließlich mit dem türkischen Recht. Die Doğru Kanzlei berät gemäß § 207 BRAO ausschließlich im türkischen Recht.*
 
 ---
@@ -796,7 +795,7 @@ No. Until tanıma is granted, your former spouse remains your legal heir under T
     category: "Aile Hukuku / Uluslararası Özel Hukuk",
     categoryDE: "Familienrecht / Internationales Privatrecht",
     categoryEN: "Family Law / International Private Law",
-    image: inheritanceFraudImg,
+    image: tanimaTenfizImg,
     dateDE: "14. Mai 2026",
     dateTR: "14 Mayıs 2026",
     dateEN: "14 May 2026",

@@ -181,6 +181,10 @@ export function Blog() {
                     marginBottom: 12,
                     transition: "color 0.2s",
                     textAlign: "left",
+                    display: "-webkit-box",
+                    WebkitLineClamp: 3,
+                    WebkitBoxOrient: "vertical",
+                    overflow: "hidden",
                   }}
                   className="group-hover:!text-[#B8963E] no-justify"
                 >

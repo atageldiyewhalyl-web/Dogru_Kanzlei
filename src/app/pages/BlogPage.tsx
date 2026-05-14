@@ -89,7 +89,10 @@ export function BlogPage() {
                 </div>
 
                 {/* Title */}
-                <h2 className="font-serif text-[22px] font-semibold text-[#1C3829] leading-[1.3] mb-3 group-hover:text-[#7A5F20] transition-colors text-left no-justify">
+                <h2
+                  className="font-serif text-[22px] font-semibold text-[#1C3829] leading-[1.3] mb-3 group-hover:text-[#7A5F20] transition-colors text-left no-justify overflow-hidden"
+                  style={{ display: '-webkit-box', WebkitLineClamp: 3, WebkitBoxOrient: 'vertical' }}
+                >
                   <span lang={language === 'tr' ? 'tr' : 'de'}>
                     {language === 'de' ? post.titleDE : language === 'tr' ? post.titleTR : post.titleEN || post.titleDE}
                   </span>

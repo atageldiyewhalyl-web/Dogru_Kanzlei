@@ -6,7 +6,7 @@ export const murisMuvazaasiPost: BlogPost = {
   slugDE: "muris-muvazaasi-erbrecht-tuerkei-tapu-iptal-klage",
   slugTR: "mirastan-mal-kacirma-muris-muvazaasi-tapu-iptal",
   slugEN: "muris-muvazaasi-inheritance-fraud-turkey-property-cancellation",
-  titleDE: "Mirastan Mal Kaçırma (Muris Muvazaası): Wenn Erben in Deutschland um ihr türkisches Erbe betrogen werden — Tapu Iptal Davası, Mavi-Kart-Falle und Bankkonto-Missbrauch",
+  titleDE: "Muris Muvazaası: Tapu-Iptal-Klage aus Deutschland",
   titleTR: "Mirastan Mal Kaçırma (Muris Muvazaası): Almanya'dan Tapu İptal Davası Rehberi (2026)",
   titleEN: "Muris Muvazaası: When Turkish Heirs Abroad Lose Their Inheritance — Property Cancellation, the Blue Card Trap, and Bank Account Abuse (2026)",
   excerptDE: "Ihr Elternteil ist verstorben. Beim Blick ins türkische Grundbuch stellen Sie fest: Die Immobilie gehört längst einem Geschwisterteil — übertragen noch zu Lebzeiten, angeblich durch Verkauf. Tatsächlich floss nie ein Kaufpreis. Was können Sie aus Deutschland tun?",
