@@ -1,10 +1,8 @@
-import { MapPin, Phone, Mail, Clock, Lock } from "lucide-react";
+import { MapPin, Phone, Mail } from "lucide-react";
 import { useLanguage } from "../context/LanguageContext";
-import { useConsent } from "../context/ConsentContext";
 
 export function Contact() {
   const { t, language } = useLanguage();
-  const { consent, openSettings } = useConsent();
 
   const offices = [
     {
@@ -27,8 +25,8 @@ export function Contact() {
     },
   ];
 
-  const calendlyLink = "https://calendly.com/hasand9366/30min";
-  const whatsappNumber = "4917661221210"; 
+  const whatsappNumber = "4917661221210";
+  const whatsappLink = `https://wa.me/${whatsappNumber}`;
 
   return (
     <section
@@ -133,74 +131,18 @@ export function Contact() {
             </p>
 
             <div style={{ display: "flex", flexDirection: "column", gap: 16 }}>
-              {consent.functional ? (
-                <a
-                  href={calendlyLink}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  aria-label={t("contact_calendly_btn")}
-                  style={{
-                    display: "flex",
-                    alignItems: "center",
-                    justifyContent: "center",
-                    gap: 12,
-                    background: "#1C3829",
-                    color: "#ffffff",
-                    padding: "18px 32px",
-                    fontFamily: "var(--font-sans)",
-                    fontSize: 13,
-                    fontWeight: 700,
-                    letterSpacing: "0.1em",
-                    textTransform: "uppercase",
-                    textDecoration: "none",
-                    transition: "all 0.3s ease",
-                  }}
-                  onMouseEnter={(e) => (e.currentTarget.style.background = "#8B6E2A")}
-                  onMouseLeave={(e) => (e.currentTarget.style.background = "#1C3829")}
-                >
-                  <Clock size={18} />
-                  {t("contact_calendly_btn")}
-                </a>
-              ) : (
-                <button
-                  onClick={openSettings}
-                  aria-label="Cookie-Einstellungen öffnen"
-                  style={{
-                    display: "flex",
-                    alignItems: "center",
-                    justifyContent: "center",
-                    gap: 12,
-                    background: "#e8e4dc",
-                    color: "#6a6a6a",
-                    padding: "18px 32px",
-                    fontFamily: "var(--font-sans)",
-                    fontSize: 13,
-                    fontWeight: 700,
-                    letterSpacing: "0.1em",
-                    textTransform: "uppercase",
-                    border: "none",
-                    cursor: "pointer",
-                    width: "100%",
-                  }}
-                >
-                  <Lock size={18} />
-                  {language === 'de' ? 'Cookie-Einwilligung erforderlich' : language === 'tr' ? 'Çerez izni gerekli' : 'Cookie consent required'}
-                </button>
-              )}
-
               <a
-                href={`https://wa.me/${whatsappNumber}`}
+                href={whatsappLink}
                 target="_blank"
                 rel="noopener noreferrer"
-                aria-label="Kontakt per WhatsApp"
+                aria-label={t("contact_whatsapp_btn")}
                 style={{
                   display: "flex",
                   alignItems: "center",
                   justifyContent: "center",
                   gap: 12,
-                  background: "#ffffff",
-                  border: "1px solid #1C3829",
-                  color: "#1C3829",
+                  background: "#1C3829",
+                  color: "#ffffff",
                   padding: "18px 32px",
                   fontFamily: "var(--font-sans)",
                   fontSize: 13,
@@ -210,14 +152,8 @@ export function Contact() {
                   textDecoration: "none",
                   transition: "all 0.3s ease",
                 }}
-                onMouseEnter={(e) => {
-                  e.currentTarget.style.background = "#1C3829";
-                  e.currentTarget.style.color = "#ffffff";
-                }}
-                onMouseLeave={(e) => {
-                  e.currentTarget.style.background = "#ffffff";
-                  e.currentTarget.style.color = "#1C3829";
-                }}
+                onMouseEnter={(e) => (e.currentTarget.style.background = "#8B6E2A")}
+                onMouseLeave={(e) => (e.currentTarget.style.background = "#1C3829")}
               >
                 <Phone size={18} />
                 {t("contact_whatsapp_btn")}

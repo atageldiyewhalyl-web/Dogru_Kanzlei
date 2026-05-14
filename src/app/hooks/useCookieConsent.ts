@@ -2,7 +2,7 @@ import { useState, useEffect } from "react";
 
 export type ConsentState = {
   essential: true;          // always true, no choice
-  functional: boolean;      // Calendly, WhatsApp tracking
+  functional: boolean;      // External contact widgets and embeds
   analytics: boolean;       // future analytics (Google Analytics, etc.)
 };
 

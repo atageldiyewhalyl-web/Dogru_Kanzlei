@@ -90,10 +90,9 @@ export const translations = {
     contact_office_hours_tr: "Mon–Fri: 09:00 – 18:00",
     contact_office_hours_de: "Mon–Sat: 09:00 – 18:00",
     contact_languages_badge: "Service Languages",
-    contact_calendly_btn: "Book Appointment",
     contact_whatsapp_btn: "Contact via WhatsApp",
     contact_direct_title: "Direct Contact",
-    contact_direct_p: "Reach us directly or schedule a call at a time that suits you.",
+    contact_direct_p: "Reach us directly on WhatsApp or by phone.",
 
     // Testimonials
     testimonials_badge: "Client Reviews",
@@ -222,10 +221,9 @@ export const translations = {
     contact_office_hours_tr: "Pzt–Cum: 09:00 – 18:00",
     contact_office_hours_de: "Pzt–Cmt: 09:00 – 18:00",
     contact_languages_badge: "Hizmet Dilleri",
-    contact_calendly_btn: "Randevu Al",
     contact_whatsapp_btn: "WhatsApp ile Ulaşın",
     contact_direct_title: "Hızlı İletişim",
-    contact_direct_p: "Bize doğrudan ulaşın veya size uygun bir zamanda görüşme ayarlayın.",
+    contact_direct_p: "Bize doğrudan WhatsApp veya telefon üzerinden ulaşın.",
 
     // Testimonials
     testimonials_badge: "Müvekkil Yorumları",
@@ -354,10 +352,9 @@ export const translations = {
     contact_office_hours_tr: "Mo–Fr: 09:00 – 18:00",
     contact_office_hours_de: "Mo–Sa: 09:00 – 18:00",
     contact_languages_badge: "Service-Sprachen",
-    contact_calendly_btn: "Termin vereinbaren",
     contact_whatsapp_btn: "Kontakt per WhatsApp",
     contact_direct_title: "Direkter Kontakt",
-    contact_direct_p: "Kontaktieren Sie uns direkt oder vereinbaren Sie ein Gespräch zu einem passenden Zeitpunkt.",
+    contact_direct_p: "Kontaktieren Sie uns direkt per WhatsApp oder Telefon.",
 
     // Testimonials
     testimonials_badge: "Mandantenstimmen",

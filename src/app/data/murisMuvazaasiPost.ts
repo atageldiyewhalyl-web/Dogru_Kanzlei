@@ -177,7 +177,7 @@ Muris Muvazaası-Fälle gehören zu den komplexesten und zugleich wertmäßig be
 
 Für Mandanten in Deutschland bedeutet das: Ein Ansprechpartner für das gesamte Verfahren. Keine Reise in die Türkei erforderlich. Sofortige Ihtiyati Tedbir bei Gefahr im Verzug. Koordination des zivil- und strafrechtlichen Weges aus einer Hand.
 
-[Kostenlose Ersteinschätzung bei der Doğru Kanzlei anfragen →](https://calendly.com/hasand9366/30min)
+[Per WhatsApp Kontakt aufnehmen →](https://wa.me/4917661221210)
 
 ---
 
@@ -368,7 +368,7 @@ Muris muvazaası davaları, Türk miras hukukunun en karmaşık ve maddi olarak 
 
 Müvekkillerim için bu demek oluyor ki: Türkiye'ye seyahat zorunluluğu yok. Aracı büro yok. Tek muhatap, tüm süreç boyunca.
 
-[Doğru Kanzlei ile Ücretsiz Ön Görüşme Talep Edin →](https://calendly.com/hasand9366/30min)
+[WhatsApp üzerinden iletişime geçin →](https://wa.me/4917661221210)
 
 ---
 
@@ -550,7 +550,7 @@ Muris muvazaası cases are among the most complex and financially significant pr
 
 For clients in Germany, the Netherlands, or the UK, this means: no travel to Turkey required, one contact for the entire process, emergency ihtiyati tedbir when every hour counts, and civil and criminal proceedings coordinated from a single hand.
 
-[Request a Free Initial Assessment with Doğru Kanzlei →](https://calendly.com/hasand9366/30min)
+[Contact Doğru Kanzlei on WhatsApp →](https://wa.me/4917661221210)
 
 ---
 

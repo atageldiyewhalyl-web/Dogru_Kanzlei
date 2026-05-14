@@ -307,7 +307,7 @@ Viele Kanzleien in Deutschland vermitteln Tanıma-Tenfiz-Verfahren an Kooperatio
 
 Für Mandanten bedeutet das: Ein Ansprechpartner in Deutschland, der gleichzeitig vor dem türkischen Gericht steht. Keine Reise in die Türkei erforderlich. Keine Kooperationspartner-Kosten. Schnellere Verfahrensabwicklung durch direkte Kommunikation mit dem Gericht.
 
-[Kostenlose Ersteinschätzung bei der Doğru Kanzlei anfragen →](https://calendly.com/hasand9366/30min)
+[Per WhatsApp Kontakt aufnehmen →](https://wa.me/4917661221210)
 
 ---
 
@@ -523,7 +523,7 @@ Almanya'daki pek çok büro, tanıma-tenfiz davalarını Türkiye'deki ortak huk
 
 Sizin için bu şu anlama gelir: Türkiye'ye seyahat zorunluluğu yok. Tek bir muhatap — hem Almanya'da yanınızda hem Türk mahkemesinde önünüzde. Aracı büro maliyeti yok. Doğrudan iletişim nedeniyle daha hızlı süreç.
 
-[Doğru Kanzlei ile Ücretsiz Ön Görüşme Talep Edin →](https://calendly.com/hasand9366/30min)
+[WhatsApp üzerinden iletişime geçin →](https://wa.me/4917661221210)
 
 ---
 
@@ -751,7 +751,7 @@ Many law firms in Germany handling Turkish matters refer tanıma-tenfiz cases to
 
 What this means for you: no travel to Turkey, one point of contact for the full process, no cooperation partner mark-up, and faster case handling through direct court communication.
 
-[Request a Free Initial Assessment with Doğru Kanzlei →](https://calendly.com/hasand9366/30min)
+[Contact Doğru Kanzlei on WhatsApp →](https://wa.me/4917661221210)
 
 ---
 
@@ -5877,7 +5877,7 @@ Wir führen Tenfiz-Klagen in Sorgerechtssachen vollständig von Deutschland aus 
 
 Auch in angrenzenden Bereichen wie [Erbrecht](/de/leistungen/erbrecht), [Strafrecht](/de/leistungen/strafrecht) und den weiteren [Leistungen der Doğru Kanzlei](/de/leistungen) unterstützen wir Mandanten mit deutsch-türkischem Bezug ausschließlich im türkischen Recht.
 
-[Kostenlose Ersteinschätzung bei der Doğru Kanzlei anfragen →](https://calendly.com/hasand9366/30min)
+[Per WhatsApp Kontakt aufnehmen →](https://wa.me/4917661221210)
 
 ---
 
@@ -6055,7 +6055,7 @@ Almanya'daki Türk Başkonsolosluğu'nda vekâletname düzenlenmesinden belgeler
 
 Türkiye bağlantılı aile dosyanızla birlikte [Miras Hukuku](/tr/hizmetler/miras-hukuku), [Ceza Hukuku](/tr/hizmetler/ceza-hukuku) veya diğer [Doğru Kanzlei Hizmetler](/tr/hizmetler) alanlarında da yalnızca Türk hukuku kapsamında destek sağlıyoruz.
 
-[Doğru Kanzlei ile Ücretsiz Ön Görüşme Talep Edin →](https://wa.me/4917661221210)
+[WhatsApp üzerinden iletişime geçin →](https://wa.me/4917661221210)
 
 ---
 
@@ -6235,7 +6235,7 @@ We handle Tenfiz cases in custody matters from start to finish, entirely remotel
 
 When your cross-border matter also touches [Inheritance Law](/en/services/erbrecht), [Criminal Law](/en/services/strafrecht) or broader [Doğru Kanzlei Services](/en/services), we can coordinate the Turkish-law side from one office.
 
-[Request a Free Initial Assessment with Doğru Kanzlei →](https://calendly.com/hasand9366/30min)
+[Contact Doğru Kanzlei on WhatsApp →](https://wa.me/4917661221210)
 
 ---
 
