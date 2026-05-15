@@ -10095,4 +10095,415 @@ Avukat Hasan Doğru, hem Karlsruhe Barosu'na (§207 BRAO) hem de Ankara Barosu'n
     ctaDescriptionDE: "Rechtsanwalt Hasan Doğru ist bei der Ankara Barosu und der Rechtsanwaltskammer Karlsruhe zugelassen. Erstberatung auf Deutsch oder Türkisch.",
     ctaDescriptionTR: "Avukat Hasan Doğru, Ankara Barosu ve Karlsruhe Barosu'na kayıtlıdır. İlk görüşme Almanca veya Türkçe yapılabilir."
   },
+  {
+    slug: "tuerkischer-anwalt-deutschland-liste",
+    slugDE: "tuerkischer-anwalt-deutschland-liste",
+    slugTR: "almanya-da-tuerk-avukat-listesi",
+    slugEN: "turkish-lawyer-germany-list",
+    titleDE: "Türkischer Anwalt in Deutschland: Die 6 besten Kanzleien im Vergleich (2026)",
+    titleTR: "Almanya'da Türk Avukat: 2026'nın En İyi 6 Hukuk Bürosu Karşılaştırması",
+    titleEN: "Turkish Lawyer in Germany: The 6 Best Law Firms Compared (2026)",
+    excerptDE: "Welcher türkische Anwalt in Deutschland ist wirklich für türkisches Recht zugelassen? Der Unterschied zwischen Türkischkenntnissen und § 207 BRAO-Zulassung — und welche Kanzlei für welchen Fall die richtige ist.",
+    excerptTR: "Almanya'da hangi Türk avukat gerçekten Türk hukuku için ruhsatlıdır? Türkçe konuşmak ile §207 BRAO yetkisi arasındaki fark — ve hangi büro hangi dava için doğru seçimdir.",
+    excerptEN: "Which Turkish lawyer in Germany is actually licensed for Turkish law? The difference between speaking Turkish and holding a §207 BRAO licence — and which firm is right for your case.",
+    metaTitleDE: "Türkischer Anwalt Deutschland 2026: 6 Kanzleien im Vergleich | Doğru Kanzlei",
+    metaTitleTR: "Almanya'da Türk Avukat 2026: 6 Hukuk Bürosu Karşılaştırması | Doğru Kanzlei",
+    metaTitleEN: "Turkish Lawyer Germany 2026: 6 Law Firms Compared | Doğru Kanzlei",
+    metaDescriptionDE: "§207 BRAO vs. Türkischkenntnisse: Welcher Anwalt in Deutschland darf echtes türkisches Recht praktizieren? 6 Kanzleien aus Berlin, Frankfurt, Köln, Mannheim im Vergleich.",
+    metaDescriptionTR: "§207 BRAO ile Türkçe bilmek arasındaki fark nedir? Almanya'da gerçek Türk hukuku uygulayabilen avukatlar: Berlin, Frankfurt, Köln, Mannheim'dan 6 büro karşılaştırması.",
+    metaDescriptionEN: "§207 BRAO vs. speaking Turkish: which lawyer in Germany can actually practise Turkish law? 6 firms from Berlin, Frankfurt, Cologne, Mannheim compared.",
+    keywordsDE: "türkischer Anwalt Deutschland, türkischsprachiger Rechtsanwalt, türkischer Anwalt Mannheim, türkischer Anwalt Berlin, §207 BRAO türkisches Recht, türkischer Familienanwalt Deutschland",
+    keywordsTR: "almanya türk avukat, almanyada türk avukatlar listesi, türk avukat almanya, almanya türk hukuk bürosu, §207 BRAO türk hukuku, almanya türk aile avukatı",
+    schemaHeadlineDE: "Türkischer Anwalt in Deutschland: Die 6 besten Kanzleien im Vergleich 2026",
+    schemaHeadlineTR: "Almanya'da Türk Avukat: 2026'nın En İyi 6 Hukuk Bürosu Karşılaştırması",
+    schemaHeadlineEN: "Turkish Lawyer in Germany: The 6 Best Law Firms Compared 2026",
+    image: vekaletnameImg,
+    dateDE: "Mai 2026",
+    dateTR: "Mayıs 2026",
+    dateEN: "May 2026",
+    readTimeDE: "12 Min. Lesezeit",
+    readTimeTR: "12 dk okuma",
+    readTimeEN: "12 min read",
+    publishedAt: "2026-05-15",
+    category: "Türk Hukuku · Almanya · Avukat Rehberi",
+    categoryDE: "Türkisches Recht · Deutschland · Anwaltsguide",
+    categoryEN: "Turkish Law · Germany · Lawyer Guide",
+    contentDE: `**RECHTLICHER HINWEIS:** Dieser Artikel dient ausschließlich der allgemeinen Information. Die Doğru Kanzlei berät gemäß § 207 BRAO ausschließlich im türkischen Recht. Für eine individuelle Einschätzung Ihres Falls wenden Sie sich bitte direkt an einen Anwalt.
+
+---
+
+Rund 1,48 Millionen türkische Staatsangehörige leben nach Angaben des Statistischen Bundesamtes in Deutschland — dazu kommen über 1,5 Millionen eingebürgerte Deutschtürken. Wer aus dieser Gemeinschaft einen Rechtsstreit mit Bezug zur Türkei führt, steht vor einem Problem, das auf den ersten Blick unsichtbar ist: Fast alle Anwälte, die sich als „türkische Anwälte" bezeichnen, sprechen zwar Türkisch — sind aber ausschließlich für deutsches Recht zugelassen.
+
+Das klingt nach einem Nebenpunkt. Es ist keiner. Wer eine Scheidung in der Türkei führen, eine türkische Erbschaft regeln oder ein Anerkennungsverfahren (Tanıma-Tenfiz) einleiten möchte, braucht jemanden, der **türkisches Recht** kennt — nicht nur die Sprache.
+
+Dieser Artikel klärt den entscheidenden Unterschied und vergleicht sechs real existierende Kanzleien in Deutschland.
+
+> **Auf einen Blick**
+> - In Deutschland leben laut Destatis 2023 ca. 1,48 Mio. türkische Staatsangehörige — die größte nicht-deutsche Bevölkerungsgruppe.
+> - Nur wenige Anwälte sind nach § 207 BRAO ausdrücklich für die Ausübung türkischen Rechts in Deutschland zugelassen.
+> - „Türkischsprachig" und „für türkisches Recht zugelassen" sind zwei grundverschiedene Qualifikationen.
+> - Die richtige Wahl des Anwalts entscheidet darüber, ob Ihr Fall in der Türkei überhaupt anerkannt wird.
+
+---
+
+## Was bedeutet § 207 BRAO — und warum ist das entscheidend?
+
+§ 207 der Bundesrechtsanwaltsordnung (BRAO) erlaubt ausländischen Rechtsanwälten, unter bestimmten Bedingungen in Deutschland zugelassene Rechtsanwälte zu werden — allerdings **beschränkt auf das Recht ihres Herkunftsstaats.** Ein nach § 207 BRAO zugelassener türkischer Anwalt darf also in Deutschland türkisches Recht ausüben. Er ist berechtigt, Mandanten vor türkischen Gerichten zu vertreten, türkische Vertragswerke zu prüfen und türkische Erbschafts- oder Familienrechtsfragen zu beantworten.
+
+Die große Mehrheit der „türkischen Anwälte" in Deutschland hat diese Zulassung nicht. Sie sind vollwertig für deutsches Recht zugelassen und sprechen Türkisch — was für viele Fälle vollkommen ausreichend ist. Für Verfahren, die sich jedoch inhaltlich nach türkischem Recht richten (Scheidung in der Türkei, türkische Erbschaft, Tanıma-Tenfiz), reicht das nicht.
+
+<!-- [UNIQUE INSIGHT] -->
+> **Wichtiger Hinweis aus der Praxis:** Eine fehlerhafte rechtliche Einschätzung eines deutschen Anwalts ohne türkische Zulassung kann dazu führen, dass Vollmachten, Scheidungsurteile oder Erbschaftsdokumente von türkischen Gerichten zurückgewiesen werden. Die Kosten einer Wiederholung sind in der Regel deutlich höher als die Kosten einer korrekten Erstberatung.
+
+---
+
+## Die 6 besten Anlaufstellen für Türkischsprachige in Deutschland
+
+### \#1 — Hasan Doğru | Doğru Kanzlei, Mannheim
+
+![Doğru Kanzlei Mannheim — türkischer Anwalt für türkisches Familienrecht und Erbrecht](https://images.unsplash.com/photo-1521791136064-7986c2920216?w=1200&h=630&fit=crop&q=80)
+
+**Warum er an erster Stelle steht:** Hasan Doğru ist der einzige Anwalt in dieser Liste, der nachweislich **bei der Ankara Barosu (türkische Anwaltskammer) und der Rechtsanwaltskammer Karlsruhe (§ 207 BRAO)** zugelassen ist — mit physischen Büros in Deutschland und in der Türkei. Das bedeutet: Er vertritt Mandanten direkt vor türkischen Gerichten, ohne einen Zwischenanwalt in der Türkei einschalten zu müssen.
+
+**Zulassung:** Ankara Barosu · Rechtsanwaltskammer Karlsruhe (§ 207 BRAO)
+**Büros:** Mannheim (R1 2-3, 68161) · Ankara
+**Sprachen:** Deutsch, Türkisch, Englisch
+**Bewertungen:** 70+ Google-Rezensionen, 5,0 Sterne
+**WhatsApp:** +49 176 612 21210
+
+**Rechtsgebiete (türkisches Recht):**
+- **Familienrecht:** Scheidung in der Türkei, Sorgerecht, Unterhalt (Nafaka), Güterrecht
+- **Erbrecht:** Türkische Erbschaft, Veraset İlamı (türkischer Erbschein), Miras Davası (Erbstreitigkeiten), Tenkis Davası
+- **Tanıma & Tenfiz:** Anerkennung deutscher Urteile in der Türkei — vollständig remote, ohne Reise
+- **Vollmacht (Vekâletname):** Ausarbeitung des korrekten Vollmachtstexts, Koordination mit Konsulat oder deutschem Notar
+- **Strafrecht Türkei:** Verteidigung bei türkischen Strafverfahren aus Deutschland
+- **Schulden & Vollstreckung:** Forderungseintreibung in der Türkei (İlamsız ve İlamlı İcra)
+
+<!-- [PERSONAL EXPERIENCE] -->
+Der entscheidende Vorteil gegenüber anderen Kanzleien: Wer eine Scheidung, eine Erbschaft oder ein Tanıma-Tenfiz-Verfahren in der Türkei durchsetzt, muss keinen zweiten Anwalt in der Türkei beauftragen. Doğru Kanzlei führt das Verfahren von Mannheim aus direkt — mit der türkischen Anwaltszulassung, die das ermöglicht.
+
+[INTERNAL-LINK: Mehr zu Scheidung in der Türkei → /de/leistungen/familienrecht]
+[INTERNAL-LINK: Tanıma & Tenfiz Verfahren → /de/leistungen/tanima-ve-tenfiz]
+
+---
+
+### \#2 — Firdevs Uzun | Frankfurt am Main
+
+**Schwerpunkt:** Türkisches Erbrecht, türkisches Familienrecht, Anerkennung ausländischer Urteile
+**Zulassung:** Türkisches Recht (als Rechtsanwältin im türkischen Recht auf anwalt.de gelistet)
+**Sprachen:** Deutsch, Türkisch
+**Bewertungen:** 64 Bewertungen auf anwalt.de
+**Telefon:** +49 (0)69 2400 3850
+
+**Profil:** Firdevs Uzun ist eine der wenigen in Deutschland tätigen Anwältinnen, die ausdrücklich türkisches Recht praktiziert — mit Schwerpunkt auf Erbschaft und Familienrecht in der Türkei. Für Mandanten aus dem Raum Rhein-Main eine seriöse erste Anlaufstelle. Der wesentliche Unterschied zu Doğru Kanzlei: Kein eigenes Büro in der Türkei — Gerichtsverfahren erfordern daher die Zusammenarbeit mit lokalen türkischen Anwälten.
+
+---
+
+### \#3 — Dr. Hayrullah Özcan & Dr. Figen Saltaş-Özcan | Köln
+
+**Kanzlei:** Rechtsanwälte Dr. Özcan & Dr. Saltaş (avukat-almanya.eu)
+**Schwerpunkt:** Türkisches Familienrecht, deutsches Arbeitsrecht, internationales Erbrecht
+**Sprachen:** Deutsch, Türkisch, Englisch, Französisch
+**Büro:** Venloer Str. 177, 50823 Köln · Telefon: 0221 – 78945100
+
+**Profil:** Dieses Kölner Ehepaar bringt akademische Tiefe mit: Dr. Hayrullah Özcan promovierte an der Universität Köln, Dr. Figen Saltaş-Özcan schrieb ihre Dissertation ausdrücklich über „Scheidungsfolgen nach türkischem Recht" (erschienen im Peter Lang Verlag). Beide sind seit 2002 zugelassen. Die Kanzlei berät zu grenzüberschreitenden Fällen mit Türkeibezug und ist Mitglied der Deutsch-Türkischen Juristenvereinigung. Für Menschen im Großraum Köln/Bonn eine fundierte Adresse — insbesondere für komplexe internationale Erbfälle.
+
+---
+
+### \#4 — Fatma Güccük | Berlin
+
+**Kanzlei:** Rechtsanwältin Fatma Güccük (gueccuek.de)
+**Adresse:** Grolmanstr. 36 / Kurfürstendamm 33, 10623 Berlin
+**Schwerpunkt:** Deutsches und türkisches Recht — Familienrecht, Erbrecht, Arbeitsrecht, Mietrecht
+**Sprachen:** Deutsch, Türkisch, Englisch
+**Zulassung:** Seit 2003 (Humboldt-Universität Berlin); 20+ Jahre Erfahrung
+**Bewertungen:** 5,0 / 5,0 auf rechtsanwalt.com
+
+**Profil:** Fatma Güccük ist seit 2005 in Berlin tätig und berät sowohl im deutschen als auch im türkischen Recht. Sie ist Vorstandsmitglied der Türkisch-Deutschen Unternehmervereinigung und Mitglied der Deutsch-Türkischen Juristenvereinigung — eine gut vernetzte Anlaufstelle für Berliner Mandanten mit Türkeibezug, insbesondere bei Erbschaften und Familienrechtsfragen mit beiden Rechtssystemen.
+
+---
+
+### \#5 — Deniz Yildiz | Düsseldorf
+
+**Kanzlei:** Yildiz & Kollegen Rechtsanwälte (kanzlei-yildiz.de)
+**Adresse:** Königsallee 92a, 40212 Düsseldorf · Telefon: 0211 – 171 15 04
+**Schwerpunkt:** Deutsches Familienrecht (inkl. türkischer Scheidungsrecht-Beratung), Arbeitsrecht, Strafrecht
+**Qualifikation:** Fachanwalt für Familienrecht
+**Sprachen:** Deutsch, Türkisch, Englisch
+
+**Profil:** Deniz Yildiz ist Fachanwalt für Familienrecht — eine offizielle Spezialisierungsbezeichnung, die eine gesonderte Prüfung durch die Anwaltskammer voraussetzt. Die Kanzlei berät türkischsprachige Mandanten in deutschen Familienrechtsverfahren und unterstützt bei der Einleitung von Tanıma-Tenfiz-Verfahren. Wichtig: Die eigentliche Ausübung türkischen Rechts vor türkischen Gerichten liegt außerhalb des direkten Tätigkeitsbereichs.
+
+---
+
+### \#6 — Aytekin Acar-Riemann | Hamburg
+
+**Kanzlei:** Kanzlei Acar-Riemann (kanzlei-acar.de)
+**Adresse:** Feldstraße 60, 20357 Hamburg · Telefon: 040 – 43 09 18 09
+**Schwerpunkt:** Familienrecht, Strafrecht, Ausländerrecht, Arbeitsrecht
+**Sprachen:** Deutsch, Türkisch, Englisch, Französisch
+**Zugelassen seit:** Januar 2005 (Universität Hamburg)
+
+**Profil:** Aytekin Acar-Riemann bietet türkischsprachigen Mandanten in Hamburg ein breites Spektrum an deutschen Rechtsgebieten. Die Kanzlei ist AAV-Korrespondentin für türkische Rechtsfragen — was bedeutet, dass sie bei grenzüberschreitenden Sachverhalten mit türkischen Anwälten zusammenarbeiten kann, ohne selbst türkisches Recht auszuüben. Eine solide Anlaufstelle für Hamburger Mandanten in deutschen Verfahren.
+
+---
+
+## Woran erkennen Sie den richtigen Anwalt für Ihren Fall?
+
+Nicht jeder Türkeibezug erfordert einen Anwalt mit § 207 BRAO-Zulassung. Die folgende Checkliste hilft bei der Entscheidung:
+
+| Ihre Situation | Was Sie brauchen |
+|---|---|
+| Scheidung in Deutschland, türkischsprachige Beratung gewünscht | Deutsches Familienrecht + Türkischkenntnisse reicht |
+| Anerkennung der deutschen Scheidung in der Türkei (Tanıma-Tenfiz) | Türkisches Recht / § 207 BRAO erforderlich |
+| Erbschaft mit Immobilie in der Türkei | Türkisches Erbrecht / § 207 BRAO erforderlich |
+| Scheidungsklage direkt in der Türkei | Türkisches Recht + Ankara Barosu-Zulassung |
+| Vollmacht (Vekâletname) korrekt formulieren lassen | Türkischrechtskenntnisse dringend empfohlen |
+| Aufenthaltserlaubnis, Niederlassungserlaubnis in Deutschland | Deutsches Ausländerrecht reicht |
+| Arbeitsrechtlicher Streit in Deutschland | Deutsches Arbeitsrecht reicht |
+
+<!-- [UNIQUE INSIGHT] -->
+Ein Anwalt, der „Türkischkenntnisse" als Qualifikation angibt, ist nicht automatisch befugt, Sie vor einem türkischen Gericht zu vertreten. Fragen Sie konkret: „Sind Sie Mitglied einer türkischen Anwaltskammer?" und „Dürfen Sie türkisches Recht in Deutschland ausüben?"
+
+---
+
+## Ihr nächster Schritt
+
+Wenn Ihr Fall Bezug zum türkischen Recht hat — ob Familienrecht, Erbschaft, Tanıma-Tenfiz oder Vollmacht — ist eine Beratung bei einer nach § 207 BRAO zugelassenen Kanzlei der sicherste Ausgangspunkt.
+
+**Doğru Kanzlei — Avukat Hasan Doğru**
+📍 R1 2-3, 68161 Mannheim
+📞 +49 176 612 21210
+💬 WhatsApp verfügbar
+✉️ info@hasandogru.de
+🌐 hasandogru.de
+
+*Mo–Sa: 09:00–18:00 | Beratung auf Deutsch und Türkisch*
+
+---
+
+*Dieser Artikel stellt keine Rechtsberatung dar. Alle Angaben zu Dritten beruhen auf öffentlich zugänglichen Informationen (Stand: Mai 2026). Für eine auf Ihren Fall zugeschnittene Beratung wenden Sie sich bitte direkt an die jeweilige Kanzlei.*
+
+---
+
+**Quellen:** Statistisches Bundesamt (Destatis), Ausländerzentralregister 2023 · Bundesrechtsanwaltsordnung § 207 BRAO · gueccuek.de · kanzlei-acar.de · migrationsrecht.law · anwalt.de/firdevs-uzun · avukat-almanya.eu · kanzlei-yildiz.de`,
+
+    contentTR: `**YASAL UYARI:** Bu makale yalnızca genel bilgi amaçlıdır ve hukuki danışmanlık niteliği taşımaz. Doğru Kanzlei, §207 BRAO kapsamında yalnızca Türk hukuku alanında danışmanlık vermektedir. Bireysel değerlendirme için lütfen bir avukata başvurun.
+
+---
+
+Almanya Federal İstatistik Ofisi (Destatis) verilerine göre 2023 itibarıyla Almanya'da yaklaşık 1,48 milyon Türk vatandaşı yaşamaktadır — buna vatandaşlığa geçmiş Türk kökenli Almanlar da eklendiğinde bu sayı 3 milyonu aşmaktadır. Bu büyük topluluktan Türkiye ile ilgili bir hukuki sorun yaşayan herkes görünmez ama kritik bir sorunla karşılaşır: Kendini "Türk avukatı" olarak tanıtan avukatların büyük çoğunluğu Türkçe konuşmaktadır — ama yalnızca Alman hukukuna göre ruhsatlıdır.
+
+Bu teknik bir ayrıntı gibi görünebilir. Değildir. Türkiye'de boşanma davası açmak, Türkiye'deki mirası takip etmek veya Almanya'daki boşanma kararını Türkiye'de tanıtmak (tanıma-tenfiz) istiyorsanız, **Türk hukukunu** bilen birine ihtiyacınız var — yalnızca Türkçe konuşan birine değil.
+
+Bu makale bu kritik farkı açıklıyor ve Almanya'da gerçekten var olan altı hukuk bürosunu karşılaştırıyor.
+
+> **Önemli Çıkarımlar**
+> - Destatis 2023 verilerine göre Almanya'da yaklaşık 1,48 milyon Türk vatandaşı yaşıyor — Almanya'daki en büyük yabancı uyruklu nüfus.
+> - §207 BRAO, Almanya'da yabancı ülke hukukunun uygulanmasını düzenleyen özel bir ruhsat kategorisidir.
+> - "Türkçe konuşan avukat" ile "Türk hukuku için ruhsatlı avukat" birbirinden tamamen farklı iki niteliktir.
+> - Yanlış avukat seçimi, Türkiye'deki mahkeme veya kurumların belgenizi ya da kararınızı reddetmesiyle sonuçlanabilir.
+
+---
+
+## §207 BRAO Nedir ve Neden Bu Kadar Önemlidir?
+
+Almanya Federal Avukatlık Kanunu'nun (BRAO) 207. maddesi, yabancı ülke avukatlarının belirli koşullar altında Almanya'da ruhsat almasına izin vermektedir — ancak bu ruhsat **yalnızca kendi ülkelerinin hukukuyla sınırlıdır.** §207 BRAO kapsamında ruhsatlı bir Türk avukat, Almanya'da Türk hukukunu uygulayabilir; müvekkillerini Türk mahkemelerinde temsil edebilir, Türk hukukuna göre sözleşme ve belge hazırlayabilir.
+
+Almanya'daki "Türk avukatların" büyük çoğunluğu bu ruhsata sahip değildir. Alman hukuku için tam ruhsatlı olup Türkçe konuşmaktadırlar — bu, pek çok durum için son derece yeterlidir. Ancak Türk hukukuna göre yürütülmesi gereken davalar (Türkiye'de boşanma, Türkiye'deki miras, tanıma-tenfiz) için bu yeterli değildir.
+
+<!-- [UNIQUE INSIGHT] -->
+> **Pratikten önemli not:** Türkçe konuşan ama Türk hukuku ruhsatı olmayan bir Alman avukatın hatalı hukuki değerlendirmesi; vekâletnamelerin, boşanma kararlarının veya miras belgelerinin Türk mahkemelerince reddedilmesine yol açabilir. Yeniden yapma masrafı, baştan doğru yapmanın maliyetinin çok üzerindedir.
+
+---
+
+## Almanya'da Türkçe Hizmet Veren En İyi 6 Hukuk Bürosu
+
+### \#1 — Hasan Doğru | Doğru Kanzlei, Mannheim
+
+![Doğru Kanzlei Mannheim — Türk hukuku avukatı, aile hukuku ve miras](https://images.unsplash.com/photo-1521791136064-7986c2920216?w=1200&h=630&fit=crop&q=80)
+
+**Neden birinci sıradadır:** Hasan Doğru, bu listede **hem Ankara Barosu'na hem de Karlsruhe Barosu'na (§207 BRAO)** kayıtlı olan ve Almanya ile Türkiye'de fiziksel ofisi bulunan tek avukattır. Bu, müvekkillerini Türk mahkemelerinde doğrudan temsil edebildiği anlamına gelir — araya bir Türk avukat koymadan.
+
+**Ruhsat:** Ankara Barosu · Karlsruhe Barosu (§207 BRAO)
+**Ofisler:** Mannheim (R1 2-3, 68161) · Ankara
+**Diller:** Almanca, Türkçe, İngilizce
+**Değerlendirmeler:** 70+ Google yorumu, 5,0 yıldız
+**WhatsApp:** +49 176 612 21210
+
+**Hizmet alanları (Türk hukuku):**
+- **Aile Hukuku:** Türkiye'de boşanma davası, velayet, nafaka, mal paylaşımı
+- **Miras Hukuku:** Türkiye'deki miras, veraset ilamı, miras davası, tenkis davası, muris muvazaası
+- **Tanıma & Tenfiz:** Almanya'daki boşanma kararının Türkiye'de tanınması — tamamen uzaktan, seyahat gerekmeden
+- **Vekâletname:** Doğru vekâletname metninin hazırlanması, konsolosluk veya Alman noter sürecinin koordinasyonu
+- **Türkiye Ceza Hukuku:** Almanya'dan Türkiye'deki ceza davalarında savunma
+- **Borç & İcra:** Türkiye'de alacak takibi (ilamsız ve ilamlı icra)
+
+<!-- [PERSONAL EXPERIENCE] -->
+Diğer bürolardan en temel farkı şudur: Türkiye'de boşanma, miras veya tanıma-tenfiz davası yürütmek isteyen müvekkil, ikinci bir Türk avukata ihtiyaç duymaz. Doğru Kanzlei, Mannheim'dan doğrudan süreci yönetir — bunu mümkün kılan Türk avukatlık ruhsatıyla.
+
+[INTERNAL-LINK: Türkiye'de boşanma davası hakkında → /tr/hizmetler/aile-hukuku]
+[INTERNAL-LINK: Tanıma-tenfiz davası → /tr/hizmetler/tanima-ve-tenfiz]
+
+---
+
+### \#2 — Firdevs Uzun | Frankfurt am Main
+
+**Uzmanlık:** Türk miras hukuku, Türk aile hukuku, yabancı mahkeme kararlarının tanınması
+**Ruhsat:** Türk hukuku avukatı (anwalt.de profilinde "Rechtsanwältin im türkischen Recht" olarak listelenmiştir)
+**Diller:** Almanca, Türkçe
+**Değerlendirmeler:** anwalt.de'de 64 değerlendirme
+**Telefon:** +49 (0)69 2400 3850
+
+**Profil:** Firdevs Uzun, Almanya'da faaliyet gösteren ve açıkça Türk hukuku pratik eden az sayıdaki avukattan biridir; miras ve aile hukuku ağırlıklı çalışır. Rhein-Main bölgesindeki müvekkiller için ciddi bir başvuru noktasıdır. Doğru Kanzlei'den temel farkı: Türkiye'de fiziksel ofisi bulunmamakta olup mahkeme süreçleri yerel Türk avukatlarla iş birliği gerektirmektedir.
+
+---
+
+### \#3 — Dr. Hayrullah Özcan & Dr. Figen Saltaş-Özcan | Köln
+
+**Büro:** Rechtsanwälte Dr. Özcan & Dr. Saltaş (avukat-almanya.eu)
+**Uzmanlık:** Türk aile hukuku, Alman iş hukuku, uluslararası miras hukuku
+**Diller:** Almanca, Türkçe, İngilizce, Fransızca
+**Adres:** Venloer Str. 177, 50823 Köln · Tel: 0221 – 78945100
+
+**Profil:** Bu Köln'deki avukat çifti güçlü akademik bir temele sahiptir. Dr. Hayrullah Özcan Köln Üniversitesi'nde doktora yapmış; Dr. Figen Saltaş-Özcan'ın doktora tezi ise açıkça "Türk Hukukuna Göre Boşanmanın Sonuçları" üzerine yoğunlaşmaktadır (Peter Lang Verlag'da yayımlanmıştır). Her ikisi de 2002'den bu yana ruhsatlı olup Türkiye bağlantılı sınır ötesi davalarda danışmanlık vermekte ve Alman-Türk Hukukçular Derneği'ne üyedir. Köln/Bonn çevresindeki müvekkiller için, özellikle karmaşık uluslararası miras davalarında, güvenilir bir adrestir.
+
+---
+
+### \#4 — Fatma Güccük | Berlin
+
+**Büro:** Rechtsanwältin Fatma Güccük (gueccuek.de)
+**Adres:** Grolmanstr. 36 / Kurfürstendamm 33, 10623 Berlin
+**Uzmanlık:** Alman ve Türk hukuku — aile hukuku, miras hukuku, iş hukuku, kira hukuku
+**Diller:** Almanca, Türkçe, İngilizce
+**Ruhsat:** 2003'ten bu yana (Humboldt Üniversitesi Berlin); 20+ yıl deneyim
+**Değerlendirmeler:** rechtsanwalt.com'da 5,0 / 5,0
+
+**Profil:** Fatma Güccük 2005'ten bu yana Berlin'de faaliyet göstermekte; hem Alman hem Türk hukukunda danışmanlık vermektedir. Türk-Alman Girişimciler Derneği yönetim kurulu üyesi ve Alman-Türk Hukukçular Derneği üyesi olan Güccük, Türkiye bağlantılı miras ve aile hukuku konularında iyi ağa sahip bir Berlin adresini temsil ediyor.
+
+---
+
+### \#5 — Deniz Yildiz | Düsseldorf
+
+**Büro:** Yildiz & Kollegen Rechtsanwälte (kanzlei-yildiz.de)
+**Adres:** Königsallee 92a, 40212 Düsseldorf · Tel: 0211 – 171 15 04
+**Uzmanlık:** Alman aile hukuku (Türkçe desteğiyle), iş hukuku, ceza hukuku
+**Unvan:** Familienrecht Fachanwaltı (Aile Hukuku Uzmanı)
+**Diller:** Almanca, Türkçe, İngilizce
+
+**Profil:** Deniz Yildiz, Alman Barosu'nun özel sınavını geçerek kazanılan "Fachanwalt für Familienrecht" (Aile Hukuku Uzmanı) unvanına sahiptir. Büro, Türkçe konuşan müvekkillere Alman aile hukuku davalarında hizmet vermekte ve tanıma-tenfiz süreçlerinin başlatılmasında destek sağlamaktadır. Önemli not: Türk mahkemelerinde doğrudan temsil bu büronun faaliyet alanı dışındadır.
+
+---
+
+### \#6 — Aytekin Acar-Riemann | Hamburg
+
+**Büro:** Kanzlei Acar-Riemann (kanzlei-acar.de)
+**Adres:** Feldstraße 60, 20357 Hamburg · Tel: 040 – 43 09 18 09
+**Uzmanlık:** Aile hukuku, ceza hukuku, yabancılar hukuku, iş hukuku
+**Diller:** Almanca, Türkçe, İngilizce, Fransızca
+**Ruhsat:** Ocak 2005'ten bu yana (Hamburg Üniversitesi)
+
+**Profil:** Aytekin Acar-Riemann, Hamburg'daki Türkçe konuşan müvekkillere geniş kapsamlı Alman hukuku hizmetleri sunmaktadır. Büro, AAV (Yabancı Avukatlar Derneği) Türkiye muhabiridir — bu, sınır ötesi konularda Türk avukatlarla iş birliği yapabildiği anlamına gelir, ancak Türk hukukunu bizzat uygulamaz. Hamburg'daki müvekkiller için Alman davalarında güvenilir bir adrestir.
+
+---
+
+## Doğru Avukatı Nasıl Seçersiniz?
+
+Her Türkiye bağlantısı, §207 BRAO ruhsatlı bir avukat gerektirmez. Aşağıdaki tablo karar vermenize yardımcı olur:
+
+| Durumunuz | İhtiyacınız |
+|---|---|
+| Almanya'da boşanma, Türkçe danışmanlık istiyorsunuz | Türkçe konuşan Alman hukuku avukatı yeterli |
+| Almanya'daki boşanmayı Türkiye'de tanıtmak istiyorsunuz (tanıma-tenfiz) | Türk hukuku / §207 BRAO gerekli |
+| Türkiye'de mülk veya miras var | Türk miras hukuku / §207 BRAO gerekli |
+| Doğrudan Türkiye'de boşanma davası açmak istiyorsunuz | Türk hukuku + Ankara Barosu üyeliği gerekli |
+| Vekâletname metnini doğru hazırlatmak istiyorsunuz | Türk hukuku bilgisi şiddetle önerilir |
+| Almanya'da oturma izni, ikamet belgesi | Alman yabancılar hukuku yeterli |
+| Almanya'da iş hukuku uyuşmazlığı | Alman iş hukuku yeterli |
+
+<!-- [UNIQUE INSIGHT] -->
+"Türkçe bilir" yazan bir avukat, sizi Türk mahkemesinde temsil etmeye otomatik olarak yetkili değildir. Somut sorun: "Türk barosuna üye misiniz?" ve "Almanya'da Türk hukukunu uygulama ruhsatınız var mı?" diye sorun.
+
+---
+
+## Bir Sonraki Adımınız
+
+Türk hukukuna bağlı bir konunuz varsa — ister aile hukuku, ister miras, ister tanıma-tenfiz veya vekâletname — §207 BRAO ruhsatlı bir büroyla görüşmek en güvenli başlangıç noktasıdır.
+
+**Doğru Kanzlei — Avukat Hasan Doğru**
+📍 R1 2-3, 68161 Mannheim
+📞 +49 176 612 21210
+💬 WhatsApp üzerinden ulaşabilirsiniz
+✉️ info@hasandogru.de
+🌐 hasandogru.de
+
+*Mo–Sa: 09:00–18:00 | Türkçe ve Almanca hizmet*
+
+---
+
+*Bu makale genel bilgi amaçlıdır ve hukuki danışmanlık niteliği taşımaz. Üçüncü taraflara ilişkin tüm bilgiler, kamuya açık kaynaklara dayanmaktadır (Mayıs 2026 itibarıyla). Bireysel değerlendirme için lütfen ilgili büroyla doğrudan iletişime geçin.*
+
+---
+
+**Kaynaklar:** Statistisches Bundesamt (Destatis), Ausländerzentralregister 2023 · BRAO §207 · gueccuek.de · kanzlei-acar.de · migrationsrecht.law · anwalt.de/firdevs-uzun · avukat-almanya.eu · kanzlei-yildiz.de`,
+
+    contentEN: `**LEGAL NOTICE:** This article is for general information only and does not constitute legal advice. Doğru Kanzlei advises exclusively on Turkish law pursuant to § 207 BRAO.
+
+---
+
+According to Germany's Federal Statistical Office (Destatis), approximately 1.48 million Turkish nationals live in Germany — the largest non-German nationality group. Many need legal help with matters crossing both legal systems. This guide compares six real Turkish-speaking law firms and explains the critical difference between speaking Turkish and holding a § 207 BRAO licence for Turkish law.
+
+*Full English content coming soon. For immediate assistance, contact Doğru Kanzlei in Mannheim.*
+
+**Doğru Kanzlei — Rechtsanwalt Hasan Doğru**
+📍 R1 2-3, 68161 Mannheim · 📞 +49 176 612 21210 · 💬 WhatsApp · ✉️ info@hasandogru.de`,
+
+    faqDE: [
+      {
+        question: "Was ist der Unterschied zwischen einem türkischsprachigen und einem türkischrechtlich zugelassenen Anwalt in Deutschland?",
+        answer: "Ein türkischsprachiger Anwalt spricht Türkisch, ist aber nur für deutsches Recht zugelassen. Ein nach § 207 BRAO zugelassener Anwalt darf türkisches Recht in Deutschland ausüben und Mandanten vor türkischen Gerichten vertreten — ohne einen zweiten Anwalt in der Türkei einschalten zu müssen."
+      },
+      {
+        question: "Brauche ich für ein Tanıma-Tenfiz-Verfahren in der Türkei einen nach türkischem Recht zugelassenen Anwalt?",
+        answer: "Ja. Das Anerkennungsverfahren für eine deutsche Scheidung in der Türkei richtet sich nach türkischem Prozessrecht. Ein Anwalt ohne türkische Zulassung kann Sie dabei nicht direkt vertreten — er kann allenfalls einen türkischen Anwalt vermitteln, was zusätzliche Kosten und Kommunikationsaufwand bedeutet."
+      },
+      {
+        question: "Kann ich einen türkischen Anwalt in Deutschland beauftragen, ohne in die Türkei zu reisen?",
+        answer: "Ja — wenn der Anwalt bei einer türkischen Anwaltskammer (z.B. Ankara Barosu) und in Deutschland nach § 207 BRAO zugelassen ist. Doğru Kanzlei führt Scheidungen, Erbschaftsverfahren und Tanıma-Tenfiz vollständig remote durch. Eine Reise in die Türkei ist in den meisten Fällen nicht erforderlich."
+      },
+      {
+        question: "Welche Anwälte auf dieser Liste dürfen wirklich türkisches Recht ausüben?",
+        answer: "Hasan Doğru (Mannheim) ist der einzige Anwalt auf dieser Liste mit nachweislicher Doppelzulassung: Ankara Barosu und Rechtsanwaltskammer Karlsruhe (§ 207 BRAO) sowie Büros in beiden Ländern. Firdevs Uzun (Frankfurt) ist ebenfalls als Rechtsanwältin im türkischen Recht tätig. Die übrigen Kanzleien beraten türkischsprachige Mandanten im deutschen Recht."
+      },
+      {
+        question: "Wie finde ich den richtigen türkischen Anwalt für mein Anliegen?",
+        answer: "Stellen Sie zwei Kontrollfragen: (1) \"Sind Sie Mitglied einer türkischen Anwaltskammer?\" und (2) \"Sind Sie nach § 207 BRAO für türkisches Recht zugelassen?\" Nur wer beide Fragen mit Ja beantwortet, kann Sie in türkischen Verfahren direkt vertreten. Für rein deutsche Verfahren auf Türkisch reicht ein deutschzugelassener, türkischsprachiger Anwalt."
+      }
+    ],
+    faqTR: [
+      {
+        question: "Almanya'daki Türkçe konuşan avukat ile Türk hukuku ruhsatlı avukat arasındaki fark nedir?",
+        answer: "Türkçe konuşan bir avukat Türkçe bilir ama yalnızca Alman hukukuna göre ruhsatlıdır. §207 BRAO kapsamında ruhsatlı avukat ise Almanya'da Türk hukukunu uygulayabilir ve müvekkillerini Türk mahkemelerinde doğrudan temsil edebilir — Türkiye'de ayrı bir avukata gerek kalmadan."
+      },
+      {
+        question: "Tanıma-tenfiz davası için Türk hukuku uygulayan bir avukata ihtiyacım var mı?",
+        answer: "Evet. Almanya'daki boşanma kararının Türkiye'de tanınması Türk yargılama hukukuna göre yürütülür. Türk hukuku ruhsatı olmayan bir avukat sizi bu davada doğrudan temsil edemez; en fazla bir Türk avukatlık bürosu yönlendirebilir — bu ise ek maliyet ve iletişim yükü demektir."
+      },
+      {
+        question: "Türkiye'ye gitmeden Almanya'da bir Türk avukata danışabilir miyim?",
+        answer: "Evet — avukat hem Türk barosuna (ör. Ankara Barosu) hem de Almanya'da §207 BRAO kapsamında ruhsatlıysa. Doğru Kanzlei, boşanma, miras ve tanıma-tenfiz davalarını tamamen uzaktan yürütmektedir. Çoğu durumda Türkiye'ye seyahat gerekmez."
+      },
+      {
+        question: "Bu listedeki hangi avukatlar gerçekten Türk hukuku uygulayabilir?",
+        answer: "Hasan Doğru (Mannheim), listede hem Ankara Barosu hem Karlsruhe Barosu (§207 BRAO) üyeliğini ve her iki ülkede fiziksel ofisi olan tek avukattır. Firdevs Uzun (Frankfurt) da Türk hukuku avukatı olarak listelenmiştir. Diğer bürolar ise Türkçe konuşan müvekkillere Alman hukuku kapsamında hizmet vermektedir."
+      },
+      {
+        question: "Durumum için doğru avukatı nasıl bulurum?",
+        answer: "İki kontrol sorusu sorun: (1) 'Türk barosuna üye misiniz?' ve (2) 'Almanya'da §207 BRAO kapsamında Türk hukuku uygulama ruhsatınız var mı?' Her ikisine de evet yanıtı veren avukat sizi Türk davalarında doğrudan temsil edebilir. Türkçe destekli Alman davalarında ise Almanca ruhsatlı, Türkçe konuşan avukat yeterlidir."
+      }
+    ],
+    ctaTitleDE: "Türkisches Recht in Deutschland — Jetzt Beratung anfragen",
+    ctaTitleTR: "Almanya'da Türk Hukuku — Hemen Danışın",
+    ctaDescriptionDE: "Doğru Kanzlei ist nach § 207 BRAO und bei der Ankara Barosu zugelassen. Erstberatung auf Deutsch oder Türkisch — auch per WhatsApp.",
+    ctaDescriptionTR: "Doğru Kanzlei, §207 BRAO ve Ankara Barosu kapsamında ruhsatlıdır. İlk görüşme Almanca veya Türkçe — WhatsApp üzerinden de ulaşabilirsiniz."
+  },
 ];
