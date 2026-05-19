@@ -300,6 +300,16 @@ export function Footer() {
             >
               © {year} DOGRU Kanzlei · {t("hero_title_pre")} Hasan Dogru. {t("footer_rights")}
             </span>
+            <span
+              style={{
+                fontFamily: "'Lato', sans-serif",
+                fontSize: 10,
+                fontWeight: 400,
+                color: "rgba(255,255,255,0.32)",
+              }}
+            >
+              Fotoğraf (Copyright) Kâmil Yılmaz
+            </span>
             <a
               href="https://nüll.com"
               target="_blank"
