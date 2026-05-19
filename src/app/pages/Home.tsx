@@ -22,8 +22,8 @@ const HOME_SCHEMA = {
   "name": "Doğru Kanzlei",
   "alternateName": "Avukat Hasan Doğru",
   "url": "https://hasandogru.de",
-  "logo": "https://www.hasandogru.de/assets/logo-eRLlm_XN.avif",
-  "image": "https://www.hasandogru.de/assets/hero-Bn0oq0cB.avif",
+  "logo": "https://www.hasandogru.de/logo.png",
+  "image": "https://www.hasandogru.de/logo.png",
   "description": "Auf türkisches Recht spezialisierte Kanzlei in Mannheim. Beratung in Erbrecht, Familienrecht, Strafrecht und Migrationsrecht zwischen Deutschland, der Schweiz und der Türkei.",
   "areaServed": ["DE", "CH", "AT", "TR"],
   "availableLanguage": ["Turkish", "German"],
@@ -76,7 +76,7 @@ const PERSON_SCHEMA = {
   ],
   "knowsLanguage": ["Turkish", "German", "English"],
   "url": "https://hasandogru.de/de/ueber-uns",
-  "image": "https://www.hasandogru.de/assets/hero-Bn0oq0cB.avif"
+  "image": "https://www.hasandogru.de/logo.png"
 };
 
 export function Home() {

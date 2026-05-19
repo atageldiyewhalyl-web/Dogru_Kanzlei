@@ -62,7 +62,7 @@ export function PracticeAreas() {
   const sorge = services.find(s => s.id === "sorgerecht");
 
   return (
-    <section id="hizmetler" className="bg-[#FDFCFB] py-16 md:py-24 px-6">
+    <section id="hizmetler" className="bg-white py-16 md:py-24 px-6">
       <style>{fadeInStyle}</style>
       <div className="max-w-[1200px] mx-auto">
         {/* Header */}

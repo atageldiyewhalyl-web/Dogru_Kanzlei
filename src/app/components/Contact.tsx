@@ -33,7 +33,7 @@ export function Contact() {
       id="iletisim"
       className="contact-section"
       style={{
-        background: "#ffffff",
+        background: "#F7F5F0",
       }}
     >
       <div style={{ maxWidth: 1100, margin: "0 auto" }}>
@@ -103,9 +103,10 @@ export function Contact() {
           {/* Left: Direct Contact Options */}
           <div
             style={{
-              background: "#F7F5F0",
+              background: "#ffffff",
               padding: 48,
               borderLeft: "4px solid #B8963E",
+              boxShadow: "0 20px 55px rgba(28, 56, 41, 0.07)",
             }}
           >
             <h3
@@ -182,7 +183,7 @@ export function Contact() {
                       fontFamily: "'Lato', sans-serif",
                       fontSize: 13,
                       color: "#1C3829",
-                      background: "#ffffff",
+                      background: "#F7F5F0",
                       padding: "6px 16px",
                       border: "1px solid #e0ddd5",
                     }}

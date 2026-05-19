@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react";
+import { Fragment, useEffect, useState } from "react";
 import { Menu, X, Globe } from "lucide-react";
 import { Link, useLocation, useNavigate } from "react-router";
 import { useLanguage } from "../context/LanguageContext";
@@ -114,7 +114,7 @@ export function Navbar() {
             alt="Doğru Kanzlei Logo"
             width={44}
             height={44}
-            fetchPriority="high"
+            fetchpriority="high"
             style={{
               height: 44,
               width: "auto",
@@ -188,10 +188,9 @@ export function Navbar() {
           <div style={{ display: 'flex', alignItems: 'center', gap: 6 }}>
             <Globe size={13} color="#7A5F20" aria-hidden="true" />
             {(['de', 'tr', 'en'] as const).map((lang, idx) => (
-              <>
+              <Fragment key={lang}>
                 {idx > 0 && <span style={{ color: isLight ? '#d0d0d0' : 'rgba(255,255,255,0.3)', fontSize: 10 }}>|</span>}
                 <button
-                  key={lang}
                   onClick={() => setLanguage(lang)}
                   aria-label={`Switch language to ${lang.toUpperCase()}`}
                   aria-current={language === lang ? 'true' : undefined}
@@ -211,7 +210,7 @@ export function Navbar() {
                 >
                   {lang.toUpperCase()}
                 </button>
-              </>
+              </Fragment>
             ))}
           </div>
 
@@ -249,10 +248,9 @@ export function Navbar() {
            {/* Mobile Language Switcher — 3-way */}
            <div style={{ display: 'flex', alignItems: 'center', gap: 4 }}>
             {(['de', 'tr', 'en'] as const).map((lang, idx) => (
-              <>
+              <Fragment key={lang}>
                 {idx > 0 && <span style={{ color: isLight ? '#d0d0d0' : 'rgba(255,255,255,0.4)', fontSize: 10 }}>|</span>}
                 <button
-                  key={lang}
                   onClick={() => setLanguage(lang)}
                   aria-label={`Switch language to ${lang.toUpperCase()}`}
                   style={{
@@ -269,7 +267,7 @@ export function Navbar() {
                 >
                   {lang.toUpperCase()}
                 </button>
-              </>
+              </Fragment>
             ))}
           </div>
           <button

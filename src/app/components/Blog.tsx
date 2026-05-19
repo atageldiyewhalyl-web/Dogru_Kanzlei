@@ -11,7 +11,7 @@ export function Blog() {
       id="blog"
       className="hidden md:block"
       style={{
-        background: "#ffffff",
+        background: "#FAF9F6",
         padding: "100px 32px",
       }}
     >
