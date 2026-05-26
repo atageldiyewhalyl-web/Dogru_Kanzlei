@@ -1,5 +1,6 @@
 import heroImage from "@/assets/Hero 1.avif";
 import newsletterImage from "@/assets/Newsletter.avif";
+import postNewspaperImage from "@/assets/post-newspaper.webp";
 import { useLanguage } from "../context/LanguageContext";
 
 export function About() {
@@ -291,6 +292,38 @@ export function About() {
               <img
                 src={newsletterImage}
                 alt={t("about_newsletter_alt")}
+                style={{
+                  width: "100%",
+                  height: "auto",
+                  display: "block",
+                }}
+              />
+            </div>
+
+            <div
+              style={{
+                background: "#ffffff",
+                padding: "32px",
+                marginTop: 56,
+                boxShadow: "0 30px 60px rgba(0,0,0,0.12)",
+                transform: "rotate(0.5deg)",
+                transition: "all 0.4s cubic-bezier(0.165, 0.84, 0.44, 1)",
+                cursor: "zoom-in",
+              }}
+              onMouseEnter={(e) => {
+                e.currentTarget.style.transform = "rotate(0deg) scale(1.01)";
+                e.currentTarget.style.boxShadow = "0 40px 80px rgba(0,0,0,0.15)";
+              }}
+              onMouseLeave={(e) => {
+                e.currentTarget.style.transform = "rotate(0.5deg)";
+                e.currentTarget.style.boxShadow = "0 30px 60px rgba(0,0,0,0.12)";
+              }}
+            >
+              <img
+                src={postNewspaperImage}
+                alt={t("about_newsletter_alt")}
+                loading="lazy"
+                decoding="async"
                 style={{
                   width: "100%",
                   height: "auto",
