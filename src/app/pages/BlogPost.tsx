@@ -48,6 +48,20 @@ function processInlineStyles(text: string) {
   });
 }
 
+function isFaqHeading(line: string) {
+  const normalized = line
+    .replace(/^#+\s*/, '')
+    .toLocaleLowerCase('de-DE')
+    .trim();
+
+  return [
+    'häufige fragen',
+    'häufig gestellte fragen',
+    'sıkça sorulan sorular',
+    'frequently asked questions',
+  ].some((heading) => normalized.includes(heading));
+}
+
 export function BlogPost() {
   const { slug } = useParams();
   const { language, t, paths } = useLanguage();
@@ -432,6 +446,10 @@ export function BlogPost() {
                   while (i < lines.length) {
                     const line = lines[i];
                     const trimmedLine = line.trim();
+
+                    if (explicitFaqs?.length && isFaqHeading(trimmedLine)) {
+                      break;
+                    }
 
                     // 1. Handle Empty Lines
                     if (!trimmedLine) {

@@ -3,15 +3,15 @@ import { ArrowRight } from "lucide-react";
 import { motion } from "motion/react";
 import { useLanguage } from "../context/LanguageContext";
 import { useSEO, SITE_URL } from "../hooks/useSEO";
-import { blogPosts } from "../data/blogPosts";
+import { sortedBlogPosts } from "../data/blogPosts";
 import { usePrerender } from "../hooks/usePrerender";
 
 export function BlogPage() {
   const { language, t, paths } = useLanguage();
   usePrerender();
   const visiblePosts = language === 'en'
-    ? blogPosts.filter((post) => post.slugEN && post.contentEN?.trim())
-    : blogPosts;
+    ? sortedBlogPosts.filter((post) => post.slugEN && post.contentEN?.trim())
+    : sortedBlogPosts;
 
   useSEO({
     title: language === 'de'

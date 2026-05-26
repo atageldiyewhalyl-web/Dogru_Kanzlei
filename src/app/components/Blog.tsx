@@ -1,7 +1,7 @@
 import { ArrowRight } from "lucide-react";
 import { Link } from "react-router";
 import { useLanguage } from "../context/LanguageContext";
-import { blogPosts } from "../data/blogPosts";
+import { sortedBlogPosts } from "../data/blogPosts";
 
 export function Blog() {
   const { t, language, paths } = useLanguage();
@@ -100,7 +100,7 @@ export function Blog() {
           }}
           className="blog-grid"
         >
-          {blogPosts.slice(0, 3).map((post) => (
+          {sortedBlogPosts.slice(0, 3).map((post) => (
             <article key={post.slug} className="text-left">
               <Link to={paths.blogPost(post.slug)} className="group block no-justify" style={{ textDecoration: "none", textAlign: "left" }}>
                 {/* Image */}

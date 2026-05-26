@@ -8171,10 +8171,34 @@ Türkiye'de size karşı bir suç işlendi ve Almanya'dasınız. Yapmanız gerek
     slug: "bosanma-rehberi-tuerkiye",
     slugDE: "scheidung-tuerkei-ohne-reise",
     slugTR: "turkiye-de-bosanma-rehberi",
+    slugEN: "divorce-in-turkey-from-germany-guide",
     titleDE: "Scheidung in der Türkei aus Deutschland: Einvernehmlich oder streitig – Der vollständige Leitfaden (2026)",
     titleTR: "Almanya'dan Türkiye'de Boşanma: Anlaşmalı ve Çekişmeli Boşanma Rehberi (2026)",
+    titleEN: "Divorce in Turkey from Germany: Amicable and Contested Divorce Guide (2026)",
     excerptDE: "Vollständiger Leitfaden zur Scheidung in der Türkei für in Deutschland lebende Türken. Einvernehmliche vs. streitige Scheidung, Kosten und Ablauf.",
     excerptTR: "Almanya'da yaşayanlar için Türkiye'de boşanma rehberi. Anlaşmalı ve çekişmeli boşanma farkları, SEGBİS ile duruşmaya katılım ve mal paylaşımı.",
+    excerptEN: "A practical guide for Turkish citizens and Turkish-German families living in Germany who are considering divorce proceedings in Turkey.",
+    metaTitleDE: "Scheidung in der Türkei aus Deutschland: Anlaşmalı & Çekişmeli 2026",
+    metaTitleTR: "Almanya'dan Türkiye'de Boşanma: Anlaşmalı ve Çekişmeli Rehber 2026",
+    metaTitleEN: "Divorce in Turkey from Germany: Amicable & Contested Guide 2026",
+    metaDescriptionDE: "Scheidung in der Türkei aus Deutschland: Anlaşmalı und çekişmeli boşanma, Vollmacht, SEGBİS, Dauer, Kosten, Nafaka, Velayet und Mal Paylaşımı im Überblick.",
+    metaDescriptionTR: "Almanya'dan Türkiye'de boşanma: anlaşmalı ve çekişmeli boşanma, vekaletname, SEGBİS, süre, masraf, nafaka, velayet ve mal paylaşımı rehberi.",
+    metaDescriptionEN: "Divorce in Turkey from Germany: amicable and contested divorce, power of attorney, remote options, costs, duration, custody, alimony, and property division.",
+    schemaHeadlineDE: "Scheidung in der Türkei aus Deutschland 2026: Anlaşmalı und Çekişmeli Boşanma, Kosten, Dauer, Nafaka, Velayet und Mal Paylaşımı",
+    schemaHeadlineTR: "Almanya'dan Türkiye'de Boşanma 2026: Anlaşmalı ve Çekişmeli Boşanma, Masraf, Süre, Nafaka, Velayet ve Mal Paylaşımı",
+    schemaHeadlineEN: "Divorce in Turkey from Germany 2026: Amicable and Contested Divorce, Costs, Duration, Alimony, Custody, and Property Division",
+    schemaDescriptionDE: "Vollständiger Leitfaden zur Scheidung in der Türkei aus Deutschland mit rechtssicherer Einordnung von einvernehmlicher und streitiger Scheidung.",
+    schemaDescriptionTR: "Almanya'dan Türkiye'de boşanma sürecini anlaşmalı ve çekişmeli boşanma ayrımıyla açıklayan kapsamlı rehber.",
+    schemaDescriptionEN: "A complete guide to Turkish divorce proceedings from Germany, including amicable and contested divorce paths.",
+    articleAuthor: "Av. Hasan Doğru",
+    articleSectionDE: "Familienrecht",
+    articleSectionTR: "Aile Hukuku",
+    articleSectionEN: "Family Law",
+    articleTagsDE: ["Scheidung Türkei", "Anlaşmalı Boşanma", "Çekişmeli Boşanma", "Nafaka", "Velayet"],
+    articleTagsTR: ["Türkiye'de boşanma", "anlaşmalı boşanma", "çekişmeli boşanma", "nafaka", "velayet"],
+    articleTagsEN: ["divorce in Turkey", "amicable divorce Turkey", "contested divorce Turkey", "Turkish family law"],
+    exactHreflangs: true,
+    exactSchema: true,
     contentDE: `**RECHTLICHER HINWEIS:** Dieser Artikel befasst sich ausschließlich mit dem türkischen Recht. Eine Beratung zum deutschen Recht (z.B. deutsches Erbrecht, Familienrecht nach BGB oder deutsches Migrationsrecht) findet in unserer Kanzlei nicht statt.
 
 Sie leben in Deutschland. Die Entscheidung, Ihre Ehe zu beenden, ist gefallen. Aber vor Ihnen stehen mehrere Fragen — und keine einfache Antwort:
@@ -8311,11 +8335,13 @@ Seit 2002 gilt in der Türkei das gesetzliche Güterrecht der **Errungemschaftsg
 
 Eine Scheidung aus Deutschland ist rechtlich möglich, ohne in die Türkei zu reisen. Der entscheidende Faktor ist die richtige rechtliche Begleitung von Anfang an.
 
-**Avukat Hasan Doğru | Doğru Kanzlei**
-📍 R1 2-3, 68161 Mannheim
-📞 +49 176 612 21210
-✉️ info@hasandogru.de
-💬 Auch per WhatsApp erreichbar
+[Die Doğru Kanzlei](https://www.hasandogru.de/de/leistungen/familienrecht) vertritt Mandanten in türkischen Scheidungsverfahren direkt: Ankara Barosu, Rechtsanwaltskammer Karlsruhe gemäß § 207 BRAO, deutsch-türkische Kommunikation und UYAP-Zugang aus einer Hand.
+
+[Per WhatsApp Kontakt aufnehmen →](https://wa.me/4917661221210)
+
+Weitere passende Ratgeber:
+[Deutsche Scheidung in der Türkei anerkennen →](/de/blog/deutsche-scheidung-tuerkei-anerkennen-tanima-tenfiz)
+[Vollmacht auf Türkisch erstellen →](/de/blog/vollmacht-auf-tuerkisch)
 
 *Mo–Sa: 09:00–18:00 | Beratung auf Deutsch und Türkisch*
 
@@ -8437,27 +8463,167 @@ Türkiye'de 2002 yılından itibaren yasal mal rejimi **edinilmiş mallara katı
 
 Sürecin en kritik adımı doğru hukuki danışmanlık almaktır. Mannheim'da Türk hukukunu bilen bir büro olarak tüm süreci sizin adınıza yönetiyoruz.
 
-**Avukat Hasan Doğru | Doğru Kanzlei**
-📍 R1 2-3, 68161 Mannheim
-📞 +49 176 612 21210
-✉️ info@hasandogru.de
-💬 WhatsApp üzerinden de ulaşabilirsiniz
+[Doğru Kanzlei](https://www.hasandogru.de/tr/hizmetler/aile-hukuku), Türkiye'deki boşanma davalarını doğrudan yürütür: Ankara Barosu üyeliği, Karlsruhe Barosu §207 BRAO kaydı, Almanca-Türkçe iletişim ve UYAP takibi tek elde.
+
+[WhatsApp üzerinden iletişime geçin →](https://wa.me/4917661221210)
+
+İlgili rehberler:
+[Almanya'daki boşanmanın Türkiye'de tanınması →](/tr/blog/almanya-bosanma-turkiye-tanima-tenfiz)
+[Türkçe vekaletname nasıl çıkarılır →](/tr/blog/turkce-vekaletname-nasil-cikarilir)
 
 *Mo–Sa: 09:00–18:00 | Türkçe ve Almanca hizmet*
 
 ---
 
 *Bu makale genel bilgi amaçlıdır ve hukuki danışmanlık niteliği taşımaz. Büromuz yalnızca Türk hukuku alanında danışmanlık vermektedir.*`,
+    contentEN: `**LEGAL NOTICE:** This article addresses Turkish law only. Doğru Kanzlei advises on Turkish law under § 207 BRAO and does not advise on German domestic family law.
+
+You live in Germany and want to end a marriage with a Turkish legal connection. The practical question is not only "Can I divorce?" but also: where should the case be filed, which law applies, whether travel to Turkey is necessary, and how custody, alimony and property division will be handled.
+
+This guide explains the Turkish-law route for people in Germany who are considering divorce proceedings in Turkey.
+
+---
+
+## Germany or Turkey: Where Should the Divorce Be Filed?
+
+There is no universal answer. The right forum depends on citizenship, residence, children, assets, and whether the spouses agree.
+
+### Divorce in Germany
+
+A German family court applies German family law. For many couples living fully in Germany, this is the natural route. But a German divorce judgment is not automatically effective in Turkey. If Turkish civil registry records, remarriage in Turkey, Turkish assets, or Turkish enforcement matter, a separate recognition or enforcement process in Turkey may be required.
+
+### Divorce in Turkey
+
+Divorce proceedings can also be brought in Turkey when Turkish jurisdiction exists. This may be useful when one spouse lives in Turkey, Turkish assets are involved, or the spouses want the Turkish registry updated directly.
+
+In practice, the central strategic question is this: will the matter be **amicable** or **contested**?
+
+| Situation | Practical route |
+|---|---|
+| Both spouses agree on divorce and all consequences | Amicable Turkish divorce may be the fastest route |
+| German proceedings already started | German divorce, then Turkish tanıma-tenfiz if needed |
+| Turkish real estate or bank accounts are involved | Turkish legal review before filing is essential |
+| One spouse lives in Turkey and there is no agreement | Contested Turkish proceedings may be appropriate |
+| Both spouses live in Germany and disagree | Compare German and Turkish routes before filing |
+
+---
+
+## Amicable Divorce in Turkish Law (Anlaşmalı Boşanma)
+
+An amicable divorce under Turkish Civil Code Art. 166/3 requires more than mutual willingness to divorce.
+
+The marriage must have lasted at least one year. The spouses must agree on the divorce and all consequences, including custody, child support, spousal alimony, contact arrangements, and property issues. These points are recorded in a written divorce protocol.
+
+The important practical point: the Turkish judge must be satisfied that the spouses' declarations are free and informed. For that reason, personal hearing is a key issue in amicable divorce cases from Germany. Depending on the court and facts, SEGBİS video hearing, consular assistance, or a different procedural strategy may need to be evaluated.
+
+Do not rely on a generic protocol. If custody, Turkish assets or alimony are involved, a weak protocol can create years of follow-up litigation.
+
+---
+
+## Contested Divorce in Turkish Law (Çekişmeli Boşanma)
+
+If there is no full agreement, the case is contested. Turkish law recognises specific divorce grounds such as adultery, severe mistreatment, abandonment, mental illness, and the general ground of irretrievable breakdown of the marital union.
+
+For clients in Germany, contested proceedings are often easier to manage remotely than people expect. A Turkish lawyer can file the case, attend hearings, submit evidence, question witnesses, and monitor the file through UYAP. If the court requires a personal statement, remote or consular options should be checked early.
+
+Evidence matters. Messages, witness statements, financial documents, medical reports, and proof of residence or caregiving should be preserved before they disappear.
+
+---
+
+## Custody, Alimony, Damages and Property Division
+
+### Custody (Velayet)
+
+Turkish courts decide custody according to the best interests of the child. Living in Germany does not automatically prevent a custody request, but the child's actual life, school, care structure and stability are decisive.
+
+### Alimony (Nafaka)
+
+Turkish law distinguishes several forms of alimony: temporary support during proceedings, poverty alimony for a spouse, and child support. If one spouse earns income in Germany, the court may consider the actual economic situation abroad.
+
+### Damages (Tazminat)
+
+In Turkish divorce law, the less-fault spouse may claim material or moral damages in appropriate cases, for example where violence, adultery, serious insults or abandonment are proven.
+
+### Property Division (Mal Paylaşımı)
+
+Assets acquired during marriage may trigger property division claims under Turkish matrimonial property law. Turkish real estate and bank assets require special planning because title registry, valuation and enforcement are handled in Turkey.
+
+---
+
+## Can the Case Be Handled from Germany?
+
+Often yes, but the answer depends on the type of divorce.
+
+For contested cases, representation by a Turkish lawyer is usually the main route. For amicable divorce, the judge's duty to hear the spouses must be handled carefully. Depending on the court, a video hearing, consular route, or adjusted litigation strategy may be possible.
+
+The power of attorney is central. A Turkish-law divorce power of attorney should be prepared with the correct wording, photographs where required, and express authority for divorce proceedings, settlement, registry steps and related claims.
+
+---
+
+## Common Mistakes
+
+**Filing in Germany without checking Turkish consequences.** A German divorce may still need Turkish recognition.
+
+**Using a generic divorce protocol.** Missing custody, alimony or asset clauses can make the protocol unusable.
+
+**Delaying property division.** Turkish assets should be reviewed before the divorce strategy is fixed.
+
+**Incorrect power of attorney.** Turkish courts and authorities may reject incomplete powers of attorney.
+
+**Assuming travel is always required or never required.** The correct answer depends on the procedural path and the court.
+
+---
+
+## Doğru Kanzlei: Direct Turkish-Law Representation from Germany
+
+[Doğru Kanzlei](https://www.hasandogru.de/en/services) represents clients in Turkish family-law matters directly: Ankara Bar Association membership, Karlsruhe Bar registration under § 207 BRAO, German-Turkish communication, and UYAP monitoring from one office.
+
+[Contact us on WhatsApp →](https://wa.me/4917661221210)
+
+Related guides:
+[German divorce recognition in Turkey →](/en/blog/german-divorce-recognition-turkey-tanima-tenfiz)
+[Turkish power of attorney →](/en/services)
+
+---
+
+## Frequently Asked Questions
+
+**Can I file for divorce in Turkey while living in Germany?**
+Yes, if Turkish jurisdiction exists. A lawyer can handle many steps through a power of attorney.
+
+**Do I have to travel to Turkey for an amicable divorce?**
+The judge must hear both spouses. In practice, video hearing, consular assistance or a different procedural route may be considered depending on the court and facts.
+
+**Can my lawyer represent me in a contested divorce?**
+Yes. In contested proceedings, attorney representation is generally sufficient. If the court requests a personal statement, remote or consular options should be checked.
+
+**Does a Turkish divorce automatically count in Germany?**
+Not always. Recognition under German rules may be required, especially for remarriage or civil registry purposes in Germany.
+
+**Can Turkish property be included in divorce planning?**
+Yes. Turkish real estate, bank accounts and other assets should be reviewed before the divorce strategy is chosen.
+
+**What documents are usually needed?**
+Passports or ID documents, marriage documents, civil registry records, evidence for claims, and a Turkish-law power of attorney.
+
+---
+
+*This article is general information and does not replace individual legal advice.*`,
     category: "Boşanma · Aile Hukuku · Türk Hukuku",
     categoryDE: "Scheidung · Familienrecht · Türkisches Recht",
+    categoryEN: "Divorce · Family Law · Turkish Law",
     image: divorceImg,
-    dateDE: "Nisan 2026",
-    dateTR: "Nisan 2026",
+    dateDE: "26. Mai 2026",
+    dateTR: "26 Mayıs 2026",
+    dateEN: "26 May 2026",
     readTimeDE: "22 Min. Lesezeit",
     readTimeTR: "22 dk okuma",
-    publishedAt: "2026-04-12",
-    keywordsDE: "Scheidung Türkei ohne Reise, Einvernehmliche Scheidung Türkei, Anlaşmalı Boşanma Protokoll, Scheidungsanwalt Türkei Mannheim, Boşanma davası vekalet",
-    keywordsTR: "Türkiye'ye gitmeden boşanma davası, Almanya'dan anlaşmalı boşanma, boşanma protokolü nasıl hazırlanır, çekişmeli boşanma süreci, boşanma avukatı ücretleri",
+    readTimeEN: "16 min read",
+    publishedAt: "2026-05-26",
+    modifiedAt: "2026-05-26",
+    keywordsDE: "Scheidung Türkei aus Deutschland, Scheidung Türkei ohne Reise, einvernehmliche Scheidung Türkei, Anlaşmalı Boşanma Protokoll, Çekişmeli Boşanma, Nafaka Velayet Mal Paylaşımı, türkischer Scheidungsanwalt Mannheim",
+    keywordsTR: "Almanya'dan Türkiye'de boşanma, Türkiye'ye gitmeden boşanma davası, anlaşmalı boşanma, çekişmeli boşanma, boşanma protokolü, nafaka velayet mal paylaşımı, Türk boşanma avukatı Mannheim",
+    keywordsEN: "divorce in Turkey from Germany, Turkish divorce lawyer Germany, amicable divorce Turkey, contested divorce Turkey, Turkish family law, Turkish alimony custody property division",
     faqTR: [
       {
         question: "Almanya'da yaşıyorum, Türkiye'de boşanma davası açabilir miyim?",
@@ -8520,6 +8686,32 @@ Sürecin en kritik adımı doğru hukuki danışmanlık almaktır. Mannheim'da T
       {
         question: "Wir besitzen beide Immobilien in der Türkei. Wie regeln wir das?",
         answer: "Diese Frage ist Teil der Vermögensaufteilung. Wenn das Protokoll die Immobilien regelt und der Richter genehmigt, kann die Übertragung direkt beim türkischen Grundbuchamt (Tapu Müdürlüğü) beantragt werden. Ist das nicht der Fall, ist eine separate Güterrechtsklage erforderlich."
+      }
+    ],
+    faqEN: [
+      {
+        question: "Can I file for divorce in Turkey while living in Germany?",
+        answer: "Yes, if Turkish jurisdiction exists. In many cases your lawyer can handle the proceedings in Turkey through a power of attorney."
+      },
+      {
+        question: "Do I have to travel to Turkey for an amicable divorce?",
+        answer: "The judge must hear both spouses. Depending on the court and facts, video hearing, consular assistance or a different procedural route may be considered."
+      },
+      {
+        question: "Can my lawyer represent me in a contested divorce?",
+        answer: "Yes. In contested proceedings, attorney representation is generally sufficient. If the court requests a personal statement, remote or consular options should be checked."
+      },
+      {
+        question: "Does a Turkish divorce automatically count in Germany?",
+        answer: "Not always. Recognition under German rules may be required, especially for remarriage or civil registry purposes in Germany."
+      },
+      {
+        question: "Can Turkish property be included in divorce planning?",
+        answer: "Yes. Turkish real estate, bank accounts and other assets should be reviewed before the divorce strategy is chosen."
+      },
+      {
+        question: "What documents are usually needed?",
+        answer: "Passports or ID documents, marriage documents, civil registry records, evidence for claims, and a Turkish-law power of attorney."
       }
     ]
   },
@@ -10507,3 +10699,15 @@ According to Germany's Federal Statistical Office (Destatis), approximately 1.48
     ctaDescriptionTR: "Doğru Kanzlei, §207 BRAO ve Ankara Barosu kapsamında ruhsatlıdır. İlk görüşme Almanca veya Türkçe — WhatsApp üzerinden de ulaşabilirsiniz."
   },
 ];
+
+const bottomPinnedBlogSlugs = new Set(["tuerkischer-anwalt-deutschland-liste"]);
+
+export const sortedBlogPosts = [...blogPosts].sort((a, b) => {
+  const aPinnedToBottom = bottomPinnedBlogSlugs.has(a.slug);
+  const bPinnedToBottom = bottomPinnedBlogSlugs.has(b.slug);
+  if (aPinnedToBottom !== bPinnedToBottom) return aPinnedToBottom ? 1 : -1;
+
+  const byPublishedDate = b.publishedAt.localeCompare(a.publishedAt);
+  if (byPublishedDate !== 0) return byPublishedDate;
+  return blogPosts.indexOf(a) - blogPosts.indexOf(b);
+});
