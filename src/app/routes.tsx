@@ -66,6 +66,11 @@ export const router = createBrowserRouter([
   { path: "/de/blog/vekaletname-rehberi-almanya", loader: () => redirect("/de/blog/tuerkische-vekaletname-deutschland") },
   { path: "/de/blog/veraset-ilami-nedir", loader: () => redirect("/de/blog/erbrecht-leitfaden-tuerkei") },
   { path: "/de/blog/vorladung-haftbefehl-tuerkel", loader: () => redirect("/de/blog/vorladung-haftbefehl-tuerkei") },
+  { path: "/de/blog/blaue-karte-eu-beantragen-tuerkische-fachkraefte", loader: () => redirect("/de/blog") },
+  { path: "/tr/blog/turk-muhendis-profesyonel-almanya-mavi-kart-rehberi", loader: () => redirect("/tr/blog") },
+  { path: "/de/blog/tuerkischer-anwalt-deutschland-liste", loader: () => redirect("/de/blog") },
+  { path: "/tr/blog/almanya-da-tuerk-avukat-listesi", loader: () => redirect("/tr/blog") },
+  { path: "/en/blog/turkish-lawyer-germany-list", loader: () => redirect("/en/blog") },
 
   // Phase 3 Redirects (WordPress & Legacy Patterns)
   { path: "/author/*", loader: () => redirect("/de/ueber-uns") },

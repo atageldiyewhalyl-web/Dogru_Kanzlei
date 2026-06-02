@@ -894,6 +894,36 @@
     <priority>0.7</priority>
   </url>
 
+
+  <!-- Blog Post: Icra Takibi / Zwangsvollstreckung Türkei -->
+  <url>
+    <loc>https://www.hasandogru.de/de/blog/zwangsvollstreckung-tuerkei-forderungen-aus-deutschland</loc>
+    <xhtml:link rel="alternate" hreflang="de" href="https://www.hasandogru.de/de/blog/zwangsvollstreckung-tuerkei-forderungen-aus-deutschland" />
+    <xhtml:link rel="alternate" hreflang="tr" href="https://www.hasandogru.de/tr/blog/turkiyede-icra-takibi-almanyadan-alacak-tahsili" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.hasandogru.de/en/blog/debt-collection-turkey-from-germany-icra-takibi" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.hasandogru.de/de/blog/zwangsvollstreckung-tuerkei-forderungen-aus-deutschland" />
+    <lastmod>2026-06-02</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.hasandogru.de/tr/blog/turkiyede-icra-takibi-almanyadan-alacak-tahsili</loc>
+    <xhtml:link rel="alternate" hreflang="de" href="https://www.hasandogru.de/de/blog/zwangsvollstreckung-tuerkei-forderungen-aus-deutschland" />
+    <xhtml:link rel="alternate" hreflang="tr" href="https://www.hasandogru.de/tr/blog/turkiyede-icra-takibi-almanyadan-alacak-tahsili" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.hasandogru.de/en/blog/debt-collection-turkey-from-germany-icra-takibi" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.hasandogru.de/de/blog/zwangsvollstreckung-tuerkei-forderungen-aus-deutschland" />
+    <lastmod>2026-06-02</lastmod>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.hasandogru.de/en/blog/debt-collection-turkey-from-germany-icra-takibi</loc>
+    <xhtml:link rel="alternate" hreflang="de" href="https://www.hasandogru.de/de/blog/zwangsvollstreckung-tuerkei-forderungen-aus-deutschland" />
+    <xhtml:link rel="alternate" hreflang="tr" href="https://www.hasandogru.de/tr/blog/turkiyede-icra-takibi-almanyadan-alacak-tahsili" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.hasandogru.de/en/blog/debt-collection-turkey-from-germany-icra-takibi" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.hasandogru.de/de/blog/zwangsvollstreckung-tuerkei-forderungen-aus-deutschland" />
+    <lastmod>2026-06-02</lastmod>
+    <priority>0.7</priority>
+  </url>
+
   <url>
     <loc>https://www.hasandogru.de/de/blog/scheidung-tuerkei-ohne-reise</loc>
     <xhtml:link rel="alternate" hreflang="de" href="https://www.hasandogru.de/de/blog/scheidung-tuerkei-ohne-reise" />
@@ -1415,23 +1445,6 @@
     <priority>0.6</priority>
   </url>
 
-  <!-- Blog Post: Türkischer Anwalt Deutschland Liste -->
-  <url>
-    <loc>https://www.hasandogru.de/de/blog/tuerkischer-anwalt-deutschland-liste</loc>
-    <xhtml:link rel="alternate" hreflang="de" href="https://www.hasandogru.de/de/blog/tuerkischer-anwalt-deutschland-liste" />
-    <xhtml:link rel="alternate" hreflang="tr" href="https://www.hasandogru.de/tr/blog/almanya-da-tuerk-avukat-listesi" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.hasandogru.de/de/blog/tuerkischer-anwalt-deutschland-liste" />
-    <lastmod>2026-05-15</lastmod>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://www.hasandogru.de/tr/blog/almanya-da-tuerk-avukat-listesi</loc>
-    <xhtml:link rel="alternate" hreflang="de" href="https://www.hasandogru.de/de/blog/tuerkischer-anwalt-deutschland-liste" />
-    <xhtml:link rel="alternate" hreflang="tr" href="https://www.hasandogru.de/tr/blog/almanya-da-tuerk-avukat-listesi" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.hasandogru.de/de/blog/tuerkischer-anwalt-deutschland-liste" />
-    <lastmod>2026-05-15</lastmod>
-    <priority>0.7</priority>
-  </url>
 
   <!-- Legal Pages -->
 

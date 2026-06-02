@@ -5697,6 +5697,942 @@ Alacak tahsili ve icra alanındaki çalışma kapsamımız için [hizmet sayfam�
     ctaDescriptionEN: "We handle Turkish enforcement proceedings from Mannheim and Ankara, with direct representation and clear English communication."
   },
   {
+    slug: "zwangsvollstreckung-tuerkei-forderungen-aus-deutschland",
+    slugDE: "zwangsvollstreckung-tuerkei-forderungen-aus-deutschland",
+    slugTR: "turkiyede-icra-takibi-almanyadan-alacak-tahsili",
+    slugEN: "debt-collection-turkey-from-germany-icra-takibi",
+    titleDE: "Zwangsvollstreckung in der Türkei: Forderungen aus Deutschland beitreiben (Icra Takibi)",
+    titleTR: "Türkiye'de İcra Takibi: Almanya'dan Alacak Tahsili — Banka Haczi, Gayrimenkul Satışı ve Tenfiz (İİK)",
+    titleEN: "Debt Collection in Turkey from Germany: The Complete Icra Takibi Guide (2026)",
+    excerptDE: "Jemand in der Türkei schuldet Ihnen Geld? So treiben Sie Forderungen aus Deutschland bei: Kontopfändung, Immobilienverwertung, Tenfiz und Icra Takibi per Vollmacht.",
+    excerptTR: "Türkiye'de biri size borçlu mu? Almanya'dan vekaletname ile banka hesaplarını bloke edin, gayrimenkulü haczettirin ve mahkeme kararını tenfiz ettirin.",
+    excerptEN: "Someone in Turkey owes you money? Learn how to enforce debt collection from Germany through bank account seizure, property enforcement, Tenfiz and Icra Takibi.",
+    metaTitleDE: "Zwangsvollstreckung in der Türkei: Forderungen aus Deutschland beitreiben | 2026",
+    metaTitleTR: "Türkiye'de İcra Takibi: Almanya'dan Alacak Tahsili Rehberi 2026",
+    metaTitleEN: "Debt Collection in Turkey from Germany: Icra Takibi Guide 2026",
+    metaDescriptionDE: "Jemand in der Türkei schuldet Ihnen Geld? Icra Takibi aus Deutschland – Kontopfändung, Immobilienverwertung & deutsches Urteil vollstrecken. Ohne Reise möglich.",
+    metaDescriptionTR: "Almanya'dan Türkiye'de borç nasıl tahsil edilir? İlamsız ve ilamlı icra, banka haczi, gayrimenkul satışı ve tenfiz davası — seyahat etmeden vekaletname ile.",
+    metaDescriptionEN: "Someone in Turkey owes you money? How to enforce debt collection in Turkey from Germany — bank account seizure, property enforcement, and recognising German judgments.",
+    schemaHeadlineDE: "Zwangsvollstreckung in der Türkei: Forderungen aus Deutschland beitreiben (Icra Takibi)",
+    schemaHeadlineTR: "Türkiye'de İcra Takibi: Almanya'dan Alacak Tahsili Rehberi 2026",
+    schemaHeadlineEN: "Debt Collection in Turkey from Germany: The Complete Icra Takibi Guide (2026)",
+    schemaDescriptionDE: "Jemand in der Türkei schuldet Ihnen Geld? Icra Takibi aus Deutschland – Kontopfändung, Immobilienverwertung & deutsches Urteil vollstrecken. Ohne Reise möglich.",
+    schemaDescriptionTR: "Almanya'dan Türkiye'de borç nasıl tahsil edilir? İlamsız ve ilamlı icra, banka haczi, gayrimenkul satışı ve tenfiz davası — seyahat etmeden vekaletname ile.",
+    schemaDescriptionEN: "Someone in Turkey owes you money? How to enforce debt collection in Turkey from Germany — bank account seizure, property enforcement, and recognising German judgments.",
+    articleAuthor: "Av. Hasan Doğru",
+    articleSectionDE: "Zwangsvollstreckung Türkei",
+    articleSectionTR: "İcra Hukuku",
+    articleSectionEN: "Turkish Enforcement Law",
+    articleTagsDE: ["Icra Takibi", "Zwangsvollstreckung Türkei", "Forderungen Deutschland Türkei"],
+    articleTagsTR: ["İcra Takibi", "Alacak Tahsili Almanya", "Banka Haczi Türkiye"],
+    articleTagsEN: ["Icra Takibi", "Debt Collection Turkey", "Turkish Law Germany"],
+    exactHreflangs: true,
+    exactSchema: true,
+    schemaImage: "https://www.hasandogru.de/assets/inheritance_fraud_law-BxjZQ9m1.png",
+    contentDE: `*Dieser Artikel befasst sich ausschließlich mit dem türkischen Recht. Die [Doğru Kanzlei](/de/leistungen) berät gemäß § 207 BRAO ausschließlich im türkischen Recht.*
+
+---
+
+Es beginnt oft mit einem stillen Gefühl des Unrechts. Der Bruder in Ankara zahlt das geliehene Geld nicht zurück. Der Käufer Ihrer türkischen Wohnung hält den Restkaufpreis seit zwei Jahren ein. Der Ex-Mann in Istanbul zahlt keinen Cent Kindesunterhalt, obwohl das Gericht es angeordnet hat. Sie leben in Deutschland, die Forderung liegt in der Türkei — und Sie wissen nicht, was Sie tun können, ohne Ihren Job zu unterbrechen, teuer zu fliegen und monatelang auf Antworten zu warten.
+
+Die gute Nachricht: Das türkische Vollstreckungsrecht ist eines der effektivsten Systeme Europas für die schnelle Kontopfändung. Mit der İcra Takibi — dem türkischen Zwangsvollstreckungsverfahren — können Bankkonten in wenigen Tagen gesperrt, Immobilien im Grundbuch blockiert und Unterhaltsschuldner mit Haftandrohung zur Zahlung gezwungen werden. Und das alles aus Deutschland, per Vollmacht, ohne eine einzige Reise.
+
+Dieser Leitfaden erklärt Ihnen das türkische Vollstreckungsrecht vollständig — die zwei Hauptverfahren, die Kontopfändung über das UYAP-System, die Verwertung von Immobilien, das Tenfiz-Verfahren für deutsche Urteile und den Sonderfall Unterhalt.
+
+---
+
+## 1. Was ist die Icra Takibi — und wann ist sie der richtige Weg?
+
+Die İcra Takibi (Zwangsvollstreckung) nach dem 2004 sayılı İcra ve İflas Kanunu (IIK — Türkisches Zwangsvollstreckungs- und Insolvenzgesetz) ist das Verfahren, mit dem Gläubiger ihre Forderungen zwangsweise gegen einen Schuldner mit Vermögen in der Türkei durchsetzen können. Es kommt zum Einsatz, wenn der Schuldner trotz Fälligkeit nicht freiwillig zahlt.
+
+Das Verfahren steht nicht nur türkischen Staatsangehörigen offen. Auch deutsche Staatsbürger, EU-Bürger und Nicht-EU-Ausländer haben nach türkischem Recht identische Vollstreckungsrechte — die Staatsangehörigkeit spielt keine Rolle. Was Sie brauchen: einen in der Türkei zugelassenen Anwalt (Avukat) mit einer notariell beglaubigten Vollmacht (Vekaletname).
+
+**Typische Forderungskonstellationen für in Deutschland lebende Gläubiger:**
+
+- **Darlehen unter Verwandten**: Sie haben einem Familienangehörigen in der Türkei Geld überwiesen — oft ohne schriftlichen Vertrag, aber mit nachweisbarem Überweisungsbeleg. Die Rückzahlung bleibt aus.
+- **Kaufpreisforderungen aus Immobilienverkäufen**: Sie haben eine türkische Wohnung oder ein Grundstück verkauft; der Käufer zahlt den Rest- oder Gesamtkaufpreis nicht. Oder: Sie haben bezahlt, der Verkäufer überträgt die Immobilie nicht.
+- **Mietrückstände**: Ihre türkische Mietimmobilie — und der Mieter zahlt seit Monaten nicht.
+- **Schadensersatz**: Betrug, Vertragsbruch, Verkehrsunfall in der Türkei.
+- **Unterhalt (Nafaka)**: Das türkische Gericht hat Kindes- oder Ehegattenunterhalt festgesetzt — der Unterhaltspflichtige zahlt nicht.
+- **Erbstreitigkeiten**: Ein Miterbe hat Nachlassvermögen vereinnahmt und verweigert die Auszahlung Ihres Anteils.
+
+---
+
+## 2. Die zwei Hauptverfahren: İlamsız und İlamlı İcra
+
+Das türkische Vollstreckungsrecht kennt zwei grundlegende Wege, je nachdem ob Sie bereits einen gerichtlichen Titel haben oder nicht.
+
+### İlamsız İcra (Vollstreckung ohne Gerichtsurteil) — IIK Art. 42–72
+
+Das İlamsız İcra ist das häufigste Vollstreckungsverfahren und der schnellste Weg, wenn kein Urteil vorliegt. Der Gläubiger stellt beim zuständigen İcra Müdürlüğü (Vollstreckungsamt) einen Vollstreckungsantrag (Takip Talebi). Das Vollstreckungsamt stellt dem Schuldner einen Zahlungsbefehl (Ödeme Emri) zu. Der Schuldner hat **7 Tage** Zeit zu zahlen oder Widerspruch (İtiraz) einzulegen. Widerspricht er nicht, kann die Pfändung sofort eingeleitet werden.
+
+Legt er Widerspruch ein, stehen Ihnen zwei gerichtliche Wege offen: die **İtirazın İptali Davası** (Aufhebungsklage beim ordentlichen Gericht, Frist 1 Jahr — mit der Möglichkeit eines zusätzlichen Schadensersatzes von mindestens 20%) oder die schnellere **İtirazın Kaldırılması** beim Vollstreckungsgericht, falls ein schriftliches Schuldanerkenntnis (Senet, Çek, Bono) vorliegt.
+
+### İlamlı İcra (Vollstreckung mit Gerichtsurteil) — IIK Art. 32–41
+
+Haben Sie bereits ein türkisches Urteil, einen gerichtlichen Vergleich oder einen Schiedsspruch, ist das Verfahren einfacher. Der Schuldner hat **kein** Widerspruchsrecht gegen die Forderung selbst — er kann nur einwenden, dass er bereits gezahlt hat oder die Forderung verjährt ist. Die Pfändung kann daher deutlich schneller eingeleitet werden.
+
+| Verfahren | Voraussetzung | Widerspruchsrecht | Typische Dauer bis Pfändung |
+|---|---|---|---|
+| İlamsız İcra | Keine — direkte Antragstellung | 7 Tage (stoppt das Verfahren) | 2–4 Wochen (ohne Widerspruch) |
+| İlamlı İcra | Türkisches Urteil / Vergleich | Nur Erfüllungs- oder Verjährungseinwand | Wenige Tage |
+| Nach Tenfiz | Deutsches Urteil + Tenfiz-Beschluss | Nur Erfüllungs- oder Verjährungseinwand | Wenige Tage nach Tenfiz |
+
+---
+
+## 3. Deutsches Urteil in der Türkei vollstrecken: Das Tenfiz-Verfahren
+
+Wenn Sie ein deutsches Zahlungsurteil, Unterhaltsurteil oder eine andere vollstreckbare gerichtliche Entscheidung haben und dieses in der Türkei durchsetzen möchten, führt der Weg über das **Tenfiz-Verfahren** nach MÖHUK Art. 50–54 (Türkisches Gesetz über das internationale Privatrecht und Zivilverfahrensrecht).
+
+Ein türkisches Gericht (Asliye Hukuk Mahkemesi) erklärt das deutsche Urteil für vollstreckbar. Voraussetzungen: Das Urteil muss rechtskräftig sein, mit Apostille versehen und übersetzt vorliegen. Es darf nicht gegen den türkischen ordre public verstoßen. Gegenseitigkeit muss bestehen — was zwischen Deutschland und der Türkei grundsätzlich der Fall ist.
+
+> ⚠️ **Wichtig:** Ein deutscher **Vollstreckungsbescheid** (ohne Urteil) reicht für das Tenfiz-Verfahren **nicht aus** — er hat in türkischen Gerichten lediglich indikativen Beweiswert. Es muss ein Gerichtsurteil mit Rechtskraft sein. Falls Sie nur einen Vollstreckungsbescheid haben, empfehlen wir parallel eine İlamsız İcra einzuleiten.
+
+Die Tenfiz-Verfahren dauert in der Regel 3–6 Monate. **Strategischer Hinweis:** Während das Tenfiz läuft, kann Ihr Anwalt bereits eine **İhtiyati Haciz** (vorläufige Pfändung, IIK Art. 257) auf Immobilien oder Bankkonten des Schuldners beantragen — damit er sein Vermögen nicht beiseiteschafft, bevor das Tenfiz-Urteil rechtskräftig wird.
+
+---
+
+## 4. Bankkonten pfänden: Haciz İhbarnamesi und Toplu Sorgu
+
+Die Kontopfändung ist das effektivste und schnellste Vollstreckungsinstrument im türkischen System. Ihr Anwalt richtet beim İcra Müdürlüğü einen **Haciz İhbarnamesi** (Drittschuldnerpfändung nach IIK Art. 89) an die Banken des Schuldners.
+
+Das besondere Merkmal des türkischen Systems: Über das elektronische **UYAP-System** kann Ihr Anwalt eine **Toplu Sorgu** (Sammelabfrage) stellen — eine einzige elektronische Anfrage, die gleichzeitig an **alle** Banken in der Türkei gerichtet wird. Das Vollstreckungsamt erhält innerhalb von Stunden Rückmeldungen, bei welchen Banken der Schuldner Konten führt und ob Guthaben vorhanden ist. Vorhandenes Guthaben wird sofort gesperrt.
+
+**Das dreistufige Haciz-İhbarnamesi-Verfahren:**
+
+Erste Stufe: Die Bank wird aufgefordert mitzuteilen, ob Konten und Guthaben vorhanden sind (Antwortfrist: 7 Tage). Bestätigt die Bank Guthaben — sofortige Sperrung.
+
+Zweite Stufe: Reagiert die Bank nicht, wird ein zweiter Bescheid zugestellt mit dem Hinweis, dass die Bank bei Nichtbeantwortung als Schuldner gilt.
+
+Dritte Stufe: Bei erneuter Nichtreaktion gilt die Bank selbst als Schuldner und muss den Betrag aus eigenen Mitteln zahlen.
+
+> ⚠️ **Wichtig:** Die Toplu Sorgu funktioniert nur, wenn der Schuldner in der Türkei ein Bankkonto hat. Wenn Sie wissen oder vermuten, dass der Schuldner Vermögen ins Ausland transferiert, sollte zusätzlich eine İhtiyati Haciz für alle bekannten Vermögenswerte beantragt und strafrechtliche Schritte (z.B. Anzeige wegen Mal Kaçırma — Vermögensverschleierung) geprüft werden.
+
+---
+
+## 5. Immobilien pfänden und verwerten
+
+Besitzt der Schuldner Immobilien in der Türkei, können diese über eine Grundbucheintragung gepfändet werden. Die Pfändung erfolgt schnell — innerhalb weniger Tage nach Beschluss des Vollstreckungsamts wird eine Verfügungsbeschränkung im Tapu Sicili (Grundbuch) eingetragen. Ab diesem Moment kann der Schuldner die Immobilie nicht mehr verkaufen oder belasten.
+
+Zahlt der Schuldner trotz Pfändung nicht, wird die Immobilie durch **öffentliche Versteigerung (Açık Artırma)** verwertet. Das İcra Müdürlüğü führt die Versteigerung durch. Der Anteil des Erlöses, der Ihre Forderung (einschließlich Zinsen und Kosten) deckt, wird an Sie ausgezahlt. Ein etwaiger Übererlös geht an den Schuldner.
+
+**Zeitlicher Ablauf:** Die Grundbucheintragung der Pfändung: wenige Tage. Die anschließende Versteigerung: 6–12 Monate. Deshalb gilt in der Praxis: Zuerst Kontopfändung versuchen — das ist schneller und günstiger. Die Immobilienverwertung ist der Weg, wenn keine Bankkonten auffindbar sind oder die Kontopfändung die Forderung nicht vollständig deckt.
+
+---
+
+## 6. Sonderfall: Unterhaltsvollstreckung (Nafaka İcrası)
+
+Unterhaltsansprüche genießen im türkischen Vollstreckungsrecht eine privilegierte Stellung — und das aus gutem Grund: Kinder sollten nicht darunter leiden, dass ein Elternteil die Zahlungspflicht ignoriert.
+
+**Zwei Besonderheiten im Unterhaltsrecht:**
+
+Erstens: **Vorrang bei der Verteilung** (IIK Art. 206). Wenn mehrere Gläubiger Forderungen gegen denselben Schuldner haben, werden Unterhaltsansprüche als erstes bedient — vor allen anderen Forderungen.
+
+Zweitens: **Tazyik Hapsi** (Ordnungshaft, IIK Art. 344). Das ist die stärkste Waffe bei Unterhaltsverweigerung. Wenn der Unterhaltspflichtige trotz Zahlungsaufforderung im Rahmen der İlamlı İcra nicht zahlt, kann beim İcra Ceza Mahkemesi (Vollstreckungsstrafgericht) Ordnungshaft von bis zu **3 Monaten** beantragt werden. Das ist kein Strafverfahren — es geht nicht um Schuld oder Unschuld, sondern rein um Zwang zur Zahlung. Trotzdem ist die Wirkung drastisch: Der Schuldner muss damit rechnen, inhaftiert zu werden, bis er zahlt.
+
+> ⚠️ **Wichtig:** In der Praxis zahlen die meisten Unterhaltsschuldner, **sobald sie wissen**, dass ein Tazyik-Hapsi-Antrag gestellt wurde — noch bevor ein Haftbefehl ergeht. Die Ankündigung allein hat erhebliche Druckwirkung. Warten Sie nicht: Jeder Monat, den Sie nicht vollstrecken, ist ein Monat, in dem Ihr Kind auf sein Geld wartet.
+
+---
+
+## 7. Vorläufige Sicherung: İhtiyati Haciz (IIK Art. 257)
+
+Wenn Sie konkrete Anhaltspunkte haben, dass der Schuldner sein Vermögen beiseiteschaffen will — ein bevorstehender Immobilienverkauf, eine Kontoauflösung, eine geplante Ausreise — können Sie **noch vor** der eigentlichen Vollstreckung eine vorläufige Pfändung beantragen.
+
+Die İhtiyati Haciz kann beim zuständigen Gericht beantragt werden, bevor die Hauptklage überhaupt erhoben ist. Voraussetzung: Die Forderung muss glaubhaft gemacht werden, und die Dringlichkeit muss konkret begründet sein. Nach Anordnung der İhtiyati Haciz muss die Hauptklage innerhalb von **7 Tagen** erhoben werden.
+
+Einsatzszenario in der Praxis: Sie haben ein deutsches Zahlungsurteil gegen einen türkischen Schuldner erstritten. Das Tenfiz-Verfahren wird 3–6 Monate dauern. In der Zwischenzeit könnte der Schuldner seine Wohnung in Istanbul verkaufen. Lösung: İhtiyati Haciz auf die Wohnung — während das Tenfiz läuft, ist die Immobilie im Grundbuch gesperrt.
+
+---
+
+## 8. Verjährungsfristen: Wann verfällt Ihre Forderung?
+
+| Forderungsart | Verjährungsfrist | Rechtsgrundlage |
+|---|---|---|
+| Allgemeine vertragliche Ansprüche | 10 Jahre | TBK Art. 146 |
+| Mietzinsforderungen | 5 Jahre | TBK Art. 147 |
+| Zinsforderungen | 5 Jahre | TBK Art. 147 |
+| Periodische Leistungen (z.B. Unterhalt) | 5 Jahre | TBK Art. 147 |
+| Schadensersatz aus unerlaubter Handlung | 2 Jahre ab Kenntnis / max. 10 Jahre ab Ereignis | TBK Art. 72 |
+| Vollstreckungstitel (İlamlı İcra) | 10 Jahre ab Rechtskraft | IIK Art. 39 |
+
+**Wichtig:** Die Einleitung einer İcra Takibi **unterbricht** die Verjährungsfrist. Jede Vollstreckungshandlung setzt die Frist neu in Gang.
+
+> ⚠️ **Wichtig:** Warten Sie nicht zu lange. Bei Schadensersatzansprüchen aus unerlaubter Handlung kann die 2-Jahres-Frist schnell ablaufen — oft ohne dass die Betroffenen es realisieren. Wann genau die Frist zu laufen beginnt (Datum der Kenntnis vom Schaden), hängt vom Einzelfall ab. Klären Sie Ihren Fall am besten früh.
+
+---
+
+## 9. Was kostet eine Icra Takibi in der Türkei? (2026)
+
+| Kostenposition | Betrag / Rate | Bemerkung |
+|---|---|---|
+| Peşin Harç (Vorschussgebühr) | 4,55 ‰ der Forderungssumme | Beim İlamsız İcra, bei Antragstellung fällig |
+| Tahsil Harç (Abschlussgebühr, freiwillige Zahlung nach Zustellung) | 4,55 ‰ | Wenn Schuldner nach dem Zahlungsbefehl freiwillig zahlt |
+| Tahsil Harç (Abschlussgebühr, nach Pfändung) | 9,10 ‰ | Wenn Zahlung nach Pfändung, vor Versteigerung |
+| Tahsil Harç (Abschlussgebühr, durch Versteigerung) | 15,38 ‰ | Bei Verwertung durch öffentliche Auktion |
+| Başvurma Harcı (Antragsgebühr) | 732,00 TL (2026) | Festbetrag |
+| Cezaevi Harcı (Gefängnisbaugebühr) | 2 % des beigetriebenen Betrags | Auf alle Zahlungen |
+| Zustellungskosten (Tebligat) | Ca. 100–200 TL pro Zustellung | Gering |
+| Anwaltshonorar | Nach Vereinbarung | Erfolgshonorar möglich |
+
+**Beispielrechnung:** Forderung 50.000 EUR. Peşin Harç: ca. 200 EUR. Wenn der Schuldner nach Pfändung zahlt: Tahsil Harç ca. 455 EUR. Gesamte Gerichtsgebühren: ca. 650–700 EUR. Im Verhältnis zur Forderungshöhe minimal.
+
+---
+
+## 10. Schritt für Schritt: Vollstreckung aus Deutschland
+
+Das gesamte Verfahren läuft über Ihren Avukat in der Türkei. Sie müssen nicht reisen.
+
+**Schritt 1 — Vollmacht (Vekaletname):** Beim türkischen Generalkonsulat in Ihrer Nähe (Frankfurt, München, Hamburg, Köln, Berlin, Stuttgart) oder beim deutschen Notar mit Apostille. Unser Blog zu türkischen Vollmachten erklärt den Prozess im Detail: [Vollmacht auf Türkisch →](/de/blog/vollmacht-auf-tuerkisch)
+
+**Schritt 2 — Forderungsdokumentation:** Belegen Sie die Forderung mit allem, was Sie haben: Überweisungsbelege, Verträge, WhatsApp-Nachrichten, E-Mails, Fotos, Zeugenaussagen. Auch ohne schriftlichen Vertrag ist eine İlamsız İcra möglich — Banküberweisungen mit entsprechendem Verwendungszweck sind starke Beweismittel.
+
+**Schritt 3 — İcra Takibi beim zuständigen Vollstreckungsamt:** Ihr Avukat bestimmt das zuständige İcra Müdürlüğü (in der Regel am Wohnort oder Aufenthaltsort des Schuldners) und stellt den Takip Talebi (Vollstreckungsantrag).
+
+**Schritt 4 — Ödeme Emri (Zahlungsbefehl):** Das Vollstreckungsamt stellt dem Schuldner einen Zahlungsbefehl zu. 7-Tage-Frist für Zahlung oder Widerspruch.
+
+**Schritt 5 — Toplu Sorgu (Kontopfändung):** Bei Nichtwiderspruch oder nach Aufhebung des Widerspruchs: Sammelabfrage aller türkischen Banken über UYAP. Gleichzeitige Grundbucheintragung für bekannte Immobilien.
+
+**Schritt 6 — Verwertung:** Kontoguthaben wird direkt überwiesen. Immobilien werden versteigert. Überschuss geht an den Schuldner, der Gläubigeranteil an Sie.
+
+---
+
+## 11. Typische Praxisfälle
+
+**Fall 1: Unbezahltes Darlehen unter Geschwistern**
+Herr K. aus Mannheim hat 2021 seinem Bruder in Ankara 30.000 EUR per Banküberweisung geliehen. Kein schriftlicher Vertrag, aber die Überweisung mit dem Verwendungszweck „Darlehen" ist dokumentiert. Der Bruder zahlt nicht zurück.
+Lösung: İlamsız İcra. Die Banküberweisung gilt vor türkischen Gerichten als starkes Beweismittel. Legt der Bruder Widerspruch ein, folgt die İtirazın İptali Davası — Ziel: Aufhebung des Widerspruchs und 20% Icra İnkar Tazminatı.
+
+**Fall 2: Mietrückstände aus türkischer Wohnung**
+Frau M. aus Stuttgart besitzt eine Wohnung in Antalya. Mieter zahlt seit 8 Monaten nicht (insgesamt 72.000 TL).
+Lösung: Tahliye Talepli İcra Takibi — eine besondere Form der İlamsız İcra, die gleichzeitig die Mietrückstände eintreibt und die Räumung beantragt (IIK Art. 269). Der Mieter hat 7 Tage Widerspruchsrecht gegen die Zahlung und 30 Tage zur Räumung.
+
+**Fall 3: Unterhalt wird verweigert**
+Frau A. aus Mannheim. Ihr Ex-Mann in Istanbul zahlt den gerichtlich festgesetzten Kindesunterhalt von 15.000 TL monatlich seit einem Jahr nicht.
+Lösung: İlamlı İcra (das Unterhaltsurteil ist der Titel) + Antrag auf Tazyik Hapsi beim İcra Ceza Mahkemesi. Erfahrungsgemäß zahlt der Schuldner, sobald der Haftantrag gestellt ist.
+
+**Fall 4: Deutsches Urteil vollstrecken**
+Herr B. hat vor einem deutschen Gericht ein Zahlungsurteil über 80.000 EUR gegen einen in der Türkei lebenden Schuldner mit Istanbuler Immobilien erstritten.
+Lösung: Tenfiz-Verfahren (MÖHUK Art. 50–54) + parallel İhtiyati Haciz auf die Immobilien. Nach Tenfiz: İlamlı İcra mit Immobilienverwertung.
+
+---
+
+## 12. Wie die Doğru Kanzlei vorgeht
+
+Forderungsbeitreibung in der Türkei erfordert einen Anwalt mit direktem UYAP-Zugang, Kenntnissen des lokalen Vollstreckungssystems und der Erfahrung, Fristen zu überwachen — insbesondere die kritischen 7-Tage-Fristen für Widerspruch und İhtiyati Haciz.
+
+[Die Doğru Kanzlei](https://www.hasandogru.de/de/leistungen) ist als einzige Kanzlei im Raum Mannheim sowohl bei der Anwaltskammer Ankara (Sicil-Nr. 47068) als auch bei der Rechtsanwaltskammer Karlsruhe (§ 207 BRAO) zugelassen. Avukat Hasan Doğru leitet İcra Takibi-Verfahren direkt beim türkischen İcra Müdürlüğü ein, führt Toplu-Sorgu-Abfragen an alle türkischen Banken durch und überwacht Fristen und Zustellungen über UYAP in Echtzeit. Kein türkischer Kooperationspartner. Direkte Vertretung.
+
+Hasan Doğru hat vor seiner Anwaltstätigkeit rund zehn Jahre als Mitglied der Özel Harekat (Sondereinheit der türkischen Nationalpolizei) gearbeitet — das gibt ihm ein institutionelles Verständnis dafür, wie türkische Behörden funktionieren und wie man sie effektiv und schnell bewegt.
+
+Verbundene Verfahren — Tenfiz eines deutschen Urteils, Strafanzeige wegen Betrugs (TCK Art. 157) oder Untreue (TCK Art. 155) — können parallel geführt werden. Alles aus einer Hand.
+
+**Kontakt:**
+Doğru Kanzlei | Av. Hasan Doğru
+Mannheim: R1 2-3, 68161 Mannheim | Tel: +49 176 6122 1210
+Ankara: Aşağı Ovecler Mah. 1322. Cd. 45/9, Çankaya | Tel: +90 533 237 5918
+E-Mail: info@hasandogru.de | Web: www.hasandogru.de
+
+---
+
+## 13. Häufig gestellte Fragen
+
+**Kann ich in der Türkei vollstrecken, auch wenn ich kein türkischer Staatsbürger bin?**
+Ja. Das türkische Vollstreckungsrecht (IIK) unterscheidet nicht nach Staatsangehörigkeit. Deutsche Staatsangehörige und EU-Bürger können identische Vollstreckungsverfahren nutzen wie türkische Gläubiger. Sie benötigen lediglich eine Vollmacht für Ihren türkischen Anwalt.
+
+**Kann ich mit einem deutschen Urteil direkt vollstrecken?**
+Nein. Ein deutsches Urteil muss zunächst im Tenfiz-Verfahren (MÖHUK Art. 50–54) für vollstreckbar erklärt werden. Erst danach kann die İlamlı İcra eingeleitet werden. Dauer: 3–6 Monate. Wichtig: Ein Vollstreckungsbescheid (ohne Urteil) reicht nicht — es muss ein rechtskräftiges Urteil mit Apostille sein.
+
+**Was passiert, wenn der Schuldner kein Vermögen hat?**
+Wenn die Toplu Sorgu keine Bankguthaben ergibt und keine Immobilien oder Fahrzeuge vorhanden sind, kann eine Aciz Vesikası (Vermögenslosigkeitsbescheinigung) ausgestellt werden. Diese gilt 2 Jahre als Grundlage für neue Vollstreckungsversuche, falls der Schuldner später Vermögen erwirbt.
+
+**Wie lange dauert eine Icra Takibi?**
+Kontopfändung: wenige Tage bis 2 Wochen. İlamsız İcra ohne Widerspruch: 2–4 Wochen. İlamsız İcra mit Widerspruch und İtirazın İptali: 6–18 Monate. Immobilienverwertung: 6–12 Monate ab Pfändung.
+
+**Kann der Schuldner nach Deutschland fliehen?**
+Sein Vermögen in der Türkei bleibt vollstreckbar, unabhängig davon, wo er sich aufhält. Bankkonten, Immobilien und Fahrzeuge können gepfändet werden. Falls der Schuldner nach Deutschland zieht und hier Vermögen hat, kann parallel ein deutsches Vollstreckungsverfahren eingeleitet werden.
+
+**Lohnt sich die Vollstreckung bei kleinen Beträgen?**
+Die türkischen Vollstreckungsgebühren sind im Verhältnis zur Forderungssumme sehr gering. Ab ca. 5.000 EUR ist die Vollstreckung wirtschaftlich sinnvoll. Bei kleineren Beträgen sollte geprüft werden, ob eine außergerichtliche Einigung oder ein Mahnschreiben effizienter ist.
+
+**Kann der Schuldner während der Icra Takibi Insolvenz anmelden?**
+Ja, theoretisch. Ein Insolvenzantrag (İflas Talebi) würde das İcra-Verfahren suspendieren und in ein Insolvenzverfahren überleiten, in dem alle Gläubiger anteilsmäßig befriedigt werden. In der Praxis ist das bei privaten Schuldnern selten. Falls Insolvenzgefahr besteht, empfiehlt sich eine frühzeitige İhtiyati Haciz, die vor dem Insolvenzantrag eingetragen wurde und eine starke Rechtsposition sichert.
+
+---
+
+Dieser Artikel ist auch auf Türkisch verfügbar:
+[Türkiye'de İcra Takibi: Almanya'dan Alacak Tahsili →](https://www.hasandogru.de/tr/blog/turkiyede-icra-takibi-almanyadan-alacak-tahsili)
+
+Und auf Englisch für englischsprachige Familienmitglieder oder Berater:
+[Debt Collection in Turkey from Germany (Icra Takibi) →](https://www.hasandogru.de/en/blog/debt-collection-turkey-from-germany-icra-takibi)
+
+---
+
+*Dieser Artikel befasst sich ausschließlich mit dem türkischen Recht. Die Doğru Kanzlei berät gemäß § 207 BRAO ausschließlich im türkischen Recht. Für Fragen zum deutschen Recht wird die Konsultation eines in Deutschland zugelassenen Rechtsanwalts empfohlen.*
+
+---`,
+    contentTR: `*Bu makale yalnızca Türk hukukuna ilişkin genel bilgi amaçlıdır. Doğru Kanzlei, §207 BRAO kapsamında yalnızca Türk hukuku konularında danışmanlık vermektedir.*
+
+---
+
+Almanya'da yaşayan Türkler için bu tablo hepsi çok tanıdık: Türkiye'deki bir akrabaya para gönderilir, ama geri gelmez. Bir daire satılır, alıcı bakiye borcunu ödemez. Boşanma gerçekleşir, nafaka mahkemece belirlenir ama ödenmez. Ortada bir hak, Türkiye'de bir borçlu, Almanya'da ise ne yapacağını bilmeyen bir alacaklı vardır.
+
+Türkiye'ye gitmek zorunda mısınız? Hayır. İşi bırakmak, uçak bileti almak, aylarca Türkiye'de beklemek zorunda değilsiniz. Türk icra hukuku, 2004 sayılı İcra ve İflas Kanunu (İİK) çerçevesinde, alacaklıya son derece güçlü araçlar sunmaktadır: banka hesaplarını birkaç gün içinde bloke edebilirsiniz, gayrimenkullere tapu kısıtlaması koyabilirsiniz, nafaka ödemeyen eski eşi tazyik hapsiyle karşı karşıya bırakabilirsiniz. Tüm bunlar Almanya'dan, bir vekaletname aracılığıyla, avukatınız üzerinden yürütülür.
+
+Bu rehber, Almanya'dan Türkiye'de icra takibini baştan sona anlatmaktadır: ilamsız ve ilamlı icra farkı, banka haczi nasıl yapılır, gayrimenkul nasıl satışa çıkar, Almanya'daki mahkeme kararı Türkiye'de nasıl icraya konur ve borçlunun mal kaçırması nasıl önlenir.
+
+---
+
+## 1. İcra Takibi Nedir ve Hangi Durumlarda Gereklidir?
+
+İcra takibi, bir alacaklının hakkını borçludan mahkeme kararı olmaksızın ya da mahkeme kararına dayanarak zorla tahsil ettiği hukuki yoldur. Temel dayanak: **2004 sayılı İcra ve İflas Kanunu (İİK)**.
+
+İcra takibine başvurulabilecek başlıca durumlar şunlardır:
+
+- **Akrabalar arası borç**: Bankadan yapılan havale veya elden verilen, geri ödenmeyen para. Yazılı sözleşme olmasa bile delil yeterli olabilir.
+- **Gayrimenkul satışından doğan alacak**: Türkiye'deki dairenizi sattınız, alıcı bakiye bedeli ödemiyor. Ya da siz ödemenizi yaptınız, satıcı tapu devretmiyor.
+- **Kira alacağı**: Türkiye'deki kiracınız aylardır kira ödemiyor.
+- **Nafaka alacağı**: Mahkeme nafaka belirledi ama eski eşiniz ödemek istemiyor.
+- **Miras alacağı**: Bir mirasçı miras bırakanın mal varlığını ele geçirmiş, sizin payınızı ödemeyi reddediyor.
+- **Haksız fiil / dolandırıcılık tazminatı**: Türkiye'de maruz kaldığınız dolandırıcılık, sözleşme ihlali ya da trafik kazasından doğan tazminat alacağı.
+
+---
+
+## 2. İki Ana Yol: İlamsız İcra ve İlamlı İcra
+
+Türk icra hukuku iki temel yol sunar. Hangisini kullanacağınız, elinizde mahkeme kararı olup olmadığına bağlıdır.
+
+### İlamsız İcra Takibi (İİK m. 42–72): Mahkeme Kararı Olmadan
+
+İlamsız icra, Türkiye'deki en yaygın icra yoludur. Elinizdeki belge bir mahkeme kararı değil; banka dekontu, sözleşme, fatura veya senet olabilir. Doğrudan ilgili İcra Müdürlüğü'ne başvurulur, borçluya ödeme emri tebliğ edilir.
+
+**Prosedür adım adım:**
+
+**1. Adım — Takip Talebi:** Avukatınız, yetkili İcra Müdürlüğü'ne takip talebinde bulunur. Talepte; alacaklı ve borçlu bilgileri, alacak miktarı, alacağın hukuki dayanağı (borç senedi, sözleşme, havale dekontu) ve faiz talebi yer alır.
+
+**2. Adım — Ödeme Emri (İİK m. 60):** İcra Müdürlüğü borçluya ödeme emri tebliğ eder. Borçlunun iki seçeneği vardır: **7 gün içinde ödeme yapmak** ya da **7 gün içinde itiraz etmek**.
+
+**3. Adım — İtirazsız kalırsa:** Borçlu itiraz etmezse takip kesinleşir. Avukatınız derhal haciz talebinde bulunabilir.
+
+**3. Adım — İtiraz ederse:** Borçlu itiraz ederse takip durur. Bu noktada iki yolunuz vardır:
+
+- **İtirazın İptali Davası (İİK m. 67):** Asliye Hukuk Mahkemesi'nde açılır. Süre: itirazın tebliğinden itibaren **1 yıl**. Kazanırsanız mahkeme, borçluya alacak miktarının en az **%20'si** oranında icra inkâr tazminatı ödenmesine karar verebilir.
+- **İtirazın Kaldırılması (İİK m. 68):** Elinizdeki belge noter senedi, çek veya bono ise daha hızlı olan bu yola başvurabilirsiniz. İcra Mahkemesi'nde görülür, daha kısa sürer.
+
+### İlamlı İcra Takibi (İİK m. 32–41): Mahkeme Kararıyla
+
+Türk mahkemesinden alınmış bir karar, bir mahkeme sulhü ya da hakem kararı varsa süreç çok daha hızlıdır. Borçlunun alacağın esasına itiraz hakkı yoktur; yalnızca borcun ödendiğini veya zamanaşımına uğradığını ileri sürebilir.
+
+| | İlamsız İcra | İlamlı İcra |
+|---|---|---|
+| Gereken belge | Sözleşme / dekont / senet | Mahkeme kararı / sulh / hakem kararı |
+| İtiraz hakkı | 7 günde itiraz mümkün | Yalnızca ifa/zamanaşımı itirazı |
+| Hacize kadar süre | 2–4 hafta (itirazsız) | Birkaç gün |
+
+---
+
+## 3. Almanya'daki Mahkeme Kararını Türkiye'de İcraya Koymak: Tenfiz Davası
+
+Almanya'da bir Türk borçlu aleyhine mahkeme kararı aldıysanız ve bu kişi Türkiye'de mal varlığına sahipse, kararı Türkiye'de icra ettirebilirsiniz — ama bunun için önce **tenfiz davası** açmanız gerekir.
+
+**Hukuki dayanak:** MÖHUK (Milletlerarası Özel Hukuk ve Usul Hukuku Hakkında Kanun) m. 50–54.
+
+**Nasıl işler:**
+
+1. Alman mahkeme kararının kesinleşmiş olması gerekir.
+2. Karar apostil şerhi taşımalı ve Türkçe'ye noter onaylı tercümesi yapılmış olmalıdır.
+3. Türk mahkemesi (Asliye Hukuk Mahkemesi), kararın Türk kamu düzenine aykırı olmadığını ve karşılıklılık ilkesinin geçerli olduğunu (Almanya–Türkiye arasında geçerlidir) denetler.
+4. Tenfiz kararı kesinleşince ilamlı icra takibi başlatılabilir.
+
+**Süre:** Genellikle 3–6 ay.
+
+> ⚠️ **Önemli:** Almanya'da yalnızca ödeme emri (Mahnbescheid) aldıysanız, bu Türkiye'de tenfize **konu olamaz**. Mahnbescheid'ın tenfiz için gerekli olan "mahkeme kararı" niteliği yoktur. Bu durumda doğrudan ilamsız icra yoluna başvurmanızı ya da önce Almanya'da tam yargı ile karar almanızı öneririz.
+
+**Kritik strateji:** Tenfiz davası sürerken borçlunun mal varlığını elden çıkarmasını önlemek için aynı anda **ihtiyati haciz (İİK m. 257)** talep edin. Tenfiz kararı kesinleştiğinde mal varlığı hâlâ orada olacaktır.
+
+---
+
+## 4. Banka Haczi: Haciz İhbarnamesi ve Toplu Sorgu (İİK m. 89)
+
+Türkiye'de banka haczi, icra takibinin en hızlı ve etkili adımıdır. Avukatınız İcra Müdürlüğü aracılığıyla borçlunun bankalarına **haciz ihbarnamesi** gönderir. Bu, doğrudan bankaları muhatap alan bir haciz bildirisidir.
+
+Türk icra sisteminin en güçlü aracı: **UYAP (Ulusal Yargı Ağı Bilişim Sistemi)** üzerinden yapılan **Toplu Sorgu**. Avukatınız tek bir elektronik işlemle Türkiye'deki **tüm bankalar**a aynı anda sorgu gönderir. Bankalar birkaç saat içinde yanıt verir. Hesabı bulunan bankalar bakiyeyi derhal bloke eder.
+
+**Üç aşamalı ihbarname süreci:**
+
+- **1. Haciz İhbarnamesi:** Bankadan borçlunun hesabı ve bakiyesi sorulur (yanıt süresi 7 gün). Bakiye varsa derhal bloke edilir.
+- **2. Haciz İhbarnamesi:** İlk ihbarnameye yanıt verilmezse gönderilir. Banka yanıt vermezse borçlu konumuna düşer.
+- **3. Haciz İhbarnamesi:** Üçüncü kez yanıtsız kalınırsa banka, alacağı kendi mal varlığından ödemek zorunda kalır.
+
+> ⚠️ **Dikkat:** Toplu sorgu, borçlunun yalnızca Türkiye'deki banka hesaplarına ulaşır. Almanya'ya para transferi yaptığından şüpheleniyorsanız veya borçlu Türkiye'deki mal varlığını satıp yurt dışına çıkarmak üzereyse, gecikmeksizin ihtiyati haciz ve gerekirse mal kaçırma (TCK m. 289) şikâyeti gündeme gelebilir. Bu konuda avukatınızla acil görüşün.
+
+---
+
+## 5. Gayrimenkul Haczi ve Satışı
+
+Borçlunun Türkiye'de gayrimenkulü varsa bu taşınmazlar haczedilebilir. Haciz, Tapu Sicili'ne (tapu kütüğüne) işlenir; gayrimenkul artık satılamaz ve üzerine ipotek kurulamaz.
+
+**Satış aşaması:** Borçlu hacze rağmen ödeme yapmazsa gayrimenkul **açık artırma** ile satışa çıkarılır. İcra Müdürlüğü satışı yönetir. Satış bedelinden alacaklının alacağı (faiz ve masraflar dahil) karşılanır; artan tutar borçluya iade edilir.
+
+**Gerçekçi zaman takvimi:**
+
+| Aşama | Süre |
+|---|---|
+| Tapu üzerine haciz kaydı | Birkaç gün |
+| Kıymet takdiri (gayrimenkul değerleme) | 1–2 ay |
+| Satış ilanı ve ihale | 3–6 ay |
+| Satış bedelinin alacaklıya ödenmesi | 1–3 ay sonra |
+| **Toplam (haczden ödemeye)** | **6–12 ay** |
+
+Sonuç olarak: banka haczi çok daha hızlıdır. Mümkünse önce bankayı deneyin; gayrimenkul haczi, banka hesabı tespit edilemediğinde veya alacak büyük olduğunda devreye girer.
+
+---
+
+## 6. Nafaka İcra Takibi: Özel Hükümler ve Tazyik Hapsi
+
+Nafaka alacakları Türk icra hukukunda ayrıcalıklı bir yere sahiptir ve bu ayrıcalığın pratik önemi büyüktür.
+
+**Nafaka alacaklarına tanınan iki özel hak:**
+
+**1. Öncelik (İİK m. 206):** Aynı borçluya karşı birden fazla alacaklı varsa nafaka alacakları **en önce** ödenir. Diğer tüm alacaklılardan önce.
+
+**2. Tazyik Hapsi (İİK m. 344):** Nafaka borcunu ödemeyen kişi hakkında, alacaklının talebiyle İcra Ceza Mahkemesi'nden **3 aya kadar tazyik hapsi** kararı alınabilir. Bu bir suçlama değil, ödemeye zorlamak için kullanılan hukuki bir baskı aracıdır.
+
+> ⚠️ **Önemli:** Tazyik hapsi, uygulamada nafaka takibinin en güçlü silahıdır. Borçlunun büyük çoğunluğu, tazyik hapsi talebinin yapıldığını öğrenir öğrenmez ödeme yapar — fiilen hapsedilmeden önce. Nafaka ödenmiyor ve aylarca bekliyorsanız, hemen harekete geçin: her geçen ay hem birikmiş borcu büyütür hem de çocuğunuzun hakkını geciktirir.
+
+---
+
+## 7. Mal Kaçırmayı Önleyin: İhtiyati Haciz (İİK m. 257)
+
+Borçlunun mal varlığını elden çıkarma ihtimaline karşı, icra takibinden veya dava açılmadan önce bile **ihtiyati haciz** talep edebilirsiniz.
+
+İhtiyati haciz; ileride alacağın tahsilini güçleştirecek ya da tamamen engelleyecek bir durumun (gayrimenkulün satışa çıkarılması, hesap boşaltma girişimi, yurt dışına çıkış hazırlığı) varlığı halinde, mahkemeden alınan geçici bir tedbir kararıdır.
+
+**Önemli:** İhtiyati haciz kararı alındıktan sonra **7 gün içinde** asıl dava veya icra takibi başlatılması zorunludur; aksi hâlde ihtiyati haciz kalkar.
+
+**Pratik örnek:** Almanya'daki mahkemeden karar aldınız, tenfiz davası 4-6 ay sürecek. Bu süre içinde borçlu İstanbul'daki dairesini satabilir. Çözüm: Tenfiz davası açılırken eş zamanlı ihtiyati haciz talebi. Tapu üzerine tedbir konulur; daire satılamaz hale gelir.
+
+---
+
+## 8. Zamanaşımı: Alacağınız Ne Zaman Düşer?
+
+| Alacak Türü | Süre | Dayanak |
+|---|---|---|
+| Genel sözleşmeden doğan alacak | 10 yıl | TBK m. 146 |
+| Kira alacağı | 5 yıl | TBK m. 147 |
+| Faiz alacağı | 5 yıl | TBK m. 147 |
+| Nafaka (dönemsel edim) | 5 yıl | TBK m. 147 |
+| Haksız fiilden tazminat | 2 yıl (öğrenmeden) / azami 10 yıl | TBK m. 72 |
+| İlamlı icra (mahkeme kararı) | 10 yıl (kesinleşmeden itibaren) | İİK m. 39 |
+
+**Kritik kural:** İcra takibi başlatmak zamanaşımını **keser**. Her icra işlemi süreyi yeniden başlatır.
+
+> ⚠️ **Önemli:** Haksız fiil tazminatı (dolandırıcılık, kaza, zarar) söz konusuysa 2 yıllık kısa süre beklenmedik bir anda dolabilir. Özellikle "ne zaman öğrendiğim" tartışmalıdır ve mahkemelere göre değişir. Bir an bile geciktirmeyin.
+
+---
+
+## 9. 2026 İcra Masrafları
+
+| Kalem | Oran / Tutar | Açıklama |
+|---|---|---|
+| Peşin Harç (İlamsız İcra) | Alacağın binde **4,55**'i | Takip başlarken ödenir |
+| Tahsil Harcı — ödeme emrinden önce | Binde **4,55** | Borçlu tebliğden önce öderse |
+| Tahsil Harcı — hacizden sonra, satıştan önce | Binde **9,10** | Haciz sonrası gönüllü ödeme |
+| Tahsil Harcı — satış yoluyla | Binde **15,38** | Açık artırma ile tahsilat |
+| Başvurma Harcı | **732,00 TL** (2026 sabit) | Takip başvurusu |
+| Cezaevi Harcı | Tahsil edilen miktarın **%2**'si | Tüm tahsilatlarda uygulanır |
+| Tebligat Giderleri | ~100–200 TL/tebligat | Düşük |
+| Avukatlık Ücreti | Sözleşmeyle belirlenir | Başarı ücreti mümkündür |
+
+*⚠️ Web yöneticisine not: Bu oranlar Haziran 2026 tarifine göredir (Harçlar Kanunu, 1 sayılı Tarife B bölümü). Yayından önce güncel tarife ile karşılaştırınız.*
+
+**Örnek hesap:** 50.000 € tutarındaki bir alacakta peşin harç yaklaşık 200 €, haciz sonrası tahsil harcı yaklaşık 455 €'dur. Toplam yargı masrafı 650-700 € civarındadır. 5.000 €'nun üzerindeki alacaklarda icra takibi ekonomik açıdan her zaman mantıklıdır.
+
+---
+
+## 10. Almanya'dan Adım Adım: Vekaletname ile Tam Temsil
+
+| Adım | Yapılacak İşlem | Kim Yapar |
+|---|---|---|
+| 1 | Vekaletname çıkarma (Türk Konsolosluğu veya Alman Noteri + apostil) | Siz |
+| 2 | Takip talebinin hazırlanması ve sunulması | Avukatınız |
+| 3 | UYAP üzerinden toplu banka sorgusu | Avukatınız |
+| 4 | Tapu üzerine gayrimenkul haczi | Avukatınız |
+| 5 | Nafaka takibinde tazyik hapsi talebi (gerekirse) | Avukatınız |
+| 6 | Açık artırma ya da banka transferi yoluyla tahsilat | İcra Müdürlüğü / Avukat |
+| 7 | Tahsil edilen tutarın size aktarılması | Avukatınız |
+
+**Türkiye'ye gitmenize hiç gerek yok.** Vekaletname için en yakın Türk Konsolosluğu'na bir kez gidip imza atmanız yeterli.
+
+---
+
+## 11. Gerçek Hayattan Örnekler
+
+**Örnek 1: Kardeşe verilen ödünç para**
+Mannheim'da yaşayan H. Bey, 2021'de İstanbul'daki kardeşine 30.000 € banka havalesiyle ödünç para verdi. Yazılı sözleşme yok ama "ödünç" açıklamalı banka dekontu var. Kardeş parayı geri ödemiyor. Çözüm: İlamsız icra takibi. Banka dekontu mahkemelerce güçlü delil kabul edilir. Kardeş itiraz ederse itirazın iptali davası açılır ve kazanılırsa %20 icra inkâr tazminatı talep edilir.
+
+**Örnek 2: Tahsil edilemeyen kira**
+Stuttgart'ta ikamet eden M. Hanım, Antalya'da bir dairesi var. Kiracı 8 aydır kira ödemiyor (toplam 72.000 TL). Çözüm: Tahliye talepli icra takibi (İİK m. 269). Hem birikmiş kiralar tahsil edilir hem de kiracı tahliye edilir. Kiracının ödeme emrine 7 günde, tahliyeye 30 günde itiraz hakkı vardır.
+
+**Örnek 3: Nafaka ödemeyen eski eş**
+Mannheim'dan A. Hanım. İstanbul'daki eski eşi, mahkemece hükmedilen aylık 15.000 TL çocuk nafakasını bir yıldır ödemiyor. Çözüm: İlamlı icra takibi (nafaka kararı ilamın kendisidir) + İcra Ceza Mahkemesi'ne tazyik hapsi talebi. Uygulamada bu kombinasyon büyük çoğunlukla tahsilatla sonuçlanır.
+
+**Örnek 4: Almanya'daki mahkeme kararının Türkiye'de icra edilmesi**
+Ankara'da gayrimenkulü olan bir Türk uyruklu borçlu aleyhine Almanya'da 80.000 €'luk ödeme kararı alındı. Çözüm: Tenfiz davası (MÖHUK m. 50–54) + eş zamanlı ihtiyati haciz (gayrimenkulün satışını önlemek için). Tenfiz kesinleştikten sonra ilamlı icra ve açık artırma ile tahsilat.
+
+---
+
+## 12. Doğru Kanzlei Olarak Nasıl Çalışıyoruz
+
+Türkiye'deki alacak takibi için ihtiyacınız olan şey nettir: UYAP'a erişimi olan, Türk icra sistemini içeriden bilen ve özellikle banka haczi ile ihtiyati haciz gibi zaman kritik işlemlerde anında hareket edebilen bir avukat.
+
+[Doğru Kanzlei](https://www.hasandogru.de/tr/hizmetler) olarak, Türkiye'deki icra takiplerini doğrudan Türk İcra Müdürlüğü'nden yürütüyoruz. UYAP üzerinden tüm Türk bankalarına toplu sorgu gönderiyoruz, tapu işlemlerini takip ediyoruz ve yasal süreleri gerçek zamanlı olarak izliyoruz. Ankara Barosu (Sicil No: 47068) ve Rechtsanwaltskammer Karlsruhe (§207 BRAO) üyeliğimiz sayesinde Türkiye'de doğrudan temsil sağlıyoruz; herhangi bir aracı veya ortak büro kullanmıyoruz.
+
+Av. Hasan Doğru, avukatlık öncesinde yaklaşık 10 yıl Emniyet Genel Müdürlüğü bünyesinde **Özel Harekat** biriminde görev yapmıştır. Bu deneyim, Türk kamu kurumlarının nasıl işlediğini ve nasıl hızlı sonuç alındığını derinlemesine kavramasını sağlamıştır.
+
+Bağlantılı davalar — tenfiz, dolandırıcılık şikâyeti (TCK m. 157), güveni kötüye kullanma (TCK m. 155) — aynı anda paralel yürütülür. Tek elden.
+
+**İletişim:**
+Doğru Kanzlei | Av. Hasan Doğru
+Mannheim: R1 2-3, 68161 Mannheim | Tel: +49 176 6122 1210
+Ankara: Aşağı Ovecler Mah. 1322. Cd. 45/9, Çankaya | Tel: +90 533 237 59 18
+E-posta: info@hasandogru.de | Web: www.hasandogru.de
+
+---
+
+## 13. Sıkça Sorulan Sorular
+
+**Almanya'dan Türkiye'de icra takibi başlatabilir miyim?**
+Evet. Türk vatandaşı olmak şart değil. Almanya'da ikamet eden herkes, Türkiye'deki borçlulara karşı ilamsız ya da ilamlı icra takibi başlatabilir. Türk konsolosluğundan alınan vekaletname yeterlidir.
+
+**Elimde sözleşme yoksa ne olur?**
+Sözleşme olmasa da banka havalesi, WhatsApp yazışmaları, e-postalar ya da tanık beyanları delil olarak kullanılabilir. Türk mahkemeleri, ödünç ilişkisi gösteren banka dekontlarını güçlü delil kabul eder.
+
+**Almanya'daki mahkeme kararını direkt kullanabilir miyim?**
+Hayır. Önce tenfiz davası gerekir. Almanya'daki karar kesinleştiyse ve apostili varsa, Türk mahkemesi tenfize onay verir ve ilamlı icra başlatılabilir. Yalnızca ödeme emri (Mahnbescheid) tenfize konu olamaz.
+
+**Borçlunun Türkiye'de hiç malı yoksa?**
+Toplu sorgu sonucunda hesap, gayrimenkul ya da araç bulunamazsa aciz vesikası düzenlenir. 2 yıl geçerlidir; borçlu ileride mal edinirse yeniden haciz yoluna gidilebilir.
+
+**Nafaka icrasında süreç ne kadar sürer?**
+İlamlı icra takibinde ödeme emri birkaç gün içinde tebliğ edilir. Tazyik hapsi talebi birkaç hafta içinde sonuçlanır. Uygulamada çoğu borçlu bu aşamada ödeme yapar.
+
+**Borçlu Almanya'ya taşınırsa ne olur?**
+Türkiye'deki tüm mal varlığı (banka hesabı, gayrimenkul, araç) haczedilebilir olmaya devam eder. Borçlu Almanya'ya taşınıp burada mal edinirseyse, Almanya'da ayrıca icra ya da dava yoluna başvurulabilir.
+
+---
+
+Bu makaleyi Almanca okuyanlar için de yayınladık:
+[Zwangsvollstreckung in der Türkei: Forderungen aus Deutschland beitreiben →](https://www.hasandogru.de/de/blog/zwangsvollstreckung-tuerkei-forderungen-aus-deutschland)
+
+Bu makaleyi İngilizce okuyanlar için de yayınladık:
+[Debt Collection in Turkey from Germany (Icra Takibi) →](https://www.hasandogru.de/en/blog/debt-collection-turkey-from-germany-icra-takibi)
+
+---
+
+*Bu makale yalnızca Türk hukukuna ilişkin genel bilgi amaçlıdır. Doğru Kanzlei, §207 BRAO kapsamında yalnızca Türk hukuku konularında danışmanlık vermektedir.*
+
+---`,
+    contentEN: `*This article addresses Turkish law exclusively. Doğru Kanzlei advises on Turkish law under § 207 BRAO and does not advise on German domestic law.*
+
+---
+
+You live in Germany — or perhaps in the Netherlands, the UK, or Sweden. Somewhere in Turkey, someone owes you money. Maybe it's a sibling who borrowed €20,000 and stopped returning your calls. Maybe it's the buyer of your Istanbul apartment who has been sitting on the final payment for two years. Maybe it's your ex-spouse, who has a court order against them for child support but hasn't paid a single lira in months.
+
+The question you're really asking is not "can this be done?" It's "do I have to drop everything, fly to Turkey, and spend months navigating a legal system I don't fully understand?" The answer is no. Turkish enforcement law — built around the İcra ve İflas Kanunu (IIK), Law No. 2004 — gives creditors abroad some of the most effective cross-border tools available anywhere: bank accounts can be frozen within days, property can be seized and blocked from sale, and debtors who ignore maintenance orders can face coercive detention. All of it can be done from Germany, by power of attorney, without you setting foot in Turkey.
+
+This guide explains the entire process — from the two main enforcement pathways to bank account seizure, property enforcement, recognising German judgments in Turkey, and protecting yourself when the debtor might move their assets. No legal background assumed.
+
+---
+
+## 1. What Is Icra Takibi — and When Do You Need It?
+
+İcra Takibi is Turkey's civil enforcement procedure. It is the legal mechanism by which a creditor forces a debtor to pay — through bank account seizure, property liens, wage garnishment, or forced sale — when the debtor refuses to pay voluntarily.
+
+The law governing all of this is the **2004 sayılı İcra ve İflas Kanunu (IIK)** — Turkey's Enforcement and Bankruptcy Law. Think of it as the Turkish equivalent of the German Zwangsvollstreckung, or enforcement proceedings in the UK.
+
+**Who can use it?**
+Anyone — regardless of nationality. German nationals, British Turkish dual citizens, Dutch residents, non-EU nationals — all have identical enforcement rights to Turkish creditors under Turkish law. Nationality is irrelevant.
+
+**What kind of claims qualify?**
+
+- **Unpaid loans between family members**: money sent by bank transfer that was never repaid — even without a written contract
+- **Real estate transactions**: a buyer who won't pay the final instalment, or a seller who took your money but won't transfer the title deed
+- **Unpaid rent**: you own a property in Turkey and your tenant has stopped paying
+- **Child support or spousal maintenance (Nafaka)**: a Turkish court set the amount — your ex pays nothing
+- **Damages**: fraud, breach of contract, a road accident in Turkey
+- **Inheritance disputes**: a co-heir has taken assets from the estate and refuses to pay your share
+
+---
+
+## 2. Two Enforcement Pathways: İlamsız and İlamlı İcra
+
+Turkish law offers two routes, depending on whether you already have a court judgment.
+
+### İlamsız İcra — Enforcement Without a Judgment (IIK Art. 42–72)
+
+This is the most common path and, crucially, you don't need a court judgment to start it. You can go directly to the enforcement office (İcra Müdürlüğü) with whatever documentation supports your claim — a bank transfer receipt, a contract, an invoice, even WhatsApp messages.
+
+**How it works:**
+
+Your Turkish lawyer files a Takip Talebi (enforcement application). The İcra Müdürlüğü issues an Ödeme Emri (payment order) to the debtor. The debtor now has **7 days** to either pay or file an İtiraz (objection). If they do neither, your claim becomes final and you can request seizure (Haciz) immediately.
+
+**What if the debtor objects?**
+
+Enforcement pauses. But you have two responses:
+
+Option A — **İtirazın İptali Davası** (IIK Art. 67): a lawsuit before the ordinary civil court (Asliye Hukuk Mahkemesi) to annul the objection. Time limit: **1 year** from the objection. If you win, the court may award an additional **20% penalty** (İcra İnkâr Tazminatı) on top of your original claim.
+
+Option B — **İtirazın Kaldırılması** (IIK Art. 68): a faster route before the enforcement court (İcra Mahkemesi), available when you hold a written acknowledgement of debt — a promissory note (Senet or Bono), a cheque (Çek), or a formal deed of acknowledgement.
+
+### İlamlı İcra — Enforcement With a Judgment (IIK Art. 32–41)
+
+If you already have a Turkish court judgment, a court settlement, or an arbitral award, enforcement is faster and more direct. The debtor cannot challenge the underlying debt — they can only argue that they've already paid, or that the claim has expired. Seizure can therefore begin within days of filing.
+
+| | İlamsız İcra | İlamlı İcra |
+|---|---|---|
+| What you need | Any supporting document | A Turkish court judgment or settlement |
+| Debtor's right to object | 7-day objection right | Only payment or limitation defence |
+| Time to seizure (no objection) | 2–4 weeks | Days |
+| Typical use case | Loans, unpaid rent, contracts | Maintenance, court-awarded damages |
+
+---
+
+## 3. Does My German Court Judgment Work in Turkey?
+
+This is one of the most common questions from people living in Germany — and the answer has an important catch.
+
+**The short answer:** A German court judgment does work in Turkey, but not directly. It must first go through a recognition and enforcement proceeding called **Tenfiz** (governed by MÖHUK — Turkey's Private International Law, Articles 50–54). Think of Tenfiz as the bridge between the German legal system and the Turkish one: a Turkish court reviews the German judgment and, once satisfied it meets the legal criteria, declares it locally enforceable. After that, you can use İlamlı İcra.
+
+**The Tenfiz criteria (all must be met):**
+
+- The German judgment must be final (rechtskräftig) and not subject to further appeal
+- It must carry an apostille and a certified Turkish translation
+- It must not violate Turkish public order (ordre public)
+- Reciprocity must exist between Germany and Turkey — it does
+
+**How long does Tenfiz take?** Typically **3–6 months**.
+
+> ⚠️ **Important:** A German Mahnbescheid (payment order issued without a full trial) cannot be the basis for Tenfiz. It does not qualify as a "court judgment" under Turkish international private law. If you only have a Mahnbescheid, the recommended route is to start an İlamsız İcra in Turkey directly, using whatever evidence you have of the debt.
+
+**The strategic move during Tenfiz:** While you're waiting 3–6 months for the Tenfiz to finalise, the debtor could sell their Istanbul apartment or empty their bank accounts. Don't let that happen. File for **İhtiyati Haciz** (interim attachment, IIK Art. 257) at the same time as you file for Tenfiz — this freezes the debtor's Turkish assets for the duration of the process.
+
+---
+
+## 4. How Bank Account Seizure Works in Turkey
+
+Bank account seizure is the fastest and most effective enforcement tool in the Turkish system — and it's more powerful here than in most European countries, because of the UYAP digital infrastructure.
+
+**The instrument:** Haciz İhbarnamesi (garnishment notice, IIK Art. 89). Your lawyer, through the İcra Müdürlüğü, sends a formal garnishment notice directly to Turkish banks.
+
+**The UYAP advantage:** Turkey's national court IT system (UYAP — Ulusal Yargı Ağı Bilişim Sistemi) allows your lawyer to send a **Toplu Sorgu** — a single electronic query directed simultaneously to **every bank** in Turkey. Within hours, the system returns a list of which banks hold accounts for the debtor and what balances are present. Any confirmed balance is frozen immediately. This means you don't need to know which bank the debtor uses — the system finds it automatically.
+
+**The three-stage process:**
+
+1. **First İhbarname**: Banks are asked whether the debtor has accounts and available funds. They must respond within 7 days. Any confirmed balance is frozen on the spot.
+2. **Second İhbarname**: If a bank doesn't respond, a second notice is sent warning the bank that it faces liability if it continues to ignore the order.
+3. **Third İhbarname**: A bank that still doesn't respond becomes a debtor itself and must pay from its own funds.
+
+> ⚠️ **Important:** The Toplu Sorgu only reaches Turkish bank accounts. If you have reason to believe the debtor has been transferring money abroad or is about to flee Turkey with their assets, speak to your lawyer urgently about İhtiyati Haciz and whether criminal charges for asset concealment (TCK Art. 289 — Mal Kaçırma) are appropriate alongside the civil enforcement.
+
+---
+
+## 5. Property Enforcement: Seizing and Selling Real Estate
+
+If the debtor owns real estate in Turkey — an apartment, a house, land — it can be seized and ultimately sold to satisfy your debt.
+
+**How property seizure works:**
+Your lawyer applies for a Haciz (seizure) order. The İcra Müdürlüğü registers the seizure in the Tapu Sicili (Turkey's land registry, comparable to HM Land Registry in the UK or the Grundbuch in Germany). From that moment, the debtor cannot sell, mortgage, or otherwise dispose of the property.
+
+**If the debtor still doesn't pay**, the property goes to **Açık Artırma** — a public auction conducted by the İcra Müdürlüğü. The proceeds cover your claim (debt + interest + enforcement costs). Any surplus goes back to the debtor.
+
+**Realistic timeline:**
+
+| Stage | Duration |
+|---|---|
+| Seizure registration in land registry | A few days |
+| Property valuation | 1–2 months |
+| Auction notice and sale | 3–6 months |
+| Payment to creditor after auction | 1–3 months after sale |
+| **Total (from seizure to payment)** | **6–12 months** |
+
+The practical takeaway: always try bank account seizure first. It's faster, cheaper, and more direct. Move to property enforcement when there are no bank accounts to find, or when the property value is needed to cover a larger claim.
+
+---
+
+## 6. Maintenance and Child Support: Special Rules and Coercive Detention
+
+If your claim is for unpaid child support (İştirak Nafakası) or spousal maintenance (Yoksulluk Nafakası), you have access to tools that don't exist for ordinary debt claims.
+
+**Priority status:** Maintenance claims rank first in the distribution of enforcement proceeds under IIK Art. 206. If the debtor has multiple creditors, your maintenance claim is paid out before all others.
+
+**Tazyik Hapsi — coercive detention (IIK Art. 344):** This is the most powerful tool in maintenance enforcement. If a debtor who has been served with an İlamlı İcra payment order for maintenance still refuses to pay, you can apply to the İcra Ceza Mahkemesi (enforcement criminal court) for Tazyik Hapsi — coercive detention of up to **3 months**. This is not a criminal sentence. The debtor is not being punished for a crime. They are being compelled to pay. The moment they pay, they are released.
+
+> ⚠️ **Important:** In practice, the filing of a Tazyik Hapsi application alone is usually enough. The overwhelming majority of maintenance debtors pay when they learn that a detention order has been applied for — before it is actually granted. If your ex-partner in Turkey has not paid court-ordered maintenance for months, do not wait. Every month of delay is a month your child's legal entitlement goes unpaid.
+
+---
+
+## 7. Freeze Assets Before They Disappear: İhtiyati Haciz (IIK Art. 257)
+
+The İhtiyati Haciz — interim or provisional attachment — is a pre-emptive freeze order you can obtain before you've even started your main enforcement case. It's the equivalent of a freezing injunction in English law, or an einstweilige Verfügung in German law.
+
+**When to use it:**
+When you have credible reason to believe the debtor is about to move assets out of reach — selling property, emptying accounts, or leaving Turkey. You don't need a final judgment. You need to demonstrate (a) a plausible claim and (b) a genuine risk of asset dissipation.
+
+**Key rule:** After the İhtiyati Haciz order is granted, you must file your main claim or enforcement action within **7 days** — otherwise the provisional attachment lapses.
+
+**The most important use case for people in Germany:**
+You've won a German court judgment. The Tenfiz process will take 3–6 months. In the meantime, the debtor is planning to sell their apartment in Ankara. File for İhtiyati Haciz immediately alongside the Tenfiz application. The property gets blocked in the land registry. When Tenfiz finalises, the asset is still there.
+
+---
+
+## 8. Limitation Periods: How Long Do You Have?
+
+| Claim Type | Limitation Period | Legal Basis |
+|---|---|---|
+| General contract claims | 10 years | TBK Art. 146 |
+| Rent arrears | 5 years | TBK Art. 147 |
+| Interest claims | 5 years | TBK Art. 147 |
+| Periodic payments (e.g. maintenance) | 5 years | TBK Art. 147 |
+| Tort / damage claims | 2 years from knowledge / 10 years absolute | TBK Art. 72 |
+| Enforcement of a court judgment (İlamlı İcra) | 10 years from finality | IIK Art. 39 |
+
+**The key rule:** Starting an İcra Takibi **interrupts** the limitation period. Every enforcement action restarts the clock.
+
+> ⚠️ **Important:** The 2-year period for tort/damage claims (fraud, accidents, breach causing loss) can expire faster than most people realise — and the start date (when you "knew" about the damage) is often contested. If your claim involves any kind of damage or wrongdoing, get legal advice as early as possible.
+
+---
+
+## 9. What Does Enforcement in Turkey Cost? (2026 Figures)
+
+| Fee | Rate / Amount | Notes |
+|---|---|---|
+| Peşin Harç (upfront court fee — İlamsız İcra) | **4.55‰** of claim value | Paid at application |
+| Tahsil Harç — debtor pays before payment order | **4.55‰** | Best outcome for debtor |
+| Tahsil Harç — debtor pays after seizure, before auction | **9.10‰** | Most common outcome |
+| Tahsil Harç — recovery through auction | **15.38‰** | Worst case — property sold |
+| Başvurma Harcı (application fee) | **732 TL** (2026 fixed) | |
+| Cezaevi Harcı (prison construction levy) | **2%** of recovered amount | Applied to all recoveries |
+| Tebligat (service/delivery costs) | ~100–200 TL per notice | Minor |
+| Lawyer fees | By agreement | Success fees possible |
+
+*⚠️ Note for webmaster: Fee rates per June 2026 tariff (Harçlar Kanunu, Schedule 1/B). Verify against the current tariff before publishing.*
+
+**In practice:** For a €50,000 claim, total court fees are roughly €200–700, depending on how quickly the debtor pays. That's less than 1.5% of the claim value. Enforcement is economically worthwhile for any claim above approximately €5,000.
+
+---
+
+## 10. The Complete Step-by-Step: Enforcing from Germany Without Travelling
+
+| Step | Action | Who Does It |
+|---|---|---|
+| 1 | Get a Vekaletname (power of attorney) at a Turkish consulate or German notary with apostille | You |
+| 2 | Send documents to your Turkish lawyer (bank transfers, contracts, court orders, messages) | You |
+| 3 | Lawyer files Takip Talebi at the relevant İcra Müdürlüğü | Your lawyer |
+| 4 | İcra Müdürlüğü issues Ödeme Emri (payment order) to debtor | İcra Müdürlüğü |
+| 5 | Toplu Sorgu via UYAP — simultaneous query to all Turkish banks | Your lawyer |
+| 6 | Simultaneous land registry block on known properties | Your lawyer |
+| 7 | For maintenance: file Tazyik Hapsi application if needed | Your lawyer |
+| 8 | Recovered funds transferred to you | İcra Müdürlüğü / Lawyer |
+
+**You do not travel to Turkey.** The only thing you need to do in person is sign the power of attorney — which you can do at any Turkish consulate in Germany (Frankfurt, Munich, Berlin, Hamburg, Cologne, Stuttgart) or at a German notary (with apostille added).
+
+---
+
+## 11. Real-World Scenarios
+
+**Scenario 1: A family loan that wasn't repaid**
+Mr K., living in Mannheim, transferred €30,000 to his brother in Ankara in 2021. No written contract — but the bank transfer clearly shows "Loan" in the reference field. His brother stopped responding. Solution: İlamsız İcra. The bank transfer is strong evidence in Turkish courts. If the brother objects, the İtirazın İptali Davası follows — with a potential 20% penalty if the objection is dismissed.
+
+**Scenario 2: Unpaid rent on a Turkish property**
+Mrs M. in Stuttgart owns a flat in Antalya. Her tenant hasn't paid rent in 8 months — a total of around 72,000 TL. Solution: Tahliye Talepli İcra Takibi — a specific form of İlamsız İcra that simultaneously claims the arrears and requests possession of the property (IIK Art. 269). The tenant has 7 days to object to the payment demand and 30 days to vacate.
+
+**Scenario 3: Child support enforcement**
+Mrs A. in Mannheim. Her ex-husband in Istanbul hasn't paid court-ordered monthly child support of 15,000 TL for a year. Solution: İlamlı İcra (the court order is the title) + Tazyik Hapsi application to the İcra Ceza Mahkemesi. In practice, this combination resolves in payment before any detention order is executed.
+
+**Scenario 4: Enforcing a German judgment in Turkey**
+Mr B. won a €80,000 payment judgment from a German court against a Turkish national who owns property in Ankara. Solution: File Tenfiz (MÖHUK Art. 50–54) + simultaneous İhtiyati Haciz on the Ankara property. After Tenfiz is finalised: İlamlı İcra with property auction.
+
+**Scenario 5: A property sale that went wrong**
+A Turkish-German family sold their family home near Izmir. The buyer paid a deposit but has been refusing to pay the final 40,000 TL instalment for 18 months, claiming defects that were never part of the agreement. Solution: İlamsız İcra using the notarial sale contract as evidence. If the buyer objects, the İtirazın İptali Davası can be supported by the contract and surveyor records — and the buyer risks the 20% penalty on top.
+
+---
+
+## 12. How Doğru Kanzlei Handles These Cases
+
+Effective debt enforcement in Turkey requires a lawyer with direct UYAP access, real knowledge of how the İcra Müdürlüğü system works in practice, and the experience to act quickly when time is critical — particularly for İhtiyati Haciz and the 7-day windows that run throughout this process.
+
+[Doğru Kanzlei](https://www.hasandogru.de/en/services) holds dual bar membership with the Ankara Bar Association (Registration No. 47068) and the Karlsruhe Bar Association (§ 207 BRAO). Av. Hasan Doğru files İcra Takibi proceedings directly with the Turkish İcra Müdürlüğü, runs Toplu Sorgu queries across all Turkish banks via UYAP, and monitors deadlines and service notifications in real time. No intermediary Turkish law firm. No relay through a third-party office.
+
+Before his legal career, Hasan Doğru spent approximately ten years in the Özel Harekat (Special Operations Unit) of the Turkish National Police. That experience gives him a practical understanding of how Turkish state institutions operate — and how to move them quickly.
+
+Connected proceedings — Tenfiz of a German judgment, criminal fraud complaints under TCK Art. 157, or breach of trust under TCK Art. 155 — can be run in parallel, all from one office.
+
+**Contact:**
+Doğru Kanzlei | Av. Hasan Doğru
+Mannheim: R1 2-3, 68161 Mannheim | Tel: +49 176 6122 1210
+Ankara: Aşağı Ovecler Mah. 1322. Cd. 45/9, Çankaya | Tel: +90 533 237 5918
+Email: info@hasandogru.de | Web: www.hasandogru.de
+
+---
+
+## 13. Frequently Asked Questions
+
+**Can I collect a debt in Turkey if I live outside Germany — say, in the UK or Netherlands?**
+Yes. Nothing in Turkish enforcement law limits it to Germany-based creditors. Anyone residing outside Turkey — regardless of country — can use the same procedures. The Vekaletname process works through Turkish consulates worldwide.
+
+**I don't have a written contract. Can I still enforce?**
+Yes. For İlamsız İcra, you don't need a formal contract. A bank transfer with a reference showing the purpose of the payment, WhatsApp messages acknowledging the debt, emails, witnesses — all of these can support your claim. If the debtor objects, the evidence is assessed by a court. Bank transfers are treated as particularly strong evidence of a loan relationship in Turkish courts.
+
+**What if the debtor has no assets?**
+If the Toplu Sorgu finds no bank accounts and there are no properties or vehicles registered to the debtor, the İcra Müdürlüğü can issue an Aciz Vesikası — a certificate of insolvency. This document is valid for 2 years and allows you to restart enforcement if the debtor later acquires assets.
+
+**Can the debtor just declare bankruptcy to avoid paying?**
+Theoretically yes — but private individuals rarely do so in Turkey. If bankruptcy becomes a concern, an early İhtiyati Haciz registered before the bankruptcy petition is filed secures your position above later creditors in the insolvency ranking.
+
+**What is a Vekaletname and where do I get one?**
+A Vekaletname is a notarised power of attorney authorising your Turkish lawyer to act on your behalf in Turkey. You can get one at any Turkish consulate in Germany — Frankfurt, Munich, Berlin, Hamburg, Cologne, Stuttgart — or from a German notary (who adds an apostille to make it valid in Turkey). You do not need to go to Turkey. Our guide on Turkish powers of attorney explains the process in detail.
+
+**Is there a minimum claim amount worth enforcing?**
+Turkish court fees are low — roughly 0.5–1.5% of the claim. Enforcement is generally economically worthwhile from about €5,000 upwards. Below that, an amicable demand letter from your lawyer is often a more cost-efficient first step.
+
+---
+
+This guide is also available in Turkish:
+[Türkiye'de İcra Takibi: Almanya'dan Alacak Tahsili →](https://www.hasandogru.de/tr/blog/turkiyede-icra-takibi-almanyadan-alacak-tahsili)
+
+And in German for German-speaking family members or advisers:
+[Zwangsvollstreckung in der Türkei: Forderungen aus Deutschland beitreiben →](https://www.hasandogru.de/de/blog/zwangsvollstreckung-tuerkei-forderungen-aus-deutschland)
+
+---
+
+*This article addresses Turkish law exclusively. Doğru Kanzlei advises on Turkish law under § 207 BRAO and does not advise on German domestic law.*
+
+---`,
+    category: "Türk Hukuku — İcra Hukuku",
+    categoryDE: "Türkisches Recht — Zwangsvollstreckung",
+    categoryEN: "Turkish Law — Enforcement",
+    image: debtCollectionImg,
+    dateDE: "2. Juni 2026",
+    dateTR: "2 Haziran 2026",
+    dateEN: "2 June 2026",
+    readTimeDE: "18 Min. Lesezeit",
+    readTimeTR: "17 dk okuma",
+    readTimeEN: "18 min read",
+    publishedAt: "2026-06-02",
+    modifiedAt: "2026-06-02",
+    keywordsDE: "zwangsvollstreckung türkei, icra takibi deutschland, forderungen türkei beitreiben, kontopfändung türkei, inkasso türkei, deutsches urteil türkei vollstrecken, tenfiz verfahren, anwalt türkisches recht deutschland",
+    keywordsTR: "türkiyede icra takibi, almanya türkiye alacak tahsili, ilamsız icra almanya, banka haczi türkiye, tenfiz davası almanya, haciz ihbarnamesi, ihtiyati haciz, icra avukatı almanya, nafaka icra takibi",
+    keywordsEN: "debt collection turkey, icra takibi, enforce debt turkey from germany, bank account seizure turkey, turkish enforcement law, tenfiz recognition german judgment turkey, turkish lawyer germany, nafaka enforcement turkey",
+    faqDE: [
+          {
+                "question": "Kann ich in der Türkei vollstrecken, wenn ich in Deutschland lebe?",
+                "answer": "Ja. Das türkische Vollstreckungsrecht (IIK) macht keinen Unterschied nach Staatsangehörigkeit oder Wohnsitz. Deutsche Staatsangehörige und EU-Bürger können dieselben Vollstreckungsverfahren nutzen wie türkische Gläubiger. Sie benötigen lediglich eine notariell beglaubigte Vollmacht (Vekaletname) für Ihren türkischen Anwalt — der Rest läuft aus der Türkei, ohne dass Sie reisen müssen."
+          },
+          {
+                "question": "Kann ich ein deutsches Urteil direkt in der Türkei vollstrecken?",
+                "answer": "Nein, nicht direkt. Ein deutsches Urteil muss zunächst durch ein Tenfiz-Verfahren (MÖHUK Art. 50–54) von einem türkischen Gericht für vollstreckbar erklärt werden. Erst danach kann die Ilamlı İcra Takibi eingeleitet werden. Das Tenfiz-Verfahren dauert in der Regel 3–6 Monate. Ein wichtiger Hinweis: Ein deutscher Vollstreckungsbescheid (ohne Urteil) reicht nicht — es muss ein Urteil mit Rechtskraft und Apostille sein."
+          },
+          {
+                "question": "Wie schnell kann eine Kontopfändung in der Türkei erfolgen?",
+                "answer": "Eine Kontopfändung (Haciz İhbarnamesi, IIK Art. 89) kann in wenigen Tagen bis zwei Wochen erfolgen. Über das elektronische UYAP-System richtet Ihr Anwalt eine Toplu Sorgu (Sammelabfrage) gleichzeitig an alle türkischen Banken. Banken mit Guthaben des Schuldners sperren das Konto sofort und melden zurück. Bei der İlamsız İcra (ohne Urteil) setzt das voraus, dass der Schuldner nicht innerhalb von 7 Tagen widerspricht."
+          },
+          {
+                "question": "Was kostet eine Icra Takibi in der Türkei?",
+                "answer": "Die Gerichtsgebühren sind im Verhältnis zur Forderungshöhe gering. Die Peşin Harç (Vorschussgebühr) beträgt derzeit 4,55 Promille der Forderungssumme. Die Tahsil Harç (Abschlussgebühr) liegt je nach Verfahrensstadium zwischen 4,55 und 15,38 Promille. Bei einer Forderung von 50.000 EUR fallen also Gerichtsgebühren von ca. 200–800 EUR an. Hinzu kommen das Anwaltshonorar und Zustellungskosten. Die Vollstreckung lohnt sich in der Regel ab Forderungen von etwa 5.000 EUR aufwärts."
+          },
+          {
+                "question": "Was passiert, wenn der Schuldner Widerspruch einlegt?",
+                "answer": "Bei der İlamsız İcra hat der Schuldner 7 Tage Zeit, Widerspruch (İtiraz) einzulegen. Tut er das, stoppt das Vollstreckungsverfahren zunächst. Sie haben dann zwei Möglichkeiten: die İtirazın İptali Davası (Klage auf Aufhebung des Widerspruchs, Frist: 1 Jahr) beim ordentlichen Gericht, oder die İtirazın Kaldırılması beim Vollstreckungsgericht, falls Sie ein schriftliches Schuldanerkenntnis (Senet, Çek, Bono) haben. Gewinnen Sie die İtirazın İptali, kann das Gericht dem Schuldner zusätzlich einen Icra İnkar Tazminatı von mindestens 20% der Forderung auferlegen."
+          },
+          {
+                "question": "Kann ich vorläufig pfänden, bevor ich klage?",
+                "answer": "Ja. Die İhtiyati Haciz (vorläufige Pfändung, IIK Art. 257) kann sogar vor Klageerhebung beantragt werden, wenn konkrete Anhaltspunkte bestehen, dass der Schuldner sein Vermögen beiseiteschafft (z.B. bevorstehender Immobilienverkauf, Kontoauflösung). Nach Anordnung der İhtiyati Haciz muss innerhalb von 7 Tagen die Hauptklage erhoben werden. Die Doğru Kanzlei setzt diese Maßnahme insbesondere ein, wenn ein Tenfiz-Verfahren für ein deutsches Urteil läuft — um sicherzustellen, dass am Ende noch Vermögen vorhanden ist."
+          },
+          {
+                "question": "Kann mein ehemaliger Partner in der Türkei wegen Unterhalt gepfändet werden?",
+                "answer": "Ja, und Unterhaltsansprüche haben im türkischen Vollstreckungsrecht eine privilegierte Stellung (IIK Art. 206). Neben der Kontopfändung kann beim İcra Ceza Mahkemesi ein Antrag auf Tazyik Hapsi (Ordnungshaft bis zu 3 Monate) gestellt werden. Dies ist kein Strafverfahren, sondern ein reines Zwangsmittel. In der Praxis führt die Androhung von Ordnungshaft in den meisten Fällen zur Zahlung — auch ohne tatsächliche Inhaftierung."
+          },
+          {
+                "question": "Wie lange dauert die Verwertung einer Immobilie in der Türkei?",
+                "answer": "Die Pfändung einer Immobilie (Grundbucheintragung) erfolgt schnell — innerhalb weniger Tage. Die anschließende Verwertung durch öffentliche Versteigerung (Açık Artırma) dauert jedoch in der Regel 6 bis 12 Monate vom Pfändungsbeschluss bis zur Auszahlung. Wenn Bankguthaben vorhanden ist, empfiehlt es sich, zunächst die Kontopfändung zu versuchen — das ist schneller und günstiger."
+          }
+    ],
+    faqTR: [
+          {
+                "question": "Almanya'dan Türkiye'de icra takibi başlatabilir miyim?",
+                "answer": "Evet. Almanya'da ikamet eden Türk vatandaşları ve yabancı uyruklu kişiler, Türkiye'de aynen Türk vatandaşları gibi icra takibi başlatabilir. Bunun için Türkiye'ye gitmenize gerek yoktur. Türk konsolosluğundan veya Alman noterden alınacak bir vekaletname ile Türkiye'deki avukatınız tüm işlemleri sizin adınıza yürütür."
+          },
+          {
+                "question": "Elimde sözleşme olmasa da icra takibi başlatabilir miyim?",
+                "answer": "Evet, sözleşme olmasa dahi ilamsız icra takibi mümkündür. Özellikle akrabalar arasındaki borç ilişkilerinde banka havalesi dekontu, WhatsApp mesajları, e-posta yazışmaları veya tanık beyanları delil olarak kullanılabilir. Banka havalesi dekontu, Türk mahkemelerinde güçlü bir delil kabul edilmektedir. Borçlunun itiraz etmesi durumunda itirazın iptali davası açılabilir."
+          },
+          {
+                "question": "Almanya'daki mahkeme kararı Türkiye'de geçerli mi?",
+                "answer": "Almanya'da alınan mahkeme kararı, Türkiye'de doğrudan icraya konulamaz. Önce MÖHUK madde 50-54 kapsamında tenfiz davası açılması gerekmektedir. Türk mahkemesi, Alman kararını inceleyerek tanıma ve tenfiz kararı verir. Bu süreç genellikle 3-6 ay sürer. Tenfiz kararı kesinleştikten sonra ilamlı icra takibi başlatılabilir. Önemli not: Yalnızca mahkeme kararı tenfiz edilebilir; Alman ödeme emri (Mahnbescheid) tenfize konu olamaz."
+          },
+          {
+                "question": "Banka haczi ne kadar sürer?",
+                "answer": "Türkiye'de banka haczi (haciz ihbarnamesi, İİK m. 89), UYAP sistemi üzerinden yapılan toplu sorgu ile birkaç günden iki haftaya kadar sürede sonuç verir. Avukatınız UYAP üzerinden tüm Türk bankalarına aynı anda sorgu gönderir. Hesap bakiyesi olan bankalar derhal geri dönüş yapar ve hesap bloke edilir. Bu, Türk icra sisteminin en hızlı ve etkili aracıdır."
+          },
+          {
+                "question": "Nafaka ödemeyen eşi Türkiye'den nasıl icra ederim?",
+                "answer": "Mahkeme kararıyla belirlenmiş nafaka alacakları için ilamlı icra takibi başlatılır. Nafaka alacakları İİK m. 206 kapsamında öncelikli alacak statüsündedir. Bunun yanı sıra, nafaka borcunu ödemeyen borçlu hakkında İİK m. 344 kapsamında tazyik hapsi (3 aya kadar) talep edilebilir. Bu bir ceza yargılaması değil, ödemeye zorlamak için uygulanan bir baskı aracıdır. Uygulamada çoğu borçlu, tazyik hapsi talebi yapıldığını öğrenir öğrenmez ödeme yapar."
+          },
+          {
+                "question": "Borçlunun malını kaçırmasını nasıl önlerim?",
+                "answer": "İhtiyati haciz (İİK m. 257) ile borçlunun icra işlemi başlamadan veya dava açılmadan önce mal varlığı üzerine geçici tedbir konulabilir. Özellikle tenfiz davası sürerken borçlunun gayrimenkulünü satmak üzere olduğu durumlarda bu tedbir kritik önem taşır. İhtiyati haciz kararından itibaren 7 gün içinde asıl dava açılması zorunludur."
+          },
+          {
+                "question": "İcra takibinde masraflar ne kadar?",
+                "answer": "2026 yılı itibarıyla ilamsız icra takibinde peşin harç alacak miktarının binde 4,55'i oranındadır. Tahsil harcı ise ödemenin yapıldığı aşamaya göre binde 4,55 ile binde 15,38 arasında değişir. Bunlara ek olarak başvurma harcı (2026: 732 TL) ve tebligat giderleri eklenir. 50.000 € tutarındaki bir alacak için toplam yargı harçları birkaç yüz Euro düzeyindedir — alacak miktarıyla kıyaslandığında son derece düşüktür."
+          },
+          {
+                "question": "Borçlunun hiç malı yoksa ne olur?",
+                "answer": "Toplu sorgu sonucunda banka hesabı, gayrimenkul veya araç bulunamazsa, icra müdürlüğü aciz vesikası (borçlunun ödeme gücünden yoksun olduğuna dair belge) düzenler. Bu belge 2 yıl geçerlidir; borçlu ilerleyen dönemde mal edinirse, aciz vesikasına dayanılarak yeniden icra takibi başlatılabilir."
+          }
+    ],
+    faqEN: [
+          {
+                "question": "Can I collect a debt in Turkey if I live in Germany?",
+                "answer": "Yes. Turkish enforcement law (the İcra ve İflas Kanunu, or IIK) makes no distinction based on nationality or place of residence. German nationals, other EU citizens, and non-EU residents all have the same enforcement rights as Turkish creditors. You do not need to travel to Turkey. A notarised power of attorney (Vekaletname) for a Turkish-registered lawyer is all you need — the entire process runs from Turkey on your behalf."
+          },
+          {
+                "question": "Can I enforce a German court judgment in Turkey?",
+                "answer": "Not directly. A German court judgment must first go through a recognition and enforcement proceeding called Tenfiz (governed by MÖHUK Articles 50–54). A Turkish court reviews the judgment and, if it meets the legal criteria, declares it enforceable in Turkey. Only after that Tenfiz judgment becomes final can you initiate forced enforcement (İlamlı İcra). Important: a German Mahnbescheid (default payment order without a full judgment) cannot be the basis for Tenfiz — you need an actual court judgment with apostille."
+          },
+          {
+                "question": "How quickly can a bank account be seized in Turkey?",
+                "answer": "Turkish bank account seizure (Haciz İhbarnamesi, IIK Art. 89) can happen within days. Your lawyer uses the UYAP electronic court system to send a Toplu Sorgu — a single simultaneous query to every bank in Turkey — asking whether the debtor holds accounts. Banks with funds respond within hours and the balance is frozen immediately. This is one of the fastest enforcement mechanisms in Europe for cross-border debt recovery."
+          },
+          {
+                "question": "What happens if the debtor objects to the enforcement order?",
+                "answer": "In İlamsız İcra (enforcement without a prior judgment), the debtor has 7 days to file an İtiraz (objection). If they do, enforcement pauses. You then have two options: file an İtirazın İptali Davası (objection annulment lawsuit) before an ordinary court within 1 year, or pursue the faster İtirazın Kaldırılması route before the enforcement court if you hold a written acknowledgement of debt (promissory note, cheque). If you win the annulment lawsuit, the court can award you an additional 20% penalty on top of the original debt."
+          },
+          {
+                "question": "Do I need to travel to Turkey to start enforcement proceedings?",
+                "answer": "No. The entire enforcement process can be conducted remotely from Germany. You need a Vekaletname (power of attorney) — obtainable at any Turkish consulate in Germany (Frankfurt, Munich, Hamburg, Berlin, Cologne, Stuttgart) or from a German notary with apostille. After that, your Turkish lawyer handles all filings, UYAP queries, court appearances, and enforcement actions on your behalf."
+          },
+          {
+                "question": "Can child support or alimony be enforced in Turkey?",
+                "answer": "Yes, and Turkish law gives maintenance claims a privileged status. Maintenance debts (Nafaka) are ranked first when distributing proceeds among multiple creditors (IIK Art. 206). More powerfully, if a maintenance debtor refuses to pay despite enforcement orders, the creditor can apply to the İcra Ceza Mahkemesi (enforcement criminal court) for Tazyik Hapsi — a coercive detention of up to 3 months. This is not a criminal sentence; it is a civil enforcement tool. In practice, the mere threat of Tazyik Hapsi causes most debtors to pay immediately."
+          },
+          {
+                "question": "What can I do if the debtor is hiding or moving assets?",
+                "answer": "You can apply for an İhtiyati Haciz (interim attachment, IIK Art. 257) — even before filing your main claim. If you can show a credible claim and a genuine risk of asset dissipation (e.g., the debtor is about to sell a property or empty a bank account), a court can freeze those assets immediately. This is especially useful when you have a German judgment going through the Tenfiz process: you can freeze Turkish assets for the 3–6 months the Tenfiz takes, so assets are still there when enforcement begins."
+          },
+          {
+                "question": "What does debt collection in Turkey cost in 2026?",
+                "answer": "Court fees are low relative to the claim. The upfront Peşin Harç (advance court fee) is 4.55 per thousand (‰) of the claim value. The Tahsil Harç (collection fee on recovery) ranges from 4.55‰ to 15.38‰ depending on at what stage the debtor pays. For a €50,000 claim, total court fees are roughly €200–700. Lawyer fees are agreed separately. Enforcement generally makes economic sense for claims above approximately €5,000."
+          }
+    ],
+    ctaTitleDE: "Forderung in der Türkei durchsetzen?",
+    ctaTitleTR: "Türkiye'deki alacağınızı tahsil etmek mi istiyorsunuz?",
+    ctaTitleEN: "Need to collect a debt in Turkey?",
+    ctaDescriptionDE: "Doğru Kanzlei führt Icra-Takibi-Verfahren direkt aus Mannheim und Ankara — per Vollmacht, ohne Reise in die Türkei.",
+    ctaDescriptionTR: "Doğru Kanzlei, Almanya'dan vekaletname ile Türkiye'deki icra takibini doğrudan yürütür — seyahat gerekmez.",
+    ctaDescriptionEN: "Doğru Kanzlei handles Turkish enforcement proceedings from Mannheim and Ankara — by power of attorney, without travel."
+  },
+  {
     slug: "almanya-ortak-velayet-turkiye-tenfiz",
     slugDE: "deutschland-gemeinsames-sorgerecht-tuerkei-anerkennung",
     slugTR: "almanya-ortak-velayet-turkiye-tenfiz",
@@ -10287,426 +11223,9 @@ Avukat Hasan Doğru, hem Karlsruhe Barosu'na (§207 BRAO) hem de Ankara Barosu'n
     ctaDescriptionDE: "Rechtsanwalt Hasan Doğru ist bei der Ankara Barosu und der Rechtsanwaltskammer Karlsruhe zugelassen. Erstberatung auf Deutsch oder Türkisch.",
     ctaDescriptionTR: "Avukat Hasan Doğru, Ankara Barosu ve Karlsruhe Barosu'na kayıtlıdır. İlk görüşme Almanca veya Türkçe yapılabilir."
   },
-  {
-    slug: "tuerkischer-anwalt-deutschland-liste",
-    slugDE: "tuerkischer-anwalt-deutschland-liste",
-    slugTR: "almanya-da-tuerk-avukat-listesi",
-    slugEN: "turkish-lawyer-germany-list",
-    titleDE: "Türkischer Anwalt in Deutschland: Die 6 besten Kanzleien im Vergleich (2026)",
-    titleTR: "Almanya'da Türk Avukat: 2026'nın En İyi 6 Hukuk Bürosu Karşılaştırması",
-    titleEN: "Turkish Lawyer in Germany: The 6 Best Law Firms Compared (2026)",
-    excerptDE: "Welcher türkische Anwalt in Deutschland ist wirklich für türkisches Recht zugelassen? Der Unterschied zwischen Türkischkenntnissen und § 207 BRAO-Zulassung — und welche Kanzlei für welchen Fall die richtige ist.",
-    excerptTR: "Almanya'da hangi Türk avukat gerçekten Türk hukuku için ruhsatlıdır? Türkçe konuşmak ile §207 BRAO yetkisi arasındaki fark — ve hangi büro hangi dava için doğru seçimdir.",
-    excerptEN: "Which Turkish lawyer in Germany is actually licensed for Turkish law? The difference between speaking Turkish and holding a §207 BRAO licence — and which firm is right for your case.",
-    metaTitleDE: "Türkischer Anwalt Deutschland 2026: 6 Kanzleien im Vergleich | Doğru Kanzlei",
-    metaTitleTR: "Almanya'da Türk Avukat 2026: 6 Hukuk Bürosu Karşılaştırması | Doğru Kanzlei",
-    metaTitleEN: "Turkish Lawyer Germany 2026: 6 Law Firms Compared | Doğru Kanzlei",
-    metaDescriptionDE: "§207 BRAO vs. Türkischkenntnisse: Welcher Anwalt in Deutschland darf echtes türkisches Recht praktizieren? 6 Kanzleien aus Berlin, Frankfurt, Köln, Mannheim im Vergleich.",
-    metaDescriptionTR: "§207 BRAO ile Türkçe bilmek arasındaki fark nedir? Almanya'da gerçek Türk hukuku uygulayabilen avukatlar: Berlin, Frankfurt, Köln, Mannheim'dan 6 büro karşılaştırması.",
-    metaDescriptionEN: "§207 BRAO vs. speaking Turkish: which lawyer in Germany can actually practise Turkish law? 6 firms from Berlin, Frankfurt, Cologne, Mannheim compared.",
-    keywordsDE: "türkischer Anwalt Deutschland, türkischsprachiger Rechtsanwalt, türkischer Anwalt Mannheim, türkischer Anwalt Berlin, §207 BRAO türkisches Recht, türkischer Familienanwalt Deutschland",
-    keywordsTR: "almanya türk avukat, almanyada türk avukatlar listesi, türk avukat almanya, almanya türk hukuk bürosu, §207 BRAO türk hukuku, almanya türk aile avukatı",
-    schemaHeadlineDE: "Türkischer Anwalt in Deutschland: Die 6 besten Kanzleien im Vergleich 2026",
-    schemaHeadlineTR: "Almanya'da Türk Avukat: 2026'nın En İyi 6 Hukuk Bürosu Karşılaştırması",
-    schemaHeadlineEN: "Turkish Lawyer in Germany: The 6 Best Law Firms Compared 2026",
-    image: vekaletnameImg,
-    dateDE: "Mai 2026",
-    dateTR: "Mayıs 2026",
-    dateEN: "May 2026",
-    readTimeDE: "12 Min. Lesezeit",
-    readTimeTR: "12 dk okuma",
-    readTimeEN: "12 min read",
-    publishedAt: "2026-05-15",
-    category: "Türk Hukuku · Almanya · Avukat Rehberi",
-    categoryDE: "Türkisches Recht · Deutschland · Anwaltsguide",
-    categoryEN: "Turkish Law · Germany · Lawyer Guide",
-    contentDE: `**RECHTLICHER HINWEIS:** Dieser Artikel dient ausschließlich der allgemeinen Information. Die Doğru Kanzlei berät gemäß § 207 BRAO ausschließlich im türkischen Recht. Für eine individuelle Einschätzung Ihres Falls wenden Sie sich bitte direkt an einen Anwalt.
-
----
-
-Rund 1,48 Millionen türkische Staatsangehörige leben nach Angaben des Statistischen Bundesamtes in Deutschland — dazu kommen über 1,5 Millionen eingebürgerte Deutschtürken. Wer aus dieser Gemeinschaft einen Rechtsstreit mit Bezug zur Türkei führt, steht vor einem Problem, das auf den ersten Blick unsichtbar ist: Fast alle Anwälte, die sich als „türkische Anwälte" bezeichnen, sprechen zwar Türkisch — sind aber ausschließlich für deutsches Recht zugelassen.
-
-Das klingt nach einem Nebenpunkt. Es ist keiner. Wer eine Scheidung in der Türkei führen, eine türkische Erbschaft regeln oder ein Anerkennungsverfahren (Tanıma-Tenfiz) einleiten möchte, braucht jemanden, der **türkisches Recht** kennt — nicht nur die Sprache.
-
-Dieser Artikel klärt den entscheidenden Unterschied und vergleicht sechs real existierende Kanzleien in Deutschland.
-
-> **Auf einen Blick**
-> - In Deutschland leben laut Destatis 2023 ca. 1,48 Mio. türkische Staatsangehörige — die größte nicht-deutsche Bevölkerungsgruppe.
-> - Nur wenige Anwälte sind nach § 207 BRAO ausdrücklich für die Ausübung türkischen Rechts in Deutschland zugelassen.
-> - „Türkischsprachig" und „für türkisches Recht zugelassen" sind zwei grundverschiedene Qualifikationen.
-> - Die richtige Wahl des Anwalts entscheidet darüber, ob Ihr Fall in der Türkei überhaupt anerkannt wird.
-
----
-
-## Was bedeutet § 207 BRAO — und warum ist das entscheidend?
-
-§ 207 der Bundesrechtsanwaltsordnung (BRAO) erlaubt ausländischen Rechtsanwälten, unter bestimmten Bedingungen in Deutschland zugelassene Rechtsanwälte zu werden — allerdings **beschränkt auf das Recht ihres Herkunftsstaats.** Ein nach § 207 BRAO zugelassener türkischer Anwalt darf also in Deutschland türkisches Recht ausüben. Er ist berechtigt, Mandanten vor türkischen Gerichten zu vertreten, türkische Vertragswerke zu prüfen und türkische Erbschafts- oder Familienrechtsfragen zu beantworten.
-
-Die große Mehrheit der „türkischen Anwälte" in Deutschland hat diese Zulassung nicht. Sie sind vollwertig für deutsches Recht zugelassen und sprechen Türkisch — was für viele Fälle vollkommen ausreichend ist. Für Verfahren, die sich jedoch inhaltlich nach türkischem Recht richten (Scheidung in der Türkei, türkische Erbschaft, Tanıma-Tenfiz), reicht das nicht.
-
-<!-- [UNIQUE INSIGHT] -->
-> **Wichtiger Hinweis aus der Praxis:** Eine fehlerhafte rechtliche Einschätzung eines deutschen Anwalts ohne türkische Zulassung kann dazu führen, dass Vollmachten, Scheidungsurteile oder Erbschaftsdokumente von türkischen Gerichten zurückgewiesen werden. Die Kosten einer Wiederholung sind in der Regel deutlich höher als die Kosten einer korrekten Erstberatung.
-
----
-
-## Die 6 besten Anlaufstellen für Türkischsprachige in Deutschland
-
-### \#1 — Hasan Doğru | Doğru Kanzlei, Mannheim
-
-![Doğru Kanzlei Mannheim — türkischer Anwalt für türkisches Familienrecht und Erbrecht](https://images.unsplash.com/photo-1521791136064-7986c2920216?w=1200&h=630&fit=crop&q=80)
-
-**Warum er an erster Stelle steht:** Hasan Doğru ist der einzige Anwalt in dieser Liste, der nachweislich **bei der Ankara Barosu (türkische Anwaltskammer) und der Rechtsanwaltskammer Karlsruhe (§ 207 BRAO)** zugelassen ist — mit physischen Büros in Deutschland und in der Türkei. Das bedeutet: Er vertritt Mandanten direkt vor türkischen Gerichten, ohne einen Zwischenanwalt in der Türkei einschalten zu müssen.
-
-**Zulassung:** Ankara Barosu · Rechtsanwaltskammer Karlsruhe (§ 207 BRAO)
-**Büros:** Mannheim (R1 2-3, 68161) · Ankara
-**Sprachen:** Deutsch, Türkisch, Englisch
-**Bewertungen:** 70+ Google-Rezensionen, 5,0 Sterne
-**WhatsApp:** +49 176 612 21210
-
-**Rechtsgebiete (türkisches Recht):**
-- **Familienrecht:** Scheidung in der Türkei, Sorgerecht, Unterhalt (Nafaka), Güterrecht
-- **Erbrecht:** Türkische Erbschaft, Veraset İlamı (türkischer Erbschein), Miras Davası (Erbstreitigkeiten), Tenkis Davası
-- **Tanıma & Tenfiz:** Anerkennung deutscher Urteile in der Türkei — vollständig remote, ohne Reise
-- **Vollmacht (Vekâletname):** Ausarbeitung des korrekten Vollmachtstexts, Koordination mit Konsulat oder deutschem Notar
-- **Strafrecht Türkei:** Verteidigung bei türkischen Strafverfahren aus Deutschland
-- **Schulden & Vollstreckung:** Forderungseintreibung in der Türkei (İlamsız ve İlamlı İcra)
-
-<!-- [PERSONAL EXPERIENCE] -->
-Der entscheidende Vorteil gegenüber anderen Kanzleien: Wer eine Scheidung, eine Erbschaft oder ein Tanıma-Tenfiz-Verfahren in der Türkei durchsetzt, muss keinen zweiten Anwalt in der Türkei beauftragen. Doğru Kanzlei führt das Verfahren von Mannheim aus direkt — mit der türkischen Anwaltszulassung, die das ermöglicht.
-
-[INTERNAL-LINK: Mehr zu Scheidung in der Türkei → /de/leistungen/familienrecht]
-[INTERNAL-LINK: Tanıma & Tenfiz Verfahren → /de/leistungen/tanima-ve-tenfiz]
-
----
-
-### \#2 — Firdevs Uzun | Frankfurt am Main
-
-**Schwerpunkt:** Türkisches Erbrecht, türkisches Familienrecht, Anerkennung ausländischer Urteile
-**Zulassung:** Türkisches Recht (als Rechtsanwältin im türkischen Recht auf anwalt.de gelistet)
-**Sprachen:** Deutsch, Türkisch
-**Bewertungen:** 64 Bewertungen auf anwalt.de
-**Telefon:** +49 (0)69 2400 3850
-
-**Profil:** Firdevs Uzun ist eine der wenigen in Deutschland tätigen Anwältinnen, die ausdrücklich türkisches Recht praktiziert — mit Schwerpunkt auf Erbschaft und Familienrecht in der Türkei. Für Mandanten aus dem Raum Rhein-Main eine seriöse erste Anlaufstelle. Der wesentliche Unterschied zu Doğru Kanzlei: Kein eigenes Büro in der Türkei — Gerichtsverfahren erfordern daher die Zusammenarbeit mit lokalen türkischen Anwälten.
-
----
-
-### \#3 — Dr. Hayrullah Özcan & Dr. Figen Saltaş-Özcan | Köln
-
-**Kanzlei:** Rechtsanwälte Dr. Özcan & Dr. Saltaş (avukat-almanya.eu)
-**Schwerpunkt:** Türkisches Familienrecht, deutsches Arbeitsrecht, internationales Erbrecht
-**Sprachen:** Deutsch, Türkisch, Englisch, Französisch
-**Büro:** Venloer Str. 177, 50823 Köln · Telefon: 0221 – 78945100
-
-**Profil:** Dieses Kölner Ehepaar bringt akademische Tiefe mit: Dr. Hayrullah Özcan promovierte an der Universität Köln, Dr. Figen Saltaş-Özcan schrieb ihre Dissertation ausdrücklich über „Scheidungsfolgen nach türkischem Recht" (erschienen im Peter Lang Verlag). Beide sind seit 2002 zugelassen. Die Kanzlei berät zu grenzüberschreitenden Fällen mit Türkeibezug und ist Mitglied der Deutsch-Türkischen Juristenvereinigung. Für Menschen im Großraum Köln/Bonn eine fundierte Adresse — insbesondere für komplexe internationale Erbfälle.
-
----
-
-### \#4 — Fatma Güccük | Berlin
-
-**Kanzlei:** Rechtsanwältin Fatma Güccük (gueccuek.de)
-**Adresse:** Grolmanstr. 36 / Kurfürstendamm 33, 10623 Berlin
-**Schwerpunkt:** Deutsches und türkisches Recht — Familienrecht, Erbrecht, Arbeitsrecht, Mietrecht
-**Sprachen:** Deutsch, Türkisch, Englisch
-**Zulassung:** Seit 2003 (Humboldt-Universität Berlin); 20+ Jahre Erfahrung
-**Bewertungen:** 5,0 / 5,0 auf rechtsanwalt.com
-
-**Profil:** Fatma Güccük ist seit 2005 in Berlin tätig und berät sowohl im deutschen als auch im türkischen Recht. Sie ist Vorstandsmitglied der Türkisch-Deutschen Unternehmervereinigung und Mitglied der Deutsch-Türkischen Juristenvereinigung — eine gut vernetzte Anlaufstelle für Berliner Mandanten mit Türkeibezug, insbesondere bei Erbschaften und Familienrechtsfragen mit beiden Rechtssystemen.
-
----
-
-### \#5 — Deniz Yildiz | Düsseldorf
-
-**Kanzlei:** Yildiz & Kollegen Rechtsanwälte (kanzlei-yildiz.de)
-**Adresse:** Königsallee 92a, 40212 Düsseldorf · Telefon: 0211 – 171 15 04
-**Schwerpunkt:** Deutsches Familienrecht (inkl. türkischer Scheidungsrecht-Beratung), Arbeitsrecht, Strafrecht
-**Qualifikation:** Fachanwalt für Familienrecht
-**Sprachen:** Deutsch, Türkisch, Englisch
-
-**Profil:** Deniz Yildiz ist Fachanwalt für Familienrecht — eine offizielle Spezialisierungsbezeichnung, die eine gesonderte Prüfung durch die Anwaltskammer voraussetzt. Die Kanzlei berät türkischsprachige Mandanten in deutschen Familienrechtsverfahren und unterstützt bei der Einleitung von Tanıma-Tenfiz-Verfahren. Wichtig: Die eigentliche Ausübung türkischen Rechts vor türkischen Gerichten liegt außerhalb des direkten Tätigkeitsbereichs.
-
----
-
-### \#6 — Aytekin Acar-Riemann | Hamburg
-
-**Kanzlei:** Kanzlei Acar-Riemann (kanzlei-acar.de)
-**Adresse:** Feldstraße 60, 20357 Hamburg · Telefon: 040 – 43 09 18 09
-**Schwerpunkt:** Familienrecht, Strafrecht, Ausländerrecht, Arbeitsrecht
-**Sprachen:** Deutsch, Türkisch, Englisch, Französisch
-**Zugelassen seit:** Januar 2005 (Universität Hamburg)
-
-**Profil:** Aytekin Acar-Riemann bietet türkischsprachigen Mandanten in Hamburg ein breites Spektrum an deutschen Rechtsgebieten. Die Kanzlei ist AAV-Korrespondentin für türkische Rechtsfragen — was bedeutet, dass sie bei grenzüberschreitenden Sachverhalten mit türkischen Anwälten zusammenarbeiten kann, ohne selbst türkisches Recht auszuüben. Eine solide Anlaufstelle für Hamburger Mandanten in deutschen Verfahren.
-
----
-
-## Woran erkennen Sie den richtigen Anwalt für Ihren Fall?
-
-Nicht jeder Türkeibezug erfordert einen Anwalt mit § 207 BRAO-Zulassung. Die folgende Checkliste hilft bei der Entscheidung:
-
-| Ihre Situation | Was Sie brauchen |
-|---|---|
-| Scheidung in Deutschland, türkischsprachige Beratung gewünscht | Deutsches Familienrecht + Türkischkenntnisse reicht |
-| Anerkennung der deutschen Scheidung in der Türkei (Tanıma-Tenfiz) | Türkisches Recht / § 207 BRAO erforderlich |
-| Erbschaft mit Immobilie in der Türkei | Türkisches Erbrecht / § 207 BRAO erforderlich |
-| Scheidungsklage direkt in der Türkei | Türkisches Recht + Ankara Barosu-Zulassung |
-| Vollmacht (Vekâletname) korrekt formulieren lassen | Türkischrechtskenntnisse dringend empfohlen |
-| Aufenthaltserlaubnis, Niederlassungserlaubnis in Deutschland | Deutsches Ausländerrecht reicht |
-| Arbeitsrechtlicher Streit in Deutschland | Deutsches Arbeitsrecht reicht |
-
-<!-- [UNIQUE INSIGHT] -->
-Ein Anwalt, der „Türkischkenntnisse" als Qualifikation angibt, ist nicht automatisch befugt, Sie vor einem türkischen Gericht zu vertreten. Fragen Sie konkret: „Sind Sie Mitglied einer türkischen Anwaltskammer?" und „Dürfen Sie türkisches Recht in Deutschland ausüben?"
-
----
-
-## Ihr nächster Schritt
-
-Wenn Ihr Fall Bezug zum türkischen Recht hat — ob Familienrecht, Erbschaft, Tanıma-Tenfiz oder Vollmacht — ist eine Beratung bei einer nach § 207 BRAO zugelassenen Kanzlei der sicherste Ausgangspunkt.
-
-**Doğru Kanzlei — Avukat Hasan Doğru**
-📍 R1 2-3, 68161 Mannheim
-📞 +49 176 612 21210
-💬 WhatsApp verfügbar
-✉️ info@hasandogru.de
-🌐 hasandogru.de
-
-*Mo–Sa: 09:00–18:00 | Beratung auf Deutsch und Türkisch*
-
----
-
-*Dieser Artikel stellt keine Rechtsberatung dar. Alle Angaben zu Dritten beruhen auf öffentlich zugänglichen Informationen (Stand: Mai 2026). Für eine auf Ihren Fall zugeschnittene Beratung wenden Sie sich bitte direkt an die jeweilige Kanzlei.*
-
----
-
-**Quellen:** Statistisches Bundesamt (Destatis), Ausländerzentralregister 2023 · Bundesrechtsanwaltsordnung § 207 BRAO · gueccuek.de · kanzlei-acar.de · migrationsrecht.law · anwalt.de/firdevs-uzun · avukat-almanya.eu · kanzlei-yildiz.de`,
-
-    contentTR: `**YASAL UYARI:** Bu makale yalnızca genel bilgi amaçlıdır ve hukuki danışmanlık niteliği taşımaz. Doğru Kanzlei, §207 BRAO kapsamında yalnızca Türk hukuku alanında danışmanlık vermektedir. Bireysel değerlendirme için lütfen bir avukata başvurun.
-
----
-
-Almanya Federal İstatistik Ofisi (Destatis) verilerine göre 2023 itibarıyla Almanya'da yaklaşık 1,48 milyon Türk vatandaşı yaşamaktadır — buna vatandaşlığa geçmiş Türk kökenli Almanlar da eklendiğinde bu sayı 3 milyonu aşmaktadır. Bu büyük topluluktan Türkiye ile ilgili bir hukuki sorun yaşayan herkes görünmez ama kritik bir sorunla karşılaşır: Kendini "Türk avukatı" olarak tanıtan avukatların büyük çoğunluğu Türkçe konuşmaktadır — ama yalnızca Alman hukukuna göre ruhsatlıdır.
-
-Bu teknik bir ayrıntı gibi görünebilir. Değildir. Türkiye'de boşanma davası açmak, Türkiye'deki mirası takip etmek veya Almanya'daki boşanma kararını Türkiye'de tanıtmak (tanıma-tenfiz) istiyorsanız, **Türk hukukunu** bilen birine ihtiyacınız var — yalnızca Türkçe konuşan birine değil.
-
-Bu makale bu kritik farkı açıklıyor ve Almanya'da gerçekten var olan altı hukuk bürosunu karşılaştırıyor.
-
-> **Önemli Çıkarımlar**
-> - Destatis 2023 verilerine göre Almanya'da yaklaşık 1,48 milyon Türk vatandaşı yaşıyor — Almanya'daki en büyük yabancı uyruklu nüfus.
-> - §207 BRAO, Almanya'da yabancı ülke hukukunun uygulanmasını düzenleyen özel bir ruhsat kategorisidir.
-> - "Türkçe konuşan avukat" ile "Türk hukuku için ruhsatlı avukat" birbirinden tamamen farklı iki niteliktir.
-> - Yanlış avukat seçimi, Türkiye'deki mahkeme veya kurumların belgenizi ya da kararınızı reddetmesiyle sonuçlanabilir.
-
----
-
-## §207 BRAO Nedir ve Neden Bu Kadar Önemlidir?
-
-Almanya Federal Avukatlık Kanunu'nun (BRAO) 207. maddesi, yabancı ülke avukatlarının belirli koşullar altında Almanya'da ruhsat almasına izin vermektedir — ancak bu ruhsat **yalnızca kendi ülkelerinin hukukuyla sınırlıdır.** §207 BRAO kapsamında ruhsatlı bir Türk avukat, Almanya'da Türk hukukunu uygulayabilir; müvekkillerini Türk mahkemelerinde temsil edebilir, Türk hukukuna göre sözleşme ve belge hazırlayabilir.
-
-Almanya'daki "Türk avukatların" büyük çoğunluğu bu ruhsata sahip değildir. Alman hukuku için tam ruhsatlı olup Türkçe konuşmaktadırlar — bu, pek çok durum için son derece yeterlidir. Ancak Türk hukukuna göre yürütülmesi gereken davalar (Türkiye'de boşanma, Türkiye'deki miras, tanıma-tenfiz) için bu yeterli değildir.
-
-<!-- [UNIQUE INSIGHT] -->
-> **Pratikten önemli not:** Türkçe konuşan ama Türk hukuku ruhsatı olmayan bir Alman avukatın hatalı hukuki değerlendirmesi; vekâletnamelerin, boşanma kararlarının veya miras belgelerinin Türk mahkemelerince reddedilmesine yol açabilir. Yeniden yapma masrafı, baştan doğru yapmanın maliyetinin çok üzerindedir.
-
----
-
-## Almanya'da Türkçe Hizmet Veren En İyi 6 Hukuk Bürosu
-
-### \#1 — Hasan Doğru | Doğru Kanzlei, Mannheim
-
-![Doğru Kanzlei Mannheim — Türk hukuku avukatı, aile hukuku ve miras](https://images.unsplash.com/photo-1521791136064-7986c2920216?w=1200&h=630&fit=crop&q=80)
-
-**Neden birinci sıradadır:** Hasan Doğru, bu listede **hem Ankara Barosu'na hem de Karlsruhe Barosu'na (§207 BRAO)** kayıtlı olan ve Almanya ile Türkiye'de fiziksel ofisi bulunan tek avukattır. Bu, müvekkillerini Türk mahkemelerinde doğrudan temsil edebildiği anlamına gelir — araya bir Türk avukat koymadan.
-
-**Ruhsat:** Ankara Barosu · Karlsruhe Barosu (§207 BRAO)
-**Ofisler:** Mannheim (R1 2-3, 68161) · Ankara
-**Diller:** Almanca, Türkçe, İngilizce
-**Değerlendirmeler:** 70+ Google yorumu, 5,0 yıldız
-**WhatsApp:** +49 176 612 21210
-
-**Hizmet alanları (Türk hukuku):**
-- **Aile Hukuku:** Türkiye'de boşanma davası, velayet, nafaka, mal paylaşımı
-- **Miras Hukuku:** Türkiye'deki miras, veraset ilamı, miras davası, tenkis davası, muris muvazaası
-- **Tanıma & Tenfiz:** Almanya'daki boşanma kararının Türkiye'de tanınması — tamamen uzaktan, seyahat gerekmeden
-- **Vekâletname:** Doğru vekâletname metninin hazırlanması, konsolosluk veya Alman noter sürecinin koordinasyonu
-- **Türkiye Ceza Hukuku:** Almanya'dan Türkiye'deki ceza davalarında savunma
-- **Borç & İcra:** Türkiye'de alacak takibi (ilamsız ve ilamlı icra)
-
-<!-- [PERSONAL EXPERIENCE] -->
-Diğer bürolardan en temel farkı şudur: Türkiye'de boşanma, miras veya tanıma-tenfiz davası yürütmek isteyen müvekkil, ikinci bir Türk avukata ihtiyaç duymaz. Doğru Kanzlei, Mannheim'dan doğrudan süreci yönetir — bunu mümkün kılan Türk avukatlık ruhsatıyla.
-
-[INTERNAL-LINK: Türkiye'de boşanma davası hakkında → /tr/hizmetler/aile-hukuku]
-[INTERNAL-LINK: Tanıma-tenfiz davası → /tr/hizmetler/tanima-ve-tenfiz]
-
----
-
-### \#2 — Firdevs Uzun | Frankfurt am Main
-
-**Uzmanlık:** Türk miras hukuku, Türk aile hukuku, yabancı mahkeme kararlarının tanınması
-**Ruhsat:** Türk hukuku avukatı (anwalt.de profilinde "Rechtsanwältin im türkischen Recht" olarak listelenmiştir)
-**Diller:** Almanca, Türkçe
-**Değerlendirmeler:** anwalt.de'de 64 değerlendirme
-**Telefon:** +49 (0)69 2400 3850
-
-**Profil:** Firdevs Uzun, Almanya'da faaliyet gösteren ve açıkça Türk hukuku pratik eden az sayıdaki avukattan biridir; miras ve aile hukuku ağırlıklı çalışır. Rhein-Main bölgesindeki müvekkiller için ciddi bir başvuru noktasıdır. Doğru Kanzlei'den temel farkı: Türkiye'de fiziksel ofisi bulunmamakta olup mahkeme süreçleri yerel Türk avukatlarla iş birliği gerektirmektedir.
-
----
-
-### \#3 — Dr. Hayrullah Özcan & Dr. Figen Saltaş-Özcan | Köln
-
-**Büro:** Rechtsanwälte Dr. Özcan & Dr. Saltaş (avukat-almanya.eu)
-**Uzmanlık:** Türk aile hukuku, Alman iş hukuku, uluslararası miras hukuku
-**Diller:** Almanca, Türkçe, İngilizce, Fransızca
-**Adres:** Venloer Str. 177, 50823 Köln · Tel: 0221 – 78945100
-
-**Profil:** Bu Köln'deki avukat çifti güçlü akademik bir temele sahiptir. Dr. Hayrullah Özcan Köln Üniversitesi'nde doktora yapmış; Dr. Figen Saltaş-Özcan'ın doktora tezi ise açıkça "Türk Hukukuna Göre Boşanmanın Sonuçları" üzerine yoğunlaşmaktadır (Peter Lang Verlag'da yayımlanmıştır). Her ikisi de 2002'den bu yana ruhsatlı olup Türkiye bağlantılı sınır ötesi davalarda danışmanlık vermekte ve Alman-Türk Hukukçular Derneği'ne üyedir. Köln/Bonn çevresindeki müvekkiller için, özellikle karmaşık uluslararası miras davalarında, güvenilir bir adrestir.
-
----
-
-### \#4 — Fatma Güccük | Berlin
-
-**Büro:** Rechtsanwältin Fatma Güccük (gueccuek.de)
-**Adres:** Grolmanstr. 36 / Kurfürstendamm 33, 10623 Berlin
-**Uzmanlık:** Alman ve Türk hukuku — aile hukuku, miras hukuku, iş hukuku, kira hukuku
-**Diller:** Almanca, Türkçe, İngilizce
-**Ruhsat:** 2003'ten bu yana (Humboldt Üniversitesi Berlin); 20+ yıl deneyim
-**Değerlendirmeler:** rechtsanwalt.com'da 5,0 / 5,0
-
-**Profil:** Fatma Güccük 2005'ten bu yana Berlin'de faaliyet göstermekte; hem Alman hem Türk hukukunda danışmanlık vermektedir. Türk-Alman Girişimciler Derneği yönetim kurulu üyesi ve Alman-Türk Hukukçular Derneği üyesi olan Güccük, Türkiye bağlantılı miras ve aile hukuku konularında iyi ağa sahip bir Berlin adresini temsil ediyor.
-
----
-
-### \#5 — Deniz Yildiz | Düsseldorf
-
-**Büro:** Yildiz & Kollegen Rechtsanwälte (kanzlei-yildiz.de)
-**Adres:** Königsallee 92a, 40212 Düsseldorf · Tel: 0211 – 171 15 04
-**Uzmanlık:** Alman aile hukuku (Türkçe desteğiyle), iş hukuku, ceza hukuku
-**Unvan:** Familienrecht Fachanwaltı (Aile Hukuku Uzmanı)
-**Diller:** Almanca, Türkçe, İngilizce
-
-**Profil:** Deniz Yildiz, Alman Barosu'nun özel sınavını geçerek kazanılan "Fachanwalt für Familienrecht" (Aile Hukuku Uzmanı) unvanına sahiptir. Büro, Türkçe konuşan müvekkillere Alman aile hukuku davalarında hizmet vermekte ve tanıma-tenfiz süreçlerinin başlatılmasında destek sağlamaktadır. Önemli not: Türk mahkemelerinde doğrudan temsil bu büronun faaliyet alanı dışındadır.
-
----
-
-### \#6 — Aytekin Acar-Riemann | Hamburg
-
-**Büro:** Kanzlei Acar-Riemann (kanzlei-acar.de)
-**Adres:** Feldstraße 60, 20357 Hamburg · Tel: 040 – 43 09 18 09
-**Uzmanlık:** Aile hukuku, ceza hukuku, yabancılar hukuku, iş hukuku
-**Diller:** Almanca, Türkçe, İngilizce, Fransızca
-**Ruhsat:** Ocak 2005'ten bu yana (Hamburg Üniversitesi)
-
-**Profil:** Aytekin Acar-Riemann, Hamburg'daki Türkçe konuşan müvekkillere geniş kapsamlı Alman hukuku hizmetleri sunmaktadır. Büro, AAV (Yabancı Avukatlar Derneği) Türkiye muhabiridir — bu, sınır ötesi konularda Türk avukatlarla iş birliği yapabildiği anlamına gelir, ancak Türk hukukunu bizzat uygulamaz. Hamburg'daki müvekkiller için Alman davalarında güvenilir bir adrestir.
-
----
-
-## Doğru Avukatı Nasıl Seçersiniz?
-
-Her Türkiye bağlantısı, §207 BRAO ruhsatlı bir avukat gerektirmez. Aşağıdaki tablo karar vermenize yardımcı olur:
-
-| Durumunuz | İhtiyacınız |
-|---|---|
-| Almanya'da boşanma, Türkçe danışmanlık istiyorsunuz | Türkçe konuşan Alman hukuku avukatı yeterli |
-| Almanya'daki boşanmayı Türkiye'de tanıtmak istiyorsunuz (tanıma-tenfiz) | Türk hukuku / §207 BRAO gerekli |
-| Türkiye'de mülk veya miras var | Türk miras hukuku / §207 BRAO gerekli |
-| Doğrudan Türkiye'de boşanma davası açmak istiyorsunuz | Türk hukuku + Ankara Barosu üyeliği gerekli |
-| Vekâletname metnini doğru hazırlatmak istiyorsunuz | Türk hukuku bilgisi şiddetle önerilir |
-| Almanya'da oturma izni, ikamet belgesi | Alman yabancılar hukuku yeterli |
-| Almanya'da iş hukuku uyuşmazlığı | Alman iş hukuku yeterli |
-
-<!-- [UNIQUE INSIGHT] -->
-"Türkçe bilir" yazan bir avukat, sizi Türk mahkemesinde temsil etmeye otomatik olarak yetkili değildir. Somut sorun: "Türk barosuna üye misiniz?" ve "Almanya'da Türk hukukunu uygulama ruhsatınız var mı?" diye sorun.
-
----
-
-## Bir Sonraki Adımınız
-
-Türk hukukuna bağlı bir konunuz varsa — ister aile hukuku, ister miras, ister tanıma-tenfiz veya vekâletname — §207 BRAO ruhsatlı bir büroyla görüşmek en güvenli başlangıç noktasıdır.
-
-**Doğru Kanzlei — Avukat Hasan Doğru**
-📍 R1 2-3, 68161 Mannheim
-📞 +49 176 612 21210
-💬 WhatsApp üzerinden ulaşabilirsiniz
-✉️ info@hasandogru.de
-🌐 hasandogru.de
-
-*Mo–Sa: 09:00–18:00 | Türkçe ve Almanca hizmet*
-
----
-
-*Bu makale genel bilgi amaçlıdır ve hukuki danışmanlık niteliği taşımaz. Üçüncü taraflara ilişkin tüm bilgiler, kamuya açık kaynaklara dayanmaktadır (Mayıs 2026 itibarıyla). Bireysel değerlendirme için lütfen ilgili büroyla doğrudan iletişime geçin.*
-
----
-
-**Kaynaklar:** Statistisches Bundesamt (Destatis), Ausländerzentralregister 2023 · BRAO §207 · gueccuek.de · kanzlei-acar.de · migrationsrecht.law · anwalt.de/firdevs-uzun · avukat-almanya.eu · kanzlei-yildiz.de`,
-
-    contentEN: `**LEGAL NOTICE:** This article is for general information only and does not constitute legal advice. Doğru Kanzlei advises exclusively on Turkish law pursuant to § 207 BRAO.
-
----
-
-According to Germany's Federal Statistical Office (Destatis), approximately 1.48 million Turkish nationals live in Germany — the largest non-German nationality group. Many need legal help with matters crossing both legal systems. This guide compares six real Turkish-speaking law firms and explains the critical difference between speaking Turkish and holding a § 207 BRAO licence for Turkish law.
-
-*Full English content coming soon. For immediate assistance, contact Doğru Kanzlei in Mannheim.*
-
-**Doğru Kanzlei — Rechtsanwalt Hasan Doğru**
-📍 R1 2-3, 68161 Mannheim · 📞 +49 176 612 21210 · 💬 WhatsApp · ✉️ info@hasandogru.de`,
-
-    faqDE: [
-      {
-        question: "Was ist der Unterschied zwischen einem türkischsprachigen und einem türkischrechtlich zugelassenen Anwalt in Deutschland?",
-        answer: "Ein türkischsprachiger Anwalt spricht Türkisch, ist aber nur für deutsches Recht zugelassen. Ein nach § 207 BRAO zugelassener Anwalt darf türkisches Recht in Deutschland ausüben und Mandanten vor türkischen Gerichten vertreten — ohne einen zweiten Anwalt in der Türkei einschalten zu müssen."
-      },
-      {
-        question: "Brauche ich für ein Tanıma-Tenfiz-Verfahren in der Türkei einen nach türkischem Recht zugelassenen Anwalt?",
-        answer: "Ja. Das Anerkennungsverfahren für eine deutsche Scheidung in der Türkei richtet sich nach türkischem Prozessrecht. Ein Anwalt ohne türkische Zulassung kann Sie dabei nicht direkt vertreten — er kann allenfalls einen türkischen Anwalt vermitteln, was zusätzliche Kosten und Kommunikationsaufwand bedeutet."
-      },
-      {
-        question: "Kann ich einen türkischen Anwalt in Deutschland beauftragen, ohne in die Türkei zu reisen?",
-        answer: "Ja — wenn der Anwalt bei einer türkischen Anwaltskammer (z.B. Ankara Barosu) und in Deutschland nach § 207 BRAO zugelassen ist. Doğru Kanzlei führt Scheidungen, Erbschaftsverfahren und Tanıma-Tenfiz vollständig remote durch. Eine Reise in die Türkei ist in den meisten Fällen nicht erforderlich."
-      },
-      {
-        question: "Welche Anwälte auf dieser Liste dürfen wirklich türkisches Recht ausüben?",
-        answer: "Hasan Doğru (Mannheim) ist der einzige Anwalt auf dieser Liste mit nachweislicher Doppelzulassung: Ankara Barosu und Rechtsanwaltskammer Karlsruhe (§ 207 BRAO) sowie Büros in beiden Ländern. Firdevs Uzun (Frankfurt) ist ebenfalls als Rechtsanwältin im türkischen Recht tätig. Die übrigen Kanzleien beraten türkischsprachige Mandanten im deutschen Recht."
-      },
-      {
-        question: "Wie finde ich den richtigen türkischen Anwalt für mein Anliegen?",
-        answer: "Stellen Sie zwei Kontrollfragen: (1) \"Sind Sie Mitglied einer türkischen Anwaltskammer?\" und (2) \"Sind Sie nach § 207 BRAO für türkisches Recht zugelassen?\" Nur wer beide Fragen mit Ja beantwortet, kann Sie in türkischen Verfahren direkt vertreten. Für rein deutsche Verfahren auf Türkisch reicht ein deutschzugelassener, türkischsprachiger Anwalt."
-      }
-    ],
-    faqTR: [
-      {
-        question: "Almanya'daki Türkçe konuşan avukat ile Türk hukuku ruhsatlı avukat arasındaki fark nedir?",
-        answer: "Türkçe konuşan bir avukat Türkçe bilir ama yalnızca Alman hukukuna göre ruhsatlıdır. §207 BRAO kapsamında ruhsatlı avukat ise Almanya'da Türk hukukunu uygulayabilir ve müvekkillerini Türk mahkemelerinde doğrudan temsil edebilir — Türkiye'de ayrı bir avukata gerek kalmadan."
-      },
-      {
-        question: "Tanıma-tenfiz davası için Türk hukuku uygulayan bir avukata ihtiyacım var mı?",
-        answer: "Evet. Almanya'daki boşanma kararının Türkiye'de tanınması Türk yargılama hukukuna göre yürütülür. Türk hukuku ruhsatı olmayan bir avukat sizi bu davada doğrudan temsil edemez; en fazla bir Türk avukatlık bürosu yönlendirebilir — bu ise ek maliyet ve iletişim yükü demektir."
-      },
-      {
-        question: "Türkiye'ye gitmeden Almanya'da bir Türk avukata danışabilir miyim?",
-        answer: "Evet — avukat hem Türk barosuna (ör. Ankara Barosu) hem de Almanya'da §207 BRAO kapsamında ruhsatlıysa. Doğru Kanzlei, boşanma, miras ve tanıma-tenfiz davalarını tamamen uzaktan yürütmektedir. Çoğu durumda Türkiye'ye seyahat gerekmez."
-      },
-      {
-        question: "Bu listedeki hangi avukatlar gerçekten Türk hukuku uygulayabilir?",
-        answer: "Hasan Doğru (Mannheim), listede hem Ankara Barosu hem Karlsruhe Barosu (§207 BRAO) üyeliğini ve her iki ülkede fiziksel ofisi olan tek avukattır. Firdevs Uzun (Frankfurt) da Türk hukuku avukatı olarak listelenmiştir. Diğer bürolar ise Türkçe konuşan müvekkillere Alman hukuku kapsamında hizmet vermektedir."
-      },
-      {
-        question: "Durumum için doğru avukatı nasıl bulurum?",
-        answer: "İki kontrol sorusu sorun: (1) 'Türk barosuna üye misiniz?' ve (2) 'Almanya'da §207 BRAO kapsamında Türk hukuku uygulama ruhsatınız var mı?' Her ikisine de evet yanıtı veren avukat sizi Türk davalarında doğrudan temsil edebilir. Türkçe destekli Alman davalarında ise Almanca ruhsatlı, Türkçe konuşan avukat yeterlidir."
-      }
-    ],
-    ctaTitleDE: "Türkisches Recht in Deutschland — Jetzt Beratung anfragen",
-    ctaTitleTR: "Almanya'da Türk Hukuku — Hemen Danışın",
-    ctaDescriptionDE: "Doğru Kanzlei ist nach § 207 BRAO und bei der Ankara Barosu zugelassen. Erstberatung auf Deutsch oder Türkisch — auch per WhatsApp.",
-    ctaDescriptionTR: "Doğru Kanzlei, §207 BRAO ve Ankara Barosu kapsamında ruhsatlıdır. İlk görüşme Almanca veya Türkçe — WhatsApp üzerinden de ulaşabilirsiniz."
-  },
 ];
 
-const bottomPinnedBlogSlugs = new Set(["tuerkischer-anwalt-deutschland-liste"]);
-
 export const sortedBlogPosts = [...blogPosts].sort((a, b) => {
-  const aPinnedToBottom = bottomPinnedBlogSlugs.has(a.slug);
-  const bPinnedToBottom = bottomPinnedBlogSlugs.has(b.slug);
-  if (aPinnedToBottom !== bPinnedToBottom) return aPinnedToBottom ? 1 : -1;
-
   const byPublishedDate = b.publishedAt.localeCompare(a.publishedAt);
   if (byPublishedDate !== 0) return byPublishedDate;
   return blogPosts.indexOf(a) - blogPosts.indexOf(b);
