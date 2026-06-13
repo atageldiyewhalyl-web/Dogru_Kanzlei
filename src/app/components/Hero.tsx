@@ -3,8 +3,7 @@ import heroFullScreen from "@/assets/Hero full screen.png";
 import { ArrowRight } from "lucide-react";
 import { useNavigate } from "react-router";
 import { useLanguage } from "../context/LanguageContext";
-
-const WHATSAPP_URL = "https://wa.me/4917661221210";
+import { openWhatsAppLeadCapture } from "./WhatsAppLeadCapture";
 
 export function Hero() {
   const navigate = useNavigate();
@@ -92,7 +91,7 @@ export function Hero() {
           {/* CTA Buttons - Dark Green/Gold Blocks */}
           <div className="flex w-full flex-wrap justify-center gap-5 xl:justify-end">
             <button 
-              onClick={() => window.open(WHATSAPP_URL, "_blank")}
+              onClick={() => openWhatsAppLeadCapture()}
               aria-label={t("hero_cta_primary")}
               className="group relative overflow-hidden bg-[#8B6E2A] text-white font-sans text-[11px] font-bold tracking-[0.15em] uppercase px-10 py-5 transition-all hover:bg-[#7A5F20] flex items-center gap-3 shadow-[0_12px_30px_rgba(0,0,0,0.28)]"
             >

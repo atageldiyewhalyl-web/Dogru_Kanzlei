@@ -1,6 +1,7 @@
 import { Navbar } from "./Navbar";
 import { Footer } from "./Footer";
 import { WhatsAppButton } from "./WhatsAppButton";
+import { WhatsAppLeadCapture } from "./WhatsAppLeadCapture";
 import { Outlet, useLocation, ScrollRestoration, Navigate } from "react-router";
 import { useEffect } from "react";
 import { LanguageProvider } from "../context/LanguageContext";
@@ -49,6 +50,7 @@ export function Layout() {
           </main>
           <Footer />
           <WhatsAppButton />
+          <WhatsAppLeadCapture />
           <CookieBanner />
         </div>
       </ConsentProvider>

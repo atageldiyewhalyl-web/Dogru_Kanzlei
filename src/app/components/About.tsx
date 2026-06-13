@@ -100,7 +100,7 @@ export function About() {
               </span>
             </div>
 
-            <h2
+            <h1
               style={{
                 fontFamily: "'Cormorant Garamond', serif",
                 fontSize: "clamp(32px, 3.5vw, 44px)",
@@ -113,7 +113,7 @@ export function About() {
               {t("about_title")}
               <br />
               <em style={{ fontStyle: "italic", fontWeight: 400 }}>{t("about_subtitle")}</em>
-            </h2>
+            </h1>
 
             <div style={{ width: 48, height: 2, background: "#8B6E2A", marginBottom: 28 }} />
 

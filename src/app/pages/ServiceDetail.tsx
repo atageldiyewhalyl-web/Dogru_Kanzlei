@@ -143,27 +143,27 @@ export function ServiceDetail() {
     isTurkishFamilyLawPage ? tr : isEnglishFamilyLawPage ? en : de
   );
   const heroTitle = isFamilyLawLandingPage
-    ? isStrafrechtLandingPage
+      ? isStrafrechtLandingPage
       ? familyLawText(
-        'Strafverteidiger türkisches Recht aus Deutschland',
+        'Türkisches Strafrecht Anwalt Deutschland',
         "Türkiye'den Mahkeme Celbi mi Aldınız? Almanya'dan Savunuyoruz.",
         'Criminal defence in Turkish law from Germany'
       )
       : isErbrechtLandingPage
       ? familyLawText(
-        'Erbrecht Türkei Anwalt für Erbschaft in der Türkei',
+        'Erbrecht Türkei Anwalt Deutschland',
         "Türkiye'deki Mirasınızı Almanya'dan Yönetiyoruz",
         'Turkish inheritance lawyer for estates in Turkey'
       )
       : isVollmachtLandingPage
       ? familyLawText(
-        'Vollmacht für die Türkei aus Deutschland beantragen',
+        'Vollmacht Türkei erstellen Deutschland',
         'Vekaletname Almanya’dan nasıl çıkarılır?',
         'Power of attorney for Turkey from Germany'
       )
       : isTanimaLandingPage
       ? familyLawText(
-        'Scheidung Türkei anerkennen lassen?',
+        'Tanıma Tenfiz Anwalt Deutschland',
         'Almanya’daki boşanmanız Türkiye’de hâlâ geçerli değil mi?',
         'Need your German divorce recognised in Turkey?'
       )
@@ -788,65 +788,85 @@ export function ServiceDetail() {
   ];
   const strafrechtConversionCards = [
     {
-      title: familyLawText('Vorladung Türkei Deutschland', 'Türkiye mahkeme celbi Almanya', 'Summons from Turkey in Germany'),
+      title: familyLawText('Aktenstatus, Haftbefehl und Red Notice', 'Ceza dosyası, yakalama kararı ve kırmızı bülten', 'Case status, arrest warrant and Red Notice'),
       text: familyLawText(
-        'Wir prüfen die Vorladung, das zugrunde liegende Verfahren und ob vor einer Reise Risiken bestehen.',
-        'Mahkeme celbini, dosyanın konusunu ve Türkiye’ye gitmeden önce risk olup olmadığını inceliyoruz.',
-        'We review the summons, the underlying proceedings and whether travel would create risk.'
+        'Vor einer Reise oder Aussage klären wir Ermittlungsstand, Vorladung, Haftbefehl, Reiseverbot, Interpol-Risiko und nächste Schritte.',
+        'Türkiye’de soruşturma, mahkeme celbi, yakalama kararı, tutuklama riski veya kırmızı bülten ihtimali varsa önce dosya statüsünü ve seyahat riskini netleştiriyoruz.',
+        'Before travel or a statement, we clarify investigation status, summons, arrest warrant, travel ban, Interpol risk and next steps.'
       ),
-      icon: FileCheck2
+      icon: Gavel,
+      keywords: [
+        familyLawText('Ermittlungsverfahren Türkei Deutschland', 'Türkiye ceza soruşturması Almanya', 'Turkish criminal investigation Germany'),
+        familyLawText('Haftbefehl Türkei Deutschland', 'Türkiye yakalama kararı Almanya', 'Turkish arrest warrant Germany'),
+        familyLawText('Interpol Red Notice Anwalt', 'Kırmızı bülten avukat Almanya', 'Red Notice lawyer Germany'),
+        familyLawText('Inhaftierung Türkei Deutschland', 'Türkiye tutuklu Almanya ceza avukatı', 'Detained in Turkey lawyer Germany')
+      ]
     },
     {
-      title: familyLawText('Haftbefehl Türkei', 'Tutuklama müzekkeresi Türkiye', 'Arrest warrant in Turkey'),
+      title: familyLawText('Beleidigung und Social Media', 'Hakaret ve sosyal medya suçlamaları', 'Insult and social media allegations'),
       text: familyLawText(
-        'Wir klären, ob ein Haftbefehl, Reiseverbot oder sonstiger Eintrag besteht, bevor Sie handeln oder reisen.',
-        'Harekete geçmeden veya seyahat etmeden önce tutuklama müzekkeresi, seyahat yasağı veya kayıt olup olmadığını kontrol ediyoruz.',
-        'We check whether an arrest warrant, travel ban or other entry exists before you act or travel.'
+        'Wir prüfen WhatsApp-Nachrichten, Kommentare, Screenshots, Strafantrag, Uzlaşma-Fristen und ob eine Verteidigung aus Deutschland vorbereitet werden kann.',
+        'WhatsApp mesajı, sosyal medya paylaşımı, yorum ve ekran görüntülerinde şikayet, uzlaşma süresi, delil durumu ve Almanya’dan savunma hazırlığını inceliyoruz.',
+        'We review WhatsApp messages, posts, comments, screenshots, complaint deadlines, settlement options and defence preparation from Germany.'
       ),
-      icon: Gavel
+      icon: Globe2,
+      keywords: [
+        familyLawText('Beleidigung Türkei Deutschland', 'Türkiye hakaret davası Almanya', 'Turkish insult case Germany'),
+        familyLawText('Social Media Beleidigung Türkei', 'Sosyal medyada hakaret Türkiye avukat Almanya', 'Social-media insult Turkey lawyer Germany')
+      ]
     },
     {
-      title: familyLawText('Interpol Red Notice Anwalt', 'Interpol arama bülteni Almanya', 'Interpol Red Notice lawyer'),
+      title: familyLawText('Betrug, Urkunden und Vermögensdelikte', 'Dolandırıcılık, sahtecilik ve malvarlığı suçları', 'Fraud, documents and property offences'),
       text: familyLawText(
-        'Bei Interpol-Ausschreibungen prüfen wir die Grundlage und bereiten Schritte zur Überprüfung oder Löschung vor.',
-        'Interpol arama bültenlerinde hukuki dayanağı inceliyor, inceleme veya kaldırma adımlarını hazırlıyoruz.',
-        'For Interpol notices, we review the basis and prepare steps for review or deletion.'
+        'Bei Zahlungsstreit, Betrugsvorwurf, Unterschrift, Vollmacht, Diebstahl oder Raub prüfen wir Beweise, Aktenstand und Verteidigungsansatz.',
+        'Ödeme uyuşmazlığı, dolandırıcılık iddiası, imza-belge sorunu, hırsızlık veya yağma dosyalarında delilleri, dosya aşamasını ve savunma yaklaşımını değerlendiriyoruz.',
+        'For payment disputes, fraud allegations, signature or document issues, theft or robbery, we review evidence, file status and defence strategy.'
       ),
-      icon: Globe2
+      icon: Banknote,
+      keywords: [
+        familyLawText('Betrugsverfahren Türkei Deutschland', 'Türkiye dolandırıcılık davası avukat Almanya', 'Fraud case Turkey lawyer Germany'),
+        familyLawText('Urkundenfälschung Türkei', 'Türkiye sahtecilik suçu avukat Almanya', 'Forgery offence Turkey lawyer Germany'),
+        familyLawText('Diebstahl Türkei Deutschland', 'Türkiye hırsızlık davası avukat Almanya', 'Theft case Turkey lawyer Germany'),
+        familyLawText('Raub Türkei Deutschland', 'Yağma suçu Türkiye avukat Almanya', 'Robbery offence Turkey lawyer Germany')
+      ]
     },
     {
-      title: familyLawText('Auslieferung Türkei Deutschland', 'İade talebi Almanya Türkiye', 'Extradition Turkey Germany'),
+      title: familyLawText('Drogen, Drohung und sensible Vorwürfe', 'Tehdit, uyuşturucu ve hassas ceza dosyaları', 'Drugs, threats and sensitive allegations'),
       text: familyLawText(
-        'Wenn ein Auslieferungsersuchen droht oder läuft, koordinieren wir die türkische Seite und die Verteidigungsstrategie.',
-        'İade talebi ihtimali veya süreci varsa Türkiye tarafını ve savunma stratejisini koordine ediyoruz.',
-        'If an extradition request is threatened or active, we coordinate the Turkish side and defence strategy.'
+        'Bei TCK 188/191, Drohung sowie Sexualstrafvorwürfen zählen schnelle Akteneinsicht, sorgfältige Aussageplanung und ein diskreter Umgang.',
+        'TCK 188/191, tehdit, cinsel taciz veya cinsel saldırı iddialarında hızlı dosya incelemesi, doğru ifade stratejisi ve gizlilik çok önemlidir.',
+        'For TCK 188/191, threat and sexual-offence allegations, fast file review, careful statement planning and discretion are critical.'
       ),
-      icon: Scale
+      icon: Scale,
+      keywords: [
+        familyLawText('Drogenstrafrecht Türkei Deutschland', 'Türkiye uyuşturucu davası avukat Almanya', 'Drug case Turkey lawyer Germany'),
+        familyLawText('Drohung Türkei Deutschland', 'Türkiye tehdit suçu avukat Almanya', 'Threat offence Turkey lawyer Germany'),
+        familyLawText('Sexuelle Belästigung Türkei', 'Cinsel taciz davası Türkiye Almanya avukat', 'Sexual harassment Turkey lawyer Germany'),
+        familyLawText('Sexualstrafrecht Türkei', 'Cinsel saldırı suçu Türkiye Almanya avukat', 'Sexual assault Turkey lawyer Germany')
+      ]
     },
     {
-      title: familyLawText('Strafrecht Türkei ohne Reise', 'Türkiye’ye gitmeden ceza dosyası', 'Turkish criminal law without travel'),
+      title: familyLawText('Vertretung aus Deutschland per Vollmacht', 'Almanya’dan vekaletname ile savunma hazırlığı', 'Representation from Germany by power of attorney'),
       text: familyLawText(
-        'Viele Schritte lassen sich per Vollmacht, digitaler Akteneinsicht und Ankara-Koordination vorbereiten.',
-        'Birçok adım vekaletname, dijital dosya takibi ve Ankara koordinasyonu ile seyahatsiz hazırlanabilir.',
-        'Many steps can be prepared by power of attorney, digital file review and Ankara coordination.'
+        'Wir klären Vollmacht, Akteneinsicht, UYAP-Status, Kommunikation mit Angehörigen und welche Schritte ohne Türkei-Reise vorbereitet werden können.',
+        'Vekaletname, dosya incelemesi, UYAP durumu, yakınlarla iletişim ve Türkiye’ye gitmeden hazırlanabilecek adımları netleştiriyoruz.',
+        'We clarify power of attorney, file access, UYAP status, family communication and which steps can be prepared without travelling to Turkey.'
       ),
-      icon: UsersRound
-    },
-    {
-      title: familyLawText('Militärdienst Türkei Anwalt', 'Askerlik kaçağı Almanya avukat', 'Turkish military-service cases'),
-      text: familyLawText(
-        'Bei Bakaya, Yoklama Kaçağı oder offenen Militärdienstfragen prüfen wir den Status vor der Einreise.',
-        'Bakaya, yoklama kaçağı veya askerlik yükümlülüğü konularında Türkiye’ye girişten önce statünüzü kontrol ediyoruz.',
-        'For Bakaya, Yoklama Kaçağı or military-service issues, we check your status before entry.'
-      ),
-      icon: Banknote
+      icon: UsersRound,
+      keywords: [
+        familyLawText('Strafverfahren Türkei ohne Reise', 'Türkiye ceza davası uzaktan temsil', 'Turkish criminal case remote representation'),
+        familyLawText('Vollmacht Strafverfahren Türkei', 'Türkiye ceza davası vekalet Almanya', 'Turkish criminal case power of attorney Germany')
+      ]
     }
   ];
   const strafrechtOutcomes = [
+    familyLawText('Hakaret und Social Media prüfen', 'Türkiye hakaret ve sosyal medya dosyasını incelemek', 'Review insult and social-media cases'),
+    familyLawText('Uyuşturucu, Betrug und schwere Vorwürfe einordnen', 'Uyuşturucu, dolandırıcılık ve ağır suçlamaları değerlendirmek', 'Assess drug, fraud and serious allegations'),
     familyLawText('Vorladung aus der Türkei prüfen', 'Türkiye’den gelen mahkeme celbini incelemek', 'Review a summons from Turkey'),
     familyLawText('Haftbefehl Türkei klären', 'Tutuklama müzekkeresi riskini netleştirmek', 'Clarify an arrest warrant in Turkey'),
     familyLawText('Interpol Red Notice prüfen lassen', 'Interpol arama bültenini kontrol ettirmek', 'Review an Interpol Red Notice'),
-    familyLawText('Auslieferung Türkei Deutschland koordinieren', 'Almanya-Türkiye iade sürecini koordine etmek', 'Coordinate extradition between Turkey and Germany')
+    familyLawText('Auslieferung Türkei Deutschland koordinieren', 'Almanya-Türkiye iade sürecini koordine etmek', 'Coordinate extradition between Turkey and Germany'),
+    familyLawText('Vollmacht und Fernvertretung vorbereiten', 'Vekaletname ve uzaktan temsili hazırlamak', 'Prepare power of attorney and remote representation')
   ];
   const strafrechtProcessSteps = [
     {
@@ -932,7 +952,7 @@ export function ServiceDetail() {
   const landingServicesHeading = isTanimaLandingPage
     ? familyLawText('Was wir im Tanıma-Verfahren übernehmen', 'Tanıma ve Tenfiz sürecinde neler yapıyoruz', 'What we handle in the Tanıma process')
     : isStrafrechtLandingPage
-      ? familyLawText('Strafrecht Türkei ohne Reise: Was wir prüfen', 'Türkiye ceza dosyalarında neleri kontrol ediyoruz', 'Turkish criminal law without travel: what we check')
+      ? familyLawText('Strafrecht Türkei ohne Reise: Was wir prüfen', 'Türkiye’deki ceza dosyalarında nasıl yardımcı oluyoruz?', 'Turkish criminal law without travel: what we check')
     : isErbrechtLandingPage
       ? familyLawText('Türkisches Erbrecht von Deutschland aus regeln', 'Türkiye miras işlemlerini Almanya’dan yürütüyoruz', 'Turkish inheritance matters handled from Germany')
     : isVollmachtLandingPage
@@ -1314,12 +1334,24 @@ export function ServiceDetail() {
 		                                  <h3 className="font-sans text-[16px] font-bold text-[#1C3829] mb-2 tracking-wide">
 		                                    {card.title}
 		                                  </h3>
-		                                  <p className="font-sans text-[14px] text-[#4a4a4a] leading-relaxed">
-		                                    {card.text}
-		                                  </p>
-		                                </div>
-		                              </div>
-		                            </div>
+			                                  <p className="font-sans text-[14px] text-[#4a4a4a] leading-relaxed">
+			                                    {card.text}
+			                                  </p>
+			                                  {(card as { keywords?: string[] }).keywords?.length ? (
+			                                    <div className="mt-4 flex flex-wrap gap-2">
+			                                      {(card as { keywords: string[] }).keywords.map((keyword) => (
+			                                        <span
+			                                          key={keyword}
+			                                          className="rounded-full border border-[#8B6E2A]/20 bg-[#F7F5F0]/80 px-3 py-1 text-[10px] font-bold uppercase tracking-[0.08em] text-[#7A5F20]"
+			                                        >
+			                                          {keyword}
+			                                        </span>
+			                                      ))}
+			                                    </div>
+			                                  ) : null}
+			                                </div>
+			                              </div>
+			                            </div>
 		                            );
 		                          })}
 		                        </div>

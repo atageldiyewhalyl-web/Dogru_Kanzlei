@@ -1,26 +1,21 @@
 import { useState } from "react";
 import { useLanguage } from "../context/LanguageContext";
+import { openWhatsAppLeadCapture } from "./WhatsAppLeadCapture";
 
 export function WhatsAppButton() {
   const { t } = useLanguage();
   const [hovered, setHovered] = useState(false);
 
-  const phone = "4917661221210"; 
-  const message = encodeURIComponent(
-    "Merhaba, hukuki konuda danışmak istiyorum. / Hallo, ich hätte gerne eine rechtliche Beratung."
-  );
-  const url = `https://wa.me/${phone}`; // Unified URL (Task 3)
   const whatsappLabel = "Kontakt per WhatsApp"; // Unified Label (Task 3)
 
   return (
-    <a
-      href={url}
-      target="_blank"
-      rel="noopener noreferrer"
+    <button
+      type="button"
       aria-label={whatsappLabel}
+      onClick={() => openWhatsAppLeadCapture()}
       onMouseEnter={() => setHovered(true)}
       onMouseLeave={() => setHovered(false)}
-      className="fixed z-[200] flex items-center gap-3 bg-[#25D366] text-white no-underline rounded-full shadow-[0_6px_25px_rgba(37,211,102,0.45)] transition-all duration-300 bottom-6 right-6 md:bottom-8 md:right-8"
+      className="fixed z-[200] flex items-center gap-3 bg-[#25D366] text-white no-underline rounded-full shadow-[0_6px_25px_rgba(37,211,102,0.45)] transition-all duration-300 bottom-6 right-6 md:bottom-8 md:right-8 border-0 cursor-pointer"
       style={{
         padding: hovered ? "14px 26px" : "14px 14px",
         transform: hovered ? "scale(1.05)" : "scale(1)",
@@ -56,6 +51,6 @@ export function WhatsAppButton() {
       >
         {t("contact_whatsapp_btn")}
       </span>
-    </a>
+    </button>
   );
 }

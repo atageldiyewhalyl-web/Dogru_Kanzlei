@@ -9,6 +9,24 @@ const __dirname = path.dirname(fileURLToPath(import.meta.url))
 import fs from 'fs'
 import { join } from 'path'
 
+const blogPrerenderRoutes = [
+  '/de/blog/bedrohung-tuerkei-aus-deutschland-strafverteidigung',
+  '/tr/blog/turkiye-tehdit-sucu-almanya-savunma',
+  '/en/blog/threat-crime-turkey-defence-from-germany',
+  '/de/blog/drogendelikt-tuerkei-strafverteidigung-deutschland',
+  '/tr/blog/turkiye-uyusturucu-davasi-almanya-savunma',
+  '/en/blog/turkey-drug-case-defence-from-germany',
+  '/de/blog/beleidigung-tuerkei-aus-deutschland-soziale-medien',
+  '/tr/blog/almanyadan-turkiyede-sosyal-medyada-hakaret-sucu',
+  '/en/blog/insult-turkey-from-germany-social-media-criminal-law',
+  '/de/blog/beleidigung-tuerkei-whatsapp-strafrecht',
+  '/tr/blog/hakaret-davasi-almanya',
+  '/en/blog/turkish-insult-law-social-media-germany',
+  '/de/blog/hagb-einbuergerung-deutschland-tuerkei',
+  '/tr/blog/hagb-alman-vatandasligi',
+  '/en/blog/hagb-turkish-deferred-judgment-german-citizenship',
+]
+
 const postBuildAdjustments: Plugin = {
   name: 'post-build-adjustments',
   closeBundle() {
@@ -87,8 +105,9 @@ const sitemapPrerenderRepair: Plugin = {
     ])
 
     const sitemap = fs.readFileSync(sitemapPath, 'utf8')
-    const routes = Array.from(sitemap.matchAll(/<loc>https:\/\/www\.hasandogru\.de([^<]+)<\/loc>/g))
+    const sitemapRoutes = Array.from(sitemap.matchAll(/<loc>https:\/\/www\.hasandogru\.de([^<]+)<\/loc>/g))
       .map((match) => match[1])
+    const routes = [...sitemapRoutes, ...blogPrerenderRoutes]
       .filter((route, index, all) => all.indexOf(route) === index)
 
     if (!routes.length) return

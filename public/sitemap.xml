@@ -1446,6 +1446,407 @@
   </url>
 
 
+  <!-- Audit Catch-Up: Article Routes Present In Blog Data -->
+  <url>
+    <loc>https://www.hasandogru.de/de/blog/tuerkisches-strafrecht-anwalt-deutschland</loc>
+    <xhtml:link rel="alternate" hreflang="de" href="https://www.hasandogru.de/de/blog/tuerkisches-strafrecht-anwalt-deutschland" />
+    <xhtml:link rel="alternate" hreflang="tr" href="https://www.hasandogru.de/tr/blog/turkiye-ceza-hukuku-avukati-almanya" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.hasandogru.de/en/blog/turkish-criminal-law-lawyer-germany" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.hasandogru.de/de/blog/tuerkisches-strafrecht-anwalt-deutschland" />
+    <lastmod>2026-06-11</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://www.hasandogru.de/tr/blog/turkiye-ceza-hukuku-avukati-almanya</loc>
+    <xhtml:link rel="alternate" hreflang="de" href="https://www.hasandogru.de/de/blog/tuerkisches-strafrecht-anwalt-deutschland" />
+    <xhtml:link rel="alternate" hreflang="tr" href="https://www.hasandogru.de/tr/blog/turkiye-ceza-hukuku-avukati-almanya" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.hasandogru.de/en/blog/turkish-criminal-law-lawyer-germany" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.hasandogru.de/de/blog/tuerkisches-strafrecht-anwalt-deutschland" />
+    <lastmod>2026-06-11</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://www.hasandogru.de/en/blog/turkish-criminal-law-lawyer-germany</loc>
+    <xhtml:link rel="alternate" hreflang="de" href="https://www.hasandogru.de/de/blog/tuerkisches-strafrecht-anwalt-deutschland" />
+    <xhtml:link rel="alternate" hreflang="tr" href="https://www.hasandogru.de/tr/blog/turkiye-ceza-hukuku-avukati-almanya" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.hasandogru.de/en/blog/turkish-criminal-law-lawyer-germany" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.hasandogru.de/de/blog/tuerkisches-strafrecht-anwalt-deutschland" />
+    <lastmod>2026-06-11</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://www.hasandogru.de/en/blog/turkish-arrest-warrant-summons-germany</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.hasandogru.de/en/blog/turkish-arrest-warrant-summons-germany" />
+    <lastmod>2026-06-11</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://www.hasandogru.de/de/blog/strafverfahren-tuerkei-aus-deutschland</loc>
+    <xhtml:link rel="alternate" hreflang="de" href="https://www.hasandogru.de/de/blog/strafverfahren-tuerkei-aus-deutschland" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.hasandogru.de/en/blog/turkish-criminal-defense-from-germany" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.hasandogru.de/de/blog/strafverfahren-tuerkei-aus-deutschland" />
+    <lastmod>2026-06-11</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://www.hasandogru.de/en/blog/turkish-criminal-defense-from-germany</loc>
+    <xhtml:link rel="alternate" hreflang="de" href="https://www.hasandogru.de/de/blog/strafverfahren-tuerkei-aus-deutschland" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.hasandogru.de/en/blog/turkish-criminal-defense-from-germany" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.hasandogru.de/de/blog/strafverfahren-tuerkei-aus-deutschland" />
+    <lastmod>2026-06-11</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://www.hasandogru.de/en/blog/turkish-property-partition-lawsuit-izale-i-suyu</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.hasandogru.de/en/blog/turkish-property-partition-lawsuit-izale-i-suyu" />
+    <lastmod>2026-06-11</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://www.hasandogru.de/en/blog/turkish-forced-heirship-tenkis-lawsuit</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.hasandogru.de/en/blog/turkish-forced-heirship-tenkis-lawsuit" />
+    <lastmod>2026-06-11</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://www.hasandogru.de/en/blog/turkish-property-rights-guide</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.hasandogru.de/en/blog/turkish-property-rights-guide" />
+    <lastmod>2026-06-11</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://www.hasandogru.de/de/blog/scheingeschaeft-tapu-iptali-tuerkei</loc>
+    <xhtml:link rel="alternate" hreflang="de" href="https://www.hasandogru.de/de/blog/scheingeschaeft-tapu-iptali-tuerkei" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.hasandogru.de/en/blog/muris-muvazaasi-title-cancellation-turkey" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.hasandogru.de/de/blog/scheingeschaeft-tapu-iptali-tuerkei" />
+    <lastmod>2026-06-11</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://www.hasandogru.de/en/blog/muris-muvazaasi-title-cancellation-turkey</loc>
+    <xhtml:link rel="alternate" hreflang="de" href="https://www.hasandogru.de/de/blog/scheingeschaeft-tapu-iptali-tuerkei" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.hasandogru.de/en/blog/muris-muvazaasi-title-cancellation-turkey" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.hasandogru.de/de/blog/scheingeschaeft-tapu-iptali-tuerkei" />
+    <lastmod>2026-06-11</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://www.hasandogru.de/tr/blog/mavi-kart-miras-gayrimenkul-haklari</loc>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://www.hasandogru.de/tr/blog/mavi-kart-miras-gayrimenkul-haklari" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.hasandogru.de/en/blog/turkish-blue-card-mavi-kart-inheritance-property" />
+    <lastmod>2026-06-11</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://www.hasandogru.de/en/blog/turkish-blue-card-mavi-kart-inheritance-property</loc>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://www.hasandogru.de/tr/blog/mavi-kart-miras-gayrimenkul-haklari" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.hasandogru.de/en/blog/turkish-blue-card-mavi-kart-inheritance-property" />
+    <lastmod>2026-06-11</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+
+  <!-- Blog Post: Unterhalt / Nafaka Turkish Law -->
+  <url>
+    <loc>https://www.hasandogru.de/de/blog/unterhalt-tuerkisches-recht</loc>
+    <xhtml:link rel="alternate" hreflang="de" href="https://www.hasandogru.de/de/blog/unterhalt-tuerkisches-recht" />
+    <xhtml:link rel="alternate" hreflang="de-DE" href="https://www.hasandogru.de/de/blog/unterhalt-tuerkisches-recht" />
+    <xhtml:link rel="alternate" hreflang="de-CH" href="https://www.hasandogru.de/de/blog/unterhalt-tuerkisches-recht" />
+    <xhtml:link rel="alternate" hreflang="de-AT" href="https://www.hasandogru.de/de/blog/unterhalt-tuerkisches-recht" />
+    <xhtml:link rel="alternate" hreflang="tr" href="https://www.hasandogru.de/tr/blog/nafaka-turk-hukuku" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.hasandogru.de/en/blog/maintenance-alimony-turkish-law" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.hasandogru.de/de/blog/unterhalt-tuerkisches-recht" />
+    <lastmod>2025-06-01</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://www.hasandogru.de/tr/blog/nafaka-turk-hukuku</loc>
+    <xhtml:link rel="alternate" hreflang="de" href="https://www.hasandogru.de/de/blog/unterhalt-tuerkisches-recht" />
+    <xhtml:link rel="alternate" hreflang="de-DE" href="https://www.hasandogru.de/de/blog/unterhalt-tuerkisches-recht" />
+    <xhtml:link rel="alternate" hreflang="de-CH" href="https://www.hasandogru.de/de/blog/unterhalt-tuerkisches-recht" />
+    <xhtml:link rel="alternate" hreflang="de-AT" href="https://www.hasandogru.de/de/blog/unterhalt-tuerkisches-recht" />
+    <xhtml:link rel="alternate" hreflang="tr" href="https://www.hasandogru.de/tr/blog/nafaka-turk-hukuku" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.hasandogru.de/en/blog/maintenance-alimony-turkish-law" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.hasandogru.de/de/blog/unterhalt-tuerkisches-recht" />
+    <lastmod>2025-06-01</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://www.hasandogru.de/en/blog/maintenance-alimony-turkish-law</loc>
+    <xhtml:link rel="alternate" hreflang="de" href="https://www.hasandogru.de/de/blog/unterhalt-tuerkisches-recht" />
+    <xhtml:link rel="alternate" hreflang="de-DE" href="https://www.hasandogru.de/de/blog/unterhalt-tuerkisches-recht" />
+    <xhtml:link rel="alternate" hreflang="de-CH" href="https://www.hasandogru.de/de/blog/unterhalt-tuerkisches-recht" />
+    <xhtml:link rel="alternate" hreflang="de-AT" href="https://www.hasandogru.de/de/blog/unterhalt-tuerkisches-recht" />
+    <xhtml:link rel="alternate" hreflang="tr" href="https://www.hasandogru.de/tr/blog/nafaka-turk-hukuku" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.hasandogru.de/en/blog/maintenance-alimony-turkish-law" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.hasandogru.de/de/blog/unterhalt-tuerkisches-recht" />
+    <lastmod>2025-06-01</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+
+  <!-- Restored Lawyer List Guides -->
+  <url>
+    <loc>https://www.hasandogru.de/de/blog/tuerkischer-anwalt-deutschland-liste</loc>
+    <xhtml:link rel="alternate" hreflang="de" href="https://www.hasandogru.de/de/blog/tuerkischer-anwalt-deutschland-liste" />
+    <xhtml:link rel="alternate" hreflang="de-DE" href="https://www.hasandogru.de/de/blog/tuerkischer-anwalt-deutschland-liste" />
+    <xhtml:link rel="alternate" hreflang="de-CH" href="https://www.hasandogru.de/de/blog/tuerkischer-anwalt-deutschland-liste" />
+    <xhtml:link rel="alternate" hreflang="de-AT" href="https://www.hasandogru.de/de/blog/tuerkischer-anwalt-deutschland-liste" />
+    <xhtml:link rel="alternate" hreflang="tr" href="https://www.hasandogru.de/tr/blog/almanya-da-tuerk-avukat-listesi" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.hasandogru.de/en/blog/turkish-lawyer-germany-list" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.hasandogru.de/de/blog/tuerkischer-anwalt-deutschland-liste" />
+    <lastmod>2026-05-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://www.hasandogru.de/tr/blog/almanya-da-tuerk-avukat-listesi</loc>
+    <xhtml:link rel="alternate" hreflang="de" href="https://www.hasandogru.de/de/blog/tuerkischer-anwalt-deutschland-liste" />
+    <xhtml:link rel="alternate" hreflang="de-DE" href="https://www.hasandogru.de/de/blog/tuerkischer-anwalt-deutschland-liste" />
+    <xhtml:link rel="alternate" hreflang="de-CH" href="https://www.hasandogru.de/de/blog/tuerkischer-anwalt-deutschland-liste" />
+    <xhtml:link rel="alternate" hreflang="de-AT" href="https://www.hasandogru.de/de/blog/tuerkischer-anwalt-deutschland-liste" />
+    <xhtml:link rel="alternate" hreflang="tr" href="https://www.hasandogru.de/tr/blog/almanya-da-tuerk-avukat-listesi" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.hasandogru.de/en/blog/turkish-lawyer-germany-list" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.hasandogru.de/de/blog/tuerkischer-anwalt-deutschland-liste" />
+    <lastmod>2026-05-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://www.hasandogru.de/en/blog/turkish-lawyer-germany-list</loc>
+    <xhtml:link rel="alternate" hreflang="de" href="https://www.hasandogru.de/de/blog/tuerkischer-anwalt-deutschland-liste" />
+    <xhtml:link rel="alternate" hreflang="de-DE" href="https://www.hasandogru.de/de/blog/tuerkischer-anwalt-deutschland-liste" />
+    <xhtml:link rel="alternate" hreflang="de-CH" href="https://www.hasandogru.de/de/blog/tuerkischer-anwalt-deutschland-liste" />
+    <xhtml:link rel="alternate" hreflang="de-AT" href="https://www.hasandogru.de/de/blog/tuerkischer-anwalt-deutschland-liste" />
+    <xhtml:link rel="alternate" hreflang="tr" href="https://www.hasandogru.de/tr/blog/almanya-da-tuerk-avukat-listesi" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.hasandogru.de/en/blog/turkish-lawyer-germany-list" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.hasandogru.de/de/blog/tuerkischer-anwalt-deutschland-liste" />
+    <lastmod>2026-05-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+
+  <!-- Hakaret / Insult Law Guides -->
+  <url>
+    <loc>https://www.hasandogru.de/de/blog/beleidigung-tuerkei-whatsapp-strafrecht</loc>
+    <xhtml:link rel="alternate" hreflang="de" href="https://www.hasandogru.de/de/blog/beleidigung-tuerkei-whatsapp-strafrecht" />
+    <xhtml:link rel="alternate" hreflang="de-DE" href="https://www.hasandogru.de/de/blog/beleidigung-tuerkei-whatsapp-strafrecht" />
+    <xhtml:link rel="alternate" hreflang="de-CH" href="https://www.hasandogru.de/de/blog/beleidigung-tuerkei-whatsapp-strafrecht" />
+    <xhtml:link rel="alternate" hreflang="de-AT" href="https://www.hasandogru.de/de/blog/beleidigung-tuerkei-whatsapp-strafrecht" />
+    <xhtml:link rel="alternate" hreflang="tr" href="https://www.hasandogru.de/tr/blog/hakaret-davasi-almanya" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.hasandogru.de/en/blog/turkish-insult-law-social-media-germany" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.hasandogru.de/de/blog/beleidigung-tuerkei-whatsapp-strafrecht" />
+    <lastmod>2026-06-12</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://www.hasandogru.de/tr/blog/hakaret-davasi-almanya</loc>
+    <xhtml:link rel="alternate" hreflang="de" href="https://www.hasandogru.de/de/blog/beleidigung-tuerkei-whatsapp-strafrecht" />
+    <xhtml:link rel="alternate" hreflang="de-DE" href="https://www.hasandogru.de/de/blog/beleidigung-tuerkei-whatsapp-strafrecht" />
+    <xhtml:link rel="alternate" hreflang="de-CH" href="https://www.hasandogru.de/de/blog/beleidigung-tuerkei-whatsapp-strafrecht" />
+    <xhtml:link rel="alternate" hreflang="de-AT" href="https://www.hasandogru.de/de/blog/beleidigung-tuerkei-whatsapp-strafrecht" />
+    <xhtml:link rel="alternate" hreflang="tr" href="https://www.hasandogru.de/tr/blog/hakaret-davasi-almanya" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.hasandogru.de/en/blog/turkish-insult-law-social-media-germany" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.hasandogru.de/de/blog/beleidigung-tuerkei-whatsapp-strafrecht" />
+    <lastmod>2026-06-12</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://www.hasandogru.de/en/blog/turkish-insult-law-social-media-germany</loc>
+    <xhtml:link rel="alternate" hreflang="de" href="https://www.hasandogru.de/de/blog/beleidigung-tuerkei-whatsapp-strafrecht" />
+    <xhtml:link rel="alternate" hreflang="de-DE" href="https://www.hasandogru.de/de/blog/beleidigung-tuerkei-whatsapp-strafrecht" />
+    <xhtml:link rel="alternate" hreflang="de-CH" href="https://www.hasandogru.de/de/blog/beleidigung-tuerkei-whatsapp-strafrecht" />
+    <xhtml:link rel="alternate" hreflang="de-AT" href="https://www.hasandogru.de/de/blog/beleidigung-tuerkei-whatsapp-strafrecht" />
+    <xhtml:link rel="alternate" hreflang="tr" href="https://www.hasandogru.de/tr/blog/hakaret-davasi-almanya" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.hasandogru.de/en/blog/turkish-insult-law-social-media-germany" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.hasandogru.de/de/blog/beleidigung-tuerkei-whatsapp-strafrecht" />
+    <lastmod>2026-06-12</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+
+  <!-- HAGB / German Citizenship Guides -->
+  <url>
+    <loc>https://www.hasandogru.de/de/blog/hagb-einbuergerung-deutschland-tuerkei</loc>
+    <xhtml:link rel="alternate" hreflang="de" href="https://www.hasandogru.de/de/blog/hagb-einbuergerung-deutschland-tuerkei" />
+    <xhtml:link rel="alternate" hreflang="de-DE" href="https://www.hasandogru.de/de/blog/hagb-einbuergerung-deutschland-tuerkei" />
+    <xhtml:link rel="alternate" hreflang="de-CH" href="https://www.hasandogru.de/de/blog/hagb-einbuergerung-deutschland-tuerkei" />
+    <xhtml:link rel="alternate" hreflang="de-AT" href="https://www.hasandogru.de/de/blog/hagb-einbuergerung-deutschland-tuerkei" />
+    <xhtml:link rel="alternate" hreflang="tr" href="https://www.hasandogru.de/tr/blog/hagb-alman-vatandasligi" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.hasandogru.de/en/blog/hagb-turkish-deferred-judgment-german-citizenship" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.hasandogru.de/de/blog/hagb-einbuergerung-deutschland-tuerkei" />
+    <lastmod>2026-06-12</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://www.hasandogru.de/tr/blog/hagb-alman-vatandasligi</loc>
+    <xhtml:link rel="alternate" hreflang="de" href="https://www.hasandogru.de/de/blog/hagb-einbuergerung-deutschland-tuerkei" />
+    <xhtml:link rel="alternate" hreflang="de-DE" href="https://www.hasandogru.de/de/blog/hagb-einbuergerung-deutschland-tuerkei" />
+    <xhtml:link rel="alternate" hreflang="de-CH" href="https://www.hasandogru.de/de/blog/hagb-einbuergerung-deutschland-tuerkei" />
+    <xhtml:link rel="alternate" hreflang="de-AT" href="https://www.hasandogru.de/de/blog/hagb-einbuergerung-deutschland-tuerkei" />
+    <xhtml:link rel="alternate" hreflang="tr" href="https://www.hasandogru.de/tr/blog/hagb-alman-vatandasligi" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.hasandogru.de/en/blog/hagb-turkish-deferred-judgment-german-citizenship" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.hasandogru.de/de/blog/hagb-einbuergerung-deutschland-tuerkei" />
+    <lastmod>2026-06-12</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://www.hasandogru.de/en/blog/hagb-turkish-deferred-judgment-german-citizenship</loc>
+    <xhtml:link rel="alternate" hreflang="de" href="https://www.hasandogru.de/de/blog/hagb-einbuergerung-deutschland-tuerkei" />
+    <xhtml:link rel="alternate" hreflang="de-DE" href="https://www.hasandogru.de/de/blog/hagb-einbuergerung-deutschland-tuerkei" />
+    <xhtml:link rel="alternate" hreflang="de-CH" href="https://www.hasandogru.de/de/blog/hagb-einbuergerung-deutschland-tuerkei" />
+    <xhtml:link rel="alternate" hreflang="de-AT" href="https://www.hasandogru.de/de/blog/hagb-einbuergerung-deutschland-tuerkei" />
+    <xhtml:link rel="alternate" hreflang="tr" href="https://www.hasandogru.de/tr/blog/hagb-alman-vatandasligi" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.hasandogru.de/en/blog/hagb-turkish-deferred-judgment-german-citizenship" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.hasandogru.de/de/blog/hagb-einbuergerung-deutschland-tuerkei" />
+    <lastmod>2026-06-12</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+
+
+  <!-- Threat Crime / Strafverteidigung Guides -->
+  <url>
+    <loc>https://www.hasandogru.de/de/blog/bedrohung-tuerkei-aus-deutschland-strafverteidigung</loc>
+    <xhtml:link rel="alternate" hreflang="de" href="https://www.hasandogru.de/de/blog/bedrohung-tuerkei-aus-deutschland-strafverteidigung" />
+    <xhtml:link rel="alternate" hreflang="de-DE" href="https://www.hasandogru.de/de/blog/bedrohung-tuerkei-aus-deutschland-strafverteidigung" />
+    <xhtml:link rel="alternate" hreflang="de-CH" href="https://www.hasandogru.de/de/blog/bedrohung-tuerkei-aus-deutschland-strafverteidigung" />
+    <xhtml:link rel="alternate" hreflang="de-AT" href="https://www.hasandogru.de/de/blog/bedrohung-tuerkei-aus-deutschland-strafverteidigung" />
+    <xhtml:link rel="alternate" hreflang="tr" href="https://www.hasandogru.de/tr/blog/turkiye-tehdit-sucu-almanya-savunma" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.hasandogru.de/en/blog/threat-crime-turkey-defence-from-germany" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.hasandogru.de/de/blog/bedrohung-tuerkei-aus-deutschland-strafverteidigung" />
+    <lastmod>2026-06-13</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://www.hasandogru.de/tr/blog/turkiye-tehdit-sucu-almanya-savunma</loc>
+    <xhtml:link rel="alternate" hreflang="de" href="https://www.hasandogru.de/de/blog/bedrohung-tuerkei-aus-deutschland-strafverteidigung" />
+    <xhtml:link rel="alternate" hreflang="de-DE" href="https://www.hasandogru.de/de/blog/bedrohung-tuerkei-aus-deutschland-strafverteidigung" />
+    <xhtml:link rel="alternate" hreflang="de-CH" href="https://www.hasandogru.de/de/blog/bedrohung-tuerkei-aus-deutschland-strafverteidigung" />
+    <xhtml:link rel="alternate" hreflang="de-AT" href="https://www.hasandogru.de/de/blog/bedrohung-tuerkei-aus-deutschland-strafverteidigung" />
+    <xhtml:link rel="alternate" hreflang="tr" href="https://www.hasandogru.de/tr/blog/turkiye-tehdit-sucu-almanya-savunma" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.hasandogru.de/en/blog/threat-crime-turkey-defence-from-germany" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.hasandogru.de/de/blog/bedrohung-tuerkei-aus-deutschland-strafverteidigung" />
+    <lastmod>2026-06-13</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://www.hasandogru.de/en/blog/threat-crime-turkey-defence-from-germany</loc>
+    <xhtml:link rel="alternate" hreflang="de" href="https://www.hasandogru.de/de/blog/bedrohung-tuerkei-aus-deutschland-strafverteidigung" />
+    <xhtml:link rel="alternate" hreflang="de-DE" href="https://www.hasandogru.de/de/blog/bedrohung-tuerkei-aus-deutschland-strafverteidigung" />
+    <xhtml:link rel="alternate" hreflang="de-CH" href="https://www.hasandogru.de/de/blog/bedrohung-tuerkei-aus-deutschland-strafverteidigung" />
+    <xhtml:link rel="alternate" hreflang="de-AT" href="https://www.hasandogru.de/de/blog/bedrohung-tuerkei-aus-deutschland-strafverteidigung" />
+    <xhtml:link rel="alternate" hreflang="tr" href="https://www.hasandogru.de/tr/blog/turkiye-tehdit-sucu-almanya-savunma" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.hasandogru.de/en/blog/threat-crime-turkey-defence-from-germany" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.hasandogru.de/de/blog/bedrohung-tuerkei-aus-deutschland-strafverteidigung" />
+    <lastmod>2026-06-13</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+
+  <!-- Drug Offence / Strafverteidigung Guides -->
+  <url>
+    <loc>https://www.hasandogru.de/de/blog/drogendelikt-tuerkei-strafverteidigung-deutschland</loc>
+    <xhtml:link rel="alternate" hreflang="de" href="https://www.hasandogru.de/de/blog/drogendelikt-tuerkei-strafverteidigung-deutschland" />
+    <xhtml:link rel="alternate" hreflang="de-DE" href="https://www.hasandogru.de/de/blog/drogendelikt-tuerkei-strafverteidigung-deutschland" />
+    <xhtml:link rel="alternate" hreflang="de-CH" href="https://www.hasandogru.de/de/blog/drogendelikt-tuerkei-strafverteidigung-deutschland" />
+    <xhtml:link rel="alternate" hreflang="de-AT" href="https://www.hasandogru.de/de/blog/drogendelikt-tuerkei-strafverteidigung-deutschland" />
+    <xhtml:link rel="alternate" hreflang="tr" href="https://www.hasandogru.de/tr/blog/turkiye-uyusturucu-davasi-almanya-savunma" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.hasandogru.de/en/blog/turkey-drug-case-defence-from-germany" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.hasandogru.de/de/blog/drogendelikt-tuerkei-strafverteidigung-deutschland" />
+    <lastmod>2026-06-13</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://www.hasandogru.de/tr/blog/turkiye-uyusturucu-davasi-almanya-savunma</loc>
+    <xhtml:link rel="alternate" hreflang="de" href="https://www.hasandogru.de/de/blog/drogendelikt-tuerkei-strafverteidigung-deutschland" />
+    <xhtml:link rel="alternate" hreflang="de-DE" href="https://www.hasandogru.de/de/blog/drogendelikt-tuerkei-strafverteidigung-deutschland" />
+    <xhtml:link rel="alternate" hreflang="de-CH" href="https://www.hasandogru.de/de/blog/drogendelikt-tuerkei-strafverteidigung-deutschland" />
+    <xhtml:link rel="alternate" hreflang="de-AT" href="https://www.hasandogru.de/de/blog/drogendelikt-tuerkei-strafverteidigung-deutschland" />
+    <xhtml:link rel="alternate" hreflang="tr" href="https://www.hasandogru.de/tr/blog/turkiye-uyusturucu-davasi-almanya-savunma" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.hasandogru.de/en/blog/turkey-drug-case-defence-from-germany" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.hasandogru.de/de/blog/drogendelikt-tuerkei-strafverteidigung-deutschland" />
+    <lastmod>2026-06-13</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://www.hasandogru.de/en/blog/turkey-drug-case-defence-from-germany</loc>
+    <xhtml:link rel="alternate" hreflang="de" href="https://www.hasandogru.de/de/blog/drogendelikt-tuerkei-strafverteidigung-deutschland" />
+    <xhtml:link rel="alternate" hreflang="de-DE" href="https://www.hasandogru.de/de/blog/drogendelikt-tuerkei-strafverteidigung-deutschland" />
+    <xhtml:link rel="alternate" hreflang="de-CH" href="https://www.hasandogru.de/de/blog/drogendelikt-tuerkei-strafverteidigung-deutschland" />
+    <xhtml:link rel="alternate" hreflang="de-AT" href="https://www.hasandogru.de/de/blog/drogendelikt-tuerkei-strafverteidigung-deutschland" />
+    <xhtml:link rel="alternate" hreflang="tr" href="https://www.hasandogru.de/tr/blog/turkiye-uyusturucu-davasi-almanya-savunma" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.hasandogru.de/en/blog/turkey-drug-case-defence-from-germany" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.hasandogru.de/de/blog/drogendelikt-tuerkei-strafverteidigung-deutschland" />
+    <lastmod>2026-06-13</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+
+  <!-- Social Media Insult / Hakaret Guides -->
+  <url>
+    <loc>https://www.hasandogru.de/de/blog/beleidigung-tuerkei-aus-deutschland-soziale-medien</loc>
+    <xhtml:link rel="alternate" hreflang="de" href="https://www.hasandogru.de/de/blog/beleidigung-tuerkei-aus-deutschland-soziale-medien" />
+    <xhtml:link rel="alternate" hreflang="de-DE" href="https://www.hasandogru.de/de/blog/beleidigung-tuerkei-aus-deutschland-soziale-medien" />
+    <xhtml:link rel="alternate" hreflang="de-CH" href="https://www.hasandogru.de/de/blog/beleidigung-tuerkei-aus-deutschland-soziale-medien" />
+    <xhtml:link rel="alternate" hreflang="de-AT" href="https://www.hasandogru.de/de/blog/beleidigung-tuerkei-aus-deutschland-soziale-medien" />
+    <xhtml:link rel="alternate" hreflang="tr" href="https://www.hasandogru.de/tr/blog/almanyadan-turkiyede-sosyal-medyada-hakaret-sucu" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.hasandogru.de/en/blog/insult-turkey-from-germany-social-media-criminal-law" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.hasandogru.de/de/blog/beleidigung-tuerkei-aus-deutschland-soziale-medien" />
+    <lastmod>2026-06-13</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://www.hasandogru.de/tr/blog/almanyadan-turkiyede-sosyal-medyada-hakaret-sucu</loc>
+    <xhtml:link rel="alternate" hreflang="de" href="https://www.hasandogru.de/de/blog/beleidigung-tuerkei-aus-deutschland-soziale-medien" />
+    <xhtml:link rel="alternate" hreflang="de-DE" href="https://www.hasandogru.de/de/blog/beleidigung-tuerkei-aus-deutschland-soziale-medien" />
+    <xhtml:link rel="alternate" hreflang="de-CH" href="https://www.hasandogru.de/de/blog/beleidigung-tuerkei-aus-deutschland-soziale-medien" />
+    <xhtml:link rel="alternate" hreflang="de-AT" href="https://www.hasandogru.de/de/blog/beleidigung-tuerkei-aus-deutschland-soziale-medien" />
+    <xhtml:link rel="alternate" hreflang="tr" href="https://www.hasandogru.de/tr/blog/almanyadan-turkiyede-sosyal-medyada-hakaret-sucu" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.hasandogru.de/en/blog/insult-turkey-from-germany-social-media-criminal-law" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.hasandogru.de/de/blog/beleidigung-tuerkei-aus-deutschland-soziale-medien" />
+    <lastmod>2026-06-13</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://www.hasandogru.de/en/blog/insult-turkey-from-germany-social-media-criminal-law</loc>
+    <xhtml:link rel="alternate" hreflang="de" href="https://www.hasandogru.de/de/blog/beleidigung-tuerkei-aus-deutschland-soziale-medien" />
+    <xhtml:link rel="alternate" hreflang="de-DE" href="https://www.hasandogru.de/de/blog/beleidigung-tuerkei-aus-deutschland-soziale-medien" />
+    <xhtml:link rel="alternate" hreflang="de-CH" href="https://www.hasandogru.de/de/blog/beleidigung-tuerkei-aus-deutschland-soziale-medien" />
+    <xhtml:link rel="alternate" hreflang="de-AT" href="https://www.hasandogru.de/de/blog/beleidigung-tuerkei-aus-deutschland-soziale-medien" />
+    <xhtml:link rel="alternate" hreflang="tr" href="https://www.hasandogru.de/tr/blog/almanyadan-turkiyede-sosyal-medyada-hakaret-sucu" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.hasandogru.de/en/blog/insult-turkey-from-germany-social-media-criminal-law" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.hasandogru.de/de/blog/beleidigung-tuerkei-aus-deutschland-soziale-medien" />
+    <lastmod>2026-06-13</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+
+
   <!-- Legal Pages -->
 
 </urlset>

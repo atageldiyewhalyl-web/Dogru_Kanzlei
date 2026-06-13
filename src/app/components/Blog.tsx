@@ -5,6 +5,13 @@ import { sortedBlogPosts } from "../data/blogPosts";
 
 export function Blog() {
   const { t, language, paths } = useLanguage();
+  const getLocalizedSlug = (post: { slugDE: string; slugTR: string; slugEN: string }) =>
+    language === 'de' ? post.slugDE : language === 'tr' ? post.slugTR : post.slugEN;
+  const visiblePosts = sortedBlogPosts.filter((post) => {
+    if (language === 'de') return Boolean(post.slugDE && post.contentDE?.trim());
+    if (language === 'tr') return Boolean(post.slugTR && post.contentTR?.trim());
+    return Boolean(post.slugEN && post.contentEN?.trim());
+  });
 
   return (
     <section
@@ -100,9 +107,9 @@ export function Blog() {
           }}
           className="blog-grid"
         >
-          {sortedBlogPosts.slice(0, 3).map((post) => (
-            <article key={post.slug} className="text-left">
-              <Link to={paths.blogPost(post.slug)} className="group block no-justify" style={{ textDecoration: "none", textAlign: "left" }}>
+          {visiblePosts.slice(0, 3).map((post) => (
+            <article key={`${language}-${getLocalizedSlug(post)}`} className="text-left">
+              <Link to={paths.blogPost(getLocalizedSlug(post))} className="group block no-justify" style={{ textDecoration: "none", textAlign: "left" }}>
                 {/* Image */}
                 <div
                   style={{

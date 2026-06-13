@@ -3,8 +3,7 @@ import { Menu, X, Globe } from "lucide-react";
 import { Link, useLocation, useNavigate } from "react-router";
 import { useLanguage } from "../context/LanguageContext";
 import logoImage from "@/assets/logo.avif";
-
-const WHATSAPP_URL = "https://wa.me/4917661221210";
+import { openWhatsAppLeadCapture } from "./WhatsAppLeadCapture";
 
 export function Navbar() {
   const [scrolled, setScrolled] = useState(false);
@@ -215,7 +214,7 @@ export function Navbar() {
           </div>
 
           <button
-            onClick={() => window.open(WHATSAPP_URL, "_blank")}
+            onClick={() => openWhatsAppLeadCapture()}
             style={{
               fontFamily: "var(--font-sans)",
               fontSize: 10,
@@ -306,7 +305,7 @@ export function Navbar() {
             <p className="font-sans text-white mb-1">info@hasandogru.de</p>
             <p className="font-sans text-white mb-8">+4917661221210</p>
             <button
-              onClick={() => window.open(WHATSAPP_URL, "_blank")}
+              onClick={() => openWhatsAppLeadCapture()}
               className="w-full bg-[#8B6E2A] text-white font-sans text-xs font-bold tracking-[0.15em] uppercase py-5 text-center transition-colors hover:bg-[#7A5F20]"
             >
               {t("nav_cta")}

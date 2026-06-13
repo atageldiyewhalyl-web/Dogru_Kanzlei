@@ -9,9 +9,13 @@ import { usePrerender } from "../hooks/usePrerender";
 export function BlogPage() {
   const { language, t, paths } = useLanguage();
   usePrerender();
-  const visiblePosts = language === 'en'
-    ? sortedBlogPosts.filter((post) => post.slugEN && post.contentEN?.trim())
-    : sortedBlogPosts;
+  const getLocalizedSlug = (post: { slugDE: string; slugTR: string; slugEN: string }) =>
+    language === 'de' ? post.slugDE : language === 'tr' ? post.slugTR : post.slugEN;
+  const visiblePosts = sortedBlogPosts.filter((post) => {
+    if (language === 'de') return Boolean(post.slugDE && post.contentDE?.trim());
+    if (language === 'tr') return Boolean(post.slugTR && post.contentTR?.trim());
+    return Boolean(post.slugEN && post.contentEN?.trim());
+  });
 
   useSEO({
     title: language === 'de'
@@ -59,10 +63,10 @@ export function BlogPage() {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
           {visiblePosts.map((post) => (
             <article
-              key={post.slug}
+              key={`${language}-${getLocalizedSlug(post)}`}
               className="text-left"
             >
-              <Link to={paths.blogPost(post.slug)} className="group block no-justify">
+              <Link to={paths.blogPost(getLocalizedSlug(post))} className="group block no-justify">
                 {/* Image */}
                 <div className="overflow-hidden mb-6 h-[220px] bg-[#e8e4dc]">
                   <img

@@ -1,0 +1,2 @@
+-- Placeholder for an existing Dedication remote migration.
+-- The original migration is already applied in Supabase but is not present in this repository.
