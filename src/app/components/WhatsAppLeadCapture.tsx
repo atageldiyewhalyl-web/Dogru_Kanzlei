@@ -3,7 +3,8 @@ import { X } from "lucide-react";
 import { useLanguage } from "../context/LanguageContext";
 
 const WHATSAPP_PHONE = "4917661221210";
-const SUPABASE_URL = (((import.meta as any).env?.VITE_SUPABASE_URL || "") as string).replace(/\/$/, "");
+const DEFAULT_SUPABASE_URL = "https://srnynewvauzymnljqskj.supabase.co";
+const SUPABASE_URL = (((import.meta as any).env?.VITE_SUPABASE_URL || DEFAULT_SUPABASE_URL) as string).replace(/\/$/, "");
 const LEAD_ENDPOINT = (
   ((import.meta as any).env?.VITE_LEAD_CAPTURE_ENDPOINT || "") ||
   (SUPABASE_URL ? `${SUPABASE_URL}/functions/v1/lead-anfrage` : "")
