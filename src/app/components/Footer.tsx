@@ -3,6 +3,7 @@ import { Mail, Phone, MapPin } from "lucide-react";
 import { Link } from "react-router";
 import { useLanguage } from "../context/LanguageContext";
 import { useConsent } from "../context/ConsentContext";
+import { openWhatsAppLeadCapture } from "./WhatsAppLeadCapture";
 
 export function Footer() {
   const { t, language, paths } = useLanguage();
@@ -223,15 +224,14 @@ export function Footer() {
                </div>
                <div style={{ display: "flex", alignItems: "center", gap: 10, marginBottom: 14 }}>
                  <Phone size={14} color="#8B6E2A" />
-                 <a 
-                   href="https://wa.me/4917661221210" 
+                 <button
+                   type="button"
+                   onClick={() => openWhatsAppLeadCapture()}
                    aria-label="Kontakt per WhatsApp" 
-                   style={{ color: "inherit", textDecoration: "none" }}
-                   target="_blank"
-                   rel="noopener noreferrer"
+                   style={{ color: "inherit", textDecoration: "none", background: "transparent", border: 0, padding: 0, font: "inherit", cursor: "pointer" }}
                  >
                    +4917661221210
-                 </a>
+                 </button>
                </div>
                <div style={{ display: "flex", alignItems: "center", gap: 10, marginBottom: 14 }}>
                  <Phone size={14} color="#8B6E2A" />

@@ -256,12 +256,6 @@ function BlogStickyBookingCTA({ funnel }: { funnel: BlogProductFunnel }) {
 type BlogWhatsAppCTAPlacement = 'intro' | 'mid' | 'deadline' | 'settlement' | 'records' | 'strategy' | 'bottom';
 type BlogWhatsAppCTATopic = 'criminal_law' | 'drug_case' | 'threat_case' | 'hakaret' | 'hagb' | 'property_partition' | 'inheritance_dispute' | 'inheritance_guide' | 'property_rights' | 'muris_muvazaasi' | 'mavi_kart' | 'debt_collection' | 'divorce_turkey' | 'tanima_tenfiz' | 'tck_191_kdae' | 'sorgerecht_tenfiz' | 'unterhalt_nafaka';
 
-function buildWhatsAppLeadUrl(service: string) {
-  const url = new URL(WHATSAPP_URL);
-  url.searchParams.set('service', service);
-  return url.toString();
-}
-
 function getBlogWhatsAppService(topic: BlogWhatsAppCTATopic) {
   if (topic === 'hagb') return 'Ceza / Yakalama Kararı';
   if (topic === 'hakaret') return 'Ceza / Yakalama Kararı';
@@ -1691,17 +1685,19 @@ function BlogWhatsAppCTA({
 	          ].join(' ')}>
 	            {copy.body}
 	          </p>
-	        </div>
+        </div>
         <div className="mt-6 border-t border-[#1C3829]/10 pt-5 md:mt-7 md:pt-6">
-          <a
-            href={buildWhatsAppLeadUrl(getBlogWhatsAppService(topic))}
-            target="_blank"
-            rel="noopener noreferrer"
+          <button
+            type="button"
+            onClick={() => openWhatsAppLeadCapture({
+              service: getBlogWhatsAppService(topic),
+              situation: copy.title,
+            })}
             className="inline-flex min-h-[52px] w-full items-center justify-center gap-2 rounded-full bg-[#8B6E2A] px-5 py-3.5 text-center font-sans text-[10px] font-bold uppercase tracking-[0.12em] text-white shadow-lg transition-all duration-300 hover:bg-[#1C3829] active:scale-95 sm:w-auto sm:min-w-[280px] sm:px-6 sm:py-4 sm:text-[11px] sm:tracking-[0.16em]"
           >
             <MessageCircle size={16} className="shrink-0" />
             <span className="min-w-0 leading-5">{copy.button}</span>
-          </a>
+          </button>
         </div>
       </div>
     </aside>
@@ -2639,14 +2635,16 @@ export function BlogPost() {
                         : (post.ctaDescriptionEN || 'Take advantage of our dual admission in Germany and Turkey. Contact us for an initial assessment.')}
                   </span>
                 </p>
-                <a
-                  href={WHATSAPP_URL}
-                  target="_blank"
-                  rel="noopener noreferrer"
+                <button
+                  type="button"
+                  onClick={() => openWhatsAppLeadCapture({
+                    service: category,
+                    situation: language === 'de' ? post.ctaTitleDE : language === 'tr' ? post.ctaTitleTR : post.ctaTitleEN,
+                  })}
                   className="relative z-10 inline-block bg-[#8B6E2A] text-white font-sans text-[12px] font-bold tracking-[0.2em] uppercase px-12 py-5 rounded-full hover:bg-white hover:text-[#1C3829] transition-all duration-300 shadow-lg active:scale-95"
                 >
                   {t("nav_cta")}
-                </a>
+                </button>
               </div>
             )}
 

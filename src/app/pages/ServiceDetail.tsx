@@ -8,6 +8,7 @@ import { useSEO, SITE_URL } from "../hooks/useSEO";
 import { SchemaOrg } from "../components/SchemaOrg";
 import { FAQItem } from "../components/FAQItem";
 import { usePrerender } from "../hooks/usePrerender";
+import { openWhatsAppLeadCapture } from "../components/WhatsAppLeadCapture";
 import aileHukukuHeroVideo from "../../assets/aile-hukuku-hero.webm";
 import mirasHukukuHero from "../../assets/miras-hukuku-hero.avif";
 import criminalHero from "../../assets/ceza-hero.avif";
@@ -204,7 +205,6 @@ export function ServiceDetail() {
       'German-Turkish divorce, custody, maintenance and Tanıma & Tenfiz handled directly from Mannheim and Ankara.'
     )
     : null;
-  const whatsappUrl = 'https://wa.me/4917661221210';
   const familyLawConversionCards = [
     {
       title: familyLawText('Scheidung in der Türkei', 'Türkiye’de boşanma davası', 'Divorce in Turkey'),
@@ -1244,15 +1244,14 @@ export function ServiceDetail() {
                     {heroSubtitle}
                   </p>
                   <div className="mt-8">
-                    <a
-                      href={whatsappUrl}
-                      target="_blank"
-                      rel="noopener noreferrer"
+                    <button
+                      type="button"
+                      onClick={() => openWhatsAppLeadCapture({ service: title })}
                       className="inline-flex items-center justify-center gap-3 px-8 py-5 bg-[#1C3829] text-white font-sans text-[12px] font-bold tracking-[0.16em] uppercase transition-all hover:bg-[#7A5F20]"
                     >
                       {landingWhatsappLabel}
                       <ArrowRight size={15} />
-                    </a>
+                    </button>
                   </div>
                   <div className="flex flex-wrap items-center gap-x-4 gap-y-2 mt-8 font-sans text-[12px] md:text-[13px] font-bold tracking-[0.12em] uppercase text-[#1C3829]/75">
                     <span>Ankara Barosu</span>
@@ -1560,15 +1559,14 @@ export function ServiceDetail() {
 			                        {landingBottomText}
 	                      </p>
 	                    </div>
-	                    <a
-	                      href={whatsappUrl}
-	                      target="_blank"
-	                      rel="noopener noreferrer"
-	                      className="inline-flex items-center justify-center gap-3 px-8 py-5 bg-[#8B6E2A] text-white font-sans text-[12px] font-bold tracking-[0.16em] uppercase transition-all hover:bg-[#7A5F20]"
-	                    >
+                    <button
+                      type="button"
+                      onClick={() => openWhatsAppLeadCapture({ service: title })}
+                      className="inline-flex items-center justify-center gap-3 px-8 py-5 bg-[#8B6E2A] text-white font-sans text-[12px] font-bold tracking-[0.16em] uppercase transition-all hover:bg-[#7A5F20]"
+                    >
 			                      {landingWhatsappLabel}
-	                      <ArrowRight size={15} />
-	                    </a>
+                      <ArrowRight size={15} />
+                    </button>
 	                  </div>
 	                </section>
 	              )}

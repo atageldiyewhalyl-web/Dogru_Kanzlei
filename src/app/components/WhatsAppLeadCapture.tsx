@@ -123,6 +123,8 @@ export function WhatsAppLeadCapture() {
         privacy: "Mit dem Absenden stimmen Sie zu, dass Ihre Angaben zur Bearbeitung Ihrer Anfrage an Hasan Doğru und nüll übermittelt werden.",
         submit: "Weiter zu WhatsApp",
         submitting: "Wird vorbereitet...",
+        missingEndpoint: "Das Formular ist noch nicht vollständig eingerichtet. Bitte versuchen Sie es später erneut.",
+        submitFailed: "Die Anfrage konnte nicht gesendet werden. WhatsApp wird erst geöffnet, wenn die Angaben erfolgreich übermittelt wurden.",
       };
     }
 
@@ -139,6 +141,8 @@ export function WhatsAppLeadCapture() {
         privacy: "By submitting, you agree that your details are shared with Hasan Doğru and nüll to process your request.",
         submit: "Continue to WhatsApp",
         submitting: "Preparing...",
+        missingEndpoint: "The form is not fully configured yet. Please try again later.",
+        submitFailed: "The request could not be sent. WhatsApp opens only after the details are successfully submitted.",
       };
     }
 
@@ -154,6 +158,8 @@ export function WhatsAppLeadCapture() {
       privacy: "Göndererek bilgilerinizin talebinizin işlenmesi için Hasan Doğru ve nüll ile paylaşılmasını kabul edersiniz.",
       submit: "WhatsApp'a Devam Et",
       submitting: "Hazırlanıyor...",
+      missingEndpoint: "Form henüz tam yapılandırılmamış. Lütfen daha sonra tekrar deneyin.",
+      submitFailed: "Talep gönderilemedi. WhatsApp yalnızca bilgiler başarıyla iletildikten sonra açılır.",
     };
   }, [language]);
 
@@ -205,13 +211,26 @@ export function WhatsAppLeadCapture() {
     setSubmitError("");
 
     const pageUrl = window.location.href;
+    const normalizedForm = {
+      firstName: form.firstName.trim(),
+      lastName: form.lastName.trim(),
+      service: form.service.trim(),
+      source: form.source.trim(),
+      situation: form.situation.trim(),
+    };
     const lead = {
-      ...form,
+      ...normalizedForm,
       language,
       pageUrl,
       notifyEmails: NOTIFY_EMAILS,
       createdAt: new Date().toISOString(),
     };
+
+    if (!LEAD_ENDPOINT) {
+      setSubmitError(labels.missingEndpoint);
+      setSubmitting(false);
+      return;
+    }
 
     try {
       const stored = JSON.parse(window.localStorage.getItem("dogru_whatsapp_leads") || "[]");
@@ -221,26 +240,26 @@ export function WhatsAppLeadCapture() {
       // Local storage can be unavailable in strict privacy modes; the WhatsApp handoff still works.
     }
 
-    if (LEAD_ENDPOINT) {
-      try {
-        const response = await fetch(LEAD_ENDPOINT, {
-          method: "POST",
-          headers: { "Content-Type": "application/json" },
-          body: JSON.stringify(lead),
-        });
-        if (!response.ok) throw new Error(`Lead endpoint returned ${response.status}`);
-      } catch {
-        setSubmitError(
-          language === "tr"
-            ? "Bilgiler kaydedilemedi, ancak WhatsApp mesajını yine de hazırlıyoruz."
-            : "The lead could not be submitted, but the WhatsApp message will still open."
-        );
+    try {
+      const response = await fetch(LEAD_ENDPOINT, {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(lead),
+      });
+      const result = await response.json().catch(() => ({}));
+      if (!response.ok || result?.ok !== true) {
+        throw new Error(`Lead endpoint returned ${response.status}`);
       }
+    } catch {
+      setSubmitError(labels.submitFailed);
+      setSubmitting(false);
+      return;
     }
 
-    const message = encodeURIComponent(buildWhatsAppMessage(form, pageUrl));
+    const message = encodeURIComponent(buildWhatsAppMessage(normalizedForm, pageUrl));
+    const whatsappUrl = `https://wa.me/${WHATSAPP_PHONE}?text=${message}`;
     trackWhatsAppClickConversion(lead);
-    window.open(`https://wa.me/${WHATSAPP_PHONE}?text=${message}`, "_blank", "noopener,noreferrer");
+    window.location.assign(whatsappUrl);
     setSubmitting(false);
     setOpen(false);
     setForm({ firstName: "", lastName: "", service: "", source: "", situation: "" });
