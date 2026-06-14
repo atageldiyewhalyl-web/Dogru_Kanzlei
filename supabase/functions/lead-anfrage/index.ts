@@ -19,6 +19,9 @@ const corsHeaders = {
 
 const defaultFromEmail = "Doğru Kanzlei Anfrage <anfrage@forms.xn--nll-hoa.com>";
 const defaultToEmail = "halyl@xn--nll-hoa.com";
+const allowedNotifyEmails = new Set([
+  "halyl@xn--nll-hoa.com",
+]);
 
 function cleanText(value: unknown, maxLength = 2000) {
   if (typeof value !== "string") return "";
@@ -53,6 +56,21 @@ function validatePayload(payload: LeadPayload) {
   return lead;
 }
 
+function parseEmailList(value: string) {
+  return value
+    .split(",")
+    .map((email) => email.trim().toLowerCase())
+    .filter((email) => /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email));
+}
+
+function resolveRecipients(lead: ReturnType<typeof validatePayload>) {
+  const configuredRecipients = parseEmailList(Deno.env.get("LEAD_TO_EMAIL") || defaultToEmail);
+  const requestedRecipients = parseEmailList(lead.notifyEmails)
+    .filter((email) => allowedNotifyEmails.has(email));
+
+  return Array.from(new Set([...configuredRecipients, ...requestedRecipients]));
+}
+
 function renderTextEmail(lead: ReturnType<typeof validatePayload>) {
   return [
     "Yeni WhatsApp Anfrage",
@@ -62,6 +80,7 @@ function renderTextEmail(lead: ReturnType<typeof validatePayload>) {
     `Hasan'ı nereden buldu: ${lead.source}`,
     `Dil: ${lead.language || "-"}`,
     `Sayfa: ${lead.pageUrl || "-"}`,
+    `Bildirim adresleri: ${lead.notifyEmails || "-"}`,
     "",
     "Durum:",
     lead.situation,
@@ -75,6 +94,7 @@ function renderHtmlEmail(lead: ReturnType<typeof validatePayload>) {
     ["Hasan'ı nereden buldu", lead.source],
     ["Dil", lead.language || "-"],
     ["Sayfa", lead.pageUrl || "-"],
+    ["Bildirim adresleri", lead.notifyEmails || "-"],
   ];
 
   return `
@@ -140,10 +160,11 @@ Deno.serve(async (req) => {
 
     const leadId = data.id as string;
     const from = Deno.env.get("LEAD_FROM_EMAIL") || defaultFromEmail;
-    const to = (Deno.env.get("LEAD_TO_EMAIL") || defaultToEmail)
-      .split(",")
-      .map((email) => email.trim())
-      .filter(Boolean);
+    const to = resolveRecipients(lead);
+
+    if (!to.length) {
+      throw new Error("No lead recipient configured.");
+    }
 
     const emailResponse = await fetch("https://api.resend.com/emails", {
       method: "POST",
