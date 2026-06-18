@@ -91,8 +91,11 @@ export const translations = {
     contact_office_hours_de: "Mon–Sat: 09:00 – 18:00",
     contact_languages_badge: "Service Languages",
     contact_whatsapp_btn: "Contact via WhatsApp",
+    contact_booking_btn: "Book Paid Appointment",
+    contact_calendly_btn: "Choose Appointment Time",
+    contact_booking_note: "Secure payment is handled by Stripe. Appointment times are managed in Calendly.",
     contact_direct_title: "Direct Contact",
-    contact_direct_p: "Reach us directly on WhatsApp or by phone.",
+    contact_direct_p: "Book a paid appointment online or reach us directly on WhatsApp.",
 
     // Testimonials
     testimonials_badge: "Client Reviews",
@@ -222,8 +225,11 @@ export const translations = {
     contact_office_hours_de: "Pzt–Cmt: 09:00 – 18:00",
     contact_languages_badge: "Hizmet Dilleri",
     contact_whatsapp_btn: "WhatsApp ile Ulaşın",
+    contact_booking_btn: "Ücretli Randevu Al",
+    contact_calendly_btn: "Randevu Saati Seç",
+    contact_booking_note: "Güvenli ödeme Stripe üzerinden, randevu saatleri Calendly üzerinden yönetilir.",
     contact_direct_title: "Hızlı İletişim",
-    contact_direct_p: "Bize doğrudan WhatsApp veya telefon üzerinden ulaşın.",
+    contact_direct_p: "Online ücretli randevu alın veya bize doğrudan WhatsApp üzerinden ulaşın.",
 
     // Testimonials
     testimonials_badge: "Müvekkil Yorumları",
@@ -353,8 +359,11 @@ export const translations = {
     contact_office_hours_de: "Mo–Sa: 09:00 – 18:00",
     contact_languages_badge: "Service-Sprachen",
     contact_whatsapp_btn: "Kontakt per WhatsApp",
+    contact_booking_btn: "Kostenpflichtigen Termin buchen",
+    contact_calendly_btn: "Terminzeit auswählen",
+    contact_booking_note: "Die sichere Zahlung läuft über Stripe. Terminzeiten werden in Calendly verwaltet.",
     contact_direct_title: "Direkter Kontakt",
-    contact_direct_p: "Kontaktieren Sie uns direkt per WhatsApp oder Telefon.",
+    contact_direct_p: "Buchen Sie online einen kostenpflichtigen Termin oder kontaktieren Sie uns direkt per WhatsApp.",
 
     // Testimonials
     testimonials_badge: "Mandantenstimmen",

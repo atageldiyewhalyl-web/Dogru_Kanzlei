@@ -1,5 +1,6 @@
-import { MapPin, Phone, Mail, Clock } from "lucide-react";
+import { CalendarCheck, CreditCard, MapPin, Phone, Mail, Clock } from "lucide-react";
 import { useLanguage } from "../context/LanguageContext";
+import { getBookingUrl, hasCalendlyBooking, hasStripeBooking, isAppointmentBookingEnabled, trackBookingClick } from "../utils/booking";
 
 export function Contact() {
   const { t, language } = useLanguage();
@@ -27,6 +28,10 @@ export function Contact() {
 
   const whatsappNumber = "4917661221210";
   const whatsappLink = `https://wa.me/${whatsappNumber}`;
+  const stripeBookingUrl = getBookingUrl("stripe");
+  const calendlyBookingUrl = getBookingUrl("calendly");
+  const appointmentBookingEnabled = isAppointmentBookingEnabled();
+  const bookingTarget = hasStripeBooking() ? "stripe" : hasCalendlyBooking() ? "calendly" : "contact";
 
   return (
     <section
@@ -132,6 +137,75 @@ export function Contact() {
             </p>
 
             <div style={{ display: "flex", flexDirection: "column", gap: 16 }}>
+              {appointmentBookingEnabled && (
+                <a
+                  href={stripeBookingUrl}
+                  target={bookingTarget === "contact" ? undefined : "_blank"}
+                  rel={bookingTarget === "contact" ? undefined : "noopener noreferrer"}
+                  aria-label={t("contact_booking_btn")}
+                  onClick={() => trackBookingClick(bookingTarget, "contact_card_primary")}
+                  style={{
+                    display: "flex",
+                    alignItems: "center",
+                    justifyContent: "center",
+                    gap: 12,
+                    background: "#8B6E2A",
+                    color: "#ffffff",
+                    padding: "18px 32px",
+                    fontFamily: "var(--font-sans)",
+                    fontSize: 13,
+                    fontWeight: 700,
+                    letterSpacing: "0.1em",
+                    textTransform: "uppercase",
+                    textDecoration: "none",
+                    transition: "all 0.3s ease",
+                  }}
+                  onMouseEnter={(e) => (e.currentTarget.style.background = "#7A5F20")}
+                  onMouseLeave={(e) => (e.currentTarget.style.background = "#8B6E2A")}
+                >
+                  {hasStripeBooking() ? <CreditCard size={18} /> : <CalendarCheck size={18} />}
+                  {t("contact_booking_btn")}
+                </a>
+              )}
+
+              {appointmentBookingEnabled && hasStripeBooking() && hasCalendlyBooking() && (
+                <a
+                  href={calendlyBookingUrl}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label={t("contact_calendly_btn")}
+                  onClick={() => trackBookingClick("calendly", "contact_card_secondary")}
+                  style={{
+                    display: "flex",
+                    alignItems: "center",
+                    justifyContent: "center",
+                    gap: 12,
+                    background: "#F7F5F0",
+                    color: "#1C3829",
+                    padding: "16px 28px",
+                    fontFamily: "var(--font-sans)",
+                    fontSize: 12,
+                    fontWeight: 700,
+                    letterSpacing: "0.1em",
+                    textTransform: "uppercase",
+                    textDecoration: "none",
+                    border: "1px solid #d8cfbd",
+                    transition: "all 0.3s ease",
+                  }}
+                  onMouseEnter={(e) => {
+                    e.currentTarget.style.borderColor = "#8B6E2A";
+                    e.currentTarget.style.color = "#8B6E2A";
+                  }}
+                  onMouseLeave={(e) => {
+                    e.currentTarget.style.borderColor = "#d8cfbd";
+                    e.currentTarget.style.color = "#1C3829";
+                  }}
+                >
+                  <CalendarCheck size={18} />
+                  {t("contact_calendly_btn")}
+                </a>
+              )}
+
               <a
                 href={whatsappLink}
                 target="_blank"
@@ -160,6 +234,20 @@ export function Contact() {
                 {t("contact_whatsapp_btn")}
               </a>
             </div>
+
+            {appointmentBookingEnabled && (hasStripeBooking() || hasCalendlyBooking()) && (
+              <p
+                style={{
+                  fontFamily: "var(--font-sans)",
+                  fontSize: 12,
+                  color: "#777",
+                  lineHeight: 1.6,
+                  margin: "18px 0 0",
+                }}
+              >
+                {t("contact_booking_note")}
+              </p>
+            )}
 
             <div style={{ marginTop: 48, borderTop: "1px solid #d4cfc6", paddingTop: 32 }}>
               <div

@@ -25,6 +25,7 @@ import { hakaretSocialMediaPost } from "./hakaretSocialMediaPost";
 import { drugCaseTurkeyPost } from "./drugCaseTurkeyPost";
 import { threatCrimeTurkeyPost } from "./threatCrimeTurkeyPost";
 import { hagbGermanCitizenshipPost } from "./hagbGermanCitizenshipPost";
+import { tapuIptalPost } from "./tapuIptalPost";
 import { legacyBlogPosts } from "./legacyBlogPosts";
 
 export interface BlogPost {
@@ -107,6 +108,7 @@ export const blogPosts: BlogPost[] = [
   hakaretSocialMediaPost,
   hakaretInsultLawPost,
   hagbGermanCitizenshipPost,
+  tapuIptalPost,
   ...legacyBlogPosts,
   {
     slug: "tuerkisches-strafrecht-anwalt-deutschland",

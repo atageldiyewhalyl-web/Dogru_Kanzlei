@@ -254,7 +254,7 @@ function BlogStickyBookingCTA({ funnel }: { funnel: BlogProductFunnel }) {
 }
 
 type BlogWhatsAppCTAPlacement = 'intro' | 'mid' | 'deadline' | 'settlement' | 'records' | 'strategy' | 'bottom';
-type BlogWhatsAppCTATopic = 'criminal_law' | 'drug_case' | 'threat_case' | 'hakaret' | 'hagb' | 'property_partition' | 'inheritance_dispute' | 'inheritance_guide' | 'property_rights' | 'muris_muvazaasi' | 'mavi_kart' | 'debt_collection' | 'divorce_turkey' | 'tanima_tenfiz' | 'tck_191_kdae' | 'sorgerecht_tenfiz' | 'unterhalt_nafaka';
+type BlogWhatsAppCTATopic = 'criminal_law' | 'drug_case' | 'threat_case' | 'hakaret' | 'hagb' | 'property_partition' | 'inheritance_dispute' | 'inheritance_guide' | 'property_rights' | 'muris_muvazaasi' | 'tapu_iptal' | 'mavi_kart' | 'debt_collection' | 'divorce_turkey' | 'tanima_tenfiz' | 'tck_191_kdae' | 'sorgerecht_tenfiz' | 'unterhalt_nafaka';
 
 function getBlogWhatsAppService(topic: BlogWhatsAppCTATopic) {
   if (topic === 'hagb') return 'Ceza / Yakalama Kararı';
@@ -267,7 +267,7 @@ function getBlogWhatsAppService(topic: BlogWhatsAppCTATopic) {
   if (topic === 'tanima_tenfiz') return 'Tanıma & Tenfiz';
   if (topic === 'sorgerecht_tenfiz') return 'Sorgerecht / Velayet';
   if (topic === 'unterhalt_nafaka') return 'Unterhalt / Nafaka';
-  if (topic === 'property_partition' || topic === 'property_rights') return 'Tapu / Gayrimenkul';
+  if (topic === 'property_partition' || topic === 'property_rights' || topic === 'tapu_iptal') return 'Tapu / Gayrimenkul';
   if (topic === 'inheritance_dispute' || topic === 'inheritance_guide' || topic === 'muris_muvazaasi') return 'Miras';
   return 'Ceza / Yakalama Kararı';
 }
@@ -1070,6 +1070,129 @@ function getMurisMuvazaasiCTACopy(language: string, placement: BlogWhatsAppCTAPl
   };
 }
 
+function getTapuIptalCTACopy(language: string, placement: BlogWhatsAppCTAPlacement) {
+  if (language === 'de') {
+    if (placement === 'intro') {
+      return {
+        eyebrow: 'Tapu İptal aus Deutschland',
+        title: 'Steht im türkischen Grundbuch plötzlich ein fremder Name?',
+        body: 'Senden Sie uns kurz, um welche Immobilie es geht, wer übertragen hat und wann Sie davon erfahren haben. Wir prüfen den sinnvollsten ersten Schritt.',
+        button: 'WhatsApp Prüfung starten',
+      };
+    }
+    if (placement === 'deadline') {
+      return {
+        eyebrow: 'Sofortschutz',
+        title: 'İhtiyati Tedbir prüfen, bevor die Immobilie weiterverkauft wird',
+        body: 'Bei Verdacht auf fehlerhafte Übertragung zählt Zeit. Wir prüfen, ob eine türkische Grundbuchsperre sofort beantragt werden sollte.',
+        button: 'Tedbir prüfen lassen',
+      };
+    }
+    if (placement === 'strategy') {
+      return {
+        eyebrow: 'Beweisstrategie',
+        title: 'Marktwert, Bankspuren und Zeugen richtig sichern',
+        body: 'Tapu-İptal-Fälle stehen und fallen mit Beweisen. Wir ordnen ein, welche Unterlagen aus Türkei und Deutschland zuerst beschafft werden sollten.',
+        button: 'Beweise per WhatsApp einordnen',
+      };
+    }
+    if (placement === 'mid') {
+      return {
+        eyebrow: 'Ohne Türkei-Reise',
+        title: 'Vollmacht, Erbschein und Klageweg sauber vorbereiten',
+        body: 'Wir klären, ob Tapu İptal, Tenkis oder beide Anträge sinnvoll sind und welche Vollmacht dafür gebraucht wird.',
+        button: 'Nächsten Schritt klären',
+      };
+    }
+    return {
+      eyebrow: 'Türkische Immobilie sichern',
+      title: 'Lassen Sie den Tapu-Verlauf prüfen, bevor Fakten geschaffen werden',
+      body: 'Schildern Sie kurz den Todesfall, die Übertragung und vorhandene Unterlagen. Hasan Doğru prüft die Lage mit türkischem Grundbuch- und Erbrecht im Blick.',
+      button: 'WhatsApp Formular öffnen',
+    };
+  }
+
+  if (language === 'en') {
+    if (placement === 'intro') {
+      return {
+        eyebrow: 'Tapu İptal from abroad',
+        title: 'Did a stranger or sibling appear in the Turkish title deed?',
+        body: 'Send us the property context, who transferred it, and when you discovered it. We assess the safest first step.',
+        button: 'Start WhatsApp review',
+      };
+    }
+    if (placement === 'deadline') {
+      return {
+        eyebrow: 'Urgent protection',
+        title: 'Check whether an İhtiyati Tedbir should freeze the title now',
+        body: 'If the title entry is suspicious, speed matters. We assess whether a Turkish registry freeze should be filed before another sale happens.',
+        button: 'Check urgent freeze',
+      };
+    }
+    if (placement === 'strategy') {
+      return {
+        eyebrow: 'Evidence strategy',
+        title: 'Market value, payment traces, and witnesses need structure',
+        body: 'Title cancellation cases depend on evidence. We help identify which records from Turkey and abroad should come first.',
+        button: 'Review evidence on WhatsApp',
+      };
+    }
+    if (placement === 'mid') {
+      return {
+        eyebrow: 'No Turkey travel',
+        title: 'Prepare power of attorney, heir certificate, and claim strategy',
+        body: 'We clarify whether Tapu İptal, Tenkis, or both claims make sense and which power of attorney wording is needed.',
+        button: 'Clarify next step',
+      };
+    }
+    return {
+      eyebrow: 'Secure Turkish property',
+      title: 'Review the title history before the property is moved again',
+      body: 'Briefly describe the death, transfer, and documents you have. Hasan Doğru reviews the issue through Turkish property and inheritance law.',
+      button: 'Open WhatsApp form',
+    };
+  }
+
+  if (placement === 'intro') {
+    return {
+      eyebrow: "Almanya'dan tapu iptali",
+      title: 'Tapuda beklenmedik bir isim mi görünüyor?',
+      body: 'Taşınmazı, devri kimin yaptığını ve durumu ne zaman öğrendiğinizi kısaca gönderin. İlk doğru adımı birlikte netleştirelim.',
+      button: 'WhatsApp incelemesi başlat',
+    };
+  }
+  if (placement === 'deadline') {
+    return {
+      eyebrow: 'Acil koruma',
+      title: 'Taşınmaz yeniden satılmadan ihtiyati tedbir değerlendirin',
+      body: 'Şüpheli tapu devrinde zaman kritiktir. Tapuya şerh konulması gerekip gerekmediğini hızlıca değerlendirelim.',
+      button: 'Tedbir imkanını sorun',
+    };
+  }
+  if (placement === 'strategy') {
+    return {
+      eyebrow: 'Delil stratejisi',
+      title: 'Piyasa değeri, banka kaydı ve tanıkları doğru sıraya koyun',
+      body: 'Tapu iptal davalarında delil düzeni sonucu belirler. Türkiye ve Almanya’dan hangi belgelerin önce gerektiğini birlikte netleştirelim.',
+      button: "Delilleri WhatsApp'tan gönderin",
+    };
+  }
+  if (placement === 'mid') {
+    return {
+      eyebrow: "Türkiye'ye gitmeden",
+      title: 'Vekaletname, veraset ilamı ve dava yolunu hazırlayın',
+      body: 'Tapu iptal, tenkis veya her iki talebin birlikte açılıp açılmayacağını ve vekaletnamenin kapsamını değerlendirelim.',
+      button: 'Sonraki adımı netleştirin',
+    };
+  }
+  return {
+    eyebrow: 'Türkiye’deki taşınmazı koruyun',
+    title: 'Tapu geçmişini yeniden devir yapılmadan inceletin',
+    body: 'Vefat, devir ve elinizdeki belgeleri kısaca anlatın. Hasan Doğru Türk tapu ve miras hukuku açısından ilk değerlendirmeyi yapar.',
+    button: 'WhatsApp formunu aç',
+  };
+}
+
 function getMaviKartCTACopy(language: string, placement: BlogWhatsAppCTAPlacement) {
   if (language === 'de') {
     if (placement === 'intro') {
@@ -1636,6 +1759,8 @@ function BlogWhatsAppCTA({
       ? getInheritanceDisputeCTACopy(language, placement)
     : topic === 'inheritance_guide'
       ? getInheritanceGuideCTACopy(language, placement)
+    : topic === 'tapu_iptal'
+      ? getTapuIptalCTACopy(language, placement)
       : getCriminalLawCTACopy(language, placement);
 	  const isBottom = placement === 'bottom';
 	  const hasTrustPortrait = topic === 'hakaret' || topic === 'drug_case' || topic === 'threat_case';
@@ -1997,8 +2122,10 @@ export function BlogPost() {
                             ? 'sorgerecht_tenfiz'
                             : post.slugDE === INHERITANCE_GUIDE_BLOG_SLUG_DE
                               ? 'inheritance_guide'
-                              : post.slugDE === UNTERHALT_TURKISH_LAW_BLOG_SLUG_DE
-                                ? 'unterhalt_nafaka'
+                            : post.slugDE === UNTERHALT_TURKISH_LAW_BLOG_SLUG_DE
+                              ? 'unterhalt_nafaka'
+                              : post.slugDE === 'tapu-iptal-tescil-klage-deutschland'
+                                ? 'tapu_iptal'
                                 : null;
 
   const hasContentForCurrentLanguage = (candidate: typeof post) => Boolean(candidate && (
@@ -2201,6 +2328,9 @@ export function BlogPost() {
                   let insertedHakaretSettlementCTA = false;
                   let insertedHagbRecordsCTA = false;
                   let insertedHagbStrategyCTA = false;
+                  let insertedTapuIptalTedbirCTA = false;
+                  let insertedTapuIptalEvidenceCTA = false;
+                  let insertedTapuIptalProcessCTA = false;
 
                   while (i < lines.length) {
                     const line = lines[i];
@@ -2379,6 +2509,63 @@ export function BlogPost() {
                           />
                         );
                         insertedHagbStrategyCTA = true;
+                      }
+                      if (
+                        whatsappCTATopic === 'tapu_iptal' &&
+                        !insertedTapuIptalTedbirCTA &&
+                        [
+                          'Sofortmaßnahme: Die İhtiyati Tedbir (Grundbuchsperre nach HMK Art. 389)',
+                          'EN ACİL ADIM: İhtiyati Tedbir — Tapuya Şerh Koydurma (HMK m. 389)',
+                          'The Most Urgent Step: Getting a Property Freeze (İhtiyati Tedbir — HMK Art. 389)',
+                        ].includes(headingText)
+                      ) {
+                        renderedElements.push(
+                          <BlogWhatsAppCTA
+                            key="tapu-iptal-tedbir-whatsapp-cta"
+                            language={language}
+                            placement="deadline"
+                            topic={whatsappCTATopic}
+                          />
+                        );
+                        insertedTapuIptalTedbirCTA = true;
+                      }
+                      if (
+                        whatsappCTATopic === 'tapu_iptal' &&
+                        !insertedTapuIptalEvidenceCTA &&
+                        [
+                          'Beweisführung: Wie gewinnen Sie die Klage?',
+                          'Davayı Kazanmak İçin Delil Stratejisi',
+                          'How to Win: Evidence Strategy',
+                        ].includes(headingText)
+                      ) {
+                        renderedElements.push(
+                          <BlogWhatsAppCTA
+                            key="tapu-iptal-evidence-whatsapp-cta"
+                            language={language}
+                            placement="strategy"
+                            topic={whatsappCTATopic}
+                          />
+                        );
+                        insertedTapuIptalEvidenceCTA = true;
+                      }
+                      if (
+                        whatsappCTATopic === 'tapu_iptal' &&
+                        !insertedTapuIptalProcessCTA &&
+                        [
+                          'Schritt-für-Schritt aus Deutschland',
+                          "Almanya'dan Adım Adım Süreç",
+                          'Step-by-Step Process from Germany, the UK or the Netherlands',
+                        ].includes(headingText)
+                      ) {
+                        renderedElements.push(
+                          <BlogWhatsAppCTA
+                            key="tapu-iptal-process-whatsapp-cta"
+                            language={language}
+                            placement="mid"
+                            topic={whatsappCTATopic}
+                          />
+                        );
+                        insertedTapuIptalProcessCTA = true;
                       }
                       if (
                         whatsappCTATopic &&

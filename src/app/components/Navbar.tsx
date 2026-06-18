@@ -305,7 +305,10 @@ export function Navbar() {
             <p className="font-sans text-white mb-1">info@hasandogru.de</p>
             <p className="font-sans text-white mb-8">+4917661221210</p>
             <button
-              onClick={() => openWhatsAppLeadCapture()}
+              onClick={() => {
+                setMobileOpen(false);
+                openWhatsAppLeadCapture();
+              }}
               className="w-full bg-[#8B6E2A] text-white font-sans text-xs font-bold tracking-[0.15em] uppercase py-5 text-center transition-colors hover:bg-[#7A5F20]"
             >
               {t("nav_cta")}

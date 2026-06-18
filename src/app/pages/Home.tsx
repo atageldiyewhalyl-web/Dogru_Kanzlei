@@ -10,6 +10,7 @@ import { usePrerender } from "../hooks/usePrerender";
 const PracticeAreas = lazy(() => import("../components/PracticeAreas").then(m => ({ default: m.PracticeAreas })));
 const WhyUs        = lazy(() => import("../components/WhyUs").then(m => ({ default: m.WhyUs })));
 const Testimonials = lazy(() => import("../components/Testimonials").then(m => ({ default: m.Testimonials })));
+const CooperationPartner = lazy(() => import("../components/CooperationPartner").then(m => ({ default: m.CooperationPartner })));
 const Blog         = lazy(() => import("../components/Blog").then(m => ({ default: m.Blog })));
 const Contact      = lazy(() => import("../components/Contact").then(m => ({ default: m.Contact })));
 
@@ -120,6 +121,9 @@ export function Home() {
       </Suspense>
       <Suspense fallback={<SectionFallback />}>
         <Testimonials />
+      </Suspense>
+      <Suspense fallback={<SectionFallback />}>
+        <CooperationPartner />
       </Suspense>
       <Suspense fallback={<SectionFallback />}>
         <Blog />
