@@ -18,9 +18,10 @@ const corsHeaders = {
 };
 
 const defaultFromEmail = "Doğru Kanzlei Anfrage <anfrage@forms.xn--nll-hoa.com>";
-const defaultToEmail = "halyl@xn--nll-hoa.com";
+const defaultToEmail = "halyl@xn--nll-hoa.com,avukat.hasandogru@outlook.de";
 const allowedNotifyEmails = new Set([
   "halyl@xn--nll-hoa.com",
+  "avukat.hasandogru@outlook.de",
 ]);
 
 function cleanText(value: unknown, maxLength = 2000) {

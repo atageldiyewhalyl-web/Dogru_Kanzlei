@@ -9,7 +9,7 @@ const LEAD_ENDPOINT = (
   ((import.meta as any).env?.VITE_LEAD_CAPTURE_ENDPOINT || "") ||
   (SUPABASE_URL ? `${SUPABASE_URL}/functions/v1/lead-anfrage` : "")
 ) as string;
-const NOTIFY_EMAILS = ((import.meta as any).env?.VITE_LEAD_NOTIFY_EMAILS || "halyl@xn--nll-hoa.com") as string;
+const NOTIFY_EMAILS = ((import.meta as any).env?.VITE_LEAD_NOTIFY_EMAILS || "halyl@xn--nll-hoa.com,avukat.hasandogru@outlook.de") as string;
 
 declare global {
   interface Window {
