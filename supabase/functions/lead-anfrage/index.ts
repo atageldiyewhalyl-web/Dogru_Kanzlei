@@ -167,26 +167,37 @@ Deno.serve(async (req) => {
       throw new Error("No lead recipient configured.");
     }
 
-    const emailResponse = await fetch("https://api.resend.com/emails", {
-      method: "POST",
-      headers: {
-        Authorization: `Bearer ${resendApiKey}`,
-        "Content-Type": "application/json",
-      },
-      body: JSON.stringify({
-        from,
-        to,
-        subject: `Yeni WhatsApp Anfrage: ${lead.service} - ${lead.firstName} ${lead.lastName}`,
-        html: renderHtmlEmail(lead),
-        text: renderTextEmail(lead),
-      }),
-    });
+    const subject = `Yeni WhatsApp Anfrage: ${lead.service} - ${lead.firstName} ${lead.lastName}`;
+    const html = renderHtmlEmail(lead);
+    const text = renderTextEmail(lead);
+    const failedDeliveries: string[] = [];
 
-    if (!emailResponse.ok) {
-      const emailError = await emailResponse.text();
+    for (const recipient of to) {
+      const emailResponse = await fetch("https://api.resend.com/emails", {
+        method: "POST",
+        headers: {
+          Authorization: `Bearer ${resendApiKey}`,
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify({
+          from,
+          to: recipient,
+          subject,
+          html,
+          text,
+        }),
+      });
+
+      if (!emailResponse.ok) {
+        const emailError = await emailResponse.text();
+        failedDeliveries.push(`${recipient}: ${emailError.slice(0, 500)}`);
+      }
+    }
+
+    if (failedDeliveries.length) {
       await supabase
         .from("lead_anfragen")
-        .update({ status: "email_failed", email_error: emailError.slice(0, 1000) })
+        .update({ status: "email_failed", email_error: failedDeliveries.join("\n").slice(0, 1000) })
         .eq("id", leadId);
 
       return Response.json(
