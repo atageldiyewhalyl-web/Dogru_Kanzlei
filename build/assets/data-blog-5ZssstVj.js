@@ -17674,115 +17674,324 @@ Böyle bir durumla karşı karşıyaysanız: hemen hukuki yardım alın. Çocuk 
 
 ## Doğru Kanzlei'nin Rolü
 
-Türk mahkemesindeki bir velayet kararı Almanya'da otomatik olarak geçerli değildir. Tanıma davası açılması gerekir. Aynısı tersi için de geçerlidir: Alman kararı, Türkiye'de Tenfiz davası olmadan icra edilemez. Doğru Kanzlei her iki taraftaki bu süreçleri yürütmektedir.`,category:"family-law",categoryDE:"Familienrecht",image:r,dateDE:"19. April 2026",dateTR:"19 Nisan 2026",readTimeDE:"8 Min. Lesezeit",readTimeTR:"8 dk okuma",publishedAt:"2026-04-19",keywordsDE:"sorgerecht anwalt mannheim, sorgerecht mannheim, alleinsorge beantragen, umgangsrecht mannheim, türkisches sorgerecht, kind ausland mitnehmen",keywordsTR:"mannheim velayet avukatı, tek velayet almanya, ziyaret hakkı mannheim, türk alman velayet, çocuk yurt dışı izin",faqDE:[{question:"Bekommt die Mutter automatisch das Sorgerecht nach der Scheidung?",answer:"Nein. Bei verheirateten Eltern bleibt das gemeinsame Sorgerecht nach der Scheidung bestehen. Das alleinige Sorgerecht gibt es nur, wenn ein Gericht es ausdrücklich überträgt — und dafür braucht es mehr als nur den Wunsch eines Elternteils."},{question:"Kann ich den Umgang verweigern, weil mein Ex keinen Unterhalt zahlt?",answer:"Nein. Umgangsrecht und Unterhaltsrecht sind voneinander unabhängig. Wenn Sie den Umgang verweigern, kann das gerichtliche Konsequenzen für Sie haben. Gegen ausbleibenden Unterhalt müssen Sie separat vorgehen."},{question:"Mein Kind hat die türkische Staatsbürgerschaft. Welches Recht gilt beim Sorgerecht?",answer:"Maßgeblich ist der gewöhnliche Aufenthaltsort des Kindes. Lebt das Kind in Deutschland, gilt deutsches Recht — unabhängig von der Staatsbürgerschaft."},{question:"Darf ich mit meinem Kind in die Türkei fliegen, ohne den Ex zu fragen?",answer:"Für Urlaubsreisen empfiehlt sich die schriftliche Zustimmung. Bei einem dauerhaften Umzug ist die Zustimmung des anderen Elternteils oder ein Gerichtsbeschluss notwendig. Ohne beides kann das als Kindesentführung gewertet werden."}],faqTR:[{question:"Boşanmanın ardından anne otomatik olarak velayeti mi alır?",answer:"Hayır. Evli ebeveynlerde müşterek velayet boşanmadan sonra da devam eder. Tek velayet, yalnızca mahkeme tarafından açıkça devredilirse mümkündür — ve bunun için bir ebeveynin isteği yetmez."},{question:"Eski eşim nafaka ödemediği için ziyaret hakkını reddedebilir miyim?",answer:"Hayır. Ziyaret hakkı ve nafaka hukuken birbirinden bağımsızdır. Ziyareti engellerseniz hukuki sonuçlar doğabilir. Ödenmeyen nafaka için ayrı işlem başlatmanız gerekir."},{question:"Sormadan çocukla Türkiye'ye gidebilir miyim?",answer:"Tatil amaçlı kısa seyahatler için yazılı onay almanız tavsiye edilir. Kalıcı taşınma için diğer ebeveynin onayı ya da mahkeme kararı şarttır. Bu olmadan çocuk kaçırma kapsamında değerlendirilebilir."}],ctaTitleDE:"Sorgerechtsberatung in Mannheim",ctaTitleTR:"Mannheim'da Velayet Danışmanlığı",ctaDescriptionDE:"Sorgerechtsstreit — besonders mit Bezug zur Türkei? Wir kennen beide Systeme und beraten auf Deutsch und Türkisch.",ctaDescriptionTR:"Velayet uyuşmazlığı mı var? Her iki hukuk sistemini bilen ekibimiz Almanca ve Türkçe danışmanlık sunuyor."},{slug:"vollmacht-auf-tuerkisch",slugDE:"vollmacht-auf-tuerkisch",slugTR:"turkce-vekaletname-nasil-cikarilir",titleDE:"Vollmacht auf Türkisch: Was Sie wirklich brauchen und welche Fehler teuer werden",titleTR:"Türkçe Vekaletname: Gerçekten Neye İhtiyacınız Var ve Hangi Hatalar Pahalıya Mal Olur?",excerptDE:"Vollmacht auf Türkisch ausstellen: Konsulat oder deutscher Notar? Was muss im Text stehen? Und welche häufigen Fehler führen dazu, dass türkische Behörden das Dokument ablehnen?",excerptTR:"Türkçe vekaletname çıkarma: konsolosluk mu, Alman noteri mi? Metinde ne yazmalı? Türk kurumlarının belgeyi reddetmesine yol açan yaygın hatalar neler?",contentDE:`Wer in Deutschland lebt und in der Türkei etwas regeln muss — Immobilienverkauf, Erbschaft, Gerichtsverfahren, Bankgeschäfte — kommt meistens nicht drum herum: Er braucht eine türkische Vollmacht, die sogenannte Vekâletname.
+Türk mahkemesindeki bir velayet kararı Almanya'da otomatik olarak geçerli değildir. Tanıma davası açılması gerekir. Aynısı tersi için de geçerlidir: Alman kararı, Türkiye'de Tenfiz davası olmadan icra edilemez. Doğru Kanzlei her iki taraftaki bu süreçleri yürütmektedir.`,category:"family-law",categoryDE:"Familienrecht",image:r,dateDE:"19. April 2026",dateTR:"19 Nisan 2026",readTimeDE:"8 Min. Lesezeit",readTimeTR:"8 dk okuma",publishedAt:"2026-04-19",keywordsDE:"sorgerecht anwalt mannheim, sorgerecht mannheim, alleinsorge beantragen, umgangsrecht mannheim, türkisches sorgerecht, kind ausland mitnehmen",keywordsTR:"mannheim velayet avukatı, tek velayet almanya, ziyaret hakkı mannheim, türk alman velayet, çocuk yurt dışı izin",faqDE:[{question:"Bekommt die Mutter automatisch das Sorgerecht nach der Scheidung?",answer:"Nein. Bei verheirateten Eltern bleibt das gemeinsame Sorgerecht nach der Scheidung bestehen. Das alleinige Sorgerecht gibt es nur, wenn ein Gericht es ausdrücklich überträgt — und dafür braucht es mehr als nur den Wunsch eines Elternteils."},{question:"Kann ich den Umgang verweigern, weil mein Ex keinen Unterhalt zahlt?",answer:"Nein. Umgangsrecht und Unterhaltsrecht sind voneinander unabhängig. Wenn Sie den Umgang verweigern, kann das gerichtliche Konsequenzen für Sie haben. Gegen ausbleibenden Unterhalt müssen Sie separat vorgehen."},{question:"Mein Kind hat die türkische Staatsbürgerschaft. Welches Recht gilt beim Sorgerecht?",answer:"Maßgeblich ist der gewöhnliche Aufenthaltsort des Kindes. Lebt das Kind in Deutschland, gilt deutsches Recht — unabhängig von der Staatsbürgerschaft."},{question:"Darf ich mit meinem Kind in die Türkei fliegen, ohne den Ex zu fragen?",answer:"Für Urlaubsreisen empfiehlt sich die schriftliche Zustimmung. Bei einem dauerhaften Umzug ist die Zustimmung des anderen Elternteils oder ein Gerichtsbeschluss notwendig. Ohne beides kann das als Kindesentführung gewertet werden."}],faqTR:[{question:"Boşanmanın ardından anne otomatik olarak velayeti mi alır?",answer:"Hayır. Evli ebeveynlerde müşterek velayet boşanmadan sonra da devam eder. Tek velayet, yalnızca mahkeme tarafından açıkça devredilirse mümkündür — ve bunun için bir ebeveynin isteği yetmez."},{question:"Eski eşim nafaka ödemediği için ziyaret hakkını reddedebilir miyim?",answer:"Hayır. Ziyaret hakkı ve nafaka hukuken birbirinden bağımsızdır. Ziyareti engellerseniz hukuki sonuçlar doğabilir. Ödenmeyen nafaka için ayrı işlem başlatmanız gerekir."},{question:"Sormadan çocukla Türkiye'ye gidebilir miyim?",answer:"Tatil amaçlı kısa seyahatler için yazılı onay almanız tavsiye edilir. Kalıcı taşınma için diğer ebeveynin onayı ya da mahkeme kararı şarttır. Bu olmadan çocuk kaçırma kapsamında değerlendirilebilir."}],ctaTitleDE:"Sorgerechtsberatung in Mannheim",ctaTitleTR:"Mannheim'da Velayet Danışmanlığı",ctaDescriptionDE:"Sorgerechtsstreit — besonders mit Bezug zur Türkei? Wir kennen beide Systeme und beraten auf Deutsch und Türkisch.",ctaDescriptionTR:"Velayet uyuşmazlığı mı var? Her iki hukuk sistemini bilen ekibimiz Almanca ve Türkçe danışmanlık sunuyor."},{slug:"vollmacht-auf-tuerkisch",slugDE:"vollmacht-auf-tuerkisch",slugTR:"turkce-vekaletname-nasil-cikarilir",slugEN:"power-of-attorney-in-turkish",titleDE:"Vollmacht auf Türkisch: Reicht eine Übersetzung oder brauchen Sie Konsulat, Notar und Apostille?",titleTR:"Türkçe Vekaletname: Tercüme Yeterli mi, Konsolosluk veya Apostil Gerekir mi?",titleEN:"Power of Attorney in Turkish: Translation, Consulate, Notary or Apostille?",excerptDE:"Vollmacht auf Türkisch: Wann eine Übersetzung reicht, wann das türkische Konsulat sinnvoll ist und wann deutscher Notar, Apostille und beglaubigte Übersetzung nötig werden.",excerptTR:"Türkçe vekaletname için sadece tercüme yeterli mi? Konsolosluk, Alman noteri, apostil ve yeminli tercüme seçeneklerini işlem amacına göre açıklıyoruz.",excerptEN:"Power of attorney in Turkish: when translation is not enough, when the Turkish consulate is better, and when German notary, apostille and certified translation are required.",contentDE:`Viele Menschen suchen nach **"Vollmacht auf Türkisch"**, weil sie in der Türkei etwas erledigen müssen und aus Deutschland nicht selbst anreisen können. Oft geht es um Immobilien, Erbschaft, Bankkonten, Gerichtsverfahren, Scheidung, Tanıma & Tenfiz oder einen Behördentermin.
 
-Das Problem dabei ist nicht, dass man eine Vollmacht braucht. Das Problem ist, dass viele Vollmachten falsch sind. Und das merkt man oft erst dann, wenn der türkische Notar oder die Behörde das Dokument zurückweist.
+Die wichtigste Antwort gleich am Anfang: Eine Vollmacht wird nicht dadurch wirksam, dass man einen deutschen Text einfach ins Türkische übersetzt. Entscheidend ist, **ob die Vollmacht in der Türkei für genau Ihren Zweck akzeptiert wird**.
 
-Hier erkläre ich, was wirklich funktioniert.
+Genau hier passieren die meisten Fehler.
 
-## Was eine Vollmacht auf Türkisch von einer deutschen unterscheidet
+## Was bedeutet "Vollmacht auf Türkisch" eigentlich?
 
-In Deutschland reicht für viele Vollmachten ein schriftliches Dokument mit Unterschrift. In der Türkei ist das anders. Für die meisten rechtlich relevanten Vorgänge brauchen Sie eine **notariell beurkundete Vekâletname** — entweder ausgestellt vom türkischen Konsulat oder durch einen deutschen Notar plus Apostille plus beglaubigte Übersetzung.
+Im Alltag meinen Menschen damit drei verschiedene Dinge:
 
-Das ist kein bürokratischer Zufall. Die Türkei schützt sich damit vor gefälschten Vollmachten, besonders bei Immobilien- und Erbschaftsgeschäften.
+1. eine deutsche Vollmacht, die ins Türkische übersetzt wird
+2. eine beim türkischen Konsulat ausgestellte Vekaletname
+3. eine deutsche notarielle Vollmacht mit Apostille und beglaubigter türkischer Übersetzung
 
-## Wann brauchen Sie eine türkische Vollmacht?
+Diese drei Wege sind nicht gleich. Eine Übersetzung ersetzt keine notarielle Form. Eine Apostille ersetzt keinen passenden Inhalt. Und ein Konsulatstermin hilft wenig, wenn die Vollmacht nicht die richtigen Befugnisse enthält.
 
-Immer dann, wenn Sie von Deutschland aus jemanden in der Türkei bevollmächtigen möchten, um in Ihrem Namen zu handeln. Häufige Anlässe:
+## Reicht eine Übersetzung der deutschen Vollmacht?
 
-- Immobilienverkauf oder -übertragung in der Türkei (Tapu Devri)
-- Erbschaftsangelegenheiten — Veraset ilamı, Aufteilung, Übertragung
-- Einreichung einer Scheidungsklage in der Türkei durch einen türkischen Anwalt
-- Tanıma-Tenfiz-Verfahren — Anerkennung eines deutschen Urteils in der Türkei
-- Bankgeschäfte auf türkischen Konten
-- An- oder Abmeldung eines Fahrzeugs in der Türkei
+In vielen Fällen: nein.
 
-## Konsulat oder deutscher Notar — was ist besser?
+Eine Übersetzung überträgt nur Sprache. Türkische Behörden prüfen aber auch Form, Beglaubigung, Apostille und Inhalt. Wenn in der Vollmacht nur allgemein steht, dass jemand "alle Angelegenheiten erledigen" darf, kann das für Tapu, Erbschaft, Bank oder Gericht zu ungenau sein.
 
-**Türkisches Konsulat.** Das ist der einfachere Weg. Die Konsulate in Frankfurt, Berlin, Stuttgart, München und anderen Städten können Vekâletnamen direkt auf Türkisch ausstellen. Das Ergebnis ist in der Türkei ohne Apostille oder Übersetzung sofort gültig.
+Besonders kritisch ist das bei:
 
-Der Nachteil: Termine sind oft Monate im Voraus ausgebucht, und Sie müssen persönlich erscheinen.
+- Immobilienverkauf, Kauf oder Tapu-Übertragung
+- Erbschaft, Veraset İlamı und Nachlassabwicklung
+- Bankkonten in der Türkei
+- Gerichtsverfahren und Anwaltsvollmacht
+- Scheidung, Tanıma & Tenfiz oder Personenstandsregister
+- Unternehmens- und Behördenangelegenheiten
 
-**Deutscher Notar.** Möglich, aber aufwendiger. Der Notar beurkundet auf Deutsch, dann brauchen Sie eine Apostille beim Landgericht oder der Bezirksregierung und eine beglaubigte Übersetzung ins Türkische durch einen staatlich vereidigten Dolmetscher. Erst das komplette Paket (Original + Apostille + Übersetzung) gilt in der Türkei.
+## Türkisches Konsulat oder deutscher Notar?
 
-Der Nachteil: Teurer, zeitintensiver und fehleranfälliger — weil bei jedem Schritt etwas schiefgehen kann.
+Der richtige Weg hängt vom Zweck, der Zeit und der zuständigen Stelle in der Türkei ab.
 
-## Was in der Vollmacht stehen muss
+| Weg | Wann sinnvoll? | Was ist wichtig? |
+|---|---|---|
+| **Türkisches Konsulat** | Wenn eine türkische Vekaletname direkt ausgestellt werden soll | Termin, persönliche Anwesenheit, richtige Angaben und Fotos je nach Vorgang |
+| **Deutscher Notar** | Wenn kein Konsulatstermin möglich ist oder ein deutscher Notar praktischer ist | Apostille, beglaubigte Übersetzung, korrekter türkischer Wortlaut |
+| **Nur Übersetzung** | Nur bei einfachen Fällen, wenn die Form bereits passt | Übersetzung allein macht eine falsche Vollmacht nicht verwendbar |
 
-Das ist der entscheidende Punkt. In der Türkei gilt: Nur was in der Vollmacht ausdrücklich steht, darf der Bevollmächtigte tun. Keine pauschalen Formulierungen wie "alle Angelegenheiten in der Türkei regeln".
+Wichtig: In Deutschland gibt es keinen "türkischen Notar" im türkischen Rechtssinn. Praktisch geht es meistens um **türkisches Konsulat** oder **deutschen Notar mit Apostille und Übersetzung**.
 
-Wenn die Vollmacht für einen Immobilienverkauf ist, muss sie explizit Folgendes enthalten: Befugnis zum Verkauf der konkreten Immobilie (mit Adresse und Tapu-Nummer), Befugnis zur Unterzeichnung aller notwendigen Dokumente beim Tapu-Amt und Befugnis, den Verkaufspreis zu empfangen.
+## Wann brauchen Sie eine Apostille?
 
-Fehlt auch nur einer dieser Punkte, kann der türkische Notar oder das Grundbuchamt die Vollmacht ablehnen.
+Wenn eine Vollmacht durch einen deutschen Notar oder eine deutsche Behörde ausgestellt wird, muss sie für die Verwendung in der Türkei häufig mit einer Apostille versehen werden. Danach folgt regelmäßig eine beglaubigte Übersetzung ins Türkische.
 
-## Die häufigsten Fehler
+Bei einer direkt durch das türkische Konsulat ausgestellten Vekaletname ist die Situation anders. Deshalb sollte vorab geklärt werden, welcher Weg für Ihren konkreten Zweck schneller, günstiger und sicherer ist.
 
-**Zu vage formuliert.** "Alle Angelegenheiten vertreten" reicht nicht. Türkische Behörden verlangen Spezifität.
+## Was muss in einer türkischen Vollmacht stehen?
 
-**Falscher Übersetzer.** Für die Apostille-Variante brauchen Sie einen staatlich vereidigten Übersetzer (in Deutschland: staatlich geprüfter und beeidigter Übersetzer). Eine normale Übersetzungsfirma reicht nicht.
+Die Vollmacht muss den späteren Vorgang abdecken. Türkische Behörden akzeptieren unklare Formulierungen oft nicht.
 
-**Vergessene Identitätsnachweise.** Die Vollmacht muss in der Türkei dem Handelsregister oder Grundbuchamt vorgelegt werden, oft zusammen mit dem türkischen Nüfus-Dokument oder Reisepass des Vollmachtgebers.
+Beispiele:
 
-**Verjährte Vollmacht.** Immobilienvollmachten verlieren in der Türkei nach einigen Jahren ihre Gültigkeit (je nach Behörde unterschiedlich). Prüfen Sie vor einem Immobiliengeschäft, ob eine alte Vollmacht noch anerkannt wird.
+- Bei **Tapu** muss die Vollmacht Kauf, Verkauf, Übertragung, Grundbuchauskunft oder Preisempfang ausdrücklich nennen.
+- Bei **Erbschaft** müssen Veraset İlamı, Nachlass, Bank, Tapu und Steuerfragen getrennt geprüft werden.
+- Bei **Gericht oder Anwalt** muss die Vertretung vor den zuständigen türkischen Gerichten und Behörden umfasst sein.
+- Bei **Banken** müssen Kontoeröffnung, Auszahlung, Auskunft und Schließung konkret geregelt sein.
 
-## Wer formuliert den Text?
+Ein Muster aus dem Internet kann dafür gefährlich sein, weil es den konkreten Zweck nicht kennt.
 
-Das ist die Stelle, an der ein Anwalt mit Kenntnissen des türkischen Rechts hilft. Kein Textbaustein aus dem Internet. Keine Übersetzung einer deutschen Vollmacht. Der Text muss nach türkischem Recht formuliert sein — passgenau für den konkreten Zweck.
+## Häufige Fehler bei Vollmachten auf Türkisch
 
-In der Doğru Kanzlei formulieren wir Vekâletname-Texte auf Türkisch, die türkische Notare und Behörden tatsächlich akzeptieren.`,contentTR:`Almanya'da yaşayıp Türkiye'de bir şeyler halletmeniz gerekiyorsa — gayrimenkul satışı, miras, dava, bankacılık — çoğunlukla kaçış yoktur: Türk hukukuna uygun bir vekaletname, yani Vekâletname gerekir.
+**Nur übersetzen lassen.** Eine sprachlich richtige Übersetzung reicht nicht, wenn Form, Apostille oder Befugnisse fehlen.
 
-Sorun vekaletname gerektirmesi değildir. Sorun, pek çok vekaleetnamenin hatalı olmasıdır. Bunu çoğu zaman Türk noteri ya da kurum belgeyi reddettiğinde anlarsınız.
+**Falscher Weg.** Manche gehen zum deutschen Notar, obwohl ein Konsulatstermin einfacher wäre. Andere warten monatelang auf das Konsulat, obwohl eine notarielle Lösung schneller wäre.
 
-Bu yazıda gerçekten ne işe yaradığını açıklıyorum.
+**Zu allgemeiner Wortlaut.** "Alle Geschäfte in der Türkei" klingt breit, wird aber bei konkreten Behörden oft nicht akzeptiert.
 
-## Türk Vekaletnamesi Neden Farklı?
+**Unvollständige Unterlagen.** Passdaten, türkische Identitätsnummer, Tapu-Daten, Aktenzeichen, Fotos oder Behördenvorlagen fehlen häufig.
 
-Almanya'da pek çok yetki belgesi için imzalı yazılı bir belge yeterlidir. Türkiye'de durum farklıdır. Çoğu hukuki işlem için noter onaylı Vekâletname şarttır — ya Türk konsolosluğu tarafından düzenlenmiş ya da Alman noteri + apostil + yeminli çeviri şeklinde hazırlanmış.
+**Keine Prüfung vor dem Termin.** Wer erst beim Konsulat oder Notar merkt, dass Angaben fehlen, verliert Zeit und oft auch den Termin.
 
-Bu bir tesadüf değil. Türkiye, özellikle gayrimenkul ve miras işlemlerinde sahte vekaletnamelere karşı önlem alıyor.
+## Was sollten Sie jetzt tun?
 
-## Ne Zaman Türkçe Vekaletname Gerekir?
+Schreiben Sie zuerst nicht irgendeinen Text aus dem Internet ab. Klären Sie zuerst:
 
-Almanya'dan Türkiye'de biri adına işlem yaptırmak istediğinizde. Yaygın durumlar:
+1. Wofür wird die Vollmacht in der Türkei verwendet?
+2. Welche Stelle in der Türkei soll sie akzeptieren?
+3. Ist Konsulat oder deutscher Notar besser?
+4. Wird Apostille und beglaubigte Übersetzung benötigt?
+5. Welche Unterlagen und Kostenblöcke entstehen?
 
-- Türkiye'deki gayrimenkul satışı veya devri (Tapu Devri)
-- Miras işlemleri — veraset ilamı, taksim, devir
-- Türkiye'de boşanma davası açtırmak için Türk avukata yetki vermek
-- Tanıma-Tenfiz davası — Alman mahkeme kararının Türkiye'de tanınması
-- Türk banka hesapları üzerinde işlem yaptırmak
-- Türkiye'de araç tescil veya silme işlemi
+Wenn Sie möchten, übernehmen wir diese Prüfung und Vorbereitung für Sie.
 
-## Konsolosluk mu, Alman Noteri mi?
+[Vollmacht für die Türkei erstellen lassen →](/de/leistungen/vollmacht-apostille)
 
-**Türk Konsolosluğu.** Daha kolay yoldur. Frankfurt, Berlin, Stuttgart, Münih ve diğer şehirlerdeki konsolosluklar doğrudan Türkçe Vekâletname düzenleyebilir. Sonuç, apostil veya çeviri gerektirmeksizin Türkiye'de anında geçerlidir.
+## Fazit
 
-Dezavantaj: Randevular çoğu zaman aylarca önceden dolmaktadır ve bizzat gitmeniz gerekir.
+Eine **Vollmacht auf Türkisch** ist kein reines Übersetzungsthema. Es geht um den richtigen Weg, den richtigen Wortlaut und die Anerkennung in der Türkei. Wer hier sauber vorbereitet, spart Termine, Rückfragen und Ablehnungen.
 
-**Alman Noteri.** Mümkündür ancak daha zahmetlidir. Noter Almanca düzenleme yapar; ardından Landgericht veya Bezirksregierung'dan apostil alınır ve devlet yeminli bir tercüman tarafından Türkçe'ye çevrilir. Türkiye'de geçerli olması için tüm paketin (asıl + apostil + çeviri) tam olması gerekir.
+Doğru Kanzlei prüft für Mandanten in ganz Deutschland, ob Konsulat, deutscher Notar, Apostille oder Übersetzung der richtige Weg ist, und bereitet die Vollmacht zweckbezogen vor.`,contentTR:`Birçok kişi Google'da **"Türkçe vekaletname"** veya **"Almanya'da vekaletname nasıl çıkarılır"** diye arar. Asıl ihtiyaç çoğu zaman şudur: Almanya'dan Türkiye'de tapu, miras, banka, mahkeme, boşanma, Tanıma & Tenfiz veya resmi kurum işlemi yaptırmak.
 
-Dezavantaj: Daha pahalı, daha zaman alıcı ve her adımda hata riski daha yüksektir.
+En önemli cevap: Bir Alman vekaletnamesini Türkçeye çevirmek her zaman yeterli değildir. Önemli olan, vekaletnamenin **Türkiye'de hangi işlem için kabul edileceğidir**.
 
-## Vekaletnamede Ne Yazmalı?
+Hataların çoğu tam burada başlar.
 
-Bu kritik noktadır. Türkiye'de kural şudur: Vekaletnamede açıkça yazılan şeyleri vekil yapabilir. "Türkiye'deki tüm işleri halletmek" gibi genel ifadeler kabul edilmez.
+## "Türkçe vekaletname" ne demek?
 
-Gayrimenkul satışı için vekaletname şunları açıkça içermelidir: Söz konusu taşınmazı satma yetkisi (adres ve tapu numarasıyla birlikte), tapu dairesinde gerekli belgeleri imzalama yetkisi, satış bedelini tahsil etme yetkisi.
+Bu ifade pratikte üç farklı şeyi anlatabilir:
 
-Bu maddelerden biri eksikse Türk noteri veya tapu müdürlüğü belgeyi reddedebilir.
+1. Almanca bir vekaletnamenin Türkçeye tercümesi
+2. Türk konsolosluğunda düzenlenen vekaletname
+3. Alman noterinde düzenlenip apostil ve yeminli tercüme yapılan vekaletname
 
-## En Sık Yapılan Hatalar
+Bu yollar aynı değildir. Tercüme noter şeklinin yerine geçmez. Apostil hatalı metni doğru hale getirmez. Konsolosluk randevusu da yanlış yetkilerle düzenlenen vekaletnameyi kurtarmaz.
 
-**Muğlak ifadeler.** "Tüm işleri temsil etmek" yetmez. Türk kurumları özgüllük ister.
+## Sadece tercüme yeterli mi?
 
-**Yanlış tercüman.** Apostil yolunu seçtiyseniz devlet yeminli tercüman gerekir. Sıradan çeviri bürosu yetmez.
+Çoğu işlemde hayır.
 
-**Eski vekaletname.** Gayrimenkul vekaletnameleri Türkiye'de belirli bir süre sonra geçerliliğini yitirebilir. İşlem öncesinde eski vekaletnamenin hâlâ kabul edilip edilmeyeceğini kontrol edin.
+Tercüme yalnızca dili değiştirir. Türk kurumları ise şekli, tasdiki, apostili ve metindeki yetkileri de kontrol eder. Vekaletnamede yalnızca "Türkiye'deki tüm işleri yapmaya yetkilidir" gibi genel ifadeler varsa tapu, miras, banka veya mahkeme işlemlerinde yetersiz kalabilir.
 
-## Metni Kim Yazmalı?
+Özellikle şu işlemlerde dikkat gerekir:
 
-İşte burada Türk hukukunu bilen bir avukat devreye girer. İnternetten bulunan hazır şablonlar değil. Alman vekaletnamelerinin çevirisi değil. Metin, Türk hukukuna göre — somut amaca özel olarak — kaleme alınmalıdır.
+- Türkiye'de gayrimenkul satışı, alımı veya tapu devri
+- Miras, veraset ilamı ve tereke işlemleri
+- Türk banka hesapları
+- Mahkeme dosyaları ve avukat vekaleti
+- Boşanma, Tanıma & Tenfiz veya nüfus kayıt işlemleri
+- Şirket ve resmi kurum işlemleri
 
-Doğru Kanzlei olarak, Türk noterler ve kurumların gerçekten kabul ettiği Vekâletname metinleri hazırlıyoruz.`,category:"legal-documents",categoryDE:"Rechtsdokumente",image:l,dateDE:"19. April 2026",dateTR:"19 Nisan 2026",readTimeDE:"7 Min. Lesezeit",readTimeTR:"7 dk okuma",publishedAt:"2026-04-19",keywordsDE:"vollmacht auf türkisch, türkische vollmacht, vekâletname deutschland, vollmacht türkei konsulat, türkische vollmacht apostille, vekâletname text",keywordsTR:"türkçe vekaletname, almanya vekaletname nasıl çıkarılır, konsolosluk vekaletname, apostil türkiye, vekâletname metin örneği",faqDE:[{question:"Kann ich eine Vollmacht auf Türkisch einfach selbst übersetzen?",answer:"Nein. Eine selbst übersetzte Vollmacht wird von türkischen Behörden nicht anerkannt. Sie brauchen entweder eine Beurkundung durch das türkische Konsulat oder eine beglaubigte Übersetzung durch einen staatlich vereidigten Dolmetscher."},{question:"Wie lange ist eine türkische Vollmacht gültig?",answer:"Das hängt vom Verwendungszweck und der Behörde ab. Bei Immobiliengeschäften gibt es in der Praxis oft eine Grenze von 3 bis 5 Jahren. Prüfen Sie vor einem Geschäft, ob eine ältere Vollmacht noch anerkannt wird."},{question:"Welche türkischen Konsulate in Deutschland können Vollmachten ausstellen?",answer:"Alle türkischen Generalkonsulate: Frankfurt, Berlin, Hamburg, München, Stuttgart, Karlsruhe, Mainz, Hannover, Düsseldorf, Köln, Nürnberg und das Konsulat in Münster."},{question:"Was kostet eine Vekâletname beim türkischen Konsulat?",answer:"Die Konsulatsgebühr hängt vom Umfang der Vollmacht und den Anforderungen des Konsulats ab. Dazu kommen mögliche Kosten für Dolmetscher oder notwendige Unterlagen."},{question:"Ich bin in Deutschland und kann nicht persönlich zum Konsulat. Was sind meine Optionen?",answer:"Sie können den Weg über den deutschen Notar wählen: Beurkundung auf Deutsch, dann Apostille und beglaubigte Übersetzung. Das ist aufwendiger, funktioniert aber ohne Konsulatsbesuch. Sprechen Sie uns an, wir begleiten Sie durch den Prozess."}],faqTR:[{question:"Türkçe vekaletnameyi kendim tercüme edebilir miyim?",answer:"Hayır. Öz çeviri Türk kurumları tarafından kabul edilmez. Ya Türk konsolosluğunda düzenleme yaptırmalısınız ya da devlet yeminli tercüman onaylı çeviri kullanmalısınız."},{question:"Türkçe vekaletname ne kadar süre geçerlidir?",answer:"Kullanım amacına ve kuruma göre değişir. Gayrimenkul işlemlerinde pratikte genellikle 3–5 yıllık sınır uygulanır. İşlem öncesinde eski bir vekaleetnamenin kabul edilip edilmeyeceğini kontrol edin."},{question:"Almanya'da hangi konsolosluklar vekaletname düzenleyebilir?",answer:"Tüm Türk Başkonsoloslukları: Frankfurt, Berlin, Hamburg, Münih, Stuttgart, Karlsruhe, Mainz, Hannover, Düsseldorf, Köln, Nürnberg ve Münster."},{question:"Konsolosluğa bizzat gidemiyorum. Ne yapabilirim?",answer:"Alman noteri yolunu seçebilirsiniz: Almanca düzenleme, ardından apostil ve yeminli çeviri. Daha zahmetlidir ama konsolosluk ziyareti gerektirmez. Süreç için bize danışabilirsiniz."}],ctaTitleDE:"Vollmacht auf Türkisch richtig aufsetzen",ctaTitleTR:"Türkçe Vekaletnameyi Doğru Hazırlayın",ctaDescriptionDE:"Wir formulieren Ihre Vekâletname auf Türkisch — zweckgebunden, rechtssicher und von türkischen Behörden anerkannt.",ctaDescriptionTR:"Amacınıza özel, Türk kurumlarınca kabul edilen Vekâletname metnini sizin için hazırlıyoruz."},{slug:"mietrecht-mannheim",slugDE:"mietrecht-mannheim",slugTR:"mannheim-kira-hukuku",titleDE:"Mietrecht Mannheim: Kündigung, Kaution und was Mieter wirklich wissen müssen",titleTR:"Mannheim'da Kira Hukuku: Fesih, Depozito ve Kiracıların Gerçekten Bilmesi Gerekenler",excerptDE:"Mietrecht in Mannheim: Wann ist eine Kündigung des Vermieters wirksam? Wie bekommen Sie Ihre Kaution zurück? Und welche Renovierungsklauseln müssen Mieter nicht erfüllen?",excerptTR:"Mannheim'da kira hukuku: Ev sahibinin feshi ne zaman geçerlidir? Depozitonuzu nasıl geri alırsınız? Hangi tamirat hükümleri kiracılar için bağlayıcı değildir?",contentDE:`Mietrecht ist das Rechtsgebiet, bei dem die meisten Menschen irgendwann einmal landen — ob als Mieter oder als Vermieter. In Mannheim, wo die Wohnungsnachfrage hoch ist, kommt es besonders häufig zu Streitigkeiten über Kündigungen, Kautionseinbehalte und Nebenkostenabrechnungen.
+## Konsolosluk mu, Alman noteri mi?
+
+Doğru yol işlem amacına, süreye ve Türkiye'deki kurumun beklentisine göre değişir.
+
+| Yol | Ne zaman mantıklı? | Nelere dikkat edilir? |
+|---|---|---|
+| **Türk konsolosluğu** | Vekaletnamenin doğrudan Türkçe düzenlenmesi isteniyorsa | Randevu, bizzat başvuru, doğru bilgiler ve bazı işlemlerde fotoğraf |
+| **Alman noteri** | Konsolosluk randevusu yoksa veya noter yolu daha pratikse | Apostil, yeminli tercüme ve doğru Türkçe metin |
+| **Sadece tercüme** | Ancak şekil zaten uygunsa ve basit bir işlemse | Tercüme tek başına hatalı vekaletnameyi geçerli yapmaz |
+
+## Apostil ne zaman gerekir?
+
+Alman noteri veya Alman makamı tarafından düzenlenen bir belge Türkiye'de kullanılacaksa çoğu zaman apostil gerekir. Sonrasında yeminli tercüme de istenebilir.
+
+Konsoloslukta düzenlenen vekaletnamede durum farklı olabilir. Bu yüzden önce hangi yolun daha hızlı, daha uygun ve daha güvenli olduğunu belirlemek gerekir.
+
+## Türkçe vekaletnamede ne yazmalı?
+
+Vekaletname yapılacak işlemi açıkça kapsamalıdır. Türk kurumları belirsiz ifadeleri çoğu zaman kabul etmez.
+
+Örnekler:
+
+- **Tapu** için satış, alım, devir, tapu bilgisi alma veya bedeli tahsil yetkisi açık yazılmalıdır.
+- **Miras** için veraset ilamı, tereke, banka, tapu ve vergi adımları ayrı değerlendirilmelidir.
+- **Mahkeme veya avukat** için ilgili Türk mahkemeleri ve kurumları nezdinde temsil yetkisi bulunmalıdır.
+- **Banka** için hesap açma, para çekme, bilgi alma veya hesap kapatma yetkileri açık olmalıdır.
+
+İnternetten bulunan hazır şablonlar somut işlem amacını bilmediği için risklidir.
+
+## Vekaletname masrafları ne kadar?
+
+Masraflar seçilen yola göre farklılaşır. Aşağıdaki rakamlar genel bir fikir vermek amacıyla paylaşılmıştır; kesin tutarlar konsolosluğa, noter ofisine ve işlem türüne göre değişebilir.
+
+**Türk konsolosluğu yolu:**
+Konsolosluk ücretleri genellikle düşük ila orta iki haneli euro aralığındadır. Apostil ve yeminli tercüme masrafı eklenmez; bu, konsolosluk yolunun en büyük maliyet avantajıdır. Ancak randevu bekleme süreleri şehre göre birkaç haftayı bulabilir.
+
+**Alman noteri yolu:**
+Noterlik ücretleri Almanya'da Adalet Bakanlığı'nın belirlediği tarifeye göre hesaplanır. Basit bir vekaletname için genellikle 50–100 € civarında başlar. Tapu veya miras gibi maddi değeri olan işlemlerde bu rakam işlem değerine göre yükselebilir. Buna ek olarak:
+
+- Apostil: yaklaşık 20–40 € (yetkili eyalet makamı tarafından düzenlenir)
+- Yeminli Türkçe tercüme: genellikle 50–150 €, belge uzunluğuna göre
+
+**Hukuki hazırlık:**
+Vekaletname metninin hazırlanması, doğru yolun belirlenmesi ve adımların koordinasyonu ayrıca ücretlendirilir. Bu hizmetin bedeli başlangıçta size bildirilir.
+
+Önemli not: Apostili eksik ya da yetkileri hatalı düzenlenen bir vekaletname Türkiye'de reddedilirse tüm süreç yeniden başlar. Yeni randevu, yeni noter ücreti, yeni apostil, yeni tercüme. Baştan doğru yapmak çoğu zaman daha az masraflıdır.
+
+## Almanya'dan hangi konsolosluğa gidilir?
+
+Türk konsolosluklarının Almanya'daki dağılımı ikamet yerine göre belirlidir. Başvuru yapılabilecek başlıca konsolosluk şehirleri şunlardır:
+
+- **Berlin** — Büyükelçilik ve Başkonsolosluk
+- **Frankfurt** — Başkonsolosluk (Hessen, Rheinland-Pfalz, Saarland)
+- **Köln** — Başkonsolosluk (Kuzey Ren-Vestfalya'nın bir bölümü)
+- **Düsseldorf** — Başkonsolosluk
+- **Hamburg** — Başkonsolosluk (Kuzey Almanya)
+- **Stuttgart** — Başkonsolosluk (Baden-Württemberg'in bir bölümü)
+- **Karlsruhe** — Başkonsolosluk (Güney Baden-Württemberg ve Mannheim çevresi)
+- **Münih** — Başkonsolosluk (Bavyera)
+- **Nürnberg** — Başkonsolosluk
+
+Mannheim ve Heidelberg'de yaşayanlar genellikle Karlsruhe Başkonsolosluğu'na bağlıdır. Her konsolosluğun randevu sistemi, bekleme süresi ve belge listesi biraz farklı olabilir.
+
+Önemli: Doğru konsolosluğa gitmeden önce, işlem için gerekli belgeleri tam olarak öğrenmek gerekir. Eksik belgeyle randevuya gidilirse işlem yapılamaz; yeni randevu almak için birkaç hafta daha beklenmesi gerekebilir.
+
+## İşleme göre vekaletname türleri
+
+Her işlem için aynı metin çalışmaz. Türkiye'deki kurumlar vekaletnamede işlem bazında açık yetkiler arar.
+
+**Tapu ve gayrimenkul işlemleri:**
+Satış, alım, devir, tapu tescili, ipotek ve kadastro işlemleri için taşınmazın ada, parsel, il, ilçe ve pafta bilgileriyle birlikte açık yetki yazılmalıdır. Genel "Türkiye'deki taşınmazlarım için işlem yapsın" ifadesi çoğu zaman yeterli olmaz.
+
+**Miras ve veraset:**
+Veraset ilamı çıkarma, mirasçı sıfatıyla banka veya tapuya başvurma, terekenin tespiti ve paylaşımı farklı adımlar gerektirir. Her adım için gereken yetki vekaletnamede ayrı ayrı belirtilmelidir.
+
+**Banka hesapları:**
+Hesap açma, para çekme, hesap kapatma ve bilgi alma yetkileri açıkça yazılmalıdır. Bankanın talep ettiği ek belgeler veya özel metin formatı olabilir.
+
+**Mahkeme ve avukat vekaleti:**
+Türk mahkemeleri ve savcılıkları nezdinde temsil için ayrı bir avukat vekaletnamesi düzenlenir. Bu belge için noter veya konsolosluk yolu ve içerik gereksinimleri farklı olabilir.
+
+**Boşanma ve aile hukuku:**
+Türkiye'de boşanma davası açmak, anlaşmalı boşanma onayı için vekil atamak veya velayet düzenlemeleri için özel yetki içeren vekaletname gerekebilir.
+
+## En sık yapılan hatalar
+
+**Sadece tercüme yaptırmak.** Dil doğru olsa bile şekil, apostil veya yetki eksikse belge reddedilebilir.
+
+**Yanlış yolu seçmek.** Bazen konsolosluk daha kolaydır, bazen Alman noteri + apostil daha hızlıdır.
+
+**Genel metin kullanmak.** "Türkiye'deki tüm işleri yapabilir" gibi ifadeler somut kurumlarda yetersiz kalabilir.
+
+**Eksik belgelerle randevuya gitmek.** Pasaport, T.C. kimlik numarası, tapu bilgisi, dosya numarası, fotoğraf veya kurum yazısı eksik olabilir.
+
+**İnternetten hazır şablon indirmek.** Şablonlar işlem amacını ve Türkiye'deki kurumun güncel beklentisini bilmez.
+
+## Şimdi ne yapmalısınız?
+
+Önce şu sorular netleşmelidir:
+
+1. Vekaletname Türkiye'de hangi işlem için kullanılacak?
+2. Hangi kurum kabul edecek?
+3. Konsolosluk mu Alman noteri mi daha doğru?
+4. Apostil ve yeminli tercüme gerekir mi?
+5. Hangi belgeler ve ücret kalemleri oluşur?
+
+Bu kontrolü ve hazırlığı sizin için yapabiliriz.
+
+[Türkiye için vekaletname sürecini başlatın →](/tr/hizmetler/vekaletname-ve-apostil)
+
+## Sonuç
+
+**Türkçe vekaletname** sadece tercüme konusu değildir. Doğru yol, doğru metin ve Türkiye'de kabul şartı birlikte düşünülmelidir. Başta doğru hazırlık yapılırsa randevu, zaman kaybı ve ret riski azalır.`,contentEN:`Many people search for **"power of attorney in Turkish"** because they live in Germany and need someone to act for them in Turkey. The matter may involve property, inheritance, bank accounts, court proceedings, divorce, recognition of a judgment or an administrative appointment.
+
+The most important point: a power of attorney does not become valid for Turkey simply because a German text is translated into Turkish. What matters is whether the document will be accepted in Turkey for the exact purpose.
+
+## What does "power of attorney in Turkish" mean?
+
+In practice, it can mean three different things:
+
+1. a German power of attorney translated into Turkish
+2. a power of attorney issued by the Turkish consulate
+3. a German notarised power of attorney with apostille and certified Turkish translation
+
+These routes are not the same. Translation does not replace notarial form. Apostille does not fix unclear wording. And a consular appointment does not help if the document lacks the powers required by the Turkish authority.
+
+## Is translation alone enough?
+
+Often, no.
+
+A translation changes the language. Turkish authorities also check form, certification, apostille and the actual powers granted. General wording such as "all matters in Turkey" may be too vague for land registry, inheritance, banking or court use.
+
+Critical cases include:
+
+- property sale, purchase or title transfer in Turkey
+- inheritance and certificate of inheritance
+- Turkish bank accounts
+- court proceedings and lawyer representation
+- divorce or recognition of foreign judgments
+- company and authority matters
+
+## Turkish consulate or German notary?
+
+The right route depends on the purpose, timing and the authority in Turkey.
+
+| Route | When useful? | Key point |
+|---|---|---|
+| **Turkish consulate** | When a Turkish power of attorney should be issued directly | Appointment, personal attendance and correct details |
+| **German notary** | When the consulate route is not available or not practical | Apostille, certified translation and correct Turkish wording |
+| **Translation only** | Only in simple cases where the form is already accepted | Translation alone cannot make a flawed document valid |
+
+## When is apostille required?
+
+If a German notary or German authority issues the document, apostille is often required for use in Turkey. A certified Turkish translation may then be needed as well.
+
+Consular powers of attorney are different. That is why the route should be checked before booking appointments or paying for translation.
+
+## What must the Turkish wording include?
+
+The power of attorney must cover the intended transaction. Turkish authorities often reject vague wording.
+
+Examples:
+
+- For **land registry**, sale, purchase, transfer, information requests or receiving the price may need to be stated.
+- For **inheritance**, certificate of inheritance, estate, bank, land registry and tax steps must be checked.
+- For **court or lawyer representation**, the relevant Turkish courts and authorities must be covered.
+- For **banks**, account opening, withdrawal, information and closure powers should be clear.
+
+## Common mistakes
+
+**Only translating the document.** The language may be correct, but the form, apostille or powers may still be missing.
+
+**Choosing the wrong route.** Sometimes the consulate is easier; sometimes a German notary plus apostille is faster.
+
+**Using generic wording.** Broad phrases may fail when a specific Turkish authority reviews the document.
+
+**Missing documents at the appointment.** Passport details, Turkish ID number, property data, file numbers, photos or authority letters may be needed.
+
+## What should you do now?
+
+Clarify these points first:
+
+1. What will the power of attorney be used for in Turkey?
+2. Which Turkish authority must accept it?
+3. Is consulate or German notary the better route?
+4. Are apostille and certified translation required?
+5. Which documents and cost blocks will arise?
+
+We can check and prepare this for you.
+
+[Have your power of attorney for Turkey prepared →](/en/services/power-of-attorney)
+
+## Conclusion
+
+A **power of attorney in Turkish** is not just a translation task. It is about the correct route, the correct wording and acceptance in Turkey. Proper preparation reduces appointment problems, delays and rejection risk.`,category:"legal-documents",categoryDE:"Rechtsdokumente",categoryEN:"Legal Documents",image:l,dateDE:"19. April 2026",dateTR:"19 Nisan 2026",dateEN:"April 19, 2026",readTimeDE:"8 Min. Lesezeit",readTimeTR:"8 dk okuma",readTimeEN:"8 min read",publishedAt:"2026-04-19",modifiedAt:"2026-07-06",keywordsDE:"vollmacht auf türkisch, vollmacht türkisch, türkische vollmacht, türkisches konsulat vollmacht, deutscher notar türkei, apostille türkei, vekaletname deutschland",keywordsTR:"türkçe vekaletname, almanya vekaletname nasıl çıkarılır, konsolosluk vekaletname, alman noteri vekaletname, apostil türkiye, vekaletname metni",keywordsEN:"power of attorney in Turkish, Turkish power of attorney Germany, Turkish consulate power of attorney, German notary apostille Turkey",metaTitleDE:"Vollmacht auf Türkisch | Konsulat, Notar oder Apostille?",metaTitleTR:"Türkçe Vekaletname | Konsolosluk, Alman Noteri veya Apostil",metaTitleEN:"Power of Attorney in Turkish | Consulate, Notary or Apostille",metaDescriptionDE:"Vollmacht auf Türkisch: Reicht eine Übersetzung? Wann brauchen Sie Konsulat, deutschen Notar, Apostille und beglaubigte Übersetzung für die Türkei?",metaDescriptionTR:"Türkçe vekaletname için tercüme yeterli mi? Konsolosluk, Alman noteri, apostil, yeminli tercüme ve Türkiye'de kabul şartlarını açıklıyoruz.",metaDescriptionEN:"Power of attorney in Turkish: when translation is not enough, and when Turkish consulate, German notary, apostille and certified translation are required.",schemaHeadlineDE:"Vollmacht auf Türkisch: Konsulat, Notar oder Apostille?",schemaHeadlineTR:"Türkçe Vekaletname: Konsolosluk, Alman Noteri veya Apostil?",schemaHeadlineEN:"Power of Attorney in Turkish: Consulate, Notary or Apostille?",articleTagsDE:["Vollmacht auf Türkisch","Vollmacht Türkei","Türkisches Konsulat","Apostille Türkei","Vekaletname"],articleTagsTR:["Türkçe vekaletname","Almanya vekaletname","Konsolosluk vekaletname","Apostil","Vekaletname"],articleTagsEN:["Power of attorney in Turkish","Turkey","Turkish consulate","Apostille","Vekaletname"],faqDE:[{question:"Kann ich eine Vollmacht auf Türkisch einfach selbst übersetzen?",answer:"Eine bloße Selbstübersetzung reicht in der Regel nicht. Entscheidend sind notarielle Form, Apostille, beglaubigte Übersetzung und der konkrete Inhalt der Befugnisse. Je nach Vorgang ist das türkische Konsulat oder ein deutscher Notar mit Apostille der richtige Weg."},{question:"Was ist besser: türkisches Konsulat oder deutscher Notar?",answer:"Das hängt von Zweck, Terminlage und der zuständigen Stelle in der Türkei ab. Das Konsulat erstellt direkt eine türkische Vekaletname. Beim deutschen Notar folgen häufig Apostille und beglaubigte Übersetzung. Wir prüfen, welcher Weg für Ihren Fall sinnvoll ist."},{question:"Gibt es einen türkischen Notar in Deutschland?",answer:"In Deutschland handeln Notare nach deutschem Recht. Für türkische Zwecke kommt praktisch entweder das türkische Konsulat oder ein deutscher Notar mit Apostille und Übersetzung in Betracht. Wichtig ist, dass die Vollmacht in der Türkei akzeptiert wird."},{question:"Wann brauche ich eine Apostille für die Türkei?",answer:"Wenn eine Vollmacht durch einen deutschen Notar oder eine deutsche Behörde erstellt wird, ist für die Türkei häufig eine Apostille erforderlich. Bei einer Konsularvollmacht kann die Bewertung anders sein."},{question:"Welche Informationen braucht eine Vollmacht auf Türkisch?",answer:"Typisch sind Zweck, Daten des Vollmachtgebers, Daten der bevollmächtigten Person, Aktenzeichen, Tapu-Daten, Bankdaten, Fotos oder konkrete Behördenvorlagen. Der Inhalt hängt vom Vorgang ab."}],faqTR:[{question:"Türkçe vekaletnameyi kendim tercüme edebilir miyim?",answer:"Çoğu durumda sadece kendi tercümeniz yeterli değildir. Noter şekli, apostil, yeminli tercüme ve metindeki yetkilerin işlem amacına uygun olması gerekir."},{question:"Konsolosluk mu Alman noteri mi daha doğru?",answer:"İşlem amacına, randevu durumuna ve Türkiye'deki kurumun beklentisine göre değişir. Konsolosluk doğrudan Türkçe vekaletname düzenler. Alman noterinde ise çoğu zaman apostil ve yeminli tercüme gerekir."},{question:"Apostil ne zaman gerekir?",answer:"Alman noteri veya Alman makamı tarafından düzenlenen belge Türkiye'de kullanılacaksa çoğu zaman apostil gerekir. Konsolosluk vekaletnamesinde durum farklı olabilir."},{question:"Türkçe vekaletnamede hangi bilgiler gerekir?",answer:"İşlem amacı, vekil bilgileri, tapu veya dosya bilgileri, banka bilgileri, fotoğraf, T.C. kimlik numarası veya kurumun istediği metin gerekebilir. Liste işlem türüne göre değişir."}],faqEN:[{question:"Can I simply translate a German power of attorney into Turkish?",answer:"Often, no. Translation changes the language, but Turkish authorities also check form, certification, apostille and the powers granted. The correct route depends on the intended use."},{question:"Should I use the Turkish consulate or a German notary?",answer:"It depends on the purpose, appointment availability and the authority in Turkey. Consulates issue Turkish powers of attorney directly; German notary documents often need apostille and certified translation."},{question:"When is apostille required for Turkey?",answer:"Documents issued by a German notary or authority often require apostille for use in Turkey. Consular powers of attorney may be treated differently."},{question:"What information is needed for a Turkish power of attorney?",answer:"Usually the purpose, identity details, representative details, file or land-registry data, bank details, photos or authority templates may be needed, depending on the matter."}],ctaTitleDE:"Vollmacht für die Türkei prüfen lassen",ctaTitleTR:"Türkiye İçin Vekaletname Sürecini Başlatın",ctaTitleEN:"Have Your Turkish Power of Attorney Checked",ctaDescriptionDE:"Wir prüfen Konsulat, deutschen Notar, Apostille, Übersetzung, Unterlagen und den richtigen türkischen Wortlaut.",ctaDescriptionTR:"Konsolosluk, Alman noteri, apostil, yeminli tercüme, gerekli belgeler ve doğru metni sizin için değerlendiriyoruz.",ctaDescriptionEN:"We check consulate, German notary, apostille, certified translation, documents and the correct Turkish wording."},{slug:"mietrecht-mannheim",slugDE:"mietrecht-mannheim",slugTR:"mannheim-kira-hukuku",titleDE:"Mietrecht Mannheim: Kündigung, Kaution und was Mieter wirklich wissen müssen",titleTR:"Mannheim'da Kira Hukuku: Fesih, Depozito ve Kiracıların Gerçekten Bilmesi Gerekenler",excerptDE:"Mietrecht in Mannheim: Wann ist eine Kündigung des Vermieters wirksam? Wie bekommen Sie Ihre Kaution zurück? Und welche Renovierungsklauseln müssen Mieter nicht erfüllen?",excerptTR:"Mannheim'da kira hukuku: Ev sahibinin feshi ne zaman geçerlidir? Depozitonuzu nasıl geri alırsınız? Hangi tamirat hükümleri kiracılar için bağlayıcı değildir?",contentDE:`Mietrecht ist das Rechtsgebiet, bei dem die meisten Menschen irgendwann einmal landen — ob als Mieter oder als Vermieter. In Mannheim, wo die Wohnungsnachfrage hoch ist, kommt es besonders häufig zu Streitigkeiten über Kündigungen, Kautionseinbehalte und Nebenkostenabrechnungen.
 
 Ich erkläre Ihnen die wichtigsten Punkte ohne den üblichen Fachjargon.
 

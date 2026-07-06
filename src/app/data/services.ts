@@ -321,6 +321,30 @@ Wir prüfen für Sie, ob der Konsularweg schneller und rechtssicherer ist oder o
 
 Ein falsch gewählter Weg kann Zeit, Geld und Termine kosten. Typische Fehler sind unklare Befugnisse, falsche Beglaubigung, fehlende Apostille, unpassende Übersetzung oder eine Vollmacht, die für Tapu, Erbschaft, Bank oder Gericht nicht konkret genug formuliert ist.
 
+Konsulat, deutscher Notar oder Apostille — welcher Weg ist der richtige?
+
+| Weg | Wann sinnvoll | Worauf achten |
+|---|---|---|
+| Türkisches Konsulat | Vollmacht soll direkt auf Türkisch ausgestellt werden | Terminverfügbarkeit, persönliches Erscheinen, vollständige Angaben |
+| Deutscher Notar | Kein Konsulartermin verfügbar oder Notar praktischer | Apostille und beglaubigte Übersetzung sind meist erforderlich |
+| Übersetzung allein | Nur wenn das Ausgangsdokument bereits die richtige Form hat | Übersetzung ersetzt keine notarielle Form oder fehlende Apostille |
+
+Was kostet eine Vollmacht für die Türkei?
+
+Die Kosten entstehen je nach gewähltem Weg in verschiedenen Schritten:
+
+• Türkisches Konsulat: Die Gebühr liegt je nach Konsulatsbezirk und Dokumentenart typischerweise im niedrigen bis mittleren zweistelligen Bereich. Hinzu kommen keine Apostille- und Übersetzungskosten.
+
+• Deutscher Notar: Notargebühren richten sich nach dem Gerichts- und Notarkostengesetz (GNotKG). Für einfache Vollmachten beginnen sie erfahrungsgemäß ab ca. 50–100 €, können aber bei Immobilien- oder Erbrechtsvollmachten je nach Geschäftswert deutlich höher liegen.
+
+• Apostille: Die Apostille wird von der zuständigen Landesbehörde ausgestellt (z. B. Regierungspräsidium oder Landesjustizverwaltung). Die Gebühr liegt häufig zwischen 20 und 40 € pro Dokument.
+
+• Beglaubigte Übersetzung: Eine vereidigte Übersetzung ins Türkische kostet je nach Umfang typischerweise zwischen 50 und 150 €.
+
+• Anwaltliche Vorbereitung: Wird der Vollmachtstext, die Wegklärung und die Koordination der Schritte durch unsere Kanzlei übernommen, entstehen hierfür gesonderte Beratungskosten, die wir vorab mitteilen.
+
+Wichtig: Fehlt eine Apostille oder enthält die Vollmacht die falschen Befugnisse, muss der Prozess von vorne beginnen — mit erneuten Terminen, Gebühren und Wartezeiten. Eine kurze Prüfung vorab spart im Regelfall mehr, als sie kostet.
+
 Was wir für Sie tun:
 
 • Konsulat oder deutscher Notar — wir klären, welcher Weg für Ihren Vorgang in der Türkei sinnvoll ist

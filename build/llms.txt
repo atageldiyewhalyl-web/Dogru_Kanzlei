@@ -25,9 +25,21 @@
 Licensed under §207 BRAO, allowing full Turkish-law practice in Germany.
 Ankara Bar Association membership No. 47068.
 
-## Key Pages
+## Key Pages (German)
 - Homepage: https://hasandogru.de/de
 - About: https://hasandogru.de/de/ueber-uns
 - Services: https://hasandogru.de/de/leistungen
 - Blog: https://hasandogru.de/de/blog
+- Vollmacht Türkei: https://hasandogru.de/de/leistungen/vollmacht-apostille
 - Contact: https://hasandogru.de/de/#iletisim
+
+## Key Pages (Turkish)
+- Homepage: https://hasandogru.de/tr
+- Services: https://hasandogru.de/tr/hizmetler
+- Blog: https://hasandogru.de/tr/blog
+- Vekaletname: https://hasandogru.de/tr/hizmetler/vekaletname-ve-apostil
+
+## Key Pages (English)
+- Homepage: https://hasandogru.de/en
+- Services: https://hasandogru.de/en/services
+- Power of Attorney: https://hasandogru.de/en/services/power-of-attorney

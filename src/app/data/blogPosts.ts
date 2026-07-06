@@ -10339,6 +10339,61 @@ Vekaletname yapılacak işlemi açıkça kapsamalıdır. Türk kurumları belirs
 
 İnternetten bulunan hazır şablonlar somut işlem amacını bilmediği için risklidir.
 
+## Vekaletname masrafları ne kadar?
+
+Masraflar seçilen yola göre farklılaşır. Aşağıdaki rakamlar genel bir fikir vermek amacıyla paylaşılmıştır; kesin tutarlar konsolosluğa, noter ofisine ve işlem türüne göre değişebilir.
+
+**Türk konsolosluğu yolu:**
+Konsolosluk ücretleri genellikle düşük ila orta iki haneli euro aralığındadır. Apostil ve yeminli tercüme masrafı eklenmez; bu, konsolosluk yolunun en büyük maliyet avantajıdır. Ancak randevu bekleme süreleri şehre göre birkaç haftayı bulabilir.
+
+**Alman noteri yolu:**
+Noterlik ücretleri Almanya'da Adalet Bakanlığı'nın belirlediği tarifeye göre hesaplanır. Basit bir vekaletname için genellikle 50–100 € civarında başlar. Tapu veya miras gibi maddi değeri olan işlemlerde bu rakam işlem değerine göre yükselebilir. Buna ek olarak:
+
+- Apostil: yaklaşık 20–40 € (yetkili eyalet makamı tarafından düzenlenir)
+- Yeminli Türkçe tercüme: genellikle 50–150 €, belge uzunluğuna göre
+
+**Hukuki hazırlık:**
+Vekaletname metninin hazırlanması, doğru yolun belirlenmesi ve adımların koordinasyonu ayrıca ücretlendirilir. Bu hizmetin bedeli başlangıçta size bildirilir.
+
+Önemli not: Apostili eksik ya da yetkileri hatalı düzenlenen bir vekaletname Türkiye'de reddedilirse tüm süreç yeniden başlar. Yeni randevu, yeni noter ücreti, yeni apostil, yeni tercüme. Baştan doğru yapmak çoğu zaman daha az masraflıdır.
+
+## Almanya'dan hangi konsolosluğa gidilir?
+
+Türk konsolosluklarının Almanya'daki dağılımı ikamet yerine göre belirlidir. Başvuru yapılabilecek başlıca konsolosluk şehirleri şunlardır:
+
+- **Berlin** — Büyükelçilik ve Başkonsolosluk
+- **Frankfurt** — Başkonsolosluk (Hessen, Rheinland-Pfalz, Saarland)
+- **Köln** — Başkonsolosluk (Kuzey Ren-Vestfalya'nın bir bölümü)
+- **Düsseldorf** — Başkonsolosluk
+- **Hamburg** — Başkonsolosluk (Kuzey Almanya)
+- **Stuttgart** — Başkonsolosluk (Baden-Württemberg'in bir bölümü)
+- **Karlsruhe** — Başkonsolosluk (Güney Baden-Württemberg ve Mannheim çevresi)
+- **Münih** — Başkonsolosluk (Bavyera)
+- **Nürnberg** — Başkonsolosluk
+
+Mannheim ve Heidelberg'de yaşayanlar genellikle Karlsruhe Başkonsolosluğu'na bağlıdır. Her konsolosluğun randevu sistemi, bekleme süresi ve belge listesi biraz farklı olabilir.
+
+Önemli: Doğru konsolosluğa gitmeden önce, işlem için gerekli belgeleri tam olarak öğrenmek gerekir. Eksik belgeyle randevuya gidilirse işlem yapılamaz; yeni randevu almak için birkaç hafta daha beklenmesi gerekebilir.
+
+## İşleme göre vekaletname türleri
+
+Her işlem için aynı metin çalışmaz. Türkiye'deki kurumlar vekaletnamede işlem bazında açık yetkiler arar.
+
+**Tapu ve gayrimenkul işlemleri:**
+Satış, alım, devir, tapu tescili, ipotek ve kadastro işlemleri için taşınmazın ada, parsel, il, ilçe ve pafta bilgileriyle birlikte açık yetki yazılmalıdır. Genel "Türkiye'deki taşınmazlarım için işlem yapsın" ifadesi çoğu zaman yeterli olmaz.
+
+**Miras ve veraset:**
+Veraset ilamı çıkarma, mirasçı sıfatıyla banka veya tapuya başvurma, terekenin tespiti ve paylaşımı farklı adımlar gerektirir. Her adım için gereken yetki vekaletnamede ayrı ayrı belirtilmelidir.
+
+**Banka hesapları:**
+Hesap açma, para çekme, hesap kapatma ve bilgi alma yetkileri açıkça yazılmalıdır. Bankanın talep ettiği ek belgeler veya özel metin formatı olabilir.
+
+**Mahkeme ve avukat vekaleti:**
+Türk mahkemeleri ve savcılıkları nezdinde temsil için ayrı bir avukat vekaletnamesi düzenlenir. Bu belge için noter veya konsolosluk yolu ve içerik gereksinimleri farklı olabilir.
+
+**Boşanma ve aile hukuku:**
+Türkiye'de boşanma davası açmak, anlaşmalı boşanma onayı için vekil atamak veya velayet düzenlemeleri için özel yetki içeren vekaletname gerekebilir.
+
 ## En sık yapılan hatalar
 
 **Sadece tercüme yaptırmak.** Dil doğru olsa bile şekil, apostil veya yetki eksikse belge reddedilebilir.
@@ -10348,6 +10403,8 @@ Vekaletname yapılacak işlemi açıkça kapsamalıdır. Türk kurumları belirs
 **Genel metin kullanmak.** "Türkiye'deki tüm işleri yapabilir" gibi ifadeler somut kurumlarda yetersiz kalabilir.
 
 **Eksik belgelerle randevuya gitmek.** Pasaport, T.C. kimlik numarası, tapu bilgisi, dosya numarası, fotoğraf veya kurum yazısı eksik olabilir.
+
+**İnternetten hazır şablon indirmek.** Şablonlar işlem amacını ve Türkiye'deki kurumun güncel beklentisini bilmez.
 
 ## Şimdi ne yapmalısınız?
 
