@@ -15,6 +15,7 @@ import hasanMainHero from "@/assets/Hasan dogru main hero 1.webp";
 const WHATSAPP_URL = "https://wa.me/4917661221210";
 const CRIMINAL_LAW_BLOG_SLUG_DE = "tuerkisches-strafrecht-anwalt-deutschland";
 const CRIMINAL_DEFENSE_FROM_GERMANY_BLOG_SLUG_DE = "strafverfahren-tuerkei-aus-deutschland";
+const SUMMONS_WARRANT_BLOG_SLUG_DE = "strafverfahren-tuerkei-haftbefehl-verteidigung-deutschland";
 const PROPERTY_PARTITION_BLOG_SLUG_DE = "teilungsklage-immobilien-tuerkei";
 const INHERITANCE_DISPUTE_BLOG_SLUG_DE = "pflichtteil-herabsetzungsklage-tuerkei";
 const PROPERTY_RIGHTS_BLOG_SLUG_DE = "immobilienrechte-tuerkei";
@@ -39,51 +40,156 @@ type BlogProductCTAPlacement = 'intro' | 'comparison' | 'service_types' | 'botto
 
 type BlogProductFunnel = {
   service: 'vekaletname';
+  slugDE: string;
   slugTR: string;
   duration: string;
 };
 
 const vekaletnameFunnel: BlogProductFunnel = {
   service: 'vekaletname',
+  slugDE: 'tuerkische-vekaletname-deutschland',
   slugTR: 'almanya-da-vekaletname-cikarma-rehberi',
   duration: '20 dakika',
 };
 
-function buildProductWhatsAppLeadUrl(funnel: BlogProductFunnel, placement: BlogProductCTAPlacement) {
+function getVekaletnameFunnelCopy(language: string) {
+  if (language === 'de') {
+    return {
+      duration: '20 Minuten',
+      serviceName: 'Vekaletname',
+      leadSituation: 'Ich möchte den vollständigen Vekaletname-Prozess per WhatsApp klären.',
+      introEyebrow: 'Vollmacht Türkei',
+      introTitle: 'Sie brauchen eine verwendbare Vollmacht für die Türkei?',
+      introBody: 'Hasan Doğru klärt mit Ihnen per WhatsApp, ob Konsulat oder deutscher Notar sinnvoll ist, welche Befugnisse in den Text gehören und wie der gesamte Vekaletname-Prozess vorbereitet wird.',
+      introButton: 'WhatsApp Anfrage starten',
+      durationChip: '20 Minuten',
+      formChip: 'WhatsApp Vorab-Formular',
+      comparisonTitle: 'Konsulat oder Notar? Lassen Sie den richtigen Weg vorab prüfen.',
+      comparisonBody: 'Der schnellste Weg ist nicht immer der sicherste. Schildern Sie kurz, ob es um Tapu, Erbe, Scheidung, Bank oder Gericht geht. Hasan Doğru ordnet den passenden Ablauf ein.',
+      serviceTypesTitle: 'Der Vollmachtstext muss zum konkreten Türkei-Vorgang passen',
+      serviceTypesBody: 'Fehlende Befugnisse, falsche Form oder unklare Angaben führen in der Türkei oft zur Zurückweisung. Wir bereiten den Text und die nächsten Schritte passend zum Zweck vor.',
+      serviceTypesButton: 'Vollmacht per WhatsApp vorbereiten',
+      bottomEyebrow: 'Done-for-you Vekaletname Prozess',
+      bottomTitle: 'Wir bereiten Ihre Türkei-Vollmacht vollständig mit Ihnen vor',
+      bottomBody: 'Über das kurze WhatsApp Formular teilen Sie mit, wofür die Vollmacht gebraucht wird. Hasan Doğru prüft den passenden Weg, bereitet den Vollmachtstext zweckgenau vor und begleitet Konsulat, Notar, Apostille, Übersetzung und die Nutzung in der Türkei.',
+      includedTitle: 'Was übernommen wird',
+      includedItems: [
+        'Einordnung: Konsulat oder deutscher Notar mit Apostille',
+        'Vollmachtstext passend zu Tapu, Erbe, Scheidung, Bank oder Verfahren',
+        'Koordination der nächsten Schritte bis zur Verwendung in der Türkei',
+      ],
+      trustLine: 'Deutsch und Türkisch · Türkisches Recht · Mannheim & Ankara',
+      stickyTitle: 'Türkei-Vollmacht',
+      stickySubtitle: 'WhatsApp Vorab-Formular',
+      stickyButton: 'WhatsApp',
+      chips: ['Tapu', 'Erbe', 'Tanıma-Tenfiz', 'Scheidung', 'Bank'],
+    };
+  }
+
+  if (language === 'en') {
+    return {
+      duration: '20 minutes',
+      serviceName: 'Vekaletname',
+      leadSituation: 'I want to prepare a power of attorney for Turkey. Please check consulate, German notary, apostille, translation, documents and costs.',
+      introEyebrow: 'Power of attorney for Turkey',
+      introTitle: 'Need a power of attorney that will actually be accepted in Turkey?',
+      introBody: 'Hasan Doğru checks whether the Turkish consulate, German notary, apostille or certified translation route is right for your case.',
+      introButton: 'Start WhatsApp request',
+      durationChip: '20 minutes',
+      formChip: 'WhatsApp intake form',
+      comparisonTitle: 'Consulate, German notary or apostille? Have the route checked first.',
+      comparisonBody: 'Tell us whether this is for property, inheritance, banking, court or another Turkish authority. We clarify the route before you lose time on the wrong appointment.',
+      serviceTypesTitle: 'The wording must match the exact Turkish transaction',
+      serviceTypesBody: 'Translation alone is often not enough. Missing powers or the wrong form can lead to rejection in Turkey.',
+      serviceTypesButton: 'Prepare power of attorney via WhatsApp',
+      bottomEyebrow: 'Done-for-you power of attorney process',
+      bottomTitle: 'We prepare your Turkey power of attorney with you',
+      bottomBody: 'Use the WhatsApp intake form to explain what the document is for. Hasan Doğru checks the route, wording, apostille, translation and next steps.',
+      includedTitle: 'What we handle',
+      includedItems: [
+        'Route check: Turkish consulate or German notary with apostille',
+        'Purpose-specific Turkish wording for property, inheritance, bank, court or authorities',
+        'Next-step coordination until the document can be used in Turkey',
+      ],
+      trustLine: 'German, Turkish and English · Turkish law · Mannheim & Ankara',
+      stickyTitle: 'Turkey power of attorney',
+      stickySubtitle: 'WhatsApp intake form',
+      stickyButton: 'WhatsApp',
+      chips: ['Property', 'Inheritance', 'Court', 'Bank', 'Apostille'],
+    };
+  }
+
+  return {
+    duration: '20 dakika',
+    serviceName: 'Vekaletname',
+    leadSituation: '20 dakika vekaletname ön görüşmesi talep ediyorum.',
+    introEyebrow: 'Vekaletname görüşmesi',
+    introTitle: 'Türkiye için vekâletname mi çıkartmanız gerekiyor?',
+    introBody: '20 dakikada hangi yolu izlemeniz gerektiğini netleştirelim: konsolosluk mu, Alman noter mi?',
+    introButton: 'WhatsApp formunu aç',
+    durationChip: '20 dakika',
+    formChip: 'WhatsApp ön bilgi formu',
+    comparisonTitle: 'Hangi yol sizin için doğru?',
+    comparisonBody: 'Hasan Doğru, durumunuza özel en uygun yolu belirler. Kısa bilgilerinizi gönderin, süreç WhatsApp üzerinden netleştirilsin.',
+    serviceTypesTitle: 'Vekâletname metni işleme göre farklılık gösterir',
+    serviceTypesBody: 'Eksik yetki, Türkiye’de reddedilme sebebi olabilir.',
+    serviceTypesButton: 'Vekâletname için WhatsApp formunu aç',
+    bottomEyebrow: 'Done-for-you vekaletname hizmeti',
+    bottomTitle: 'Vekâletnamenizi sizin için biz hazırlıyoruz',
+    bottomBody: 'Kısa WhatsApp formuyla durumunuzu ve vekâletnamenin hangi işlem için gerektiğini bize iletin. Hasan Doğru, konsolosluk veya Alman noter yolundan hangisinin uygun olduğunu değerlendirir ve vekâletname metnini amacınıza göre hazırlar.',
+    includedTitle: 'Hizmete dahil olanlar',
+    includedItems: [
+      'Formdaki bilgilerle durum ve doğru yol değerlendirilir',
+      'Vekâletname metni işlem amacına göre hazırlanır',
+      'Hasan Doğru süreci sizin adınıza takip eder',
+    ],
+    trustLine: 'Türkçe ve Almanca hizmet · Türk hukuku',
+    stickyTitle: 'Vekaletname görüşmesi',
+    stickySubtitle: 'WhatsApp ön bilgi formu',
+    stickyButton: 'WhatsApp',
+    chips: ['Tapu', 'Miras', 'Tanıma-Tenfiz', 'Boşanma', 'Banka'],
+  };
+}
+
+function buildProductWhatsAppLeadUrl(funnel: BlogProductFunnel, placement: BlogProductCTAPlacement, language: string) {
+  const copy = getVekaletnameFunnelCopy(language);
   const url = new URL(WHATSAPP_URL);
-  url.searchParams.set('service', 'Vekaletname');
+  url.searchParams.set('service', copy.serviceName);
   url.searchParams.set('utm_source', 'blog');
   url.searchParams.set('utm_medium', 'cta');
   url.searchParams.set('utm_campaign', 'vekaletname_whatsapp_form');
   url.searchParams.set('utm_content', placement);
-  url.searchParams.set('situation', `${funnel.duration} vekaletname ön görüşmesi talep ediyorum.`);
+  url.searchParams.set('situation', copy.leadSituation);
   return url.toString();
 }
 
-function getProductLeadCaptureDetail(funnel: BlogProductFunnel) {
+function getProductLeadCaptureDetail(language: string) {
+  const copy = getVekaletnameFunnelCopy(language);
   return {
-    service: 'Vekaletname',
-    situation: `${funnel.duration} vekaletname ön görüşmesi talep ediyorum.`,
+    service: copy.serviceName,
+    situation: copy.leadSituation,
   };
 }
 
 function BlogBookingButton({
   funnel,
   placement,
+  language,
   children,
   compact = false,
 }: {
   funnel: BlogProductFunnel;
   placement: BlogProductCTAPlacement;
+  language: string;
   children: ReactNode;
   compact?: boolean;
 }) {
   return (
     <a
-      href={buildProductWhatsAppLeadUrl(funnel, placement)}
+      href={buildProductWhatsAppLeadUrl(funnel, placement, language)}
       onClick={(event) => {
         event.preventDefault();
-        openWhatsAppLeadCapture(getProductLeadCaptureDetail(funnel));
+        openWhatsAppLeadCapture(getProductLeadCaptureDetail(language));
       }}
       target="_blank"
       rel="noopener noreferrer"
@@ -97,24 +203,26 @@ function BlogBookingButton({
   );
 }
 
-function BlogProductCTAIntro({ funnel }: { funnel: BlogProductFunnel }) {
+function BlogProductCTAIntro({ funnel, language }: { funnel: BlogProductFunnel; language: string }) {
+  const copy = getVekaletnameFunnelCopy(language);
+
   return (
     <aside className="my-10 rounded-lg border border-[#8B6E2A]/25 bg-white p-5 shadow-[0_18px_45px_rgba(28,56,41,0.08)] sm:p-7 md:my-14 md:p-10">
       <div className="grid gap-7 md:hidden">
         <div className="min-w-0">
           <p className="mb-3 font-sans text-[10px] font-bold uppercase tracking-[0.2em] text-[#7A5F20] md:text-[11px]">
-            Vekaletname görüşmesi
+            {copy.introEyebrow}
           </p>
           <h3 className="mb-4 font-serif text-[28px] leading-[1.15] text-[#1C3829] sm:text-[34px]">
-            Türkiye için vekâletname mi çıkartmanız gerekiyor?
+            {copy.introTitle}
           </h3>
           <p className="m-0 max-w-[420px] text-[16px] leading-7 text-[#444] sm:text-[18px] sm:leading-8">
-            20 dakikada hangi yolu izlemeniz gerektiğini netleştirelim — konsolosluk mu, Alman noter mi?
+            {copy.introBody}
           </p>
         </div>
         <div>
-          <BlogBookingButton funnel={funnel} placement="intro">
-            WHATSAPP FORMUNU AÇ
+          <BlogBookingButton funnel={funnel} placement="intro" language={language}>
+            {copy.introButton}
           </BlogBookingButton>
         </div>
       </div>
@@ -122,27 +230,27 @@ function BlogProductCTAIntro({ funnel }: { funnel: BlogProductFunnel }) {
       <div className="hidden md:block">
         <div className="max-w-[620px]">
           <p className="mb-3 font-sans text-[11px] font-bold uppercase tracking-[0.22em] text-[#7A5F20]">
-            Vekaletname görüşmesi
+            {copy.introEyebrow}
           </p>
           <h3 className="mb-4 font-serif text-4xl leading-[1.1] text-[#1C3829]">
-            Türkiye için vekâletname mi çıkartmanız gerekiyor?
+            {copy.introTitle}
           </h3>
           <p className="m-0 text-[19px] leading-8 text-[#444]">
-            20 dakikada hangi yolu izlemeniz gerektiğini netleştirelim — konsolosluk mu, Alman noter mi?
+            {copy.introBody}
           </p>
         </div>
         <div className="mt-8 flex items-center justify-between gap-8 border-t border-[#1C3829]/10 pt-7">
           <div className="flex flex-wrap items-center gap-3">
             <span className="rounded-full bg-[#F7F5F0] px-4 py-2 text-[11px] font-bold uppercase tracking-[0.14em] text-[#1C3829] ring-1 ring-[#1C3829]/10">
-              20 dakika
+              {copy.durationChip}
             </span>
             <span className="rounded-full bg-[#F7F5F0] px-4 py-2 text-[11px] font-bold uppercase tracking-[0.14em] text-[#7A5F20] ring-1 ring-[#8B6E2A]/25">
-              WhatsApp ön bilgi formu
+              {copy.formChip}
             </span>
           </div>
           <div className="w-full max-w-[390px] shrink-0">
-            <BlogBookingButton funnel={funnel} placement="intro">
-              WHATSAPP FORMUNU AÇ
+            <BlogBookingButton funnel={funnel} placement="intro" language={language}>
+              {copy.introButton}
             </BlogBookingButton>
           </div>
         </div>
@@ -153,42 +261,117 @@ function BlogProductCTAIntro({ funnel }: { funnel: BlogProductFunnel }) {
 
 function BlogProductCTAMid({
   funnel,
+  language,
   variant,
 }: {
   funnel: BlogProductFunnel;
+  language: string;
   variant: 'comparison' | 'service_types';
 }) {
   const isServiceTypes = variant === 'service_types';
-  const chips = ['Tapu', 'Miras', 'Tanıma-Tenfiz', 'Boşanma', 'Banka'];
+  const copy = getVekaletnameFunnelCopy(language);
 
   return (
     <aside className="my-16 rounded-xl bg-[#FDFBF5] p-6 ring-1 ring-[#8B6E2A]/20 md:p-8">
       <div className="mb-5 h-1 w-16 rounded-full bg-[#8B6E2A]" />
       <h3 className="mb-4 font-serif text-2xl leading-tight text-[#1C3829] md:text-3xl">
-        {isServiceTypes ? 'Vekâletname metni işleme göre farklılık gösterir' : 'Hangi yol sizin için doğru?'}
+        {isServiceTypes ? copy.serviceTypesTitle : copy.comparisonTitle}
       </h3>
       <p className="mb-6 text-[17px] leading-8 text-[#444] md:text-[18px]">
-        {isServiceTypes
-          ? 'Eksik yetki, Türkiye’de reddedilme sebebi olabilir.'
-          : 'Hasan Doğru, durumunuza özel en uygun yolu belirler. Kısa bilgilerinizi gönderin, süreç WhatsApp üzerinden netleştirilsin.'}
+        {isServiceTypes ? copy.serviceTypesBody : copy.comparisonBody}
       </p>
       {isServiceTypes && (
         <div className="mb-7 flex flex-wrap gap-2">
-          {chips.map((chip) => (
+          {copy.chips.map((chip) => (
             <span key={chip} className="rounded-full border border-[#1C3829]/10 bg-white px-4 py-2 text-[12px] font-bold uppercase tracking-[0.12em] text-[#1C3829]">
               {chip}
             </span>
           ))}
         </div>
       )}
-      <BlogBookingButton funnel={funnel} placement={isServiceTypes ? 'service_types' : 'comparison'}>
-        {isServiceTypes ? 'VEKÂLETNAME İÇİN WHATSAPP FORMUNU AÇ' : 'WHATSAPP FORMUNU AÇ'}
+      <BlogBookingButton funnel={funnel} placement={isServiceTypes ? 'service_types' : 'comparison'} language={language}>
+        {isServiceTypes ? copy.serviceTypesButton : copy.introButton}
       </BlogBookingButton>
     </aside>
   );
 }
 
-function BlogProductCTABottom({ funnel }: { funnel: BlogProductFunnel }) {
+function BlogDoneForYouBanner({ funnel, language }: { funnel: BlogProductFunnel; language: string }) {
+  const headline =
+    language === 'de'
+      ? 'Hasan Doğru übernimmt den gesamten Vollmacht-Prozess für Sie'
+      : language === 'en'
+      ? 'Hasan Doğru handles your entire power of attorney process'
+      : 'Hasan Doğru vekaletname sürecinizi baştan sona yönetir';
+
+  const sub =
+    language === 'de'
+      ? 'Von der Prüfung des richtigen Wegs bis zur fertigen Vollmacht — alles aus einer Hand. Konsulat, Notar, Apostille, Übersetzung, Unterlagen.'
+      : language === 'en'
+      ? 'From route check to ready-to-use document — everything handled for you. Consulate, notary, apostille, translation, documents.'
+      : 'Doğru yolun tespitinden hazır vekâletnameye kadar her şey tek elden. Konsolosluk, noter, apostil, tercüme, belgeler.';
+
+  const button =
+    language === 'de'
+      ? 'Jetzt per WhatsApp anfragen'
+      : language === 'en'
+      ? 'Start on WhatsApp'
+      : 'WhatsApp ile hemen başlayın';
+
+  const situation =
+    language === 'de'
+      ? 'Ich möchte den vollständigen Vekaletname-Prozess per WhatsApp klären.'
+      : language === 'en'
+      ? 'I want to prepare a power of attorney for Turkey. Please check consulate, German notary, apostille, translation, documents and costs.'
+      : '20 dakika vekaletname ön görüşmesi talep ediyorum.';
+
+  return (
+    <div className="mt-10 overflow-hidden rounded-2xl bg-[#1C3829]">
+      <div className="h-1.5 bg-[#8B6E2A]" />
+      <div className="flex flex-col md:flex-row md:items-stretch">
+        <div className="flex flex-1 flex-col justify-center p-8 md:p-12">
+          <p className="mb-4 font-sans text-[11px] font-bold uppercase tracking-[0.24em] text-[#C4A94A]">
+            Done-for-you
+          </p>
+          <h3 className="mb-5 font-serif text-[28px] leading-[1.15] text-white md:text-4xl">
+            {headline}
+          </h3>
+          <p className="mb-8 text-[16px] leading-[1.75] text-white/65 md:text-[17px]">
+            {sub}
+          </p>
+          <div>
+            <a
+              href={buildProductWhatsAppLeadUrl(funnel, 'bottom', language)}
+              onClick={(e) => {
+                e.preventDefault();
+                openWhatsAppLeadCapture({ service: 'Vekaletname', situation });
+              }}
+              className="inline-flex items-center gap-3 rounded-full bg-[#8B6E2A] px-8 py-4 font-sans text-[13px] font-bold uppercase tracking-[0.16em] text-white transition-all duration-200 hover:bg-white hover:text-[#1C3829] active:scale-95"
+            >
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" className="h-5 w-5 shrink-0">
+                <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/>
+                <path d="M12 0C5.373 0 0 5.373 0 12c0 2.123.554 4.118 1.528 5.845L.057 23.428a.75.75 0 0 0 .915.915l5.651-1.46A11.944 11.944 0 0 0 12 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 22c-1.89 0-3.663-.49-5.2-1.348l-.371-.214-3.857.997 1.02-3.763-.234-.386A9.96 9.96 0 0 1 2 12C2 6.477 6.477 2 12 2s10 4.477 10 10-4.477 10-10 10z"/>
+              </svg>
+              {button}
+            </a>
+          </div>
+        </div>
+        <div className="hidden md:block md:w-64 lg:w-72 shrink-0 relative overflow-hidden">
+          <img
+            src={hasanMainHero}
+            alt="Hasan Doğru"
+            className="absolute inset-0 h-full w-full object-cover object-top opacity-80"
+          />
+          <div className="absolute inset-0 bg-gradient-to-r from-[#1C3829] via-[#1C3829]/30 to-transparent" />
+        </div>
+      </div>
+    </div>
+  );
+}
+
+function BlogProductCTABottom({ funnel, language }: { funnel: BlogProductFunnel; language: string }) {
+  const copy = getVekaletnameFunnelCopy(language);
+
   return (
     <div className="mt-32 overflow-hidden rounded-xl border border-[#8B6E2A]/25 bg-white shadow-[0_22px_70px_rgba(28,56,41,0.13)]">
       <div className="h-2 bg-[#8B6E2A]" />
@@ -196,39 +379,33 @@ function BlogProductCTABottom({ funnel }: { funnel: BlogProductFunnel }) {
         <div className="grid gap-8 md:grid-cols-[1.1fr_0.9fr] md:items-start">
           <div>
             <p className="mb-3 font-sans text-[11px] font-bold uppercase tracking-[0.24em] text-[#7A5F20]">
-              Done-for-you vekaletname hizmeti
+              {copy.bottomEyebrow}
             </p>
             <h3 className="mb-5 font-serif text-3xl leading-tight text-[#1C3829] md:text-4xl">
-              Vekâletnamenizi sizin için biz hazırlıyoruz
+              {copy.bottomTitle}
             </h3>
             <p className="mb-7 max-w-2xl text-[18px] leading-8 text-[#444]">
-              Kısa WhatsApp formuyla durumunuzu ve vekâletnamenin hangi işlem için gerektiğini bize iletin. Hasan Doğru, konsolosluk veya Alman noter yolundan hangisinin uygun olduğunu değerlendirir ve vekâletname metnini amacınıza göre hazırlar.
+              {copy.bottomBody}
             </p>
-            <BlogBookingButton funnel={funnel} placement="bottom">
-              WHATSAPP FORMUNU AÇ
+            <BlogBookingButton funnel={funnel} placement="bottom" language={language}>
+              {copy.introButton}
             </BlogBookingButton>
           </div>
 
           <div className="rounded-lg bg-[#F7F5F0] p-6 ring-1 ring-[#1C3829]/8">
             <h4 className="mb-5 font-serif text-2xl leading-tight text-[#1C3829]">
-              Hizmete dahil olanlar
+              {copy.includedTitle}
             </h4>
             <ul className="m-0 space-y-4 p-0 text-[15px] leading-7 text-[#444]">
-              <li className="flex gap-3">
-                <span className="mt-2 h-1.5 w-1.5 shrink-0 rounded-full bg-[#8B6E2A]" />
-                Formdaki bilgilerle durum ve doğru yol değerlendirilir
-              </li>
-              <li className="flex gap-3">
-                <span className="mt-2 h-1.5 w-1.5 shrink-0 rounded-full bg-[#8B6E2A]" />
-                Vekâletname metni işlem amacına göre hazırlanır
-              </li>
-              <li className="flex gap-3">
-                <span className="mt-2 h-1.5 w-1.5 shrink-0 rounded-full bg-[#8B6E2A]" />
-                Hasan Doğru süreci sizin adınıza takip eder
-              </li>
+              {copy.includedItems.map((item) => (
+                <li key={item} className="flex gap-3">
+                  <span className="mt-2 h-1.5 w-1.5 shrink-0 rounded-full bg-[#8B6E2A]" />
+                  {item}
+                </li>
+              ))}
             </ul>
             <p className="mt-6 border-t border-[#1C3829]/10 pt-5 text-[12px] font-bold uppercase tracking-[0.12em] text-[#1C3829]/55">
-              Türkçe ve Almanca hizmet · Türk hukuku
+              {copy.trustLine}
             </p>
           </div>
         </div>
@@ -237,24 +414,59 @@ function BlogProductCTABottom({ funnel }: { funnel: BlogProductFunnel }) {
   );
 }
 
-function BlogStickyBookingCTA({ funnel }: { funnel: BlogProductFunnel }) {
+function BlogStickyBookingCTA({ funnel, language }: { funnel: BlogProductFunnel; language: string }) {
+  const copy = getVekaletnameFunnelCopy(language);
+
+  const doneForYouLabel =
+    language === 'de' ? 'Vollmacht für die Türkei' :
+    language === 'en' ? 'Power of attorney for Turkey' :
+    'Türkiye için vekaletname';
+
+  const headline =
+    language === 'de' ? 'Wir bereiten Ihre Vollmacht vollständig vor. Sie müssen sich um nichts kümmern.' :
+    language === 'en' ? 'We handle everything for you. You just sign.' :
+    'Her şeyi sizin için hallediyoruz, size sadece imzalamak kalıyor!';
+
+  const sub =
+    language === 'de' ? 'Konsulat, Notar, Apostille, Übersetzung — Hasan Doğru kümmert sich darum' :
+    language === 'en' ? 'Consulate, notary, apostille, translation — all taken care of' :
+    'Konsolosluk, noter, apostil, tercüme — hepsini Hasan Doğru bürosu halledebilir';
+
   return (
-    <div className="fixed inset-x-3 bottom-3 z-[180] rounded-2xl bg-[#1C3829] p-2 shadow-[0_16px_44px_rgba(0,0,0,0.22)] ring-1 ring-white/10 md:hidden">
-      <div className="flex items-center justify-between gap-3">
-        <div className="min-w-0 pl-3">
-          <div className="truncate text-[12px] font-bold text-white">Vekaletname görüşmesi</div>
-          <div className="text-[10px] uppercase tracking-[0.12em] text-white/55">WhatsApp ön bilgi formu</div>
+    <div className="fixed inset-x-0 bottom-0 z-[180] bg-[#1C3829] shadow-[0_-4px_32px_rgba(0,0,0,0.28)] ring-1 ring-white/10">
+      <div className="h-[3px] bg-[#8B6E2A]" />
+      <div className="mx-auto flex max-w-5xl items-center justify-between gap-4 px-4 py-3 md:gap-8 md:px-8 md:py-4">
+        <div className="min-w-0 flex-1">
+          <div className="mb-0.5 text-[10px] font-bold uppercase tracking-[0.18em] text-[#C4A94A] md:text-[11px]">
+            {doneForYouLabel}
+          </div>
+          <div className="font-serif text-[13px] font-medium leading-snug text-white md:text-[22px] md:leading-tight">
+            {headline}
+          </div>
+          <div className="mt-0.5 hidden text-[13px] text-white/50 md:block">
+            {sub}
+          </div>
         </div>
-        <BlogBookingButton funnel={funnel} placement="sticky" compact>
-          WhatsApp
-        </BlogBookingButton>
+        <a
+          href={buildProductWhatsAppLeadUrl(funnel, 'sticky', language)}
+          onClick={(e) => {
+            e.preventDefault();
+            openWhatsAppLeadCapture({ service: 'Vekaletname', situation: copy.leadSituation });
+          }}
+          className="inline-flex shrink-0 items-center justify-center gap-2 rounded-full bg-[#25D366] p-3 text-white shadow-[0_4px_18px_rgba(37,211,102,0.4)] transition-all duration-200 hover:bg-[#1EBE5A] active:scale-95 md:px-6 md:py-3"
+        >
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" className="h-5 w-5 shrink-0">
+            <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z" />
+          </svg>
+          <span className="hidden font-sans text-[12px] font-bold uppercase tracking-[0.14em] md:inline">WhatsApp</span>
+        </a>
       </div>
     </div>
   );
 }
 
 type BlogWhatsAppCTAPlacement = 'intro' | 'mid' | 'deadline' | 'settlement' | 'records' | 'strategy' | 'bottom';
-type BlogWhatsAppCTATopic = 'criminal_law' | 'drug_case' | 'threat_case' | 'hakaret' | 'hagb' | 'property_partition' | 'inheritance_dispute' | 'inheritance_guide' | 'property_rights' | 'muris_muvazaasi' | 'tapu_iptal' | 'mavi_kart' | 'debt_collection' | 'divorce_turkey' | 'tanima_tenfiz' | 'tck_191_kdae' | 'sorgerecht_tenfiz' | 'unterhalt_nafaka';
+type BlogWhatsAppCTATopic = 'criminal_law' | 'summons_warrant' | 'drug_case' | 'threat_case' | 'hakaret' | 'hagb' | 'property_partition' | 'inheritance_dispute' | 'inheritance_guide' | 'property_rights' | 'muris_muvazaasi' | 'tapu_iptal' | 'mavi_kart' | 'debt_collection' | 'divorce_turkey' | 'tanima_tenfiz' | 'tck_191_kdae' | 'sorgerecht_tenfiz' | 'unterhalt_nafaka';
 
 function getBlogWhatsAppService(topic: BlogWhatsAppCTATopic) {
   if (topic === 'hagb') return 'Ceza / Yakalama Kararı';
@@ -542,6 +754,129 @@ function getCriminalLawCTACopy(language: string, placement: BlogWhatsAppCTAPlace
     title: "Türkiye'deki ceza dosyanızı Almanya'dan netleştirin",
     body: 'Kısa bilgilerinizi gönderin. Hasan Doğru WhatsApp görüşmesinden önce durumunuzu bağlamıyla görsün.',
     button: 'WhatsApp formunu aç',
+  };
+}
+
+function getSummonsWarrantCTACopy(language: string, placement: BlogWhatsAppCTAPlacement) {
+  if (language === 'de') {
+    if (placement === 'intro') {
+      return {
+        eyebrow: 'Haftbefehl & UYAP-Check',
+        title: 'Nicht in die Türkei reisen, bevor der Aktenstatus geprüft ist',
+        body: 'Wenn Sie eine Vorladung, einen Hinweis auf ein Verfahren oder Angst vor einem Haftbefehl haben, prüfen wir UYAP, Zustellungen, Yakalama Kararı und das konkrete Grenzrisiko.',
+        button: 'Status per WhatsApp prüfen lassen',
+      };
+    }
+    if (placement === 'deadline') {
+      return {
+        eyebrow: 'Grenz- und Flughafenrisiko',
+        title: 'Ein aktiver Yakalama Kararı wird bei der Einreise sichtbar',
+        body: 'Vor Familienbesuch, Urlaub oder Erbtermin sollte geklärt sein, ob ein Haftbefehl, GBT-Eintrag oder Adli-Kontrol-Risiko besteht.',
+        button: 'Reiserisiko klären',
+      };
+    }
+    if (placement === 'strategy') {
+      return {
+        eyebrow: 'Interpol & Auslieferung',
+        title: 'Wenn der Haftbefehl international wird, zählt Vorbereitung',
+        body: 'Wir ordnen ein, ob Interpol, Red Notice, Auslieferungsrisiko oder eine türkische Aktenstrategie zuerst geprüft werden sollte.',
+        button: 'Internationales Risiko prüfen',
+      };
+    }
+    if (placement === 'mid') {
+      return {
+        eyebrow: 'UYAP, Vollmacht & SEGBİS',
+        title: 'Verteidigung aus Mannheim direkt im türkischen Verfahren vorbereiten',
+        body: 'Mit der passenden Vekaletname kann Hasan Doğru Akteneinsicht nehmen, Anträge stellen, SEGBİS prüfen und die nächsten Schritte ohne unnötige Türkeireise koordinieren.',
+        button: 'UYAP-Status prüfen lassen',
+      };
+    }
+    return {
+      eyebrow: 'Verteidigung aus Deutschland',
+      title: 'Türkisches Strafverfahren ohne unnötige Reise vorbereiten',
+      body: 'Senden Sie kurz, ob es um Vorladung, Haftbefehl, Anklage, Interpol oder Einbürgerungsfolgen geht. Hasan Doğru prüft den sicheren nächsten Schritt.',
+      button: 'WhatsApp Anfrage starten',
+    };
+  }
+
+  if (language === 'en') {
+    if (placement === 'intro') {
+      return {
+        eyebrow: 'Warrant & UYAP check',
+        title: 'Do not travel to Turkey before the case status is checked',
+        body: 'If you received a summons or suspect a warrant, we review UYAP, service of process, Yakalama Kararı and border risk before you travel.',
+        button: 'Check status on WhatsApp',
+      };
+    }
+    if (placement === 'deadline') {
+      return {
+        eyebrow: 'Airport and border risk',
+        title: 'An active Yakalama Kararı appears at Turkish entry points',
+        body: 'Before visiting family, travelling or attending an inheritance appointment, check whether a warrant, GBT record or travel restriction exists.',
+        button: 'Clarify travel risk',
+      };
+    }
+    if (placement === 'strategy') {
+      return {
+        eyebrow: 'Interpol & extradition',
+        title: 'If the warrant becomes international, preparation matters',
+        body: 'We assess whether Interpol, Red Notice, extradition risk or Turkish file strategy should be handled first.',
+        button: 'Review international risk',
+      };
+    }
+    if (placement === 'mid') {
+      return {
+        eyebrow: 'UYAP, power of attorney & SEGBİS',
+        title: 'Prepare defence in the Turkish case directly from Germany',
+        body: 'With the right Vekaletname, Hasan Doğru can review the file, file motions, assess SEGBİS options and coordinate next steps without unnecessary travel.',
+        button: 'Check UYAP status',
+      };
+    }
+    return {
+      eyebrow: 'Defence from abroad',
+      title: 'Prepare a Turkish criminal case without unnecessary travel',
+      body: 'Send whether it concerns a summons, warrant, indictment, Interpol or citizenship consequences. Hasan Doğru reviews the safest next step.',
+      button: 'Start WhatsApp request',
+    };
+  }
+
+  if (placement === 'intro') {
+    return {
+      eyebrow: 'Yakalama kararı & UYAP kontrolü',
+      title: "Dosya durumu kontrol edilmeden Türkiye'ye gitmeyin",
+      body: 'Tebligat, dava şüphesi veya yakalama kararı riski varsa UYAP, tebligat, GBT ve sınır kapısı riskini birlikte değerlendirelim.',
+      button: "Durumu WhatsApp'tan kontrol ettirin",
+    };
+  }
+  if (placement === 'deadline') {
+    return {
+      eyebrow: 'Havalimanı ve sınır riski',
+      title: 'Aktif yakalama kararı girişte görünür',
+      body: 'Aile ziyareti, tatil veya miras işlemi öncesinde yakalama, GBT kaydı veya adli kontrol riski olup olmadığı netleşmelidir.',
+      button: 'Seyahat riskini sorun',
+    };
+  }
+  if (placement === 'strategy') {
+    return {
+      eyebrow: 'Interpol & iade riski',
+      title: 'Dosya uluslararası boyuta taşınmadan hazırlık yapın',
+      body: 'Interpol, Red Notice, iade riski veya Türk ceza dosyasında hangi stratejinin önce gelmesi gerektiğini değerlendirelim.',
+      button: 'Uluslararası riski sorun',
+    };
+  }
+  if (placement === 'mid') {
+    return {
+      eyebrow: 'UYAP, vekaletname & SEGBİS',
+      title: "Türkiye'deki ceza dosyasını Almanya'dan doğrudan hazırlayın",
+      body: 'Doğru vekaletname ile Hasan Doğru dosyayı inceleyebilir, dilekçe sunabilir, SEGBİS imkanını değerlendirebilir ve gereksiz seyahat olmadan süreci koordine edebilir.',
+      button: 'UYAP durumunu kontrol ettirin',
+    };
+  }
+  return {
+    eyebrow: "Almanya'dan savunma",
+    title: "Türkiye'deki ceza dosyasını gereksiz seyahat olmadan hazırlayın",
+    body: 'Tebligat, yakalama kararı, iddianame, Interpol veya vatandaşlık etkisi olup olmadığını gönderin. Hasan Doğru güvenli ilk adımı değerlendirsin.',
+    button: 'WhatsApp talebi başlat',
   };
 }
 
@@ -1729,6 +2064,8 @@ function BlogWhatsAppCTA({
 }) {
   const copy = topic === 'property_partition'
     ? getPropertyPartitionCTACopy(language, placement)
+    : topic === 'summons_warrant'
+      ? getSummonsWarrantCTACopy(language, placement)
     : topic === 'hagb'
       ? getHagbCTACopy(language, placement)
     : topic === 'hakaret'
@@ -2089,9 +2426,20 @@ export function BlogPost() {
   const date = language === 'de' ? post.dateDE : language === 'tr' ? post.dateTR : post.dateEN;
   const readTime = language === 'de' ? post.readTimeDE : language === 'tr' ? post.readTimeTR : post.readTimeEN;
   const category = language === 'de' ? post.categoryDE : language === 'tr' ? post.category : post.categoryEN;
-  const productFunnel = language === 'tr' && post.slugTR === vekaletnameFunnel.slugTR ? vekaletnameFunnel : null;
+  const vekaletnameProductSlugs = {
+    de: ['tuerkische-vekaletname-deutschland', 'vollmacht-auf-tuerkisch'],
+    tr: ['almanya-da-vekaletname-cikarma-rehberi', 'turkce-vekaletname-nasil-cikarilir'],
+    en: ['power-of-attorney-in-turkish'],
+  };
+  const productFunnel = (
+    (language === 'de' && vekaletnameProductSlugs.de.includes(post.slugDE)) ||
+    (language === 'tr' && vekaletnameProductSlugs.tr.includes(post.slugTR)) ||
+    (language === 'en' && vekaletnameProductSlugs.en.includes(post.slugEN ?? ''))
+  ) ? vekaletnameFunnel : null;
   const whatsappCTATopic: BlogWhatsAppCTATopic | null = [CRIMINAL_LAW_BLOG_SLUG_DE, CRIMINAL_DEFENSE_FROM_GERMANY_BLOG_SLUG_DE].includes(post.slugDE)
     ? 'criminal_law'
+    : post.slugDE === SUMMONS_WARRANT_BLOG_SLUG_DE
+      ? 'summons_warrant'
     : post.slugDE === DRUG_CASE_TURKEY_BLOG_SLUG_DE
       ? 'drug_case'
     : post.slugDE === THREAT_CRIME_TURKEY_BLOG_SLUG_DE
@@ -2296,6 +2644,62 @@ export function BlogPost() {
             </div>
           </div>
 
+          {/* Vekaletname hero hook — only on product funnel pages */}
+          {productFunnel && (() => {
+            const hook =
+              language === 'de'
+                ? {
+                    lead: 'Die meisten Anfragen scheitern am falschen Weg — Konsulat, Notar oder Apostille, ohne zu wissen was wirklich gilt. Dieser Artikel klärt auf.',
+                    bullets: [
+                      'Konsulat oder Notar: Was ist für Ihren Fall der richtige Weg?',
+                      'Apostille und Übersetzung: Wann sind sie Pflicht, wann nicht?',
+                      'Häufige Fehler, die zur Ablehnung in der Türkei führen',
+                    ],
+                    trust: 'Av. Hasan Doğru · Deutsch & Türkisch · Mannheim & Ankara',
+                  }
+                : language === 'en'
+                ? {
+                    lead: 'Most requests fail because of the wrong route — consulate, notary or apostille, without knowing what actually applies. This article explains it.',
+                    bullets: [
+                      'Consulate or notary: which route is right for your case?',
+                      'Apostille and translation: when are they required, when not?',
+                      'Common mistakes that cause rejection in Turkey',
+                    ],
+                    trust: 'Av. Hasan Doğru · German & Turkish · Mannheim & Ankara',
+                  }
+                : {
+                    lead: 'Çoğu başvuru yanlış yol seçimi yüzünden başarısız olur. Konsolosluk, noter, apostil — hangisinin geçerli olduğunu bilmeden. Bu makale her şeyi netleştiriyor.',
+                    bullets: [
+                      'Konsolosluk mu, noter mi: durumunuz için hangisi doğru?',
+                      'Apostil ve tercüme: ne zaman zorunlu, ne zaman değil?',
+                      'Türkiye\'de reddedilen belgelerin en sık nedeni',
+                    ],
+                    trust: 'Av. Hasan Doğru · Türkçe & Almanca · Mannheim & Ankara',
+                  };
+
+            return (
+              <div className="mb-10 md:mb-16 rounded-xl bg-white ring-1 ring-[#1C3829]/8 shadow-sm overflow-hidden">
+                <div className="h-1 bg-[#8B6E2A]" />
+                <div className="p-6 md:p-8">
+                  <p className="mb-5 text-[16px] leading-[1.7] text-[#444] md:text-[17px]">
+                    {hook.lead}
+                  </p>
+                  <ul className="m-0 space-y-3 p-0">
+                    {hook.bullets.map((b) => (
+                      <li key={b} className="flex items-start gap-3 text-[14px] leading-[1.6] text-[#333] md:text-[15px]">
+                        <span className="mt-[5px] h-1.5 w-1.5 shrink-0 rounded-full bg-[#8B6E2A]" />
+                        {b}
+                      </li>
+                    ))}
+                  </ul>
+                  <p className="mt-5 border-t border-[#1C3829]/8 pt-4 font-sans text-[11px] font-bold uppercase tracking-[0.18em] text-[#1C3829]/45">
+                    {hook.trust}
+                  </p>
+                </div>
+              </div>
+            );
+          })()}
+
           {/* Hero Image with slight parallax or zoom entrance hint */}
           <div className="overflow-hidden mb-10 shadow-xl relative group rounded-lg md:mb-20 md:shadow-2xl">
             <div className="absolute inset-0 bg-black/5 group-hover:bg-transparent transition-colors duration-700 pointer-events-none z-10" />
@@ -2331,6 +2735,9 @@ export function BlogPost() {
                   let insertedTapuIptalTedbirCTA = false;
                   let insertedTapuIptalEvidenceCTA = false;
                   let insertedTapuIptalProcessCTA = false;
+                  let insertedSummonsWarrantTravelCTA = false;
+                  let insertedSummonsWarrantInterpolCTA = false;
+                  let insertedSummonsWarrantUyapCTA = false;
 
                   while (i < lines.length) {
                     const line = lines[i];
@@ -2395,12 +2802,19 @@ export function BlogPost() {
                         if (
                           productFunnel &&
                           !insertedComparisonCTA &&
-                          currentSectionHeading === 'Konsolosluk mu, Alman Noteri mi? Hangisi Daha İyi?'
+                          [
+                            'Konsulat oder Notar — Was ist besser?',
+                            'Konsolosluk mu, Alman Noteri mi? Hangisi Daha İyi?',
+                            'Türkisches Konsulat oder deutscher Notar?',
+                            'Konsolosluk mu, Alman noteri mi?',
+                            'Turkish consulate or German notary?',
+                          ].includes(currentSectionHeading)
                         ) {
                           renderedElements.push(
                             <BlogProductCTAMid
                               key="vekaletname-comparison-cta"
                               funnel={productFunnel}
+                              language={language}
                               variant="comparison"
                             />
                           );
@@ -2568,9 +2982,67 @@ export function BlogPost() {
                         insertedTapuIptalProcessCTA = true;
                       }
                       if (
+                        whatsappCTATopic === 'summons_warrant' &&
+                        !insertedSummonsWarrantTravelCTA &&
+                        [
+                          'Reisepass und Grenzrisiko: Was passiert, wenn Sie in die Türkei einreisen?',
+                          "Pasaport ve Sınır Riski: Türkiye'ye Girişte Ne Olur?",
+                          'What Happens If I Travel to Turkey With an Active Warrant?',
+                        ].includes(headingText)
+                      ) {
+                        renderedElements.push(
+                          <BlogWhatsAppCTA
+                            key="summons-warrant-travel-whatsapp-cta"
+                            language={language}
+                            placement="deadline"
+                            topic={whatsappCTATopic}
+                          />
+                        );
+                        insertedSummonsWarrantTravelCTA = true;
+                      }
+                      if (
+                        whatsappCTATopic === 'summons_warrant' &&
+                        !insertedSummonsWarrantInterpolCTA &&
+                        [
+                          'Interpol Red Notice: Was passiert, wenn der Haftbefehl international wird?',
+                          'Interpol Red Notice: Yakalama Kararı Uluslararası Hale Gelirse Ne Olur?',
+                          'Can Turkey Have Me Extradited From Germany?',
+                        ].includes(headingText)
+                      ) {
+                        renderedElements.push(
+                          <BlogWhatsAppCTA
+                            key="summons-warrant-interpol-whatsapp-cta"
+                            language={language}
+                            placement="strategy"
+                            topic={whatsappCTATopic}
+                          />
+                        );
+                        insertedSummonsWarrantInterpolCTA = true;
+                      }
+                      if (
+                        whatsappCTATopic === 'summons_warrant' &&
+                        !insertedSummonsWarrantUyapCTA &&
+                        [
+                          'Fernzugang zu türkischen Gerichten über UYAP',
+                          'UYAP Üzerinden Türk Mahkemelerine Uzaktan Erişim',
+                          'The Power of Attorney: How to Authorise Your Lawyer From Germany',
+                        ].includes(headingText)
+                      ) {
+                        renderedElements.push(
+                          <BlogWhatsAppCTA
+                            key="summons-warrant-uyap-whatsapp-cta"
+                            language={language}
+                            placement="mid"
+                            topic={whatsappCTATopic}
+                          />
+                        );
+                        insertedSummonsWarrantUyapCTA = true;
+                      }
+                      if (
                         whatsappCTATopic &&
                         whatsappCTATopic !== 'hagb' &&
                         whatsappCTATopic !== 'hakaret' &&
+                        whatsappCTATopic !== 'summons_warrant' &&
                         !insertedWhatsAppMidCTA &&
                         (
                           [
@@ -2670,23 +3142,55 @@ export function BlogPost() {
                       if (
                         productFunnel &&
                         !insertedIntroCTA &&
-                        headingText === 'Vekâletname Nedir ve Neden Bu Kadar Önemlidir?'
+                        [
+                          'Was ist eine Vekâletname und warum ist sie so wichtig?',
+                          'Vekâletname Nedir ve Neden Bu Kadar Önemlidir?',
+                          'Reicht eine Übersetzung der deutschen Vollmacht?',
+                          'Sadece tercüme yeterli mi?',
+                          'Is translation alone enough?',
+                        ].includes(headingText)
                       ) {
                         renderedElements.push(
-                          <BlogProductCTAIntro key="vekaletname-intro-cta" funnel={productFunnel} />
+                          <BlogProductCTAIntro key="vekaletname-intro-cta" funnel={productFunnel} language={language} />
                         );
                         insertedIntroCTA = true;
                       }
                       if (
                         productFunnel &&
                         !insertedServiceTypesCTA &&
-                        currentSectionHeading === 'Vekâletname Türlerine Göre Özel Dikkat Edilmesi Gerekenler' &&
-                        currentSubheading === 'Banka ve Genel İşlem Vekâletnamesi'
+                        [
+                          'Besondere Anforderungen je nach Vollmachtstyp',
+                          'Vekâletname Türlerine Göre Özel Dikkat Edilmesi Gerekenler',
+                        ].includes(currentSectionHeading) &&
+                        [
+                          'Bank- und allgemeine Geschäftsvollmacht',
+                          'Banka ve Genel İşlem Vekâletnamesi',
+                        ].includes(currentSubheading)
                       ) {
                         renderedElements.push(
                           <BlogProductCTAMid
                             key="vekaletname-service-types-cta"
                             funnel={productFunnel}
+                            language={language}
+                            variant="service_types"
+                          />
+                        );
+                        insertedServiceTypesCTA = true;
+                      }
+                      if (
+                        productFunnel &&
+                        !insertedServiceTypesCTA &&
+                        [
+                          'Was sollten Sie jetzt tun?',
+                          'Şimdi ne yapmalısınız?',
+                          'What should you do now?',
+                        ].includes(headingText)
+                      ) {
+                        renderedElements.push(
+                          <BlogProductCTAMid
+                            key="vekaletname-service-types-cta"
+                            funnel={productFunnel}
+                            language={language}
                             variant="service_types"
                           />
                         );
@@ -2798,7 +3302,7 @@ export function BlogPost() {
             </div>
 
             {productFunnel ? (
-              <BlogProductCTABottom funnel={productFunnel} />
+              <BlogProductCTABottom funnel={productFunnel} language={language} />
             ) : whatsappCTATopic ? (
               <BlogWhatsAppCTA language={language} placement="bottom" topic={whatsappCTATopic} />
             ) : (
@@ -2893,7 +3397,7 @@ export function BlogPost() {
           </div>
         )}
       </div>
-      {productFunnel && <BlogStickyBookingCTA funnel={productFunnel} />}
+      {productFunnel && <BlogStickyBookingCTA funnel={productFunnel} language={language} />}
     </div>
   );
 }

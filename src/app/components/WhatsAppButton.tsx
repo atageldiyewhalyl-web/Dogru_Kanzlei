@@ -1,10 +1,22 @@
 import { useState } from "react";
+import { useLocation } from "react-router";
 import { useLanguage } from "../context/LanguageContext";
 import { openWhatsAppLeadCapture } from "./WhatsAppLeadCapture";
+
+const HIDE_WHATSAPP_BUTTON_PATHS = [
+  '/de/blog/tuerkische-vekaletname-deutschland',
+  '/tr/blog/almanya-da-vekaletname-cikarma-rehberi',
+  '/de/blog/vollmacht-auf-tuerkisch',
+  '/tr/blog/turkce-vekaletname-nasil-cikarilir',
+  '/en/blog/power-of-attorney-in-turkish',
+];
 
 export function WhatsAppButton() {
   const { t } = useLanguage();
   const [hovered, setHovered] = useState(false);
+  const location = useLocation();
+
+  if (HIDE_WHATSAPP_BUTTON_PATHS.includes(location.pathname)) return null;
 
   const whatsappLabel = "Kontakt per WhatsApp"; // Unified Label (Task 3)
 

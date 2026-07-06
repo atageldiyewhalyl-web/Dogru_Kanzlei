@@ -14,6 +14,8 @@ import mirasHukukuHero from "../../assets/miras-hukuku-hero.avif";
 import criminalHero from "../../assets/ceza-hero.avif";
 import vekaletnameHero from "../../assets/vekaletname-hero.avif";
 import servicesBackground from "../../assets/background-for-services.avif";
+import hasanMainHero from "../../assets/Hasan dogru main hero 1.webp";
+import hasanOfficeHero from "../../assets/Hero full screen.png";
 
 
 const renderFormattedContent = (text: string) => {
@@ -158,8 +160,8 @@ export function ServiceDetail() {
       )
       : isVollmachtLandingPage
       ? familyLawText(
-        'Vollmacht Türkei erstellen Deutschland',
-        'Vekaletname Almanya’dan nasıl çıkarılır?',
+        'Vollmacht für die Türkei: Konsulat, Notar oder Apostille?',
+        'Vekaletname Almanya: Konsolosluk, Noter, Apostil ve Ücretler',
         'Power of attorney for Turkey from Germany'
       )
       : isTanimaLandingPage
@@ -189,8 +191,8 @@ export function ServiceDetail() {
       )
       : isVollmachtLandingPage
       ? familyLawText(
-        'Generalvollmacht, notarielle Vollmacht und Apostille für türkische Behörden — korrekt vorbereitet, ohne unnötige Reise.',
-        'Türkiye için vekaletname, tapu veya miras işlemleri ve apostil Almanya-Türkiye sürecini doğru şekilde hazırlıyoruz.',
+        'Vollmacht auf Türkisch, türkisches Konsulat, deutscher Notar oder Apostille? Wir prüfen, welcher Weg für Immobilien, Erbschaft, Bank, Gericht oder Behörden in der Türkei akzeptiert wird, und bereiten die nächsten Schritte done-for-you vor.',
+        'Türkiye için tapu, miras, banka, mahkeme veya resmi kurum vekaletnamesi mi gerekiyor? Konsolosluk mu Alman noteri mi, apostil gerekir mi, hangi belgeler ve ücret kalemleri çıkar, sizin için netleştirip süreci WhatsApp üzerinden başlatıyoruz.',
         'General powers of attorney, notarised powers and apostilles for Turkish authorities — prepared correctly without unnecessary travel.'
       )
       : isTanimaLandingPage
@@ -512,40 +514,56 @@ export function ServiceDetail() {
   ];
   const vollmachtConversionCards = [
     {
-      title: familyLawText('Generalvollmacht Türkei', 'Genel vekaletname Türkiye', 'General power of attorney for Turkey'),
+      title: familyLawText('Vollmacht auf Türkisch vorbereiten', 'Türkiye için vekaletname Almanya', 'Power of attorney from Germany for Turkey'),
       text: familyLawText(
-        'Wir prüfen, ob eine Generalvollmacht für die Türkei sinnvoll ist und welche Befugnisse konkret enthalten sein müssen.',
-        'Türkiye için genel vekaletnamenin uygun olup olmadığını ve hangi yetkilerin açıkça yer alması gerektiğini kontrol ediyoruz.',
-        'We check whether a general power of attorney for Turkey is suitable and which powers must be included.'
+        'Wir prüfen nicht nur die Übersetzung, sondern den türkischen Wortlaut, die Befugnisse und die Akzeptanz bei türkischen Behörden.',
+        'Tapu, miras, banka, mahkeme veya resmi kurum için Türkiye’de kabul edilecek vekaletname yolunu belirliyoruz.',
+        'We check which power of attorney Turkish authorities will accept for property, inheritance, banking, court or consular matters.'
       ),
-      icon: FileCheck2
+      icon: FileCheck2,
+      keywords: [
+        familyLawText('Vollmacht Türkei Deutschland', 'vekaletname almanya', 'Turkey power of attorney Germany'),
+        familyLawText('Vollmacht für türkische Behörden', 'Türkiye için vekaletname', 'power of attorney for Turkish authorities')
+      ]
     },
     {
-      title: familyLawText('Notarielle Vollmacht Türkei', 'Almanya noter vekaletname', 'Notarised power of attorney for Turkey'),
+      title: familyLawText('Türkisches Konsulat oder deutscher Notar?', 'Konsolosluk mu Alman noteri mi?', 'Consulate or German notary?'),
       text: familyLawText(
-        'Wir koordinieren die notarielle Vollmacht Türkei mit Notar, Apostille, Übersetzung und türkischen Anforderungen.',
-        'Alman noterinde vekaletname, apostil, tercüme ve Türk makamlarının şartlarını birlikte koordine ediyoruz.',
-        'We coordinate notarisation, apostille, translation and Turkish authority requirements.'
+        'Wir vergleichen Konsulatstermin und deutsche notarielle Vollmacht mit Apostille, Übersetzung, Terminlage und Kosten.',
+        'Konsolosluk vekaletnamesi ile Alman noter vekaletnamesini apostil, tercüme, randevu ve ücret açısından karşılaştırıyoruz.',
+        'We compare the consular route and German notarial route with apostille, translation, appointment availability and costs.'
       ),
-      icon: Gavel
+      icon: Gavel,
+      keywords: [
+        familyLawText('Notarielle Vollmacht Türkei', 'almanya noter vekaletname', 'notarial power of attorney Turkey'),
+        familyLawText('Konsulat Vollmacht Türkei', 'konsolosluk vekaletname', 'consular power of attorney Turkey')
+      ]
     },
     {
       title: familyLawText('Apostille Türkei Dokumente', 'Apostil Almanya Türkiye', 'Apostille for Turkey documents'),
       text: familyLawText(
-        'Apostille Türkei Dokumente: Wir klären die zuständige Stelle und bereiten Urkunden für die Verwendung in der Türkei vor.',
-        'Apostil Almanya Türkiye işlemlerinde yetkili makamı ve belgelerin Türkiye’de kullanıma uygunluğunu netleştiriyoruz.',
+        'Apostille Türkei: Wir klären, wann Apostille nötig ist, welche Stelle zuständig ist und welche beglaubigte Übersetzung folgt.',
+        'Apostil Almanya Türkiye işlemlerinde apostilin gerekip gerekmediğini, yetkili makamı ve tercüme adımını netleştiriyoruz.',
         'We identify the competent authority and prepare documents for use in Turkey.'
       ),
-      icon: Globe2
+      icon: Globe2,
+      keywords: [
+        familyLawText('Apostille Deutschland Türkei', 'almanyada apostil nereden alınır', 'apostille Germany Turkey'),
+        familyLawText('Apostille für Vollmacht', 'vekaletname apostil', 'apostille for power of attorney')
+      ]
     },
     {
       title: familyLawText('Vollmacht für Immobilien Türkei', 'Tapu vekaletname Almanya', 'Property power of attorney Turkey'),
       text: familyLawText(
-        'Für Kauf, Verkauf, Grundbuch, Tapu-Übertragung oder Verwaltung von Immobilien in der Türkei.',
-        'Türkiye’de tapu devri, satış, alım veya gayrimenkul yönetimi için özel vekaletname hazırlığı.',
+        'Für Kauf, Verkauf, Tapu-Übertragung, Grundbuchauskunft oder Immobilienverwaltung in der Türkei.',
+        'Türkiye’de tapu devri, satış, alım, tapu bilgisi veya gayrimenkul yönetimi için özel vekaletname hazırlığı.',
         'For purchase, sale, land registry transfer or management of property in Turkey.'
       ),
-      icon: Scale
+      icon: Scale,
+      keywords: [
+        familyLawText('Immobilienvollmacht Türkei', 'tapu vekaletname almanya', 'property power of attorney Turkey'),
+        familyLawText('Tapu Vollmacht Deutschland', 'tapu işlemleri vekaletname', 'land registry power of attorney Germany')
+      ]
     },
     {
       title: familyLawText('Vollmacht für Erbschaft Türkei', 'Miras vekaletname Almanya', 'Inheritance power of attorney Turkey'),
@@ -554,70 +572,78 @@ export function ServiceDetail() {
         'Veraset ilamı, miras işlemleri, tapu devri ve vefat sonrası banka işlemleri için vekaletname.',
         'For probate, estate handling, land registry transfers and banking matters after a death.'
       ),
-      icon: UsersRound
+      icon: UsersRound,
+      keywords: [
+        familyLawText('Erbschaftsvollmacht Türkei', 'miras vekaletname almanya', 'inheritance power of attorney Turkey'),
+        familyLawText('Veraset İlamı Vollmacht', 'veraset ilamı vekaletname', 'probate power of attorney')
+      ]
     },
     {
-      title: familyLawText('Türkische Dokumente beglaubigen', 'Türkçe tercüme ve tasdik', 'Certify Turkish documents'),
+      title: familyLawText('Kosten und Unterlagen vorab klären', 'Vekaletname ücreti ve gerekli belgeler', 'Clarify costs and documents upfront'),
       text: familyLawText(
-        'Wir begleiten Beglaubigung, Übersetzung und Konsularweg, damit türkische Dokumente richtig verwendet werden können.',
-        'Belgelerin Türkiye’de doğru kullanılabilmesi için tercüme, tasdik ve konsolosluk yolunu değerlendiriyoruz.',
-        'We guide certification, translation and consular steps so documents can be used correctly.'
+        'Wir erklären, welche Kostenblöcke und Unterlagen entstehen können: Konsulat, Notar, Apostille, Übersetzung und anwaltliche Vorbereitung.',
+        'Noter, konsolosluk, apostil, tercüme ve hukuki hazırlık için hangi ücret kalemlerinin oluşacağını baştan açıklıyoruz.',
+        'We explain the cost blocks: notary, consulate, apostille, translation and legal preparation.'
       ),
-      icon: Banknote
+      icon: Banknote,
+      keywords: [
+        familyLawText('Vollmacht Türkei Kosten', 'vekalet ücreti almanya', 'Turkey power of attorney costs'),
+        familyLawText('Vollmacht Unterlagen', 'vekalet için ne lazım', 'power of attorney documents')
+      ]
     }
   ];
   const vollmachtOutcomes = [
-    familyLawText('Vollmacht für die Türkei aus Deutschland', 'Vekaletname Almanya’dan nasıl çıkarılır', 'Power of attorney for Turkey from Germany'),
-    familyLawText('Generalvollmacht Türkei rechtssicher vorbereiten', 'Genel vekaletname Türkiye için doğru hazırlık', 'Prepare a general power of attorney for Turkey'),
-    familyLawText('Apostille Türkei Dokumente ohne Umwege', 'Apostil Almanya Türkiye sürecini netleştirme', 'Apostille Turkey documents without detours'),
-    familyLawText('Immobilien- und Erbschaftsvollmacht Türkei', 'Tapu ve miras vekaletnamesi Almanya', 'Property and inheritance power of attorney Turkey')
+    familyLawText('Vollmacht auf Türkisch vorbereiten', 'Vekaletname Almanya nasıl çıkarılır', 'Power of attorney for Turkey from Germany'),
+    familyLawText('Türkisches Konsulat oder deutscher Notar', 'Konsolosluk mu Alman noteri mi', 'Clarify consulate or German notary'),
+    familyLawText('Apostille Türkei und Übersetzung prüfen', 'Apostil gerekir mi', 'Check apostille and translation'),
+    familyLawText('Kosten und Unterlagen vorab kennen', 'Vekaletname ücreti ve gerekli belgeler', 'Know costs and documents upfront')
   ];
   const vollmachtProcessSteps = [
     {
       step: '01',
-      title: familyLawText('Zweck der Vollmacht klären', 'Vekalet amacını netleştirelim', 'Clarify the purpose'),
+      title: familyLawText('WhatsApp-Check starten', 'WhatsApp’tan işlem amacını gönderin', 'Start the WhatsApp check'),
       text: familyLawText(
-        'Sie schildern kurz, ob es um Immobilien, Erbschaft, Bank, Gericht, Apostille oder Konsulat geht.',
-        'Tapu, miras, banka, mahkeme, apostil veya konsolosluk işlemi olup olmadığını kısaca anlatırsınız.',
-        'Tell us whether it concerns property, inheritance, banking, court, apostille or consular use.'
+        'Sie schildern kurz, ob es um Tapu, Erbschaft, Bank, Gericht, Apostille, Konsulat oder einen anderen Zweck geht.',
+        'Tapu, miras, banka, mahkeme, apostil, konsolosluk veya başka bir işlem olup olmadığını kısaca yazarsınız.',
+        'Tell us whether it concerns property, inheritance, banking, court, apostille, consular use or another purpose.'
       )
     },
     {
       step: '02',
-      title: familyLawText('Formulierung & Dokumente prüfen', 'Metin ve belgeleri kontrol edelim', 'Check wording and documents'),
+      title: familyLawText('Route, Wortlaut und Dokumente festlegen', 'Yol, metin ve belge listesini netleştirelim', 'Set route, wording and documents'),
       text: familyLawText(
-        'Wir prüfen die erforderlichen Befugnisse, notarielle Form, Apostille, Übersetzung und türkische Akzeptanz.',
-        'Gerekli yetkileri, noter formunu, apostili, tercümeyi ve Türk makamlarınca kabul şartlarını kontrol ederiz.',
-        'We check required powers, notarial form, apostille, translation and acceptance by Turkish authorities.'
+        'Wir prüfen Konsulat oder deutschen Notar, notwendige Befugnisse, Apostille, Übersetzung, Fotos und Unterlagen.',
+        'Konsolosluk veya Alman noteri yolunu, gerekli yetkileri, apostili, tercümeyi, fotoğraf ve belgeleri kontrol ederiz.',
+        'We check consulate or German notary, required powers, apostille, translation, photos and documents.'
       )
     },
     {
       step: '03',
-      title: familyLawText('Vollmacht nutzbar machen', 'Vekaletnameyi kullanılabilir hale getirelim', 'Make it ready to use'),
+      title: familyLawText('Done-for-you vorbereiten lassen', 'Süreci sizin için hazır hale getirelim', 'Make the process done-for-you'),
       text: familyLawText(
-        'Wir koordinieren die nächsten Schritte, damit die Vollmacht oder Urkunde in der Türkei genutzt werden kann.',
-        'Vekaletname veya belgenin Türkiye’de kullanılabilmesi için sonraki adımları koordine ederiz.',
-        'We coordinate the next steps so the power of attorney or document can be used in Turkey.'
+        'Wir koordinieren die nächsten Schritte, damit die Vollmacht in der Türkei praktisch verwendet werden kann.',
+        'Vekaletnamenin Türkiye’de kullanılabilmesi için sonraki adımları koordine eder, hata riskini azaltırız.',
+        'We coordinate the next steps so the power of attorney can be used practically in Turkey.'
       )
     }
   ];
   const vollmachtProofPoints = [
     {
       label: '01',
-      title: familyLawText('Türkei-spezifische Formulierungen', 'Türkiye’ye özel yetki metinleri', 'Turkey-specific wording'),
+      title: familyLawText('Türkei-spezifische Formulierungen', 'Türkiye’de kabul edilecek yetki metni', 'Turkey-specific wording'),
       text: familyLawText(
         'Eine allgemeine deutsche Vollmacht reicht oft nicht. Türkische Behörden verlangen konkrete Befugnisse.',
-        'Genel bir Alman vekaletnamesi çoğu zaman yetmez. Türk makamları belirli yetkileri açıkça görmek ister.',
+        'Genel bir Alman vekaletnamesi çoğu zaman yetmez. Türk makamları tapu, miras, banka veya mahkeme yetkilerini açıkça görmek ister.',
         'A generic German power of attorney is often not enough. Turkish authorities require specific powers.'
       )
     },
     {
       label: '02',
-      title: familyLawText('Apostille-Fallen vermeiden', 'Apostil hatalarını önleme', 'Avoid apostille mistakes'),
+      title: familyLawText('Konsulat oder Notar richtig wählen', 'Konsolosluk mu noter mi hatasını önleme', 'Choose consulate or notary correctly'),
       text: familyLawText(
-        'Wir filtern DIY-Fehler: falsche Stelle, falsche Urkunde, fehlende Übersetzung oder unpassende Beglaubigung.',
-        'Yanlış makam, yanlış belge, eksik tercüme veya uygun olmayan tasdik gibi hataların önüne geçiyoruz.',
-        'We help avoid DIY errors: wrong authority, wrong document, missing translation or unsuitable certification.'
+        'Wir filtern DIY-Fehler: falscher Weg, falsche Stelle, fehlende Apostille, fehlende Übersetzung oder unpassende Beglaubigung.',
+        'Yanlış yol, yanlış makam, eksik apostil, eksik tercüme veya uygun olmayan tasdik gibi hataların önüne geçiyoruz.',
+        'We help avoid DIY errors: wrong route, wrong authority, missing apostille, missing translation or unsuitable certification.'
       )
     },
     {
@@ -631,11 +657,11 @@ export function ServiceDetail() {
     },
     {
       label: '04',
-      title: familyLawText('Deutsch-türkische Koordination', 'Almanya-Türkiye koordinasyonu', 'German-Turkish coordination'),
+      title: familyLawText('Kosten und Unterlagen transparent', 'Ücret ve belge listesi net', 'Transparent costs and documents'),
       text: familyLawText(
-        'Wir verbinden deutsche Notar- und Apostille-Schritte mit den Anforderungen türkischer Behörden.',
-        'Alman noter ve apostil adımlarını Türk makamlarının şartlarıyla uyumlu hale getiriyoruz.',
-        'We align German notarial and apostille steps with Turkish authority requirements.'
+        'Wir erklären vorab, welche Unterlagen und Kostenblöcke bei Notar, Konsulat, Apostille und Übersetzung entstehen können.',
+        'Noter, konsolosluk, apostil ve tercüme için hangi belgeler ve ücret kalemleri çıkabileceğini baştan açıklarız.',
+        'We explain upfront which documents and cost blocks may arise for notary, consulate, apostille and translation.'
       )
     },
     {
@@ -645,6 +671,56 @@ export function ServiceDetail() {
         'Klare Vorbereitung spart Zeit, Rückfragen und Ablehnungen bei türkischen Behörden.',
         'Doğru hazırlık Türk makamlarında zaman kaybını, ek soruları ve ret riskini azaltır.',
         'Clear preparation saves time, follow-up questions and rejection risk with Turkish authorities.'
+      )
+    }
+  ];
+  const vollmachtSearchIntentBlocks = [
+    {
+      title: familyLawText('Türkisches Konsulat oder deutscher Notar?', 'Konsolosluk mu Alman noteri mi?', 'Consulate or German notary?'),
+      text: familyLawText(
+        'Konsulatstermin und deutsche notarielle Vollmacht führen nicht über dieselben Schritte. Wir prüfen Terminlage, Anerkennung, Apostille, Übersetzung und Zweck der Vollmacht.',
+        'Konsolosluk vekaletnamesi ile Alman noterinde düzenlenen vekaletname aynı süreç değildir. Randevu, kabul şartı, apostil, tercüme ve işlem amacına göre doğru yolu seçiyoruz.',
+        'The consular route and German notarial route do not follow the same steps. We check appointments, acceptance, apostille, translation and purpose.'
+      )
+    },
+    {
+      title: familyLawText('Welche Unterlagen brauche ich?', 'Vekaletname için hangi belgeler gerekir?', 'Which documents do I need?'),
+      text: familyLawText(
+        'Ausweis, Daten der bevollmächtigten Person, Zweck, Aktenzeichen, Tapu-Daten, Fotos oder Vorlagen der türkischen Behörde können nötig sein.',
+        'Kimlik, vekil bilgileri, işlem amacı, dosya numarası, tapu bilgileri, fotoğraf veya kurumun istediği metin işlem türüne göre gerekebilir.',
+        'ID, representative details, purpose, file number, land-registry data, photos or authority templates may be required depending on the matter.'
+      )
+    },
+    {
+      title: familyLawText('Wann ist Apostille nötig?', 'Apostil gerekir mi?', 'When is apostille needed?'),
+      text: familyLawText(
+        'Bei deutschen Notar- oder Behördendokumenten ist für die Türkei häufig Apostille plus Übersetzung nötig. Bei Konsularvollmachten kann die Bewertung anders sein.',
+        'Alman noteri veya Alman makamı belgesi Türkiye’de kullanılacaksa çoğu zaman apostil ve tercüme gerekir. Konsolosluk vekaletnamesinde durum farklı olabilir.',
+        'German notarial or authority documents often need apostille plus translation for Turkey. Consular powers of attorney may be different.'
+      )
+    },
+    {
+      title: familyLawText('Was kostet die Vollmacht?', 'Vekaletname ücreti nasıl oluşur?', 'What does the power of attorney cost?'),
+      text: familyLawText(
+        'Kosten hängen von Notar oder Konsulat, Apostille, Übersetzung, Umfang des Textes und anwaltlicher Vorbereitung ab.',
+        'Ücret; noter veya konsolosluk yolu, apostil, tercüme, metnin kapsamı ve hukuki hazırlık adımlarına göre oluşur.',
+        'Costs depend on notary or consulate route, apostille, translation, scope of wording and legal preparation.'
+      )
+    },
+    {
+      title: familyLawText('Für welche Städte und Konsulate?', 'Stuttgart, Karlsruhe, Frankfurt ve diğer şehirler', 'Which cities?'),
+      text: familyLawText(
+        'Wir unterstützen Mandanten deutschlandweit, etwa Hamburg, Köln, Düsseldorf, Nürnberg, Essen, Frankfurt, Stuttgart, Karlsruhe, Berlin, München und Mannheim.',
+        'Stuttgart, Karlsruhe, Frankfurt, Köln, Düsseldorf, Nürnberg, Berlin, Münih, Mannheim ve Almanya genelindeki müvekkillerle çalışıyoruz.',
+        'We support clients throughout Germany, including Stuttgart, Karlsruhe, Frankfurt, Cologne, Düsseldorf, Nuremberg, Berlin, Munich and Mannheim.'
+      )
+    },
+    {
+      title: familyLawText('Für welche Vorgänge?', 'Tapu, miras, banka ve mahkeme işlemleri', 'Which matters?'),
+      text: familyLawText(
+        'Immobilien, Erbschaft, Bankkonten, Gerichtsverfahren, Scheidung, Behördenvorgänge und Unternehmensangelegenheiten erfordern unterschiedliche Befugnisse.',
+        'Tapu, miras, banka hesabı, dava, boşanma, resmi kurum veya şirket işlemleri farklı yetkiler gerektirebilir.',
+        'Property, inheritance, bank accounts, court cases, divorce, authority matters and company issues may require different powers.'
       )
     }
   ];
@@ -956,7 +1032,7 @@ export function ServiceDetail() {
     : isErbrechtLandingPage
       ? familyLawText('Türkisches Erbrecht von Deutschland aus regeln', 'Türkiye miras işlemlerini Almanya’dan yürütüyoruz', 'Turkish inheritance matters handled from Germany')
     : isVollmachtLandingPage
-      ? familyLawText('Vollmacht, Apostille und Beglaubigung für die Türkei', 'Vekaletname, apostil ve tasdik işlemleri', 'Power of attorney, apostille and certification for Turkey')
+      ? familyLawText('Vollmacht auf Türkisch: Wir klären den richtigen Weg', 'Vekaletname Almanya: sizin için hangi yolu seçiyoruz?', 'Power of attorney, apostille and certification for Turkey')
       : familyLawText('Was wir für Sie tun', 'Sizin için neler yapıyoruz', 'What we handle for you');
   const landingInlineLabel = isTanimaLandingPage
     ? familyLawText('Wichtig zu wissen', 'Bilmeniz gereken', 'Important to know')
@@ -965,7 +1041,7 @@ export function ServiceDetail() {
     : isErbrechtLandingPage
       ? familyLawText('Dringende Frist', 'Acil süre', 'Urgent deadline')
     : isVollmachtLandingPage
-      ? familyLawText('Nicht jeder Klick ist ein Mandat', 'Önemli ayrım', 'Important distinction')
+      ? familyLawText('Wichtiger Unterschied', 'Kritik ayrım', 'Important distinction')
       : 'Tanıma & Tenfiz';
   const landingInlineTitle = isTanimaLandingPage
     ? familyLawText('Ohne Tanıma gelten Sie in der Türkei weiter als verheiratet.', 'Tanıma yapılmadan Türkiye’de hâlâ evli görünebilirsiniz.', 'Without Tanıma, Turkey may still treat you as married.')
@@ -974,7 +1050,7 @@ export function ServiceDetail() {
     : isErbrechtLandingPage
       ? familyLawText('Die Frist zur Erbausschlagung in der Türkei beträgt 3 Monate.', 'Türkiye’de reddi miras süresi 3 aydır.', 'The deadline to reject an inheritance in Turkey is 3 months.')
     : isVollmachtLandingPage
-      ? familyLawText('Apostille beantragen ist nicht dasselbe wie eine verwendbare Türkei-Vollmacht.', 'Apostil almak, Türkiye’de kullanılabilir vekaletname hazırlamakla aynı şey değildir.', 'Getting an apostille is not the same as preparing a usable Turkey power of attorney.')
+      ? familyLawText('Konsularvollmacht und deutsche notarielle Vollmacht sind nicht derselbe Weg.', 'Konsolosluk vekaletnamesi ile Alman noter vekaletnamesi aynı süreç değildir.', 'Consular and German notarial powers of attorney are not the same route.')
     : familyLawText('Scheidung Türkei anerkennen lassen?', 'Almanya’daki boşanma kararınız Türkiye’de geçerli mi?', 'Need your German divorce recognised in Turkey?');
   const landingInlineText = isTanimaLandingPage
     ? familyLawText(
@@ -996,9 +1072,9 @@ export function ServiceDetail() {
       )
     : isVollmachtLandingPage
       ? familyLawText(
-        'Viele suchen nur eine Behörde für eine einfache Apostille. Entscheidend wird es, wenn die Vollmacht in der Türkei für Immobilien, Erbschaft, Bank, Gericht oder Behörden wirklich akzeptiert werden muss.',
-        'Birçok kişi sadece basit apostil makamını arar. Asıl önemli olan, vekaletnamenin Türkiye’de tapu, miras, banka, mahkeme veya resmi kurum işlemlerinde gerçekten kabul edilmesidir.',
-        'Many people only need a government office for a simple apostille. The real issue is whether the power of attorney will actually be accepted in Turkey for property, inheritance, banking, court or authority matters.'
+        'Beim Konsulat entsteht eine türkische Vollmacht. Beim deutschen Notar folgen je nach Dokument Apostille und Übersetzung. Entscheidend ist, welcher Weg für Tapu, Erbschaft, Bank oder Gericht in der Türkei akzeptiert wird.',
+        'Konsoloslukta Türkçe vekaletname düzenlenir. Alman noterinde ise çoğu dosyada apostil ve tercüme adımları gerekir. Önemli olan, tapu, miras, banka veya mahkeme işleminiz için Türkiye’de hangi yolun kabul edileceğidir.',
+        'At the consulate, a Turkish power of attorney is issued. With a German notary, apostille and translation often follow. The key is which route Turkey will accept for property, inheritance, banking or court.'
       )
     : familyLawText(
       'Wenn Sie in Deutschland geschieden sind, gilt diese Scheidung in der Türkei nicht automatisch. Wir prüfen, ob Tanıma, Tenfiz oder ein kombiniertes Verfahren nötig ist.',
@@ -1012,7 +1088,7 @@ export function ServiceDetail() {
     : isErbrechtLandingPage
       ? familyLawText('Warum Mandanten uns im türkischen Erbrecht beauftragen', 'Müvekkiller Türk miras hukuku için neden bizi tercih ediyor?', 'Why clients instruct us for Turkish inheritance law')
     : isVollmachtLandingPage
-      ? familyLawText('Warum Mandanten ihre Türkei-Vollmacht mit uns vorbereiten', 'Müvekkiller Türkiye vekaletnamesi için neden bizi tercih ediyor?', 'Why clients prepare Turkey powers of attorney with us')
+      ? familyLawText('Warum Mandanten ihre Türkei-Vollmacht mit uns vorbereiten', 'Neden vekaletname sürecini Hasan Doğru ile başlatıyorlar?', 'Why clients prepare Turkey powers of attorney with us')
     : familyLawText('Warum Mandanten aus ganz Deutschland uns beauftragen', 'Almanya genelindeki müvekkiller neden bizi tercih ediyor?', 'Why clients across Germany instruct us');
   const landingWhyText = isTanimaLandingPage
     ? familyLawText(
@@ -1035,7 +1111,7 @@ export function ServiceDetail() {
     : isVollmachtLandingPage
       ? familyLawText(
         'Bei Vollmachten für die Türkei entscheidet nicht nur der Notarstempel. Entscheidend ist, ob Wortlaut, Apostille, Übersetzung und Zweck von türkischen Behörden akzeptiert werden.',
-        'Türkiye için vekaletnamede sadece noter onayı yetmez. Metin, apostil, tercüme ve işlem amacı Türk makamlarınca kabul edilecek şekilde hazırlanmalıdır.',
+        'Türkiye için vekaletnamede sadece noter onayı yetmez. Metin, apostil, tercüme, işlem amacı, fotoğraf ve özel yetkiler Türk makamlarınca kabul edilecek şekilde hazırlanmalıdır.',
         'For powers of attorney for Turkey, the notarial stamp alone is not enough. Wording, apostille, translation and purpose must be accepted by Turkish authorities.'
       )
     : familyLawText(
@@ -1063,8 +1139,8 @@ export function ServiceDetail() {
       )
     : isVollmachtLandingPage
       ? familyLawText(
-        'Schildern Sie kurz per WhatsApp, wofür Sie die Vollmacht oder Apostille in der Türkei benötigen. Wir prüfen, welche Form und welche Schritte sinnvoll sind.',
-        'Vekaletname veya apostili Türkiye’de hangi işlem için kullanacağınızı WhatsApp üzerinden kısaca anlatın. Hangi form ve adımların gerekli olduğunu değerlendirelim.',
+        'Schildern Sie kurz per WhatsApp, wofür die Vollmacht in der Türkei benötigt wird. Wir prüfen Konsulat, deutschen Notar, Apostille, Übersetzung, Unterlagen und Kostenblöcke.',
+        'Vekaletnameyi Türkiye’de hangi işlem için kullanacağınızı WhatsApp üzerinden kısaca anlatın. Konsolosluk mu Alman noteri mi, apostil gerekir mi, belge ve ücret kalemleri neler olur, birlikte netleştirelim.',
         'Briefly tell us on WhatsApp what you need the power of attorney or apostille for in Turkey. We assess the right form and next steps.'
       )
     : familyLawText(
@@ -1079,8 +1155,18 @@ export function ServiceDetail() {
     : isErbrechtLandingPage
       ? familyLawText('Erbfall per WhatsApp schildern', 'Miras dosyasını WhatsApp’tan anlatın', 'Describe the inheritance case')
     : isVollmachtLandingPage
-      ? familyLawText('Vollmacht per WhatsApp klären', 'WhatsApp’tan vekaletnameyi sorun', 'Ask about the power of attorney')
+      ? familyLawText('Vollmacht per WhatsApp prüfen lassen', 'Vekaletname sürecini WhatsApp’tan başlatın', 'Ask about the power of attorney')
     : familyLawText('Fall per WhatsApp schildern', 'Dosyanızı WhatsApp’tan anlatın', 'Describe your case on WhatsApp');
+  const landingLeadDetails = {
+    service: isVollmachtLandingPage ? 'Vekaletname' : title,
+    situation: isVollmachtLandingPage
+      ? familyLawText(
+        'Ich möchte eine Vollmacht für die Türkei vorbereiten lassen. Bitte prüfen Sie Konsulat, deutschen Notar, Apostille, Übersetzung, Unterlagen und Kosten.',
+        'Türkiye için vekaletname sürecini başlatmak istiyorum. Lütfen konsolosluk, Alman noteri, apostil, gerekli belgeler ve ücret kalemlerini değerlendirin.',
+        'I want to prepare a power of attorney for Turkey. Please check consulate, notary, apostille, documents and costs.'
+      )
+      : landingBottomText
+  };
 
   const serviceSchema = {
     "@context": "https://schema.org",
@@ -1201,9 +1287,9 @@ export function ServiceDetail() {
                   className="absolute inset-0 h-full w-full object-cover object-center"
                   src={vekaletnameHero}
                   alt=""
-                  aria-hidden="true"
-                />
-              ) : isStrafrechtLandingPage ? (
+	                  aria-hidden="true"
+	                />
+	              ) : isStrafrechtLandingPage ? (
                 <img
                   className="absolute inset-0 h-full w-full object-cover object-center"
                   src={criminalHero}
@@ -1227,8 +1313,8 @@ export function ServiceDetail() {
                   playsInline
                   aria-hidden="true"
                 />
-              )}
-              <div className="absolute inset-0 bg-gradient-to-r from-[#F7F5F0]/94 via-[#F7F5F0]/68 to-[#F7F5F0]/5" />
+	              )}
+	              <div className="absolute inset-0 bg-gradient-to-r from-[#F7F5F0]/94 via-[#F7F5F0]/68 to-[#F7F5F0]/5" />
               <div className="absolute inset-0 bg-gradient-to-b from-[#F7F5F0]/95 via-[#F7F5F0]/35 to-transparent" />
               <div className="absolute inset-0 bg-gradient-to-t from-[#F7F5F0]/85 via-transparent to-transparent" />
 
@@ -1246,7 +1332,7 @@ export function ServiceDetail() {
                   <div className="mt-8">
                     <button
                       type="button"
-                      onClick={() => openWhatsAppLeadCapture({ service: title })}
+                      onClick={() => openWhatsAppLeadCapture(landingLeadDetails)}
                       className="inline-flex items-center justify-center gap-3 px-8 py-5 bg-[#1C3829] text-white font-sans text-[12px] font-bold tracking-[0.16em] uppercase transition-all hover:bg-[#7A5F20]"
                     >
                       {landingWhatsappLabel}
@@ -1380,6 +1466,49 @@ export function ServiceDetail() {
 		                      </div>
 		                    </section>
 
+		                    {isVollmachtLandingPage && (
+		                      <section className="mt-14 bg-white border border-[#1C3829]/5 p-7 md:p-10 shadow-sm rounded-sm">
+		                        <div className="grid grid-cols-1 lg:grid-cols-[0.9fr_1.1fr] gap-8 lg:gap-12 items-start">
+		                          <div>
+		                            <span className="font-sans text-[11px] font-bold tracking-[0.22em] uppercase text-[#8B6E2A] block mb-4">
+		                              {familyLawText('Suchintention', 'Aradığınız cevap burada', 'Search intent')}
+		                            </span>
+		                            <h2 className="font-serif text-3xl md:text-4xl leading-tight text-[#1C3829] mb-5">
+		                              {familyLawText('Welche Vollmacht ist für die Türkei richtig?', 'Almanya’da vekaletname için doğru yol hangisi?', 'Which power of attorney is right for Turkey?')}
+		                            </h2>
+		                            <p className="font-sans text-[15px] text-[#4a4a4a] leading-relaxed mb-6">
+		                              {familyLawText(
+		                                'Viele Mandanten suchen zuerst Kosten, Unterlagen oder die zuständige Apostille-Stelle. In der Praxis entscheidet aber die Kombination: Zweck, Wortlaut, Notar oder Konsulat, Apostille, Übersetzung und türkische Akzeptanz.',
+		                                'Birçok kişi önce ücret, gerekli belgeler veya apostil makamını arar. Uygulamada ise sonucu belirleyen şey kombinasyondur: işlem amacı, metin, konsolosluk veya Alman noteri, apostil, tercüme ve Türkiye’de kabul şartı.',
+		                                'Many clients first search for costs, documents or the competent apostille office. In practice, the result depends on the combination: purpose, wording, notary or consulate, apostille, translation and Turkish acceptance.'
+		                              )}
+		                            </p>
+		                            <button
+		                              type="button"
+		                              onClick={() => openWhatsAppLeadCapture(landingLeadDetails)}
+		                              className="inline-flex items-center justify-center gap-3 px-6 py-4 bg-[#1C3829] text-white font-sans text-[11px] font-bold tracking-[0.14em] uppercase transition-all hover:bg-[#7A5F20]"
+		                            >
+		                              {landingWhatsappLabel}
+		                              <ArrowRight size={14} />
+		                            </button>
+		                          </div>
+
+		                          <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+		                            {vollmachtSearchIntentBlocks.map((block) => (
+		                              <article key={block.title} className="border border-[#1C3829]/10 bg-[#F7F5F0] p-5 rounded-sm">
+		                                <h3 className="font-sans text-[15px] font-bold text-[#1C3829] mb-2 tracking-wide">
+		                                  {block.title}
+		                                </h3>
+		                                <p className="font-sans text-[13px] leading-relaxed text-[#4a4a4a]">
+		                                  {block.text}
+		                                </p>
+		                              </article>
+		                            ))}
+		                          </div>
+		                        </div>
+		                      </section>
+		                    )}
+
 		                    <section className="mt-14">
 	                      <div className="flex items-center gap-4 mb-10">
 	                        <div className="w-12 h-[1px] bg-[#8B6E2A]" />
@@ -1416,10 +1545,22 @@ export function ServiceDetail() {
                 )}
               </div>
 
-              {/* Modern Expertise Cards */}
-              {isFamilyLawLandingPage ? (
-                <section className="bg-[#EFE9DE] border border-[#1C3829]/10 p-8 md:p-12 mb-20 rounded-sm overflow-hidden">
-                  <div className="grid grid-cols-1 md:grid-cols-[0.9fr_1.1fr] gap-10 md:gap-14 items-start">
+	              {/* Modern Expertise Cards */}
+	              {isFamilyLawLandingPage ? (
+	                <section className="relative bg-[#EFE9DE] border border-[#1C3829]/10 p-8 md:p-12 mb-20 rounded-sm overflow-hidden">
+	                  {isVollmachtLandingPage && (
+	                    <>
+	                      <img
+	                        className="pointer-events-none absolute inset-0 h-full w-full object-cover object-[42%_34%] opacity-40 mix-blend-multiply"
+	                        src={hasanOfficeHero}
+	                        alt=""
+	                        aria-hidden="true"
+	                      />
+	                      <div className="absolute inset-0 bg-gradient-to-r from-[#EFE9DE]/94 via-[#EFE9DE]/80 to-[#EFE9DE]/68" aria-hidden="true" />
+	                      <div className="absolute inset-0 bg-[#1C3829]/5" aria-hidden="true" />
+	                    </>
+	                  )}
+	                  <div className="relative z-10 grid grid-cols-1 md:grid-cols-[0.9fr_1.1fr] gap-10 md:gap-14 items-start">
                     <div>
                       <span className="font-sans text-[11px] font-bold tracking-[0.22em] uppercase text-[#8B6E2A] block mb-4">
 	                        {familyLawText('Warum Doğru Kanzlei', 'Neden Doğru Kanzlei', 'Why Doğru Kanzlei')}
@@ -1546,9 +1687,29 @@ export function ServiceDetail() {
 	              )}
 
 	              {isFamilyLawLandingPage && (
-	                <section className="clear-both bg-[#1C3829] text-white p-8 md:p-12 mb-20 rounded-sm">
-	                  <div className="grid grid-cols-1 md:grid-cols-[1fr_auto] gap-8 items-center">
-	                    <div>
+	                <section className="relative clear-both overflow-hidden bg-[#1C3829] text-white p-8 md:p-12 mb-20 rounded-sm">
+	                  {isVollmachtLandingPage && (
+	                    <>
+	                      <div className="absolute inset-0 bg-[#1C3829]" aria-hidden="true" />
+	                      <div className="absolute bottom-0 left-0 top-0 hidden w-[32%] min-w-[280px] bg-[#183324] md:block" aria-hidden="true" />
+	                      <img
+	                        className="pointer-events-none absolute bottom-0 left-0 hidden h-[106%] w-auto max-w-none object-contain object-bottom opacity-90 md:block"
+	                        src={hasanMainHero}
+	                        alt=""
+	                        aria-hidden="true"
+	                      />
+	                      <img
+	                        className="pointer-events-none absolute bottom-0 right-[-40px] h-[96%] w-auto max-w-none object-contain object-bottom opacity-[0.16] md:hidden"
+	                        src={hasanMainHero}
+	                        alt=""
+	                        aria-hidden="true"
+	                      />
+	                      <div className="absolute inset-0 bg-gradient-to-r from-[#1C3829]/22 via-[#1C3829]/82 to-[#1C3829]" aria-hidden="true" />
+	                    </>
+	                  )}
+	                  <div className={isVollmachtLandingPage ? "relative z-10 grid grid-cols-1 md:grid-cols-[240px_minmax(0,1fr)] lg:grid-cols-[260px_minmax(420px,1fr)_minmax(340px,auto)] gap-8 items-center" : "relative z-10 grid grid-cols-1 md:grid-cols-[1fr_auto] gap-8 items-center"}>
+	                    {isVollmachtLandingPage && <div className="hidden min-h-[220px] md:block" aria-hidden="true" />}
+	                    <div className={isVollmachtLandingPage ? "max-w-[560px]" : undefined}>
 	                      <span className="font-sans text-[11px] font-bold tracking-[0.22em] uppercase text-[#B8963E] block mb-3">
 		                        {familyLawText('Nächster Schritt', 'Sonraki adım', 'Next step')}
 	                      </span>
@@ -1561,8 +1722,8 @@ export function ServiceDetail() {
 	                    </div>
                     <button
                       type="button"
-                      onClick={() => openWhatsAppLeadCapture({ service: title })}
-                      className="inline-flex items-center justify-center gap-3 px-8 py-5 bg-[#8B6E2A] text-white font-sans text-[12px] font-bold tracking-[0.16em] uppercase transition-all hover:bg-[#7A5F20]"
+                      onClick={() => openWhatsAppLeadCapture(landingLeadDetails)}
+                      className="inline-flex w-full items-center justify-center gap-3 px-6 py-5 bg-[#8B6E2A] text-white font-sans text-[11px] font-bold tracking-[0.13em] uppercase transition-all hover:bg-[#7A5F20] md:w-auto lg:min-w-[360px]"
                     >
 			                      {landingWhatsappLabel}
                       <ArrowRight size={15} />
