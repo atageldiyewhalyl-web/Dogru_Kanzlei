@@ -9,6 +9,13 @@ const HIDE_WHATSAPP_BUTTON_PATHS = [
   '/de/blog/vollmacht-auf-tuerkisch',
   '/tr/blog/turkce-vekaletname-nasil-cikarilir',
   '/en/blog/power-of-attorney-in-turkish',
+  '/de/blog/tuerkischer-notar-deutschland',
+  '/tr/blog/almanyada-turk-noteri',
+  '/en/blog/turkish-notary-in-germany',
+  '/de/blog/tuerkische-vollmacht-kosten-2026',
+  '/tr/blog/almanyada-vekaletname-ucreti-2026',
+  '/de/blog/tuerkische-vollmacht-ohne-konsulat',
+  '/tr/blog/almanyadan-turkiyeye-vekaletname-gonderme',
 ];
 
 export function WhatsAppButton() {

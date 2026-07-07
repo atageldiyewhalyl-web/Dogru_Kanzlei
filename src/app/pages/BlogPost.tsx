@@ -11,6 +11,7 @@ import { openWhatsAppLeadCapture } from "../components/WhatsAppLeadCapture";
 import { extractFaqsFromContent } from "../utils/schemaUtils";
 import { usePrerender } from "../hooks/usePrerender";
 import hasanMainHero from "@/assets/Hasan dogru main hero 1.webp";
+import vekaletnameImg from "@/assets/The_asset_for_blogs.png";
 
 const WHATSAPP_URL = "https://wa.me/4917661221210";
 const CRIMINAL_LAW_BLOG_SLUG_DE = "tuerkisches-strafrecht-anwalt-deutschland";
@@ -55,14 +56,14 @@ const vekaletnameFunnel: BlogProductFunnel = {
 function getVekaletnameFunnelCopy(language: string) {
   if (language === 'de') {
     return {
-      duration: '20 Minuten',
+      duration: 'Direkter Kontakt',
       serviceName: 'Vekaletname',
       leadSituation: 'Ich möchte den vollständigen Vekaletname-Prozess per WhatsApp klären.',
-      introEyebrow: 'Vollmacht Türkei',
+      introEyebrow: 'DIREKTER WHATSAPP-KONTAKT',
       introTitle: 'Sie brauchen eine verwendbare Vollmacht für die Türkei?',
-      introBody: 'Hasan Doğru klärt mit Ihnen per WhatsApp, ob Konsulat oder deutscher Notar sinnvoll ist, welche Befugnisse in den Text gehören und wie der gesamte Vekaletname-Prozess vorbereitet wird.',
+      introBody: 'Schreiben Sie uns direkt per WhatsApp und wir klären gemeinsam, ob Konsulat oder deutscher Notar sinnvoll ist und wie der gesamte Prozess vorbereitet wird.',
       introButton: 'WhatsApp Anfrage starten',
-      durationChip: '20 Minuten',
+      durationChip: 'Direkter Kontakt',
       formChip: 'WhatsApp Vorab-Formular',
       comparisonTitle: 'Konsulat oder Notar? Lassen Sie den richtigen Weg vorab prüfen.',
       comparisonBody: 'Der schnellste Weg ist nicht immer der sicherste. Schildern Sie kurz, ob es um Tapu, Erbe, Scheidung, Bank oder Gericht geht. Hasan Doğru ordnet den passenden Ablauf ein.',
@@ -88,14 +89,14 @@ function getVekaletnameFunnelCopy(language: string) {
 
   if (language === 'en') {
     return {
-      duration: '20 minutes',
+      duration: 'Direct Contact',
       serviceName: 'Vekaletname',
       leadSituation: 'I want to prepare a power of attorney for Turkey. Please check consulate, German notary, apostille, translation, documents and costs.',
-      introEyebrow: 'Power of attorney for Turkey',
+      introEyebrow: 'DIRECT WHATSAPP CONTACT',
       introTitle: 'Need a power of attorney that will actually be accepted in Turkey?',
-      introBody: 'Hasan Doğru checks whether the Turkish consulate, German notary, apostille or certified translation route is right for your case.',
+      introBody: 'Text us directly on WhatsApp and we will clarify whether the Turkish consulate, German notary, or apostille route is the right choice for your specific case.',
       introButton: 'Start WhatsApp request',
-      durationChip: '20 minutes',
+      durationChip: 'Direct Contact',
       formChip: 'WhatsApp intake form',
       comparisonTitle: 'Consulate, German notary or apostille? Have the route checked first.',
       comparisonBody: 'Tell us whether this is for property, inheritance, banking, court or another Turkish authority. We clarify the route before you lose time on the wrong appointment.',
@@ -120,14 +121,14 @@ function getVekaletnameFunnelCopy(language: string) {
   }
 
   return {
-    duration: '20 dakika',
+    duration: 'Direkt İletişim',
     serviceName: 'Vekaletname',
-    leadSituation: '20 dakika vekaletname ön görüşmesi talep ediyorum.',
-    introEyebrow: 'Vekaletname görüşmesi',
+    leadSituation: 'Türkiye için vekâletname çıkartmam gerekiyor, süreç hakkında bilgi almak istiyorum.',
+    introEyebrow: 'DİREKT WHATSAPP İLETİŞİMİ',
     introTitle: 'Türkiye için vekâletname mi çıkartmanız gerekiyor?',
-    introBody: '20 dakikada hangi yolu izlemeniz gerektiğini netleştirelim: konsolosluk mu, Alman noter mi?',
+    introBody: 'Bize doğrudan WhatsApp\'tan yazın, hangi yolu izlemeniz gerektiğini netleştirelim: konsolosluk mu, Alman noter mi?',
     introButton: 'WhatsApp formunu aç',
-    durationChip: '20 dakika',
+    durationChip: 'Direkt İletişim',
     formChip: 'WhatsApp ön bilgi formu',
     comparisonTitle: 'Hangi yol sizin için doğru?',
     comparisonBody: 'Hasan Doğru, durumunuza özel en uygun yolu belirler. Kısa bilgilerinizi gönderin, süreç WhatsApp üzerinden netleştirilsin.',
@@ -194,7 +195,7 @@ function BlogBookingButton({
       target="_blank"
       rel="noopener noreferrer"
       className={[
-        "inline-flex items-center justify-center rounded-full bg-[#8B6E2A] text-white font-sans font-bold uppercase tracking-[0.16em] shadow-lg transition-all duration-300 hover:bg-[#1C3829] hover:text-white active:scale-95",
+        "inline-flex items-center justify-center rounded-full bg-[#D4AF37] text-[#1C3829] font-sans font-bold uppercase tracking-[0.16em] shadow-lg transition-all duration-300 hover:bg-white hover:scale-105 active:scale-95",
         compact ? "px-4 py-3 text-[11px]" : "w-full px-5 py-4 text-center text-[10px] sm:w-auto sm:px-7 sm:text-[11px] md:px-10 md:text-[12px]",
       ].join(' ')}
     >
@@ -207,52 +208,56 @@ function BlogProductCTAIntro({ funnel, language }: { funnel: BlogProductFunnel; 
   const copy = getVekaletnameFunnelCopy(language);
 
   return (
-    <aside className="my-10 rounded-lg border border-[#8B6E2A]/25 bg-white p-5 shadow-[0_18px_45px_rgba(28,56,41,0.08)] sm:p-7 md:my-14 md:p-10">
-      <div className="grid gap-7 md:hidden">
-        <div className="min-w-0">
-          <p className="mb-3 font-sans text-[10px] font-bold uppercase tracking-[0.2em] text-[#7A5F20] md:text-[11px]">
-            {copy.introEyebrow}
-          </p>
-          <h3 className="mb-4 font-serif text-[28px] leading-[1.15] text-[#1C3829] sm:text-[34px]">
-            {copy.introTitle}
-          </h3>
-          <p className="m-0 max-w-[420px] text-[16px] leading-7 text-[#444] sm:text-[18px] sm:leading-8">
-            {copy.introBody}
-          </p>
-        </div>
-        <div>
-          <BlogBookingButton funnel={funnel} placement="intro" language={language}>
-            {copy.introButton}
-          </BlogBookingButton>
-        </div>
+    <aside className="relative my-20 w-screen relative left-1/2 -translate-x-1/2 bg-[#0F2417] shadow-[0_24px_60px_rgba(15,36,23,0.3)] border-y border-white/10 isolate overflow-hidden">
+      
+      {/* Mobile-only background image */}
+      <div className="absolute inset-0 md:hidden pointer-events-none z-0">
+        <img src={vekaletnameImg} alt="" className="w-full h-full object-cover object-right opacity-[0.15] mix-blend-luminosity" />
       </div>
 
-      <div className="hidden md:block">
-        <div className="max-w-[620px]">
-          <p className="mb-3 font-sans text-[11px] font-bold uppercase tracking-[0.22em] text-[#7A5F20]">
-            {copy.introEyebrow}
-          </p>
-          <h3 className="mb-4 font-serif text-4xl leading-[1.1] text-[#1C3829]">
-            {copy.introTitle}
-          </h3>
-          <p className="m-0 text-[19px] leading-8 text-[#444]">
-            {copy.introBody}
-          </p>
-        </div>
-        <div className="mt-8 flex items-center justify-between gap-8 border-t border-[#1C3829]/10 pt-7">
-          <div className="flex flex-wrap items-center gap-3">
-            <span className="rounded-full bg-[#F7F5F0] px-4 py-2 text-[11px] font-bold uppercase tracking-[0.14em] text-[#1C3829] ring-1 ring-[#1C3829]/10">
-              {copy.durationChip}
-            </span>
-            <span className="rounded-full bg-[#F7F5F0] px-4 py-2 text-[11px] font-bold uppercase tracking-[0.14em] text-[#7A5F20] ring-1 ring-[#8B6E2A]/25">
-              {copy.formChip}
-            </span>
-          </div>
-          <div className="w-full max-w-[390px] shrink-0">
+      {/* Glow effect */}
+      <div className="absolute top-0 right-0 -mr-24 -mt-24 w-80 h-80 bg-[#D4AF37]/20 rounded-full blur-[80px] pointer-events-none z-0" />
+
+      <div className="max-w-5xl mx-auto px-4 sm:px-6 py-12 md:py-16 relative z-10">
+        <div className="grid gap-12 md:grid-cols-[1.2fr_0.8fr] md:items-center">
+          
+          {/* Left Column: Text & CTA */}
+          <div>
+            {/* Eyebrow + duration chip on same row */}
+            <div className="flex items-center gap-4 mb-6">
+              <span className="font-sans text-[11px] font-bold uppercase tracking-[0.24em] text-[#D4AF37]">
+                {copy.introEyebrow}
+              </span>
+              <span className="rounded-full bg-white/5 border border-white/10 px-3 py-1 text-[10px] font-bold uppercase tracking-widest text-white/60 backdrop-blur-sm">
+                {copy.durationChip}
+              </span>
+            </div>
+
+            <h3 className="mb-6 font-serif text-[34px] leading-[1.1] tracking-tight text-white md:text-[44px] drop-shadow-md">
+              {copy.introTitle}
+            </h3>
+            
+            <div className="mb-10 max-w-[540px] relative p-6 md:p-8 rounded-2xl bg-white/[0.03] backdrop-blur-sm border border-white/10 shadow-[0_8px_30px_rgba(0,0,0,0.12)]">
+              <div className="absolute top-0 left-0 w-1 h-full bg-gradient-to-b from-[#D4AF37] to-transparent rounded-l-2xl opacity-50" />
+              <p className="text-[16px] leading-[1.8] text-white/90 md:text-[17px] font-light antialiased">
+                {copy.introBody}
+              </p>
+            </div>
+
             <BlogBookingButton funnel={funnel} placement="intro" language={language}>
               {copy.introButton}
             </BlogBookingButton>
           </div>
+
+          {/* Right Column: Proper Image Asset */}
+          <div className="hidden md:flex relative justify-center items-center">
+            <img 
+              src={vekaletnameImg} 
+              alt="Vekaletname" 
+              className="w-full h-auto object-contain drop-shadow-2xl scale-110"
+            />
+          </div>
+
         </div>
       </div>
     </aside>
@@ -272,26 +277,29 @@ function BlogProductCTAMid({
   const copy = getVekaletnameFunnelCopy(language);
 
   return (
-    <aside className="my-16 rounded-xl bg-[#FDFBF5] p-6 ring-1 ring-[#8B6E2A]/20 md:p-8">
-      <div className="mb-5 h-1 w-16 rounded-full bg-[#8B6E2A]" />
-      <h3 className="mb-4 font-serif text-2xl leading-tight text-[#1C3829] md:text-3xl">
-        {isServiceTypes ? copy.serviceTypesTitle : copy.comparisonTitle}
-      </h3>
-      <p className="mb-6 text-[17px] leading-8 text-[#444] md:text-[18px]">
-        {isServiceTypes ? copy.serviceTypesBody : copy.comparisonBody}
-      </p>
-      {isServiceTypes && (
-        <div className="mb-7 flex flex-wrap gap-2">
-          {copy.chips.map((chip) => (
-            <span key={chip} className="rounded-full border border-[#1C3829]/10 bg-white px-4 py-2 text-[12px] font-bold uppercase tracking-[0.12em] text-[#1C3829]">
-              {chip}
-            </span>
-          ))}
-        </div>
-      )}
-      <BlogBookingButton funnel={funnel} placement={isServiceTypes ? 'service_types' : 'comparison'} language={language}>
-        {isServiceTypes ? copy.serviceTypesButton : copy.introButton}
-      </BlogBookingButton>
+    <aside className="relative my-20 w-screen relative left-1/2 -translate-x-1/2 bg-[#0F2417]/95 backdrop-blur-xl shadow-[0_24px_60px_rgba(15,36,23,0.3)] border-y border-white/10 isolate">
+      <div className="absolute bottom-0 left-0 -ml-24 -mb-24 w-80 h-80 bg-[#D4AF37]/15 rounded-full blur-[80px] pointer-events-none" />
+      <div className="max-w-[720px] mx-auto px-4 sm:px-6 py-12 md:py-16 relative z-10">
+        <div className="mb-6 h-1 w-16 rounded-full bg-[#D4AF37]" />
+        <h3 className="mb-5 font-serif text-[26px] leading-[1.15] text-white md:text-[32px] drop-shadow-sm">
+          {isServiceTypes ? copy.serviceTypesTitle : copy.comparisonTitle}
+        </h3>
+        <p className="mb-8 text-[16px] leading-[1.8] text-white/80 sm:text-[18px] sm:leading-[1.8]">
+          {isServiceTypes ? copy.serviceTypesBody : copy.comparisonBody}
+        </p>
+        {isServiceTypes && (
+          <div className="mb-8 flex flex-wrap gap-2">
+            {copy.chips.map((chip) => (
+              <span key={chip} className="rounded-full border border-white/10 bg-white/5 px-4 py-2 text-[12px] font-bold uppercase tracking-[0.12em] text-[#D4AF37]">
+                {chip}
+              </span>
+            ))}
+          </div>
+        )}
+        <BlogBookingButton funnel={funnel} placement={isServiceTypes ? 'service_types' : 'comparison'} language={language}>
+          {isServiceTypes ? copy.serviceTypesButton : copy.introButton}
+        </BlogBookingButton>
+      </div>
     </aside>
   );
 }
@@ -373,38 +381,57 @@ function BlogProductCTABottom({ funnel, language }: { funnel: BlogProductFunnel;
   const copy = getVekaletnameFunnelCopy(language);
 
   return (
-    <div className="mt-32 overflow-hidden rounded-xl border border-[#8B6E2A]/25 bg-white shadow-[0_22px_70px_rgba(28,56,41,0.13)]">
-      <div className="h-2 bg-[#8B6E2A]" />
-      <div className="p-7 md:p-10">
-        <div className="grid gap-8 md:grid-cols-[1.1fr_0.9fr] md:items-start">
+    <div className="relative mt-32 w-screen relative left-1/2 -translate-x-1/2 bg-[#0F2417] shadow-[0_30px_80px_rgba(15,36,23,0.35)] border-y border-white/10 isolate overflow-hidden">
+      
+      {/* Hasan Background Image - Properly aligned to fit the section */}
+      <div className="absolute inset-y-0 left-0 w-full md:w-[50%] pointer-events-none z-0">
+        <img 
+          src={hasanMainHero} 
+          alt="Av. Hasan Doğru" 
+          className="w-full h-full object-contain object-left-bottom opacity-100 mix-blend-soft-light md:mix-blend-normal" 
+        />
+        
+        {/* Gradients to fade the edges seamlessly on desktop only */}
+        <div className="hidden md:block absolute inset-0 bg-gradient-to-r from-transparent via-[#0F2417]/90 to-[#0F2417]" />
+        <div className="hidden md:block absolute inset-0 bg-gradient-to-t from-transparent via-transparent to-[#0F2417]" />
+      </div>
+
+      <div className="absolute top-0 right-0 w-[500px] h-[500px] bg-[#D4AF37]/15 rounded-full blur-[120px] pointer-events-none translate-x-1/3 -translate-y-1/3 z-0" />
+      <div className="absolute top-0 left-0 right-0 h-1 bg-gradient-to-r from-transparent via-[#D4AF37]/70 to-transparent z-10" />
+      
+      <div className="max-w-5xl mx-auto px-4 sm:px-6 py-16 md:py-24 relative z-10">
+        <div className="grid gap-12 md:grid-cols-[1.2fr_0.8fr] md:items-center">
           <div>
-            <p className="mb-3 font-sans text-[11px] font-bold uppercase tracking-[0.24em] text-[#7A5F20]">
+            <p className="mb-5 font-sans text-[11px] font-bold uppercase tracking-[0.24em] text-[#D4AF37]">
               {copy.bottomEyebrow}
             </p>
-            <h3 className="mb-5 font-serif text-3xl leading-tight text-[#1C3829] md:text-4xl">
+            <h3 className="mb-7 font-serif text-[34px] leading-[1.1] tracking-tight text-white md:text-[44px] drop-shadow-lg">
               {copy.bottomTitle}
             </h3>
-            <p className="mb-7 max-w-2xl text-[18px] leading-8 text-[#444]">
-              {copy.bottomBody}
-            </p>
+            <div className="mb-10 max-w-[540px] relative p-6 md:p-8 rounded-2xl bg-[#0F2417]/75 border border-white/10 shadow-2xl">
+              <div className="absolute top-0 left-0 w-1 h-full bg-gradient-to-b from-[#D4AF37] to-transparent rounded-l-2xl opacity-50" />
+              <p className="text-[16px] leading-[1.8] text-white/90 md:text-[17px] font-light antialiased">
+                {copy.bottomBody}
+              </p>
+            </div>
             <BlogBookingButton funnel={funnel} placement="bottom" language={language}>
               {copy.introButton}
             </BlogBookingButton>
           </div>
 
-          <div className="rounded-lg bg-[#F7F5F0] p-6 ring-1 ring-[#1C3829]/8">
-            <h4 className="mb-5 font-serif text-2xl leading-tight text-[#1C3829]">
+          <div className="md:pl-10 relative z-10">
+            <h4 className="mb-8 font-serif text-[24px] md:text-[28px] leading-tight text-white tracking-tight drop-shadow-lg">
               {copy.includedTitle}
             </h4>
-            <ul className="m-0 space-y-4 p-0 text-[15px] leading-7 text-[#444]">
+            <ul className="m-0 space-y-6 p-0 text-[16px] md:text-[17px] leading-relaxed text-white/90 font-light">
               {copy.includedItems.map((item) => (
-                <li key={item} className="flex gap-3">
-                  <span className="mt-2 h-1.5 w-1.5 shrink-0 rounded-full bg-[#8B6E2A]" />
-                  {item}
+                <li key={item} className="flex gap-4 items-start group">
+                  <span className="mt-2 block h-1.5 w-1.5 shrink-0 rounded-full bg-[#D4AF37] ring-4 ring-[#D4AF37]/20 group-hover:ring-[#D4AF37]/40 transition-all" />
+                  <span className="group-hover:text-white transition-colors">{item}</span>
                 </li>
               ))}
             </ul>
-            <p className="mt-6 border-t border-[#1C3829]/10 pt-5 text-[12px] font-bold uppercase tracking-[0.12em] text-[#1C3829]/55">
+            <p className="mt-8 pt-6 text-[12px] font-bold uppercase tracking-[0.14em] text-[#D4AF37]/60">
               {copy.trustLine}
             </p>
           </div>
@@ -2427,9 +2454,9 @@ export function BlogPost() {
   const readTime = language === 'de' ? post.readTimeDE : language === 'tr' ? post.readTimeTR : post.readTimeEN;
   const category = language === 'de' ? post.categoryDE : language === 'tr' ? post.category : post.categoryEN;
   const vekaletnameProductSlugs = {
-    de: ['tuerkische-vekaletname-deutschland', 'vollmacht-auf-tuerkisch'],
-    tr: ['almanya-da-vekaletname-cikarma-rehberi', 'turkce-vekaletname-nasil-cikarilir'],
-    en: ['power-of-attorney-in-turkish'],
+    de: ['tuerkische-vekaletname-deutschland', 'vollmacht-auf-tuerkisch', 'tuerkischer-notar-deutschland', 'tuerkische-vollmacht-kosten-2026', 'tuerkische-vollmacht-ohne-konsulat'],
+    tr: ['almanya-da-vekaletname-cikarma-rehberi', 'turkce-vekaletname-nasil-cikarilir', 'almanyada-turk-noteri', 'almanyada-vekaletname-ucreti-2026', 'almanyadan-turkiyeye-vekaletname-gonderme'],
+    en: ['power-of-attorney-in-turkish', 'turkish-notary-in-germany', 'tuerkische-vollmacht-kosten-2026-en', 'tuerkische-vollmacht-ohne-konsulat-en'],
   };
   const productFunnel = (
     (language === 'de' && vekaletnameProductSlugs.de.includes(post.slugDE)) ||
@@ -2586,113 +2613,131 @@ export function BlogPost() {
       <SchemaOrg data={articleSchema} id="schema-article" />
       {faqSchema && <SchemaOrg data={faqSchema} id="schema-faq" />}
       
-      <div className={`relative z-0 pt-28 md:pt-[200px] ${productFunnel ? 'pb-36 md:pb-20' : 'pb-20'}`}>
-        <article className="w-full min-w-0 max-w-4xl mx-auto px-4 sm:px-6 lg:px-12 box-border" style={{ display: 'flex', flexDirection: 'column' }}>
-          <div className="mb-7 hidden text-center min-w-0 max-w-full md:block md:mb-10" style={{ position: 'relative', display: undefined }}>
-            <ol className="inline-flex max-w-full flex-wrap items-center justify-center gap-2 font-sans text-xs tracking-[0.2em] uppercase">
+      {/* Full-Bleed Hero Section */}
+      {/* Full-Bleed Hero Section */}
+      <div className="relative w-full min-h-[70vh] flex flex-col justify-center pt-32 pb-32">
+        {/* Background Image & Overlay */}
+        <div className="absolute inset-0 z-0">
+          <img
+            src={post.image}
+            alt={title}
+            className="w-full h-full object-cover"
+          />
+          <div className="absolute inset-0 bg-black/70" />
+          <div className="absolute inset-x-0 bottom-0 h-40 bg-gradient-to-t from-[#F7F5F0] to-transparent pointer-events-none" />
+        </div>
+
+        {/* Hero Content Container */}
+        <div className="relative z-10 w-full max-w-4xl mx-auto px-4 sm:px-6 lg:px-12 box-border flex flex-col items-center">
+          <div className="mb-7 hidden text-center w-full md:block md:mb-10">
+            <ol className="inline-flex flex-wrap items-center justify-center gap-2 font-sans text-xs tracking-[0.2em] uppercase">
               <li>
-                <Link to={paths.home} className="text-[#6a6a6a] hover:text-[#7A5F20] transition-colors">
+                <Link to={paths.home} className="text-[#e0e0e0] hover:text-white transition-colors">
                   {t("nav_home")}
                 </Link>
               </li>
-              <li className="text-[#6a6a6a]">/</li>
+              <li className="text-[#e0e0e0]">/</li>
               <li>
-                <Link to={paths.blog} className="text-[#B8963E] font-bold hover:opacity-70 transition-opacity">
+                <Link to={paths.blog} className="text-[#D4AF37] font-bold hover:opacity-70 transition-opacity">
                   Blog
                 </Link>
               </li>
-              <li className="text-[#6a6a6a]">/</li>
-              <li className="text-[#1C3829] font-bold max-w-full break-words sm:truncate sm:max-w-[200px]">{title}</li>
+              <li className="text-[#e0e0e0]">/</li>
+              <li className="text-white font-bold max-w-full break-words sm:truncate sm:max-w-[200px]">{title}</li>
             </ol>
           </div>
 
-          <div className="mb-10 text-center min-w-0 max-w-full md:mb-16" style={{ position: 'relative', display: 'block' }}>
+          <div className="text-center w-full">
             {/* Category */}
             <div className="flex items-center justify-center gap-3 mb-6 md:mb-8">
-              <span className="w-8 h-[1px] bg-[#8B6E2A]" />
-              <span className="font-sans text-[10px] font-bold tracking-[0.22em] text-[#7A5F20] uppercase md:text-[11px] md:tracking-[0.3em]">
+              <span className="w-8 h-[1px] bg-[#D4AF37]" />
+              <span className="font-sans text-[10px] font-bold tracking-[0.22em] text-[#D4AF37] uppercase md:text-[11px] md:tracking-[0.3em]">
                 <span lang={language === 'tr' ? 'tr' : 'de'}>{category}</span>
               </span>
-              <span className="w-8 h-[1px] bg-[#8B6E2A]" />
+              <span className="w-8 h-[1px] bg-[#D4AF37]" />
             </div>
 
             {/* Title */}
-            <h1 className="font-serif text-[clamp(29px,9vw,42px)] md:text-[clamp(24px,5vw,48px)] text-[#1C3829] leading-[1.12] md:leading-[1.2] font-medium mb-8 md:mb-10 tracking-tight text-center w-full min-w-0 max-w-full" style={{ position: 'relative', display: 'block', whiteSpace: 'normal', overflowWrap: 'anywhere', wordBreak: 'break-word', hyphens: 'auto', maxWidth: '100%', boxSizing: 'border-box' }}>
-              <span className="block max-w-[15ch] sm:max-w-[18ch] md:max-w-none mx-auto" lang={language === 'tr' ? 'tr' : language === 'de' ? 'de' : 'en'} style={{ whiteSpace: 'normal', overflowWrap: 'anywhere', wordBreak: 'break-word', hyphens: 'auto' }}>{title}</span>
+            <h1 className="font-serif text-[clamp(29px,9vw,42px)] md:text-[clamp(24px,5vw,48px)] text-white leading-[1.12] md:leading-[1.2] font-medium mb-8 md:mb-10 tracking-tight text-center w-full drop-shadow-lg">
+              <span className="block max-w-[15ch] sm:max-w-[18ch] md:max-w-none mx-auto" lang={language === 'tr' ? 'tr' : language === 'de' ? 'de' : 'en'}>{title}</span>
             </h1>
 
-            {/* Meta information aligned for premium feel */}
-            <div className="flex flex-wrap items-center justify-center gap-y-3 gap-x-5 pb-6 border-b border-[#1C3829]/5 text-[#6a6a6a] font-sans text-[12px] tracking-wide md:gap-x-10 md:pb-8 md:text-[13px]" style={{ position: 'relative', display: 'flex' }}>
+            {/* Meta information */}
+            <div className="flex flex-wrap items-center justify-center gap-y-3 gap-x-5 text-[#e0e0e0] font-sans text-[12px] tracking-wide md:gap-x-10 md:text-[13px]">
               <div className="flex items-center gap-2.5">
-                <div className="w-8 h-8 rounded-full bg-[#1C3829]/5 flex items-center justify-center">
-                  <User size={14} className="text-[#8B6E2A]" />
+                <div className="w-8 h-8 rounded-full bg-white/10 flex items-center justify-center">
+                  <User size={14} className="text-[#D4AF37]" />
                 </div>
                 <span>Av. Hasan Doğru</span>
               </div>
               <div className="flex items-center gap-2.5">
-                <Calendar size={15} className="text-[#8B6E2A]" />
+                <Calendar size={15} className="text-[#D4AF37]" />
                 <span>
                   <span lang={language === 'tr' ? 'tr' : 'de'}>{date}</span>
                 </span>
               </div>
               <div className="flex items-center gap-2.5">
-                <Clock size={15} className="text-[#8B6E2A]" />
+                <Clock size={15} className="text-[#D4AF37]" />
                 <span>
                   <span lang={language === 'tr' ? 'tr' : 'de'}>{readTime}</span>
                 </span>
               </div>
             </div>
           </div>
+        </div>
+      </div>
 
+      <div className={`relative z-0 ${productFunnel ? 'pb-36 md:pb-20' : 'pb-20'}`}>
+        <article className="w-full min-w-0 max-w-4xl mx-auto px-4 sm:px-6 lg:px-12 box-border" style={{ display: 'flex', flexDirection: 'column' }}>
           {/* Vekaletname hero hook — only on product funnel pages */}
           {productFunnel && (() => {
             const hook =
               language === 'de'
                 ? {
-                    lead: 'Die meisten Anfragen scheitern am falschen Weg — Konsulat, Notar oder Apostille, ohne zu wissen was wirklich gilt. Dieser Artikel klärt auf.',
+                    lead: 'Viele Vollmachten für die Türkei scheitern an der falschen Vorgehensweise. Dieser Ratgeber erklärt Ihnen genau, worauf es bei Konsulat, Notar und Apostille ankommt, um rechtlich auf der sicheren Seite zu sein.',
                     bullets: [
-                      'Konsulat oder Notar: Was ist für Ihren Fall der richtige Weg?',
-                      'Apostille und Übersetzung: Wann sind sie Pflicht, wann nicht?',
-                      'Häufige Fehler, die zur Ablehnung in der Türkei führen',
+                      'Konsulat oder deutscher Notar: Welcher Weg ist für Sie der richtige?',
+                      'Apostille und vereidigte Übersetzung: Wann sind sie zwingend erforderlich?',
+                      'Zeitverlust vermeiden: Die häufigsten Gründe für eine Ablehnung in der Türkei',
                     ],
                     trust: 'Av. Hasan Doğru · Deutsch & Türkisch · Mannheim & Ankara',
                   }
                 : language === 'en'
                 ? {
-                    lead: 'Most requests fail because of the wrong route — consulate, notary or apostille, without knowing what actually applies. This article explains it.',
+                    lead: 'Many powers of attorney for Turkey fail due to choosing the wrong procedure. This guide explains exactly what you need to know about the consulate, notaries, and apostilles to ensure your documents are legally valid.',
                     bullets: [
-                      'Consulate or notary: which route is right for your case?',
-                      'Apostille and translation: when are they required, when not?',
-                      'Common mistakes that cause rejection in Turkey',
+                      'Consulate vs. German Notary: Which route is better for your specific case?',
+                      'Apostilles and sworn translations: When are they strictly required?',
+                      'Avoid delays: The most common reasons documents are rejected in Turkey',
                     ],
                     trust: 'Av. Hasan Doğru · German & Turkish · Mannheim & Ankara',
                   }
                 : {
-                    lead: 'Çoğu başvuru yanlış yol seçimi yüzünden başarısız olur. Konsolosluk, noter, apostil — hangisinin geçerli olduğunu bilmeden. Bu makale her şeyi netleştiriyor.',
+                    lead: 'Türkiye\'de kullanılacak vekaletnamelerde en sık yaşanan sorun, yanlış başvuru yönteminin seçilmesidir. Konsolosluk, Alman noteri veya apostil işlemleri arasındaki karmaşayı gidermek için bilmeniz gereken her şeyi bu rehberde derledik.',
                     bullets: [
-                      'Konsolosluk mu, noter mi: durumunuz için hangisi doğru?',
-                      'Apostil ve tercüme: ne zaman zorunlu, ne zaman değil?',
-                      'Türkiye\'de reddedilen belgelerin en sık nedeni',
+                      'Konsolosluk mu yoksa Alman noteri mi: Hangi seçenek sizin için daha uygun?',
+                      'Apostil ve yeminli tercüme: Hangi durumlarda kesinlikle zorunludur?',
+                      'Zaman kaybını önleyin: Türkiye\'de belgelerin reddedilmesine yol açan en yaygın hatalar',
                     ],
                     trust: 'Av. Hasan Doğru · Türkçe & Almanca · Mannheim & Ankara',
                   };
 
             return (
-              <div className="mb-10 md:mb-16 rounded-xl bg-white ring-1 ring-[#1C3829]/8 shadow-sm overflow-hidden">
-                <div className="h-1 bg-[#8B6E2A]" />
-                <div className="p-6 md:p-8">
-                  <p className="mb-5 text-[16px] leading-[1.7] text-[#444] md:text-[17px]">
-                    {hook.lead}
-                  </p>
-                  <ul className="m-0 space-y-3 p-0">
-                    {hook.bullets.map((b) => (
-                      <li key={b} className="flex items-start gap-3 text-[14px] leading-[1.6] text-[#333] md:text-[15px]">
-                        <span className="mt-[5px] h-1.5 w-1.5 shrink-0 rounded-full bg-[#8B6E2A]" />
-                        {b}
-                      </li>
-                    ))}
-                  </ul>
-                  <p className="mt-5 border-t border-[#1C3829]/8 pt-4 font-sans text-[11px] font-bold uppercase tracking-[0.18em] text-[#1C3829]/45">
+              <div className="max-w-[720px] mx-auto w-full mb-12 mt-8 md:mt-12">
+                <p className="mb-6 text-[18px] md:text-[20px] leading-[1.7] text-[#1C3829] font-serif">
+                  {hook.lead}
+                </p>
+                <ul className="m-0 space-y-3 p-0 mb-8">
+                  {hook.bullets.map((b) => (
+                    <li key={b} className="flex items-start gap-3 text-[15px] md:text-[16px] leading-[1.6] text-[#444]">
+                      <span className="mt-[10px] h-1.5 w-1.5 shrink-0 rounded-full bg-[#D4AF37]" />
+                      <span>{b}</span>
+                    </li>
+                  ))}
+                </ul>
+                <div className="flex items-center gap-4">
+                  <span className="w-12 h-[1px] bg-[#D4AF37]/40" />
+                  <p className="font-sans text-[10px] font-bold uppercase tracking-[0.2em] text-[#8B6E2A]">
                     {hook.trust}
                   </p>
                 </div>
@@ -2700,21 +2745,9 @@ export function BlogPost() {
             );
           })()}
 
-          {/* Hero Image with slight parallax or zoom entrance hint */}
-          <div className="overflow-hidden mb-10 shadow-xl relative group rounded-lg md:mb-20 md:shadow-2xl">
-            <div className="absolute inset-0 bg-black/5 group-hover:bg-transparent transition-colors duration-700 pointer-events-none z-10" />
-            <img
-              src={post.image}
-              alt={title}
-              className="w-full h-auto max-h-[70vh] object-contain block mx-auto"
-            />
-          </div>
-
           {/* Dual-width content strategy: headers can go wide, text stays readable */}
           <div className="max-w-[720px] mx-auto w-full">
-            <div className="prose prose-stone max-w-none font-sans text-[#333] leading-[1.75] font-[450] selection:bg-[#B8963E]/20 md:prose-xl md:leading-[1.9]">
-              <div lang={language === 'tr' ? 'tr' : 'de'}>
-            <div className="prose prose-stone max-w-none font-sans text-[#333] leading-[1.75] font-[450] selection:bg-[#B8963E]/20 md:prose-xl md:leading-[1.9]">
+            <div className="prose prose-stone prose-lg max-w-none font-sans text-[#2C3338] leading-relaxed antialiased selection:bg-[#D4AF37]/20 prose-headings:font-serif prose-headings:text-[#0F2417] prose-a:text-[#8B6E2A] prose-a:no-underline hover:prose-a:text-[#D4AF37] transition-colors">
               <div lang={language === 'tr' ? 'tr' : 'de'}>
                 {(() => {
                   const lines = content.split('\n');
@@ -2750,7 +2783,7 @@ export function BlogPost() {
 
                     // 1. Handle Empty Lines
                     if (!trimmedLine) {
-                      renderedElements.push(<div key={`empty-${i}`} className="h-4 md:h-6" />);
+                      // Skip empty lines, let standard element margins handle vertical rhythm
                       i++;
                       continue;
                     }
@@ -2808,6 +2841,8 @@ export function BlogPost() {
                             'Türkisches Konsulat oder deutscher Notar?',
                             'Konsolosluk mu, Alman noteri mi?',
                             'Turkish consulate or German notary?',
+                            'Konsulat oder deutscher Notar – was ist besser?',
+                            'Consulate or German notary — which is better?',
                           ].includes(currentSectionHeading)
                         ) {
                           renderedElements.push(
@@ -2830,18 +2865,47 @@ export function BlogPost() {
                     // Horizontal Rules
                     if (trimmedLine === '---') {
                       element = (
-                        <div key={i} className="flex justify-center items-center gap-4 my-20">
-                          <div className="w-16 h-[1px] bg-[#1C3829]/10" />
-                          <div className="w-2 h-2 rounded-full border border-[#8B6E2A]" />
-                          <div className="w-16 h-[1px] bg-[#1C3829]/10" />
+                        <div key={i} className="w-full flex justify-center py-6">
+                          <span className="w-20 h-[1px] bg-[#D4AF37]/50" />
                         </div>
                       );
                     }
                     // Headers
                     else if (trimmedLine.startsWith('###')) {
                       currentSubheading = trimmedLine.replace(/###/g, '').trim();
+                      if (
+                        productFunnel &&
+                        !insertedServiceTypesCTA &&
+                        [
+                          'Wie die Doğru Kanzlei das übernimmt',
+                          'Doğru Kanzlei bunu nasıl üstlenir?',
+                          'How Doğru Kanzlei handles this',
+                          'Der Punkt, an dem es wirklich schiefgeht: der Vollmachtstext',
+                          'Der teuerste Fehler: Deutscher Notar ohne Apostille',
+                          'En pahalı hata: Apostilsiz Alman noteri belgesi',
+                          'The most expensive mistake: a German notary deed with no apostille',
+                          'Gesamtkosten im Vergleich (2026 – ca.)',
+                          'Versteckte Kosten: die zurückgewiesene Vollmacht',
+                          'Toplam maliyet karşılaştırması (2026 — yaklaşık)',
+                          'Gizli maliyet: reddedilen vekaletname',
+                          'Worauf je nach Vorgang zu achten ist',
+                          'Die 4 häufigsten Fehler (und wie Sie sie vermeiden)',
+                          'İşlem türüne göre nelere dikkat edilmeli?',
+                          'En sık yapılan 4 hata (ve nasıl kaçınılır)',
+                        ].includes(currentSubheading)
+                      ) {
+                        renderedElements.push(
+                          <BlogProductCTAMid
+                            key={`service-types-cta-${i}`}
+                            funnel={productFunnel}
+                            language={language}
+                            variant="service_types"
+                          />
+                        );
+                        insertedServiceTypesCTA = true;
+                      }
                       element = (
-                        <h3 key={i} className="font-serif text-2xl md:text-3xl text-[#1C3829] mt-16 mb-8 font-semibold tracking-tight leading-snug">
+                        <h3 key={i} className="font-serif text-[20px] md:text-[24px] text-[#1C3829] mt-10 md:mt-12 mb-6 font-semibold tracking-tight leading-snug">
                           {processInlineStyles(currentSubheading)}
                         </h3>
                       );
@@ -3165,6 +3229,14 @@ export function BlogPost() {
                         [
                           'Bank- und allgemeine Geschäftsvollmacht',
                           'Banka ve Genel İşlem Vekâletnamesi',
+                          'Gesamtkosten im Vergleich (2026 – ca.)',
+                          'Versteckte Kosten: die zurückgewiesene Vollmacht',
+                          'Toplam maliyet karşılaştırması (2026 — yaklaşık)',
+                          'Gizli maliyet: reddedilen vekaletname',
+                          'Worauf je nach Vorgang zu achten ist',
+                          'Die 4 häufigsten Fehler (und wie Sie sie vermeiden)',
+                          'İşlem türüne göre nelere dikkat edilmeli?',
+                          'En sık yapılan 4 hata (ve nasıl kaçınılır)',
                         ].includes(currentSubheading)
                       ) {
                         renderedElements.push(
@@ -3184,6 +3256,12 @@ export function BlogPost() {
                           'Was sollten Sie jetzt tun?',
                           'Şimdi ne yapmalısınız?',
                           'What should you do now?',
+                          'Wie die Doğru Kanzlei das übernimmt',
+                          'Doğru Kanzlei bunu nasıl üstlenir?',
+                          'How Doğru Kanzlei handles this',
+                          'Was muss in der türkischen Vollmacht stehen?',
+                          'Türkçe vekaletnamede ne yazmalı?',
+                          'What should the Turkish power of attorney say?',
                         ].includes(headingText)
                       ) {
                         renderedElements.push(
@@ -3201,9 +3279,9 @@ export function BlogPost() {
                       element = (
                         <h2 
                           key={i} 
-                          className="font-serif text-[30px] md:text-4xl text-[#1C3829] mt-16 md:mt-24 mb-8 md:mb-12 font-medium tracking-tight relative pb-5 md:pb-6 border-b border-[#1C3829]/5 leading-[1.12]"
+                          className="font-serif text-[24px] md:text-[28px] text-[#1C3829] mt-12 md:mt-16 mb-6 md:mb-8 font-medium tracking-tight relative pb-3 md:pb-4 border-b border-[#1C3829]/10 leading-[1.2]"
                         >
-                          <span className="absolute bottom-0 left-0 w-16 h-1 bg-[#8B6E2A]" />
+                          <span className="absolute bottom-[-1px] left-0 w-16 h-[2px] bg-[#D4AF37]" />
                           {processInlineStyles(headingText)}
                         </h2>
                       );
@@ -3220,8 +3298,8 @@ export function BlogPost() {
                     // List Items
                     else if (trimmedLine.startsWith('- ')) {
                       element = (
-                        <li key={i} className="ml-2 pl-4 mb-4 list-none relative text-[#444]">
-                          <span className="absolute left-[-1.5rem] top-[0.6rem] w-1.5 h-1.5 rounded-full bg-[#8B6E2A]/60" />
+                        <li key={i} className="ml-2 pl-4 mb-5 list-none relative text-[17px] md:text-[19px] leading-[1.8] text-[#2C3338]">
+                          <span className="absolute left-[-1.5rem] top-[0.65rem] w-1.5 h-1.5 rounded-full bg-[#8B6E2A]/60" />
                           <span className="inline-block transition-transform duration-300 hover:translate-x-1">
                             {processInlineStyles(trimmedLine.replace('- ', '').trim())}
                           </span>
@@ -3231,8 +3309,8 @@ export function BlogPost() {
                     // Number Lists
                     else if (/^\d+\./.test(trimmedLine)) {
                       element = (
-                        <div key={i} className="ml-2 pl-4 mb-6 relative text-[#444] flex gap-4">
-                           <span className="font-serif text-[#8B6E2A] italic text-xl font-bold min-w-[1.5rem]">{trimmedLine.match(/^\d+/)?.[0]}.</span>
+                        <div key={i} className="ml-2 pl-4 mb-6 relative text-[17px] md:text-[19px] leading-[1.8] text-[#2C3338] flex gap-4">
+                           <span className="font-serif text-[#8B6E2A] italic text-xl md:text-2xl font-bold min-w-[1.5rem]">{trimmedLine.match(/^\d+/)?.[0]}.</span>
                            <span className="pt-0.5">{processInlineStyles(trimmedLine.replace(/^\d+\.\s*/, '').trim())}</span>
                         </div>
                       );
@@ -3244,7 +3322,10 @@ export function BlogPost() {
                     }
                     // Paragraphs
                     else {
-                      if (!foundFirstParagraph) {
+                      const isDisclaimer = /(yasal uyar|hinweis|disclaimer|bu makale genel|bu makale yaln|dieser artikel|this article)/i.test(trimmedLine);
+                      const isContactInfo = trimmedLine.startsWith('📍') || trimmedLine.startsWith('📞') || trimmedLine.startsWith('✉️') || trimmedLine.startsWith('💬') || trimmedLine === '**Avukat Hasan Doğru | Doğru Kanzlei**' || trimmedLine.startsWith('*Mo–Sa:') || trimmedLine.startsWith('*Mo-Sa:');
+
+                      if (!foundFirstParagraph && !isDisclaimer && !isContactInfo) {
                         foundFirstParagraph = true;
                         element = (
                           <div key={i} className="mb-8 last:mb-0 text-lg md:text-xl relative">
@@ -3271,16 +3352,39 @@ export function BlogPost() {
                           insertWhatsAppIntroAfterElement = true;
                           insertedWhatsAppIntroCTA = true;
                         }
+                      } else if (isDisclaimer) {
+                        element = (
+                          <div key={i} className="mb-8 md:mb-12 p-5 md:p-6 bg-[#FAF5E6] rounded-xl border-l-4 border-[#D4AF37] flex items-start gap-4 shadow-sm">
+                            <div className="mt-1 flex-shrink-0">
+                              <svg className="w-5 h-5 text-[#8B6E2A]" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+                              </svg>
+                            </div>
+                            <p className="text-[#665d4b] text-[14px] md:text-[15px] leading-[1.6]">
+                              {processInlineStyles(trimmedLine.replace(/(\*\*|> |\*|YASAL UYARI:|HINWEIS:|DISCLAIMER:)\s*/gi, ''))}
+                            </p>
+                          </div>
+                        );
+                      } else if (isContactInfo) {
+                        const isTitle = trimmedLine.includes('Avukat Hasan Doğru');
+                        const isHours = trimmedLine.includes('Mo–Sa') || trimmedLine.includes('Mo-Sa');
+                        element = (
+                          <div key={i} className="flex justify-center my-3">
+                            <p className={`inline-flex items-center gap-3 px-4 py-2 rounded-full ${isTitle ? 'font-serif text-[18px] md:text-[20px] font-bold text-[#1C3829] bg-transparent' : isHours ? 'text-[14px] italic text-[#666] bg-transparent' : 'bg-[#FAF5E6] text-[#444] text-[15px] md:text-[16px] border border-[#D4AF37]/20 shadow-sm'} transition-colors hover:bg-[#F3EAD3]`}>
+                              {processInlineStyles(trimmedLine.replace(/\*\*/g, '').replace(/\*/g, ''))}
+                            </p>
+                          </div>
+                        );
                       } else {
                         element = (
-                          <p key={i} className="mb-6 md:mb-8 last:mb-0 text-[17px] leading-8 md:text-[21px] text-[#444]">
+                          <p key={i} className="mb-6 md:mb-8 last:mb-0 text-[17px] md:text-[19px] leading-[1.8] text-[#2C3338]">
                             {processInlineStyles(trimmedLine)}
                           </p>
                         );
                       }
                     }
-
                     renderedElements.push(element);
+                    
                     if (insertWhatsAppIntroAfterElement && whatsappCTATopic) {
                       renderedElements.push(
                         <BlogWhatsAppCTA
@@ -3296,8 +3400,6 @@ export function BlogPost() {
 
                   return renderedElements;
                 })()}
-              </div>
-            </div>
               </div>
             </div>
 

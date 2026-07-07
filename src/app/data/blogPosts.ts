@@ -99,7 +99,1018 @@ export interface BlogPost {
   ctaDescriptionEN?: string;
 }
 
+
+const tuerkischerNotarPost: BlogPost = {
+  slug: "tuerkischer-notar-deutschland",
+  slugDE: "tuerkischer-notar-deutschland",
+  slugTR: "almanyada-turk-noteri",
+  slugEN: "turkish-notary-in-germany",
+  titleDE: "Türkischer Notar in Deutschland: Gibt es den? (2026)",
+  titleTR: "Almanya'da Türk Noteri Var mı? (2026)",
+  titleEN: "Is There a Turkish Notary in Germany? (2026)",
+  excerptDE: "Einen türkischen Notar gibt es in Deutschland nicht. So bekommen Sie trotzdem eine in der Türkei gültige Vollmacht – über Konsulat oder deutschen Notar mit Apostille.",
+  excerptTR: "Almanya'da Türk noteri yoktur. Türkiye'de geçerli vekaletnameyi konsolosluk veya Alman noteri + apostil yoluyla nasıl çıkaracağınızı adım adım açıklıyoruz.",
+  excerptEN: "There is no Turkish notary in Germany. Here is how to get a Turkish-valid power of attorney (vekaletname) — via the consulate or a German notary plus apostille.",
+  metaTitleDE: "Türkischer Notar in Deutschland: Gibt es den? (2026)",
+  metaTitleTR: "Almanya'da Türk Noteri Var mı? (2026)",
+  metaTitleEN: "Is There a Turkish Notary in Germany? (2026)",
+  metaDescriptionDE: "Einen türkischen Notar gibt es in Deutschland nicht. So bekommen Sie trotzdem eine in der Türkei gültige Vollmacht – über Konsulat oder deutschen Notar mit Apostille.",
+  metaDescriptionTR: "Almanya'da Türk noteri yoktur. Türkiye'de geçerli vekaletnameyi konsolosluk veya Alman noteri + apostil yoluyla nasıl çıkaracağınızı adım adım açıklıyoruz.",
+  metaDescriptionEN: "There is no Turkish notary in Germany. Here is how to get a Turkish-valid power of attorney (vekaletname) — via the consulate or a German notary plus apostille.",
+  keywordsDE: "türkischer notar, türkischer notar in der nähe, notar türkisch, türk noter, türkischer notar köln, türkischer notar nrw, notar türkisches konsulat, vollmacht türkisch notar",
+  keywordsTR: "almanyada türk noteri, almanyada noter var mı, alman noterinden vekalet, konsolosluk noter, türk noter, noter almanya, konsolosluk vekaletname",
+  keywordsEN: "turkish notary germany, turkish notary near me, turkish power of attorney germany, vekaletname germany, consulate power of attorney turkey, german notary apostille turkey",
+  category: "legal-documents",
+  categoryDE: "Rechtsdokumente",
+  categoryEN: "Legal Documents",
+  image: vekaletnameImg,
+  dateDE: "6. Juli 2026",
+  dateTR: "6 Temmuz 2026",
+  dateEN: "July 6, 2026",
+  readTimeDE: "6 Min. Lesezeit",
+  readTimeTR: "6 dk okuma",
+  readTimeEN: "6 min read",
+  publishedAt: "2026-07-06",
+  modifiedAt: "2026-07-06",
+  contentDE: `> **Rechtlicher Hinweis:** Dieser Artikel befasst sich ausschließlich mit dem türkischen Recht. Die Doğru Kanzlei berät gemäß § 207 BRAO ausschließlich im türkischen Recht.
+
+Sie haben in die Suchleiste „türkischer Notar in der Nähe" oder „notar türkisch" eingegeben – und sind hier gelandet. Der Grund ist fast immer derselbe: Sie müssen in der Türkei etwas regeln, für das eine Vollmacht nötig ist. Ein Grundstück verkaufen, eine Erbschaft abwickeln, eine Scheidung anerkennen lassen, ein Bankkonto auflösen. Und Sie gehen davon aus, dass es dafür – wie in der Türkei – einen Notar (Noter) gibt, zu dem man einfach hingeht.
+
+Die kurze Antwort lautet: **Einen türkischen Notar gibt es in Deutschland nicht.** Das türkische Notariatssystem existiert nur auf türkischem Staatsgebiet. In Deutschland gibt es keine türkischen Noterlik-Büros, keine türkischen Notare mit Kammerzulassung und keine Filialen der Türkiye Noterler Birliği.
+
+Das ist aber keine schlechte Nachricht. Denn es gibt zwei anerkannte Wege, in Deutschland eine Vollmacht auszustellen, die in der Türkei tatsächlich funktioniert. Dieser Artikel erklärt beide – und zeigt, welchen Fehler Sie unbedingt vermeiden sollten.
+
+## Warum viele Menschen einen „türkischen Notar" suchen
+
+In der Türkei ist der Notar (Noter) allgegenwärtig. Vollmachten, Kaufverträge, Beglaubigungen – für fast alles geht man zum Noter. Wer aus der Türkei nach Deutschland gezogen ist, überträgt diese Erwartung ganz natürlich: „Wo ist hier der nächste türkische Notar?"
+
+Hinzu kommt die Sprachbarriere. Viele möchten das Dokument in einer Umgebung ausstellen, in der Türkisch gesprochen wird und der Vorgang vertraut abläuft. Deshalb suchen Menschen nach „notar türkisch", „türk noter köln", „türkischer notar nrw" oder „notar türkisches konsulat".
+
+Was diese Suchenden tatsächlich brauchen, ist kein türkischer Notar – sondern eine **türkisch rechtsgültige Vollmacht (Vekâletname).** Und dafür gibt es genau zwei richtige Adressen.
+
+## Weg 1: Das türkische Konsulat – der „türkische Notar" in Deutschland
+
+Wenn es überhaupt etwas gibt, das dem türkischen Notar in Deutschland am nächsten kommt, dann ist es das **türkische Generalkonsulat.** Die Konsulate üben nach türkischem Recht notarielle Funktionen aus. Eine dort ausgestellte Vollmacht wird direkt nach türkischem Notarrecht erstellt und in das Datenbanksystem der Türkiye Noterler Birliği eingetragen.
+
+Das bedeutet konkret:
+
+Eine Konsulatsvollmacht braucht **keine Apostille**. Sie braucht **keine beglaubigte Übersetzung**. Und sie wird von türkischen Gerichten, Grundbuchämtern und Banken **direkt akzeptiert.** Für rechtlich sensible Vorgänge – Grundstücksübertragung, Erbschaft, Scheidung, Tanıma-Tenfiz – ist dies der sicherste Weg.
+
+Die Türkei unterhält in Deutschland Konsulate in 13 Städten: Berlin, Düsseldorf, Köln, Essen, Frankfurt, Hamburg, Stuttgart, Hannover, Karlsruhe, Mainz, München, Münster und Nürnberg. Wer also „türkischer notar köln" oder „türkischer notar nrw" sucht, findet die Lösung im Generalkonsulat Köln, Düsseldorf, Essen oder Münster.
+
+> ⚠️ **Wichtig:** Konsulatstermine sind in Stoßzeiten oft mehrere Wochen im Voraus vergeben. Wenn Ihre Angelegenheit in der Türkei eine Frist hat (z. B. eine Gerichtsverhandlung oder ein Grundbuchtermin), planen Sie den Vorlauf frühzeitig ein – oder wählen Sie Weg 2.
+
+## Weg 2: Deutscher Notar + Apostille + Übersetzung
+
+Der zweite Weg führt über einen **deutschen Notar.** Ein deutscher Notar darf eine Vollmacht beurkunden, die für die Verwendung in der Türkei bestimmt ist. Allein reicht das aber nicht.
+
+Damit die Türkei eine deutsche Notarurkunde anerkennt, sind zwei weitere Schritte nötig:
+
+Erstens eine **Apostille.** Das ist eine internationale Beglaubigung nach dem Haager Übereinkommen, die bestätigt, dass die Unterschrift des Notars echt ist. In Deutschland wird die Apostille für Notarurkunden beim zuständigen **Oberlandesgericht** beantragt (in Baden-Württemberg z. B. beim OLG Karlsruhe).
+
+Zweitens eine **beglaubigte türkische Übersetzung.** Das apostillierte Dokument muss in der Türkei von einem vereidigten Übersetzer ins Türkische übersetzt und notariell beglaubigt werden.
+
+Und ein entscheidender Punkt: **Der deutsche Notar hat keine türkischen Vollmachtsvorlagen.** Sie müssen den Vollmachtstext selbst – nach türkischem Recht – vorbereiten und mitbringen. Genau hier scheitern die meisten.
+
+## Der teuerste Fehler: Deutscher Notar ohne Apostille
+
+Der mit Abstand häufigste Fehler ist, zu einem deutschen Notar zu gehen, die Vollmacht beurkunden zu lassen und sie dann direkt in die Türkei zu schicken – **ohne Apostille.**
+
+Das Ergebnis: Das türkische Grundbuchamt, das Gericht oder die Bank weist das Dokument zurück. Der gesamte Vorgang muss von vorne beginnen. Zeit- und Kostenverlust inklusive, und im schlimmsten Fall verstreicht eine Frist in der Türkei.
+
+> ⚠️ **Wichtig:** Eine deutsche Notarvollmacht ist in der Türkei ohne Apostille **wertlos.** Prüfen Sie immer, ob Apostille und beglaubigte Übersetzung vorliegen, bevor Sie das Dokument in die Türkei senden.
+
+## Konsulat oder deutscher Notar – was ist besser?
+
+| Kriterium | Türkisches Konsulat | Deutscher Notar + Apostille |
+|---|---|---|
+| Apostille nötig? | Nein | Ja |
+| Türkische Übersetzung nötig? | Nein | Ja |
+| Termin verfügbar | Oft 2–4 Wochen Vorlauf | Meist 1–2 Wochen |
+| In der Türkei direkt gültig? | Ja | Ja (mit Apostille + Übersetzung) |
+| Empfohlen für | Grundbuch, Erbschaft, Scheidung, Tanıma-Tenfiz | Wenn dringend oder Konsulat schwer erreichbar |
+
+**Faustregel:** Wenn Zeit da ist, wählen Sie das Konsulat. Wenn es eilt oder das nächste Konsulat weit weg ist, ist der deutsche Notar mit Apostille genauso sicher – vorausgesetzt, der Vollmachtstext ist korrekt.
+
+## Der Punkt, an dem es wirklich schiefgeht: der Vollmachtstext
+
+Ob Konsulat oder deutscher Notar – das eigentliche Risiko liegt nicht in der Beurkundung, sondern im **Inhalt der Vollmacht.** Türkische Gerichte und Ämter prüfen sehr genau, ob die erteilten Befugnisse ausreichen.
+
+Ein paar Beispiele, bei denen eine allgemein formulierte Vollmacht zurückgewiesen wird:
+
+Bei einer **Tanıma-Tenfiz-Vollmacht** (Anerkennung der deutschen Scheidung in der Türkei) muss ausdrücklich die Befugnis stehen, „eine Tanıma-ve-Tenfiz-Klage zu erheben und in allen Instanzen zu verfolgen". Fehlt dieser Satz, lehnt das Gericht ab.
+
+Bei einer **Grundstücksvollmacht** müssen die Katasterdaten der Immobilie (Ada, Parsel, İl, İlçe) im Text genannt sein, und die Vollmacht muss in Beurkundungsform („düzenleme şekli") vorliegen.
+
+Bei einer **Anwaltsvollmacht** müssen Name, Anwaltskammer (Baro) und Kammernummer des Anwalts korrekt angegeben sein.
+
+Deshalb ist die Frage nicht „Wo finde ich einen türkischen Notar?", sondern „Wer formuliert mir eine Vollmacht, die in der Türkei nicht zurückgewiesen wird?"
+
+## Wie die Doğru Kanzlei das übernimmt
+
+[Die Doğru Kanzlei](https://www.hasandogru.de/de/leistungen) ist sowohl bei der Anwaltskammer Ankara (Sicil-Nr. 47068) als auch bei der Rechtsanwaltskammer Karlsruhe (§ 207 BRAO) zugelassen. Das bedeutet: Wir formulieren den Vollmachtstext nach türkischem Recht, sagen Ihnen genau, was Sie zum Konsulat oder deutschen Notar mitbringen müssen, koordinieren Apostille und Übersetzung – und vertreten Sie anschließend **direkt vor türkischen Gerichten und Behörden.** Ohne Umweg über einen dritten Anwalt in der Türkei.
+
+Sie müssen also keinen „türkischen Notar" finden. Sie brauchen einen türkischen Anwalt, der die Vollmacht richtig aufsetzt und den Vorgang in der Türkei zu Ende führt.
+
+> **Rechtlicher Hinweis:** Dieser Artikel dient ausschließlich der allgemeinen Information über türkisches Recht und stellt keine Rechtsberatung dar. Für eine auf Ihren Fall zugeschnittene Einschätzung kontaktieren Sie bitte die Doğru Kanzlei. Die Kanzlei berät gemäß § 207 BRAO ausschließlich im türkischen Recht.`,
+  contentTR: `> **Yasal Uyarı:** Bu makale yalnızca Türk hukukuna ilişkin genel bilgi amaçlıdır. Doğru Kanzlei, § 207 BRAO kapsamında yalnızca Türk hukuku konularında danışmanlık vermektedir.
+
+Google'a "almanyada türk noteri" ya da "almanyada noter var mı" yazıp buraya geldiyseniz, sebebi büyük ihtimalle şu: Türkiye'de halletmeniz gereken bir işlem var ve bunun için vekaletname gerekiyor. Bir tapu devri, bir miras, bir boşanma davası, bir banka işlemi. Ve Türkiye'de olduğu gibi "bir notere gidip hallederim" diye düşünüyorsunuz.
+
+Kısa cevap şu: **Almanya'da Türk noteri yoktur.** Türk noterlik sistemi yalnızca Türkiye topraklarında işler. Almanya'da Türk noterlik büroları, Türkiye Noterler Birliği'ne bağlı noterler ya da şubeleri bulunmaz.
+
+Ama bu kötü bir haber değil. Çünkü Almanya'da Türkiye'de gerçekten işe yarayan bir vekaletname çıkarmanın **iki resmi yolu** var. Bu yazıda ikisini de anlatıyoruz — ve mutlaka kaçınmanız gereken hatayı gösteriyoruz.
+
+## İnsanlar neden "Türk noteri" arıyor?
+
+Türkiye'de noter hayatın her yerindedir. Vekaletname, satış, onay — hemen her şey için notere gidilir. Türkiye'den Almanya'ya taşınan biri bu alışkanlığı doğal olarak yanında getirir: "En yakın Türk noteri nerede?"
+
+Bir de dil meselesi var. Çoğu kişi işlemi Türkçe konuşulan, tanıdık bir ortamda yapmak ister. Bu yüzden "noter türkçe", "türk noter köln", "konsolosluk noter" gibi aramalar yapılır.
+
+Oysa bu kişilerin ihtiyacı bir Türk noteri değil — **Türkiye'de geçerli bir vekaletnamedir.** Ve bunun için tam olarak iki doğru adres vardır.
+
+## 1. Yol: Türk Konsolosluğu — Almanya'daki "Türk noteri"
+
+Almanya'da Türk noterine en yakın karşılık **Türk konsolosluğudur.** Konsolosluklar, Türk hukuku çerçevesinde noterlik görevi yürütür. Konsoloslukta düzenlenen vekaletname doğrudan Türk noterlik hukukuna göre hazırlanır ve Türkiye Noterler Birliği veri tabanına kaydedilir.
+
+Bu şu demek: Konsolosluk vekaletnamesi için **apostil gerekmez**, **tercüme gerekmez** ve belge Türkiye'deki mahkeme, tapu ve bankalarca **doğrudan kabul edilir.** Tapu, miras, boşanma, tanıma-tenfiz gibi hassas işlemlerde en güvenli yol budur.
+
+Türkiye'nin Almanya'da 13 şehirde konsolosluğu var: Berlin, Düsseldorf, Köln, Essen, Frankfurt, Hamburg, Stuttgart, Hannover, Karlsruhe, Mainz, Münih, Münster ve Nürnberg. Yani "türk noter köln" arayan biri, aslında Köln Başkonsolosluğu'nu arıyordur.
+
+> ⚠️ **Önemli:** Konsolosluk randevuları yoğun dönemlerde haftalar öncesinden dolabilir. Türkiye'deki işleminizin bir süresi varsa (duruşma, tapu randevusu vb.), erken davranın ya da 2. yolu seçin.
+
+## 2. Yol: Alman Noteri + Apostil + Tercüme
+
+İkinci yol **Alman noteridir.** Bir Alman noteri, Türkiye'de kullanılacak vekaletnameyi düzenleyebilir. Ama tek başına yeterli değildir.
+
+Türkiye'nin belgeyi kabul etmesi için iki adım daha gerekir. Birincisi **apostil** — La Haye Sözleşmesi'ne göre noterin imzasının gerçek olduğunu onaylayan uluslararası bir şerhtir. Almanya'da noter belgeleri için apostil, ilgili **Oberlandesgericht** (bölge mahkemesi) tarafından verilir (örneğin Baden-Württemberg'de OLG Karlsruhe). İkincisi **Türkçe yeminli tercüme** — apostilli belge Türkiye'de yeminli tercümana çevrilip noter onayından geçmelidir.
+
+Kritik bir nokta daha: **Alman noterinde Türkçe vekaletname örneği bulunmaz.** Metni Türk hukukuna uygun şekilde siz hazırlayıp götürmelisiniz. Çoğu kişi tam burada takılır.
+
+## En pahalı hata: Apostilsiz Alman noteri belgesi
+
+En sık yapılan hata, Alman noterine gidip vekaletnameyi imzalatmak ve apostil almadan doğrudan Türkiye'ye göndermektir. Sonuç: Tapu müdürlüğü, mahkeme ya da banka belgeyi reddeder. İşlem baştan başlar; hem zaman hem para kaybı olur, kötü ihtimalle Türkiye'deki bir süre kaçar.
+
+> ⚠️ **Önemli:** Apostilsiz bir Alman noteri vekaletnamesi Türkiye'de **geçersizdir.** Belgeyi göndermeden önce apostil ve yeminli tercümenin tamam olduğundan emin olun.
+
+## Konsolosluk mu, Alman noteri mi?
+
+| Kriter | Konsolosluk | Alman Noteri + Apostil |
+|---|---|---|
+| Apostil gerekir mi? | Hayır | Evet |
+| Türkçe tercüme gerekir mi? | Hayır | Evet |
+| Randevu süresi | Genelde 2–4 hafta | Genelde 1–2 hafta |
+| Türkiye'de doğrudan geçerli mi? | Evet | Evet (apostil + tercüme ile) |
+| Önerilen işlemler | Tapu, miras, boşanma, tanıma-tenfiz | Acil durumda veya konsolosluğa erişim zorsa |
+
+**Kural:** Vaktiniz varsa konsolosluğu seçin. Aciliyet varsa Alman noteri + apostil de aynı derecede güvenlidir — yeter ki metin doğru olsun.
+
+## Asıl sorun: vekaletname metni
+
+İster konsolosluk ister Alman noteri — asıl risk imzada değil, **vekaletnamenin içeriğindedir.** Türk mahkeme ve kurumları verilen yetkilerin yeterli olup olmadığını titizlikle inceler.
+
+Örnekler: **Tanıma-tenfiz** vekaletnamesinde "tanıma ve tenfiz davası açmaya ve her aşamada takip etmeye" ifadesi açıkça yazılmalıdır; yoksa mahkeme reddeder. **Tapu** vekaletnamesinde taşınmazın ada, parsel, il, ilçe bilgileri metinde yer almalı ve belge düzenleme şeklinde olmalıdır. **Avukatlık** vekaletnamesinde avukatın adı, barosu ve baro sicil numarası doğru yazılmalıdır.
+
+Yani asıl soru "Nerede Türk noteri var?" değil, "Türkiye'de reddedilmeyecek bir vekaletnameyi kim hazırlar?"
+
+## Doğru Kanzlei bunu nasıl üstlenir?
+
+[Doğru Kanzlei](https://www.hasandogru.de/tr/hizmetler) olarak hem Ankara Barosu'na (Sicil No: 47068) hem de Karlsruhe Barosu'na (§ 207 BRAO) kayıtlıyız. Bu şu demek: Vekaletname metnini Türk hukukuna göre biz hazırlarız, konsolosluğa veya Alman noterine ne götürmeniz gerektiğini net söyleriz, apostil ve tercümeyi koordine ederiz ve ardından Türkiye'deki mahkeme ve kurumlarda sizi **bizzat** temsil ederiz — Türkiye'de üçüncü bir avukata ihtiyaç olmadan.
+
+Yani bir "Türk noteri" bulmanıza gerek yok. Size gereken, vekaletnameyi doğru hazırlayan ve işlemi Türkiye'de sonuçlandıran bir Türk avukatı.
+
+> **Yasal Uyarı:** Bu makale yalnızca genel bilgi amaçlıdır ve hukuki danışmanlık niteliği taşımaz. Durumunuza özgü değerlendirme için Doğru Kanzlei ile iletişime geçin. Büro, § 207 BRAO kapsamında yalnızca Türk hukuku alanında danışmanlık verir.
+
+---
+
+## Bize Ulaşın: Vekâletname Metnini Birlikte Hazırlayalım
+
+Almanya'dan Türkiye için vekâletname çıkartırken en sık yapılan hata, yetkilerin eksik veya yanlış yazılmasıdır. Hatalı bir vekâletname Türkiye'de işlem görmez; sürece en baştan başlamak ise size hem zaman hem de para kaybettirir.
+
+Mannheim'da faaliyet gösteren, hem Türk hem de Alman hukukuna hâkim bir büro olarak bu süreci sizin için kolaylaştırıyoruz:
+
+- İhtiyacınıza tam uygun **vekâletname metnini hazırlıyoruz.**
+- Konsolosluğa veya Alman notere giderken yanınızda tam olarak nelerin bulunması gerektiğini adım adım açıklıyoruz.
+- Alman noterden alınan vekâletnameler için apostil ve yeminli tercüme aşamalarını koordine ediyoruz.
+- Vekâletnameniz Türkiye'ye ulaştıktan sonraki yasal işlemleri de bizzat takip ediyoruz.
+
+**Avukat Hasan Doğru | Doğru Kanzlei**
+📍 R1 2-3, 68161 Mannheim
+📞 +49 176 612 21210
+✉️ info@hasandogru.de
+💬 WhatsApp üzerinden de ulaşabilirsiniz
+
+*Mo-Sa: 09:00–18:00 | Türkçe ve Almanca hizmet*
+
+*Bu makale genel bilgi amaçlıdır ve hukuki danışmanlık niteliği taşımaz. Durumunuza özgü değerlendirme için lütfen bizimle iletişime geçin. Büromuz yalnızca Türk hukuku alanında danışmanlık vermektedir.*`,
+  contentEN: `> **Legal notice:** This article addresses Turkish law exclusively. Doğru Kanzlei advises on Turkish law under § 207 BRAO and does not advise on German domestic law.
+
+If you searched "Turkish notary near me" or "Turkish notary Germany" and landed here, the reason is almost always the same: you need to handle something in Turkey — selling property, dealing with an inheritance, a divorce recognition, closing a bank account — and it requires a power of attorney. And you assumed that, just like in Turkey, there's a notary (noter) you can simply walk into.
+
+The short answer: **there is no Turkish notary in Germany.** The Turkish notarial system only exists on Turkish soil. There are no Turkish notary offices, no Turkish notaries with chamber accreditation, and no branches of the Turkish Notaries Union (Türkiye Noterler Birliği) anywhere in Germany.
+
+That is not bad news. Because there are two recognised ways to issue, in Germany, a power of attorney that actually works in Turkey. This guide explains both — and the one mistake you must avoid.
+
+## Why people search for a "Turkish notary" abroad
+
+In Turkey, the notary is everywhere. Powers of attorney, sale contracts, certifications — for almost everything, you go to the noter. Anyone who moved from Turkey naturally carries that expectation: "Where's the nearest Turkish notary?"
+
+There's also the language factor. Many people want to handle the document in an environment where Turkish is spoken and the process feels familiar. So they search "Turkish notary Köln", "notary Turkish", "consulate notary".
+
+What these searchers actually need is not a Turkish notary — it's a **Turkish-valid power of attorney (vekaletname).** And for that, there are exactly two correct addresses.
+
+## Route 1: The Turkish consulate — the "Turkish notary" abroad
+
+The closest thing to a Turkish notary in Germany is the **Turkish consulate.** Consulates perform notarial functions under Turkish law. A power of attorney issued there is created directly under Turkish notarial law and recorded in the Türkiye Noterler Birliği database.
+
+In practice this means: a consulate power of attorney needs **no apostille**, needs **no certified translation**, and is **accepted directly** by Turkish courts, land registries and banks. For legally sensitive matters — property transfer, inheritance, divorce, recognition/enforcement (Tanıma-Tenfiz) — this is the safest route.
+
+Turkey maintains consulates in 13 German cities: Berlin, Düsseldorf, Cologne, Essen, Frankfurt, Hamburg, Stuttgart, Hanover, Karlsruhe, Mainz, Munich, Münster and Nuremberg. (If you live in the UK, the Netherlands or elsewhere, the same logic applies: your nearest Turkish consulate performs this function.)
+
+> ⚠️ **Important:** Consulate appointments can be booked out weeks in advance during busy periods. If your matter in Turkey has a deadline (a hearing, a land-registry appointment), plan ahead — or use Route 2.
+
+## Route 2: German notary + apostille + translation
+
+The second route runs through a **German notary** (or a notary in your country of residence). They can certify a power of attorney intended for use in Turkey. On its own, that is not enough.
+
+For Turkey to accept it, two more steps are required. First, an **apostille** — an international certification under the Hague Convention confirming the notary's signature is genuine. In Germany, the apostille for notarial deeds is obtained from the competent Higher Regional Court (Oberlandesgericht). Second, a **certified Turkish translation** — the apostilled document must be translated into Turkish by a sworn translator and notarised in Turkey.
+
+One crucial point: **a German notary has no Turkish power-of-attorney templates.** You must prepare the text yourself, compliant with Turkish law, and bring it. This is exactly where most people come unstuck.
+
+## The most expensive mistake: a German notary deed with no apostille
+
+By far the most common mistake is going to a notary, having the power of attorney certified, and sending it straight to Turkey — **without an apostille.**
+
+The result: the Turkish land registry, court or bank rejects it. The whole process starts over. Time and money lost, and in the worst case a deadline in Turkey passes.
+
+> ⚠️ **Important:** A notarial power of attorney is **worthless in Turkey without an apostille.** Always confirm the apostille and certified translation are in place before you send anything to Turkey.
+
+## Consulate or German notary — which is better?
+
+| Criterion | Turkish Consulate | German Notary + Apostille |
+|---|---|---|
+| Apostille required? | No | Yes |
+| Turkish translation required? | No | Yes |
+| Appointment lead time | Often 2–4 weeks | Usually 1–2 weeks |
+| Directly valid in Turkey? | Yes | Yes (with apostille + translation) |
+| Recommended for | Property, inheritance, divorce, Tanıma-Tenfiz | Urgent cases or when a consulate is hard to reach |
+
+**Rule of thumb:** if you have time, use the consulate. If it's urgent or the nearest consulate is far away, the notary + apostille route is just as secure — provided the wording is correct.
+
+## The real failure point: the wording of the power of attorney
+
+Whether consulate or notary, the real risk isn't the signing — it's the **content of the document.** Turkish courts and offices check carefully whether the powers granted are sufficient.
+
+For a **Tanıma-Tenfiz power of attorney** (recognising a foreign divorce in Turkey), the text must expressly authorise "filing and pursuing a recognition and enforcement action at every stage." For a **property power of attorney**, the land-registry details of the property (ada, parsel, il, ilçe) must appear in the text, and it must be in "deed form" (düzenleme şekli). For a **lawyer's power of attorney**, the lawyer's name, bar association and bar registration number must be correct.
+
+So the real question isn't "Where's a Turkish notary?" but "Who will draft a power of attorney that Turkey won't reject?"
+
+## How Doğru Kanzlei handles this
+
+[Doğru Kanzlei](https://www.hasandogru.de/en/services) holds dual bar membership with the Ankara Bar Association (registration no. 47068) and the Karlsruhe Bar Association (§ 207 BRAO). That means we draft the power-of-attorney text under Turkish law, tell you exactly what to bring to the consulate or notary, coordinate the apostille and translation, and then represent you **directly before Turkish courts and authorities** — with no relay through a third lawyer in Turkey.
+
+So you don't need to find a "Turkish notary." You need a Turkish lawyer who drafts the document correctly and finishes the matter in Turkey.`,
+  faqDE: [
+    {
+      question: "Gibt es einen türkischen Notar in Deutschland?",
+      answer: "Nein. Ein türkischer Notar im eigentlichen Sinne existiert nur in der Türkei. In Deutschland übernimmt das türkische Konsulat diese Funktion für Vollmachten. Alternativ geht der Weg über einen deutschen Notar mit Apostille und Übersetzung."
+    },
+    {
+      question: "Ich habe „türkischer notar in der nähe\" gesucht – wohin muss ich wirklich?",
+      answer: "Zum nächsten türkischen Generalkonsulat (13 Städte in Deutschland) oder zu einem deutschen Notar mit anschließender Apostille. Welcher Weg besser ist, hängt von der Art Ihrer Vollmacht und Ihrer Dringlichkeit ab."
+    },
+    {
+      question: "Gibt es einen türkischen Notar in Köln oder Düsseldorf?",
+      answer: "Nein, aber es gibt türkische Generalkonsulate in Köln, Düsseldorf, Essen und Münster, die Vollmachten nach türkischem Notarrecht ausstellen."
+    },
+    {
+      question: "Reicht ein deutscher Notar allein?",
+      answer: "Nein. Ohne Apostille und beglaubigte türkische Übersetzung wird eine deutsche Notarurkunde in der Türkei nicht anerkannt."
+    },
+    {
+      question: "Warum wird meine Vollmacht in der Türkei zurückgewiesen?",
+      answer: "Meist wegen eines unvollständigen Vollmachtstexts oder einer fehlenden Apostille. Türkische Ämter verlangen ausdrücklich benannte Befugnisse, besonders bei Grundstücken, Erbschaft und Scheidung."
+    },
+    {
+      question: "Kann die Doğru Kanzlei den Text für mich erstellen?",
+      answer: "Ja. Wir bereiten den Vollmachtstext nach türkischem Recht vor, begleiten Konsulat oder Notar und vertreten Sie danach direkt in der Türkei."
+    },
+    {
+      question: "Was ist günstiger – Konsulat oder deutscher Notar?",
+      answer: "In der Regel das Konsulat, weil Apostille und Übersetzung entfallen. Details finden Sie in unserem Kostenartikel."
+    }
+  ],
+  faqEN: [
+    {
+      question: "Is there a Turkish notary in Germany?",
+      answer: "No. A Turkish notary exists only in Turkey. In Germany, the Turkish consulate performs this function for powers of attorney; the alternative is a German notary deed with an apostille."
+    },
+    {
+      question: "Where do I actually go?",
+      answer: "Your nearest Turkish consulate (13 cities in Germany) or a German notary plus apostille. The best route depends on the type of power of attorney and how urgent it is."
+    },
+    {
+      question: "Is a German notary enough on its own?",
+      answer: "No. Without an apostille and a certified Turkish translation, a German notary deed is not accepted in Turkey."
+    },
+    {
+      question: "Does the consulate act as a notary?",
+      answer: "Yes. The consulate issues the power of attorney under Turkish notarial law and records it in the Türkiye Noterler Birliği database."
+    },
+    {
+      question: "Why was my power of attorney rejected in Turkey?",
+      answer: "Usually because of an incomplete text or a missing apostille. Powers must be expressly named, especially for property, inheritance and divorce."
+    },
+    {
+      question: "Can Doğru Kanzlei draft the text for me?",
+      answer: "Yes. We prepare the text under Turkish law, guide you through the consulate or notary process, and represent you directly in Turkey."
+    }
+  ],
+  faqTR: [
+    {
+      question: "Almanya'da Türk noteri var mı?",
+      answer: "Hayır. Türk noteri yalnızca Türkiye'dedir. Almanya'da bu görevi vekaletname için Türk konsolosluğu üstlenir; alternatif ise apostilli Alman noteri belgesidir."
+    },
+    {
+      question: "\"Almanyada noter var mı\" — nereye gitmeliyim?",
+      answer: "En yakın Türk konsolosluğuna (Almanya'da 13 şehir) ya da bir Alman noterine + apostil. Hangisinin uygun olduğu vekaletnamenin türüne ve aciliyetinize bağlıdır."
+    },
+    {
+      question: "Alman noteri tek başına yeterli mi?",
+      answer: "Hayır. Apostil ve Türkçe yeminli tercüme olmadan Alman noteri belgesi Türkiye'de kabul edilmez."
+    },
+    {
+      question: "Konsoloslukta noter işlemi yapılır mı?",
+      answer: "Evet. Konsolosluk vekaletnameyi Türk noterlik hukukuna göre düzenler ve Türkiye Noterler Birliği veri tabanına işler."
+    },
+    {
+      question: "Vekaletnamem Türkiye'de neden reddedildi?",
+      answer: "Genellikle eksik yetki içeren metin veya eksik apostil yüzünden. Özellikle tapu, miras ve boşanmada yetkiler açıkça yazılmalıdır."
+    },
+    {
+      question: "Metni Doğru Kanzlei hazırlayabilir mi?",
+      answer: "Evet. Metni Türk hukukuna göre hazırlar, konsolosluk/noter sürecine eşlik eder ve sizi Türkiye'de bizzat temsil ederiz."
+    }
+  ],
+  structuredDataDE: {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "Article",
+        "headline": "Türkischer Notar in Deutschland: Warum es ihn nicht gibt – und was Sie stattdessen brauchen",
+        "description": "Einen türkischen Notar gibt es in Deutschland nicht. So bekommen Sie trotzdem eine in der Türkei gültige Vollmacht – über Konsulat oder deutschen Notar mit Apostille.",
+        "image": "https://www.hasandogru.de/assets/blog_vekaletname-B29lN8at.avif",
+        "author": {
+          "@type": "Person",
+          "name": "Av. Hasan Doğru",
+          "url": "https://www.hasandogru.de/de/ueber-uns"
+        },
+        "publisher": {
+          "@type": "Organization",
+          "name": "Doğru Kanzlei",
+          "logo": {
+            "@type": "ImageObject",
+            "url": "https://www.hasandogru.de/assets/logo-eRLlm_XN.avif"
+          }
+        },
+        "datePublished": "2026-07-06",
+        "dateModified": "2026-07-06",
+        "mainEntityOfPage": {
+          "@type": "WebPage",
+          "@id": "https://www.hasandogru.de/de/blog/tuerkischer-notar-deutschland"
+        },
+        "inLanguage": "de"
+      },
+      {
+        "@type": "FAQPage",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "Gibt es einen türkischen Notar in Deutschland?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Nein. Einen türkischen Notar im klassischen Sinne gibt es in Deutschland nicht. Die einzige Stelle, die in Deutschland Vollmachten nach türkischem Notarrecht ausstellt, ist das türkische Generalkonsulat. Alternativ können Sie zu einem deutschen Notar gehen und das Dokument anschließend mit einer Apostille versehen lassen."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Was suchen Menschen, wenn sie nach einem türkischen Notar in der Nähe suchen?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "In der Regel benötigen sie eine türkisch gültige Vollmacht (Vekâletname). Die richtige Anlaufstelle ist entweder das türkische Konsulat (das nach türkischem Notarrecht beurkundet) oder ein deutscher Notar mit anschließender Apostille und beglaubigter türkischer Übersetzung."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Kann ein deutscher Notar eine türkische Vollmacht ausstellen?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Ein deutscher Notar kann eine Vollmacht beurkunden, die in der Türkei verwendet werden soll. Damit sie dort anerkannt wird, braucht das Dokument zusätzlich eine Apostille (beim zuständigen Oberlandesgericht) und eine beglaubigte türkische Übersetzung. Der deutsche Notar hat jedoch keine türkischen Vollmachtsvorlagen – der Text muss nach türkischem Recht vorbereitet werden."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Was ist der Unterschied zwischen Konsulat und deutschem Notar?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Beim Konsulat entsteht das Dokument direkt nach türkischem Notarrecht – ohne Apostille und ohne Übersetzung. Beim deutschen Notar ist die Beurkundung oft schneller terminierbar, benötigt aber Apostille und Übersetzung, damit die Türkei sie akzeptiert."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Gibt es einen türkischen Notar in Köln, Düsseldorf oder NRW?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Nein, aber es gibt türkische Generalkonsulate in Köln, Düsseldorf, Essen und Münster, die Vollmachten nach türkischem Notarrecht ausstellen. Für Menschen in NRW sind diese Konsulate die richtige Anlaufstelle."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Brauche ich für die Vollmacht einen Anwalt?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Für einfache Vollmachten nicht zwingend. Bei Grundbuch-, Erbschafts-, Scheidungs- oder Tanıma-Tenfiz-Vollmachten führt ein falsch formulierter Text jedoch häufig zur Zurückweisung in der Türkei. Ein türkischer Anwalt wie die Doğru Kanzlei erstellt den korrekten Vollmachtstext und vertritt Sie anschließend direkt in der Türkei."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Wird eine beim deutschen Notar erstellte Vollmacht in der Türkei akzeptiert?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Nur mit Apostille und beglaubigter türkischer Übersetzung. Ohne Apostille wird eine deutsche Notarurkunde in der Türkei zurückgewiesen. Das ist einer der häufigsten und teuersten Fehler."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Was kostet eine türkische Vollmacht über das Konsulat?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Die Konsulatsgebühr ist in der Regel niedriger als der Weg über den deutschen Notar mit Apostille und Übersetzung. Die genauen Gebühren legt das jeweilige Konsulat fest und können sich jährlich ändern. Eine detaillierte Kostenübersicht finden Sie in unserem separaten Kostenartikel."
+            }
+          }
+        ]
+      }
+    ]
+  },
+  structuredDataTR: {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "Article",
+        "headline": "Almanya'da Türk Noteri Var mı? Vekaletnameyi Doğru Yerden Çıkarmak",
+        "description": "Almanya'da Türk noteri yoktur. Türkiye'de geçerli vekaletnameyi konsolosluk veya Alman noteri + apostil yoluyla nasıl çıkaracağınızı adım adım açıklıyoruz.",
+        "image": "https://www.hasandogru.de/assets/blog_vekaletname-B29lN8at.avif",
+        "author": {
+          "@type": "Person",
+          "name": "Av. Hasan Doğru",
+          "url": "https://www.hasandogru.de/tr/hakkimizda"
+        },
+        "publisher": {
+          "@type": "Organization",
+          "name": "Doğru Kanzlei",
+          "logo": {
+            "@type": "ImageObject",
+            "url": "https://www.hasandogru.de/assets/logo-eRLlm_XN.avif"
+          }
+        },
+        "datePublished": "2026-07-06",
+        "dateModified": "2026-07-06",
+        "mainEntityOfPage": {
+          "@type": "WebPage",
+          "@id": "https://www.hasandogru.de/tr/blog/almanyada-turk-noteri"
+        },
+        "inLanguage": "tr"
+      },
+      {
+        "@type": "FAQPage",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "Almanya'da Türk noteri var mı?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Hayır. Almanya'da Türk noteri bulunmaz. Türk noterlik sistemi yalnızca Türkiye sınırları içinde işler. Almanya'da Türkiye için vekaletnameyi düzenleyen tek resmi makam Türk konsolosluğudur. Alternatif olarak Alman noterine gidip belgeye apostil ve yeminli tercüme ekletebilirsiniz."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Almanya'da noter var mı?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Evet, Almanya'da Alman noterleri (Notar) vardır ve Türkiye'de kullanılacak vekaletnameyi düzenleyebilirler. Ancak bu belgenin Türkiye'de geçerli olması için apostil şerhi ve Türkçe yeminli tercüme gerekir."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Alman noterinden aldığım vekalet Türkiye'de geçerli mi?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Sadece apostil ve Türkçe yeminli tercüme ile geçerlidir. Apostil olmadan Alman noteri belgesi Türkiye'de reddedilir. Bu en sık yapılan ve en pahalıya mal olan hatadır."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Konsolosluk mu Alman noteri mi daha iyi?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Konsoloslukta belge doğrudan Türk noterlik hukukuna göre düzenlenir; apostil ve tercüme gerekmez. Alman noterinde randevu genellikle daha hızlıdır ama apostil ve tercüme şarttır. Tapu, boşanma ve tanıma-tenfiz gibi işlemlerde konsolosluk yolu önerilir."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Konsoloslukta noter işlemi yapılır mı?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Evet. Türk konsoloslukları, Türk noterlik hukuku çerçevesinde vekaletname düzenler ve belge Türkiye Noterler Birliği veri tabanına kaydedilir. Bu nedenle konsolosluk, Almanya'daki en yakın 'Türk noteri' karşılığıdır."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Vekaletname için avukat gerekir mi?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Basit vekaletnamelerde şart değildir. Ancak tapu, miras, boşanma veya tanıma-tenfiz vekaletnamelerinde yanlış yazılmış bir metin Türkiye'de reddedilir. Doğru Kanzlei gibi bir Türk avukatı metni doğru hazırlar ve işlemi Türkiye'de bizzat takip eder."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Vekaletnamem Türkiye'de neden reddedilir?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Genellikle eksik yetki içeren bir metin ya da eksik apostil nedeniyle. Türk mahkeme ve kurumları, özellikle tapu, miras ve boşanmada, yetkilerin açıkça yazılmasını ister."
+            }
+          }
+        ]
+      }
+    ]
+  },
+  structuredDataEN: {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "Article",
+        "headline": "Is There a Turkish Notary in Germany? What You Actually Need",
+        "description": "There is no Turkish notary in Germany. Here is how to get a Turkish-valid power of attorney (vekaletname) — via the consulate or a German notary plus apostille.",
+        "image": "https://www.hasandogru.de/assets/blog_vekaletname-B29lN8at.avif",
+        "author": {
+          "@type": "Person",
+          "name": "Av. Hasan Doğru",
+          "url": "https://www.hasandogru.de/en/about"
+        },
+        "publisher": {
+          "@type": "Organization",
+          "name": "Doğru Kanzlei",
+          "logo": {
+            "@type": "ImageObject",
+            "url": "https://www.hasandogru.de/assets/logo-eRLlm_XN.avif"
+          }
+        },
+        "datePublished": "2026-07-06",
+        "dateModified": "2026-07-06",
+        "mainEntityOfPage": {
+          "@type": "WebPage",
+          "@id": "https://www.hasandogru.de/en/blog/turkish-notary-in-germany"
+        },
+        "inLanguage": "en"
+      },
+      {
+        "@type": "FAQPage",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "Is there a Turkish notary in Germany?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "No. There is no Turkish notary in Germany. The Turkish notarial system only operates inside Turkey. In Germany, the only body that issues powers of attorney under Turkish notarial law is the Turkish consulate. Alternatively, you can use a German notary and then add an apostille and a certified Turkish translation."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Where do I go for a Turkish power of attorney if I live in Germany?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Either the nearest Turkish consulate (13 cities across Germany), which issues the document under Turkish notarial law, or a German notary followed by an apostille and certified Turkish translation. Which route is best depends on the type of power of attorney and how urgent it is."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Is a German notary power of attorney valid in Turkey?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Only with an apostille and a certified Turkish translation. Without the apostille, a German notarial deed is rejected in Turkey. This is one of the most common and most expensive mistakes."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is the difference between the consulate and a German notary?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "At the consulate the document is created directly under Turkish notarial law — no apostille, no translation needed. A German notary is often quicker to book, but the document then requires an apostille and a certified translation before Turkey will accept it."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Can a Turkish lawyer prepare my power of attorney text?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Yes. Neither the consulate's standard form nor a German notary provides a Turkish-law-compliant text for complex matters. A Turkish lawyer such as Doğru Kanzlei drafts the correct wording and then represents you directly before Turkish courts and authorities."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Do I have to travel to Turkey to sign it?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "No. You can issue a Turkish-valid power of attorney entirely from Germany (or another country) through the consulate or a German notary. Only the document travels to Turkey, not you."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Why was my power of attorney rejected in Turkey?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Usually because of an incomplete text or a missing apostille. Turkish authorities require expressly named powers, especially for real estate, inheritance and divorce matters."
+            }
+          }
+        ]
+      }
+    ]
+  }
+};
+
+const vekaletnameKostenPost: BlogPost = {
+  slug: 'tuerkische-vollmacht-kosten-2026',
+  slugDE: 'tuerkische-vollmacht-kosten-2026',
+  slugTR: 'almanyada-vekaletname-ucreti-2026',
+  slugEN: 'tuerkische-vollmacht-kosten-2026-en',
+  titleDE: "T\u00fcrkische Vollmacht: Kosten 2026 \u2013 Konsulat vs. Notar",
+  titleTR: "Almanya'da Vekaletname \u00dccreti 2026: Konsolosluk vs Noter",
+  titleEN: "English Translation Pending",
+  excerptDE: "Was kostet eine t\u00fcrkische Vollmacht aus Deutschland? Konsulatsgeb\u00fchr, Notarkosten, Apostille und \u00dcbersetzung \u2013 die Gesamtkosten 2026 im Vergleich, Posten f\u00fcr Posten.",
+  excerptTR: "Almanya'da vekaletname \u00fccreti ne kadar? Konsolosluk, Alman noteri, apostil ve terc\u00fcme masraflar\u0131n\u0131 2026 i\u00e7in kalem kalem kar\u015f\u0131la\u015ft\u0131rd\u0131k. Ger\u00e7ek maliyeti \u00f6\u011frenin.",
+  excerptEN: "English translation pending.",
+  categoryDE: "Vollmacht",
+  image: vekaletnameImg,
+  dateDE: "06. Juli 2026",
+  dateTR: "06 Temmuz 2026",
+  dateEN: "July 06, 2026",
+  readTimeEN: "8 min read",
+
+  readTimeDE: "8 Min. Lesezeit",
+  readTimeTR: "8 dk okuma",
+  publishedAt: "2026-07-06",
+  keywordsDE: "",
+  keywordsTR: "",
+  faqDE: [
+    {
+      question: "Was kostet eine türkische Vollmacht aus Deutschland?",
+      answer: "Die Gesamtkosten hängen vom gewählten Weg ab. Der Konsulatsweg ist in der Regel am günstigsten, da weder Apostille noch Übersetzung anfallen. Beim deutschen Notar addieren sich Notargebühr, Apostille-Gebühr und beglaubigte türkische Übersetzung, sodass der Gesamtbetrag höher liegt. Prüfen Sie die aktuellen Gebühren vor dem Termin."
+    },
+    {
+      question: "Wie hoch ist die Konsulatsgebühr für eine Vollmacht?",
+      answer: "Die Gebühr richtet sich nach dem jährlich aktualisierten Gebührentarif des Konsulats und kann je nach Vollmachtstyp variieren. Sie ist meist niedriger als der Weg über den deutschen Notar und enthält keine zusätzlichen Apostille- oder Übersetzungskosten."
+    },
+    {
+      question: "Wonach richten sich die Notarkosten in Deutschland?",
+      answer: "Die Notargebühr wird nach dem gesetzlichen Kostentarif (GNotKG) auf Basis des Geschäftswerts berechnet. Eine einfache Vollmacht kostet weniger als eine Grundstücksvollmacht mit hohem Geschäftswert. Hinzu kommen Apostille und Übersetzung."
+    },
+    {
+      question: "Was kostet die Apostille 2026?",
+      answer: "Die Apostille für Notarurkunden wird beim zuständigen Oberlandesgericht erteilt; die Gebühr ist in der Regel überschaubar. Die genaue Höhe variiert je nach Bundesland und Urkundenart. Prüfen Sie die aktuelle Gebührenordnung vor der Beantragung."
+    },
+    {
+      question: "Ist die Übersetzung in den Kosten enthalten?",
+      answer: "Beim Konsulatsweg fällt keine Übersetzung an. Beim deutschen Notar ist eine beglaubigte türkische Übersetzung Pflicht und ein eigener Kostenposten, der sich nach Seitenzahl richtet."
+    },
+    {
+      question: "Welcher Weg ist am günstigsten?",
+      answer: "In den meisten Fällen der Konsulatsweg, weil Apostille und Übersetzung entfallen. Ist die Angelegenheit dringend oder das Konsulat schwer erreichbar, können die Mehrkosten des Notarwegs durch den Zeitgewinn gerechtfertigt sein."
+    },
+    {
+      question: "Kostet es extra, wenn ein Anwalt den Vollmachtstext erstellt?",
+      answer: "Die anwaltliche Erstellung des Texts und die Vertretung in der Türkei sind eine Dienstleistung mit eigenem Honorar. Eine fehlerhafte, in der Türkei zurückgewiesene Vollmacht bedeutet jedoch, den gesamten Vorgang ein zweites Mal zu bezahlen. Der korrekt formulierte Text senkt die Gesamtkosten oft."
+    }
+  ],
+  faqTR: [
+    {
+      question: "Almanya'da vekaletname ücreti ne kadar?",
+      answer: "Toplam maliyet seçtiğiniz yola göre değişir. Konsolosluk yolu genellikle en ekonomik seçenektir çünkü apostil ve tercüme gerekmez. Alman noteri yolunda noter ücreti, apostil harcı ve Türkçe yeminli tercüme masrafı toplanır ve daha yüksek bir tutara ulaşır. Güncel konsolosluk tarifesini ve noter ücretlerini işlem öncesinde teyit etmenizi öneririz."
+    },
+    {
+      question: "Konsolosluktan vekalet verme ücreti 2026'da ne kadar?",
+      answer: "Konsolosluk vekaletname ücreti her yıl güncellenen konsolosluk tarifesine göre belirlenir ve vekaletnamenin türüne göre değişebilir. Genellikle Alman noteri yolundan daha düşüktür ve ek apostil/tercüme masrafı içermez. Kesin tutar için ilgili başkonsolosluğun güncel tarifesine bakın."
+    },
+    {
+      question: "Alman noteri vekaletname ücreti neye göre belirlenir?",
+      answer: "Alman noter ücretleri, işlemin değerine göre yasal tarife (GNotKG) üzerinden hesaplanır. Basit bir vekaletname ile yüksek değerli bir tapu vekaletnamesinin ücreti farklıdır. Buna apostil harcı ve Türkçe tercüme masrafı da eklenir."
+    },
+    {
+      question: "Apostil fiyatı 2026'da ne kadar?",
+      answer: "Almanya'da noter belgesi için apostil, ilgili Oberlandesgericht tarafından verilir ve harcı genellikle mütevazı bir tutardır. Kesin harç eyalete ve belge türüne göre değişir; başvurudan önce ilgili mahkemenin güncel harç cetvelini kontrol edin."
+    },
+    {
+      question: "Vekaletname masrafına tercüme dahil mi?",
+      answer: "Konsolosluk vekaletnamesinde tercüme gerekmez, dolayısıyla tercüme masrafı yoktur. Alman noteri yolunda ise apostilli belgenin Türkçe yeminli tercümesi zorunludur ve ayrı bir masraf kalemidir."
+    },
+    {
+      question: "En ucuz vekaletname yolu hangisi?",
+      answer: "Çoğu durumda konsolosluk yolu en ucuzudur çünkü apostil ve tercüme masrafı yoktur. Ancak konsolosluk randevusu uzaksa ve işiniz acilse, Alman noteri yolunun ek maliyeti zaman kazancıyla dengelenebilir."
+    },
+    {
+      question: "Avukatın vekaletname hazırlaması ekstra masraf mı?",
+      answer: "Avukat, vekaletname metnini doğru hazırlar ve Türkiye'deki işlemi takip eder; bu bir hizmet bedelidir. Ancak yanlış hazırlanmış bir vekaletnamenin reddedilmesi, tüm süreci ikinci kez ödemek anlamına gelir. Doğru hazırlanan metin çoğu zaman toplam maliyeti düşürür."
+    }
+  ],
+  ctaTitleDE: "Erstgespräch",
+  ctaTitleTR: "İlk Görüşme",
+  ctaDescriptionDE: "Beratung",
+  ctaDescriptionTR: "Danışma",
+
+  category: "Vollmacht \u00b7 T\u00fcrkisches Recht",
+  contentDE: "> **Rechtlicher Hinweis:** Dieser Artikel befasst sich ausschlie\u00dflich mit dem t\u00fcrkischen Recht. Die Do\u011fru Kanzlei ber\u00e4t gem\u00e4\u00df \u00a7 207 BRAO ausschlie\u00dflich im t\u00fcrkischen Recht.\n\nSie m\u00f6chten aus Deutschland eine Vollmacht f\u00fcr die T\u00fcrkei ausstellen, und Ihre erste Frage ist ganz praktisch: \u201eWas kostet mich das?\" Eine klare Zahl findet man online selten \u2013 weil sich die Kosten einer t\u00fcrkischen Vollmacht nicht aus einem einzigen Posten zusammensetzen. Je nach Weg (Konsulat oder deutscher Notar), Vollmachtstyp und Zusatzschritten f\u00e4llt der Gesamtbetrag unterschiedlich aus.\n\nDieser Artikel schl\u00fcsselt beide Wege **Posten f\u00fcr Posten** auf: Konsulatsgeb\u00fchr, deutsche Notargeb\u00fchr, Apostille-Geb\u00fchr und beglaubigte t\u00fcrkische \u00dcbersetzung. Ziel ist, dass Sie vor dem Termin die tats\u00e4chlichen Kosten kennen \u2013 und keine b\u00f6sen \u00dcberraschungen erleben.\n\n> \u26a0\ufe0f **Wichtig:** Die folgenden Betr\u00e4ge sind N\u00e4herungswerte und \u00e4ndern sich j\u00e4hrlich. Konsulatstarife sowie Notar- und Apostille-Geb\u00fchren werden offiziell angepasst. Pr\u00fcfen Sie vor dem Termin die aktuellen Tarife des zust\u00e4ndigen Konsulats und Gerichts.\n\n## Warum die Kosten keine einzelne Zahl sind\n\nIn der T\u00fcrkei ist der Gang zum Notar eine einzige Zahlung. In Deutschland ist das anders: Je nach gew\u00e4hltem Weg \u00e4ndert sich die gesamte Kostenstruktur.\n\nBeim **Konsulatsweg** gibt es im Kern nur einen Posten: die Konsulatsgeb\u00fchr. Da das Dokument direkt nach t\u00fcrkischem Notarrecht entsteht, entfallen Apostille und \u00dcbersetzung. Deshalb sind die Gesamtkosten meist niedrig und vorhersehbar.\n\nBeim **deutschen Notar** addieren sich mindestens drei Posten: (1) die Notargeb\u00fchr, (2) die Apostille-Geb\u00fchr, (3) die beglaubigte t\u00fcrkische \u00dcbersetzung. Zusammengenommen liegt der Gesamtbetrag deutlich \u00fcber dem Konsulatsweg.\n\n## Posten 1: Konsulatsgeb\u00fchr\n\nDie Vollmachtsgeb\u00fchr des Konsulats richtet sich nach dem j\u00e4hrlich aktualisierten Geb\u00fchrentarif und kann je nach Vollmachtstyp (Generalvollmacht, Grundbuchvollmacht, Anwaltsvollmacht) variieren. Grundregel: Der Konsulatsweg ist wegen der wegfallenden Zusatzschritte insgesamt am g\u00fcnstigsten. Der Termin selbst ist kostenlos; gezahlt wird bei der Beurkundung. Bei bestimmten Vollmachtstypen (Grundbuch, Scheidung, Tan\u0131ma-Tenfiz) sind zwei Passfotos Pflicht \u2013 ein kleiner Zusatzposten.\n\n## Posten 2: Deutsche Notargeb\u00fchr\n\nDeutsche Notargeb\u00fchren sind nicht frei, sondern werden nach dem gesetzlichen Kostentarif (**GNotKG**) auf Basis des **Gesch\u00e4ftswerts** berechnet. Eine einfache Generalvollmacht und eine Grundbuchvollmacht \u00fcber eine hochwertige Immobilie kosten daher nicht dasselbe \u2013 letztere ist teurer, weil der Gesch\u00e4ftswert h\u00f6her ist. Die Frage \u201eWas kostet der Notar?\" hat also keine pauschale Antwort. Nennen Sie dem Notar vorab Vollmachtstyp und Gesch\u00e4ftswert und erfragen Sie die ungef\u00e4hre Geb\u00fchr.\n\n## Posten 3: Apostille-Geb\u00fchr\n\nDie Notarurkunde muss mit einer Apostille versehen werden, damit sie in der T\u00fcrkei gilt. Zust\u00e4ndig ist das **Oberlandesgericht**, bei dem der beurkundende Notar gef\u00fchrt wird; die Geb\u00fchr ist in der Regel \u00fcberschaubar. Die genaue H\u00f6he variiert je nach Bundesland. Ggf. entstehen zus\u00e4tzlich Zeit- oder Versandkosten f\u00fcr den Weg zum Gericht.\n\n## Posten 4: Beglaubigte t\u00fcrkische \u00dcbersetzung\n\nDas apostillierte Dokument muss in der T\u00fcrkei von einem vereidigten \u00dcbersetzer ins T\u00fcrkische \u00fcbersetzt und beglaubigt werden. Die \u00dcbersetzungskosten richten sich nach Seitenzahl und \u00dcbersetzer. Lange, mit Spezialbefugnissen versehene Vollmachten kosten in der \u00dcbersetzung entsprechend mehr.\n\n## Gesamtkosten im Vergleich (2026 \u2013 ca.)\n\n| Posten | Konsulatsweg | Deutscher Notar |\n|---|---|---|\n| Beurkundung (Geb\u00fchr) | Konsulatstarif (ein Posten) | Notargeb\u00fchr (nach Gesch\u00e4ftswert) |\n| Apostille | Entf\u00e4llt | OLG-Geb\u00fchr |\n| T\u00fcrkische \u00dcbersetzung | Entf\u00e4llt | Vereidigte \u00dcbersetzung (pro Seite) |\n| Passfotos (bei bestimmten Typen) | 2 St\u00fcck | 2 St\u00fcck (falls n\u00f6tig) |\n| **Gesamttendenz** | **Niedriger, vorhersehbar** | **H\u00f6her (drei Posten addieren sich)** |\n| Termin-/Bearbeitungsdauer | 2\u20134 Wochen m\u00f6glich | Meist 1\u20132 Wochen |\n\n> \u26a0\ufe0f **Wichtig:** Erstellen Sie kein endg\u00fcltiges Budget, ohne die Betr\u00e4ge mit den offiziellen Tarifen abzugleichen. Konsulatsgeb\u00fchren und GNotKG-S\u00e4tze k\u00f6nnen sich unterj\u00e4hrig \u00e4ndern.\n\n## Versteckte Kosten: die zur\u00fcckgewiesene Vollmacht\n\nDer teuerste Fall steht in keiner Tabelle: eine **fehlerhaft formulierte Vollmacht, die in der T\u00fcrkei zur\u00fcckgewiesen wird.** Ein Dokument mit unzureichenden Befugnissen oder ohne Apostille kommt vom Grundbuchamt, Gericht oder der Bank zur\u00fcck. Dann zahlen Sie den gesamten Vorgang \u2013 Geb\u00fchr, Apostille, \u00dcbersetzung, Zeit \u2013 **ein zweites Mal.** Im schlimmsten Fall verstreicht ein Gerichts- oder Grundbuchtermin in der T\u00fcrkei.\n\nDie eigentliche Kostenfrage lautet daher nicht \u201eWelcher Weg ist am g\u00fcnstigsten?\", sondern \u201eWas kostet es, es einmal richtig zu machen?\"\n\n## Kosten im Griff behalten \u2013 mit der Do\u011fru Kanzlei\n\n[Die Do\u011fru Kanzlei](https://www.hasandogru.de/de/leistungen) ist bei der Anwaltskammer Ankara (Sicil-Nr. 47068) und der Rechtsanwaltskammer Karlsruhe (\u00a7 207 BRAO) zugelassen. Wir sagen Ihnen f\u00fcr Ihren konkreten Fall, welcher Weg \u2013 Konsulat oder deutscher Notar \u2013 nicht nur g\u00fcnstiger, sondern auch sicherer ist, formulieren den Vollmachtstext korrekt und vertreten Sie direkt in der T\u00fcrkei. So entf\u00e4llt das teure Risiko der Zur\u00fcckweisung von vornherein.\n\n**M\u00f6chten Sie eine auf Ihren Fall bezogene Kostenabsch\u00e4tzung?** Nennen Sie uns kurz die Art des Vorgangs \u2013 wir bestimmen gemeinsam den passenden und wirtschaftlichsten Weg.\n\n[Done-for-you Vek\u00e2letname per WhatsApp anfragen \u2192](https://wa.me/4917661221210?service=Vekaletname&utm_source=blog&utm_medium=cta&utm_campaign=vollmacht_kosten)\n\n[Kostenlose Ersteinsch\u00e4tzung bei der Do\u011fru Kanzlei anfragen \u2192](https://calendly.com/hasand9366/30min)\n\n## Weitere Artikel\nDiesen Artikel haben wir auch auf T\u00fcrkisch ver\u00f6ffentlicht:\n[Almanya'da Vekaletname \u00dccreti 2026 \u2192](/tr/blog/almanyada-vekaletname-ucreti-2026)\n\nUnd auf Englisch:\n[Turkish Power of Attorney Cost in Germany \u2192](/en/blog/turkish-power-of-attorney-cost-germany)\n\nZum Gesamt\u00fcberblick: [vollst\u00e4ndiger Vek\u00e2letname-Leitfaden](/de/blog/tuerkische-vekaletname-deutschland). Welcher Notar? [T\u00fcrkischer Notar in Deutschland?](/de/blog/tuerkischer-notar-deutschland)\n\n## H\u00e4ufig gestellte Fragen\n\n**Was kostet eine t\u00fcrkische Vollmacht aus Deutschland?**\nKeine einzelne Zahl. Der Konsulatsweg ist meist am g\u00fcnstigsten (eine Geb\u00fchr, keine Apostille/\u00dcbersetzung). Beim Notar addieren sich Notargeb\u00fchr + Apostille + \u00dcbersetzung. Aktuelle Tarife pr\u00fcfen.\n\n**Wie hoch ist die Konsulatsgeb\u00fchr?**\nNach dem j\u00e4hrlich aktualisierten Konsulatstarif und je nach Vollmachtstyp. Genaue H\u00f6he beim zust\u00e4ndigen Konsulat erfragen.\n\n**Wonach richten sich die Notarkosten?**\nNach dem Gesch\u00e4ftswert gem\u00e4\u00df GNotKG. Grundst\u00fccksvollmachten sind teurer.\n\n**Was kostet die Apostille?**\nEine \u00fcberschaubare Gerichtsgeb\u00fchr, je nach Bundesland unterschiedlich. Vorab die Geb\u00fchrenordnung des OLG pr\u00fcfen.\n\n**F\u00e4llt eine \u00dcbersetzung an?**\nNur beim Notarweg. Der Konsulatsweg ben\u00f6tigt keine \u00dcbersetzung.\n\n**Welcher Weg ist am g\u00fcnstigsten?**\nMeist das Konsulat. Bei Dringlichkeit kann der Notarweg trotz Mehrkosten sinnvoll sein.\n\n**Was passiert bei Zur\u00fcckweisung?**\nSie zahlen alle Kosten ein zweites Mal, und eine Frist kann verstreichen. Ein korrekter Text verhindert das.\n\n> **Rechtlicher Hinweis:** Dieser Artikel dient der allgemeinen Information und stellt keine Rechtsberatung dar. Die Betr\u00e4ge sind N\u00e4herungswerte und mit den aktuellen offiziellen Tarifen abzugleichen. Die Kanzlei ber\u00e4t gem\u00e4\u00df \u00a7 207 BRAO ausschlie\u00dflich im t\u00fcrkischen Recht.",
+  contentTR: "> **Yasal Uyar\u0131:** Bu makale yaln\u0131zca T\u00fcrk hukukuna ili\u015fkin genel bilgi ama\u00e7l\u0131d\u0131r. Do\u011fru Kanzlei, \u00a7 207 BRAO kapsam\u0131nda yaln\u0131zca T\u00fcrk hukuku konular\u0131nda dan\u0131\u015fmanl\u0131k vermektedir.\n\nAlmanya'da T\u00fcrkiye i\u00e7in vekaletname \u00e7\u0131karacaks\u0131n\u0131z ve akl\u0131n\u0131zdaki ilk soru \u00e7ok basit: \"Bu bana ka\u00e7a mal olur?\" \u0130nternette net bir rakam bulmak zor, \u00e7\u00fcnk\u00fc vekaletname \u00fccreti tek bir kalemden olu\u015fmaz. Se\u00e7ti\u011finiz yola g\u00f6re (konsolosluk mu, Alman noteri mi), vekaletnamenin t\u00fcr\u00fcne g\u00f6re ve ek i\u015flemlere g\u00f6re toplam tutar de\u011fi\u015fir.\n\nBu yaz\u0131da iki yolun maliyetini **kalem kalem** \u00e7\u0131kar\u0131yoruz: konsolosluk harc\u0131, Alman noter \u00fccreti, apostil harc\u0131 ve T\u00fcrk\u00e7e yeminli terc\u00fcme. Amac\u0131m\u0131z, i\u015fleme ba\u015flamadan \u00f6nce ger\u00e7ek maliyeti g\u00f6rmenizi ve s\u00fcrpriz masraflardan ka\u00e7\u0131nman\u0131z\u0131 sa\u011flamak.\n\n> \u26a0\ufe0f **\u00d6nemli:** A\u015fa\u011f\u0131daki tutarlar yakla\u015f\u0131k aral\u0131klard\u0131r ve her y\u0131l de\u011fi\u015fir. Konsolosluk tarifesi ve Alman noter/apostil har\u00e7lar\u0131 resmi olarak g\u00fcncellenir. \u0130\u015flem yapmadan \u00f6nce ilgili ba\u015fkonsoloslu\u011fun ve mahkemenin g\u00fcncel tarifesini mutlaka teyit edin.\n\n## Vekaletname \u00fccreti neden tek bir rakam de\u011fil?\n\nT\u00fcrkiye'de notere gidip vekaletname \u00e7\u0131karmak tek bir \u00f6demedir. Almanya'da ise durum farkl\u0131: hangi yolu se\u00e7ti\u011finize g\u00f6re maliyet yap\u0131s\u0131 tamamen de\u011fi\u015fir.\n\n**Konsolosluk yolunda** tek bir kalem vard\u0131r: konsolosluk harc\u0131. Belge do\u011frudan T\u00fcrk noterlik hukukuna g\u00f6re d\u00fczenlendi\u011fi i\u00e7in apostil ve terc\u00fcme gerekmez. Bu y\u00fczden toplam maliyet genellikle d\u00fc\u015f\u00fckt\u00fcr ve \u00f6ng\u00f6r\u00fclebilirdir.\n\n**Alman noteri yolunda** ise en az \u00fc\u00e7 kalem toplan\u0131r: (1) Alman noter \u00fccreti, (2) apostil harc\u0131, (3) T\u00fcrk\u00e7e yeminli terc\u00fcme \u00fccreti. Bu \u00fc\u00e7\u00fc bir araya geldi\u011finde toplam, konsolosluk yolundan belirgin \u015fekilde y\u00fcksek olabilir.\n\n## Kalem 1: Konsolosluk vekaletname harc\u0131\n\nKonsolosluklarda vekaletname \u00fccreti, her y\u0131l g\u00fcncellenen konsolosluk tarifesine g\u00f6re belirlenir. \u00dccret, vekaletnamenin t\u00fcr\u00fcne (genel vekalet, tapu vekaleti, avukatl\u0131k vekaleti vb.) g\u00f6re de\u011fi\u015febilir. Genel kural: konsolosluk yolu, ek i\u015flem gerektirmedi\u011fi i\u00e7in toplamda en ekonomik se\u00e7enektir.\n\nDikkat edilecek noktalar: Randevu \u00fccretsizdir; as\u0131l \u00f6deme belge d\u00fczenlenirken yap\u0131l\u0131r. Baz\u0131 vekaletname t\u00fcrlerinde (tapu, bo\u015fanma, tan\u0131ma-tenfiz) 2 adet vesikal\u0131k foto\u011fraf zorunludur \u2014 bu da k\u00fc\u00e7\u00fck bir ek masraft\u0131r.\n\n## Kalem 2: Alman noter \u00fccreti\n\nAlman noter \u00fccretleri sabit de\u011fildir; **i\u015flemin de\u011ferine g\u00f6re yasal tarife (GNotKG) \u00fczerinden** hesaplan\u0131r. Basit bir genel vekaletname ile y\u00fcksek de\u011ferli bir gayrimenkul\u00fcn sat\u0131\u015f\u0131na ili\u015fkin tapu vekaletnamesinin \u00fccreti ayn\u0131 olmaz \u2014 ikincisi daha pahal\u0131d\u0131r \u00e7\u00fcnk\u00fc i\u015flem de\u011feri y\u00fcksektir.\n\nBu y\u00fczden \"Alman noteri ka\u00e7 para?\" sorusunun tek cevab\u0131 yoktur. Notere gitmeden \u00f6nce, vekaletnamenin t\u00fcr\u00fcn\u00fc ve i\u015flem de\u011ferini belirtip yakla\u015f\u0131k \u00fccreti sorman\u0131z en do\u011frusudur.\n\n## Kalem 3: Apostil harc\u0131\n\nAlman noterinin d\u00fczenledi\u011fi belgeye, T\u00fcrkiye'de ge\u00e7erli olmas\u0131 i\u00e7in apostil \u015ferhi eklenmelidir. Bu i\u015flem, belgeyi d\u00fczenleyen noterin ba\u011fl\u0131 oldu\u011fu **Oberlandesgericht (b\u00f6lge mahkemesi)** taraf\u0131ndan yap\u0131l\u0131r ve genellikle m\u00fctevaz\u0131 bir har\u00e7 kar\u015f\u0131l\u0131\u011f\u0131ndad\u0131r. Kesin tutar eyalete g\u00f6re de\u011fi\u015fir. Baz\u0131 durumlarda belgeyi mahkemeye g\u00f6t\u00fcr\u00fcp getirmek i\u00e7in ek zaman ya da kargo masraf\u0131 da do\u011fabilir.\n\n## Kalem 4: T\u00fcrk\u00e7e yeminli terc\u00fcme\n\nApostilli belge T\u00fcrkiye'de yeminli terc\u00fcmana \u00e7evrilip noter onay\u0131ndan ge\u00e7melidir. Terc\u00fcme \u00fccreti sayfa say\u0131s\u0131na ve terc\u00fcmana g\u00f6re de\u011fi\u015fir. Uzun ve \u00f6zel yetkili vekaletnamelerde terc\u00fcme masraf\u0131 daha y\u00fcksek olur.\n\n## Toplam maliyet kar\u015f\u0131la\u015ft\u0131rmas\u0131 (2026 \u2014 yakla\u015f\u0131k)\n\n| Kalem | Konsolosluk Yolu | Alman Noteri Yolu |\n|---|---|---|\n| Belge d\u00fczenleme (har\u00e7/\u00fccret) | Konsolosluk tarifesi (tek kalem) | Noter \u00fccreti (i\u015flem de\u011ferine g\u00f6re) |\n| Apostil | Gerekmez | Oberlandesgericht harc\u0131 |\n| T\u00fcrk\u00e7e terc\u00fcme | Gerekmez | Yeminli terc\u00fcme \u00fccreti (sayfa ba\u015f\u0131) |\n| Foto\u011fraf (baz\u0131 t\u00fcrlerde) | 2 vesikal\u0131k | 2 vesikal\u0131k (gerekirse) |\n| **Toplam e\u011filim** | **Daha d\u00fc\u015f\u00fck ve \u00f6ng\u00f6r\u00fclebilir** | **Daha y\u00fcksek (3 kalem toplan\u0131r)** |\n| Randevu/i\u015flem s\u00fcresi | 2\u20134 hafta olabilir | Genelde 1\u20132 hafta |\n\n> \u26a0\ufe0f **\u00d6nemli:** Tablodaki tutarlar\u0131 resmi tarifelerle teyit etmeden nihai b\u00fct\u00e7e yapmay\u0131n. Konsolosluk har\u00e7lar\u0131 ve GNotKG \u00fccretleri y\u0131l i\u00e7inde de\u011fi\u015febilir.\n\n## Gizli maliyet: reddedilen vekaletname\n\nEn pahal\u0131 senaryo tabloda g\u00f6r\u00fcnmez: **yanl\u0131\u015f haz\u0131rlanm\u0131\u015f bir vekaletnamenin T\u00fcrkiye'de reddedilmesi.** Eksik yetki i\u00e7eren ya da apostili unutulmu\u015f bir belge tapu m\u00fcd\u00fcrl\u00fc\u011f\u00fcnden, mahkemeden veya bankadan geri d\u00f6ner. O zaman t\u00fcm s\u00fcreci \u2014 har\u00e7, apostil, terc\u00fcme, zaman \u2014 **ikinci kez** \u00f6dersiniz. Baz\u0131 durumlarda T\u00fcrkiye'deki bir duru\u015fma veya tapu randevusu da ka\u00e7ar.\n\nBu y\u00fczden ger\u00e7ek maliyet sorusu \"En ucuz yol hangisi?\" de\u011fil, \"Bir kere de do\u011fru yapman\u0131n maliyeti nedir?\" olmal\u0131d\u0131r.\n\n## Do\u011fru Kanzlei ile maliyeti kontrol alt\u0131na almak\n\n[Do\u011fru Kanzlei](https://www.hasandogru.de/tr/hizmetler) olarak hem Ankara Barosu (Sicil No: 47068) hem de Karlsruhe Barosu (\u00a7 207 BRAO) kayd\u0131m\u0131z var. Size \u00f6zel durumunuzda hangi yolun (konsolosluk mu Alman noteri mi) hem daha ucuz hem daha g\u00fcvenli oldu\u011funu s\u00f6yleriz, vekaletname metnini do\u011fru haz\u0131rlar\u0131z ve T\u00fcrkiye'deki i\u015flemi bizzat takip ederiz. B\u00f6ylece \"reddedilme\" maliyetini ba\u015ftan ortadan kald\u0131r\u0131r\u0131z.\n\n**Durumunuza \u00f6zel maliyet de\u011ferlendirmesi ister misiniz?** \u0130\u015flemin t\u00fcr\u00fcn\u00fc k\u0131saca iletin; size uygun ve en ekonomik yolu birlikte belirleyelim.\n\n[WhatsApp ile done-for-you vekaletname talep edin \u2192](https://wa.me/4917661221210?service=Vekaletname&utm_source=blog&utm_medium=cta&utm_campaign=vekaletname_ucreti)\n\n[Do\u011fru Kanzlei ile \u00dccretsiz \u00d6n G\u00f6r\u00fc\u015fme Talep Edin \u2192](https://calendly.com/hasand9366/30min)\n\n## \u0130lginizi \u00e7ekebilecek di\u011fer yaz\u0131lar\nBu makaleyi Almanca okuyanlar i\u00e7in:\n[T\u00fcrkische Vollmacht: Kosten 2026 \u2192](/de/blog/tuerkische-vollmacht-kosten-2026)\n\n\u0130ngilizce okuyanlar i\u00e7in:\n[Turkish Power of Attorney Cost in Germany \u2192](/en/blog/turkish-power-of-attorney-cost-germany)\n\nTam k\u0131lavuz: [Almanya'da vekaletname \u00e7\u0131karma rehberi](/tr/blog/almanya-da-vekaletname-cikarma-rehberi). Hangi noter? [Almanya'da T\u00fcrk noteri var m\u0131?](/tr/blog/almanyada-turk-noteri)\n\n## S\u0131k\u00e7a Sorulan Sorular\n\n**Almanya'da vekaletname \u00fccreti ne kadar?**\nTek bir rakam yoktur. Konsolosluk yolu genelde en ekonomiktir (tek har\u00e7, apostil/terc\u00fcme yok). Alman noteri yolunda noter \u00fccreti + apostil + terc\u00fcme toplan\u0131r ve daha y\u00fcksek olur. G\u00fcncel tarifeleri teyit edin.\n\n**Konsolosluktan vekalet verme \u00fccreti 2026'da ne kadar?**\nHer y\u0131l g\u00fcncellenen konsolosluk tarifesine ve vekaletname t\u00fcr\u00fcne g\u00f6re de\u011fi\u015fir. Kesin tutar\u0131 ilgili ba\u015fkonsoloslu\u011fun g\u00fcncel tarifesinden \u00f6\u011frenin.\n\n**Alman noteri \u00fccreti neye g\u00f6re belirlenir?**\n\u0130\u015flemin de\u011ferine g\u00f6re GNotKG yasal tarifesiyle. Tapu vekaleti gibi y\u00fcksek de\u011ferli i\u015flemler daha pahal\u0131d\u0131r.\n\n**Apostil fiyat\u0131 ne kadar?**\nGenellikle m\u00fctevaz\u0131 bir mahkeme harc\u0131d\u0131r; eyalete g\u00f6re de\u011fi\u015fir. Ba\u015fvurudan \u00f6nce ilgili Oberlandesgericht'in har\u00e7 cetveline bak\u0131n.\n\n**Terc\u00fcme masraf\u0131 var m\u0131?**\nSadece Alman noteri yolunda. Konsolosluk yolunda terc\u00fcme gerekmez.\n\n**En ucuz yol hangisi?**\n\u00c7o\u011fu durumda konsolosluk. Ama aciliyet varsa Alman noteri yolunun ek maliyeti zaman kazanc\u0131yla dengelenebilir.\n\n**Reddedilirse ne olur?**\nT\u00fcm masraflar\u0131 ikinci kez \u00f6dersiniz ve s\u00fcre ka\u00e7abilir. Do\u011fru haz\u0131rlanan metin bu riski ortadan kald\u0131r\u0131r.\n\n> **Yasal Uyar\u0131:** Bu makale genel bilgi ama\u00e7l\u0131d\u0131r ve hukuki dan\u0131\u015fmanl\u0131k niteli\u011fi ta\u015f\u0131maz. Tutarlar yakla\u015f\u0131kt\u0131r ve g\u00fcncel resmi tarifelerle teyit edilmelidir. B\u00fcro, \u00a7 207 BRAO kapsam\u0131nda yaln\u0131zca T\u00fcrk hukuku alan\u0131nda dan\u0131\u015fmanl\u0131k verir.",
+  contentEN: "English translation pending. Please provide the English version of this article.",
+
+  jsonLdDE: {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": "Türkische Vollmacht: Kosten 2026 – Konsulat oder deutscher Notar, was ist günstiger?",
+  "description": "Was kostet eine türkische Vollmacht aus Deutschland? Konsulatsgebühr, Notarkosten, Apostille und Übersetzung – die Gesamtkosten 2026 im Vergleich.",
+  "image": "https://www.hasandogru.de/assets/blog_vekaletname-B29lN8at.avif",
+  "author": {
+    "@type": "Person",
+    "name": "Av. Hasan Doğru",
+    "url": "https://www.hasandogru.de/de/ueber-uns"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "Doğru Kanzlei",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://www.hasandogru.de/assets/logo-eRLlm_XN.avif"
+    }
+  },
+  "datePublished": "2026-07-06",
+  "dateModified": "2026-07-06",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://www.hasandogru.de/de/blog/tuerkische-vollmacht-kosten-2026"
+  },
+  "inLanguage": "de"
+}, {
+      "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Was kostet eine türkische Vollmacht aus Deutschland?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Die Gesamtkosten hängen vom gewählten Weg ab. Der Konsulatsweg ist in der Regel am günstigsten, da weder Apostille noch Übersetzung anfallen. Beim deutschen Notar addieren sich Notargebühr, Apostille-Gebühr und beglaubigte türkische Übersetzung, sodass der Gesamtbetrag höher liegt. Prüfen Sie die aktuellen Gebühren vor dem Termin."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Wie hoch ist die Konsulatsgebühr für eine Vollmacht?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Die Gebühr richtet sich nach dem jährlich aktualisierten Gebührentarif des Konsulats und kann je nach Vollmachtstyp variieren. Sie ist meist niedriger als der Weg über den deutschen Notar und enthält keine zusätzlichen Apostille- oder Übersetzungskosten."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Wonach richten sich die Notarkosten in Deutschland?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Die Notargebühr wird nach dem gesetzlichen Kostentarif (GNotKG) auf Basis des Geschäftswerts berechnet. Eine einfache Vollmacht kostet weniger als eine Grundstücksvollmacht mit hohem Geschäftswert. Hinzu kommen Apostille und Übersetzung."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Was kostet die Apostille 2026?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Die Apostille für Notarurkunden wird beim zuständigen Oberlandesgericht erteilt; die Gebühr ist in der Regel überschaubar. Die genaue Höhe variiert je nach Bundesland und Urkundenart. Prüfen Sie die aktuelle Gebührenordnung vor der Beantragung."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Ist die Übersetzung in den Kosten enthalten?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Beim Konsulatsweg fällt keine Übersetzung an. Beim deutschen Notar ist eine beglaubigte türkische Übersetzung Pflicht und ein eigener Kostenposten, der sich nach Seitenzahl richtet."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Welcher Weg ist am günstigsten?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "In den meisten Fällen der Konsulatsweg, weil Apostille und Übersetzung entfallen. Ist die Angelegenheit dringend oder das Konsulat schwer erreichbar, können die Mehrkosten des Notarwegs durch den Zeitgewinn gerechtfertigt sein."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Kostet es extra, wenn ein Anwalt den Vollmachtstext erstellt?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Die anwaltliche Erstellung des Texts und die Vertretung in der Türkei sind eine Dienstleistung mit eigenem Honorar. Eine fehlerhafte, in der Türkei zurückgewiesene Vollmacht bedeutet jedoch, den gesamten Vorgang ein zweites Mal zu bezahlen. Der korrekt formulierte Text senkt die Gesamtkosten oft."
+      }
+    }
+  ]
+}
+    ]
+  },
+
+  jsonLdTR: {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+  "@context": "https://schema.org",
+  "@type": "Article",
+  "headline": "Almanya'da Vekaletname Ücreti 2026: Konsolosluk mu, Alman Noteri mi Daha Ucuz?",
+  "description": "Almanya'da vekaletname ücreti ne kadar? Konsolosluk, Alman noteri, apostil ve tercüme masraflarını 2026 için kalem kalem karşılaştırdık.",
+  "image": "https://www.hasandogru.de/assets/blog_vekaletname-B29lN8at.avif",
+  "author": {
+    "@type": "Person",
+    "name": "Av. Hasan Doğru",
+    "url": "https://www.hasandogru.de/tr/hakkimizda"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "Doğru Kanzlei",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://www.hasandogru.de/assets/logo-eRLlm_XN.avif"
+    }
+  },
+  "datePublished": "2026-07-06",
+  "dateModified": "2026-07-06",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://www.hasandogru.de/tr/blog/almanyada-vekaletname-ucreti-2026"
+  },
+  "inLanguage": "tr"
+}, {
+      "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Almanya'da vekaletname ücreti ne kadar?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Toplam maliyet seçtiğiniz yola göre değişir. Konsolosluk yolu genellikle en ekonomik seçenektir çünkü apostil ve tercüme gerekmez. Alman noteri yolunda noter ücreti, apostil harcı ve Türkçe yeminli tercüme masrafı toplanır ve daha yüksek bir tutara ulaşır. Güncel konsolosluk tarifesini ve noter ücretlerini işlem öncesinde teyit etmenizi öneririz."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Konsolosluktan vekalet verme ücreti 2026'da ne kadar?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Konsolosluk vekaletname ücreti her yıl güncellenen konsolosluk tarifesine göre belirlenir ve vekaletnamenin türüne göre değişebilir. Genellikle Alman noteri yolundan daha düşüktür ve ek apostil/tercüme masrafı içermez. Kesin tutar için ilgili başkonsolosluğun güncel tarifesine bakın."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Alman noteri vekaletname ücreti neye göre belirlenir?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Alman noter ücretleri, işlemin değerine göre yasal tarife (GNotKG) üzerinden hesaplanır. Basit bir vekaletname ile yüksek değerli bir tapu vekaletnamesinin ücreti farklıdır. Buna apostil harcı ve Türkçe tercüme masrafı da eklenir."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Apostil fiyatı 2026'da ne kadar?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Almanya'da noter belgesi için apostil, ilgili Oberlandesgericht tarafından verilir ve harcı genellikle mütevazı bir tutardır. Kesin harç eyalete ve belge türüne göre değişir; başvurudan önce ilgili mahkemenin güncel harç cetvelini kontrol edin."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Vekaletname masrafına tercüme dahil mi?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Konsolosluk vekaletnamesinde tercüme gerekmez, dolayısıyla tercüme masrafı yoktur. Alman noteri yolunda ise apostilli belgenin Türkçe yeminli tercümesi zorunludur ve ayrı bir masraf kalemidir."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "En ucuz vekaletname yolu hangisi?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Çoğu durumda konsolosluk yolu en ucuzudur çünkü apostil ve tercüme masrafı yoktur. Ancak konsolosluk randevusu uzaksa ve işiniz acilse, Alman noteri yolunun ek maliyeti zaman kazancıyla dengelenebilir."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Avukatın vekaletname hazırlaması ekstra masraf mı?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Avukat, vekaletname metnini doğru hazırlar ve Türkiye'deki işlemi takip eder; bu bir hizmet bedelidir. Ancak yanlış hazırlanmış bir vekaletnamenin reddedilmesi, tüm süreci ikinci kez ödemek anlamına gelir. Doğru hazırlanan metin çoğu zaman toplam maliyeti düşürür."
+      }
+    }
+  ]
+}
+    ]
+  },
+  jsonLdEN: {}
+};
+
+
+
+const vekaletnameGondermePost: BlogPost = {
+  slug: 'tuerkische-vollmacht-ohne-konsulat',
+  slugDE: 'tuerkische-vollmacht-ohne-konsulat',
+  slugTR: 'almanyadan-turkiyeye-vekaletname-gonderme',
+  slugEN: 'tuerkische-vollmacht-ohne-konsulat-en',
+  titleDE: "T\u00fcrkische Vollmacht in die T\u00fcrkei senden \u2013 ohne Reise (2026)",
+  titleTR: "Almanya'dan T\u00fcrkiye'ye Vekaletname Nas\u0131l G\u00f6nderilir? (2026)",
+  titleEN: "English Translation Pending",
+  excerptDE: "Wie senden Sie eine t\u00fcrkische Vollmacht aus Deutschland in die T\u00fcrkei \u2013 ohne selbst zu reisen? Ablauf, Versandweg, h\u00e4ufige Fehler und der Done-for-you-Service.",
+  excerptTR: "Konsoloslu\u011fa gitmeden Almanya'dan T\u00fcrkiye'ye vekaletname g\u00f6ndermek m\u00fcmk\u00fcn m\u00fc? Uzaktan vekaletname s\u00fcrecini, g\u00f6nderim yollar\u0131n\u0131 ve done-for-you hizmetini anlat\u0131yoruz.",
+  excerptEN: "English translation pending.",
+  categoryDE: "Vollmacht",
+  metaTitleTR: "Almanya'dan Türkiye'ye Vekaletname Nasıl Gönderilir? (2026)",
+  metaDescriptionTR: "Konsolosluğa gitmeden Almanya'dan Türkiye'ye vekaletname göndermek mümkün mü? Uzaktan vekaletname sürecini, gönderim yollarını ve done-for-you hizmetini anlatıyoruz.",
+  image: vekaletnameImg,
+  dateDE: "06. Juli 2026",
+  dateTR: "06 Temmuz 2026",
+  dateEN: "July 06, 2026",
+  readTimeEN: "8 min read",
+
+  readTimeDE: "8 Min. Lesezeit",
+  readTimeTR: "8 dk okuma",
+  publishedAt: "2026-07-06",
+  keywordsDE: "",
+  keywordsTR: "",
+  faqDE: [
+    {
+      question: "Kann ich eine Vollmacht in die Türkei senden, ohne selbst zu reisen?",
+      answer: "Ja, absolut. Der übliche Weg aus Deutschland führt über das zuständige türkische Konsulat oder über einen deutschen Notar mit anschließender Apostille und Übersetzung. Eine Reise in die Türkei ist dafür nicht notwendig."
+    },
+    {
+      question: "Sende ich die Vollmacht per Post oder elektronisch?",
+      answer: "Beides ist möglich, aber elektronisch ist sicherer und schneller. Das türkische Konsulat kann die Vollmacht elektronisch an einen Notar in der Türkei übermitteln, wo Ihr Bevollmächtigter sie abholt. Für deutsche Notarurkunden bieten wir einen Done-for-you-Service mit Kurierversand an."
+    },
+    {
+      question: "Wie lange dauert es, bis die Vollmacht in der Türkei ist?",
+      answer: "Über das Konsulatssystem meist sofort nach Beurkundung. Bei postalischem Versand der Originalurkunde (z.B. vom deutschen Notar) dauert es per Express-Kurier etwa 1 bis 3 Werktage."
+    },
+    {
+      question: "Was ist der Done-for-you-Service der Doğru Kanzlei?",
+      answer: "Wir übernehmen den kompletten Prozess für Sie: Wir erstellen den Vollmachtstext nach türkischem Recht, leiten Sie zum Konsulat oder deutschen Notar an, prüfen das fertige Dokument und kümmern uns ggf. um Apostille, Übersetzung und den Express-Versand in die Türkei. Sie müssen sich um nichts weiter kümmern."
+    },
+    {
+      question: "Welche Dokumente muss ich zum Termin mitbringen?",
+      answer: "In der Regel Ihren Reisepass oder Personalausweis, ggf. Ihren türkischen Pass/Nüfus-Auszug, sowie den genauen Vollmachtstext, den wir für Sie vorbereiten. Für spezielle Vollmachten (z.B. Grundstück oder Scheidung) werden 2 Passfotos benötigt."
+    },
+    {
+      question: "Was passiert, wenn die Vollmacht in der Türkei falsch ankommt?",
+      answer: "Dann wird sie vom Grundbuchamt, Gericht oder der Bank zurückgewiesen. Der gesamte Prozess (und die Kosten) beginnt von vorne. Deshalb ist die korrekte Vorbereitung des Vollmachtstextes durch einen im türkischen Recht zugelassenen Anwalt so wichtig."
+    }
+  ],
+  faqTR: [
+    {
+      question: "Türkiye'ye gitmeden vekaletname gönderebilir miyim?",
+      answer: "Evet, kesinlikle. Almanya'dan en yaygın yol, bağlı bulunduğunuz Türk konsolosluğu aracılığıyla veya Alman noteri üzerinden apostil ve tercüme ile vekaletname çıkarmaktır. Bunun için Türkiye'ye seyahat etmenize gerek yoktur."
+    },
+    {
+      question: "Vekaletnameyi posta ile mi yoksa elektronik ortamda mı göndereceğim?",
+      answer: "Her ikisi de mümkündür, ancak elektronik ortam daha güvenli ve hızlıdır. Türk konsolosluğu vekaletnameyi Türkiye'deki bir notere elektronik olarak iletebilir, vekiliniz de oradan teslim alır. Alman noter belgeleri için kargo ile gönderim sağlayan done-for-you hizmetimiz bulunmaktadır."
+    },
+    {
+      question: "Vekaletnamenin Türkiye'ye ulaşması ne kadar sürer?",
+      answer: "Konsolosluk sistemi üzerinden genellikle işlem yapıldığı anda Türkiye'de hazır olur. Orijinal belgenin posta ile gönderilmesi durumunda (örn. Alman noterinden), ekspres kargo ile yaklaşık 1 ila 3 iş günü sürer."
+    },
+    {
+      question: "Doğru Kanzlei'nin done-for-you hizmeti nedir?",
+      answer: "Tüm süreci sizin adınıza yönetiyoruz: Türk hukukuna uygun vekaletname metnini hazırlıyoruz, sizi konsolosluğa veya Alman noterine yönlendiriyoruz, hazırlanan belgeyi kontrol ediyoruz ve gerekirse apostil, tercüme ve Türkiye'ye ekspres gönderim işlemlerini hallediyoruz. Sizin başka bir şeyle ilgilenmenize gerek kalmıyor."
+    },
+    {
+      question: "Randevuya hangi belgeleri götürmeliyim?",
+      answer: "Genellikle pasaportunuz veya kimliğiniz, varsa Türk pasaportunuz/nüfus cüzdanınız ve sizin için hazırladığımız kesin vekaletname metni gereklidir. Özel vekaletnameler (örneğin tapu veya boşanma) için 2 adet vesikalık fotoğraf istenir."
+    },
+    {
+      question: "Vekaletname Türkiye'ye yanlış veya eksik ulaşırsa ne olur?",
+      answer: "Bu durumda tapu müdürlüğü, mahkeme veya banka tarafından reddedilir. Tüm süreç (ve masraflar) baştan başlar. Bu yüzden vekaletname metninin Türk hukukunda yetkili bir avukat tarafından doğru şekilde hazırlanması çok önemlidir."
+    }
+  ],
+  faqEN: [],
+  jsonLdDE: {},
+  jsonLdTR: {},
+  jsonLdEN: {}
+};
+
+
 export const blogPosts: BlogPost[] = [
+  vekaletnameKostenPost,
+  vekaletnameGondermePost,
+  tuerkischerNotarPost,
   murisMuvazaasiPost,
   unterhaltTurkishLawPost,
   internationalDivorcePost,
