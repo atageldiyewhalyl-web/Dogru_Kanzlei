@@ -35,12 +35,13 @@ export function Contact() {
 
   return (
     <section
-      id="iletisim"
+      id={language === "de" ? "kontakt" : "iletisim"}
       className="contact-section"
       style={{
         background: "#F7F5F0",
       }}
     >
+      {language === "de" && <span id="iletisim" style={{ position: "absolute" }} aria-hidden="true" />}
       <div style={{ maxWidth: 1100, margin: "0 auto" }}>
         {/* Section header */}
         <div style={{ textAlign: "center", marginBottom: 80 }}>

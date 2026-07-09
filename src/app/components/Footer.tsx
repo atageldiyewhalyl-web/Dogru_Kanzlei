@@ -21,11 +21,15 @@ export function Footer() {
   const practiceAreas = language === 'de'
     ? [
         { label: "Familienrecht", href: paths.service("familienrecht") },
+        { label: "Tanıma & Tenfiz", href: paths.service("tanima-ve-tenfiz") },
+        { label: "Sorgerecht", href: paths.service("sorgerecht") },
         { label: "Erbrecht", href: paths.service("erbrecht") },
         { label: "Strafrecht", href: paths.service("strafrecht") },
       ]
     : [
         { label: "Aile Hukuku", href: paths.service("familienrecht") },
+        { label: "Tanıma & Tenfiz", href: paths.service("tanima-ve-tenfiz") },
+        { label: "Velayet", href: paths.service("sorgerecht") },
         { label: "Miras Hukuku", href: paths.service("erbrecht") },
         { label: "Ceza Hukuku", href: paths.service("strafrecht") },
       ];
@@ -298,7 +302,7 @@ export function Footer() {
                 color: "rgba(255,255,255,0.2)",
               }}
             >
-              © {year} DOGRU Kanzlei · {t("hero_title_pre")} Hasan Dogru. {t("footer_rights")}
+              © {year} DOGRU Kanzlei · {t("hero_title_pre")} Hasan Doğru. {t("footer_rights")}
             </span>
             <span
               style={{

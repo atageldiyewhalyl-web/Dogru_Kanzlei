@@ -158,9 +158,9 @@ export const LanguageProvider: React.FC<{ language: Language; children: React.Re
         : language === 'tr'
           ? `${prefix}/hakkimizda`
           : `${prefix}/about`,
-      whyUs: `${prefix}/#neden-biz`,
+      whyUs: language === 'de' ? `${prefix}/#warum-wir` : `${prefix}/#neden-biz`,
       blogSection: `${prefix}/#blog`,
-      contact: `${prefix}/#iletisim`,
+      contact: language === 'de' ? `${prefix}/#kontakt` : `${prefix}/#iletisim`,
     };
   }, [language]);
 

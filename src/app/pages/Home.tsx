@@ -69,7 +69,7 @@ const PERSON_SCHEMA = {
   "@context": "https://schema.org",
   "@type": "Person",
   "name": "Hasan Doğru",
-  "jobTitle": "Rechtsanwalt / Avukat",
+  "jobTitle": "Avukat / ausländischer Rechtsanwalt (§ 207 BRAO)",
   "worksFor": { "@type": "LegalService", "name": "Doğru Kanzlei" },
   "memberOf": [
     { "@type": "Organization", "name": "Ankara Barosu", "identifier": "47068" },

@@ -7,7 +7,7 @@ import carouselThree from "@/assets/carruosel 3.webp";
 import carouselFour from "@/assets/carrousel 4.webp";
 
 export function WhyUs() {
-  const { t } = useLanguage();
+  const { t, language } = useLanguage();
   const [active, setActive] = useState(0);
   const touchStart = useRef<{ x: number; y: number } | null>(null);
   const touchEnd = useRef<{ x: number; y: number } | null>(null);
@@ -78,7 +78,8 @@ export function WhyUs() {
   };
 
   return (
-    <section id="neden-biz" className="relative overflow-hidden bg-[#FAF9F6] px-5 py-10 text-[#20201D] md:px-6 md:py-20 lg:min-h-screen lg:flex lg:items-center">
+    <section id={language === "de" ? "warum-wir" : "neden-biz"} className="relative overflow-hidden bg-[#FAF9F6] px-5 py-10 text-[#20201D] md:px-6 md:py-20 lg:min-h-screen lg:flex lg:items-center">
+      {language === "de" && <span id="neden-biz" className="sr-only" aria-hidden="true" />}
       <style>{`
         @keyframes whyTextInLeft {
           from { opacity: 0; transform: translateX(-28px); }

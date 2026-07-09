@@ -8,7 +8,7 @@ const PERSON_SCHEMA = {
   "@context": "https://schema.org",
   "@type": "Person",
   "name": "Hasan Doğru",
-  "jobTitle": "Rechtsanwalt / Avukat",
+  "jobTitle": "Avukat / ausländischer Rechtsanwalt (§ 207 BRAO)",
   "description": "Dual-licensed Turkish law specialist. Member of the Ankara Bar Association (No. 47068) and registered with the Karlsruhe Bar Association under §207 BRAO. 15+ years experience in Turkish-German cross-border law.",
   "url": "https://www.hasandogru.de/de/ueber-uns",
   "image": "https://www.hasandogru.de/assets/hero-Bn0oq0cB.avif",
