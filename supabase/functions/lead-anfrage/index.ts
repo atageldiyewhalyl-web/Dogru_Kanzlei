@@ -3,6 +3,8 @@ import { createClient } from "https://esm.sh/@supabase/supabase-js@2.46.1";
 type LeadPayload = {
   firstName?: string;
   lastName?: string;
+  phone?: string;
+  email?: string;
   service?: string;
   source?: string;
   situation?: string;
@@ -42,6 +44,8 @@ function validatePayload(payload: LeadPayload) {
   const lead = {
     firstName: cleanText(payload.firstName, 100),
     lastName: cleanText(payload.lastName, 100),
+    phone: cleanText(payload.phone, 80),
+    email: cleanText(payload.email, 254).toLowerCase(),
     service: cleanText(payload.service, 120),
     source: cleanText(payload.source, 120),
     situation: cleanText(payload.situation, 3000),
@@ -50,8 +54,12 @@ function validatePayload(payload: LeadPayload) {
     notifyEmails: cleanText(payload.notifyEmails, 500),
   };
 
-  if (!lead.firstName || !lead.lastName || !lead.service || !lead.source || !lead.situation) {
+  if (!lead.firstName || !lead.lastName || !lead.phone || !lead.email || !lead.service || !lead.source || !lead.situation) {
     throw new Error("Missing required lead fields.");
+  }
+
+  if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(lead.email)) {
+    throw new Error("Invalid email address.");
   }
 
   return lead;
@@ -77,6 +85,8 @@ function renderTextEmail(lead: ReturnType<typeof validatePayload>) {
     "Yeni WhatsApp Anfrage",
     "",
     `Ad soyad: ${lead.firstName} ${lead.lastName}`,
+    `Telefon: ${lead.phone}`,
+    `E-posta: ${lead.email}`,
     `Hizmet: ${lead.service}`,
     `Hasan'ı nereden buldu: ${lead.source}`,
     `Dil: ${lead.language || "-"}`,
@@ -91,6 +101,8 @@ function renderTextEmail(lead: ReturnType<typeof validatePayload>) {
 function renderHtmlEmail(lead: ReturnType<typeof validatePayload>) {
   const rows = [
     ["Ad soyad", `${lead.firstName} ${lead.lastName}`],
+    ["Telefon", lead.phone],
+    ["E-posta", lead.email],
     ["Hizmet", lead.service],
     ["Hasan'ı nereden buldu", lead.source],
     ["Dil", lead.language || "-"],
@@ -147,6 +159,8 @@ Deno.serve(async (req) => {
       .insert({
         first_name: lead.firstName,
         last_name: lead.lastName,
+        phone: lead.phone,
+        email: lead.email,
         service: lead.service,
         source: lead.source,
         situation: lead.situation,

@@ -23,6 +23,8 @@ type LeadCaptureDetail = Partial<Pick<LeadFormState, "service" | "source" | "sit
 type LeadFormState = {
   firstName: string;
   lastName: string;
+  phone: string;
+  email: string;
   service: string;
   source: string;
   situation: string;
@@ -61,6 +63,9 @@ function buildWhatsAppMessage(form: LeadFormState, pageUrl: string) {
     "Merhaba Hasan Bey,",
     "",
     `Ben ${form.firstName} ${form.lastName}.`,
+    `Telefon: ${form.phone}`,
+    `E-posta: ${form.email}`,
+    "",
     `Şu konuda destek almak istiyorum: ${form.service}`,
     "",
     "Durumum kısaca:",
@@ -105,6 +110,8 @@ export function WhatsAppLeadCapture() {
   const [form, setForm] = useState<LeadFormState>({
     firstName: "",
     lastName: "",
+    phone: "",
+    email: "",
     service: "",
     source: "",
     situation: "",
@@ -118,6 +125,8 @@ export function WhatsAppLeadCapture() {
         description: "Ihre Angaben werden an Hasan Doğru weitergeleitet und anschließend als WhatsApp-Nachricht vorbereitet.",
         firstName: "Vorname",
         lastName: "Nachname",
+        phone: "Telefonnummer",
+        email: "E-Mail-Adresse",
         service: "Wobei brauchen Sie Hilfe?",
         source: "Wo haben Sie Hasan gefunden?",
         situation: "Ihre Situation kurz erklärt",
@@ -136,6 +145,8 @@ export function WhatsAppLeadCapture() {
         description: "Your details are sent to Hasan Doğru first, then we prepare your WhatsApp message.",
         firstName: "First name",
         lastName: "Last name",
+        phone: "Phone number",
+        email: "Email address",
         service: "What do you need help with?",
         source: "Where did you find Hasan?",
         situation: "Briefly explain your situation",
@@ -153,6 +164,8 @@ export function WhatsAppLeadCapture() {
       description: "Bilgileriniz önce Hasan Doğru'ya iletilir, ardından WhatsApp mesajınız hazır şekilde açılır.",
       firstName: "Ad",
       lastName: "Soyad",
+      phone: "Telefon",
+      email: "E-posta",
       service: "Hangi konuda destek istiyorsunuz?",
       source: "Hasan Bey'i nereden buldunuz?",
       situation: "Durumunuzu kısaca anlatın",
@@ -215,6 +228,8 @@ export function WhatsAppLeadCapture() {
     const normalizedForm = {
       firstName: form.firstName.trim(),
       lastName: form.lastName.trim(),
+      phone: form.phone.trim(),
+      email: form.email.trim(),
       service: form.service.trim(),
       source: form.source.trim(),
       situation: form.situation.trim(),
@@ -263,7 +278,7 @@ export function WhatsAppLeadCapture() {
     window.location.assign(whatsappUrl);
     setSubmitting(false);
     setOpen(false);
-    setForm({ firstName: "", lastName: "", service: "", source: "", situation: "" });
+    setForm({ firstName: "", lastName: "", phone: "", email: "", service: "", source: "", situation: "" });
   };
 
   return (
@@ -295,6 +310,8 @@ export function WhatsAppLeadCapture() {
                 <span className="mb-2 block text-[12px] font-bold uppercase tracking-[0.12em] text-[#1C3829]">{labels.firstName}</span>
                 <input
                   required
+                  name="firstName"
+                  autoComplete="given-name"
                   value={form.firstName}
                   onChange={(e) => updateField("firstName", e.target.value)}
                   className="w-full rounded-md border border-[#D8D0C2] bg-white px-4 py-3 text-[15px] outline-none transition focus:border-[#8B6E2A] focus:ring-2 focus:ring-[#8B6E2A]/20"
@@ -304,8 +321,39 @@ export function WhatsAppLeadCapture() {
                 <span className="mb-2 block text-[12px] font-bold uppercase tracking-[0.12em] text-[#1C3829]">{labels.lastName}</span>
                 <input
                   required
+                  name="lastName"
+                  autoComplete="family-name"
                   value={form.lastName}
                   onChange={(e) => updateField("lastName", e.target.value)}
+                  className="w-full rounded-md border border-[#D8D0C2] bg-white px-4 py-3 text-[15px] outline-none transition focus:border-[#8B6E2A] focus:ring-2 focus:ring-[#8B6E2A]/20"
+                />
+              </label>
+            </div>
+
+            <div className="grid gap-4 md:grid-cols-2">
+              <label className="block">
+                <span className="mb-2 block text-[12px] font-bold uppercase tracking-[0.12em] text-[#1C3829]">{labels.phone}</span>
+                <input
+                  required
+                  name="phone"
+                  type="tel"
+                  inputMode="tel"
+                  autoComplete="tel"
+                  value={form.phone}
+                  onChange={(e) => updateField("phone", e.target.value)}
+                  className="w-full rounded-md border border-[#D8D0C2] bg-white px-4 py-3 text-[15px] outline-none transition focus:border-[#8B6E2A] focus:ring-2 focus:ring-[#8B6E2A]/20"
+                />
+              </label>
+              <label className="block">
+                <span className="mb-2 block text-[12px] font-bold uppercase tracking-[0.12em] text-[#1C3829]">{labels.email}</span>
+                <input
+                  required
+                  name="email"
+                  type="email"
+                  inputMode="email"
+                  autoComplete="email"
+                  value={form.email}
+                  onChange={(e) => updateField("email", e.target.value)}
                   className="w-full rounded-md border border-[#D8D0C2] bg-white px-4 py-3 text-[15px] outline-none transition focus:border-[#8B6E2A] focus:ring-2 focus:ring-[#8B6E2A]/20"
                 />
               </label>
@@ -315,6 +363,7 @@ export function WhatsAppLeadCapture() {
               <span className="mb-2 block text-[12px] font-bold uppercase tracking-[0.12em] text-[#1C3829]">{labels.service}</span>
               <select
                 required
+                name="service"
                 value={form.service}
                 onChange={(e) => updateField("service", e.target.value)}
                 className="w-full rounded-md border border-[#D8D0C2] bg-white px-4 py-3 text-[15px] outline-none transition focus:border-[#8B6E2A] focus:ring-2 focus:ring-[#8B6E2A]/20"
@@ -330,6 +379,7 @@ export function WhatsAppLeadCapture() {
               <span className="mb-2 block text-[12px] font-bold uppercase tracking-[0.12em] text-[#1C3829]">{labels.source}</span>
               <select
                 required
+                name="source"
                 value={form.source}
                 onChange={(e) => updateField("source", e.target.value)}
                 className="w-full rounded-md border border-[#D8D0C2] bg-white px-4 py-3 text-[15px] outline-none transition focus:border-[#8B6E2A] focus:ring-2 focus:ring-[#8B6E2A]/20"
@@ -345,6 +395,7 @@ export function WhatsAppLeadCapture() {
               <span className="mb-2 block text-[12px] font-bold uppercase tracking-[0.12em] text-[#1C3829]">{labels.situation}</span>
               <textarea
                 required
+                name="situation"
                 rows={4}
                 value={form.situation}
                 onChange={(e) => updateField("situation", e.target.value)}
