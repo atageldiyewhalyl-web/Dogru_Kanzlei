@@ -109,7 +109,7 @@ Evet, bazı dosyalarda olabilir. Mağdur Türkiye'deyse, mesaj Türkiye'de okunm
 - Türkiye'deki eski eşe veya aile bireyine WhatsApp mesajı
 - Instagram, TikTok veya Facebook yorumunda tehdit iddiası
 - Akraba veya iş ortağıyla para/alacak tartışması
-- Boşanma, velayet veya miras kavgasında öfkeyle yazılmış mesaj
+- Boşanma, nafaka veya miras kavgasında öfkeyle yazılmış mesaj
 - Eski Türkiye dosyasından gelen yakalama veya ifade çağrısı
 
 ---
@@ -247,7 +247,7 @@ Typische Konstellationen:
 
 - WhatsApp-Nachricht an Ex-Partner, Verwandte oder Geschäftspartner in der Türkei
 - Instagram-, TikTok- oder Facebook-Kommentar
-- Streit über Geld, Scheidung, Sorgerecht oder Erbschaft
+- Streit über Geld, Scheidung, Unterhalt oder Erbschaft
 - Drohende Formulierungen in Sprachnachrichten
 - Alte türkische Akte mit Ladung oder Haftbefehl
 
@@ -386,7 +386,7 @@ Common diaspora scenarios include:
 
 - WhatsApp message to an ex-partner, relative or business partner in Turkey
 - Instagram, TikTok or Facebook comment
-- Money, divorce, custody or inheritance dispute
+- Money, divorce, maintenance or inheritance dispute
 - Angry voice message sent during a family conflict
 - Old Turkish file with summons or warrant risk
 

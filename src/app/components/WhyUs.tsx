@@ -30,6 +30,22 @@ export function WhyUs() {
       imageScale: 1,
     },
     {
+      icon: Scale,
+      title: language === "de"
+        ? "Gerichtlich anerkannte Expertise"
+        : language === "tr"
+          ? "Mahkeme Tarafından Tanınan Uzmanlık"
+          : "Court-Recognized Expertise",
+      description: language === "de"
+        ? "Deutsche Gerichte ziehen mich als Sachverständigen für Fragen des türkischen Rechts heran. Diese Anerkennung durch das Amtsgericht Mannheim ist ein unabhängiger Nachweis meiner Fachkenntnis — kein Selbstlob."
+        : language === "tr"
+          ? "Alman mahkemeleri, Türk hukuku konularında beni bilirkişi olarak görevlendiriyor. Amtsgericht Mannheim tarafından tanınan bu konum, uzmanlığımın bağımsız bir göstergesidir; kişisel bir övgü değildir."
+          : "German courts consult me as an expert witness on questions of Turkish law. Recognition by the Mannheim Local Court is independent evidence of my expertise, not self-praise.",
+      image: carouselTwo,
+      imagePosition: "50% 46%",
+      imageScale: 1.04,
+    },
+    {
       icon: MessageSquare,
       title: t("why_us_point_03_title"),
       description: t("why_us_point_03_desc"),

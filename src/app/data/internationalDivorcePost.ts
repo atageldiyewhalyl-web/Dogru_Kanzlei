@@ -34,11 +34,11 @@ In der Türkei sind seit 2017 Verfahren zur Anerkennung ausländischer Urteile t
 
 **Rechtsgrundlage**: MÖHUK (Milletlerarası Özel Hukuk ve Usul Hukuku Hakkında Kanun).
 
-### Vermögensaufteilung und Kindesunterhalt nach türkischem Recht
+### Vermögensaufteilung und Unterhalt nach türkischem Recht
 
 Wird die Scheidung direkt in der Türkei geführt, gilt seit 2002 das System der Beteiligung an erworbenen Gütern (**edinilmiş mallara katılım rejimi**).
 
-**Wichtig**: Unterhaltsansprüche (**Nafaka**) und Sorgerechtsfragen (**Velayet**) werden von türkischen Gerichten streng nach dem türkischen Zivilgesetzbuch (TMK) und dem Kindeswohl beurteilt.
+**Wichtig**: Unterhaltsansprüche (**Nafaka**) und güterrechtliche Fragen werden von türkischen Gerichten streng nach dem türkischen Zivilgesetzbuch (TMK) beurteilt.
 
 ### Sıkça Yapılan Hatalar
 
@@ -65,10 +65,9 @@ Tanıma ve tenfiz davası için gerekli belgeler:
 
 Türk hukukunda boşanma sonrası mal paylaşımı, 2002'den itibaren geçerli olan **edinilmiş mallara katılım rejimi** üzerinden yürütülür. Almanya'daki mal paylaşımı kararları her zaman Türkiye'deki taşınmazları kapsamayabilir.
 
-### Velayet ve Çocuk Kaçırma
+### Mal Rejimi ve Nafaka
 
-- **Velayet**: Türk mahkemeleri velayet kararlarında çocuğun üstün yararını esas alır.
-- **Uluslararası çocuk kaçırma**: Çocuğun diğer ebeveynin rızası olmadan Türkiye'ye götürülmesi, Lahey Sözleşmesi kapsamında suç teşkil edebilir.
+Türkiye bağlantılı boşanmalarda mal rejimi, nafaka ve tanıma-tenfiz adımlarının birlikte değerlendirilmesi gerekir. Almanya'daki kararlar Türkiye'deki taşınmazları veya icra edilebilir talepleri her zaman kendiliğinden kapsamaz.
 
 ### Sıkça Yapılan Hatalar
 
@@ -106,7 +105,7 @@ Uluslararası boşanma davaları ve tanıma-tenfiz süreçleri bizim uzmanlık a
     },
     {
       question: "Vermögensaufteilung und Kindesunterhalt nach türkischem Recht",
-      answer: "Wird die Scheidung direkt in der Türkei geführt, gilt seit 2002 das System der Beteiligung an erworbenen Gütern. Unterhaltsansprüche und Sorgerechtsfragen werden nach türkischem Recht beurteilt."
+      answer: "Wird die Scheidung direkt in der Türkei geführt, gilt seit 2002 das System der Beteiligung an erworbenen Gütern. Unterhaltsansprüche und güterrechtliche Fragen werden nach türkischem Recht beurteilt."
     }
   ],
   faqTR: [
@@ -126,5 +125,5 @@ Uluslararası boşanma davaları ve tanıma-tenfiz süreçleri bizim uzmanlık a
   ctaTitleDE: "Scheidung oder Tanıma-Tenfiz mit Türkei-Bezug?",
   ctaTitleTR: "Almanya-Türkiye boşanma süreciniz mi var?",
   ctaDescriptionDE: "Wir prüfen, ob Anerkennung, Vollstreckung oder ein türkisches Familienverfahren nötig ist - und welche Schritte Sie aus Deutschland erledigen können.",
-  ctaDescriptionTR: "Tanıma-tenfiz, mal paylaşımı veya velayet için hangi yolun doğru olduğunu birlikte netleştiriyoruz."
+  ctaDescriptionTR: "Tanıma-tenfiz, mal paylaşımı veya nafaka için hangi yolun doğru olduğunu birlikte netleştiriyoruz."
 };

@@ -33,17 +33,20 @@ const THREAT_CRIME_TURKEY_BLOG_SLUG_DE = "bedrohung-tuerkei-aus-deutschland-stra
 const HAKARET_BLOG_SLUG_DE = "beleidigung-tuerkei-whatsapp-strafrecht";
 const HAKARET_SOCIAL_MEDIA_BLOG_SLUG_DE = "beleidigung-tuerkei-aus-deutschland-soziale-medien";
 const HAGB_BLOG_SLUG_DE = "hagb-einbuergerung-deutschland-tuerkei";
-const CUSTODY_TENFIZ_BLOG_SLUG_DE = "deutschland-gemeinsames-sorgerecht-tuerkei-anerkennung";
 const INHERITANCE_GUIDE_BLOG_SLUG_DE = "erbschaft-tuerkei-deutschland-ratgeber";
+const INHERITANCE_TAX_DOUBLE_TAXATION_BLOG_SLUG_DE = "erbschaftsteuer-tuerkei-doppelbesteuerung-vermeiden";
 const UNTERHALT_TURKISH_LAW_BLOG_SLUG_DE = "unterhalt-tuerkisches-recht";
+const TANIMA_TENFIZ_RECOGNITION_2026_BLOG_SLUG_DE = "tanima-tenfiz-scheidung-tuerkei-anerkennung-2026";
 
 type BlogProductCTAPlacement = 'intro' | 'comparison' | 'service_types' | 'bottom' | 'sticky';
 
 type BlogProductFunnel = {
-  service: 'vekaletname';
+  service: 'vekaletname' | 'tanima_tenfiz' | 'inheritance_tax';
   slugDE: string;
   slugTR: string;
   duration: string;
+  campaign: string;
+  image?: string;
 };
 
 const vekaletnameFunnel: BlogProductFunnel = {
@@ -51,6 +54,7 @@ const vekaletnameFunnel: BlogProductFunnel = {
   slugDE: 'tuerkische-vekaletname-deutschland',
   slugTR: 'almanya-da-vekaletname-cikarma-rehberi',
   duration: '20 dakika',
+  campaign: 'vekaletname_whatsapp_form',
 };
 
 function getVekaletnameFunnelCopy(language: string) {
@@ -152,20 +156,320 @@ function getVekaletnameFunnelCopy(language: string) {
   };
 }
 
+function getTanimaTenfizFunnelCopy(language: string) {
+  if (language === 'de') {
+    return {
+      duration: 'Direkter Kontakt',
+      serviceName: 'Tanıma & Tenfiz',
+      leadSituation: 'Ich bin in Deutschland geschieden und möchte klären, wie die Scheidung in der Türkei anerkannt oder vollstreckt wird.',
+      introEyebrow: 'DIREKTER WHATSAPP-KONTAKT',
+      introTitle: 'In Deutschland geschieden, in der Türkei noch verheiratet?',
+      introBody: 'Schreiben Sie uns direkt per WhatsApp. Wir prüfen, ob Tanıma genügt oder Tenfiz nötig ist, welche Unterlagen fehlen und ob das Verfahren ohne Reise in die Türkei geführt werden kann.',
+      introButton: 'WhatsApp Anfrage starten',
+      durationChip: 'Direkter Kontakt',
+      formChip: 'WhatsApp Vorab-Formular',
+      comparisonTitle: 'Tanıma oder Tenfiz? Lassen Sie den richtigen Weg vorab prüfen.',
+      comparisonBody: 'Nicht jeder deutsche Scheidungsbeschluss braucht dieselbe Behandlung in der Türkei. Unterhalt, Vermögen und Zustellung entscheiden, ob Anerkennung allein reicht oder Vollstreckbarerklärung sinnvoll ist.',
+      serviceTypesTitle: 'Unterlagen, Zustellung und Nüfus-Status müssen zusammenpassen',
+      serviceTypesBody: 'Rechtskraftvermerk, Apostille, Übersetzung, Vollmacht und Adresse des Ex-Partners bestimmen Tempo und Risiko. Wir ordnen den Ablauf vorab ein und bereiten die nächsten Schritte vor.',
+      serviceTypesButton: 'Tanıma-Tenfiz per WhatsApp prüfen',
+      bottomEyebrow: 'Done-for-you Tanıma-Tenfiz Prozess',
+      bottomTitle: 'Wir bereiten die Anerkennung Ihrer deutschen Scheidung in der Türkei vor',
+      bottomBody: 'Über das kurze WhatsApp Formular schildern Sie Ihre Situation und die vorhandenen Dokumente. Hasan Doğru prüft Tanıma, Tenfiz, Konsularweg, Gerichtsweg, Zustellung, Vollmacht und mögliche Güterrechtsfristen.',
+      includedTitle: 'Was übernommen wird',
+      includedItems: [
+        'Prüfung: Tanıma, Tenfiz oder konsularische Eintragung',
+        'Dokumentencheck für Beschluss, Rechtskraft, Apostille, Übersetzung und Vollmacht',
+        'Koordination des türkischen Gerichtsverfahrens ohne unnötige Türkeireise',
+      ],
+      trustLine: 'Deutsch und Türkisch · Türkisches Recht · Mannheim & Ankara',
+      stickyTitle: 'Tanıma & Tenfiz',
+      stickySubtitle: 'WhatsApp Vorab-Formular',
+      stickyButton: 'WhatsApp',
+      chips: ['Scheidung', 'Nüfus', 'Apostille', 'Zustellung', 'Vollmacht'],
+    };
+  }
+
+  if (language === 'en') {
+    return {
+      duration: 'Direct Contact',
+      serviceName: 'Tanıma & Tenfiz',
+      leadSituation: 'I was divorced in Germany and want to clarify recognition or enforcement of the divorce in Turkey.',
+      introEyebrow: 'DIRECT WHATSAPP CONTACT',
+      introTitle: 'Divorced in Germany but still married in Turkey?',
+      introBody: 'Text us directly on WhatsApp. We check whether recognition is enough, whether enforcement is needed, which documents are missing and whether the case can be handled without travel.',
+      introButton: 'Start WhatsApp request',
+      durationChip: 'Direct Contact',
+      formChip: 'WhatsApp intake form',
+      comparisonTitle: 'Recognition or enforcement? Have the route checked first.',
+      comparisonBody: 'A German divorce order is not automatically valid in Turkey. Maintenance, property issues and service of process decide which route is safest.',
+      serviceTypesTitle: 'Documents, service of process and Turkish registry status must align',
+      serviceTypesBody: 'Finality certificate, apostille, translation, power of attorney and the former spouse’s address affect timing and risk. We clarify the process before you lose months.',
+      serviceTypesButton: 'Check recognition via WhatsApp',
+      bottomEyebrow: 'Done-for-you recognition process',
+      bottomTitle: 'We prepare recognition of your German divorce in Turkey',
+      bottomBody: 'Use the WhatsApp intake form to explain your case and available documents. Hasan Doğru reviews recognition, enforcement, court route, consular route, service, power of attorney and property-settlement timing.',
+      includedTitle: 'What we handle',
+      includedItems: [
+        'Route check: recognition, enforcement or consular registration',
+        'Document review for finality, apostille, translation and power of attorney',
+        'Coordination of the Turkish court process without unnecessary travel',
+      ],
+      trustLine: 'German, Turkish and English · Turkish law · Mannheim & Ankara',
+      stickyTitle: 'Divorce recognition',
+      stickySubtitle: 'WhatsApp intake form',
+      stickyButton: 'WhatsApp',
+      chips: ['Divorce', 'Registry', 'Apostille', 'Service', 'Court'],
+    };
+  }
+
+  return {
+    duration: 'Direkt İletişim',
+    serviceName: 'Tanıma & Tenfiz',
+    leadSituation: "Almanya'da boşandım ve boşanma kararının Türkiye'de tanınması veya tenfizi için bilgi almak istiyorum.",
+    introEyebrow: 'DİREKT WHATSAPP İLETİŞİMİ',
+    introTitle: "Almanya'da boşandınız ama Türkiye'de hâlâ evli mi görünüyorsunuz?",
+    introBody: "Bize doğrudan WhatsApp'tan yazın. Tanıma yeterli mi, tenfiz gerekir mi, hangi belgeler eksik ve Türkiye'ye gitmeden süreç yürür mü birlikte değerlendirelim.",
+    introButton: 'WhatsApp formunu aç',
+    durationChip: 'Direkt İletişim',
+    formChip: 'WhatsApp ön bilgi formu',
+    comparisonTitle: 'Tanıma mı, tenfiz mi? Doğru yolu önceden netleştirin.',
+    comparisonBody: 'Alman boşanma kararı Türkiye’de kendiliğinden geçerli olmaz. Nafaka, mal rejimi ve tebligat durumuna göre izlenecek yol değişir.',
+    serviceTypesTitle: 'Belge, tebligat ve nüfus kaydı aynı plana bağlanmalı',
+    serviceTypesBody: 'Kesinleşme şerhi, apostil, tercüme, vekaletname ve eski eşin adresi süreyi doğrudan etkiler. Süreci baştan doğru kuralım.',
+    serviceTypesButton: "Tanıma-tenfiz için WhatsApp'tan yazın",
+    bottomEyebrow: 'Done-for-you tanıma-tenfiz süreci',
+    bottomTitle: 'Alman boşanma kararınızın Türkiye’de tanınmasını hazırlıyoruz',
+    bottomBody: 'Kısa WhatsApp formuyla durumunuzu ve elinizdeki belgeleri iletin. Hasan Doğru tanıma, tenfiz, konsolosluk yolu, dava yolu, tebligat, vekaletname ve mal rejimi sürelerini değerlendirir.',
+    includedTitle: 'Hizmete dahil olanlar',
+    includedItems: [
+      'Tanıma, tenfiz veya konsolosluk tescili yolu değerlendirilir',
+      'Karar, kesinleşme, apostil, tercüme ve vekaletname kontrol edilir',
+      'Türkiye’deki mahkeme süreci gereksiz seyahat olmadan koordine edilir',
+    ],
+    trustLine: 'Türkçe ve Almanca hizmet · Türk hukuku · Mannheim & Ankara',
+    stickyTitle: 'Tanıma & tenfiz',
+    stickySubtitle: 'WhatsApp ön bilgi formu',
+    stickyButton: 'WhatsApp',
+    chips: ['Boşanma', 'Nüfus', 'Apostil', 'Tebligat', 'Vekalet'],
+  };
+}
+
+function getInheritanceTaxFunnelCopy(language: string) {
+  if (language === 'de') {
+    return {
+      duration: 'Direkter Kontakt',
+      serviceName: 'Erbschaftsteuer Türkei',
+      leadSituation: 'Ich habe einen Erbfall mit Vermögen in der Türkei und möchte Doppelbesteuerung, Fristen und Unterlagen prüfen lassen.',
+      introEyebrow: 'DIREKTER WHATSAPP-KONTAKT',
+      introTitle: 'Türkisches Erbe mit Steuerfragen in Deutschland?',
+      introBody: 'Schreiben Sie uns direkt per WhatsApp. Wir prüfen, welche Vermögenswerte in der Türkei liegen, welche Fristen laufen und wie die türkische Abwicklung mit dem deutschen Steuerberater koordiniert werden sollte.',
+      introButton: 'WhatsApp Steuer-Check starten',
+      durationChip: 'Direkter Kontakt',
+      formChip: 'WhatsApp Vorab-Formular',
+      comparisonTitle: 'Türkei und Deutschland parallel prüfen, bevor Fristen kippen.',
+      comparisonBody: 'Bei Immobilien, Bankguthaben oder gemischten Nachlässen greifen türkische Erklärungspflichten und deutsche Anrechnung nicht automatisch ineinander. Die Dokumente müssen von Anfang an verwertbar vorbereitet werden.',
+      serviceTypesTitle: 'Erbschein, Steuerbescheid und § 21-Anrechnung gehören in einen Ablauf',
+      serviceTypesBody: 'Veraset İlamı, türkische Steuererklärung, Zahlungsnachweise, Apostille, Übersetzung und deutsche Anrechnung sollten nicht getrennt nebeneinander laufen.',
+      serviceTypesButton: 'Erbschaftsteuer per WhatsApp prüfen',
+      bottomEyebrow: 'Done-for-you Erbschaftsteuer-Koordination',
+      bottomTitle: 'Wir koordinieren die türkische Erbseite mit Blick auf Doppelbesteuerung',
+      bottomBody: 'Über das kurze WhatsApp Formular schildern Sie Erblasser, Erben und Vermögen. Hasan Doğru prüft die türkische Abwicklung und koordiniert mit spezialisierten Steuerberatern, damit Anrechnung, Fristen und Nachweise sauber vorbereitet werden.',
+      includedTitle: 'Was übernommen wird',
+      includedItems: [
+        'Einordnung türkischer Vermögenswerte, Fristen und Steuerpflichten',
+        'Koordination von Veraset İlamı, Steuererklärung, Zahlung, Apostille und Übersetzung',
+        'Vorbereitung der Nachweise für die deutsche § 21-ErbStG-Anrechnung',
+      ],
+      trustLine: 'Türkisches Recht · Mannheim & Ankara · Koordination mit Steuerberatern',
+      stickyTitle: 'Erbschaftsteuer Türkei',
+      stickySubtitle: 'WhatsApp Vorab-Formular',
+      stickyButton: 'WhatsApp',
+      chips: ['Erbe', 'Immobilie', '§ 21 ErbStG', 'Apostille', 'Fristen'],
+    };
+  }
+
+  if (language === 'en') {
+    return {
+      duration: 'Direct Contact',
+      serviceName: 'Turkish inheritance tax',
+      leadSituation: 'I have an inheritance case involving Turkish assets and want to check double taxation, deadlines and documents.',
+      introEyebrow: 'DIRECT WHATSAPP CONTACT',
+      introTitle: 'Turkish inheritance with German tax exposure?',
+      introBody: 'Text us directly on WhatsApp. We review which assets are in Turkey, which deadlines apply and how the Turkish estate process should be coordinated with German tax advice.',
+      introButton: 'Start WhatsApp tax check',
+      durationChip: 'Direct Contact',
+      formChip: 'WhatsApp intake form',
+      comparisonTitle: 'Check Turkey and Germany together before deadlines become expensive.',
+      comparisonBody: 'For property, bank accounts and mixed estates, Turkish filing duties and German tax credits do not align automatically. The evidence must be prepared from the beginning.',
+      serviceTypesTitle: 'Inheritance certificate, tax payment and German credit claim belong in one workflow',
+      serviceTypesBody: 'Veraset İlamı, Turkish tax filing, payment receipts, apostille, translation and German credit documentation should be coordinated together.',
+      serviceTypesButton: 'Check inheritance tax via WhatsApp',
+      bottomEyebrow: 'Done-for-you inheritance tax coordination',
+      bottomTitle: 'We coordinate the Turkish estate side with double taxation in mind',
+      bottomBody: 'Use the WhatsApp intake form to explain the deceased, heirs and assets. Hasan Doğru reviews the Turkish process and coordinates with specialist tax advisors so deadlines, credits and evidence are prepared cleanly.',
+      includedTitle: 'What we handle',
+      includedItems: [
+        'Review of Turkish assets, deadlines and tax duties',
+        'Coordination of probate, Turkish tax filing, payment, apostille and translation',
+        'Preparation of evidence for the German § 21 ErbStG credit claim',
+      ],
+      trustLine: 'Turkish law · Mannheim & Ankara · Coordination with tax advisors',
+      stickyTitle: 'Turkish inheritance tax',
+      stickySubtitle: 'WhatsApp intake form',
+      stickyButton: 'WhatsApp',
+      chips: ['Inheritance', 'Property', '§ 21 ErbStG', 'Apostille', 'Deadlines'],
+    };
+  }
+
+  return {
+    duration: 'Direkt İletişim',
+    serviceName: 'Türkiye miras vergisi',
+    leadSituation: "Türkiye'de malvarlığı içeren bir miras dosyam var; çifte vergilendirme, süreler ve belgeler hakkında bilgi almak istiyorum.",
+    introEyebrow: 'DİREKT WHATSAPP İLETİŞİMİ',
+    introTitle: 'Türkiye’de miras, Almanya’da vergi riski mi var?',
+    introBody: "Bize doğrudan WhatsApp'tan yazın. Türkiye’de hangi malvarlığı bulunduğunu, hangi sürelerin işlediğini ve Alman vergi tarafıyla koordinasyonun nasıl kurulacağını değerlendirelim.",
+    introButton: 'WhatsApp vergi kontrolünü başlat',
+    durationChip: 'Direkt İletişim',
+    formChip: 'WhatsApp ön bilgi formu',
+    comparisonTitle: 'Süreler kaçmadan Türkiye ve Almanya tarafını birlikte kontrol edin.',
+    comparisonBody: 'Taşınmaz, banka hesabı veya karma miraslarda Türk beyan yükümlülüğü ile Almanya’daki mahsup kendiliğinden birleşmez. Belgeler baştan doğru hazırlanmalıdır.',
+    serviceTypesTitle: 'Veraset, vergi ödemesi ve § 21 mahsubu tek süreçte planlanmalı',
+    serviceTypesBody: 'Veraset ilamı, Türk vergi beyannamesi, ödeme belgeleri, apostil, tercüme ve Alman vergi mahsup başvurusu birlikte koordine edilmelidir.',
+    serviceTypesButton: "Miras vergisini WhatsApp'tan sorun",
+    bottomEyebrow: 'Done-for-you miras vergisi koordinasyonu',
+    bottomTitle: 'Çifte vergilendirme riskini dikkate alarak Türkiye miras sürecini koordine ediyoruz',
+    bottomBody: 'Kısa WhatsApp formuyla miras bırakanı, mirasçıları ve malvarlığını iletin. Hasan Doğru Türkiye tarafını değerlendirir; mahsup, süreler ve belgeler için uzman mali müşavirlerle koordinasyonu hazırlar.',
+    includedTitle: 'Hizmete dahil olanlar',
+    includedItems: [
+      'Türkiye’deki malvarlığı, süreler ve vergi yükümlülükleri değerlendirilir',
+      'Veraset ilamı, beyanname, ödeme, apostil ve tercüme koordine edilir',
+      'Almanya’daki § 21 ErbStG mahsubu için gerekli belgeler hazırlanır',
+    ],
+    trustLine: 'Türk hukuku · Mannheim & Ankara · Mali müşavir koordinasyonu',
+    stickyTitle: 'Miras vergisi',
+    stickySubtitle: 'WhatsApp ön bilgi formu',
+    stickyButton: 'WhatsApp',
+    chips: ['Miras', 'Taşınmaz', '§ 21 ErbStG', 'Apostil', 'Süreler'],
+  };
+}
+
+function getBlogProductFunnelCopy(funnel: BlogProductFunnel, language: string) {
+  if (funnel.service === 'tanima_tenfiz') return getTanimaTenfizFunnelCopy(language);
+  if (funnel.service === 'inheritance_tax') return getInheritanceTaxFunnelCopy(language);
+  return getVekaletnameFunnelCopy(language);
+}
+
+function getProductHookCopy(funnel: BlogProductFunnel, language: string) {
+  if (funnel.service === 'tanima_tenfiz') {
+    return language === 'de'
+      ? {
+          lead: 'Eine deutsche Scheidung ändert den türkischen Personenstand nicht automatisch. Dieser Ratgeber zeigt, wann Tanıma reicht, wann Tenfiz sinnvoll ist und welche Unterlagen das Verfahren beschleunigen.',
+          bullets: [
+            'Tanıma oder Tenfiz: Welcher Weg passt zu Ihrem deutschen Beschluss?',
+            'Apostille, Übersetzung und Vollmacht: Welche Dokumente müssen stimmen?',
+            'Zustellung vermeiden: Wann beide Anwälte das Verfahren deutlich verkürzen können',
+          ],
+          trust: 'Av. Hasan Doğru · Deutsch & Türkisch · Mannheim & Ankara',
+        }
+      : language === 'en'
+      ? {
+          lead: 'A German divorce does not automatically update the Turkish civil registry. This guide explains when recognition is enough, when enforcement is needed, and which documents speed up the process.',
+          bullets: [
+            'Recognition or enforcement: which route fits your German order?',
+            'Apostille, translation and power of attorney: which documents must be correct?',
+            'Avoid service delays: when both sides appoint Turkish counsel, the case can move faster',
+          ],
+          trust: 'Av. Hasan Doğru · German & Turkish · Mannheim & Ankara',
+        }
+      : {
+          lead: 'Almanya’daki boşanma kararı Türk nüfus kaydını kendiliğinden değiştirmez. Bu rehber tanımanın ne zaman yeterli olduğunu, tenfizin ne zaman gerektiğini ve hangi belgelerin süreci hızlandırdığını açıklar.',
+          bullets: [
+            'Tanıma mı, tenfiz mi: Alman kararınıza hangi yol uygun?',
+            'Apostil, tercüme ve vekaletname: Hangi belgeler doğru hazırlanmalı?',
+            'Tebligat gecikmesini önleme: İki tarafın avukatla temsilinde süreç nasıl hızlanır?',
+          ],
+          trust: 'Av. Hasan Doğru · Türkçe & Almanca · Mannheim & Ankara',
+        };
+  }
+
+  if (funnel.service === 'inheritance_tax') {
+    return language === 'de'
+      ? {
+          lead: 'Bei Erbschaften mit Türkei-Bezug laufen türkische Abwicklung und deutsche Steuerfolgen parallel. Dieser Ratgeber zeigt, wo Doppelbesteuerung entsteht und welche Nachweise von Anfang an gesichert werden sollten.',
+          bullets: [
+            'Türkische Immobilie, deutsches Konto oder gemischter Nachlass: Wo entsteht Steuer?',
+            '§ 21 ErbStG: Wann deutsche Steuer durch türkische Zahlung angerechnet werden kann',
+            'Fristen und Belege: Welche Dokumente Sie nicht erst später suchen sollten',
+          ],
+          trust: 'Av. Hasan Doğru · Türkisches Recht · Mannheim & Ankara',
+        }
+      : language === 'en'
+      ? {
+          lead: 'In inheritance cases involving Turkey, the Turkish estate process and German tax consequences run in parallel. This guide shows where double taxation arises and which evidence should be secured early.',
+          bullets: [
+            'Turkish property, German accounts or mixed estates: where does tax arise?',
+            '§ 21 ErbStG: when German tax can be reduced by Turkish tax paid',
+            'Deadlines and evidence: which documents should be prepared from day one',
+          ],
+          trust: 'Av. Hasan Doğru · Turkish law · Mannheim & Ankara',
+        }
+      : {
+          lead: 'Türkiye bağlantılı miraslarda Türk miras işlemleri ile Almanya’daki vergi sonuçları aynı anda yürür. Bu rehber çifte vergilendirmenin nerede doğduğunu ve hangi belgelerin baştan hazırlanması gerektiğini gösterir.',
+          bullets: [
+            'Türkiye’de taşınmaz, Almanya’da hesap veya karma miras: Vergi nerede doğar?',
+            '§ 21 ErbStG: Türkiye’de ödenen vergi Almanya’da ne zaman mahsup edilir?',
+            'Süreler ve belgeler: Hangi evraklar en baştan güvenceye alınmalı?',
+          ],
+          trust: 'Av. Hasan Doğru · Türk hukuku · Mannheim & Ankara',
+        };
+  }
+
+  return language === 'de'
+    ? {
+        lead: 'Viele Vollmachten für die Türkei scheitern an der falschen Vorgehensweise. Dieser Ratgeber erklärt Ihnen genau, worauf es bei Konsulat, Notar und Apostille ankommt, um rechtlich auf der sicheren Seite zu sein.',
+        bullets: [
+          'Konsulat oder deutscher Notar: Welcher Weg ist für Sie der richtige?',
+          'Apostille und vereidigte Übersetzung: Wann sind sie zwingend erforderlich?',
+          'Zeitverlust vermeiden: Die häufigsten Gründe für eine Ablehnung in der Türkei',
+        ],
+        trust: 'Av. Hasan Doğru · Deutsch & Türkisch · Mannheim & Ankara',
+      }
+    : language === 'en'
+    ? {
+        lead: 'Many powers of attorney for Turkey fail due to choosing the wrong procedure. This guide explains exactly what you need to know about the consulate, notaries, and apostilles to ensure your documents are legally valid.',
+        bullets: [
+          'Consulate vs. German Notary: Which route is better for your specific case?',
+          'Apostilles and sworn translations: When are they strictly required?',
+          'Avoid delays: The most common reasons documents are rejected in Turkey',
+        ],
+        trust: 'Av. Hasan Doğru · German & Turkish · Mannheim & Ankara',
+      }
+    : {
+        lead: 'Türkiye\'de kullanılacak vekaletnamelerde en sık yaşanan sorun, yanlış başvuru yönteminin seçilmesidir. Konsolosluk, Alman noteri veya apostil işlemleri arasındaki karmaşayı gidermek için bilmeniz gereken her şeyi bu rehberde derledik.',
+        bullets: [
+          'Konsolosluk mu yoksa Alman noteri mi: Hangi seçenek sizin için daha uygun?',
+          'Apostil ve yeminli tercüme: Hangi durumlarda kesinlikle zorunludur?',
+          'Zaman kaybını önleyin: Türkiye\'de belgelerin reddedilmesine yol açan en yaygın hatalar',
+        ],
+        trust: 'Av. Hasan Doğru · Türkçe & Almanca · Mannheim & Ankara',
+      };
+}
+
 function buildProductWhatsAppLeadUrl(funnel: BlogProductFunnel, placement: BlogProductCTAPlacement, language: string) {
-  const copy = getVekaletnameFunnelCopy(language);
+  const copy = getBlogProductFunnelCopy(funnel, language);
   const url = new URL(WHATSAPP_URL);
   url.searchParams.set('service', copy.serviceName);
   url.searchParams.set('utm_source', 'blog');
   url.searchParams.set('utm_medium', 'cta');
-  url.searchParams.set('utm_campaign', 'vekaletname_whatsapp_form');
+  url.searchParams.set('utm_campaign', funnel.campaign);
   url.searchParams.set('utm_content', placement);
   url.searchParams.set('situation', copy.leadSituation);
   return url.toString();
 }
 
-function getProductLeadCaptureDetail(language: string) {
-  const copy = getVekaletnameFunnelCopy(language);
+function getProductLeadCaptureDetail(funnel: BlogProductFunnel, language: string) {
+  const copy = getBlogProductFunnelCopy(funnel, language);
   return {
     service: copy.serviceName,
     situation: copy.leadSituation,
@@ -190,7 +494,7 @@ function BlogBookingButton({
       href={buildProductWhatsAppLeadUrl(funnel, placement, language)}
       onClick={(event) => {
         event.preventDefault();
-        openWhatsAppLeadCapture(getProductLeadCaptureDetail(language));
+        openWhatsAppLeadCapture(getProductLeadCaptureDetail(funnel, language));
       }}
       target="_blank"
       rel="noopener noreferrer"
@@ -205,14 +509,15 @@ function BlogBookingButton({
 }
 
 function BlogProductCTAIntro({ funnel, language }: { funnel: BlogProductFunnel; language: string }) {
-  const copy = getVekaletnameFunnelCopy(language);
+  const copy = getBlogProductFunnelCopy(funnel, language);
+  const visual = funnel.image || vekaletnameImg;
 
   return (
     <aside className="relative my-20 w-screen relative left-1/2 -translate-x-1/2 bg-[#0F2417] shadow-[0_24px_60px_rgba(15,36,23,0.3)] border-y border-white/10 isolate overflow-hidden">
       
       {/* Mobile-only background image */}
       <div className="absolute inset-0 md:hidden pointer-events-none z-0">
-        <img src={vekaletnameImg} alt="" className="w-full h-full object-cover object-right opacity-[0.15] mix-blend-luminosity" />
+        <img src={visual} alt="" className="w-full h-full object-cover object-right opacity-[0.15] mix-blend-luminosity" />
       </div>
 
       {/* Glow effect */}
@@ -252,8 +557,8 @@ function BlogProductCTAIntro({ funnel, language }: { funnel: BlogProductFunnel; 
           {/* Right Column: Proper Image Asset */}
           <div className="hidden md:flex relative justify-center items-center">
             <img 
-              src={vekaletnameImg} 
-              alt="Vekaletname" 
+              src={visual}
+              alt={copy.serviceName}
               className="w-full h-auto object-contain drop-shadow-2xl scale-110"
             />
           </div>
@@ -274,7 +579,7 @@ function BlogProductCTAMid({
   variant: 'comparison' | 'service_types';
 }) {
   const isServiceTypes = variant === 'service_types';
-  const copy = getVekaletnameFunnelCopy(language);
+  const copy = getBlogProductFunnelCopy(funnel, language);
 
   return (
     <aside className="relative my-20 w-screen relative left-1/2 -translate-x-1/2 bg-[#0F2417]/95 backdrop-blur-xl shadow-[0_24px_60px_rgba(15,36,23,0.3)] border-y border-white/10 isolate">
@@ -378,7 +683,7 @@ function BlogDoneForYouBanner({ funnel, language }: { funnel: BlogProductFunnel;
 }
 
 function BlogProductCTABottom({ funnel, language }: { funnel: BlogProductFunnel; language: string }) {
-  const copy = getVekaletnameFunnelCopy(language);
+  const copy = getBlogProductFunnelCopy(funnel, language);
 
   return (
     <div className="relative mt-32 w-screen relative left-1/2 -translate-x-1/2 bg-[#0F2417] shadow-[0_30px_80px_rgba(15,36,23,0.35)] border-y border-white/10 isolate overflow-hidden">
@@ -442,22 +747,48 @@ function BlogProductCTABottom({ funnel, language }: { funnel: BlogProductFunnel;
 }
 
 function BlogStickyBookingCTA({ funnel, language }: { funnel: BlogProductFunnel; language: string }) {
-  const copy = getVekaletnameFunnelCopy(language);
+  const copy = getBlogProductFunnelCopy(funnel, language);
 
   const doneForYouLabel =
-    language === 'de' ? 'Vollmacht für die Türkei' :
-    language === 'en' ? 'Power of attorney for Turkey' :
-    'Türkiye için vekaletname';
+    copy.stickyTitle;
 
   const headline =
-    language === 'de' ? 'Wir bereiten Ihre Vollmacht vollständig vor. Sie müssen sich um nichts kümmern.' :
-    language === 'en' ? 'We handle everything for you. You just sign.' :
-    'Her şeyi sizin için hallediyoruz, size sadece imzalamak kalıyor!';
+    funnel.service === 'tanima_tenfiz'
+      ? language === 'de'
+        ? 'Wir klären Tanıma, Tenfiz, Unterlagen und Zustellung für Sie.'
+        : language === 'en'
+          ? 'We clarify recognition, enforcement, documents and service for you.'
+          : 'Tanıma, tenfiz, belge ve tebligat sürecini sizin için netleştiriyoruz.'
+      : funnel.service === 'inheritance_tax'
+        ? language === 'de'
+          ? 'Erbschaftsteuer Türkei prüfen: Fristen, Nachweise und Doppelbesteuerung klären.'
+          : language === 'en'
+            ? 'Check Turkish inheritance tax, deadlines, evidence and double taxation.'
+            : 'Türkiye miras vergisi, süreler, belgeler ve çifte vergilendirmeyi netleştirelim.'
+        : language === 'de'
+          ? 'Wir bereiten Ihre Vollmacht vollständig vor. Sie müssen sich um nichts kümmern.'
+          : language === 'en'
+            ? 'We handle everything for you. You just sign.'
+            : 'Her şeyi sizin için hallediyoruz, size sadece imzalamak kalıyor!';
 
   const sub =
-    language === 'de' ? 'Konsulat, Notar, Apostille, Übersetzung — Hasan Doğru kümmert sich darum' :
-    language === 'en' ? 'Consulate, notary, apostille, translation — all taken care of' :
-    'Konsolosluk, noter, apostil, tercüme — hepsini Hasan Doğru bürosu halledebilir';
+    funnel.service === 'tanima_tenfiz'
+      ? language === 'de'
+        ? 'Deutsche Scheidung, Nüfus, Apostille, Übersetzung und Vollmacht'
+        : language === 'en'
+          ? 'German divorce, Turkish registry, apostille, translation and power of attorney'
+          : 'Alman boşanması, nüfus kaydı, apostil, tercüme ve vekalet'
+      : funnel.service === 'inheritance_tax'
+        ? language === 'de'
+          ? 'Türkische Erbseite und deutsche Anrechnung von Anfang an koordinieren'
+          : language === 'en'
+            ? 'Coordinate the Turkish estate side and German tax credit from day one'
+            : 'Türkiye miras süreci ve Almanya mahsup başvurusunu baştan koordine edin'
+        : language === 'de'
+          ? 'Konsulat, Notar, Apostille, Übersetzung — Hasan Doğru kümmert sich darum'
+          : language === 'en'
+            ? 'Consulate, notary, apostille, translation — all taken care of'
+            : 'Konsolosluk, noter, apostil, tercüme — hepsini Hasan Doğru bürosu halledebilir';
 
   return (
     <div className="fixed inset-x-0 bottom-0 z-[180] bg-[#1C3829] shadow-[0_-4px_32px_rgba(0,0,0,0.28)] ring-1 ring-white/10">
@@ -478,14 +809,14 @@ function BlogStickyBookingCTA({ funnel, language }: { funnel: BlogProductFunnel;
           href={buildProductWhatsAppLeadUrl(funnel, 'sticky', language)}
           onClick={(e) => {
             e.preventDefault();
-            openWhatsAppLeadCapture({ service: 'Vekaletname', situation: copy.leadSituation });
+            openWhatsAppLeadCapture({ service: copy.serviceName, situation: copy.leadSituation });
           }}
           className="inline-flex shrink-0 items-center justify-center gap-2 rounded-full bg-[#25D366] p-3 text-white shadow-[0_4px_18px_rgba(37,211,102,0.4)] transition-all duration-200 hover:bg-[#1EBE5A] active:scale-95 md:px-6 md:py-3"
         >
           <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" className="h-5 w-5 shrink-0">
             <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z" />
           </svg>
-          <span className="hidden font-sans text-[12px] font-bold uppercase tracking-[0.14em] md:inline">WhatsApp</span>
+          <span className="hidden font-sans text-[12px] font-bold uppercase tracking-[0.14em] md:inline">{copy.stickyButton}</span>
         </a>
       </div>
     </div>
@@ -493,7 +824,7 @@ function BlogStickyBookingCTA({ funnel, language }: { funnel: BlogProductFunnel;
 }
 
 type BlogWhatsAppCTAPlacement = 'intro' | 'mid' | 'deadline' | 'settlement' | 'records' | 'strategy' | 'bottom';
-type BlogWhatsAppCTATopic = 'criminal_law' | 'summons_warrant' | 'drug_case' | 'threat_case' | 'hakaret' | 'hagb' | 'property_partition' | 'inheritance_dispute' | 'inheritance_guide' | 'property_rights' | 'muris_muvazaasi' | 'tapu_iptal' | 'mavi_kart' | 'debt_collection' | 'divorce_turkey' | 'tanima_tenfiz' | 'tck_191_kdae' | 'sorgerecht_tenfiz' | 'unterhalt_nafaka';
+type BlogWhatsAppCTATopic = 'criminal_law' | 'summons_warrant' | 'drug_case' | 'threat_case' | 'hakaret' | 'hagb' | 'property_partition' | 'inheritance_dispute' | 'inheritance_guide' | 'property_rights' | 'muris_muvazaasi' | 'tapu_iptal' | 'mavi_kart' | 'debt_collection' | 'divorce_turkey' | 'tanima_tenfiz' | 'tck_191_kdae' | 'unterhalt_nafaka';
 
 function getBlogWhatsAppService(topic: BlogWhatsAppCTATopic) {
   if (topic === 'hagb') return 'Ceza / Yakalama Kararı';
@@ -504,7 +835,6 @@ function getBlogWhatsAppService(topic: BlogWhatsAppCTATopic) {
   if (topic === 'debt_collection') return 'Forderung / Inkasso';
   if (topic === 'divorce_turkey') return 'Boşanma';
   if (topic === 'tanima_tenfiz') return 'Tanıma & Tenfiz';
-  if (topic === 'sorgerecht_tenfiz') return 'Sorgerecht / Velayet';
   if (topic === 'unterhalt_nafaka') return 'Unterhalt / Nafaka';
   if (topic === 'property_partition' || topic === 'property_rights' || topic === 'tapu_iptal') return 'Tapu / Gayrimenkul';
   if (topic === 'inheritance_dispute' || topic === 'inheritance_guide' || topic === 'muris_muvazaasi') return 'Miras';
@@ -1719,7 +2049,7 @@ function getDivorceTurkeyCTACopy(language: string, placement: BlogWhatsAppCTAPla
       return {
         eyebrow: 'Anlaşmalı oder streitig',
         title: 'Vor dem Antrag: Protokoll, Zuständigkeit und Reise klären',
-        body: 'Bei türkischen Scheidungen entscheiden Protokoll, Vollmacht, Gerichtsort und Folgesachen wie Unterhalt oder Sorgerecht über Tempo und Kosten.',
+        body: 'Bei türkischen Scheidungen entscheiden Protokoll, Vollmacht, Gerichtsort und Folgesachen wie Unterhalt oder Vermögen über Tempo und Kosten.',
         button: 'Scheidungsfall schildern',
       };
     }
@@ -1744,7 +2074,7 @@ function getDivorceTurkeyCTACopy(language: string, placement: BlogWhatsAppCTAPla
       return {
         eyebrow: 'Amicable or contested',
         title: 'Before filing: protocol, jurisdiction and travel risk',
-        body: 'In Turkish divorce cases, the protocol, power of attorney, court venue, custody, alimony and property issues determine speed and cost.',
+        body: 'In Turkish divorce cases, the protocol, power of attorney, court venue, alimony and property issues determine speed and cost.',
         button: 'Describe your divorce case',
       };
     }
@@ -1768,7 +2098,7 @@ function getDivorceTurkeyCTACopy(language: string, placement: BlogWhatsAppCTAPla
     return {
       eyebrow: 'Anlaşmalı mı çekişmeli mi?',
       title: 'Dava açmadan önce protokol, yetki ve seyahat konusunu netleştirin',
-      body: 'Türkiye’de boşanmada protokol, vekâletname, mahkeme yeri, velayet, nafaka ve mal paylaşımı sürecin hızını ve maliyetini belirler.',
+      body: 'Türkiye’de boşanmada protokol, vekâletname, mahkeme yeri, nafaka ve mal paylaşımı sürecin hızını ve maliyetini belirler.',
       button: "Boşanma durumunuzu anlatın",
     };
   }
@@ -1851,81 +2181,6 @@ function getTanimaTenfizCTACopy(language: string, placement: BlogWhatsAppCTAPlac
     eyebrow: "Türkiye'ye gitmeden",
     title: "Alman boşanma kararınızı Türkiye'de tanıtalım",
     body: 'Durumunuzu ve elinizdeki belgeleri kısaca gönderin. Hasan Doğru WhatsApp görüşmesinden önce bağlamı görsün.',
-    button: 'WhatsApp formunu aç',
-  };
-}
-
-function getSorgerechtTenfizCTACopy(language: string, placement: BlogWhatsAppCTAPlacement) {
-  if (language === 'de') {
-    if (placement === 'intro') {
-      return {
-        eyebrow: 'Sorgerecht & Tenfiz',
-        title: 'Deutsche Sorgerechtsentscheidung in der Türkei durchsetzen?',
-        body: 'Wir prüfen, ob Tenfiz nötig ist, welche Unterlagen fehlen und wie das Verfahren aus Deutschland vorbereitet werden kann.',
-        button: 'WhatsApp Anfrage starten',
-      };
-    }
-    if (placement === 'mid') {
-      return {
-        eyebrow: 'Kind, Register & Gericht',
-        title: 'Bei Sorgerecht reicht Tanıma oft nicht aus',
-        body: 'Wenn türkische Behörden, Schulen oder Gerichte die Entscheidung beachten sollen, müssen Zuständigkeit, Kindeswohl, Unterlagen und Vollstreckbarkeit sauber geprüft werden.',
-        button: 'Sorgerechtsfall schildern',
-      };
-    }
-    return {
-      eyebrow: 'Von Deutschland aus',
-      title: 'Sorgerecht mit Türkei-Bezug rechtssicher klären',
-      body: 'Senden Sie uns kurz, welche Entscheidung vorliegt, wo das Kind lebt und was in der Türkei anerkannt werden soll. Hasan Doğru erhält den Kontext vorab.',
-      button: 'WhatsApp Formular öffnen',
-    };
-  }
-
-  if (language === 'en') {
-    if (placement === 'intro') {
-      return {
-        eyebrow: 'Custody & enforcement',
-        title: 'Need a German custody decision recognised in Turkey?',
-        body: 'We check whether enforcement is required, which documents are missing, and how the process can be prepared from Germany.',
-        button: 'Start WhatsApp request',
-      };
-    }
-    if (placement === 'mid') {
-      return {
-        eyebrow: 'Child, registry & court',
-        title: 'For custody, recognition alone is often not enough',
-        body: 'If Turkish authorities, schools or courts must follow the decision, jurisdiction, child welfare, documents and enforceability need careful review.',
-        button: 'Describe your custody case',
-      };
-    }
-    return {
-      eyebrow: 'From Germany',
-      title: 'Clarify a Germany-Turkey custody issue safely',
-      body: 'Send us which decision exists, where the child lives and what should be recognised in Turkey. Hasan Doğru receives the context first.',
-      button: 'Open WhatsApp form',
-    };
-  }
-
-  if (placement === 'intro') {
-    return {
-      eyebrow: 'Velayet & tenfiz',
-      title: "Alman velayet kararının Türkiye'de geçerli olması mı gerekiyor?",
-      body: 'Tenfiz gerekip gerekmediğini, hangi belgelerin eksik olduğunu ve sürecin Almanya’dan nasıl yürütüleceğini değerlendirelim.',
-      button: 'WhatsApp talebi başlat',
-    };
-  }
-  if (placement === 'mid') {
-    return {
-      eyebrow: 'Çocuk, nüfus & mahkeme',
-      title: 'Velayet kararlarında tanıma çoğu zaman yeterli olmayabilir',
-      body: 'Türk kurumları, okullar veya mahkemeler kararınıza göre işlem yapacaksa yetki, çocuğun üstün yararı, belgeler ve icra edilebilirlik birlikte incelenmelidir.',
-      button: 'Velayet durumunuzu anlatın',
-    };
-  }
-  return {
-    eyebrow: "Almanya'dan takip",
-    title: "Türkiye bağlantılı velayet sürecinizi güvenli şekilde netleştirelim",
-    body: 'Hangi kararın mevcut olduğunu, çocuğun nerede yaşadığını ve Türkiye’de neyin tanınması gerektiğini gönderin. Hasan Doğru önce bağlamı görsün.',
     button: 'WhatsApp formunu aç',
   };
 }
@@ -2107,8 +2362,6 @@ function BlogWhatsAppCTA({
       ? getDivorceTurkeyCTACopy(language, placement)
     : topic === 'tanima_tenfiz'
       ? getTanimaTenfizCTACopy(language, placement)
-    : topic === 'sorgerecht_tenfiz'
-      ? getSorgerechtTenfizCTACopy(language, placement)
     : topic === 'unterhalt_nafaka'
       ? getUnterhaltNafakaCTACopy(language, placement)
 	    : topic === 'tck_191_kdae'
@@ -2260,9 +2513,7 @@ export function BlogPost() {
   const hasGermanContent = Boolean(post?.slugDE && post?.contentDE?.trim());
   const hasTurkishContent = Boolean(post?.slugTR && post?.contentTR?.trim());
   const hasEnglishContent = Boolean(post?.slugEN && post?.contentEN?.trim());
-  const hasEnglishAlternate = Boolean(
-    post?.slugEN && (hasEnglishContent || post.slugTR === 'almanya-ortak-velayet-turkiye-tenfiz')
-  );
+  const hasEnglishAlternate = Boolean(post?.slugEN && hasEnglishContent);
   const isAvailable = Boolean(post && (language === 'de' ? hasGermanContent : language === 'tr' ? hasTurkishContent : hasEnglishContent));
   const currentSlugForLanguage = post
     ? language === 'de'
@@ -2278,13 +2529,7 @@ export function BlogPost() {
   const altLang = language === 'de' ? 'tr' : 'de';
   const currentCategory = post ? (language === 'de' ? post.categoryDE : language === 'tr' ? post.category : post.categoryEN) : '';
   const currentMetaTitle = post ? (language === 'de' ? post.metaTitleDE : language === 'tr' ? post.metaTitleTR : post.metaTitleEN) : undefined;
-  const currentOgTitle = post?.slugTR === 'almanya-ortak-velayet-turkiye-tenfiz'
-    ? language === 'de'
-      ? 'Gemeinsames Sorgerecht aus Deutschland: Anerkennung in der Türkei 2026'
-      : language === 'tr'
-        ? "Almanya'dan Verilen Ortak Velayet Kararı Türkiye'de Tenfiz Edilir mi? 2026"
-        : 'Joint Custody from Germany: Does It Apply in Turkey? (2026 Guide)'
-    : undefined;
+  const currentOgTitle = undefined;
   const currentSchemaHeadline = post ? (language === 'de' ? post.schemaHeadlineDE : language === 'tr' ? post.schemaHeadlineTR : post.schemaHeadlineEN) : undefined;
   const currentOgDescription = post
     ? (language === 'de'
@@ -2327,8 +2572,6 @@ export function BlogPost() {
       ? post.schemaImage
     : post?.slugTR === 'almanya-turkiye-miras-hukuku-rehberi'
       ? `${SITE_URL}/assets/inheritance_fraud_law-BxjZQ9m1.png`
-      : post?.slugTR === 'almanya-ortak-velayet-turkiye-tenfiz'
-        ? `${SITE_URL}/assets/joint_custody_law-B-FOZxII.png`
       : post?.slugTR === 'veraset-ilami-nedir-nasil-alinir' && language !== 'tr'
         ? `${SITE_URL}/assets/inheritance_fraud_law-BxjZQ9m1.png`
       : post?.image;
@@ -2343,8 +2586,6 @@ export function BlogPost() {
       : post?.slugTR === 'veraset-ilami-nedir-nasil-alinir'
         ? 'Av. Hasan Doğru'
       : post?.slugTR === 'tanima-tenfiz-rehberi'
-        ? 'Av. Hasan Doğru'
-      : post?.slugTR === 'almanya-ortak-velayet-turkiye-tenfiz'
         ? 'Av. Hasan Doğru'
       : language === 'tr' ? 'Av. Hasan Doğru' : 'Hasan Doğru';
   const explicitArticleTags = post
@@ -2374,12 +2615,6 @@ export function BlogPost() {
           : language === 'tr'
             ? ['Tanıma Tenfiz', 'Almanya Boşanma Türkiye', 'MÖHUK', 'Yabancı Mahkeme Kararı']
             : ['Recognition German Divorce Turkey', 'Tanıma Tenfiz', 'Turkish Family Law']
-        : post?.slugTR === 'almanya-ortak-velayet-turkiye-tenfiz'
-          ? language === 'de'
-            ? ['Gemeinsames Sorgerecht', 'Türkei Anerkennung', 'Tenfiz']
-            : language === 'tr'
-              ? ['Ortak Velayet', 'Tenfiz', 'Türkiye Almanya Aile Hukuku']
-              : ['Joint Custody Turkey', 'Tenfiz', 'Turkish Family Law Germany']
     : undefined);
   const currentArticleSection = post
     ? (language === 'de'
@@ -2458,11 +2693,42 @@ export function BlogPost() {
     tr: ['almanya-da-vekaletname-cikarma-rehberi', 'turkce-vekaletname-nasil-cikarilir', 'almanyada-turk-noteri', 'almanyada-vekaletname-ucreti-2026', 'almanyadan-turkiyeye-vekaletname-gonderme'],
     en: ['power-of-attorney-in-turkish', 'turkish-notary-in-germany', 'tuerkische-vollmacht-kosten-2026-en', 'tuerkische-vollmacht-ohne-konsulat-en'],
   };
-  const productFunnel = (
-    (language === 'de' && vekaletnameProductSlugs.de.includes(post.slugDE)) ||
-    (language === 'tr' && vekaletnameProductSlugs.tr.includes(post.slugTR)) ||
-    (language === 'en' && vekaletnameProductSlugs.en.includes(post.slugEN ?? ''))
-  ) ? vekaletnameFunnel : null;
+  const tanimaTenfizProductSlugs = {
+    de: [TANIMA_TENFIZ_RECOGNITION_2026_BLOG_SLUG_DE],
+    tr: ['almanya-bosanma-turkiye-tanima-tenfiz-2026-rehber'],
+    en: ['german-divorce-turkey-recognition-guide-2026'],
+  };
+  const inheritanceTaxProductSlugs = {
+    de: [INHERITANCE_TAX_DOUBLE_TAXATION_BLOG_SLUG_DE],
+    tr: ['turkiye-almanya-miras-vergisi-cifte-vergilendirme'],
+    en: ['turkish-inheritance-tax-double-taxation-germany'],
+  };
+  const matchesLocalizedSlug = (slugs: { de: string[]; tr: string[]; en: string[] }) => (
+    (language === 'de' && slugs.de.includes(post.slugDE)) ||
+    (language === 'tr' && slugs.tr.includes(post.slugTR)) ||
+    (language === 'en' && slugs.en.includes(post.slugEN ?? ''))
+  );
+  const productFunnel = matchesLocalizedSlug(vekaletnameProductSlugs)
+    ? { ...vekaletnameFunnel, image: vekaletnameImg }
+    : matchesLocalizedSlug(tanimaTenfizProductSlugs)
+      ? {
+          service: 'tanima_tenfiz' as const,
+          slugDE: TANIMA_TENFIZ_RECOGNITION_2026_BLOG_SLUG_DE,
+          slugTR: 'almanya-bosanma-turkiye-tanima-tenfiz-2026-rehber',
+          duration: '20 dakika',
+          campaign: 'tanima_tenfiz_whatsapp_form',
+          image: post.image,
+        }
+      : matchesLocalizedSlug(inheritanceTaxProductSlugs)
+        ? {
+            service: 'inheritance_tax' as const,
+            slugDE: INHERITANCE_TAX_DOUBLE_TAXATION_BLOG_SLUG_DE,
+            slugTR: 'turkiye-almanya-miras-vergisi-cifte-vergilendirme',
+            duration: '20 dakika',
+            campaign: 'inheritance_tax_whatsapp_form',
+            image: post.image,
+          }
+        : null;
   const whatsappCTATopic: BlogWhatsAppCTATopic | null = [CRIMINAL_LAW_BLOG_SLUG_DE, CRIMINAL_DEFENSE_FROM_GERMANY_BLOG_SLUG_DE].includes(post.slugDE)
     ? 'criminal_law'
     : post.slugDE === SUMMONS_WARRANT_BLOG_SLUG_DE
@@ -2493,9 +2759,7 @@ export function BlogPost() {
                         ? 'hakaret'
                         : post.slugDE === HAGB_BLOG_SLUG_DE
                           ? 'hagb'
-                          : post.slugDE === CUSTODY_TENFIZ_BLOG_SLUG_DE
-                            ? 'sorgerecht_tenfiz'
-                            : post.slugDE === INHERITANCE_GUIDE_BLOG_SLUG_DE
+                          : post.slugDE === INHERITANCE_GUIDE_BLOG_SLUG_DE
                               ? 'inheritance_guide'
                             : post.slugDE === UNTERHALT_TURKISH_LAW_BLOG_SLUG_DE
                               ? 'unterhalt_nafaka'
@@ -2513,22 +2777,7 @@ export function BlogPost() {
   const getLocalizedBlogSlug = (candidate: NonNullable<typeof post>) =>
     language === 'de' ? candidate.slugDE : language === 'tr' ? candidate.slugTR : candidate.slugEN;
 
-  const related = post.slugTR === 'almanya-ortak-velayet-turkiye-tenfiz'
-    ? blogPosts.filter((p) => language === 'tr'
-      ? [
-        'almanya-turkiye-miras-hukuku-rehberi',
-        'turkiye-ceza-davasi-almanya-savunma',
-      ].includes(p.slugTR)
-      : language === 'en'
-        ? [
-          'turkish-inheritance-germany-guide',
-          'turkish-criminal-case-defence-from-germany',
-        ].includes(p.slugEN || '')
-        : [
-        'erbschaft-tuerkei-deutschland-ratgeber',
-        'strafverfahren-tuerkei-haftbefehl-verteidigung-deutschland',
-      ].includes(p.slugDE))
-    : blogPosts
+  const related = blogPosts
       .filter((p) => p !== post && hasContentForCurrentLanguage(p))
       .slice(0, 2);
 
@@ -2689,38 +2938,9 @@ export function BlogPost() {
 
       <div className={`relative z-0 ${productFunnel ? 'pb-36 md:pb-20' : 'pb-20'}`}>
         <article className="w-full min-w-0 max-w-4xl mx-auto px-4 sm:px-6 lg:px-12 box-border" style={{ display: 'flex', flexDirection: 'column' }}>
-          {/* Vekaletname hero hook — only on product funnel pages */}
+          {/* Product funnel hero hook */}
           {productFunnel && (() => {
-            const hook =
-              language === 'de'
-                ? {
-                    lead: 'Viele Vollmachten für die Türkei scheitern an der falschen Vorgehensweise. Dieser Ratgeber erklärt Ihnen genau, worauf es bei Konsulat, Notar und Apostille ankommt, um rechtlich auf der sicheren Seite zu sein.',
-                    bullets: [
-                      'Konsulat oder deutscher Notar: Welcher Weg ist für Sie der richtige?',
-                      'Apostille und vereidigte Übersetzung: Wann sind sie zwingend erforderlich?',
-                      'Zeitverlust vermeiden: Die häufigsten Gründe für eine Ablehnung in der Türkei',
-                    ],
-                    trust: 'Av. Hasan Doğru · Deutsch & Türkisch · Mannheim & Ankara',
-                  }
-                : language === 'en'
-                ? {
-                    lead: 'Many powers of attorney for Turkey fail due to choosing the wrong procedure. This guide explains exactly what you need to know about the consulate, notaries, and apostilles to ensure your documents are legally valid.',
-                    bullets: [
-                      'Consulate vs. German Notary: Which route is better for your specific case?',
-                      'Apostilles and sworn translations: When are they strictly required?',
-                      'Avoid delays: The most common reasons documents are rejected in Turkey',
-                    ],
-                    trust: 'Av. Hasan Doğru · German & Turkish · Mannheim & Ankara',
-                  }
-                : {
-                    lead: 'Türkiye\'de kullanılacak vekaletnamelerde en sık yaşanan sorun, yanlış başvuru yönteminin seçilmesidir. Konsolosluk, Alman noteri veya apostil işlemleri arasındaki karmaşayı gidermek için bilmeniz gereken her şeyi bu rehberde derledik.',
-                    bullets: [
-                      'Konsolosluk mu yoksa Alman noteri mi: Hangi seçenek sizin için daha uygun?',
-                      'Apostil ve yeminli tercüme: Hangi durumlarda kesinlikle zorunludur?',
-                      'Zaman kaybını önleyin: Türkiye\'de belgelerin reddedilmesine yol açan en yaygın hatalar',
-                    ],
-                    trust: 'Av. Hasan Doğru · Türkçe & Almanca · Mannheim & Ankara',
-                  };
+            const hook = getProductHookCopy(productFunnel, language);
 
             return (
               <div className="max-w-[720px] mx-auto w-full mb-12 mt-8 md:mt-12">
@@ -2843,6 +3063,9 @@ export function BlogPost() {
                             'Turkish consulate or German notary?',
                             'Konsulat oder deutscher Notar – was ist besser?',
                             'Consulate or German notary — which is better?',
+                            'Dauer und Kosten - realistische Zahlen',
+                            'Süre ve Masraf - Gerçekçi Rakamlar',
+                            'Timeline and Cost - Realistic Numbers',
                           ].includes(currentSectionHeading)
                         ) {
                           renderedElements.push(
@@ -3212,12 +3435,40 @@ export function BlogPost() {
                           'Reicht eine Übersetzung der deutschen Vollmacht?',
                           'Sadece tercüme yeterli mi?',
                           'Is translation alone enough?',
+                          'Tanıma oder Tenfiz - welches Verfahren brauchen Sie?',
+                          'Tanıma mı, Tenfiz mi? Hangisine İhtiyacınız Var?',
+                          'Tanıma or Tenfiz - Which One Do You Need?',
+                          'Rechenbeispiel 1: Gemischter Nachlass mit Immobilie und Bankvermögen',
+                          'Örnek 1: Taşınmaz ve Banka Hesabından Oluşan Karma Miras',
+                          'Worked Example 1: A Mixed Estate with Real Estate and a Bank Account',
+                          'Wie weit reicht die Anrechnung nach § 21 ErbStG wirklich?',
+                          '§ 21 ErbStG Mahsubu Pratikte Ne Kadar İşe Yarar?',
+                          'How Far Does the § 21 ErbStG Credit Actually Go?',
                         ].includes(headingText)
                       ) {
                         renderedElements.push(
                           <BlogProductCTAIntro key="vekaletname-intro-cta" funnel={productFunnel} language={language} />
                         );
                         insertedIntroCTA = true;
+                      }
+                      if (
+                        productFunnel &&
+                        !insertedComparisonCTA &&
+                        [
+                          'Rechenbeispiel 2: Deutscher Staatsbürger erbt ausschließlich türkische Immobilie',
+                          "Örnek 2: Türk Kökeni Olmayan Alman Vatandaşının Sadece Türkiye'deki Taşınmazı Miras Alması",
+                          'Worked Example 2: A German National with No Turkish Background Inherits Only Turkish Property',
+                        ].includes(headingText)
+                      ) {
+                        renderedElements.push(
+                          <BlogProductCTAMid
+                            key="product-comparison-cta"
+                            funnel={productFunnel}
+                            language={language}
+                            variant="comparison"
+                          />
+                        );
+                        insertedComparisonCTA = true;
                       }
                       if (
                         productFunnel &&
@@ -3262,6 +3513,12 @@ export function BlogPost() {
                           'Was muss in der türkischen Vollmacht stehen?',
                           'Türkçe vekaletnamede ne yazmalı?',
                           'What should the Turkish power of attorney say?',
+                          'Der Gerichtsweg: Ablauf Schritt für Schritt',
+                          'Dava Yolu: Adım Adım Süreç',
+                          'The Court Route: Step by Step',
+                          '5 Strategien zur Minimierung der Doppelbesteuerung',
+                          'Çifte Vergilendirmeyi Azaltmak İçin 5 Strateji',
+                          '5 Strategies to Reduce Double Taxation',
                         ].includes(headingText)
                       ) {
                         renderedElements.push(

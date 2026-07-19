@@ -36,7 +36,6 @@ const serviceOptions = [
   "Mavi Kart",
   "Miras",
   "Boşanma",
-  "Sorgerecht / Velayet",
   "Unterhalt / Nafaka",
   "Ceza / Yakalama Kararı",
   "Tapu / Gayrimenkul",

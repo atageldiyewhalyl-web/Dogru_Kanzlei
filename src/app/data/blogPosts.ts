@@ -26,6 +26,8 @@ import { drugCaseTurkeyPost } from "./drugCaseTurkeyPost";
 import { threatCrimeTurkeyPost } from "./threatCrimeTurkeyPost";
 import { hagbGermanCitizenshipPost } from "./hagbGermanCitizenshipPost";
 import { tapuIptalPost } from "./tapuIptalPost";
+import { inheritanceTaxDoubleTaxationPost } from "./inheritanceTaxDoubleTaxationPost";
+import { tanimaTenfizRecognition2026Post } from "./tanimaTenfizRecognition2026Post";
 import { legacyBlogPosts } from "./legacyBlogPosts";
 
 export interface BlogPost {
@@ -1107,7 +1109,19 @@ const vekaletnameGondermePost: BlogPost = {
 };
 
 
-export const blogPosts: BlogPost[] = [
+const hiddenBlogSlugs = new Set([
+  "deutschland-gemeinsames-unterhalt-tuerkei-anerkennung",
+  "almanya-ortak-aile hukuku-turkiye-tenfiz",
+  "joint-custody-germany-turkey-recognition-enforcement",
+  "unterhalt-anwalt-mannheim",
+  "mannheim-aile hukuku-avukati",
+  "kind-tuerkei-mitnehmen-unterhalt",
+  "cocukla-turkiyeye-gitmek-aile hukuku",
+]);
+
+const allBlogPosts: BlogPost[] = [
+  tanimaTenfizRecognition2026Post,
+  inheritanceTaxDoubleTaxationPost,
   vekaletnameKostenPost,
   vekaletnameGondermePost,
   tuerkischerNotarPost,
@@ -1349,7 +1363,7 @@ Zweitens bleiben Sie im türkischen Erbrecht Erbe Ihres geschiedenen Ehegatten �
 
 Drittens bleiben während der Ehezeit in der Türkei erworbene Vermögenswerte dem ehelichen Güterrecht (Edinilmiş Mallara Katılma Rejimi) unterworfen. Der Güterstand endet nach türkischem Recht erst mit der Rechtskraft der Tanıma.
 
-Viertens wird ein Kind, das nach der deutschen Scheidung geboren wird, automatisch dem früheren Ehegatten im türkischen Personenstandsregister zugeordnet — mit erheblichen Konsequenzen für das Unterhalts- und Sorgerecht nach türkischem Recht.
+Viertens wird ein Kind, das nach der deutschen Scheidung geboren wird, automatisch dem früheren Ehegatten im türkischen Personenstandsregister zugeordnet — mit erheblichen Konsequenzen für Register, Unterhalt und spätere Verfahren nach türkischem Recht.
 
 > ⚠️ **Wichtig:** Je länger Sie warten, desto größer werden die Risiken. Der geschiedene Ehegatte könnte versterben — und Sie erben nach türkischem Recht als (formal eingetragener) Ehegatte. Oder: Die einjährige Frist für den Zugewinnausgleich in der Türkei läuft ab — und Ihre Vermögensansprüche erlöschen unwiederbringlich.
 
@@ -1381,13 +1395,13 @@ Weitere relevante Norm: Nüfus Hizmetleri Kanunu Art. 27/A (eingefügt durch Ges
 
 **Tanıma (Anerkennung) — Art. 58 MÖHUK**
 
-Die Tanıma bewirkt, dass der deutsche Scheidungsbeschluss in der Türkei als rechtskräftig anerkannt wird. Es entfaltet Feststellungswirkung: Die Ehe gilt als aufgelöst, das Personenstandsregister wird aktualisiert. Eine Tanıma genügt, wenn der deutsche Scheidungsbeschluss keine vollstreckbaren Nebenentscheidungen enthält — also weder Unterhalt noch Sorgerecht regelt.
+Die Tanıma bewirkt, dass der deutsche Scheidungsbeschluss in der Türkei als rechtskräftig anerkannt wird. Es entfaltet Feststellungswirkung: Die Ehe gilt als aufgelöst, das Personenstandsregister wird aktualisiert. Eine Tanıma genügt, wenn der deutsche Scheidungsbeschluss keine vollstreckbaren Nebenentscheidungen enthält — also keine vollstreckbaren Nebenentscheidungen regelt.
 
 **Tenfiz (Vollstreckbarerklärung) — Art. 50–54 MÖHUK**
 
-Die Tenfiz geht weiter: Sie macht den deutschen Beschluss in der Türkei vollstreckbar. Dies ist erforderlich, wenn der Beschluss Regelungen zum Unterhalt (Nafaka), Sorgerecht (Velayet), Zugewinnausgleich oder zu Schadensersatz enthält, die in der Türkei durchgesetzt werden sollen. Die Tenfiz umfasst automatisch auch die Tanıma.
+Die Tenfiz geht weiter: Sie macht den deutschen Beschluss in der Türkei vollstreckbar. Dies ist erforderlich, wenn der Beschluss Regelungen zum Unterhalt (Nafaka), Zugewinnausgleich oder zu Schadensersatz enthält, die in der Türkei durchgesetzt werden sollen. Die Tenfiz umfasst automatisch auch die Tanıma.
 
-**Praxishinweis:** In den meisten Fällen empfiehlt es sich, Tanıma und Tenfiz gemeinsam zu beantragen — auch wenn der Schwerpunkt auf der Statusänderung liegt. So sind spätere Unterhalts- oder Sorgerechtsfragen gleich miterfasst, ohne dass ein weiteres Verfahren erforderlich wird.
+**Praxishinweis:** In den meisten Fällen empfiehlt es sich, Tanıma und Tenfiz gemeinsam zu beantragen — auch wenn der Schwerpunkt auf der Statusänderung liegt. So sind spätere Unterhalts- oder Vermögensfragen gleich miterfasst, ohne dass ein weiteres Verfahren erforderlich wird.
 
 ---
 
@@ -1417,7 +1431,7 @@ Seit der Gesetzesänderung 2017 besteht eine verwaltungsrechtliche Alternative z
 
 **Voraussetzungen:** Beide Ehegatten müssen persönlich beim Konsulat erscheinen. Der deutsche Scheidungsbeschluss muss rechtskräftig sein, mit Apostille versehen und von einem vereidigten Übersetzer ins Türkische übersetzt worden sein.
 
-**Wichtige Einschränkungen:** Dieser Weg erfasst ausschließlich den Scheidungsstatus. Unterhalt, Sorgerecht, Güterrecht oder Schadensersatz werden nicht berücksichtigt. Verweigert der frühere Ehegatte die Mitwirkung oder ist er unauffindbar, scheidet dieser Weg aus.
+**Wichtige Einschränkungen:** Dieser Weg erfasst ausschließlich den Scheidungsstatus. Unterhalt, Güterrecht oder Schadensersatz werden nicht berücksichtigt. Verweigert der frühere Ehegatte die Mitwirkung oder ist er unauffindbar, scheidet dieser Weg aus.
 
 > ⚠️ **Wichtig:** Der Konsularweg eignet sich nur dann, wenn beide Parteien vollständig einig sind und keine Vermögensansprüche in der Türkei bestehen. Sobald Güterrecht, Unterhalt oder türkische Immobilien eine Rolle spielen, ist der Gerichtsweg über Tanıma-Tenfiz die einzig rechtssichere Option.
 
@@ -1494,7 +1508,7 @@ Die Apostille muss vom zuständigen Oberlandesgericht (OLG) angebracht werden �
 Der gesamte deutsche Scheidungsbeschluss — einschließlich Tatbestand und Entscheidungsgründe — muss übersetzt werden. Eine Teilübersetzung genügt nicht und kann zur Verfahrensverzögerung führen.
 
 **Fehler 5: Nur Tanıma ohne Tenfiz beantragt**
-Wenn im deutschen Beschluss Unterhalt oder Sorgerecht geregelt ist und Sie diese Regelungen in der Türkei durchsetzen möchten, brauchen Sie die Tenfiz — nicht nur die Tanıma.
+Wenn im deutschen Beschluss Unterhalt oder Vermögen geregelt ist und Sie diese Regelungen in der Türkei durchsetzen möchten, brauchen Sie die Tenfiz — nicht nur die Tanıma.
 
 ---
 
@@ -1503,6 +1517,8 @@ Wenn im deutschen Beschluss Unterhalt oder Sorgerecht geregelt ist und Sie diese
 Ein häufig übersehener Aspekt: Wenn die Eheleute während der Ehezeit Vermögen in der Türkei erworben haben (z.B. Immobilien, Fahrzeuge, Bankguthaben), muss der güterrechtliche Ausgleich (Edinilmiş Mallara Katılma Rejiminin Tasfiyesi) in der Türkei gesondert geltend gemacht werden.
 
 > ⚠️ **Wichtig — einjährige Ausschlussfrist:** Die Verjährungsfrist für den Zugewinnausgleich beginnt nicht mit Rechtskraft der deutschen Scheidung, sondern mit Rechtskraft der **türkischen Tanıma**. Dies entspricht der ständigen Rechtsprechung des Yargıtay 8. Hukuk Dairesi. Versäumen Sie diese Frist, verlieren Sie Ihre Ansprüche auf türkisches Vermögen dauerhaft. Daher ist es dringend empfehlenswert, die Tanıma-Tenfiz-Klage und die Mal-Paylaşımı-Klage (Güterrechtsklage) gleichzeitig zu erheben.
+
+Für eine aktualisierte Schritt-für-Schritt-Darstellung mit Fokus auf Zustellung, Konsularweg und Katılma-Alacağı-Frist lesen Sie auch unseren [Tanıma-Tenfiz-Leitfaden 2026](/de/blog/tanima-tenfiz-scheidung-tuerkei-anerkennung-2026).
 
 ---
 
@@ -1532,7 +1548,7 @@ Und auf Englisch für englischsprachige Familienmitglieder:
 Ohne Tanıma-Tenfiz-Verfahren bleiben Sie im türkischen Personenstandsregister als verheiratet eingetragen. Sie können in der Türkei nicht erneut heiraten, das Erbrecht des früheren Ehegatten bleibt bestehen, und Vermögensansprüche im türkischen Güterrecht können nicht geltend gemacht werden.
 
 **Was ist der Unterschied zwischen Tanıma und Tenfiz?**
-Tanıma (Art. 58 MÖHUK) ist die bloße Anerkennung des deutschen Scheidungsbeschlusses — sie aktualisiert das Personenstandsregister. Tenfiz (Art. 50–54 MÖHUK) macht den Beschluss zusätzlich vollstreckbar, was für Unterhalt, Sorgerecht oder Zugewinnausgleich erforderlich ist. Die Tenfiz schließt die Tanıma automatisch ein.
+Tanıma (Art. 58 MÖHUK) ist die bloße Anerkennung des deutschen Scheidungsbeschlusses — sie aktualisiert das Personenstandsregister. Tenfiz (Art. 50–54 MÖHUK) macht den Beschluss zusätzlich vollstreckbar, was für Unterhalt oder Zugewinnausgleich erforderlich ist. Die Tenfiz schließt die Tanıma automatisch ein.
 
 **Wie lange dauert das Verfahren?**
 Je nach Zustellungssituation 2 bis 14 Monate. Am schnellsten geht es, wenn beide Parteien in der Türkei anwaltlich vertreten sind — dann sind 2–4 Monate realistisch.
@@ -1541,7 +1557,7 @@ Je nach Zustellungssituation 2 bis 14 Monate. Am schnellsten geht es, wenn beide
 Nein. Eine notarielle Vollmacht (Vekaletname) genügt. Die Doğru Kanzlei vertritt Sie direkt vor dem türkischen Familiengericht, ohne dass Sie reisen müssen.
 
 **Kann ich die Scheidung über das türkische Konsulat eintragen lassen?**
-Seit 2017 ist dies bei gemeinsamer Antragstellung beider Ehegatten möglich (Art. 27/A). Dieser Weg ist aber auf den Scheidungsstatus beschränkt — Unterhalt, Sorgerecht und Güterrecht können darüber nicht geregelt werden.
+Seit 2017 ist dies bei gemeinsamer Antragstellung beider Ehegatten möglich (Art. 27/A). Dieser Weg ist aber auf den Scheidungsstatus beschränkt — Unterhalt und Güterrecht können darüber nicht geregelt werden.
 
 **Was kostet das Verfahren?**
 Gerichtskosten ca. 3.000–5.000 TL, Übersetzung ca. 150–300 EUR, Apostille ca. 25–50 EUR pro Dokument. Das Anwaltshonorar wird individuell vereinbart.
@@ -1583,11 +1599,11 @@ Türk Nüfus Müdürlüğü kayıtlarınız güncellenmez; resmen "evli" olmaya 
 
 Bu iki kavram çoğu zaman birbirine karıştırılır. Hangisine ihtiyacınız olduğu, Alman boşanma kararının içeriğine göre değişir.
 
-**Tanıma (MÖHUK m. 58)** — Yabancı mahkeme kararının Türkiye'de "kesin hüküm" etkisi kazanmasıdır. Alman kararınız yalnızca boşanmayı hükme bağlıyorsa — yani nafaka, velayet ya da tazminat içermiyorsa — tanıma yeterlidir. Nüfus kaydınız "boşanmış" olarak güncellenir.
+**Tanıma (MÖHUK m. 58)** — Yabancı mahkeme kararının Türkiye'de "kesin hüküm" etkisi kazanmasıdır. Alman kararınız yalnızca boşanmayı hükme bağlıyorsa — yani nafaka, mal rejimi ya da tazminat içermiyorsa — tanıma yeterlidir. Nüfus kaydınız "boşanmış" olarak güncellenir.
 
-**Tenfiz (MÖHUK m. 50–54)** — Yabancı mahkeme kararındaki maddi yükümlülüklerin Türkiye'de icra edilebilir hale gelmesidir. Alman kararınızda nafaka (Unterhalt), velayet (Sorgerecht), mal paylaşımı veya tazminat hükümleri varsa ve bunları Türkiye'de uygulatmak istiyorsanız tenfiz zorunludur. Tenfiz kararı, tanıma etkisini de otomatik olarak kapsar.
+**Tenfiz (MÖHUK m. 50–54)** — Yabancı mahkeme kararındaki maddi yükümlülüklerin Türkiye'de icra edilebilir hale gelmesidir. Alman kararınızda nafaka, mal paylaşımı veya tazminat hükümleri varsa ve bunları Türkiye'de uygulatmak istiyorsanız tenfiz zorunludur. Tenfiz kararı, tanıma etkisini de otomatik olarak kapsar.
 
-**Pratik öneri:** Alman kararınızda bu tür ek hükümler olmasa bile, tanıma ile birlikte tenfiz talebini de yapmanızı öneririz. İleride doğabilecek nafaka veya velayet anlaşmazlıklarında ayrıca mahkemeye gitmeniz gerekmez.
+**Pratik öneri:** Alman kararınızda bu tür ek hükümler olmasa bile, tanıma ile birlikte tenfiz talebini de yapmanızı öneririz. İleride doğabilecek nafaka veya mal rejimi anlaşmazlıklarında ayrıca mahkemeye gitmeniz gerekmez.
 
 ---
 
@@ -1631,9 +1647,9 @@ Bu yolun koşulları: Her iki eş de konsolosluğa bizzat gelmeli. Alman boşanm
 
 **Bu yolun önemli sınırlamaları:**
 
-Yalnızca boşanma statüsünü kapsar. Nafaka, velayet veya Türkiye'deki mal paylaşımı bu yolla çözülemez. Eski eşiniz başvuruyu reddederse ya da bulunamazsa bu yol kullanılamaz. Türkiye'de ortak mal varlıkları mevcutsa bu yol haklarınızı korumaz.
+Yalnızca boşanma statüsünü kapsar. Nafaka, aile hukuku veya Türkiye'deki mal paylaşımı bu yolla çözülemez. Eski eşiniz başvuruyu reddederse ya da bulunamazsa bu yol kullanılamaz. Türkiye'de ortak mal varlıkları mevcutsa bu yol haklarınızı korumaz.
 
-> ⚠️ **Önemli:** Konsolosluk yolu cazip görünebilir — ama yalnızca boşanma statünüzü güncellemek istiyorsanız ve eski eşiniz tam anlaşma içindeyse geçerlidir. Türkiye'de ortak taşınmaz, araç ya da banka hesabı varsa veya nafaka/velayet konusunda anlaşmazlık söz konusuysa doğrudan mahkeme yoluna gitmeniz şarttır.
+> ⚠️ **Önemli:** Konsolosluk yolu cazip görünebilir — ama yalnızca boşanma statünüzü güncellemek istiyorsanız ve eski eşiniz tam anlaşma içindeyse geçerlidir. Türkiye'de ortak taşınmaz, araç ya da banka hesabı varsa veya nafaka/aile hukuku konusunda anlaşmazlık söz konusuysa doğrudan mahkeme yoluna gitmeniz şarttır.
 
 ---
 
@@ -1707,7 +1723,7 @@ Apostil, yetkili Oberlandesgericht'ten alınmalıdır. Amtsgericht'ten veya note
 **Hata 4: Eksik çeviri.**
 Boşanma kararının tamamı çevrilmelidir; kısmi çeviri reddedilir.
 
-**Hata 5: Nafaka veya velayet hükümlerini atlamak.**
+**Hata 5: Nafaka veya aile hukuku hükümlerini atlamak.**
 Kararınızda bu hükümler varsa ve Türkiye'de uygulatmak istiyorsanız tenfiz zorunludur. Yalnızca tanıma almanız durumunda bu haklar icra edilemez.
 
 ---
@@ -1719,6 +1735,8 @@ Evlilik süresinde Türkiye'de edinilmiş ortak mallar (taşınmaz, araç, banka
 > ⚠️ **Kritik süre:** Bu dava için süre, Alman boşanma kararının kesinleşmesinden değil, **Türkiye'deki tanıma kararının kesinleşmesinden itibaren 1 yıldır.** Yargıtay 8. Hukuk Dairesi'nin yerleşik içtihadına göre zamanaşımı süresi ancak bu tarihle başlar. Bu süreyi kaçırırsanız Türkiye'deki mal paylaşımı haklarınızı kalıcı olarak yitirebilirsiniz.
 
 Bu nedenle tanıma-tenfiz davası ile mal paylaşımı davasını eş zamanlı açmanızı kesinlikle tavsiye ederiz.
+
+Tebligat, konsolosluk yolu ve katılma alacağı süresi odaklı güncel anlatım için ayrıca [2026 tanıma-tenfiz rehberimizi](/tr/blog/almanya-bosanma-turkiye-tanima-tenfiz-2026-rehber) okuyabilirsiniz.
 
 ---
 
@@ -1748,7 +1766,7 @@ Bu makaleyi İngilizce okuyanlar için de yayınladık:
 Alman boşanma kararı Türkiye'de otomatik olarak geçerli olmaz. MÖHUK m. 50-59 kapsamında Türk Aile Mahkemesi'nde tanıma veya tenfiz davası açmanız gerekir. Doğru Kanzlei, Türkiye'ye gitmeksizin bu süreci sizin adınıza yürütür.
 
 **Tanıma ve tenfiz arasındaki fark nedir?**
-Tanıma, Alman kararının Türkiye'de kesin hüküm etkisi kazanmasını — yani nüfus kaydının güncellenmesini — sağlar. Tenfiz ise karardaki nafaka, velayet veya tazminat gibi hükümlerin Türk icra organları aracılığıyla uygulanmasını mümkün kılar.
+Tanıma, Alman kararının Türkiye'de kesin hüküm etkisi kazanmasını — yani nüfus kaydının güncellenmesini — sağlar. Tenfiz ise karardaki nafaka, mal rejimi veya tazminat gibi hükümlerin Türk icra organları aracılığıyla uygulanmasını mümkün kılar.
 
 **Tanıma tenfiz ne kadar sürer 2026?**
 Her iki taraf da Türkiye'de avukatla temsil ediliyorsa 2-4 ay. Davalıya yurt dışı tebligat gerekiyorsa 6-12 ay. İlanen tebligat gerekirse 8-14 ay.
@@ -1797,7 +1815,7 @@ Your former spouse remains your legal heir under Turkish inheritance law, and yo
 
 Any property acquired in Turkey during the marriage remains subject to Turkish matrimonial property rules. The marital property regime ends only when the tanıma decision becomes final in Turkey — not when the German court issues the divorce.
 
-Children born after your German divorce may still be registered to your former spouse in the Turkish civil registry, creating complications for custody and child support under Turkish law.
+Children born after your German divorce may still be registered to your former spouse in the Turkish civil registry, creating complications for child support under Turkish law.
 
 > ⚠️ **Important:** If your former spouse passes away before your tanıma is completed, you could inherit from them under Turkish law — or they could inherit from you. The longer you wait, the more complex and financially significant this risk becomes.
 
@@ -1813,7 +1831,7 @@ Tanıma means the German court's decision is accepted as final and binding in Tu
 
 **Tenfiz (Enforcement) — MOHUK Art. 50–54**
 
-Tenfiz goes one step further. It makes the specific orders in your German decree — alimony (nafaka), custody (velayet), property division, or compensation — enforceable by Turkish courts and enforcement agencies. If you want to collect alimony payments or enforce a custody arrangement through the Turkish legal system, you need tenfiz. Importantly, tenfiz automatically includes tanıma.
+Tenfiz goes one step further. It makes the specific orders in your German decree — alimony, property division, or compensation — enforceable by Turkish courts and enforcement agencies. If you want to collect payments or enforce financial orders through the Turkish legal system, you need tenfiz. Importantly, tenfiz automatically includes tanıma.
 
 **Practical advice:** Even if your German decree contains only the divorce itself, it is worth requesting both tanıma and tenfiz together in a single petition. Future disputes over financial matters are common, and having the decree already declared enforceable saves you from filing a second case later.
 
@@ -1861,7 +1879,7 @@ Since a 2017 change in Turkish law (Population Services Law Art. 27/A), there is
 
 **What this covers:** Only the civil registry update — your status changes from married to divorced.
 
-**What this does NOT cover:** Alimony, custody, property division in Turkey, or any other financial or parental arrangement. If your former spouse refuses to cooperate or cannot be located, this route is simply unavailable.
+**What this does NOT cover:** Alimony, property division in Turkey, or any other financial arrangement. If your former spouse refuses to cooperate or cannot be located, this route is simply unavailable.
 
 > ⚠️ **Important:** The consulate route is a useful shortcut when both parties are cooperative and there are no Turkish assets or outstanding financial matters. If there are properties, bank accounts, or pension entitlements in Turkey from the marriage — or if your former spouse is unresponsive — you need the full court process.
 
@@ -1938,7 +1956,7 @@ The apostille must come from the Oberlandesgericht (Regional Court of Appeal) �
 The entire German divorce decree — including the statement of facts and reasoning — must be translated in full. A partial translation is not accepted.
 
 **Mistake 5: Filing tanıma without tenfiz when financial orders exist**
-If your German decree includes alimony or custody arrangements and you want to enforce them in Turkey, you need tenfiz. Tanıma alone will not make those orders executable.
+If your German decree includes alimony or property arrangements and you want to enforce them in Turkey, you need tenfiz. Tanıma alone will not make those orders executable.
 
 ---
 
@@ -1947,6 +1965,8 @@ If your German decree includes alimony or custody arrangements and you want to e
 If you and your former spouse acquired property in Turkey during the marriage — real estate, vehicles, bank accounts — you have the right to claim your share. This is called Edinilmiş Mallara Katılma Rejiminin Tasfiyesi (the dissolution of the acquired property regime).
 
 > ⚠️ **Critical deadline:** The one-year limitation period for this claim starts from the date the tanıma decision becomes final in Turkey — NOT from the date of the German divorce. This is settled case law from the Yargıtay (Turkish Court of Cassation, 8th Civil Division). If you miss this window, your right to Turkish marital assets is permanently extinguished. File the property division claim at the same time as your tanıma petition.
+
+For an updated step-by-step version focused on service of process, consular registration, and the property-settlement limitation period, see our [2026 German divorce recognition guide](/en/blog/german-divorce-turkey-recognition-guide-2026).
 
 ---
 
@@ -1979,7 +1999,7 @@ No. You grant a notarised power of attorney (vekaletname) to a Turkish lawyer, w
 You remain legally married in the Turkish civil registry. You cannot remarry in Turkey. Your former spouse retains inheritance rights under Turkish law — and you retain theirs. Property from the marriage in Turkey remains subject to marital property rules.
 
 **What is the difference between tanıma and tenfiz?**
-Tanıma (Art. 58 MOHUK) recognises the German decree and updates your civil status. Tenfiz (Art. 50–54 MOHUK) makes specific orders in the decree — alimony, custody, property division — enforceable through Turkish authorities. Tenfiz includes tanıma automatically.
+Tanıma (Art. 58 MOHUK) recognises the German decree and updates your civil status. Tenfiz (Art. 50–54 MOHUK) makes specific orders in the decree — alimony, property division — enforceable through Turkish authorities. Tenfiz includes tanıma automatically.
 
 **How long does the process take in 2026?**
 2–4 months if both parties appoint Turkish lawyers. 6–12 months if international service to Germany is required. Up to 14 months if the respondent's address is unknown.
@@ -1988,7 +2008,7 @@ Tanıma (Art. 58 MOHUK) recognises the German decree and updates your civil stat
 Certified copy of the divorce decree, certificate of finality, apostille from the Oberlandesgericht, sworn Turkish translation of all documents, and a notarised power of attorney for your Turkish lawyer.
 
 **Can I use the Turkish consulate instead of going to court?**
-Yes, since 2017, if both spouses apply jointly at a Turkish consulate. But this covers only the civil registry update — not alimony, custody, or property in Turkey.
+Yes, since 2017, if both spouses apply jointly at a Turkish consulate. But this covers only the civil registry update — not alimony, or property in Turkey.
 
 **How long do I have to claim property in Turkey?**
 One year from the date the tanıma decision becomes final in Turkey — not from the German divorce. File the property division claim alongside your tanıma petition to avoid losing these rights.
@@ -2021,7 +2041,7 @@ No. Until tanıma is granted, your former spouse remains your legal heir under T
       },
       {
         question: "Was ist der Unterschied zwischen Tanıma und Tenfiz?",
-        answer: "Tanıma (Anerkennung, MÖHUK Art. 58) bewirkt, dass der deutsche Scheidungsbeschluss in der Türkei Rechtskraftwirkung entfaltet und das Personenstandsregister aktualisiert wird. Tenfiz (Vollstreckbarerklärung, MÖHUK Art. 50–54) ist zusätzlich erforderlich, wenn der deutsche Beschluss vollstreckbare Regelungen wie Unterhalt, Sorgerecht oder Zugewinnausgleich enthält, die in der Türkei durchgesetzt werden sollen. Die Tenfiz schließt die Tanıma automatisch ein."
+        answer: "Tanıma (Anerkennung, MÖHUK Art. 58) bewirkt, dass der deutsche Scheidungsbeschluss in der Türkei Rechtskraftwirkung entfaltet und das Personenstandsregister aktualisiert wird. Tenfiz (Vollstreckbarerklärung, MÖHUK Art. 50–54) ist zusätzlich erforderlich, wenn der deutsche Beschluss vollstreckbare Regelungen wie Unterhalt oder Zugewinnausgleich enthält, die in der Türkei durchgesetzt werden sollen. Die Tenfiz schließt die Tanıma automatisch ein."
       },
       {
         question: "Wie lange dauert das Tanıma-Tenfiz-Verfahren 2026?",
@@ -2033,7 +2053,7 @@ No. Until tanıma is granted, your former spouse remains your legal heir under T
       },
       {
         question: "Kann ich die Scheidung über das türkische Konsulat in Deutschland eintragen lassen?",
-        answer: "Ja, seit der Gesetzesänderung 2017 (Nüfus Hizmetleri Kanunu Art. 27/A) können beide Ehegatten gemeinsam beim türkischen Konsulat die Eintragung der Scheidung ins Personenstandsregister beantragen. Dieser Weg erfasst jedoch ausschließlich den Scheidungsstatus — Unterhalt, Sorgerecht oder Zugewinnausgleich können auf diesem Weg nicht geregelt werden."
+        answer: "Ja, seit der Gesetzesänderung 2017 (Nüfus Hizmetleri Kanunu Art. 27/A) können beide Ehegatten gemeinsam beim türkischen Konsulat die Eintragung der Scheidung ins Personenstandsregister beantragen. Dieser Weg erfasst jedoch ausschließlich den Scheidungsstatus — Unterhalt oder Zugewinnausgleich können auf diesem Weg nicht geregelt werden."
       },
       {
         question: "Was kostet die Anerkennung einer deutschen Scheidung in der Türkei?",
@@ -2055,7 +2075,7 @@ No. Until tanıma is granted, your former spouse remains your legal heir under T
       },
       {
         question: "Tanıma ve tenfiz arasındaki fark nedir?",
-        answer: "Tanıma (MÖHUK m. 58), yabancı mahkeme kararının Türkiye'de kesin hüküm etkisi kazanmasını sağlar ve nüfus kaydınızı günceller. Tenfiz (MÖHUK m. 50-54) ise karardaki nafaka, velayet veya tazminat gibi maddi yükümlülükleri Türkiye'de icra edilebilir hale getirir. Yalnızca boşanma statüsünüz güncellenecekse tanıma yeterlidir; maddi hükümleri uygulatmak istiyorsanız tenfiz de gereklidir."
+        answer: "Tanıma (MÖHUK m. 58), yabancı mahkeme kararının Türkiye'de kesin hüküm etkisi kazanmasını sağlar ve nüfus kaydınızı günceller. Tenfiz (MÖHUK m. 50-54) ise karardaki nafaka, mal rejimi veya tazminat gibi maddi yükümlülükleri Türkiye'de icra edilebilir hale getirir. Yalnızca boşanma statüsünüz güncellenecekse tanıma yeterlidir; maddi hükümleri uygulatmak istiyorsanız tenfiz de gereklidir."
       },
       {
         question: "Tanıma tenfiz davası ne kadar sürer 2026?",
@@ -2067,7 +2087,7 @@ No. Until tanıma is granted, your former spouse remains your legal heir under T
       },
       {
         question: "Konsolosluk yoluyla boşanma kaydı yaptırabilir miyim?",
-        answer: "Evet, Nüfus Hizmetleri Kanunu m. 27/A kapsamında her iki eş konsolosluğa birlikte başvurursa nüfus kaydı idari yoldan güncellenebilir. Ancak bu yol yalnızca boşanma statüsünü kapsar. Nafaka, velayet veya Türkiye'deki mal paylaşımı için mahkeme yolu şarttır."
+        answer: "Evet, Nüfus Hizmetleri Kanunu m. 27/A kapsamında her iki eş konsolosluğa birlikte başvurursa nüfus kaydı idari yoldan güncellenebilir. Ancak bu yol yalnızca boşanma statüsünü kapsar. Nafaka, aile hukuku veya Türkiye'deki mal paylaşımı için mahkeme yolu şarttır."
       },
       {
         question: "Mavi Kart sahibi olarak tanıma tenfiz davası açabilir miyim?",
@@ -2093,7 +2113,7 @@ No. Until tanıma is granted, your former spouse remains your legal heir under T
       },
       {
         question: "What is the difference between tanıma and tenfiz?",
-        answer: "Tanıma (recognition, MOHUK Art. 58) means the German divorce decree is accepted as final in Turkey — your civil registry status is updated to divorced. Tenfiz (enforcement, MOHUK Art. 50–54) goes further: it makes the decree's specific orders — such as alimony, custody, or property division — enforceable by Turkish authorities. If your German decree only grants the divorce itself, tanıma alone is sufficient. If it contains financial or custody orders you want enforced in Turkey, you need tenfiz as well."
+        answer: "Tanıma (recognition, MOHUK Art. 58) means the German divorce decree is accepted as final in Turkey — your civil registry status is updated to divorced. Tenfiz (enforcement, MOHUK Art. 50–54) goes further: it makes the decree's specific orders — such as alimony, or property division — enforceable by Turkish authorities. If your German decree only grants the divorce itself, tanıma alone is sufficient. If it contains financial orders you want enforced in Turkey, you need tenfiz as well."
       },
       {
         question: "How long does tanıma tenfiz take in 2026?",
@@ -2105,7 +2125,7 @@ No. Until tanıma is granted, your former spouse remains your legal heir under T
       },
       {
         question: "Can I get my German divorce registered through the Turkish consulate?",
-        answer: "Yes, since a 2017 law change (Population Services Law Art. 27/A), both spouses can jointly apply at a Turkish consulate to update the civil registry. However, this administrative route only covers the divorce status. It does not address alimony, custody, or property division in Turkey. If your former spouse refuses to cooperate or cannot be located, this route is not available."
+        answer: "Yes, since a 2017 law change (Population Services Law Art. 27/A), both spouses can jointly apply at a Turkish consulate to update the civil registry. However, this administrative route only covers the divorce status. It does not address alimony, or property division in Turkey. If your former spouse refuses to cooperate or cannot be located, this route is not available."
       },
       {
         question: "How long do I have to claim property division in Turkey after tanıma?",
@@ -2648,10 +2668,10 @@ As quickly as possible. Every day an open case goes unaddressed increases the ri
     excerptDE: "Von Nachlassspaltung und Erbschein über Doppelbesteuerung und Pflichtteilsklage bis zur verdeckten Vermögensverschiebung — der vollständige Leitfaden für deutsch-türkische Erbfälle 2026.",
     excerptTR: "Veraset ilamından muris muvazaasına, veraset vergisinden izale-i şuyuya — Almanya'dan Türkiye'deki mirası eksiksiz yönetme rehberi.",
     excerptEN: "From the split estate problem and Turkish probate certificate to inheritance tax, forced heirship claims, and fraudulent property transfers — everything you need to manage a Turkish inheritance from Germany without flying to Istanbul.",
-    metaTitleDE: "Erbschaft Türkei: Vollständiger Leitfaden für Erben in Deutschland 2026",
+    metaTitleDE: "Erbschaft Türkei 2026: Leitfaden für Erben in Deutschland",
     metaTitleTR: "Almanya'da Yaşarken Türkiye'de Miras: Eksiksiz Hukuki Rehber 2026",
     metaTitleEN: "Turkish Inheritance from Germany: The Complete Legal Guide 2026",
-    metaDescriptionDE: "Immobilie in der Türkei geerbt? Erbschein, Erbschaftsteuer, Doppelbesteuerung, Nachlassspaltung, Erbausschlagung, Pflichtteilsklage und Muris Muvazaası — alles was Erben in Deutschland wissen müssen. Doğru Kanzlei.",
+    metaDescriptionDE: "Immobilie oder Konto in der Türkei geerbt? Wir klären Erbschein, Fristen und Steuern – ohne dass Sie dafür nach Türkei reisen müssen. Jetzt informieren.",
     metaDescriptionTR: "Almanya'dan Türkiye'deki mirası nasıl takip edersiniz? Veraset ilamı, tenkis davası, muris muvazaası, veraset vergisi, izale-i şuyu ve miras reddi — tüm süreçler adım adım. Doğru Kanzlei.",
     metaDescriptionEN: "Inherited property in Turkey while living in Germany? Learn about the split estate problem, Turkish probate certificate, inheritance tax, forced heirship claims, fraudulent transfers (Muris Muvazaası), and how to manage everything remotely. Doğru Kanzlei.",
     schemaHeadlineDE: "Erbschaft Türkei: Vollständiger Leitfaden für Erben in Deutschland 2026",
@@ -2842,6 +2862,8 @@ Wenn keine Doppelbesteuerungsabkommen existieren, ermöglicht § 21 Erbschaftste
 3. Bei der deutschen Erbschaftsteuererklärung ausdrücklich die Anrechnung nach § 21 ErbStG beantragen
 
 Eine vollständige Doppelbesteuerung lässt sich auf diesem Weg zwar nicht in jedem Fall vermeiden, aber zumindest erheblich reduzieren.
+
+Für konkrete Rechenbeispiele und eine strukturierte Vorgehensweise lesen Sie ergänzend unseren Beitrag zu [Erbschaftsteuer Türkei-Deutschland: Rechenbeispiele und 5 Strategien zur Minimierung der Doppelbesteuerung](/de/blog/erbschaftsteuer-tuerkei-doppelbesteuerung-vermeiden).
 
 ---
 
@@ -3166,6 +3188,8 @@ Türkiye ile Almanya arasında **miras vergisi alanında çifte vergilendirmeyi 
 Bu nedenle Almanya'da yaşayan mirasçılar Türkiye'deki miraslarının hem Türkiye'de hem de Almanya'da vergilendirilebileceğini bilmelidir. Türkiye'de ödenen vergi, Almanya'da mahsup talebinde bulunulabilir; ancak bu prosedür dikkatli takip gerektirmektedir.
 
 **Pratik önlem:** Türkiye'deki miras vergisi ödeme makbuzlarını ve Türkçe vergi belgelerini apostilli ve yeminli çevirili olarak saklayın. Almanya'daki vergi dairesine mahsup talebi için bu belgeler zorunludur.
+
+Somut örnek hesaplamalar ve çifte vergilendirmeyi azaltma stratejileri için ayrıca [Türkiye-Almanya miras vergisinde çifte vergilendirme rehberimizi](/tr/blog/turkiye-almanya-miras-vergisi-cifte-vergilendirme) okuyabilirsiniz.
 
 ---
 
@@ -3534,6 +3558,8 @@ Germany taxes heirs based on the residence of the heir or the deceased. Turkey t
 - The credit is capped at the German tax attributable to the same asset
 
 Keep all Turkish tax documents — original assessments, payment receipts, and the clearance certificate — apostilled and officially translated. You will need them for the German inheritance tax return.
+
+For worked examples and 5 practical strategies, see our companion guide on [Turkish inheritance tax double taxation between Germany and Turkey](/en/blog/turkish-inheritance-tax-double-taxation-germany).
 
 ---
 
@@ -4143,17 +4169,17 @@ Avukat Hasan Doğru | Doğru Kanzlei | Ankara Barosu (Sicil No: 47068) & Rechtsa
     slugTR: "almanya-bosanma-tanima-tenfiz-davasi-rehberi",
     titleDE: "In Deutschland geschieden – Was jetzt in der Türkei? Der vollständige Leitfaden zu Tanıma & Tenfiz (2026)",
     titleTR: "Almanya'da Boşandım, Türkiye'de Tanıma Tenfiz Davası Nasıl Açılır? (2026 Güncel Rehber)",
-    excerptDE: "Anerkennung deutscher Scheidungsurteile in der Türkei (Tanıma ve Tenfiz). Ein umfassender Leitfaden zu Personenstand, Vermögensaufteilung, Sorgerecht und Unterhalt.",
-    excerptTR: "Almanya'da boşanan Türk vatandaşları için Türkiye'de tanıma ve tenfiz davası rehberi. Nüfus kaydı, miras hakları, mal paylaşımı ve velayet süreçleri.",
+    excerptDE: "Anerkennung deutscher Scheidungsurteile in der Türkei (Tanıma ve Tenfiz). Ein umfassender Leitfaden zu Personenstand, Vermögensaufteilung und Unterhalt.",
+    excerptTR: "Almanya'da boşanan Türk vatandaşları için Türkiye'de tanıma ve tenfiz davası rehberi. Nüfus kaydı, miras hakları, mal paylaşımı ve aile hukuku süreçleri.",
     contentDE: `**RECHTLICHER HINWEIS:** Dieser Artikel befasst sich ausschließlich mit dem türkischen Recht. Eine Beratung zum deutschen Recht findet in unserer Kanzlei nicht statt.
 
 ---
 
 Sie sind in Deutschland geschieden. Das Scheidungsurteil liegt vor, die Sache scheint erledigt. Dann, Monate später, stellen Sie bei einem Behördengang in der Türkei fest: **In der Türkei gelten Sie offiziell noch als verheiratet.**
 
-Das ist kein Einzelfall. Hunderttausende türkischstämmige Menschen in Deutschland wissen nicht, dass ein deutsches Scheidungsurteil in der Türkei **nicht automatisch gilt**. Um Ihren Personenstandsstatus in der Türkei zu aktualisieren, erneut heiraten zu können, Vermögen zu regeln, Unterhaltsansprüche durchzusetzen oder Sorgerechtsfragen zu klären, ist ein gesondertes Anerkennungsverfahren vor einem türkischen Gericht erforderlich — das sogenannte **Tanıma ve Tenfiz**-Verfahren.
+Das ist kein Einzelfall. Hunderttausende türkischstämmige Menschen in Deutschland wissen nicht, dass ein deutsches Scheidungsurteil in der Türkei **nicht automatisch gilt**. Um Ihren Personenstandsstatus in der Türkei zu aktualisieren, erneut heiraten zu können, Vermögen zu regeln, Unterhaltsansprüche durchzusetzen oder Vermögensfragen zu klären, ist ein gesondertes Anerkennungsverfahren vor einem türkischen Gericht erforderlich — das sogenannte **Tanıma ve Tenfiz**-Verfahren.
 
-Dieser Leitfaden erklärt Ihnen als Person mit Wohnsitz in Deutschland umfassend, wie Sie dieses Verfahren vollständig von hier aus durchführen können — **ohne Reise in die Türkei** — und was bei Vermögensaufteilung, Sorgerecht und Unterhalt zu beachten ist.
+Dieser Leitfaden erklärt Ihnen als Person mit Wohnsitz in Deutschland umfassend, wie Sie dieses Verfahren vollständig von hier aus durchführen können — **ohne Reise in die Türkei** — und was bei Vermögensaufteilung und Unterhalt zu beachten ist.
 
 ---
 
@@ -4163,17 +4189,17 @@ Diese beiden Begriffe werden häufig verwechselt, und die falsche Einschätzung 
 
 ### Tanıma (Anerkennung)
 
-Tanıma bedeutet, dass das deutsche Urteil in der Türkei als rechtskräftig anerkannt wird — es erlangt damit die gleiche Wirkung wie ein türkisches Gerichtsurteil. Wenn Ihr Scheidungsurteil **ausschließlich die Scheidung** ausspricht und keinerlei vollstreckbare Regelungen zu Sorgerecht, Unterhalt oder Schadensersatz enthält, ist ein Tanıma-Verfahren ausreichend. Das Ergebnis: Ihr Personenstand wird in der Türkei auf „geschieden" geändert.
+Tanıma bedeutet, dass das deutsche Urteil in der Türkei als rechtskräftig anerkannt wird — es erlangt damit die gleiche Wirkung wie ein türkisches Gerichtsurteil. Wenn Ihr Scheidungsurteil **ausschließlich die Scheidung** ausspricht und keinerlei vollstreckbare Regelungen zu Unterhalt, Zugewinnausgleich oder Schadensersatz enthält, ist ein Tanıma-Verfahren ausreichend. Das Ergebnis: Ihr Personenstand wird in der Türkei auf „geschieden" geändert.
 
 ### Tenfiz (Vollstreckbarerklärung)
 
-Tenfiz geht einen Schritt weiter. Es ermöglicht, dass das ausländische Urteil in der Türkei **vollstreckt** werden kann. Wenn das deutsche Urteil neben der Scheidung auch Regelungen zu Unterhalt, Sorgerecht, Schadensersatz oder Vermögensaufteilung enthält, müssen diese Regelungen durch Tenfiz in der Türkei vollstreckbar gemacht werden.
+Tenfiz geht einen Schritt weiter. Es ermöglicht, dass das ausländische Urteil in der Türkei **vollstreckt** werden kann. Wenn das deutsche Urteil neben der Scheidung auch Regelungen zu Unterhalt, Schadensersatz oder Vermögensaufteilung enthält, müssen diese Regelungen durch Tenfiz in der Türkei vollstreckbar gemacht werden.
 
-Ohne Tenfiz kann ein Unterhaltsurteil in der Türkei nicht vollstreckt werden. Ein Sorgerechtsbeschluss wird türkischen Behörden gegenüber nicht anerkannt. Eine Vermögensregelung bleibt wirkungslos.
+Ohne Tenfiz kann ein Unterhaltsurteil in der Türkei nicht vollstreckt werden. Ein familienrechtlicher Beschluss wird türkischen Behörden gegenüber nicht anerkannt. Eine Vermögensregelung bleibt wirkungslos.
 
 ### Was passiert in der Praxis?
 
-Die meisten deutschen Scheidungsurteile enthalten sowohl die Scheidung als auch Regelungen zu Unterhalt, Sorgerecht oder Vermögen. Ihr Anwalt wird daher in der Regel beide Verfahren gemeinsam beantragen. Welche Klage die richtige ist, hängt stets vom konkreten Inhalt Ihres Urteils ab und muss individuell bewertet werden.
+Die meisten deutschen Scheidungsurteile enthalten sowohl die Scheidung als auch Regelungen zu Unterhalt oder Vermögen. Ihr Anwalt wird daher in der Regel beide Verfahren gemeinsam beantragen. Welche Klage die richtige ist, hängt stets vom konkreten Inhalt Ihres Urteils ab und muss individuell bewertet werden.
 
 ---
 
@@ -4187,9 +4213,9 @@ Die Konsequenzen können weit über eine formale Unannehmlichkeit hinausgehen:
 
 **Vermögen in der Türkei:** Wenn Sie Immobilien, Grundstücke oder Bankkonten in der Türkei besitzen, kann Ihr Ex-Partner Ansprüche darauf geltend machen. Tapu Müdürlüğü (Grundbuchamt) und Banken akzeptieren ohne abgeschlossenes Tanıma-Tenfiz-Verfahren keine ausländischen Gerichtsurteile.
 
-**Unterhalt und Sorgerecht:** Ein deutsches Unterhaltsurteil ist in der Türkei ohne Tenfiz nicht vollstreckbar. Sorgerechtsbeschlüsse werden von türkischen Behörden nicht anerkannt. Das bedeutet: Ihr Ex-Partner kann sich in der Türkei faktisch über das Urteil hinwegsetzen.
+**Unterhalt und Vermögen:** Ein deutsches Unterhaltsurteil ist in der Türkei ohne Tenfiz nicht vollstreckbar. Auch Vermögensregelungen bleiben ohne Anerkennung und Vollstreckbarerklärung gegenüber türkischen Stellen oft wirkungslos.
 
-**Kinder:** Ohne anerkannten Sorgerechtsbeschluss kann es bei Reisepässen, Schulanmeldungen und Reisegenehmigungen für Ihre Kinder in der Türkei zu erheblichen bürokratischen Problemen kommen.
+**Kinder:** Ohne anerkannten familienrechtlicher Beschluss kann es bei Reisepässen, Schulanmeldungen und Reisegenehmigungen für Ihre Kinder in der Türkei zu erheblichen bürokratischen Problemen kommen.
 
 ---
 
@@ -4265,7 +4291,7 @@ Durch eine Gesetzesänderung im Jahr 2017 (Ergänzung des türkischen Personenst
 
 Dieser Weg steht offen, wenn **alle** folgenden Voraussetzungen erfüllt sind:
 
-- Das ausländische Urteil enthält **ausschließlich die Scheidung** — keine vollstreckbaren Regelungen zu Unterhalt, Sorgerecht oder Schadensersatz
+- Das ausländische Urteil enthält **ausschließlich die Scheidung** — keine vollstreckbaren Regelungen zu Unterhalt oder Schadensersatz
 - **Beide Parteien beantragen gemeinsam** die Eintragung beim Standesamt
 - Alle erforderlichen Dokumente (apostilliertes Scheidungsurteil, Rechtskraftvermerk, beglaubigte Übersetzung) liegen vollständig vor
 
@@ -4274,7 +4300,7 @@ Dieser Weg steht offen, wenn **alle** folgenden Voraussetzungen erfüllt sind:
 In folgenden Fällen ist der Gerichtsweg zwingend:
 
 - Die Gegenseite ist nicht kooperativ oder verweigert den gemeinsamen Antrag
-- Das Urteil enthält Regelungen zu Unterhalt, Sorgerecht, Schadensersatz oder Vermögen
+- Das Urteil enthält Regelungen zu Unterhalt, Schadensersatz oder Vermögen
 - Der Antrag beim Standesamt wird abgelehnt (dann bleibt nur der Klageweg)
 
 ### Antrag über das türkische Konsulat in Deutschland
@@ -4303,25 +4329,19 @@ Wenn Sie befürchten, dass die Gegenseite türkische Immobilien veräußert, bev
 
 ---
 
-## Sorgerecht: Gilt der deutsche Sorgerechtsbeschluss in der Türkei?
+## Vollstreckbare Nebenfolgen: Wann Tenfiz erforderlich ist
 
-Wenn Kinder im Spiel sind, gewinnt das Tanıma-Tenfiz-Verfahren eine besondere Dringlichkeit.
+Wenn der deutsche Beschluss nicht nur die Scheidung ausspricht, sondern auch Zahlungs- oder Vermögensregelungen enthält, genügt eine bloße Tanıma häufig nicht.
 
-### Anerkennung des deutschen Sorgerechtsbeschlusses
+### Unterhalt und Vermögen
 
-Ein deutscher Sorgerechtsbeschluss — ob alleiniges oder gemeinsames Sorgerecht — gilt in der Türkei nicht automatisch. Ohne Tenfiz wird er von türkischen Behörden nicht berücksichtigt. Das hat konkrete Folgen:
+Ein deutscher Beschluss zu Unterhalt, Zugewinnausgleich, Schadensersatz oder Vermögensaufteilung ist in der Türkei erst nach Tenfiz praktisch durchsetzbar. Ohne Vollstreckbarerklärung können türkische Behörden, Banken oder Grundbuchämter die Regelung nicht einfach umsetzen.
 
-- Reisepässe für das Kind können in der Türkei ohne Zustimmung beider Elternteile nicht ausgestellt werden
-- Auslandsreisen des Kindes von der Türkei aus setzen die Einwilligung beider Eltern voraus
-- Es besteht das Risiko, dass der andere Elternteil das Kind in der Türkei zurückhält
+### Praktische Folgen
 
-### Gemeinsames Sorgerecht
-
-In Deutschland ist gemeinsames Sorgerecht die Regel. Auch ein solcher Beschluss kann durch Tenfiz in der Türkei wirksam gemacht werden, sodass die Rechte beider Elternteile bei türkischen Behörden geschützt sind.
-
-### Internationale Kindesentführung
-
-Wenn ein Elternteil das Kind ohne Zustimmung des anderen nach Deutschland bringt oder in der Türkei zurückhält, ist dies ein Fall von internationaler Kindesentführung. Sowohl Deutschland als auch die Türkei sind Vertragsstaaten des Haager Übereinkommens über die zivilrechtlichen Aspekte internationaler Kindesentführung (HKÜ). In solchen Fällen ist sofortiges anwaltliches Handeln erforderlich.
+- Unterhaltsansprüche können in der Türkei nicht ohne weiteres vollstreckt werden
+- Vermögensregelungen bleiben gegenüber türkischen Grundbuchämtern wirkungslos
+- Bei Immobilien in der Türkei muss die güterrechtliche Strategie früh geprüft werden
 
 ---
 
@@ -4389,7 +4409,7 @@ Bei vollständigen Unterlagen und anwaltlicher Vertretung beider Parteien durchs
 Beim Familiengericht, das das Scheidungsurteil erlassen hat. Sie beantragen ihn schriftlich, in der Regel gegen eine geringe Gebühr. Teilen Sie dem Gericht mit, dass der Vermerk für ein internationales Anerkennungsverfahren in der Türkei benötigt wird — dann wird die Apostille in der Regel direkt miterstellt oder empfohlen.
 
 **Kann ich die Anerkennung über das Standesamt ohne Gericht erledigen?**
-In bestimmten Fällen ja — wenn das Urteil ausschließlich die Scheidung ausspricht und beide Parteien gemeinsam beantragen. Enthält das Urteil Regelungen zu Unterhalt, Sorgerecht oder Vermögen, oder ist die Gegenseite nicht kooperativ, ist der Gerichtsweg zwingend.
+In bestimmten Fällen ja — wenn das Urteil ausschließlich die Scheidung ausspricht und beide Parteien gemeinsam beantragen. Enthält das Urteil Regelungen zu Unterhalt oder Vermögen, oder ist die Gegenseite nicht kooperativ, ist der Gerichtsweg zwingend.
 
 **Mein Ex-Partner lebt in der Türkei und zahlt keinen Unterhalt. Was kann ich tun?**
 Sie benötigen zunächst ein Tenfiz-Urteil in der Türkei. Danach kann über das türkische Vollstreckungsgericht die Zwangsvollstreckung beantragt werden — Pfändung von Bankkonten, Gehalt oder Immobilien. Bei beharrlicher Zahlungsverweigerung droht nach türkischem Recht Beugehaft.
@@ -4428,9 +4448,9 @@ Stellen Sie die Unterlagen zusammen, kontaktieren Sie uns — den Rest erledigen
 
 Almanya'da boşandınız. Mahkeme kararını elinize aldınız, rahatladınız. Ama birkaç ay sonra Türkiye'deki bir işlem sırasında şok edici bir gerçekle yüzleştiniz: **Türkiye'de hâlâ evli görünüyorsunuz.**
 
-Bu, Almanya'da yaşayan yüz binlerce Türk vatandaşının bilmeden düştüğü hukuki bir tuzaktır. Alman mahkemesinin verdiği boşanma kararı, Türkiye'de otomatik olarak geçerli olmaz. Türkiye'de nüfus kaydınızın güncellenmesi, yeniden evlenebilmeniz, mal paylaşımı yapabilmeniz, nafaka ve velayet kararlarını Türkiye'de uygulayabilmeniz için ayrı bir hukuki adım atmanız zorunludur: **tanıma ve tenfiz davası.**
+Bu, Almanya'da yaşayan yüz binlerce Türk vatandaşının bilmeden düştüğü hukuki bir tuzaktır. Alman mahkemesinin verdiği boşanma kararı, Türkiye'de otomatik olarak geçerli olmaz. Türkiye'de nüfus kaydınızın güncellenmesi, yeniden evlenebilmeniz, mal paylaşımı yapabilmeniz, nafaka kararlarını ve mal rejimi hükümlerini Türkiye.de uygulayabilmeniz için ayrı bir hukuki adım atmanız zorunludur: **tanıma ve tenfiz davası.**
 
-Bu rehberde, Almanya'da yaşayan biri olarak bu süreci Türkiye'ye adım atmadan nasıl tamamlayabileceğinizi, hangi belgelere ihtiyaç duyduğunuzu, alternatif yolları ve mal paylaşımı, velayet, nafaka gibi bağlantılı konuları kapsamlı biçimde ele alıyoruz.
+Bu rehberde, Almanya'da yaşayan biri olarak bu süreci Türkiye'ye adım atmadan nasıl tamamlayabileceğinizi, hangi belgelere ihtiyaç duyduğunuzu, alternatif yolları ve mal paylaşımı ve nafaka gibi bağlantılı konuları kapsamlı biçimde ele alıyoruz.
 
 ---
 
@@ -4442,17 +4462,17 @@ Bu iki kavram sıkça birbirine karıştırılır ve yanlış anlaşılması dav
 
 Tanıma davası, yabancı bir mahkeme tarafından verilen kararın Türkiye'de **kesin hüküm** olarak kabul edilmesini sağlar. Yani Alman mahkemesinin verdiği boşanma kararı, tanıma davası sonucunda Türk mahkemesinin kararı ile eşdeğer hale gelir.
 
-Almanya'daki boşanma kararı **yalnızca boşanmayı** içeriyorsa — velayet, nafaka, tazminat veya mal paylaşımı gibi icrai nitelikte ek hükümler yoksa — tanıma davası açmak yeterlidir. Tanıma kararı kesinleştikten sonra nüfus müdürlüğüne bildirim yapılır ve medeni haliniz "evli"den "boşanmış"a güncellenir.
+Almanya'daki boşanma kararı **yalnızca boşanmayı** içeriyorsa — aile hukuku, nafaka, tazminat veya mal paylaşımı gibi icrai nitelikte ek hükümler yoksa — tanıma davası açmak yeterlidir. Tanıma kararı kesinleştikten sonra nüfus müdürlüğüne bildirim yapılır ve medeni haliniz "evli"den "boşanmış"a güncellenir.
 
 ### Tenfiz Davası
 
-Tenfiz davası ise kararın yalnızca tanınmasından bir adım öteye geçer. Yabancı mahkeme kararının Türkiye'de **icra edilebilir** hale gelmesini sağlar. Almanya mahkemesi boşanmanın yanı sıra nafakaya, velayete, tazminata veya mal paylaşımına da hükmetmişse bu kararların Türkiye'de uygulanabilmesi için tenfiz zorunludur.
+Tenfiz davası ise kararın yalnızca tanınmasından bir adım öteye geçer. Yabancı mahkeme kararının Türkiye'de **icra edilebilir** hale gelmesini sağlar. Almanya mahkemesi boşanmanın yanı sıra nafakaya, tazminata veya mal paylaşımına da hükmetmişse bu kararların Türkiye'de uygulanabilmesi için tenfiz zorunludur.
 
-Tenfiz olmadan nafaka kararı Türkiye'de icraya konulamaz. Velayet kararı tanınmaz. Mal paylaşımı hükmü tapu müdürlüklerince işleme konulmaz.
+Tenfiz olmadan nafaka kararı Türkiye'de icraya konulamaz. Mal paylaşımı hükmü de tapu müdürlüklerince doğrudan işleme konulmaz.
 
 ### Uygulamada Ne Olur?
 
-Almanya'daki boşanma kararlarının büyük çoğunluğu hem boşanma hükmünü hem de ek düzenlemeleri (nafaka, velayet vb.) birlikte içerir. Bu nedenle avukatınız genellikle her iki davayı da birlikte açar. Hangi davanın açılacağı tamamen kararın içeriğine bağlıdır ve her dosya ayrı değerlendirilmelidir.
+Almanya'daki boşanma kararlarının büyük çoğunluğu hem boşanma hükmünü hem de ek düzenlemeleri (nafaka, aile hukuku vb.) birlikte içerir. Bu nedenle avukatınız genellikle her iki davayı da birlikte açar. Hangi davanın açılacağı tamamen kararın içeriğine bağlıdır ve her dosya ayrı değerlendirilmelidir.
 
 ---
 
@@ -4466,9 +4486,7 @@ Bu adımı ertelemek ya da atlamak, yıllar sonra ortaya çıkabilecek ciddi ve 
 
 **Mal ve mülk sorunları:** Türkiye'de gayrimenkulünüz, araziniz veya banka hesabınız varsa eski eşiniz bunlar üzerinde hak iddiasında bulunabilir. Tapu müdürlükleri ve bankalar, yabancı mahkeme kararını tanıma-tenfiz işlemi yapılmadan dikkate almaz.
 
-**Nafaka ve velayet sorunları:** Almanya'da nafakaya veya velayete ilişkin mahkeme kararı aldıysanız bu kararlar Türkiye'de tenfiz edilmeden uygulanamaz. Eski eşinizin Türkiye'de malvarlığı varsa nafaka borcu bu yolla tahsil edilemez.
-
-**Çocuklarla ilgili sorunlar:** Velayet kararı tenfiz edilmemişse çocuğunuzun Türkiye'deki pasaport başvurusu, seyahat izni ve okul kayıt işlemlerinde ciddi bürokratik engeller çıkabilir.
+**Nafaka ve icra sorunları:** Almanya'da nafakaya veya mal rejimine ilişkin mahkeme kararı aldıysanız bu kararlar Türkiye'de tenfiz edilmeden uygulanamaz. Eski eşinizin Türkiye'de malvarlığı varsa nafaka borcu bu yolla tahsil edilemez.
 
 ---
 
@@ -4544,7 +4562,7 @@ Mahkeme tanıma ve/veya tenfiz kararını verdikten sonra bu karar kesinleşir v
 
 Bu yol yalnızca aşağıdaki koşulların **tamamının** sağlanması durumunda mümkündür:
 
-- Yabancı mahkeme kararı **yalnızca boşanmayı** içermelidir (nafaka, velayet veya tazminat gibi ek hükümler bulunmamalıdır)
+- Yabancı mahkeme kararı **yalnızca boşanmayı** içermelidir (nafaka, mal rejimi veya tazminat gibi ek hükümler bulunmamalıdır)
 - **Her iki taraf birlikte** nüfus müdürlüğüne başvurmalıdır
 - Gerekli belgeler eksiksiz sunulmalıdır (apostilli boşanma kararı, kesinleşme şerhi, yeminli Türkçe tercüme)
 
@@ -4553,7 +4571,7 @@ Bu yol yalnızca aşağıdaki koşulların **tamamının** sağlanması durumund
 Aşağıdaki durumlarda bu yol kapalıdır ve mahkeme davası zorunludur:
 
 - Eski eşiniz birlikte başvurmak istemiyorsa
-- Karar nafaka, velayet, tazminat veya mal paylaşımı hükmü içeriyorsa
+- Karar nafaka, aile hukuku, tazminat veya mal paylaşımı hükmü içeriyorsa
 - Nüfus müdürlüğü başvurunuzu reddettiyse (bu durumda yine mahkeme yoluna gidilir)
 
 ### Almanya'dan Nüfus Müdürlüğü Başvurusu
@@ -4582,25 +4600,13 @@ Boşanma sürecinde ya da sonrasında Türkiye'deki mal varlıklarını korumak 
 
 ---
 
-## Velayet: Almanya'daki Karar Türkiye'de Geçerli mi?
+## İcra Edilebilir Ek Hükümler: Ne Zaman Tenfiz Gerekir?
 
-Çocuklarınız söz konusu olduğunda tanıma ve tenfiz meselesi çok daha hassas ve acil bir hal alır.
+Alman boşanma kararında yalnızca medeni hâl değil, nafaka, tazminat veya mal paylaşımı gibi icrai hükümler de varsa, Türkiye'de çoğu zaman tenfiz gerekir.
 
-### Alman Mahkemesinin Velayet Kararı
+### Nafaka ve Mal Rejimi
 
-Almanya'da aile mahkemesi velayeti ebeveynlerden birine ya da her ikisine birlikte vermişse bu karar Türkiye'de tenfiz edilmeden Türk makamlarınca tanınmaz. Tenfiz edilmemişse:
-
-- Çocuğun Türkiye'deki pasaport başvurusu, diğer ebeveynin onayı olmadan yapılamaz
-- Çocuğun Türkiye'ye seyahati için her iki ebeveynin de rızası aranır
-- Yurt dışına çıkış yasağı veya çocuğun alıkonulması gibi durumlarla karşılaşılabilir
-
-### Ortak Velayet
-
-Almanya'da yaygın bir düzenleme olan ortak velayet kararı da Türkiye'de tenfiz yoluyla geçerli kılınabilir. Bu sayede her iki ebeveynin de Türkiye'deki işlemlerde hakkı korunmuş olur.
-
-### Uluslararası Çocuk Kaçırma
-
-Velayete sahip ebeveynin izni olmadan çocuğun Türkiye'ye götürülmesi, Türkiye ve Almanya'nın her ikisinin de taraf olduğu Lahey Sözleşmesi kapsamında uluslararası çocuk kaçırma sayılır. Bu durumlarda acil hukuki müdahale gereklidir.
+Tenfiz olmadan Alman kararındaki ödeme veya mal paylaşımı hükümleri Türk icra daireleri, bankalar veya tapu müdürlükleri önünde doğrudan uygulanamaz. Bu nedenle belge, apostil, tercüme ve dava stratejisi baştan doğru kurulmalıdır.
 
 ---
 
@@ -4678,7 +4684,7 @@ Belgelerinizi toparlayın, bize ulaşın — gerisini biz halledelim.
     readTimeDE: "8 Min. Lesezeit",
     readTimeTR: "8 dk okuma",
     publishedAt: "2026-04-11",
-    keywordsDE: "Scheidung in Deutschland Anerkennung Türkei, Tanıma Tenfiz davası belgeler, Türkisches Recht Mannheim, Unterhalt vollstrecken Türkei, Sorgerecht Türkei Anerkennung",
+    keywordsDE: "Scheidung in Deutschland Anerkennung Türkei, Tanıma Tenfiz davası belgeler, Türkisches Recht Mannheim, Unterhalt vollstrecken Türkei, familienrechtliche Nebenfolgen Türkei Anerkennung",
     keywordsTR: "Almanya boşanma tanıma tenfiz, kesinleşme şerhi nedir, tanıma tenfiz davası ne kadar sürer, yurt dışı boşanma nüfus kaydı, tanıma tenfiz avukatı ankara",
     faqDE: [
       {
@@ -4699,7 +4705,7 @@ Belgelerinizi toparlayın, bize ulaşın — gerisini biz halledelim.
       },
       {
         question: "Kann ich mich aufgrund der Gesetzesänderung von 2017 an das Standesamt wenden?",
-        answer: "Ja, wenn Sie nur ein Scheidungsurteil haben und beide Parteien den Antrag gemeinsam stellen können. Wenn jedoch zusätzliche Regelungen wie Sorgerecht, Unterhalt oder Entschädigung vorliegen oder der Ex-Partner nicht gemeinsam beantragen möchte, ist das gerichtliche Verfahren zwingend erforderlich."
+        answer: "Ja, wenn Sie nur ein Scheidungsurteil haben und beide Parteien den Antrag gemeinsam stellen können. Wenn jedoch zusätzliche Regelungen wie familienrechtliche Nebenfolgen, Unterhalt oder Entschädigung vorliegen oder der Ex-Partner nicht gemeinsam beantragen möchte, ist das gerichtliche Verfahren zwingend erforderlich."
       },
       {
         question: "Ich habe Immobilien in der Türkei, kann mein Ex-Partner diese verkaufen?",
@@ -4733,7 +4739,7 @@ Belgelerinizi toparlayın, bize ulaşın — gerisini biz halledelim.
       },
       {
         question: "2017'de yapılan değişiklikle nüfus müdürlüğüne başvurabilir miyim?",
-        answer: "Yalnızca boşanma kararı aldıysanız ve her iki taraf birlikte başvurabiliyorsa evet, nüfus müdürlüğü üzerinden işlem yapılabilir. Ancak velayet, nafaka veya tazminat gibi ek hükümler varsa ya da eski eşiniz birlikte başvurmak istemiyorsa mahkeme davası zorunludur."
+        answer: "Yalnızca boşanma kararı aldıysanız ve her iki taraf birlikte başvurabiliyorsa evet, nüfus müdürlüğü üzerinden işlem yapılabilir. Ancak aile hukuku, nafaka veya tazminat gibi ek hükümler varsa ya da eski eşiniz birlikte başvurmak istemiyorsa mahkeme davası zorunludur."
       },
       {
         question: "Türkiye'de mülküm var, eski eşim satabilir mi?",
@@ -7792,76 +7798,76 @@ And in German for German-speaking family members or advisers:
     ctaDescriptionEN: "Doğru Kanzlei handles Turkish enforcement proceedings from Mannheim and Ankara — by power of attorney, without travel."
   },
   {
-    slug: "almanya-ortak-velayet-turkiye-tenfiz",
-    slugDE: "deutschland-gemeinsames-sorgerecht-tuerkei-anerkennung",
-    slugTR: "almanya-ortak-velayet-turkiye-tenfiz",
+    slug: "almanya-ortak-aile hukuku-turkiye-tenfiz",
+    slugDE: "deutschland-gemeinsames-unterhalt-tuerkei-anerkennung",
+    slugTR: "almanya-ortak-aile hukuku-turkiye-tenfiz",
     slugEN: "joint-custody-germany-turkey-recognition-enforcement",
-    titleDE: "Gemeinsames Sorgerecht aus Deutschland: Anerkennung und Vollstreckung in der Türkei 2026",
-    titleTR: "Almanya'dan Verilen Ortak Velayet Kararı Türkiye'de Tenfiz Edilir mi? — 2026 Rehberi",
-    titleEN: "Joint Custody from Germany: Does It Apply in Turkey? A Complete 2026 Guide",
+    titleDE: "Gemeinsames familienrechtliche Nebenfolgen aus Deutschland: Anerkennung und Vollstreckung in der Türkei 2026",
+    titleTR: "Almanya'dan Verilen Ortak Aile hukuku Kararı Türkiye'de Tenfiz Edilir mi? — 2026 Rehberi",
+    titleEN: "Joint Family orders from Germany: Does It Apply in Turkey? A Complete 2026 Guide",
     excerptDE: "Was türkische Familien in Deutschland über die Tenfiz-Klage, die MÖHUK-Bedingungen und die aktuellen Yargıtay-Urteile wissen müssen — bevor es zu spät ist.",
     excerptTR: "MÖHUK koşulları, Yargıtay içtihadı ve Almanya'dan adım adım tenfiz süreci — Türkiye'ye gitmeden.",
-    excerptEN: "What Turkish-German families need to know about the Tenfiz process, MÖHUK conditions and the latest Yargıtay rulings — and how to enforce your custody rights without travelling to Turkey.",
-    metaTitleDE: "Gemeinsames Sorgerecht: Anerkennung in der Türkei 2026 | Doğru Kanzlei",
-    metaTitleTR: "Almanya Ortak Velayet Kararı Türkiye'de Tenfiz Edilir mi? | 2026 Rehberi",
-    metaTitleEN: "Joint Custody from Germany: Does It Apply in Turkey? (2026 Guide)",
-    metaDescriptionDE: "Gilt Ihr deutsches Sorgerechtsurteil automatisch in der Türkei? Nein. Dieser Leitfaden erklärt Tenfiz-Klage, MÖHUK-Bedingungen und die 5 Schritte zur Anerkennung.",
-    metaDescriptionTR: "Almanya'daki ortak velayet kararınız Türkiye'de geçerli mi? Hayır — tenfiz davası şart. MÖHUK şartları, gerekli belgeler ve adım adım süreç bu rehberde.",
-    metaDescriptionEN: "Your German joint custody order does not automatically apply in Turkey. Learn the Tenfiz process, MÖHUK conditions, required documents and step-by-step enforcement — without travelling to Turkey.",
-    schemaHeadlineDE: "Gemeinsames Sorgerecht aus Deutschland: Anerkennung und Vollstreckung in der Türkei 2026",
-    schemaHeadlineTR: "Almanya'dan Verilen Ortak Velayet Kararı Türkiye'de Tenfiz Edilir mi? 2026 Rehberi",
-    schemaHeadlineEN: "Joint Custody from Germany: Does It Apply in Turkey? A Complete 2026 Guide",
+    excerptEN: "What Turkish-German families need to know about the Tenfiz process, MÖHUK conditions and the latest Yargıtay rulings — and how to enforce your financial orders rights without travelling to Turkey.",
+    metaTitleDE: "Gemeinsames familienrechtliche Nebenfolgen: Anerkennung in der Türkei 2026 | Doğru Kanzlei",
+    metaTitleTR: "Almanya Ortak Aile hukuku Kararı Türkiye'de Tenfiz Edilir mi? | 2026 Rehberi",
+    metaTitleEN: "Joint Family orders from Germany: Does It Apply in Turkey? (2026 Guide)",
+    metaDescriptionDE: "Gilt Ihr deutsches familienrechtliches Urteil automatisch in der Türkei? Nein. Dieser Leitfaden erklärt Tenfiz-Klage, MÖHUK-Bedingungen und die 5 Schritte zur Anerkennung.",
+    metaDescriptionTR: "Almanya'daki ortak aile hukuku kararınız Türkiye'de geçerli mi? Hayır — tenfiz davası şart. MÖHUK şartları, gerekli belgeler ve adım adım süreç bu rehberde.",
+    metaDescriptionEN: "Your German joint financial orders order does not automatically apply in Turkey. Learn the Tenfiz process, MÖHUK conditions, required documents and step-by-step enforcement — without travelling to Turkey.",
+    schemaHeadlineDE: "Gemeinsames familienrechtliche Nebenfolgen aus Deutschland: Anerkennung und Vollstreckung in der Türkei 2026",
+    schemaHeadlineTR: "Almanya'dan Verilen Ortak Aile hukuku Kararı Türkiye'de Tenfiz Edilir mi? 2026 Rehberi",
+    schemaHeadlineEN: "Joint Family orders from Germany: Does It Apply in Turkey? A Complete 2026 Guide",
     contentDE: `**RECHTLICHER HINWEIS:** Dieser Artikel befasst sich ausschließlich mit dem türkischen Recht. Die Doğru Kanzlei berät gemäß § 207 BRAO ausschließlich im türkischen Recht.
 
 Was türkische Familien in Deutschland über die Tenfiz-Klage, die MÖHUK-Bedingungen und die aktuellen Yargıtay-Urteile wissen müssen — bevor es zu spät ist.
 
 ---
 
-Sie haben in Deutschland geschieden, das Familiengericht hat das gemeinsame Sorgerecht für Ihr Kind bestätigt — und jetzt plant Ihr Ex-Partner, mit dem Kind in die Türkei zu reisen. Oder der andere Elternteil lebt bereits in der Türkei und ignoriert die deutschen Sorgerechtsregelungen schlicht. Was nun?
+Sie haben in Deutschland geschieden, das Familiengericht hat das gemeinsame familienrechtliche Nebenfolgen für Ihr Kind bestätigt — und jetzt plant Ihr Ex-Partner, mit dem Kind in die Türkei zu reisen. Oder der andere Elternteil lebt bereits in der Türkei und ignoriert die deutschen familienrechtliche Regelungen schlicht. Was nun?
 
-Viele Eltern in dieser Situation nehmen fälschlicherweise an, dass ein rechtskräftiges deutsches Urteil international bindend sei — dass man es einfach vorzeige und die Sache erledigt sei. Das ist ein gefährlicher Irrtum. Ein deutsches Sorgerechtsurteil entfaltet in der Türkei keinerlei automatische Rechtswirkung. Solange kein türkisches Gericht dieses Urteil förmlich anerkannt und für vollstreckbar erklärt hat, kann die türkische Seite die deutschen Regelungen vollständig ignorieren — ohne unmittelbare rechtliche Konsequenzen.
+Viele Eltern in dieser Situation nehmen fälschlicherweise an, dass ein rechtskräftiges deutsches Urteil international bindend sei — dass man es einfach vorzeige und die Sache erledigt sei. Das ist ein gefährlicher Irrtum. Ein deutsches familienrechtliches Urteil entfaltet in der Türkei keinerlei automatische Rechtswirkung. Solange kein türkisches Gericht dieses Urteil förmlich anerkannt und für vollstreckbar erklärt hat, kann die türkische Seite die deutschen Regelungen vollständig ignorieren — ohne unmittelbare rechtliche Konsequenzen.
 
-Dieser Leitfaden erklärt Ihnen genau, wie die Anerkennung und Vollstreckung eines deutschen Sorgerechtsurteils in der Türkei funktioniert, welche Bedingungen erfüllt sein müssen, welche Fehler das Verfahren zum Scheitern bringen können — und wie Sie das gesamte Verfahren von Deutschland aus führen, ohne selbst in die Türkei reisen zu müssen.
+Dieser Leitfaden erklärt Ihnen genau, wie die Anerkennung und Vollstreckung eines deutschen familienrechtlichen Urteils in der Türkei funktioniert, welche Bedingungen erfüllt sein müssen, welche Fehler das Verfahren zum Scheitern bringen können — und wie Sie das gesamte Verfahren von Deutschland aus führen, ohne selbst in die Türkei reisen zu müssen.
 
 ---
 
 ## Was bedeutet Tenfiz — und warum reicht Tanıma allein nicht aus?
 
-Im türkischen internationalen Privatrecht gibt es zwei unterschiedliche Verfahren, wenn es um ausländische Gerichtsurteile geht: Tanıma (Anerkennung) und Tenfiz (Vollstreckbarerklärung). Diese Unterscheidung ist für Sorgerechtsverfahren von entscheidender Bedeutung, wird aber in der Praxis häufig durcheinandergebracht.
+Im türkischen internationalen Privatrecht gibt es zwei unterschiedliche Verfahren, wenn es um ausländische Gerichtsurteile geht: Tanıma (Anerkennung) und Tenfiz (Vollstreckbarerklärung). Diese Unterscheidung ist für familienrechtliches Verfahren von entscheidender Bedeutung, wird aber in der Praxis häufig durcheinandergebracht.
 
 **Tanıma** bedeutet, dass ein türkisches Gericht einem ausländischen Urteil Rechtskraft im Inland zuerkennt. Das Urteil wird als gültig anerkannt — es hat also eine statusbegründende Wirkung. Das klassische Beispiel ist ein Scheidungsurteil: Tanıma bewirkt, dass die Ehe in der Türkei ebenfalls als aufgelöst gilt und die Person in den türkischen Personenstandsregistern als geschieden eingetragen wird.
 
 **Tenfiz** geht einen wichtigen Schritt weiter. Hier wird das ausländische Urteil nicht nur anerkannt, sondern auch vollstreckbar gemacht. Das bedeutet: Konkrete Pflichten, die im Urteil festgelegt wurden — zum Beispiel Umgangsregelungen, Unterhaltszahlungen oder das Aufenthaltsbestimmungsrecht — können in der Türkei tatsächlich durchgesetzt werden.
 
-Bei einem Sorgerechtsurteil, das über die bloße Scheidung hinausgeht und konkrete Regelungen zum Sorgerecht, zum Aufenthaltsbestimmungsrecht oder zum Umgangsrecht enthält, ist stets die Tenfiz-Klage notwendig. Die Tanıma allein genügt in diesen Fällen nicht. Die rechtliche Grundlage bilden die Artikel 50 bis 58 des türkischen Gesetzes über internationales Privatrecht und Verfahrensrecht — das sogenannte MÖHUK (5718 sayılı Milletlerarası Özel Hukuk ve Usul Hukuku Hakkında Kanun).
+Bei einem familienrechtliches Urteil, das über die bloße Scheidung hinausgeht und konkrete Regelungen zum familienrechtliche Nebenfolgen, zum Aufenthaltsbestimmungsrecht oder zum Umgangsrecht enthält, ist stets die Tenfiz-Klage notwendig. Die Tanıma allein genügt in diesen Fällen nicht. Die rechtliche Grundlage bilden die Artikel 50 bis 58 des türkischen Gesetzes über internationales Privatrecht und Verfahrensrecht — das sogenannte MÖHUK (5718 sayılı Milletlerarası Özel Hukuk ve Usul Hukuku Hakkında Kanun).
 
-> ⚠️ **Wichtig:** Ohne Tenfiz-Beschluss eines türkischen Familiengerichts ist Ihr deutsches Sorgerechtsurteil in der Türkei rechtlich wirkungslos. Selbst wenn das Urteil eindeutig formuliert ist und das gemeinsame Sorgerecht klar regelt — türkische Behörden, Schulen und der andere Elternteil sind nicht verpflichtet, es zu respektieren.
+> ⚠️ **Wichtig:** Ohne Tenfiz-Beschluss eines türkischen Familiengerichts ist Ihr deutsches familienrechtliches Urteil in der Türkei rechtlich wirkungslos. Selbst wenn das Urteil eindeutig formuliert ist und das gemeinsame familienrechtliche Nebenfolgen klar regelt — türkische Behörden, Schulen und der andere Elternteil sind nicht verpflichtet, es zu respektieren.
 
 ---
 
 ## Der Wendepunkt 2016/2017: Wie die Türkei ihre Rechtsprechung geändert hat
 
-Bis 2016 war die Situation für türkische Familien in Deutschland noch deutlich schwieriger. Der 2. Zivilsenat des Yargıtay (türkischer Kassationshof) lehnte die Anerkennung ausländischer Sorgerechtsurteile mit gemeinsamer Elternschaft seit Jahrzehnten konsequent ab — und das mit einer simplen Begründung: Das türkische Zivilgesetzbuch (TMK, Art. 336) sah das gemeinsame Sorgerecht nach einer Scheidung nicht vor. In der Türkei konnte das Sorgerecht im Falle einer Scheidung ausschließlich einem Elternteil übertragen werden. Ein gemeinsames Sorgerecht galt als Verstoß gegen die türkische öffentliche Ordnung (kamu düzeni) und wurde daher abgelehnt.
+Bis 2016 war die Situation für türkische Familien in Deutschland noch deutlich schwieriger. Der 2. Zivilsenat des Yargıtay (türkischer Kassationshof) lehnte die Anerkennung ausländischer familienrechtliche Urteile mit gemeinsamer Elternschaft seit Jahrzehnten konsequent ab — und das mit einer simplen Begründung: Das türkische Zivilgesetzbuch (TMK, Art. 336) sah das gemeinsame familienrechtliche Nebenfolgen nach einer Scheidung nicht vor. In der Türkei konnte das familienrechtliche Nebenfolgen im Falle einer Scheidung ausschließlich einem Elternteil übertragen werden. Ein gemeinsames familienrechtliche Nebenfolgen galt als Verstoß gegen die türkische öffentliche Ordnung (kamu düzeni) und wurde daher abgelehnt.
 
-Das änderte sich im März 2016 grundlegend. Mit dem Gesetz Nr. 6684, veröffentlicht am 25. März 2016 im türkischen Amtsblatt, ratifizierte die Türkei das Zusatzprotokoll zum Europäischen Übereinkommen über den persönlichen Umgang mit Kindern. Dieser Schritt führte das Konzept des gemeinsamen Sorgerechts indirekt, aber wirksam in das türkische Rechtssystem ein. Denn nach Art. 90 der türkischen Verfassung haben ratifizierte internationale Abkommen in der Türkei Gesetzesrang — und gehen bei Konflikten mit innerstaatlichem Recht sogar vor.
+Das änderte sich im März 2016 grundlegend. Mit dem Gesetz Nr. 6684, veröffentlicht am 25. März 2016 im türkischen Amtsblatt, ratifizierte die Türkei das Zusatzprotokoll zum Europäischen Übereinkommen über den persönlichen Umgang mit Kindern. Dieser Schritt führte das Konzept des gemeinsamen Unterhalts indirekt, aber wirksam in das türkische Rechtssystem ein. Denn nach Art. 90 der türkischen Verfassung haben ratifizierte internationale Abkommen in der Türkei Gesetzesrang — und gehen bei Konflikten mit innerstaatlichem Recht sogar vor.
 
-Der Yargıtay reagierte prompt. In seiner Grundsatzentscheidung vom 20. Februar 2017 — Az. 2016/15771 E., 2017/1737 K. — stellte der 2. Zivilsenat klar: Ausländische Gerichtsurteile zum gemeinsamen Sorgerecht können nicht mehr pauschal als Verstoß gegen die türkische öffentliche Ordnung gewertet werden. Jeder Fall sei individuell zu prüfen, wobei das Kindeswohl (çocuğun üstün yararı) als zentrales Kriterium gilt.
+Der Yargıtay reagierte prompt. In seiner Grundsatzentscheidung vom 20. Februar 2017 — Az. 2016/15771 E., 2017/1737 K. — stellte der 2. Zivilsenat klar: Ausländische Gerichtsurteile zum gemeinsamen familienrechtliche Nebenfolgen können nicht mehr pauschal als Verstoß gegen die türkische öffentliche Ordnung gewertet werden. Jeder Fall sei individuell zu prüfen, wobei das Kindeswohl (çocuğun üstün yararı) als zentrales Kriterium gilt.
 
-Aktuellere Entscheidungen aus den Jahren 2023 und 2024 — darunter Yargıtay 2. HD 2023/4605 K. und 2024/1916 K. — bestätigen diesen Kurs ausdrücklich. Türkische Gerichte erkennen gemeinsame Sorgerechtsurteile aus Deutschland heute grundsätzlich an, sofern die gesetzlichen Voraussetzungen erfüllt sind. Die Richtung ist klar — doch der Weg dorthin erfordert sorgfältige Vorbereitung.
+Aktuellere Entscheidungen aus den Jahren 2023 und 2024 — darunter Yargıtay 2. HD 2023/4605 K. und 2024/1916 K. — bestätigen diesen Kurs ausdrücklich. Türkische Gerichte erkennen gemeinsame familienrechtliche Urteile aus Deutschland heute grundsätzlich an, sofern die gesetzlichen Voraussetzungen erfüllt sind. Die Richtung ist klar — doch der Weg dorthin erfordert sorgfältige Vorbereitung.
 
 ---
 
 ## Die fünf Bedingungen für eine erfolgreiche Tenfiz-Klage
 
-Damit ein türkisches Familiengericht die Tenfiz eines deutschen Sorgerechtsurteils beschließen kann, müssen nach MÖHUK Art. 54 fünf kumulativ zu erfüllende Voraussetzungen vorliegen. Fehlt auch nur eine davon, kann das Gericht die Tenfiz verweigern.
+Damit ein türkisches Familiengericht die Tenfiz eines deutschen familienrechtlichen Urteils beschließen kann, müssen nach MÖHUK Art. 54 fünf kumulativ zu erfüllende Voraussetzungen vorliegen. Fehlt auch nur eine davon, kann das Gericht die Tenfiz verweigern.
 
 | Nr. | Voraussetzung | Was das bedeutet |
 |---|---|---|
 | 1 | **Zuständigkeit des deutschen Gerichts** | Das deutsche Familiengericht muss für das Verfahren nach türkischem internationalem Privatrecht zuständig gewesen sein — in der Regel dann, wenn das Kind zum Zeitpunkt der Entscheidung seinen gewöhnlichen Aufenthalt in Deutschland hatte. |
 | 2 | **Rechtskraft des Urteils** | Das Urteil muss in Deutschland rechtskräftig und unanfechtbar sein. Eine Rechtskraftbescheinigung des deutschen Gerichts ist zwingend erforderlich. |
 | 3 | **Ordnungsgemäße Beteiligung der Gegenseite** | Die andere Partei muss im deutschen Verfahren ordnungsgemäß geladen und gehört worden sein. Ein Versäumnisurteil, bei dem die Gegenseite nicht ordnungsgemäß zugestellt bekam, kann in der Türkei scheitern. |
-| 4 | **Kein Verstoß gegen türkische öffentliche Ordnung** | Das Urteil darf nicht offensichtlich gegen die türkische öffentliche Ordnung (kamu düzeni) verstoßen. Seit 2017 ist gemeinsames Sorgerecht kein automatischer Ablehnungsgrund mehr — aber der Einzelfall wird weiterhin geprüft. |
-| 5 | **Gegenseitigkeit (Mütekabiliyet)** | Zwischen Deutschland und der Türkei muss Gegenseitigkeit bei der Anerkennung von Gerichtsurteilen bestehen. Diese wird im Rahmen der Luxemburger Sorgerechtssatzung sowie des Haager Übereinkommens bejaht. |
+| 4 | **Kein Verstoß gegen türkische öffentliche Ordnung** | Das Urteil darf nicht offensichtlich gegen die türkische öffentliche Ordnung (kamu düzeni) verstoßen. Seit 2017 ist gemeinsames familienrechtliche Nebenfolgen kein automatischer Ablehnungsgrund mehr — aber der Einzelfall wird weiterhin geprüft. |
+| 5 | **Gegenseitigkeit (Mütekabiliyet)** | Zwischen Deutschland und der Türkei muss Gegenseitigkeit bei der Anerkennung von Gerichtsurteilen bestehen. Diese wird im Rahmen der Luxemburger Familienrechtspraxis sowie des Haager Übereinkommens bejaht. |
 
 > ⚠️ **Wichtig:** Besonders Bedingung 3 wird in der Praxis häufig unterschätzt. Wenn der andere Elternteil in Deutschland nicht ordnungsgemäß zugestellt bekam oder das Verfahren nicht nachvollziehbar verstand, kann die türkische Seite genau diesen Punkt als Einwand nutzen — und damit die gesamte Tenfiz zu Fall bringen.
 
@@ -7873,7 +7879,7 @@ Bevor Sie die Tenfiz-Klage einreichen können, müssen alle erforderlichen Unter
 
 Für das türkische Familiengericht benötigen Sie:
 
-**1. Das deutsche Sorgerechtsurteil** — im Original oder als beglaubigte Kopie des deutschen Familiengerichts. Das Urteil muss alle relevanten Sorgerechtsregelungen enthalten: gemeinsames Sorgerecht, Aufenthaltsbestimmungsrecht, Umgangsregelungen, ggf. Unterhalt.
+**1. Das deutsche familienrechtliches Urteil** — im Original oder als beglaubigte Kopie des deutschen Familiengerichts. Das Urteil muss alle relevanten familienrechtliche Regelungen enthalten: gemeinsames familienrechtliche Nebenfolgen, Aufenthaltsbestimmungsrecht, Umgangsregelungen, ggf. Unterhalt.
 
 **2. Rechtskraftbescheinigung** — ein offizielles Dokument des deutschen Familiengerichts, das bestätigt, dass das Urteil rechtskräftig und nicht mehr anfechtbar ist.
 
@@ -7902,7 +7908,7 @@ Eines der meistgestellten praktischen Fragen lautet: Wie lange dauert das alles 
 | **Reise erforderlich?** | Nein — mit ordnungsgemäßer Vollmacht kann das gesamte Verfahren ohne Reise geführt werden |
 | **Kein vorheriger Aufenthalt in der Türkei nötig** | Ja — der Antragsteller muss nicht in der Türkei wohnen |
 
-Das klingt nach viel — aber im Vergleich zu einem vollständig neu geführten Sorgerechtsverfahren vor türkischen Gerichten, das von Grund auf neu entschieden wird, ist die Tenfiz-Klage deutlich effizienter und kostengünstiger.
+Das klingt nach viel — aber im Vergleich zu einem vollständig neu geführten familienrechtliches Verfahren vor türkischen Gerichten, das von Grund auf neu entschieden wird, ist die Tenfiz-Klage deutlich effizienter und kostengünstiger.
 
 ---
 
@@ -7910,13 +7916,13 @@ Das klingt nach viel — aber im Vergleich zu einem vollständig neu geführten 
 
 ### 1. Das laufende türkische Verfahren — der Derdestlik-Einwand
 
-Was viele nicht wissen: Wenn in der Türkei bereits ein Sorgerechts- oder Scheidungsverfahren zum gleichen Sachverhalt anhängig ist, kann der andere Elternteil diesen Umstand als Einwand gegen die Tenfiz erheben — der sogenannte Derdestlik-Einwand. Der Yargıtay hat in einer Entscheidung aus dem Jahr 2023 (Az. 2023/980 K.) ausdrücklich bestätigt, dass ein laufendes türkisches Verfahren die Tenfiz blockieren oder zumindest erheblich verzögern kann.
+Was viele nicht wissen: Wenn in der Türkei bereits ein Unterhalts- oder Scheidungsverfahren zum gleichen Sachverhalt anhängig ist, kann der andere Elternteil diesen Umstand als Einwand gegen die Tenfiz erheben — der sogenannte Derdestlik-Einwand. Der Yargıtay hat in einer Entscheidung aus dem Jahr 2023 (Az. 2023/980 K.) ausdrücklich bestätigt, dass ein laufendes türkisches Verfahren die Tenfiz blockieren oder zumindest erheblich verzögern kann.
 
-In der Praxis bedeutet das: Wenn Ihr Ex-Partner nach der Scheidung in Deutschland ein Sorgerechtsverfahren in der Türkei eingeleitet hat — möglicherweise in der Hoffnung, dort günstigere Bedingungen zu erzielen — kann genau das Ihre Tenfiz zunächst aufhalten. Eine koordinierte Prozessstrategie, die beide Verfahren im Blick behält, ist in solchen Fällen unerlässlich.
+In der Praxis bedeutet das: Wenn Ihr Ex-Partner nach der Scheidung in Deutschland ein familienrechtliches Verfahren in der Türkei eingeleitet hat — möglicherweise in der Hoffnung, dort günstigere Bedingungen zu erzielen — kann genau das Ihre Tenfiz zunächst aufhalten. Eine koordinierte Prozessstrategie, die beide Verfahren im Blick behält, ist in solchen Fällen unerlässlich.
 
 ### 2. Das Aufenthaltsbestimmungsrecht — ein Begriff, den türkische Gerichte kennen müssen
 
-Ein typisches deutsches Sorgerechtsurteil enthält nicht nur die Feststellung des gemeinsamen Sorgerechts, sondern auch Regelungen zum Aufenthaltsbestimmungsrecht — also zu der Frage, bei welchem Elternteil das Kind seinen Hauptwohnsitz hat. Dieser Begriff hat im türkischen Recht keine direkte Entsprechung und muss im Rahmen der Tenfiz-Klage sorgfältig erläutert und dem türkischen Rechtskonzept zugeordnet werden.
+Ein typisches deutsches familienrechtliches Urteil enthält nicht nur die Feststellung des gemeinsamen Unterhalts, sondern auch Regelungen zum Aufenthaltsbestimmungsrecht — also zu der Frage, bei welchem Elternteil das Kind seinen Hauptwohnsitz hat. Dieser Begriff hat im türkischen Recht keine direkte Entsprechung und muss im Rahmen der Tenfiz-Klage sorgfältig erläutert und dem türkischen Rechtskonzept zugeordnet werden.
 
 Wird dieser Schritt versäumt oder unzureichend ausgeführt, besteht die reale Gefahr, dass das türkische Gericht das Aufenthaltsbestimmungsrecht nicht in die Tenfiz einbezieht — und damit eine wichtige Komponente des Urteils in der Türkei praktisch wirkungslos bleibt. Eine genaue rechtliche Übersetzung — nicht nur sprachlich, sondern auch juristisch — ist hier entscheidend.
 
@@ -7930,7 +7936,7 @@ Die Anforderungen an türkische Übersetzungen sind streng. Es reicht nicht, ein
 
 ## Kindesentführung und das Haager Übereinkommen — was Sie wissen müssen
 
-Ein Thema, das in diesem Zusammenhang niemals übergangen werden darf: die Gefahr der internationalen Kindesentführung. Die Türkei ist Vertragsstaat des Haager Übereinkommens über die zivilrechtlichen Aspekte internationaler Kindesentführung von 1980 (HKÜ). Das bedeutet: Wenn ein Elternteil das gemeinsam sorgeberechtigte Kind ohne Zustimmung des anderen Elternteils dauerhaft in die Türkei verbringt, handelt es sich um eine widerrechtliche Verbringung im Sinne des HKÜ — unabhängig davon, ob das Sorgerechtsurteil in der Türkei bereits anerkannt wurde oder nicht.
+Ein Thema, das in diesem Zusammenhang niemals übergangen werden darf: die Gefahr der internationalen Kindesentführung. Die Türkei ist Vertragsstaat des Haager Übereinkommens über die zivilrechtlichen Aspekte internationaler Kindesentführung von 1980 (HKÜ). Das bedeutet: Wenn ein Elternteil das gemeinsam sorgeberechtigte Kind ohne Zustimmung des anderen Elternteils dauerhaft in die Türkei verbringt, handelt es sich um eine widerrechtliche Verbringung im Sinne des HKÜ — unabhängig davon, ob das familienrechtliches Urteil in der Türkei bereits anerkannt wurde oder nicht.
 
 Der verbleibende Elternteil hat in diesem Fall das Recht, über das Bundesamt für Justiz in Bonn — die deutsche Zentralbehörde im Rahmen des HKÜ — einen Rückführungsantrag zu stellen. Türkische Gerichte sind im Rahmen des HKÜ verpflichtet, die Rückführung des Kindes anzuordnen, sofern die Voraussetzungen erfüllt sind.
 
@@ -7946,29 +7952,29 @@ Das Gute: Sie müssen für dieses Verfahren nicht persönlich in die Türkei rei
 Vereinbaren Sie einen Termin beim türkischen Generalkonsulat in Ihrer Nähe, zum Beispiel Karlsruhe, Frankfurt, Köln oder Berlin, und lassen Sie eine umfassende notarielle Vollmacht (Vekâletname) für Ihren türkischen Anwalt ausstellen. Diese Vollmacht erlaubt es dem Anwalt, in Ihrem Namen alle notwendigen Prozesshandlungen vorzunehmen.
 
 **Schritt 2 — Dokumente zusammenstellen und beglaubigen**
-Besorgen Sie das deutsche Sorgerechtsurteil mit Rechtskraftbescheinigung, lassen Sie alle Dokumente mit einer Apostille versehen und von einem in der Türkei zugelassenen Übersetzer ins Türkische übersetzen und beglaubigen.
+Besorgen Sie das deutsche familienrechtliches Urteil mit Rechtskraftbescheinigung, lassen Sie alle Dokumente mit einer Apostille versehen und von einem in der Türkei zugelassenen Übersetzer ins Türkische übersetzen und beglaubigen.
 
 **Schritt 3 — Zuständiges Gericht bestimmen**
 Zuständig ist das türkische Familiengericht (Aile Mahkemesi) am Wohnort des Beklagten in der Türkei oder — falls kein türkischer Wohnsitz besteht — das Familiengericht am letzten bekannten Aufenthaltsort. Die genaue Zuständigkeit bestimmt sich nach MÖHUK Art. 51.
 
 **Schritt 4 — Tenfiz-Klage einreichen**
-Ihr türkischer Anwalt reicht die Klageschrift (dava dilekçesi) mit allen beigefügten Dokumenten beim zuständigen Familiengericht ein. Die Klageschrift muss die deutschen Rechtsbegriffe — insbesondere gemeinsames Sorgerecht, Aufenthaltsbestimmungsrecht und Umgangsrecht — präzise in das türkische Rechtssystem übersetzen und die aktuellen Yargıtay-Urteile zitieren.
+Ihr türkischer Anwalt reicht die Klageschrift (dava dilekçesi) mit allen beigefügten Dokumenten beim zuständigen Familiengericht ein. Die Klageschrift muss die deutschen Rechtsbegriffe — insbesondere gemeinsames familienrechtliche Nebenfolgen, Aufenthaltsbestimmungsrecht und Umgangsrecht — präzise in das türkische Rechtssystem übersetzen und die aktuellen Yargıtay-Urteile zitieren.
 
 **Schritt 5 — Zustellung und Verhandlung**
 Das Gericht stellt die Klage der Gegenseite zu. Bei internationalen Zustellungen — wenn die andere Partei in Deutschland lebt — dauert dieser Schritt erfahrungsgemäß 2 bis 4 Monate. Anschließend findet eine oder mehrere Verhandlungen statt, in denen Ihr Anwalt die Tenfiz-Voraussetzungen darlegt.
 
 **Schritt 6 — Beschluss und Registrierung**
-Bei positivem Ausgang erteilt das türkische Familiengericht den Tenfiz-Beschluss. Das Urteil wird rechtskräftig und — soweit relevant — in das türkische Personenstandsregister eingetragen. Ab diesem Zeitpunkt ist das gemeinsame Sorgerecht auch in der Türkei vollstreckbar.
+Bei positivem Ausgang erteilt das türkische Familiengericht den Tenfiz-Beschluss. Das Urteil wird rechtskräftig und — soweit relevant — in das türkische Personenstandsregister eingetragen. Ab diesem Zeitpunkt ist das gemeinsame familienrechtliche Nebenfolgen auch in der Türkei vollstreckbar.
 
 ---
 
 ## Wie die Doğru Kanzlei diese Verfahren begleitet
 
-Sorgerechtsverfahren zwischen Deutschland und der Türkei gehören zu den komplexesten Fällen im internationalen [Familienrecht](/de/leistungen/familienrecht). Sie bewegen sich an der Schnittstelle zweier Rechtssysteme, erfordern präzise Kenntnis der aktuellen türkischen Rechtsprechung — und sie berühren das, was für Eltern am meisten zählt: das Wohl und die Nähe zu ihren Kindern.
+familienrechtliches Verfahren zwischen Deutschland und der Türkei gehören zu den komplexesten Fällen im internationalen [Familienrecht](/de/leistungen/familienrecht). Sie bewegen sich an der Schnittstelle zweier Rechtssysteme, erfordern präzise Kenntnis der aktuellen türkischen Rechtsprechung — und sie berühren das, was für Eltern am meisten zählt: das Wohl und die Nähe zu ihren Kindern.
 
 [Die Doğru Kanzlei](/de/leistungen/familienrecht) ist sowohl bei der Anwaltskammer Ankara (Sicil-Nr. 47068) als auch bei der Rechtsanwaltskammer Karlsruhe (§ 207 BRAO) zugelassen. Das bedeutet: Wir vertreten Sie direkt vor türkischen Gerichten — ohne Umweg über einen Korrespondenzanwalt, ohne Kommunikationsverlust, ohne Mehrkosten durch eine Drittpartei.
 
-Wir führen Tenfiz-Klagen in Sorgerechtssachen vollständig von Deutschland aus — von der Vorbereitung der Vollmacht beim Konsulat über die Zusammenstellung und Apostillierung der Dokumente bis zur Einreichung und Begleitung der Verhandlung in der Türkei. Unsere Klageschriften enthalten stets die aktuellsten Yargıtay-Urteile und die notwendige juristische Übersetzung der deutschen Rechtsbegriffe ins türkische Rechtssystem — ein Detail, das über Erfolg oder Misserfolg des Verfahrens entscheiden kann.
+Wir führen Tenfiz-Klagen in familienrechtlichen Sachen vollständig von Deutschland aus — von der Vorbereitung der Vollmacht beim Konsulat über die Zusammenstellung und Apostillierung der Dokumente bis zur Einreichung und Begleitung der Verhandlung in der Türkei. Unsere Klageschriften enthalten stets die aktuellsten Yargıtay-Urteile und die notwendige juristische Übersetzung der deutschen Rechtsbegriffe ins türkische Rechtssystem — ein Detail, das über Erfolg oder Misserfolg des Verfahrens entscheiden kann.
 
 Auch in angrenzenden Bereichen wie [Erbrecht](/de/leistungen/erbrecht), [Strafrecht](/de/leistungen/strafrecht) und den weiteren [Leistungen der Doğru Kanzlei](/de/leistungen) unterstützen wir Mandanten mit deutsch-türkischem Bezug ausschließlich im türkischen Recht.
 
@@ -7978,7 +7984,7 @@ Auch in angrenzenden Bereichen wie [Erbrecht](/de/leistungen/erbrecht), [Strafre
 
 ## Weitere Artikel
 
-Wenn Sie neben dem Sorgerecht auch Vermögens- oder Strafrisiken mit Türkei-Bezug prüfen müssen, lesen Sie auch [Erbschaft Türkei: Was Erben in Deutschland wissen müssen](/de/blog/erbschaft-tuerkei-deutschland-ratgeber) und [Strafverfahren in der Türkei — Verteidigung aus Deutschland](/de/blog/strafverfahren-tuerkei-haftbefehl-verteidigung-deutschland).
+Wenn Sie neben dem familienrechtliche Nebenfolgen auch Vermögens- oder Strafrisiken mit Türkei-Bezug prüfen müssen, lesen Sie auch [Erbschaft Türkei: Was Erben in Deutschland wissen müssen](/de/blog/erbschaft-tuerkei-deutschland-ratgeber) und [Strafverfahren in der Türkei — Verteidigung aus Deutschland](/de/blog/strafverfahren-tuerkei-haftbefehl-verteidigung-deutschland).
 
 ---
 
@@ -7989,17 +7995,17 @@ MÖHUK koşulları, Yargıtay içtihadı ve Almanya'dan adım adım tenfiz süre
 
 ---
 
-Almanya'da boşandınız. Alman aile mahkemesi müşterek çocuğunuz için ortak velayete (gemeinsames Sorgerecht) hükmetti. Her şey resmi, her şey yazılı, karar kesinleşti. Şimdi eski eşiniz çocuğu alıp Türkiye'ye taşınmak istiyor — ya da Türkiye'de yaşayan eski eşiniz Alman mahkeme kararını hiç tanımıyor.
+Almanya'da boşandınız. Alman aile mahkemesi müşterek çocuğunuz için ortak aile hukuku konusuna (gemeinsames familienrechtliche Nebenfolgen) hükmetti. Her şey resmi, her şey yazılı, karar kesinleşti. Şimdi eski eşiniz çocuğu alıp Türkiye'ye taşınmak istiyor — ya da Türkiye'de yaşayan eski eşiniz Alman mahkeme kararını hiç tanımıyor.
 
 Ne yapacaksınız?
 
-Pek çok ebeveyn bu noktada aynı hatayı yapıyor: Alman mahkemesinin verdiği kararın uluslararası geçerliliği olduğunu, bunu göstermenin yeteceğini sanıyor. Bu tehlikeli bir yanılgıdır. Almanya'da verilen herhangi bir mahkeme kararı — velayet, nafaka, boşanma fark etmez — Türkiye'de kendiliğinden hüküm doğurmaz. Türk aile mahkemesi bu kararı resmen tanıyıp icra edilebilir hale getirmedikçe, Türkiye'deki taraf o kararı tamamen yok sayabilir. Türk makamları, okullar, hastaneler ve diğer kurumlar Alman velayet kararına uymak zorunda değildir.
+Pek çok ebeveyn bu noktada aynı hatayı yapıyor: Alman mahkemesinin verdiği kararın uluslararası geçerliliği olduğunu, bunu göstermenin yeteceğini sanıyor. Bu tehlikeli bir yanılgıdır. Almanya'da verilen herhangi bir mahkeme kararı — aile hukuku, nafaka, boşanma fark etmez — Türkiye'de kendiliğinden hüküm doğurmaz. Türk aile mahkemesi bu kararı resmen tanıyıp icra edilebilir hale getirmedikçe, Türkiye'deki taraf o kararı tamamen yok sayabilir. Türk makamları, okullar, hastaneler ve diğer kurumlar Alman aile hukuku kararına uymak zorunda değildir.
 
-Bu rehber size şu soruların yanıtını verecek: Ortak velayet kararınızı Türkiye'de geçerli kılmak için hangi davayı açmanız gerekiyor? Hangi koşullar sağlanmalı? Hangi belgeler hazırlanmalı? Ve bütün bunları Almanya'dan, Türkiye'ye gitmeden nasıl yapabilirsiniz?
+Bu rehber size şu soruların yanıtını verecek: Ortak aile hukuku kararınızı Türkiye'de geçerli kılmak için hangi davayı açmanız gerekiyor? Hangi koşullar sağlanmalı? Hangi belgeler hazırlanmalı? Ve bütün bunları Almanya'dan, Türkiye'ye gitmeden nasıl yapabilirsiniz?
 
 ---
 
-## Tanıma mı, Tenfiz mi? Velayet Davalarında Doğru Yolu Seçmek
+## Tanıma mı, Tenfiz mi? Aile hukuku Davalarında Doğru Yolu Seçmek
 
 Türk hukukunda yabancı mahkeme kararlarının Türkiye'de geçerlilik kazanması için iki ayrı yol bulunmaktadır: **tanıma** ve **tenfiz**. Bu iki kavram birbirine karıştırıldığında süreç en başından yanlış ilerleyebilir.
 
@@ -8007,21 +8013,21 @@ Türk hukukunda yabancı mahkeme kararlarının Türkiye'de geçerlilik kazanmas
 
 **Tenfiz (Tenfiz Davası)** ise bir adım öteye taşır: Yabancı mahkeme kararı icra edilebilir hale getirilir. Somut yükümlülükler — kişisel ilişki düzenlemesi (kişisel ilişki hakkı / Umgangsrecht), ikamet yeri belirleme hakkı (Aufenthaltsbestimmungsrecht), iştirak nafakası — artık Türkiye'de de fiilen uygulanabilir ve zorla icra ettirilebilir.
 
-Ortak velayet, kişisel ilişki düzenlemesi veya nafakaya ilişkin hükümler içeren bir Alman mahkeme kararı söz konusu olduğunda **her zaman tenfiz davası açılması gerekir.** Yalnızca tanıma bu durumlarda yetmez. Hukuki dayanak, 5718 sayılı Milletlerarası Özel Hukuk ve Usul Hukuku Hakkında Kanun'un (MÖHUK) 50 ile 58. maddeleri arasındadır.
+Ortak aile hukuku, kişisel ilişki düzenlemesi veya nafakaya ilişkin hükümler içeren bir Alman mahkeme kararı söz konusu olduğunda **her zaman tenfiz davası açılması gerekir.** Yalnızca tanıma bu durumlarda yetmez. Hukuki dayanak, 5718 sayılı Milletlerarası Özel Hukuk ve Usul Hukuku Hakkında Kanun'un (MÖHUK) 50 ile 58. maddeleri arasındadır.
 
-> ⚠️ **Önemli:** Tenfiz kararı olmadan Alman velayet kararınız Türkiye'de hukuken hiçbir sonuç doğurmaz. Eski eşiniz bu kararı görmezden gelebilir; Türkiye'deki mahkemeler, okullar ve diğer kurumlar bu karara uymakla yükümlü değildir.
+> ⚠️ **Önemli:** Tenfiz kararı olmadan Alman aile hukuku kararınız Türkiye'de hukuken hiçbir sonuç doğurmaz. Eski eşiniz bu kararı görmezden gelebilir; Türkiye'deki mahkemeler, okullar ve diğer kurumlar bu karara uymakla yükümlü değildir.
 
 ---
 
 ## 2016-2017 Dönüm Noktası: Yargıtay Nasıl Bir İçtihat Değişikliğine Gitti?
 
-2016 yılından önce durum çok daha zordu. Yargıtay 2. Hukuk Dairesi, onlarca yıl boyunca yabancı mahkemelerin verdiği ortak velayet kararlarının tenfizini tutarlı biçimde reddetti. Gerekçe netti: Türk Medeni Kanunu'nun (TMK) 336. maddesi uyarınca boşanma halinde velayet yalnızca anne ya da babadan birine verilebilirdi. Ortak velayet Türk hukukunda mevcut olmadığından, yabancı ortak velayet kararları kamu düzenine aykırı (kamu düzeni muhalefeti) sayılıyordu.
+2016 yılından önce durum çok daha zordu. Yargıtay 2. Hukuk Dairesi, onlarca yıl boyunca yabancı mahkemelerin verdiği ortak aile hukuku kararlarının tenfizini tutarlı biçimde reddetti. Gerekçe netti: Türk Medeni Kanunu'nun (TMK) 336. maddesi uyarınca boşanma halinde aile hukuku yalnızca anne ya da babadan birine verilebilirdi. Ortak aile hukuku Türk hukukunda mevcut olmadığından, yabancı ortak aile hukuku kararları kamu düzenine aykırı (kamu düzeni muhalefeti) sayılıyordu.
 
-Bu tablo Mart 2016'da köklü biçimde değişti. 25 Mart 2016 tarihli Resmî Gazete'de yayımlanan **6684 sayılı Kanun** ile Türkiye, "Çocuklarla Kişisel İlişki Kurulmasına Dair Avrupa Sözleşmesi"nin Ek Protokolü'nü onayladı. Bu protokol, ortak velayet kavramını dolaylı ama etkin biçimde Türk hukuk sistemine taşıdı. Türkiye Cumhuriyeti Anayasası'nın 90. maddesi gereğince usulüne uygun onaylanan uluslararası sözleşmeler kanun hükmündedir; temel hak ve özgürlüklere ilişkin sözleşmeler iç hukukla çatışması halinde üstün tutulur.
+Bu tablo Mart 2016'da köklü biçimde değişti. 25 Mart 2016 tarihli Resmî Gazete'de yayımlanan **6684 sayılı Kanun** ile Türkiye, "Çocuklarla Kişisel İlişki Kurulmasına Dair Avrupa Sözleşmesi"nin Ek Protokolü'nü onayladı. Bu protokol, ortak aile hukuku kavramını dolaylı ama etkin biçimde Türk hukuk sistemine taşıdı. Türkiye Cumhuriyeti Anayasası'nın 90. maddesi gereğince usulüne uygun onaylanan uluslararası sözleşmeler kanun hükmündedir; temel hak ve özgürlüklere ilişkin sözleşmeler iç hukukla çatışması halinde üstün tutulur.
 
-Yargıtay bu gelişmeye hızla yanıt verdi. **20 Şubat 2017 tarihli kararında (E. 2016/15771, K. 2017/1737)** Yargıtay 2. Hukuk Dairesi şu tespiti yaptı: Yabancı mahkemelerce verilen ortak velayet kararları artık kamu düzenine aykırı olduğu gerekçesiyle toptan reddedilemez. Her somut olay, çocuğun üstün yararı (çocuğun üstün yararı ilkesi) gözetilerek ayrı ayrı değerlendirilmelidir.
+Yargıtay bu gelişmeye hızla yanıt verdi. **20 Şubat 2017 tarihli kararında (E. 2016/15771, K. 2017/1737)** Yargıtay 2. Hukuk Dairesi şu tespiti yaptı: Yabancı mahkemelerce verilen ortak aile hukuku kararları artık kamu düzenine aykırı olduğu gerekçesiyle toptan reddedilemez. Her somut olay, çocuğun üstün yararı (çocuğun üstün yararı ilkesi) gözetilerek ayrı ayrı değerlendirilmelidir.
 
-Bu karar, uluslararası aile hukukunda adeta bir devrim niteliğindeydi. Ardından gelen **Yargıtay 2. HD, 2023/4605 K.** ve **2024/1916 K.** sayılı kararlar bu tutumu açıkça pekiştirdi: Almanya'dan verilen ortak velayet kararları, koşullar sağlandığında Türkiye'de tenfiz edilebilmektedir.
+Bu karar, uluslararası aile hukukunda adeta bir devrim niteliğindeydi. Ardından gelen **Yargıtay 2. HD, 2023/4605 K.** ve **2024/1916 K.** sayılı kararlar bu tutumu açıkça pekiştirdi: Almanya'dan verilen ortak aile hukuku kararları, koşullar sağlandığında Türkiye'de tenfiz edilebilmektedir.
 
 Şunu özellikle vurgulamak gerekir: Bu değişiklik bir kolaylık değil, bir kapı aralayışıdır. Her dava bireysel olarak incelenmekte, koşulların eksiksiz sağlandığının mahkeme önünde titizlikle ortaya konması gerekmektedir.
 
@@ -8036,7 +8042,7 @@ Türk aile mahkemesinin tenfize karar verebilmesi için MÖHUK'un 54. maddesi uy
 | 1 | **Alman mahkemesinin yetkisi** | Kararı veren Alman aile mahkemesinin Türk milletlerarası özel hukuku açısından da yetkili olması gerekir. Bu yetki, çocuğun karar tarihinde Almanya'da mutad mesken sahibi olmasıyla genellikle sağlanır. |
 | 2 | **Kararın kesinleşmiş olması** | Alman mahkeme kararının kesinleşmiş ve temyize konu edilemez hale gelmiş olması şarttır. Kesinleşme şerhi zorunlu bir belge olarak mahkemeye sunulmalıdır. |
 | 3 | **Karşı tarafın usulüne uygun davet edilmiş olması** | Eski eşin Alman davasına usulüne uygun tebliğ edilmiş ve kendini savunma hakkından yararlandırılmış olması gerekmektedir. Tebliğ yapılmadan ya da savunma hakkı kısıtlanarak verilen kararlar Türkiye'de reddedilebilir. |
-| 4 | **Türk kamu düzenine açıkça aykırılık bulunmaması** | Kararın Türk kamu düzenini (kamu düzeni) açıkça ihlal etmemesi gerekir. 2017 sonrasında ortak velayet bu gerekçeyle otomatik olarak reddedilmemektedir; ancak çocuğun çıkarlarına açıkça zarar verecek sonuçlar doğuruyorsa ret hâlâ mümkündür. |
+| 4 | **Türk kamu düzenine açıkça aykırılık bulunmaması** | Kararın Türk kamu düzenini (kamu düzeni) açıkça ihlal etmemesi gerekir. 2017 sonrasında ortak aile hukuku bu gerekçeyle otomatik olarak reddedilmemektedir; ancak çocuğun çıkarlarına açıkça zarar verecek sonuçlar doğuruyorsa ret hâlâ mümkündür. |
 | 5 | **Karşılıklılık ilkesi (mütekabiliyet)** | Almanya ile Türkiye arasında karşılıklı mahkeme kararı tanıma pratiği bulunmalıdır. Bu koşul, Lüksemburg Sözleşmesi ile 1980 tarihli Lahey Sözleşmesi kapsamında Almanya-Türkiye ilişkilerinde sağlanmış kabul edilmektedir. |
 
 > ⚠️ **Önemli:** 3. koşul pratikte en çok hafife alınan koşuldur. Eski eşiniz Alman davada usulüne uygun tebliğ edilmediyse ya da duruşmaya katılamadıysa, bu durum tenfize itirazda en güçlü silah haline gelir. Tüm tebligat belgelerini saklayın.
@@ -8049,7 +8055,7 @@ Tenfiz davasını açmadan önce tüm belgelerin eksiksiz ve doğru formatta haz
 
 Türk aile mahkemesine sunulması gereken belgeler şunlardır:
 
-**1. Alman mahkeme kararı** — Alman aile mahkemesinin verdiği velayet kararının aslı veya mahkemece onaylı örneği. Karar; ortak velayet, ikamet yeri belirleme hakkı (Aufenthaltsbestimmungsrecht), kişisel ilişki düzenlemesi (Umgangsrecht) ve varsa iştirak nafakasına ilişkin tüm hükümleri kapsamalıdır.
+**1. Alman mahkeme kararı** — Alman aile mahkemesinin verdiği aile hukuku kararının aslı veya mahkemece onaylı örneği. Karar; ortak aile hukuku, ikamet yeri belirleme hakkı (Aufenthaltsbestimmungsrecht), kişisel ilişki düzenlemesi (Umgangsrecht) ve varsa iştirak nafakasına ilişkin tüm hükümleri kapsamalıdır.
 
 **2. Kesinleşme şerhi** — Kararın Almanya'da kesinleşip temyize konu edilemez hale geldiğini belgeleyen resmi belge. Bu belge olmadan tenfiz talebi kabul edilmez.
 
@@ -8078,7 +8084,7 @@ Tenfiz sürecinin ne kadar sürdüğü ve ne kadara mal olduğu ebeveynlerin en 
 | **Türkiye'ye seyahat gerekli mi?** | Hayır — noter onaylı vekâletname ile tüm süreç uzaktan yürütülebilir |
 | **Türkiye'de ikamet zorunlu mu?** | Hayır — davacı yurt dışında yaşıyor olabilir |
 
-Çok gibi görünse de şunu göz önünde bulundurun: Türkiye'de sıfırdan yeni bir velayet davası açmak, hem daha uzun hem çok daha maliyetli bir süreçtir. Tenfiz davası, mevcut Alman kararınızı Türkiye'de geçerli kılmanın hem hukuki hem de pratik açıdan en verimli yoludur.
+Çok gibi görünse de şunu göz önünde bulundurun: Türkiye'de sıfırdan yeni bir aile hukuku davası açmak, hem daha uzun hem çok daha maliyetli bir süreçtir. Tenfiz davası, mevcut Alman kararınızı Türkiye'de geçerli kılmanın hem hukuki hem de pratik açıdan en verimli yoludur.
 
 ---
 
@@ -8086,13 +8092,13 @@ Tenfiz sürecinin ne kadar sürdüğü ve ne kadara mal olduğu ebeveynlerin en 
 
 ### 1. Türkiye'de Derdest Bir Dava Varsa — Derdestlik İtirazı
 
-Eski eşiniz Almanya'daki boşanmadan sonra Türkiye'de aynı konuya ilişkin — velayet ya da boşanma — bir dava açmış olabilir. Bu durumda derdestlik itirazı devreye girebilir. Yargıtay 2. HD, **2023/980 K.** sayılı kararında, Türkiye'de devam eden bir davanın tenfiz talebine karşı ileri sürülebileceğini ve tenfizi engelleyebileceğini açıkça teyit etmiştir.
+Eski eşiniz Almanya'daki boşanmadan sonra Türkiye'de aynı konuya ilişkin — aile hukuku ya da boşanma — bir dava açmış olabilir. Bu durumda derdestlik itirazı devreye girebilir. Yargıtay 2. HD, **2023/980 K.** sayılı kararında, Türkiye'de devam eden bir davanın tenfiz talebine karşı ileri sürülebileceğini ve tenfizi engelleyebileceğini açıkça teyit etmiştir.
 
-Pratikte bu şu anlama gelir: Eski eşiniz Almanya'daki boşanma kararını beklemeksizin Türk mahkemelerine koşarak velayet davası açmış olabilir. Bu taktik, Türkiye'de daha lehte bir karar elde etme ya da Alman kararının tenfizini engelleme amacı taşıyabilir. Bu durumun farkında olmak ve her iki süreci eş zamanlı koordine eden bir hukuki strateji oluşturmak hayati önem taşır.
+Pratikte bu şu anlama gelir: Eski eşiniz Almanya'daki boşanma kararını beklemeksizin Türk mahkemelerine koşarak aile hukuku davası açmış olabilir. Bu taktik, Türkiye'de daha lehte bir karar elde etme ya da Alman kararının tenfizini engelleme amacı taşıyabilir. Bu durumun farkında olmak ve her iki süreci eş zamanlı koordine eden bir hukuki strateji oluşturmak hayati önem taşır.
 
 ### 2. Aufenthaltsbestimmungsrecht — Türk Mahkemesine Doğru Anlatılmalı
 
-Alman velayet kararları çoğunlukla yalnızca ortak velayeti değil, aynı zamanda çocuğun hangi ebeveynin yanında ikamet edeceğini belirleyen **Aufenthaltsbestimmungsrecht**'i de düzenler. Bu kavramın Türk hukukunda doğrudan bir karşılığı yoktur. Tenfiz dilekçesinde bu kavramın Türk hukuku çerçevesinde doğru biçimde açıklanmaması, ikamet yeri düzenlemesinin tenfiz kapsamı dışında kalmasına — yani kararın en önemli parçalarından birinin Türkiye'de uygulanamamasına — yol açabilir.
+Alman aile hukuku kararları çoğunlukla yalnızca ortak aile hukuku konusunu değil, aynı zamanda çocuğun hangi ebeveynin yanında ikamet edeceğini belirleyen **Aufenthaltsbestimmungsrecht**'i de düzenler. Bu kavramın Türk hukukunda doğrudan bir karşılığı yoktur. Tenfiz dilekçesinde bu kavramın Türk hukuku çerçevesinde doğru biçimde açıklanmaması, ikamet yeri düzenlemesinin tenfiz kapsamı dışında kalmasına — yani kararın en önemli parçalarından birinin Türkiye'de uygulanamamasına — yol açabilir.
 
 Hukuki çeviri yalnızca dilsel değil, kavramsal olarak da yapılmalıdır. Bu, hatalı ya da özensiz hazırlanmış dilekçelerle tenfiz başvurusunu reddeden mahkeme kararlarında tekrarlayan bir sorun olarak karşımıza çıkmaktadır.
 
@@ -8108,7 +8114,7 @@ Türkiye'nin belge biçimine ilişkin gereksinimleri katıdır. Apostil tasdiki 
 
 Bu konuyu ele alırken asla atlanmaması gereken bir başlık daha var: uluslararası çocuk kaçırma riski. **Türkiye, 1980 tarihli Uluslararası Çocuk Kaçırma'nın Hukuki Yönlerine Dair Lahey Sözleşmesi'ne (HKÜ) taraftır.** Almanya da bu sözleşmenin tarafları arasındadır.
 
-Bu ne anlama gelir? Ortak velayeti olan bir ebeveyni çocuğu diğer ebeveynin rızası alınmadan kalıcı olarak Türkiye'ye götürürse, bu durum Sözleşme kapsamında hukuka aykırı bir götürme sayılır. Tenfiz kararı olup olmadığı bu değerlendirmeyi etkilemez — Sözleşme, velayet hakkının söz konusu olduğu her durumda uygulanır.
+Bu ne anlama gelir? Ortak aile hukuku konusunu olan bir ebeveyni çocuğu diğer ebeveynin rızası alınmadan kalıcı olarak Türkiye'ye götürürse, bu durum Sözleşme kapsamında hukuka aykırı bir götürme sayılır. Tenfiz kararı olup olmadığı bu değerlendirmeyi etkilemez — Sözleşme, aile hukuku hakkının söz konusu olduğu her durumda uygulanır.
 
 Türkiye'de bırakılan ebeveyn, **Bundesamt für Justiz** (Federal Adalet Dairesi) aracılığıyla ya da doğrudan Türk makamlarına başvurarak çocuğun iadesi talebinde bulunabilir. Türk mahkemeleri, HKÜ kapsamında çocuğun iadesine hükmetmekle yükümlüdür.
 
@@ -8124,25 +8130,25 @@ Tenfiz davasını açmak için Türkiye'ye gitmeniz şart değildir. Konsolosluk
 Bulunduğunuz şehre en yakın Türk Başkonsolosluğu'na randevu alın (Münih, Frankfurt, Köln, Karlsruhe, Berlin, Düsseldorf, Hamburg veya Stuttgart). Avukatınıza kapsamlı bir vekâletname düzenletin. Bu belge avukatınızın dava açma, duruşmaya katılma ve karar sonrası işlemleri yapma yetkisini kapsamalıdır.
 
 **2. Adım — Belgelerin Hazırlanması ve Apostil Tasdiki**
-Alman aile mahkemesinden velayet kararını ve kesinleşme şerhini alın. İlgili Alman makamına apostil tasdiki yaptırın. Tüm belgeleri Türkiye'de kayıtlı yeminli bir tercümana Türkçeye çevirtip Türk noter tasdikinden geçirin.
+Alman aile mahkemesinden aile hukuku kararını ve kesinleşme şerhini alın. İlgili Alman makamına apostil tasdiki yaptırın. Tüm belgeleri Türkiye'de kayıtlı yeminli bir tercümana Türkçeye çevirtip Türk noter tasdikinden geçirin.
 
 **3. Adım — Yetkili Mahkemenin Belirlenmesi**
 Yetkili Türk aile mahkemesi (Aile Mahkemesi), MÖHUK m. 51 uyarınca belirlenir. Davalının Türkiye'deki yerleşim yeri mahkemesi öncelikli olarak yetki sahibidir. Türkiye'de belirli bir yerleşim yeri yoksa son bilinen ikamet adresindeki mahkeme yetkili olabilir.
 
 **4. Adım — Dava Dilekçesinin Hazırlanması ve Mahkemeye Sunulması**
-Avukatınız tüm ekli belgelerle birlikte tenfiz dilekçesini yetkili aile mahkemesine sunar. Dilekçede Alman hukukundaki ortak velayet, Aufenthaltsbestimmungsrecht ve Umgangsrecht kavramları Türk hukuku çerçevesinde titizlikle açıklanmalı, güncel Yargıtay içtihatlarına atıf yapılmalıdır.
+Avukatınız tüm ekli belgelerle birlikte tenfiz dilekçesini yetkili aile mahkemesine sunar. Dilekçede Alman hukukundaki ortak aile hukuku, Aufenthaltsbestimmungsrecht ve Umgangsrecht kavramları Türk hukuku çerçevesinde titizlikle açıklanmalı, güncel Yargıtay içtihatlarına atıf yapılmalıdır.
 
 **5. Adım — Tebligat ve Yargılama**
 Mahkeme, davayı karşı tarafa tebliğ eder. Karşı tarafın Almanya'da bulunması durumunda uluslararası tebligat süreci genellikle 2 ile 4 ay almaktadır. Ardından avukatınızın tenfiz koşullarını ortaya koyduğu duruşma ya da duruşmalar gerçekleştirilir.
 
 **6. Adım — Tenfiz Kararı ve Nüfus Tescili**
-Mahkeme tenfize hükmederse karar kesinleşir; gerekli hallerde nüfus müdürlüğüne işlenir. Bu aşamadan itibaren ortak velayet kararınız Türkiye'de de icra edilebilir hale gelir.
+Mahkeme tenfize hükmederse karar kesinleşir; gerekli hallerde nüfus müdürlüğüne işlenir. Bu aşamadan itibaren ortak aile hukuku kararınız Türkiye'de de icra edilebilir hale gelir.
 
 ---
 
 ## Doğru Kanzlei Bu Süreçleri Nasıl Yürütüyor?
 
-Almanya ile Türkiye arasındaki velayet davaları, uluslararası [Aile Hukuku](/tr/hizmetler/aile-hukuku) alanının en karmaşık konularından birini oluşturur. İki hukuk sisteminin kesişim noktasında yer alan bu davalar; güncel Yargıtay içtihadına hâkimiyeti, Alman hukuk kavramlarının Türk hukukuna ustalıkla aktarılmasını ve —her şeyden önemlisi— ebeveynlerin çocuklarına yakın olma hakkını koruma kararlılığını gerektirir.
+Almanya ile Türkiye arasındaki aile hukuku davaları, uluslararası [Aile Hukuku](/tr/hizmetler/aile-hukuku) alanının en karmaşık konularından birini oluşturur. İki hukuk sisteminin kesişim noktasında yer alan bu davalar; güncel Yargıtay içtihadına hâkimiyeti, Alman hukuk kavramlarının Türk hukukuna ustalıkla aktarılmasını ve —her şeyden önemlisi— ebeveynlerin çocuklarına yakın olma hakkını koruma kararlılığını gerektirir.
 
 [Doğru Kanzlei](/tr/hizmetler/aile-hukuku) olarak, hem Ankara Barosu'na (Sicil No: 47068) hem de Karlsruhe Rechtsanwaltskammer'a (§ 207 BRAO) kayıtlı çift baro üyeliğiyle Türk mahkemelerinde sizi doğrudan temsil ediyoruz. Aradaki bir aracı avukata gerek kalmaksızın, iletişim kaybı ve ek maliyet olmadan.
 
@@ -8163,13 +8169,13 @@ Türkiye bağlantılı başka hukuki riskler için [Almanya'da Yaşarken Türkiy
 **YASAL UYARI:** Bu makale yalnızca Türk hukukuna ilişkin genel bilgi amaçlıdır. Doğru Kanzlei, § 207 BRAO kapsamında yalnızca Türk hukuku konularında danışmanlık vermektedir.`,
     contentEN: `> *This article addresses Turkish law exclusively. Doğru Kanzlei advises on Turkish law under § 207 BRAO and does not advise on German domestic law.*
 
-What Turkish-German families need to know about the Tenfiz process, MÖHUK conditions and the latest Yargıtay rulings — and how to enforce your custody rights without travelling to Turkey.
+What Turkish-German families need to know about the Tenfiz process, MÖHUK conditions and the latest Yargıtay rulings — and how to enforce your financial orders rights without travelling to Turkey.
 
 ---
 
-The divorce was finalised in Germany. The German family court issued a joint custody order — both parents share parental responsibility for their child. Everything is documented, official, legally binding. And then one parent moves to Turkey, or wants to take the child there. Suddenly the other parent discovers a deeply uncomfortable truth: that German court order means nothing in Turkey. Not yet, anyway.
+The divorce was finalised in Germany. The German family court issued a joint financial orders order — both parents share parental responsibility for their child. Everything is documented, official, legally binding. And then one parent moves to Turkey, or wants to take the child there. Suddenly the other parent discovers a deeply uncomfortable truth: that German court order means nothing in Turkey. Not yet, anyway.
 
-This is the situation that brings many Turkish-German families to us. They have done everything right in Germany — attended court, signed the documents, obtained the order. But they had no idea that a foreign court judgment, however official, has zero automatic legal effect in Turkey. Until a Turkish court formally recognises and declares that order enforceable, the parent in Turkey faces no legal obligation to comply with it. Turkish schools, hospitals, passport offices and authorities are under no duty to act on a German custody ruling.
+This is the situation that brings many Turkish-German families to us. They have done everything right in Germany — attended court, signed the documents, obtained the order. But they had no idea that a foreign court judgment, however official, has zero automatic legal effect in Turkey. Until a Turkish court formally recognises and declares that order enforceable, the parent in Turkey faces no legal obligation to comply with it. Turkish schools, hospitals, passport offices and authorities are under no duty to act on a German financial orders ruling.
 
 This guide explains exactly what needs to happen to change that — what the enforcement process involves, what conditions must be met, what documents you need to prepare, and how to run the entire procedure from Germany, the UK, the Netherlands or wherever you live, without a single trip to Turkey.
 
@@ -8179,39 +8185,39 @@ This guide explains exactly what needs to happen to change that — what the enf
 
 Turkish private international law provides two distinct routes for dealing with foreign court judgments: **Tanıma** (recognition) and **Tenfiz** (enforcement). Understanding the difference is essential, because choosing the wrong route — or confusing one for the other — can derail the process entirely.
 
-**Tanıma** means that a Turkish court accepts a foreign judgment as valid and gives it the force of a final Turkish judgment. It has a declaratory effect — the judgment's existence is confirmed. The most common example is a foreign divorce decree: once recognised in Turkey (Tanıma), the parties are considered legally divorced in Turkey too, and this is registered in the civil records. In some cases, particularly straightforward divorces without custody or financial provisions, Tanıma can even be processed administratively under Article 27/A of the Turkish Civil Registration Law — without going to court at all.
+**Tanıma** means that a Turkish court accepts a foreign judgment as valid and gives it the force of a final Turkish judgment. It has a declaratory effect — the judgment's existence is confirmed. The most common example is a foreign divorce decree: once recognised in Turkey (Tanıma), the parties are considered legally divorced in Turkey too, and this is registered in the civil records. In some cases, particularly straightforward divorces without financial orders or financial provisions, Tanıma can even be processed administratively under Article 27/A of the Turkish Civil Registration Law — without going to court at all.
 
 **Tenfiz** goes a critical step further. It makes the foreign judgment executable — meaning that specific obligations contained in the judgment can actually be enforced by Turkish courts and authorities. Visitation schedules, the right to determine the child's place of residence (known in German law as Aufenthaltsbestimmungsrecht), child maintenance payments — all of these become enforceable in Turkey only after a Tenfiz order is granted.
 
-For any custody order that goes beyond the bare dissolution of a marriage — and joint custody orders almost always do — **Tenfiz is required, not just Tanıma.** The legal framework governing both procedures is found in Articles 50 to 58 of Turkey's Law on Private International Law and International Civil Procedure, known by its Turkish acronym MÖHUK (Law No. 5718).
+For any financial orders order that goes beyond the bare dissolution of a marriage — and joint financial orders orders almost always do — **Tenfiz is required, not just Tanıma.** The legal framework governing both procedures is found in Articles 50 to 58 of Turkey's Law on Private International Law and International Civil Procedure, known by its Turkish acronym MÖHUK (Law No. 5718).
 
-> ⚠️ **Important:** Without a Tenfiz ruling from a Turkish Family Court, your German custody order carries no legal weight in Turkey. The other parent can ignore it without consequence. Turkish authorities, schools and public bodies are not obligated to act on it in any way.
+> ⚠️ **Important:** Without a Tenfiz ruling from a Turkish Family Court, your German financial orders order carries no legal weight in Turkey. The other parent can ignore it without consequence. Turkish authorities, schools and public bodies are not obligated to act on it in any way.
 
 ---
 
 ## How Turkey Changed Its Position: The 2016–2017 Turning Point
 
-For decades before 2016, the situation for Turkish-German families was significantly harder. The 2nd Civil Chamber of the Yargıtay — Turkey's Supreme Court — consistently refused to enforce foreign joint custody orders on a straightforward basis: Turkish civil law (TMK, Article 336) only allowed custody to be awarded to one parent following a divorce. Joint custody simply did not exist as a concept in Turkish domestic law, and foreign orders granting it were treated as contrary to Turkish public policy (kamu düzeni), making enforcement impossible.
+For decades before 2016, the situation for Turkish-German families was significantly harder. The 2nd Civil Chamber of the Yargıtay — Turkey's Supreme Court — consistently refused to enforce foreign joint financial orders orders on a straightforward basis: Turkish civil law (TMK, Article 336) only allowed financial orders to be awarded to one parent following a divorce. Joint financial orders simply did not exist as a concept in Turkish domestic law, and foreign orders granting it were treated as contrary to Turkish public policy (kamu düzeni), making enforcement impossible.
 
-That changed dramatically in March 2016. With **Law No. 6684**, published in Turkey's Official Gazette on 25 March 2016, Turkey ratified the Additional Protocol to the European Convention on Contact Concerning Children. This protocol introduced the concept of joint custody into the Turkish legal framework — not directly through a change in the Turkish Civil Code, but through the back door of international treaty law. Under Article 90 of the Turkish Constitution, ratified international agreements carry the force of domestic law; those concerning fundamental rights and freedoms take precedence over conflicting domestic statutes.
+That changed dramatically in March 2016. With **Law No. 6684**, published in Turkey's Official Gazette on 25 March 2016, Turkey ratified the Additional Protocol to the European Convention on Contact Concerning Children. This protocol introduced the concept of joint financial orders into the Turkish legal framework — not directly through a change in the Turkish Civil Code, but through the back door of international treaty law. Under Article 90 of the Turkish Constitution, ratified international agreements carry the force of domestic law; those concerning fundamental rights and freedoms take precedence over conflicting domestic statutes.
 
-The Yargıtay moved quickly. In its **landmark ruling of 20 February 2017 (Case No. 2016/15771 E., 2017/1737 K.)**, the 2nd Civil Chamber reversed its long-standing position: foreign joint custody orders could no longer be automatically rejected as contrary to public policy. Each case would now be assessed individually, with the child's best interests (çocuğun üstün yararı) as the guiding criterion.
+The Yargıtay moved quickly. In its **landmark ruling of 20 February 2017 (Case No. 2016/15771 E., 2017/1737 K.)**, the 2nd Civil Chamber reversed its long-standing position: foreign joint financial orders orders could no longer be automatically rejected as contrary to public policy. Each case would now be assessed individually, with the child's best interests (çocuğun üstün yararı) as the guiding criterion.
 
-That 2017 ruling was a turning point, but not the end of the story. More recent Yargıtay decisions — including **2023/4605 K.** and **2024/1916 K.** — have reinforced this approach. Turkish courts now regularly enforce joint custody orders issued in Germany and other European countries, provided the legal conditions are properly satisfied and the application is correctly prepared. The direction of travel is clear — but the journey still requires careful navigation.
+That 2017 ruling was a turning point, but not the end of the story. More recent Yargıtay decisions — including **2023/4605 K.** and **2024/1916 K.** — have reinforced this approach. Turkish courts now regularly enforce joint financial orders orders issued in Germany and other European countries, provided the legal conditions are properly satisfied and the application is correctly prepared. The direction of travel is clear — but the journey still requires careful navigation.
 
 ---
 
 ## The Five Conditions a Turkish Court Will Check
 
-Before a Turkish Family Court can grant a Tenfiz order for your German custody judgment, five cumulative conditions must be met under Article 54 of MÖHUK. If any one of these is missing, the court can — and often will — refuse enforcement.
+Before a Turkish Family Court can grant a Tenfiz order for your German financial orders judgment, five cumulative conditions must be met under Article 54 of MÖHUK. If any one of these is missing, the court can — and often will — refuse enforcement.
 
 | No. | Condition | What it means in practice |
 |---|---|---|
 | 1 | **The German court had jurisdiction** | The German family court must have been competent to hear the case under Turkish private international law. This is typically satisfied if the child's habitual residence at the time of the judgment was in Germany. |
-| 2 | **The judgment is final and binding** | The German custody order must be final and no longer subject to appeal. A certificate of finality (Rechtskraftbescheinigung) from the German family court is a mandatory document. |
+| 2 | **The judgment is final and binding** | The German financial orders order must be final and no longer subject to appeal. A certificate of finality (Rechtskraftbescheinigung) from the German family court is a mandatory document. |
 | 3 | **The other party was properly involved** | The other parent must have been properly notified and given a genuine opportunity to participate in the German proceedings. A judgment obtained without proper service on the other party is one of the most common grounds for refusal in Turkey. |
-| 4 | **No manifest violation of Turkish public policy** | The outcome of the judgment must not be manifestly contrary to Turkish public policy (kamu düzeni). Since 2017, joint custody is no longer an automatic trigger for this objection — but the court will still examine whether the specific arrangements in the judgment are harmful to the child's interests. |
-| 5 | **Reciprocity between Germany and Turkey** | There must be a practice of mutual recognition of court judgments between the two countries. In the Germany-Turkey context, this is satisfied through the Luxembourg European Custody Convention and the 1980 Hague Convention, both of which Germany and Turkey have ratified. |
+| 4 | **No manifest violation of Turkish public policy** | The outcome of the judgment must not be manifestly contrary to Turkish public policy (kamu düzeni). Since 2017, joint financial orders is no longer an automatic trigger for this objection — but the court will still examine whether the specific arrangements in the judgment are harmful to the child's interests. |
+| 5 | **Reciprocity between Germany and Turkey** | There must be a practice of mutual recognition of court judgments between the two countries. In the Germany-Turkey context, this is satisfied through the Luxembourg European Family orders Convention and the 1980 Hague Convention, both of which Germany and Turkey have ratified. |
 
 > ⚠️ **Important:** Condition 3 — proper notice and participation — is the one most often underestimated and most frequently exploited by the opposing party. If the other parent claims they were never properly served in the German proceedings, or that they did not understand the process, this argument alone can defeat the Tenfiz application. Keep all service documents, hearing notices and correspondence from the German proceedings.
 
@@ -8223,7 +8229,7 @@ Before your Turkish lawyer can file the Tenfiz application, all required documen
 
 Here is what the Turkish Family Court will require:
 
-**1. The German custody judgment** — the original court order or a certified copy issued by the German family court. The order must contain all relevant provisions: joint custody, the right to determine the child's place of residence (Aufenthaltsbestimmungsrecht), visitation arrangements (Umgangsrecht) and, if applicable, child maintenance.
+**1. The German financial orders judgment** — the original court order or a certified copy issued by the German family court. The order must contain all relevant provisions: joint financial orders, the right to determine the child's place of residence (Aufenthaltsbestimmungsrecht), visitation arrangements (Umgangsrecht) and, if applicable, child maintenance.
 
 **2. Certificate of finality (Rechtskraftbescheinigung)** — an official document from the German family court confirming that the judgment is final and no longer subject to appeal. Without this, the Turkish court cannot establish that Condition 2 is met.
 
@@ -8252,7 +8258,7 @@ These are the questions every parent asks first — and rightly so.
 | **Travel to Turkey required?** | No — with a proper power of attorney, the entire process can be handled remotely |
 | **Do you need to live in Turkey?** | No — the applicant can reside anywhere abroad |
 
-To put this in perspective: running a brand-new custody case from scratch before Turkish courts — starting with no German order — would take significantly longer and cost far more. The Tenfiz route uses your existing German judgment as the foundation, making it by far the most efficient path to having your custody rights recognised in Turkey.
+To put this in perspective: running a brand-new financial orders case from scratch before Turkish courts — starting with no German order — would take significantly longer and cost far more. The Tenfiz route uses your existing German judgment as the foundation, making it by far the most efficient path to having your financial orders rights recognised in Turkey.
 
 ---
 
@@ -8260,19 +8266,19 @@ To put this in perspective: running a brand-new custody case from scratch before
 
 ### 1. The Derdestlik Objection — When Turkey Has a Case Already Running
 
-One of the most important — and least discussed — risks in cross-border custody enforcement is what happens when the other parent has already filed their own custody case in Turkey. This is known in Turkish law as the **Derdestlik objection** (the pending proceedings objection).
+One of the most important — and least discussed — risks in cross-border financial orders enforcement is what happens when the other parent has already filed their own financial orders case in Turkey. This is known in Turkish law as the **Derdestlik objection** (the pending proceedings objection).
 
-If the other parent, anticipating your Tenfiz application, rushes to a Turkish family court and opens a custody or divorce case covering the same subject, they can then argue that the Turkish proceedings should take precedence over your Tenfiz request. The Yargıtay confirmed in a **2023 decision (Case No. 2023/980 K.)** that an active Turkish case on the same matter can block or significantly delay enforcement.
+If the other parent, anticipating your Tenfiz application, rushes to a Turkish family court and opens a financial orders or divorce case covering the same subject, they can then argue that the Turkish proceedings should take precedence over your Tenfiz request. The Yargıtay confirmed in a **2023 decision (Case No. 2023/980 K.)** that an active Turkish case on the same matter can block or significantly delay enforcement.
 
 In practice, this tactic is used as a delaying strategy: the parent in Turkey hopes that a Turkish court — with a fresh slate, no German judgment to contend with, and potentially applying different standards — will reach a more favourable conclusion. Dealing with this requires a lawyer who can monitor and coordinate both the Turkish proceedings and your Tenfiz application simultaneously — not just one or the other.
 
 ### 2. The Aufenthaltsbestimmungsrecht Problem — A German Concept Turkey Doesn't Have
 
-A typical German custody order grants not only joint custody (gemeinsames Sorgerecht) but also specifies which parent holds the right to determine the child's place of residence — the Aufenthaltsbestimmungsrecht. This right determines where the child primarily lives and is a central part of most German custody arrangements.
+A typical German financial orders order grants not only joint financial orders (gemeinsames familienrechtliche Nebenfolgen) but also specifies which parent holds the right to determine the child's place of residence — the Aufenthaltsbestimmungsrecht. This right determines where the child primarily lives and is a central part of most German financial orders arrangements.
 
-The problem: Turkish law has no direct equivalent of the Aufenthaltsbestimmungsrecht. There is no single Turkish legal term that maps cleanly onto this concept. If the Tenfiz application fails to carefully explain what this right means and how it should be interpreted within the Turkish legal framework, the Turkish court may simply ignore it — meaning the most important practical element of your custody order goes unenforced in Turkey.
+The problem: Turkish law has no direct equivalent of the Aufenthaltsbestimmungsrecht. There is no single Turkish legal term that maps cleanly onto this concept. If the Tenfiz application fails to carefully explain what this right means and how it should be interpreted within the Turkish legal framework, the Turkish court may simply ignore it — meaning the most important practical element of your financial orders order goes unenforced in Turkey.
 
-This is not a rare edge case. It appears repeatedly in Turkish court decisions where Tenfiz applications were partially rejected or narrowed precisely because the legal translation of German custody concepts was incomplete or imprecise. Your Tenfiz petition must bridge this conceptual gap explicitly.
+This is not a rare edge case. It appears repeatedly in Turkish court decisions where Tenfiz applications were partially rejected or narrowed precisely because the legal translation of German financial orders concepts was incomplete or imprecise. Your Tenfiz petition must bridge this conceptual gap explicitly.
 
 ### 3. Incorrectly Formatted Documents
 
@@ -8284,15 +8290,15 @@ Turkey's document requirements are strict and unforgiving. An apostille missing 
 
 ## International Child Abduction and the Hague Convention
 
-No guide on cross-border custody between Germany and Turkey would be complete without addressing the risk of international child abduction — a real and serious concern for many families in this situation.
+No guide on cross-border financial orders between Germany and Turkey would be complete without addressing the risk of international child abduction — a real and serious concern for many families in this situation.
 
 **Turkey is a signatory to the 1980 Hague Convention on the Civil Aspects of International Child Abduction (HCCH 1980).** So are Germany, the United Kingdom, the Netherlands and most European countries where Turkish diaspora communities live. What this means practically: if one parent — regardless of nationality — permanently relocates a child to Turkey without the consent of the other jointly-custodial parent, this constitutes a wrongful removal under the Convention.
 
 The left-behind parent can apply for the child's return through the relevant Central Authority in their country — the **Federal Office of Justice (Bundesamt für Justiz)** in Germany, the **International Child Abduction Contact Unit** in the UK, or equivalent bodies in other countries. Turkey's Central Authority under the Convention is the Ministry of Justice. Turkish courts are legally obligated to order the return of the child unless a narrow set of exceptions applies.
 
-Two important things to understand here. First, the Hague Convention process and the Tenfiz process are completely separate legal tracks — one does not replace or substitute for the other. A Tenfiz order protects your custody rights within the Turkish legal system on an ongoing basis; a Hague return application deals with the immediate emergency of a child wrongfully taken. You may need both, and you may need them at the same time.
+Two important things to understand here. First, the Hague Convention process and the Tenfiz process are completely separate legal tracks — one does not replace or substitute for the other. A Tenfiz order protects your financial orders rights within the Turkish legal system on an ongoing basis; a Hague return application deals with the immediate emergency of a child wrongfully taken. You may need both, and you may need them at the same time.
 
-Second, the Convention applies regardless of whether your German custody order has already been enforced in Turkey. The relevant question is whether you held a custody right at the time of removal and whether the removal violated that right — not whether Turkey has formally recognised it.
+Second, the Convention applies regardless of whether your German financial orders order has already been enforced in Turkey. The relevant question is whether you held a financial orders right at the time of removal and whether the removal violated that right — not whether Turkey has formally recognised it.
 
 ---
 
@@ -8304,7 +8310,7 @@ Here is how the process works in practice — start to finish — without you ev
 Book an appointment at the Turkish consulate nearest to you (in London, Berlin, Amsterdam, Stockholm, Vienna or wherever you are based). Have a comprehensive notarised power of attorney (Vekâletname) issued in favour of your Turkish lawyer. This document must authorise the lawyer to file lawsuits, attend hearings and carry out all procedural acts on your behalf.
 
 **Step 2 — Gather and certify your documents**
-Obtain your German custody judgment with the certificate of finality from the German family court. Have all documents apostilled by the appropriate German authority. Send the documents to a sworn translator registered in Turkey for certified Turkish translation and Turkish notarisation.
+Obtain your German financial orders judgment with the certificate of finality from the German family court. Have all documents apostilled by the appropriate German authority. Send the documents to a sworn translator registered in Turkey for certified Turkish translation and Turkish notarisation.
 
 **Step 3 — Identify the competent Turkish court**
 The competent court is the Turkish Family Court (Aile Mahkemesi) at the respondent's place of residence in Turkey, as determined by Article 51 of MÖHUK. If the other parent has no fixed Turkish address, the court at their last known place of residence may be used. Your lawyer will confirm the correct venue.
@@ -8316,17 +8322,17 @@ Your Turkish lawyer files the petition with all supporting documents. The petiti
 The Turkish court serves the lawsuit on the other party. If the other parent is in Germany or elsewhere in Europe, this involves international service — typically taking 2 to 4 months. Once service is complete, the court schedules one or more hearings at which your lawyer presents the case.
 
 **Step 6 — Tenfiz ruling and registration**
-If the court grants the Tenfiz order, your German custody judgment becomes enforceable in Turkey. Where relevant — for example, if the divorce itself had not yet been registered — the ruling is also reflected in the Turkish civil records. From this point, your joint custody rights can be actively enforced through the Turkish legal system.
+If the court grants the Tenfiz order, your German financial orders judgment becomes enforceable in Turkey. Where relevant — for example, if the divorce itself had not yet been registered — the ruling is also reflected in the Turkish civil records. From this point, your joint financial orders rights can be actively enforced through the Turkish legal system.
 
 ---
 
 ## How Doğru Kanzlei Handles These Cases
 
-Cross-border custody cases between Germany and Turkey sit at one of the most demanding intersections in international [Family Law](/en/services/familienrecht). They require not only precise knowledge of current Turkish court practice, but the ability to translate German legal concepts into Turkish law accurately — and the determination to protect what matters most to every parent involved.
+Cross-border financial orders cases between Germany and Turkey sit at one of the most demanding intersections in international [Family Law](/en/services/familienrecht). They require not only precise knowledge of current Turkish court practice, but the ability to translate German legal concepts into Turkish law accurately — and the determination to protect what matters most to every parent involved.
 
 [Doğru Kanzlei](/en/services) holds dual bar membership with the Ankara Bar Association (Registration No. 47068) and the Karlsruhe Bar Association (§ 207 BRAO). This means we represent you directly before Turkish courts — with no relay through a third-party Turkish law firm, no communication delays, no extra cost layers.
 
-We handle Tenfiz cases in custody matters from start to finish, entirely remotely. From helping you obtain the power of attorney at your nearest Turkish consulate to preparing the apostilled documents, drafting the Turkish petition and attending hearings in Turkey, every step is managed on your behalf. Our petitions always cite the current Yargıtay case law and explicitly address the legal translation of Aufenthaltsbestimmungsrecht and Umgangsrecht — the technical details that determine whether a Tenfiz application succeeds or fails.
+We handle Tenfiz cases in financial orders matters from start to finish, entirely remotely. From helping you obtain the power of attorney at your nearest Turkish consulate to preparing the apostilled documents, drafting the Turkish petition and attending hearings in Turkey, every step is managed on your behalf. Our petitions always cite the current Yargıtay case law and explicitly address the legal translation of Aufenthaltsbestimmungsrecht and Umgangsrecht — the technical details that determine whether a Tenfiz application succeeds or fails.
 
 When your cross-border matter also touches [Inheritance Law](/en/services/erbrecht), [Criminal Law](/en/services/strafrecht) or broader [Doğru Kanzlei Services](/en/services), we can coordinate the Turkish-law side from one office.
 
@@ -8359,116 +8365,116 @@ For other Turkey-linked legal risks, see our [Turkish Inheritance Law Guide for 
     modifiedAtTR: "2026-05-03",
     publishedAtEN: "2026-05-03",
     modifiedAtEN: "2026-05-03",
-    keywordsDE: "gemeinsames Sorgerecht Türkei Anerkennung, deutsches Sorgerecht Türkei, Tenfiz Klage Türkei, MÖHUK Familienrecht, Sorgerecht Türkei 2026, Sorgerechtsurteil Türkei anerkennen, Aufenthaltsbestimmungsrecht Türkei, türkisches Familienrecht Deutschland, Yargıtay Sorgerecht, Kindesentführung Türkei Haager Übereinkommen",
-    keywordsTR: "ortak velayet tenfiz Türkiye, Almanya velayet kararı Türkiye, ortak velayet Yargıtay 2026, tenfiz davası velayet, MÖHUK velayet tenfiz, Alman mahkemesi velayet kararı Türkiye, apostil velayet belgesi, Lahey Sözleşmesi çocuk kaçırma Türkiye Almanya, ortak velayet tanıma tenfiz farkı, aile mahkemesi tenfiz",
-    keywordsEN: "joint custody Germany Turkey, German custody order Turkey, enforce custody Turkey, Tenfiz Turkey custody, MÖHUK family law Germany, gemeinsames Sorgerecht Turkey recognised, Turkish court joint custody, Yargıtay custody ruling 2026, child abduction Turkey Hague Convention, custody enforcement Turkey 2026",
+    keywordsDE: "gemeinsames familienrechtliche Nebenfolgen Türkei Anerkennung, deutsches familienrechtliche Nebenfolgen Türkei, Tenfiz Klage Türkei, MÖHUK Familienrecht, familienrechtliche Nebenfolgen Türkei 2026, familienrechtliches Urteil Türkei anerkennen, Aufenthaltsbestimmungsrecht Türkei, türkisches Familienrecht Deutschland, Yargıtay familienrechtliche Nebenfolgen, Kindesentführung Türkei Haager Übereinkommen",
+    keywordsTR: "ortak aile hukuku tenfiz Türkiye, Almanya aile hukuku kararı Türkiye, ortak aile hukuku Yargıtay 2026, tenfiz davası aile hukuku, MÖHUK aile hukuku tenfiz, Alman mahkemesi aile hukuku kararı Türkiye, apostil aile hukuku belgesi, Lahey Sözleşmesi çocuk kaçırma Türkiye Almanya, ortak aile hukuku tanıma tenfiz farkı, aile mahkemesi tenfiz",
+    keywordsEN: "joint financial orders Germany Turkey, German financial orders order Turkey, enforce financial orders Turkey, Tenfiz Turkey financial orders, MÖHUK family law Germany, gemeinsames familienrechtliche Nebenfolgen Turkey recognised, Turkish court joint financial orders, Yargıtay financial orders ruling 2026, child abduction Turkey Hague Convention enforcement Turkey 2026",
     faqDE: [
       {
-        question: "Gilt ein deutsches Sorgerechtsurteil automatisch in der Türkei?",
-        answer: "Nein. Ein deutsches Sorgerechtsurteil entfaltet in der Türkei keine automatische Rechtswirkung. Damit es dort bindend wird, muss vor einem türkischen Familiengericht eine Tenfiz-Klage (Vollstreckbarerklärungsklage) erhoben werden. Erst nach einem positiven Gerichtsbeschluss gilt das Urteil auch in der Türkei als verbindlich. Ohne dieses Verfahren kann die türkische Seite das deutsche Urteil schlicht ignorieren — selbst wenn das Sorgerecht eindeutig geregelt ist."
+        question: "Gilt ein deutsches familienrechtliches Urteil automatisch in der Türkei?",
+        answer: "Nein. Ein deutsches familienrechtliches Urteil entfaltet in der Türkei keine automatische Rechtswirkung. Damit es dort bindend wird, muss vor einem türkischen Familiengericht eine Tenfiz-Klage (Vollstreckbarerklärungsklage) erhoben werden. Erst nach einem positiven Gerichtsbeschluss gilt das Urteil auch in der Türkei als verbindlich. Ohne dieses Verfahren kann die türkische Seite das deutsche Urteil schlicht ignorieren — selbst wenn das familienrechtliche Nebenfolgen eindeutig geregelt ist."
       },
       {
         question: "Was ist der Unterschied zwischen Tanıma und Tenfiz in der Türkei?",
-        answer: "Tanıma (Anerkennung) bedeutet, dass ein türkisches Gericht dem ausländischen Urteil Rechtskraft im Inland zuerkennt — es wird also als gültig anerkannt, aber nicht zwingend vollstreckt. Tenfiz (Vollstreckbarerklärung) geht einen Schritt weiter: Das Urteil wird vollstreckbar gemacht, sodass z.B. Umgangsregelungen oder andere konkrete Pflichten tatsächlich durchgesetzt werden können. Bei Sorgerechtsurteilen mit konkreten Regelungen — insbesondere Umgangsrecht, Aufenthaltsbestimmungsrecht und Unterhalt — ist stets die Tenfiz-Klage notwendig."
+        answer: "Tanıma (Anerkennung) bedeutet, dass ein türkisches Gericht dem ausländischen Urteil Rechtskraft im Inland zuerkennt — es wird also als gültig anerkannt, aber nicht zwingend vollstreckt. Tenfiz (Vollstreckbarerklärung) geht einen Schritt weiter: Das Urteil wird vollstreckbar gemacht, sodass z.B. Umgangsregelungen oder andere konkrete Pflichten tatsächlich durchgesetzt werden können. Bei familienrechtlichen Urteilen mit konkreten Regelungen — insbesondere Umgangsrecht, Aufenthaltsbestimmungsrecht und Unterhalt — ist stets die Tenfiz-Klage notwendig."
       },
       {
-        question: "Erkennt die Türkei gemeinsames Sorgerecht aus Deutschland an?",
-        answer: "Ja, seit dem Grundsatzurteil des Yargıtay (türkischer Kassationshof) vom 20. Februar 2017 — Az. 2016/15771 E., 2017/1737 K. — ist gemeinsames Sorgerecht nicht mehr pauschal als Verstoß gegen die türkische öffentliche Ordnung (kamu düzeni) zu werten. Ausschlaggebend war das Gesetz Nr. 6684 vom März 2016, mit dem die Türkei das Zusatzprotokoll zur Europäischen Sorgerechtssatzung ratifiziert hat. Neuere Yargıtay-Entscheidungen aus den Jahren 2023 und 2024 bestätigen diesen Kurs. Eine Anerkennung ist dennoch nicht automatisch — sie setzt ein gerichtliches Verfahren voraus."
+        question: "Erkennt die Türkei gemeinsames familienrechtliche Nebenfolgen aus Deutschland an?",
+        answer: "Ja, seit dem Grundsatzurteil des Yargıtay (türkischer Kassationshof) vom 20. Februar 2017 — Az. 2016/15771 E., 2017/1737 K. — ist gemeinsames familienrechtliche Nebenfolgen nicht mehr pauschal als Verstoß gegen die türkische öffentliche Ordnung (kamu düzeni) zu werten. Ausschlaggebend war das Gesetz Nr. 6684 vom März 2016, mit dem die Türkei das Zusatzprotokoll zur Europäischen Familienrechtspraxis ratifiziert hat. Neuere Yargıtay-Entscheidungen aus den Jahren 2023 und 2024 bestätigen diesen Kurs. Eine Anerkennung ist dennoch nicht automatisch — sie setzt ein gerichtliches Verfahren voraus."
       },
       {
         question: "Welche Dokumente brauche ich für die Tenfiz-Klage in der Türkei?",
-        answer: "Für die Tenfiz-Klage vor einem türkischen Familiengericht benötigen Sie: (1) das deutsche Sorgerechtsurteil im Original oder als beglaubigte Kopie, (2) eine Rechtskraftbescheinigung des deutschen Familiengerichts, (3) eine apostillierte und beglaubigte türkische Übersetzung aller Dokumente sowie (4) einen Nachweis, dass die Gegenseite ordnungsgemäß am deutschen Verfahren beteiligt wurde. Alle Übersetzungen müssen von einem in der Türkei zugelassenen vereidigten Übersetzer angefertigt und notariell beglaubigt sein."
+        answer: "Für die Tenfiz-Klage vor einem türkischen Familiengericht benötigen Sie: (1) das deutsche familienrechtliches Urteil im Original oder als beglaubigte Kopie, (2) eine Rechtskraftbescheinigung des deutschen Familiengerichts, (3) eine apostillierte und beglaubigte türkische Übersetzung aller Dokumente sowie (4) einen Nachweis, dass die Gegenseite ordnungsgemäß am deutschen Verfahren beteiligt wurde. Alle Übersetzungen müssen von einem in der Türkei zugelassenen vereidigten Übersetzer angefertigt und notariell beglaubigt sein."
       },
       {
         question: "Wie lange dauert ein Tenfiz-Verfahren in der Türkei?",
         answer: "Je nach Zustellungsdauer und Arbeitsbelastung des zuständigen türkischen Familiengerichts dauert ein Tenfiz-Verfahren in der Regel zwischen 6 und 12 Monaten. Entscheidend ist vor allem, wie schnell die Zustellung an die andere Partei in Deutschland erfolgt, da internationale Zustellungen erfahrungsgemäß 2 bis 4 Monate in Anspruch nehmen können. Mit einer vollständigen und fehlerfreien Klageschrift lässt sich der Prozess erheblich beschleunigen."
       },
       {
-        question: "Kann die Türkei die Anerkennung meines deutschen Sorgerechtsurteils verweigern?",
+        question: "Kann die Türkei die Anerkennung meines deutschen familienrechtlichen Urteils verweigern?",
         answer: "Ja, in bestimmten Fällen kann ein türkisches Gericht die Tenfiz verweigern. Die häufigsten Ablehnungsgründe nach MÖHUK Art. 54 sind: Das ausländische Gericht war nicht zuständig, die Gegenseite wurde im deutschen Verfahren nicht ordnungsgemäß gehört, das Urteil ist noch nicht rechtskräftig, oder das Ergebnis verstößt offensichtlich gegen die türkische öffentliche Ordnung. Außerdem kann ein laufendes Verfahren in der Türkei zur gleichen Sache (Derdestlik) die Tenfiz blockieren."
       },
       {
-        question: "Darf ich mein Kind in die Türkei bringen, wenn ich gemeinsames Sorgerecht habe?",
-        answer: "Bei gemeinsamem Sorgerecht ist für Reisen ins Ausland grundsätzlich die Zustimmung beider Elternteile erforderlich. Die Türkei ist Vertragsstaat des Haager Übereinkommens über internationale Kindesentführung von 1980. Wird ein Kind ohne Zustimmung des anderen sorgeberechtigten Elternteils dauerhaft in die Türkei verbracht, kann dies als internationale Kindesentführung gewertet werden — unabhängig davon, ob das Sorgerechtsurteil in der Türkei bereits anerkannt wurde oder nicht."
+        question: "Darf ich mein Kind in die Türkei bringen, wenn ich gemeinsames familienrechtliche Nebenfolgen habe?",
+        answer: "Bei gemeinsamem familienrechtliche Nebenfolgen ist für Reisen ins Ausland grundsätzlich die Zustimmung beider Elternteile erforderlich. Die Türkei ist Vertragsstaat des Haager Übereinkommens über internationale Kindesentführung von 1980. Wird ein Kind ohne Zustimmung des anderen sorgeberechtigten Elternteils dauerhaft in die Türkei verbracht, kann dies als internationale Kindesentführung gewertet werden — unabhängig davon, ob das familienrechtliches Urteil in der Türkei bereits anerkannt wurde oder nicht."
       },
       {
-        question: "Was passiert, wenn in der Türkei bereits ein Sorgerechtsverfahren läuft?",
+        question: "Was passiert, wenn in der Türkei bereits ein familienrechtliches Verfahren läuft?",
         answer: "Wenn in der Türkei zum gleichen Sachverhalt bereits ein Verfahren anhängig ist (sog. Derdestlik), kann dies die Tenfiz-Klage erheblich verzögern oder blockieren. Das Yargıtay hat in einer Entscheidung aus dem Jahr 2023 (2023/980 K.) bestätigt, dass ein laufendes türkisches Verfahren als Einwand gegen die Tenfiz gewertet werden kann. In solchen Fällen ist eine koordinierte Strategie zwischen dem deutschen und dem türkischen Verfahren unerlässlich."
       }
     ],
     faqTR: [
       {
-        question: "Almanya'da verilen ortak velayet kararı Türkiye'de otomatik olarak geçerli midir?",
-        answer: "Hayır. Almanya'da verilen ortak velayet kararı, Türkiye'de kendiliğinden hüküm doğurmaz. Kararın Türkiye'de geçerli ve icra edilebilir hale gelmesi için Türk aile mahkemesinde tenfiz davası açılması zorunludur. Tenfiz kararı olmadan Türkiye'deki taraf Alman mahkeme kararını tamamen yok sayabilir; Türk makamları, okullar ve diğer kurumlar bu karara uymak zorunda değildir."
+        question: "Almanya'da verilen ortak aile hukuku kararı Türkiye'de otomatik olarak geçerli midir?",
+        answer: "Hayır. Almanya'da verilen ortak aile hukuku kararı, Türkiye'de kendiliğinden hüküm doğurmaz. Kararın Türkiye'de geçerli ve icra edilebilir hale gelmesi için Türk aile mahkemesinde tenfiz davası açılması zorunludur. Tenfiz kararı olmadan Türkiye'deki taraf Alman mahkeme kararını tamamen yok sayabilir; Türk makamları, okullar ve diğer kurumlar bu karara uymak zorunda değildir."
       },
       {
         question: "Tanıma ve tenfiz arasındaki fark nedir?",
-        answer: "Tanıma, yabancı mahkeme kararının Türkiye'de geçerli sayılmasını sağlar — kararın varlığı kabul edilir, ancak zorunlu olarak icra edilebilir hale getirilmez. Tenfiz ise bir adım öteye gider: Karar icra edilebilir kılınır ve somut yükümlülükler — kişisel ilişki düzenlemesi (Umgangsrecht), ikamet yeri belirleme hakkı ve nafaka gibi — Türkiye'de fiilen uygulanabilir hale gelir. Somut düzenlemeler içeren velayet kararlarında her zaman tenfiz davası açılması gereklidir; yalnızca tanıma yeterli değildir."
+        answer: "Tanıma, yabancı mahkeme kararının Türkiye'de geçerli sayılmasını sağlar — kararın varlığı kabul edilir, ancak zorunlu olarak icra edilebilir hale getirilmez. Tenfiz ise bir adım öteye gider: Karar icra edilebilir kılınır ve somut yükümlülükler — kişisel ilişki düzenlemesi (Umgangsrecht), ikamet yeri belirleme hakkı ve nafaka gibi — Türkiye'de fiilen uygulanabilir hale gelir. Somut düzenlemeler içeren aile hukuku kararlarında her zaman tenfiz davası açılması gereklidir; yalnızca tanıma yeterli değildir."
       },
       {
-        question: "Türkiye Almanya'dan verilen ortak velayet kararlarını tanıyor mu?",
-        answer: "Evet, 2017'den bu yana tanıyabiliyor. Yargıtay 2. Hukuk Dairesi'nin 20 Şubat 2017 tarihli kararıyla (E. 2016/15771, K. 2017/1737) ortak velayet artık otomatik olarak kamu düzenine aykırı sayılmamaktadır. 2016 yılında 6684 sayılı Kanun'la onaylanan Avrupa Sözleşmesi Ek Protokolü bu değişimin hukuki dayanağını oluşturmaktadır. 2023 ve 2024 tarihli Yargıtay kararları bu tutumu pekiştirmiştir. Ancak tanıma otomatik değildir — her durumda dava yoluyla yapılması gerekir."
+        question: "Türkiye Almanya'dan verilen ortak aile hukuku kararlarını tanıyor mu?",
+        answer: "Evet, 2017'den bu yana tanıyabiliyor. Yargıtay 2. Hukuk Dairesi'nin 20 Şubat 2017 tarihli kararıyla (E. 2016/15771, K. 2017/1737) ortak aile hukuku artık otomatik olarak kamu düzenine aykırı sayılmamaktadır. 2016 yılında 6684 sayılı Kanun'la onaylanan Avrupa Sözleşmesi Ek Protokolü bu değişimin hukuki dayanağını oluşturmaktadır. 2023 ve 2024 tarihli Yargıtay kararları bu tutumu pekiştirmiştir. Ancak tanıma otomatik değildir — her durumda dava yoluyla yapılması gerekir."
       },
       {
         question: "Tenfiz davası için hangi belgeler gereklidir?",
-        answer: "Tenfiz davası için şu belgeler gerekmektedir: (1) Almanya'daki velayet kararının aslı veya onaylı örneği, (2) kararın kesinleştiğini gösteren Alman mahkemesinden alınan kesinleşme şerhi, (3) tüm belgeler için apostil tasdiki, (4) Türkiye'de yeminli tercüman tarafından yapılmış ve noter onaylı Türkçe çeviriler, (5) Türkiye'deki avukata verilecek konsolosluklarda düzenlenmiş noter onaylı vekâletname. Alman mahkeme sürecinde karşı tarafın usulüne uygun tebliğ edildiğine dair belgeler de talep edilebilir."
+        answer: "Tenfiz davası için şu belgeler gerekmektedir: (1) Almanya'daki aile hukuku kararının aslı veya onaylı örneği, (2) kararın kesinleştiğini gösteren Alman mahkemesinden alınan kesinleşme şerhi, (3) tüm belgeler için apostil tasdiki, (4) Türkiye'de yeminli tercüman tarafından yapılmış ve noter onaylı Türkçe çeviriler, (5) Türkiye'deki avukata verilecek konsolosluklarda düzenlenmiş noter onaylı vekâletname. Alman mahkeme sürecinde karşı tarafın usulüne uygun tebliğ edildiğine dair belgeler de talep edilebilir."
       },
       {
         question: "Türkiye'de tenfiz davası ne kadar sürer?",
         answer: "Tenfiz davası genellikle 6 ile 12 ay arasında sonuçlanmaktadır. En uzun süreyi uluslararası tebligat süreci oluşturmakta olup bu aşama 2 ile 4 ay alabilmektedir. Eksiksiz ve hatasız hazırlanmış bir dava dilekçesiyle süreç önemli ölçüde kısaltılabilir. Bizzat Türkiye'ye gitmenize gerek yoktur; vekiliniz tüm işlemleri sizin adınıza yürütebilir."
       },
       {
-        question: "Türkiye'de ortak velayet tenfizim reddedilebilir mi?",
+        question: "Türkiye'de ortak aile hukuku tenfizim reddedilebilir mi?",
         answer: "Evet, belirli durumlarda reddedilebilir. MÖHUK m. 54 uyarınca en sık karşılaşılan red gerekçeleri şunlardır: yabancı mahkemenin yetkisiz olması, karşı tarafın Alman davaya usulüne uygun dahil edilmemesi, kararın henüz kesinleşmemiş olması ya da sonucun Türk kamu düzenine açıkça aykırı bulunması. Bunlara ek olarak, Türkiye'de aynı konuda derdest bir davanın bulunması (derdestlik itirazı) da tenfizi engelleyebilir."
       },
       {
-        question: "Ortak velayet varken çocuğu Türkiye'ye götürebilir miyim?",
-        answer: "Ortak velayette yurt dışı seyahatlerde kural olarak her iki ebeveynin rızası aranmaktadır. Türkiye, 1980 tarihli Lahey Uluslararası Çocuk Kaçırma Sözleşmesi'ne taraftır. Diğer velayetin rızası alınmadan çocuğun kalıcı olarak Türkiye'ye götürülmesi, Sözleşme kapsamında hukuka aykırı bir müdahale sayılır ve iade talebiyle sonuçlanabilir. Bu durum, Türkiye'de tenfiz kararı bulunup bulunmadığından bağımsız olarak geçerlidir."
+        question: "Ortak aile hukuku varken çocuğu Türkiye'ye götürebilir miyim?",
+        answer: "Ortak aile hukuku konusunda yurt dışı seyahatlerde kural olarak her iki ebeveynin rızası aranmaktadır. Türkiye, 1980 tarihli Lahey Uluslararası Çocuk Kaçırma Sözleşmesi'ne taraftır. Diğer aile hukuku konusunun rızası alınmadan çocuğun kalıcı olarak Türkiye'ye götürülmesi, Sözleşme kapsamında hukuka aykırı bir müdahale sayılır ve iade talebiyle sonuçlanabilir. Bu durum, Türkiye'de tenfiz kararı bulunup bulunmadığından bağımsız olarak geçerlidir."
       },
       {
-        question: "Türkiye'de zaten devam eden bir velayet davası varsa tenfiz mümkün müdür?",
+        question: "Türkiye'de zaten devam eden bir aile hukuku davası varsa tenfiz mümkün müdür?",
         answer: "Bu ciddi bir engeldir. Aynı konuda Türkiye'de derdest bir dava bulunması (derdestlik itirazı), tenfiz talebini önemli ölçüde geciktirebilir ya da tamamen engelleyebilir. Yargıtay 2. HD, 2023/980 K. sayılı kararında bu itirazın geçerli bir engel oluşturabileceğini açıkça teyit etmiştir. Bu tür durumlarda Almanya'daki ve Türkiye'deki süreçleri eş zamanlı koordine eden kapsamlı bir hukuki strateji zorunludur."
       }
     ],
     faqEN: [
           {
-                "question": "Does a German joint custody order automatically apply in Turkey?",
-                "answer": "No. A German custody order has no automatic legal effect in Turkey. For it to become binding there, you must file a Tenfiz (enforcement) lawsuit before a Turkish Family Court. Until a Turkish court issues a Tenfiz ruling, the other parent in Turkey is under no legal obligation to comply with the German order — and Turkish authorities, schools and public bodies are not required to recognise it either."
+                "question": "Does a German joint financial orders order automatically apply in Turkey?",
+                "answer": "No. A German financial orders order has no automatic legal effect in Turkey. For it to become binding there, you must file a Tenfiz (enforcement) lawsuit before a Turkish Family Court. Until a Turkish court issues a Tenfiz ruling, the other parent in Turkey is under no legal obligation to comply with the German order — and Turkish authorities, schools and public bodies are not required to recognise it either."
           },
           {
                 "question": "What is Tenfiz and how is it different from Tanıma?",
-                "answer": "Tanıma (recognition) means a Turkish court accepts that a foreign judgment is valid — it confirms the judgment's existence without necessarily making it enforceable. Tenfiz (enforcement) goes further: it makes the foreign judgment executable in Turkey, so that specific obligations — such as visitation schedules, the right to determine the child's place of residence, and child maintenance — can actually be enforced by Turkish courts. For custody orders that contain specific arrangements beyond the bare divorce, Tenfiz is always required."
+                "answer": "Tanıma (recognition) means a Turkish court accepts that a foreign judgment is valid — it confirms the judgment's existence without necessarily making it enforceable. Tenfiz (enforcement) goes further: it makes the foreign judgment executable in Turkey, so that specific obligations — such as visitation schedules, the right to determine the child's place of residence, and child maintenance — can actually be enforced by Turkish courts. For financial orders orders that contain specific arrangements beyond the bare divorce, Tenfiz is always required."
           },
           {
-                "question": "Does Turkey recognise joint custody orders from Germany?",
-                "answer": "Yes, since 2017. The Turkish Supreme Court (Yargıtay), in its landmark decision of 20 February 2017 (Case No. 2016/15771 E., 2017/1737 K.), ruled that foreign joint custody orders can no longer be automatically refused as contrary to Turkish public policy. This followed Turkey's ratification of the Additional Protocol to the European Convention on Contact Concerning Children in March 2016 (Law No. 6684). More recent Yargıtay decisions from 2023 and 2024 confirm this approach. However, recognition is not automatic — each case must go through proper court proceedings."
+                "question": "Does Turkey recognise joint financial orders orders from Germany?",
+                "answer": "Yes, since 2017. The Turkish Supreme Court (Yargıtay), in its landmark decision of 20 February 2017 (Case No. 2016/15771 E., 2017/1737 K.), ruled that foreign joint financial orders orders can no longer be automatically refused as contrary to Turkish public policy. This followed Turkey's ratification of the Additional Protocol to the European Convention on Contact Concerning Children in March 2016 (Law No. 6684). More recent Yargıtay decisions from 2023 and 2024 confirm this approach. However, recognition is not automatic — each case must go through proper court proceedings."
           },
           {
-                "question": "What documents do I need to enforce a German custody order in Turkey?",
-                "answer": "You will need: (1) the original German custody judgment or a certified copy, (2) a certificate of finality from the German family court confirming the judgment is no longer subject to appeal, (3) apostille certification on all German documents under the Hague Apostille Convention, (4) a certified Turkish translation of all documents prepared by a sworn translator registered in Turkey and notarised by a Turkish notary, and (5) a notarised power of attorney (Vekâletname) for your Turkish lawyer, issued at a Turkish consulate in your country."
+                "question": "What documents do I need to enforce a German financial orders order in Turkey?",
+                "answer": "You will need: (1) the original German financial orders judgment or a certified copy, (2) a certificate of finality from the German family court confirming the judgment is no longer subject to appeal, (3) apostille certification on all German documents under the Hague Apostille Convention, (4) a certified Turkish translation of all documents prepared by a sworn translator registered in Turkey and notarised by a Turkish notary, and (5) a notarised power of attorney (Vekâletname) for your Turkish lawyer, issued at a Turkish consulate in your country."
           },
           {
                 "question": "How long does the Tenfiz process take in Turkey?",
                 "answer": "The Tenfiz process typically takes between 6 and 12 months. The most time-consuming stage is usually international service of process — delivering the lawsuit documents to the other party — which can take 2 to 4 months. A complete and error-free application significantly speeds up the timeline. You do not need to travel to Turkey at any point in the process."
           },
           {
-                "question": "Can Turkey refuse to enforce my German custody order?",
+                "question": "Can Turkey refuse to enforce my German financial orders order?",
                 "answer": "Yes, in certain circumstances. Under Article 54 of MÖHUK (Turkish Private International Law), the most common grounds for refusal are: the German court lacked jurisdiction, the other party was not properly notified and heard in the German proceedings, the judgment is not yet final, or the outcome is manifestly contrary to Turkish public policy. An ongoing Turkish court case on the same matter (known as the Derdestlik objection) can also block or delay the Tenfiz."
           },
           {
-                "question": "Can I take my child to Turkey if we have joint custody in Germany?",
-                "answer": "With joint custody, both parents must normally agree to international travel. Turkey is a signatory to the 1980 Hague Convention on International Child Abduction (HCCH 1980). If one parent permanently relocates the child to Turkey without the other's consent, this constitutes a wrongful removal under the Convention — regardless of whether a Tenfiz order has been obtained. The left-behind parent can file a return application through the relevant Central Authority, and Turkish courts are obligated to order the child's return."
+                "question": "Can I take my child to Turkey if we have joint financial orders in Germany?",
+                "answer": "With joint financial orders, both parents must normally agree to international travel. Turkey is a signatory to the 1980 Hague Convention on International Child Abduction (HCCH 1980). If one parent permanently relocates the child to Turkey without the other's consent, this constitutes a wrongful removal under the Convention — regardless of whether a Tenfiz order has been obtained. The left-behind parent can file a return application through the relevant Central Authority, and Turkish courts are obligated to order the child's return."
           },
           {
-                "question": "What happens if there is already a custody case running in Turkey?",
-                "answer": "This is a serious complication. If the other parent has already opened a custody or divorce case in Turkey covering the same subject matter, they can raise what is known as the Derdestlik objection — arguing that the Turkish proceedings take precedence. The Turkish Supreme Court confirmed in a 2023 decision (Case No. 2023/980 K.) that an ongoing Turkish case can block or significantly delay the Tenfiz. A coordinated strategy across both jurisdictions is essential in these situations."
+                "question": "What happens if there is already a financial orders case running in Turkey?",
+                "answer": "This is a serious complication. If the other parent has already opened a financial orders or divorce case in Turkey covering the same subject matter, they can raise what is known as the Derdestlik objection — arguing that the Turkish proceedings take precedence. The Turkish Supreme Court confirmed in a 2023 decision (Case No. 2023/980 K.) that an ongoing Turkish case can block or significantly delay the Tenfiz. A coordinated strategy across both jurisdictions is essential in these situations."
           }
     ],
-    ctaTitleDE: "Brauchen Sie Anerkennung Ihres deutschen Sorgerechtsurteils in der Türkei?",
+    ctaTitleDE: "Brauchen Sie Anerkennung Ihres deutschen familienrechtlichen Urteils in der Türkei?",
     ctaDescriptionDE: "Wir prüfen Ihre Unterlagen, bereiten Vollmacht, Apostille und Übersetzungen vor und führen die Tenfiz-Klage direkt vor türkischen Familiengerichten.",
-    ctaTitleTR: "Ortak velayet kararınızın Türkiye'de tanınması mı gerekiyor?",
+    ctaTitleTR: "Ortak aile hukuku kararınızın Türkiye'de tanınması mı gerekiyor?",
     ctaDescriptionTR: "Vekalet, apostil, tercüme ve tenfiz davası süreçlerinde Türkiye'deki aile mahkemeleri önünde doğrudan destek sunuyoruz.",
-    ctaTitleEN: "Need to enforce a German custody order in Turkey?",
+    ctaTitleEN: "Need to enforce a German financial orders order in Turkey?",
     ctaDescriptionEN: "We prepare the documents, power of attorney, apostilles and Turkish petition, then handle the Tenfiz case directly before Turkish Family Courts.",
   },
   {
@@ -9230,10 +9236,10 @@ Türk vatandaşlığından çıkan kişilerin Türkiye'deki haklarını koruyan 
     slugTR: "almanya-da-vekaletname-cikarma-rehberi",
     titleDE: "Türkische Vollmacht aus Deutschland: Notar, Apostille und Konsulat – Der vollständige Leitfaden (2026)",
     titleTR: "Almanya'da Türk Vekaletnamesi: Noter, Apostil ve Konsolosluk Rehberi (2026)",
-    metaTitleDE: "Türkische Vollmacht aus Deutschland: Notar oder Konsulat? (2026)",
-    metaTitleTR: "Almanya'dan Türkiye İçin Vekaletname Nasıl Çıkarılır?",
-    metaDescriptionDE: "Vollmacht für die Türkei aus Deutschland: Konsulat, deutscher Notar, Apostille, Übersetzung und häufige Fehler. Türkisch-deutsche Beratung anfragen.",
-    metaDescriptionTR: "Türkiye için vekaletname mi gerekiyor? Konsolosluk, Alman noteri, apostil ve tercüme sürecini öğrenin. Doğru Kanzlei’den Türkçe hukuki destek alın.",
+    metaTitleDE: "Türkische Vollmacht 2026: Notar oder Konsulat?",
+    metaTitleTR: "Türkiye'ye Gitmeden Vekaletname Nasıl Çıkarılır? (2026)",
+    metaDescriptionDE: "Vollmacht für die Türkei ganz ohne Reise ausstellen: der sicherste Weg über Konsulat oder Notar – inkl. Apostille, Übersetzung und häufigster Fehler.",
+    metaDescriptionTR: "Miras, tapu veya dava için vekaletnameye mi ihtiyacınız var? Türkiye'ye gitmeden, konsolosluk veya Alman noterinden nasıl alacağınızı anlatıyoruz.",
     excerptDE: "Ihr umfassender Leitfaden zur Erstellung einer rechtssicheren türkischen Vollmacht in Deutschland. Konsulatsweg vs. deutscher Notar, Apostille-Verfahren und Fehlervermeidung.",
     excerptTR: "Almanya'da Türkiye için geçerli vekaletname çıkarma rehberi. Konsolosluk ve Alman noteri yolları, apostil süreci, gerekli belgeler ve dikkat edilmesi gerekenler.",
     contentDE: `**RECHTLICHER HINWEIS:** Dieser Artikel befasst sich ausschließlich mit dem türkischen Recht. Eine Beratung zum deutschen Recht (z.B. deutsches Erbrecht, Familienrecht nach BGB oder deutsches Migrationsrecht) findet in unserer Kanzlei nicht statt.
@@ -9847,7 +9853,7 @@ Mannheim'da Türk ve Alman hukukunu bilen bir büro olarak:
     keywordsEN: "Turkish arrest warrant Germany, summons from Turkey living in Germany, Yakalama Kararı what is it, Turkish criminal case from abroad, UYAP case check Turkey, power of attorney Turkey criminal case, CMK defendant rights, Turkish lawyer Germany",
     contentDE: "> **Rechtlicher Hinweis:** Dieser Artikel befasst sich ausschließlich mit dem türkischen Recht. Die Doğru Kanzlei berät gemäß § 207 BRAO ausschließlich im türkischen Recht und übernimmt keine Mandate im deutschen Strafrecht, Familienrecht oder Migrationsrecht.\n\n---\n\nEs beginnt meist harmlos. Ein Verwandter in der Türkei erwähnt beiläufig, dass „irgendwas\" mit Ihrem Namen im Amtsgericht auftaucht. Oder Sie erhalten einen Brief über das türkische Konsulat in Frankfurt, dessen Inhalt Sie nicht vollständig verstehen. Oder jemand warnt Sie: „Fahr diesen Sommer nicht in die Türkei.\" Für Zehntausende in Deutschland lebende türkischstämmige Menschen ist das keine Fiktion, sondern Alltag. Eine Vorladung aus der Türkei oder ein aktiver Yakalama Kararı (Festnahmebefehl) kann das Leben in Deutschland empfindlich stören — selbst wenn man seit Jahren nichts mit türkischen Behörden zu tun hatte.\n\nWas viele nicht wissen: Sie sind dieser Situation nicht schutzlos ausgeliefert. Das türkische Strafprozessrecht — die **Ceza Muhakemesi Kanunu (CMK)** — räumt Ihnen klare Rechte ein. Und in vielen Fällen lässt sich das Verfahren vollständig von Deutschland aus führen, ohne dass Sie die Türkei betreten müssen.\n\nDieser Leitfaden erklärt, was ein türkischer Haftbefehl ist, wie er entsteht, was er für Sie bedeutet, und welche konkreten Schritte Sie jetzt unternehmen können.\n\n---\n\n## Was ist ein Yakalama Kararı — und wie entsteht er?\n\nEin **Yakalama Kararı** (wörtlich: Festnahme- oder Ergreifungsbefehl) ist ein richterlicher Beschluss, der die türkische Polizei ermächtigt, eine Person zwangsweise vor Gericht oder zur Staatsanwaltschaft zu bringen. Er ist geregelt in **CMK Art. 98** und folgt in der Regel auf eine Vorladung (Tebligat), der die betreffende Person nicht nachgekommen ist.\n\nDer typische Entstehungsweg sieht so aus: Die Staatsanwaltschaft leitet ein Ermittlungsverfahren ein. Sie lädt den Beschuldigten per Tebligat vor. Die Vorladung wird — weil die Person in Deutschland lebt — nicht zugestellt oder ignoriert. Der Richter erlässt daraufhin einen Yakalama Kararı, damit die Person zwangsweise vorgeführt werden kann. Der Beschluss wird im UYAP-System erfasst und ist damit an allen türkischen Grenzübergängen sofort abrufbar.\n\nEs gibt auch Fälle, in denen ein Yakalama Kararı direkt — ohne vorherige Vorladung — erlassen wird: nämlich dann, wenn ein dringender Tatverdacht besteht und Fluchtgefahr angenommen wird (CMK Art. 98 Abs. 2). In solchen Fällen kann das Verfahren bereits erheblich fortgeschritten sein, bevor Sie überhaupt von seiner Existenz erfahren.\n\n> ⚠️ **Wichtig:** Ein Yakalama Kararı hat keine gesetzliche Verfallsfrist. Er bleibt so lange im System aktiv, bis er vom ausstellenden Gericht aufgehoben wird. Ohne aktive Schritte verschwindet er nicht von selbst — auch nicht nach Jahren.\n\n---\n\n## Was ist der Unterschied zur Tebligat (Vorladung)?\n\nViele Menschen verwechseln eine **Tebligat** (Vorladung) mit einem Haftbefehl. Der Unterschied ist rechtlich und praktisch entscheidend:\n\n| Maßnahme | Rechtsgrundlage | Bedeutung | Folgen bei Nichtbeachtung |\n|---|---|---|---|\n| Tebligat (Vorladung) | CMK Art. 145, Tebligat Kanunu | Formelle Aufforderung zum Erscheinen | Erlass eines Yakalama Kararı |\n| Yakalama Kararı | CMK Art. 98 | Richterlicher Festnahmebefehl | Zwangsweise Vorführung bei Einreise |\n| Zorla Getirme | CMK Art. 146 | Zwangsweise Vorführung durch Polizei | Unmittelbare Festnahme und Überstellung |\n| Tutuklama | CMK Art. 100 | Untersuchungshaft | Freiheitsentzug bis zur Hauptverhandlung |\n\nEine Tebligat, die Sie im Ausland nicht erreicht oder die Sie ignoriert haben, führt typischerweise zum Yakalama Kararı. Der Yakalama Kararı wiederum kann — wenn Sie sich nach Ihrer Vorführung nicht kooperativ zeigen oder Fluchtgefahr besteht — in einen Tutuklama-Beschluss (Untersuchungshaft) übergehen.\n\n---\n\n## Wie erfahre ich, ob gegen mich ein Verfahren oder Haftbefehl besteht?\n\nDas türkische Justizministerium betreibt das **UYAP**-System (Ulusal Yargı Ağı Bilişim Sistemi), ein zentrales Informationsnetz, in dem alle Gerichtsverfahren, Beschlüsse und Vorladungen erfasst sind. Über UYAP lässt sich prüfen:\n\n- Ob gegen Sie ein Strafverfahren eingeleitet wurde\n- Ob ein Yakalama Kararı aktiv ist\n- Bei welchem Gericht das Verfahren anhängig ist\n- Welche Vorwürfe erhoben werden\n\nDiese Abfrage ist von Deutschland aus möglich — entweder durch einen in der Türkei zugelassenen Anwalt mit entsprechendem Systemzugang oder über bestimmte Bürgerportale des türkischen Staates (e-Devlet). Die Doğru Kanzlei führt UYAP-Abfragen für Mandanten routinemäßig durch.\n\n> ⚠️ **Wichtig:** Verlassen Sie sich nicht darauf, dass „nichts passiert sein kann\", weil Sie nichts erhalten haben. Vorladungen an eine türkische Meldeadresse, die Sie seit Jahren nicht mehr nutzen, gelten nach türkischem Recht als ordnungsgemäß zugestellt — selbst wenn Sie den Brief nie gesehen haben.\n\n---\n\n## Was passiert bei der Einreise in die Türkei mit aktivem Haftbefehl?\n\nDies ist die Frage, die uns Mandanten am häufigsten stellen. Die Antwort ist eindeutig: Ein aktiver Yakalama Kararı ist an **allen Grenzübergängen und Flughäfen** in der Türkei abrufbar. Bei der Passkontrolle — egal ob in Istanbul, Ankara, Antalya oder Trabzon — wird der Befehl sofort angezeigt.\n\nDie Konsequenz: Sie werden festgehalten, zur nächsten Polizeidienststelle gebracht und binnen 24 Stunden dem Haftrichter vorgeführt (CMK Art. 91). Dort entscheidet der Richter, ob Sie freigelassen, unter Auflagen gestellt (Adli Kontrol) oder in Untersuchungshaft (Tutuklama) genommen werden.\n\nWer ohne anwaltliche Vorbereitung einreist, riskiert, sich in einer Situation wiederzufinden, auf die er vollkommen unvorbereitet ist — in einem fremdsprachigen Gerichtssystem, ohne bekannte Ansprechpartner vor Ort.\n\n---\n\n## Kann die Türkei Deutschland um Auslieferung ersuchen?\n\nHier unterscheidet sich die Rechtslage je nach Staatsangehörigkeit erheblich:\n\n**Deutsche Staatsangehörige:** Gemäß **Art. 16 Abs. 2 Grundgesetz** dürfen deutsche Staatsangehörige grundsätzlich nicht an einen Drittstaat — also auch nicht an die Türkei — ausgeliefert werden. Ein türkisches Auslieferungsersuchen würde von deutschen Behörden in der Regel abgelehnt.\n\n**Türkische Staatsangehörige in Deutschland:** Eine Auslieferung ist möglich. Deutschland und die Türkei verbindet ein bilateraler Auslieferungsvertrag. Das deutsche Auslieferungsrecht (IRG — Gesetz über die internationale Rechtshilfe in Strafsachen) sieht vor, dass Ersuchen geprüft und — wenn die Voraussetzungen erfüllt sind — ausgeführt werden. Die zuständige Behörde ist das Oberlandesgericht des jeweiligen Bundeslandes.\n\n**Doppelstaatler:** Hier kommt es auf den Einzelfall an. Die konkrete Staatsangehörigkeitssituation und die Natur des Vorwurfs sind entscheidend.\n\n**Interpol Red Notice:** Unabhängig von einem formellen Auslieferungsantrag kann die Türkei über Interpol eine Red Notice beantragen. Diese erscheint in den Datenbanken der Mitgliedsstaaten und kann bei Grenzübertritten — auch innerhalb des Schengen-Raums — zu Kontrollen oder vorübergehenden Festnahmen führen. Eine Red Notice verpflichtet einen Schengen-Staat jedoch nicht automatisch zur Auslieferung.\n\n---\n\n## Ihre Rechte als Beschuldigter nach türkischem Strafrecht\n\nDas türkische Strafprozessrecht gewährt Beschuldigten — auch solchen, die sich im Ausland aufhalten — grundlegende Verfahrensrechte:\n\n**Recht auf einen Verteidiger (CMK Art. 147):** Sie haben das Recht, sich von einem in der Türkei zugelassenen Avukat vertreten zu lassen. Der Anwalt kann Akteneinsicht nehmen, Anträge stellen und Sie bei allen Verfahrensschritten vertreten — auch ohne Ihr persönliches Erscheinen in vielen Verfahrensphasen.\n\n**Recht auf Schweigen:** Sie sind nicht verpflichtet, sich selbst zu belasten. Eine Aussage ohne anwaltliche Begleitung ist in türkischen Strafverfahren in aller Regel keine gute Idee.\n\n**Videoschalte nach CMK Art. 196 (SEGBİS):** Das türkische Recht ermöglicht unter bestimmten Voraussetzungen die Vernehmung via Videokonferenz über das staatliche **SEGBİS-System** (Ses ve Görüntü Bilişim Sistemi). Ein bevollmächtigter Anwalt muss diesen Antrag stellen. Ob das Gericht zustimmt, liegt in seinem Ermessen — die Wahrscheinlichkeit steigt, wenn nachgewiesen wird, dass das persönliche Erscheinen aus gesundheitlichen oder aufenthaltsrechtlichen Gründen unzumutbar ist.\n\n**Recht auf Akteneinsicht:** Ihr Anwalt kann vollständige Akteneinsicht in das UYAP-System beantragen und alle Ermittlungsdokumente einsehen.\n\n---\n\n## Wie lässt sich ein Yakalama Kararı aufheben?\n\nEin Yakalama Kararı wird nicht automatisch aufgehoben. Es gibt drei rechtliche Wege:\n\n**1. Erscheinen und Aussage:** Der direkteste Weg. Sie oder Ihr Anwalt teilen dem Gericht mit, dass Sie bereit sind zu erscheinen. In Absprache mit dem Anwalt und nach sorgfältiger Vorbereitung ergibt sich bei vielen Verfahren nach der Aussage die Möglichkeit, das Land wieder zu verlassen.\n\n**2. Anwaltlicher Antrag ohne persönliches Erscheinen:** In bestimmten Verfahren — vor allem im Ermittlungsstadium — kann ein bevollmächtigter Anwalt beim Gericht beantragen, den Yakalama Kararı aufzuheben und durch eine Videovernehmung (SEGBİS) zu ersetzen. Gelingt dies, entfällt die unmittelbare Festnahmegefahr bei der Einreise.\n\n**3. Einstellung des Verfahrens:** Wenn das Ermittlungsverfahren eingestellt wird — weil der Verdacht sich nicht erhärtet, die Verjährung eintritt oder ein Verfahrenshindernis besteht — fällt der Yakalama Kararı automatisch weg. Ihr Anwalt kann Anträge auf Einstellung (Kovuşturmaya Yer Olmadığı Kararı) stellen.\n\n---\n\n## Die Doğru Kanzlei: Warum wir für dieses Mandat besonders geeignet sind\n\n[Die Doğru Kanzlei](https://www.hasandogru.de/de/leistungen/strafrecht) ist sowohl bei der **Anwaltskammer Ankara** (Ankara Barosu) als auch bei der **Rechtsanwaltskammer Karlsruhe** (§ 207 BRAO) zugelassen. Das bedeutet: Wir können unmittelbar vor türkischen Strafgerichten auftreten — ohne Zwischenschaltung eines weiteren türkischen Anwalts. Für Sie heißt das: eine direkte Anlaufstelle, die sowohl den deutschen als auch den türkischen Rechtskontext versteht.\n\nAv. Hasan Doğru bringt eine weitere, seltene Qualifikation mit: Er war rund zehn Jahre Mitglied der **Özel Harekat** — der Sonderoperationseinheit der türkischen Nationalpolizei (Emniyet Genel Müdürlüğü). Dieses institutionelle Wissen über türkische Ermittlungsmethoden, Behördenstrukturen und Entscheidungsabläufe kommt Mandanten in Strafverfahren unmittelbar zugute.\n\nWas wir für Sie tun können:\n\n- UYAP-Abfrage: Wir prüfen, ob ein Verfahren oder Haftbefehl besteht\n- Vollmacht: Wir führen Sie durch die notarielle Vekâletname-Erstellung\n- Akteneinsicht: Wir sehen alle Ermittlungsdokumente ein\n- Strategie: Wir erarbeiten eine Verteidigungsstrategie, bevor Sie irgendeinen Schritt unternehmen\n- Antrag auf Aufhebung des Yakalama Kararı, wo rechtlich möglich\n- Antrag auf SEGBİS-Videoaussage, wo das Gericht zustimmt\n- Vertretung bei allen Verfahrensschritten vor türkischen Gerichten\n\n[Kostenlose Ersteinschätzung bei der Doğru Kanzlei anfragen →](https://wa.me/4917661221210)\n\n---\n\n## Schritt-für-Schritt: Was Sie jetzt tun sollten\n\nWenn Sie erfahren haben oder vermuten, dass gegen Sie in der Türkei ein Verfahren oder ein Yakalama Kararı besteht, empfehlen wir folgendes Vorgehen:\n\n1. **Nicht in die Türkei einreisen**, bis der Status des Verfahrens geklärt ist. Eine unvorbereitete Einreise mit aktivem Haftbefehl kann zur sofortigen Festnahme führen.\n2. **UYAP-Status prüfen lassen.** Beauftragen Sie einen türkischen Anwalt mit der Abfrage. Nur so wissen Sie, womit Sie es tatsächlich zu tun haben.\n3. **Akteneinsicht beantragen.** Was ist der konkrete Vorwurf? In welchem Stadium ist das Verfahren? Gibt es Zeugen oder Beweismittel gegen Sie?\n4. **Verteidigungsstrategie entwickeln.** Abhängig von der Aktenlage entscheiden Sie gemeinsam mit dem Anwalt, ob eine Aussage (persönlich oder per SEGBİS), ein Antrag auf Einstellung oder eine andere Strategie sinnvoll ist.\n5. **Vekâletname ausstellen.** Die notarielle Vollmacht — in Deutschland beim deutschen Notar oder türkischen Konsulat — berechtigt Ihren Anwalt, alle Schritte für Sie durchzuführen.\n6. **Interpol-Status prüfen.** Falls Sie international viel reisen, sollten Sie klären, ob eine Red Notice beantragt wurde.\n\n---\n\n## Was kostet ein türkisches Strafverfahren aus Deutschland?\n\nEine pauschale Antwort gibt es nicht — die Kosten hängen vom Verfahrensstand, der Schwere des Vorwurfs und dem erforderlichen Aufwand ab. Was wir sagen können: Eine frühzeitige anwaltliche Begleitung ist in aller Regel günstiger als das Reagieren auf eine eskalierende Situation.\n\nFür die erste Einschätzung bieten wir ein kostenloses Erstgespräch an. Darin klären wir:\n- Was konkret gegen Sie vorliegt\n- Welche Optionen realistisch sind\n- Was der nächste sinnvolle Schritt ist\n\n---\n\n## Diesen Artikel gibt es auch in anderen Sprachen\n\nDiesen Artikel haben wir auch auf Türkisch veröffentlicht — für Leser, die die Situation lieber auf Türkisch durchgehen möchten oder Familienangehörige informieren wollen:\n\n[Türkiye'den Tebligat veya Yakalama Kararı: Almanya'dan Ne Yapmalısınız? →](/tr/blog/turkiye-den-tebligat-veya-yakalama-karari)\n\nUnd auf Englisch — für englischsprachige Familienangehörige oder Freunde:\n\n[Turkish Arrest Warrant or Summons: What To Do From Germany →](/en/blog/turkish-arrest-warrant-summons-germany)\n\n---\n\n## Häufig gestellte Fragen\n\n**Was passiert, wenn ich mit einem türkischen Haftbefehl in die Türkei einreise?**\nBei Einreise in die Türkei wird ein aktiver Yakalama Kararı an der Passkontrolle sofort erkannt. Sie werden festgehalten und binnen 24 Stunden dem Haftrichter vorgeführt. Der Richter entscheidet dann über Freilassung, Auflagen oder Untersuchungshaft. Wer ohne anwaltliche Vorbereitung einreist, setzt sich erheblichen Risiken aus.\n\n**Kann Deutschland mich auf Antrag der Türkei ausliefern?**\nDeutsche Staatsangehörige sind durch Art. 16 GG grundsätzlich vor Auslieferung geschützt. Türkische Staatsangehörige mit Wohnsitz in Deutschland können ausgeliefert werden, wenn die Voraussetzungen des deutsch-türkischen Auslieferungsabkommens und des IRG erfüllt sind. Doppelstaatler sollten dies im Einzelfall prüfen lassen.\n\n**Wie prüfe ich, ob gegen mich ein Verfahren in der Türkei läuft?**\nÜber das UYAP-System kann ein bevollmächtigter türkischer Anwalt den Stand Ihres Verfahrens vollständig abfragen. Die Doğru Kanzlei führt diese Abfrage für Mandanten durch. Alternativ können türkische Staatsangehörige über das e-Devlet-Portal bestimmte Verfahrensstatus selbst einsehen.\n\n**Muss ich in die Türkei reisen, um eine Aussage zu machen?**\nIn vielen Fällen nein. Nach CMK Art. 196 ist eine Aussage per Videoschalte über das SEGBİS-System möglich. Ihr Anwalt muss diesen Antrag stellen, und das Gericht muss zustimmen. Die Doğru Kanzlei stellt entsprechende Anträge routinemäßig.\n\n**Wie lange bleibt ein türkischer Haftbefehl aktiv?**\nEin Yakalama Kararı verfällt nicht automatisch. Er bleibt so lange aktiv, bis das Gericht ihn aufhebt — entweder nach Erscheinen des Betroffenen, nach einer Einstellung des Verfahrens oder auf Antrag des Verteidigers. Ohne aktive Schritte bleibt er dauerhaft im System.\n\n**Erscheint ein türkischer Haftbefehl im deutschen Bundeszentralregister?**\nNein. Ein türkischer Yakalama Kararı erscheint nicht im deutschen Bundeszentralregister. Er kann jedoch als Interpol Red Notice international verbreitet werden, was bei internationalen Reisen zu Problemen führen kann.\n\n**Wie kann ein Yakalama Kararı aufgehoben werden?**\nDurch persönliches Erscheinen und Aussage, durch einen anwaltlichen Antrag auf Aufhebung, durch Antrag auf SEGBİS-Videovernehmung oder durch Verfahrenseinstellung. Welcher Weg sinnvoll ist, hängt vom Einzelfall ab.\n\n**Was kostet eine Vertretung in einem türkischen Strafverfahren?**\nDie Kosten variieren je nach Komplexität und Verfahrensstand. Wir bieten ein kostenloses erstes Beratungsgespräch an, in dem wir den Aufwand gemeinsam einschätzen. Rufen Sie uns an oder schreiben Sie uns direkt über WhatsApp.\n\n---\n\n> **Rechtlicher Hinweis:** Dieser Artikel befasst sich ausschließlich mit dem türkischen Recht. Die Doğru Kanzlei berät gemäß § 207 BRAO ausschließlich im türkischen Recht. Eine Beratung oder Vertretung im deutschen Strafrecht, Familienrecht oder Migrationsrecht findet nicht statt.\n\n---",
     contentTR: "> **YASAL UYARI:** Bu makale yalnızca Türk hukukuna ilişkin genel bilgi amaçlıdır. Doğru Kanzlei, §207 BRAO kapsamında yalnızca Türk hukuku konularında danışmanlık vermektedir. Alman hukuku (Alman ceza hukuku, aile hukuku veya göç hukuku) konusunda danışmanlık verilmemektedir.\n\n---\n\nÇoğu zaman bir telefon haberiyle başlar. Türkiye'deki bir yakınınız, \"senin adına bir şeyler var mahkemede\" der. Ya da konsolosluktan size anlamadığınız bir mektup ulaşır. Ya da yıllardır geri dönmeyi düşündüğünüz memlekete bu yaz gidemeyeceğinizi hissediyorsunuzdur — ama tam olarak nedenini bilmiyorsunuzdur.\n\nAlmanya'da yaşayan on binlerce Türk vatandaşı için bu senaryo soyut değildir. Türkiye'de yakalama kararı veya aktif bir tebligat ile karşılaşmak, alışılagelmişi bozacak derecede stres yaratır — özellikle Türkiye ile hukuki bağlarınızın olup olmadığından bile emin değilseniz.\n\nAma şunu bilin: Bu durumla başa çıkmanın hukuki yolları vardır. Türk ceza yargılama hukukunu düzenleyen **CMK (Ceza Muhakemesi Kanunu)**, size açık haklar tanımaktadır. Pek çok durumda, Türkiye'ye gitmek zorunda kalmadan, Almanya'dan tüm süreci takip edebilirsiniz.\n\nBu rehber, tebligat ve yakalama kararının ne anlama geldiğini, nasıl oluştuğunu, size ne gibi sonuçlar doğurabileceğini ve şu anda atmanız gereken adımları açıklar.\n\n---\n\n## Yakalama Kararı Nedir? CMK'da Hukuki Dayanağı\n\n**Yakalama kararı**, CMK m. 98 kapsamında bir sulh ceza hâkimi tarafından verilen ve kolluk kuvvetlerine, hakkında işlem yapılan kişiyi zorla getirme yetkisi tanıyan resmi bir karardır. Basitçe söylemek gerekirse: Mahkeme veya savcılık sizi çağırır, siz gelmezsiniz, hâkim de kolluk kuvvetlerini sizi bulup getirmekle görevlendirir.\n\nYakalama kararının tipik oluşum süreci şöyledir: Savcılık bir soruşturma başlatır. Şüpheliye tebligat gönderilir (CMK m. 145). Kişi Almanya'da yaşadığından tebligat ulaşmaz ya da kişi cevap vermez. Bunun üzerine hâkim, CMK m. 98 uyarınca yakalama kararı çıkarır. Bu karar UYAP sistemine işlenir ve Türkiye'deki tüm sınır kapılarında anında görünür hale gelir.\n\nBazı durumlarda yakalama kararı, öncesinde herhangi bir tebligat yapılmaksızın da verilebilir: Bunun için ciddi bir suç şüphesi ve kaçma tehlikesinin olması (CMK m. 98/2) yeterlidir. Bu durumda hakkınızda aktif bir yakalama kararı bulunduğunu siz hiç duymamış bile olabilirsiniz.\n\n> ⚠️ **Önemli:** Yakalama kararının yasal olarak belirlenmiş bir geçerlilik süresi yoktur. İlgili mahkeme tarafından kaldırılmadıkça yürürlükte kalmaya devam eder. Hiçbir şey yapmadan geçen her yıl, kararın \"düşeceği\" anlamına gelmez.\n\n---\n\n## Tebligat ile Yakalama Kararı Arasındaki Fark Nedir?\n\nBu iki kavram sıklıkla birbirine karıştırılır. Hukuki ve pratik fark son derece önemlidir:\n\n| Tedbir | Hukuki Dayanak | Anlamı | Uyulmazsa Ne Olur? |\n|---|---|---|---|\n| Tebligat | CMK m. 145, Tebligat Kanunu | Resmi çağrı / bildirim | Yakalama kararı çıkarılabilir |\n| Yakalama Kararı | CMK m. 98 | Zorla getirme yetkisi | Sınırda veya içeride anında gözaltı |\n| Zorla Getirme | CMK m. 146 | Kolluk eliyle zorunlu getirilme | Doğrudan fiziksel müdahale |\n| Tutuklama | CMK m. 100 | Tutukevine alma kararı | Dava sonuçlanana dek özgürlük kısıtlanır |\n\nTebligata uyulmaması yakalama kararına, yakalama kararına göre şüphelinin tutumu ise tutuklamaya kapı açabilir. Her aşama bir öncekinden ağır sonuçlar doğurur.\n\n---\n\n## Hakkımda Türkiye'de Dava Var mı? UYAP ile Nasıl Öğrenirim?\n\nTürkiye Adalet Bakanlığı'nın işlettiği **UYAP (Ulusal Yargı Ağı Bilişim Sistemi)**, tüm mahkeme dosyalarını, kararları ve tebligatları merkezi olarak kaydeden bir bilişim ağıdır. Almanya'dan yetkili bir avukat aracılığıyla UYAP üzerinden şunları öğrenmek mümkündür:\n\n- Hakkınızda soruşturma ya da kovuşturma başlatılıp başlatılmadığı\n- Aktif bir yakalama kararının varlığı\n- Davanın hangi mahkemede görüldüğü\n- Suçlamanın niteliği ve dosyanın aşaması\n\nBu sorguyu Almanya'dan yürütmek mümkündür; Türkiye'ye kayıtlı ve UYAP erişim yetkisine sahip bir avukat tarafından yapılır. Doğru Kanzlei bu sorgulamayı müvekkilleri adına rutin olarak gerçekleştirmektedir. Türk vatandaşları ayrıca e-Devlet portalı üzerinden belirli dava bilgilerine doğrudan erişebilir.\n\n> ⚠️ **Önemli:** Türkiye'deki eski adresinize gönderilen tebligat, siz bu adresi yıllardır kullanmasanız bile Tebligat Kanunu m. 25/a uyarınca usulüne uygun tebligat sayılabilir. \"Hiçbir şey almadım\" demek, hukuki sonuçtan korunduğunuz anlamına gelmez.\n\n---\n\n## Yakalama Kararı ile Türkiye'ye Giriş Yaparsam Ne Olur?\n\nBu soru, bize en sık sorulan sorudur. Yanıt nettir: Aktif bir yakalama kararı, Türkiye'deki **tüm sınır kapılarında ve havalimanlarında** anında görünür durumdadır.\n\nPasaport kontrolünde karar tespit edilir. Siz derhal alıkonulursunuz. Gözaltı süresi en fazla 24 saattir (CMK m. 91); bu süre içinde sulh ceza hâkimine çıkarılırsınız. Hâkim;\n\n- Serbest bırakılıp bırakılmayacağınıza,\n- Adli kontrol tedbiri (imza, yurt dışı çıkış yasağı vb.) uygulanıp uygulanmayacağına,\n- Ya da tutuklanıp tutuklanmayacağınıza\n\nkarar verir.\n\nAvukatsız ve hukuki hazırlık yapılmadan bu sınırı geçmek, durumunuzu kontrolden çıkarır. Hâkimin kararı dosyanın içeriğine, suçlamanın ağırlığına ve kendi değerlendirmesine bağlıdır — ve siz ne söyleyeceğinizi bilmeden orada olursunuz.\n\n---\n\n## CMK Kapsamındaki Haklarınız\n\nYurt dışında olsanız bile Türk ceza yargılaması kapsamındaki haklarınız varlığını korur:\n\n**Müdafi hakkı (CMK m. 147):** Türkiye'de kayıtlı bir avukat (Avukat) tarafından temsil edilme hakkına sahipsiniz. Avukatınız dosyayı inceleyebilir, duruşmalara katılabilir ve pek çok aşamada sizin fiziksel varlığınız olmaksızın işlem yürütebilir.\n\n**Susma hakkı:** Kendiniz aleyhine beyanda bulunmaya zorlanamassınız. Avukatsız ve hazırlıksız verilen ifadeler çoğu zaman ciddi hukuki sonuçlara yol açar.\n\n**SEGBİS ile video bağlantılı ifade (CMK m. 196):** Türk hukuku, yurt dışında bulunan kişilerin **SEGBİS (Ses ve Görüntü Bilişim Sistemi)** aracılığıyla video bağlantısıyla ifade vermesine belirli koşullarda olanak tanır. Bunun için avukatınızın ilgili mahkemeye başvurması gerekir. Mahkemenin bu talebi kabul edip etmeyeceği, yargıç takdir yetkisine bırakılmıştır — ancak yurt dışında ikamet etmek güçlü bir gerekçedir.\n\n**Dosya inceleme hakkı:** Avukatınız, UYAP üzerinden soruşturma dosyasının tüm belgelerine erişim talep edebilir.\n\n---\n\n## Yakalama Kararı Nasıl Kaldırılır?\n\nYakalama kararı kendiliğinden düşmez. Kaldırılması için üç yol vardır:\n\n**1. Bizzat mahkemeye çıkmak ve ifade vermek:** En doğrudan yoldur. Avukatınızla birlikte hazırlık yapılır, mahkemeye gidilir, ifade verilir. Birçok durumda ifade verdikten sonra yurt dışına çıkış mümkün hale gelir.\n\n**2. Avukat aracılığıyla SEGBİS başvurusu yapmak:** Avukatınız, siz Türkiye'ye gelmek zorunda kalmadan video bağlantısıyla ifade alınması için mahkemeye başvurabilir. Bu yol başarılı olursa sınırda gözaltı riski ortadan kalkar.\n\n**3. Davanın düşürülmesi veya takipsizlik kararı:** Soruşturma kovuşturmaya yer olmadığına karar verilerek ya da dava herhangi bir nedenle düşürülerek sonuçlanırsa, yakalama kararı da kendiliğinden kalkar. Avukatınız, usul engelleri veya delil yetersizliği gibi gerekçelerle savcılığa takipsizlik talebi sunabilir.\n\n---\n\n## Vekâletname: Türkiye'ye Gitmeden Nasıl Yetki Verirsiniz?\n\nTürkiye'deki davanızı avukatınızın takip edebilmesi için **noter onaylı bir vekâletname** düzenlemeniz gerekir. Bu vekâletnameyi Almanya'da iki farklı şekilde çıkarabilirsiniz:\n\n- **Almanya'daki bir Türk konsolosluğundan** (konsolosluğun apostil onayıyla)\n- **Almanya'daki bir noter aracılığıyla** (apostil onaylı ve Türkçe tercümesiyle birlikte)\n\nVekâletname düzenlendikten sonra avukatınız; dosyayı inceler, duruşmalara katılır, yakalama kararının kaldırılması için talepte bulunur, SEGBİS başvurusunu yapar ve tüm hukuki işlemleri sizin adınıza yürütür. Türkiye'ye gitmenize gerek kalmaz.\n\n---\n\n## Almanya'dan Türkiye'ye İadenin Koşulları Nelerdir?\n\nBu konu, Almanya'da ikamet eden Türk vatandaşları için özellikle önemlidir. Türkiye'nin Almanya'ya iade talebi yapması mümkündür; ancak bu talebinin karşılanıp karşılanmayacağı birkaç faktöre bağlıdır:\n\n**Türk vatandaşları:** Almanya ve Türkiye arasında ikili bir iade anlaşması mevcuttur. Bu anlaşma çerçevesinde ve Alman iade hukuku (IRG) kapsamındaki şartlar sağlanıyorsa iade mümkündür.\n\n**Alman vatandaşları:** Alman Anayasası (GG) m. 16/2 uyarınca Alman vatandaşları Türkiye dahil üçüncü ülkelere genellikle iade edilmez.\n\n**Çifte vatandaşlık:** Her durum bireysel olarak değerlendirilmelidir.\n\n**Interpol Kırmızı Bülteni:** Türkiye, Interpol aracılığıyla uluslararası kırmızı bülten çıkarabilir. Bu bülten, Schengen bölgesi içinde seyahat ederken bile pasaport kontrolünde görünür hale gelebilir ve geçici gözaltıya yol açabilir.\n\n---\n\n## Doğru Kanzlei: Neden Bu Davalar İçin Biz?\n\n[Doğru Kanzlei](https://www.hasandogru.de/tr/hizmetler/ceza-hukuku) olarak, Almanya'dan Türkiye'deki ceza davalarını takip eden kişilere özel deneyimle hizmet veriyoruz. **Ankara Barosu** üyeliğimiz (Sicil No: 47068) sayesinde herhangi bir aracı avukata ihtiyaç duymadan doğrudan Türk ceza mahkemelerinde temsil yetkisine sahibiz. **Karlsruhe Rechtsanwaltskammer**'a §207 BRAO kapsamında kayıtlı olmamız ise her iki sistemin gerçekçi çerçevesi içinde düşünmemizi sağlar.\n\nAv. Hasan Doğru, hukuki kariyerinden önce yaklaşık **10 yıl boyunca Türk Emniyet Genel Müdürlüğü bünyesindeki Özel Harekat** biriminde görev yapmıştır. Bu deneyim, Türk soruşturma yapılarını, sorgulama yöntemlerini ve kolluğun karar alma süreçlerini içeriden anlamamızı sağlar — ceza davalarında müvekkil lehine doğrudan avantaj sunan bir bilgi birikimi.\n\nSizin için yapabileceklerimiz:\n\n- UYAP sorgulaması: Hakkınızda aktif bir dava veya yakalama kararı olup olmadığını öğreniyoruz\n- Dosya incelemesi: Suçlamanın tam kapsamını belirliyoruz\n- Savunma stratejisi: Siz herhangi bir adım atmadan önce planı yapıyoruz\n- Vekâletname rehberliği: Almanya'dan noter işlemlerinde yol gösteriyoruz\n- Yakalama kararının kaldırılması: Hukuki uygunluk varsa mahkemeye başvuruyoruz\n- SEGBİS başvurusu: Video bağlantısıyla ifade almak için gerekli adımları atıyoruz\n- Tüm duruşmalarda temsil: Türkiye'ye gitmek zorunda kalmadan\n\n[Doğru Kanzlei ile Ücretsiz Ön Görüşme Talep Edin →](https://wa.me/4917661221210?service=Ceza%20%2F%20Yakalama%20Karar%C4%B1)\n\n---\n\n## Şu An Ne Yapmalısınız? Adım Adım Rehber\n\nTürkiye'de hakkınızda bir işlem yapıldığından şüpheleniyorsanız ya da bunu kesinlikle öğrendiyseniz:\n\n1. **Türkiye'ye girmeyin.** Aktif bir yakalama kararının mevcut olup olmadığı netleşene kadar bu riski almayın.\n2. **UYAP sorgusu yaptırın.** Türkiye'de kayıtlı bir avukat aracılığıyla dosyanızın gerçek durumunu öğrenin.\n3. **Dosya inceleyin.** Somut suçlama nedir? Hangi deliller var? Dava hangi aşamada?\n4. **Savunma stratejisi belirleyin.** Avukatınızla birlikte — ifade mi, SEGBİS mi, takipsizlik talebi mi? — en doğru yolu seçin.\n5. **Vekâletname düzenleyin.** Almanya'daki noter veya Türk konsolosluğu aracılığıyla avukatınıza gerekli yetkiyi verin.\n6. **Interpol durumunuzu kontrol ettirin.** Uluslararası seyahat ediyorsanız kırmızı bülten olup olmadığını öğrenin.\n\n---\n\n## Bu Makaleyi Başka Dillerde de Yayınladık\n\nBu makaleyi Almanca okuyanlar için de yayınladık:\n\n[Haftbefehl oder Vorladung aus der Türkei: Was tun aus Deutschland? →](/de/blog/vorladung-haftbefehl-tuerkei)\n\nVe İngilizce okuyan aile üyeleri veya arkadaşlarınız için:\n\n[Turkish Arrest Warrant or Summons: What To Do From Germany →](/en/blog/turkish-arrest-warrant-summons-germany)\n\n---\n\n## Sıkça Sorulan Sorular\n\n**Türkiye'den tebligat geldi ne yapmalıyım?**\nİlk yapmanız gereken içeriği dikkatlice okumak ve ne tür bir bildirim olduğunu anlamaktır. Tebligat bir ifade daveti, duruşmaya çağrı veya resmi bildirim olabilir. Her birinin farklı hukuki sonuçları vardır. Türkiye'de kayıtlı bir avukattan UYAP sorgusu talep etmek ve dosyanızın gerçek durumunu öğrenmek en doğru ilk adımdır. Hiçbir yanıt vermeden önce hukuki destek alın.\n\n**Hakkımda Türkiye'de dava var mı nasıl öğrenirim?**\nUYAP üzerinden yetkili bir avukat aracılığıyla veya e-Devlet portalı üzerinden kendiniz belirli bilgilere ulaşabilirsiniz. Doğru Kanzlei bu sorgulamayı müvekkilleri adına Almanya'dan düzenli olarak gerçekleştirmektedir.\n\n**Yakalama kararı ile Türkiye'ye giriş yaparsam ne olur?**\nSınır kapısında veya havalimanında derhal alıkonulursunuz. 24 saat içinde sulh ceza hâkimine çıkarılırsınız. Hâkim; serbest bırakma, adli kontrol veya tutuklama kararı verebilir. Avukatsız ve hazırlıksız giriş yapmak son derece risklidir.\n\n**Yakalama kararı nasıl kaldırılır?**\nÜç yol vardır: bizzat mahkemeye çıkarak ifade vermek, avukat aracılığıyla SEGBİS başvurusu yapmak ya da davanın düşürülmesini sağlamak. En uygun yol davanın aşamasına göre belirlenir.\n\n**Almanya'dan Türkiye'deki davama vekâletle baktırabilir miyim?**\nEvet. Almanya'daki bir noter veya Türk konsolosluğundan noter onaylı vekâletname düzenleyerek avukatınıza tam yetki verebilirsiniz. Türkiye'ye gitmek zorunda kalmazsınız.\n\n**Türkiye'de Almanya'dan video bağlantısıyla ifade verebilir miyim?**\nCMK m. 196 uyarınca SEGBİS sistemi üzerinden mümkündür. Avukatınızın talepte bulunması ve mahkemenin kabul etmesi gerekir. Yurt dışında ikamet etmek güçlü bir gerekçedir.\n\n**Tebligat ile yakalama kararı arasındaki fark nedir?**\nTebligat resmi bir çağrı veya bildirimdir; zorlama içermez. Yakalama kararı ise hâkimin kolluk kuvvetlerine sizi zorla getirme yetkisi verdiği bir karardır. Tebligata uyulmaması genellikle yakalama kararı sonucunu doğurur.\n\n**Yakalama kararı ne zaman düşer?**\nYasal olarak belirlenmiş bir süresi yoktur. Mahkeme tarafından kaldırılmadıkça yürürlükte kalır. Hiçbir işlem yapılmazsa yıllarca sistemde aktif olarak kalabilir.\n\n---\n\n> **YASAL UYARI:** Bu makale yalnızca Türk hukukuna ilişkin genel bilgi amaçlıdır. Doğru Kanzlei, §207 BRAO kapsamında yalnızca Türk hukuku konularında danışmanlık vermektedir. Alman hukuku konusunda danışmanlık veya temsil hizmeti verilmemektedir.\n\n---",
-    contentEN: "> **Legal Notice:** This article addresses Turkish law exclusively. Doğru Kanzlei advises on Turkish law under § 207 BRAO and does not advise on German domestic criminal law, family law, or immigration law.\n\n---\n\nIt often starts with a phone call from a relative in Turkey: \"There's something with your name at the courthouse.\" Or a letter arrives via the Turkish consulate in Frankfurt that you can't quite understand. Or someone warns you not to travel to Turkey this summer — without being able to explain exactly why.\n\nFor tens of thousands of people from Turkey living across Germany, the Netherlands, the UK, Scandinavia, and beyond, this is not a hypothetical. A summons or an active arrest warrant (known in Turkish as a **Yakalama Kararı**) from Turkey can disrupt daily life even in your country of residence — whether you have been in contact with Turkish authorities recently or not.\n\nHere is the important thing: you are not defenceless. Turkish criminal procedure law — the **CMK (Ceza Muhakemesi Kanunu)**, Turkey's Code of Criminal Procedure — gives you clear legal rights. And in many cases, the entire process can be managed from Germany without you setting foot in Turkey.\n\nThis guide explains what a Turkish arrest warrant is, how it comes about, what it means for you, and what concrete steps you should take right now.\n\n---\n\n## What Is a Yakalama Kararı?\n\nA **Yakalama Kararı** (literally: apprehension or seizure order) is a judicial warrant issued by a Turkish magistrate judge under **CMK Article 98**. It authorises the Turkish police to locate a person and bring them forcibly before the court or public prosecutor.\n\nIt typically arises this way: a criminal investigation is opened by the public prosecutor. A formal summons (**Tebligat**) is sent to the suspect. The summons fails to reach the person — because they live in Germany and the notification was sent to an old Turkish address — or is ignored. The magistrate judge then issues a Yakalama Kararı so that the person can be compelled to appear. The warrant is entered into the **UYAP** court information system and becomes immediately visible at every border crossing and airport in Turkey.\n\nIn some cases, a Yakalama Kararı can be issued directly — without any prior summons — when there is strong suspicion of a serious offence and a risk of flight (CMK Art. 98(2)). In these situations, you may be entirely unaware that a warrant exists.\n\n> ⚠️ **Important:** A Yakalama Kararı has no automatic expiry date. It stays active in the UYAP system until the court formally revokes it. Without proactive legal steps, it can remain valid for years or even decades.\n\n---\n\n## Summons vs Arrest Warrant: What Is the Difference?\n\nMany people use the terms interchangeably, but they are legally and practically very different:\n\n| Measure | Legal basis | What it means | Consequence if ignored |\n|---|---|---|---|\n| Tebligat (Summons) | CMK Art. 145, Notification Law | Formal invitation to appear or receive notice | Yakalama Kararı may be issued |\n| Yakalama Kararı (Apprehension Warrant) | CMK Art. 98 | Judicial order authorising police to bring you in by force | Immediate detention at the border or inside Turkey |\n| Zorla Getirme (Forced Appearance) | CMK Art. 146 | Compulsory attendance carried out by police | Physical apprehension |\n| Tutuklama (Pre-trial Detention) | CMK Art. 100 | Remand in custody | Detention until trial or until bail conditions satisfied |\n\nA Tebligat is an invitation. A Yakalama Kararı is a coercive order. Failing to respond to a Tebligat leads to the warrant; how you behave after being brought in under the warrant can lead to pre-trial detention.\n\n---\n\n## How Do I Know If There Is a Case Against Me in Turkey?\n\nTurkey's justice ministry operates **UYAP** (Ulusal Yargı Ağı Bilişim Sistemi — the National Judiciary Informatics System), a centralised network that records all court proceedings, warrants, and notifications. A Turkish-registered lawyer with UYAP access can check on your behalf whether:\n\n- A criminal investigation or prosecution has been opened\n- An active Yakalama Kararı exists\n- The case is registered and at which court\n- What the specific allegations are\n\nThis check can be done from Germany — you do not need to travel. Turkish citizens may also access certain case details themselves via the **e-Devlet** (e-Government) portal at turkiye.gov.tr.\n\n> ⚠️ **Important:** Under Turkish notification law (Tebligat Kanunu Art. 25/a), a summons delivered to your registered Turkish address is considered legally served — even if you no longer live there and never received the letter. \"I didn't get anything\" is not a legal defence.\n\n---\n\n## What Happens If I Travel to Turkey With an Active Warrant?\n\nThis is the question we are asked most often. The answer is unambiguous: an active Yakalama Kararı is visible at **every border crossing and airport** in Turkey.\n\nWhen you present your passport at immigration control, the warrant appears in the system. You are detained immediately. Turkish law (CMK Art. 91) requires that you be brought before a magistrate judge within 24 hours of detention. At that hearing, the judge decides:\n\n- Whether to release you unconditionally\n- Whether to impose **Adli Kontrol** (supervisory measures — such as reporting to police regularly, surrendering your passport, or a ban on leaving Turkey)\n- Or whether to remand you in **Tutuklama** (pre-trial detention)\n\nThat decision rests on the judge's assessment of the case, the severity of the allegations, and whether they consider you a flight risk. If you arrive without a lawyer, without knowledge of the case, and without a prepared statement, you have no control over that outcome.\n\n---\n\n## Can Turkey Have Me Extradited From Germany?\n\nThis is a critical question, and the answer depends on your nationality:\n\n**German nationals:** Under **Article 16(2) of the German Basic Law (Grundgesetz)**, German nationals generally cannot be extradited to third countries, including Turkey. A Turkish extradition request would, in most cases, be declined by German authorities.\n\n**Turkish nationals resident in Germany:** Extradition is possible. Germany and Turkey are bound by a bilateral extradition treaty. Under the German International Legal Assistance Act (**IRG**), an extradition request is reviewed by the relevant Higher Regional Court (**Oberlandesgericht**) and the Federal Ministry of Justice. If the conditions are met, extradition can be ordered.\n\n**Dual nationals:** Cases must be assessed individually. The specific charges, the nationality situation, and whether German citizenship was acquired before or after the alleged offence all play a role.\n\n**Interpol Red Notice:** Separately from a formal extradition request, Turkey can apply to Interpol for a Red Notice. This flags your details in Interpol's databases and can result in temporary detention at border crossings — including within the Schengen area. A Red Notice does not oblige a Schengen country to extradite, but it creates real-world complications for international travel.\n\n---\n\n## Your Rights as a Defendant Under Turkish Criminal Law\n\nEven if you are based abroad, Turkish criminal procedure law gives you meaningful rights:\n\n**Right to a defence lawyer (CMK Art. 147):** You have the right to be represented by a Turkish-registered lawyer (Avukat) at every stage of the proceedings. Your lawyer can review the case file, attend hearings, make applications, and act on your behalf — in many procedural phases, without requiring your physical presence.\n\n**Right to silence:** You cannot be compelled to incriminate yourself. Giving a statement without legal guidance — particularly in an unfamiliar legal system, in a second language — is almost always inadvisable.\n\n**Video-link testimony via SEGBİS (CMK Art. 196):** Turkish law permits statements to be taken via video conference through the **SEGBİS system** (Ses ve Görüntü Bilişim Sistemi — Audio and Video Information System). Your lawyer must apply to the court for this option, and the court has discretion to approve it. Living abroad, combined with the impracticality of travel, is a recognised ground for approval in many cases.\n\n**Right to access the case file:** Your lawyer can request full access to all investigation documents in the UYAP system.\n\n---\n\n## How Is a Yakalama Kararı Lifted?\n\nIt will not go away on its own. There are three legal routes:\n\n**1. Personal appearance and statement:** The most direct option. With proper legal preparation, you appear before the court, give your statement, and — depending on the outcome — may be free to leave. This should never be done without a lawyer who has already reviewed the full case file.\n\n**2. Application for SEGBİS video testimony:** Your lawyer applies to the court for the warrant to be replaced by a video-link hearing. If the court agrees, the practical danger of border detention is removed, and you can give your statement from Germany or another country.\n\n**3. Application for case dismissal:** If there are grounds — insufficient evidence, procedural flaws, statute of limitations, or absence of a criminal offence — your lawyer can apply for a non-prosecution decision (Kovuşturmaya Yer Olmadığı Kararı). If the case is dismissed, the warrant falls away automatically.\n\n---\n\n## The Power of Attorney: How to Authorise Your Lawyer From Germany\n\nFor your Turkish-registered lawyer to act on your behalf, you need to grant them a notarised power of attorney — known in Turkish as a **Vekâletname**. You can obtain this in Germany in two ways:\n\n- At a **German notary**, with an apostille stamp and a certified Turkish translation\n- At a **Turkish consulate** in Germany (Frankfurt, Berlin, Hamburg, Cologne, Munich, Stuttgart, Hanover, or Nuremberg), which can produce the document directly in Turkish\n\nOnce signed and notarised, the Vekâletname authorises your lawyer to review the file, attend hearings, apply to lift the warrant, request SEGBİS video testimony, and carry out all procedural steps on your behalf — without you travelling to Turkey.\n\n---\n\n## Doğru Kanzlei: Why We Handle These Cases Differently\n\n[Doğru Kanzlei](https://www.hasandogru.de/en/services/criminal-law) holds dual bar membership: with the **Ankara Bar Association** (Ankara Barosu, Registration No. 47068) and with the **Karlsruhe Bar Association** (Rechtsanwaltskammer Karlsruhe, § 207 BRAO). This means we appear directly before Turkish criminal courts — without needing to involve an intermediary Turkish lawyer. For you, that means one direct point of contact who understands both the Turkish and the German legal context.\n\nAv. Hasan Doğru brings a background that is genuinely rare in legal practice: before his legal career, he spent approximately **ten years as a member of Özel Harekat** — Turkey's national police Special Operations unit (Emniyet Genel Müdürlüğü). That experience — knowing how Turkish police investigations are structured, how evidence is gathered, and how prosecutorial decisions are made — translates into a concrete advantage in criminal defence work.\n\nWhat we do for clients in your situation:\n\n- **UYAP search:** We check whether an investigation, warrant, or prosecution is active\n- **File review:** We obtain and analyse the full case file\n- **Defence strategy:** We assess your options before you take any step\n- **Vekâletname guidance:** We advise you on how to obtain the power of attorney in Germany\n- **Application to lift the Yakalama Kararı** where legally viable\n- **SEGBİS application:** We apply for video-link testimony where the court will accept it\n- **Representation at all hearings** before Turkish criminal courts\n\n[Request a Free Initial Assessment with Doğru Kanzlei →](https://wa.me/4917661221210)\n\n---\n\n## Step-by-Step: What To Do Right Now\n\nIf you have learned — or suspect — that there is an active Turkish criminal matter against you:\n\n1. **Do not travel to Turkey** until the status of any warrant has been confirmed and addressed. An unannounced entry with an active Yakalama Kararı can result in immediate detention.\n2. **Check your UYAP status.** Commission a Turkish-registered lawyer to run the search. This is step one — without this, you are making decisions without knowing the facts.\n3. **Get full access to the case file.** What exactly are the allegations? What evidence exists? How far has the investigation progressed?\n4. **Decide on a strategy together with your lawyer.** Personal appearance, SEGBİS video statement, case dismissal application — the right path depends entirely on what the file says.\n5. **Grant a Vekâletname.** At a German notary or Turkish consulate, to authorise your lawyer to act fully on your behalf.\n6. **Check your Interpol status** if you travel internationally. This can be done via official channels.\n\n---\n\n## This Guide Is Also Available in Other Languages\n\nThis guide is also available in Turkish — for Turkish-speaking family members or if you prefer to read it in Turkish:\n\n[Türkiye'den Tebligat veya Yakalama Kararı: Almanya'dan Ne Yapmalısınız? →](/tr/blog/turkiye-den-tebligat-veya-yakalama-karari)\n\nAnd in German — for German-speaking family members, colleagues, or advisers:\n\n[Haftbefehl oder Vorladung aus der Türkei: Was tun aus Deutschland? →](/de/blog/vorladung-haftbefehl-tuerkei)\n\n---\n\n## Frequently Asked Questions\n\n**What is a Yakalama Kararı?**\nIt is a Turkish judicial warrant (under CMK Art. 98) that authorises the police to apprehend and forcibly bring a person before a court or prosecutor. It is typically issued after a formal summons goes unanswered. Unlike a summons, it is a coercive measure — active at all Turkish borders immediately after entry into the UYAP system.\n\n**What happens if I travel to Turkey with an active arrest warrant?**\nYou will be flagged at passport control and detained immediately. Within 24 hours you must be brought before a magistrate judge, who will decide whether to release you, impose travel restrictions, or remand you in pre-trial custody. Arriving without a lawyer and without preparation leaves you with no control over that decision.\n\n**Can I check if there is a criminal case against me in Turkey?**\nYes. A Turkish-registered lawyer can run a UYAP search on your behalf from Germany. Turkish citizens can also check certain details via the e-Devlet portal. Neither requires you to travel.\n\n**Do I have to go to Turkey to give a statement?**\nNot necessarily. Under CMK Art. 196, testimony can be given via video link through the SEGBİS system. Your lawyer applies for this; the court must approve. Living abroad is a recognised basis for approval in many cases.\n\n**Can Turkey extradite me from Germany?**\nGerman nationals are generally protected from extradition under Art. 16(2) GG. Turkish nationals can be extradited under the bilateral treaty, subject to German court review. Dual nationals need individual assessment. Separately, Turkey can request an Interpol Red Notice, which causes travel complications without automatically triggering extradition.\n\n**How long does a Turkish arrest warrant last?**\nIndefinitely, until the court revokes it. There is no automatic expiry. Without legal action, it can remain active for decades.\n\n**How is a Yakalama Kararı lifted?**\nBy appearing before the court and giving a statement; by a lawyer applying for a SEGBİS video hearing in lieu of personal appearance; or by the case being dismissed. The right option depends on the specific case.\n\n**Can a lawyer represent me in Turkey without me going there?**\nYes. With a notarised Vekâletname (power of attorney), your lawyer can handle all proceedings on your behalf. Doğru Kanzlei holds direct Ankara Bar Association membership and does not need to involve a third-party Turkish lawyer.\n\n---\n\n> **Legal Notice:** This article addresses Turkish law exclusively. Doğru Kanzlei advises on Turkish law under § 207 BRAO and does not advise on German domestic criminal law, family law, or immigration law.\n\n---",
+    contentEN: "> **Legal Notice:** This article addresses Turkish law exclusively. Doğru Kanzlei advises on Turkish law under § 207 BRAO and does not advise on German domestic criminal law, family law, or immigration law.\n\n---\n\nIt often starts with a phone call from a relative in Turkey: \"There's something with your name at the courthouse.\" Or a letter arrives via the Turkish consulate in Frankfurt that you can't quite understand. Or someone warns you not to travel to Turkey this summer — without being able to explain exactly why.\n\nFor tens of thousands of people from Turkey living across Germany, the Netherlands, the UK, Scandinavia, and beyond, this is not a hypothetical. A summons or an active arrest warrant (known in Turkish as a **Yakalama Kararı**) from Turkey can disrupt daily life even in your country of residence — whether you have been in contact with Turkish authorities recently or not.\n\nHere is the important thing: you are not defenceless. Turkish criminal procedure law — the **CMK (Ceza Muhakemesi Kanunu)**, Turkey's Code of Criminal Procedure — gives you clear legal rights. And in many cases, the entire process can be managed from Germany without you setting foot in Turkey.\n\nThis guide explains what a Turkish arrest warrant is, how it comes about, what it means for you, and what concrete steps you should take right now.\n\n---\n\n## What Is a Yakalama Kararı?\n\nA **Yakalama Kararı** (literally: apprehension or seizure order) is a judicial warrant issued by a Turkish magistrate judge under **CMK Article 98**. It authorises the Turkish police to locate a person and bring them forcibly before the court or public prosecutor.\n\nIt typically arises this way: a criminal investigation is opened by the public prosecutor. A formal summons (**Tebligat**) is sent to the suspect. The summons fails to reach the person — because they live in Germany and the notification was sent to an old Turkish address — or is ignored. The magistrate judge then issues a Yakalama Kararı so that the person can be compelled to appear. The warrant is entered into the **UYAP** court information system and becomes immediately visible at every border crossing and airport in Turkey.\n\nIn some cases, a Yakalama Kararı can be issued directly — without any prior summons — when there is strong suspicion of a serious offence and a risk of flight (CMK Art. 98(2)). In these situations, you may be entirely unaware that a warrant exists.\n\n> ⚠️ **Important:** A Yakalama Kararı has no automatic expiry date. It stays active in the UYAP system until the court formally revokes it. Without proactive legal steps, it can remain valid for years or even decades.\n\n---\n\n## Summons vs Arrest Warrant: What Is the Difference?\n\nMany people use the terms interchangeably, but they are legally and practically very different:\n\n| Measure | Legal basis | What it means | Consequence if ignored |\n|---|---|---|---|\n| Tebligat (Summons) | CMK Art. 145, Notification Law | Formal invitation to appear or receive notice | Yakalama Kararı may be issued |\n| Yakalama Kararı (Apprehension Warrant) | CMK Art. 98 | Judicial order authorising police to bring you in by force | Immediate detention at the border or inside Turkey |\n| Zorla Getirme (Forced Appearance) | CMK Art. 146 | Compulsory attendance carried out by police | Physical apprehension |\n| Tutuklama (Pre-trial Detention) | CMK Art. 100 | Remand in custody | Detention until trial or until bail conditions satisfied |\n\nA Tebligat is an invitation. A Yakalama Kararı is a coercive order. Failing to respond to a Tebligat leads to the warrant; how you behave after being brought in under the warrant can lead to pre-trial detention.\n\n---\n\n## How Do I Know If There Is a Case Against Me in Turkey?\n\nTurkey's justice ministry operates **UYAP** (Ulusal Yargı Ağı Bilişim Sistemi — the National Judiciary Informatics System), a centralised network that records all court proceedings, warrants, and notifications. A Turkish-registered lawyer with UYAP access can check on your behalf whether:\n\n- A criminal investigation or prosecution has been opened\n- An active Yakalama Kararı exists\n- The case is registered and at which court\n- What the specific allegations are\n\nThis check can be done from Germany — you do not need to travel. Turkish citizens may also access certain case details themselves via the **e-Devlet** (e-Government) portal at turkiye.gov.tr.\n\n> ⚠️ **Important:** Under Turkish notification law (Tebligat Kanunu Art. 25/a), a summons delivered to your registered Turkish address is considered legally served — even if you no longer live there and never received the letter. \"I didn't get anything\" is not a legal defence.\n\n---\n\n## What Happens If I Travel to Turkey With an Active Warrant?\n\nThis is the question we are asked most often. The answer is unambiguous: an active Yakalama Kararı is visible at **every border crossing and airport** in Turkey.\n\nWhen you present your passport at immigration control, the warrant appears in the system. You are detained immediately. Turkish law (CMK Art. 91) requires that you be brought before a magistrate judge within 24 hours of detention. At that hearing, the judge decides:\n\n- Whether to release you unconditionally\n- Whether to impose **Adli Kontrol** (supervisory measures — such as reporting to police regularly, surrendering your passport, or a ban on leaving Turkey)\n- Or whether to remand you in **Tutuklama** (pre-trial detention)\n\nThat decision rests on the judge's assessment of the case, the severity of the allegations, and whether they consider you a flight risk. If you arrive without a lawyer, without knowledge of the case, and without a prepared statement, you have no control over that outcome.\n\n---\n\n## Can Turkey Have Me Extradited From Germany?\n\nThis is a critical question, and the answer depends on your nationality:\n\n**German nationals:** Under **Article 16(2) of the German Basic Law (Grundgesetz)**, German nationals generally cannot be extradited to third countries, including Turkey. A Turkish extradition request would, in most cases, be declined by German authorities.\n\n**Turkish nationals resident in Germany:** Extradition is possible. Germany and Turkey are bound by a bilateral extradition treaty. Under the German International Legal Assistance Act (**IRG**), an extradition request is reviewed by the relevant Higher Regional Court (**Oberlandesgericht**) and the Federal Ministry of Justice. If the conditions are met, extradition can be ordered.\n\n**Dual nationals:** Cases must be assessed individually. The specific charges, the nationality situation, and whether German citizenship was acquired before or after the alleged offence all play a role.\n\n**Interpol Red Notice:** Separately from a formal extradition request, Turkey can apply to Interpol for a Red Notice. This flags your details in Interpol's databases and can result in temporary detention at border crossings — including within the Schengen area. A Red Notice does not oblige a Schengen country to extradite, but it creates real-world complications for international travel.\n\n---\n\n## Your Rights as a Defendant Under Turkish Criminal Law\n\nEven if you are based abroad, Turkish criminal procedure law gives you meaningful rights:\n\n**Right to a defence lawyer (CMK Art. 147):** You have the right to be represented by a Turkish-registered lawyer (Avukat) at every stage of the proceedings. Your lawyer can review the case file, attend hearings, make applications, and act on your behalf — in many procedural phases, without requiring your physical presence.\n\n**Right to silence:** You cannot be compelled to incriminate yourself. Giving a statement without legal guidance — particularly in an unfamiliar legal system, in a second language — is almost always inadvisable.\n\n**Video-link testimony via SEGBİS (CMK Art. 196):** Turkish law permits statements to be taken via video conference through the **SEGBİS system** (Ses ve Görüntü Bilişim Sistemi — Audio and Video Information System). Your lawyer must apply to the court for this option, and the court has discretion to approve it. Living abroad, combined with the impracticality of travel, is a recognised ground for approval in many cases.\n\n**Right to access the case file:** Your lawyer can request full access to all investigation documents in the UYAP system.\n\n---\n\n## How Is a Yakalama Kararı Lifted?\n\nIt will not go away on its own. There are three legal routes:\n\n**1. Personal appearance and statement:** The most direct option. With proper legal preparation, you appear before the court, give your statement, and — depending on the outcome — may be free to leave. This should never be done without a lawyer who has already reviewed the full case file.\n\n**2. Application for SEGBİS video testimony:** Your lawyer applies to the court for the warrant to be replaced by a video-link hearing. If the court agrees, the practical danger of border detention is removed, and you can give your statement from Germany or another country.\n\n**3. Application for case dismissal:** If there are grounds — insufficient evidence, procedural flaws, statute of limitations, or absence of a criminal offence — your lawyer can apply for a non-prosecution decision (Kovuşturmaya Yer Olmadığı Kararı). If the case is dismissed, the warrant falls away automatically.\n\n---\n\n## The Power of Attorney: How to Authorise Your Lawyer From Germany\n\nFor your Turkish-registered lawyer to act on your behalf, you need to grant them a notarised power of attorney — known in Turkish as a **Vekâletname**. You can obtain this in Germany in two ways:\n\n- At a **German notary**, with an apostille stamp and a certified Turkish translation\n- At a **Turkish consulate** in Germany (Frankfurt, Berlin, Hamburg, Cologne, Munich, Stuttgart, Hanover, or Nuremberg), which can produce the document directly in Turkish\n\nOnce signed and notarised, the Vekâletname authorises your lawyer to review the file, attend hearings, apply to lift the warrant, request SEGBİS video testimony, and carry out all procedural steps on your behalf — without you travelling to Turkey.\n\n---\n\n## Doğru Kanzlei: Why We Handle These Cases Differently\n\n[Doğru Kanzlei](https://www.hasandogru.de/en/services/criminal-law) holds dual bar membership: with the **Ankara Bar Association** (Ankara Barosu, Registration No. 47068) and with the **Karlsruhe Bar Association** (Rechtsanwaltskammer Karlsruhe, § 207 BRAO). This means we appear directly before Turkish criminal courts — without needing to involve an intermediary Turkish lawyer. For you, that means one direct point of contact who understands both the Turkish and the German legal context.\n\nAv. Hasan Doğru brings a background that is genuinely rare in legal practice: before his legal career, he spent approximately **ten years as a member of Özel Harekat** — Turkey's national police Special Operations unit (Emniyet Genel Müdürlüğü). That experience — knowing how Turkish police investigations are structured, how evidence is gathered, and how prosecutorial decisions are made — translates into a concrete advantage in criminal defence work.\n\nWhat we do for clients in your situation:\n\n- **UYAP search:** We check whether an investigation, warrant, or prosecution is active\n- **File review:** We obtain and analyse the full case file\n- **Defence strategy:** We assess your options before you take any step\n- **Vekâletname guidance:** We advise you on how to obtain the power of attorney in Germany\n- **Application to lift the Yakalama Kararı** where legally viable\n- **SEGBİS application:** We apply for video-link testimony where the court will accept it\n- **Representation at all hearings** before Turkish criminal courts\n\n[Request a Free Initial Assessment with Doğru Kanzlei →](https://wa.me/4917661221210)\n\n---\n\n## Step-by-Step: What To Do Right Now\n\nIf you have learned — or suspect — that there is an active Turkish criminal matter against you:\n\n1. **Do not travel to Turkey** until the status of any warrant has been confirmed and addressed. An unannounced entry with an active Yakalama Kararı can result in immediate detention.\n2. **Check your UYAP status.** Commission a Turkish-registered lawyer to run the search. This is step one — without this, you are making decisions without knowing the facts.\n3. **Get full access to the case file.** What exactly are the allegations? What evidence exists? How far has the investigation progressed?\n4. **Decide on a strategy together with your lawyer.** Personal appearance, SEGBİS video statement, case dismissal application — the right path depends entirely on what the file says.\n5. **Grant a Vekâletname.** At a German notary or Turkish consulate, to authorise your lawyer to act fully on your behalf.\n6. **Check your Interpol status** if you travel internationally. This can be done via official channels.\n\n---\n\n## This Guide Is Also Available in Other Languages\n\nThis guide is also available in Turkish — for Turkish-speaking family members or if you prefer to read it in Turkish:\n\n[Türkiye'den Tebligat veya Yakalama Kararı: Almanya'dan Ne Yapmalısınız? →](/tr/blog/turkiye-den-tebligat-veya-yakalama-karari)\n\nAnd in German — for German-speaking family members, colleagues, or advisers:\n\n[Haftbefehl oder Vorladung aus der Türkei: Was tun aus Deutschland? →](/de/blog/vorladung-haftbefehl-tuerkei)\n\n---\n\n## Frequently Asked Questions\n\n**What is a Yakalama Kararı?**\nIt is a Turkish judicial warrant (under CMK Art. 98) that authorises the police to apprehend and forcibly bring a person before a court or prosecutor. It is typically issued after a formal summons goes unanswered. Unlike a summons, it is a coercive measure — active at all Turkish borders immediately after entry into the UYAP system.\n\n**What happens if I travel to Turkey with an active arrest warrant?**\nYou will be flagged at passport control and detained immediately. Within 24 hours you must be brought before a magistrate judge, who will decide whether to release you, impose travel restrictions, or remand you in pre-trial detention. Arriving without a lawyer and without preparation leaves you with no control over that decision.\n\n**Can I check if there is a criminal case against me in Turkey?**\nYes. A Turkish-registered lawyer can run a UYAP search on your behalf from Germany. Turkish citizens can also check certain details via the e-Devlet portal. Neither requires you to travel.\n\n**Do I have to go to Turkey to give a statement?**\nNot necessarily. Under CMK Art. 196, testimony can be given via video link through the SEGBİS system. Your lawyer applies for this; the court must approve. Living abroad is a recognised basis for approval in many cases.\n\n**Can Turkey extradite me from Germany?**\nGerman nationals are generally protected from extradition under Art. 16(2) GG. Turkish nationals can be extradited under the bilateral treaty, subject to German court review. Dual nationals need individual assessment. Separately, Turkey can request an Interpol Red Notice, which causes travel complications without automatically triggering extradition.\n\n**How long does a Turkish arrest warrant last?**\nIndefinitely, until the court revokes it. There is no automatic expiry. Without legal action, it can remain active for decades.\n\n**How is a Yakalama Kararı lifted?**\nBy appearing before the court and giving a statement; by a lawyer applying for a SEGBİS video hearing in lieu of personal appearance; or by the case being dismissed. The right option depends on the specific case.\n\n**Can a lawyer represent me in Turkey without me going there?**\nYes. With a notarised Vekâletname (power of attorney), your lawyer can handle all proceedings on your behalf. Doğru Kanzlei holds direct Ankara Bar Association membership and does not need to involve a third-party Turkish lawyer.\n\n---\n\n> **Legal Notice:** This article addresses Turkish law exclusively. Doğru Kanzlei advises on Turkish law under § 207 BRAO and does not advise on German domestic criminal law, family law, or immigration law.\n\n---",
     category: "Ceza Hukuku",
     categoryDE: "Strafrecht",
     categoryEN: "Criminal Law",
@@ -10223,12 +10229,12 @@ Türkiye'de size karşı bir suç işlendi ve Almanya'dasınız. Yapmanız gerek
     metaTitleDE: "Scheidung in der Türkei aus Deutschland: Anlaşmalı & Çekişmeli 2026",
     metaTitleTR: "Almanya'dan Türkiye'de Boşanma: Anlaşmalı ve Çekişmeli Rehber 2026",
     metaTitleEN: "Divorce in Turkey from Germany: Amicable & Contested Guide 2026",
-    metaDescriptionDE: "Scheidung in der Türkei aus Deutschland: Anlaşmalı und çekişmeli boşanma, Vollmacht, SEGBİS, Dauer, Kosten, Nafaka, Velayet und Mal Paylaşımı im Überblick.",
-    metaDescriptionTR: "Almanya'dan Türkiye'de boşanma: anlaşmalı ve çekişmeli boşanma, vekaletname, SEGBİS, süre, masraf, nafaka, velayet ve mal paylaşımı rehberi.",
-    metaDescriptionEN: "Divorce in Turkey from Germany: amicable and contested divorce, power of attorney, remote options, costs, duration, custody, alimony, and property division.",
-    schemaHeadlineDE: "Scheidung in der Türkei aus Deutschland 2026: Anlaşmalı und Çekişmeli Boşanma, Kosten, Dauer, Nafaka, Velayet und Mal Paylaşımı",
-    schemaHeadlineTR: "Almanya'dan Türkiye'de Boşanma 2026: Anlaşmalı ve Çekişmeli Boşanma, Masraf, Süre, Nafaka, Velayet ve Mal Paylaşımı",
-    schemaHeadlineEN: "Divorce in Turkey from Germany 2026: Amicable and Contested Divorce, Costs, Duration, Alimony, Custody, and Property Division",
+    metaDescriptionDE: "Scheidung in der Türkei aus Deutschland: Anlaşmalı und çekişmeli boşanma, Vollmacht, SEGBİS, Dauer, Kosten, Nafaka und Mal Paylaşımı im Überblick.",
+    metaDescriptionTR: "Almanya'dan Türkiye'de boşanma: anlaşmalı ve çekişmeli boşanma, vekaletname, SEGBİS, süre, masraf, nafaka ve mal paylaşımı rehberi.",
+    metaDescriptionEN: "Divorce in Turkey from Germany: amicable and contested divorce, power of attorney, remote options, costs, duration, alimony and property division.",
+    schemaHeadlineDE: "Scheidung in der Türkei aus Deutschland 2026: Anlaşmalı und Çekişmeli Boşanma, Kosten, Dauer, Nafaka und Mal Paylaşımı",
+    schemaHeadlineTR: "Almanya'dan Türkiye'de Boşanma 2026: Anlaşmalı ve Çekişmeli Boşanma, Masraf, Süre, Nafaka ve Mal Paylaşımı",
+    schemaHeadlineEN: "Divorce in Turkey from Germany 2026: Amicable and Contested Divorce, Costs, Duration, Alimony, Family orders, and Property Division",
     schemaDescriptionDE: "Vollständiger Leitfaden zur Scheidung in der Türkei aus Deutschland mit rechtssicherer Einordnung von einvernehmlicher und streitiger Scheidung.",
     schemaDescriptionTR: "Almanya'dan Türkiye'de boşanma sürecini anlaşmalı ve çekişmeli boşanma ayrımıyla açıklayan kapsamlı rehber.",
     schemaDescriptionEN: "A complete guide to Turkish divorce proceedings from Germany, including amicable and contested divorce paths.",
@@ -10236,8 +10242,8 @@ Türkiye'de size karşı bir suç işlendi ve Almanya'dasınız. Yapmanız gerek
     articleSectionDE: "Familienrecht",
     articleSectionTR: "Aile Hukuku",
     articleSectionEN: "Family Law",
-    articleTagsDE: ["Scheidung Türkei", "Anlaşmalı Boşanma", "Çekişmeli Boşanma", "Nafaka", "Velayet"],
-    articleTagsTR: ["Türkiye'de boşanma", "anlaşmalı boşanma", "çekişmeli boşanma", "nafaka", "velayet"],
+    articleTagsDE: ["Scheidung Türkei", "Anlaşmalı Boşanma", "Çekişmeli Boşanma", "Nafaka", "Aile hukuku"],
+    articleTagsTR: ["Türkiye'de boşanma", "anlaşmalı boşanma", "çekişmeli boşanma", "nafaka", "aile hukuku"],
     articleTagsEN: ["divorce in Turkey", "amicable divorce Turkey", "contested divorce Turkey", "Turkish family law"],
     exactHreflangs: true,
     exactSchema: true,
@@ -10245,7 +10251,7 @@ Türkiye'de size karşı bir suç işlendi ve Almanya'dasınız. Yapmanız gerek
 
 Sie leben in Deutschland. Die Entscheidung, Ihre Ehe zu beenden, ist gefallen. Aber vor Ihnen stehen mehrere Fragen — und keine einfache Antwort:
 
-Sollen Sie sich in Deutschland oder in der Türkei scheiden lassen? Müssen Sie dafür in die Türkei reisen? Was passiert, wenn Sie und Ihr Partner sich einig sind — und was, wenn nicht? Wie werden Sorgerecht, Unterhalt und Vermögensaufteilung nach türkischem Recht geregelt?
+Sollen Sie sich in Deutschland oder in der Türkei scheiden lassen? Müssen Sie dafür in die Türkei reisen? Was passiert, wenn Sie und Ihr Partner sich einig sind — und was, wenn nicht? Wie werden Unterhalt und Vermögensaufteilung nach türkischem Recht geregelt?
 
 Dieser Leitfaden richtet sich an in Deutschland lebende Türken, die eine Scheidung nach türkischem Recht in Betracht ziehen. Er erklärt die Unterschiede zwischen einvernehmlicher und streitiger Scheidung, wie das Verfahren aus Deutschland geführt werden kann und welche kritischen Fehler Sie vermeiden sollten.
 
@@ -10270,7 +10276,7 @@ Auch wenn Sie in Deutschland leben, können Sie in der Türkei klagen. Türkisch
 
 - Bei einvernehmlicher Scheidung sehr kurze Verfahrensdauer (1–3 Monate)
 - Das türkische Urteil wird direkt im Personenstandsregister eingetragen — kein Tanıma-Tenfiz erforderlich
-- Sorgerecht, Unterhalt und Vermögensaufteilung werden nach türkischem Recht geregelt
+- Unterhalt und Vermögensaufteilung werden nach türkischem Recht geregelt
 - Das Verfahren kann per Vollmacht geführt werden — ohne Reise in die Türkei (insbesondere bei streitiger Scheidung)
 
 ### Was ist in Ihrer Situation sinnvoll?
@@ -10297,7 +10303,7 @@ Die einvernehmliche Scheidung setzt voraus, dass sich die Parteien über die Sch
 Bei einer Ehe unter einem Jahr ist der Weg zur einvernehmlichen Scheidung gesperrt. Die Parteien können sich zwar einigen, müssen das Verfahren aber technisch als streitige Scheidung einleiten. Das Gericht kann die Einigung jedoch berücksichtigen und zügig entscheiden.
 
 **2. Einigkeit über alle Scheidungsfolgen.**
-Es reicht nicht, gemeinsam „Ja" zur Scheidung zu sagen. Es muss auch Einigkeit über Sorgerecht, Unterhalt, Vermögensaufteilung, Schadensersatz und alle weiteren Punkte bestehen. Diese Einigung muss schriftlich in einem **Scheidungsprotokoll (Boşanma Protokolü)** festgehalten werden.
+Es reicht nicht, gemeinsam „Ja" zur Scheidung zu sagen. Es muss auch Einigkeit über Unterhalt, Vermögensaufteilung, Schadensersatz und alle weiteren Punkte bestehen. Diese Einigung muss schriftlich in einem **Scheidungsprotokoll (Boşanma Protokolü)** festgehalten werden.
 
 **3. Das Gericht muss beide Parteien persönlich anhören.**
 Das ist die wichtigste praktische Hürde bei der einvernehmlichen Scheidung aus Deutschland. Das türkische Zivilgesetzbuch verpflichtet den Richter, beide Parteien persönlich zu hören. Das bedeutet: Bei der einvernehmlichen Scheidung ist **mindestens eine Teilnahme an der Verhandlung** erforderlich.
@@ -10312,13 +10318,12 @@ Die ehrliche Antwort lautet: **teilweise** — aber es gibt Wege, das zu umgehen
 
 ### Das Scheidungsprotokoll — warum es so entscheidend ist
 
-Das Scheidungsprotokoll (Boşanma Protokolü) ist das Herzstück der einvernehmlichen Scheidung. Es legt alle Scheidungsfolgen schriftlich fest. Folgende Punkte müssen geregelt sein:
+Das Scheidungsprotokoll (Boşanma Protokolü) ist das Herzstück der einvernehmlichen Scheidung. Es legt die Scheidungsfolgen schriftlich fest. Typische Punkte sind:
 
-- **Sorgerecht (Velayet):** Wer erhält das Sorgerecht für gemeinsame Kinder?
-- **Umgangsrecht (Kişisel İlişki):** Wann und wie oft hat der nicht sorgeberechtigte Elternteil Kontakt?
 - **Kindesunterhalt (İştirak Nafakası):** Wie hoch ist der monatliche Unterhalt?
 - **Ehegattenunterhalt (Yoksulluk Nafakası):** Wird einem der Ehegatten Unterhalt gewährt?
 - **Vermögensaufteilung (Mal Paylaşımı):** Wie werden Immobilien und Konten in der Türkei aufgeteilt?
+- **Schadensersatz und Nebenansprüche:** Welche weiteren Ansprüche sind erledigt?
 
 Ein fehlerhaft oder unvollständig erstelltes Protokoll wird vom Richter abgelehnt. Das Protokoll muss daher von einem Anwalt mit Kenntnissen im türkischen Familienrecht erstellt werden.
 
@@ -10349,10 +10354,7 @@ Eine streitige Scheidung wird eingeleitet, wenn die Parteien sich weder über di
 
 ---
 
-## Scheidungsfolgen: Sorgerecht, Unterhalt, Vermögen
-
-### Sorgerecht (Velayet)
-Türkische Gerichte entscheiden über das Sorgerecht nach dem **Kindeswohl-Prinzip.** Ihr Wohnsitz in Deutschland wirkt sich nicht grundsätzlich negativ auf Ihren Sorgerechtswunsch aus.
+## Scheidungsfolgen: Unterhalt, Vermögen, Schadensersatz
 
 ### Unterhalt (Nafaka)
 - **Kindesunterhalt (İştirak Nafakası)**
@@ -10394,7 +10396,7 @@ Weitere passende Ratgeber:
 
 Almanya'da yaşıyorsunuz. Evliliğinizi bitirme kararı verdiniz. Ama önünüzde birden fazla seçenek var ve hangisinin sizin için doğru olduğunu bilmiyorsunuz:
 
-Almanya'da mı boşanmalısınız, yoksa Türkiye'de mi? Türkiye'de boşanmak için Türkiye'ye gitmek zorunda mısınız? Eşinizle anlaşabiliyorsanız süreç nasıl işliyor? Anlaşamıyorsanız ne olacak? Velayet, nafaka, mal paylaşımı — bunlar Türkiye'de nasıl karara bağlanıyor?
+Almanya'da mı boşanmalısınız, yoksa Türkiye'de mi? Türkiye'de boşanmak için Türkiye'ye gitmek zorunda mısınız? Eşinizle anlaşabiliyorsanız süreç nasıl işliyor? Anlaşamıyorsanız ne olacak? Nafaka, mal paylaşımı — bunlar Türkiye'de nasıl karara bağlanıyor?
 
 Bu rehber, Almanya'da yaşayan ve Türkiye'de boşanmayı düşünen kişiler için hazırlandı. Türk hukukuna göre anlaşmalı ve çekişmeli boşanma arasındaki farkları, Almanya'dan bu sürecin nasıl yürütüleceğini ve dikkat etmeniz gereken kritik noktaları kapsamlı biçimde ele alıyoruz.
 
@@ -10419,7 +10421,7 @@ Almanya'da yaşasanız dahi Türkiye'de boşanma davası açabilirsiniz. Türk h
 
 - Anlaşmalı davada süreç çok daha hızlıdır (1-3 ay)
 - Türkiye'de kesinleşen karar doğrudan nüfus kaydına işlenir; tanıma-tenfiz gerekmez
-- Velayet, nafaka ve mal paylaşımı Türk hukukuna göre karara bağlanır
+- Aile hukuku, nafaka ve mal paylaşımı Türk hukukuna göre karara bağlanır
 - Türkiye'ye gitmeden, vekâletname ile süreç yürütülebilir
 
 ### Peki Hangisi Sizin İçin Daha Uygun?
@@ -10443,7 +10445,7 @@ Anlaşmalı boşanma, tarafların boşanma kararı ve boşanmanın tüm sonuçla
 ### Anlaşmalı Boşanmanın Koşulları
 
 1. **Evlilik en az 1 yıl sürmüş olmalıdır.**
-2. **Taraflar boşanmanın tüm sonuçlarında anlaşmış olmalıdır.** (Velayet, nafaka, mal paylaşımı vb.)
+2. **Taraflar boşanmanın tüm sonuçlarında anlaşmış olmalıdır.** (Nafaka, mal paylaşımı vb.)
 3. **Hâkim her iki tarafı bizzat dinlemelidir.**
 
 ### Almanya'dan Anlaşmalı Boşanma: Türkiye'ye Gitmek Zorunda mısınız?
@@ -10454,7 +10456,7 @@ Anlaşmalı boşanma, tarafların boşanma kararı ve boşanmanın tüm sonuçla
 
 ### Boşanma Protokolü Nedir ve Neden Bu Kadar Önemlidir?
 
-Boşanma protokolü, tarafların boşanmanın tüm sonuçlarını yazılı olarak düzenlediği belgedir. Müşterek çocukların velayeti, nafakalar ve mal paylaşımı detayları burada yer alır. Protokolün mutlaka Türk aile hukukunu bilen bir avukat tarafından hazırlanması gerekir.
+Boşanma protokolü, tarafların boşanmanın tüm sonuçlarını yazılı olarak düzenlediği belgedir. Nafaka, tazminat ve mal paylaşımı detayları burada yer alır. Protokolün mutlaka Türk aile hukukunu bilen bir avukat tarafından hazırlanması gerekir.
 
 ---
 
@@ -10477,10 +10479,7 @@ Boşanma protokolü, tarafların boşanmanın tüm sonuçlarını yazılı olara
 
 ---
 
-## Boşanmanın Hukuki Sonuçları: Velayet, Nafaka, Mal Paylaşımı
-
-### Velayet
-Türk mahkemeleri velayet kararını **çocuğun üstün yararı** ilkesine göre verir. Almanya'da yaşamanız velayet talebinizi olumsuz etkilemez.
+## Boşanmanın Hukuki Sonuçları: Nafaka, Mal Paylaşımı, Tazminat
 
 ### Nafaka
 - **İştirak nafakası:** Çocuk için ödenen nafaka.
@@ -10520,7 +10519,7 @@ Sürecin en kritik adımı doğru hukuki danışmanlık almaktır. Mannheim'da T
 *Bu makale genel bilgi amaçlıdır ve hukuki danışmanlık niteliği taşımaz. Büromuz yalnızca Türk hukuku alanında danışmanlık vermektedir.*`,
     contentEN: `**LEGAL NOTICE:** This article addresses Turkish law only. Doğru Kanzlei advises on Turkish law under § 207 BRAO and does not advise on German domestic family law.
 
-You live in Germany and want to end a marriage with a Turkish legal connection. The practical question is not only "Can I divorce?" but also: where should the case be filed, which law applies, whether travel to Turkey is necessary, and how custody, alimony and property division will be handled.
+You live in Germany and want to end a marriage with a Turkish legal connection. The practical question is not only "Can I divorce?" but also: where should the case be filed, which law applies, whether travel to Turkey is necessary, and how alimony and property division will be handled.
 
 This guide explains the Turkish-law route for people in Germany who are considering divorce proceedings in Turkey.
 
@@ -10554,11 +10553,11 @@ In practice, the central strategic question is this: will the matter be **amicab
 
 An amicable divorce under Turkish Civil Code Art. 166/3 requires more than mutual willingness to divorce.
 
-The marriage must have lasted at least one year. The spouses must agree on the divorce and all consequences, including custody, child support, spousal alimony, contact arrangements, and property issues. These points are recorded in a written divorce protocol.
+The marriage must have lasted at least one year. The spouses must agree on the divorce and all consequences, including alimony and property issues. These points are recorded in a written divorce protocol.
 
 The important practical point: the Turkish judge must be satisfied that the spouses' declarations are free and informed. For that reason, personal hearing is a key issue in amicable divorce cases from Germany. Depending on the court and facts, SEGBİS video hearing, consular assistance, or a different procedural strategy may need to be evaluated.
 
-Do not rely on a generic protocol. If custody, Turkish assets or alimony are involved, a weak protocol can create years of follow-up litigation.
+Do not rely on a generic protocol. If Turkish assets or alimony are involved, a weak protocol can create years of follow-up litigation.
 
 ---
 
@@ -10572,11 +10571,7 @@ Evidence matters. Messages, witness statements, financial documents, medical rep
 
 ---
 
-## Custody, Alimony, Damages and Property Division
-
-### Custody (Velayet)
-
-Turkish courts decide custody according to the best interests of the child. Living in Germany does not automatically prevent a custody request, but the child's actual life, school, care structure and stability are decisive.
+## Alimony, Damages and Property Division
 
 ### Alimony (Nafaka)
 
@@ -10606,7 +10601,7 @@ The power of attorney is central. A Turkish-law divorce power of attorney should
 
 **Filing in Germany without checking Turkish consequences.** A German divorce may still need Turkish recognition.
 
-**Using a generic divorce protocol.** Missing custody, alimony or asset clauses can make the protocol unusable.
+**Using a generic divorce protocol.** Missing financial orders, alimony or asset clauses can make the protocol unusable.
 
 **Delaying property division.** Turkish assets should be reviewed before the divorce strategy is fixed.
 
@@ -10663,9 +10658,9 @@ Passports or ID documents, marriage documents, civil registry records, evidence 
     readTimeEN: "16 min read",
     publishedAt: "2026-05-26",
     modifiedAt: "2026-05-26",
-    keywordsDE: "Scheidung Türkei aus Deutschland, Scheidung Türkei ohne Reise, einvernehmliche Scheidung Türkei, Anlaşmalı Boşanma Protokoll, Çekişmeli Boşanma, Nafaka Velayet Mal Paylaşımı, türkischer Scheidungsanwalt Mannheim",
-    keywordsTR: "Almanya'dan Türkiye'de boşanma, Türkiye'ye gitmeden boşanma davası, anlaşmalı boşanma, çekişmeli boşanma, boşanma protokolü, nafaka velayet mal paylaşımı, Türk boşanma avukatı Mannheim",
-    keywordsEN: "divorce in Turkey from Germany, Turkish divorce lawyer Germany, amicable divorce Turkey, contested divorce Turkey, Turkish family law, Turkish alimony custody property division",
+    keywordsDE: "Scheidung Türkei aus Deutschland, Scheidung Türkei ohne Reise, einvernehmliche Scheidung Türkei, Anlaşmalı Boşanma Protokoll, Çekişmeli Boşanma, Nafaka Aile hukuku Mal Paylaşımı, türkischer Scheidungsanwalt Mannheim",
+    keywordsTR: "Almanya'dan Türkiye'de boşanma, Türkiye'ye gitmeden boşanma davası, anlaşmalı boşanma, çekişmeli boşanma, boşanma protokolü, nafaka aile hukuku mal paylaşımı, Türk boşanma avukatı Mannheim",
+    keywordsEN: "divorce in Turkey from Germany, Turkish divorce lawyer Germany, amicable divorce Turkey, contested divorce Turkey, Turkish family law, Turkish alimony financial orders property division",
     faqTR: [
       {
         question: "Almanya'da yaşıyorum, Türkiye'de boşanma davası açabilir miyim?",
@@ -10792,7 +10787,7 @@ Das Zuständige Gericht in Mannheim ist das Amtsgericht Mannheim, Familienabteil
 Die Kosten hängen vom Streitwert ab. Der Streitwert ergibt sich aus dem gemeinsamen Monatsnettoeinkommen. Grobe Orientierung:
 
 - Einvernehmliche Scheidung, ein Anwalt: 1.500 bis 2.500 Euro
-- Streitige Scheidung mit Unterhalt, Sorgerecht oder Zugewinnausgleich: 3.000 Euro aufwärts — manchmal deutlich mehr
+- Streitige Scheidung mit Unterhalt oder Zugewinnausgleich: 3.000 Euro aufwärts — manchmal deutlich mehr
 
 Wer wenig verdient, kann Verfahrenskostenhilfe beantragen. Das Gericht übernimmt dann die Kosten und stellt einen Anwalt.
 
@@ -10806,7 +10801,7 @@ Wer wenig verdient, kann Verfahrenskostenhilfe beantragen. Das Gericht übernimm
 
 ## Warum manche Scheidungen ewig dauern
 
-Meistens liegt es am Versorgungsausgleich — besonders wenn ausländische Rentenansprüche im Spiel sind. Der Austausch mit türkischen Behörden läuft oft langsam. Dazu kommen Streitigkeiten über Unterhalt oder Sorgerecht, die das Verfahren aufblähen können.
+Meistens liegt es am Versorgungsausgleich — besonders wenn ausländische Rentenansprüche im Spiel sind. Der Austausch mit türkischen Behörden läuft oft langsam. Dazu kommen Streitigkeiten über Unterhalt oder Vermögen, die das Verfahren aufblähen können.
 
 Eine einvernehmliche Scheidung mit einer vorab unterschriebenen Scheidungsfolgenvereinbarung ist deutlich schneller. Wenn beide Seiten die wesentlichen Punkte — Unterhalt, Kinder, Wohnung, Vermögen — vorab klar regeln, kann die Scheidung in 3 bis 6 Monaten durch sein.
 
@@ -10838,7 +10833,7 @@ Mannheim'da yetkili mahkeme Amtsgericht Mannheim Aile Hukuku Dairesidir.
 Masraflar dava değerine göre belirlenir; dava değeri ise çiftin ortak aylık net gelirine göre hesaplanır. Genel bir tablo:
 
 - Anlaşmalı boşanma, bir avukat: 1.500–2.500 Euro
-- Nafaka, velayet veya mal paylaşımı konusunda çekişmeli boşanma: 3.000 Euro ve üzeri
+- Nafaka veya mal paylaşımı konusunda çekişmeli boşanma: 3.000 Euro ve üzeri
 
 Düşük gelirli kişiler Verfahrenskostenhilfe (dava yardımı) başvurabilir.
 
@@ -10870,7 +10865,7 @@ Avukat Hasan Doğru, hem Ankara Barosu hem de Karlsruhe Barosu'na (§207 BRAO) k
       },
       {
         question: "Wie lange dauert eine Scheidung in Mannheim?",
-        answer: "Bei einer einvernehmlichen Scheidung ohne offene Streitpunkte rechnen Sie ab Antragseinreichung mit 3 bis 6 Monaten. Gibt es Auseinandersetzungen über Unterhalt, Sorgerecht oder Vermögen, kann es 1 bis 3 Jahre dauern."
+        answer: "Bei einer einvernehmlichen Scheidung ohne offene Streitpunkte rechnen Sie ab Antragseinreichung mit 3 bis 6 Monaten. Gibt es Auseinandersetzungen über Unterhalt oder Vermögen, kann es 1 bis 3 Jahre dauern."
       },
       {
         question: "Muss ich beim Scheidungstermin persönlich erscheinen?",
@@ -10892,7 +10887,7 @@ Avukat Hasan Doğru, hem Ankara Barosu hem de Karlsruhe Barosu'na (§207 BRAO) k
       },
       {
         question: "Mannheim'da boşanma ne kadar sürer?",
-        answer: "Tartışmasız, anlaşmalı bir boşanma dilekçenin sunulmasından itibaren genellikle 3–6 ay içinde sonuçlanır. Nafaka, velayet veya mülk anlaşmazlığı varsa 1–3 yıl sürebilir."
+        answer: "Tartışmasız, anlaşmalı bir boşanma dilekçenin sunulmasından itibaren genellikle 3–6 ay içinde sonuçlanır. Nafaka veya mülk anlaşmazlığı varsa 1–3 yıl sürebilir."
       },
       {
         question: "Türkiye'de evlendik. Bu evlilik Almanya'da geçerli mi?",
@@ -10942,7 +10937,7 @@ Haben Sie eine Rechtsschutzversicherung, rufen Sie vor dem Anwalttermin bei Ihre
 
 **Kindesunterhalt.** Der Kindesunterhalt richtet sich nach der Düsseldorfer Tabelle. Das klingt einfach, wird aber schwierig, wenn der zahlungspflichtige Elternteil in der Türkei lebt oder wechselnde Einkommen hat.
 
-**Sorgerecht und Umgang.** Nach der Trennung behalten verheiratete Eltern grundsätzlich das gemeinsame Sorgerecht. Probleme entstehen, wenn die Kommunikation nicht mehr funktioniert oder ein Elternteil mit dem Kind ins Ausland ziehen möchte.
+**Unterhalt und Vermögen.** Nach der Trennung entstehen häufig Fragen zu laufenden Zahlungen, Ehewohnung, Konten und Vermögenswerten. Besonders bei Türkei-Bezug muss geprüft werden, welches Gericht zuständig ist und welches Recht angewendet wird.
 
 **Ehegattenunterhalt.** Nicht automatisch. Ob und wie viel Unterhalt nach der Scheidung gezahlt werden muss, hängt von Ehedauer, Erwerbstätigkeit und gemeinsamen Kindern ab.
 
@@ -10956,7 +10951,7 @@ Ein Partner lebt in der Türkei und zahlt keinen Unterhalt. Was hilft dann: ein 
 
 Die Scheidung ist in Deutschland durch, aber in der Türkei gilt man noch als verheiratet. Das Tanıma-Tenfiz-Verfahren löst das — aber es kostet Zeit und Geld.
 
-Ein Elternteil will mit dem Kind in die Türkei. Bei gemeinsamem Sorgerecht ist das ohne Zustimmung des anderen nicht erlaubt. Was passiert, wenn er oder sie trotzdem geht? Dann wird es schnell zu einem Fall nach dem Haager Kindesentführungsübereinkommen.
+Die Scheidung betrifft Vermögen in der Türkei. Dann stellt sich die Frage, ob ein deutsches Urteil ausreicht oder ob ein türkisches Verfahren nötig wird. Gerade Immobilien und Bankkonten müssen früh in die Strategie einbezogen werden.
 
 ## Wann man nicht warten sollte
 
@@ -10991,7 +10986,7 @@ Eş Türkiye'de yaşıyor ve nafaka ödemiyor. Ne işe yarar: Alman kararı + T�
 
 Almanya'da boşanma tamamlandı ama Türkiye'de hâlâ evli görünüyorsunuz. Tanıma-Tenfiz davası bu sorunu çözer ancak zaman ve masraf gerektirir.
 
-Bir ebeveyn çocukla Türkiye'ye gitmek istiyor. Müşterek velayette diğer ebeveynin onayı olmadan bu mümkün değildir. Yine de gidilirse, Lahey Sözleşmesi kapsamında bir dava söz konusu olabilir.
+Bir ebeveyn çocukla Türkiye'ye gitmek istiyor. Müşterek aile hukuku konusunda diğer ebeveynin onayı olmadan bu mümkün değildir. Yine de gidilirse, Lahey Sözleşmesi kapsamında bir dava söz konusu olabilir.
 
 ## Ne Zaman Beklememelisiniz?
 
@@ -11042,34 +11037,34 @@ Bir görüşme netlik sağlar — hatta ardından dava açılmasa bile.`,
     ctaDescriptionTR: "Aile hukukuyla ilgili sorularınız mı var? Almanca ve Türkçe danışmanlık sunuyoruz."
   },
 
-  // ─── POST 3: Sorgerecht Anwalt Mannheim ────────────────────────────────────
+  // ─── POST 3: familienrechtliche Nebenfolgen Anwalt Mannheim ────────────────────────────────────
   {
-    slug: "sorgerecht-anwalt-mannheim",
-    slugDE: "sorgerecht-anwalt-mannheim",
-    slugTR: "mannheim-velayet-avukati",
-    titleDE: "Sorgerecht Anwalt Mannheim: Alleinsorge, Umgang und Auslandsreisen mit dem Kind",
-    titleTR: "Mannheim'da Velayet Avukatı: Tek Velayet, Ziyaret Hakkı ve Çocukla Yurt Dışı Seyahati",
-    excerptDE: "Streit ums Sorgerecht in Mannheim? Wann gibt es Alleinsorge, wie wird der Umgang geregelt, und was passiert, wenn ein Elternteil mit dem Kind ins Ausland reisen will?",
-    excerptTR: "Mannheim'da velayet uyuşmazlığı mı? Mahkeme ne zaman tek velayet verir, ziyaret hakkı nasıl düzenlenir ve bir ebeveyn çocukla yurt dışına gitmek isterse ne olur?",
-    contentDE: `Das Sorgerecht ist das Thema, bei dem Eltern sich am häufigsten uneinig sind — und bei dem die rechtliche Lage am häufigsten missverstanden wird.
+    slug: "unterhalt-anwalt-mannheim",
+    slugDE: "unterhalt-anwalt-mannheim",
+    slugTR: "mannheim-aile hukuku-avukati",
+    titleDE: "familienrechtliche Nebenfolgen Anwalt Mannheim: Alleinsorge, Umgang und Auslandsreisen mit dem Kind",
+    titleTR: "Mannheim'da Aile hukuku Avukatı: Tek Aile hukuku, Ziyaret Hakkı ve Çocukla Yurt Dışı Seyahati",
+    excerptDE: "Streit ums familienrechtliche Nebenfolgen in Mannheim? Wann gibt es Alleinsorge, wie wird der Umgang geregelt, und was passiert, wenn ein Elternteil mit dem Kind ins Ausland reisen will?",
+    excerptTR: "Mannheim'da aile hukuku uyuşmazlığı mı? Mahkeme ne zaman tek aile hukuku verir, ziyaret hakkı nasıl düzenlenir ve bir ebeveyn çocukla yurt dışına gitmek isterse ne olur?",
+    contentDE: `Das familienrechtliche Nebenfolgen ist das Thema, bei dem Eltern sich am häufigsten uneinig sind — und bei dem die rechtliche Lage am häufigsten missverstanden wird.
 
-Manche glauben, die Mutter bekommt automatisch das alleinige Sorgerecht. Andere denken, man kann als Vater nichts ausrichten. Beides stimmt nicht.
+Manche glauben, die Mutter bekommt automatisch das alleinige familienrechtliche Nebenfolgen. Andere denken, man kann als Vater nichts ausrichten. Beides stimmt nicht.
 
-## Was gemeinsames Sorgerecht in der Praxis bedeutet
+## Was gemeinsames familienrechtliche Nebenfolgen in der Praxis bedeutet
 
-Bei verheirateten Eltern gilt das gemeinsame Sorgerecht automatisch. Es bleibt auch nach der Scheidung bestehen — das ist der gesetzliche Regelfall in Deutschland.
+Bei verheirateten Eltern gilt das gemeinsame familienrechtliche Nebenfolgen automatisch. Es bleibt auch nach der Scheidung bestehen — das ist der gesetzliche Regelfall in Deutschland.
 
-Das gemeinsame Sorgerecht bedeutet: Beide Elternteile müssen bei allen wesentlichen Entscheidungen zustimmen. Schulwahl, medizinische Eingriffe, Umzug ins Ausland, Religionszugehörigkeit, Reisepässe. Bei kleineren Alltagsentscheidungen entscheidet der Elternteil, bei dem das Kind gerade ist.
+Das gemeinsame familienrechtliche Nebenfolgen bedeutet: Beide Elternteile müssen bei allen wesentlichen Entscheidungen zustimmen. Schulwahl, medizinische Eingriffe, Umzug ins Ausland, Religionszugehörigkeit, Reisepässe. Bei kleineren Alltagsentscheidungen entscheidet der Elternteil, bei dem das Kind gerade ist.
 
 Das funktioniert gut, wenn die Kommunikation noch halbwegs klappt. Es funktioniert schlecht, wenn Eltern sich über jeden Schritt streiten.
 
-## Wann bekommt ein Elternteil das alleinige Sorgerecht?
+## Wann bekommt ein Elternteil das alleinige familienrechtliche Nebenfolgen?
 
-Das Familiengericht überträgt das alleinige Sorgerecht nur, wenn das Kindeswohl es erfordert. Beispiele, die das Gericht ernst nimmt:
+Das Familiengericht überträgt das alleinige familienrechtliche Nebenfolgen nur, wenn das Kindeswohl es erfordert. Beispiele, die das Gericht ernst nimmt:
 
 Das Kind ist häuslicher Gewalt ausgesetzt. Ein Elternteil ist aus psychischen oder suchtbedingten Gründen dauerhaft nicht erziehungsfähig. Die Kommunikation ist so zerrüttet, dass jede gemeinsame Entscheidung dem Kind schadet.
 
-Was nicht reicht: Der Elternteil ist mir unsympathisch. Wir streiten uns viel. Er zahlt keinen Unterhalt. All das ist unangenehm, aber keine Grundlage für das alleinige Sorgerecht.
+Was nicht reicht: Der Elternteil ist mir unsympathisch. Wir streiten uns viel. Er zahlt keinen Unterhalt. All das ist unangenehm, aber keine Grundlage für das alleinige familienrechtliche Nebenfolgen.
 
 ## Das Umgangsrecht: Recht des Kindes, nicht Druckmittel
 
@@ -11081,42 +11076,42 @@ Der Umgang wird entweder einvernehmlich geregelt oder per Gerichtsbeschluss. Wen
 
 Das ist der Punkt, an dem es in türkisch-deutschen Familien am häufigsten eskaliert.
 
-Bei gemeinsamem Sorgerecht darf kein Elternteil das Kind ohne Zustimmung des anderen dauerhaft ins Ausland mitnehmen. Für Urlaubsreisen ins Ausland gilt: Bei kürzeren Reisen (weniger als 6 Wochen) ohne Rückkehrabsicht reicht in der Praxis die Zustimmung des anderen Elternteils — am besten schriftlich. Für einen dauerhaften Umzug mit dem Kind brauchen Sie die Zustimmung des anderen Elternteils oder einen Gerichtsbeschluss.
+Bei gemeinsamem familienrechtliche Nebenfolgen darf kein Elternteil das Kind ohne Zustimmung des anderen dauerhaft ins Ausland mitnehmen. Für Urlaubsreisen ins Ausland gilt: Bei kürzeren Reisen (weniger als 6 Wochen) ohne Rückkehrabsicht reicht in der Praxis die Zustimmung des anderen Elternteils — am besten schriftlich. Für einen dauerhaften Umzug mit dem Kind brauchen Sie die Zustimmung des anderen Elternteils oder einen Gerichtsbeschluss.
 
 Reist ein Elternteil ohne Zustimmung mit dem Kind aus, ist das rechtlich eine internationale Kindesentführung — auch wenn es sich um einen leiblichen Elternteil handelt. Die Türkei hat das Haager Kindesentführungsübereinkommen unterzeichnet, was grundsätzlich Rückführungsanträge ermöglicht.
 
 Wenn Sie in einer solchen Situation sind oder sie befürchten: Holen Sie sofort anwaltliche Hilfe. Je länger das Kind im Ausland ist, desto schwieriger wird die Rückführung.
 
-## Türkisch-deutsches Sorgerecht: Was noch dazu kommt
+## Türkisch-deutsches familienrechtliche Nebenfolgen: Was noch dazu kommt
 
-Ein türkisches Sorgerechtsurteil gilt in Deutschland nicht automatisch. Es muss in einem eigenen Verfahren anerkannt werden. Dasselbe gilt umgekehrt: Ein deutsches Sorgerechtsurteil braucht in der Türkei ein Tenfiz-Verfahren, bevor es vollstreckbar ist.
+Ein türkisches familienrechtliches Urteil gilt in Deutschland nicht automatisch. Es muss in einem eigenen Verfahren anerkannt werden. Dasselbe gilt umgekehrt: Ein deutsches familienrechtliches Urteil braucht in der Türkei ein Tenfiz-Verfahren, bevor es vollstreckbar ist.
 
-Das bedeutet in der Praxis: Wenn Sie in Deutschland ein Sorgerechtsurteil erstreiten, hat das in der Türkei zunächst keine direkte Wirkung. Das muss separat beantragt werden. Die Doğru Kanzlei übernimmt diese Verfahren auf beiden Seiten.
+Das bedeutet in der Praxis: Wenn Sie in Deutschland ein familienrechtliches Urteil erstreiten, hat das in der Türkei zunächst keine direkte Wirkung. Das muss separat beantragt werden. Die Doğru Kanzlei übernimmt diese Verfahren auf beiden Seiten.
 
-## Was ein Sorgerechtsverfahren kostet
+## Was ein familienrechtliches Verfahren kostet
 
 Das Gericht setzt den Verfahrenswert oft auf 3.000 bis 4.000 Euro fest. Anwalts- und Gerichtsgebühren zusammen ergeben bei einem unkomplizierten Fall ohne Sachverständigengutachten oft 800 bis 1.500 Euro. Mit Gutachten mehr.
 
 Bei geringem Einkommen ist Verfahrenskostenhilfe möglich.`,
-    contentTR: `Velayet, ebeveynlerin en sık anlaşmazlığa düştüğü konudur — ve hukuki durumun en çok yanlış anlaşıldığı alandır.
+    contentTR: `Aile hukuku, ebeveynlerin en sık anlaşmazlığa düştüğü konudur — ve hukuki durumun en çok yanlış anlaşıldığı alandır.
 
-Kimileri annenin otomatik olarak tek velayeti aldığını sanır. Kimileri ise babanın hiçbir hakkının olmadığını düşünür. İkisi de doğru değildir.
+Kimileri annenin otomatik olarak tek aile hukuku konusunu aldığını sanır. Kimileri ise babanın hiçbir hakkının olmadığını düşünür. İkisi de doğru değildir.
 
-## Müşterek Velayet Pratikte Ne Anlama Gelir?
+## Müşterek Aile hukuku Pratikte Ne Anlama Gelir?
 
-Evli ebeveynlerde müşterek velayet otomatik olarak geçerlidir. Boşanmanın ardından da kural olarak devam eder — Almanya'da yasal standart budur.
+Evli ebeveynlerde müşterek aile hukuku otomatik olarak geçerlidir. Boşanmanın ardından da kural olarak devam eder — Almanya'da yasal standart budur.
 
-Müşterek velayet şu demektir: Tüm önemli kararlar için her iki ebeveynin onayı gerekir. Okul seçimi, tıbbi müdahaleler, yurt dışına taşınma, din eğitimi, pasaport. Günlük küçük kararları ise o anda çocukla birlikte olan ebeveyn verir.
+Müşterek aile hukuku şu demektir: Tüm önemli kararlar için her iki ebeveynin onayı gerekir. Okul seçimi, tıbbi müdahaleler, yurt dışına taşınma, din eğitimi, pasaport. Günlük küçük kararları ise o anda çocukla birlikte olan ebeveyn verir.
 
 İletişim işe yarıyorsa bu düzen çalışır. Her adımda tartışma varsa çalışmaz.
 
-## Mahkeme Ne Zaman Tek Velayeti Verir?
+## Mahkeme Ne Zaman Tek Nafakai Verir?
 
-Aile mahkemesi, tek velayeti yalnızca çocuğun yararını gerektirdiği durumlarda devreder:
+Aile mahkemesi, tek aile hukuku konusunu yalnızca çocuğun yararını gerektirdiği durumlarda devreder:
 
 Çocuk aile içi şiddete maruz kalıyor. Bir ebeveyn psikolojik veya bağımlılık nedenlerinden kalıcı olarak ebeveynlik yapamıyor. İletişim çökmüş, her ortak karar çocuğa zarar veriyor.
 
-Yeterli olmayan gerekçeler: Eski eşimi sevmiyorum. Çok kavga ediyoruz. Nafaka ödemiyor. Bunlar rahatsız edici ama tek velayet için yeterli değildir.
+Yeterli olmayan gerekçeler: Eski eşimi sevmiyorum. Çok kavga ediyoruz. Nafaka ödemiyor. Bunlar rahatsız edici ama tek aile hukuku için yeterli değildir.
 
 ## Ziyaret Hakkı: Çocuğun Hakkı, Baskı Aracı Değil
 
@@ -11128,7 +11123,7 @@ Ziyaret ya anlaşmayla ya da mahkeme kararıyla düzenlenir.
 
 Türk-Alman ailelerde en sık kriz yaratan noktadır.
 
-Müşterek velayette, hiçbir ebeveyn diğerinin onayı olmadan çocuğu kalıcı olarak yurt dışına götüremez. Kısa tatiller için diğer ebeveynin yazılı onayı pratik açıdan yeterlidir. Kalıcı taşınma için diğer ebeveynin onayı ya da mahkeme kararı şarttır.
+Müşterek aile hukuku konusunda, hiçbir ebeveyn diğerinin onayı olmadan çocuğu kalıcı olarak yurt dışına götüremez. Kısa tatiller için diğer ebeveynin yazılı onayı pratik açıdan yeterlidir. Kalıcı taşınma için diğer ebeveynin onayı ya da mahkeme kararı şarttır.
 
 Onay alınmadan çocuğun yurt dışına çıkarılması, biyolojik ebeveyn olsa bile uluslararası çocuk kaçırma sayılır. Türkiye Lahey Sözleşmesi'ni imzalamıştır — bu teorik olarak iade taleplerini mümkün kılar.
 
@@ -11136,7 +11131,7 @@ Böyle bir durumla karşı karşıyaysanız: hemen hukuki yardım alın. Çocuk 
 
 ## Doğru Kanzlei'nin Rolü
 
-Türk mahkemesindeki bir velayet kararı Almanya'da otomatik olarak geçerli değildir. Tanıma davası açılması gerekir. Aynısı tersi için de geçerlidir: Alman kararı, Türkiye'de Tenfiz davası olmadan icra edilemez. Doğru Kanzlei her iki taraftaki bu süreçleri yürütmektedir.`,
+Türk mahkemesindeki bir aile hukuku kararı Almanya'da otomatik olarak geçerli değildir. Tanıma davası açılması gerekir. Aynısı tersi için de geçerlidir: Alman kararı, Türkiye'de Tenfiz davası olmadan icra edilemez. Doğru Kanzlei her iki taraftaki bu süreçleri yürütmektedir.`,
     category: "family-law",
     categoryDE: "Familienrecht",
     image: jointCustodyImg,
@@ -11145,19 +11140,19 @@ Türk mahkemesindeki bir velayet kararı Almanya'da otomatik olarak geçerli de�
     readTimeDE: "8 Min. Lesezeit",
     readTimeTR: "8 dk okuma",
     publishedAt: "2026-04-19",
-    keywordsDE: "sorgerecht anwalt mannheim, sorgerecht mannheim, alleinsorge beantragen, umgangsrecht mannheim, türkisches sorgerecht, kind ausland mitnehmen",
-    keywordsTR: "mannheim velayet avukatı, tek velayet almanya, ziyaret hakkı mannheim, türk alman velayet, çocuk yurt dışı izin",
+    keywordsDE: "unterhalt anwalt mannheim, unterhalt mannheim, alleinsorge beantragen, umgangsrecht mannheim, türkisches unterhalt, kind ausland mitnehmen",
+    keywordsTR: "mannheim aile hukuku avukatı, tek aile hukuku almanya, ziyaret hakkı mannheim, türk alman aile hukuku, çocuk yurt dışı izin",
     faqDE: [
       {
-        question: "Bekommt die Mutter automatisch das Sorgerecht nach der Scheidung?",
-        answer: "Nein. Bei verheirateten Eltern bleibt das gemeinsame Sorgerecht nach der Scheidung bestehen. Das alleinige Sorgerecht gibt es nur, wenn ein Gericht es ausdrücklich überträgt — und dafür braucht es mehr als nur den Wunsch eines Elternteils."
+        question: "Bekommt die Mutter automatisch das familienrechtliche Nebenfolgen nach der Scheidung?",
+        answer: "Nein. Bei verheirateten Eltern bleibt das gemeinsame familienrechtliche Nebenfolgen nach der Scheidung bestehen. Das alleinige familienrechtliche Nebenfolgen gibt es nur, wenn ein Gericht es ausdrücklich überträgt — und dafür braucht es mehr als nur den Wunsch eines Elternteils."
       },
       {
         question: "Kann ich den Umgang verweigern, weil mein Ex keinen Unterhalt zahlt?",
         answer: "Nein. Umgangsrecht und Unterhaltsrecht sind voneinander unabhängig. Wenn Sie den Umgang verweigern, kann das gerichtliche Konsequenzen für Sie haben. Gegen ausbleibenden Unterhalt müssen Sie separat vorgehen."
       },
       {
-        question: "Mein Kind hat die türkische Staatsbürgerschaft. Welches Recht gilt beim Sorgerecht?",
+        question: "Mein Kind hat die türkische Staatsbürgerschaft. Welches Recht gilt beim familienrechtliche Nebenfolgen?",
         answer: "Maßgeblich ist der gewöhnliche Aufenthaltsort des Kindes. Lebt das Kind in Deutschland, gilt deutsches Recht — unabhängig von der Staatsbürgerschaft."
       },
       {
@@ -11167,8 +11162,8 @@ Türk mahkemesindeki bir velayet kararı Almanya'da otomatik olarak geçerli de�
     ],
     faqTR: [
       {
-        question: "Boşanmanın ardından anne otomatik olarak velayeti mi alır?",
-        answer: "Hayır. Evli ebeveynlerde müşterek velayet boşanmadan sonra da devam eder. Tek velayet, yalnızca mahkeme tarafından açıkça devredilirse mümkündür — ve bunun için bir ebeveynin isteği yetmez."
+        question: "Boşanmanın ardından anne otomatik olarak aile hukuku konusunu mi alır?",
+        answer: "Hayır. Evli ebeveynlerde müşterek aile hukuku boşanmadan sonra da devam eder. Tek aile hukuku, yalnızca mahkeme tarafından açıkça devredilirse mümkündür — ve bunun için bir ebeveynin isteği yetmez."
       },
       {
         question: "Eski eşim nafaka ödemediği için ziyaret hakkını reddedebilir miyim?",
@@ -11179,10 +11174,10 @@ Türk mahkemesindeki bir velayet kararı Almanya'da otomatik olarak geçerli de�
         answer: "Tatil amaçlı kısa seyahatler için yazılı onay almanız tavsiye edilir. Kalıcı taşınma için diğer ebeveynin onayı ya da mahkeme kararı şarttır. Bu olmadan çocuk kaçırma kapsamında değerlendirilebilir."
       }
     ],
-    ctaTitleDE: "Sorgerechtsberatung in Mannheim",
-    ctaTitleTR: "Mannheim'da Velayet Danışmanlığı",
-    ctaDescriptionDE: "Sorgerechtsstreit — besonders mit Bezug zur Türkei? Wir kennen beide Systeme und beraten auf Deutsch und Türkisch.",
-    ctaDescriptionTR: "Velayet uyuşmazlığı mı var? Her iki hukuk sistemini bilen ekibimiz Almanca ve Türkçe danışmanlık sunuyor."
+    ctaTitleDE: "Unterhaltsberatung in Mannheim",
+    ctaTitleTR: "Mannheim'da Aile hukuku Danışmanlığı",
+    ctaDescriptionDE: "Familienrechtsstreit — besonders mit Bezug zur Türkei? Wir kennen beide Systeme und beraten auf Deutsch und Türkisch.",
+    ctaDescriptionTR: "Aile hukuku uyuşmazlığı mı var? Her iki hukuk sistemini bilen ekibimiz Almanca ve Türkçe danışmanlık sunuyor."
   },
 
   // ─── POST 4: Vollmacht auf Türkisch ────────────────────────────────────────
@@ -11403,7 +11398,7 @@ Hesap açma, para çekme, hesap kapatma ve bilgi alma yetkileri açıkça yazıl
 Türk mahkemeleri ve savcılıkları nezdinde temsil için ayrı bir avukat vekaletnamesi düzenlenir. Bu belge için noter veya konsolosluk yolu ve içerik gereksinimleri farklı olabilir.
 
 **Boşanma ve aile hukuku:**
-Türkiye'de boşanma davası açmak, anlaşmalı boşanma onayı için vekil atamak veya velayet düzenlemeleri için özel yetki içeren vekaletname gerekebilir.
+Türkiye'de boşanma davası açmak, anlaşmalı boşanma onayı için vekil atamak veya aile hukuku düzenlemeleri için özel yetki içeren vekaletname gerekebilir.
 
 ## En sık yapılan hatalar
 
@@ -11811,14 +11806,14 @@ Kira artışı talebi gerekçeli ve yazılı olmalıdır. Gerekçe yoksa artır�
 
   // ─── POST 6: Kind Türkei mitnehmen ────────────────────────────────────────
   {
-    slug: "kind-tuerkei-mitnehmen-sorgerecht",
-    slugDE: "kind-tuerkei-mitnehmen-sorgerecht",
-    slugTR: "cocukla-turkiyeye-gitmek-velayet",
-    titleDE: "Kann mein Kind alleine in die Türkei fliegen? Was Eltern mit Sorgerecht wissen müssen",
-    titleTR: "Çocuğum Türkiye'ye Yalnız Uçabilir mi? Velayeti Olan Ebeveynlerin Bilmesi Gerekenler",
-    excerptDE: "Kind in die Türkei mitnehmen mit Sorgerecht: Welche Dokumente braucht ein Kind, wann darf ein Elternteil allein reisen, und was passiert bei fehlenden Papieren am Flughafen?",
-    excerptTR: "Velayetle çocuğu Türkiye'ye götürmek: Çocuğun hangi belgelere ihtiyacı var, hangi ebeveyn tek başına seyahat edebilir ve havalimanında eksik evrak olursa ne olur?",
-    contentDE: `Istanbul, Flughafen Antalya, Sommer. Eine Mutter steht am Schalter mit ihrem siebenjährigen Sohn. Der Vater lebt in Deutschland, gemeinsames Sorgerecht. Sie hat kein schriftliches Einverständnis dabei. Der Beamte schlägt die Akte auf und erklärt ihr, dass das Kind so nicht einreisen kann.
+    slug: "kind-tuerkei-mitnehmen-unterhalt",
+    slugDE: "kind-tuerkei-mitnehmen-unterhalt",
+    slugTR: "cocukla-turkiyeye-gitmek-aile hukuku",
+    titleDE: "Kann mein Kind alleine in die Türkei fliegen? Was Eltern mit familienrechtliche Nebenfolgen wissen müssen",
+    titleTR: "Çocuğum Türkiye'ye Yalnız Uçabilir mi? Nafakai Olan Ebeveynlerin Bilmesi Gerekenler",
+    excerptDE: "Kind in die Türkei mitnehmen mit familienrechtliche Nebenfolgen: Welche Dokumente braucht ein Kind, wann darf ein Elternteil allein reisen, und was passiert bei fehlenden Papieren am Flughafen?",
+    excerptTR: "Aile hukuku kapsamında çocuğu Türkiye'ye götürmek: Çocuğun hangi belgelere ihtiyacı var, hangi ebeveyn tek başına seyahat edebilir ve havalimanında eksik evrak olursa ne olur?",
+    contentDE: `Istanbul, Flughafen Antalya, Sommer. Eine Mutter steht am Schalter mit ihrem siebenjährigen Sohn. Der Vater lebt in Deutschland, gemeinsames familienrechtliche Nebenfolgen. Sie hat kein schriftliches Einverständnis dabei. Der Beamte schlägt die Akte auf und erklärt ihr, dass das Kind so nicht einreisen kann.
 
 Das ist kein Einzelfall. Es passiert jedes Jahr mehrfach — und meistens hätte man es mit einem Blatt Papier verhindern können.
 
@@ -11826,7 +11821,7 @@ Das ist kein Einzelfall. Es passiert jedes Jahr mehrfach — und meistens hätte
 
 Die Türkei hat seit einigen Jahren strengere Kontrollen bei der Einreise von Kindern eingeführt, besonders wenn nur ein Elternteil dabei ist. Was konkret verlangt wird, variiert je nach Grenzbeamten und Flughafen — aber das sind die Unterlagen, die Sie vorbereiten sollten:
 
-Wenn nur ein Elternteil reist: eine notariell beglaubigte Einverständniserklärung des anderen Elternteils, übersetzt ins Türkische. Der Reisepass des Kindes. Im besten Fall auch eine Kopie des Sorgerechtsurteils oder der Sorgerechtsurkunde.
+Wenn nur ein Elternteil reist: eine notariell beglaubigte Einverständniserklärung des anderen Elternteils, übersetzt ins Türkische. Der Reisepass des Kindes. Im besten Fall auch eine Kopie des familienrechtlichen Urteils oder der Unterhaltsurkunde.
 
 Wenn das Kind alleine reist (zum Beispiel zu den Großeltern): Dann gelten noch strengere Regeln. Die Fluggesellschaft hat eigene Anforderungen (sogenanntes "Unaccompanied Minor"-Protokoll), und am türkischen Flughafen erwartet Sie in der Regel eine Person, die vorab offiziell angemeldet wurde.
 
@@ -11834,9 +11829,9 @@ Wenn das Kind alleine reist (zum Beispiel zu den Großeltern): Dann gelten noch 
 
 Wenn Vater und Mutter gemeinsam reisen, gibt es in der Regel keine Schwierigkeiten. Türkische Grenzbehörden prüfen die Familienzugehörigkeit in solchen Fällen selten.
 
-## Was "gemeinsames Sorgerecht" bei einer Türkeireise bedeutet
+## Was "gemeinsames familienrechtliche Nebenfolgen" bei einer Türkeireise bedeutet
 
-Das ist der Punkt, der viele Eltern überrascht. Wenn in Deutschland gemeinsames Sorgerecht gilt, bedeutet das: Beide Elternteile müssen einer Auslandsreise des Kindes grundsätzlich zustimmen. Das steht nicht explizit im Gesetz — aber es folgt daraus, dass eine längere Auslandsreise eine "wesentliche Angelegenheit" des Kindes ist.
+Das ist der Punkt, der viele Eltern überrascht. Wenn in Deutschland gemeinsames familienrechtliche Nebenfolgen gilt, bedeutet das: Beide Elternteile müssen einer Auslandsreise des Kindes grundsätzlich zustimmen. Das steht nicht explizit im Gesetz — aber es folgt daraus, dass eine längere Auslandsreise eine "wesentliche Angelegenheit" des Kindes ist.
 
 Für kurze Urlaubsreisen (ein paar Wochen) wird das in Deutschland in der Praxis nicht so streng gehandhabt. Aber türkische Behörden schauen auf türkisches Recht — und die sind strenger.
 
@@ -11866,12 +11861,12 @@ Fluggesellschaften haben eigene "Unaccompanied Minor"-Protokolle (UM-Protokoll).
 
 Am türkischen Zielflughafen muss jemand das Kind abholen — und diese Person muss vorab namentlich bekannt sein. Türkische Behörden prüfen das in der Regel streng.
 
-Beide Elternteile müssen bei gemeinsamem Sorgerecht zustimmen, dass das Kind alleine fliegt. Das ist keine formale Frage — es ist eine echte Anforderung.
+Beide Elternteile müssen bei gemeinsamem familienrechtliche Nebenfolgen zustimmen, dass das Kind alleine fliegt. Das ist keine formale Frage — es ist eine echte Anforderung.
 
 ## Was wenn das Kind nur die türkische Staatsangehörigkeit hat?
 
-Türkische Staatsangehörige können mit türkischem Pass in die Türkei einreisen. Aber auch hier gelten die Regeln: Ein Kind alleine oder mit nur einem Elternteil braucht — je nach Konstellation — die Nachweise über Sorgerecht und Einverständnis des anderen Elternteils.`,
-    contentTR: `İstanbul, Antalya Havalimanı, yaz. Bir anne yedi yaşındaki oğluyla gişede bekliyor. Baba Almanya'da, müşterek velayet var. Annenin yanında yazılı bir izin yok. Görevli dosyasına bakıyor ve çocuğun bu şekilde giriş yapamayacağını söylüyor.
+Türkische Staatsangehörige können mit türkischem Pass in die Türkei einreisen. Aber auch hier gelten die Regeln: Ein Kind alleine oder mit nur einem Elternteil braucht — je nach Konstellation — die Nachweise über familienrechtliche Nebenfolgen und Einverständnis des anderen Elternteils.`,
+    contentTR: `İstanbul, Antalya Havalimanı, yaz. Bir anne yedi yaşındaki oğluyla gişede bekliyor. Baba Almanya'da, müşterek aile hukuku var. Annenin yanında yazılı bir izin yok. Görevli dosyasına bakıyor ve çocuğun bu şekilde giriş yapamayacağını söylüyor.
 
 Bu münferit bir vaka değil. Her yıl birkaç kez yaşanıyor — ve çoğu zaman tek bir sayfa kağıt yeterli olurdu.
 
@@ -11879,13 +11874,13 @@ Bu münferit bir vaka değil. Her yıl birkaç kez yaşanıyor — ve çoğu zam
 
 Türkiye, özellikle yalnızca bir ebeveynin refakat ettiği durumlarda çocukların girişinde son yıllarda denetimleri sıkılaştırdı. Tam olarak ne istendiği sınır görevlisine ve havalimanına göre değişebilir — ancak şu belgeleri hazır bulundurmalısınız:
 
-Yalnızca bir ebeveyn seyahat ediyorsa: Diğer ebeveynin noter onaylı, Türkçe tercüme edilmiş muvafakatname belgesi. Çocuğun pasaportu. Mümkünse velayet kararının bir kopyası.
+Yalnızca bir ebeveyn seyahat ediyorsa: Diğer ebeveynin noter onaylı, Türkçe tercüme edilmiş muvafakatname belgesi. Çocuğun pasaportu. Mümkünse aile hukuku kararının bir kopyası.
 
 Çocuk tek başına seyahat ediyorsa: Kurallar daha da sıkıdır. Havayolunun kendi "Refakatsiz Küçük" protokolü (Unaccompanied Minor) geçerlidir; Türk havalimanında önceden resmi olarak bildirilen bir kişi çocuğu karşılamak zorundadır.
 
-## Müşterek Velayet Türkiye Seyahatinde Ne Anlama Gelir?
+## Müşterek Aile hukuku Türkiye Seyahatinde Ne Anlama Gelir?
 
-Bu, pek çok ebeveyni şaşırtan noktadır. Almanya'da müşterek velayet geçerliyse her iki ebeveynin çocuğun yurt dışı seyahatine onay vermesi gerekir. Türk makamları Türk hukukuna göre değerlendirir — ve bu konuda daha katıdır.
+Bu, pek çok ebeveyni şaşırtan noktadır. Almanya'da müşterek aile hukuku geçerliyse her iki ebeveynin çocuğun yurt dışı seyahatine onay vermesi gerekir. Türk makamları Türk hukukuna göre değerlendirir — ve bu konuda daha katıdır.
 
 **Pratik tavsiye:** Her Türkiye seyahatinden önce diğer ebeveynin yazılı onayını alın. Noterde onaylayıp Türkçeye çevirin. Kulağa zahmetli geliyor ama bir öğleden sonralık iş — ve Antalya Havalimanı'ndaki durumu yaşamamanızı sağlar.
 
@@ -11907,7 +11902,7 @@ Havayollarının kendi "Refakatsiz Küçük" protokolleri vardır. Çoğu havayo
 
 Türk varış havalimanında birinin çocuğu karşılaması şarttır — ve bu kişinin önceden bildirilmesi gerekir.
 
-Müşterek velayette her iki ebeveyn de çocuğun tek başına uçmasına onay vermelidir.`,
+Müşterek aile hukuku konusunda her iki ebeveyn de çocuğun tek başına uçmasına onay vermelidir.`,
     category: "family-law",
     categoryDE: "Familienrecht",
     image: jointCustodyImg,
@@ -11916,12 +11911,12 @@ Müşterek velayette her iki ebeveyn de çocuğun tek başına uçmasına onay v
     readTimeDE: "8 Min. Lesezeit",
     readTimeTR: "8 dk okuma",
     publishedAt: "2026-04-19",
-    keywordsDE: "kind türkei mitnehmen, sorgerecht türkei reise, kind alleine türkei fliegen, einverständniserklärung türkei kind, kindesentführung türkei sorgerecht",
-    keywordsTR: "cocuk turkiyeye gotürmek velayet, turkiye seyahat velayet izin, refakatsiz küçük uçuş, çocuk kaçırma türkiye almanya",
+    keywordsDE: "kind türkei mitnehmen, unterhalt türkei reise, kind alleine türkei fliegen, einverständniserklärung türkei kind, kindesentführung türkei unterhalt",
+    keywordsTR: "cocuk turkiyeye gotürmek aile hukuku, turkiye seyahat aile hukuku izin, refakatsiz küçük uçuş, çocuk kaçırma türkiye almanya",
     faqDE: [
       {
         question: "Was brauche ich, wenn ich mit meinem Kind alleine in die Türkei fliege?",
-        answer: "Eine notariell beglaubigte Einverständniserklärung des anderen Elternteils, übersetzt ins Türkische, dazu der Reisepass des Kindes. Im besten Fall auch eine Kopie des Sorgerechtsurteils. Was genau am Flughafen verlangt wird, variiert — aber mit diesen Dokumenten sind Sie auf der sicheren Seite."
+        answer: "Eine notariell beglaubigte Einverständniserklärung des anderen Elternteils, übersetzt ins Türkische, dazu der Reisepass des Kindes. Im besten Fall auch eine Kopie des familienrechtlichen Urteils. Was genau am Flughafen verlangt wird, variiert — aber mit diesen Dokumenten sind Sie auf der sicheren Seite."
       },
       {
         question: "Mein Ex verweigert die Zustimmung zur Türkeireise. Was kann ich tun?",
@@ -11929,7 +11924,7 @@ Müşterek velayette her iki ebeveyn de çocuğun tek başına uçmasına onay v
       },
       {
         question: "Was gilt, wenn das Kind nur die türkische Staatsangehörigkeit hat?",
-        answer: "Das Kind kann mit türkischem Pass einreisen. Die Regeln zu Sorgerecht und Einverständnis des anderen Elternteils gelten trotzdem — Staatsangehörigkeit ändert nichts an den Anforderungen der Grenzbehörden."
+        answer: "Das Kind kann mit türkischem Pass einreisen. Die Regeln zu familienrechtliche Nebenfolgen und Einverständnis des anderen Elternteils gelten trotzdem — Staatsangehörigkeit ändert nichts an den Anforderungen der Grenzbehörden."
       },
       {
         question: "Meine Ex-Frau hat das Kind in die Türkei mitgenommen und kommt nicht zurück. Was tue ich?",
@@ -11939,7 +11934,7 @@ Müşterek velayette her iki ebeveyn de çocuğun tek başına uçmasına onay v
     faqTR: [
       {
         question: "Çocuğumla tek başıma Türkiye'ye uçarken ne gerekiyor?",
-        answer: "Diğer ebeveynin noter onaylı, Türkçe çevrilmiş muvafakatnamesi ve çocuğun pasaportu. Mümkünse velayet kararının kopyası. Tam olarak ne istendiği havalimanına göre değişebilir ancak bu belgelerle güvende olursunuz."
+        answer: "Diğer ebeveynin noter onaylı, Türkçe çevrilmiş muvafakatnamesi ve çocuğun pasaportu. Mümkünse aile hukuku kararının kopyası. Tam olarak ne istendiği havalimanına göre değişebilir ancak bu belgelerle güvende olursunuz."
       },
       {
         question: "Eski eşim Türkiye seyahatine onay vermiyor. Ne yapabilirim?",
@@ -11952,8 +11947,8 @@ Müşterek velayette her iki ebeveyn de çocuğun tek başına uçmasına onay v
     ],
     ctaTitleDE: "Fragen zur Türkeireise mit Kind",
     ctaTitleTR: "Çocukla Türkiye Seyahati Hakkında Sorularınız mı Var?",
-    ctaDescriptionDE: "Einverständniserklärung, Sorgerecht, Rückführungsantrag — wir kennen beide Rechtssysteme und helfen auf Deutsch und Türkisch.",
-    ctaDescriptionTR: "Muvafakatname, velayet, iade talebi — her iki hukuk sistemini bilen ekibimiz Almanca ve Türkçe yardımcı olmaktadır."
+    ctaDescriptionDE: "Einverständniserklärung, familienrechtliche Nebenfolgen, Rückführungsantrag — wir kennen beide Rechtssysteme und helfen auf Deutsch und Türkisch.",
+    ctaDescriptionTR: "Muvafakatname, aile hukuku, iade talebi — her iki hukuk sistemini bilen ekibimiz Almanca ve Türkçe yardımcı olmaktadır."
   },
 
   // ─── POST 7: Was kostet ein Anwalt für türkisches Recht ────────────────────
@@ -11995,7 +11990,7 @@ Mit Beratungshilfe (wenn Ihr Einkommen unter einer bestimmten Grenze liegt) zahl
 
 **Scheidungsverfahren mit türkischem Bezug:** Eine Scheidung in Deutschland mit anschließendem Tanıma-Tenfiz-Verfahren in der Türkei kostet mehr als eine rein deutsche Scheidung. RVG-Gebühren für die deutsche Scheidung: 1.500 bis 3.000 Euro (je nach Streitwert). Das türkische Verfahren kommt separat dazu.
 
-**Sorgerechtsstreit mit Türkeibezug:** Das ist einer der teuersten Bereiche — weil er oft eskaliert, Gutachten erfordert und sich über lange Zeit zieht. Reine Anwaltskosten in Deutschland können schnell 3.000 bis 8.000 Euro erreichen, bei streitigen Verfahren auch mehr.
+**Familienrechtsstreit mit Türkeibezug:** Das ist einer der teuersten Bereiche — weil er oft eskaliert, Gutachten erfordert und sich über lange Zeit zieht. Reine Anwaltskosten in Deutschland können schnell 3.000 bis 8.000 Euro erreichen, bei streitigen Verfahren auch mehr.
 
 ## Wann zahlt die Rechtsschutzversicherung?
 
@@ -12040,7 +12035,7 @@ Pratikte birçok avukat daha az alır — saatlik bir görüşme için 80 ile 15
 
 **Türkiye bağlantılı boşanma:** RVG'ye göre Almanya'daki boşanma: 1.500 ile 3.000 Euro (dava değerine bağlı). Türkiye'deki Tanıma-Tenfiz davası ayrıca eklenir.
 
-**Türkiye bağlantılı velayet uyuşmazlığı:** En pahalı alanlardan biridir. Türkiye bağlantılı çekişmeli davalarda Almanya'daki avukatlık masrafları hızla 3.000 ile 8.000 Euro'ya, hatta üzerine çıkabilir.
+**Türkiye bağlantılı aile hukuku uyuşmazlığı:** En pahalı alanlardan biridir. Türkiye bağlantılı çekişmeli davalarda Almanya'daki avukatlık masrafları hızla 3.000 ile 8.000 Euro'ya, hatta üzerine çıkabilir.
 
 ## Dürüst Yanıt
 
@@ -12281,7 +12276,7 @@ Das ist die kurze Antwort auf die Frage nach der Dauer. Jetzt die längere.
 
 Das türkische Familienrecht unterscheidet zwei Arten der Scheidung:
 
-**Anlaşmalı boşanma — die einvernehmliche Scheidung.** Voraussetzung ist, dass die Ehe mindestens ein Jahr gedauert hat. Beide Partner müssen persönlich vor Gericht erscheinen — oder durch einen bevollmächtigten Anwalt vertreten sein — und einem gemeinsam ausgearbeiteten Scheidungsprotokoll (protokol) zustimmen. Darin stehen: Unterhalt, Sorgerecht, Umgang, Vermögensaufteilung.
+**Anlaşmalı boşanma — die einvernehmliche Scheidung.** Voraussetzung ist, dass die Ehe mindestens ein Jahr gedauert hat. Beide Partner müssen persönlich vor Gericht erscheinen — oder durch einen bevollmächtigten Anwalt vertreten sein — und einem gemeinsam ausgearbeiteten Scheidungsprotokoll (protokol) zustimmen. Darin stehen: Unterhalt, Vermögensaufteilung und weitere Nebenfolgen.
 
 Wenn das Protokoll vollständig ist und beide zustimmen, spricht der Richter die Scheidung in der Regel bei einem einzigen Termin aus. Gesamtdauer ab Einreichung: typischerweise 2 bis 4 Monate.
 
@@ -12313,7 +12308,7 @@ Wenn Sie in Deutschland leben: Eine Scheidung in Deutschland ist in vielen Fäll
 
 Wenn Sie oder Ihr Partner in der Türkei leben: Eine Scheidung in der Türkei kann sinnvoller sein — weil das Urteil dort sofort vollstreckbar ist und keine separates Tanıma-Verfahren braucht.
 
-Oft ist der entscheidende Faktor: Wo lebt das Kind? Das Gericht dort hat in der Regel die bessere Möglichkeit, Sorgerecht und Unterhalt zu regeln.
+Oft ist der entscheidende Faktor: Wo lebt das Kind? Das Gericht dort hat in der Regel die bessere Möglichkeit und Unterhalt zu regeln.
 
 ## Was mit einem türkischen Scheidungsurteil in Deutschland passiert
 
@@ -12330,7 +12325,7 @@ Süre sorusunun kısa yanıtı bu. Şimdi uzun yanıtı.
 
 Türk aile hukuku iki tür boşanmayı ayırt eder:
 
-**Anlaşmalı boşanma.** Evliliğin en az bir yıl sürmüş olması gerekir. Her iki taraf mahkemede bizzat ya da vekâletname ile yetkilendirilen avukat aracılığıyla hazırlanan boşanma protokolünü onaylamalıdır. Protokolde nafaka, velayet, ziyaret hakkı ve mal paylaşımı yer alır.
+**Anlaşmalı boşanma.** Evliliğin en az bir yıl sürmüş olması gerekir. Her iki taraf mahkemede bizzat ya da vekâletname ile yetkilendirilen avukat aracılığıyla hazırlanan boşanma protokolünü onaylamalıdır. Protokolde nafaka, aile hukuku, ziyaret hakkı ve mal paylaşımı yer alır.
 
 Protokol eksiksiz ve her iki tarafın onayı mevcutsa, hâkim genellikle tek celsede boşanmayı hükme bağlar. Dilekçenin sunulmasından itibaren toplam süre: genellikle 2 ile 4 ay.
 
@@ -12581,8 +12576,15 @@ Avukat Hasan Doğru, hem Karlsruhe Barosu'na (§207 BRAO) hem de Ankara Barosu'n
   },
 ];
 
+export const blogPosts: BlogPost[] = allBlogPosts.filter((post) => (
+  !hiddenBlogSlugs.has(post.slug) &&
+  !hiddenBlogSlugs.has(post.slugDE) &&
+  !hiddenBlogSlugs.has(post.slugTR) &&
+  !hiddenBlogSlugs.has(post.slugEN)
+));
+
 export const sortedBlogPosts = [...blogPosts].sort((a, b) => {
   const byPublishedDate = b.publishedAt.localeCompare(a.publishedAt);
   if (byPublishedDate !== 0) return byPublishedDate;
-  return blogPosts.indexOf(a) - blogPosts.indexOf(b);
+  return allBlogPosts.indexOf(a) - allBlogPosts.indexOf(b);
 });

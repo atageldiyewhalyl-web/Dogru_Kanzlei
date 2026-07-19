@@ -22,14 +22,12 @@ export function Footer() {
     ? [
         { label: "Familienrecht", href: paths.service("familienrecht") },
         { label: "Tanıma & Tenfiz", href: paths.service("tanima-ve-tenfiz") },
-        { label: "Sorgerecht", href: paths.service("sorgerecht") },
         { label: "Erbrecht", href: paths.service("erbrecht") },
         { label: "Strafrecht", href: paths.service("strafrecht") },
       ]
     : [
         { label: "Aile Hukuku", href: paths.service("familienrecht") },
         { label: "Tanıma & Tenfiz", href: paths.service("tanima-ve-tenfiz") },
-        { label: "Velayet", href: paths.service("sorgerecht") },
         { label: "Miras Hukuku", href: paths.service("erbrecht") },
         { label: "Ceza Hukuku", href: paths.service("strafrecht") },
       ];
@@ -119,6 +117,42 @@ export function Footer() {
               >
                 Mannheim · Ankara
               </span>
+            </div>
+            <div
+              style={{
+                marginTop: 22,
+                paddingTop: 18,
+                borderTop: "1px solid rgba(255,255,255,0.08)",
+                maxWidth: 340,
+              }}
+            >
+              <p
+                style={{
+                  fontFamily: "'Lato', sans-serif",
+                  fontSize: 11,
+                  fontWeight: 800,
+                  color: "#C9A84C",
+                  textTransform: "uppercase",
+                  letterSpacing: "0.16em",
+                  margin: "0 0 8px",
+                }}
+              >
+                Avukat Hasan Doğru
+              </p>
+              <p
+                style={{
+                  fontFamily: "'Lato', sans-serif",
+                  fontSize: 12,
+                  fontWeight: 500,
+                  color: "rgba(255,255,255,0.66)",
+                  lineHeight: 1.7,
+                  margin: 0,
+                }}
+              >
+                Ankara Barosu · Rechtsanwaltskammer Karlsruhe (§ 207 BRAO)
+                <br />
+                Sachverständiger für türkisches Recht — Amtsgericht Mannheim
+              </p>
             </div>
           </div>
 

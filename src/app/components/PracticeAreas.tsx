@@ -8,8 +8,8 @@ import { useEffect, useRef } from "react";
 import tanimaImg from "@/assets/services/tanima.avif";
 import familyLawImg from "@/assets/blog_divorce.avif";
 import inheritanceImg from "@/assets/services/inheritance.avif";
-import custodyImg from "@/assets/services/custody.avif";
 import criminalImg from "@/assets/services/criminal.avif";
+import vollmachtImg from "@/assets/vekaletname-hero.avif";
 
 // CSS for the scroll-triggered fade-in (same visual as Framer Motion whileInView)
 const fadeInStyle = `
@@ -59,7 +59,7 @@ export function PracticeAreas() {
   const tanima = services.find(s => s.id === "tanima-ve-tenfiz");
   const straf = services.find(s => s.id === "strafrecht");
   const erb = services.find(s => s.id === "erbrecht");
-  const sorge = services.find(s => s.id === "sorgerecht");
+  const vollmacht = services.find(s => s.id === "vollmacht-apostille");
 
   return (
     <section id="hizmetler" className="bg-white py-16 md:py-24 px-6">
@@ -171,32 +171,7 @@ export function PracticeAreas() {
             </Link>
           )}
 
-          {/* 4. Sorgerecht: Small Grey (1/4 width) */}
-          {sorge && (
-            <Link to={paths.service(sorge.id)} className="md:col-span-1 group block">
-              <div className="fade-in-card h-full bg-[#F2F2F0] p-8 flex flex-col justify-center relative transition-all duration-500 hover:bg-[#ebebe9] overflow-hidden">
-                {/* Mobile Background */}
-                <div className="md:hidden absolute inset-0 z-0" aria-hidden="true">
-                  <img src={custodyImg} alt="" width={600} height={400} loading="lazy" decoding="async" className="w-full h-full object-cover opacity-60" />
-                  <div className="absolute inset-0 bg-gradient-to-t from-[#1C3829] via-[#1C3829]/70 to-transparent" />
-                </div>
-
-                <div className="relative z-10">
-                  <h3 className="font-serif text-xl text-white md:text-[#1C3829] mb-4">
-                    {language === "tr" ? sorge.titleTR : language === "en" ? (sorge as any).titleEN ?? sorge.title : sorge.title}
-                  </h3>
-                  <p className="font-sans text-[13px] text-white/90 md:text-[#6a6a6a] leading-relaxed font-light line-clamp-4">
-                    {language === "tr" ? sorge.description : language === "en" ? (sorge as any).descriptionEN ?? sorge.descriptionDE : sorge.descriptionDE}
-                  </p>
-                  <div className="mt-6 text-white md:text-[#1C3829] group-hover:text-[#B8963E] transition-all duration-500 group-hover:translate-x-1">
-                    <ArrowRight size={18} strokeWidth={1} aria-hidden="true" />
-                  </div>
-                </div>
-              </div>
-            </Link>
-          )}
-
-          {/* 5. Strafrecht: Large Green (2/4 width) */}
+          {/* 4. Strafrecht: Large Green (2/4 width) */}
           {straf && (
             <Link to={paths.service(straf.id)} className="md:col-span-2 group block">
               <div className="fade-in-card h-full bg-[#1C3829] p-10 md:p-12 flex flex-col justify-center relative overflow-hidden transition-all duration-500 hover:brightness-110">
@@ -224,6 +199,31 @@ export function PracticeAreas() {
                   </p>
                   <div className="mt-8 inline-flex items-center gap-3 text-[#B8963E] font-sans text-[9px] font-bold tracking-widest uppercase hover:text-white transition-all duration-500 group-hover:translate-x-1">
                     {t("practice_view_detail")} <ArrowRight size={14} aria-hidden="true" />
+                  </div>
+                </div>
+              </div>
+            </Link>
+          )}
+
+          {/* 5. Vollmacht & Apostille: Small Grey (1/4 width) */}
+          {vollmacht && (
+            <Link to={paths.service(vollmacht.id)} className="md:col-span-1 group block">
+              <div className="fade-in-card h-full bg-[#F2F2F0] p-8 flex flex-col justify-center relative transition-all duration-500 hover:bg-[#ebebe9] overflow-hidden">
+                {/* Mobile Background */}
+                <div className="md:hidden absolute inset-0 z-0" aria-hidden="true">
+                  <img src={vollmachtImg} alt="" width={600} height={400} loading="lazy" decoding="async" className="w-full h-full object-cover opacity-60" />
+                  <div className="absolute inset-0 bg-gradient-to-t from-[#1C3829] via-[#1C3829]/70 to-transparent" />
+                </div>
+
+                <div className="relative z-10">
+                  <h3 className="font-serif text-xl text-white md:text-[#1C3829] mb-4">
+                    {language === "tr" ? vollmacht.titleTR : language === "en" ? (vollmacht as any).titleEN ?? vollmacht.title : vollmacht.title}
+                  </h3>
+                  <p className="font-sans text-[13px] text-white/90 md:text-[#6a6a6a] leading-relaxed font-light line-clamp-4">
+                    {language === "tr" ? vollmacht.description : language === "en" ? (vollmacht as any).descriptionEN ?? vollmacht.descriptionDE : vollmacht.descriptionDE}
+                  </p>
+                  <div className="mt-6 text-white md:text-[#1C3829] group-hover:text-[#B8963E] transition-all duration-500 group-hover:translate-x-1">
+                    <ArrowRight size={18} strokeWidth={1} aria-hidden="true" />
                   </div>
                 </div>
               </div>

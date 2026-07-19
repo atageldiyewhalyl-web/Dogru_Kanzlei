@@ -68,6 +68,52 @@ const renderFormattedContent = (text: string) => {
   });
 };
 
+function CourtRecognizedExpertisePanel({ language }: { language: string }) {
+  const eyebrow = language === 'de'
+    ? 'Gerichtlich anerkannte Expertise'
+    : language === 'tr'
+      ? 'Mahkeme tarafından tanınan uzmanlık'
+      : 'Court-recognized expertise';
+  const title = language === 'de'
+    ? 'Sachverständiger für türkisches Recht'
+    : language === 'tr'
+      ? 'Türk hukuku alanında bilirkişi'
+      : 'Expert witness for Turkish law';
+  const body = language === 'de'
+    ? 'Deutsche Gerichte ziehen mich als Sachverständigen für Fragen des türkischen Rechts heran. Diese Anerkennung durch das Amtsgericht Mannheim ist ein unabhängiger Nachweis meiner Fachkenntnis — kein Selbstlob.'
+    : language === 'tr'
+      ? 'Alman mahkemeleri, Türk hukuku konularında beni bilirkişi olarak görevlendiriyor. Amtsgericht Mannheim tarafından tanınan bu konum, uzmanlığımın bağımsız bir göstergesidir; kişisel bir övgü değildir.'
+      : 'German courts consult me as an expert witness on questions of Turkish law. Recognition by the Mannheim Local Court is independent evidence of my expertise, not self-praise.';
+
+  return (
+    <section className="mb-20 overflow-hidden rounded-sm border border-[#1C3829]/10 bg-white shadow-sm">
+      <div className="h-1.5 bg-[#8B6E2A]" />
+      <div className="grid grid-cols-1 gap-8 p-8 md:grid-cols-[220px_1fr] md:p-10 lg:p-12">
+        <div>
+          <span className="font-sans text-[11px] font-bold uppercase tracking-[0.22em] text-[#8B6E2A]">
+            {eyebrow}
+          </span>
+          <div className="mt-6 flex flex-wrap gap-x-3 gap-y-2 font-sans text-[12px] font-bold uppercase tracking-[0.12em] text-[#1C3829]/70">
+            <span>Ankara Barosu</span>
+            <span className="text-[#8B6E2A]">·</span>
+            <span>§ 207 BRAO</span>
+            <span className="text-[#8B6E2A]">·</span>
+            <span>Amtsgericht Mannheim</span>
+          </div>
+        </div>
+        <div>
+          <h2 className="font-serif text-3xl leading-tight text-[#1C3829] md:text-4xl">
+            {title}
+          </h2>
+          <p className="mt-5 max-w-3xl font-sans text-[15px] leading-relaxed text-[#4a4a4a] md:text-[16px]">
+            {body}
+          </p>
+        </div>
+      </div>
+    </section>
+  );
+}
+
 export function ServiceDetail() {
   const { id } = useParams();
   const { language, t, paths } = useLanguage();
@@ -202,9 +248,9 @@ export function ServiceDetail() {
         'Still considered married in Turkey? We handle the full Tanıma & Tenfiz procedure without travel.'
       )
       : familyLawText(
-      'Deutsch-türkische Scheidung, Sorgerecht, Unterhalt und Tanıma & Tenfiz direkt aus Mannheim und Ankara betreut.',
-      'Almanya-Türkiye hattında boşanma, velayet, nafaka ve Tanıma & Tenfiz süreçlerini Mannheim ve Ankara’dan yönetiyoruz.',
-      'German-Turkish divorce, custody, maintenance and Tanıma & Tenfiz handled directly from Mannheim and Ankara.'
+      'Deutsch-türkische Scheidung, Unterhalt und Tanıma & Tenfiz direkt aus Mannheim und Ankara betreut.',
+      'Almanya-Türkiye hattında boşanma, nafaka ve Tanıma & Tenfiz süreçlerini Mannheim ve Ankara’dan yönetiyoruz.',
+      'German-Turkish divorce, maintenance and Tanıma & Tenfiz handled directly from Mannheim and Ankara.'
     )
     : null;
   const familyLawConversionCards = [
@@ -225,15 +271,6 @@ export function ServiceDetail() {
         'We clarify whether your German divorce must be recognised or made enforceable in Turkey.'
       ),
       icon: FileCheck2
-    },
-    {
-      title: familyLawText('Sorgerecht', 'Velayet', 'Custody'),
-      text: familyLawText(
-        'Wir begleiten Sorgerechtsfragen mit Türkeibezug und prüfen, welche Gerichte und Schritte in Ihrem Fall relevant sind.',
-        'Türkiye bağlantılı velayet uyuşmazlıklarında hangi mahkeme ve hangi adımların gerekli olduğunu değerlendiriyoruz.',
-        'We advise on custody disputes with a Turkey connection and assess which courts and steps matter in your case.'
-      ),
-      icon: UsersRound
     },
     {
       title: familyLawText('Unterhalt', 'Nafaka', 'Maintenance'),
@@ -266,7 +303,6 @@ export function ServiceDetail() {
   const familyLawOutcomes = [
     familyLawText('Deutsche Scheidung in der Türkei anerkennen', 'Almanya’daki boşanmanın Türkiye’de tanınması', 'Recognise a German divorce in Turkey'),
     familyLawText('Unterhalt in der Türkei durchsetzen', 'Türkiye’de nafaka takibi', 'Enforce maintenance in Turkey'),
-    familyLawText('Sorgerecht mit Türkei-Bezug klären', 'Türkiye bağlantılı velayet sürecini netleştirme', 'Clarify custody with a Turkey connection'),
     familyLawText('Verfahren ohne Reise vorbereiten', 'Türkiye’ye gitmeden dava hazırlığı', 'Prepare proceedings without travelling')
   ];
   const familyLawProcessSteps = [
@@ -274,9 +310,9 @@ export function ServiceDetail() {
       step: '01',
       title: familyLawText('Fall schildern', 'Dosyanızı anlatın', 'Describe your case'),
       text: familyLawText(
-        'Sie senden uns kurz per WhatsApp, worum es geht: Scheidung, Sorgerecht, Unterhalt oder Anerkennung in der Türkei.',
-        'WhatsApp üzerinden kısaca konuyu yazın: boşanma, velayet, nafaka veya Türkiye’de tanıma-tenfiz.',
-        'Send us a short WhatsApp message about the issue: divorce, custody, maintenance or recognition in Turkey.'
+        'Sie senden uns kurz per WhatsApp, worum es geht: Scheidung, Unterhalt oder Anerkennung in der Türkei.',
+        'WhatsApp üzerinden kısaca konuyu yazın: boşanma, nafaka veya Türkiye’de tanıma-tenfiz.',
+        'Send us a short WhatsApp message about the issue: divorce, maintenance or recognition in Turkey.'
       )
     },
     {
@@ -385,11 +421,11 @@ export function ServiceDetail() {
       icon: FileCheck2
     },
     {
-      title: familyLawText('Tenfiz bei Unterhalt & Sorgerecht', 'Nafaka ve velayet için Tenfiz', 'Tenfiz for maintenance and custody'),
+      title: familyLawText('Tenfiz bei Unterhalt & Vermögen', 'Nafaka ve mal paylaşımı için Tenfiz', 'Tenfiz for maintenance and assets'),
       text: familyLawText(
-        'Wenn Unterhalt, Sorgerecht oder Vermögen vollstreckt werden müssen, prüfen und führen wir das Tenfiz-Verfahren.',
-        'Nafaka, velayet veya mal paylaşımı hükümleri uygulanacaksa Tenfiz gerekip gerekmediğini değerlendiriyoruz.',
-        'If maintenance, custody or asset provisions must be enforced, we assess and conduct the Tenfiz procedure.'
+        'Wenn Unterhalt oder Vermögen vollstreckt werden müssen, prüfen und führen wir das Tenfiz-Verfahren.',
+        'Nafaka veya mal paylaşımı hükümleri uygulanacaksa Tenfiz gerekip gerekmediğini değerlendiriyoruz.',
+        'If maintenance or asset provisions must be enforced, we assess and conduct the Tenfiz procedure.'
       ),
       icon: Scale
     },
@@ -1078,7 +1114,7 @@ export function ServiceDetail() {
       )
     : familyLawText(
       'Wenn Sie in Deutschland geschieden sind, gilt diese Scheidung in der Türkei nicht automatisch. Wir prüfen, ob Tanıma, Tenfiz oder ein kombiniertes Verfahren nötig ist.',
-      'Almanya’da boşandıysanız, bu karar Türkiye’de kendiliğinden geçerli olmaz. Nüfus kaydınızın güncellenmesi veya nafaka ve velayet hükümlerinin uygulanması için Tanıma, Tenfiz ya da birleşik bir süreç gerekebilir.',
+      'Almanya’da boşandıysanız, bu karar Türkiye’de kendiliğinden geçerli olmaz. Nüfus kaydınızın güncellenmesi veya nafaka ve mal paylaşımı hükümlerinin uygulanması için Tanıma, Tenfiz ya da birleşik bir süreç gerekebilir.',
       'If you were divorced in Germany, the decision is not automatically valid in Turkey. We check whether Tanıma, Tenfiz or a combined procedure is required.'
     );
   const landingWhyTitle = isTanimaLandingPage
@@ -1115,9 +1151,9 @@ export function ServiceDetail() {
         'For powers of attorney for Turkey, the notarial stamp alone is not enough. Wording, apostille, translation and purpose must be accepted by Turkish authorities.'
       )
     : familyLawText(
-      'Bei Scheidung, Sorgerecht und Unterhalt mit Türkeibezug zählt nicht die Nähe zum nächsten Büro, sondern die direkte Verbindung zum türkischen Rechtssystem.',
-      'Boşanma, velayet ve nafaka gibi Türkiye bağlantılı konularda önemli olan en yakın ofis değil, Türk hukuk sistemiyle doğrudan çalışabilmektir.',
-      'For divorce, custody and maintenance with a Turkey connection, the decisive factor is direct access to the Turkish legal system, not the nearest office.'
+      'Bei Scheidung und Unterhalt mit Türkeibezug zählt nicht die Nähe zum nächsten Büro, sondern die direkte Verbindung zum türkischen Rechtssystem.',
+      'Boşanma ve nafaka gibi Türkiye bağlantılı konularda önemli olan en yakın ofis değil, Türk hukuk sistemiyle doğrudan çalışabilmektir.',
+      'For divorce and maintenance with a Turkey connection, the decisive factor is direct access to the Turkish legal system, not the nearest office.'
     );
   const landingBottomText = isTanimaLandingPage
     ? familyLawText(
@@ -1144,9 +1180,9 @@ export function ServiceDetail() {
         'Briefly tell us on WhatsApp what you need the power of attorney or apostille for in Turkey. We assess the right form and next steps.'
       )
     : familyLawText(
-      'Schildern Sie kurz Ihre Situation per WhatsApp. Wir prüfen, ob und wie wir Sie bei Scheidung, Sorgerecht, Unterhalt oder Tanıma & Tenfiz unterstützen können.',
-      'Durumunuzu WhatsApp üzerinden kısaca anlatın. Boşanma, velayet, nafaka veya Tanıma & Tenfiz konusunda size nasıl yardımcı olabileceğimizi değerlendirelim.',
-      'Briefly describe your situation on WhatsApp. We will assess whether and how we can support you with divorce, custody, maintenance or Tanıma & Tenfiz.'
+      'Schildern Sie kurz Ihre Situation per WhatsApp. Wir prüfen, ob und wie wir Sie bei Scheidung, Unterhalt oder Tanıma & Tenfiz unterstützen können.',
+      'Durumunuzu WhatsApp üzerinden kısaca anlatın. Boşanma, nafaka veya Tanıma & Tenfiz konusunda size nasıl yardımcı olabileceğimizi değerlendirelim.',
+      'Briefly describe your situation on WhatsApp. We will assess whether and how we can support you with divorce, maintenance or Tanıma & Tenfiz.'
     );
   const landingWhatsappLabel = isTanimaLandingPage
     ? familyLawText('Jetzt per WhatsApp anfragen', 'WhatsApp’tan bilgi alın', 'Ask on WhatsApp')
@@ -1758,6 +1794,8 @@ export function ServiceDetail() {
 	                  </div>
 	                </section>
 	              )}
+
+              <CourtRecognizedExpertisePanel language={language} />
 
 	              {/* Bottom Navigation - Inter-service connectivity */}
 	              <div className={`${isFamilyLawLandingPage ? 'hidden' : 'flex'} flex-col sm:flex-row border-t border-[#1C3829]/10 pt-16 gap-8 sm:gap-0 sm:justify-between items-center group`}>

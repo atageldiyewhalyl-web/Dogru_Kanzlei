@@ -77,6 +77,15 @@ export function Hero() {
             {t("hero_title_main")}
           </h1>
 
+          <div className="-mt-2 mb-8 w-full max-w-[620px] mx-auto xl:ml-auto xl:mr-0">
+            <p className="font-sans text-[12px] md:text-[13px] font-bold leading-relaxed tracking-[0.08em] text-white/88 drop-shadow-[0_3px_14px_rgba(0,0,0,0.9)]">
+              Ankara Barosu · Rechtsanwaltskammer Karlsruhe (§ 207 BRAO)
+            </p>
+            <p className="mt-1 font-sans text-[12px] md:text-[13px] font-semibold leading-relaxed tracking-[0.04em] text-[#D2A848] drop-shadow-[0_3px_14px_rgba(0,0,0,0.9)]">
+              Sachverständiger für türkisches Recht — Amtsgericht Mannheim
+            </p>
+          </div>
+
           <div className="w-24 h-[2px] bg-[#8B6E2A] mb-8 mx-auto xl:mr-0 xl:ml-auto" />
 
           {/* Subtitle */}

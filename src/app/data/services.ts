@@ -1,4 +1,4 @@
-import { Home, Users, BookOpen, Globe, Shield, Heart, Plane, UserCheck, Gavel } from "lucide-react";
+import { Home, Users, BookOpen, Globe, Shield, Plane, UserCheck, Gavel } from "lucide-react";
 
 export const services = [
   {
@@ -10,16 +10,16 @@ export const services = [
     title: "Familienrecht & Scheidung",
     titleTR: "Aile Hukuku ve Boşanma",
     titleEN: "Family Law & Divorce",
-    descriptionEN: "Turkish-origin families across Germany often face a dual challenge with divorce, custody, or maintenance: two legal systems, two countries, one family. Turkish family law differs significantly from German law and requires a lawyer who understands both sides.",
+    descriptionEN: "Turkish-origin families across Germany often face a dual challenge with divorce and maintenance: two legal systems, two countries, one family. Turkish family law differs significantly from German law and requires a lawyer who understands both sides.",
     detailEN: "Turkish law only · Ankara Bar member and §207 BRAO registration · Full process without travel to Turkey · Advice in Turkish, German and English · Available throughout Germany by phone, video and WhatsApp · Mannheim and Ankara offices for direct coordination with Turkish courts",
     seoTitleEN: "Turkish Divorce Lawyer Germany | Family Law & Tanima Tenfiz | Hasan Doğru",
-    seoDescriptionEN: "Turkish family law for clients in Germany: divorce in Turkey, custody, maintenance and recognition of German divorce judgments. No travel to Turkey required.",
+    seoDescriptionEN: "Turkish family law for clients in Germany: divorce in Turkey, maintenance and recognition of German divorce judgments. No travel to Turkey required.",
     expertiseTitleEN: "Why Doğru Kanzlei for Germany-Turkey Family Law?",
     contentEN: `Family Law & Divorce — Turkish Family Law from Mannheim
 
 Turkish Family Law & Divorce — Mannheim
 
-Turkish-origin families in Mannheim, Heidelberg and the Rhine-Neckar region often face a particular challenge with divorce, custody or maintenance: two legal systems, two countries, one family. Turkish family law differs significantly from German law — and requires a lawyer who knows both sides.
+Turkish-origin families in Mannheim, Heidelberg and the Rhine-Neckar region often face a particular challenge with divorce or maintenance: two legal systems, two countries, one family. Turkish family law differs significantly from German law — and requires a lawyer who knows both sides.
 
 Avukat Hasan Doğru is a member of the Ankara Bar and advises exclusively on Turkish law. Our office in Mannheim assists you with all family law matters involving Turkey — competent, discreet, and fully without travel to Turkey.
 
@@ -29,7 +29,7 @@ What we do for you:
 Many Turkish-origin couples in Mannheim wish to divorce under Turkish law without travelling to Turkey. We handle the entire Turkish divorce procedure from Germany, represent you before Turkish courts by power of attorney, and stay by your side until the judgment becomes final.
 
 - Consensual Divorce Turkey (Anlaşmalı Boşanma)
-If both spouses agree to the divorce, a consensual divorce under Turkish law is the fastest and most cost-effective solution. We prepare the divorce settlement, clarify all outstanding points — maintenance, custody, division of assets — and ensure a smooth process.
+If both spouses agree to the divorce, a consensual divorce under Turkish law is the fastest and most cost-effective solution. We prepare the divorce settlement, clarify maintenance, division of assets and other divorce consequences, and ensure a smooth process.
 
 - Contested Divorce Turkey (Çekişmeli Boşanma)
 When no agreement is possible, we represent your interests decisively before Turkish courts. Experienced legal representation is particularly decisive in cross-border divorce proceedings between Germany and Turkey.
@@ -37,11 +37,11 @@ When no agreement is possible, we represent your interests decisively before Tur
 - Maintenance under Turkish Law (Nafaka)
 Turkish maintenance law covers three forms: separation maintenance (Tedbir Nafakası), child maintenance (İştirak Nafakası) and post-divorce maintenance (Yoksulluk Nafakası). We advise you on your entitlements and enforce them before Turkish courts — even when the paying parent lives in Germany.
 
-- Custody in Turkey (Velayet Davası)
-Custody disputes with a Turkish connection are among the most complex family law proceedings. We represent you in Turkish custody proceedings and handle the international enforcement of custody and access orders between Germany and Turkey.
-
 - Property Regime / Acquired Property Participation (Edinilmiş Mallara Katılma)
 A common question in divorce is: who gets what? Turkish property law governs the division of assets according to the principle of participation in acquired property. We advise on the fair division of real estate, bank accounts and other assets in Turkey.
+
+- German Divorce Recognition in Turkey (Tanıma & Tenfiz)
+If you are divorced in Germany but still registered as married in Turkey, see our detailed guide: [German divorce recognition in Turkey](/en/blog/german-divorce-turkey-recognition-guide-2026). We handle the process by power of attorney, including the civil registry update and related property-settlement timing issues.
 
 - Bringing a Spouse from Turkey (Family Reunification)
 Would you like to bring your spouse from Turkey to Germany? We provide legal support throughout the family reunification and spouse visa application process — from document preparation to successful entry.
@@ -52,10 +52,6 @@ After a divorce, questions arise about name changes under Turkish law. We advise
       {
         question: "Is my German divorce valid in Turkey?",
         answer: "No, not automatically. A German divorce decision usually needs to be recognised in Turkey before your marital status is updated there. Depending on the decision, Tanıma, Tenfiz or a combined procedure may be required."
-      },
-      {
-        question: "Do I need to travel to Turkey for a custody case?",
-        answer: "In many cases, no. With the right power of attorney, we can prepare filings, coordinate documents and communicate with Turkish courts. Whether personal attendance is required depends on the facts of the case and the competent court."
       },
       {
         question: "Can maintenance be enforced in Turkey?",
@@ -71,11 +67,11 @@ After a divorce, questions arise about name changes under Turkish law. We advise
       }
     ],
     seoTitleDE: "Türkisches Familienrecht Deutschland | Scheidung Türkei | Doğru Kanzlei",
-    seoDescriptionDE: "Türkischer Anwalt für Scheidung & Familienrecht in Mannheim. Boşanma, Sorgerecht, Unterhalt mit Türkeibezug — deutschlandweit ohne Türkeireise. Jetzt beraten.",
+    seoDescriptionDE: "Türkischer Anwalt für Scheidung & Familienrecht in Mannheim. Boşanma, Unterhalt und Tanıma Tenfiz mit Türkeibezug — deutschlandweit ohne Türkeireise.",
     seoTitleTR: "Almanya Türk Boşanma Avukatı | Aile Hukuku & Tanıma Tenfiz | Hasan Doğru",
-    seoDescriptionTR: "Türkiye bağlantılı boşanma, velayet ve nafaka davası — Almanya'dan seyahatsiz. Mannheim'dan Türkçe hukuki destek. Hemen WhatsApp'tan yazın.",
-    description: "Almanya genelindeki Türk aileler; boşanma, velayet veya nafaka konularında sıklıkla çift taraflı bir zorlukla karşılaşır: iki hukuk sistemi, iki ülke, bir aile. Türk aile hukuku, Alman hukukundan önemli noktalarda ayrılır ve iki tarafı da bilen bir avukat gerektirir.",
-    descriptionDE: "Türkischstämmige Familien in ganz Deutschland stehen bei Scheidung, Sorgerecht oder Unterhalt mit Türkeibezug oft vor einer besonderen Herausforderung: Zwei Rechtssysteme, zwei Länder, eine Familie. Das türkische Familienrecht unterscheidet sich in wesentlichen Punkten vom deutschen Recht — und erfordert einen Anwalt, der beide Seiten kennt.",
+    seoDescriptionTR: "Türkiye bağlantılı boşanma, nafaka ve tanıma tenfiz süreci — Almanya'dan seyahatsiz. Mannheim'dan Türkçe hukuki destek. Hemen WhatsApp'tan yazın.",
+    description: "Almanya genelindeki Türk aileler; boşanma veya nafaka konularında sıklıkla çift taraflı bir zorlukla karşılaşır: iki hukuk sistemi, iki ülke, bir aile. Türk aile hukuku, Alman hukukundan önemli noktalarda ayrılır ve iki tarafı da bilen bir avukat gerektirir.",
+    descriptionDE: "Türkischstämmige Familien in ganz Deutschland stehen bei Scheidung oder Unterhalt mit Türkeibezug oft vor einer besonderen Herausforderung: Zwei Rechtssysteme, zwei Länder, eine Familie. Das türkische Familienrecht unterscheidet sich in wesentlichen Punkten vom deutschen Recht — und erfordert einen Anwalt, der beide Seiten kennt.",
     detail: "Yalnızca Türk hukuku — tam uzmanlaşma · Ankara Barosu üyesi, § 207 BRAO kapsamında kayıtlı · Türkiye'ye seyahat etmeden süreç yönetimi · Türkçe ve Almanca danışmanlık · Almanya genelinde telefon, video ve WhatsApp ile ulaşılabilir · Mannheim ve Ankara ofisleriyle Türk mahkemeleriyle doğrudan iş birliği",
     detailDE: "Ausschließlich türkisches Recht — keine Kompromisse, volle Spezialisierung · Mitglied der Ankara Barosu und registriert gemäß § 207 BRAO · Verfahren vollständig ohne Reise in die Türkei möglich · Beratung auf Türkisch und Deutsch · Deutschlandweite Betreuung per Telefon oder Video · Standorte Mannheim und Ankara für direkte Zusammenarbeit mit türkischen Gerichten",
     expertiseTitleDE: "Warum Doğru Kanzlei für türkisches Familienrecht mit Deutschland-Türkei-Bezug?",
@@ -84,7 +80,7 @@ After a divorce, questions arise about name changes under Turkish law. We advise
 
 Türk Aile Hukuku & Boşanma Mannheim
 
-Mannheim, Heidelberg ve Rhein-Neckar bölgesindeki Türk aileler; boşanma, velayet veya nafaka konularında sıklıkla çift taraflı bir zorlukla karşılaşır: İki hukuk sistemi, iki ülke, bir aile. Türk aile hukuku, Alman hukukundan önemli noktalarda ayrılmaktadır — ve her iki tarafı da bilen bir avukat gerektirir.
+Mannheim, Heidelberg ve Rhein-Neckar bölgesindeki Türk aileler; boşanma veya nafaka konularında sıklıkla çift taraflı bir zorlukla karşılaşır: İki hukuk sistemi, iki ülke, bir aile. Türk aile hukuku, Alman hukukundan önemli noktalarda ayrılmaktadır — ve her iki tarafı da bilen bir avukat gerektirir.
 
 Avukat Hasan Doğru, Ankara Barosu üyesidir ve yalnızca Türk hukuku alanında danışmanlık vermektedir. Mannheim'daki büromuz, Türkiye ile ilgili tüm aile hukuku konularında size yardımcı olmaktadır — yetkin, gizli ve Türkiye'ye seyahat etmeden.
 
@@ -94,7 +90,7 @@ Sizin için neler yapıyoruz:
 Mannheim'daki pek çok Türk çift, Türkiye'ye gitmeden Türk hukukuna göre boşanmak istemektedir. Vekaletname ile tüm Türk boşanma sürecini Almanya'dan yürütüyor, sizi Türk mahkemelerinde temsil ediyor ve karar kesinleşene kadar yanınızda oluyoruz.
 
 • Anlaşmalı Boşanma Türkiye (Anlaşmalı Boşanma)
-Her iki eş de boşanmayı kabul ediyorsa, anlaşmalı boşanma en hızlı ve en ekonomik çözümdür. Boşanma protokolünü hazırlıyor, nafaka, velayet ve mal paylaşımı gibi tüm konuları netleştiriyor ve sürecin sorunsuz ilerlemesini sağlıyoruz.
+Her iki eş de boşanmayı kabul ediyorsa, anlaşmalı boşanma en hızlı ve en ekonomik çözümdür. Boşanma protokolünü hazırlıyor, nafaka, mal paylaşımı ve boşanmanın diğer sonuçlarını netleştiriyor ve sürecin sorunsuz ilerlemesini sağlıyoruz.
 
 • Çekişmeli Boşanma Türkiye (Çekişmeli Boşanma)
 Anlaşma sağlanamadığında, çıkarlarınızı Türk mahkemelerinde kararlılıkla savunuyoruz. Özellikle Almanya ile Türkiye arasındaki sınır ötesi boşanma davalarında deneyimli hukuki temsil belirleyici olmaktadır.
@@ -102,11 +98,11 @@ Anlaşma sağlanamadığında, çıkarlarınızı Türk mahkemelerinde kararlıl
 • Türk Hukukuna Göre Nafaka (Nafaka)
 Türk nafaka hukuku üç türü kapsar: Tedbir Nafakası (ayrılık nafakası), İştirak Nafakası (çocuk nafakası) ve Yoksulluk Nafakası (yoksulluk nafakası). Haklarınız konusunda sizi bilgilendiriyor ve bu hakları Türk mahkemelerinde takip ediyoruz — nafaka yükümlüsü ebeveyn Almanya'da yaşasa bile.
 
-• Türkiye'de Velayet Davası (Velayet Davası)
-Türkiye bağlantılı velayet anlaşmazlıkları, aile hukukunun en karmaşık davalarından biridir. Türk velayet davalarında sizi temsil ediyor ve Almanya ile Türkiye arasındaki velayet ile kişisel ilişki kararlarının uluslararası alanda tanınmasını sağlıyoruz.
-
 • Mal Rejimi / Edinilmiş Mallara Katılma (Edinilmiş Mallara Katılma)
 Boşanmada sıkça sorulan soru şudur: Kime ne kalır? Türk mal rejimi hukuku, edinilmiş mallara katılma ilkesine göre mal paylaşımını düzenler. Türkiye'deki taşınmazlar, banka hesapları ve diğer varlıkların adil paylaşımı konusunda danışmanlık veriyoruz.
+
+• Almanya Boşanma Kararının Türkiye'de Tanınması (Tanıma & Tenfiz)
+Almanya'da boşandınız ama Türkiye'de hâlâ evli görünüyorsanız ayrıntılı rehberimizi okuyabilirsiniz: [Almanya boşanma kararının Türkiye'de tanınması](/tr/blog/almanya-bosanma-turkiye-tanima-tenfiz-2026-rehber). Süreci vekâletnameyle, Türkiye'ye gitmeden yürütüyoruz.
 
 • Türkiye'den Eş Getirme (Aile Birleşimi)
 Eşinizi Türkiye'den Almanya'ya getirmek mi istiyorsunuz? Aile birleşimi ve eş vizesi başvurusunda belgelerinizin hazırlanmasından Almanya'ya girişe kadar tüm süreçte hukuki destek sağlıyoruz.
@@ -121,7 +117,7 @@ Was wir für Sie tun:
 Viele türkischstämmige Paare in Mannheim möchten ihre Ehe nach türkischem Recht scheiden lassen — ohne dafür in die Türkei reisen zu müssen. Wir leiten das gesamte türkische Scheidungsverfahren von Deutschland aus ein, vertreten Sie vor türkischen Gerichten per Vollmacht und begleiten Sie bis zum rechtskräftigen Urteil.
 
 • Einvernehmliche Scheidung Türkei (Anlaşmalı Boşanma)
-Wenn beide Ehepartner einer Scheidung zustimmen, ist eine einvernehmliche Scheidung nach türkischem Recht die schnellste und kostengünstigste Lösung. Wir bereiten die Scheidungsfolgenvereinbarung vor, klären alle offenen Punkte — Unterhalt, Sorgerecht, Vermögensaufteilung — and sorgen für einen reibungslosen Ablauf.
+Wenn beide Ehepartner einer Scheidung zustimmen, ist eine einvernehmliche Scheidung nach türkischem Recht die schnellste und kostengünstigste Lösung. Wir bereiten die Scheidungsfolgenvereinbarung vor, klären Unterhalt, Vermögensaufteilung und weitere Scheidungsfolgen und sorgen für einen reibungslosen Ablauf.
 
 • Streitige Scheidung Türkei (Çekişmeli Boşanma)
 Wenn keine Einigung möglich ist, vertreten wir Ihre Interessen konsequent vor türkischen Gerichten. Gerade bei grenzüberschreitenden Scheidungsverfahren zwischen Deutschland und der Türkei ist erfahrene anwaltliche Vertretung entscheidend.
@@ -129,11 +125,11 @@ Wenn keine Einigung möglich ist, vertreten wir Ihre Interessen konsequent vor t
 • Unterhalt nach türkischem Recht (Nafaka)
 Das türkische Unterhaltsrecht kennt drei Formen: Trennungsunterhalt (Tedbir Nafakası), Kindesunterhalt (İştirak Nafakası) und nachehelicher Unterhalt (Yoksulluk Nafakası). Wir beraten Sie zu Ihren Ansprüchen und setzen diese vor türkischen Gerichten durch — auch wenn der unterhaltspflichtige Elternteil in Deutschland lebt.
 
-• Sorgerecht Türkei (Velayet Davası)
-Sorgerechtsstreitigkeiten mit Türkeibezug gehören zu den komplexesten familienrechtlichen Verfahren überhaupt. Wir vertreten Sie in türkischen Sorgerechtverfahren und kümmern uns um die internationale Durchsetzung von Sorge- und Umgangsrechtsurteilen zwischen Deutschland und der Türkei.
-
 • Güterrecht / Zugewinnausgleich Türkei (Edinilmiş Mallara Katılma)
 Bei einer Scheidung stellt sich oft die Frage: Wem gehört was? Das türkische Güterrecht regelt die Vermögensaufteilung nach dem Prinzip der Errungenschaftsbeteiligung. Wir beraten Sie zur gerechten Aufteilung von Immobilien, Konten und sonstigem Vermögen in der Türkei.
+
+• Deutsche Scheidung in der Türkei anerkennen (Tanıma & Tenfiz)
+Wenn Sie in Deutschland geschieden sind, in der Türkei aber noch als verheiratet gelten, lesen Sie unseren Leitfaden: [Deutsche Scheidung in der Türkei anerkennen lassen](/de/blog/tanima-tenfiz-scheidung-tuerkei-anerkennung-2026). Wir führen das Verfahren per Vollmacht und ohne Reise in die Türkei.
 
 • Ehegattennachzug aus der Türkei
 Sie möchten Ihren Ehepartner aus der Türkei nach Deutschland holen? Wir begleiten Sie rechtlich beim Familiennachzug und der Beantragung des Ehegattenvisums — von der Vorbereitung der Unterlagen bis zur erfolgreichen Einreise.
@@ -144,10 +140,6 @@ Nach einer Scheidung stellen sich Fragen zur Namensänderung nach türkischem Re
       {
         question: "Gilt meine deutsche Scheidung in der Türkei?",
         answer: "Nein, nicht automatisch. Eine in Deutschland ausgesprochene Scheidung muss in der Türkei anerkannt werden, damit Ihr Personenstand dort korrekt als geschieden eingetragen wird. Je nach Inhalt des deutschen Beschlusses kommt Tanıma, Tenfiz oder ein kombiniertes Verfahren in Betracht."
-      },
-      {
-        question: "Muss ich für ein Sorgerechtsverfahren in die Türkei reisen?",
-        answer: "In vielen Fällen ist keine Reise in die Türkei erforderlich. Mit einer geeigneten Vollmacht können wir das Verfahren vorbereiten, einreichen und mit den türkischen Gerichten koordinieren. Ob ein persönliches Erscheinen nötig ist, hängt vom Einzelfall und vom zuständigen Gericht ab."
       },
       {
         question: "Kann ich Unterhalt in der Türkei durchsetzen?",
@@ -166,10 +158,6 @@ Nach einer Scheidung stellen sich Fragen zur Namensänderung nach türkischem Re
       {
         question: "Almanya'daki boşanma kararım Türkiye'de geçerli mi?",
         answer: "Hayır, otomatik olarak geçerli olmaz. Almanya'da verilen boşanma kararının Türkiye'de nüfus kayıtlarına işlenebilmesi için genellikle Tanıma veya Tenfiz süreci gerekir. Kararınızı inceleyerek hangi yolun gerekli olduğunu belirliyoruz."
-      },
-      {
-        question: "Velayet davası için Türkiye'ye gitmem gerekir mi?",
-        answer: "Birçok dosyada Türkiye'ye gitmeden işlem yapılabilir. Uygun bir vekaletname ile başvuru, belge hazırlığı ve Türk mahkemeleriyle koordinasyon tarafımızdan yürütülebilir. Kişisel katılım gerekip gerekmediği dosyanın içeriğine ve mahkemeye bağlıdır."
       },
       {
         question: "Nafakayı Türkiye'de tahsil edebilir miyim?",
@@ -1015,16 +1003,13 @@ What we do for you:
 If your marriage was divorced in Germany and you want this divorce to be effective in Turkey, we conduct the full Tanıma procedure before the competent Turkish courts — from the preparation of all necessary documents through to the legally binding recognition. You do not need to appear personally in Turkey.
 
 - Enforcement of foreign judgments in Turkey (Tenfiz)
-If enforcement is also required — for example for maintenance payments, division of assets or custody decisions — we bring the Tenfiz proceedings and ensure the judgment is enforceable and actually implemented in Turkey.
+If enforcement is also required — for example for maintenance payments or division of assets — we bring the Tenfiz proceedings and ensure the judgment is enforceable and actually implemented in Turkey.
 
 - Having a Turkish divorce recognised in Germany
 Turkish judgments do not automatically take effect in Germany either. If you were divorced in Turkey and want this divorce to be officially recognised in Germany, we examine the requirements and initiate the recognition procedure at the competent German authority.
 
 - Tanıma ve Tenfiz without travel to Turkey
 With a litigation power of attorney we represent you fully before Turkish courts — no personal appearance in Turkey required. Many of our clients from Mannheim and across Germany conduct the procedure entirely remotely. We handle documents, translations, court correspondence and deadlines.
-
-- International recognition of custody orders
-German custody and access judgments must be recognised in Turkey through a separate Tanıma procedure before they are enforceable there. We conduct this procedure before Turkish courts and ensure your custody arrangement has legal standing in Turkey.
 
 - Adoption recognition between Turkey and Germany
 Cross-border adoptions require mutual recognition of the adoption order in both countries. This procedure is complex and requires close cooperation with authorities in both countries. We accompany you legally through every step.
@@ -1098,8 +1083,8 @@ What distinguishes us:
     seoDescriptionTR: "Almanya'da boşandınız ama Türkiye'de hâlâ evli mi görünüyorsunuz? Tanıma ve Tenfiz işlemini seyahat etmeden tamamlıyoruz. Şimdi iletişime geçin.",
     description: "Almanya'da verilen boşanma kararları Türkiye'de kendiliğinden geçerli olmaz. Tanıma ve Tenfiz sürecini Almanya'dan, Türkiye'ye seyahat etmeden yürütüyoruz.",
     descriptionDE: "Tanıma Tenfiz Anwalt Deutschland: Ihre deutsche Scheidung gilt in der Türkei nicht automatisch. Wir führen die Anerkennung vollständig aus Deutschland heraus durch — ohne Reise in die Türkei.",
-    detail: "Boşanma Tanıma Tenfiz · Türk Boşanmasının Tanınması · Gitmeden Tanıma Tenfiz · Süre ve Maliyet · Velayet Kararları · Evlat Edinme · Genel Mahkeme Kararları",
-    detailDE: "Scheidung Türkei anerkennen Anwalt · Tanıma Tenfiz Anwalt Deutschland · Anerkennung türkischer Urteile · Reise nicht erforderlich · Verfahrensdauer & Kosten · Sorgerechtsbeschlüsse · Adoptionsanerkennung",
+    detail: "Boşanma Tanıma Tenfiz · Türk Boşanmasının Tanınması · Gitmeden Tanıma Tenfiz · Süre ve Maliyet · Evlat Edinme · Genel Mahkeme Kararları",
+    detailDE: "Scheidung Türkei anerkennen Anwalt · Tanıma Tenfiz Anwalt Deutschland · Anerkennung türkischer Urteile · Reise nicht erforderlich · Verfahrensdauer & Kosten · Adoptionsanerkennung",
     content: `Tanıma ve Tenfiz — Alman Boşanmasını Türkiye'de Tanıtmak
 
 Yabancı mahkeme kararları Türkiye'de kendiliğinden geçerli olmaz — biz geçerli hale getiriyoruz.
@@ -1116,16 +1101,13 @@ Sizin için neler yapıyoruz:
 Almanya'da boşandıysanız ve bu boşanmanın Türkiye'de de geçerli sayılmasını istiyorsanız, yetkili Türk mahkemelerinde tam Tanıma davasını yürütüyoruz — gerekli tüm belgelerin hazırlanmasından başvuruya, kararın kesinleşmesine kadar. Türkiye'de bizzat bulunmanıza gerek yoktur.
 
 - Yabancı Kararların Türkiye'de İcrası (Tenfiz)
-Yalnızca tanıma değil, aynı zamanda nafaka ödemeleri, mal paylaşımı veya velayet kararları gibi konularda icra da söz konusuysa Tenfiz davasını açıyor ve kararın Türkiye'de icra edilebilir ve fiilen uygulanabilir hale gelmesini sağlıyoruz.
+Yalnızca tanıma değil, aynı zamanda nafaka ödemeleri veya mal paylaşımı gibi konularda icra da söz konusuysa Tenfiz davasını açıyor ve kararın Türkiye'de icra edilebilir ve fiilen uygulanabilir hale gelmesini sağlıyoruz.
 
 - Türk Boşanmasının Almanya'da Tanınması
 Türkiye'de verilen kararlar da Almanya'da otomatik geçerlilik kazanmaz. Türkiye'de boşandıysanız ve bu boşanmanın Almanya'da resmi olarak tanınmasını istiyorsanız, koşulları inceliyor ve yetkili Alman makamı nezdinde tanıma işlemini başlatıyoruz.
 
 - Türkiye'ye Gitmeden Tanıma ve Tenfiz
 Dava vekaleti ile Türk mahkemelerinde sizi tam anlamıyla temsil ediyoruz — Türkiye'de bizzat görünmeniz gerekmiyor. Mannheim ve Almanya genelindeki pek çok müvekkilimiz süreci tamamen uzaktan yürütmektedir. Belgeler, çeviriler, mahkeme yazışmaları ve süreler — tümünü biz hallediyoruz.
-
-- Velayet Kararlarının Uluslararası Tanınması
-Alman velayet ve kişisel ilişki kararları, Türkiye'de icra edilebilmesi için ayrı bir Tanıma davası yoluyla tanınmak zorundadır. Bu davayı Türk mahkemelerinde yürütüyor ve velayet düzenlemenizin Türkiye'de de geçerliliğini sağlıyoruz.
 
 - Türkiye ile Almanya Arasında Evlat Edinme Tanıması
 Sınır ötesi evlat edinmeler, her iki ülkede de evlat edinme kararının karşılıklı olarak tanınmasını gerektirmektedir. Bu süreç karmaşıktır ve her iki ülkedeki makamlarla yakın iş birliği gerektirir. Hukuki olarak her adımda yanınızdayız.
@@ -1184,16 +1166,13 @@ Was wir für Sie tun:
 Wenn Ihre Ehe in Deutschland geschieden wurde und Sie diese Scheidung auch in der Türkei wirksam machen möchten, führen wir das vollständige Tanıma-Verfahren vor den zuständigen türkischen Gerichten durch — von der Vorbereitung aller notwendigen Dokumente über die Antragstellung bis zur rechtskräftigen Anerkennung. Sie müssen nicht persönlich in der Türkei erscheinen.
 
 - Vollstreckung ausländischer Urteile in der Türkei (Tenfiz)
-Geht es nicht nur um die Anerkennung, sondern auch um die Vollstreckung eines Urteils — zum Beispiel bei Unterhaltszahlungen, Vermögensaufteilung oder Sorgerechtsentscheidungen — führen wir das Tenfiz-Verfahren ein und sorgen dafür, dass das Urteil in der Türkei vollstreckbar ist und tatsächlich umgesetzt wird.
+Geht es nicht nur um die Anerkennung, sondern auch um die Vollstreckung eines Urteils — zum Beispiel bei Unterhaltszahlungen oder Vermögensaufteilung — führen wir das Tenfiz-Verfahren ein und sorgen dafür, dass das Urteil in der Türkei vollstreckbar ist und tatsächlich umgesetzt wird.
 
 - Türkische Scheidung in Deutschland anerkennen lassen
 Auch türkische Urteile entfalten in Deutschland nicht automatisch ihre Wirkung. Wenn Sie in der Türkei geschieden wurden und diese Scheidung in Deutschland offiziell anerkannt haben möchten, prüfen wir die Voraussetzungen und leiten das Anerkennungsverfahren bei der zuständigen deutschen Behörde ein.
 
 - Tanıma Tenfiz ohne Reise in die Türkei
 Per Prozessvollmacht vertreten wir Sie vollständig vor türkischen Gerichten — kein persönliches Erscheinen in der Türkei erforderlich. Viele unserer Mandanten aus Mannheim und dem gesamten Bundesgebiet führen das Verfahren vollständig auf Distanz durch. Wir kümmern uns um Dokumente, Übersetzungen, Gerichtskorrespondenz und Fristen.
-
-- Sorgerechtsbeschlüsse international anerkennen lassen
-Deutsche Sorgerechts- und Umgangsrechtsurteile müssen in der Türkei durch ein eigenes Tanıma-Verfahren anerkannt werden, bevor sie dort vollstreckbar sind. Wir führen dieses Verfahren vor türkischen Gerichten durch und sorgen dafür, dass Ihre Sorgerechtsregelung in der Türkei Bestand hat.
 
 - Adoptionsanerkennung zwischen der Türkei und Deutschland
 Grenzüberschreitende Adoptionen erfordern die gegenseitige Anerkennung des Adoptionsbeschlusses in beiden Ländern. Dieses Verfahren ist komplex und erfordert die enge Zusammenarbeit mit Behörden in beiden Ländern. Wir begleiten Sie rechtlich durch jeden Schritt.
@@ -1828,132 +1807,6 @@ Vorweggenommene Erbfolge durch Schenkungen oder Erbverträge nach türkischem Re
         answer: "Türkiye'deki miraslarda veraset ve intikal vergisi gündeme gelebilir. Süreler, beyanname ve ödeme yükümlülükleri mirasın içeriğine ve mirasçının durumuna göre değişir. Bu süreci miras dosyasıyla birlikte değerlendiriyoruz."
       }
     ]
-  },
-  {
-    seoTitleEN: "Child Custody Turkey Mannheim | International Family Law | Doğru Kanzlei",
-    seoDescriptionEN: "Expert legal support in custody proceedings between Germany and Turkey, as well as international child abduction cases (Hague Convention). Avukat Hasan Doğru.",
-    expertiseTitleEN: "Why Doğru Kanzlei for Child Custody between Germany and Turkey?",
-    contentEN: `Child Custody — Custody Proceedings between Germany and Turkey
-
-Expert legal support in cross-border custody cases.
-
-Custody proceedings involving both Germany and Turkey are among the most complex family law matters. When parents live in different countries, questions arise about which court has jurisdiction, which law applies, and how custody decisions can be enforced across borders.
-
-For families of Turkish origin in Mannheim, Heidelberg and the Rhine-Neckar region, cross-border custody disputes are a very real and emotionally charged challenge. Avukat Hasan Doğru is a member of the Ankara Bar and advises exclusively on Turkish law. We represent you in custody proceedings before Turkish courts — from Mannheim, without unnecessary travel.
-
-What we do for you:
-
-- Custody proceedings before Turkish courts (Velayet Davası)
-We represent you fully in Turkish custody proceedings — from the application through to the final judgment. Whether you are seeking sole custody, joint custody or a modification of an existing custody order, we pursue your interests assertively before Turkish family courts.
-
-- International enforcement of German custody orders in Turkey
-A German custody judgment does not automatically apply in Turkey. We conduct the recognition procedure (Tanıma) before Turkish courts and ensure your custody arrangement has legal standing in Turkey and can actually be enforced.
-
-- International child abduction and the Hague Convention (HKÜ)
-If your child has been unlawfully taken to Turkey or retained there without your consent, you have a right to the child's immediate return under the Hague Child Abduction Convention (HKÜ). We initiate the necessary proceedings before Turkish courts and coordinate with German and Turkish central authorities to secure the fastest possible return of your child.
-
-- Access rights and international enforcement (Kişisel İlişki)
-Even if the other parent lives in Turkey, you have a right to maintain personal contact with your child. We enforce your access rights before Turkish courts and ensure access orders are recognised and implemented in Turkey.
-
-- Jurisdiction and applicable law — which court decides?
-In cross-border custody cases a fundamental question arises first: which court has jurisdiction? Under international private law the answer usually depends on the child's habitual residence. We analyse your specific case, determine the competent jurisdiction and advise you on how to proceed.
-
-- Custody modification in Turkey
-If circumstances have changed significantly since the last custody order, an application for modification can be made before Turkish courts. We advise you on the requirements and represent you in modification proceedings.
-
-- Emergency measures and interim orders (Tedbir Kararı)
-In urgent situations — for example if the child is at risk — emergency measures and interim orders can be sought from Turkish courts. We apply for such measures immediately and ensure your child's welfare is protected.
-
-Why Doğru Kanzlei for Cross-border Custody Proceedings?
-
-Cross-border custody proceedings between Germany and Turkey require expertise in both Turkish family law and international private law. Avukat Hasan Doğru is a member of the Ankara Bar and advises exclusively on Turkish law — with direct access to Turkish family courts.
-
-What distinguishes us:
-- Turkish law only — specialised expertise in Turkish family and custody law
-- Member of the Ankara Bar, registered pursuant to § 207 BRAO
-- Representation in Turkish custody courts without your travel to Turkey
-- Advice in Turkish, German and English
-- Mannheim office — personal consultation in the Rhine-Neckar region
-- Second office in Ankara — direct contact with Turkish family courts`,
-    faqEN: [
-      {
-        question: "My child has been taken to Turkey. What can I do?",
-        answer: "If your child has been unlawfully taken to Turkey or retained there, you have a right to the child's return under the Hague Child Abduction Convention (HKÜ). Contact us immediately — time is critical in these cases. We initiate the necessary proceedings and coordinate with German and Turkish central authorities."
-      },
-      {
-        question: "Which court decides on custody if one parent lives in Germany and the other in Turkey?",
-        answer: "Jurisdiction in cross-border custody cases usually depends on the child's habitual residence. The courts of the country where the child regularly lives are generally competent. We analyse your specific case and advise you on which court to approach."
-      },
-      {
-        question: "Is a German custody order automatically valid in Turkey?",
-        answer: "No. A German custody judgment must be recognised in Turkey through a separate Tanıma procedure before it is enforceable there. We conduct this procedure before Turkish courts and ensure your custody arrangement is legally effective in Turkey."
-      },
-      {
-        question: "Can I enforce my access rights if the child lives in Turkey?",
-        answer: "Yes. Even if the other parent and child live in Turkey, you have a right to personal contact. We enforce your access rights before Turkish family courts and ensure access orders are recognised and implemented in Turkey."
-      },
-      {
-        question: "My ex-partner wants to move to Turkey with our child. What are my rights?",
-        answer: "A parent with custody may not generally relocate to another country with the child without the other parent's consent or a court order. If relocation is planned, an application can be made to court. We analyse your situation and advise you on your rights and the options available."
-      },
-      {
-        question: "Can I apply for custody modification if circumstances have changed?",
-        answer: "Yes. If circumstances have changed significantly — for example a move, change of living conditions or the child's wishes — a modification of the custody order can be applied for before Turkish courts. We advise you on the requirements and represent you in modification proceedings."
-      }
-    ],
-    seoTitleDE: "Sorgerecht Türkei Mannheim | Türkischer Anwalt | Doğru Kanzlei",
-    seoDescriptionDE: "Sorgerecht zwischen Deutschland und der Türkei — Vertretung aus Mannheim. Türkische Sorgerechtsklagen & Kindesentziehungsverfahren. Jetzt beraten.",
-    seoTitleTR: "Türk Velayet Hukuku Mannheim | Almanya Türkiye Velayet Davası | Avukat Hasan Doğru",
-    seoDescriptionTR: "Almanya ile Türkiye arasında velayet davası — Mannheim'dan uzman temsil. Türk velayet ve çocuk kaçırma davaları. Şimdi danışın.",
-    id: "sorgerecht",
-    slugDE: "sorgerecht",
-    slugTR: "velayet",
-    slugEN: "child-custody",
-    icon: Heart,
-    title: "Sorgerecht",
-    titleTR: "Velayet",
-    titleEN: "Child Custody",
-    descriptionEN: "Expert legal support in custody proceedings between Germany and Turkey, as well as international child abduction cases (Hague Convention).",
-    description: "Almanya ve Türkiye arasındaki velayet davaları, çocuk yetiştirme hakları ve uluslararası çocuk kaçırma (La Haye) konularında uzman hukuki destek.",
-    descriptionDE: "Fachanwaltliche Unterstützung bei Sorgerechtsverfahren zwischen Deutschland und der Türkei sowie bei internationaler Kindesentführung (HKÜ).",
-    detail: "Velayet Davaları · Tanıma ve Tenfiz · La Haye",
-    detailDE: "Sorgerechtsklagen · Anerkennung · HKÜ",
-    content: `Velayet — Almanya'daki Türkler için Türk Hukukunda Velayet
-Türk-Alman Aile Hukukunda Velayet
-
-Velayet, aile hukukunun temel unsurlarından biri olup ebeveynlerin küçük çocuklarına karşı hak ve yükümlülüklerini düzenler. Almanya'da yaşayan ya da daha önce Almanya'da ikamet etmiş Türk vatandaşları için, özellikle hem Türk hem de Alman hukukunun devreye girdiği durumlarda, karmaşık hukuki sorular gündeme gelebilmektedir.
-
-Türk Hukukunda Velayet Ne Anlama Gelir?
-Türk hukukuna göre velayet; çocuğun bakımı, yetiştirilmesi ve temsil edilmesi sorumluluğunu kapsar. Boşanma halinde velayet genellikle ebeveynlerden birine bırakılır ve bu kararın merkezinde her zaman çocuğun üstün yararı yer alır.
-
-Ebeveynlerden birinin Almanya'da, diğerinin Türkiye'de ikamet etmesi; bir Türk velayet kararının Almanya'da tanınmak istenmesi ya da Almanya'da verilen bir kararın Türkiye'de uygulanması gereken durumlarda özel hukuki güçlükler ortaya çıkmaktadır.
-
-Size sunduğumuz hizmetler:
-• Türk ve Alman hukukuna göre velayet konusunda hukuki danışmanlık
-• Türk mahkemelerinde velayet davalarında temsil
-• Yabancı velayet kararlarının tanınması ve tenfizi
-• Uluslararası çocuk kaçırma davalarında danışmanlık (La Haye Sözleşmesi)
-• Türk ve Alman makamları arasında koordinasyon
-
-Hukuk büromuz, Türk-Alman aile hukukunda uzmanlaşmış olup her adımda profesyonel ve empatik bir yaklaşımla yanınızdadır.`,
-    contentDE: `Velayet — Sorgerecht im türkischen Recht for Deutschlandtürken
-Sorgerecht im türkisch-deutschen Familienrecht
-
-Das Sorgerecht („Velayet") ist ein zentraler Bestandteil des Familienrechts und regelt die Rechte und Pflichten der Eltern gegenüber ihren minderjährigen Kindern. Für Deutsch-Türken, die in Deutschland leben oder gelebt haben, ergeben sich häufig komplexe Rechtsfragen – insbesondere dann, wenn sowohl deutsches als auch türkisches Recht zur Anwendung kommt.
-
-Was bedeutet Sorgerecht im türkischen Recht?
-Nach türkischem Recht umfasst das Sorgerecht die Verantwortung für Pflege, Erziehung und gesetzliche Vertretung des Kindes. Im Falle einer Scheidung wird das Sorgerecht in der Regel einem Elternteil übertragen – maßgeblich ist dabei stets das Wohl des Kindes.
-
-Besondere Herausforderungen entstehen, wenn ein Elternteil in Deutschland und der andere in der Türkei lebt, wenn ein türkisches Sorgerechtsurteil in Deutschland anerkannt werden soll oder wenn ein deutsches Urteil in der Türkei vollstreckt werden muss.
-
-Was wir für Sie tun:
-• Rechtliche Beratung zum Sorgerecht nach türkischem und deutschem Recht
-• Vertretung in Sorgerechtsklagen vor türkischen Gerichten
-• Anerkennung und Vollstreckung ausländischer Sorgerechtsurteile
-• Beratung bei internationalen Kindesentziehungsfällen (HKÜ)
-• Koordination zwischen deutschen und türkischen Behörden
-
-Unsere Kanzlei ist auf deutsch-türkisches Familienrecht spezialisiert und begleitet Sie kompetent und einfühlsam durch jeden Schritt des Verfahrens.`
   },
   {
     id: "immobilienrecht",
