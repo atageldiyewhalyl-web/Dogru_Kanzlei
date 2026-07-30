@@ -2035,5 +2035,305 @@ Was uns auszeichnet:
         answer: "Hayır. İlk danışmayı telefon veya video görüşmesiyle de gerçekleştirebilirsiniz. Almanya'nın dört bir yanından pek çok müvekkilimize tamamen uzaktan hizmet veriyoruz."
       }
     ]
+  },
+
+  {
+    id: "rechtsgutachten-tuerkisches-recht",
+    slugDE: "rechtsgutachten-tuerkisches-recht",
+    slugTR: "turk-hukuku-bilirkisi-mutalaasi",
+    slugEN: "turkish-law-expert-opinion",
+    icon: BookOpen,
+    title: "Rechtsgutachten türkisches Recht",
+    titleTR: "Türk Hukuku Bilirkişi Mütalaası",
+    titleEN: "Turkish Law Expert Opinion",
+    descriptionDE: "Rechtsgutachten zum türkischen Recht für deutsche Gerichte, Rechtsanwälte und Notare. Sachverständiger beim Amtsgericht Mannheim für Erbrecht, Familienrecht, Immobilienrecht und IPR.",
+    description: "Alman mahkemeleri, avukatları ve noterleri için Türk hukukuna dair yazılı bilirkişi mütalaası. Amtsgericht Mannheim bilirkişisi. Miras, aile ve gayrimenkul hukuku.",
+    descriptionEN: "Written expert legal opinions on Turkish law for German courts, law firms and notaries. Registered expert at Mannheim Local Court for inheritance, family and property law.",
+    detailDE: "Sachverständiger Amtsgericht Mannheim · Ankara Barosu · § 207 BRAO · § 293 ZPO · Erbrecht · Familienrecht · Immobilienrecht · IPR",
+    detail: "Amtsgericht Mannheim bilirkişisi · Ankara Barosu · § 207 BRAO · § 293 ZPO · Miras hukuku · Aile hukuku · Gayrimenkul hukuku · MÖHUK",
+    detailEN: "Mannheim Local Court expert · Ankara Bar Association · § 207 BRAO · Section 293 ZPO · Inheritance law · Family law · Property law · Private international law",
+    seoTitleDE: "Rechtsgutachten türkisches Recht | Sachverständiger Mannheim",
+    seoDescriptionDE: "Rechtsgutachten zum türkischen Recht für Gerichte, Anwälte und Notare. Sachverständiger beim AG Mannheim für Erbrecht, Familienrecht, Immobilien- und IPR-Fragen.",
+    seoTitleTR: "Alman Mahkemeleri İçin Türk Hukuku Bilirkişi Mütalaası",
+    seoDescriptionTR: "Alman mahkemeleri, avukatları ve noterleri için Türk hukukuna dair yazılı bilirkişi mütalaası. Amtsgericht Mannheim bilirkişisi. Miras, aile ve gayrimenkul hukuku.",
+    seoTitleEN: "Turkish Law Expert Legal Opinion for German Courts & Firms",
+    seoDescriptionEN: "Written expert legal opinions on Turkish law for German courts, law firms and notaries. Registered expert at Mannheim Court. Inheritance, family, property law.",
+    expertiseTitleDE: "Warum Doğru Kanzlei für Rechtsgutachten zum türkischen Recht?",
+    expertiseTitleTR: "Türk hukuku mütalaasında neden Doğru Kanzlei?",
+    expertiseTitleEN: "Why Doğru Kanzlei for Turkish law expert opinions?",
+    contentDE: `Rechtsgutachten zum türkischen Recht — für Gerichte, Rechtsanwälte und Notare
+
+Dieser Beitrag befasst sich ausschließlich mit dem türkischen Recht. Die Doğru Kanzlei berät gemäß § 207 BRAO ausschließlich im türkischen Recht; eine Rechtsberatung im deutschen Recht ist damit nicht verbunden.
+
+Sachverständiger für türkisches Recht · Amtsgericht Mannheim
+
+Wenn ein deutsches Verfahren eine Frage des türkischen Rechts berührt, entsteht regelmäßig dieselbe Situation: Das Gericht oder der bevollmächtigte Rechtsanwalt benötigt eine belastbare, schriftlich begründete Auskunft darüber, wie die Rechtslage nach türkischem Recht tatsächlich ist. Das deutsche Kollisionsrecht (Art. 3 ff. EGBGB, Rom I, Rom III, EuErbVO) verweist in vielen Konstellationen auf türkisches Sachrecht — dessen Inhalt dann festgestellt werden muss.
+
+Genau hierfür erstelle ich Rechtsgutachten zum türkischen Recht.
+
+## Für wen?
+
+- Deutsche Gerichte (§ 293 ZPO — Ermittlung ausländischen Rechts)
+- Rechtsanwältinnen und Rechtsanwälte, die ein Mandat mit Türkeibezug bearbeiten
+- Notariate bei Beurkundungen mit Auslandsbezug
+- Nachlassgerichte, Familiengerichte und Zivilkammern
+
+## Warum ein Gutachten von Doğru Kanzlei?
+
+- Doppelte Qualifikation: Mitglied der Ankara Barosu und der Rechtsanwaltskammer Karlsruhe (§ 207 BRAO). Ich kenne beide Rechtsordnungen aus der Praxis — nicht nur aus der Literatur.
+- Gerichtlich gelistet: Eingetragen in die Sachverständigenliste des Amtsgerichts Mannheim für türkisches Recht. Die Eintragung ist ein unabhängiger Nachweis der Fachkunde.
+- Praktiker, kein reiner Theoretiker: Ich führe selbst Verfahren vor türkischen Gerichten über das UYAP-System. Meine Gutachten spiegeln die tatsächliche türkische Rechtsprechung wider — einschließlich aktueller Entscheidungen des Yargıtay.
+- Kurzfristig und verständlich: Klar strukturierte Gutachten, die die konkrete Rechtsfrage beantworten — mit Nachweisen aus Gesetz und Rechtsprechung, aber ohne unnötigen akademischen Ballast.
+
+Diese doppelte Zulassung bedeutet in der Praxis: Kein Umweg über eine weitere Kanzlei in der Türkei, keine Verzögerung durch eine dritte Partei. Rückfragen des Gerichts oder der beauftragenden Kanzlei beantworte ich direkt, auf Deutsch, ohne Übersetzungskette.
+
+Kostenlose Ersteinschätzung bei der Doğru Kanzlei anfragen: https://calendly.com/hasand9366/30min
+
+## Typische Gutachtenthemen
+
+Erbrecht: Gesetzliche Erbfolge nach türkischem Recht (TMK Art. 495 ff.), Pflichtteilsrecht (Saklı Pay) und Herabsetzung (Tenkis), Nachlassspaltung nach dem deutsch-türkischen Nachlassabkommen von 1929, Wirksamkeit von Testamenten und Erbverträgen nach türkischem Recht, Muris Muvazaası.
+
+Ausführlichere Hintergründe zu grenzüberschreitenden Nachlassfällen finden Sie auch in unserem Ratgeber Erbschaft Türkei-Deutschland: /de/blog/erbschaft-tuerkei-deutschland-ratgeber
+
+Familienrecht: Güterrecht und Zugewinnausgleich (Edinilmiş Mallara Katılma), Unterhaltsrecht (Nafaka), Wirksamkeit und Anerkennung von Eheschließungen und Scheidungen sowie Sorgerecht (Velayet) im türkischen Recht.
+
+Immobilien- und Sachenrecht: Eigentumserwerb an Immobilien in der Türkei (Tapu-System), Grundbuchrecht und gutgläubiger Erwerb (TMK Art. 1023), erbschaftsbezogene Grundbuchfragen.
+
+Internationales Privatrecht: Anwendbares Recht bei deutsch-türkischen Sachverhalten, Anerkennung und Vollstreckung (Tanıma/Tenfiz, MÖHUK), Staatsangehörigkeitsfragen und ihre zivilrechtlichen Folgen (Mavi Kart).
+
+Für Vollmachten mit Türkeibezug, die häufig parallel zu einem Gutachtenauftrag benötigt werden, siehe auch unseren Beitrag Vollmacht auf Türkisch: /de/blog/vollmacht-auf-tuerkisch
+
+## Ablauf
+
+- Anfrage: Sie schildern die Rechtsfrage und übermitteln die relevanten Unterlagen. Eine erste Einschätzung zur Machbarkeit und zum Umfang erhalten Sie kurzfristig.
+- Angebot: Sie erhalten ein transparentes Festpreisangebot mit Bearbeitungszeit. Keine versteckten Kosten.
+- Gutachten: Sie erhalten ein schriftlich begründetes Rechtsgutachten, das die gestellte Frage beantwortet — mit Fundstellen aus türkischem Gesetz und Rechtsprechung, in deutscher Sprache.
+- Rückfragen: Für Rückfragen zum Gutachten stehe ich selbstverständlich zur Verfügung.
+
+Wichtig: Bei gerichtlichen Fristen, zum Beispiel einer vom Gericht gesetzten Frist zur Vorlage des Gutachtens, empfiehlt sich eine möglichst frühzeitige Anfrage. Die Bearbeitungszeit richtet sich nach dem Umfang der Rechtsfrage und der verfügbaren Unterlagenlage.
+
+## Vergütung
+
+Die Vergütung richtet sich nach Umfang und Schwierigkeit der Rechtsfrage. Für gerichtlich beauftragte Gutachten gilt das JVEG. Für privatrechtliche Aufträge von Kanzleien und Notariaten erhalten Sie ein transparentes Festpreisangebot vorab. Eine kurze Ersteinschätzung zur Machbarkeit ist kostenfrei.
+
+## Warum Doğru Kanzlei für dieses Mandat?
+
+Als bei der Ankara Barosu zugelassener Avukat und zugleich Mitglied der Rechtsanwaltskammer Karlsruhe (§ 207 BRAO) sowie eingetragener Sachverständiger für türkisches Recht beim Amtsgericht Mannheim verbinde ich die praktische Verfahrensführung vor türkischen Gerichten mit der Fähigkeit, deutsche Gerichte, Kanzleien und Notariate direkt und ohne Zwischenstation zu bedienen. Rückfragen aus dem laufenden Verfahren beantworte ich unmittelbar — ohne Rücksprache mit einer weiteren, dritten Kanzlei.
+
+Kostenlose Ersteinschätzung bei der Doğru Kanzlei anfragen: https://calendly.com/hasand9366/30min
+
+Hinweis: Die Erstattung von Rechtsgutachten zum türkischen Recht erfolgt im Rahmen der Tätigkeit als in der Türkei zugelassener Avukat und als Sachverständiger für türkisches Recht. Eine Rechtsberatung im deutschen Recht ist damit nicht verbunden (§ 207 BRAO). Dieser Beitrag befasst sich ausschließlich mit dem türkischen Recht.`,
+    content: `Alman Mahkemeleri, Avukatları ve Noterleri İçin Türk Hukuku Bilirkişi Mütalaası
+
+Bu sayfa yalnızca Türk hukukuna ilişkin genel bilgi amaçlıdır. Doğru Kanzlei, §207 BRAO kapsamında yalnızca Türk hukuku konularında danışmanlık vermektedir.
+
+Türk Hukuku Bilirkişisi · Amtsgericht Mannheim
+
+Almanya’da görülen bir dava Türkiye ile bağlantılıysa — örneğin Türkiye’de bir miras, bir taşınmaz veya bir evlilik söz konusuysa — sık karşılaşılan bir durum ortaya çıkar: Mahkeme veya dosyayı yürüten Alman avukat, Türk hukukunun somut olayda ne söylediğine dair yazılı, gerekçeli ve güvenilir bir bilgiye ihtiyaç duyar. Alman kanunlar ihtilafı hukuku (Art. 3 vd. EGBGB, Roma I, Roma III, AB Miras Tüzüğü) birçok durumda doğrudan Türk maddi hukukuna atıfta bulunur — ve bu hukukun içeriğinin somut olarak tespit edilmesi gerekir.
+
+Bu ihtiyacı karşılamak için Türk hukukuna dair yazılı bilirkişi mütalaaları (Almanca: Rechtsgutachten) hazırlıyorum.
+
+## Bu Hizmet Kimler İçin?
+
+Alman mahkemeleri (§ 293 ZPO — yabancı hukukun araştırılması), Türkiye bağlantılı bir dosyayla ilgilenen Alman avukatlar, yurt dışı bağlantılı işlemler yapan noterlikler, ve miras, aile ve genel hukuk mahkemeleri.
+
+Almanya’da yaşayan ve Türkiye’deki bir miras veya boşanma davası Alman mahkemesinde görülen Türk vatandaşları için de bu hizmet dolaylı olarak önemlidir: Sizin avukatınız, dosyanızda Türk hukukunun nasıl uygulanacağını netleştirmek amacıyla böyle bir mütalaa talep edebilir. Bu durumda mütalaa doğrudan mahkeme dosyasına sunulur ve davanızın seyrini doğrudan etkiler.
+
+## Neden Doğru Kanzlei’den Bir Mütalaa?
+
+- Çifte yeterlilik: Ankara Barosu ve Rechtsanwaltskammer Karlsruhe (§ 207 BRAO) üyesiyim. Her iki hukuk sistemini de sadece teoriden değil, doğrudan uygulamadan tanıyorum.
+- Mahkeme nezdinde kayıtlı: Amtsgericht Mannheim’ın Türk hukuku bilirkişi listesine kayıtlıyım. Bu kayıt, uzmanlığın bağımsız bir kanıtıdır ve Alman mahkemeleri için doğrudan güvenilir bir kaynak oluşturur.
+- Uygulayıcı, salt teorisyen değil: Türk mahkemelerinde bizzat dava yürütüyorum, UYAP üzerinden. Mütalaalarım, güncel Yargıtay kararları dahil, Türkiye’deki fiili uygulamayı yansıtıyor.
+- Hızlı ve anlaşılır: Gereksiz akademik yükten arındırılmış, somut soruyu doğrudan cevaplayan, kanun ve içtihat referanslı, net yapılandırılmış mütalaalar.
+
+Bu çifte yetkinlik pratikte şu anlama gelir: Türkiye’de ayrı bir kanzlei aracılığına gerek yok, üçüncü bir tarafın gecikmesine gerek yok. Mahkemenin veya görevlendiren kanzleinin soruları doğrudan, Almanca olarak, tercüme zinciri olmadan cevaplanır.
+
+Ücretsiz Ön Görüşme Talep Edin: https://calendly.com/hasand9366/30min
+
+## Sık Karşılaşılan Mütalaa Konuları
+
+Miras Hukuku: Türk hukukuna göre yasal mirasçılık (TMK m.495 vd.), saklı pay hakkı ve tenkis, 1929 tarihli Türk-Alman Terekelerin Tasfiyesi Sözleşmesi kapsamında terekenin bölünmesi, vasiyetname ve miras sözleşmelerinin Türk hukukuna göre geçerliliği, muris muvazaası.
+
+Sınır ötesi miras dosyaları hakkında daha fazla bilgi için miras hukuku hizmetlerimize göz atabilirsiniz: /tr/hizmetler/miras-hukuku
+
+Aile Hukuku: Edinilmiş mallara katılma rejimi, Türk hukukuna göre nafaka, evliliklerin ve boşanmaların geçerliliği ve tanınması, Türk hukukunda velayet.
+
+Taşınmaz ve Eşya Hukuku: Türkiye’de taşınmaz mülkiyetinin kazanılması (tapu sistemi), tapu sicili hukuku ve iyiniyetli iktisap (TMK m.1023), mirasla bağlantılı tapu sorunları.
+
+Milletlerarası Özel Hukuk: Türk-Alman unsurlu olaylarda uygulanacak hukuk, tanıma ve tenfiz (MÖHUK), vatandaşlık sorunları ve bunların özel hukuk sonuçları (Mavi Kart).
+
+## Süreç Nasıl İşliyor?
+
+- Talep: Hukuki sorunuzu tarif eder ve ilgili belgeleri iletirsiniz. Fizibilite ve kapsam hakkında ilk değerlendirmeyi kısa sürede alırsınız.
+- Teklif: Bearbeitungssüresi belirtilen, şeffaf sabit fiyat teklifi alırsınız. Gizli maliyet yoktur.
+- Mütalaa: Sorulan soruyu Türk kanunu ve içtihadından referanslarla, Almanca olarak yazılı ve gerekçeli şekilde cevaplayan bir mütalaa teslim edilir.
+- Sonraki Sorular: Mütalaa hakkındaki sonraki sorularınız için elbette hazırım.
+
+Önemli: Mahkeme tarafından bir süre belirlenmişse, örneğin mütalaanın sunulması için, talebi mümkün olduğunca erken iletmeniz önerilir. İşlem süresi, sorunun kapsamına ve mevcut belge durumuna göre değişir.
+
+## Ücretlendirme
+
+Ücret, hukuki sorunun kapsamına ve zorluğuna göre belirlenir. Mahkeme tarafından talep edilen mütalaalarda JVEG uygulanır. Özel taleplerde (kanzlei, noterlik) önceden şeffaf bir sabit fiyat teklifi sunulur. Fizibiliteye ilişkin kısa bir ilk değerlendirme ücretsizdir.
+
+## Bu Görev İçin Neden Doğru Kanzlei?
+
+Ankara Barosu’na kayıtlı bir avukat ve aynı zamanda Rechtsanwaltskammer Karlsruhe üyesi (§ 207 BRAO) olarak, ayrıca Amtsgericht Mannheim’ın Türk hukuku bilirkişi listesinde kayıtlı biri olarak, Türk mahkemeleri önündeki fiili dava tecrübesini Alman mahkemelerine, kanzleilere ve noterliklere doğrudan hizmet verme kapasitesiyle birleştiriyorum. Devam eden bir davadan gelen sorularınızı üçüncü bir kanzleye danışmaya gerek kalmadan doğrudan cevaplıyorum.
+
+Ücretsiz Ön Görüşme Talep Edin: https://calendly.com/hasand9366/30min
+
+Yasal uyarı: Türk hukukuna dair bilirkişi mütalaası hizmeti, Türkiye’de kayıtlı bir avukat ve Türk hukuku bilirkişisi sıfatıyla yürütülmektedir. Bu hizmet, Alman hukuku alanında bir danışmanlık içermez (§ 207 BRAO). Bu sayfa yalnızca Türk hukukuna ilişkin genel bilgi amaçlıdır.`,
+    contentEN: `Turkish Law Expert Legal Opinion — For Courts, Lawyers, and Notaries
+
+This page addresses Turkish law exclusively. Doğru Kanzlei advises on Turkish law under § 207 BRAO and does not advise on German domestic law.
+
+Registered Expert on Turkish Law · Mannheim Local Court (Amtsgericht Mannheim)
+
+When a German legal case touches on a question of Turkish law, the same situation comes up again and again: the court, or the lawyer handling the file, needs a reliable, written, and reasoned answer to how Turkish law actually applies. German conflict-of-laws rules (Art. 3 ff. EGBGB, Rome I, Rome III, the EU Succession Regulation) frequently point to Turkish substantive law in these situations — and the content of that law then has to be established as a matter of fact.
+
+This is precisely what a written expert legal opinion on Turkish law is for.
+
+## Who This Service Is For
+
+German courts acting under Section 293 ZPO, lawyers handling a case with a Turkish connection, notaries handling matters with an international element, and probate, family, and civil courts more broadly.
+
+This matters indirectly to Turkish citizens living in Germany too: if your inheritance or divorce case connected to Turkey is being heard in a German court, your lawyer or the court itself may commission exactly this kind of opinion to clarify how Turkish law applies to your file. In that situation, the opinion goes directly into the court record and can directly shape the outcome of your case.
+
+## Why Commission an Opinion from Doğru Kanzlei?
+
+- Dual qualification: I am a member of both the Ankara Bar Association and the Karlsruhe Bar Association in Germany (§ 207 BRAO). I know both legal systems from practice, not just from academic literature.
+- Court-registered: I am listed on the official expert register of the Mannheim Local Court for Turkish law. That listing is an independent, verifiable proof of expertise.
+- A practitioner, not a pure theorist: I personally litigate cases before Turkish courts through the UYAP e-court system. My opinions reflect how Turkish law is actually applied in practice, including current Court of Cassation (Yargıtay) rulings.
+- Fast and readable: Clearly structured opinions that answer the specific legal question asked, supported by citations to statute and case law, without unnecessary academic padding.
+
+In practice, this dual qualification means: no detour through a separate Turkish law firm, no delay caused by a third party. I answer follow-up questions from the court or the instructing firm directly, in German, with no translation chain in between.
+
+Request a Free Initial Assessment with Doğru Kanzlei: https://calendly.com/hasand9366/30min
+
+## Typical Topics Covered
+
+Inheritance Law: statutory succession under Turkish law (Turkish Civil Code Art. 495 ff.), forced heirship (Saklı Pay) and reduction claims (Tenkis), the split-estate rule under the 1929 German-Turkish Succession Treaty, validity of wills and inheritance contracts under Turkish law, and Muris Muvazaası.
+
+For broader background on cross-border inheritance matters, see our inheritance law services and our Turkish Inheritance Guide for Germany: /en/services/inheritance-law and /en/blog/turkish-inheritance-germany-guide
+
+Family Law: marital property regime and equalization of accrued gains (Edinilmiş Mallara Katılma), maintenance (Nafaka), validity and recognition of marriages and divorces, and custody (Velayet) under Turkish law.
+
+Property Law: acquiring real estate ownership in Turkey, the Tapu land registry system, land registry law and good-faith acquisition (Turkish Civil Code Art. 1023), and inheritance-related land registry questions.
+
+Private International Law: applicable law in German-Turkish cross-border matters, recognition and enforcement of foreign judgments (Tanıma/Tenfiz under MÖHUK), and citizenship questions and their civil-law consequences (the Blue Card / Mavi Kart).
+
+## How It Works
+
+- Request: You describe the legal question and share the relevant documents. You receive an initial assessment of feasibility and scope quickly.
+- Quote: You receive a transparent fixed-fee quote with a turnaround time. No hidden costs.
+- Opinion: You receive a written, reasoned opinion answering the question, with citations to Turkish statute and case law, delivered in German.
+- Follow-up: I remain available for any follow-up questions about the opinion.
+
+Important: If the court has set a deadline for the opinion to be submitted, it is best to reach out as early as possible. Turnaround depends on the scope of the question and how much documentation is available upfront.
+
+## Fees
+
+Fees depend on the scope and complexity of the legal question. Court-commissioned opinions are billed under Germany’s JVEG statute. Private requests from law firms or notaries receive a transparent fixed-fee quote in advance. A short initial feasibility assessment is free of charge.
+
+## Why Doğru Kanzlei for This Work
+
+As a lawyer registered with the Ankara Bar Association, also a member of the Karlsruhe Bar Association in Germany (§ 207 BRAO), and a registered expert on Turkish law at the Mannheim Local Court, I combine hands-on litigation experience before Turkish courts with the ability to serve German courts, law firms, and notaries directly. Follow-up questions on an active case get answered directly — without having to consult a separate, third-party firm.
+
+Request a Free Initial Assessment with Doğru Kanzlei: https://calendly.com/hasand9366/30min
+
+Notice: Expert legal opinions on Turkish law are provided in the capacity of a lawyer licensed in Turkey and a registered expert on Turkish law. This service does not involve legal advice on German law (§ 207 BRAO). This page addresses Turkish law exclusively.`,
+    faqDE: [
+      {
+        question: "Was kostet ein Rechtsgutachten zum türkischen Recht?",
+        answer: "Für gerichtlich beauftragte Gutachten gilt das JVEG. Für private Aufträge von Kanzleien oder Notariaten erhalten Sie vorab ein transparentes Festpreisangebot; eine kurze Ersteinschätzung zur Machbarkeit ist kostenfrei."
+      },
+      {
+        question: "Wie lange dauert die Erstellung eines Rechtsgutachtens?",
+        answer: "Die Bearbeitungszeit hängt vom Umfang der Rechtsfrage ab und wird im Angebot verbindlich genannt. Kurzfristige Bearbeitung ist möglich, insbesondere bei laufenden Gerichtsverfahren mit Fristen."
+      },
+      {
+        question: "Wer kann ein Rechtsgutachten zum türkischen Recht in Auftrag geben?",
+        answer: "Deutsche Gerichte im Rahmen von § 293 ZPO, Rechtsanwältinnen und Rechtsanwälte mit einem Mandat mit Türkeibezug sowie Notariate bei Beurkundungen mit Auslandsbezug."
+      },
+      {
+        question: "Was ist der Unterschied zwischen einem Rechtsgutachten und einer Rechtsberatung?",
+        answer: "Ein Rechtsgutachten beantwortet schriftlich und begründet eine konkrete Rechtsfrage nach türkischem Recht, meist für ein Gericht, eine Kanzlei oder ein Notariat. Es ersetzt keine individuelle Rechtsberatung im deutschen Recht, die gemäß § 207 BRAO nicht Teil dieser Tätigkeit ist."
+      },
+      {
+        question: "Warum ist ein bei einem deutschen Gericht gelisteter Sachverständiger sinnvoller als eine allgemeine Anfrage an eine türkische Kanzlei?",
+        answer: "Die Eintragung in die Sachverständigenliste des Amtsgerichts Mannheim ist ein unabhängiger Nachweis der Fachkunde und schafft für deutsche Gerichte und Anwälte eine verlässliche, direkt verwertbare Quelle statt einer losen Zweitmeinung."
+      },
+      {
+        question: "Werden auch familienrechtliche Fragen wie Nafaka oder Velayet begutachtet?",
+        answer: "Ja. Typische familienrechtliche Gutachtenthemen umfassen Güterrecht und Zugewinnausgleich, Unterhaltsrecht, Anerkennung von Eheschließungen und Scheidungen sowie Sorgerecht nach türkischem Recht."
+      },
+      {
+        question: "Kann ein Gutachten auch die Anerkennung eines deutschen Urteils in der Türkei betreffen?",
+        answer: "Ja, Fragen der Anerkennung und Vollstreckung (Tanıma/Tenfiz) nach dem türkischen IPR-Gesetz (MÖHUK) gehören zu den regelmäßigen Gutachtenthemen."
+      },
+      {
+        question: "In welcher Sprache wird das Gutachten erstellt?",
+        answer: "Die Gutachten werden auf Deutsch erstellt, mit Fundstellen aus türkischem Gesetzestext und Rechtsprechung, damit deutsche Gerichte und Rechtsanwälte sie direkt verwenden können."
+      }
+    ],
+    faqTR: [
+      {
+        question: "Alman mahkemesi neden Türk hukuku hakkında bir rapora ihtiyaç duyar?",
+        answer: "Almanya'daki bir dava Türkiye ile bağlantılıysa, Alman kanunlar ihtilafı kuralları çoğu zaman Türk hukukunun uygulanmasını gerektirir. § 293 ZPO uyarınca mahkeme, yabancı hukukun içeriğini resen araştırmakla yükümlüdür."
+      },
+      {
+        question: "Bu mütalaa hangi durumlarda isteniyor?",
+        answer: "En sık miras davalarında, aile hukuku davalarında ve Türkiye'deki gayrimenkullerle ilgili uyuşmazlıklarda talep edilir."
+      },
+      {
+        question: "Mütalaayı kimler talep edebilir?",
+        answer: "Alman mahkemeleri, Türkiye bağlantılı bir dosyayla ilgilenen Alman avukatlar ve yurt dışı bağlantılı işlemler yapan noterler."
+      },
+      {
+        question: "Bilirkişi mütalaası ile hukuki danışmanlık arasındaki fark nedir?",
+        answer: "Bilirkişi mütalaası, somut bir hukuki soruyu Türk kanun ve içtihadına dayanarak yazılı ve gerekçeli şekilde cevaplayan, genellikle bir Alman mahkemesine, avukata veya noterlik makamına hitap eden bir belgedir."
+      },
+      {
+        question: "Almanya'da yaşayan bir Türk vatandaşı olarak neden bu hizmetle karşılaşabilirim?",
+        answer: "Türkiye bağlantılı bir miras veya boşanma davanız Alman mahkemesindeyse, mahkeme veya Alman avukatınız Türk hukukunun içeriğini netleştirmek için böyle bir mütalaa talep edebilir."
+      },
+      {
+        question: "Mütalaa ne kadar sürede hazırlanır ve maliyeti nedir?",
+        answer: "Süre, sorunun kapsamına göre değişir ve teklif aşamasında netleştirilir. Mahkeme tarafından talep edilen mütalaalarda JVEG uygulanır; özel taleplerde önceden sabit fiyat teklifi sunulur."
+      },
+      {
+        question: "Mütalaa hangi dilde hazırlanır?",
+        answer: "Mütalaalar Almanca hazırlanır; Türk kanun metinlerine ve Yargıtay içtihatlarına atıfla desteklenir."
+      }
+    ],
+    faqEN: [
+      {
+        question: "Why would a German court need an expert opinion on Turkish law?",
+        answer: "When a German case touches Turkey, German conflict-of-laws rules often point to Turkish substantive law. Under Section 293 ZPO, the court must establish the content of that foreign law, typically by commissioning a written expert opinion."
+      },
+      {
+        question: "What is the difference between an expert legal opinion and legal advice?",
+        answer: "An expert legal opinion answers a specific legal question under Turkish law in writing, with reasoning and citations, usually addressed to a German court, law firm, or notary. It is not individual legal advice and does not involve advice on German law."
+      },
+      {
+        question: "Who can commission this kind of expert opinion?",
+        answer: "German courts under Section 293 ZPO, lawyers handling a case connected to Turkey, and notaries handling matters with a foreign element."
+      },
+      {
+        question: "What topics are typically covered?",
+        answer: "Most requests involve inheritance law, family law and disputes over property located in Turkey."
+      },
+      {
+        question: "How long does it take to prepare an expert opinion, and what does it cost?",
+        answer: "Turnaround depends on the scope of the legal question and is confirmed at the quote stage. Court-commissioned opinions are billed under Germany's JVEG statute; private requests receive a transparent fixed-fee quote in advance."
+      },
+      {
+        question: "In what language is the opinion written?",
+        answer: "In German, with citations to Turkish statutes and case law, so that German courts and lawyers can use it directly without further translation."
+      },
+      {
+        question: "I'm a Turkish citizen living in Germany — why would this service matter to me?",
+        answer: "If your inheritance or divorce case connected to Turkey is being heard in a German court, the court or your German lawyer may commission this kind of opinion to establish how Turkish law applies."
+      }
+    ]
   }
 ];

@@ -28,6 +28,14 @@ const renderFormattedContent = (text: string) => {
           const trimmed = line.trim();
           if (!trimmed) return null;
 
+          if (trimmed.startsWith('## ')) {
+            return (
+              <h3 key={j} className="font-serif text-[24px] md:text-[28px] text-[#1C3829] mt-8 mb-4 border-b border-[#8B6E2A]/20 pb-3 self-start">
+                {trimmed.replace(/^##\s*/, '')}
+              </h3>
+            );
+          }
+
           // Headers
           const isHeaderLine = 
             trimmed.includes('Sizin için neler') ||

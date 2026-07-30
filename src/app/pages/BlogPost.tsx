@@ -37,11 +37,12 @@ const INHERITANCE_GUIDE_BLOG_SLUG_DE = "erbschaft-tuerkei-deutschland-ratgeber";
 const INHERITANCE_TAX_DOUBLE_TAXATION_BLOG_SLUG_DE = "erbschaftsteuer-tuerkei-doppelbesteuerung-vermeiden";
 const UNTERHALT_TURKISH_LAW_BLOG_SLUG_DE = "unterhalt-tuerkisches-recht";
 const TANIMA_TENFIZ_RECOGNITION_2026_BLOG_SLUG_DE = "tanima-tenfiz-scheidung-tuerkei-anerkennung-2026";
+const PROPERTY_PARTITION_AUCTION_BLOG_SLUG_DE = "12-justizpaket-erbengemeinschaft-teilungsversteigerung";
 
 type BlogProductCTAPlacement = 'intro' | 'comparison' | 'service_types' | 'bottom' | 'sticky';
 
 type BlogProductFunnel = {
-  service: 'vekaletname' | 'tanima_tenfiz' | 'inheritance_tax';
+  service: 'vekaletname' | 'tanima_tenfiz' | 'inheritance_tax' | 'property_partition_auction';
   slugDE: string;
   slugTR: string;
   duration: string;
@@ -354,9 +355,109 @@ function getInheritanceTaxFunnelCopy(language: string) {
   };
 }
 
+function getPropertyPartitionAuctionFunnelCopy(language: string) {
+  if (language === 'de') {
+    return {
+      duration: 'Direkter Kontakt',
+      serviceName: 'Teilungsversteigerung Türkei',
+      leadSituation: 'Ich bin Miterbe einer Immobilie in der Türkei und möchte Schätzwert, Versteigerung, Sicherheitsleistung und Fristen prüfen lassen.',
+      introEyebrow: 'DIREKTER WHATSAPP-KONTAKT',
+      introTitle: 'Teilungsversteigerung einer geerbten Immobilie in der Türkei?',
+      introBody: 'Schreiben Sie uns direkt per WhatsApp. Wir prüfen Grundbuchstand, Erbenkreis, Schätzwert, Einwendungsfristen und ob die neue 100-%-Regel für Ihre Immobilie greifen kann.',
+      introButton: 'WhatsApp Prüfung starten',
+      durationChip: 'Direkter Kontakt',
+      formChip: 'WhatsApp Vorab-Formular',
+      comparisonTitle: 'Erben-only erste Versteigerung? Prüfen Sie die Voraussetzungen vor dem Termin.',
+      comparisonBody: 'Die neue Regel schützt nur, wenn alle Eigentümer geerbt haben und kein Dritter beteiligt ist. Ein verkaufter Anteil, ein zu niedriger Schätzwert oder verpasste Einwendungsfrist kann den Schutz kippen.',
+      serviceTypesTitle: 'Schätzwert, Sicherheit und 7-Tage-Frist gehören in einen Plan',
+      serviceTypesBody: 'Wer bieten will, braucht Finanzierung, Sicherheitsleistung und Fristenkontrolle. Wir ordnen den Verfahrensstand über UYAP ein und sagen, wo sofort gehandelt werden muss.',
+      serviceTypesButton: 'Teilungsversteigerung per WhatsApp prüfen',
+      bottomEyebrow: 'Done-for-you Teilungsversteigerung',
+      bottomTitle: 'Wir prüfen Ihre türkische Erbimmobilie vor der Versteigerung',
+      bottomBody: 'Über das kurze WhatsApp Formular schildern Sie Immobilie, Erben und Verfahrensstand. Hasan Doğru prüft Tapu, Veraset, Gutachten, Einwendungsfristen, Sicherheitsleistung und den Ablauf ohne unnötige Türkeireise.',
+      includedTitle: 'Was übernommen wird',
+      includedItems: [
+        'Prüfung von Tapu, Erbenkreis und Anwendbarkeit der 100-%-Regel',
+        'Kontrolle von Schätzwertgutachten, Einwendungsfrist und Verkaufstermin',
+        'Koordination von Vollmacht, UYAP, Sicherheitsleistung und Versteigerungsstrategie',
+      ],
+      trustLine: 'Türkisches Erbrecht · Mannheim & Ankara · UYAP-Verfahrenskontrolle',
+      stickyTitle: 'Teilungsversteigerung Türkei',
+      stickySubtitle: 'WhatsApp Vorab-Formular',
+      stickyButton: 'WhatsApp',
+      chips: ['Tapu', 'Erbenkreis', 'Schätzwert', 'Sicherheit', '7-Tage-Frist'],
+    };
+  }
+
+  if (language === 'en') {
+    return {
+      duration: 'Direct Contact',
+      serviceName: 'Turkish inherited-property auction',
+      leadSituation: 'I am an heir to property in Turkey and want to check the valuation, partition auction, deposit, deadlines and strategy.',
+      introEyebrow: 'DIRECT WHATSAPP CONTACT',
+      introTitle: 'Inherited property in Turkey facing a partition auction?',
+      introBody: 'Text us directly on WhatsApp. We review the title deed, heirs, assessed value, objection deadline and whether the new 100% first-auction rule may apply.',
+      introButton: 'Start WhatsApp review',
+      durationChip: 'Direct Contact',
+      formChip: 'WhatsApp intake form',
+      comparisonTitle: 'Heirs-only first auction? Check the conditions before the hearing.',
+      comparisonBody: 'The new protection only works if all co-owners acquired their shares through inheritance and no third-party share is involved. A sold share, low valuation or missed objection deadline can change the entire strategy.',
+      serviceTypesTitle: 'Valuation, deposit and 7-day payment deadline need one plan',
+      serviceTypesBody: 'Anyone planning to bid needs financing, deposit timing and deadline control. We review the Turkish file status through UYAP and flag what must be handled immediately.',
+      serviceTypesButton: 'Check the auction via WhatsApp',
+      bottomEyebrow: 'Done-for-you partition auction review',
+      bottomTitle: 'We review your Turkish inherited property before auction',
+      bottomBody: 'Use the WhatsApp intake form to explain the property, heirs and current stage. Hasan Doğru reviews the title deed, inheritance documents, valuation, objection deadlines, deposit and auction strategy without unnecessary travel.',
+      includedTitle: 'What we handle',
+      includedItems: [
+        'Review of title deed, heir structure and 100% rule eligibility',
+        'Check of valuation report, objection deadline and auction date',
+        'Coordination of power of attorney, UYAP, deposit and bidding strategy',
+      ],
+      trustLine: 'Turkish inheritance law · Mannheim & Ankara · UYAP file control',
+      stickyTitle: 'Turkey partition auction',
+      stickySubtitle: 'WhatsApp intake form',
+      stickyButton: 'WhatsApp',
+      chips: ['Title deed', 'Heirs', 'Valuation', 'Deposit', '7-day deadline'],
+    };
+  }
+
+  return {
+    duration: 'Direkt İletişim',
+    serviceName: 'Ortaklığın Giderilmesi',
+    leadSituation: "Türkiye'de miras kalan taşınmaz için ortaklığın giderilmesi veya ihale sürecim var; tapu, muhammen bedel, teminat ve süreleri kontrol ettirmek istiyorum.",
+    introEyebrow: 'DİREKT WHATSAPP İLETİŞİMİ',
+    introTitle: 'Türkiye’de miras taşınmazı için ortaklığın giderilmesi davası mı var?',
+    introBody: "Bize doğrudan WhatsApp'tan yazın. Tapu kaydı, mirasçı listesi, muhammen bedel, itiraz süresi, teminat ve yeni yüzde yüz kuralının dosyanıza uygulanıp uygulanmayacağını birlikte kontrol edelim.",
+    introButton: 'WhatsApp kontrolünü başlat',
+    durationChip: 'Direkt İletişim',
+    formChip: 'WhatsApp ön bilgi formu',
+    comparisonTitle: 'İlk ihale sadece mirasçılar arasında mı? Şartları önceden kontrol edin.',
+    comparisonBody: 'Yeni koruma yalnızca tüm maliklerin miras yoluyla edinmiş olması ve üçüncü kişi payı bulunmaması halinde işler. Satılmış bir pay, düşük kıymet takdiri veya kaçan itiraz süresi korumayı zayıflatabilir.',
+    serviceTypesTitle: 'Muhammen bedel, teminat ve 7 günlük ödeme süresi tek planda yönetilmeli',
+    serviceTypesBody: 'İhaleye girmek isteyen mirasçının finansman, teminat ve süre kontrolünü önceden hazırlaması gerekir. UYAP üzerinden dosya aşamasını inceler, nerede hızlı hareket edilmesi gerektiğini netleştiririz.',
+    serviceTypesButton: "Ortaklığın giderilmesini WhatsApp'tan sorun",
+    bottomEyebrow: 'Done-for-you ortaklığın giderilmesi kontrolü',
+    bottomTitle: 'Türkiye’deki miras taşınmazınızı ihale öncesi kontrol ediyoruz',
+    bottomBody: 'Kısa WhatsApp formuyla taşınmazı, mirasçıları ve dosya aşamasını iletin. Hasan Doğru tapu, veraset, kıymet takdiri, itiraz süresi, teminat ve ihale stratejisini gereksiz Türkiye seyahati olmadan değerlendirir.',
+    includedTitle: 'Hizmete dahil olanlar',
+    includedItems: [
+      'Tapu, mirasçı yapısı ve yüzde yüz kuralının uygulanabilirliği incelenir',
+      'Kıymet takdiri, itiraz süresi ve satış günü kontrol edilir',
+      'Vekaletname, UYAP, teminat ve ihale stratejisi koordine edilir',
+    ],
+    trustLine: 'Türk miras hukuku · Mannheim & Ankara · UYAP dosya kontrolü',
+    stickyTitle: 'Ortaklığın giderilmesi',
+    stickySubtitle: 'WhatsApp ön bilgi formu',
+    stickyButton: 'WhatsApp',
+    chips: ['Tapu', 'Mirasçılar', 'Muhammen bedel', 'Teminat', '7 günlük süre'],
+  };
+}
+
 function getBlogProductFunnelCopy(funnel: BlogProductFunnel, language: string) {
   if (funnel.service === 'tanima_tenfiz') return getTanimaTenfizFunnelCopy(language);
   if (funnel.service === 'inheritance_tax') return getInheritanceTaxFunnelCopy(language);
+  if (funnel.service === 'property_partition_auction') return getPropertyPartitionAuctionFunnelCopy(language);
   return getVekaletnameFunnelCopy(language);
 }
 
@@ -422,6 +523,38 @@ function getProductHookCopy(funnel: BlogProductFunnel, language: string) {
             'Süreler ve belgeler: Hangi evraklar en baştan güvenceye alınmalı?',
           ],
           trust: 'Av. Hasan Doğru · Türk hukuku · Mannheim & Ankara',
+        };
+  }
+
+  if (funnel.service === 'property_partition_auction') {
+    return language === 'de'
+      ? {
+          lead: 'Das 12. Justizpaket verändert die erste Versteigerungsrunde bei geerbten türkischen Immobilien. Dieser Ratgeber zeigt, wann die neue 100-%-Regel greift und warum Schätzwert, Einwendungsfrist und Sicherheitsleistung früh geprüft werden müssen.',
+          bullets: [
+            'Erbenkreis und Tapu: Wann gilt die erste Runde nur unter Miterben?',
+            'Schätzwert und Einwendung: Warum eine verpasste Frist teuer werden kann',
+            'Bieten aus Deutschland: Vollmacht, UYAP, Sicherheitsleistung und 7-Tage-Frist',
+          ],
+          trust: 'Av. Hasan Doğru · Türkisches Erbrecht · Mannheim & Ankara',
+        }
+      : language === 'en'
+      ? {
+          lead: 'Turkey’s 12th Judicial Package changes the first auction round for inherited property. This guide explains when the new 100% rule applies and why valuation, objection deadlines and deposits must be checked early.',
+          bullets: [
+            'Heirs and title deed: when is the first auction limited to co-heirs?',
+            'Valuation and objections: why a missed deadline can become expensive',
+            'Bidding from abroad: power of attorney, UYAP, deposit and 7-day payment deadline',
+          ],
+          trust: 'Av. Hasan Doğru · Turkish inheritance law · Mannheim & Ankara',
+        }
+      : {
+          lead: '12. Yargı Paketi, miras kalan taşınmazlarda ilk satış ihalesinin işleyişini değiştiriyor. Bu rehber yüzde yüz kuralının ne zaman uygulanacağını ve muhammen bedel, itiraz süresi, teminat konularının neden erken kontrol edilmesi gerektiğini açıklar.',
+          bullets: [
+            'Mirasçı yapısı ve tapu: İlk ihale ne zaman sadece mirasçılar arasında yapılır?',
+            'Kıymet takdiri ve itiraz: Kaçırılan süre neden pahalıya mal olabilir?',
+            'Almanya’dan ihaleye hazırlık: Vekaletname, UYAP, teminat ve 7 günlük ödeme süresi',
+          ],
+          trust: 'Av. Hasan Doğru · Türk miras hukuku · Mannheim & Ankara',
         };
   }
 
@@ -765,6 +898,12 @@ function BlogStickyBookingCTA({ funnel, language }: { funnel: BlogProductFunnel;
           : language === 'en'
             ? 'Check Turkish inheritance tax, deadlines, evidence and double taxation.'
             : 'Türkiye miras vergisi, süreler, belgeler ve çifte vergilendirmeyi netleştirelim.'
+        : funnel.service === 'property_partition_auction'
+          ? language === 'de'
+            ? 'Teilungsversteigerung Türkei prüfen: Schätzwert, Erbenkreis und Fristen klären.'
+            : language === 'en'
+              ? 'Check the Turkish partition auction: valuation, heirs and deadlines.'
+              : 'Ortaklığın giderilmesi sürecinde muhammen bedel, mirasçılar ve süreleri netleştirelim.'
         : language === 'de'
           ? 'Wir bereiten Ihre Vollmacht vollständig vor. Sie müssen sich um nichts kümmern.'
           : language === 'en'
@@ -784,6 +923,12 @@ function BlogStickyBookingCTA({ funnel, language }: { funnel: BlogProductFunnel;
           : language === 'en'
             ? 'Coordinate the Turkish estate side and German tax credit from day one'
             : 'Türkiye miras süreci ve Almanya mahsup başvurusunu baştan koordine edin'
+        : funnel.service === 'property_partition_auction'
+          ? language === 'de'
+            ? 'Tapu, Veraset, UYAP, Sicherheitsleistung und 7-Tage-Frist'
+            : language === 'en'
+              ? 'Title deed, probate, UYAP, deposit and 7-day deadline'
+              : 'Tapu, veraset, UYAP, teminat ve 7 günlük ödeme süresi'
         : language === 'de'
           ? 'Konsulat, Notar, Apostille, Übersetzung — Hasan Doğru kümmert sich darum'
           : language === 'en'
@@ -2703,6 +2848,11 @@ export function BlogPost() {
     tr: ['turkiye-almanya-miras-vergisi-cifte-vergilendirme'],
     en: ['turkish-inheritance-tax-double-taxation-germany'],
   };
+  const propertyPartitionAuctionProductSlugs = {
+    de: [PROPERTY_PARTITION_AUCTION_BLOG_SLUG_DE],
+    tr: ['12-yargi-paketi-ortakligin-giderilmesi-mirascilar'],
+    en: ['turkey-12th-judicial-package-inherited-property-auction'],
+  };
   const matchesLocalizedSlug = (slugs: { de: string[]; tr: string[]; en: string[] }) => (
     (language === 'de' && slugs.de.includes(post.slugDE)) ||
     (language === 'tr' && slugs.tr.includes(post.slugTR)) ||
@@ -2728,7 +2878,16 @@ export function BlogPost() {
             campaign: 'inheritance_tax_whatsapp_form',
             image: post.image,
           }
-        : null;
+        : matchesLocalizedSlug(propertyPartitionAuctionProductSlugs)
+          ? {
+              service: 'property_partition_auction' as const,
+              slugDE: PROPERTY_PARTITION_AUCTION_BLOG_SLUG_DE,
+              slugTR: '12-yargi-paketi-ortakligin-giderilmesi-mirascilar',
+              duration: '20 dakika',
+              campaign: 'property_partition_auction_whatsapp_form',
+              image: post.image,
+            }
+          : null;
   const whatsappCTATopic: BlogWhatsAppCTATopic | null = [CRIMINAL_LAW_BLOG_SLUG_DE, CRIMINAL_DEFENSE_FROM_GERMANY_BLOG_SLUG_DE].includes(post.slugDE)
     ? 'criminal_law'
     : post.slugDE === SUMMONS_WARRANT_BLOG_SLUG_DE
@@ -3444,6 +3603,9 @@ export function BlogPost() {
                           'Wie weit reicht die Anrechnung nach § 21 ErbStG wirklich?',
                           '§ 21 ErbStG Mahsubu Pratikte Ne Kadar İşe Yarar?',
                           'How Far Does the § 21 ErbStG Credit Actually Go?',
+                          'Was ist der Schätzwert (muhammen bedel) und warum ist er jetzt so wichtig?',
+                          'Muhammen Bedel Nedir ve Yeni Düzenlemede Neden Bu Kadar Önemli?',
+                          'What Is the “Assessed Value” and Why Does It Matter So Much Now?',
                         ].includes(headingText)
                       ) {
                         renderedElements.push(
@@ -3458,6 +3620,9 @@ export function BlogPost() {
                           'Rechenbeispiel 2: Deutscher Staatsbürger erbt ausschließlich türkische Immobilie',
                           "Örnek 2: Türk Kökeni Olmayan Alman Vatandaşının Sadece Türkiye'deki Taşınmazı Miras Alması",
                           'Worked Example 2: A German National with No Turkish Background Inherits Only Turkish Property',
+                          'Welche Immobilien profitieren von diesem neuen Schutz?',
+                          'Hangi Taşınmazlar Bu Yeni Korumadan Yararlanıyor?',
+                          'Which Properties Qualify for This New Protection?',
                         ].includes(headingText)
                       ) {
                         renderedElements.push(
@@ -3519,6 +3684,9 @@ export function BlogPost() {
                           '5 Strategien zur Minimierung der Doppelbesteuerung',
                           'Çifte Vergilendirmeyi Azaltmak İçin 5 Strateji',
                           '5 Strategies to Reduce Double Taxation',
+                          'Schritt für Schritt: Das Verfahren aus Deutschland steuern',
+                          'Almanya’dan Süreci Yönetmek İsteyenler İçin Adım Adım Yol Haritası',
+                          'A Step-by-Step Roadmap for Managing This From Abroad',
                         ].includes(headingText)
                       ) {
                         renderedElements.push(

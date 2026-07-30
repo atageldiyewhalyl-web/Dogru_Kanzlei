@@ -1,4 +1,4 @@
-import{r as f,j as e}from"./react-core-DfRafE5B.js";import{s as h}from"./data-services-Cxj4twNG.js";import{L as x}from"./react-router-ChW-6dLM.js";import{u as p}from"./index-CPfJG2N-.js";import{f as u}from"./data-blog-D69Nd46q.js";import{v as g}from"./vekaletname-hero-Biw0P-jo.js";import{r as v,A as m}from"./ui-vendor-DHnGAZBI.js";const j="/assets/tanima-B9GnJvOJ.avif",b="/assets/inheritance-BIq1V4iY.avif",N="/assets/criminal-BDYQwuMP.avif",w=`
+import{r as f,j as e}from"./react-core-DfRafE5B.js";import{s as h}from"./data-services-DEseKVvH.js";import{L as x}from"./react-router-ChW-6dLM.js";import{u as p}from"./index-0qZNxQOu.js";import{f as u}from"./data-blog-D3Eb_1KA.js";import{v as g}from"./vekaletname-hero-Biw0P-jo.js";import{r as v,A as m}from"./ui-vendor-DHnGAZBI.js";const j="/assets/tanima-B9GnJvOJ.avif",b="/assets/inheritance-BIq1V4iY.avif",N="/assets/criminal-BDYQwuMP.avif",w=`
   .fade-in-card {
     opacity: 0;
     transform: translateY(20px);

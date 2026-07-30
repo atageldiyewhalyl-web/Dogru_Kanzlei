@@ -28,6 +28,7 @@ import { hagbGermanCitizenshipPost } from "./hagbGermanCitizenshipPost";
 import { tapuIptalPost } from "./tapuIptalPost";
 import { inheritanceTaxDoubleTaxationPost } from "./inheritanceTaxDoubleTaxationPost";
 import { tanimaTenfizRecognition2026Post } from "./tanimaTenfizRecognition2026Post";
+import { judicialPackagePartitionPost } from "./judicialPackagePartitionPost";
 import { legacyBlogPosts } from "./legacyBlogPosts";
 
 export interface BlogPost {
@@ -1120,6 +1121,7 @@ const hiddenBlogSlugs = new Set([
 ]);
 
 const allBlogPosts: BlogPost[] = [
+  judicialPackagePartitionPost,
   tanimaTenfizRecognition2026Post,
   inheritanceTaxDoubleTaxationPost,
   vekaletnameKostenPost,

@@ -66,16 +66,20 @@ function translatePath(path: string, fromLang: Language, toLang: Language): stri
     newPath = newPath.replace('/hakkimizda', '/about');
   }
 
-  // 2. Dynamic slugs (Services) — only translate for de/tr pairs
-  const servicesSegment = toLang === 'de' ? '/leistungen/' : toLang === 'tr' ? '/hizmetler/' : null;
-  if (servicesSegment && newPath.includes(servicesSegment)) {
+  // 2. Dynamic slugs (Services)
+  const servicesSegment = toLang === 'de' ? '/leistungen/' : toLang === 'tr' ? '/hizmetler/' : '/services/';
+  if (newPath.includes(servicesSegment)) {
     const slug = newPath.split(servicesSegment)[1]?.split(/[?#]/)[0];
     if (slug) {
       const service = services.find(s =>
-        fromLang === 'de' ? s.slugDE === slug : s.slugTR === slug
+        fromLang === 'de'
+          ? s.slugDE === slug
+          : fromLang === 'tr'
+            ? s.slugTR === slug
+            : (s as any).slugEN === slug || s.slugDE === slug
       );
       if (service) {
-        const newSlug = toLang === 'de' ? service.slugDE : service.slugTR;
+        const newSlug = toLang === 'de' ? service.slugDE : toLang === 'tr' ? service.slugTR : ((service as any).slugEN || service.slugDE);
         newPath = newPath.replace(slug, newSlug);
       }
     }
@@ -127,8 +131,7 @@ export const LanguageProvider: React.FC<{ language: Language; children: React.Re
       service: (id: string) => {
         const s = services.find(serv => serv.id === id);
         if (language === 'en') {
-          // Use DE slug for English routes (same slug, different prefix)
-          const slug = s ? s.slugDE : id;
+          const slug = s ? ((s as any).slugEN || s.slugDE) : id;
           return `/en/services/${slug}`;
         }
         const slug = s ? (language === 'de' ? s.slugDE : s.slugTR) : id;
