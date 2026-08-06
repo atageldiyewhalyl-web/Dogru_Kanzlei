@@ -19,8 +19,11 @@ const corsHeaders = {
   "Access-Control-Allow-Methods": "POST, OPTIONS",
 };
 
-const defaultFromEmail = "Doğru Kanzlei Anfrage <anfrage@forms.xn--nll-hoa.com>";
-const defaultToEmail = "halyl@xn--nll-hoa.com,avukat.hasandogru@outlook.de";
+const dogruFromEmail = "Doğru Kanzlei <anfrage@forms.xn--nll-hoa.com>";
+const dogruNotificationRecipients = [
+  "halyl@xn--nll-hoa.com",
+  "avukat.hasandogru@outlook.de",
+];
 const allowedNotifyEmails = new Set([
   "halyl@xn--nll-hoa.com",
   "avukat.hasandogru@outlook.de",
@@ -73,11 +76,10 @@ function parseEmailList(value: string) {
 }
 
 function resolveRecipients(lead: ReturnType<typeof validatePayload>) {
-  const configuredRecipients = parseEmailList(Deno.env.get("LEAD_TO_EMAIL") || defaultToEmail);
   const requestedRecipients = parseEmailList(lead.notifyEmails)
     .filter((email) => allowedNotifyEmails.has(email));
 
-  return Array.from(new Set([...configuredRecipients, ...requestedRecipients]));
+  return Array.from(new Set([...dogruNotificationRecipients, ...requestedRecipients]));
 }
 
 function renderTextEmail(lead: ReturnType<typeof validatePayload>) {
@@ -174,7 +176,7 @@ Deno.serve(async (req) => {
     if (error) throw error;
 
     const leadId = data.id as string;
-    const from = Deno.env.get("LEAD_FROM_EMAIL") || defaultFromEmail;
+    const from = dogruFromEmail;
     const to = resolveRecipients(lead);
 
     if (!to.length) {
