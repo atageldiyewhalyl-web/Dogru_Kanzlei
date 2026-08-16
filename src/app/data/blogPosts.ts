@@ -29,6 +29,10 @@ import { tapuIptalPost } from "./tapuIptalPost";
 import { inheritanceTaxDoubleTaxationPost } from "./inheritanceTaxDoubleTaxationPost";
 import { tanimaTenfizRecognition2026Post } from "./tanimaTenfizRecognition2026Post";
 import { judicialPackagePartitionPost } from "./judicialPackagePartitionPost";
+import { pensionEqualizationDivorcePost } from "./pensionEqualizationDivorcePost";
+import { propertyCompensationDivorcePost } from "./propertyCompensationDivorcePost";
+import { inheritanceParticipationClaimPost } from "./inheritanceParticipationClaimPost";
+import { inheritanceCertificateRecognitionPost } from "./inheritanceCertificateRecognitionPost";
 import { legacyBlogPosts } from "./legacyBlogPosts";
 
 export interface BlogPost {
@@ -1121,6 +1125,10 @@ const hiddenBlogSlugs = new Set([
 ]);
 
 const allBlogPosts: BlogPost[] = [
+  inheritanceCertificateRecognitionPost,
+  inheritanceParticipationClaimPost,
+  propertyCompensationDivorcePost,
+  pensionEqualizationDivorcePost,
   judicialPackagePartitionPost,
   tanimaTenfizRecognition2026Post,
   inheritanceTaxDoubleTaxationPost,

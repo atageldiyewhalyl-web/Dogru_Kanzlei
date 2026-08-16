@@ -42,7 +42,7 @@ const PROPERTY_PARTITION_AUCTION_BLOG_SLUG_DE = "12-justizpaket-erbengemeinschaf
 type BlogProductCTAPlacement = 'intro' | 'comparison' | 'service_types' | 'bottom' | 'sticky';
 
 type BlogProductFunnel = {
-  service: 'vekaletname' | 'tanima_tenfiz' | 'inheritance_tax' | 'property_partition_auction';
+  service: 'vekaletname' | 'tanima_tenfiz' | 'inheritance_tax' | 'property_partition_auction' | 'divorce_property' | 'pension_rights' | 'inheritance_participation' | 'inheritance_certificate';
   slugDE: string;
   slugTR: string;
   duration: string;
@@ -458,10 +458,128 @@ function getBlogProductFunnelCopy(funnel: BlogProductFunnel, language: string) {
   if (funnel.service === 'tanima_tenfiz') return getTanimaTenfizFunnelCopy(language);
   if (funnel.service === 'inheritance_tax') return getInheritanceTaxFunnelCopy(language);
   if (funnel.service === 'property_partition_auction') return getPropertyPartitionAuctionFunnelCopy(language);
+  if (['divorce_property', 'pension_rights', 'inheritance_participation', 'inheritance_certificate'].includes(funnel.service)) {
+    return getFamilyAndInheritanceFunnelCopy(funnel.service, language);
+  }
   return getVekaletnameFunnelCopy(language);
 }
 
+function getFamilyAndInheritanceFunnelCopy(service: BlogProductFunnel['service'], language: string) {
+  const isPension = service === 'pension_rights';
+  const isDivorceProperty = service === 'divorce_property';
+  const isParticipation = service === 'inheritance_participation';
+
+  if (language === 'de') {
+    return {
+      duration: 'Direkter Kontakt',
+      serviceName: isPension ? 'Rentenrechte bei Scheidung' : isDivorceProperty ? 'Vermögensaufteilung & Schadensersatz' : isParticipation ? 'Katılma-Alacağı im Erbfall' : 'Erbschein-Anerkennung',
+      leadSituation: isPension
+        ? 'Ich möchte prüfen lassen, welche Renten- oder BES-Werte bei meiner türkisch-deutschen Scheidung relevant sind.'
+        : isDivorceProperty
+          ? 'Ich möchte Vermögensaufteilung, Katılma Alacağı, Fristen und Schadensersatz nach türkischer Scheidung prüfen lassen.'
+          : isParticipation
+            ? 'Ich möchte prüfen lassen, ob vor der Erbteilung eine Katılma-Alacağı-Forderung berücksichtigt werden muss.'
+            : 'Ich habe einen deutschen oder türkischen Erbschein und möchte klären, wo er anerkannt wird.',
+      introEyebrow: 'DIREKTER WHATSAPP-KONTAKT',
+      introTitle: isPension ? 'Rentenrechte in zwei Systemen sauber trennen?' : isDivorceProperty ? 'Türkische Scheidung, Vermögen oder Schadensersatz offen?' : isParticipation ? 'Erst Malregime, dann Erbe: wurde der Schritt übersehen?' : 'Erbschein in Deutschland oder Türkei verwendbar?',
+      introBody: isPension ? 'Schreiben Sie uns, welche Renten, BES-Verträge oder Auszahlungen betroffen sind. Wir ordnen den türkischen Teil ein und markieren, wo deutsche Beratung nötig ist.' : isDivorceProperty ? 'Schildern Sie Scheidungsdatum, Vermögen, Immobilien und mögliche Fristen. Wir prüfen den türkischen Anspruch und den nächsten Schritt.' : isParticipation ? 'Senden Sie Ehezeit, Todesdatum und eine grobe Vermögensliste. Wir prüfen, ob vor der Erbteilung ein güterrechtlicher Anspruch in Betracht kommt.' : 'Senden Sie uns, welches Dokument vorliegt und welche Bank, Behörde oder Grundbuchstelle es verlangt. Wir klären den schnellsten türkischen Weg.',
+      introButton: 'WhatsApp Prüfung starten',
+      durationChip: 'Direkter Kontakt',
+      formChip: 'WhatsApp Vorab-Formular',
+      comparisonTitle: isPension ? 'Deutscher Versorgungsausgleich und türkisches Malregime dürfen nicht vermischt werden.' : isDivorceProperty ? 'Fristen, Belege und Zuständigkeit entscheiden, ob der Anspruch noch durchsetzbar ist.' : isParticipation ? 'Die Erbquote allein zeigt nicht, was dem Ehegatten zusteht.' : 'Ein Dokument reicht selten automatisch in beiden Ländern.',
+      comparisonBody: isPension ? 'Wir trennen SGK, Bağ-Kur, BES, ausgezahlte Beträge und deutsche Renteninformationen, damit keine Werte doppelt oder gar nicht berücksichtigt werden.' : isDivorceProperty ? 'Wir prüfen Katılma Alacağı, persönliche Vermögenswerte, Immobilien, deutsche Bezüge und mögliche TMK-174-Ansprüche.' : isParticipation ? 'Katılma Alacağı wird vor der Erbteilung berechnet und kann den Nachlass erheblich verändern.' : 'Für Tapu, Bank und Grundbuchamt gelten unterschiedliche Nachweise. Wir ordnen ein, welches Zertifikat, welche Apostille und welche Übersetzung nötig sind.',
+      serviceTypesTitle: isPension ? 'Dokumente früh sammeln, bevor alte Beitragszeiten schwer belegbar werden' : isDivorceProperty ? 'Malaufstellung, Tapu, Kontoauszüge und Scheidungsdatum gehören in eine Prüfung' : isParticipation ? 'Veraset, Tapu, Bankdaten und Ehezeit müssen zusammen gerechnet werden' : 'Türkischer Erbschein, Fremdrechtserbschein und Apostille gehören in einen Plan',
+      serviceTypesBody: isPension ? 'Alte SGK-/BES-Nachweise, Rentenauskünfte und Zahlungsbelege bestimmen die Strategie.' : isDivorceProperty ? 'Gerade aus Deutschland entstehen Verluste, wenn Belege, Vollmacht oder Fristen erst nachträglich sortiert werden.' : isParticipation ? 'Wir prüfen, ob die Teilhabe-Forderung schon berücksichtigt wurde oder vor der Taksim noch gesichert werden muss.' : 'Wir koordinieren den türkischen Teil und stimmen bei deutschen Verfahrensfragen mit Notaren oder Erbrechtskollegen ab.',
+      serviceTypesButton: 'Fall per WhatsApp prüfen',
+      bottomEyebrow: 'Done-for-you Prüfung',
+      bottomTitle: isPension ? 'Wir prüfen türkische Renten- und BES-Werte bei Scheidung' : isDivorceProperty ? 'Wir prüfen Ihre türkische Vermögensaufteilung nach Scheidung' : isParticipation ? 'Wir prüfen Katılma Alacağı vor der Erbteilung' : 'Wir klären die Erbschein-Nutzung zwischen Deutschland und Türkei',
+      bottomBody: isPension ? 'Über das WhatsApp Formular schildern Sie Rentensysteme, Ehezeit und Verfahrensstand. Hasan Doğru ordnet die türkische Seite ein und koordiniert, wo deutsche Beratung gebraucht wird.' : isDivorceProperty ? 'Über das WhatsApp Formular schildern Sie Scheidung, Vermögen und Fristen. Hasan Doğru prüft Katılma Alacağı, Schadensersatz und die Vertretung in der Türkei.' : isParticipation ? 'Über das WhatsApp Formular senden Sie Ehezeit, Erbfall und Vermögen. Hasan Doğru prüft, ob der Nachlass vor der Verteilung um einen malrechtlichen Anspruch bereinigt werden muss.' : 'Über das WhatsApp Formular teilen Sie Dokument, Vermögensort und Behörde mit. Hasan Doğru klärt, ob türkischer Erbschein, Anerkennung, Apostille oder Übersetzung erforderlich sind.',
+      includedTitle: 'Was übernommen wird',
+      includedItems: ['Erste Einordnung von Anspruch, Fristen und zuständigem Weg', 'Dokumentencheck für Vollmacht, Register, Tapu, Bank oder Gericht', 'Koordination der türkischen Schritte über Mannheim und Ankara'],
+      trustLine: 'Türkisches Recht · Mannheim & Ankara · Deutsch und Türkisch',
+      stickyTitle: isPension ? 'Renten & Scheidung' : isDivorceProperty ? 'Mal paylaşımı' : isParticipation ? 'Katılma alacağı' : 'Erbschein DE/TR',
+      stickySubtitle: 'WhatsApp Vorab-Formular',
+      stickyButton: 'WhatsApp',
+      chips: isPension ? ['SGK', 'Bağ-Kur', 'BES', 'Versorgungsausgleich', 'TMK'] : isDivorceProperty ? ['Katılma Alacağı', 'TMK 174', 'Tapu', 'Fristen', 'UYAP'] : isParticipation ? ['Tereke', 'Ehezeit', 'Tapu', 'Veraset', 'Tasfiye'] : ['Erbschein', 'Tapu', 'Bank', 'Apostille', 'MÖHUK'],
+    };
+  }
+
+  if (language === 'en') {
+    return {
+      duration: 'Direct Contact',
+      serviceName: isPension ? 'Pension rights in divorce' : isDivorceProperty ? 'Property division & compensation' : isParticipation ? 'Participation claim in inheritance' : 'Inheritance certificate recognition',
+      leadSituation: isPension ? 'I want to check pension or BES values in a Turkish-German divorce.' : isDivorceProperty ? 'I want to check property division, participation claim, deadlines or compensation after a Turkish divorce.' : isParticipation ? 'I want to check whether a participation claim must be handled before estate division.' : 'I have a German or Turkish inheritance certificate and want to know where it will be accepted.',
+      introEyebrow: 'DIRECT WHATSAPP CONTACT',
+      introTitle: isPension ? 'Separate pension rights across two legal systems?' : isDivorceProperty ? 'Turkish divorce property or compensation still open?' : isParticipation ? 'Before estate division, check the spouse’s property claim.' : 'Will your inheritance certificate work in the other country?',
+      introBody: 'Send us the key facts via WhatsApp. We review the Turkish-law side, the documents needed and the next procedural step.',
+      introButton: 'Start WhatsApp review',
+      durationChip: 'Direct Contact',
+      formChip: 'WhatsApp intake form',
+      comparisonTitle: 'The document path and the legal claim must be checked before deadlines or filings go wrong.',
+      comparisonBody: 'We identify which Turkish-law issue is actually at stake, what evidence is missing and whether German-side advice needs to be coordinated.',
+      serviceTypesTitle: 'Documents, power of attorney and timing belong in one plan',
+      serviceTypesBody: 'From Germany, the case usually turns on early document control, correct power of attorney wording and UYAP follow-up.',
+      serviceTypesButton: 'Check via WhatsApp',
+      bottomEyebrow: 'Done-for-you review',
+      bottomTitle: isPension ? 'We review Turkish pension and BES values in divorce' : isDivorceProperty ? 'We review Turkish property division after divorce' : isParticipation ? 'We review participation claims before estate division' : 'We clarify certificate recognition between Germany and Turkey',
+      bottomBody: 'Use the WhatsApp intake form to share the timeline, documents and assets. Hasan Doğru reviews the Turkish-law route and coordinates the next steps from Mannheim and Ankara.',
+      includedTitle: 'What we handle',
+      includedItems: ['Initial assessment of claim, deadlines and route', 'Document check for certificate, title deed, bank, court or power of attorney', 'Coordination of Turkish steps through Mannheim and Ankara'],
+      trustLine: 'Turkish law · Mannheim & Ankara · German, Turkish and English',
+      stickyTitle: isPension ? 'Pensions & divorce' : isDivorceProperty ? 'Property division' : isParticipation ? 'Participation claim' : 'Certificate DE/TR',
+      stickySubtitle: 'WhatsApp intake form',
+      stickyButton: 'WhatsApp',
+      chips: isPension ? ['SGK', 'BES', 'Pension', 'Divorce', 'TMK'] : isDivorceProperty ? ['Property', 'Compensation', 'Deadlines', 'Title deed', 'UYAP'] : isParticipation ? ['Estate', 'Spouse', 'Assets', 'Probate', 'Division'] : ['Certificate', 'Bank', 'Title deed', 'Apostille', 'MÖHUK'],
+    };
+  }
+
+  return {
+    duration: 'Direkt İletişim',
+    serviceName: isPension ? 'Boşanmada emeklilik hakları' : isDivorceProperty ? 'Mal paylaşımı ve tazminat' : isParticipation ? 'Mirasta katılma alacağı' : 'Mirasçılık belgesi tanıma',
+    leadSituation: isPension ? 'Boşanmada SGK, Bağ-Kur, BES veya Alman emeklilik haklarının durumunu öğrenmek istiyorum.' : isDivorceProperty ? 'Boşanma sonrası mal paylaşımı, katılma alacağı, süre veya tazminat hakkımı kontrol ettirmek istiyorum.' : isParticipation ? 'Miras paylaşılmadan önce katılma alacağı olup olmadığını kontrol ettirmek istiyorum.' : 'Türk veya Alman mirasçılık belgemin diğer ülkede geçerli olup olmadığını öğrenmek istiyorum.',
+    introEyebrow: 'DİREKT WHATSAPP İLETİŞİMİ',
+    introTitle: isPension ? 'Emeklilik hakları iki sistemde farklı mı değerlendiriliyor?' : isDivorceProperty ? 'Boşanma sonrası mal paylaşımı veya tazminat açık mı kaldı?' : isParticipation ? 'Miras paylaşılmadan önce eşin katılma alacağı kontrol edildi mi?' : 'Mirasçılık belgeniz Almanya veya Türkiye’de kabul edilir mi?',
+    introBody: 'Bize WhatsApp üzerinden temel bilgileri gönderin. Türk hukuku tarafını, gerekli belgeleri ve sonraki adımı netleştirelim.',
+    introButton: 'WhatsApp kontrolünü başlat',
+    durationChip: 'Direkt İletişim',
+    formChip: 'WhatsApp ön bilgi formu',
+    comparisonTitle: 'Süre, belge ve doğru dava yolu baştan kontrol edilmeli.',
+    comparisonBody: 'Hangi Türk hukuku meselesinin gündemde olduğunu, hangi belgelerin eksik olduğunu ve Almanya tarafında ayrıca koordinasyon gerekip gerekmediğini belirleriz.',
+    serviceTypesTitle: 'Belge, vekaletname ve UYAP takibi tek planda yürümeli',
+    serviceTypesBody: 'Almanya’dan yürütülen dosyalarda kayıp genellikle yanlış vekaletname, eksik belge veya kaçırılan süreden doğar.',
+    serviceTypesButton: "WhatsApp'tan değerlendirme isteyin",
+    bottomEyebrow: 'Done-for-you değerlendirme',
+    bottomTitle: isPension ? 'Boşanmada emeklilik ve BES değerlerini kontrol ediyoruz' : isDivorceProperty ? 'Boşanma sonrası mal paylaşımı ve tazminatı kontrol ediyoruz' : isParticipation ? 'Miras paylaşımından önce katılma alacağını kontrol ediyoruz' : 'Mirasçılık belgesinin Almanya-Türkiye kullanımını netleştiriyoruz',
+    bottomBody: 'Kısa WhatsApp formuyla tarihleri, belgeleri ve mal varlığını iletin. Hasan Doğru Türk hukuku yolunu değerlendirir ve Mannheim-Ankara hattında sonraki adımları koordine eder.',
+    includedTitle: 'Hizmete dahil olanlar',
+    includedItems: ['Hak, süre ve doğru yol için ilk değerlendirme', 'Belge, tapu, banka, mahkeme veya vekaletname kontrolü', 'Türkiye adımlarının Mannheim ve Ankara üzerinden koordinasyonu'],
+    trustLine: 'Türk hukuku · Mannheim & Ankara · Türkçe ve Almanca',
+    stickyTitle: isPension ? 'Emeklilik & boşanma' : isDivorceProperty ? 'Mal paylaşımı' : isParticipation ? 'Katılma alacağı' : 'Belge tanıma',
+    stickySubtitle: 'WhatsApp ön bilgi formu',
+    stickyButton: 'WhatsApp',
+    chips: isPension ? ['SGK', 'Bağ-Kur', 'BES', 'Boşanma', 'TMK'] : isDivorceProperty ? ['Katılma alacağı', 'TMK 174', 'Tapu', 'Süreler', 'UYAP'] : isParticipation ? ['Tereke', 'Evlilik', 'Tapu', 'Veraset', 'Tasfiye'] : ['Mirasçılık', 'Tapu', 'Banka', 'Apostil', 'MÖHUK'],
+  };
+}
+
 function getProductHookCopy(funnel: BlogProductFunnel, language: string) {
+  if (['divorce_property', 'pension_rights', 'inheritance_participation', 'inheritance_certificate'].includes(funnel.service)) {
+    const copy = getBlogProductFunnelCopy(funnel, language);
+    const isInheritance = funnel.service === 'inheritance_participation' || funnel.service === 'inheritance_certificate';
+    return {
+      lead: copy.introBody,
+      bullets: copy.chips.slice(0, 3).map((chip) => (
+        language === 'de'
+          ? `${chip}: früh einordnen, bevor Fristen oder Nachweise kippen`
+          : language === 'en'
+            ? `${chip}: check early before deadlines or documents become a problem`
+            : `${chip}: süre veya belge sorunu doğmadan önce kontrol edin`
+      )),
+      trust: isInheritance
+        ? (language === 'en' ? 'Turkish inheritance law · Mannheim & Ankara' : language === 'de' ? 'Türkisches Erbrecht · Mannheim & Ankara' : 'Türk miras hukuku · Mannheim & Ankara')
+        : (language === 'en' ? 'Turkish family law · Mannheim & Ankara' : language === 'de' ? 'Türkisches Familienrecht · Mannheim & Ankara' : 'Türk aile hukuku · Mannheim & Ankara'),
+    };
+  }
+
   if (funnel.service === 'tanima_tenfiz') {
     return language === 'de'
       ? {
@@ -764,12 +882,7 @@ function BlogDoneForYouBanner({ funnel, language }: { funnel: BlogProductFunnel;
       ? 'Start on WhatsApp'
       : 'WhatsApp ile hemen başlayın';
 
-  const situation =
-    language === 'de'
-      ? 'Ich möchte den vollständigen Vekaletname-Prozess per WhatsApp klären.'
-      : language === 'en'
-      ? 'I want to prepare a power of attorney for Turkey. Please check consulate, German notary, apostille, translation, documents and costs.'
-      : '20 dakika vekaletname ön görüşmesi talep ediyorum.';
+  const leadDetail = getProductLeadCaptureDetail(funnel, language);
 
   return (
     <div className="mt-10 overflow-hidden rounded-2xl bg-[#1C3829]">
@@ -790,7 +903,7 @@ function BlogDoneForYouBanner({ funnel, language }: { funnel: BlogProductFunnel;
               href={buildProductWhatsAppLeadUrl(funnel, 'bottom', language)}
               onClick={(e) => {
                 e.preventDefault();
-                openWhatsAppLeadCapture({ service: 'Vekaletname', situation });
+                openWhatsAppLeadCapture(leadDetail);
               }}
               className="inline-flex items-center gap-3 rounded-full bg-[#8B6E2A] px-8 py-4 font-sans text-[13px] font-bold uppercase tracking-[0.16em] text-white transition-all duration-200 hover:bg-white hover:text-[#1C3829] active:scale-95"
             >
@@ -904,6 +1017,8 @@ function BlogStickyBookingCTA({ funnel, language }: { funnel: BlogProductFunnel;
             : language === 'en'
               ? 'Check the Turkish partition auction: valuation, heirs and deadlines.'
               : 'Ortaklığın giderilmesi sürecinde muhammen bedel, mirasçılar ve süreleri netleştirelim.'
+        : ['divorce_property', 'pension_rights', 'inheritance_participation', 'inheritance_certificate'].includes(funnel.service)
+          ? copy.bottomTitle
         : language === 'de'
           ? 'Wir bereiten Ihre Vollmacht vollständig vor. Sie müssen sich um nichts kümmern.'
           : language === 'en'
@@ -929,6 +1044,8 @@ function BlogStickyBookingCTA({ funnel, language }: { funnel: BlogProductFunnel;
             : language === 'en'
               ? 'Title deed, probate, UYAP, deposit and 7-day deadline'
               : 'Tapu, veraset, UYAP, teminat ve 7 günlük ödeme süresi'
+        : ['divorce_property', 'pension_rights', 'inheritance_participation', 'inheritance_certificate'].includes(funnel.service)
+          ? copy.chips.join(' · ')
         : language === 'de'
           ? 'Konsulat, Notar, Apostille, Übersetzung — Hasan Doğru kümmert sich darum'
           : language === 'en'
@@ -2853,6 +2970,26 @@ export function BlogPost() {
     tr: ['12-yargi-paketi-ortakligin-giderilmesi-mirascilar'],
     en: ['turkey-12th-judicial-package-inherited-property-auction'],
   };
+  const pensionRightsProductSlugs = {
+    de: ['rentenausgleich-tuerkische-scheidung-versorgungsausgleich'],
+    tr: ['bosanmada-emeklilik-haklari-denklesmesi-2026'],
+    en: ['turkish-divorce-pension-rights-versorgungsausgleich-guide'],
+  };
+  const divorcePropertyProductSlugs = {
+    de: ['tuerkische-scheidung-vermoegensaufteilung-schadensersatz-2026'],
+    tr: ['mal-paylasimi-tazminat-bosanma-davasi-2026'],
+    en: ['turkish-divorce-property-division-compensation-2026'],
+  };
+  const inheritanceParticipationProductSlugs = {
+    de: ['zugewinnausgleich-tuerkei-erbfall-katilma-alacagi'],
+    tr: ['mirasa-katilma-alacagi-davasi'],
+    en: ['turkish-inheritance-participation-claim-lawsuit'],
+  };
+  const inheritanceCertificateProductSlugs = {
+    de: ['erbschein-tuerkei-deutschland-gegenseitige-anerkennung'],
+    tr: ['mirascilik-belgesi-almanyada-tanima'],
+    en: ['turkish-inheritance-certificate-recognition-germany'],
+  };
   const matchesLocalizedSlug = (slugs: { de: string[]; tr: string[]; en: string[] }) => (
     (language === 'de' && slugs.de.includes(post.slugDE)) ||
     (language === 'tr' && slugs.tr.includes(post.slugTR)) ||
@@ -2878,16 +3015,52 @@ export function BlogPost() {
             campaign: 'inheritance_tax_whatsapp_form',
             image: post.image,
           }
-        : matchesLocalizedSlug(propertyPartitionAuctionProductSlugs)
-          ? {
-              service: 'property_partition_auction' as const,
-              slugDE: PROPERTY_PARTITION_AUCTION_BLOG_SLUG_DE,
-              slugTR: '12-yargi-paketi-ortakligin-giderilmesi-mirascilar',
-              duration: '20 dakika',
-              campaign: 'property_partition_auction_whatsapp_form',
-              image: post.image,
-            }
-          : null;
+          : matchesLocalizedSlug(propertyPartitionAuctionProductSlugs)
+            ? {
+                service: 'property_partition_auction' as const,
+                slugDE: PROPERTY_PARTITION_AUCTION_BLOG_SLUG_DE,
+                slugTR: '12-yargi-paketi-ortakligin-giderilmesi-mirascilar',
+                duration: '20 dakika',
+                campaign: 'property_partition_auction_whatsapp_form',
+                image: post.image,
+              }
+            : matchesLocalizedSlug(pensionRightsProductSlugs)
+              ? {
+                  service: 'pension_rights' as const,
+                  slugDE: 'rentenausgleich-tuerkische-scheidung-versorgungsausgleich',
+                  slugTR: 'bosanmada-emeklilik-haklari-denklesmesi-2026',
+                  duration: '20 dakika',
+                  campaign: 'pension_rights_whatsapp_form',
+                  image: post.image,
+                }
+              : matchesLocalizedSlug(divorcePropertyProductSlugs)
+                ? {
+                    service: 'divorce_property' as const,
+                    slugDE: 'tuerkische-scheidung-vermoegensaufteilung-schadensersatz-2026',
+                    slugTR: 'mal-paylasimi-tazminat-bosanma-davasi-2026',
+                    duration: '20 dakika',
+                    campaign: 'divorce_property_whatsapp_form',
+                    image: post.image,
+                  }
+                : matchesLocalizedSlug(inheritanceParticipationProductSlugs)
+                  ? {
+                      service: 'inheritance_participation' as const,
+                      slugDE: 'zugewinnausgleich-tuerkei-erbfall-katilma-alacagi',
+                      slugTR: 'mirasa-katilma-alacagi-davasi',
+                      duration: '20 dakika',
+                      campaign: 'inheritance_participation_whatsapp_form',
+                      image: post.image,
+                    }
+                  : matchesLocalizedSlug(inheritanceCertificateProductSlugs)
+                    ? {
+                        service: 'inheritance_certificate' as const,
+                        slugDE: 'erbschein-tuerkei-deutschland-gegenseitige-anerkennung',
+                        slugTR: 'mirascilik-belgesi-almanyada-tanima',
+                        duration: '20 dakika',
+                        campaign: 'inheritance_certificate_whatsapp_form',
+                        image: post.image,
+                      }
+                    : null;
   const whatsappCTATopic: BlogWhatsAppCTATopic | null = [CRIMINAL_LAW_BLOG_SLUG_DE, CRIMINAL_DEFENSE_FROM_GERMANY_BLOG_SLUG_DE].includes(post.slugDE)
     ? 'criminal_law'
     : post.slugDE === SUMMONS_WARRANT_BLOG_SLUG_DE
@@ -3606,6 +3779,18 @@ export function BlogPost() {
                           'Was ist der Schätzwert (muhammen bedel) und warum ist er jetzt so wichtig?',
                           'Muhammen Bedel Nedir ve Yeni Düzenlemede Neden Bu Kadar Önemli?',
                           'What Is the “Assessed Value” and Why Does It Matter So Much Now?',
+                          'Der zentrale Unterschied in einem Satz',
+                          'Tek Cümlede Fark',
+                          'The Key Difference in One Sentence',
+                          'Ferili Dava Nedir, Neden Ayrı Bir Konu?',
+                          'Warum dieses Thema für türkisch-deutsche Paare besonders komplex ist',
+                          'Why this is especially complex for Turkish-German couples',
+                          'Mirasa Katılma Alacağı Davası Nedir?',
+                          'Was ist die Katılma-Alacağı-Klage im türkischen Erbrecht?',
+                          'What Is a Participation Claim in a Turkish Inheritance Case?',
+                          '1. Die Grundregel, die die meisten Erben überrascht',
+                          '1. En Çok Şaşırtan Gerçek: Otomatik Bir Karşılıklı Tanıma Yok',
+                          '1. The Rule That Surprises Most Heirs: No Automatic Mutual Recognition',
                         ].includes(headingText)
                       ) {
                         renderedElements.push(
@@ -3623,6 +3808,18 @@ export function BlogPost() {
                           'Welche Immobilien profitieren von diesem neuen Schutz?',
                           'Hangi Taşınmazlar Bu Yeni Korumadan Yararlanıyor?',
                           'Which Properties Qualify for This New Protection?',
+                          'Türk Hukuku ile Alman Versorgungsausgleich Karşılaştırması',
+                          'Türkisches Recht vs. deutscher Versorgungsausgleich im direkten Vergleich',
+                          'Turkish Law vs German Versorgungsausgleich: Direct Comparison',
+                          'Katılma Alacağı Nasıl Hesaplanır?',
+                          'Wie die Ausgleichsforderung (Katılma Alacağı) berechnet wird',
+                          'How the Participation Claim Is Calculated',
+                          'Örnek Hesaplama: Mal Rejimi Tasfiyesi ve Miras Taksimi Birlikte',
+                          'Rechenbeispiel: Güterrechtliche Auseinandersetzung und Erbteilung',
+                          'Worked Example: Property-Regime Settlement and Estate Division Together',
+                          '3. Vergleichstabelle: Mirasçılık Belgesi vs. Erbschein vs. Europäisches Nachlasszeugnis — wer akzeptiert was?',
+                          '3. Karşılaştırma Tablosu: Mirasçılık Belgesi vs. Erbschein vs. Avrupa Miras Sertifikası — Kim Neyi Kabul Eder?',
+                          '3. Comparison Table: Turkish Certificate vs German Erbschein vs European Certificate of Succession',
                         ].includes(headingText)
                       ) {
                         renderedElements.push(
@@ -3687,6 +3884,16 @@ export function BlogPost() {
                           'Schritt für Schritt: Das Verfahren aus Deutschland steuern',
                           'Almanya’dan Süreci Yönetmek İsteyenler İçin Adım Adım Yol Haritası',
                           'A Step-by-Step Roadmap for Managing This From Abroad',
+                          'Hangi Belgeleri Toplamalısınız — ve Neden Erken Başlamalısınız',
+                          'Welche Nachweise Sie sammeln sollten — und warum das früh beginnen sollte',
+                          'Which Documents You Should Collect — and Why You Should Start Early',
+                          'Dava Süreci: Adım Adım',
+                          'Der Ablauf: Schritt für Schritt',
+                          'The Process: Step by Step',
+                          'Almanya\'dan Yürütülen Süreç: Adım Adım',
+                          'Grenzüberschreitende Erbscheinsfragen mit der Doğru Kanzlei',
+                          'Sınır Ötesi Mirasçılık Belgesi Süreçlerinde Doğru Kanzlei ile',
+                          'Cross-Border Certificate Questions with Doğru Kanzlei',
                         ].includes(headingText)
                       ) {
                         renderedElements.push(
