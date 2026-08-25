@@ -33,6 +33,7 @@ import { pensionEqualizationDivorcePost } from "./pensionEqualizationDivorcePost
 import { propertyCompensationDivorcePost } from "./propertyCompensationDivorcePost";
 import { inheritanceParticipationClaimPost } from "./inheritanceParticipationClaimPost";
 import { inheritanceCertificateRecognitionPost } from "./inheritanceCertificateRecognitionPost";
+import { fotografliVekaletnameFormfehlerPost, tapuDevirVekaletnamesiPost } from "./vekaletnameFormAndTapuPosts";
 import { legacyBlogPosts } from "./legacyBlogPosts";
 
 export interface BlogPost {
@@ -1125,6 +1126,8 @@ const hiddenBlogSlugs = new Set([
 ]);
 
 const allBlogPosts: BlogPost[] = [
+  tapuDevirVekaletnamesiPost,
+  fotografliVekaletnameFormfehlerPost,
   inheritanceCertificateRecognitionPost,
   inheritanceParticipationClaimPost,
   propertyCompensationDivorcePost,

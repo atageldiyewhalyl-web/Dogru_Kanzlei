@@ -2951,9 +2951,9 @@ export function BlogPost() {
   const readTime = language === 'de' ? post.readTimeDE : language === 'tr' ? post.readTimeTR : post.readTimeEN;
   const category = language === 'de' ? post.categoryDE : language === 'tr' ? post.category : post.categoryEN;
   const vekaletnameProductSlugs = {
-    de: ['tuerkische-vekaletname-deutschland', 'vollmacht-auf-tuerkisch', 'tuerkischer-notar-deutschland', 'tuerkische-vollmacht-kosten-2026', 'tuerkische-vollmacht-ohne-konsulat'],
-    tr: ['almanya-da-vekaletname-cikarma-rehberi', 'turkce-vekaletname-nasil-cikarilir', 'almanyada-turk-noteri', 'almanyada-vekaletname-ucreti-2026', 'almanyadan-turkiyeye-vekaletname-gonderme'],
-    en: ['power-of-attorney-in-turkish', 'turkish-notary-in-germany', 'tuerkische-vollmacht-kosten-2026-en', 'tuerkische-vollmacht-ohne-konsulat-en'],
+    de: ['tuerkische-vekaletname-deutschland', 'vollmacht-auf-tuerkisch', 'tuerkischer-notar-deutschland', 'tuerkische-vollmacht-kosten-2026', 'tuerkische-vollmacht-ohne-konsulat', 'tuerkische-vollmacht-lichtbild-formfehler', 'tapu-vollmacht-immobilie-tuerkei-uebertragung'],
+    tr: ['almanya-da-vekaletname-cikarma-rehberi', 'turkce-vekaletname-nasil-cikarilir', 'almanyada-turk-noteri', 'almanyada-vekaletname-ucreti-2026', 'almanyadan-turkiyeye-vekaletname-gonderme', 'fotografli-vekaletname-alman-noteri-sartlari', 'tapu-devir-vekaletnamesi-almanya'],
+    en: ['power-of-attorney-in-turkish', 'turkish-notary-in-germany', 'tuerkische-vollmacht-kosten-2026-en', 'tuerkische-vollmacht-ohne-konsulat-en', 'turkish-power-of-attorney-photo-requirements', 'turkish-title-deed-transfer-power-of-attorney'],
   };
   const tanimaTenfizProductSlugs = {
     de: [TANIMA_TENFIZ_RECOGNITION_2026_BLOG_SLUG_DE],
@@ -3767,6 +3767,12 @@ export function BlogPost() {
                           'Reicht eine Übersetzung der deutschen Vollmacht?',
                           'Sadece tercüme yeterli mi?',
                           'Is translation alone enough?',
+                          'Fotoğraflı Vekaletname Ne Zaman Gerekir?',
+                          'Wann braucht eine türkische Vollmacht ein Lichtbild?',
+                          'When does a Turkish power of attorney need a photo?',
+                          'Tapu Devir Vekaletnamesi Hangi İşlemler İçin Kullanılır?',
+                          'Wofür wird eine Tapu-Vollmacht genutzt?',
+                          'What is a Tapu power of attorney used for?',
                           'Tanıma oder Tenfiz - welches Verfahren brauchen Sie?',
                           'Tanıma mı, Tenfiz mi? Hangisine İhtiyacınız Var?',
                           'Tanıma or Tenfiz - Which One Do You Need?',
@@ -3820,6 +3826,12 @@ export function BlogPost() {
                           '3. Vergleichstabelle: Mirasçılık Belgesi vs. Erbschein vs. Europäisches Nachlasszeugnis — wer akzeptiert was?',
                           '3. Karşılaştırma Tablosu: Mirasçılık Belgesi vs. Erbschein vs. Avrupa Miras Sertifikası — Kim Neyi Kabul Eder?',
                           '3. Comparison Table: Turkish Certificate vs German Erbschein vs European Certificate of Succession',
+                          'Alman Noterinde Hazırlanan Vekaletnamelerde En Sık Form Hataları',
+                          'Typische Formfehler bei deutschen Notarurkunden',
+                          'Common formal mistakes in German-notary powers of attorney',
+                          'Tapu Vekaletnamesinde Mutlaka Değerlendirilmesi Gereken Yetkiler',
+                          'Welche Befugnisse gehören in eine Tapu-Vollmacht?',
+                          'Which powers should a title deed POA include?',
                         ].includes(headingText)
                       ) {
                         renderedElements.push(
@@ -3875,6 +3887,8 @@ export function BlogPost() {
                           'Was muss in der türkischen Vollmacht stehen?',
                           'Türkçe vekaletnamede ne yazmalı?',
                           'What should the Turkish power of attorney say?',
+                          'Vekaletname Metninde Hangi Yetkiler Açık Yazılmalı?',
+                          'Türkçe tapu vekaletnamesinde ne yazmalı?',
                           'Der Gerichtsweg: Ablauf Schritt für Schritt',
                           'Dava Yolu: Adım Adım Süreç',
                           'The Court Route: Step by Step',
