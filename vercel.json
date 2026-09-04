@@ -113,7 +113,6 @@
     { "source": "/en/services/migrationsrecht", "destination": "/en/services/migration-law", "permanent": true },
     { "source": "/en/services/strafrecht", "destination": "/en/services/criminal-law", "permanent": true },
     { "source": "/en/services/tanima-ve-tenfiz", "destination": "/en/services/recognition-enforcement", "permanent": true },
-    { "source": "/en/services/mavi-kart", "destination": "/en/services/mavi-kart", "permanent": true },
     { "source": "/en/services/icra-ve-iflas", "destination": "/en/services/debt-enforcement", "permanent": true },
     { "source": "/en/services/erbrecht", "destination": "/en/services/inheritance-law", "permanent": true },
     { "source": "/en/services/sorgerecht", "destination": "/en/services/child-custody", "permanent": true },
