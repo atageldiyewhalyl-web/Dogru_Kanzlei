@@ -1,13 +1,19 @@
 import { ArrowRight } from "lucide-react";
 import { Link } from "react-router";
 import { useLanguage } from "../context/LanguageContext";
-import { sortedBlogPosts } from "../data/blogPosts";
+import { sortedBlogListingItems } from "../data/blogListingItems";
 
 export function Blog() {
   const { t, language, paths } = useLanguage();
   const getLocalizedSlug = (post: { slugDE: string; slugTR: string; slugEN: string }) =>
     language === 'de' ? post.slugDE : language === 'tr' ? post.slugTR : post.slugEN;
-  const visiblePosts = sortedBlogPosts.filter((post) => {
+  const getLocalizedHref = (post: { slugDE: string; slugTR: string; slugEN: string; listingHrefDE?: string; listingHrefTR?: string; listingHrefEN?: string }) =>
+    language === 'de'
+      ? post.listingHrefDE || paths.blogPost(post.slugDE)
+      : language === 'tr'
+        ? post.listingHrefTR || paths.blogPost(post.slugTR)
+        : post.listingHrefEN || paths.blogPost(post.slugEN);
+  const visiblePosts = sortedBlogListingItems.filter((post) => {
     if (language === 'de') return Boolean(post.slugDE && post.contentDE?.trim());
     if (language === 'tr') return Boolean(post.slugTR && post.contentTR?.trim());
     return Boolean(post.slugEN && post.contentEN?.trim());
@@ -109,7 +115,7 @@ export function Blog() {
         >
           {visiblePosts.slice(0, 3).map((post) => (
             <article key={`${language}-${getLocalizedSlug(post)}`} className="text-left">
-              <Link to={paths.blogPost(getLocalizedSlug(post))} className="group block no-justify" style={{ textDecoration: "none", textAlign: "left" }}>
+              <Link to={getLocalizedHref(post)} className="group block no-justify" style={{ textDecoration: "none", textAlign: "left" }}>
                 {/* Image */}
                 <div
                   style={{

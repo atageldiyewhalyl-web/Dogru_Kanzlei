@@ -3,7 +3,7 @@ import { ArrowRight } from "lucide-react";
 import { motion } from "motion/react";
 import { useLanguage } from "../context/LanguageContext";
 import { useSEO, SITE_URL } from "../hooks/useSEO";
-import { sortedBlogPosts } from "../data/blogPosts";
+import { sortedBlogListingItems } from "../data/blogListingItems";
 import { usePrerender } from "../hooks/usePrerender";
 
 export function BlogPage() {
@@ -11,7 +11,13 @@ export function BlogPage() {
   usePrerender();
   const getLocalizedSlug = (post: { slugDE: string; slugTR: string; slugEN: string }) =>
     language === 'de' ? post.slugDE : language === 'tr' ? post.slugTR : post.slugEN;
-  const visiblePosts = sortedBlogPosts.filter((post) => {
+  const getLocalizedHref = (post: { slugDE: string; slugTR: string; slugEN: string; listingHrefDE?: string; listingHrefTR?: string; listingHrefEN?: string }) =>
+    language === 'de'
+      ? post.listingHrefDE || paths.blogPost(post.slugDE)
+      : language === 'tr'
+        ? post.listingHrefTR || paths.blogPost(post.slugTR)
+        : post.listingHrefEN || paths.blogPost(post.slugEN);
+  const visiblePosts = sortedBlogListingItems.filter((post) => {
     if (language === 'de') return Boolean(post.slugDE && post.contentDE?.trim());
     if (language === 'tr') return Boolean(post.slugTR && post.contentTR?.trim());
     return Boolean(post.slugEN && post.contentEN?.trim());
@@ -66,7 +72,7 @@ export function BlogPage() {
               key={`${language}-${getLocalizedSlug(post)}`}
               className="text-left"
             >
-              <Link to={paths.blogPost(getLocalizedSlug(post))} className="group block no-justify">
+              <Link to={getLocalizedHref(post)} className="group block no-justify">
                 {/* Image */}
                 <div className="overflow-hidden mb-6 h-[220px] bg-[#e8e4dc]">
                   <img
