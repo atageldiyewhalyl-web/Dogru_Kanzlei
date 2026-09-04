@@ -2951,9 +2951,9 @@ export function BlogPost() {
   const readTime = language === 'de' ? post.readTimeDE : language === 'tr' ? post.readTimeTR : post.readTimeEN;
   const category = language === 'de' ? post.categoryDE : language === 'tr' ? post.category : post.categoryEN;
   const vekaletnameProductSlugs = {
-    de: ['tuerkische-vekaletname-deutschland', 'vollmacht-auf-tuerkisch', 'tuerkischer-notar-deutschland', 'tuerkische-vollmacht-kosten-2026', 'tuerkische-vollmacht-ohne-konsulat', 'tuerkische-vollmacht-lichtbild-formfehler', 'tapu-vollmacht-immobilie-tuerkei-uebertragung'],
-    tr: ['almanya-da-vekaletname-cikarma-rehberi', 'turkce-vekaletname-nasil-cikarilir', 'almanyada-turk-noteri', 'almanyada-vekaletname-ucreti-2026', 'almanyadan-turkiyeye-vekaletname-gonderme', 'fotografli-vekaletname-alman-noteri-sartlari', 'tapu-devir-vekaletnamesi-almanya'],
-    en: ['power-of-attorney-in-turkish', 'turkish-notary-in-germany', 'tuerkische-vollmacht-kosten-2026-en', 'tuerkische-vollmacht-ohne-konsulat-en', 'turkish-power-of-attorney-photo-requirements', 'turkish-title-deed-transfer-power-of-attorney'],
+    de: ['tuerkische-vekaletname-deutschland', 'vollmacht-auf-tuerkisch', 'tuerkischer-notar-deutschland', 'tuerkische-vollmacht-kosten-2026', 'tuerkische-vollmacht-ohne-konsulat', 'tuerkische-vollmacht-lichtbild-formfehler', 'tapu-vollmacht-immobilie-tuerkei-uebertragung', 'vollmacht-fuer-die-tuerkei-leitfaden'],
+    tr: ['almanya-da-vekaletname-cikarma-rehberi', 'turkce-vekaletname-nasil-cikarilir', 'almanyada-turk-noteri', 'almanyada-vekaletname-ucreti-2026', 'almanyadan-turkiyeye-vekaletname-gonderme', 'fotografli-vekaletname-alman-noteri-sartlari', 'tapu-devir-vekaletnamesi-almanya', 'almanyadan-turkiye-vekaletname-rehberi'],
+    en: ['power-of-attorney-in-turkish', 'turkish-notary-in-germany', 'tuerkische-vollmacht-kosten-2026-en', 'tuerkische-vollmacht-ohne-konsulat-en', 'turkish-power-of-attorney-photo-requirements', 'turkish-title-deed-transfer-power-of-attorney', 'power-of-attorney-turkey-guide'],
   };
   const tanimaTenfizProductSlugs = {
     de: [TANIMA_TENFIZ_RECOGNITION_2026_BLOG_SLUG_DE],
@@ -3395,6 +3395,9 @@ export function BlogPost() {
                             'Turkish consulate or German notary?',
                             'Konsulat oder deutscher Notar – was ist besser?',
                             'Consulate or German notary — which is better?',
+                            '1. Zwei Wege – und nicht jeder passt zu jedem Geschäft',
+                            '1. İki Yol Var — ve Her İş İçin Aynı Yol Uygun Değil',
+                            '1. Two routes — and they are not interchangeable',
                             'Dauer und Kosten - realistische Zahlen',
                             'Süre ve Masraf - Gerçekçi Rakamlar',
                             'Timeline and Cost - Realistic Numbers',
@@ -3430,11 +3433,46 @@ export function BlogPost() {
                       currentSubheading = trimmedLine.replace(/###/g, '').trim();
                       if (
                         productFunnel &&
+                        !insertedIntroCTA &&
+                        [
+                          '2. Der konsularische Weg: wer, mit welchem Ausweis?',
+                          '2. Konsolosluk Yolu: Kim, Hangi Belgeyle Vekaletname Çıkarabilir?',
+                          '2. The consular route: who, with which identification?',
+                        ].includes(currentSubheading)
+                      ) {
+                        renderedElements.push(
+                          <BlogProductCTAIntro key={`intro-cta-${i}`} funnel={productFunnel} language={language} />
+                        );
+                        insertedIntroCTA = true;
+                      }
+                      if (
+                        productFunnel &&
+                        !insertedComparisonCTA &&
+                        [
+                          '3. Der Weg über den deutschen Notar',
+                          '3. Alman Noteri + Apostil Yolu',
+                          '3. The notary route',
+                        ].includes(currentSubheading)
+                      ) {
+                        renderedElements.push(
+                          <BlogProductCTAMid
+                            key={`comparison-cta-${i}`}
+                            funnel={productFunnel}
+                            language={language}
+                            variant="comparison"
+                          />
+                        );
+                        insertedComparisonCTA = true;
+                      }
+                      if (
+                        productFunnel &&
                         !insertedServiceTypesCTA &&
                         [
                           'Wie die Doğru Kanzlei das übernimmt',
                           'Doğru Kanzlei bunu nasıl üstlenir?',
                           'How Doğru Kanzlei handles this',
+                          'Wie die Doğru Kanzlei dieses Verfahren führt',
+                          'Doğru Kanzlei Bu Süreci Nasıl Yürütüyor?',
                           'Der Punkt, an dem es wirklich schiefgeht: der Vollmachtstext',
                           'Der teuerste Fehler: Deutscher Notar ohne Apostille',
                           'En pahalı hata: Apostilsiz Alman noteri belgesi',
@@ -3447,6 +3485,9 @@ export function BlogPost() {
                           'Die 4 häufigsten Fehler (und wie Sie sie vermeiden)',
                           'İşlem türüne göre nelere dikkat edilmeli?',
                           'En sık yapılan 4 hata (ve nasıl kaçınılır)',
+                          '4. Welche Befugnisse müssen aufgenommen werden?',
+                          '4. Hangi İş İçin Hangi Yetkiler Yazılmalı?',
+                          '4. Which authorities must be included?',
                         ].includes(currentSubheading)
                       ) {
                         renderedElements.push(
@@ -3797,6 +3838,9 @@ export function BlogPost() {
                           '1. Die Grundregel, die die meisten Erben überrascht',
                           '1. En Çok Şaşırtan Gerçek: Otomatik Bir Karşılıklı Tanıma Yok',
                           '1. The Rule That Surprises Most Heirs: No Automatic Mutual Recognition',
+                          '2. Der konsularische Weg: wer, mit welchem Ausweis?',
+                          '2. Konsolosluk Yolu: Kim, Hangi Belgeyle Vekaletname Çıkarabilir?',
+                          '2. The consular route: who, with which identification?',
                         ].includes(headingText)
                       ) {
                         renderedElements.push(
@@ -3832,6 +3876,9 @@ export function BlogPost() {
                           'Tapu Vekaletnamesinde Mutlaka Değerlendirilmesi Gereken Yetkiler',
                           'Welche Befugnisse gehören in eine Tapu-Vollmacht?',
                           'Which powers should a title deed POA include?',
+                          '3. Der Weg über den deutschen Notar',
+                          '3. Alman Noteri + Apostil Yolu',
+                          '3. The notary route',
                         ].includes(headingText)
                       ) {
                         renderedElements.push(
@@ -3884,9 +3931,14 @@ export function BlogPost() {
                           'Wie die Doğru Kanzlei das übernimmt',
                           'Doğru Kanzlei bunu nasıl üstlenir?',
                           'How Doğru Kanzlei handles this',
+                          'Wie die Doğru Kanzlei dieses Verfahren führt',
+                          'Doğru Kanzlei Bu Süreci Nasıl Yürütüyor?',
                           'Was muss in der türkischen Vollmacht stehen?',
                           'Türkçe vekaletnamede ne yazmalı?',
                           'What should the Turkish power of attorney say?',
+                          '4. Welche Befugnisse müssen aufgenommen werden?',
+                          '4. Hangi İş İçin Hangi Yetkiler Yazılmalı?',
+                          '4. Which authorities must be included?',
                           'Vekaletname Metninde Hangi Yetkiler Açık Yazılmalı?',
                           'Türkçe tapu vekaletnamesinde ne yazmalı?',
                           'Der Gerichtsweg: Ablauf Schritt für Schritt',

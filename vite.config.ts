@@ -10,6 +10,12 @@ import fs from 'fs'
 import { join } from 'path'
 
 const blogPrerenderRoutes = [
+  '/de/blog/vollmacht-fuer-die-tuerkei-leitfaden',
+  '/tr/blog/almanyadan-turkiye-vekaletname-rehberi',
+  '/en/blog/power-of-attorney-turkey-guide',
+  '/de/leistungen/forderungsvollstreckung-tuerkei',
+  '/tr/hizmetler/turkiyede-alacak-tahsili',
+  '/en/services/debt-enforcement-turkey',
   '/de/blog/bedrohung-tuerkei-aus-deutschland-strafverteidigung',
   '/tr/blog/turkiye-tehdit-sucu-almanya-savunma',
   '/en/blog/threat-crime-turkey-defence-from-germany',

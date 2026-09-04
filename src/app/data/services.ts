@@ -1,4 +1,5 @@
 import { Home, Users, BookOpen, Globe, Shield, Plane, UserCheck, Gavel } from "lucide-react";
+import { forderungsvollstreckungTurkeyService } from "./forderungsvollstreckungTurkeyService";
 
 export const services = [
   {
@@ -1601,6 +1602,7 @@ Im türkischen Vollstreckungsrecht gelten strikte Fristen. Zögern Sie nicht zu 
 Fazit:
 Wir vertreten Ihre Interessen konsequent und verfolgen Ihre Forderungen in der Türkei — zuverlässig, transparent und mit vollem Service aus Deutschland.`
   },
+  forderungsvollstreckungTurkeyService,
   {
     id: "erbrecht",
     slugDE: "erbrecht",
