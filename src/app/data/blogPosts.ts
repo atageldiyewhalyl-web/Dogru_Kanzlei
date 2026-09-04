@@ -35,6 +35,7 @@ import { inheritanceParticipationClaimPost } from "./inheritanceParticipationCla
 import { inheritanceCertificateRecognitionPost } from "./inheritanceCertificateRecognitionPost";
 import { fotografliVekaletnameFormfehlerPost, tapuDevirVekaletnamesiPost } from "./vekaletnameFormAndTapuPosts";
 import { vekaletnameRehberiPillarPost } from "./vekaletnameRehberiPillarPost";
+import { tanimaTenfizAlacakPost } from "./tanimaTenfizAlacakPost";
 import { legacyBlogPosts } from "./legacyBlogPosts";
 
 export interface BlogPost {
@@ -1130,6 +1131,7 @@ const allBlogPosts: BlogPost[] = [
   vekaletnameRehberiPillarPost,
   tapuDevirVekaletnamesiPost,
   fotografliVekaletnameFormfehlerPost,
+  tanimaTenfizAlacakPost,
   inheritanceCertificateRecognitionPost,
   inheritanceParticipationClaimPost,
   propertyCompensationDivorcePost,
