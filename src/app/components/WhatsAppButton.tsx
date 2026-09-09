@@ -16,6 +16,9 @@ const HIDE_WHATSAPP_BUTTON_PATHS = [
   '/tr/blog/almanyada-vekaletname-ucreti-2026',
   '/de/blog/tuerkische-vollmacht-ohne-konsulat',
   '/tr/blog/almanyadan-turkiyeye-vekaletname-gonderme',
+  '/de/blog/deutsches-urteil-tuerkei-vollstrecken-tanima-tenfiz',
+  '/tr/blog/tanima-tenfiz-davasi-alacak-almanya-turkiye',
+  '/en/blog/enforce-german-judgment-in-turkey',
 ];
 
 export function WhatsAppButton() {
