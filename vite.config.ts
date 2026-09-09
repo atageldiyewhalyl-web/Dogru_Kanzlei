@@ -31,6 +31,9 @@ const blogPrerenderRoutes = [
   '/de/blog/hagb-einbuergerung-deutschland-tuerkei',
   '/tr/blog/hagb-alman-vatandasligi',
   '/en/blog/hagb-turkish-deferred-judgment-german-citizenship',
+  '/de/blog/haftbefehl-tuerkei-einreise-risiko',
+  '/tr/blog/turkiyede-hakkimda-yakalama-karari-var-mi',
+  '/en/blog/arrest-warrant-turkey-before-you-travel',
 ]
 
 const postBuildAdjustments: Plugin = {
