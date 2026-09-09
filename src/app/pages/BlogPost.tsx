@@ -12,6 +12,7 @@ import { extractFaqsFromContent } from "../utils/schemaUtils";
 import { usePrerender } from "../hooks/usePrerender";
 import hasanMainHero from "@/assets/Hasan dogru main hero 1.webp";
 import vekaletnameImg from "@/assets/The_asset_for_blogs.png";
+import debtEnforcementCtaImg from "@/assets/debt-enforcement-blog-cta.png";
 
 const WHATSAPP_URL = "https://wa.me/4917661221210";
 const CRIMINAL_LAW_BLOG_SLUG_DE = "tuerkisches-strafrecht-anwalt-deutschland";
@@ -3321,7 +3322,7 @@ export function BlogPost() {
             slugTR: 'tanima-tenfiz-davasi-alacak-almanya-turkiye',
             duration: '20 dakika',
             campaign: 'debt_enforcement_whatsapp_form',
-            image: post.image,
+            image: debtEnforcementCtaImg,
           }
       : matchesLocalizedSlug(inheritanceTaxProductSlugs)
         ? {

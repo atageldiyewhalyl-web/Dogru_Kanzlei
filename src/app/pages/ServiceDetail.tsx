@@ -13,6 +13,7 @@ import aileHukukuHeroVideo from "../../assets/aile-hukuku-hero.webm";
 import mirasHukukuHero from "../../assets/miras-hukuku-hero.avif";
 import criminalHero from "../../assets/ceza-hero.avif";
 import vekaletnameHero from "../../assets/vekaletname-hero.avif";
+import forderungsvollstreckungHero from "../../assets/forderungsvollstreckung-hero.png";
 import servicesBackground from "../../assets/background-for-services.avif";
 import hasanMainHero from "../../assets/Hasan dogru main hero 1.webp";
 import hasanOfficeHero from "../../assets/Hero full screen.png";
@@ -193,7 +194,8 @@ export function ServiceDetail() {
   const isVollmachtLandingPage = service.id === 'vollmacht-apostille';
   const isErbrechtLandingPage = service.id === 'erbrecht';
   const isStrafrechtLandingPage = service.id === 'strafrecht';
-  const isFamilyLawLandingPage = (language === 'de' || language === 'tr' || language === 'en') && (isFamilyLawServicePage || isTanimaLandingPage || isVollmachtLandingPage || isErbrechtLandingPage || isStrafrechtLandingPage);
+  const isForderungsvollstreckungLandingPage = service.id === 'forderungsvollstreckung-tuerkei';
+  const isFamilyLawLandingPage = (language === 'de' || language === 'tr' || language === 'en') && (isFamilyLawServicePage || isTanimaLandingPage || isVollmachtLandingPage || isErbrechtLandingPage || isStrafrechtLandingPage || isForderungsvollstreckungLandingPage);
   const isTurkishFamilyLawPage = language === 'tr' && isFamilyLawLandingPage;
   const isEnglishFamilyLawPage = language === 'en' && isFamilyLawLandingPage;
   const familyLawText = (de: string, tr: string, en: string) => (
@@ -223,6 +225,12 @@ export function ServiceDetail() {
         'Tanıma Tenfiz Anwalt Deutschland',
         'Almanya’daki boşanmanız Türkiye’de hâlâ geçerli değil mi?',
         'Need your German divorce recognised in Turkey?'
+      )
+      : isForderungsvollstreckungLandingPage
+      ? familyLawText(
+        'Forderungen in der Türkei vollstrecken',
+        'Türkiye’de alacağınızı Almanya’dan tahsil ediyoruz',
+        'Enforce debts and judgments in Turkey'
       )
       : familyLawText(
       'Scheidung oder Familienstreit mit Türkeibezug? Wir lösen das ohne Reise.',
@@ -254,6 +262,12 @@ export function ServiceDetail() {
         'Ihre Ehe gilt in der Türkei noch als bestehend? Wir führen das Tanıma-Verfahren vollständig durch — ohne Reise.',
         'Türkiye’de hâlâ evli mi görünüyorsunuz? Tanıma ve Tenfiz sürecini seyahate gerek kalmadan sizin için yürütüyoruz.',
         'Still considered married in Turkey? We handle the full Tanıma & Tenfiz procedure without travel.'
+      )
+      : isForderungsvollstreckungLandingPage
+      ? familyLawText(
+        'Schuldner mit Vermögen in der Türkei? Wir prüfen Titel, Vermögen, Tenfiz, İhtiyati Haciz und den richtigen Vollstreckungsweg — direkt aus Mannheim und Ankara.',
+        'Borçlunun Türkiye’de mal varlığı mı var? Başlığı, mal varlığını, tenfiz yolunu, ihtiyati haczi ve icra stratejisini Mannheim ve Ankara’dan değerlendiriyoruz.',
+        'Debtor with assets in Turkey? We assess the title, assets, tenfiz route, preliminary attachment and enforcement strategy from Mannheim and Ankara.'
       )
       : familyLawText(
       'Deutsch-türkische Scheidung, Unterhalt und Tanıma & Tenfiz direkt aus Mannheim und Ankara betreut.',
@@ -1064,10 +1078,172 @@ export function ServiceDetail() {
       )
     }
   ];
-  const landingConversionCards = isStrafrechtLandingPage ? strafrechtConversionCards : isErbrechtLandingPage ? erbrechtConversionCards : isVollmachtLandingPage ? vollmachtConversionCards : isTanimaLandingPage ? tanimaConversionCards : familyLawConversionCards;
-  const landingOutcomes = isStrafrechtLandingPage ? strafrechtOutcomes : isErbrechtLandingPage ? erbrechtOutcomes : isVollmachtLandingPage ? vollmachtOutcomes : isTanimaLandingPage ? tanimaOutcomes : familyLawOutcomes;
-  const landingProcessSteps = isStrafrechtLandingPage ? strafrechtProcessSteps : isErbrechtLandingPage ? erbrechtProcessSteps : isVollmachtLandingPage ? vollmachtProcessSteps : isTanimaLandingPage ? tanimaProcessSteps : familyLawProcessSteps;
-  const landingProofPoints = isStrafrechtLandingPage ? strafrechtProofPoints : isErbrechtLandingPage ? erbrechtProofPoints : isVollmachtLandingPage ? vollmachtProofPoints : isTanimaLandingPage ? tanimaProofPoints : familyLawProofPoints;
+  const forderungsvollstreckungConversionCards = [
+    {
+      title: familyLawText('Titelprüfung und Tenfiz', 'Başlık incelemesi ve tenfiz', 'Title review and tenfiz'),
+      text: familyLawText(
+        'Wir prüfen, ob Ihr deutscher Titel in der Türkei anerkennungsfähig ist und welcher Weg wirtschaftlich sinnvoll ist.',
+        'Alman kararınızın Türkiye’de tenfize elverişli olup olmadığını ve hangi yolun ekonomik olduğunu inceliyoruz.',
+        'We assess whether your foreign judgment can be recognised in Turkey and which route is commercially sensible.'
+      ),
+      icon: FileCheck2,
+      keywords: [
+        familyLawText('Deutsches Urteil Türkei', 'Alman mahkeme kararı tenfiz', 'foreign judgment Turkey'),
+        familyLawText('Tenfiz Geldforderung', 'alacak için tenfiz', 'tenfiz debt claim')
+      ]
+    },
+    {
+      title: familyLawText('Vermögen in der Türkei finden', 'Türkiye’de mal varlığı araştırması', 'Trace assets in Turkey'),
+      text: familyLawText(
+        'Vor teuren Schritten klären wir Immobilien, Gesellschaftsbeteiligungen, Fahrzeuge und mögliche Kontenpfändung.',
+        'Masraf oluşmadan önce tapu, şirket ortaklığı, araç ve banka haczi ihtimallerini netleştiriyoruz.',
+        'Before costly steps, we clarify property, shareholdings, vehicles and possible bank attachment.'
+      ),
+      icon: Banknote,
+      keywords: [
+        familyLawText('Tapu Recherche', 'tapu araştırması', 'land registry search'),
+        familyLawText('Vermögensermittlung Türkei', 'mal varlığı araştırması', 'asset tracing Turkey')
+      ]
+    },
+    {
+      title: familyLawText('İhtiyati Haciz sichern', 'İhtiyati haciz ile güvence', 'Secure preliminary attachment'),
+      text: familyLawText(
+        'Wenn Vermögensverschiebung droht, prüfen wir eine vorläufige Pfändung und Grundbuchsperre in der Türkei.',
+        'Mal kaçırma riski varsa ihtiyati haciz ve tapu şerhi imkanlarını değerlendiriyoruz.',
+        'If asset dissipation is likely, we assess preliminary attachment and land-registry restrictions.'
+      ),
+      icon: Scale,
+      keywords: [
+        familyLawText('Vorläufige Pfändung Türkei', 'ihtiyati haciz', 'preliminary attachment Turkey'),
+        familyLawText('Grundbuchsperre Tapu', 'tapu şerhi', 'land-registry restriction')
+      ]
+    },
+    {
+      title: familyLawText('Vollstreckungsbescheid richtig einordnen', 'Alman ödeme emrini doğru değerlendirme', 'Handle default payment orders'),
+      text: familyLawText(
+        'Ein deutscher Vollstreckungsbescheid ist meist nicht tenfizfähig. Wir prüfen ilamsız icra takibi oder Klage in der Türkei.',
+        'Alman ödeme emri çoğu zaman tenfiz edilemez. İlamsız icra takibi veya Türkiye’de dava yolunu inceliyoruz.',
+        'A default payment order is usually not recognisable. We assess enforcement without title or litigation in Turkey.'
+      ),
+      icon: Gavel,
+      keywords: [
+        familyLawText('Vollstreckungsbescheid Türkei', 'Alman ödeme emri Türkiye', 'default payment order Turkey'),
+        familyLawText('İlamsız icra takibi', 'ilamsız icra takibi', 'enforcement without title')
+      ]
+    },
+    {
+      title: familyLawText('Institutionelle Gläubiger betreuen', 'Kurumsal alacaklı takibi', 'Support institutional creditors'),
+      text: familyLawText(
+        'Für Insolvenzverwalter, Inkassounternehmen, Unterhaltsvorschusskassen und öffentliche Stellen bereiten wir den Ablauf aktenfähig vor.',
+        'İflas idareleri, tahsilat şirketleri ve kamu kurumları için dosyaya uygun, raporlanabilir süreç yürütüyoruz.',
+        'For insolvency administrators, agencies and public bodies, we run a file-ready, reportable process.'
+      ),
+      icon: UsersRound,
+      keywords: [
+        familyLawText('Inkasso Türkei Anwalt', 'kurumsal alacak tahsili', 'collection Turkey lawyer'),
+        familyLawText('Unterhaltstitel Türkei', 'nafaka ilamı tenfiz', 'maintenance orders Turkey')
+      ]
+    },
+    {
+      title: familyLawText('Ohne Korrespondenzkanzlei', 'Muhabir avukatsız doğrudan takip', 'No correspondent-lawyer layer'),
+      text: familyLawText(
+        'Als Ankara Barosu Mitglied führen wir türkische Gerichts- und Vollstreckungsschritte direkt, mit deutscher Kommunikation.',
+        'Ankara Barosu üyeliğiyle Türk mahkemeleri ve icra dairelerinde süreci doğrudan takip ediyoruz.',
+        'As Ankara Bar members, we handle Turkish court and enforcement steps directly with German-language coordination.'
+      ),
+      icon: Globe2,
+      keywords: [
+        familyLawText('Mannheim und Ankara', 'Mannheim ve Ankara', 'Mannheim and Ankara'),
+        familyLawText('UYAP Zugriff', 'UYAP takibi', 'UYAP access')
+      ]
+    }
+  ];
+  const forderungsvollstreckungOutcomes = [
+    familyLawText('Deutsches Urteil in der Türkei vollstrecken', 'Alman kararını Türkiye’de icra etmek', 'Enforce a foreign judgment in Turkey'),
+    familyLawText('Vollstreckungsbescheid Türkei prüfen', 'Alman ödeme emrini değerlendirmek', 'Assess a default payment order'),
+    familyLawText('Vermögensermittlung vor Klage', 'Dava öncesi mal varlığı araştırması', 'Trace assets before litigation'),
+    familyLawText('İhtiyati Haciz gegen Vermögensverschiebung', 'Mal kaçırmaya karşı ihtiyati haciz', 'Preliminary attachment against asset transfers')
+  ];
+  const forderungsvollstreckungProcessSteps = [
+    {
+      step: '01',
+      title: familyLawText('Titel und Forderung senden', 'Başlık ve alacağı gönderin', 'Send the title and claim'),
+      text: familyLawText(
+        'Sie senden Urteil, Vollstreckungsbescheid, Kostenbeschluss oder Unterlagen mit kurzer Sachverhaltsdarstellung.',
+        'Karar, ödeme emri, masraf kararı veya alacak belgelerinizi kısa olay özetiyle gönderirsiniz.',
+        'Send the judgment, order, cost decision or claim documents with a short fact summary.'
+      )
+    },
+    {
+      step: '02',
+      title: familyLawText('Tenfizfähigkeit und Vermögen prüfen', 'Tenfiz ve mal varlığını kontrol edelim', 'Check tenfiz and assets'),
+      text: familyLawText(
+        'Wir prüfen Rechtskraft, Apostille, Übersetzung, Zustellung, Vermögensspuren und Sicherungsmöglichkeiten.',
+        'Kesinleşme, apostil, tercüme, tebligat, mal varlığı izleri ve güvence imkanlarını inceleriz.',
+        'We review finality, apostille, translation, service, asset leads and protection options.'
+      )
+    },
+    {
+      step: '03',
+      title: familyLawText('Sicherung und Vollstreckung starten', 'Güvence ve icrayı başlatalım', 'Start security and enforcement'),
+      text: familyLawText(
+        'Nach Beauftragung koordinieren wir Vollmacht, İhtiyati Haciz, Tenfiz oder den passenden Vollstreckungsweg in der Türkei.',
+        'Vekalet sonrası ihtiyati haciz, tenfiz veya uygun icra yolunu Türkiye’de koordine ederiz.',
+        'After instruction, we coordinate power of attorney, preliminary attachment, tenfiz or the right enforcement route.'
+      )
+    }
+  ];
+  const forderungsvollstreckungProofPoints = [
+    {
+      label: '01',
+      title: familyLawText('Vollstreckungsbescheid ist die Falle', 'Alman ödeme emri en pahalı hata olabilir', 'Default payment orders are the trap'),
+      text: familyLawText(
+        'Viele Inkassotitel aus Deutschland sind in der Türkei nicht direkt anerkennungsfähig. Diese Vorprüfung spart Monate und Kosten.',
+        'Almanya’daki birçok tahsilat başlığı Türkiye’de doğrudan tenfiz edilemez. İlk inceleme aylar ve masraf kazandırır.',
+        'Many collection titles from abroad are not directly recognisable in Turkey. Early review saves months and cost.'
+      )
+    },
+    {
+      label: '02',
+      title: familyLawText('Erst Vermögen, dann Verfahren', 'Önce mal varlığı, sonra dava', 'Assets first, procedure second'),
+      text: familyLawText(
+        'Eine Vollstreckung lohnt sich nur, wenn Vermögen auffindbar ist. Tapu, Register und Bankzugriff werden strategisch geplant.',
+        'Tahsil ancak mal varlığı bulunursa anlamlıdır. Tapu, sicil ve banka haczi stratejik olarak planlanır.',
+        'Enforcement only makes sense where assets can be found. Property, registry and bank steps are planned strategically.'
+      )
+    },
+    {
+      label: '03',
+      title: familyLawText('Sicherung vor Zustellung', 'Tebligattan önce güvence', 'Security before service'),
+      text: familyLawText(
+        'Bei Vermögensverschiebungsrisiko kann İhtiyati Haciz entscheidend sein, bevor der Schuldner reagieren kann.',
+        'Mal kaçırma riski varsa borçlu tepki vermeden önce ihtiyati haciz belirleyici olabilir.',
+        'Where assets may be transferred, preliminary attachment can be decisive before the debtor reacts.'
+      )
+    },
+    {
+      label: '04',
+      title: familyLawText('Direkt in türkischen Verfahren', 'Türk icra sürecinde doğrudan takip', 'Direct Turkish procedure handling'),
+      text: familyLawText(
+        'Ankara Barosu, §207 BRAO und UYAP-Zugang ermöglichen direkte Prozessführung mit Berichtswesen aus Deutschland.',
+        'Ankara Barosu, §207 BRAO ve UYAP takibi Almanya’dan raporlanabilir doğrudan süreç sağlar.',
+        'Ankara Bar membership, §207 BRAO and UYAP access allow direct handling with clear reporting from Germany.'
+      )
+    },
+    {
+      label: '05',
+      title: familyLawText('Für Gläubiger und öffentliche Stellen', 'Alacaklılar ve kamu kurumları için', 'For creditors and public bodies'),
+      text: familyLawText(
+        'Die Seite ist auf Forderungen, Titel, Rückgriff und Aktenführung ausgerichtet, nicht auf allgemeine Privatberatung.',
+        'Bu hizmet alacak, ilam, rücu ve dosya takibi için yapılandırılmıştır; genel danışmanlık sayfası değildir.',
+        'This service is designed for claims, judgments, recourse and file management, not generic private advice.'
+      )
+    }
+  ];
+  const landingConversionCards = isForderungsvollstreckungLandingPage ? forderungsvollstreckungConversionCards : isStrafrechtLandingPage ? strafrechtConversionCards : isErbrechtLandingPage ? erbrechtConversionCards : isVollmachtLandingPage ? vollmachtConversionCards : isTanimaLandingPage ? tanimaConversionCards : familyLawConversionCards;
+  const landingOutcomes = isForderungsvollstreckungLandingPage ? forderungsvollstreckungOutcomes : isStrafrechtLandingPage ? strafrechtOutcomes : isErbrechtLandingPage ? erbrechtOutcomes : isVollmachtLandingPage ? vollmachtOutcomes : isTanimaLandingPage ? tanimaOutcomes : familyLawOutcomes;
+  const landingProcessSteps = isForderungsvollstreckungLandingPage ? forderungsvollstreckungProcessSteps : isStrafrechtLandingPage ? strafrechtProcessSteps : isErbrechtLandingPage ? erbrechtProcessSteps : isVollmachtLandingPage ? vollmachtProcessSteps : isTanimaLandingPage ? tanimaProcessSteps : familyLawProcessSteps;
+  const landingProofPoints = isForderungsvollstreckungLandingPage ? forderungsvollstreckungProofPoints : isStrafrechtLandingPage ? strafrechtProofPoints : isErbrechtLandingPage ? erbrechtProofPoints : isVollmachtLandingPage ? vollmachtProofPoints : isTanimaLandingPage ? tanimaProofPoints : familyLawProofPoints;
   const landingTestimonials = familyLawTestimonials;
   const landingServicesHeading = isTanimaLandingPage
     ? familyLawText('Was wir im Tanıma-Verfahren übernehmen', 'Tanıma ve Tenfiz sürecinde neler yapıyoruz', 'What we handle in the Tanıma process')
@@ -1077,6 +1253,8 @@ export function ServiceDetail() {
       ? familyLawText('Türkisches Erbrecht von Deutschland aus regeln', 'Türkiye miras işlemlerini Almanya’dan yürütüyoruz', 'Turkish inheritance matters handled from Germany')
     : isVollmachtLandingPage
       ? familyLawText('Vollmacht auf Türkisch: Wir klären den richtigen Weg', 'Vekaletname Almanya: sizin için hangi yolu seçiyoruz?', 'Power of attorney, apostille and certification for Turkey')
+    : isForderungsvollstreckungLandingPage
+      ? familyLawText('Forderungsvollstreckung Türkei: Titel, Vermögen und Sicherung', 'Türkiye’de alacak tahsili: başlık, mal varlığı ve güvence', 'Debt enforcement in Turkey: title, assets and security')
       : familyLawText('Was wir für Sie tun', 'Sizin için neler yapıyoruz', 'What we handle for you');
   const landingInlineLabel = isTanimaLandingPage
     ? familyLawText('Wichtig zu wissen', 'Bilmeniz gereken', 'Important to know')
@@ -1086,6 +1264,8 @@ export function ServiceDetail() {
       ? familyLawText('Dringende Frist', 'Acil süre', 'Urgent deadline')
     : isVollmachtLandingPage
       ? familyLawText('Wichtiger Unterschied', 'Kritik ayrım', 'Important distinction')
+    : isForderungsvollstreckungLandingPage
+      ? familyLawText('Erster Prüfpunkt', 'İlk kontrol noktası', 'First checkpoint')
       : 'Tanıma & Tenfiz';
   const landingInlineTitle = isTanimaLandingPage
     ? familyLawText('Ohne Tanıma gelten Sie in der Türkei weiter als verheiratet.', 'Tanıma yapılmadan Türkiye’de hâlâ evli görünebilirsiniz.', 'Without Tanıma, Turkey may still treat you as married.')
@@ -1095,6 +1275,8 @@ export function ServiceDetail() {
       ? familyLawText('Die Frist zur Erbausschlagung in der Türkei beträgt 3 Monate.', 'Türkiye’de reddi miras süresi 3 aydır.', 'The deadline to reject an inheritance in Turkey is 3 months.')
     : isVollmachtLandingPage
       ? familyLawText('Konsularvollmacht und deutsche notarielle Vollmacht sind nicht derselbe Weg.', 'Konsolosluk vekaletnamesi ile Alman noter vekaletnamesi aynı süreç değildir.', 'Consular and German notarial powers of attorney are not the same route.')
+    : isForderungsvollstreckungLandingPage
+      ? familyLawText('Nicht jeder deutsche Titel kann in der Türkei per Tenfiz vollstreckt werden.', 'Her Alman başlığı Türkiye’de tenfiz yoluyla icra edilemez.', 'Not every foreign title can be enforced in Turkey through tenfiz.')
     : familyLawText('Scheidung Türkei anerkennen lassen?', 'Almanya’daki boşanma kararınız Türkiye’de geçerli mi?', 'Need your German divorce recognised in Turkey?');
   const landingInlineText = isTanimaLandingPage
     ? familyLawText(
@@ -1120,6 +1302,12 @@ export function ServiceDetail() {
         'Konsoloslukta Türkçe vekaletname düzenlenir. Alman noterinde ise çoğu dosyada apostil ve tercüme adımları gerekir. Önemli olan, tapu, miras, banka veya mahkeme işleminiz için Türkiye’de hangi yolun kabul edileceğidir.',
         'At the consulate, a Turkish power of attorney is issued. With a German notary, apostille and translation often follow. The key is which route Turkey will accept for property, inheritance, banking or court.'
       )
+    : isForderungsvollstreckungLandingPage
+      ? familyLawText(
+        'Rechtskräftige Urteile, Kostenfestsetzungsbeschlüsse und bestimmte Unterhaltstitel können anders zu behandeln sein als Vollstreckungsbescheide aus dem Mahnverfahren. Deshalb beginnt die Durchsetzung in der Türkei mit einer Titelprüfung und Vermögensermittlung.',
+        'Kesinleşmiş mahkeme kararları, masraf kararları ve bazı nafaka ilamları; Alman ödeme emrinden farklı değerlendirilir. Bu yüzden Türkiye’de tahsil süreci başlık incelemesi ve mal varlığı araştırmasıyla başlamalıdır.',
+        'Final judgments, cost orders and some maintenance orders may be treated differently from default payment orders. That is why enforcement in Turkey starts with title review and asset tracing.'
+      )
     : familyLawText(
       'Wenn Sie in Deutschland geschieden sind, gilt diese Scheidung in der Türkei nicht automatisch. Wir prüfen, ob Tanıma, Tenfiz oder ein kombiniertes Verfahren nötig ist.',
       'Almanya’da boşandıysanız, bu karar Türkiye’de kendiliğinden geçerli olmaz. Nüfus kaydınızın güncellenmesi veya nafaka ve mal paylaşımı hükümlerinin uygulanması için Tanıma, Tenfiz ya da birleşik bir süreç gerekebilir.',
@@ -1133,6 +1321,8 @@ export function ServiceDetail() {
       ? familyLawText('Warum Mandanten uns im türkischen Erbrecht beauftragen', 'Müvekkiller Türk miras hukuku için neden bizi tercih ediyor?', 'Why clients instruct us for Turkish inheritance law')
     : isVollmachtLandingPage
       ? familyLawText('Warum Mandanten ihre Türkei-Vollmacht mit uns vorbereiten', 'Neden vekaletname sürecini Hasan Doğru ile başlatıyorlar?', 'Why clients prepare Turkey powers of attorney with us')
+    : isForderungsvollstreckungLandingPage
+      ? familyLawText('Warum Gläubiger uns mit Türkei-Vollstreckung beauftragen', 'Alacaklılar Türkiye tahsilinde neden bizi tercih ediyor?', 'Why creditors instruct us for enforcement in Turkey')
     : familyLawText('Warum Mandanten aus ganz Deutschland uns beauftragen', 'Almanya genelindeki müvekkiller neden bizi tercih ediyor?', 'Why clients across Germany instruct us');
   const landingWhyText = isTanimaLandingPage
     ? familyLawText(
@@ -1157,6 +1347,12 @@ export function ServiceDetail() {
         'Bei Vollmachten für die Türkei entscheidet nicht nur der Notarstempel. Entscheidend ist, ob Wortlaut, Apostille, Übersetzung und Zweck von türkischen Behörden akzeptiert werden.',
         'Türkiye için vekaletnamede sadece noter onayı yetmez. Metin, apostil, tercüme, işlem amacı, fotoğraf ve özel yetkiler Türk makamlarınca kabul edilecek şekilde hazırlanmalıdır.',
         'For powers of attorney for Turkey, the notarial stamp alone is not enough. Wording, apostille, translation and purpose must be accepted by Turkish authorities.'
+      )
+    : isForderungsvollstreckungLandingPage
+      ? familyLawText(
+        'Bei Forderungen mit Türkei-Bezug entscheidet die Reihenfolge: erst Titel und Vermögen prüfen, dann sichern, dann vollstrecken. Wer mit dem falschen Titel startet oder Vermögen zu spät sichert, verliert Zeit und Verhandlungsdruck.',
+        'Türkiye bağlantılı alacaklarda sıra belirleyicidir: önce başlık ve mal varlığı, sonra güvence, sonra icra. Yanlış başlıkla başlayan veya mal varlığını geç güvenceye alan taraf zaman ve baskı gücü kaybeder.',
+        'For Turkey-related claims, sequence is decisive: review title and assets first, secure next, enforce after. Starting with the wrong title or securing assets too late costs time and leverage.'
       )
     : familyLawText(
       'Bei Scheidung und Unterhalt mit Türkeibezug zählt nicht die Nähe zum nächsten Büro, sondern die direkte Verbindung zum türkischen Rechtssystem.',
@@ -1187,6 +1383,12 @@ export function ServiceDetail() {
         'Vekaletnameyi Türkiye’de hangi işlem için kullanacağınızı WhatsApp üzerinden kısaca anlatın. Konsolosluk mu Alman noteri mi, apostil gerekir mi, belge ve ücret kalemleri neler olur, birlikte netleştirelim.',
         'Briefly tell us on WhatsApp what you need the power of attorney or apostille for in Turkey. We assess the right form and next steps.'
       )
+    : isForderungsvollstreckungLandingPage
+      ? familyLawText(
+        'Senden Sie uns den Titel und eine kurze Sachverhaltsdarstellung per WhatsApp. Wir prüfen, ob Tenfiz, İhtiyati Haciz, Vermögensermittlung oder ein anderes Vollstreckungsverfahren in Betracht kommt.',
+        'Başlığı ve kısa olay özetini WhatsApp üzerinden gönderin. Tenfiz, ihtiyati haciz, mal varlığı araştırması veya başka bir icra yolunun uygun olup olmadığını değerlendirelim.',
+        'Send us the title and a short fact summary on WhatsApp. We assess whether tenfiz, preliminary attachment, asset tracing or another enforcement route applies.'
+      )
     : familyLawText(
       'Schildern Sie kurz Ihre Situation per WhatsApp. Wir prüfen, ob und wie wir Sie bei Scheidung, Unterhalt oder Tanıma & Tenfiz unterstützen können.',
       'Durumunuzu WhatsApp üzerinden kısaca anlatın. Boşanma, nafaka veya Tanıma & Tenfiz konusunda size nasıl yardımcı olabileceğimizi değerlendirelim.',
@@ -1200,6 +1402,8 @@ export function ServiceDetail() {
       ? familyLawText('Erbfall per WhatsApp schildern', 'Miras dosyasını WhatsApp’tan anlatın', 'Describe the inheritance case')
     : isVollmachtLandingPage
       ? familyLawText('Vollmacht per WhatsApp prüfen lassen', 'Vekaletname sürecini WhatsApp’tan başlatın', 'Ask about the power of attorney')
+    : isForderungsvollstreckungLandingPage
+      ? familyLawText('Titel per WhatsApp prüfen lassen', 'Alacağı WhatsApp’tan anlatın', 'Send the claim on WhatsApp')
     : familyLawText('Fall per WhatsApp schildern', 'Dosyanızı WhatsApp’tan anlatın', 'Describe your case on WhatsApp');
   const landingLeadDetails = {
     service: isVollmachtLandingPage ? 'Vekaletname' : title,
@@ -1340,6 +1544,13 @@ export function ServiceDetail() {
                   alt=""
                   aria-hidden="true"
                 />
+              ) : isForderungsvollstreckungLandingPage ? (
+                <img
+                  className="absolute inset-0 h-full w-full object-cover object-center"
+                  src={forderungsvollstreckungHero}
+                  alt=""
+                  aria-hidden="true"
+                />
               ) : isErbrechtLandingPage ? (
                 <img
                   className="absolute inset-0 h-full w-full object-cover object-center"
@@ -1358,9 +1569,13 @@ export function ServiceDetail() {
                   aria-hidden="true"
                 />
 	              )}
-	              <div className="absolute inset-0 bg-gradient-to-r from-[#F7F5F0]/94 via-[#F7F5F0]/68 to-[#F7F5F0]/5" />
-              <div className="absolute inset-0 bg-gradient-to-b from-[#F7F5F0]/95 via-[#F7F5F0]/35 to-transparent" />
-              <div className="absolute inset-0 bg-gradient-to-t from-[#F7F5F0]/85 via-transparent to-transparent" />
+	              {!isForderungsvollstreckungLandingPage && (
+	                <>
+	                  <div className="absolute inset-0 bg-gradient-to-r from-[#F7F5F0]/94 via-[#F7F5F0]/68 to-[#F7F5F0]/5" />
+	                  <div className="absolute inset-0 bg-gradient-to-b from-[#F7F5F0]/95 via-[#F7F5F0]/35 to-transparent" />
+	                  <div className="absolute inset-0 bg-gradient-to-t from-[#F7F5F0]/85 via-transparent to-transparent" />
+	                </>
+	              )}
 
               <div className="relative z-10 max-w-[1400px] mx-auto px-6 lg:px-12 min-h-[620px] md:min-h-[680px] flex items-center">
                 <div className="max-w-[820px] pt-10 pb-16">
@@ -1788,7 +2003,7 @@ export function ServiceDetail() {
 	                      </h2>
 	                    </div>
 	                    <div className="flex flex-wrap gap-3">
-	                      {services.filter(s => s.id !== id).map((s) => (
+	                      {services.filter(s => s.id !== service.id).map((s) => (
 	                        <Link
 	                          key={s.id}
 	                          to={paths.service(s.id)}
