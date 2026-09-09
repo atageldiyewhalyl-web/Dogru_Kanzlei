@@ -42,7 +42,7 @@ const PROPERTY_PARTITION_AUCTION_BLOG_SLUG_DE = "12-justizpaket-erbengemeinschaf
 type BlogProductCTAPlacement = 'intro' | 'comparison' | 'service_types' | 'bottom' | 'sticky';
 
 type BlogProductFunnel = {
-  service: 'vekaletname' | 'tanima_tenfiz' | 'inheritance_tax' | 'property_partition_auction' | 'divorce_property' | 'pension_rights' | 'inheritance_participation' | 'inheritance_certificate';
+  service: 'vekaletname' | 'tanima_tenfiz' | 'debt_enforcement' | 'inheritance_tax' | 'property_partition_auction' | 'divorce_property' | 'pension_rights' | 'inheritance_participation' | 'inheritance_certificate' | 'arrest_warrant';
   slugDE: string;
   slugTR: string;
   duration: string;
@@ -56,6 +56,14 @@ const vekaletnameFunnel: BlogProductFunnel = {
   slugTR: 'almanya-da-vekaletname-cikarma-rehberi',
   duration: '20 dakika',
   campaign: 'vekaletname_whatsapp_form',
+};
+
+const arrestWarrantFunnel: BlogProductFunnel = {
+  service: 'arrest_warrant',
+  slugDE: 'haftbefehl-tuerkei-einreise-risiko',
+  slugTR: 'turkiyede-hakkimda-yakalama-karari-var-mi',
+  duration: '20 dakika',
+  campaign: 'arrest_warrant_whatsapp_form',
 };
 
 function getVekaletnameFunnelCopy(language: string) {
@@ -253,6 +261,105 @@ function getTanimaTenfizFunnelCopy(language: string) {
     stickySubtitle: 'WhatsApp ön bilgi formu',
     stickyButton: 'WhatsApp',
     chips: ['Boşanma', 'Nüfus', 'Apostil', 'Tebligat', 'Vekalet'],
+  };
+}
+
+function getDebtEnforcementFunnelCopy(language: string) {
+  if (language === 'de') {
+    return {
+      duration: 'Direkter Kontakt',
+      serviceName: 'Forderungsvollstreckung Türkei',
+      leadSituation: 'Ich habe einen deutschen Titel oder eine Forderung gegen einen Schuldner mit Vermögen in der Türkei und möchte Tenfiz, Vermögensermittlung oder İhtiyati Haciz prüfen lassen.',
+      introEyebrow: 'DIREKTER WHATSAPP-KONTAKT',
+      introTitle: 'Deutscher Titel, Schuldner in der Türkei?',
+      introBody: 'Schreiben Sie uns direkt per WhatsApp. Wir prüfen, ob Ihr Titel in der Türkei tenfizfähig ist, ob Vermögen auffindbar ist und ob vorab eine Sicherung durch İhtiyati Haciz sinnvoll ist.',
+      introButton: 'Titel per WhatsApp prüfen lassen',
+      durationChip: 'Direkter Kontakt',
+      formChip: 'WhatsApp Titelprüfung',
+      comparisonTitle: 'Vollstreckungsbescheid oder Urteil? Erst prüfen, dann Geld ausgeben.',
+      comparisonBody: 'Der deutsche Vollstreckungsbescheid ist in der Türkei meist nicht tenfizfähig. Je nach Unterlagen kann ilamsız icra takibi, Klage in der Türkei oder Tenfiz der richtige Weg sein.',
+      serviceTypesTitle: 'Vermögensermittlung und Sicherung gehören vor die eigentliche Vollstreckung',
+      serviceTypesBody: 'Grundbuch, Gesellschaftsanteile, Fahrzeuge und Bankzugriff müssen strategisch geprüft werden. Wenn Vermögensverschiebung droht, kann İhtiyati Haciz den entscheidenden Druck erzeugen.',
+      serviceTypesButton: 'Forderung per WhatsApp einordnen lassen',
+      bottomEyebrow: 'Done-for-you Forderungsvollstreckung',
+      bottomTitle: 'Wir prüfen Ihren Titel und den realistischen Vollstreckungsweg in der Türkei',
+      bottomBody: 'Über das kurze WhatsApp Formular senden Sie Titel, Schuldnerdaten und Hinweise auf Vermögen. Hasan Doğru prüft Tenfizfähigkeit, Vermögensermittlung, İhtiyati Haciz, Zuständigkeit und den wirtschaftlich sinnvollsten nächsten Schritt.',
+      includedTitle: 'Was übernommen wird',
+      includedItems: [
+        'Titelprüfung: Urteil, Kostenbeschluss, Unterhaltstitel oder Vollstreckungsbescheid',
+        'Vermögensprüfung über Tapu, Register, Fahrzeuge und mögliche Kontenpfändung',
+        'Koordination von Tenfiz, İhtiyati Haciz oder direktem türkischem Vollstreckungsweg',
+      ],
+      trustLine: 'Türkisches Vollstreckungsrecht · Mannheim & Ankara · UYAP-Verfahrenskontrolle',
+      stickyTitle: 'Forderung Türkei',
+      stickySubtitle: 'WhatsApp Titelprüfung',
+      stickyButton: 'WhatsApp',
+      chips: ['Tenfiz', 'Vollstreckungsbescheid', 'Tapu', 'İhtiyati Haciz', 'UYAP'],
+    };
+  }
+
+  if (language === 'en') {
+    return {
+      duration: 'Direct Contact',
+      serviceName: 'Debt Enforcement in Turkey',
+      leadSituation: 'I have a foreign judgment or claim against a debtor with assets in Turkey and want to check tenfiz, asset tracing or preliminary attachment.',
+      introEyebrow: 'DIRECT WHATSAPP CONTACT',
+      introTitle: 'Foreign judgment, debtor assets in Turkey?',
+      introBody: 'Text us directly on WhatsApp. We check whether the title can be recognised in Turkey, whether assets can be traced and whether preliminary attachment should be used first.',
+      introButton: 'Check title via WhatsApp',
+      durationChip: 'Direct Contact',
+      formChip: 'WhatsApp title review',
+      comparisonTitle: 'Default payment order or court judgment? Check before spending money.',
+      comparisonBody: 'A foreign default payment order is usually not recognisable in Turkey. Depending on the file, enforcement without title, litigation or tenfiz may be the right route.',
+      serviceTypesTitle: 'Asset tracing and security should come before enforcement',
+      serviceTypesBody: 'Property, shareholdings, vehicles and bank access should be assessed strategically. If assets may move, preliminary attachment can create decisive pressure.',
+      serviceTypesButton: 'Assess the claim via WhatsApp',
+      bottomEyebrow: 'Done-for-you Turkey enforcement',
+      bottomTitle: 'We review your title and the realistic enforcement route in Turkey',
+      bottomBody: 'Use the WhatsApp intake form to send the title, debtor details and any asset leads. Hasan Doğru reviews recognition, asset tracing, preliminary attachment, jurisdiction and the most economical next step.',
+      includedTitle: 'What we handle',
+      includedItems: [
+        'Title review: judgment, cost order, maintenance order or default payment order',
+        'Asset check through property records, registers, vehicles and possible bank attachment',
+        'Coordination of tenfiz, preliminary attachment or direct Turkish enforcement',
+      ],
+      trustLine: 'Turkish enforcement law · Mannheim & Ankara · UYAP file control',
+      stickyTitle: 'Turkey debt claim',
+      stickySubtitle: 'WhatsApp title review',
+      stickyButton: 'WhatsApp',
+      chips: ['Tenfiz', 'Payment order', 'Title deed', 'Attachment', 'UYAP'],
+    };
+  }
+
+  return {
+    duration: 'Direkt İletişim',
+    serviceName: 'Türkiye’de alacak tahsili',
+    leadSituation: "Borçlunun Türkiye'de mal varlığı var; Alman kararım, alacağım, tenfiz, mal varlığı araştırması veya ihtiyati haciz için bilgi almak istiyorum.",
+    introEyebrow: 'DİREKT WHATSAPP İLETİŞİMİ',
+    introTitle: "Alman kararınız var, borçlunun Türkiye'de malı mı bulunuyor?",
+    introBody: "Bize doğrudan WhatsApp'tan yazın. Başlığın Türkiye’de tenfize uygun olup olmadığını, mal varlığı araştırmasını ve ihtiyati haciz ihtimalini birlikte değerlendirelim.",
+    introButton: 'Alacağı WhatsApp’tan gönderin',
+    durationChip: 'Direkt İletişim',
+    formChip: 'WhatsApp başlık incelemesi',
+    comparisonTitle: 'Alman ödeme emri mi, mahkeme kararı mı? Masraf yapmadan önce kontrol edin.',
+    comparisonBody: 'Alman Vollstreckungsbescheid çoğu zaman Türkiye’de tenfiz edilemez. Dosyaya göre ilamsız icra, Türkiye’de dava veya tenfiz yolu gerekebilir.',
+    serviceTypesTitle: 'Mal varlığı araştırması ve güvence icradan önce planlanmalı',
+    serviceTypesBody: 'Tapu, şirket payı, araç ve banka haczi stratejik değerlendirilmelidir. Mal kaçırma riski varsa ihtiyati haciz belirleyici olabilir.',
+    serviceTypesButton: "Alacağı WhatsApp'tan değerlendirin",
+    bottomEyebrow: 'Done-for-you alacak tahsili',
+    bottomTitle: 'Başlığınızı ve Türkiye’de uygulanabilir icra yolunu kontrol ediyoruz',
+    bottomBody: 'Kısa WhatsApp formuyla başlığı, borçlu bilgilerini ve mal varlığı ipuçlarını iletin. Hasan Doğru tenfiz, mal varlığı araştırması, ihtiyati haciz, yetki ve ekonomik sonraki adımı değerlendirir.',
+    includedTitle: 'Hizmete dahil olanlar',
+    includedItems: [
+      'Karar, masraf kararı, nafaka ilamı veya Alman ödeme emri için başlık incelemesi',
+      'Tapu, sicil, araç ve banka haczi ihtimalleri için mal varlığı kontrolü',
+      'Tenfiz, ihtiyati haciz veya doğrudan Türk icra yolunun koordinasyonu',
+    ],
+    trustLine: 'Türk icra hukuku · Mannheim & Ankara · UYAP dosya kontrolü',
+    stickyTitle: 'Türkiye alacağı',
+    stickySubtitle: 'WhatsApp başlık incelemesi',
+    stickyButton: 'WhatsApp',
+    chips: ['Tenfiz', 'Ödeme emri', 'Tapu', 'İhtiyati haciz', 'UYAP'],
   };
 }
 
@@ -454,8 +561,109 @@ function getPropertyPartitionAuctionFunnelCopy(language: string) {
   };
 }
 
+function getArrestWarrantFunnelCopy(language: string) {
+  if (language === 'de') {
+    return {
+      duration: 'Direkter Kontakt',
+      serviceName: 'Haftbefehl Türkei',
+      leadSituation: 'Ich möchte vor einer Reise in die Türkei prüfen lassen, ob ein Haftbefehl gegen mich besteht und was sich vorab regeln lässt.',
+      introEyebrow: 'DIREKTER WHATSAPP-KONTAKT',
+      introTitle: 'Unsicher, ob Sie in der Türkei gesucht werden?',
+      introBody: 'Schreiben Sie uns direkt per WhatsApp. Wir prüfen über das UYAP-Anwaltsportal, ob ein Haftbefehl besteht, klären seine Reichweite und ordnen ein, was vor der Reise geregelt werden kann.',
+      introButton: 'WhatsApp Anfrage starten',
+      durationChip: 'Direkter Kontakt',
+      formChip: 'WhatsApp Vorab-Formular',
+      comparisonTitle: 'e-Devlet zeigt den Haftbefehl nicht. Lassen Sie es richtig prüfen.',
+      comparisonBody: 'Ein Haftbefehl aus dem Ermittlungsverfahren ist im Bürgerportal nicht sichtbar. Zuverlässig ist nur die Abfrage durch einen in der Türkei zugelassenen Anwalt über das UYAP-Anwaltsportal.',
+      serviceTypesTitle: 'Besteht ein Haftbefehl, lässt sich vieles vor der Reise regeln',
+      serviceTypesBody: 'Rechtsbehelf, Vernehmung im Wege der Rechtshilfe (İstinabe) über Konsulat oder SEGBİS, Aufhebung unter Auflagen — welcher Weg passt, hängt von Akte und Vorwurf ab.',
+      serviceTypesButton: 'Fall per WhatsApp prüfen',
+      bottomEyebrow: 'Done-for-you Haftbefehl-Prüfung',
+      bottomTitle: 'Wir klären den Stand Ihrer Akte, bevor Sie reisen',
+      bottomBody: 'Über das kurze WhatsApp Formular schildern Sie Ihre Situation. Hasan Doğru fragt über das UYAP-Anwaltsportal ab, veranlasst bei Bedarf die Einsicht vor Ort und führt Rechtsbehelf und Rechtshilfe persönlich.',
+      includedTitle: 'Was übernommen wird',
+      includedItems: [
+        'Abfrage über UYAP-Anwaltsportal und Geschäftsstelle der Justizbehörde',
+        'Konkrete Risikoeinschätzung zu Haftbefehl, Reichweite und Verjährung',
+        'Rechtsbehelf und Rechtshilfe (İstinabe) bis zur GBT-Bestätigung',
+      ],
+      trustLine: 'Av. Hasan Doğru · Türkisches Strafrecht · Mannheim & Ankara',
+      stickyTitle: 'Haftbefehl Türkei prüfen',
+      stickySubtitle: 'WhatsApp Vorab-Formular',
+      stickyButton: 'WhatsApp',
+      chips: ['UYAP', 'GBT', 'İstinabe', 'SEGBİS', 'Rechtsbehelf'],
+    };
+  }
+
+  if (language === 'en') {
+    return {
+      duration: 'Direct Contact',
+      serviceName: 'Turkish arrest warrant',
+      leadSituation: 'Before travelling to Turkey, I want to check whether an arrest warrant exists against me and what can be resolved in advance.',
+      introEyebrow: 'DIRECT WHATSAPP CONTACT',
+      introTitle: 'Not sure whether you are wanted in Turkey?',
+      introBody: 'Text us directly on WhatsApp. We check the UYAP Lawyer Portal for a warrant, clarify its scope, and explain what can be resolved before you travel.',
+      introButton: 'Start WhatsApp request',
+      durationChip: 'Direct Contact',
+      formChip: 'WhatsApp intake form',
+      comparisonTitle: 'e-Devlet does not show the warrant. Have it checked properly.',
+      comparisonBody: 'An arrest warrant from the investigation stage is not visible on the citizen portal. The only reliable route is a check by a lawyer admitted in Turkey through the UYAP Lawyer Portal.',
+      serviceTypesTitle: 'If a warrant exists, a lot can be resolved before you travel',
+      serviceTypesBody: 'Objection, testimony by letter of request (İstinabe) via consulate or SEGBİS, conditional lifting — which route fits depends on the file and the accusation.',
+      serviceTypesButton: 'Check your case via WhatsApp',
+      bottomEyebrow: 'Done-for-you warrant check',
+      bottomTitle: 'We clarify the status of your file before you travel',
+      bottomBody: 'Use the short WhatsApp intake form to describe your situation. Hasan Doğru checks the UYAP Lawyer Portal, arranges in-person inspection where needed, and runs the objection and letter-of-request steps personally.',
+      includedTitle: 'What we handle',
+      includedItems: [
+        'Check via the UYAP Lawyer Portal and the courthouse registry',
+        'A concrete risk assessment on the warrant, its scope and limitation',
+        'Objection and letter of request (İstinabe) through to GBT confirmation',
+      ],
+      trustLine: 'Av. Hasan Doğru · Turkish criminal law · Mannheim & Ankara',
+      stickyTitle: 'Check a Turkish warrant',
+      stickySubtitle: 'WhatsApp intake form',
+      stickyButton: 'WhatsApp',
+      chips: ['UYAP', 'GBT', 'İstinabe', 'SEGBİS', 'Objection'],
+    };
+  }
+
+  return {
+    duration: 'Direkt İletişim',
+    serviceName: 'Yakalama kararı sorgusu',
+    leadSituation: 'Türkiye’ye gitmeden önce hakkımda yakalama kararı olup olmadığını ve gitmeden önce neyin çözülebileceğini öğrenmek istiyorum.',
+    introEyebrow: 'DİREKT WHATSAPP İLETİŞİMİ',
+    introTitle: 'Türkiye’de aranıp aranmadığınızdan emin değil misiniz?',
+    introBody: 'Bize doğrudan WhatsApp’tan yazın. UYAP Avukat Portalı üzerinden yakalama kararının varlığını ve kapsamını sorguluyor, gitmeden önce neyin çözülebileceğini netleştiriyoruz.',
+    introButton: 'WhatsApp formunu aç',
+    durationChip: 'Direkt İletişim',
+    formChip: 'WhatsApp ön bilgi formu',
+    comparisonTitle: 'e-Devlet yakalama kararını göstermez. Doğru şekilde sorgulatın.',
+    comparisonBody: 'Soruşturma aşamasındaki yakalama emri vatandaş portalında görünmez. Güvenilir tek yol, Türkiye’de yetkili bir avukatın UYAP Avukat Portalı üzerinden yaptığı sorgudur.',
+    serviceTypesTitle: 'Yakalama kararı varsa, gitmeden önce birçok şey çözülebilir',
+    serviceTypesBody: 'İtiraz, istinabe yoluyla ifade (konsolosluk veya SEGBİS), şartlı kaldırma — hangi yolun uygun olduğu dosyaya ve suçun niteliğine bağlıdır.',
+    serviceTypesButton: 'Dosyanızı WhatsApp’tan sorgulatın',
+    bottomEyebrow: 'Done-for-you yakalama kararı sorgusu',
+    bottomTitle: 'Seyahatten önce dosyanızın durumunu netleştiriyoruz',
+    bottomBody: 'Kısa WhatsApp formuyla durumunuzu iletin. Hasan Doğru UYAP Avukat Portalı üzerinden sorgular, gerektiğinde adliyeden fiziki inceleme yaptırır ve itiraz ile istinabe süreçlerini bizzat yürütür.',
+    includedTitle: 'Hizmete dahil olanlar',
+    includedItems: [
+      'UYAP Avukat Portalı ve adliye kaleminden sorgulama',
+      'Yakalama kararı, kapsamı ve zamanaşımına ilişkin somut risk değerlendirmesi',
+      'GBT teyidine kadar itiraz ve istinabe süreçleri',
+    ],
+    trustLine: 'Av. Hasan Doğru · Türk ceza hukuku · Mannheim & Ankara',
+    stickyTitle: 'Yakalama kararı sorgusu',
+    stickySubtitle: 'WhatsApp ön bilgi formu',
+    stickyButton: 'WhatsApp',
+    chips: ['UYAP', 'GBT', 'İstinabe', 'SEGBİS', 'İtiraz'],
+  };
+}
+
 function getBlogProductFunnelCopy(funnel: BlogProductFunnel, language: string) {
+  if (funnel.service === 'arrest_warrant') return getArrestWarrantFunnelCopy(language);
   if (funnel.service === 'tanima_tenfiz') return getTanimaTenfizFunnelCopy(language);
+  if (funnel.service === 'debt_enforcement') return getDebtEnforcementFunnelCopy(language);
   if (funnel.service === 'inheritance_tax') return getInheritanceTaxFunnelCopy(language);
   if (funnel.service === 'property_partition_auction') return getPropertyPartitionAuctionFunnelCopy(language);
   if (['divorce_property', 'pension_rights', 'inheritance_participation', 'inheritance_certificate'].includes(funnel.service)) {
@@ -580,6 +788,38 @@ function getProductHookCopy(funnel: BlogProductFunnel, language: string) {
     };
   }
 
+  if (funnel.service === 'arrest_warrant') {
+    return language === 'de'
+      ? {
+          lead: 'Ob ein Haftbefehl in der Türkei besteht, lässt sich vor der Reise klären — und in vielen Fällen auch regeln. Dieser Ratgeber zeigt, welches Register was anzeigt, warum e-Devlet den Haftbefehl nicht sichtbar macht und welche Schritte aus Deutschland möglich sind.',
+          bullets: [
+            'e-Devlet, Führungszeugnis, GBT: Welches Register zeigt einen Haftbefehl — und welches nicht?',
+            'Prüfung nur über das UYAP-Anwaltsportal: Warum die anwaltliche Abfrage der einzige verlässliche Weg ist',
+            'İstinabe, Rechtsbehelf, GBT-Verzögerung: Was sich vor der Einreise regeln lässt',
+          ],
+          trust: 'Av. Hasan Doğru · Türkisches Strafrecht · Mannheim & Ankara',
+        }
+      : language === 'en'
+      ? {
+          lead: 'Whether an arrest warrant exists in Turkey can be checked before you travel — and in many cases resolved. This guide shows which record shows what, why e-Devlet hides the warrant, and which steps are possible from abroad.',
+          bullets: [
+            'e-Devlet, criminal record, GBT: which record shows an arrest warrant — and which does not?',
+            'Checking only via the UYAP Lawyer Portal: why the lawyer-run query is the only reliable route',
+            'İstinabe, objection, GBT delay: what can be resolved before entering Turkey',
+          ],
+          trust: 'Av. Hasan Doğru · Turkish criminal law · Mannheim & Ankara',
+        }
+      : {
+          lead: 'Hakkınızda Türkiye’de yakalama kararı olup olmadığı seyahatten önce öğrenilebilir — ve çoğu durumda çözülebilir. Bu rehber hangi kaydın neyi gösterdiğini, e-Devlet’in yakalama kararını neden göstermediğini ve Almanya’dan hangi adımların mümkün olduğunu anlatır.',
+          bullets: [
+            'e-Devlet, adli sicil, GBT: hangi kayıt yakalama kararını gösterir — hangisi göstermez?',
+            'Sorgulama yalnızca UYAP Avukat Portalı üzerinden: avukat sorgusunun neden tek güvenilir yol olduğu',
+            'İstinabe, itiraz, GBT gecikmesi: girişten önce neyin çözülebileceği',
+          ],
+          trust: 'Av. Hasan Doğru · Türk ceza hukuku · Mannheim & Ankara',
+        };
+  }
+
   if (funnel.service === 'tanima_tenfiz') {
     return language === 'de'
       ? {
@@ -609,6 +849,38 @@ function getProductHookCopy(funnel: BlogProductFunnel, language: string) {
             'Tebligat gecikmesini önleme: İki tarafın avukatla temsilinde süreç nasıl hızlanır?',
           ],
           trust: 'Av. Hasan Doğru · Türkçe & Almanca · Mannheim & Ankara',
+        };
+  }
+
+  if (funnel.service === 'debt_enforcement') {
+    return language === 'de'
+      ? {
+          lead: 'Ein deutscher Titel ist in der Türkei nicht automatisch vollstreckbar. Dieser Ratgeber zeigt, wann Tenfiz möglich ist, warum der Vollstreckungsbescheid gefährlich teuer werden kann und weshalb Vermögensermittlung vor dem Verfahren stehen sollte.',
+          bullets: [
+            'Titelprüfung: Urteil, Kostenbeschluss oder Vollstreckungsbescheid?',
+            'Vermögen zuerst: Tapu, Register, Bankzugriff und Gesellschaftsanteile prüfen',
+            'Sicherung: Wann İhtiyati Haciz vor Zustellung Druck erzeugt',
+          ],
+          trust: 'Av. Hasan Doğru · Türkisches Vollstreckungsrecht · Mannheim & Ankara',
+        }
+      : language === 'en'
+      ? {
+          lead: 'A foreign title is not automatically enforceable in Turkey. This guide explains when tenfiz is possible, why default payment orders can become expensive, and why asset tracing should come before proceedings.',
+          bullets: [
+            'Title review: court judgment, cost order or default payment order?',
+            'Assets first: title deed, registers, bank access and shareholdings',
+            'Security: when preliminary attachment creates pressure before service',
+          ],
+          trust: 'Av. Hasan Doğru · Turkish enforcement law · Mannheim & Ankara',
+        }
+      : {
+          lead: 'Alman ilamı Türkiye’de kendiliğinden icra edilemez. Bu rehber tenfizin ne zaman mümkün olduğunu, ödeme emrinin neden pahalı bir hata olabileceğini ve mal varlığı araştırmasının neden önce yapılması gerektiğini açıklar.',
+          bullets: [
+            'Başlık incelemesi: mahkeme kararı, masraf kararı veya Alman ödeme emri?',
+            'Önce mal varlığı: tapu, sicil, banka ve şirket payı kontrolü',
+            'Güvence: tebligat öncesi ihtiyati haciz ne zaman baskı sağlar?',
+          ],
+          trust: 'Av. Hasan Doğru · Türk icra hukuku · Mannheim & Ankara',
         };
   }
 
@@ -999,12 +1271,24 @@ function BlogStickyBookingCTA({ funnel, language }: { funnel: BlogProductFunnel;
     copy.stickyTitle;
 
   const headline =
-    funnel.service === 'tanima_tenfiz'
+    funnel.service === 'arrest_warrant'
+      ? language === 'de'
+        ? 'Haftbefehl Türkei vor der Reise prüfen: UYAP-Abfrage, Reichweite und İstinabe.'
+        : language === 'en'
+          ? 'Check a Turkish arrest warrant before you travel: UYAP query, scope and İstinabe.'
+          : 'Seyahatten önce yakalama kararı sorgusu: UYAP sorgulaması, kapsam ve istinabe.'
+      : funnel.service === 'tanima_tenfiz'
       ? language === 'de'
         ? 'Wir klären Tanıma, Tenfiz, Unterlagen und Zustellung für Sie.'
         : language === 'en'
           ? 'We clarify recognition, enforcement, documents and service for you.'
           : 'Tanıma, tenfiz, belge ve tebligat sürecini sizin için netleştiriyoruz.'
+      : funnel.service === 'debt_enforcement'
+        ? language === 'de'
+          ? 'Titel, Vermögen und İhtiyati Haciz prüfen, bevor der Schuldner reagiert.'
+          : language === 'en'
+            ? 'Check title, assets and preliminary attachment before the debtor reacts.'
+            : 'Borçlu harekete geçmeden başlık, mal varlığı ve ihtiyati haczi kontrol edelim.'
       : funnel.service === 'inheritance_tax'
         ? language === 'de'
           ? 'Erbschaftsteuer Türkei prüfen: Fristen, Nachweise und Doppelbesteuerung klären.'
@@ -1026,12 +1310,24 @@ function BlogStickyBookingCTA({ funnel, language }: { funnel: BlogProductFunnel;
             : 'Her şeyi sizin için hallediyoruz, size sadece imzalamak kalıyor!';
 
   const sub =
-    funnel.service === 'tanima_tenfiz'
+    funnel.service === 'arrest_warrant'
+      ? language === 'de'
+        ? 'GBT, e-Devlet, UYAP-Anwaltsportal, İstinabe und Interpol Red Notice'
+        : language === 'en'
+          ? 'GBT, e-Devlet, UYAP Lawyer Portal, İstinabe and Interpol Red Notice'
+          : 'GBT, e-Devlet, UYAP Avukat Portalı, istinabe ve kırmızı bülten'
+      : funnel.service === 'tanima_tenfiz'
       ? language === 'de'
         ? 'Deutsche Scheidung, Nüfus, Apostille, Übersetzung und Vollmacht'
         : language === 'en'
           ? 'German divorce, Turkish registry, apostille, translation and power of attorney'
           : 'Alman boşanması, nüfus kaydı, apostil, tercüme ve vekalet'
+      : funnel.service === 'debt_enforcement'
+        ? language === 'de'
+          ? 'Tenfiz, Vollstreckungsbescheid, Tapu, UYAP und vorläufige Pfändung'
+          : language === 'en'
+            ? 'Tenfiz, payment order, title deed, UYAP and preliminary attachment'
+            : 'Tenfiz, ödeme emri, tapu, UYAP ve ihtiyati haciz'
       : funnel.service === 'inheritance_tax'
         ? language === 'de'
           ? 'Türkische Erbseite und deutsche Anrechnung von Anfang an koordinieren'
@@ -2960,6 +3256,11 @@ export function BlogPost() {
     tr: ['almanya-bosanma-turkiye-tanima-tenfiz-2026-rehber'],
     en: ['german-divorce-turkey-recognition-guide-2026'],
   };
+  const debtEnforcementProductSlugs = {
+    de: ['deutsches-urteil-tuerkei-vollstrecken-tanima-tenfiz'],
+    tr: ['tanima-tenfiz-davasi-alacak-almanya-turkiye'],
+    en: ['enforce-german-judgment-in-turkey'],
+  };
   const inheritanceTaxProductSlugs = {
     de: [INHERITANCE_TAX_DOUBLE_TAXATION_BLOG_SLUG_DE],
     tr: ['turkiye-almanya-miras-vergisi-cifte-vergilendirme'],
@@ -2990,12 +3291,19 @@ export function BlogPost() {
     tr: ['mirascilik-belgesi-almanyada-tanima'],
     en: ['turkish-inheritance-certificate-recognition-germany'],
   };
+  const arrestWarrantProductSlugs = {
+    de: ['haftbefehl-tuerkei-einreise-risiko'],
+    tr: ['turkiyede-hakkimda-yakalama-karari-var-mi'],
+    en: ['arrest-warrant-turkey-before-you-travel'],
+  };
   const matchesLocalizedSlug = (slugs: { de: string[]; tr: string[]; en: string[] }) => (
     (language === 'de' && slugs.de.includes(post.slugDE)) ||
     (language === 'tr' && slugs.tr.includes(post.slugTR)) ||
     (language === 'en' && slugs.en.includes(post.slugEN ?? ''))
   );
-  const productFunnel = matchesLocalizedSlug(vekaletnameProductSlugs)
+  const productFunnel = matchesLocalizedSlug(arrestWarrantProductSlugs)
+    ? { ...arrestWarrantFunnel, image: post.image }
+    : matchesLocalizedSlug(vekaletnameProductSlugs)
     ? { ...vekaletnameFunnel, image: vekaletnameImg }
     : matchesLocalizedSlug(tanimaTenfizProductSlugs)
       ? {
@@ -3006,6 +3314,15 @@ export function BlogPost() {
           campaign: 'tanima_tenfiz_whatsapp_form',
           image: post.image,
         }
+      : matchesLocalizedSlug(debtEnforcementProductSlugs)
+        ? {
+            service: 'debt_enforcement' as const,
+            slugDE: 'deutsches-urteil-tuerkei-vollstrecken-tanima-tenfiz',
+            slugTR: 'tanima-tenfiz-davasi-alacak-almanya-turkiye',
+            duration: '20 dakika',
+            campaign: 'debt_enforcement_whatsapp_form',
+            image: post.image,
+          }
       : matchesLocalizedSlug(inheritanceTaxProductSlugs)
         ? {
             service: 'inheritance_tax' as const,
@@ -3438,6 +3755,9 @@ export function BlogPost() {
                           '2. Der konsularische Weg: wer, mit welchem Ausweis?',
                           '2. Konsolosluk Yolu: Kim, Hangi Belgeyle Vekaletname Çıkarabilir?',
                           '2. The consular route: who, with which identification?',
+                          '2. Der teuerste Irrtum: Der Vollstreckungsbescheid',
+                          '2. En pahalı yanılgı: Vollstreckungsbescheid (Alman ödeme emri)',
+                          '2. The costliest misconception: the default payment order',
                         ].includes(currentSubheading)
                       ) {
                         renderedElements.push(
@@ -3452,6 +3772,9 @@ export function BlogPost() {
                           '3. Der Weg über den deutschen Notar',
                           '3. Alman Noteri + Apostil Yolu',
                           '3. The notary route',
+                          '3. Welche Titel sind anerkennungsfähig?',
+                          '3. Hangi kararlar tenfiz edilebilir?',
+                          '3. Which titles can be recognised?',
                         ].includes(currentSubheading)
                       ) {
                         renderedElements.push(
@@ -3488,6 +3811,9 @@ export function BlogPost() {
                           '4. Welche Befugnisse müssen aufgenommen werden?',
                           '4. Hangi İş İçin Hangi Yetkiler Yazılmalı?',
                           '4. Which authorities must be included?',
+                          '6. Vermögensermittlung: Der Schritt vor dem Verfahren',
+                          '6. Önce mal varlığı araştırması',
+                          '6. Asset tracing comes first',
                         ].includes(currentSubheading)
                       ) {
                         renderedElements.push(

@@ -2237,6 +2237,47 @@
     <priority>0.7</priority>
   </url>
 
+  <!-- Arrest Warrant / Haftbefehl Türkei Einreise -->
+  <url>
+    <loc>https://www.hasandogru.de/de/blog/haftbefehl-tuerkei-einreise-risiko</loc>
+    <xhtml:link rel="alternate" hreflang="de" href="https://www.hasandogru.de/de/blog/haftbefehl-tuerkei-einreise-risiko" />
+    <xhtml:link rel="alternate" hreflang="de-DE" href="https://www.hasandogru.de/de/blog/haftbefehl-tuerkei-einreise-risiko" />
+    <xhtml:link rel="alternate" hreflang="de-CH" href="https://www.hasandogru.de/de/blog/haftbefehl-tuerkei-einreise-risiko" />
+    <xhtml:link rel="alternate" hreflang="de-AT" href="https://www.hasandogru.de/de/blog/haftbefehl-tuerkei-einreise-risiko" />
+    <xhtml:link rel="alternate" hreflang="tr" href="https://www.hasandogru.de/tr/blog/turkiyede-hakkimda-yakalama-karari-var-mi" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.hasandogru.de/en/blog/arrest-warrant-turkey-before-you-travel" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.hasandogru.de/de/blog/haftbefehl-tuerkei-einreise-risiko" />
+    <lastmod>2026-09-09</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://www.hasandogru.de/tr/blog/turkiyede-hakkimda-yakalama-karari-var-mi</loc>
+    <xhtml:link rel="alternate" hreflang="de" href="https://www.hasandogru.de/de/blog/haftbefehl-tuerkei-einreise-risiko" />
+    <xhtml:link rel="alternate" hreflang="de-DE" href="https://www.hasandogru.de/de/blog/haftbefehl-tuerkei-einreise-risiko" />
+    <xhtml:link rel="alternate" hreflang="de-CH" href="https://www.hasandogru.de/de/blog/haftbefehl-tuerkei-einreise-risiko" />
+    <xhtml:link rel="alternate" hreflang="de-AT" href="https://www.hasandogru.de/de/blog/haftbefehl-tuerkei-einreise-risiko" />
+    <xhtml:link rel="alternate" hreflang="tr" href="https://www.hasandogru.de/tr/blog/turkiyede-hakkimda-yakalama-karari-var-mi" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.hasandogru.de/en/blog/arrest-warrant-turkey-before-you-travel" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.hasandogru.de/de/blog/haftbefehl-tuerkei-einreise-risiko" />
+    <lastmod>2026-09-09</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://www.hasandogru.de/en/blog/arrest-warrant-turkey-before-you-travel</loc>
+    <xhtml:link rel="alternate" hreflang="de" href="https://www.hasandogru.de/de/blog/haftbefehl-tuerkei-einreise-risiko" />
+    <xhtml:link rel="alternate" hreflang="de-DE" href="https://www.hasandogru.de/de/blog/haftbefehl-tuerkei-einreise-risiko" />
+    <xhtml:link rel="alternate" hreflang="de-CH" href="https://www.hasandogru.de/de/blog/haftbefehl-tuerkei-einreise-risiko" />
+    <xhtml:link rel="alternate" hreflang="de-AT" href="https://www.hasandogru.de/de/blog/haftbefehl-tuerkei-einreise-risiko" />
+    <xhtml:link rel="alternate" hreflang="tr" href="https://www.hasandogru.de/tr/blog/turkiyede-hakkimda-yakalama-karari-var-mi" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.hasandogru.de/en/blog/arrest-warrant-turkey-before-you-travel" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.hasandogru.de/de/blog/haftbefehl-tuerkei-einreise-risiko" />
+    <lastmod>2026-09-09</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+
   <!-- Vekaletname Pillar Guide -->
   <url>
     <loc>https://www.hasandogru.de/de/blog/vollmacht-fuer-die-tuerkei-leitfaden</loc>
