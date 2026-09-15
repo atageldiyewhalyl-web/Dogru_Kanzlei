@@ -1,5 +1,5 @@
 import { ArrowRight, Building2, Languages, Scale } from "lucide-react";
-import bulentImage from "@/assets/bulent.webp";
+import meralImage from "@/assets/meral-goeren.webp";
 import { useLanguage } from "../context/LanguageContext";
 import { openWhatsAppLeadCapture } from "./WhatsAppLeadCapture";
 
@@ -11,37 +11,37 @@ export function CooperationPartner() {
       eyebrow: "Deutsches Recht",
       title: "Unser Kooperationspartner für deutsches Recht",
       body:
-        "Für Mandate mit deutschem Rechtsbezug arbeiten wir mit der Anwaltskanzlei Döger zusammen. Die Kanzlei ist in Wiesbaden ansässig und verfügt über eine Zweigstelle in Ludwigshafen.",
-      profileTitle: "Anwaltskanzlei Döger",
+        "Für Mandate mit deutschem Rechtsbezug arbeiten wir mit der Rechtsanwaltskanzlei Meral Gören in Mannheim zusammen. So können Anliegen mit Bezug zu Deutschland und zur Türkei zweisprachig und abgestimmt betreut werden.",
+      profileTitle: "Rechtsanwaltskanzlei Meral Gören",
       profileBody:
-        "Rechtsanwalt Bülent Döger ist Fachanwalt für Strafrecht sowie vereidigter Dolmetscher und Übersetzer für die türkische Sprache. Rechtsanwalt Samet Döger ist ebenfalls Teil der Kanzlei.",
-      points: ["Strafrecht", "Familienrecht", "Arbeitsrecht", "Verkehrsrecht", "Insolvenzrecht", "Zivilrecht"],
+        "Rechtsanwältin Meral Gören ist deutsche Staatsangehörige türkischer Herkunft. Sie ist seit dem 6. Juni 2008 als Rechtsanwältin zugelassen und an allen Amts-, Land- und Oberlandesgerichten vertretungsbefugt.",
+      points: ["Zivilrecht", "Arbeitsrecht", "Ausländerrecht", "Familienrecht", "Verkehrsrecht"],
       cta: "Anfrage zu deutschem Recht stellen",
-      leadSituation: "Anfrage zu deutschem Recht / Kooperationspartner Kanzlei Döger",
+      leadSituation: "Anfrage zu deutschem Recht / Kooperationspartnerin Meral Gören",
     },
     tr: {
       eyebrow: "Alman Hukuku",
       title: "Alman hukuku için iş birliği yaptığımız partnerimiz",
       body:
-        "Alman hukuku bağlantılı dosyalarda Anwaltskanzlei Döger ile iş birliği yapıyoruz. Kanzleinin ana merkezi Wiesbaden'de, şubesi ise Ludwigshafen'dedir.",
-      profileTitle: "Anwaltskanzlei Döger",
+        "Alman hukuku bağlantılı dosyalarda Mannheim'daki Rechtsanwaltskanzlei Meral Gören ile iş birliği yapıyoruz. Böylece Almanya ve Türkiye bağlantılı konular Almanca ve Türkçe, uyumlu şekilde ele alınabilir.",
+      profileTitle: "Rechtsanwaltskanzlei Meral Gören",
       profileBody:
-        "Avukat Bülent Döger ceza hukuku uzman avukatı ve Türkçe için yeminli tercüman/çevirmen olarak belirtilmektedir. Avukat Samet Döger de kanzlei ekibinde yer almaktadır.",
-      points: ["Ceza hukuku", "Aile hukuku", "İş hukuku", "Trafik hukuku", "İflas hukuku", "Medeni hukuk"],
+        "Avukat Meral Gören Türk kökenli Alman vatandaşıdır. 6 Haziran 2008 tarihinden beri avukat olarak kayıtlıdır ve tüm Amtsgericht, Landgericht ve Oberlandesgericht mahkemelerinde temsil yetkisine sahiptir.",
+      points: ["Medeni hukuk", "İş hukuku", "Yabancılar hukuku", "Aile hukuku", "Trafik hukuku"],
       cta: "Alman hukuku için talep gönder",
-      leadSituation: "Alman hukuku / Kanzlei Döger iş birliği hakkında talep",
+      leadSituation: "Alman hukuku / Meral Gören iş birliği hakkında talep",
     },
     en: {
       eyebrow: "German Law",
       title: "Our cooperation partner for German law",
       body:
-        "For matters involving German law, we cooperate with Anwaltskanzlei Döger. The firm is based in Wiesbaden and also has a branch office in Ludwigshafen.",
-      profileTitle: "Anwaltskanzlei Döger",
+        "For matters involving German law, we cooperate with Rechtsanwaltskanzlei Meral Gören in Mannheim. This allows matters connected to Germany and Turkey to be handled in German and Turkish with coordinated support.",
+      profileTitle: "Rechtsanwaltskanzlei Meral Gören",
       profileBody:
-        "Attorney Bülent Döger is listed as a certified specialist lawyer for criminal law and a sworn interpreter and translator for Turkish. Attorney Samet Döger is also part of the firm.",
-      points: ["Criminal law", "Family law", "Employment law", "Traffic law", "Insolvency law", "Civil law"],
+        "Attorney Meral Gören is a German national of Turkish origin. She has been admitted as an attorney since 6 June 2008 and is authorised to represent clients before all local, regional and higher regional courts.",
+      points: ["Civil law", "Employment law", "Immigration law", "Family law", "Traffic law"],
       cta: "Send German-law request",
-      leadSituation: "German law / Kanzlei Döger cooperation request",
+      leadSituation: "German law / Meral Gören cooperation request",
     },
   }[language];
 
@@ -51,10 +51,10 @@ export function CooperationPartner() {
         <div className="border border-[#1C3829]/10 bg-white p-7 shadow-[0_20px_55px_rgba(28,56,41,0.06)]">
           <div className="relative h-36 w-36 overflow-hidden bg-[#1C3829]">
               <img
-                src={bulentImage}
-                alt="Rechtsanwalt Bülent Döger"
-                width={193}
-                height={222}
+                src={meralImage}
+                alt="Rechtsanwältin Meral Gören"
+                width={1000}
+                height={1250}
                 loading="lazy"
                 decoding="async"
                 className="h-full w-full object-cover object-top"
@@ -77,7 +77,7 @@ export function CooperationPartner() {
             <div className="flex items-start gap-3 border-t border-[#1C3829]/10 pt-4">
               <Building2 size={18} className="mt-1 shrink-0 text-[#8B6E2A]" aria-hidden="true" />
               <div className="font-sans text-[13px] leading-6 text-[#1C3829]">
-                Wiesbaden · Ludwigshafen
+                Mannheim
               </div>
             </div>
             <div className="flex items-start gap-3">
