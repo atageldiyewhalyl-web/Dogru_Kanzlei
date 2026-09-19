@@ -1,6 +1,41 @@
 <!DOCTYPE html>
 <html lang="de">
   <head>
+    <!-- Google Consent Mode v2 defaults.
+         MUST run before the GTM loader. Everything is denied until the visitor
+         actively consents in the cookie banner (§ 25 TDDDG, Art. 6 DSGVO).
+         Returning visitors get their stored choice applied here, so an accepted
+         consent is not lost for one page view. -->
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      (function () {
+        var stored = null;
+        try {
+          var raw = localStorage.getItem('dogru_kanzlei_consent');
+          if (raw) {
+            var parsed = JSON.parse(raw);
+            if (parsed && parsed.version === '1' && parsed.consent) stored = parsed.consent;
+          }
+        } catch (e) {}
+
+        var granted = function (v) { return v ? 'granted' : 'denied'; };
+        var analytics = stored ? granted(stored.analytics) : 'denied';
+        var functional = stored ? granted(stored.functional) : 'denied';
+
+        gtag('consent', 'default', {
+          ad_storage: 'denied',
+          ad_user_data: 'denied',
+          ad_personalization: 'denied',
+          analytics_storage: analytics,
+          functionality_storage: functional,
+          personalization_storage: functional,
+          security_storage: 'granted',
+          wait_for_update: 500
+        });
+      })();
+    </script>
+
     <!-- Google Tag Manager -->
     <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
     new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
@@ -96,10 +131,9 @@
   </head>
 
   <body>
-    <!-- Google Tag Manager (noscript) -->
-    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-TVTXQ7M7"
-    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
-    <!-- End Google Tag Manager (noscript) -->
+    <!-- The GTM <noscript> iframe was removed on purpose: it fires unconditionally
+         and cannot be gated behind consent, so it would load tracking for exactly
+         the visitors who can never be asked. Consent Mode covers the JS path. -->
     <div id="root"></div>
     <script type="module" src="/src/main.tsx" defer></script>
   </body>

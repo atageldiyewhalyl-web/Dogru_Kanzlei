@@ -15,7 +15,7 @@ export function Impressum() {
       ? 'Impressum | Doğru Kanzlei'
       : 'Yasal Bilgiler | Doğru Kanzlei',
     description: language === 'de'
-      ? 'Impressum der Kanzlei Doğru in Mannheim. Angaben gemäß § 5 TMG.'
+      ? 'Impressum der Kanzlei Doğru in Mannheim. Angaben gemäß § 5 DDG.'
       : 'Mannheim\'daki Doğru Kanzlei yasal bilgileri.',
     lang: language,
     canonical: `${SITE_URL}/${language}/${segment}`,
@@ -53,7 +53,7 @@ export function Impressum() {
 
         <div className="prose prose-lg max-w-none font-sans text-[#3a3a3a] leading-[1.8] font-medium">
           <h2 className="font-serif text-2xl text-[#1C3829] mt-8 mb-4">
-            Angaben gemäß § 5 TMG
+            Angaben gemäß § 5 DDG
           </h2>
           <div className="mb-8">
             <p className="mb-2"><strong>Firma / Anbieter:</strong><br />DOGRU KANZLEİ</p>
@@ -68,22 +68,60 @@ export function Impressum() {
           <div className="mb-8">
             <p className="mb-2"><strong>Telefon:</strong><br />+4917661221210<br />+905332375918</p>
             <p className="mb-2"><strong>E-Mail:</strong><br />info@hasandogru.de</p>
-            <p className="mb-2"><strong>Webseite:</strong><br />Strato</p>
+            <p className="mb-2"><strong>Webseite:</strong><br />https://www.hasandogru.de</p>
           </div>
 
           <h2 className="font-serif text-2xl text-[#1C3829] mt-8 mb-4">
-            Registereintrag
+            Steuerliche Angaben
           </h2>
           <div className="mb-8">
-            <p className="mb-2"><strong>Handelsregister:</strong> [HRA]</p>
-            <p className="mb-2"><strong>Registergericht:</strong> Anwaltskammer Karlsruhe</p>
-            <p className="mb-2"><strong>Registernummer:</strong> Mitgliedsnummer: [Miras]</p>
-            <p className="mb-2"><strong>Umsatzsteuer-ID gemäß § 27a UStG:</strong> (Ust.-Nr.: 38240/01054)</p>
+            {/* Kein Handelsregistereintrag: Die Kanzlei wird als Einzelunternehmen
+                geführt und ist kein Handelsgewerbe i.S.d. § 1 HGB. Die Kammer-
+                zugehörigkeit steht unter „Berufsrechtliche Angaben“. */}
+            <p className="mb-2"><strong>Steuernummer:</strong> 38240/01054</p>
           </div>
 
           <div className="bg-[#1C3829] text-white p-6 my-8">
             <p className="font-mono text-sm tracking-widest mb-0">
               IBAN: DE70 6705 0505 0040 5727 75
+            </p>
+          </div>
+
+          <h2 className="font-serif text-2xl text-[#1C3829] mt-8 mb-4">
+            Berufsrechtliche Angaben
+          </h2>
+          <div className="mb-8">
+            <p className="mb-2">
+              <strong>Gesetzliche Berufsbezeichnung:</strong><br />
+              Avukat (Rechtsanwalt), verliehen in der Republik Türkei
+            </p>
+            <p className="mb-2">
+              <strong>Zuständige Kammern:</strong><br />
+              Ankara Barosu (Rechtsanwaltskammer Ankara), Sicil-Nr. 47068<br />
+              Rechtsanwaltskammer Karlsruhe — Registrierung als niedergelassener
+              ausländischer Rechtsanwalt gemäß § 207 BRAO
+            </p>
+            <p className="mb-2">
+              <strong>Umfang der Tätigkeit:</strong><br />
+              Die Beratung und Vertretung erfolgt gemäß §§ 206, 207 BRAO ausschließlich im
+              türkischen Recht und im Völkerrecht. Eine Beratung oder Vertretung im deutschen
+              Recht findet nicht statt.
+            </p>
+            <p className="mb-2">
+              <strong>Berufsrechtliche Regelungen:</strong><br />
+              Bundesrechtsanwaltsordnung (BRAO), Berufsordnung für Rechtsanwälte (BORA),
+              Rechtsanwaltsvergütungsgesetz (RVG), Berufsregeln der Rechtsanwälte der
+              Europäischen Union (CCBE) sowie das Anwaltsgesetz der Republik Türkei
+              (Avukatlık Kanunu Nr. 1136). Die Regelungen sind abrufbar unter{" "}
+              <a
+                href="https://www.brak.de/fuer-anwaelte/berufsrecht/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-[#B8963E] hover:underline"
+              >
+                brak.de
+              </a>
+              .
             </p>
           </div>
 
@@ -101,7 +139,7 @@ export function Impressum() {
           
           <h3 className="text-xl font-serif text-[#1C3829] mt-8 mb-3">1. Haftung für Inhalte</h3>
           <p className="mb-6 text-sm">
-            Die Inhalte unserer Seiten wurden mit größter Sorgfalt erstellt. Für die Richtigkeit, Vollständigkeit und Aktualität der Inhalte können wir jedoch keine Gewähr übernehmen. Als Diensteanbieter sind wir gemäß § 7 Abs. 1 TMG für eigene Inhalte verantwortlich. Nach §§ 8 bis 10 TMG sind wir jedoch nicht verpflichtet, übermittelte oder gespeicherte fremde Informationen zu überwachen.
+            Die Inhalte unserer Seiten wurden mit größter Sorgfalt erstellt. Für die Richtigkeit, Vollständigkeit und Aktualität der Inhalte können wir jedoch keine Gewähr übernehmen. Als Diensteanbieter sind wir gemäß § 7 Abs. 1 DDG für eigene Inhalte verantwortlich. Nach §§ 8 bis 10 DDG sind wir jedoch nicht verpflichtet, übermittelte oder gespeicherte fremde Informationen zu überwachen.
           </p>
 
           <h3 className="text-xl font-serif text-[#1C3829] mt-8 mb-3">2. Haftung für externe Links</h3>
@@ -114,15 +152,27 @@ export function Impressum() {
             Alle auf dieser Website veröffentlichten Inhalte unterliegen dem deutschen Urheberrecht. Vervielfältigung, Bearbeitung oder Verbreitung außerhalb der Grenzen des Urheberrechts bedarf der schriftlichen Zustimmung des jeweiligen Autors.
           </p>
 
-          <h2 className="font-serif text-2xl text-[#1C3829] mt-12 mb-4">EU-Streitschlichtung gemäß Art. 14 ODR-VO</h2>
+          <h2 className="font-serif text-2xl text-[#1C3829] mt-12 mb-4">Verbraucherstreitbeilegung</h2>
           <p className="mb-4 text-sm">
-            Die Europäische Kommission stellt eine Plattform zur Online-Streitbeilegung bereit:<br />
-            <a href="https://ec.europa.eu/consumers/odr/" target="_blank" rel="noopener noreferrer" className="text-[#B8963E] hover:underline">
-              https://ec.europa.eu/consumers/odr/
+            Die Plattform der Europäischen Kommission zur Online-Streitbeilegung (OS-Plattform)
+            wurde zum 20. Juli 2025 eingestellt; ein Verweis darauf entfällt daher.
+          </p>
+          <p className="mb-4 text-sm">
+            Für Streitigkeiten zwischen Rechtsanwältinnen bzw. Rechtsanwälten und ihren Auftraggebern
+            besteht die Schlichtungsstelle der Rechtsanwaltschaft (Neue Grünstraße 17, 10179 Berlin,{" "}
+            <a
+              href="https://www.schlichtungsstelle-der-rechtsanwaltschaft.de"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-[#B8963E] hover:underline"
+            >
+              schlichtungsstelle-der-rechtsanwaltschaft.de
             </a>
+            ).
           </p>
           <p className="text-sm font-italic">
-            Wir sind nicht verpflichtet und nicht bereit, an Streitbeilegungsverfahren vor einer Verbraucherschlichtungsstelle teilzunehmen.
+            Wir sind nicht verpflichtet und nicht bereit, an Streitbeilegungsverfahren vor einer
+            Verbraucherschlichtungsstelle teilzunehmen.
           </p>
         </div>
       </div>

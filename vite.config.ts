@@ -34,6 +34,14 @@ const blogPrerenderRoutes = [
   '/de/blog/haftbefehl-tuerkei-einreise-risiko',
   '/tr/blog/turkiyede-hakkimda-yakalama-karari-var-mi',
   '/en/blog/arrest-warrant-turkey-before-you-travel',
+  // Legal pages. These are deliberately kept out of sitemap.xml, so they would
+  // otherwise never get a prerendered HTML file and 404 on Vercel — while the
+  // footer and the cookie banner link to them from every single page.
+  // § 5 DDG and Art. 13 DSGVO require them to be reachable at all times.
+  '/de/impressum',
+  '/de/datenschutz',
+  '/tr/yasal-bilgiler',
+  '/tr/gizlilik-politikasi',
 ]
 
 const postBuildAdjustments: Plugin = {

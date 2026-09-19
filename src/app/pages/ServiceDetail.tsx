@@ -1,6 +1,8 @@
 import { useState } from "react";
 import { useParams, Link } from "react-router";
 import { services } from "../data/services";
+import { blogPosts } from "../data/blogPosts";
+import { serviceRelatedPosts } from "../data/serviceRelatedPosts";
 import { ArrowLeft, ArrowRight, Banknote, CheckCircle2, ChevronDown, FileCheck2, Gavel, Globe2, Scale, Star, UsersRound } from "lucide-react";
 import { motion, AnimatePresence } from "motion/react";
 import { useLanguage } from "../context/LanguageContext";
@@ -76,6 +78,69 @@ const renderFormattedContent = (text: string) => {
     );
   });
 };
+
+// Links each service page down into the matching article cluster. Before this
+// the internal linking only ran blog -> service, never service -> blog.
+function RelatedArticles({ serviceId }: { serviceId: string }) {
+  const { language, paths } = useLanguage();
+  const slugs = serviceRelatedPosts[serviceId];
+  if (!slugs?.length) return null;
+
+  const posts = slugs
+    .map((slug) => blogPosts.find((post) => post.slug === slug))
+    .filter((post): post is NonNullable<typeof post> => Boolean(post))
+    // Not every post exists in every language. A missing slug would produce a
+    // bare "/de/blog/" link, and on /en an untranslated post resolves to the
+    // blog index — both are dead ends, so drop them instead of rendering them.
+    .filter((post) => {
+      const slug = language === 'de' ? post.slugDE : language === 'tr' ? post.slugTR : post.slugEN;
+      if (!slug?.trim()) return false;
+      const content = language === 'de' ? post.contentDE : language === 'tr' ? post.contentTR : post.contentEN;
+      return Boolean(content?.trim());
+    });
+
+  if (!posts.length) return null;
+
+  const heading =
+    language === 'de' ? 'Weiterführende Beiträge'
+      : language === 'tr' ? 'İlgili yazılar'
+        : 'Related articles';
+  const eyebrow =
+    language === 'de' ? 'Aus dem Blog'
+      : language === 'tr' ? 'Blogdan'
+        : 'From the blog';
+
+  return (
+    <section className="mb-20 border-t border-[#1C3829]/10 pt-10">
+      <div className="flex flex-col md:flex-row md:items-start gap-8">
+        <div className="md:w-[260px] flex-shrink-0">
+          <span className="font-sans text-[11px] font-bold tracking-[0.22em] uppercase text-[#8B6E2A] block mb-3">
+            {eyebrow}
+          </span>
+          <h2 className="font-serif text-2xl text-[#1C3829] leading-tight">{heading}</h2>
+        </div>
+        <ul className="flex-1 flex flex-col gap-3 list-none p-0 m-0">
+          {posts.map((post) => (
+            <li key={post.slug}>
+              <Link
+                to={paths.blogPost(post.slug)}
+                className="group flex items-start gap-3 border border-[#1C3829]/10 bg-white/50 px-4 py-3 rounded-sm transition-colors hover:border-[#8B6E2A]/40"
+              >
+                <ArrowRight
+                  size={15}
+                  className="text-[#8B6E2A] shrink-0 mt-1 transition-transform group-hover:translate-x-0.5"
+                />
+                <span className="font-sans text-[14px] leading-6 text-[#1C3829]/80 group-hover:text-[#1C3829]">
+                  {language === 'de' ? post.titleDE : language === 'tr' ? post.titleTR : post.titleEN}
+                </span>
+              </Link>
+            </li>
+          ))}
+        </ul>
+      </div>
+    </section>
+  );
+}
 
 function CourtRecognizedExpertisePanel({ language }: { language: string }) {
   const eyebrow = language === 'de'
@@ -2017,6 +2082,8 @@ export function ServiceDetail() {
 	                  </div>
 	                </section>
 	              )}
+
+              <RelatedArticles serviceId={service.id} />
 
               <CourtRecognizedExpertisePanel language={language} />
 

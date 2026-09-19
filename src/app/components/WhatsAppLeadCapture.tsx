@@ -102,7 +102,7 @@ function trackWhatsAppClickConversion(lead: LeadFormState & { language: string; 
 }
 
 export function WhatsAppLeadCapture() {
-  const { language } = useLanguage();
+  const { language, paths } = useLanguage();
   const [open, setOpen] = useState(false);
   const [submitting, setSubmitting] = useState(false);
   const [submitError, setSubmitError] = useState("");
@@ -129,7 +129,8 @@ export function WhatsAppLeadCapture() {
         service: "Wobei brauchen Sie Hilfe?",
         source: "Wo haben Sie Hasan gefunden?",
         situation: "Ihre Situation kurz erklärt",
-        privacy: "Mit dem Absenden stimmen Sie zu, dass Ihre Angaben zur Bearbeitung Ihrer Anfrage an Hasan Doğru und nüll übermittelt werden.",
+        privacy: "Mit dem Absenden stimmen Sie zu, dass Ihre Angaben zur Bearbeitung Ihrer Anfrage an Hasan Doğru und nüll übermittelt werden. Die Übermittlung erfolgt über WhatsApp (Meta). Einzelheiten zur Verarbeitung, Speicherdauer und zu Ihren Rechten:",
+        privacyLinkLabel: "Datenschutzerklärung",
         submit: "Weiter zu WhatsApp",
         submitting: "Wird vorbereitet...",
         missingEndpoint: "Das Formular ist noch nicht vollständig eingerichtet. Bitte versuchen Sie es später erneut.",
@@ -149,7 +150,8 @@ export function WhatsAppLeadCapture() {
         service: "What do you need help with?",
         source: "Where did you find Hasan?",
         situation: "Briefly explain your situation",
-        privacy: "By submitting, you agree that your details are shared with Hasan Doğru and nüll to process your request.",
+        privacy: "By submitting, you agree that your details are shared with Hasan Doğru and nüll to process your request. The message is sent via WhatsApp (Meta). Details on the processing, retention and your rights:",
+        privacyLinkLabel: "Privacy Policy",
         submit: "Continue to WhatsApp",
         submitting: "Preparing...",
         missingEndpoint: "The form is not fully configured yet. Please try again later.",
@@ -168,7 +170,8 @@ export function WhatsAppLeadCapture() {
       service: "Hangi konuda destek istiyorsunuz?",
       source: "Hasan Bey'i nereden buldunuz?",
       situation: "Durumunuzu kısaca anlatın",
-      privacy: "Göndererek bilgilerinizin talebinizin işlenmesi için Hasan Doğru ve nüll ile paylaşılmasını kabul edersiniz.",
+      privacy: "Göndererek bilgilerinizin talebinizin işlenmesi için Hasan Doğru ve nüll ile paylaşılmasını kabul edersiniz. İletim WhatsApp (Meta) üzerinden gerçekleşir. İşleme, saklama süresi ve haklarınıza ilişkin ayrıntılar:",
+      privacyLinkLabel: "Gizlilik Politikası",
       submit: "WhatsApp'a Devam Et",
       submitting: "Hazırlanıyor...",
       missingEndpoint: "Form henüz tam yapılandırılmamış. Lütfen daha sonra tekrar deneyin.",
@@ -402,7 +405,17 @@ export function WhatsAppLeadCapture() {
               />
             </label>
 
-            <p className="text-[12px] leading-5 text-[#666]">{labels.privacy}</p>
+            <p className="text-[12px] leading-5 text-[#666]">
+              {labels.privacy}{" "}
+              <a
+                href={paths.datenschutz}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="font-semibold text-[#1C3829] underline underline-offset-2 hover:text-[#8B6E2A]"
+              >
+                {labels.privacyLinkLabel}
+              </a>
+            </p>
             {submitError && <p className="text-[12px] font-semibold text-[#8B2A2A]">{submitError}</p>}
 
             <button

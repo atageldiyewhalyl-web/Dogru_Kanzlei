@@ -15,7 +15,7 @@ const content = {
     functional: "Funktional",
     functionalDesc: "Ermöglicht externe Dienste wie WhatsApp.",
     analytics: "Analyse",
-    analyticsDesc: "Hilft uns, die Nutzung der Website zu verstehen (z.B. Google Analytics). Aktuell nicht aktiv.",
+    analyticsDesc: "Hilft uns, die Nutzung der Website zu verstehen (z.B. Google Analytics über Google Tag Manager).",
     acceptAll: "Alle akzeptieren",
     rejectAll: "Nur notwendige",
     saveCustom: "Auswahl speichern",
@@ -34,7 +34,7 @@ const content = {
     functional: "İşlevsel",
     functionalDesc: "WhatsApp gibi harici hizmetlere olanak tanır.",
     analytics: "Analitik",
-    analyticsDesc: "Web sitesi kullanımını anlamamıza yardımcı olur (örn. Google Analytics). Şu anda aktif değil.",
+    analyticsDesc: "Web sitesi kullanımını anlamamıza yardımcı olur (örn. Google Tag Manager üzerinden Google Analytics).",
     acceptAll: "Tümünü kabul et",
     rejectAll: "Yalnızca zorunlu",
     saveCustom: "Seçimi kaydet",
@@ -43,12 +43,31 @@ const content = {
     privacyLink: "Gizlilik Politikası",
     imprintLink: "Künye",
   },
+  en: {
+    title: "Your Privacy",
+    subtitle: "We respect your data",
+    description:
+      "This website uses cookies and similar technologies. Some are necessary, others help us provide you with a better service. Under § 25 TDDDG and the GDPR we need your consent.",
+    essential: "Strictly necessary",
+    essentialDesc: "Required for the basic functions of the website. Cannot be disabled.",
+    functional: "Functional",
+    functionalDesc: "Enables external services such as WhatsApp.",
+    analytics: "Analytics",
+    analyticsDesc: "Helps us understand how the website is used (e.g. Google Analytics).",
+    acceptAll: "Accept all",
+    rejectAll: "Necessary only",
+    saveCustom: "Save selection",
+    customize: "Customise",
+    alwaysOn: "Always on",
+    privacyLink: "Privacy Policy",
+    imprintLink: "Legal Notice",
+  },
 };
 
 export function CookieBanner() {
   const { showBanner, consent, acceptAll, rejectAll, saveCustom } = useConsent();
   const { language, paths } = useLanguage();
-  const c = content[language as "de" | "tr"] ?? content.de;
+  const c = content[language as keyof typeof content] ?? content.de;
 
   const [showDetails, setShowDetails] = useState(false);
   const [functional, setFunctional] = useState(consent.functional);

@@ -336,7 +336,7 @@ export function Footer() {
                 color: "rgba(255,255,255,0.2)",
               }}
             >
-              © {year} DOGRU Kanzlei · {t("hero_title_pre")} Hasan Doğru. {t("footer_rights")}
+              © {year} DOGRU Kanzlei · {t("avukat_title")} Hasan Doğru. {t("footer_rights")}
             </span>
             <span
               style={{

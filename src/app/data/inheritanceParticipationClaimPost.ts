@@ -198,7 +198,7 @@ Möchten Sie prüfen lassen, ob die Teilhabeforderung in Ihrem Fall bereits ber�
 
 [Katılma-Alacağı-Ersteinschätzung per WhatsApp anfragen](https://wa.me/4917661221210)
 
-[Kostenlose Ersteinschätzung bei der Doğru Kanzlei anfragen →](https://calendly.com/hasand9366/30min)
+[Ihren Fall von der Doğru Kanzlei prüfen lassen →](https://calendly.com/hasand9366/30min)
 
 ## Auch in anderen Sprachen verfügbar
 
@@ -377,7 +377,7 @@ Katılma alacağı hakkınızın atlanıp atlanmadığını, ya da talep edip et
 
 [WhatsApp ile Katılma Alacağı Değerlendirmesi Talep Edin](https://wa.me/4917661221210)
 
-[Doğru Kanzlei ile Ücretsiz Ön Görüşme Talep Edin →](https://calendly.com/hasand9366/30min)
+[Doğru Kanzlei ile Ön Görüşme Talep Edin →](https://calendly.com/hasand9366/30min)
 
 ## Diğer Dillerde de Yayında
 
@@ -541,7 +541,7 @@ Want to know whether the participation claim was already accounted for in your c
 
 [Request Your Participation Claim Assessment via WhatsApp](https://wa.me/4917661221210)
 
-[Request a Free Initial Assessment with Doğru Kanzlei →](https://calendly.com/hasand9366/30min)
+[Request a Case Review with Doğru Kanzlei →](https://calendly.com/hasand9366/30min)
 
 ## Also Available in Other Languages
 

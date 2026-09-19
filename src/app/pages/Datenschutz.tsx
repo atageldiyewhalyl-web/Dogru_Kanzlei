@@ -103,12 +103,32 @@ export function Datenschutz() {
                 Unsere Website verwendet Cookies. Dabei handelt es sich um kleine Dateien, die automatisch auf Ihrem Endgerät gespeichert werden. Cookies dienen dazu, die Nutzung unserer Website zu erleichtern, statistische Auswertungen zu ermöglichen und bestimmte Funktionen bereitzustellen. Sie können das Speichern von Cookies in den Einstellungen Ihres Browsers deaktivieren.
               </p>
 
-              <h2 className="font-serif text-2xl text-[#1C3829] mt-8 mb-4">5. Analyse-Tools</h2>
+              <h2 className="font-serif text-2xl text-[#1C3829] mt-8 mb-4">5. Google Tag Manager und Analyse</h2>
+              <p className="mb-4">
+                Wir setzen den Google Tag Manager der Google Ireland Limited (Gordon House, Barrow Street, Dublin 4, Irland) ein. Der Tag Manager selbst setzt keine Cookies zu Analysezwecken, sondern steuert die Ausführung weiterer Dienste wie Google Analytics.
+              </p>
+              <p className="mb-4">
+                Alle nicht technisch notwendigen Dienste sind über den Google-Consent-Mode standardmäßig deaktiviert („denied“) und werden erst ausgeführt, nachdem Sie im Cookie-Banner eingewilligt haben. Rechtsgrundlage ist Ihre Einwilligung nach § 25 Abs. 1 TDDDG und Art. 6 Abs. 1 lit. a DSGVO. Sie können Ihre Einwilligung jederzeit über den Link „Cookie-Einstellungen“ im Seitenfuß mit Wirkung für die Zukunft widerrufen.
+              </p>
               <p className="mb-8">
-                Wir können Analyse-Tools wie Google Analytics verwenden, um das Nutzerverhalten auszuwerten. Die dabei gewonnenen Daten werden anonymisiert. Details entnehmen Sie bitte den Datenschutzhinweisen des jeweiligen Dienstanbieters.
+                Dabei kann es zu einer Übermittlung von Daten in die USA kommen. Google LLC ist unter dem EU-US Data Privacy Framework zertifiziert.
               </p>
 
-              <h2 className="font-serif text-2xl text-[#1C3829] mt-8 mb-4">6. Ihre Rechte als betroffene Person</h2>
+              <h2 className="font-serif text-2xl text-[#1C3829] mt-8 mb-4">6. Kontaktanfragen über das Anfrageformular und WhatsApp</h2>
+              <p className="mb-4">
+                Über unser Anfrageformular erheben wir Vor- und Nachname, Telefonnummer, E-Mail-Adresse, das gewünschte Rechtsgebiet sowie Ihre Fallbeschreibung. Diese Angaben verarbeiten wir ausschließlich zur Bearbeitung Ihrer Anfrage und zur Vorbereitung eines möglichen Mandats. Rechtsgrundlage ist Art. 6 Abs. 1 lit. b DSGVO (vorvertragliche Maßnahmen) sowie Art. 6 Abs. 1 lit. a DSGVO.
+              </p>
+              <p className="mb-4">
+                <strong>Bitte übermitteln Sie über das Formular keine besonders sensiblen Angaben</strong> — etwa zu Gesundheit, Religion oder laufenden Strafverfahren. Schildern Sie solche Sachverhalte bitte erst im geschützten Mandatsgespräch.
+              </p>
+              <p className="mb-4">
+                Die technische Verarbeitung und der Versand der Formularbenachrichtigung erfolgen über Supabase Inc. als Auftragsverarbeiter gemäß Art. 28 DSGVO. Bei Fortsetzung des Kontakts über WhatsApp werden Ihre Angaben an die WhatsApp Ireland Limited übermittelt; es gelten zusätzlich deren Datenschutzbestimmungen. Sie können uns stattdessen jederzeit per E-Mail oder Telefon erreichen.
+              </p>
+              <p className="mb-8">
+                Anfragedaten werden gelöscht, sobald sie für den Zweck nicht mehr erforderlich sind und keine gesetzlichen Aufbewahrungsfristen — insbesondere die berufs- und handelsrechtlichen Fristen für Mandatsunterlagen — entgegenstehen.
+              </p>
+
+              <h2 className="font-serif text-2xl text-[#1C3829] mt-8 mb-4">7. Ihre Rechte als betroffene Person</h2>
               <p className="mb-4">Sie haben das Recht:</p>
               <ul className="list-disc pl-6 mb-8 space-y-1 text-sm">
                 <li>Auskunft über Ihre gespeicherten Daten zu erhalten (Art. 15 DSGVO),</li>
@@ -119,12 +139,12 @@ export function Datenschutz() {
                 <li>Datenübertragbarkeit zu verlangen (Art. 20 DSGVO).</li>
               </ul>
 
-              <h2 className="font-serif text-2xl text-[#1C3829] mt-8 mb-4">7. Datensicherheit</h2>
+              <h2 className="font-serif text-2xl text-[#1C3829] mt-8 mb-4">8. Datensicherheit</h2>
               <p className="mb-8">
                 Wir setzen technische und organisatorische Sicherheitsmaßnahmen ein, um Ihre Daten gegen Verlust, Missbrauch oder unbefugten Zugriff zu schützen.
               </p>
 
-              <h2 className="font-serif text-2xl text-[#1C3829] mt-8 mb-4">8. Aktualität und Änderung dieser Datenschutzerklärung</h2>
+              <h2 className="font-serif text-2xl text-[#1C3829] mt-8 mb-4">9. Aktualität und Änderung dieser Datenschutzerklärung</h2>
               <p className="mb-8">
                 Wir behalten uns vor, diese Datenschutzerklärung bei Bedarf anzupassen, um sie an aktuelle rechtliche Anforderungen anzupassen.
               </p>
@@ -180,12 +200,32 @@ export function Datenschutz() {
                 Web sitemiz çerezler kullanmaktadır. Çerezler, cihazınıza otomatik olarak kaydedilen küçük dosyalardır. Çerezler, web sitemizin kullanımını kolaylaştırmak, istatistiksel değerlendirmeler yapmak ve belirli işlevleri sunmak amacına hizmet eder. Tarayıcınızın ayarlarından çerezlerin kaydedilmesini devre dışı bırakabilirsiniz.
               </p>
 
-              <h2 className="font-serif text-2xl text-[#1C3829] mt-8 mb-4">5. Analiz Araçları</h2>
+              <h2 className="font-serif text-2xl text-[#1C3829] mt-8 mb-4">5. Google Tag Manager ve Analiz</h2>
+              <p className="mb-4">
+                Google Ireland Limited (Gordon House, Barrow Street, Dublin 4, İrlanda) tarafından sağlanan Google Tag Manager'ı kullanıyoruz. Tag Manager'ın kendisi analiz amaçlı çerez yerleştirmez; Google Analytics gibi diğer hizmetlerin çalıştırılmasını yönetir.
+              </p>
+              <p className="mb-4">
+                Teknik olarak zorunlu olmayan tüm hizmetler, Google Consent Mode üzerinden varsayılan olarak devre dışıdır („denied“) ve yalnızca çerez bandında onay vermenizden sonra çalıştırılır. Hukuki dayanak, § 25 Abs. 1 TDDDG ve GDPR Madde 6/1-a uyarınca açık rızanızdır. Rızanızı, sayfa altındaki „Cookie-Einstellungen“ bağlantısı üzerinden dilediğiniz zaman geleceğe etkili olarak geri alabilirsiniz.
+              </p>
               <p className="mb-8">
-                Kullanıcı davranışlarını değerlendirmek için Google Analytics gibi analiz araçları kullanabiliriz. Elde edilen veriler anonimleştirilir. Detaylı bilgi için ilgili servis sağlayıcının gizlilik politikasına bakabilirsiniz.
+                Bu kapsamda verilerin ABD'ye aktarılması söz konusu olabilir. Google LLC, EU-US Data Privacy Framework kapsamında sertifikalıdır.
               </p>
 
-              <h2 className="font-serif text-2xl text-[#1C3829] mt-8 mb-4">6. Veri Sahibi Olarak Haklarınız</h2>
+              <h2 className="font-serif text-2xl text-[#1C3829] mt-8 mb-4">6. Talep Formu ve WhatsApp Üzerinden İletişim</h2>
+              <p className="mb-4">
+                Talep formumuz aracılığıyla adınızı, soyadınızı, telefon numaranızı, e-posta adresinizi, ilgilendiğiniz hukuk alanını ve olay özetinizi topluyoruz. Bu bilgileri yalnızca talebinizi değerlendirmek ve olası bir vekâlet ilişkisini hazırlamak için işliyoruz. Hukuki dayanak GDPR Madde 6/1-b (sözleşme öncesi tedbirler) ve Madde 6/1-a'dır.
+              </p>
+              <p className="mb-4">
+                <strong>Lütfen form üzerinden özel nitelikli bilgileri paylaşmayınız</strong> — örneğin sağlık, inanç veya devam eden ceza soruşturmalarına ilişkin ayrıntılar. Bu tür konuları lütfen korunan görüşme ortamında aktarınız.
+              </p>
+              <p className="mb-4">
+                Formun teknik işlenmesi ve bildirim gönderimi, GDPR Madde 28 uyarınca veri işleyen sıfatıyla Supabase Inc. üzerinden gerçekleşir. İletişimin WhatsApp üzerinden sürdürülmesi hâlinde bilgileriniz WhatsApp Ireland Limited'e aktarılır ve ek olarak onların gizlilik koşulları geçerli olur. Dilediğiniz zaman bunun yerine e-posta veya telefonla da bize ulaşabilirsiniz.
+              </p>
+              <p className="mb-8">
+                Talep verileri, amaç için gerekli olmaktan çıktığında ve başta vekâlet dosyalarına ilişkin yasal saklama süreleri olmak üzere herhangi bir yasal saklama yükümlülüğü bulunmadığında silinir.
+              </p>
+
+              <h2 className="font-serif text-2xl text-[#1C3829] mt-8 mb-4">7. Veri Sahibi Olarak Haklarınız</h2>
               <p className="mb-4">Aşağıdaki haklara sahipsiniz:</p>
               <ul className="list-disc pl-6 mb-8 space-y-1 text-sm">
                 <li>Saklanan verileriniz hakkında bilgi alma (GDPR/DSGVO Madde 15),</li>
@@ -196,12 +236,12 @@ export function Datenschutz() {
                 <li>Veri taşınabilirliği talep etme (Madde 20).</li>
               </ul>
 
-              <h2 className="font-serif text-2xl text-[#1C3829] mt-8 mb-4">7. Veri Güvenliği</h2>
+              <h2 className="font-serif text-2xl text-[#1C3829] mt-8 mb-4">8. Veri Güvenliği</h2>
               <p className="mb-8">
                 Verilerinizi kayıp, kötüye kullanım veya yetkisiz erişime karşı korumak için teknik ve organizasyonel güvenlik önlemleri uygulamaktayız.
               </p>
 
-              <h2 className="font-serif text-2xl text-[#1C3829] mt-8 mb-4">8. Gizlilik Politikasının Güncelliği ve Değiştirilmesi</h2>
+              <h2 className="font-serif text-2xl text-[#1C3829] mt-8 mb-4">9. Gizlilik Politikasının Güncelliği ve Değiştirilmesi</h2>
               <p className="mb-8">
                 Gerektiğinde bu gizlilik politikasını güncel yasal gerekliliklere uyarlamak amacıyla değiştirme hakkımızı saklı tutarız.
               </p>

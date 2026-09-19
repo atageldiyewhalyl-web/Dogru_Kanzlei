@@ -233,7 +233,7 @@ Miras hukukundaki diğer hizmetlerimiz hakkında bilgi almak isterseniz [miras h
 
 İlk değerlendirme ücretsizdir. Durumunuzu anlatın, size gerçekçi bir yol haritası çizelim.
 
-[Doğru Kanzlei ile Ücretsiz Ön Görüşme Talep Edin →](https://calendly.com/hasand9366/30min)
+[Doğru Kanzlei ile Ön Görüşme Talep Edin →](https://calendly.com/hasand9366/30min)
 
 ## Sonuç: Şimdi Ne Yapmalısınız?
 
@@ -437,7 +437,7 @@ Weitere Informationen zu unseren [Erbrecht-Leistungen](/de/leistungen/erbrecht) 
 
 Die Ersteinschätzung ist kostenfrei. Schildern Sie uns Ihre Situation, wir erstellen Ihnen eine realistische Einschätzung des weiteren Vorgehens.
 
-[Kostenlose Ersteinschätzung bei der Doğru Kanzlei anfragen →](https://calendly.com/hasand9366/30min)
+[Ihren Fall von der Doğru Kanzlei prüfen lassen →](https://calendly.com/hasand9366/30min)
 
 ## Auch in anderen Sprachen verfügbar
 
@@ -633,7 +633,7 @@ For more on our inheritance law services, see our [inheritance law page](/en/ser
 
 The initial assessment is free. Tell us about your situation, and we’ll give you a realistic roadmap.
 
-[Request a Free Initial Assessment with Doğru Kanzlei →](https://calendly.com/hasand9366/30min)
+[Request a Case Review with Doğru Kanzlei →](https://calendly.com/hasand9366/30min)
 
 ## Also Available in Other Languages
 

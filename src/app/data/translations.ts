@@ -10,8 +10,9 @@ export const translations = {
     nav_cta: "Get Consultation",
 
     // Hero Section
-    hero_title_pre: "Avukat",
-    hero_title_main: "Hasan Doğru",
+    avukat_title: "Avukat",
+    hero_title_pre: "Turkish Lawyer in Mannheim",
+    hero_title_main: "Avukat Hasan Doğru",
     hero_subtitle: "Turkish Law Specialist",
     hero_description: "Looking for a qualified legal advisor who bridges the German and Turkish legal systems? As a specialized Avukat, I support you in complex cross-border legal matters with expert knowledge and years of experience.",
     hero_cta_primary: "Get Advice Now",
@@ -144,7 +145,8 @@ export const translations = {
     nav_cta: "Danışma Al",
 
     // Hero Section
-    hero_title_pre: "Avukat",
+    avukat_title: "Avukat",
+    hero_title_pre: "Mannheim'da Türk Avukat",
     hero_title_main: "Hasan Doğru",
     hero_subtitle: "Türk Hukuku Uzmanı",
     hero_description: "Alman ve Türk hukuk sistemleri arasında köprü işlevi görecek deneyimli bir hukuk danışmanı arıyorsanız, uluslararası nitelikteki karmaşık hukuki süreçlerde uzman bilgi birikimim ve geniş deneyimimle hizmetinizdeyim",
@@ -278,8 +280,9 @@ export const translations = {
     nav_cta: "Beratung anfragen",
 
     // Hero Section
-    hero_title_pre: "Avukat",
-    hero_title_main: "Hasan Doğru",
+    avukat_title: "Avukat",
+    hero_title_pre: "Türkischer Anwalt in Mannheim",
+    hero_title_main: "Avukat Hasan Doğru",
     hero_subtitle: "Experte für türkisches Recht",
     hero_description: "Suchen Sie einen kompetenten Rechtsbeistand, der die Brücke zwischen dem deutschen und dem türkischen Rechtssystem schlägt? Als auf türkisches Recht spezialisierter Avukat (türkischer Rechtsanwalt) unterstütze ich Sie bei komplexen grenzüberschreitenden Rechtsfragen mit fundierter Fachkenntnis und langjähriger Erfahrung.",
     hero_cta_primary: "Jetzt beraten lassen",

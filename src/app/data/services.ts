@@ -2089,7 +2089,7 @@ Genau hierfür erstelle ich Rechtsgutachten zum türkischen Recht.
 
 Diese doppelte Zulassung bedeutet in der Praxis: Kein Umweg über eine weitere Kanzlei in der Türkei, keine Verzögerung durch eine dritte Partei. Rückfragen des Gerichts oder der beauftragenden Kanzlei beantworte ich direkt, auf Deutsch, ohne Übersetzungskette.
 
-Kostenlose Ersteinschätzung bei der Doğru Kanzlei anfragen: https://calendly.com/hasand9366/30min
+Ihren Fall von der Doğru Kanzlei prüfen lassen: https://calendly.com/hasand9366/30min
 
 ## Typische Gutachtenthemen
 
@@ -2122,7 +2122,7 @@ Die Vergütung richtet sich nach Umfang und Schwierigkeit der Rechtsfrage. Für 
 
 Als bei der Ankara Barosu zugelassener Avukat und zugleich Mitglied der Rechtsanwaltskammer Karlsruhe (§ 207 BRAO) sowie eingetragener Sachverständiger für türkisches Recht beim Amtsgericht Mannheim verbinde ich die praktische Verfahrensführung vor türkischen Gerichten mit der Fähigkeit, deutsche Gerichte, Kanzleien und Notariate direkt und ohne Zwischenstation zu bedienen. Rückfragen aus dem laufenden Verfahren beantworte ich unmittelbar — ohne Rücksprache mit einer weiteren, dritten Kanzlei.
 
-Kostenlose Ersteinschätzung bei der Doğru Kanzlei anfragen: https://calendly.com/hasand9366/30min
+Ihren Fall von der Doğru Kanzlei prüfen lassen: https://calendly.com/hasand9366/30min
 
 Hinweis: Die Erstattung von Rechtsgutachten zum türkischen Recht erfolgt im Rahmen der Tätigkeit als in der Türkei zugelassener Avukat und als Sachverständiger für türkisches Recht. Eine Rechtsberatung im deutschen Recht ist damit nicht verbunden (§ 207 BRAO). Dieser Beitrag befasst sich ausschließlich mit dem türkischen Recht.`,
     content: `Alman Mahkemeleri, Avukatları ve Noterleri İçin Türk Hukuku Bilirkişi Mütalaası
@@ -2150,7 +2150,7 @@ Almanya’da yaşayan ve Türkiye’deki bir miras veya boşanma davası Alman m
 
 Bu çifte yetkinlik pratikte şu anlama gelir: Türkiye’de ayrı bir kanzlei aracılığına gerek yok, üçüncü bir tarafın gecikmesine gerek yok. Mahkemenin veya görevlendiren kanzleinin soruları doğrudan, Almanca olarak, tercüme zinciri olmadan cevaplanır.
 
-Ücretsiz Ön Görüşme Talep Edin: https://calendly.com/hasand9366/30min
+Ön Görüşme Talep Edin: https://calendly.com/hasand9366/30min
 
 ## Sık Karşılaşılan Mütalaa Konuları
 
@@ -2181,7 +2181,7 @@ Milletlerarası Özel Hukuk: Türk-Alman unsurlu olaylarda uygulanacak hukuk, ta
 
 Ankara Barosu’na kayıtlı bir avukat ve aynı zamanda Rechtsanwaltskammer Karlsruhe üyesi (§ 207 BRAO) olarak, ayrıca Amtsgericht Mannheim’ın Türk hukuku bilirkişi listesinde kayıtlı biri olarak, Türk mahkemeleri önündeki fiili dava tecrübesini Alman mahkemelerine, kanzleilere ve noterliklere doğrudan hizmet verme kapasitesiyle birleştiriyorum. Devam eden bir davadan gelen sorularınızı üçüncü bir kanzleye danışmaya gerek kalmadan doğrudan cevaplıyorum.
 
-Ücretsiz Ön Görüşme Talep Edin: https://calendly.com/hasand9366/30min
+Ön Görüşme Talep Edin: https://calendly.com/hasand9366/30min
 
 Yasal uyarı: Türk hukukuna dair bilirkişi mütalaası hizmeti, Türkiye’de kayıtlı bir avukat ve Türk hukuku bilirkişisi sıfatıyla yürütülmektedir. Bu hizmet, Alman hukuku alanında bir danışmanlık içermez (§ 207 BRAO). Bu sayfa yalnızca Türk hukukuna ilişkin genel bilgi amaçlıdır.`,
     contentEN: `Turkish Law Expert Legal Opinion — For Courts, Lawyers, and Notaries
@@ -2209,7 +2209,7 @@ This matters indirectly to Turkish citizens living in Germany too: if your inher
 
 In practice, this dual qualification means: no detour through a separate Turkish law firm, no delay caused by a third party. I answer follow-up questions from the court or the instructing firm directly, in German, with no translation chain in between.
 
-Request a Free Initial Assessment with Doğru Kanzlei: https://calendly.com/hasand9366/30min
+Request a Case Review with Doğru Kanzlei: https://calendly.com/hasand9366/30min
 
 ## Typical Topics Covered
 
@@ -2240,7 +2240,7 @@ Fees depend on the scope and complexity of the legal question. Court-commissione
 
 As a lawyer registered with the Ankara Bar Association, also a member of the Karlsruhe Bar Association in Germany (§ 207 BRAO), and a registered expert on Turkish law at the Mannheim Local Court, I combine hands-on litigation experience before Turkish courts with the ability to serve German courts, law firms, and notaries directly. Follow-up questions on an active case get answered directly — without having to consult a separate, third-party firm.
 
-Request a Free Initial Assessment with Doğru Kanzlei: https://calendly.com/hasand9366/30min
+Request a Case Review with Doğru Kanzlei: https://calendly.com/hasand9366/30min
 
 Notice: Expert legal opinions on Turkish law are provided in the capacity of a lawyer licensed in Turkey and a registered expert on Turkish law. This service does not involve legal advice on German law (§ 207 BRAO). This page addresses Turkish law exclusively.`,
     faqDE: [

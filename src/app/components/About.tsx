@@ -196,7 +196,7 @@ export function About() {
                   letterSpacing: "0.03em",
                 }}
               >
-                {t("hero_title_pre")} <span lang="tr">Hasan Doğru</span>
+                {t("avukat_title")} <span lang="tr">Hasan Doğru</span>
               </div>
               <div
                 style={{

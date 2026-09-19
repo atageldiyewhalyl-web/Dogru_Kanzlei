@@ -11,6 +11,30 @@ type ConsentStatus = "pending" | "accepted" | "rejected" | "custom";
 const CONSENT_KEY = "dogru_kanzlei_consent";
 const CONSENT_VERSION = "1"; // bump this to re-ask on policy changes
 
+type Gtag = (...args: unknown[]) => void;
+
+// Mirror the visitor's choice into Google Consent Mode. index.html sets every
+// signal to "denied" before GTM loads; nothing is allowed to fire until this
+// update runs (§ 25 TDDDG). Without it the banner would be purely decorative.
+// We go through the `gtag` shim defined in index.html because Consent Mode
+// expects the raw `arguments` object on the dataLayer, not a plain array.
+function pushConsentToGtm(consent: ConsentState) {
+  if (typeof window === "undefined") return;
+  const gtag = (window as unknown as { gtag?: Gtag }).gtag;
+  if (typeof gtag !== "function") return;
+
+  const value = (granted: boolean) => (granted ? "granted" : "denied");
+  gtag("consent", "update", {
+    ad_storage: "denied",
+    ad_user_data: "denied",
+    ad_personalization: "denied",
+    analytics_storage: value(consent.analytics),
+    functionality_storage: value(consent.functional),
+    personalization_storage: value(consent.functional),
+    security_storage: "granted",
+  });
+}
+
 export function useCookieConsent() {
   const [status, setStatus] = useState<ConsentStatus>("pending");
   const [consent, setConsent] = useState<ConsentState>({
@@ -39,7 +63,10 @@ export function useCookieConsent() {
 
   const save = (newConsent: ConsentState, newStatus: ConsentStatus) => {
     const data = { version: CONSENT_VERSION, consent: newConsent, status: newStatus };
-    localStorage.setItem(CONSENT_KEY, JSON.stringify(data));
+    try {
+      localStorage.setItem(CONSENT_KEY, JSON.stringify(data));
+    } catch {}
+    pushConsentToGtm(newConsent);
     setConsent(newConsent);
     setStatus(newStatus);
     setShowBanner(false);
