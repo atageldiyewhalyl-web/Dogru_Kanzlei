@@ -79,7 +79,7 @@ Die Anrechnung ist kein Freifahrtschein. In der Praxis sind drei Einschränkunge
 
 ## Erbschaftsteuer-Koordination - mit der Doğru Kanzlei
 
-Die Doğru Kanzlei ist bei der Anwaltskammer Ankara (Sicil-Nr. 47068) und der Rechtsanwaltskammer Karlsruhe (§ 207 BRAO) zugelassen. Wir koordinieren die türkische Seite Ihres Erbfalls direkt über UYAP - Erbschein, türkische Steuererklärung, Unbedenklichkeitsbescheinigung, Grundbuchumschreibung - und arbeiten für die deutsche Steuerseite eng mit unabhängigen, spezialisierten Steuerberatern zusammen, damit der § 21-Antrag korrekt und fristgerecht gestellt wird.
+Die Doğru Kanzlei ist bei der Anwaltskammer Ankara (Sicil-Nr. 47068) zugelassen und bei der Rechtsanwaltskammer Karlsruhe (§ 207 BRAO) registriert. Wir koordinieren die türkische Seite Ihres Erbfalls direkt über UYAP - Erbschein, türkische Steuererklärung, Unbedenklichkeitsbescheinigung, Grundbuchumschreibung - und arbeiten für die deutsche Steuerseite eng mit unabhängigen, spezialisierten Steuerberatern zusammen, damit der § 21-Antrag korrekt und fristgerecht gestellt wird.
 
 Möchten Sie eine auf Ihren Fall bezogene Einschätzung? Schildern Sie uns kurz, welches Vermögen in welchem Land liegt - wir sagen Ihnen, wo die Doppelbesteuerung tatsächlich zuschlägt und was sich noch reduzieren lässt.
 

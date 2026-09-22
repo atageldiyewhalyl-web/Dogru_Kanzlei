@@ -4447,10 +4447,10 @@ export function BlogPost() {
                 <p className="font-sans text-lg text-white/70 mb-10 leading-relaxed relative z-10 max-w-xl">
                   <span lang={language === 'tr' ? 'tr' : 'de'}>
                     {language === 'de'
-                      ? (post.ctaDescriptionDE || 'Profitieren Sie von unserer doppelten Zulassung in Deutschland und der Türkei. Kontaktieren Sie uns for eine erste Einschätzung.')
+                      ? (post.ctaDescriptionDE || 'Profitieren Sie von unserer Präsenz in Deutschland und der Türkei. Kontaktieren Sie uns für eine erste Einschätzung.')
                       : language === 'tr'
                         ? (post.ctaDescriptionTR || 'Almanya ve Türkiye\'deki çift baro üyeliğimiz ve UYAP tecrübemizle süreci sizin adınıza en hızlı şekilde sonuçlandırıyoruz.')
-                        : (post.ctaDescriptionEN || 'Take advantage of our dual admission in Germany and Turkey. Contact us for an initial assessment.')}
+                        : (post.ctaDescriptionEN || 'Take advantage of our presence in Germany and Turkey. Contact us for an initial assessment.')}
                   </span>
                 </p>
                 <button

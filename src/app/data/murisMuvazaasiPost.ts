@@ -173,7 +173,7 @@ Das erstinstanzliche Gericht gab der Klage statt. Die Mandantin hatte die Türke
 
 Muris Muvazaası-Fälle gehören zu den komplexesten und zugleich wertmäßig bedeutendsten Verfahren im türkischen Erbrecht. Sie erfordern einen Avukat, der vor türkischen Gerichten auftreten kann, die Beweisführung beherrscht, sofort Ihtiyati Tedbir beantragen kann und die besondere Situation der Diaspora versteht.
 
-[Die Doğru Kanzlei](https://www.hasandogru.de/de/leistungen) ist als Mitglied der Ankara Barosu (Sicil-Nr. 47068) und der Rechtsanwaltskammer Karlsruhe (§ 207 BRAO) direkt vor türkischen Gerichten zugelassen. Av. Hasan Doğru führt Tapu-İptal-Klagen, Schadensersatzklagen und Strafanzeigen aus einer Hand — ohne Kooperationspartner, mit direktem Zugang zum UYAP-Gerichtssystem für Echtzeit-Überwachung aller Fristen und Grundbuchbewegungen.
+[Die Doğru Kanzlei](https://www.hasandogru.de/de/leistungen) ist über die Ankara Barosu (Sicil-Nr. 47068) direkt vor türkischen Gerichten zugelassen und bei der Rechtsanwaltskammer Karlsruhe (§ 207 BRAO) registriert. Av. Hasan Doğru führt Tapu-İptal-Klagen, Schadensersatzklagen und Strafanzeigen aus einer Hand — ohne Kooperationspartner, mit direktem Zugang zum UYAP-Gerichtssystem für Echtzeit-Überwachung aller Fristen und Grundbuchbewegungen.
 
 Für Mandanten in Deutschland bedeutet das: Ein Ansprechpartner für das gesamte Verfahren. Keine Reise in die Türkei erforderlich. Sofortige Ihtiyati Tedbir bei Gefahr im Verzug. Koordination des zivil- und strafrechtlichen Weges aus einer Hand.
 

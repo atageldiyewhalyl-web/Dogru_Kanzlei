@@ -2087,7 +2087,7 @@ Genau hierfür erstelle ich Rechtsgutachten zum türkischen Recht.
 - Praktiker, kein reiner Theoretiker: Ich führe selbst Verfahren vor türkischen Gerichten über das UYAP-System. Meine Gutachten spiegeln die tatsächliche türkische Rechtsprechung wider — einschließlich aktueller Entscheidungen des Yargıtay.
 - Kurzfristig und verständlich: Klar strukturierte Gutachten, die die konkrete Rechtsfrage beantworten — mit Nachweisen aus Gesetz und Rechtsprechung, aber ohne unnötigen akademischen Ballast.
 
-Diese doppelte Zulassung bedeutet in der Praxis: Kein Umweg über eine weitere Kanzlei in der Türkei, keine Verzögerung durch eine dritte Partei. Rückfragen des Gerichts oder der beauftragenden Kanzlei beantworte ich direkt, auf Deutsch, ohne Übersetzungskette.
+Die Zulassung in Ankara und die Registrierung in Karlsruhe bedeuten in der Praxis: Kein Umweg über eine weitere Kanzlei in der Türkei, keine Verzögerung durch eine dritte Partei. Rückfragen des Gerichts oder der beauftragenden Kanzlei beantworte ich direkt, auf Deutsch, ohne Übersetzungskette.
 
 Ihren Fall von der Doğru Kanzlei prüfen lassen: https://calendly.com/hasand9366/30min
 

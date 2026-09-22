@@ -192,7 +192,7 @@ Herr M., deutscher Staatsangehöriger ohne türkische Wurzeln, erbt von seinem v
 
 ## 10. Grenzüberschreitende Erbscheinsfragen mit der Doğru Kanzlei
 
-Die Doğru Kanzlei ist bei der Anwaltskammer Ankara (Sicil-Nr. 47068) und der Rechtsanwaltskammer Karlsruhe (§ 207 BRAO) zugelassen. Wir koordinieren die türkische Seite Ihres Erbfalls direkt über UYAP — Erbscheinsantrag, Grundbuchumschreibung über WEBTAPU, Bankkorrespondenz mit türkischen Instituten — und stimmen uns bei der deutschen Verfahrensseite (Nachlassgericht, Grundbuchamt, Fremdrechtserbschein) eng mit unabhängigen deutschen Notaren und Fachanwälten für Erbrecht ab, damit beide Dokumente am Ende widerspruchsfrei zusammenpassen.
+Die Doğru Kanzlei ist bei der Anwaltskammer Ankara (Sicil-Nr. 47068) zugelassen und bei der Rechtsanwaltskammer Karlsruhe (§ 207 BRAO) registriert. Wir koordinieren die türkische Seite Ihres Erbfalls direkt über UYAP — Erbscheinsantrag, Grundbuchumschreibung über WEBTAPU, Bankkorrespondenz mit türkischen Instituten — und stimmen uns bei der deutschen Verfahrensseite (Nachlassgericht, Grundbuchamt, Fremdrechtserbschein) eng mit unabhängigen deutschen Notaren und Fachanwälten für Erbrecht ab, damit beide Dokumente am Ende widerspruchsfrei zusammenpassen.
 
 Haben Sie bereits einen Erbschein in einem der beiden Länder und wissen nicht, ob er im anderen Land ausreicht? Schildern Sie uns kurz Ihre Situation — wir sagen Ihnen, welches Dokument Sie zusätzlich brauchen und wie Sie es am schnellsten bekommen.[
 

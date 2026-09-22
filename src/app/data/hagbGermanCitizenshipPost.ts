@@ -162,7 +162,7 @@ Wer HAGB im Arşiv Kaydı hat und dennoch einen Antrag stellen möchte, sollte d
 
 ## Doğru Kanzlei: Türkisches Strafrecht Für Mandanten in Deutschland
 
-[Doğru Kanzlei](/de/leistungen/strafrecht) berät Mandanten in Deutschland zu türkischem Strafrecht — einschließlich HAGB-Verfahren, türkischen Registerauszügen und Strategieoptionen vor einem deutschen Einbürgerungsantrag. Av. Hasan Doğru ist beim **Ankara Barosu** (Sicil No: 47068) und bei der **Karlsruher Rechtsanwaltskammer** (§ 207 BRAO) zugelassen und verfügt über direkten UYAP-Zugang.
+[Doğru Kanzlei](/de/leistungen/strafrecht) berät Mandanten in Deutschland zu türkischem Strafrecht — einschließlich HAGB-Verfahren, türkischen Registerauszügen und Strategieoptionen vor einem deutschen Einbürgerungsantrag. Av. Hasan Doğru ist bei der **Ankara Barosu** (Sicil No: 47068) zugelassen und bei der **Karlsruher Rechtsanwaltskammer** (§ 207 BRAO) registriert und verfügt über direkten UYAP-Zugang.
 
 [HAGB-Situation per WhatsApp schildern →](https://wa.me/4917661221210?service=Ceza%20%2F%20Yakalama%20Karar%C4%B1)
 

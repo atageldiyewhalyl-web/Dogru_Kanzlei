@@ -77,8 +77,15 @@ export function Impressum() {
           <div className="mb-8">
             {/* Kein Handelsregistereintrag: Die Kanzlei wird als Einzelunternehmen
                 geführt und ist kein Handelsgewerbe i.S.d. § 1 HGB. Die Kammer-
-                zugehörigkeit steht unter „Berufsrechtliche Angaben“. */}
-            <p className="mb-2"><strong>Steuernummer:</strong> 38240/01054</p>
+                zugehörigkeit steht unter „Berufsrechtliche Angaben“.
+                Laut Bescheid des Finanzamts Mannheim-Stadt (27.05.2025) gilt die
+                Kleinunternehmerregelung; eine USt-IdNr. besteht daher nicht.
+                § 5 Abs. 1 Nr. 6 DDG verlangt nur eine vorhandene USt-IdNr., nicht
+                die Steuernummer — die wird bewusst nicht veröffentlicht. */}
+            <p className="mb-2">
+              Umsatzsteuer wird aufgrund der Kleinunternehmerregelung gemäß § 19 UStG
+              nicht erhoben; eine Umsatzsteuer-Identifikationsnummer besteht nicht.
+            </p>
           </div>
 
           <div className="bg-[#1C3829] text-white p-6 my-8">
@@ -93,7 +100,7 @@ export function Impressum() {
           <div className="mb-8">
             <p className="mb-2">
               <strong>Gesetzliche Berufsbezeichnung:</strong><br />
-              Avukat (Rechtsanwalt), verliehen in der Republik Türkei
+              Avukat, verliehen in der Republik Türkei
             </p>
             <p className="mb-2">
               <strong>Zuständige Kammern:</strong><br />
@@ -103,7 +110,7 @@ export function Impressum() {
             </p>
             <p className="mb-2">
               <strong>Umfang der Tätigkeit:</strong><br />
-              Die Beratung und Vertretung erfolgt gemäß §§ 206, 207 BRAO ausschließlich im
+              Die Beratung und Vertretung erfolgt gemäß § 207 BRAO ausschließlich im
               türkischen Recht und im Völkerrecht. Eine Beratung oder Vertretung im deutschen
               Recht findet nicht statt.
             </p>
@@ -122,6 +129,21 @@ export function Impressum() {
                 brak.de
               </a>
               .
+            </p>
+          </div>
+
+          <h2 className="font-serif text-2xl text-[#1C3829] mt-8 mb-4">
+            Berufshaftpflichtversicherung
+          </h2>
+          <div className="mb-8">
+            {/* § 2 Abs. 1 Nr. 11 DL-InfoV. Versicherer laut Police SV97983281
+                (Vermögensschaden-Haftpflichtversicherung, aktiv). Policennummer
+                und Prämie sind keine Pflichtangaben und werden nicht veröffentlicht.
+                OFFEN: räumlicher Geltungsbereich laut Versicherungsschein ergänzen. */}
+            <p className="mb-2">
+              <strong>Versicherer:</strong><br />
+              ERGO Versicherung AG<br />
+              ERGO-Platz 1, 40477 Düsseldorf
             </p>
           </div>
 
@@ -172,7 +194,7 @@ export function Impressum() {
           </p>
           <p className="text-sm font-italic">
             Wir sind nicht verpflichtet und nicht bereit, an Streitbeilegungsverfahren vor einer
-            Verbraucherschlichtungsstelle teilzunehmen.
+            Verbraucherschlichtungsstelle teilzunehmen (§ 36 VSBG).
           </p>
         </div>
       </div>

@@ -192,7 +192,7 @@ In den meisten Fällen, die wir sehen, entsteht der eigentliche Verlust nicht du
 
 ## Wie die Doğru Kanzlei bei Katılma-Alacağı-Verfahren hilft
 
-[Die Doğru Kanzlei](/de/leistungen/erbrecht) ist sowohl bei der **Anwaltskammer Ankara** als auch bei der **Rechtsanwaltskammer Karlsruhe** (§ 207 BRAO) zugelassen. Diese doppelte Zulassung ermöglicht es uns, güterrechtliche Auseinandersetzung und Erbteilung direkt aus unserem Büro in Mannheim über das türkische Anwaltsportal UYAP zu führen — ohne Umweg über einen weiteren Anwalt in der Türkei. 
+[Die Doğru Kanzlei](/de/leistungen/erbrecht) ist bei der **Anwaltskammer Ankara** zugelassen und bei der **Rechtsanwaltskammer Karlsruhe** (§ 207 BRAO) registriert. Diese Kombination ermöglicht es uns, güterrechtliche Auseinandersetzung und Erbteilung direkt aus unserem Büro in Mannheim über das türkische Anwaltsportal UYAP zu führen — ohne Umweg über einen weiteren Anwalt in der Türkei. 
 
 Möchten Sie prüfen lassen, ob die Teilhabeforderung in Ihrem Fall bereits berücksichtigt wurde — oder ob sie übersehen wurde? Teilen Sie uns kurz das Datum der Eheschließung und die Vermögenswerte im Nachlass mit — wir geben Ihnen eine konkrete Ersteinschätzung.
 

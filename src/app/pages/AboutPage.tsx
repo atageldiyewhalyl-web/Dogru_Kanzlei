@@ -9,7 +9,7 @@ const PERSON_SCHEMA = {
   "@type": "Person",
   "name": "Hasan Doğru",
   "jobTitle": "Avukat / ausländischer Rechtsanwalt (§ 207 BRAO)",
-  "description": "Dual-licensed Turkish law specialist. Member of the Ankara Bar Association (No. 47068) and registered with the Karlsruhe Bar Association under §207 BRAO. 15+ years experience in Turkish-German cross-border law.",
+  "description": "Turkish law specialist (Avukat). Member of the Ankara Bar Association (No. 47068) and registered with the Karlsruhe Bar Association under §207 BRAO. 15+ years experience in Turkish-German cross-border law.",
   "url": "https://www.hasandogru.de/de/ueber-uns",
   "image": "https://www.hasandogru.de/assets/hero-Bn0oq0cB.avif",
   "worksFor": {
@@ -81,7 +81,7 @@ export function AboutPage() {
       ? 'Erfahren Sie mehr über Avukat Hasan Doğru und seine Kanzlei in Mannheim und Ankara.'
       : language === 'tr'
         ? 'Avukat Hasan Doğru ve Mannheim ile Ankara\'daki bürosu hakkında daha fazla bilgi edinin.'
-        : 'Learn about Avukat Hasan Doğru, dual-licensed Turkish law specialist with offices in Mannheim and Ankara.',
+        : 'Learn about Avukat Hasan Doğru, Turkish law specialist with offices in Mannheim and Ankara.',
     lang: language,
     canonical: `${SITE_URL}/${language}/${aboutPath}`,
     alternateLangs: [

@@ -433,7 +433,7 @@ export function ServiceDetail() {
     },
     {
       label: '02',
-      title: familyLawText('Doppelte Zulassung', 'Çifte baro kaydı', 'Dual bar registration'),
+      title: familyLawText('Ankara Barosu & RAK Karlsruhe', 'Çifte baro kaydı', 'Dual bar registration'),
       text: familyLawText(
         'Mit Ankara Barosu und Anwaltskammer Karlsruhe (§207 BRAO) vertreten wir Mandanten direkt im türkischen Recht, ohne Kooperationspartner oder Mittelsmann.',
         'Ankara Barosu üyeliği ve Karlsruhe Barosu §207 BRAO kaydı sayesinde Türk hukuku süreçlerini aracısız yürütüyoruz.',
