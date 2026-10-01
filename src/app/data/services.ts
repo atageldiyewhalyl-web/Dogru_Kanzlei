@@ -1,5 +1,6 @@
 import { Home, Users, BookOpen, Globe, Shield, Plane, UserCheck, Gavel } from "lucide-react";
 import { forderungsvollstreckungTurkeyService } from "./forderungsvollstreckungTurkeyService";
+import { visaEntryTurkeyService } from "./visaEntryTurkeyService";
 
 export const services = [
   {
@@ -1603,6 +1604,7 @@ Fazit:
 Wir vertreten Ihre Interessen konsequent und verfolgen Ihre Forderungen in der Türkei — zuverlässig, transparent und mit vollem Service aus Deutschland.`
   },
   forderungsvollstreckungTurkeyService,
+  visaEntryTurkeyService,
   {
     id: "erbrecht",
     slugDE: "erbrecht",

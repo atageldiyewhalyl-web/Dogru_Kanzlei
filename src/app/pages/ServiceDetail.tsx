@@ -260,14 +260,21 @@ export function ServiceDetail() {
   const isErbrechtLandingPage = service.id === 'erbrecht';
   const isStrafrechtLandingPage = service.id === 'strafrecht';
   const isForderungsvollstreckungLandingPage = service.id === 'forderungsvollstreckung-tuerkei';
-  const isFamilyLawLandingPage = (language === 'de' || language === 'tr' || language === 'en') && (isFamilyLawServicePage || isTanimaLandingPage || isVollmachtLandingPage || isErbrechtLandingPage || isStrafrechtLandingPage || isForderungsvollstreckungLandingPage);
+  const isVisaEntryLandingPage = service.id === 'visum-einreise-tuerkei';
+  const isFamilyLawLandingPage = (language === 'de' || language === 'tr' || language === 'en') && (isFamilyLawServicePage || isTanimaLandingPage || isVollmachtLandingPage || isErbrechtLandingPage || isStrafrechtLandingPage || isForderungsvollstreckungLandingPage || isVisaEntryLandingPage);
   const isTurkishFamilyLawPage = language === 'tr' && isFamilyLawLandingPage;
   const isEnglishFamilyLawPage = language === 'en' && isFamilyLawLandingPage;
   const familyLawText = (de: string, tr: string, en: string) => (
     isTurkishFamilyLawPage ? tr : isEnglishFamilyLawPage ? en : de
   );
   const heroTitle = isFamilyLawLandingPage
-      ? isStrafrechtLandingPage
+      ? isVisaEntryLandingPage
+      ? familyLawText(
+        'Einreiseverbot oder Visum für die Türkei abgelehnt?',
+        'Türkiye vizeniz reddedildi veya giriş yasağınız mı var?',
+        'Turkish visa refused or entry ban imposed?'
+      )
+      : isStrafrechtLandingPage
       ? familyLawText(
         'Türkisches Strafrecht Anwalt Deutschland',
         "Türkiye'den Mahkeme Celbi mi Aldınız? Almanya'dan Savunuyoruz.",
@@ -304,7 +311,13 @@ export function ServiceDetail() {
     )
     : title;
   const heroSubtitle = isFamilyLawLandingPage
-    ? isStrafrechtLandingPage
+    ? isVisaEntryLandingPage
+      ? familyLawText(
+        'Für Deutsche und Drittstaatsangehörige mit Wohnsitz in Deutschland: Wir klären den Grund, beantragen die Aufhebung und klagen, wenn nötig, vor dem türkischen Verwaltungsgericht – per Vollmacht, ohne Reise.',
+        'Almanya’da yaşayan Alman vatandaşları ve üçüncü ülke vatandaşları için: sebebi tespit ediyor, kaldırma başvurusunu yapıyor ve gerekirse Türkiye’de idare mahkemesinde dava açıyoruz — vekâletle, seyahate gerek kalmadan.',
+        'For German citizens and third-country nationals living in Germany: we establish the reason, apply to have it lifted and, where necessary, sue before the Turkish administrative court — by power of attorney, without travel.'
+      )
+      : isStrafrechtLandingPage
       ? familyLawText(
         'Vorladung, Haftbefehl oder Interpol Red Notice aus der Türkei? Wir prüfen Ihren Status und vertreten Sie im türkischen Strafverfahren ohne Reise.',
         'Türkiye’den mahkeme celbi, tutuklama müzekkeresi veya Interpol arama bülteni mi var? Almanya’dan durumunuzu kontrol ediyor ve Türk ceza sürecini yönetiyoruz.',
@@ -1305,12 +1318,184 @@ export function ServiceDetail() {
       )
     }
   ];
-  const landingConversionCards = isForderungsvollstreckungLandingPage ? forderungsvollstreckungConversionCards : isStrafrechtLandingPage ? strafrechtConversionCards : isErbrechtLandingPage ? erbrechtConversionCards : isVollmachtLandingPage ? vollmachtConversionCards : isTanimaLandingPage ? tanimaConversionCards : familyLawConversionCards;
-  const landingOutcomes = isForderungsvollstreckungLandingPage ? forderungsvollstreckungOutcomes : isStrafrechtLandingPage ? strafrechtOutcomes : isErbrechtLandingPage ? erbrechtOutcomes : isVollmachtLandingPage ? vollmachtOutcomes : isTanimaLandingPage ? tanimaOutcomes : familyLawOutcomes;
-  const landingProcessSteps = isForderungsvollstreckungLandingPage ? forderungsvollstreckungProcessSteps : isStrafrechtLandingPage ? strafrechtProcessSteps : isErbrechtLandingPage ? erbrechtProcessSteps : isVollmachtLandingPage ? vollmachtProcessSteps : isTanimaLandingPage ? tanimaProcessSteps : familyLawProcessSteps;
-  const landingProofPoints = isForderungsvollstreckungLandingPage ? forderungsvollstreckungProofPoints : isStrafrechtLandingPage ? strafrechtProofPoints : isErbrechtLandingPage ? erbrechtProofPoints : isVollmachtLandingPage ? vollmachtProofPoints : isTanimaLandingPage ? tanimaProofPoints : familyLawProofPoints;
+  const visaEntryConversionCards = [
+    {
+      title: familyLawText('Visumantrag richtig vorbereiten','Vize başvurusunu doğru hazırlama','Prepare the visa application properly'),
+      text: familyLawText(
+        'Wir stellen die Unterlagen für das türkische Konsulat zusammen und prüfen sie gegen die Ablehnungsgründe des Art. 15 YUKK, bevor der Antrag gestellt wird.',
+        'Konsolosluk başvurusu için belgeleri hazırlıyor ve başvurudan önce YUKK m. 15’teki ret sebepleri yönünden kontrol ediyoruz.',
+        'We assemble the documents for the Turkish consulate and check them against the refusal grounds in Art. 15 of Law No. 6458 before filing.'
+      ),
+      icon: FileCheck2,
+      keywords: [
+        familyLawText('Türkei Visum beantragen','Türkiye vizesi başvurusu','Turkey visa application'),
+        familyLawText('Art. 11 YUKK','YUKK m. 11','Law No. 6458 Art. 11')
+      ]
+    },
+    {
+      title: familyLawText('Visumablehnung angreifen','Vize reddine karşı yol','Challenge a visa refusal'),
+      text: familyLawText(
+        'Wir prüfen den Ablehnungs- oder Annullierungsbescheid (Art. 15–17 YUKK) und entscheiden mit Ihnen: neuer Antrag oder Anfechtungsklage.',
+        'Ret veya iptal işlemini (YUKK m. 15–17) inceliyor, yeniden başvuru mu iptal davası mı uygun birlikte belirliyoruz.',
+        'We review the refusal or cancellation decision (Arts. 15–17) and decide with you between a fresh application and an annulment action.'
+      ),
+      icon: Scale,
+      keywords: [
+        familyLawText('Türkei Visum abgelehnt','Türkiye vizesi reddedildi','Turkish visa refused'),
+        familyLawText('Visum annulliert','vize iptali','visa cancelled')
+      ]
+    },
+    {
+      title: familyLawText('Einreiseverbot aufheben lassen','Giriş yasağının kaldırılması','Have an entry ban lifted'),
+      text: familyLawText(
+        'Wir klären Grund, Dauer und Sperrvermerk und beantragen die Aufhebung oder eine befristete Einreiseerlaubnis nach Art. 9 Abs. 6 YUKK.',
+        'Yasağın sebebini, süresini ve tahdit kodunu tespit ediyor; YUKK m. 9/6 uyarınca kaldırma veya süreli giriş izni başvurusu yapıyoruz.',
+        'We establish the reason, duration and restriction code, and apply for the ban to be lifted or for time-limited entry under Art. 9(6).'
+      ),
+      icon: Gavel,
+      keywords: [
+        familyLawText('Einreiseverbot Türkei aufheben','Türkiye giriş yasağı kaldırma','lift Turkey entry ban'),
+        familyLawText('Tahdit Kodu','tahdit kodu kaldırma','tahdit code')
+      ]
+    },
+    {
+      title: familyLawText('Klage vor dem Verwaltungsgericht','İdare mahkemesinde iptal davası','Action before the administrative court'),
+      text: familyLawText(
+        'Anfechtungsklage innerhalb von 60 Tagen ab Zustellung, verbunden mit dem Antrag auf Aussetzung der Vollziehung (Art. 7, 27 İYUK).',
+        'Tebliğden itibaren 60 gün içinde iptal davası ve yürütmenin durdurulması talebi (İYUK m. 7, 27).',
+        'Annulment action within 60 days of notification, combined with a request to suspend enforcement (Arts. 7, 27 of Law No. 2577).'
+      ),
+      icon: Scale,
+      keywords: [
+        familyLawText('Anfechtungsklage Türkei','iptal davası','annulment action Turkey'),
+        familyLawText('Aussetzung der Vollziehung','yürütmenin durdurulması','suspension of enforcement')
+      ]
+    },
+    {
+      title: familyLawText('Zurückweisung und Abschiebung','Geri çevirme ve sınır dışı','Refusal of entry and deportation'),
+      text: familyLawText(
+        'Bei Zurückweisung an der Grenze (Art. 7 YUKK) oder einer Abschiebungsentscheidung zählt jeder Tag: Die Klagefrist beträgt hier nur 7 Tage (Art. 53 Abs. 3).',
+        'Sınırda geri çevrilme (YUKK m. 7) veya sınır dışı kararında her gün önemlidir: dava süresi yalnızca 7 gündür (m. 53/3).',
+        'After refusal of entry at the border (Art. 7) or a deportation decision, every day counts: the time limit is only 7 days (Art. 53(3)).'
+      ),
+      icon: Globe2,
+      keywords: [
+        familyLawText('an der Grenze zurückgewiesen','sınırdan geri çevrilme','refused entry Turkey'),
+        familyLawText('Abschiebung Türkei Klage','deport kararına itiraz','deportation appeal Turkey')
+      ]
+    },
+    {
+      title: familyLawText('Aufenthalts- und Arbeitserlaubnis','İkamet ve çalışma izni','Residence and work permits'),
+      text: familyLawText(
+        'Bei Ablehnung oder Widerruf einer türkischen Aufenthalts- oder Arbeitserlaubnis führen wir das Verwaltungs- und Gerichtsverfahren.',
+        'İkamet veya çalışma izninin reddi ya da iptalinde idari başvuru ve yargı sürecini yürütüyoruz.',
+        'Where a Turkish residence or work permit is refused or cancelled, we conduct the administrative and court proceedings.'
+      ),
+      icon: UsersRound,
+      keywords: [
+        familyLawText('İkamet İzni abgelehnt','ikamet izni reddi','residence permit refused Turkey'),
+        familyLawText('Arbeitserlaubnis Türkei','çalışma izni','work permit Turkey')
+      ]
+    }
+  ];
+  const visaEntryOutcomes = [
+    familyLawText('Einreiseverbot Türkei aufheben lassen','Giriş yasağını kaldırmak','Lift a Turkish entry ban'),
+    familyLawText('Visumablehnung prüfen und anfechten','Vize reddini incelemek ve dava etmek','Review and challenge a visa refusal'),
+    familyLawText('Tahdit Kodu klären, bevor Sie reisen','Seyahatten önce tahdit kodunu öğrenmek','Check the restriction code before you travel'),
+    familyLawText('Fristen von 7 und 60 Tagen einhalten','7 ve 60 günlük süreleri kaçırmamak','Meet the 7-day and 60-day deadlines')
+  ];
+  const visaEntryProcessSteps = [
+    {
+      step: '01',
+      title: familyLawText('Bescheid oder Vorfall schildern','İşlemi veya olayı anlatın','Tell us what happened'),
+      text: familyLawText(
+        'Sie senden uns den Bescheid, die Mitteilung von der Grenze oder eine kurze Schilderung – mit Datum der Zustellung.',
+        'Ret yazısını, sınırdaki tebliği veya kısa bir olay özetini tebliğ tarihiyle birlikte gönderirsiniz.',
+        'Send us the decision, the notice from the border or a short account — with the date of notification.'
+      )
+    },
+    {
+      step: '02',
+      title: familyLawText('Grund, Sperrvermerk und Frist klären','Sebep, tahdit kodu ve süreyi tespit','Establish reason, code and deadline'),
+      text: familyLawText(
+        'Wir klären über die türkischen Behörden, welche Maßnahme vorliegt, worauf sie gestützt ist und welche Frist läuft.',
+        'Türk makamları nezdinde hangi işlemin bulunduğunu, dayanağını ve işleyen süreyi tespit ederiz.',
+        'We establish through the Turkish authorities which measure exists, what it is based on and which deadline is running.'
+      )
+    },
+    {
+      step: '03',
+      title: familyLawText('Antrag stellen oder Klage erheben','Başvuru veya dava','File the application or the action'),
+      text: familyLawText(
+        'Nach Vollmachtserteilung beantragen wir die Aufhebung oder erheben Anfechtungsklage vor dem zuständigen Verwaltungsgericht.',
+        'Vekâletname sonrası kaldırma başvurusunu yapar veya yetkili idare mahkemesinde iptal davasını açarız.',
+        'Once the power of attorney is in place, we apply for the measure to be lifted or bring an annulment action before the competent administrative court.'
+      )
+    }
+  ];
+  const visaEntryProofPoints = [
+    {
+      label: '01',
+      title: familyLawText('Visumfrei heißt nicht einreiseberechtigt','Vize muafiyeti giriş hakkı demek değildir','Visa-free does not mean entitled to enter'),
+      text: familyLawText(
+        'Auch visumfreie Reisende können nach Art. 7 YUKK zurückgewiesen werden. Ein Visum gibt nach Art. 11 Abs. 3 keinen unbedingten Anspruch auf Einreise.',
+        'Vizeden muaf yolcular da YUKK m. 7 uyarınca geri çevrilebilir. Vize, m. 11/3 uyarınca girişe mutlak hak sağlamaz.',
+        'Visa-exempt travellers can also be turned back under Art. 7. Under Art. 11(3) a visa confers no absolute right of entry.'
+      )
+    },
+    {
+      label: '02',
+      title: familyLawText('Die Fristen sind kurz','Süreler kısadır','The deadlines are short'),
+      text: familyLawText(
+        '60 Tage für die Anfechtungsklage, nur 7 Tage gegen eine Abschiebungsentscheidung. Wer wartet, verliert in der Regel den Rechtsweg.',
+        'İptal davası için 60 gün, sınır dışı kararına karşı yalnızca 7 gün. Bekleyen, kural olarak dava hakkını kaybeder.',
+        '60 days for an annulment action, only 7 days against a deportation decision. Waiting generally means losing the remedy.'
+      )
+    },
+    {
+      label: '03',
+      title: familyLawText('Der Sperrvermerk entscheidet den Weg','Yolu tahdit kodu belirler','The restriction code determines the route'),
+      text: familyLawText(
+        'Ein Vermerk wegen Überziehung wird anders behandelt als einer wegen öffentlicher Sicherheit. Deshalb steht die Klärung des Grundes am Anfang.',
+        'Süre ihlalinden kaynaklanan kayıt ile kamu güvenliği gerekçeli kayıt farklı ele alınır. Bu nedenle ilk adım sebebin tespitidir.',
+        'A record for an overstay is handled differently from one based on public security. That is why establishing the reason comes first.'
+      )
+    },
+    {
+      label: '04',
+      title: familyLawText('Zwei Wege: Antrag und Klage','İki yol: başvuru ve dava','Two routes: application and court action'),
+      text: familyLawText(
+        'Art. 9 Abs. 6 YUKK erlaubt die Aufhebung oder eine befristete Einreise durch die Behörde. Parallel bleibt die Klagefrist im Blick.',
+        'YUKK m. 9/6 idareye yasağı kaldırma veya süreli giriş izni verme imkânı tanır. Bu sırada dava süresi gözetilir.',
+        'Art. 9(6) allows the authority to lift the ban or permit time-limited entry. The court deadline is kept in view in parallel.'
+      )
+    },
+    {
+      label: '05',
+      title: familyLawText('Unmittelbar vor türkischen Gerichten','Türk mahkemelerinde doğrudan temsil','Directly before Turkish courts'),
+      text: familyLawText(
+        'Zulassung bei der Ankara Barosu, Registrierung nach § 207 BRAO und UYAP-Zugang: Verfahrensführung in der Türkei, Kommunikation in Deutschland.',
+        'Ankara Barosu kaydı, § 207 BRAO kaydı ve UYAP erişimi: süreç Türkiye’de yürür, iletişim Almanya’dan sağlanır.',
+        'Admission to the Ankara Bar, registration under § 207 BRAO and UYAP access: proceedings in Turkey, communication from Germany.'
+      )
+    }
+  ];
+  const landingConversionCards = isVisaEntryLandingPage
+    ? visaEntryConversionCards
+    : isForderungsvollstreckungLandingPage ? forderungsvollstreckungConversionCards : isStrafrechtLandingPage ? strafrechtConversionCards : isErbrechtLandingPage ? erbrechtConversionCards : isVollmachtLandingPage ? vollmachtConversionCards : isTanimaLandingPage ? tanimaConversionCards : familyLawConversionCards;
+  const landingOutcomes = isVisaEntryLandingPage
+    ? visaEntryOutcomes
+    : isForderungsvollstreckungLandingPage ? forderungsvollstreckungOutcomes : isStrafrechtLandingPage ? strafrechtOutcomes : isErbrechtLandingPage ? erbrechtOutcomes : isVollmachtLandingPage ? vollmachtOutcomes : isTanimaLandingPage ? tanimaOutcomes : familyLawOutcomes;
+  const landingProcessSteps = isVisaEntryLandingPage
+    ? visaEntryProcessSteps
+    : isForderungsvollstreckungLandingPage ? forderungsvollstreckungProcessSteps : isStrafrechtLandingPage ? strafrechtProcessSteps : isErbrechtLandingPage ? erbrechtProcessSteps : isVollmachtLandingPage ? vollmachtProcessSteps : isTanimaLandingPage ? tanimaProcessSteps : familyLawProcessSteps;
+  const landingProofPoints = isVisaEntryLandingPage
+    ? visaEntryProofPoints
+    : isForderungsvollstreckungLandingPage ? forderungsvollstreckungProofPoints : isStrafrechtLandingPage ? strafrechtProofPoints : isErbrechtLandingPage ? erbrechtProofPoints : isVollmachtLandingPage ? vollmachtProofPoints : isTanimaLandingPage ? tanimaProofPoints : familyLawProofPoints;
   const landingTestimonials = familyLawTestimonials;
-  const landingServicesHeading = isTanimaLandingPage
+  const landingServicesHeading = isVisaEntryLandingPage
+    ? familyLawText('Visum und Einreiseverbot Türkei: Was wir übernehmen','Türkiye vizesi ve giriş yasağında neler yapıyoruz?','Turkish visa and entry ban: what we handle')
+    : isTanimaLandingPage
     ? familyLawText('Was wir im Tanıma-Verfahren übernehmen', 'Tanıma ve Tenfiz sürecinde neler yapıyoruz', 'What we handle in the Tanıma process')
     : isStrafrechtLandingPage
       ? familyLawText('Strafrecht Türkei ohne Reise: Was wir prüfen', 'Türkiye’deki ceza dosyalarında nasıl yardımcı oluyoruz?', 'Turkish criminal law without travel: what we check')
@@ -1321,7 +1506,9 @@ export function ServiceDetail() {
     : isForderungsvollstreckungLandingPage
       ? familyLawText('Forderungsvollstreckung Türkei: Titel, Vermögen und Sicherung', 'Türkiye’de alacak tahsili: başlık, mal varlığı ve güvence', 'Debt enforcement in Turkey: title, assets and security')
       : familyLawText('Was wir für Sie tun', 'Sizin için neler yapıyoruz', 'What we handle for you');
-  const landingInlineLabel = isTanimaLandingPage
+  const landingInlineLabel = isVisaEntryLandingPage
+    ? familyLawText('Vor der Reise prüfen','Seyahatten önce kontrol','Check before you travel')
+    : isTanimaLandingPage
     ? familyLawText('Wichtig zu wissen', 'Bilmeniz gereken', 'Important to know')
     : isStrafrechtLandingPage
       ? familyLawText('Vor Reise prüfen', 'Seyahatten önce kontrol', 'Check before travel')
@@ -1332,7 +1519,9 @@ export function ServiceDetail() {
     : isForderungsvollstreckungLandingPage
       ? familyLawText('Erster Prüfpunkt', 'İlk kontrol noktası', 'First checkpoint')
       : 'Tanıma & Tenfiz';
-  const landingInlineTitle = isTanimaLandingPage
+  const landingInlineTitle = isVisaEntryLandingPage
+    ? familyLawText('Ein Einreiseverbot erfahren viele erst am Flughafen.','Giriş yasağı çoğu zaman havalimanında öğrenilir.','Many people learn of an entry ban only at the airport.')
+    : isTanimaLandingPage
     ? familyLawText('Ohne Tanıma gelten Sie in der Türkei weiter als verheiratet.', 'Tanıma yapılmadan Türkiye’de hâlâ evli görünebilirsiniz.', 'Without Tanıma, Turkey may still treat you as married.')
     : isStrafrechtLandingPage
       ? familyLawText('Reisen Sie nicht in die Türkei, bevor Haftbefehl oder Reiseverbot geprüft sind.', 'Tutuklama müzekkeresi veya seyahat yasağı kontrol edilmeden Türkiye’ye gitmeyin.', 'Do not travel to Turkey before arrest warrant or travel-ban risks are checked.')
@@ -1343,7 +1532,13 @@ export function ServiceDetail() {
     : isForderungsvollstreckungLandingPage
       ? familyLawText('Nicht jeder deutsche Titel kann in der Türkei per Tenfiz vollstreckt werden.', 'Her Alman başlığı Türkiye’de tenfiz yoluyla icra edilemez.', 'Not every foreign title can be enforced in Turkey through tenfiz.')
     : familyLawText('Scheidung Türkei anerkennen lassen?', 'Almanya’daki boşanma kararınız Türkiye’de geçerli mi?', 'Need your German divorce recognised in Turkey?');
-  const landingInlineText = isTanimaLandingPage
+  const landingInlineText = isVisaEntryLandingPage
+    ? familyLawText(
+        'Die Maßnahme wird nach Art. 10 YUKK in der Regel erst an der Grenze bekannt gegeben. Wer einen Hinweis auf ein Verbot oder eine frühere Überziehung hat, sollte den Status klären lassen, bevor er ein Ticket bucht – ab Bekanntgabe läuft die Klagefrist.',
+        'İşlem, YUKK m. 10 uyarınca kural olarak sınır kapısında tebliğ edilir. Yasak veya önceki bir süre ihlali ihtimali varsa, bilet almadan önce durumunuzu tespit ettirin — tebliğle birlikte dava süresi işlemeye başlar.',
+        'Under Art. 10 the measure is generally notified only at the border. If you have any indication of a ban or a past overstay, have your status clarified before booking a ticket — the court deadline starts running on notification.'
+      )
+    : isTanimaLandingPage
     ? familyLawText(
       'Das kann bei Wiederheirat, Erbschaft, Immobilien, Bankgeschäften oder Unterhalt zu echten Folgeproblemen führen. Genau deshalb ist die Anerkennung nicht nur Formalität, sondern oft der nächste notwendige Schritt nach der Scheidung in Deutschland.',
       'Bu durum yeniden evlenme, miras, taşınmaz devri, banka işlemleri veya nafaka konularında ciddi sorunlara yol açabilir. Bu nedenle Tanıma sadece formalite değil, Almanya’daki boşanmadan sonra çoğu zaman zorunlu adımdır.',
@@ -1378,7 +1573,9 @@ export function ServiceDetail() {
       'Almanya’da boşandıysanız, bu karar Türkiye’de kendiliğinden geçerli olmaz. Nüfus kaydınızın güncellenmesi veya nafaka ve mal paylaşımı hükümlerinin uygulanması için Tanıma, Tenfiz ya da birleşik bir süreç gerekebilir.',
       'If you were divorced in Germany, the decision is not automatically valid in Turkey. We check whether Tanıma, Tenfiz or a combined procedure is required.'
     );
-  const landingWhyTitle = isTanimaLandingPage
+  const landingWhyTitle = isVisaEntryLandingPage
+    ? familyLawText('Warum Mandanten uns bei Einreiseproblemen beauftragen','Müvekkiller giriş sorunlarında neden bizi tercih ediyor?','Why clients instruct us for entry problems')
+    : isTanimaLandingPage
     ? familyLawText('Warum Mandanten uns mit Tanıma & Tenfiz beauftragen', 'Müvekkiller Tanıma & Tenfiz için neden bizi tercih ediyor?', 'Why clients instruct us for Tanıma & Tenfiz')
     : isStrafrechtLandingPage
       ? familyLawText('Warum Mandanten uns bei türkischem Strafrecht beauftragen', 'Müvekkiller Türk ceza dosyalarında neden bizi tercih ediyor?', 'Why clients instruct us for Turkish criminal law')
@@ -1389,7 +1586,13 @@ export function ServiceDetail() {
     : isForderungsvollstreckungLandingPage
       ? familyLawText('Warum Gläubiger uns mit Türkei-Vollstreckung beauftragen', 'Alacaklılar Türkiye tahsilinde neden bizi tercih ediyor?', 'Why creditors instruct us for enforcement in Turkey')
     : familyLawText('Warum Mandanten aus ganz Deutschland uns beauftragen', 'Almanya genelindeki müvekkiller neden bizi tercih ediyor?', 'Why clients across Germany instruct us');
-  const landingWhyText = isTanimaLandingPage
+  const landingWhyText = isVisaEntryLandingPage
+    ? familyLawText(
+        'Bei Visum und Einreiseverbot entscheidet die Reihenfolge: erst Grund und Frist klären, dann den richtigen Weg wählen. Ein neuer Antrag ohne Kenntnis des Ablehnungsgrundes wiederholt meist nur das Ergebnis.',
+        'Vize ve giriş yasağında sıra belirleyicidir: önce sebep ve süre tespit edilir, sonra doğru yol seçilir. Ret gerekçesi bilinmeden yapılan yeni başvuru çoğu zaman aynı sonucu tekrarlar.',
+        'With visas and entry bans, sequence is decisive: establish the reason and the deadline first, then choose the right route. A fresh application made without knowing the ground of refusal usually just repeats the result.'
+      )
+    : isTanimaLandingPage
     ? familyLawText(
       'Bei der Anerkennung deutscher Scheidungen in der Türkei entscheidet saubere Dokumentenvorbereitung. Ein fehlender Nachweis oder eine falsche Übersetzung kann das Verfahren unnötig verzögern.',
       'Alman boşanma kararlarının Türkiye’de tanınmasında en kritik nokta belgelerin doğru hazırlanmasıdır. Eksik bir belge veya hatalı tercüme süreci gereksiz yere uzatabilir.',
@@ -1424,7 +1627,13 @@ export function ServiceDetail() {
       'Boşanma ve nafaka gibi Türkiye bağlantılı konularda önemli olan en yakın ofis değil, Türk hukuk sistemiyle doğrudan çalışabilmektir.',
       'For divorce and maintenance with a Turkey connection, the decisive factor is direct access to the Turkish legal system, not the nearest office.'
     );
-  const landingBottomText = isTanimaLandingPage
+  const landingBottomText = isVisaEntryLandingPage
+    ? familyLawText(
+        'Schildern Sie uns kurz per WhatsApp, was passiert ist, und nennen Sie das Datum des Bescheids. Wir prüfen, ob ein Antrag auf Aufhebung, ein neuer Visumantrag oder eine Klage in Betracht kommt.',
+        'Ne olduğunu ve işlemin tarihini WhatsApp üzerinden kısaca yazın. Kaldırma başvurusu, yeni vize başvurusu veya dava yollarından hangisinin uygun olduğunu değerlendirelim.',
+        'Tell us briefly on WhatsApp what happened and the date of the decision. We assess whether an application to lift the measure, a fresh visa application or court action is the right route.'
+      )
+    : isTanimaLandingPage
     ? familyLawText(
       'Schildern Sie kurz per WhatsApp, ob Ihre deutsche Scheidung in der Türkei noch nicht anerkannt ist. Wir prüfen die Unterlagen und sagen Ihnen, welcher Weg sinnvoll ist.',
       'Almanya’daki boşanmanızın Türkiye’de tanınıp tanınmadığını WhatsApp üzerinden kısaca anlatın. Belgelerinizi inceleyip hangi yolun uygun olduğunu söyleyelim.',
@@ -1459,7 +1668,9 @@ export function ServiceDetail() {
       'Durumunuzu WhatsApp üzerinden kısaca anlatın. Boşanma, nafaka veya Tanıma & Tenfiz konusunda size nasıl yardımcı olabileceğimizi değerlendirelim.',
       'Briefly describe your situation on WhatsApp. We will assess whether and how we can support you with divorce, maintenance or Tanıma & Tenfiz.'
     );
-  const landingWhatsappLabel = isTanimaLandingPage
+  const landingWhatsappLabel = isVisaEntryLandingPage
+    ? familyLawText('Fall per WhatsApp schildern','Durumunuzu WhatsApp’tan anlatın','Describe your case on WhatsApp')
+    : isTanimaLandingPage
     ? familyLawText('Jetzt per WhatsApp anfragen', 'WhatsApp’tan bilgi alın', 'Ask on WhatsApp')
     : isStrafrechtLandingPage
       ? familyLawText('Strafrecht-Fall per WhatsApp schildern', 'Ceza dosyasını WhatsApp’tan anlatın', 'Describe the criminal case')
@@ -1595,7 +1806,14 @@ export function ServiceDetail() {
           {/* Header Section - High Prestige */}
           {isFamilyLawLandingPage ? (
             <section className="relative left-1/2 -ml-[50vw] w-screen min-h-[620px] md:min-h-[680px] mb-20 overflow-hidden bg-[#F7F5F0]">
-              {isVollmachtLandingPage ? (
+              {isVisaEntryLandingPage ? (
+                <img
+                  className="absolute inset-0 h-full w-full object-cover object-center"
+                  src={servicesBackground}
+                  alt=""
+                  aria-hidden="true"
+                />
+              ) : isVollmachtLandingPage ? (
                 <img
                   className="absolute inset-0 h-full w-full object-cover object-center"
                   src={vekaletnameHero}

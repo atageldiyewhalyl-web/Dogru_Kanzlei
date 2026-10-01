@@ -56,9 +56,15 @@ export const serviceRelatedPosts: Record<string, string[]> = {
     "zwangsvollstreckung-tuerkei-forderungen-aus-deutschland",
   ],
   migrationsrecht: [
+    "turkiye-giris-yasagi-vize-reddi",
     "hagb-einbuergerung-deutschland-tuerkei",
     "mavi-kart-haklari-rehberi",
     "tuerkischer-notar-deutschland",
+  ],
+  "visum-einreise-tuerkei": [
+    "turkiye-giris-yasagi-vize-reddi",
+    "turkiyede-hakkimda-yakalama-karari-var-mi",
+    "vollmacht-fuer-die-tuerkei-leitfaden",
   ],
   "rechtsgutachten-tuerkisches-recht": [
     "almanya-turkiye-miras-hukuku-rehberi",

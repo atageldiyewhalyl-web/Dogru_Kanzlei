@@ -43,7 +43,7 @@ const PROPERTY_PARTITION_AUCTION_BLOG_SLUG_DE = "12-justizpaket-erbengemeinschaf
 type BlogProductCTAPlacement = 'intro' | 'comparison' | 'service_types' | 'bottom' | 'sticky';
 
 type BlogProductFunnel = {
-  service: 'vekaletname' | 'tanima_tenfiz' | 'debt_enforcement' | 'inheritance_tax' | 'property_partition_auction' | 'divorce_property' | 'pension_rights' | 'inheritance_participation' | 'inheritance_certificate' | 'arrest_warrant';
+  service: 'vekaletname' | 'tanima_tenfiz' | 'debt_enforcement' | 'inheritance_tax' | 'property_partition_auction' | 'divorce_property' | 'pension_rights' | 'inheritance_participation' | 'inheritance_certificate' | 'arrest_warrant' | 'visa_entry';
   slugDE: string;
   slugTR: string;
   duration: string;
@@ -57,6 +57,14 @@ const vekaletnameFunnel: BlogProductFunnel = {
   slugTR: 'almanya-da-vekaletname-cikarma-rehberi',
   duration: '20 dakika',
   campaign: 'vekaletname_whatsapp_form',
+};
+
+const visaEntryFunnel: BlogProductFunnel = {
+  service: 'visa_entry',
+  slugDE: 'einreiseverbot-tuerkei-aufheben-visum-abgelehnt',
+  slugTR: 'turkiye-giris-yasagi-vize-reddi-almanya',
+  duration: '20 dakika',
+  campaign: 'visa_entry_whatsapp_form',
 };
 
 const arrestWarrantFunnel: BlogProductFunnel = {
@@ -661,7 +669,107 @@ function getArrestWarrantFunnelCopy(language: string) {
   };
 }
 
+function getVisaEntryFunnelCopy(language: string) {
+  if (language === 'de') {
+    return {
+      duration: 'Direkter Kontakt',
+      serviceName: 'Türkei-Visum & Einreiseverbot',
+      leadSituation: 'Ich habe ein Problem mit der Einreise in die Türkei (Visum abgelehnt / Einreiseverbot / an der Grenze zurückgewiesen) und möchte klären lassen, was sich tun lässt.',
+      introEyebrow: 'DIREKTER WHATSAPP-KONTAKT',
+      introTitle: 'Einreiseverbot oder Visum für die Türkei abgelehnt?',
+      introBody: 'Schreiben Sie uns direkt per WhatsApp. Wir klären, welche Maßnahme vorliegt, worauf sie gestützt ist und welche Frist läuft.',
+      introButton: 'WhatsApp Anfrage starten',
+      durationChip: 'Direkter Kontakt',
+      formChip: 'WhatsApp Vorab-Formular',
+      comparisonTitle: 'Visumfrei heißt nicht einreiseberechtigt. Lassen Sie den Grund klären.',
+      comparisonBody: 'Auch visumfreie Reisende können nach Art. 7 YUKK zurückgewiesen werden. Welcher Weg passt, hängt davon ab, welche Maßnahme im System vermerkt ist.',
+      serviceTypesTitle: 'Die Frist läuft ab Bekanntgabe – nicht ab Ihrer Entscheidung',
+      serviceTypesBody: '60 Tage für die Anfechtungsklage, nur 7 Tage gegen eine Abschiebungsentscheidung. Schildern Sie uns den Vorfall und das Datum; wir ordnen ein, ob Antrag oder Klage in Betracht kommt.',
+      serviceTypesButton: 'Fall per WhatsApp prüfen',
+      bottomEyebrow: 'Done-for-you Einreise-Klärung',
+      bottomTitle: 'Wir klären Ihr Einreiseproblem mit der Türkei – von Deutschland aus',
+      bottomBody: 'Über das kurze WhatsApp Formular schildern Sie den Vorfall. Hasan Doğru klärt Grund und Frist bei den türkischen Behörden, stellt den Antrag auf Aufhebung und führt, wenn nötig, die Klage vor dem türkischen Verwaltungsgericht persönlich.',
+      includedTitle: 'Was übernommen wird',
+      includedItems: [
+        'Klärung von Grund, Sperrvermerk und laufender Frist bei den türkischen Behörden',
+        'Antrag auf Aufhebung oder befristete Einreiseerlaubnis nach Art. 9 Abs. 6 YUKK',
+        'Anfechtungsklage und Antrag auf Aussetzung der Vollziehung vor dem Verwaltungsgericht',
+      ],
+      trustLine: 'Av. Hasan Doğru · Türkisches Verwaltungsrecht · Mannheim & Ankara',
+      stickyTitle: 'Einreiseverbot Türkei prüfen',
+      stickySubtitle: 'WhatsApp Vorab-Formular',
+      stickyButton: 'WhatsApp',
+      chips: ['Visum', 'Einreiseverbot', 'Tahdit Kodu', 'Anfechtungsklage', 'UYAP'],
+    };
+  }
+
+  if (language === 'en') {
+    return {
+      duration: 'Direct Contact',
+      serviceName: 'Turkey visa & entry ban',
+      leadSituation: 'I have a problem entering Turkey (visa refused / entry ban / turned back at the border) and would like to find out what can be done.',
+      introEyebrow: 'DIRECT WHATSAPP CONTACT',
+      introTitle: 'Turkish visa refused or entry ban imposed?',
+      introBody: 'Text us directly on WhatsApp. We establish which measure exists, what it is based on and which deadline is running.',
+      introButton: 'Start WhatsApp request',
+      durationChip: 'Direct Contact',
+      formChip: 'WhatsApp intake form',
+      comparisonTitle: 'Visa-exempt does not mean entitled to enter. Have the reason established.',
+      comparisonBody: 'Visa-exempt travellers can also be turned back under Art. 7 of Law No. 6458. The right route depends on which measure has been recorded.',
+      serviceTypesTitle: 'The deadline runs from notification — not from when you decide to act',
+      serviceTypesBody: '60 days for an annulment action, only 7 days against a deportation decision. Tell us what happened and the date; we assess whether an application or court action is the right route.',
+      serviceTypesButton: 'Check your case via WhatsApp',
+      bottomEyebrow: 'Done-for-you entry clearance',
+      bottomTitle: 'We resolve your Turkish entry problem — from Germany',
+      bottomBody: 'Use the short WhatsApp intake form to describe what happened. Hasan Doğru establishes the reason and the deadline with the Turkish authorities, applies to have the measure lifted and, where necessary, conducts the action before the Turkish administrative court personally.',
+      includedTitle: 'What we handle',
+      includedItems: [
+        'Establishing the reason, the restriction code and the running deadline with the Turkish authorities',
+        'Application to lift the ban or for time-limited entry under Art. 9(6) of Law No. 6458',
+        'Annulment action and request to suspend enforcement before the administrative court',
+      ],
+      trustLine: 'Av. Hasan Doğru · Turkish administrative law · Mannheim & Ankara',
+      stickyTitle: 'Check a Turkish entry ban',
+      stickySubtitle: 'WhatsApp intake form',
+      stickyButton: 'WhatsApp',
+      chips: ['Visa', 'Entry ban', 'Tahdit code', 'Annulment action', 'UYAP'],
+    };
+  }
+
+  return {
+    duration: 'Direkt İletişim',
+    serviceName: 'Türkiye vizesi ve giriş yasağı',
+    leadSituation: 'Türkiye’ye girişte bir sorun yaşıyorum (vize reddi / giriş yasağı / sınırdan geri çevrilme) ve neler yapılabileceğini öğrenmek istiyorum.',
+    introEyebrow: 'DİREKT WHATSAPP İLETİŞİMİ',
+    introTitle: 'Türkiye vizeniz reddedildi veya giriş yasağınız mı var?',
+    introBody: 'Bize doğrudan WhatsApp’tan yazın. Hangi işlemin bulunduğunu, dayanağını ve işleyen süreyi tespit ediyoruz.',
+    introButton: 'WhatsApp formunu aç',
+    durationChip: 'Direkt İletişim',
+    formChip: 'WhatsApp ön bilgi formu',
+    comparisonTitle: 'Vize muafiyeti giriş hakkı demek değildir. Sebebi tespit ettirin.',
+    comparisonBody: 'Vizeden muaf yolcular da YUKK m. 7 uyarınca geri çevrilebilir. Doğru yol, sistemde hangi işlemin kayıtlı olduğuna bağlıdır.',
+    serviceTypesTitle: 'Süre tebliğle başlar — harekete geçmeye karar verdiğiniz gün değil',
+    serviceTypesBody: 'İptal davası için 60 gün, sınır dışı kararına karşı yalnızca 7 gün. Olayı ve tarihi bize yazın; başvuru mu dava mı uygun, değerlendirelim.',
+    serviceTypesButton: 'Dosyanızı WhatsApp’tan değerlendirelim',
+    bottomEyebrow: 'Done-for-you giriş sorunu çözümü',
+    bottomTitle: 'Türkiye’ye giriş sorununuzu Almanya’dan çözüyoruz',
+    bottomBody: 'Kısa WhatsApp formuyla olayı iletin. Hasan Doğru Türk makamları nezdinde sebebi ve süreyi tespit eder, kaldırma başvurusunu yapar ve gerektiğinde idare mahkemesindeki davayı bizzat yürütür.',
+    includedTitle: 'Hizmete dahil olanlar',
+    includedItems: [
+      'Sebebin, tahdit kodunun ve işleyen sürenin Türk makamları nezdinde tespiti',
+      'YUKK m. 9/6 uyarınca kaldırma veya süreli giriş izni başvurusu',
+      'İdare mahkemesinde iptal davası ve yürütmenin durdurulması talebi',
+    ],
+    trustLine: 'Av. Hasan Doğru · Türk idare hukuku · Mannheim & Ankara',
+    stickyTitle: 'Giriş yasağı sorgusu',
+    stickySubtitle: 'WhatsApp ön bilgi formu',
+    stickyButton: 'WhatsApp',
+    chips: ['Vize', 'Giriş yasağı', 'Tahdit kodu', 'İptal davası', 'UYAP'],
+  };
+}
+
 function getBlogProductFunnelCopy(funnel: BlogProductFunnel, language: string) {
+  if (funnel.service === 'visa_entry') return getVisaEntryFunnelCopy(language);
   if (funnel.service === 'arrest_warrant') return getArrestWarrantFunnelCopy(language);
   if (funnel.service === 'tanima_tenfiz') return getTanimaTenfizFunnelCopy(language);
   if (funnel.service === 'debt_enforcement') return getDebtEnforcementFunnelCopy(language);
@@ -787,6 +895,38 @@ function getProductHookCopy(funnel: BlogProductFunnel, language: string) {
         ? (language === 'en' ? 'Turkish inheritance law · Mannheim & Ankara' : language === 'de' ? 'Türkisches Erbrecht · Mannheim & Ankara' : 'Türk miras hukuku · Mannheim & Ankara')
         : (language === 'en' ? 'Turkish family law · Mannheim & Ankara' : language === 'de' ? 'Türkisches Familienrecht · Mannheim & Ankara' : 'Türk aile hukuku · Mannheim & Ankara'),
     };
+  }
+
+  if (funnel.service === 'visa_entry') {
+    return language === 'de'
+      ? {
+          lead: 'Ein abgelehntes Visum oder ein Einreiseverbot für die Türkei ist ein Verwaltungsakt – und lässt sich überprüfen. Dieser Ratgeber zeigt, was das türkische Recht vorsieht, welche Fristen laufen und wie sich das Verfahren von Deutschland aus führen lässt.',
+          bullets: [
+            'Visum, Zurückweisung, Einreiseverbot: Welche Maßnahme liegt vor – und worauf ist sie gestützt?',
+            '60 Tage für die Klage, nur 7 Tage bei einer Abschiebung: Welche Frist für Sie gilt',
+            'Antrag auf Aufhebung oder Klage vor dem Verwaltungsgericht: Welcher Weg wann passt',
+          ],
+          trust: 'Av. Hasan Doğru · Türkisches Verwaltungsrecht · Mannheim & Ankara',
+        }
+      : language === 'en'
+      ? {
+          lead: 'A refused visa or an entry ban for Turkey is an administrative decision — and it can be reviewed. This guide shows what Turkish law provides, which deadlines apply and how the matter can be handled from Germany.',
+          bullets: [
+            'Visa, refusal at the border, entry ban: which measure exists — and what is it based on?',
+            '60 days to sue, only 7 days against deportation: which deadline applies to you',
+            'Application to lift the measure or action before the administrative court: which route fits when',
+          ],
+          trust: 'Av. Hasan Doğru · Turkish administrative law · Mannheim & Ankara',
+        }
+      : {
+          lead: 'Vize reddi veya Türkiye’ye giriş yasağı bir idari işlemdir ve hukuki denetime açıktır. Bu rehber, Türk hukukunun ne öngördüğünü, hangi sürelerin işlediğini ve sürecin Almanya’dan nasıl yürütüldüğünü anlatır.',
+          bullets: [
+            'Vize, geri çevrilme, giriş yasağı: hangi işlem var ve neye dayanıyor?',
+            'Dava için 60 gün, sınır dışı kararında yalnızca 7 gün: sizin için hangi süre geçerli?',
+            'Kaldırma başvurusu mu, idare mahkemesinde dava mı: hangi yol ne zaman uygun?',
+          ],
+          trust: 'Av. Hasan Doğru · Türk idare hukuku · Mannheim & Ankara',
+        };
   }
 
   if (funnel.service === 'arrest_warrant') {
@@ -1272,7 +1412,13 @@ function BlogStickyBookingCTA({ funnel, language }: { funnel: BlogProductFunnel;
     copy.stickyTitle;
 
   const headline =
-    funnel.service === 'arrest_warrant'
+    funnel.service === 'visa_entry'
+      ? language === 'de'
+        ? 'Einreiseverbot oder Visumablehnung klären: Grund, Frist und Rechtsweg.'
+        : language === 'en'
+          ? 'Clarify a Turkish entry ban or visa refusal: reason, deadline and remedy.'
+          : 'Giriş yasağını veya vize reddini netleştirelim: sebep, süre ve hukuki yol.'
+      : funnel.service === 'arrest_warrant'
       ? language === 'de'
         ? 'Haftbefehl Türkei vor der Reise prüfen: UYAP-Abfrage, Reichweite und İstinabe.'
         : language === 'en'
@@ -1311,7 +1457,13 @@ function BlogStickyBookingCTA({ funnel, language }: { funnel: BlogProductFunnel;
             : 'Her şeyi sizin için hallediyoruz, size sadece imzalamak kalıyor!';
 
   const sub =
-    funnel.service === 'arrest_warrant'
+    funnel.service === 'visa_entry'
+      ? language === 'de'
+        ? 'Visum, Tahdit Kodu, Antrag auf Aufhebung, Anfechtungsklage und UYAP'
+        : language === 'en'
+          ? 'Visa, tahdit code, application to lift, annulment action and UYAP'
+          : 'Vize, tahdit kodu, kaldırma başvurusu, iptal davası ve UYAP'
+      : funnel.service === 'arrest_warrant'
       ? language === 'de'
         ? 'GBT, e-Devlet, UYAP-Anwaltsportal, İstinabe und Interpol Red Notice'
         : language === 'en'
@@ -3297,12 +3449,19 @@ export function BlogPost() {
     tr: ['turkiyede-hakkimda-yakalama-karari-var-mi'],
     en: ['arrest-warrant-turkey-before-you-travel'],
   };
+  const visaEntryProductSlugs = {
+    de: ['einreiseverbot-tuerkei-aufheben-visum-abgelehnt'],
+    tr: ['turkiye-giris-yasagi-vize-reddi-almanya'],
+    en: ['turkey-entry-ban-visa-refusal-from-germany'],
+  };
   const matchesLocalizedSlug = (slugs: { de: string[]; tr: string[]; en: string[] }) => (
     (language === 'de' && slugs.de.includes(post.slugDE)) ||
     (language === 'tr' && slugs.tr.includes(post.slugTR)) ||
     (language === 'en' && slugs.en.includes(post.slugEN ?? ''))
   );
-  const productFunnel = matchesLocalizedSlug(arrestWarrantProductSlugs)
+  const productFunnel = matchesLocalizedSlug(visaEntryProductSlugs)
+    ? { ...visaEntryFunnel, image: post.image }
+    : matchesLocalizedSlug(arrestWarrantProductSlugs)
     ? { ...arrestWarrantFunnel, image: post.image }
     : matchesLocalizedSlug(vekaletnameProductSlugs)
     ? { ...vekaletnameFunnel, image: vekaletnameImg }
@@ -4287,6 +4446,9 @@ export function BlogPost() {
                           'Grenzüberschreitende Erbscheinsfragen mit der Doğru Kanzlei',
                           'Sınır Ötesi Mirasçılık Belgesi Süreçlerinde Doğru Kanzlei ile',
                           'Cross-Border Certificate Questions with Doğru Kanzlei',
+                          'Welche Rechtsmittel es gibt',
+                          'Hangi hukuki yollar var?',
+                          'What remedies exist',
                         ].includes(headingText)
                       ) {
                         renderedElements.push(
