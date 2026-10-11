@@ -5,6 +5,7 @@ import type { ReactNode } from "react";
 import { useLanguage } from "../context/LanguageContext";
 import { useSEO, SITE_URL } from "../hooks/useSEO";
 import { blogPosts } from "../data/blogPosts";
+import type { BlogPost as BlogPostType } from "../data/blogPosts";
 import { SchemaOrg } from "../components/SchemaOrg";
 import { FAQItem } from "../components/FAQItem";
 import { openWhatsAppLeadCapture } from "../components/WhatsAppLeadCapture";
@@ -43,7 +44,7 @@ const PROPERTY_PARTITION_AUCTION_BLOG_SLUG_DE = "12-justizpaket-erbengemeinschaf
 type BlogProductCTAPlacement = 'intro' | 'comparison' | 'service_types' | 'bottom' | 'sticky';
 
 type BlogProductFunnel = {
-  service: 'vekaletname' | 'tanima_tenfiz' | 'debt_enforcement' | 'inheritance_tax' | 'property_partition_auction' | 'divorce_property' | 'pension_rights' | 'inheritance_participation' | 'inheritance_certificate' | 'arrest_warrant' | 'visa_entry';
+  service: 'vekaletname' | 'tanima_tenfiz' | 'debt_enforcement' | 'inheritance_tax' | 'property_partition_auction' | 'divorce_property' | 'pension_rights' | 'inheritance_participation' | 'inheritance_certificate' | 'arrest_warrant' | 'visa_entry' | 'file_check' | 'social_media_case';
   slugDE: string;
   slugTR: string;
   duration: string;
@@ -57,6 +58,22 @@ const vekaletnameFunnel: BlogProductFunnel = {
   slugTR: 'almanya-da-vekaletname-cikarma-rehberi',
   duration: '20 dakika',
   campaign: 'vekaletname_whatsapp_form',
+};
+
+const fileCheckFunnel: BlogProductFunnel = {
+  service: 'file_check',
+  slugDE: 'tuerkei-verfahren-gegen-mich-pruefen',
+  slugTR: 'turkiyede-hakkimda-dosya-var-mi-almanyadan-ogrenme',
+  duration: '20 dakika',
+  campaign: 'file_check_whatsapp_form',
+};
+
+const socialMediaCaseFunnel: BlogProductFunnel = {
+  service: 'social_media_case',
+  slugDE: 'social-media-beitrag-strafverfahren-tuerkei',
+  slugTR: 'sosyal-medya-paylasimi-turkiye-dosya-almanya',
+  duration: '20 dakika',
+  campaign: 'social_media_case_whatsapp_form',
 };
 
 const visaEntryFunnel: BlogProductFunnel = {
@@ -669,6 +686,204 @@ function getArrestWarrantFunnelCopy(language: string) {
   };
 }
 
+function getFileCheckFunnelCopy(language: string) {
+  if (language === 'de') {
+    return {
+      duration: 'Direkter Kontakt',
+      serviceName: 'Aktenprüfung Türkei',
+      leadSituation: 'Ich möchte prüfen lassen, ob in der Türkei ein Ermittlungs- oder Strafverfahren oder ein Haftbefehl gegen mich besteht.',
+      introEyebrow: 'DIREKTER WHATSAPP-KONTAKT',
+      introTitle: 'Läuft in der Türkei ein Verfahren gegen Sie?',
+      introBody: 'Schreiben Sie uns direkt per WhatsApp. Wir fragen Ihre Akte über das UYAP-Anwaltsportal ab und klären Stand, Vorwurf und einen möglichen Haftbefehl.',
+      introButton: 'WhatsApp Anfrage starten',
+      durationChip: 'Direkter Kontakt',
+      formChip: 'WhatsApp Vorab-Formular',
+      comparisonTitle: 'e-Devlet zeigt nicht alles. Lassen Sie die Akte richtig prüfen.',
+      comparisonBody: 'Ermittlungsverfahren und Haftbefehle erscheinen im Bürgerportal in der Regel nicht. Verlässlich ist die Abfrage durch einen in der Türkei zugelassenen Anwalt.',
+      serviceTypesTitle: 'Gibt es eine Akte, lässt sich vieles von Deutschland aus regeln',
+      serviceTypesBody: 'Akteneinsicht, Rechtsbehelf, Vernehmung per SEGBİS oder İstinabe, Aufhebung eines Haftbefehls – welcher Weg passt, hängt von Stadium und Vorwurf ab.',
+      serviceTypesButton: 'Akte per WhatsApp prüfen',
+      bottomEyebrow: 'Done-for-you Aktenprüfung',
+      bottomTitle: 'Wir klären, ob in der Türkei etwas gegen Sie läuft – bevor Sie reisen',
+      bottomBody: 'Über das kurze WhatsApp Formular schildern Sie Ihre Situation. Hasan Doğru fragt die Akte über UYAP ab, sieht sie bei Bedarf bei Staatsanwaltschaft oder Gericht ein und führt die nächsten Schritte per Vollmacht.',
+      includedTitle: 'Was übernommen wird',
+      includedItems: [
+        'Abfrage über das UYAP-Anwaltsportal und bei der Staatsanwaltschaft',
+        'Einschätzung zu Stadium, Vorwurf, Fristen und einem möglichen Haftbefehl',
+        'Rechtsbehelf, Aussage und Antrag auf Aufhebung eines Haftbefehls',
+      ],
+      trustLine: 'Av. Hasan Doğru · Türkisches Strafrecht · Mannheim & Ankara',
+      stickyTitle: 'Akte in der Türkei prüfen',
+      stickySubtitle: 'WhatsApp Vorab-Formular',
+      stickyButton: 'WhatsApp',
+      chips: ['UYAP', 'e-Devlet', 'Haftbefehl', 'SEGBİS', 'İstinabe'],
+    };
+  }
+
+  if (language === 'en') {
+    return {
+      duration: 'Direct Contact',
+      serviceName: 'File check in Turkey',
+      leadSituation: 'I would like to check whether there is an investigation, a criminal case or an arrest warrant against me in Turkey.',
+      introEyebrow: 'DIRECT WHATSAPP CONTACT',
+      introTitle: 'Is there a case against you in Turkey?',
+      introBody: 'Text us directly on WhatsApp. We check your file through the UYAP Lawyer Portal and clarify its stage, the allegation and any arrest warrant.',
+      introButton: 'Start WhatsApp request',
+      durationChip: 'Direct Contact',
+      formChip: 'WhatsApp intake form',
+      comparisonTitle: 'e-Devlet does not show everything. Have the file checked properly.',
+      comparisonBody: 'Investigations and arrest warrants generally do not appear on the citizen portal. The reliable route is a check by a lawyer admitted in Turkey.',
+      serviceTypesTitle: 'If there is a file, much can be handled from abroad',
+      serviceTypesBody: 'File inspection, objection, questioning via SEGBİS or istinabe, lifting a warrant — which route fits depends on the stage and the allegation.',
+      serviceTypesButton: 'Check your file via WhatsApp',
+      bottomEyebrow: 'Done-for-you file check',
+      bottomTitle: 'We find out whether anything is pending against you in Turkey — before you travel',
+      bottomBody: 'Use the short WhatsApp intake form to describe your situation. Hasan Doğru checks the file through UYAP, inspects it at the prosecutor’s office or court where needed, and handles the next steps under a power of attorney.',
+      includedTitle: 'What we handle',
+      includedItems: [
+        'Check through the UYAP Lawyer Portal and with the prosecutor’s office',
+        'Assessment of stage, allegation, deadlines and any arrest warrant',
+        'Objection, statement and application to lift a warrant',
+      ],
+      trustLine: 'Av. Hasan Doğru · Turkish criminal law · Mannheim & Ankara',
+      stickyTitle: 'Check your file in Turkey',
+      stickySubtitle: 'WhatsApp intake form',
+      stickyButton: 'WhatsApp',
+      chips: ['UYAP', 'e-Devlet', 'Arrest warrant', 'SEGBİS', 'İstinabe'],
+    };
+  }
+
+  return {
+    duration: 'Direkt İletişim',
+    serviceName: 'Dosya sorgusu',
+    leadSituation: 'Türkiye’de hakkımda soruşturma, dava veya yakalama kararı olup olmadığını öğrenmek istiyorum.',
+    introEyebrow: 'DİREKT WHATSAPP İLETİŞİMİ',
+    introTitle: 'Türkiye’de hakkınızda bir dosya var mı?',
+    introBody: 'Bize doğrudan WhatsApp’tan yazın. Dosyanızı UYAP Avukat Portalı üzerinden sorguluyor; aşamasını, suç vasfını ve olası bir yakalama kararını netleştiriyoruz.',
+    introButton: 'WhatsApp formunu aç',
+    durationChip: 'Direkt İletişim',
+    formChip: 'WhatsApp ön bilgi formu',
+    comparisonTitle: 'e-Devlet her şeyi göstermez. Dosyanızı doğru şekilde sorgulatın.',
+    comparisonBody: 'Soruşturmalar ve yakalama kararları vatandaş portalında kural olarak görünmez. Güvenilir yol, Türkiye’de yetkili bir avukatın sorgusudur.',
+    serviceTypesTitle: 'Dosya varsa, birçok şey Almanya’dan çözülebilir',
+    serviceTypesBody: 'Dosya inceleme, itiraz, SEGBİS veya istinabe ile ifade, yakalama kararının kaldırılması — hangi yolun uygun olduğu aşamaya ve suç vasfına bağlıdır.',
+    serviceTypesButton: 'Dosyanızı WhatsApp’tan sorgulatın',
+    bottomEyebrow: 'Done-for-you dosya sorgusu',
+    bottomTitle: 'Seyahatten önce hakkınızda bir dosya olup olmadığını netleştiriyoruz',
+    bottomBody: 'Kısa WhatsApp formuyla durumunuzu iletin. Hasan Doğru dosyayı UYAP üzerinden sorgular, gerektiğinde savcılık veya mahkeme dosyasını inceler ve sonraki adımları vekâletle yürütür.',
+    includedTitle: 'Hizmete dahil olanlar',
+    includedItems: [
+      'UYAP Avukat Portalı ve savcılık nezdinde sorgu',
+      'Aşama, suç vasfı, süreler ve olası yakalama kararına ilişkin değerlendirme',
+      'İtiraz, ifade ve yakalama kararının kaldırılması talebi',
+    ],
+    trustLine: 'Av. Hasan Doğru · Türk ceza hukuku · Mannheim & Ankara',
+    stickyTitle: 'Dosya sorgusu',
+    stickySubtitle: 'WhatsApp ön bilgi formu',
+    stickyButton: 'WhatsApp',
+    chips: ['UYAP', 'e-Devlet', 'Yakalama kararı', 'SEGBİS', 'İstinabe'],
+  };
+}
+
+function getSocialMediaCaseFunnelCopy(language: string) {
+  if (language === 'de') {
+    return {
+      duration: 'Direkter Kontakt',
+      serviceName: 'Social-Media-Verfahren Türkei',
+      leadSituation: 'Ich befürchte, dass wegen eines Social-Media-Beitrags in der Türkei ein Verfahren gegen mich läuft, und möchte das prüfen lassen.',
+      introEyebrow: 'DIREKTER WHATSAPP-KONTAKT',
+      introTitle: 'Ein Beitrag aus Deutschland, eine Akte in der Türkei?',
+      introBody: 'Schreiben Sie uns direkt per WhatsApp. Wir klären, ob ein Verfahren besteht, welcher Vorwurf erhoben wird und ob ein Haftbefehl vorliegt.',
+      introButton: 'WhatsApp Anfrage starten',
+      durationChip: 'Direkter Kontakt',
+      formChip: 'WhatsApp Vorab-Formular',
+      comparisonTitle: 'Gelöscht ist nicht erledigt. Lassen Sie den Stand prüfen.',
+      comparisonBody: 'Der Staatsanwaltschaft liegen meist Screenshot und Plattformauskunft vor. Ob eine Akte besteht, zeigt nur die anwaltliche Abfrage.',
+      serviceTypesTitle: 'Verteidigung ohne Reise in die Türkei',
+      serviceTypesBody: 'Identität, Inhalt, Vorsatz und Verfahrensfragen wie die Genehmigung des Justizministers – und bei einem Haftbefehl dessen Aufhebung per SEGBİS oder İstinabe.',
+      serviceTypesButton: 'Fall per WhatsApp prüfen',
+      bottomEyebrow: 'Done-for-you Verteidigung',
+      bottomTitle: 'Wir klären Ihre Akte und führen die Verteidigung – von Deutschland aus',
+      bottomBody: 'Über das kurze WhatsApp Formular schildern Sie den Sachverhalt. Hasan Doğru prüft die Akte, bereitet die Verteidigung vor und führt Aussage, Rechtsbehelf und den Antrag auf Aufhebung eines Haftbefehls per Vollmacht.',
+      includedTitle: 'Was übernommen wird',
+      includedItems: [
+        'Abfrage von Akte, Vorwurf, Stadium und einem möglichen Haftbefehl',
+        'Verteidigung zu Identität, Inhalt und Verfahrensfragen',
+        'Vernehmung per SEGBİS oder İstinabe und Aufhebung eines Haftbefehls',
+      ],
+      trustLine: 'Av. Hasan Doğru · Türkisches Strafrecht · Mannheim & Ankara',
+      stickyTitle: 'Social-Media-Verfahren prüfen',
+      stickySubtitle: 'WhatsApp Vorab-Formular',
+      stickyButton: 'WhatsApp',
+      chips: ['Art. 299 TCK', 'Art. 301 TCK', 'Art. 7/2 TMK', 'UYAP', 'SEGBİS'],
+    };
+  }
+
+  if (language === 'en') {
+    return {
+      duration: 'Direct Contact',
+      serviceName: 'Social media case in Turkey',
+      leadSituation: 'I am worried there may be a case against me in Turkey because of a social media post and would like it checked.',
+      introEyebrow: 'DIRECT WHATSAPP CONTACT',
+      introTitle: 'A post from abroad, a file in Turkey?',
+      introBody: 'Text us directly on WhatsApp. We establish whether there is a case, what the allegation is and whether there is an arrest warrant.',
+      introButton: 'Start WhatsApp request',
+      durationChip: 'Direct Contact',
+      formChip: 'WhatsApp intake form',
+      comparisonTitle: 'Deleted is not done. Have the status checked.',
+      comparisonBody: 'The prosecutor usually already has the screenshot and the platform’s reply. Only a lawyer’s check shows whether a file exists.',
+      serviceTypesTitle: 'A defence without travelling to Turkey',
+      serviceTypesBody: 'Identity, content, intent and procedural points such as the Minister’s permission — and, if there is a warrant, lifting it via SEGBİS or istinabe.',
+      serviceTypesButton: 'Check your case via WhatsApp',
+      bottomEyebrow: 'Done-for-you defence',
+      bottomTitle: 'We clarify your file and conduct the defence — from abroad',
+      bottomBody: 'Use the short WhatsApp intake form to describe what happened. Hasan Doğru checks the file, prepares the defence and handles the statement, objection and application to lift any warrant under a power of attorney.',
+      includedTitle: 'What we handle',
+      includedItems: [
+        'Checking the file, allegation, stage and any arrest warrant',
+        'Defence on identity, content and procedure',
+        'Questioning via SEGBİS or istinabe and lifting a warrant',
+      ],
+      trustLine: 'Av. Hasan Doğru · Turkish criminal law · Mannheim & Ankara',
+      stickyTitle: 'Check a social media case',
+      stickySubtitle: 'WhatsApp intake form',
+      stickyButton: 'WhatsApp',
+      chips: ['TCK 299', 'TCK 301', 'TMK 7/2', 'UYAP', 'SEGBİS'],
+    };
+  }
+
+  return {
+    duration: 'Direkt İletişim',
+    serviceName: 'Sosyal medya dosyası',
+    leadSituation: 'Bir sosyal medya paylaşımı nedeniyle Türkiye’de hakkımda dosya olabileceğinden endişe ediyorum ve bunu sorgulatmak istiyorum.',
+    introEyebrow: 'DİREKT WHATSAPP İLETİŞİMİ',
+    introTitle: 'Almanya’dan bir paylaşım, Türkiye’de bir dosya?',
+    introBody: 'Bize doğrudan WhatsApp’tan yazın. Dosya olup olmadığını, suç vasfını ve yakalama kararı bulunup bulunmadığını netleştiriyoruz.',
+    introButton: 'WhatsApp formunu aç',
+    durationChip: 'Direkt İletişim',
+    formChip: 'WhatsApp ön bilgi formu',
+    comparisonTitle: 'Silmek, kapanmak demek değildir. Durumu sorgulatın.',
+    comparisonBody: 'Savcılığın elinde çoğu zaman ekran görüntüsü ve platform cevabı bulunur. Dosya olup olmadığını ancak avukat sorgusu gösterir.',
+    serviceTypesTitle: 'Türkiye’ye gitmeden savunma',
+    serviceTypesBody: 'Kimlik, içerik, kast ve Adalet Bakanı izni gibi usul konuları — yakalama kararı varsa SEGBİS veya istinabe ile kaldırılması.',
+    serviceTypesButton: 'Dosyanızı WhatsApp’tan değerlendirelim',
+    bottomEyebrow: 'Done-for-you savunma',
+    bottomTitle: 'Dosyanızı netleştiriyor ve savunmanızı Almanya’dan yürütüyoruz',
+    bottomBody: 'Kısa WhatsApp formuyla olayı iletin. Hasan Doğru dosyayı sorgular, savunmayı hazırlar; ifade, itiraz ve yakalama kararının kaldırılması taleplerini vekâletle yürütür.',
+    includedTitle: 'Hizmete dahil olanlar',
+    includedItems: [
+      'Dosya, suç vasfı, aşama ve olası yakalama kararının sorgusu',
+      'Kimlik, içerik ve usul ekseninde savunma',
+      'SEGBİS veya istinabe ile ifade ve yakalama kararının kaldırılması',
+    ],
+    trustLine: 'Av. Hasan Doğru · Türk ceza hukuku · Mannheim & Ankara',
+    stickyTitle: 'Sosyal medya dosyası sorgusu',
+    stickySubtitle: 'WhatsApp ön bilgi formu',
+    stickyButton: 'WhatsApp',
+    chips: ['TCK 299', 'TCK 301', 'TMK 7/2', 'UYAP', 'SEGBİS'],
+  };
+}
+
 function getVisaEntryFunnelCopy(language: string) {
   if (language === 'de') {
     return {
@@ -770,6 +985,8 @@ function getVisaEntryFunnelCopy(language: string) {
 
 function getBlogProductFunnelCopy(funnel: BlogProductFunnel, language: string) {
   if (funnel.service === 'visa_entry') return getVisaEntryFunnelCopy(language);
+  if (funnel.service === 'file_check') return getFileCheckFunnelCopy(language);
+  if (funnel.service === 'social_media_case') return getSocialMediaCaseFunnelCopy(language);
   if (funnel.service === 'arrest_warrant') return getArrestWarrantFunnelCopy(language);
   if (funnel.service === 'tanima_tenfiz') return getTanimaTenfizFunnelCopy(language);
   if (funnel.service === 'debt_enforcement') return getDebtEnforcementFunnelCopy(language);
@@ -895,6 +1112,70 @@ function getProductHookCopy(funnel: BlogProductFunnel, language: string) {
         ? (language === 'en' ? 'Turkish inheritance law · Mannheim & Ankara' : language === 'de' ? 'Türkisches Erbrecht · Mannheim & Ankara' : 'Türk miras hukuku · Mannheim & Ankara')
         : (language === 'en' ? 'Turkish family law · Mannheim & Ankara' : language === 'de' ? 'Türkisches Familienrecht · Mannheim & Ankara' : 'Türk aile hukuku · Mannheim & Ankara'),
     };
+  }
+
+  if (funnel.service === 'file_check') {
+    return language === 'de'
+      ? {
+          lead: 'Ob in der Türkei ein Verfahren gegen Sie läuft, lässt sich vor der Reise klären – ohne sich irgendwo zu stellen. Dieser Ratgeber zeigt drei Wege, was jeder anzeigt und was danach möglich ist.',
+          bullets: [
+            'e-Devlet, UYAP-Abfrage, Verwaltungsregister: Was zeigt welcher Weg – und was nicht?',
+            'Berufung, Revision, Wiedereinsetzung: Welche Fristen mit der Kenntnis zu laufen beginnen',
+            'Haftbefehl, Ausreisesperre, Wehrdienst: Was vor der Einreise geklärt sein sollte',
+          ],
+          trust: 'Av. Hasan Doğru · Türkisches Strafrecht · Mannheim & Ankara',
+        }
+      : language === 'en'
+      ? {
+          lead: 'Whether there is a case against you in Turkey can be checked before you travel — without handing yourself in. This guide shows three ways, what each one shows and what can be done next.',
+          bullets: [
+            'e-Devlet, a lawyer’s UYAP check, administrative records: what each shows — and what it doesn’t',
+            'Appeal, appeal on points of law, reinstatement: which deadlines start running once you know',
+            'Arrest warrant, exit ban, military service: what to clarify before entering Turkey',
+          ],
+          trust: 'Av. Hasan Doğru · Turkish criminal law · Mannheim & Ankara',
+        }
+      : {
+          lead: 'Türkiye’de hakkınızda bir dosya olup olmadığı, seyahatten önce ve kimseye teslim olmadan öğrenilebilir. Bu rehber üç yolu, her birinin neyi gösterdiğini ve sonrasında ne yapılabileceğini anlatır.',
+          bullets: [
+            'e-Devlet, avukatın UYAP sorgusu, idari kayıtlar: hangisi neyi gösterir, neyi göstermez?',
+            'İstinaf, temyiz, eski hâle getirme: öğrenmeyle birlikte hangi süreler işler?',
+            'Yakalama kararı, çıkış yasağı, askerlik: girişten önce neler netleşmeli?',
+          ],
+          trust: 'Av. Hasan Doğru · Türk ceza hukuku · Mannheim & Ankara',
+        };
+  }
+
+  if (funnel.service === 'social_media_case') {
+    return language === 'de'
+      ? {
+          lead: 'Ein Social-Media-Beitrag aus Deutschland kann in der Türkei zu einem Strafverfahren führen – oft unbemerkt, bis zur Einreise. Dieser Ratgeber zeigt die Tatbestände, die Zuständigkeitsfrage und die Verteidigung.',
+          bullets: [
+            'Art. 299, 301, 216 TCK und Art. 7/2 TMK: Welche Tatbestände bei Beiträgen in Betracht kommen',
+            'Genehmigung des Justizministers, Zuständigkeit, Verjährung: Wo die Verteidigung ansetzt',
+            'Abfrage, Vollmacht, SEGBİS: Was sich von Deutschland aus tun lässt',
+          ],
+          trust: 'Av. Hasan Doğru · Türkisches Strafrecht · Mannheim & Ankara',
+        }
+      : language === 'en'
+      ? {
+          lead: 'A social media post made abroad can lead to criminal proceedings in Turkey — often unnoticed until you travel. This guide covers the offences, the question of jurisdiction and the defence.',
+          bullets: [
+            'TCK Arts. 299, 301, 216 and TMK Art. 7(2): which offences a post can fall under',
+            'Minister’s permission, jurisdiction, limitation: where the defence comes in',
+            'Check, power of attorney, SEGBİS: what can be done from abroad',
+          ],
+          trust: 'Av. Hasan Doğru · Turkish criminal law · Mannheim & Ankara',
+        }
+      : {
+          lead: 'Almanya’dan yapılan bir sosyal medya paylaşımı Türkiye’de ceza dosyasına dönüşebilir — çoğu zaman seyahate kadar fark edilmeden. Bu rehber suç tiplerini, yargı yetkisini ve savunmayı anlatır.',
+          bullets: [
+            'TCK m. 299, 301, 216 ve TMK m. 7/2: paylaşımlar hangi suç tiplerine girebilir?',
+            'Adalet Bakanı izni, yetki, zamanaşımı: savunma nerede devreye girer?',
+            'Sorgu, vekâletname, SEGBİS: Almanya’dan neler yapılabilir?',
+          ],
+          trust: 'Av. Hasan Doğru · Türk ceza hukuku · Mannheim & Ankara',
+        };
   }
 
   if (funnel.service === 'visa_entry') {
@@ -1273,6 +1554,33 @@ function BlogProductCTAMid({
   );
 }
 
+// Inline player for posts that carry a `video`. Placed where the body contains a
+// line `[[video]]`. preload="none" + poster: nothing is downloaded until play.
+function BlogVideo({ video, title, language }: { video: NonNullable<BlogPostType['video']>; title: string; language: string }) {
+  const caption =
+    language === 'de' ? 'Video auf Türkisch · Übersetzung unten'
+      : language === 'en' ? 'Video in Turkish · translation below'
+      : 'Video röportaj';
+  return (
+    <figure className="my-12 mx-auto w-full max-w-[380px]">
+      <video
+        className="w-full rounded-xl bg-[#0F2417] shadow-[0_20px_60px_rgba(15,36,23,0.25)]"
+        src={video.src}
+        poster={video.poster}
+        controls
+        playsInline
+        preload="none"
+        width={video.width}
+        height={video.height}
+        aria-label={title}
+      />
+      <figcaption className="mt-3 text-center font-sans text-[11px] font-bold uppercase tracking-[0.18em] text-[#8B6E2A]">
+        {caption}
+      </figcaption>
+    </figure>
+  );
+}
+
 function BlogDoneForYouBanner({ funnel, language }: { funnel: BlogProductFunnel; language: string }) {
   const headline =
     language === 'de'
@@ -1412,7 +1720,19 @@ function BlogStickyBookingCTA({ funnel, language }: { funnel: BlogProductFunnel;
     copy.stickyTitle;
 
   const headline =
-    funnel.service === 'visa_entry'
+    funnel.service === 'file_check'
+      ? language === 'de'
+        ? 'Klären, ob in der Türkei eine Akte oder ein Haftbefehl gegen Sie besteht.'
+        : language === 'en'
+          ? 'Find out whether there is a file or an arrest warrant against you in Turkey.'
+          : 'Türkiye’de hakkınızda dosya veya yakalama kararı olup olmadığını netleştirelim.'
+      : funnel.service === 'social_media_case'
+      ? language === 'de'
+        ? 'Social-Media-Beitrag, Akte in der Türkei: Stand prüfen und verteidigen.'
+        : language === 'en'
+          ? 'A social media post, a file in Turkey: check the status and defend.'
+          : 'Sosyal medya paylaşımı, Türkiye’de dosya: durumu sorgulayıp savunmayı yürütelim.'
+      : funnel.service === 'visa_entry'
       ? language === 'de'
         ? 'Einreiseverbot oder Visumablehnung klären: Grund, Frist und Rechtsweg.'
         : language === 'en'
@@ -1457,7 +1777,19 @@ function BlogStickyBookingCTA({ funnel, language }: { funnel: BlogProductFunnel;
             : 'Her şeyi sizin için hallediyoruz, size sadece imzalamak kalıyor!';
 
   const sub =
-    funnel.service === 'visa_entry'
+    funnel.service === 'file_check'
+      ? language === 'de'
+        ? 'UYAP-Abfrage, Akteneinsicht, Haftbefehl, SEGBİS und İstinabe'
+        : language === 'en'
+          ? 'UYAP check, file inspection, arrest warrant, SEGBİS and istinabe'
+          : 'UYAP sorgusu, dosya inceleme, yakalama kararı, SEGBİS ve istinabe'
+      : funnel.service === 'social_media_case'
+      ? language === 'de'
+        ? 'Art. 299, 301 TCK, Art. 7/2 TMK, Aktenabfrage und Verteidigung'
+        : language === 'en'
+          ? 'TCK 299, 301, TMK 7/2, file check and defence'
+          : 'TCK 299, 301, TMK 7/2, dosya sorgusu ve savunma'
+      : funnel.service === 'visa_entry'
       ? language === 'de'
         ? 'Visum, Tahdit Kodu, Antrag auf Aufhebung, Anfechtungsklage und UYAP'
         : language === 'en'
@@ -3405,9 +3737,9 @@ export function BlogPost() {
     en: ['power-of-attorney-in-turkish', 'turkish-notary-in-germany', 'tuerkische-vollmacht-kosten-2026-en', 'tuerkische-vollmacht-ohne-konsulat-en', 'turkish-power-of-attorney-photo-requirements', 'turkish-title-deed-transfer-power-of-attorney', 'power-of-attorney-turkey-guide'],
   };
   const tanimaTenfizProductSlugs = {
-    de: [TANIMA_TENFIZ_RECOGNITION_2026_BLOG_SLUG_DE],
-    tr: ['almanya-bosanma-turkiye-tanima-tenfiz-2026-rehber'],
-    en: ['german-divorce-turkey-recognition-guide-2026'],
+    de: [TANIMA_TENFIZ_RECOGNITION_2026_BLOG_SLUG_DE, 'video-interview-scheidung-tuerkei-anerkennung'],
+    tr: ['almanya-bosanma-turkiye-tanima-tenfiz-2026-rehber', 'almanyada-bosandi-turkiyede-hala-evli-video-roportaj'],
+    en: ['german-divorce-turkey-recognition-guide-2026', 'video-interview-german-divorce-turkey-recognition'],
   };
   const debtEnforcementProductSlugs = {
     de: ['deutsches-urteil-tuerkei-vollstrecken-tanima-tenfiz'],
@@ -3449,6 +3781,16 @@ export function BlogPost() {
     tr: ['turkiyede-hakkimda-yakalama-karari-var-mi'],
     en: ['arrest-warrant-turkey-before-you-travel'],
   };
+  const fileCheckProductSlugs = {
+    de: ['tuerkei-verfahren-gegen-mich-pruefen'],
+    tr: ['turkiyede-hakkimda-dosya-var-mi-almanyadan-ogrenme'],
+    en: ['is-there-a-case-against-me-in-turkey'],
+  };
+  const socialMediaCaseProductSlugs = {
+    de: ['social-media-beitrag-strafverfahren-tuerkei'],
+    tr: ['sosyal-medya-paylasimi-turkiye-dosya-almanya'],
+    en: ['social-media-post-criminal-case-turkey'],
+  };
   const visaEntryProductSlugs = {
     de: ['einreiseverbot-tuerkei-aufheben-visum-abgelehnt'],
     tr: ['turkiye-giris-yasagi-vize-reddi-almanya'],
@@ -3459,7 +3801,11 @@ export function BlogPost() {
     (language === 'tr' && slugs.tr.includes(post.slugTR)) ||
     (language === 'en' && slugs.en.includes(post.slugEN ?? ''))
   );
-  const productFunnel = matchesLocalizedSlug(visaEntryProductSlugs)
+  const productFunnel = matchesLocalizedSlug(fileCheckProductSlugs)
+    ? { ...fileCheckFunnel, image: post.image }
+    : matchesLocalizedSlug(socialMediaCaseProductSlugs)
+    ? { ...socialMediaCaseFunnel, image: post.image }
+    : matchesLocalizedSlug(visaEntryProductSlugs)
     ? { ...visaEntryFunnel, image: post.image }
     : matchesLocalizedSlug(arrestWarrantProductSlugs)
     ? { ...arrestWarrantFunnel, image: post.image }
@@ -3670,6 +4016,22 @@ export function BlogPost() {
       
       <SchemaOrg data={articleSchema} id="schema-article" />
       {faqSchema && <SchemaOrg data={faqSchema} id="schema-faq" />}
+      {post.video && (
+        <SchemaOrg
+          id="schema-video"
+          data={{
+            '@context': 'https://schema.org',
+            '@type': 'VideoObject',
+            name: title,
+            description: language === 'de' ? (post.metaDescriptionDE || post.excerptDE) : language === 'tr' ? (post.metaDescriptionTR || post.excerptTR) : (post.metaDescriptionEN || post.excerptEN),
+            thumbnailUrl: `${SITE_URL}${post.video.poster}`,
+            contentUrl: `${SITE_URL}${post.video.src}`,
+            uploadDate: post.video.uploadDate,
+            duration: post.video.duration,
+            inLanguage: 'tr',
+          }}
+        />
+      )}
       
       {/* Full-Bleed Hero Section */}
       {/* Full-Bleed Hero Section */}
@@ -3804,6 +4166,13 @@ export function BlogPost() {
                   while (i < lines.length) {
                     const line = lines[i];
                     const trimmedLine = line.trim();
+                    if (trimmedLine === '[[video]]') {
+                      if (post.video) {
+                        renderedElements.push(<BlogVideo key={`video-${i}`} video={post.video} title={title} language={language} />);
+                      }
+                      i++;
+                      continue;
+                    }
                     let insertWhatsAppIntroAfterElement = false;
 
                     if (explicitFaqs?.length && isFaqHeading(trimmedLine)) {
@@ -4449,6 +4818,15 @@ export function BlogPost() {
                           'Welche Rechtsmittel es gibt',
                           'Hangi hukuki yollar var?',
                           'What remedies exist',
+                          'Dosya varsa sırada ne var',
+                          'Wenn es eine Akte gibt: die nächsten Schritte',
+                          'If there is a file: what comes next',
+                          'Savunmanın ana eksenleri',
+                          'Die Hauptlinien der Verteidigung',
+                          'The main lines of defence',
+                          'Röportajın tam metni',
+                          'Das Interview im Wortlaut (Übersetzung aus dem Türkischen)',
+                          'Full transcript (translated from Turkish)',
                         ].includes(headingText)
                       ) {
                         renderedElements.push(

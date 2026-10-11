@@ -31,6 +31,7 @@ export const serviceRelatedPosts: Record<string, string[]> = {
     "tapu-vollmacht-immobilie-tuerkei-uebertragung",
   ],
   strafrecht: [
+    "turkiyede-hakkimda-dosya-var-mi",
     "turkiyede-hakkimda-yakalama-karari-var-mi",
     "tuerkisches-strafrecht-anwalt-deutschland",
     "drogendelikt-tuerkei-strafverteidigung-deutschland",

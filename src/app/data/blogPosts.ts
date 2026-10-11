@@ -37,6 +37,9 @@ import { fotografliVekaletnameFormfehlerPost, tapuDevirVekaletnamesiPost } from 
 import { arrestWarrantCheckPost } from "./arrestWarrantCheckPost";
 import { germanDivorceTurkishStatusPost } from "./germanDivorceTurkishStatusPost";
 import { visaEntryBanTurkeyPost } from "./visaEntryBanTurkeyPost";
+import { fileCheckTurkeyPost } from "./fileCheckTurkeyPost";
+import { socialMediaCaseTurkeyPost } from "./socialMediaCaseTurkeyPost";
+import { videoInterviewTanimaPost } from "./videoInterviewTanimaPost";
 import { vekaletnameRehberiPillarPost } from "./vekaletnameRehberiPillarPost";
 import { tanimaTenfizAlacakPost } from "./tanimaTenfizAlacakPost";
 import { legacyBlogPosts } from "./legacyBlogPosts";
@@ -110,6 +113,16 @@ export interface BlogPost {
   ctaDescriptionDE?: string;
   ctaDescriptionTR?: string;
   ctaDescriptionEN?: string;
+  // Optional inline video, rendered where the body contains a line `[[video]]`.
+  // src/poster are imported asset URLs; duration is ISO 8601 (e.g. "PT2M18S").
+  video?: {
+    src: string;
+    poster: string;
+    duration: string;
+    uploadDate: string;
+    width: number;
+    height: number;
+  };
 }
 
 
@@ -1153,6 +1166,9 @@ const hiddenBlogSlugs = new Set([
 ]);
 
 const allBlogPosts: BlogPost[] = [
+  videoInterviewTanimaPost,
+  socialMediaCaseTurkeyPost,
+  fileCheckTurkeyPost,
   visaEntryBanTurkeyPost,
   germanDivorceTurkishStatusPost,
   arrestWarrantCheckPost,
