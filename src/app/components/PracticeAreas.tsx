@@ -78,12 +78,18 @@ export function PracticeAreas() {
               {t("practice_title")} <br /> <em className="italic font-normal">{t("practice_subtitle")}</em>
             </h2>
           </div>
-          <Link
-            to={paths.services}
-            className="group inline-flex items-center gap-3 font-sans text-[10px] font-bold tracking-[0.2em] text-[#1C3829] uppercase border-b border-black/10 pb-1 hover:border-[#8B6E2A] transition-all"
-          >
-            {t("practice_view_all")} <MoveRight size={14} className="group-hover:translate-x-1 transition-transform" />
-          </Link>
+          <div className="flex flex-col items-start gap-8 md:items-end">
+            <p className="max-w-[380px] border-l-2 border-[#8B6E2A] pl-4 font-sans text-[14px] leading-6 text-[#5f665f]">
+              <strong className="block font-semibold text-[#1C3829]">{t("practice_scope_title")}</strong>
+              {t("practice_scope_body")}
+            </p>
+            <Link
+              to={paths.services}
+              className="group inline-flex items-center gap-3 font-sans text-[10px] font-bold tracking-[0.2em] text-[#1C3829] uppercase border-b border-black/10 pb-1 hover:border-[#8B6E2A] transition-all"
+            >
+              {t("practice_view_all")} <MoveRight size={14} className="group-hover:translate-x-1 transition-transform" />
+            </Link>
+          </div>
         </div>
 
         {/* Bento Grid - 4 Column Logic */}

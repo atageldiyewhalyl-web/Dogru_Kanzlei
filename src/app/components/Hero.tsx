@@ -63,21 +63,21 @@ export function Hero() {
         <div className="mx-auto flex w-full max-w-[720px] flex-col justify-center items-center text-center xl:col-span-6 xl:col-start-7 xl:mx-0 xl:max-w-[620px] xl:items-end xl:text-right 2xl:col-span-5 2xl:col-start-8 2xl:max-w-[680px] z-20 relative">
           <div className="absolute -inset-x-4 -inset-y-6 bg-[#1C3829]/48 backdrop-blur-[2px] shadow-[0_24px_80px_rgba(0,0,0,0.24)] -z-10 sm:-inset-x-8 sm:-inset-y-8 xl:-inset-y-10 xl:bg-[#1C3829]/18 xl:backdrop-blur-[3px] xl:shadow-[0_24px_90px_rgba(0,0,0,0.16)]" aria-hidden="true" />
           {/* Pre-title */}
-          <div className="flex w-full items-center justify-center mb-8 xl:justify-end">
+          <div className="flex w-full items-center justify-center mb-5 xl:mb-8 xl:justify-end">
             <span className="font-sans text-[11px] font-bold tracking-[0.22em] text-[#D2A848] uppercase drop-shadow-[0_2px_10px_rgba(0,0,0,0.85)]">
               Mannheim · Ankara
             </span>
           </div>
 
           {/* Main Title - Corporate Identity Focused */}
-          <h1 className="w-full font-serif text-[clamp(3rem,13vw,5.2rem)] xl:text-[clamp(4.6rem,5vw,6rem)] font-medium leading-[1] text-white mb-8 tracking-tight text-center xl:text-right drop-shadow-[0_4px_22px_rgba(0,0,0,0.9)]">
+          <h1 className="w-full font-serif text-[clamp(3rem,13vw,5.2rem)] xl:text-[clamp(4.6rem,5vw,6rem)] font-medium leading-[1] text-white mb-5 xl:mb-8 tracking-tight text-center xl:text-right drop-shadow-[0_4px_22px_rgba(0,0,0,0.9)]">
             <span className="block text-white/95 mb-3 font-normal text-[clamp(1.5rem,7vw,2.5rem)] xl:text-[clamp(2.35rem,2.7vw,3.1rem)] tracking-normal drop-shadow-[0_3px_16px_rgba(0,0,0,0.85)]">
               {t("hero_title_pre")}
             </span>{" "}
             {t("hero_title_main")}
           </h1>
 
-          <div className="-mt-2 mb-8 w-full max-w-[620px] mx-auto xl:ml-auto xl:mr-0">
+          <div className="-mt-1 mb-5 xl:-mt-2 xl:mb-8 w-full max-w-[620px] mx-auto xl:ml-auto xl:mr-0">
             <p className="font-sans text-[12px] md:text-[13px] font-bold leading-relaxed tracking-[0.08em] text-white/88 drop-shadow-[0_3px_14px_rgba(0,0,0,0.9)]">
               Ankara Barosu · Rechtsanwaltskammer Karlsruhe (§ 207 BRAO)
             </p>
@@ -86,19 +86,15 @@ export function Hero() {
             </p>
           </div>
 
-          <div className="w-24 h-[2px] bg-[#8B6E2A] mb-8 mx-auto xl:mr-0 xl:ml-auto" />
+          <div className="w-24 h-[2px] bg-[#8B6E2A] mb-5 xl:mb-8 mx-auto xl:mr-0 xl:ml-auto" />
 
           {/* Subtitle */}
-          <p className="w-full max-w-[620px] font-serif text-2xl md:text-[32px] xl:text-[clamp(1.7rem,1.8vw,2rem)] font-normal text-white leading-snug mb-8 mx-auto text-center xl:ml-auto xl:text-right drop-shadow-[0_3px_16px_rgba(0,0,0,0.85)]">
+          <p className="w-full max-w-[620px] font-serif text-2xl md:text-[32px] xl:text-[clamp(1.7rem,1.8vw,2rem)] font-normal text-white leading-snug mb-5 xl:mb-7 mx-auto text-center xl:ml-auto xl:text-right drop-shadow-[0_3px_16px_rgba(0,0,0,0.85)]">
             {t("hero_subtitle")}
           </p>
 
-          <p className="font-sans text-[17px] xl:text-[clamp(0.95rem,1.08vw,1.06rem)] font-semibold text-white leading-relaxed w-full max-w-[620px] mb-6 mx-auto text-center text-pretty xl:ml-auto xl:text-right drop-shadow-[0_3px_14px_rgba(0,0,0,0.9)]">
+          <p className="font-sans text-[15px] xl:text-[clamp(0.95rem,1.08vw,1.06rem)] font-medium text-white/90 leading-relaxed w-full max-w-[560px] mb-7 xl:mb-10 mx-auto text-center text-pretty xl:mr-0 xl:ml-auto xl:text-right drop-shadow-[0_3px_14px_rgba(0,0,0,0.9)]">
             {t("hero_description")}
-          </p>
-
-          <p className="w-full max-w-[620px] mb-12 mx-auto border-l-2 border-[#D2A848] bg-black/25 px-4 py-3 text-left font-sans text-[14px] font-semibold leading-relaxed text-white text-pretty drop-shadow-[0_2px_10px_rgba(0,0,0,0.85)] xl:ml-auto xl:mr-0 xl:border-l-0 xl:border-r-2 xl:text-right">
-            {t("hero_scope")}
           </p>
 
           {/* CTA Buttons - Dark Green/Gold Blocks */}
