@@ -441,20 +441,22 @@ Schildern Sie kurz per WhatsApp, wofür die Vollmacht in der Türkei benötigt w
     slugTR: "goc-hukuku",
     slugEN: "migration-law",
     icon: Plane,
-    title: "Migrationsrecht",
-    titleTR: "Göç Hukuku",
-    titleEN: "Migration Law",
-    descriptionEN: "Planning a move to Turkey, considering retirement there, or have questions about your Mavi Kart? Turkish migration law is complex — especially for people of Turkish origin with a German passport or dual citizenship.",
-    seoTitleEN: "Turkish Migration Law Mannheim | Mavi Kart & Residence in Turkey | Doğru Kanzlei",
-    seoDescriptionEN: "Residence permit, Mavi Kart and relocation to Turkey — legally guided from Mannheim. Avukat Hasan Doğru advises on Turkish migration law.",
-    expertiseTitleEN: "Why Doğru Kanzlei for Turkish Migration Law?",
-    contentEN: `Migration Law — Turkish Migration Law from Mannheim
+    title: "Aufenthalt & Rückkehr Türkei",
+    titleTR: "Türkiye'de İkamet ve Geri Dönüş",
+    titleEN: "Residence & Return to Turkey",
+    descriptionEN: "Planning a move to Turkey, considering retirement there, or have questions about your Mavi Kart? We advise on the Turkish side: residence permits in Turkey, Mavi Kart status and Turkish citizenship. We do not advise on German residence law or the Ausländerbehörde.",
+    seoTitleEN: "Residence in Turkey & Return | İkamet İzni, Mavi Kart | Doğru Kanzlei",
+    seoDescriptionEN: "Turkish residence permits, Mavi Kart and moving back to Turkey, under Turkish law, from Mannheim. No advice on German residence law or the Ausländerbehörde.",
+    expertiseTitleEN: "Why Doğru Kanzlei for residence matters in Turkey?",
+    contentEN: `Residence & Return to Turkey — Turkish Law from Mannheim
 
-Turkish Migration Law & Residence in Turkey
+Residence Permits, Mavi Kart & Turkish Citizenship
 
-Are you planning a move to Turkey, considering spending your retirement there, or do you have questions about your Mavi Kart? Turkish migration law is complex — especially for people of Turkish origin with a German passport or dual citizenship, who need to know their rights and obligations in both countries.
+Are you planning a move to Turkey, considering spending your retirement there, or do you have questions about your Mavi Kart? These are questions of Turkish law — and they matter especially for people of Turkish origin with a German passport or dual citizenship.
 
-Avukat Hasan Doğru advises exclusively on Turkish law and helps people from Mannheim, Heidelberg and the entire Rhine-Neckar region with all migration law questions involving Turkey — competent and without unnecessary bureaucracy.
+Avukat Hasan Doğru advises exclusively on Turkish law and helps people from Mannheim, Heidelberg and the entire Rhine-Neckar region with residence and citizenship matters on the Turkish side.
+
+Not covered: German residence law — residence titles, the Ausländerbehörde, family reunification in Germany — and naturalisation in Germany. For these, please contact a lawyer admitted in Germany.
 
 What we do for you:
 
@@ -467,15 +469,15 @@ Those who want to work or set up a company in Turkey need the relevant Turkish p
 - Mavi Kart — Rights and Obligations
 The Mavi Kart (Blue Card) is an important instrument for people of Turkish origin who have renounced Turkish citizenship. It provides certain rights in Turkey — property ownership, inheritance, freedom of travel — without formally holding Turkish citizenship. We provide comprehensive advice on your rights and obligations as a Mavi Kart holder.
 
-- Legally Secure Relocation to Turkey
-Moving from Germany to Turkey is not just a logistical but also a legal challenge — deregistration in Germany, tax consequences, establishing residence in Turkey, pension matters. We accompany the entire legal process of your relocation and ensure everything is handled correctly.
+- Moving Back to Turkey: the Turkish Side
+When you move from Germany to Turkey, we handle the Turkish-law side: establishing residence, your İkamet İzni or citizenship status, and property or power-of-attorney matters in Turkey. German formalities such as deregistration, German tax or German pension questions are for the German authorities or your tax adviser.
 
-- Dual Citizenship & Naturalisation in Turkey
-Questions about dual citizenship between Germany and Turkey, re-naturalisation in Turkey or loss of Turkish citizenship — we advise you on your options under Turkish nationality law.
+- Turkish Citizenship & Re-naturalisation
+Re-acquiring Turkish citizenship, losing or retaining it — we advise on your options under Turkish Citizenship Law No. 5901. Naturalisation in Germany is not part of our work.
 
-Why Doğru Kanzlei for Turkish Migration Law in Mannheim?
+Why Doğru Kanzlei for residence matters in Turkey?
 
-Migration law questions involving Turkey challenge many law firms — because they do not know Turkish law. Avukat Hasan Doğru does. As a member of the Ankara Bar and registered pursuant to § 207 BRAO, we advise exclusively on Turkish law — with direct access to Turkish authorities and institutions.
+Residence and citizenship questions on the Turkish side challenge many law firms — because they do not know Turkish law. Avukat Hasan Doğru does. As a member of the Ankara Bar and registered pursuant to § 207 BRAO, we advise exclusively on Turkish law — with direct access to Turkish authorities and institutions.
 
 What distinguishes us:
 - Turkish law only — specialised expertise
@@ -494,28 +496,30 @@ What distinguishes us:
       },
       {
         question: "What do I need to consider legally if I move from Germany to Turkey?",
-        answer: "In addition to deregistering in Germany, tax questions, establishing Turkish residence and pension matters need to be addressed. We accompany the entire legal process of your relocation."
+        answer: "On the Turkish side, the key points are establishing residence, the right residence or citizenship status and, where relevant, property or power-of-attorney matters in Turkey. We guide you through these. German matters such as deregistration, tax or pension are outside our advice."
       },
       {
         question: "Can I regain Turkish citizenship?",
         answer: "Under certain conditions, re-naturalisation in Turkey is possible — even if you have renounced Turkish citizenship. We assess your individual situation and advise you on the possibilities."
       }
     ],
-    seoTitleDE: "Migrationsrecht Mannheim | Mavi Kart Türkei | Doğru Kanzlei",
-    seoDescriptionDE: "Mavi Kart, Aufenthaltserlaubnis & Remigration Türkei — von Mannheim aus ohne Reise. Avukat Hasan Doğru berät zu allen Fragen des türkischen Migrationsrechts.",
-    seoTitleTR: "Türk Göç Hukuku Mannheim | Mavi Kart & Türkiye'de İkamet | Avukat Hasan Doğru",
-    seoDescriptionTR: "Mavi Kart, oturma izni veya Türkiye'ye dönüş — Mannheim'dan hukuki rehberlik. Seyahat etmeden tüm süreçleri yönetiyoruz. Şimdi bilgi alın.",
-    description: "Türkiye'ye taşınmayı planlıyor, emekliliğinizi orada geçirmek istiyor ya da Mavi Kart haklarınız hakkında sorularınız mı var? Türk göç hukuku karmaşıktır — özellikle Alman pasaportu taşıyan veya çift vatandaşlığa sahip Türk kökenli kişiler için, her iki ülkedeki hak ve yükümlülüklerini bilmek büyük önem taşır.",
-    descriptionDE: "Sie planen einen Umzug in die Türkei, möchten Ihren Ruhestand dort verbringen oder haben Fragen zu Ihrer Mavi Kart? Das türkische Migrationsrecht ist komplex — besonders für türkischstämmige Personen mit deutschem Pass oder Doppelstaatsbürgerschaft, die ihre Rechte und Pflichten in beiden Ländern kennen müssen.",
+    seoTitleDE: "Aufenthalt in der Türkei & Rückkehr | İkamet İzni, Mavi Kart | Doğru Kanzlei",
+    seoDescriptionDE: "İkamet İzni, Mavi Kart und Rückkehr in die Türkei nach türkischem Recht, von Mannheim aus. Keine Beratung zu deutschem Aufenthaltsrecht oder Ausländerbehörde.",
+    seoTitleTR: "Türkiye'de İkamet İzni ve Geri Dönüş | Mavi Kart | Avukat Hasan Doğru",
+    seoDescriptionTR: "Türkiye'de ikamet izni, Mavi Kart ve Türkiye'ye kesin dönüş, Türk hukukuna göre Mannheim'dan. Almanya'daki oturum izni işlemlerinde danışmanlık verilmez.",
+    description: "Türkiye'ye taşınmayı planlıyor, emekliliğinizi orada geçirmek istiyor ya da Mavi Kart haklarınız hakkında sorularınız mı var? Türkiye tarafındaki süreçlerde danışmanlık veriyoruz: Türkiye'de ikamet izni, Mavi Kart ve Türk vatandaşlığı. Almanya'daki oturum izni ve Ausländerbehörde işlemleri kapsamımız dışındadır.",
+    descriptionDE: "Sie planen einen Umzug in die Türkei, möchten Ihren Ruhestand dort verbringen oder haben Fragen zu Ihrer Mavi Kart? Wir beraten zur türkischen Seite: Aufenthaltserlaubnis in der Türkei (İkamet İzni), Mavi-Kart-Status und türkische Staatsangehörigkeit. Deutsches Aufenthaltsrecht und Fragen an die Ausländerbehörde gehören nicht dazu.",
     detail: "Mavi Kart & Vatandaşlık · İkamet İzinleri · Geri Dönüş",
-    detailDE: "Mavi Kart & Status · Aufenthaltstitel · Remigration",
-    content: `Göç Hukuku — Mannheim'da Türk Göç Hukuku
+    detailDE: "İkamet İzni · Mavi Kart · Rückkehr in die Türkei",
+    content: `Türkiye'de İkamet ve Geri Dönüş — Mannheim'dan Türk Hukuku
 
-Türk Göç Hukuku & Türkiye'de İkamet
+Türkiye'de İkamet İzni, Mavi Kart ve Türk Vatandaşlığı
 
-Türkiye'ye taşınmayı planlıyor, emekliliğinizi orada geçirmek istiyor ya da Mavi Kart haklarınız hakkında sorularınız mı var? Türk göç hukuku karmaşıktır — özellikle Alman pasaportu taşıyan veya çift vatandaşlığa sahip Türk kökenli kişiler için, her iki ülkedeki hak ve yükümlülüklerini bilmek büyük önem taşır.
+Türkiye'ye taşınmayı planlıyor, emekliliğinizi orada geçirmek istiyor ya da Mavi Kart haklarınız hakkında sorularınız mı var? Bunlar Türk hukukunun konularıdır ve özellikle Alman pasaportu taşıyan veya çift vatandaşlığa sahip Türk kökenli kişiler için önem taşır.
 
-Avukat Hasan Doğru yalnızca Türk hukuku alanında danışmanlık vermektedir ve Mannheim, Heidelberg ile tüm Rhein-Neckar bölgesinden Türkiye bağlantılı göç hukuku sorunlarında insanlara yardımcı olmaktadır — yetkin ve gereksiz bürokratik süreçler olmadan.
+Avukat Hasan Doğru yalnızca Türk hukuku alanında danışmanlık vermektedir ve Mannheim, Heidelberg ile tüm Rhein-Neckar bölgesinden kişilere Türkiye tarafındaki ikamet ve vatandaşlık konularında yardımcı olmaktadır.
+
+Kapsam dışı: Almanya'daki oturum hukuku (oturum izni, Ausländerbehörde, Almanya'ya aile birleşimi) ve Almanya'da vatandaşlığa geçiş. Bu konular için lütfen Almanya'da ruhsatlı bir avukata başvurun.
 
 Sizin için neler yapıyoruz:
 
@@ -528,15 +532,15 @@ Türkiye'de çalışmak veya şirket kurmak isteyenler için gerekli Türk izinl
 - Mavi Kart — Haklar ve Yükümlülükler
 Mavi Kart, Türk vatandaşlığından çıkan Türk kökenli kişiler için önemli bir araçtır. Resmi vatandaşlık olmaksızın Türkiye'de belirli haklar — taşınmaz edinme, miras, seyahat serbestisi — sağlar. Mavi Kart sahibi olarak hak ve yükümlülükleriniz konusunda kapsamlı danışmanlık veriyoruz.
 
-- Türkiye'ye Hukuki Güvenli Geri Dönüş
-Almanya'dan Türkiye'ye taşınmak yalnızca lojistik değil, aynı zamanda hukuki bir süreçtir — Almanya'dan çıkış kaydı, vergisel sonuçlar, Türkiye'de ikamet tesisi, emeklilik konuları. Geri dönüş sürecinin tüm hukuki aşamalarında size eşlik ediyor ve her şeyin doğru şekilde yürütülmesini sağlıyoruz.
+- Türkiye'ye Dönüş: Türkiye Tarafı
+Almanya'dan Türkiye'ye taşınırken Türk hukukuna ilişkin kısmı üstleniyoruz: Türkiye'de ikametin kurulması, ikamet izni veya vatandaşlık durumunuz, Türkiye'deki taşınmaz ve vekaletname işlemleri. Almanya'dan çıkış kaydı, Alman vergisi veya Alman emekliliği gibi konular Alman makamlarının ya da vergi danışmanınızın alanıdır.
 
-- Çift Vatandaşlık ve Türkiye'de Vatandaşlığa Alınma
-Almanya ile Türkiye arasındaki çift vatandaşlık soruları, Türkiye'ye yeniden vatandaşlık alımı veya Türk vatandaşlığının kaybı — Türk vatandaşlık hukukuna göre seçenekleriniz konusunda danışmanlık veriyoruz.
+- Türk Vatandaşlığı ve Yeniden Vatandaşlığa Alınma
+Türk vatandaşlığının yeniden kazanılması, kaybı veya korunması — 5901 sayılı Türk Vatandaşlığı Kanunu'na göre seçenekleriniz konusunda danışmanlık veriyoruz. Almanya'da vatandaşlığa geçiş işlemleri kapsamımız dışındadır.
 
-Mannheim'da Türk Göç Hukuku İçin Neden Doğru Kanzlei?
+Türkiye'de İkamet Konularında Neden Doğru Kanzlei?
 
-Türkiye bağlantılı göç hukuku soruları pek çok büroyu zorlar — çünkü Türk hukukunu bilmezler. Avukat Hasan Doğru bilir. Ankara Barosu üyesi ve § 207 BRAO kapsamında kayıtlı olarak yalnızca Türk hukuku alanında danışmanlık veriyor; Türk makam ve kurumlarına doğrudan erişimimiz bulunmaktadır.
+Türkiye tarafındaki ikamet ve vatandaşlık soruları pek çok büroyu zorlar — çünkü Türk hukukunu bilmezler. Avukat Hasan Doğru bilir. Ankara Barosu üyesi ve § 207 BRAO kapsamında kayıtlı olarak yalnızca Türk hukuku alanında danışmanlık veriyor; Türk makam ve kurumlarına doğrudan erişimimiz bulunmaktadır.
 
 Bizi farklı kılan:
 - Yalnızca Türk hukuku — uzman bilgi
@@ -544,13 +548,15 @@ Bizi farklı kılan:
 - Türkçe ve Almanca danışmanlık
 - Mannheim'da yüz yüze görüşme imkânı
 - Ankara'da ikinci ofis — Türkiye'deki makamlarla doğrudan temas`,
-    contentDE: `Göç Hukuku — Türkisches Migrationsrecht in Mannheim
+    contentDE: `Aufenthalt & Rückkehr in die Türkei — türkisches Recht aus Mannheim
 
-Türkisches Migrationsrecht & Aufenthalt in der Türkei
+Aufenthaltserlaubnis in der Türkei, Mavi Kart & türkische Staatsangehörigkeit
 
-Sie planen einen Umzug in die Türkei, möchten Ihren Ruhestand dort verbringen oder haben Fragen zu Ihrer Mavi Kart? Das türkische Migrationsrecht ist komplex — besonders für türkischstämmige Personen mit deutschem Pass oder Doppelstaatsbürgerschaft, die ihre Rechte und Pflichten in beiden Ländern kennen müssen.
+Sie planen einen Umzug in die Türkei, möchten Ihren Ruhestand dort verbringen oder haben Fragen zu Ihrer Mavi Kart? Das sind Fragen des türkischen Rechts — und sie betreffen besonders türkischstämmige Personen mit deutschem Pass oder Doppelstaatsbürgerschaft.
 
-Avukat Hasan Doğru berät ausschließlich im türkischen Recht und begleitet Menschen aus Mannheim, Heidelberg und dem gesamten Rhein-Neckar-Raum bei allen migrationsrechtlichen Fragen mit Türkeibezug — kompetent und ohne unnötige Bürokratie.
+Avukat Hasan Doğru berät ausschließlich im türkischen Recht und begleitet Menschen aus Mannheim, Heidelberg und dem gesamten Rhein-Neckar-Raum bei Aufenthalts- und Staatsangehörigkeitsfragen auf der türkischen Seite.
+
+Nicht unser Gebiet: deutsches Aufenthaltsrecht — Aufenthaltstitel, Ausländerbehörde, Familiennachzug nach Deutschland — und die Einbürgerung in Deutschland. Dafür wenden Sie sich bitte an eine in Deutschland zugelassene Rechtsanwältin oder einen Rechtsanwalt.
 
 Was wir für Sie tun:
 
@@ -563,15 +569,15 @@ Wer in der Türkei arbeiten oder ein Unternehmen gründen möchte, benötigt die
 - Mavi Kart — Rechte und Pflichten
 Die Mavi Kart (Blaue Karte) ist für türkischstämmige Personen, die die türkische Staatsbürgerschaft aufgegeben haben, ein wichtiges Instrument. Sie ermöglicht bestimmte Rechte in der Türkei — Grundbesitz, Erbschaft, Reisefreiheit — ohne die türkische Staatsbürgerschaft formell zu besitzen. Wir beraten Sie umfassend zu Ihren Rechten und Pflichten als Mavi-Kart-Inhaber.
 
-- Rechtssichere Remigration in die Türkei
-Ein Umzug von Deutschland in die Türkei ist nicht nur eine logistische, sondern auch eine rechtliche Herausforderung — Abmeldung in Deutschland, steuerliche Konsequenzen, Begründung des Wohnsitzes in der Türkei, Rentenangelegenheiten. Wir begleiten den gesamten rechtlichen Prozess Ihrer Remigration und sorgen dafür, dass alles korrekt abgewickelt wird.
+- Rückkehr in die Türkei: die türkische Seite
+Beim Umzug von Deutschland in die Türkei übernehmen wir die türkischrechtliche Seite: Begründung des Wohnsitzes in der Türkei, İkamet İzni oder Staatsangehörigkeitsstatus sowie Immobilien- und Vollmachtsfragen in der Türkei. Deutsche Formalitäten wie Abmeldung, deutsche Steuern oder deutsche Rente klären Sie bitte mit den deutschen Behörden oder Ihrer Steuerberatung.
 
-- Doppelte Staatsbürgerschaft & Einbürgerung in der Türkei
-Fragen zur doppelten Staatsbürgerschaft zwischen Deutschland und der Türkei, zur Wiedereinbürgerung in die Türkei oder zum Verlust der türkischen Staatsbürgerschaft — wir beraten Sie zu Ihren Optionen nach türkischem Staatsangehörigkeitsrecht.
+- Türkische Staatsangehörigkeit & Wiedereinbürgerung
+Wiedererwerb, Verlust oder Beibehaltung der türkischen Staatsangehörigkeit — wir beraten Sie zu Ihren Optionen nach dem türkischen Staatsangehörigkeitsgesetz Nr. 5901. Die Einbürgerung in Deutschland gehört nicht zu unserem Tätigkeitsbereich.
 
-Warum Doğru Kanzlei für türkisches Migrationsrecht in Mannheim?
+Warum Doğru Kanzlei für Aufenthaltsfragen in der Türkei?
 
-Migrationsrechtliche Fragen mit Türkeibezug stellen viele Kanzleien vor eine Herausforderung — weil sie das türkische Recht nicht kennen. Avukat Hasan Doğru kennt es. Als Mitglied der Ankara Barosu und registriert gemäß § 207 BRAO beraten wir ausschließlich im türkischen Recht — mit direktem Zugang zu türkischen Behörden und Institutionen.
+Aufenthalts- und Staatsangehörigkeitsfragen auf der türkischen Seite stellen viele Kanzleien vor eine Herausforderung — weil sie das türkische Recht nicht kennen. Avukat Hasan Doğru kennt es. Als Mitglied der Ankara Barosu und registriert gemäß § 207 BRAO beraten wir ausschließlich im türkischen Recht — mit direktem Zugang zu türkischen Behörden und Institutionen.
 
 Was uns auszeichnet:
 - Ausschließlich türkisches Recht — spezialisierte Expertise
@@ -590,7 +596,7 @@ Was uns auszeichnet:
       },
       {
         question: "Was muss ich rechtlich beachten, wenn ich von Deutschland in die Türkei umziehe?",
-        answer: "Neben der deutschen Abmeldung sind steuerliche Fragen, die Begründung des türkischen Wohnsitzes und eventuell Rentenangelegenheiten zu klären. Wir begleiten den gesamten rechtlichen Prozess Ihrer Remigration."
+        answer: "Auf der türkischen Seite sind vor allem die Begründung des Wohnsitzes, der passende Aufenthalts- oder Staatsangehörigkeitsstatus und gegebenenfalls Immobilien- oder Vollmachtsfragen in der Türkei zu klären. Dabei begleiten wir Sie. Deutsche Themen wie Abmeldung, Steuern oder Rente gehören nicht zu unserer Beratung."
       },
       {
         question: "Kann ich die türkische Staatsbürgerschaft wiedererlangen?",
@@ -608,7 +614,7 @@ Was uns auszeichnet:
       },
       {
         question: "Almanya'dan Türkiye'ye taşınırken hukuki açıdan nelere dikkat etmeliyim?",
-        answer: "Almanya'dan çıkış kaydının yanı sıra vergisel konular, Türk ikamet tespiti ve emeklilik meseleleri de ele alınmalıdır. Geri dönüşünüzün tüm hukuki süreçlerine eşlik ediyoruz."
+        answer: "Türkiye tarafında özellikle ikametin kurulması, uygun ikamet veya vatandaşlık statüsü ve gerekirse Türkiye'deki taşınmaz ya da vekaletname işlemleri ele alınmalıdır. Bu süreçte size eşlik ediyoruz. Almanya'dan çıkış kaydı, vergi veya emeklilik gibi Almanya'ya ait konular danışmanlık kapsamımızda değildir."
       },
       {
         question: "Türk vatandaşlığımı yeniden kazanabilir miyim?",

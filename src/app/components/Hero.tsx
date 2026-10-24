@@ -93,8 +93,12 @@ export function Hero() {
             {t("hero_subtitle")}
           </p>
 
-          <p className="font-sans text-[17px] xl:text-[clamp(0.95rem,1.08vw,1.06rem)] font-semibold text-white leading-relaxed w-full max-w-[620px] mb-12 mx-auto text-center text-pretty xl:ml-auto xl:text-right drop-shadow-[0_3px_14px_rgba(0,0,0,0.9)]">
+          <p className="font-sans text-[17px] xl:text-[clamp(0.95rem,1.08vw,1.06rem)] font-semibold text-white leading-relaxed w-full max-w-[620px] mb-6 mx-auto text-center text-pretty xl:ml-auto xl:text-right drop-shadow-[0_3px_14px_rgba(0,0,0,0.9)]">
             {t("hero_description")}
+          </p>
+
+          <p className="w-full max-w-[620px] mb-12 mx-auto border-l-2 border-[#D2A848] bg-black/25 px-4 py-3 text-left font-sans text-[14px] font-semibold leading-relaxed text-white text-pretty drop-shadow-[0_2px_10px_rgba(0,0,0,0.85)] xl:ml-auto xl:mr-0 xl:border-l-0 xl:border-r-2 xl:text-right">
+            {t("hero_scope")}
           </p>
 
           {/* CTA Buttons - Dark Green/Gold Blocks */}

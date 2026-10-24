@@ -120,8 +120,8 @@ export function CooperationPartner() {
             type="button"
             onClick={() =>
               openWhatsAppLeadCapture({
-                service: "Diğer",
-                source: "Kooperationspartner Sektion",
+                service: "Alman hukuku – Meral Gören",
+                partnerReferral: true,
                 situation: copy.leadSituation,
               })
             }

@@ -18,9 +18,12 @@ declare global {
   }
 }
 
-type LeadCaptureDetail = Partial<Pick<LeadFormState, "service" | "source" | "situation">>;
+type LeadCaptureDetail = Partial<Pick<LeadFormState, "service" | "source" | "situation" | "partnerReferral">>;
 
 type LeadFormState = {
+  turkeyLink: TurkeyLink;
+  // German-law requests for the cooperation partner skip the Turkey question.
+  partnerReferral: boolean;
   firstName: string;
   lastName: string;
   phone: string;
@@ -40,8 +43,17 @@ const serviceOptions = [
   "Ceza / Yakalama Kararı",
   "Tapu / Gayrimenkul",
   "Forderung / Inkasso",
-  "Diğer",
 ];
+
+type TurkeyLink = "" | "yes" | "no" | "unsure";
+
+// Shown as the first line of `situation`, so the answer reaches the inbox, the
+// lead table and the WhatsApp message without a schema change.
+const turkeyLinkSummary: Record<Exclude<TurkeyLink, "" | "no">, string> = {
+  yes: "Türkiye bağlantısı: Evet",
+  unsure: "Türkiye bağlantısı: Emin değilim",
+};
+const partnerReferralSummary = "Alman hukuku talebi (Meral Gören iş birliği)";
 
 const sourceOptions = [
   "Google Search",
@@ -107,6 +119,8 @@ export function WhatsAppLeadCapture() {
   const [submitting, setSubmitting] = useState(false);
   const [submitError, setSubmitError] = useState("");
   const [form, setForm] = useState<LeadFormState>({
+    turkeyLink: "",
+    partnerReferral: false,
     firstName: "",
     lastName: "",
     phone: "",
@@ -129,6 +143,11 @@ export function WhatsAppLeadCapture() {
         service: "Wobei brauchen Sie Hilfe?",
         source: "Wo haben Sie Hasan gefunden?",
         situation: "Ihre Situation kurz erklärt",
+        turkeyLink: "Betrifft Ihr Anliegen die Türkei (ein türkisches Gericht, eine Behörde, ein Grundbuch oder einen Nachlass in der Türkei)?",
+        turkeyYes: "Ja",
+        turkeyNo: "Nein",
+        turkeyUnsure: "Nicht sicher",
+        turkeyNoNotice: "Avukat Hasan Doğru berät ausschließlich zu türkischem Recht. Für Fragen zu deutschem Aufenthalts-, Arbeits- oder Sozialrecht wenden Sie sich bitte an eine in Deutschland zugelassene Rechtsanwältin oder einen Rechtsanwalt.",
         privacy: "Mit dem Absenden stimmen Sie zu, dass Ihre Angaben zur Bearbeitung Ihrer Anfrage an Hasan Doğru und nüll übermittelt werden. Die Übermittlung erfolgt über WhatsApp (Meta). Einzelheiten zur Verarbeitung, Speicherdauer und zu Ihren Rechten:",
         privacyLinkLabel: "Datenschutzerklärung",
         submit: "Weiter zu WhatsApp",
@@ -150,6 +169,11 @@ export function WhatsAppLeadCapture() {
         service: "What do you need help with?",
         source: "Where did you find Hasan?",
         situation: "Briefly explain your situation",
+        turkeyLink: "Does your matter involve Turkey (a Turkish court, authority, land registry or estate)?",
+        turkeyYes: "Yes",
+        turkeyNo: "No",
+        turkeyUnsure: "Not sure",
+        turkeyNoNotice: "Av. Hasan Doğru advises on Turkish law only. For German residence, employment or social-benefits matters, please contact a lawyer admitted in Germany.",
         privacy: "By submitting, you agree that your details are shared with Hasan Doğru and nüll to process your request. The message is sent via WhatsApp (Meta). Details on the processing, retention and your rights:",
         privacyLinkLabel: "Privacy Policy",
         submit: "Continue to WhatsApp",
@@ -170,6 +194,11 @@ export function WhatsAppLeadCapture() {
       service: "Hangi konuda destek istiyorsunuz?",
       source: "Hasan Bey'i nereden buldunuz?",
       situation: "Durumunuzu kısaca anlatın",
+      turkeyLink: "Konunuz Türkiye ile mi ilgili (Türk mahkemesi, resmi kurum, tapu veya Türkiye'deki miras)?",
+      turkeyYes: "Evet",
+      turkeyNo: "Hayır",
+      turkeyUnsure: "Emin değilim",
+      turkeyNoNotice: "Av. Hasan Doğru yalnızca Türk hukuku alanında danışmanlık vermektedir. Almanya'daki oturum, iş veya sosyal yardım (Jobcenter) konuları için lütfen Almanya'da ruhsatlı bir avukata başvurun.",
       privacy: "Göndererek bilgilerinizin talebinizin işlenmesi için Hasan Doğru ve nüll ile paylaşılmasını kabul edersiniz. İletim WhatsApp (Meta) üzerinden gerçekleşir. İşleme, saklama süresi ve haklarınıza ilişkin ayrıntılar:",
       privacyLinkLabel: "Gizlilik Politikası",
       submit: "WhatsApp'a Devam Et",
@@ -186,6 +215,7 @@ export function WhatsAppLeadCapture() {
       setForm((current) => ({
         ...current,
         ...detail,
+        partnerReferral: Boolean(detail.partnerReferral),
       }));
       setOpen(true);
     };
@@ -202,6 +232,7 @@ export function WhatsAppLeadCapture() {
         service: url.searchParams.get("service") || current.service,
         source: url.searchParams.get("source") || current.source,
         situation: url.searchParams.get("situation") || current.situation,
+        partnerReferral: false,
       }));
       setOpen(true);
     };
@@ -223,18 +254,22 @@ export function WhatsAppLeadCapture() {
 
   const submitLead = async (event: FormEvent<HTMLFormElement>) => {
     event.preventDefault();
+    const turkeyLink = form.turkeyLink;
+    if (!form.partnerReferral && (turkeyLink === "" || turkeyLink === "no")) return;
     setSubmitting(true);
     setSubmitError("");
 
     const pageUrl = window.location.href;
     const normalizedForm = {
+      turkeyLink,
+      partnerReferral: form.partnerReferral,
       firstName: form.firstName.trim(),
       lastName: form.lastName.trim(),
       phone: form.phone.trim(),
       email: form.email.trim(),
       service: form.service.trim(),
       source: form.source.trim(),
-      situation: form.situation.trim(),
+      situation: `${form.partnerReferral || turkeyLink === "" || turkeyLink === "no" ? partnerReferralSummary : turkeyLinkSummary[turkeyLink]}\n\n${form.situation.trim()}`,
     };
     const lead = {
       ...normalizedForm,
@@ -280,7 +315,7 @@ export function WhatsAppLeadCapture() {
     window.location.assign(whatsappUrl);
     setSubmitting(false);
     setOpen(false);
-    setForm({ firstName: "", lastName: "", phone: "", email: "", service: "", source: "", situation: "" });
+    setForm({ turkeyLink: "", partnerReferral: false, firstName: "", lastName: "", phone: "", email: "", service: "", source: "", situation: "" });
   };
 
   return (
@@ -307,6 +342,46 @@ export function WhatsAppLeadCapture() {
           </p>
 
           <form onSubmit={submitLead} className="space-y-5">
+            {!form.partnerReferral && (
+            <fieldset className="rounded-md border border-[#D8D0C2] bg-white px-4 py-4">
+              <legend className="px-1 text-[12px] font-bold uppercase tracking-[0.12em] text-[#1C3829]">
+                {labels.turkeyLink}
+              </legend>
+              <div className="mt-2 flex flex-wrap gap-2">
+                {([
+                  ["yes", labels.turkeyYes],
+                  ["no", labels.turkeyNo],
+                  ["unsure", labels.turkeyUnsure],
+                ] as const).map(([value, label]) => (
+                  <label
+                    key={value}
+                    className={`cursor-pointer rounded-full border px-5 py-2 text-[14px] font-semibold transition ${
+                      form.turkeyLink === value
+                        ? "border-[#1C3829] bg-[#1C3829] text-white"
+                        : "border-[#D8D0C2] bg-white text-[#1C3829] hover:border-[#8B6E2A]"
+                    } focus-within:ring-2 focus-within:ring-[#8B6E2A]/40`}
+                  >
+                    <input
+                      required
+                      type="radio"
+                      name="turkeyLink"
+                      value={value}
+                      checked={form.turkeyLink === value}
+                      onChange={() => updateField("turkeyLink", value)}
+                      className="sr-only"
+                    />
+                    {label}
+                  </label>
+                ))}
+              </div>
+              {form.turkeyLink === "no" && (
+                <p role="status" className="mt-4 border-l-2 border-[#8B6E2A] bg-[#F7F5F0] px-4 py-3 text-[14px] leading-6 text-[#1C3829]">
+                  {labels.turkeyNoNotice}
+                </p>
+              )}
+            </fieldset>
+            )}
+
             <div className="grid gap-4 md:grid-cols-2">
               <label className="block">
                 <span className="mb-2 block text-[12px] font-bold uppercase tracking-[0.12em] text-[#1C3829]">{labels.firstName}</span>
@@ -371,7 +446,10 @@ export function WhatsAppLeadCapture() {
                 className="w-full rounded-md border border-[#D8D0C2] bg-white px-4 py-3 text-[15px] outline-none transition focus:border-[#8B6E2A] focus:ring-2 focus:ring-[#8B6E2A]/20"
               >
                 <option value="">Bitte auswählen / Seçiniz</option>
-                {serviceOptions.map((option) => (
+                {(form.service && !serviceOptions.includes(form.service)
+                  ? [form.service, ...serviceOptions]
+                  : serviceOptions
+                ).map((option) => (
                   <option key={option} value={option}>{option}</option>
                 ))}
               </select>
@@ -420,7 +498,7 @@ export function WhatsAppLeadCapture() {
 
             <button
               type="submit"
-              disabled={submitting}
+              disabled={submitting || (!form.partnerReferral && form.turkeyLink === "no")}
               className="w-full rounded-full bg-[#1C3829] px-6 py-4 text-[12px] font-bold uppercase tracking-[0.16em] text-white shadow-lg transition hover:bg-[#8B6E2A] disabled:cursor-not-allowed disabled:opacity-60"
             >
               {submitting ? labels.submitting : labels.submit}

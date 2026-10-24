@@ -25,7 +25,7 @@ const HOME_SCHEMA = {
   "url": "https://hasandogru.de",
   "logo": "https://www.hasandogru.de/logo.png",
   "image": "https://www.hasandogru.de/logo.png",
-  "description": "Auf türkisches Recht spezialisierte Kanzlei in Mannheim. Beratung in Erbrecht, Familienrecht, Strafrecht und Migrationsrecht zwischen Deutschland, der Schweiz und der Türkei.",
+  "description": "Auf türkisches Recht spezialisierte Kanzlei in Mannheim. Beratung ausschließlich im türkischen Recht: Erbrecht, Familienrecht, Strafrecht, Immobilien und Aufenthalt in der Türkei.",
   "areaServed": ["DE", "CH", "AT", "TR"],
   "availableLanguage": ["Turkish", "German"],
   "priceRange": "$$",

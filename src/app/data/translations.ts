@@ -15,6 +15,7 @@ export const translations = {
     hero_title_main: "Avukat Hasan Doğru",
     hero_subtitle: "Turkish Law Specialist",
     hero_description: "Looking for a qualified legal advisor who bridges the German and Turkish legal systems? As a specialized Avukat, I support you in complex cross-border legal matters with expert knowledge and years of experience.",
+    hero_scope: "Turkish law only — no advice on German residence, employment or social-benefits law.",
     hero_cta_primary: "Get Advice Now",
     hero_cta_secondary: "Our Services",
 
@@ -150,6 +151,7 @@ export const translations = {
     hero_title_main: "Hasan Doğru",
     hero_subtitle: "Türk Hukuku Uzmanı",
     hero_description: "Alman ve Türk hukuk sistemleri arasında köprü işlevi görecek deneyimli bir hukuk danışmanı arıyorsanız, uluslararası nitelikteki karmaşık hukuki süreçlerde uzman bilgi birikimim ve geniş deneyimimle hizmetinizdeyim",
+    hero_scope: "Yalnızca Türk hukuku — Almanya'daki oturum, iş ve sosyal yardım hukuku konularında danışmanlık verilmez.",
     hero_cta_primary: "Hemen Danışın",
     hero_cta_secondary: "Hizmetlerimiz",
 
@@ -285,6 +287,7 @@ export const translations = {
     hero_title_main: "Avukat Hasan Doğru",
     hero_subtitle: "Experte für türkisches Recht",
     hero_description: "Suchen Sie einen kompetenten Rechtsbeistand, der die Brücke zwischen dem deutschen und dem türkischen Rechtssystem schlägt? Als auf türkisches Recht spezialisierter Avukat (türkischer Rechtsanwalt) unterstütze ich Sie bei komplexen grenzüberschreitenden Rechtsfragen mit fundierter Fachkenntnis und langjähriger Erfahrung.",
+    hero_scope: "Ausschließlich türkisches Recht — keine Beratung zu deutschem Aufenthalts-, Arbeits- oder Sozialrecht.",
     hero_cta_primary: "Jetzt beraten lassen",
     hero_cta_secondary: "Unsere Leistungen",
 

@@ -51,7 +51,7 @@ const PERSON_SCHEMA = {
     "Turkish Inheritance Law",
     "Tanıma ve Tenfiz",
     "Turkish Criminal Law",
-    "Turkish Migration Law",
+    "Residence in Turkey & Turkish Citizenship Law",
     "Turkish Real Estate Law",
     "Cross-border Turkish-German Legal Proceedings"
   ],
