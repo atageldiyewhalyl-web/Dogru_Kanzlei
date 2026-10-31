@@ -13,12 +13,14 @@ export const serviceRelatedPosts: Record<string, string[]> = {
     "bosanma-rehberi-tuerkiye",
     "scheidung-tuerkei-dauer-kosten",
     "unterhalt-tuerkisches-recht",
+    "babalik-tanima-soybagi",
   ],
   "tanima-ve-tenfiz": [
     // Cluster pillar first.
     "almanyada-bosandim-turkiyede-ne-olur",
     "tanima-tenfiz-scheidung-tuerkei-anerkennung-2026",
     "deutsches-urteil-tuerkei-vollstrecken-tanima-tenfiz",
+    "babalik-tanima-soybagi",
   ],
   erbrecht: [
     "almanya-turkiye-miras-hukuku-rehberi",
@@ -37,6 +39,7 @@ export const serviceRelatedPosts: Record<string, string[]> = {
     "drogendelikt-tuerkei-strafverteidigung-deutschland",
   ],
   "mavi-kart": [
+    "turk-vatandasligini-yeniden-kazanma",
     "mavi-kart-haklari-rehberi",
     "mavi-kart-miras-gayrimenkul-haklari",
     "hagb-einbuergerung-deutschland-tuerkei",
@@ -57,10 +60,18 @@ export const serviceRelatedPosts: Record<string, string[]> = {
     "zwangsvollstreckung-tuerkei-forderungen-aus-deutschland",
   ],
   migrationsrecht: [
+    "turk-vatandasligini-yeniden-kazanma",
+    "wehrdienst-tuerkei-askerlik-rehberi",
     "turkiye-giris-yasagi-vize-reddi",
     "hagb-einbuergerung-deutschland-tuerkei",
     "mavi-kart-haklari-rehberi",
     "tuerkischer-notar-deutschland",
+  ],
+  "wehrdienst-askerlik": [
+    "wehrdienst-tuerkei-askerlik-rehberi",
+    "turk-vatandasligini-yeniden-kazanma",
+    "turkiyede-hakkimda-yakalama-karari-var-mi",
+    "turkiye-giris-yasagi-vize-reddi",
   ],
   "visum-einreise-tuerkei": [
     "turkiye-giris-yasagi-vize-reddi",

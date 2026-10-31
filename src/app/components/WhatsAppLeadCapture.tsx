@@ -43,6 +43,9 @@ const serviceOptions = [
   "Ceza / Yakalama Kararı",
   "Tapu / Gayrimenkul",
   "Forderung / Inkasso",
+  "Askerlik / Wehrdienst",
+  "Vatandaşlık / Staatsangehörigkeit",
+  "Soybağı / Vaterschaft",
 ];
 
 type TurkeyLink = "" | "yes" | "no" | "unsure";

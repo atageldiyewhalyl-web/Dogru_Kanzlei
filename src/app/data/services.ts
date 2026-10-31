@@ -1,6 +1,7 @@
 import { Home, Users, BookOpen, Globe, Shield, Plane, UserCheck, Gavel } from "lucide-react";
 import { forderungsvollstreckungTurkeyService } from "./forderungsvollstreckungTurkeyService";
 import { visaEntryTurkeyService } from "./visaEntryTurkeyService";
+import { militaryServiceTurkeyService } from "./militaryServiceTurkeyService";
 
 export const services = [
   {
@@ -1611,6 +1612,7 @@ Wir vertreten Ihre Interessen konsequent und verfolgen Ihre Forderungen in der T
   },
   forderungsvollstreckungTurkeyService,
   visaEntryTurkeyService,
+  militaryServiceTurkeyService,
   {
     id: "erbrecht",
     slugDE: "erbrecht",

@@ -37,6 +37,9 @@ import { fotografliVekaletnameFormfehlerPost, tapuDevirVekaletnamesiPost } from 
 import { arrestWarrantCheckPost } from "./arrestWarrantCheckPost";
 import { germanDivorceTurkishStatusPost } from "./germanDivorceTurkishStatusPost";
 import { visaEntryBanTurkeyPost } from "./visaEntryBanTurkeyPost";
+import { militaryServiceTurkeyPost } from "./militaryServiceTurkeyPost";
+import { regainTurkishCitizenshipPost } from "./regainTurkishCitizenshipPost";
+import { paternityRecognitionTurkeyPost } from "./paternityRecognitionTurkeyPost";
 import { fileCheckTurkeyPost } from "./fileCheckTurkeyPost";
 import { socialMediaCaseTurkeyPost } from "./socialMediaCaseTurkeyPost";
 import { videoInterviewTanimaPost } from "./videoInterviewTanimaPost";
@@ -1166,6 +1169,9 @@ const hiddenBlogSlugs = new Set([
 ]);
 
 const allBlogPosts: BlogPost[] = [
+  militaryServiceTurkeyPost,
+  regainTurkishCitizenshipPost,
+  paternityRecognitionTurkeyPost,
   videoInterviewTanimaPost,
   socialMediaCaseTurkeyPost,
   fileCheckTurkeyPost,

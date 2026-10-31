@@ -44,7 +44,7 @@ const PROPERTY_PARTITION_AUCTION_BLOG_SLUG_DE = "12-justizpaket-erbengemeinschaf
 type BlogProductCTAPlacement = 'intro' | 'comparison' | 'service_types' | 'bottom' | 'sticky';
 
 type BlogProductFunnel = {
-  service: 'vekaletname' | 'tanima_tenfiz' | 'debt_enforcement' | 'inheritance_tax' | 'property_partition_auction' | 'divorce_property' | 'pension_rights' | 'inheritance_participation' | 'inheritance_certificate' | 'arrest_warrant' | 'visa_entry' | 'file_check' | 'social_media_case';
+  service: 'military_service' | 'citizenship' | 'paternity' | 'vekaletname' | 'tanima_tenfiz' | 'debt_enforcement' | 'inheritance_tax' | 'property_partition_auction' | 'divorce_property' | 'pension_rights' | 'inheritance_participation' | 'inheritance_certificate' | 'arrest_warrant' | 'visa_entry' | 'file_check' | 'social_media_case';
   slugDE: string;
   slugTR: string;
   duration: string;
@@ -58,6 +58,30 @@ const vekaletnameFunnel: BlogProductFunnel = {
   slugTR: 'almanya-da-vekaletname-cikarma-rehberi',
   duration: '20 dakika',
   campaign: 'vekaletname_whatsapp_form',
+};
+
+const militaryServiceFunnel: BlogProductFunnel = {
+  service: 'military_service',
+  slugDE: 'wehrdienst-tuerkei-doevizle-askerlik-aufschub-einreise',
+  slugTR: 'dovizle-askerlik-almanya-tecil-yoklama-kacagi-2026',
+  duration: '20 dakika',
+  campaign: 'military_service_whatsapp_form',
+};
+
+const citizenshipFunnel: BlogProductFunnel = {
+  service: 'citizenship',
+  slugDE: 'tuerkische-staatsangehoerigkeit-zurueckerlangen-wiedereinbuergerung',
+  slugTR: 'turk-vatandasligini-yeniden-kazanma-almanya-mavi-kart',
+  duration: '20 dakika',
+  campaign: 'citizenship_whatsapp_form',
+};
+
+const paternityFunnel: BlogProductFunnel = {
+  service: 'paternity',
+  slugDE: 'vaterschaft-tuerkei-anerkennen-abstammung-eintragen',
+  slugTR: 'babalik-tanima-soybagi-almanya-turkiye-nufus-kaydi',
+  duration: '20 dakika',
+  campaign: 'paternity_whatsapp_form',
 };
 
 const fileCheckFunnel: BlogProductFunnel = {
@@ -686,6 +710,303 @@ function getArrestWarrantFunnelCopy(language: string) {
   };
 }
 
+function getMilitaryServiceFunnelCopy(language: string) {
+  if (language === 'de') {
+    return {
+      duration: 'Direkter Kontakt',
+      serviceName: 'Askerlik / Wehrdienst',
+      leadSituation: 'Ich möchte meinen Wehrdienststatus in der Türkei prüfen lassen.',
+      introEyebrow: 'DIREKTER WHATSAPP-KONTAKT',
+      introTitle: 'Wie werden Sie beim türkischen Wehrdienst geführt?',
+      introBody: 'Schreiben Sie uns direkt per WhatsApp. Wir klären Ihren Status, ein mögliches Bußgeld und den passenden Weg: Aufschub, Freikauf oder Einspruch.',
+      introButton: 'Wehrdienststatus prüfen',
+      durationChip: 'Direkter Kontakt',
+      formChip: 'WhatsApp Vorab-Formular',
+      comparisonTitle: 'Bußgeld läuft pro Tag. Die Einspruchsfrist nur 15 Tage.',
+      comparisonBody: 'Für Zeiten, in denen ein Recht auf Zurückstellung bestand, darf kein Bußgeld verhängt werden. Das muss aber rechtzeitig geltend gemacht werden.',
+      serviceTypesTitle: 'Vor der Reise klären, nicht an der Passkontrolle',
+      serviceTypesBody: 'Ein Protokoll an der Grenze verdoppelt den Tagessatz. Status, Aufschub und Unterlagen lassen sich von Deutschland aus vorher ordnen.',
+      serviceTypesButton: 'Wehrstatus per WhatsApp prüfen',
+      bottomEyebrow: 'Wehrdienst Türkei',
+      bottomTitle: 'Wir ordnen Ihre türkische Wehrakte, bevor sie zum Problem wird',
+      bottomBody: 'Über das kurze WhatsApp Formular schildern Sie Ihre Lage. Hasan Doğru prüft den Status und bereitet Aufschub oder Freikauf vor. Einspruch und Verteidigung in der Türkei führt er selbst.',
+      includedTitle: 'Was übernommen wird',
+      includedItems: [
+        'Statusprüfung bei der Wehrersatzverwaltung, Bußgeld und Strafakte',
+        'Aufschub, Dövizle Askerlik oder Untauglichkeitsantrag vorbereiten',
+        'Einspruch gegen das Bußgeld und Verteidigung in der Türkei',
+      ],
+      trustLine: 'Av. Hasan Doğru · Türkisches Wehrrecht · Mannheim & Ankara',
+      stickyTitle: 'Wehrdienststatus prüfen',
+      stickySubtitle: 'WhatsApp Vorab-Formular',
+      stickyButton: 'WhatsApp',
+      chips: ['Dövizle Askerlik', 'Aufschub', 'Yoklama Kaçağı', 'Bakaya', 'Einreise'],
+    };
+  }
+
+  if (language === 'en') {
+    return {
+      duration: 'Direct Contact',
+      serviceName: 'Askerlik / Wehrdienst',
+      leadSituation: 'I would like to have my Turkish military status checked.',
+      introEyebrow: 'DIRECT WHATSAPP CONTACT',
+      introTitle: 'How are you recorded for Turkish military service?',
+      introBody: 'Text us directly on WhatsApp. We clarify your status, any fine and the right route: deferral, paid exemption or objection.',
+      introButton: 'Check your military status',
+      durationChip: 'Direct Contact',
+      formChip: 'WhatsApp intake form',
+      comparisonTitle: 'The fine runs per day. The objection period is only 15 days.',
+      comparisonBody: 'No fine may be imposed for periods when you had a right to deferral, but this has to be raised in time.',
+      serviceTypesTitle: 'Sort it out before you travel, not at passport control',
+      serviceTypesBody: 'A report at the border doubles the daily rate. Status, deferral and documents can be put in order from abroad beforehand.',
+      serviceTypesButton: 'Check your status via WhatsApp',
+      bottomEyebrow: 'Turkish military service',
+      bottomTitle: 'We put your Turkish military record in order before it becomes a problem',
+      bottomBody: 'Use the short WhatsApp form to describe your situation. Hasan Doğru checks your status and prepares deferral or paid exemption. He handles objections and defence in Turkey himself.',
+      includedTitle: 'What we handle',
+      includedItems: [
+        'Status check, fines and any criminal file',
+        'Preparing deferral, paid exemption or an unfitness application',
+        'Objection to the fine and defence in Turkey',
+      ],
+      trustLine: 'Av. Hasan Doğru · Turkish military law · Mannheim & Ankara',
+      stickyTitle: 'Check your military status',
+      stickySubtitle: 'WhatsApp intake form',
+      stickyButton: 'WhatsApp',
+      chips: ['Paid exemption', 'Deferral', 'Yoklama kaçağı', 'Bakaya', 'Entering Turkey'],
+    };
+  }
+
+  return {
+    duration: 'Direkt İletişim',
+    serviceName: 'Askerlik / Wehrdienst',
+    leadSituation: 'Askerlik durumumu kontrol ettirmek istiyorum.',
+    introEyebrow: 'DİREKT WHATSAPP İLETİŞİMİ',
+    introTitle: 'Askerlik kaydınızda nasıl görünüyorsunuz?',
+    introBody: 'Bize doğrudan WhatsApp’tan yazın. Durumunuzu, olası cezayı ve uygun yolu netleştirelim: tecil, dövizle askerlik veya itiraz.',
+    introButton: 'Askerlik durumumu sor',
+    durationChip: 'Direkt İletişim',
+    formChip: 'WhatsApp ön bilgi formu',
+    comparisonTitle: 'Ceza gün gün işler. İtiraz süresi yalnızca 15 gündür.',
+    comparisonBody: 'Tecil hakkınızın bulunduğu dönemler için ceza verilemez; ancak bunun süresinde ileri sürülmesi gerekir.',
+    serviceTypesTitle: 'Pasaport kontrolünde değil, seyahatten önce çözün',
+    serviceTypesBody: 'Sınırda düzenlenen tutanak günlük tutarı iki katına çıkarır. Durum, tecil ve belgeler önceden Almanya’dan düzenlenebilir.',
+    serviceTypesButton: 'Durumumu WhatsApp’tan sor',
+    bottomEyebrow: 'Askerlik ve dövizle askerlik',
+    bottomTitle: 'Askerlik kaydınızı sorun olmadan önce düzene sokuyoruz',
+    bottomBody: 'Kısa WhatsApp formuyla durumunuzu iletin. Hasan Doğru kaydınızı inceler, tecil veya dövizle askerliği hazırlar; Türkiye’deki itiraz ve savunmayı bizzat yürütür.',
+    includedTitle: 'Hizmete dahil olanlar',
+    includedItems: [
+      'Durum tespiti, ceza ve suç dosyası kontrolü',
+      'Tecil, dövizle askerlik veya elverişsizlik başvurusunun hazırlanması',
+      'Cezaya itiraz ve Türkiye’de savunma',
+    ],
+    trustLine: 'Av. Hasan Doğru · Türk askerlik hukuku · Mannheim & Ankara',
+    stickyTitle: 'Askerlik durumu',
+    stickySubtitle: 'WhatsApp ön bilgi formu',
+    stickyButton: 'WhatsApp',
+    chips: ['Dövizle askerlik', 'Tecil', 'Yoklama kaçağı', 'Bakaya', 'Türkiye’ye giriş'],
+  };
+}
+
+function getCitizenshipFunnelCopy(language: string) {
+  if (language === 'de') {
+    return {
+      duration: 'Direkter Kontakt',
+      serviceName: 'Vatandaşlık / Staatsangehörigkeit',
+      leadSituation: 'Ich möchte die türkische Staatsangehörigkeit zurückerlangen.',
+      introEyebrow: 'DIREKTER WHATSAPP-KONTAKT',
+      introTitle: 'Möchten Sie die türkische Staatsangehörigkeit zurück?',
+      introBody: 'Schreiben Sie uns direkt per WhatsApp. Wir prüfen Ihren Status im türkischen Register und Ihre Wehrakte, bevor Sie den Antrag stellen.',
+      introButton: 'Wiedererwerb prüfen',
+      durationChip: 'Direkter Kontakt',
+      formChip: 'WhatsApp Vorab-Formular',
+      comparisonTitle: 'Mit der Staatsangehörigkeit kommt die Wehrakte zurück',
+      comparisonBody: 'Ob eine offene Wehrpflicht wieder auflebt, hängt vom Stand beim Austritt ab. Das sollte vor dem Antrag geklärt sein.',
+      serviceTypesTitle: 'Der Antrag läuft über das Konsulat, die Vorarbeit entscheidet',
+      serviceTypesBody: 'Familienstand, ausländische Scheidung, Kinder und Wehrakte: Stimmen die Daten nicht mit dem Register überein, verzögert sich das Verfahren.',
+      serviceTypesButton: 'Antrag per WhatsApp besprechen',
+      bottomEyebrow: 'Türkische Staatsangehörigkeit',
+      bottomTitle: 'Wir bereiten Ihren Wiedererwerb so vor, dass nichts Unerwartetes mitkommt',
+      bottomBody: 'Über das kurze WhatsApp Formular schildern Sie Ihre Lage. Hasan Doğru prüft Register und Wehrakte, bereitet den Antrag vor und führt bei einer Ablehnung die Klage in der Türkei.',
+      includedTitle: 'Was übernommen wird',
+      includedItems: [
+        'Prüfung von Register, Austrittsgenehmigung und Wehrakte',
+        'Unterlagen für den Antrag, Anerkennung ausländischer Scheidungen',
+        'Klage vor dem türkischen Verwaltungsgericht bei Ablehnung',
+      ],
+      trustLine: 'Av. Hasan Doğru · Türkisches Staatsangehörigkeitsrecht · Mannheim & Ankara',
+      stickyTitle: 'Wiedererwerb prüfen',
+      stickySubtitle: 'WhatsApp Vorab-Formular',
+      stickyButton: 'WhatsApp',
+      chips: ['Art. 13', 'Konsulat', 'Mavi Kart', 'Wehrakte', 'Kinder'],
+    };
+  }
+
+  if (language === 'en') {
+    return {
+      duration: 'Direct Contact',
+      serviceName: 'Vatandaşlık / Staatsangehörigkeit',
+      leadSituation: 'I would like to regain my Turkish citizenship.',
+      introEyebrow: 'DIRECT WHATSAPP CONTACT',
+      introTitle: 'Want your Turkish citizenship back?',
+      introBody: 'Text us directly on WhatsApp. We check your registry status and military record before you apply.',
+      introButton: 'Check your application',
+      durationChip: 'Direct Contact',
+      formChip: 'WhatsApp intake form',
+      comparisonTitle: 'Your military record comes back with your citizenship',
+      comparisonBody: 'Whether an open obligation revives depends on your record when you left. Clarify this before you apply.',
+      serviceTypesTitle: 'You apply at the consulate, but the groundwork decides',
+      serviceTypesBody: 'Marital status, foreign divorce, children and military record: if your data does not match the registry, the process stalls.',
+      serviceTypesButton: 'Discuss your application via WhatsApp',
+      bottomEyebrow: 'Turkish citizenship',
+      bottomTitle: 'We prepare your application so nothing unexpected comes with it',
+      bottomBody: 'Use the short WhatsApp form to describe your situation. Hasan Doğru checks the registry and military record, prepares the application and, if it is refused, brings the case in Turkey.',
+      includedTitle: 'What we handle',
+      includedItems: [
+        'Checking the registry, release document and military record',
+        'Application documents and recognition of foreign divorces',
+        'Action in the Turkish administrative court if refused',
+      ],
+      trustLine: 'Av. Hasan Doğru · Turkish citizenship law · Mannheim & Ankara',
+      stickyTitle: 'Regain Turkish citizenship',
+      stickySubtitle: 'WhatsApp intake form',
+      stickyButton: 'WhatsApp',
+      chips: ['Article 13', 'Consulate', 'Mavi Kart', 'Military record', 'Children'],
+    };
+  }
+
+  return {
+    duration: 'Direkt İletişim',
+    serviceName: 'Vatandaşlık / Staatsangehörigkeit',
+    leadSituation: 'Türk vatandaşlığını yeniden kazanmak istiyorum.',
+    introEyebrow: 'DİREKT WHATSAPP İLETİŞİMİ',
+    introTitle: 'Türk vatandaşlığına dönmek mi istiyorsunuz?',
+    introBody: 'Bize doğrudan WhatsApp’tan yazın. Başvurudan önce nüfus kaydınızı ve askerlik durumunuzu inceleyelim.',
+    introButton: 'Başvurumu sor',
+    durationChip: 'Direkt İletişim',
+    formChip: 'WhatsApp ön bilgi formu',
+    comparisonTitle: 'Vatandaşlıkla birlikte askerlik kaydı da geri gelir',
+    comparisonBody: 'Açık bir yükümlülüğün geri gelip gelmeyeceği çıkış sırasındaki kayda bağlıdır. Başvurudan önce netleşmelidir.',
+    serviceTypesTitle: 'Başvuru konsolosluğa yapılır, sonucu hazırlık belirler',
+    serviceTypesBody: 'Medeni hâl, yabancı boşanma, çocuklar ve askerlik: Bilgiler nüfus kaydıyla uyuşmazsa süreç uzar.',
+    serviceTypesButton: 'Başvurumu WhatsApp’tan sor',
+    bottomEyebrow: 'Türk vatandaşlığı',
+    bottomTitle: 'Başvurunuzu, beklenmedik bir sonuç doğurmayacak şekilde hazırlıyoruz',
+    bottomBody: 'Kısa WhatsApp formuyla durumunuzu iletin. Hasan Doğru nüfus ve askerlik kaydını inceler, başvuruyu hazırlar; ret hâlinde Türkiye’de davayı yürütür.',
+    includedTitle: 'Hizmete dahil olanlar',
+    includedItems: [
+      'Nüfus, çıkma belgesi ve askerlik kaydının incelenmesi',
+      'Başvuru belgeleri ve yabancı boşanmanın tanınması',
+      'Ret hâlinde idare mahkemesinde dava',
+    ],
+    trustLine: 'Av. Hasan Doğru · Türk vatandaşlık hukuku · Mannheim & Ankara',
+    stickyTitle: 'Vatandaşlık başvurusu',
+    stickySubtitle: 'WhatsApp ön bilgi formu',
+    stickyButton: 'WhatsApp',
+    chips: ['m. 13', 'Konsolosluk', 'Mavi Kart', 'Askerlik', 'Çocuklar'],
+  };
+}
+
+function getPaternityFunnelCopy(language: string) {
+  if (language === 'de') {
+    return {
+      duration: 'Direkter Kontakt',
+      serviceName: 'Soybağı / Vaterschaft',
+      leadSituation: 'Ich habe eine Frage zur Vaterschaft und Abstammung im türkischen Register.',
+      introEyebrow: 'DIREKTER WHATSAPP-KONTAKT',
+      introTitle: 'Steht Ihr Kind im türkischen Register ohne Vater?',
+      introBody: 'Schreiben Sie uns direkt per WhatsApp. Wir prüfen das Register und klären, ob Anerkennung, Meldung oder Klage der richtige Weg ist.',
+      introButton: 'Abstammung prüfen',
+      durationChip: 'Direkter Kontakt',
+      formChip: 'WhatsApp Vorab-Formular',
+      comparisonTitle: 'Eine deutsche Urkunde ändert das türkische Register nicht von selbst',
+      comparisonBody: 'Eine Anerkennung muss gemeldet, ein Vaterschaftsurteil in der Regel erst anerkannt werden. Davon hängen Staatsangehörigkeit und Erbe ab.',
+      serviceTypesTitle: 'Wenn der Vater nicht anerkennt oder verstorben ist',
+      serviceTypesBody: 'Die Vaterschaftsklage ist auch gegen die Erben möglich. Für das Kind gilt grundsätzlich keine Ausschlussfrist, für die Mutter ein Jahr.',
+      serviceTypesButton: 'Fall per WhatsApp schildern',
+      bottomEyebrow: 'Vaterschaft & Abstammung',
+      bottomTitle: 'Wir sorgen dafür, dass die Abstammung auch in der Türkei wirksam wird',
+      bottomBody: 'Über das kurze WhatsApp Formular schildern Sie Ihre Lage. Hasan Doğru prüft das Register, bereitet die Meldung vor und führt Anerkennungs- oder Vaterschaftsklagen in der Türkei.',
+      includedTitle: 'Was übernommen wird',
+      includedItems: [
+        'Prüfung des türkischen Registers und des passenden Wegs',
+        'Unterlagen für Konsulat oder türkisches Standesamt',
+        'Anerkennungsklage, Vaterschaftsklage und Anfechtung in der Türkei',
+      ],
+      trustLine: 'Av. Hasan Doğru · Türkisches Familienrecht · Mannheim & Ankara',
+      stickyTitle: 'Abstammung prüfen',
+      stickySubtitle: 'WhatsApp Vorab-Formular',
+      stickyButton: 'WhatsApp',
+      chips: ['Anerkennung', 'Register', 'Vaterschaftsklage', 'Staatsangehörigkeit', 'Erbe'],
+    };
+  }
+
+  if (language === 'en') {
+    return {
+      duration: 'Direct Contact',
+      serviceName: 'Soybağı / Vaterschaft',
+      leadSituation: 'I have a question about paternity recognition in Turkey.',
+      introEyebrow: 'DIRECT WHATSAPP CONTACT',
+      introTitle: 'Is your child registered in Turkey without a father?',
+      introBody: 'Text us directly on WhatsApp. We check the registry and clarify whether acknowledgment, notification or a court case is the right route.',
+      introButton: 'Check your case',
+      durationChip: 'Direct Contact',
+      formChip: 'WhatsApp intake form',
+      comparisonTitle: 'A foreign document does not change the Turkish registry by itself',
+      comparisonBody: 'An acknowledgment has to be notified, and a paternity judgment generally recognised first. Citizenship and inheritance depend on it.',
+      serviceTypesTitle: 'If the father refuses or has died',
+      serviceTypesBody: 'A paternity suit is possible even against the heirs. The child generally has no time limit; the mother has one year.',
+      serviceTypesButton: 'Describe your case via WhatsApp',
+      bottomEyebrow: 'Paternity & descent',
+      bottomTitle: 'We make sure paternity also takes effect in Turkey',
+      bottomBody: 'Use the short WhatsApp form to describe your situation. Hasan Doğru checks the registry, prepares the notification and brings recognition or paternity suits in Turkey.',
+      includedTitle: 'What we handle',
+      includedItems: [
+        'Checking the Turkish registry and the right route',
+        'Documents for the consulate or Turkish registry',
+        'Recognition actions, paternity suits and challenges in Turkey',
+      ],
+      trustLine: 'Av. Hasan Doğru · Turkish family law · Mannheim & Ankara',
+      stickyTitle: 'Check paternity in Turkey',
+      stickySubtitle: 'WhatsApp intake form',
+      stickyButton: 'WhatsApp',
+      chips: ['Acknowledgment', 'Registry', 'Paternity suit', 'Citizenship', 'Inheritance'],
+    };
+  }
+
+  return {
+    duration: 'Direkt İletişim',
+    serviceName: 'Soybağı / Vaterschaft',
+    leadSituation: 'Babalık tanıma ve soybağı konusunda bilgi almak istiyorum.',
+    introEyebrow: 'DİREKT WHATSAPP İLETİŞİMİ',
+    introTitle: 'Çocuğunuz Türk nüfusunda babasız mı görünüyor?',
+    introBody: 'Bize doğrudan WhatsApp’tan yazın. Nüfus kaydını inceleyip tanıma, bildirim veya davadan hangisinin uygun olduğunu netleştirelim.',
+    introButton: 'Dosyamı sor',
+    durationChip: 'Direkt İletişim',
+    formChip: 'WhatsApp ön bilgi formu',
+    comparisonTitle: 'Alman belgesi Türk nüfusunu kendiliğinden değiştirmez',
+    comparisonBody: 'Tanımanın bildirilmesi, babalık kararının ise kural olarak önce tanınması gerekir. Vatandaşlık ve miras buna bağlıdır.',
+    serviceTypesTitle: 'Baba kabul etmiyor veya öldüyse',
+    serviceTypesBody: 'Babalık davası mirasçılara karşı da açılabilir. Çocuk için kural olarak süre aranmaz; anne için süre bir yıldır.',
+    serviceTypesButton: 'Dosyamı WhatsApp’tan sor',
+    bottomEyebrow: 'Babalık ve soybağı',
+    bottomTitle: 'Soybağının Türkiye’de de hüküm doğurmasını sağlıyoruz',
+    bottomBody: 'Kısa WhatsApp formuyla durumunuzu iletin. Hasan Doğru nüfus kaydını inceler, bildirimi hazırlar; tanıma ve babalık davalarını Türkiye’de yürütür.',
+    includedTitle: 'Hizmete dahil olanlar',
+    includedItems: [
+      'Nüfus kaydının incelenmesi ve uygun yolun belirlenmesi',
+      'Konsolosluk veya nüfus müdürlüğü için belgeler',
+      'Tanıma, babalık ve soybağının reddi davaları',
+    ],
+    trustLine: 'Av. Hasan Doğru · Türk aile hukuku · Mannheim & Ankara',
+    stickyTitle: 'Soybağı dosyası',
+    stickySubtitle: 'WhatsApp ön bilgi formu',
+    stickyButton: 'WhatsApp',
+    chips: ['Tanıma', 'Nüfus kaydı', 'Babalık davası', 'Vatandaşlık', 'Miras'],
+  };
+}
+
 function getFileCheckFunnelCopy(language: string) {
   if (language === 'de') {
     return {
@@ -985,6 +1306,9 @@ function getVisaEntryFunnelCopy(language: string) {
 
 function getBlogProductFunnelCopy(funnel: BlogProductFunnel, language: string) {
   if (funnel.service === 'visa_entry') return getVisaEntryFunnelCopy(language);
+  if (funnel.service === 'military_service') return getMilitaryServiceFunnelCopy(language);
+  if (funnel.service === 'citizenship') return getCitizenshipFunnelCopy(language);
+  if (funnel.service === 'paternity') return getPaternityFunnelCopy(language);
   if (funnel.service === 'file_check') return getFileCheckFunnelCopy(language);
   if (funnel.service === 'social_media_case') return getSocialMediaCaseFunnelCopy(language);
   if (funnel.service === 'arrest_warrant') return getArrestWarrantFunnelCopy(language);
@@ -1112,6 +1436,102 @@ function getProductHookCopy(funnel: BlogProductFunnel, language: string) {
         ? (language === 'en' ? 'Turkish inheritance law · Mannheim & Ankara' : language === 'de' ? 'Türkisches Erbrecht · Mannheim & Ankara' : 'Türk miras hukuku · Mannheim & Ankara')
         : (language === 'en' ? 'Turkish family law · Mannheim & Ankara' : language === 'de' ? 'Türkisches Familienrecht · Mannheim & Ankara' : 'Türk aile hukuku · Mannheim & Ankara'),
     };
+  }
+
+  if (funnel.service === 'military_service') {
+    return language === 'de'
+      ? {
+          lead: 'Schreiben Sie uns direkt per WhatsApp. Wir klären Ihren Status, ein mögliches Bußgeld und den passenden Weg: Aufschub, Freikauf oder Einspruch.',
+          bullets: [
+            'Dövizle Askerlik, Aufschub bis 35: Welcher Weg passt zu Ihrem Status?',
+            'Bußgeld als Yoklama Kaçağı oder Bakaya: 15 Tage Einspruchsfrist',
+            'Einreise in die Türkei: Was an der Passkontrolle tatsächlich passiert',
+          ],
+          trust: 'Av. Hasan Doğru · Türkisches Wehrrecht · Mannheim & Ankara',
+        }
+      : language === 'en'
+        ? {
+          lead: 'Text us directly on WhatsApp. We clarify your status, any fine and the right route: deferral, paid exemption or objection.',
+          bullets: [
+            'Paid exemption or deferral up to 35: which route fits your status?',
+            'Yoklama kaçağı or bakaya fine: 15 days to object',
+            'Entering Turkey: what really happens at passport control',
+          ],
+          trust: 'Av. Hasan Doğru · Turkish military law · Mannheim & Ankara',
+        }
+        : {
+          lead: 'Bize doğrudan WhatsApp’tan yazın. Durumunuzu, olası cezayı ve uygun yolu netleştirelim: tecil, dövizle askerlik veya itiraz.',
+          bullets: [
+            'Dövizle askerlik mi, 35 yaşa kadar tecil mi: durumunuza hangisi uygun?',
+            'Yoklama kaçağı veya bakaya cezası: itiraz için 15 gün',
+            'Türkiye’ye giriş: pasaport kontrolünde gerçekte ne olur?',
+          ],
+          trust: 'Av. Hasan Doğru · Türk askerlik hukuku · Mannheim & Ankara',
+        };
+  }
+
+  if (funnel.service === 'citizenship') {
+    return language === 'de'
+      ? {
+          lead: 'Schreiben Sie uns direkt per WhatsApp. Wir prüfen Ihren Status im türkischen Register und Ihre Wehrakte, bevor Sie den Antrag stellen.',
+          bullets: [
+            'Art. 13 Gesetz 5901: Wer die Staatsangehörigkeit zurückerhalten kann',
+            'Wehrpflicht, Kinder, Mavi Kart: Was sich mit dem Wiedererwerb ändert',
+            'Antrag beim Konsulat und Klage bei Ablehnung',
+          ],
+          trust: 'Av. Hasan Doğru · Türkisches Staatsangehörigkeitsrecht · Mannheim & Ankara',
+        }
+      : language === 'en'
+        ? {
+          lead: 'Text us directly on WhatsApp. We check your registry status and military record before you apply.',
+          bullets: [
+            'Article 13 of Law 5901: who can regain citizenship',
+            'Military service, children, Mavi Kart: what changes',
+            'The consulate application, and what to do if refused',
+          ],
+          trust: 'Av. Hasan Doğru · Turkish citizenship law · Mannheim & Ankara',
+        }
+        : {
+          lead: 'Bize doğrudan WhatsApp’tan yazın. Başvurudan önce nüfus kaydınızı ve askerlik durumunuzu inceleyelim.',
+          bullets: [
+            '5901 m. 13: kimler yeniden kazanabilir?',
+            'Askerlik, çocuklar, Mavi Kart: neler değişir?',
+            'Konsolosluk başvurusu ve ret hâlinde dava',
+          ],
+          trust: 'Av. Hasan Doğru · Türk vatandaşlık hukuku · Mannheim & Ankara',
+        };
+  }
+
+  if (funnel.service === 'paternity') {
+    return language === 'de'
+      ? {
+          lead: 'Schreiben Sie uns direkt per WhatsApp. Wir prüfen das Register und klären, ob Anerkennung, Meldung oder Klage der richtige Weg ist.',
+          bullets: [
+            'Anerkennung, Meldung, Klage: Welcher Weg passt zu Ihrer Lage?',
+            'Deutsches Vaterschaftsurteil: warum es in der Regel anerkannt werden muss',
+            'Staatsangehörigkeit und Erbe: Was von der Abstammung abhängt',
+          ],
+          trust: 'Av. Hasan Doğru · Türkisches Familienrecht · Mannheim & Ankara',
+        }
+      : language === 'en'
+        ? {
+          lead: 'Text us directly on WhatsApp. We check the registry and clarify whether acknowledgment, notification or a court case is the right route.',
+          bullets: [
+            'Acknowledgment, notification or court: which route fits?',
+            'Foreign paternity judgment: why it generally needs recognition',
+            'Citizenship and inheritance: what depends on paternity',
+          ],
+          trust: 'Av. Hasan Doğru · Turkish family law · Mannheim & Ankara',
+        }
+        : {
+          lead: 'Bize doğrudan WhatsApp’tan yazın. Nüfus kaydını inceleyip tanıma, bildirim veya davadan hangisinin uygun olduğunu netleştirelim.',
+          bullets: [
+            'Tanıma, bildirim, dava: durumunuza hangisi uygun?',
+            'Alman babalık kararı: neden kural olarak tanınması gerekir?',
+            'Vatandaşlık ve miras: soybağına neler bağlıdır?',
+          ],
+          trust: 'Av. Hasan Doğru · Türk aile hukuku · Mannheim & Ankara',
+        };
   }
 
   if (funnel.service === 'file_check') {
@@ -1720,7 +2140,25 @@ function BlogStickyBookingCTA({ funnel, language }: { funnel: BlogProductFunnel;
     copy.stickyTitle;
 
   const headline =
-    funnel.service === 'file_check'
+    funnel.service === 'military_service'
+      ? language === 'de'
+        ? 'Türkischen Wehrstatus klären, bevor Sie reisen.'
+        : language === 'en'
+          ? 'Clear up your Turkish military status before you travel.'
+          : 'Askerlik durumunuzu seyahatten önce netleştirin.'
+      : funnel.service === 'citizenship'
+      ? language === 'de'
+        ? 'Türkische Staatsangehörigkeit zurückerlangen, ohne böse Überraschung.'
+        : language === 'en'
+          ? 'Regain Turkish citizenship without unwelcome surprises.'
+          : 'Türk vatandaşlığına sürprizsiz dönün.'
+      : funnel.service === 'paternity'
+      ? language === 'de'
+        ? 'Vaterschaft auch im türkischen Register wirksam machen.'
+        : language === 'en'
+          ? 'Make paternity effective in the Turkish registry too.'
+          : 'Babalığı Türk nüfusunda da geçerli kılın.'
+      : funnel.service === 'file_check'
       ? language === 'de'
         ? 'Klären, ob in der Türkei eine Akte oder ein Haftbefehl gegen Sie besteht.'
         : language === 'en'
@@ -1777,7 +2215,25 @@ function BlogStickyBookingCTA({ funnel, language }: { funnel: BlogProductFunnel;
             : 'Her şeyi sizin için hallediyoruz, size sadece imzalamak kalıyor!';
 
   const sub =
-    funnel.service === 'file_check'
+    funnel.service === 'military_service'
+      ? language === 'de'
+        ? 'Status, Aufschub, Dövizle Askerlik, Bußgeld und Einspruch'
+        : language === 'en'
+          ? 'Status, deferral, paid exemption, fines and objections'
+          : 'Durum tespiti, tecil, dövizle askerlik, ceza ve itiraz'
+      : funnel.service === 'citizenship'
+      ? language === 'de'
+        ? 'Register, Wehrakte, Antrag beim Konsulat und Klage'
+        : language === 'en'
+          ? 'Registry, military record, consulate application and court action'
+          : 'Nüfus, askerlik, konsolosluk başvurusu ve dava'
+      : funnel.service === 'paternity'
+      ? language === 'de'
+        ? 'Anerkennung, Register, Klage, Staatsangehörigkeit und Erbe'
+        : language === 'en'
+          ? 'Acknowledgment, registry, court, citizenship and inheritance'
+          : 'Tanıma, nüfus kaydı, dava, vatandaşlık ve miras'
+      : funnel.service === 'file_check'
       ? language === 'de'
         ? 'UYAP-Abfrage, Akteneinsicht, Haftbefehl, SEGBİS und İstinabe'
         : language === 'en'
@@ -3781,6 +4237,21 @@ export function BlogPost() {
     tr: ['turkiyede-hakkimda-yakalama-karari-var-mi'],
     en: ['arrest-warrant-turkey-before-you-travel'],
   };
+  const militaryServiceProductSlugs = {
+    de: ['wehrdienst-tuerkei-doevizle-askerlik-aufschub-einreise'],
+    tr: ['dovizle-askerlik-almanya-tecil-yoklama-kacagi-2026'],
+    en: ['turkish-military-service-germany-paid-exemption-deferral-2026'],
+  };
+  const citizenshipProductSlugs = {
+    de: ['tuerkische-staatsangehoerigkeit-zurueckerlangen-wiedereinbuergerung'],
+    tr: ['turk-vatandasligini-yeniden-kazanma-almanya-mavi-kart'],
+    en: ['regain-turkish-citizenship-from-germany-mavi-kart'],
+  };
+  const paternityProductSlugs = {
+    de: ['vaterschaft-tuerkei-anerkennen-abstammung-eintragen'],
+    tr: ['babalik-tanima-soybagi-almanya-turkiye-nufus-kaydi'],
+    en: ['paternity-recognition-turkey-civil-registry-child-born-abroad'],
+  };
   const fileCheckProductSlugs = {
     de: ['tuerkei-verfahren-gegen-mich-pruefen'],
     tr: ['turkiyede-hakkimda-dosya-var-mi-almanyadan-ogrenme'],
@@ -3801,7 +4272,13 @@ export function BlogPost() {
     (language === 'tr' && slugs.tr.includes(post.slugTR)) ||
     (language === 'en' && slugs.en.includes(post.slugEN ?? ''))
   );
-  const productFunnel = matchesLocalizedSlug(fileCheckProductSlugs)
+  const productFunnel = matchesLocalizedSlug(militaryServiceProductSlugs)
+    ? { ...militaryServiceFunnel, image: post.image }
+    : matchesLocalizedSlug(citizenshipProductSlugs)
+    ? { ...citizenshipFunnel, image: post.image }
+    : matchesLocalizedSlug(paternityProductSlugs)
+    ? { ...paternityFunnel, image: post.image }
+    : matchesLocalizedSlug(fileCheckProductSlugs)
     ? { ...fileCheckFunnel, image: post.image }
     : matchesLocalizedSlug(socialMediaCaseProductSlugs)
     ? { ...socialMediaCaseFunnel, image: post.image }
@@ -4818,6 +5295,15 @@ export function BlogPost() {
                           'Welche Rechtsmittel es gibt',
                           'Hangi hukuki yollar var?',
                           'What remedies exist',
+                          'Einreise in die Türkei: Was an der Grenze wirklich passiert',
+                          'Türkiye\'ye giriş: sınırda gerçekte ne olur?',
+                          'Entering Turkey: what really happens at the border',
+                          'Die Wehrpflicht kommt mit',
+                          'Askerlik yükümlülüğü de gündeme gelir',
+                          'Military service comes back into play',
+                          'Die Vaterschaftsklage nach türkischem Recht',
+                          'Babalık davası',
+                          'The paternity suit',
                           'Dosya varsa sırada ne var',
                           'Wenn es eine Akte gibt: die nächsten Schritte',
                           'If there is a file: what comes next',
