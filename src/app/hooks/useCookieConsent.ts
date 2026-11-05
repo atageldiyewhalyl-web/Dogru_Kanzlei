@@ -4,12 +4,13 @@ export type ConsentState = {
   essential: true;          // always true, no choice
   functional: boolean;      // External contact widgets and embeds
   analytics: boolean;       // future analytics (Google Analytics, etc.)
+  marketing: boolean;       // Google Ads conversion measurement (no remarketing / personalisation)
 };
 
 type ConsentStatus = "pending" | "accepted" | "rejected" | "custom";
 
 const CONSENT_KEY = "dogru_kanzlei_consent";
-const CONSENT_VERSION = "1"; // bump this to re-ask on policy changes
+const CONSENT_VERSION = "2"; // bump this to re-ask on policy changes (2: marketing category added)
 
 type Gtag = (...args: unknown[]) => void;
 
@@ -25,8 +26,8 @@ function pushConsentToGtm(consent: ConsentState) {
 
   const value = (granted: boolean) => (granted ? "granted" : "denied");
   gtag("consent", "update", {
-    ad_storage: "denied",
-    ad_user_data: "denied",
+    ad_storage: value(consent.marketing),
+    ad_user_data: value(consent.marketing),
     ad_personalization: "denied",
     analytics_storage: value(consent.analytics),
     functionality_storage: value(consent.functional),
@@ -41,6 +42,7 @@ export function useCookieConsent() {
     essential: true,
     functional: false,
     analytics: false,
+    marketing: false,
   });
   const [showBanner, setShowBanner] = useState(false);
 
@@ -50,7 +52,7 @@ export function useCookieConsent() {
       if (stored) {
         const parsed = JSON.parse(stored);
         if (parsed.version === CONSENT_VERSION) {
-          setConsent(parsed.consent);
+          setConsent({ marketing: false, ...parsed.consent });
           setStatus(parsed.status);
           setShowBanner(false);
           return;
@@ -73,15 +75,15 @@ export function useCookieConsent() {
   };
 
   const acceptAll = () => {
-    save({ essential: true, functional: true, analytics: true }, "accepted");
+    save({ essential: true, functional: true, analytics: true, marketing: true }, "accepted");
   };
 
   const rejectAll = () => {
-    save({ essential: true, functional: false, analytics: false }, "rejected");
+    save({ essential: true, functional: false, analytics: false, marketing: false }, "rejected");
   };
 
-  const saveCustom = (functional: boolean, analytics: boolean) => {
-    save({ essential: true, functional, analytics }, "custom");
+  const saveCustom = (functional: boolean, analytics: boolean, marketing = false) => {
+    save({ essential: true, functional, analytics, marketing }, "custom");
   };
 
   const openSettings = () => {
@@ -97,4 +99,17 @@ export function useCookieConsent() {
     saveCustom,
     openSettings,
   };
+}
+
+// Read by the lead form so an inquiry records whether ad measurement was allowed
+// at the time (needed before a qualified inquiry may be reported to Google Ads).
+export function getStoredAdConsent(): "granted" | "denied" {
+  try {
+    const stored = localStorage.getItem(CONSENT_KEY);
+    if (!stored) return "denied";
+    const parsed = JSON.parse(stored);
+    return parsed.version === CONSENT_VERSION && parsed.consent?.marketing === true ? "granted" : "denied";
+  } catch {
+    return "denied";
+  }
 }

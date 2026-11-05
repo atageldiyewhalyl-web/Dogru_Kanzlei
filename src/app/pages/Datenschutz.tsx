@@ -110,6 +110,9 @@ export function Datenschutz() {
               <p className="mb-4">
                 Alle nicht technisch notwendigen Dienste sind über den Google-Consent-Mode standardmäßig deaktiviert („denied“) und werden erst ausgeführt, nachdem Sie im Cookie-Banner eingewilligt haben. Rechtsgrundlage ist Ihre Einwilligung nach § 25 Abs. 1 TDDDG und Art. 6 Abs. 1 lit. a DSGVO. Sie können Ihre Einwilligung jederzeit über den Link „Cookie-Einstellungen“ im Seitenfuß mit Wirkung für die Zukunft widerrufen.
               </p>
+              <p className="mb-4">
+                <strong>Google Ads Conversion-Messung (Kategorie „Marketing“).</strong> Nur wenn Sie im Cookie-Banner „Marketing“ zulassen, messen wir mit Google Ads, ob eine Anfrage über eine unserer Anzeigen zustande kam. Dazu wird die Klick-Kennung der Anzeige (GCLID) verarbeitet, die Google beim Klick an die Seitenadresse anhängt. Stufen wir Ihre Anfrage als passende Anfrage ein, können wir diese Klick-Kennung zusammen mit Datum und Uhrzeit der Anfrage an Google übermitteln (Offline-Conversion-Import), damit Google die Anzeigen auf passende Anfragen ausrichten kann. Name, Telefonnummer, E-Mail-Adresse und der Inhalt Ihrer Anfrage werden dabei nicht an Google übermittelt. Ob Sie die Kategorie „Marketing“ zugelassen hatten, wird mit Ihrer Anfrage gespeichert; ohne diese Einwilligung findet keine Übermittlung statt. Rechtsgrundlage ist Ihre Einwilligung nach Art. 6 Abs. 1 lit. a DSGVO und § 25 Abs. 1 TDDDG, die Sie jederzeit über „Cookie-Einstellungen“ mit Wirkung für die Zukunft widerrufen können. Personalisierte Werbung (Remarketing) setzen wir nicht ein.
+              </p>
               <p className="mb-8">
                 Dabei kann es zu einer Übermittlung von Daten in die USA kommen. Google LLC ist unter dem EU-US Data Privacy Framework zertifiziert.
               </p>
@@ -206,6 +209,9 @@ export function Datenschutz() {
               </p>
               <p className="mb-4">
                 Teknik olarak zorunlu olmayan tüm hizmetler, Google Consent Mode üzerinden varsayılan olarak devre dışıdır („denied“) ve yalnızca çerez bandında onay vermenizden sonra çalıştırılır. Hukuki dayanak, § 25 Abs. 1 TDDDG ve GDPR Madde 6/1-a uyarınca açık rızanızdır. Rızanızı, sayfa altındaki „Cookie-Einstellungen“ bağlantısı üzerinden dilediğiniz zaman geleceğe etkili olarak geri alabilirsiniz.
+              </p>
+              <p className="mb-4">
+                <strong>Google Ads dönüşüm ölçümü („Pazarlama“ kategorisi).</strong> Yalnızca çerez bandında „Pazarlama“ kategorisine izin verdiğinizde, bir talebin reklamlarımızdan birinden gelip gelmediğini Google Ads ile ölçeriz. Bunun için Google'ın reklam tıklamasında sayfa adresine eklediği tıklama kimliği (GCLID) işlenir. Talebinizi uygun bir talep olarak değerlendirirsek, bu tıklama kimliğini talebin tarih ve saatiyle birlikte Google'a iletebiliriz (çevrimdışı dönüşüm aktarımı); böylece Google reklamları uygun taleplere göre yönlendirebilir. Adınız, telefon numaranız, e-posta adresiniz ve talebinizin içeriği Google'a iletilmez. „Pazarlama“ kategorisine izin verip vermediğiniz talebinizle birlikte kaydedilir; bu izin yoksa aktarım yapılmaz. Hukuki dayanak, GDPR Madde 6/1-a ve § 25 Abs. 1 TDDDG uyarınca açık rızanızdır; rızanızı sayfa altındaki „Çerez Ayarları“ bağlantısından dilediğiniz zaman geleceğe yönelik geri alabilirsiniz. Kişiselleştirilmiş reklam (remarketing) kullanmıyoruz.
               </p>
               <p className="mb-8">
                 Bu kapsamda verilerin ABD'ye aktarılması söz konusu olabilir. Google LLC, EU-US Data Privacy Framework kapsamında sertifikalıdır.

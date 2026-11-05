@@ -16,6 +16,8 @@ const content = {
     functionalDesc: "Ermöglicht externe Dienste wie WhatsApp.",
     analytics: "Analyse",
     analyticsDesc: "Hilft uns, die Nutzung der Website zu verstehen (z.B. Google Analytics über Google Tag Manager).",
+    marketing: "Marketing",
+    marketingDesc: "Misst, ob eine Anfrage über eine Google-Anzeige kam (Google Ads Conversion-Messung). Keine personalisierte Werbung.",
     acceptAll: "Alle akzeptieren",
     rejectAll: "Nur notwendige",
     saveCustom: "Auswahl speichern",
@@ -35,6 +37,8 @@ const content = {
     functionalDesc: "WhatsApp gibi harici hizmetlere olanak tanır.",
     analytics: "Analitik",
     analyticsDesc: "Web sitesi kullanımını anlamamıza yardımcı olur (örn. Google Tag Manager üzerinden Google Analytics).",
+    marketing: "Pazarlama",
+    marketingDesc: "Bir talebin Google reklamından gelip gelmediğini ölçer (Google Ads dönüşüm ölçümü). Kişiselleştirilmiş reklam yok.",
     acceptAll: "Tümünü kabul et",
     rejectAll: "Yalnızca zorunlu",
     saveCustom: "Seçimi kaydet",
@@ -54,6 +58,8 @@ const content = {
     functionalDesc: "Enables external services such as WhatsApp.",
     analytics: "Analytics",
     analyticsDesc: "Helps us understand how the website is used (e.g. Google Analytics).",
+    marketing: "Marketing",
+    marketingDesc: "Measures whether an inquiry came from a Google ad (Google Ads conversion measurement). No personalised advertising.",
     acceptAll: "Accept all",
     rejectAll: "Necessary only",
     saveCustom: "Save selection",
@@ -72,6 +78,7 @@ export function CookieBanner() {
   const [showDetails, setShowDetails] = useState(false);
   const [functional, setFunctional] = useState(consent.functional);
   const [analytics, setAnalytics] = useState(consent.analytics);
+  const [marketing, setMarketing] = useState(consent.marketing);
 
   if (!showBanner) return null;
 
@@ -159,6 +166,13 @@ export function CookieBanner() {
                 checked={analytics}
                 onChange={setAnalytics}
               />
+              {/* Marketing */}
+              <CookieRow
+                title={c.marketing}
+                description={c.marketingDesc}
+                checked={marketing}
+                onChange={setMarketing}
+              />
             </div>
           </div>
 
@@ -174,7 +188,7 @@ export function CookieBanner() {
 
             {showDetails ? (
               <button
-                onClick={() => saveCustom(functional, analytics)}
+                onClick={() => saveCustom(functional, analytics, marketing)}
                 className="flex-1 flex items-center justify-center gap-2 py-4 border border-[#1C3829] text-[#1C3829] font-sans text-[11px] font-bold tracking-[0.2em] uppercase hover:bg-[#F7F5F0] transition-colors"
               >
                 <Check size={14} />

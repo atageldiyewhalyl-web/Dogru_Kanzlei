@@ -6,7 +6,7 @@ type ConsentContextType = {
   consent: ConsentState;
   acceptAll: () => void;
   rejectAll: () => void;
-  saveCustom: (functional: boolean, analytics: boolean) => void;
+  saveCustom: (functional: boolean, analytics: boolean, marketing?: boolean) => void;
   openSettings: () => void;
 };
 

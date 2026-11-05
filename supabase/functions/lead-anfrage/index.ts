@@ -7,6 +7,7 @@ type LeadPayload = {
   email?: string;
   service?: string;
   source?: string;
+  adConsent?: string;
   situation?: string;
   language?: string;
   pageUrl?: string;
@@ -55,6 +56,7 @@ function validatePayload(payload: LeadPayload) {
     language: cleanText(payload.language, 20),
     pageUrl: cleanText(payload.pageUrl, 1000),
     notifyEmails: cleanText(payload.notifyEmails, 500),
+    adConsent: payload.adConsent === "granted" ? "granted" : "denied",
   };
 
   if (!lead.firstName || !lead.lastName || !lead.phone || !lead.email || !lead.service || !lead.source || !lead.situation) {
@@ -169,6 +171,7 @@ Deno.serve(async (req) => {
         language: lead.language,
         page_url: lead.pageUrl,
         notify_emails: lead.notifyEmails,
+        ad_consent: lead.adConsent,
       })
       .select("id")
       .single();

@@ -1,6 +1,7 @@
 import { FormEvent, useEffect, useMemo, useState } from "react";
 import { X } from "lucide-react";
 import { useLanguage } from "../context/LanguageContext";
+import { getStoredAdConsent } from "../hooks/useCookieConsent";
 
 const WHATSAPP_PHONE = "4917661221210";
 const DEFAULT_SUPABASE_URL = "https://srnynewvauzymnljqskj.supabase.co";
@@ -287,6 +288,7 @@ export function WhatsAppLeadCapture() {
       language,
       pageUrl,
       notifyEmails: NOTIFY_EMAILS,
+      adConsent: getStoredAdConsent(),
       createdAt: new Date().toISOString(),
     };
 
