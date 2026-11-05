@@ -88,12 +88,6 @@ export function Impressum() {
             </p>
           </div>
 
-          <div className="bg-[#1C3829] text-white p-6 my-8">
-            <p className="font-mono text-sm tracking-widest mb-0">
-              IBAN: DE70 6705 0505 0040 5727 75
-            </p>
-          </div>
-
           <h2 className="font-serif text-2xl text-[#1C3829] mt-8 mb-4">
             Berufsrechtliche Angaben
           </h2>

@@ -3,7 +3,8 @@ import { useParams, Link } from "react-router";
 import { services } from "../data/services";
 import { blogPosts } from "../data/blogPosts";
 import { serviceRelatedPosts } from "../data/serviceRelatedPosts";
-import { ArrowLeft, ArrowRight, Banknote, CheckCircle2, ChevronDown, FileCheck2, Gavel, Globe2, Scale, Star, UsersRound } from "lucide-react";
+import { ArrowLeft, ArrowRight, Banknote, CheckCircle2, ChevronDown, FileCheck2, Gavel, Globe2, Phone, Scale, Star, UsersRound } from "lucide-react";
+import { OFFICE_PHONE, OFFICE_PHONE_DISPLAY, trackPhoneClick } from "../utils/phone";
 import { motion, AnimatePresence } from "motion/react";
 import { useLanguage } from "../context/LanguageContext";
 import { useSEO, SITE_URL } from "../hooks/useSEO";
@@ -1871,7 +1872,7 @@ export function ServiceDetail() {
                   <p className="font-sans text-lg md:text-xl text-[#2f3430] leading-relaxed max-w-3xl mt-6">
                     {heroSubtitle}
                   </p>
-                  <div className="mt-8">
+                  <div className="mt-8 flex flex-col sm:flex-row sm:items-center gap-3 sm:gap-4">
                     <button
                       type="button"
                       onClick={() => openWhatsAppLeadCapture(landingLeadDetails)}
@@ -1880,6 +1881,15 @@ export function ServiceDetail() {
                       {landingWhatsappLabel}
                       <ArrowRight size={15} />
                     </button>
+                    <a
+                      href={`tel:${OFFICE_PHONE}`}
+                      onClick={() => trackPhoneClick('service_hero')}
+                      className="inline-flex items-center justify-center gap-3 px-8 py-5 border border-[#1C3829]/30 text-[#1C3829] font-sans text-[12px] font-bold tracking-[0.16em] uppercase transition-all hover:border-[#7A5F20] hover:text-[#7A5F20]"
+                    >
+                      <Phone size={15} />
+                      {familyLawText('Anrufen', 'Hemen arayın', 'Call')}
+                      <span className="hidden sm:inline">· {OFFICE_PHONE_DISPLAY}</span>
+                    </a>
                   </div>
                   <div className="flex flex-wrap items-center gap-x-4 gap-y-2 mt-8 font-sans text-[12px] md:text-[13px] font-bold tracking-[0.12em] uppercase text-[#1C3829]/75">
                     <span>Ankara Barosu</span>

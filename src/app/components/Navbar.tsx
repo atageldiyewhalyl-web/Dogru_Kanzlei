@@ -4,6 +4,7 @@ import { Link, useLocation, useNavigate } from "react-router";
 import { useLanguage, translatePath } from "../context/LanguageContext";
 import logoImage from "@/assets/logo.avif";
 import { openWhatsAppLeadCapture } from "./WhatsAppLeadCapture";
+import { OFFICE_PHONE, OFFICE_PHONE_DISPLAY, trackPhoneClick } from "../utils/phone";
 
 export function Navbar() {
   const [scrolled, setScrolled] = useState(false);
@@ -309,7 +310,7 @@ export function Navbar() {
               {language === 'de' ? 'Direkter Kontakt' : language === 'tr' ? 'Doğrudan İletişim' : 'Direct Contact'}
             </p>
             <p className="font-sans text-white mb-1">info@hasandogru.de</p>
-            <p className="font-sans text-white mb-8">+4917661221210</p>
+            <a href={`tel:${OFFICE_PHONE}`} onClick={() => trackPhoneClick('mobile_menu')} className="block font-sans text-white mb-8 underline-offset-4 hover:underline">{OFFICE_PHONE_DISPLAY}</a>
             <button
               onClick={() => {
                 setMobileOpen(false);

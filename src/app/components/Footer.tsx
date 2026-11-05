@@ -4,6 +4,7 @@ import { Link } from "react-router";
 import { useLanguage } from "../context/LanguageContext";
 import { useConsent } from "../context/ConsentContext";
 import { openWhatsAppLeadCapture } from "./WhatsAppLeadCapture";
+import { OFFICE_PHONE, OFFICE_PHONE_DISPLAY, trackPhoneClick } from "../utils/phone";
 
 export function Footer() {
   const { t, language, paths } = useLanguage();
@@ -266,14 +267,13 @@ export function Footer() {
                </div>
                <div style={{ display: "flex", alignItems: "center", gap: 10, marginBottom: 14 }}>
                  <Phone size={14} color="#8B6E2A" />
-                 <button
-                   type="button"
-                   onClick={() => openWhatsAppLeadCapture()}
-                   aria-label="Kontakt per WhatsApp" 
-                   style={{ color: "inherit", textDecoration: "none", background: "transparent", border: 0, padding: 0, font: "inherit", cursor: "pointer" }}
+                 <a
+                   href={`tel:${OFFICE_PHONE}`}
+                   onClick={() => trackPhoneClick('footer')}
+                   style={{ color: "inherit", textDecoration: "none" }}
                  >
-                   +4917661221210
-                 </button>
+                   {OFFICE_PHONE_DISPLAY}
+                 </a>
                </div>
                <div style={{ display: "flex", alignItems: "center", gap: 10, marginBottom: 14 }}>
                  <Phone size={14} color="#8B6E2A" />
