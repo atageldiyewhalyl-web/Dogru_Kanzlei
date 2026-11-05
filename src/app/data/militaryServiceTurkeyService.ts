@@ -55,6 +55,34 @@ Wenn der Flug schon gebucht ist, klären wir kurzfristig, mit welchen Unterlagen
 - Wiedererwerb und Austritt
 Prüfung vor dem Wiedererwerb oder der Aufgabe der türkischen Staatsangehörigkeit: Was kommt mit, was muss vorher geregelt sein.
 
+Für wen?
+
+- Türkische Staatsangehörige mit Arbeit in Deutschland
+Der klassische Fall für den Freikauf: mindestens drei Jahre (1.095 Tage) tatsächliche Arbeit im Ausland, Tage in der Türkei werden abgezogen.
+
+- In Deutschland geborene Doppelstaatler
+Der deutsche Pass beendet die Pflicht nicht, erleichtert sie aber: Aufschub in einem Zug bis zum Jahresende des 35. Lebensjahres und Freikauf ohne Arbeitsnachweis.
+
+- Als Yoklama Kaçağı oder Bakaya Geführte
+Für Tage, an denen ein Recht auf Zurückstellung bestand, darf kein Bußgeld verhängt werden (Art. 24 Abs. 2 Gesetz 7179). Darauf stützt sich der Einspruch in vielen Fällen.
+
+- Über 41-Jährige
+Mit 41 endet das Wehrpflichtalter, nicht die Pflicht (Art. 5 Abs. 11). Der Freikauf ist ohne Altersgrenze möglich.
+
+So läuft es ab
+
+- 1. Statusprüfung
+Wir klären über e-Devlet, Konsulat und gegebenenfalls Akten in der Türkei, wie Sie geführt werden und ob ein Bußgeld oder eine Strafakte besteht.
+
+- 2. Den passenden Weg wählen
+Unter 35 Aufschub und geplanter Freikauf, über 35 Freikauf, Dienst oder Untauglichkeitsantrag.
+
+- 3. Unterlagen und Termin
+Versicherungsverlauf, Aufenthalts- oder Staatsangehörigkeitsnachweise, Meldebescheinigung und Online-Lehrgang, zusammengestellt nach der Liste Ihres Konsulats.
+
+- 4. Bußgeld und Verfahren
+Einspruch binnen 15 Tagen; wer innerhalb eines Monats zahlt, spart 25 Prozent und behält das Recht auf Einspruch.
+
 Warum Doğru Kanzlei beim türkischen Wehrdienst?
 
 Viele Informationen im Umlauf stammen noch aus der Zeit vor dem Gesetz Nr. 7179 von 2019. Avukat Hasan Doğru ist bei der Rechtsanwaltskammer Ankara zugelassen und gemäß § 207 BRAO bei der Rechtsanwaltskammer Karlsruhe registriert. Was in der Türkei zu tun ist, erledigt er selbst über das Justizsystem UYAP.
@@ -92,6 +120,48 @@ Bilet alınmışsa hangi belgeyle girilebileceğini ve sınırda tutanak düzenl
 - Yeniden Vatandaşlık ve Çıkma
 Türk vatandaşlığına dönmeden veya çıkmadan önce askerlik açısından neyin netleşmesi gerektiğini inceliyoruz.
 
+Kimler için?
+
+- Almanya'da çalışan Türk vatandaşları
+Tecilini bir süre uzatmış, sonra unutmuş olanlar. Dövizle askerliğin klasik adayıdır; yurt dışında en az üç yıl (1.095 gün) fiilen çalışmış olmak gerekir, Türkiye'de geçen günler düşülür.
+
+- Almanya'da doğan çifte vatandaşlar
+Alman pasaportu yükümlülüğü kaldırmaz ama kolaylık sağlar: çok vatandaşlık kaydı yapıldıysa 35 yaşına girilen yılın sonuna kadar tek seferde tecil ve çalışma şartı aranmadan dövizle askerlik.
+
+- Yoklama kaçağı veya bakaya görünenler
+Konsolosluktan ceza kararı gelenler veya kaydının ne durumda olduğunu bilmeyenler. Tecil hakkının bulunduğu günler için ceza verilemez (7179 sayılı Kanun m. 24/2); bu hüküm çoğu dosyada itirazın temelidir.
+
+- 41 yaşını geçmiş olanlar
+Askerlik çağı 41'de biter, yükümlülük bitmez (m. 5/11). Dövizle askerlik yaş sınırı olmadan açıktır.
+
+- Türk vatandaşlığına dönmek isteyenler
+Yeniden vatandaşlıkla askerlik kaydı da gündeme gelir; çıkış sırasındaki duruma göre yükümlülük geri gelebilir (m. 43/2).
+
+Süreç nasıl işler?
+
+- 1. Durum tespiti
+e-Devlet'teki "Askerlik Durum Belgesi", konsolosluk kaydı ve gerekirse Türkiye'deki dosyalar üzerinden kaydınızı netleştiriyoruz: tecilli mi, kaçak mı, ceza kesinleşmiş mi, suç dosyası var mı?
+
+- 2. Yolun seçilmesi
+35 yaş altında tecil ve planlı dövizle askerlik; 35 yaş üstünde dövizle askerlik, hizmet veya sağlık nedeniyle elverişsizlik başvurusu. Vatandaşlıktan çıkmayı düşünüyorsanız adımların sırası önceden belirlenmelidir.
+
+- 3. Belgeler ve randevu
+Rentenversicherung'dan Versicherungsverlauf, oturum veya vatandaşlık belgeleri, Meldebescheinigung ve uzaktan eğitimin tamamlanması. Belge listesi konsolosluktan konsolosluğa değişebilir; listeyi sizin konsolosluğunuza göre hazırlıyoruz.
+
+- 4. Ceza ve dosya
+Ceza kararı varsa 15 gün içinde sulh ceza hâkimliğine itiraz; tebliğden itibaren bir ay içinde ödemede %25 indirim uygulanır ve ödeme itiraz hakkını kaldırmaz. Askeri Ceza Kanunu m. 63 kapsamında dosya açıldıysa savunma Türkiye'de UYAP üzerinden yürütülür.
+
+- 5. Seyahat
+Durumunuz netleşmeden Türkiye'ye gitmenizi önermiyoruz. Sınırda düzenlenen tutanak günlük ceza tutarını ikiye katlar; tecil belgenizin fotoğrafını yanınızda taşıyın.
+
+Sık yapılan hatalar
+
+- Alman pasaportuyla askerliğin bittiğini sanmak.
+- 41 yaşından sonra konunun kendiliğinden kapandığını düşünmek.
+- Konsolosluk tebligatını almamak; tebligat 30 günün sonunda yapılmış sayılır ve süre işlemeye başlar.
+- Bir takvim yılının yarısından fazlasını Türkiye'de geçirip tecili kaybetmek.
+- Bundeswehr'de yapılan hizmetin Türk askerliği yerine geçtiğini sanmak; Almanya ile böyle bir anlaşma yoktur.
+
 Askerlik Konusunda Neden Doğru Kanzlei?
 
 Dolaşımdaki birçok bilgi, 2019 tarihli 7179 sayılı Kanun'dan önceki döneme aittir. Av. Hasan Doğru, Ankara Barosu'na kayıtlı avukattır ve § 207 BRAO uyarınca Rechtsanwaltskammer Karlsruhe'de tescillidir. Türkiye'de yapılacak işlemleri UYAP üzerinden bizzat yürütür.
@@ -128,6 +198,34 @@ If your flight is booked, we clarify at short notice which documents you can ent
 
 - Regaining or Leaving Citizenship
 A review before regaining or giving up Turkish citizenship: what comes with it, and what has to be settled first.
+
+Who this is for
+
+- Turkish citizens working abroad
+The classic paid-exemption case: at least three years (1,095 days) of actual work abroad, with days in Turkey deducted.
+
+- Dual citizens born abroad
+A second passport does not end the obligation but eases it: deferral in one go to the end of the year you turn 35, and paid exemption without a work record.
+
+- People recorded as yoklama kaçağı or bakaya
+No fine may be imposed for days on which you had a right to deferral (Article 24(2) of Law No. 7179), which is the basis of many objections.
+
+- People over 41
+The military age ends at 41, not the obligation (Article 5(11)). The paid exemption has no age limit.
+
+How it works
+
+- 1. Status check
+We establish through e-Devlet, the consulate and, where needed, files in Turkey how you are recorded and whether a fine or criminal file exists.
+
+- 2. Choosing the route
+Under 35: deferral and a planned paid exemption. Over 35: paid exemption, service or an unfitness application.
+
+- 3. Documents and appointment
+Insurance record, residence or citizenship proof, registration certificate and the online course, prepared to your consulate's list.
+
+- 4. Fines and proceedings
+Object within 15 days; paying within one month saves 25% and keeps your right to object.
 
 Why Doğru Kanzlei for Turkish Military Service?
 

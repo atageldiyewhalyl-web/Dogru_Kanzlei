@@ -5,6 +5,7 @@ import { useLanguage } from "../context/LanguageContext";
 import { useSEO, SITE_URL } from "../hooks/useSEO";
 import { sortedBlogListingItems } from "../data/blogListingItems";
 import { usePrerender } from "../hooks/usePrerender";
+import { categoryLabel } from "../utils/categoryLabel";
 
 export function BlogPage() {
   const { language, t, paths } = useLanguage();
@@ -59,7 +60,7 @@ export function BlogPage() {
             </span>
           </div>
           <h1 className="font-serif text-[clamp(40px,5vw,64px)] text-[#1C3829] leading-[1.1] font-medium">
-            {t("blog_title")}
+            {t("blog_title")}{" "}
             <br />
             <em className="italic font-normal">{t("blog_subtitle")}</em>
           </h1>
@@ -87,7 +88,7 @@ export function BlogPage() {
                 <div className="flex items-center gap-4 mb-3 text-left">
                   <span className="font-sans text-[10px] font-bold tracking-[0.14em] uppercase text-[#7A5F20]">
                     <span lang={language === 'tr' ? 'tr' : 'de'}>
-                      {language === 'de' ? post.categoryDE : language === 'tr' ? post.category : post.categoryEN || post.categoryDE}
+                      {categoryLabel(post, language)}
                     </span>
                   </span>
                   <span className="w-1 h-1 rounded-full bg-[#d4cfc6] inline-block" />

@@ -7,7 +7,7 @@
 ## Firm
 - Name: Doğru Kanzlei
 - Lawyer: Hasan Doğru (Avukat, Turkish lawyer)
-- Location: R1 2,3, 68161 Mannheim, Germany
+- Location: R1 2-3, 68161 Mannheim, Germany
 - Second office: Çankaya / Ankara, Turkey
 - Languages: Turkish, German, English
 - Experience: 15+ years

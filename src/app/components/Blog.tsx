@@ -2,6 +2,7 @@ import { ArrowRight } from "lucide-react";
 import { Link } from "react-router";
 import { useLanguage } from "../context/LanguageContext";
 import { sortedBlogListingItems } from "../data/blogListingItems";
+import { categoryLabel } from "../utils/categoryLabel";
 
 export function Blog() {
   const { t, language, paths } = useLanguage();
@@ -66,7 +67,7 @@ export function Blog() {
                 margin: 0,
               }}
             >
-              {t("blog_title")}
+              {t("blog_title")}{" "}
               <br />
               <em style={{ fontStyle: "italic", fontWeight: 400 }}>{t("blog_subtitle")}</em>
             </h2>
@@ -160,7 +161,7 @@ export function Blog() {
                       color: "#B8963E",
                     }}
                   >
-                    {language === 'de' ? post.categoryDE : language === 'tr' ? post.category : post.categoryEN || post.categoryDE}
+                    {categoryLabel(post, language)}
                   </span>
                   <span
                     style={{

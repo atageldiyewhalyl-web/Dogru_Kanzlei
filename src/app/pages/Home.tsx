@@ -33,7 +33,7 @@ const HOME_SCHEMA = {
   "email": "info@hasandogru.de",
   "address": {
     "@type": "PostalAddress",
-    "streetAddress": "R1 2,3",
+    "streetAddress": "R1 2-3",
     "addressLocality": "Mannheim",
     "postalCode": "68161",
     "addressCountry": "DE"

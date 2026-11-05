@@ -1,7 +1,7 @@
 import { Fragment, useEffect, useState } from "react";
 import { Menu, X, Globe } from "lucide-react";
 import { Link, useLocation, useNavigate } from "react-router";
-import { useLanguage } from "../context/LanguageContext";
+import { useLanguage, translatePath } from "../context/LanguageContext";
 import logoImage from "@/assets/logo.avif";
 import { openWhatsAppLeadCapture } from "./WhatsAppLeadCapture";
 
@@ -189,14 +189,17 @@ export function Navbar() {
             {(['de', 'tr', 'en'] as const).map((lang, idx) => (
               <Fragment key={lang}>
                 {idx > 0 && <span style={{ color: isLight ? '#d0d0d0' : 'rgba(255,255,255,0.3)', fontSize: 10 }}>|</span>}
-                <button
-                  onClick={() => setLanguage(lang)}
+                <a
+                  href={translatePath(pathname, language, lang)}
+                  hrefLang={lang}
+                  onClick={(e) => { e.preventDefault(); setLanguage(lang); }}
                   aria-label={`Switch language to ${lang.toUpperCase()}`}
                   aria-current={language === lang ? 'true' : undefined}
                   style={{
                     background: 'none',
                     border: 'none',
                     cursor: 'pointer',
+                    textDecoration: 'none',
                     fontFamily: 'var(--font-sans)',
                     fontSize: 11,
                     fontWeight: 700,
@@ -208,7 +211,7 @@ export function Navbar() {
                   }}
                 >
                   {lang.toUpperCase()}
-                </button>
+                </a>
               </Fragment>
             ))}
           </div>
@@ -249,13 +252,16 @@ export function Navbar() {
             {(['de', 'tr', 'en'] as const).map((lang, idx) => (
               <Fragment key={lang}>
                 {idx > 0 && <span style={{ color: isLight ? '#d0d0d0' : 'rgba(255,255,255,0.4)', fontSize: 10 }}>|</span>}
-                <button
-                  onClick={() => setLanguage(lang)}
+                <a
+                  href={translatePath(pathname, language, lang)}
+                  hrefLang={lang}
+                  onClick={(e) => { e.preventDefault(); setLanguage(lang); }}
                   aria-label={`Switch language to ${lang.toUpperCase()}`}
                   style={{
                     background: 'none',
                     border: 'none',
                     cursor: 'pointer',
+                    textDecoration: 'none',
                     fontFamily: "'Lato', sans-serif",
                     fontSize: 12,
                     fontWeight: 700,
@@ -265,7 +271,7 @@ export function Navbar() {
                   }}
                 >
                   {lang.toUpperCase()}
-                </button>
+                </a>
               </Fragment>
             ))}
           </div>

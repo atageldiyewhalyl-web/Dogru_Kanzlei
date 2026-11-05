@@ -9,7 +9,7 @@ export function Contact() {
     {
       city: "Mannheim",
       country: language === "tr" ? "Almanya" : "Deutschland",
-      address: "R1 2,3\n68161 Mannheim, Deutschland",
+      address: "R1 2-3\n68161 Mannheim, Deutschland",
       phone: "+4917661221210",
       emails: ["info@hasandogru.de"],
       hours: language === "tr" ? "Pzt–Cmt: 09:00 – 18:00" : "Mo–Sa: 09:00 – 18:00",
@@ -134,7 +134,7 @@ export function Contact() {
                 lineHeight: 1.6,
               }}
             >
-              {t("contact_direct_p")}
+              {t(appointmentBookingEnabled ? "contact_direct_p" : "contact_direct_p_whatsapp")}
             </p>
 
             <div style={{ display: "flex", flexDirection: "column", gap: 16 }}>

@@ -151,6 +151,7 @@ export function WhatsAppLeadCapture() {
         turkeyNo: "Nein",
         turkeyUnsure: "Nicht sicher",
         turkeyNoNotice: "Avukat Hasan Doğru berät ausschließlich zu türkischem Recht. Für Fragen zu deutschem Aufenthalts-, Arbeits- oder Sozialrecht wenden Sie sich bitte an eine in Deutschland zugelassene Rechtsanwältin oder einen Rechtsanwalt.",
+        turkeyMissing: "Bitte beantworten Sie zuerst die Frage, ob Ihr Anliegen die Türkei betrifft.",
         privacy: "Mit dem Absenden stimmen Sie zu, dass Ihre Angaben zur Bearbeitung Ihrer Anfrage an Hasan Doğru und nüll übermittelt werden. Die Übermittlung erfolgt über WhatsApp (Meta). Einzelheiten zur Verarbeitung, Speicherdauer und zu Ihren Rechten:",
         privacyLinkLabel: "Datenschutzerklärung",
         submit: "Weiter zu WhatsApp",
@@ -177,6 +178,7 @@ export function WhatsAppLeadCapture() {
         turkeyNo: "No",
         turkeyUnsure: "Not sure",
         turkeyNoNotice: "Av. Hasan Doğru advises on Turkish law only. For German residence, employment or social-benefits matters, please contact a lawyer admitted in Germany.",
+        turkeyMissing: "Please answer the question about Turkey first.",
         privacy: "By submitting, you agree that your details are shared with Hasan Doğru and nüll to process your request. The message is sent via WhatsApp (Meta). Details on the processing, retention and your rights:",
         privacyLinkLabel: "Privacy Policy",
         submit: "Continue to WhatsApp",
@@ -202,6 +204,7 @@ export function WhatsAppLeadCapture() {
       turkeyNo: "Hayır",
       turkeyUnsure: "Emin değilim",
       turkeyNoNotice: "Av. Hasan Doğru yalnızca Türk hukuku alanında danışmanlık vermektedir. Almanya'daki oturum, iş veya sosyal yardım (Jobcenter) konuları için lütfen Almanya'da ruhsatlı bir avukata başvurun.",
+        turkeyMissing: "Lütfen önce konunuzun Türkiye ile ilgili olup olmadığını belirtin.",
       privacy: "Göndererek bilgilerinizin talebinizin işlenmesi için Hasan Doğru ve nüll ile paylaşılmasını kabul edersiniz. İletim WhatsApp (Meta) üzerinden gerçekleşir. İşleme, saklama süresi ve haklarınıza ilişkin ayrıntılar:",
       privacyLinkLabel: "Gizlilik Politikası",
       submit: "WhatsApp'a Devam Et",
@@ -258,7 +261,12 @@ export function WhatsAppLeadCapture() {
   const submitLead = async (event: FormEvent<HTMLFormElement>) => {
     event.preventDefault();
     const turkeyLink = form.turkeyLink;
-    if (!form.partnerReferral && (turkeyLink === "" || turkeyLink === "no")) return;
+    if (!form.partnerReferral && turkeyLink === "") {
+      setSubmitError(labels.turkeyMissing);
+      document.getElementById("lead-turkey-question")?.scrollIntoView({ behavior: "smooth", block: "center" });
+      return;
+    }
+    if (!form.partnerReferral && turkeyLink === "no") return;
     setSubmitting(true);
     setSubmitError("");
 
@@ -307,9 +315,10 @@ export function WhatsAppLeadCapture() {
         throw new Error(`Lead endpoint returned ${response.status}`);
       }
     } catch {
-      setSubmitError(labels.submitFailed);
-      setSubmitting(false);
-      return;
+      // Lead storage failed (function, network or e-mail provider). The details are in the
+      // WhatsApp text and in localStorage, so continue to WhatsApp rather than lose the inquiry.
+      window.dataLayer = window.dataLayer || [];
+      window.dataLayer.push({ event: "lead_store_failed", lead_service: lead.service || "unknown" });
     }
 
     const message = encodeURIComponent(buildWhatsAppMessage(normalizedForm, pageUrl));
@@ -346,7 +355,7 @@ export function WhatsAppLeadCapture() {
 
           <form onSubmit={submitLead} className="space-y-5">
             {!form.partnerReferral && (
-            <fieldset className="rounded-md border border-[#D8D0C2] bg-white px-4 py-4">
+            <fieldset id="lead-turkey-question" className="rounded-md border border-[#D8D0C2] bg-white px-4 py-4">
               <legend className="px-1 text-[12px] font-bold uppercase tracking-[0.12em] text-[#1C3829]">
                 {labels.turkeyLink}
               </legend>
@@ -365,12 +374,11 @@ export function WhatsAppLeadCapture() {
                     } focus-within:ring-2 focus-within:ring-[#8B6E2A]/40`}
                   >
                     <input
-                      required
                       type="radio"
                       name="turkeyLink"
                       value={value}
                       checked={form.turkeyLink === value}
-                      onChange={() => updateField("turkeyLink", value)}
+                      onChange={() => { updateField("turkeyLink", value); setSubmitError(""); }}
                       className="sr-only"
                     />
                     {label}

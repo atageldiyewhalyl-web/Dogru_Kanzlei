@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { ChevronDown } from "lucide-react";
-import { motion, AnimatePresence } from "motion/react";
+import { motion } from "motion/react";
 
 interface FAQItemProps {
   question: string;
@@ -13,6 +13,8 @@ export function FAQItem({ question, answer }: FAQItemProps) {
   return (
     <div className="border border-[#1C3829]/10 bg-white hover:border-[#8B6E2A]/30 transition-colors overflow-hidden">
       <button
+        type="button"
+        aria-expanded={isOpen}
         onClick={() => setIsOpen(!isOpen)}
         className="w-full p-6 text-left flex items-center justify-between group"
       >
@@ -27,20 +29,15 @@ export function FAQItem({ question, answer }: FAQItemProps) {
           <ChevronDown size={20} />
         </motion.div>
       </button>
-      <AnimatePresence>
-        {isOpen && (
-          <motion.div
-            initial={{ height: 0, opacity: 0 }}
-            animate={{ height: "auto", opacity: 1 }}
-            exit={{ height: 0, opacity: 0 }}
-            transition={{ duration: 0.3 }}
-          >
-            <div className="px-6 pb-6 font-sans text-[15px] text-[#6a6a6a] leading-relaxed border-t border-[#1C3829]/5 pt-4">
-              {answer}
-            </div>
-          </motion.div>
-        )}
-      </AnimatePresence>
+      {/* Always rendered so the answer is in the prerendered HTML; collapsed via CSS grid (no transition,
+          so visibility never depends on an animation running). */}
+      <div className="grid" style={{ gridTemplateRows: isOpen ? "1fr" : "0fr" }} aria-hidden={!isOpen}>
+        <div className="overflow-hidden">
+          <div className="px-6 pb-6 font-sans text-[15px] text-[#6a6a6a] leading-relaxed border-t border-[#1C3829]/5 pt-4">
+            {answer}
+          </div>
+        </div>
+      </div>
     </div>
   );
 }

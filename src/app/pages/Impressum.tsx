@@ -59,7 +59,7 @@ export function Impressum() {
             <p className="mb-2"><strong>Firma / Anbieter:</strong><br />DOGRU KANZLEİ</p>
             <p className="mb-2"><strong>Rechtsform:</strong><br />Einzelunternehmen</p>
             <p className="mb-2"><strong>Vertreten durch (Geschäftsführer / Inhaber):</strong><br />Avukat Hasan DOĞRU</p>
-            <p className="mb-2"><strong>Anschrift:</strong><br />R1 2,3<br />68161 MANNHEIM<br />DEUTSCHLAND</p>
+            <p className="mb-2"><strong>Anschrift:</strong><br />R1 2-3<br />68161 MANNHEIM<br />DEUTSCHLAND</p>
           </div>
 
           <h2 className="font-serif text-2xl text-[#1C3829] mt-8 mb-4">
@@ -152,7 +152,7 @@ export function Impressum() {
           </h2>
           <p className="mb-8">
             Hasan DOĞRU<br />
-            R1 2,3 68161 Mannheim
+            R1 2-3 68161 Mannheim
           </p>
 
           <hr className="border-[#B8963E]/30 my-12" />

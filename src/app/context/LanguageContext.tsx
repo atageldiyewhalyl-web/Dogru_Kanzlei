@@ -30,7 +30,7 @@ interface LocalePaths {
 const LanguageContext = createContext<LanguageContextType | undefined>(undefined);
 
 // Translate route segments when switching language
-function translatePath(path: string, fromLang: Language, toLang: Language): string {
+export function translatePath(path: string, fromLang: Language, toLang: Language): string {
   let newPath = path.replace(`/${fromLang}`, `/${toLang}`);
 
   // 1. Static base segments — all 6 direction pairs

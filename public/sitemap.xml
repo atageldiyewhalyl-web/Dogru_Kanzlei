@@ -1113,6 +1113,7 @@
     <xhtml:link rel="alternate" hreflang="de" href="https://www.hasandogru.de/de/blog/vollmacht-auf-tuerkisch" />
     <xhtml:link rel="alternate" hreflang="de-DE" href="https://www.hasandogru.de/de/blog/vollmacht-auf-tuerkisch" />
     <xhtml:link rel="alternate" hreflang="tr" href="https://www.hasandogru.de/tr/blog/turkce-vekaletname-nasil-cikarilir" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.hasandogru.de/en/blog/power-of-attorney-in-turkish" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://www.hasandogru.de/de/blog/vollmacht-auf-tuerkisch" />
     <lastmod>2026-04-19</lastmod>
     <priority>0.6</priority>
@@ -1122,6 +1123,7 @@
     <xhtml:link rel="alternate" hreflang="de" href="https://www.hasandogru.de/de/blog/vollmacht-auf-tuerkisch" />
     <xhtml:link rel="alternate" hreflang="de-DE" href="https://www.hasandogru.de/de/blog/vollmacht-auf-tuerkisch" />
     <xhtml:link rel="alternate" hreflang="tr" href="https://www.hasandogru.de/tr/blog/turkce-vekaletname-nasil-cikarilir" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.hasandogru.de/en/blog/power-of-attorney-in-turkish" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://www.hasandogru.de/de/blog/vollmacht-auf-tuerkisch" />
     <lastmod>2026-04-19</lastmod>
     <priority>0.6</priority>
@@ -2589,5 +2591,15 @@
     <lastmod>2026-10-31</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://www.hasandogru.de/en/blog/power-of-attorney-in-turkish</loc>
+    <xhtml:link rel="alternate" hreflang="de" href="https://www.hasandogru.de/de/blog/vollmacht-auf-tuerkisch" />
+    <xhtml:link rel="alternate" hreflang="tr" href="https://www.hasandogru.de/tr/blog/turkce-vekaletname-nasil-cikarilir" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.hasandogru.de/en/blog/power-of-attorney-in-turkish" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.hasandogru.de/de/blog/vollmacht-auf-tuerkisch" />
+    <lastmod>2026-11-05</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
   </url>
 </urlset>

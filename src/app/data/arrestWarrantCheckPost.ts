@@ -331,7 +331,7 @@ The legal basis is Article 153 of the Turkish Code of Criminal Procedure (CMK): 
 
 This power has one limit. Under Article 153(2) CMK, for certain listed ("catalogue") offences, file access can be restricted by a judge on the prosecutor's request where disclosure would endanger the purpose of the investigation. But that restriction does not apply to statement records or expert reports.
 
-For a thorough check, looking at UYAP alone is sometimes not enough; where necessary, the lawyer also inspects the file in person at the registry of the relevant courthouse. You do not need to travel to Turkey for this — the process mirrors the one in [defending a Turkish criminal case from abroad](/en/blog/turkish-criminal-case-defence-from-germany).
+For a thorough check, looking at UYAP alone is sometimes not enough; where necessary, the lawyer also inspects the file in person at the registry of the relevant courthouse. You do not need to travel to Turkey for this — the process mirrors the one in [defending a Turkish criminal case from abroad](/en/blog/turkish-criminal-defense-from-germany).
 
 ## If there is a warrant — what can be done before you travel
 

@@ -65,6 +65,14 @@ export function Testimonials() {
             {t("testimonials_title")}{" "}
             <span className="block font-normal italic md:inline">{t("testimonials_subtitle")}</span>
           </h2>
+          <a
+            href="https://maps.app.goo.gl/GujBeApHPpj1Vzjd9"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="mt-4 inline-flex items-center gap-2 border-b border-[#8B6E2A]/40 pb-0.5 font-sans text-[12px] font-bold uppercase tracking-[0.14em] text-[#7A5F20] transition-colors hover:border-[#8B6E2A] hover:text-[#1C3829]"
+          >
+            {t("testimonials_google_link")}
+          </a>
         </div>
 
         <div

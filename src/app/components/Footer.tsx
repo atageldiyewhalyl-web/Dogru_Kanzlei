@@ -24,12 +24,16 @@ export function Footer() {
         { label: "Tanıma & Tenfiz", href: paths.service("tanima-ve-tenfiz") },
         { label: "Erbrecht", href: paths.service("erbrecht") },
         { label: "Strafrecht", href: paths.service("strafrecht") },
+        { label: "Wehrdienst Türkei", href: paths.service("wehrdienst-askerlik") },
+        { label: "Einreiseverbot Türkei", href: paths.service("visum-einreise-tuerkei") },
       ]
     : [
         { label: "Aile Hukuku", href: paths.service("familienrecht") },
         { label: "Tanıma & Tenfiz", href: paths.service("tanima-ve-tenfiz") },
         { label: "Miras Hukuku", href: paths.service("erbrecht") },
         { label: "Ceza Hukuku", href: paths.service("strafrecht") },
+        { label: language === "en" ? "Military Service" : "Askerlik", href: paths.service("wehrdienst-askerlik") },
+        { label: language === "en" ? "Entry Ban & Visa" : "Giriş Yasağı ve Vize", href: paths.service("visum-einreise-tuerkei") },
       ];
 
   return (
@@ -277,7 +281,7 @@ export function Footer() {
                </div>
                <div style={{ display: "flex", alignItems: "flex-start", gap: 10, marginBottom: 14 }}>
                  <MapPin size={14} color="#8B6E2A" style={{ marginTop: 4 }} />
-                 <span>R1 2,3, 68161 Mannheim, Deutschland</span>
+                 <span>R1 2-3, 68161 Mannheim, Deutschland</span>
                </div>
                <div style={{ display: "flex", alignItems: "flex-start", gap: 10 }}>
                  <MapPin size={14} color="#8B6E2A" style={{ marginTop: 4 }} />

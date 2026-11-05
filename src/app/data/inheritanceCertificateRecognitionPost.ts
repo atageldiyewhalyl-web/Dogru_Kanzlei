@@ -598,7 +598,7 @@ This guide is also available in Turkish:
 And in German for German-speaking family members or advisers:
 [Türkischer Erbschein in Deutschland, deutscher Erbschein in der Türkei →](/de/blog/erbschein-tuerkei-deutschland-gegenseitige-anerkennung)
 
-How to obtain the Turkish inheritance certificate in the first place — notary vs. court, power of attorney, apostille, costs — is covered in our [complete inheritance certificate guide](/en/blog/turkish-inheritance-certificate-germany-guide). For the tax side of a cross-border estate, see our article on [Turkish inheritance tax double taxation](/en/blog/turkish-inheritance-tax-double-taxation-germany). For the power of attorney you'll need for either process, see [Power of Attorney in Turkish](/en/blog/power-of-attorney-in-turkish).
+How to obtain the Turkish inheritance certificate in the first place — notary vs. court, power of attorney, apostille, costs — is covered in our [complete inheritance certificate guide](/en/blog/turkish-inheritance-certificate-germany-guide). For the tax side of a cross-border estate, see our article on [Turkish inheritance tax double taxation](/en/blog/turkish-inheritance-tax-double-taxation-germany). For the power of attorney you'll need for either process, see [Power of Attorney in Turkish](/en/blog/power-of-attorney-turkey-guide).
 
 ## Frequently Asked Questions
 

@@ -99,11 +99,13 @@ export const translations = {
     contact_booking_note: "Secure payment is handled by Stripe. Appointment times are managed in Calendly.",
     contact_direct_title: "Direct Contact",
     contact_direct_p: "Book a paid appointment online or reach us directly on WhatsApp.",
+    contact_direct_p_whatsapp: "Reach us directly on WhatsApp — we reply as quickly as possible.",
 
     // Testimonials
     testimonials_badge: "Client Reviews",
     testimonials_title: "What Our",
     testimonials_subtitle: "Clients Say",
+    testimonials_google_link: "All reviews on Google →",
     testimonial_1_name: "Hatice Kul",
     testimonial_1_area: "Recognition & Enforcement",
     testimonial_1_text: "I would like to sincerely thank Mr. Doğru for his outstanding support in my Tanıma ve Tenfiz case. From the very beginning I felt extremely well taken care of. I particularly appreciate his friendly, respectful and understanding manner. He gives confidence in difficult situations.",
@@ -236,11 +238,13 @@ export const translations = {
     contact_booking_note: "Güvenli ödeme Stripe üzerinden, randevu saatleri Calendly üzerinden yönetilir.",
     contact_direct_title: "Hızlı İletişim",
     contact_direct_p: "Online ücretli randevu alın veya bize doğrudan WhatsApp üzerinden ulaşın.",
+    contact_direct_p_whatsapp: "Bize doğrudan WhatsApp üzerinden ulaşın, en kısa sürede dönüş yapıyoruz.",
 
     // Testimonials
     testimonials_badge: "Müvekkil Yorumları",
     testimonials_title: "Müvekkillerimiz",
     testimonials_subtitle: "Ne Diyor?",
+    testimonials_google_link: "Tüm Google yorumları →",
     testimonial_1_name: "Hatice Kul",
     testimonial_1_area: "Tanıma ve Tenfiz",
     testimonial_1_text: "Tanıma ve Tenfiz davamdaki üstün desteği için Sayın Doğru'ya içtenlikle teşekkür etmek istiyorum. En başından beri kendimi onun yanında çok güvende hissettim. Özellikle arkadaş canlısı, saygılı ve anlayışlı yaklaşımını takdir ediyorum. Zor bir durumda güven veriyor.",
@@ -373,11 +377,13 @@ export const translations = {
     contact_booking_note: "Die sichere Zahlung läuft über Stripe. Terminzeiten werden in Calendly verwaltet.",
     contact_direct_title: "Direkter Kontakt",
     contact_direct_p: "Buchen Sie online einen kostenpflichtigen Termin oder kontaktieren Sie uns direkt per WhatsApp.",
+    contact_direct_p_whatsapp: "Kontaktieren Sie uns direkt per WhatsApp — wir melden uns so schnell wie möglich.",
 
     // Testimonials
     testimonials_badge: "Mandantenstimmen",
     testimonials_title: "Was unsere",
     testimonials_subtitle: "Mandanten sagen",
+    testimonials_google_link: "Alle Bewertungen bei Google →",
     testimonial_1_name: "Hatice Kul",
     testimonial_1_area: "Anerkennung & Vollstreckung",
     testimonial_1_text: "Ich möchte mich herzlich bei Herrn Doğru für seine hervorragende Unterstützung in meiner Tanıma ve Tenfiz davası bedanken. Von Anfang an habe ich mich bei ihm sehr gut aufgehoben gefühlt. Besonders schätze ich seine freundliche, respektvolle und verständnisvolle Art.",
