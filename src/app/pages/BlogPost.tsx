@@ -4233,8 +4233,8 @@ export function BlogPost() {
     en: ['turkish-inheritance-certificate-recognition-germany'],
   };
   const arrestWarrantProductSlugs = {
-    de: ['haftbefehl-tuerkei-einreise-risiko'],
-    tr: ['turkiyede-hakkimda-yakalama-karari-var-mi'],
+    de: ['haftbefehl-tuerkei-einreise-risiko', 'haftbefehl-tuerkei-pass-aufhebung'],
+    tr: ['turkiyede-hakkimda-yakalama-karari-var-mi', 'yurt-disinda-yakalama-karari-kaldirma'],
     en: ['arrest-warrant-turkey-before-you-travel'],
   };
   const militaryServiceProductSlugs = {

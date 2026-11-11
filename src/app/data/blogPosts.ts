@@ -35,6 +35,7 @@ import { inheritanceParticipationClaimPost } from "./inheritanceParticipationCla
 import { inheritanceCertificateRecognitionPost } from "./inheritanceCertificateRecognitionPost";
 import { fotografliVekaletnameFormfehlerPost, tapuDevirVekaletnamesiPost } from "./vekaletnameFormAndTapuPosts";
 import { arrestWarrantCheckPost } from "./arrestWarrantCheckPost";
+import { arrestWarrantLiftPost } from "./arrestWarrantLiftPost";
 import { germanDivorceTurkishStatusPost } from "./germanDivorceTurkishStatusPost";
 import { visaEntryBanTurkeyPost } from "./visaEntryBanTurkeyPost";
 import { militaryServiceTurkeyPost } from "./militaryServiceTurkeyPost";
@@ -1169,6 +1170,7 @@ const hiddenBlogSlugs = new Set([
 ]);
 
 const allBlogPosts: BlogPost[] = [
+  arrestWarrantLiftPost,
   militaryServiceTurkeyPost,
   regainTurkishCitizenshipPost,
   paternityRecognitionTurkeyPost,

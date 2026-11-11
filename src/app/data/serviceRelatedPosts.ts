@@ -35,6 +35,7 @@ export const serviceRelatedPosts: Record<string, string[]> = {
   strafrecht: [
     "turkiyede-hakkimda-dosya-var-mi",
     "turkiyede-hakkimda-yakalama-karari-var-mi",
+    "yurt-disinda-yakalama-karari-kaldirma",
     "tuerkisches-strafrecht-anwalt-deutschland",
     "drogendelikt-tuerkei-strafverteidigung-deutschland",
   ],
