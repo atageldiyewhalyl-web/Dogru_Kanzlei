@@ -42,12 +42,12 @@ export const arrestWarrantCheckPost: BlogPost = {
   readTimeTR: "10 dk okuma",
   readTimeEN: "10 min read",
   publishedAt: "2026-09-09",
-  modifiedAt: "2026-09-09",
+  modifiedAt: "2026-11-11",
   publishedAtDE: "2026-09-09",
   publishedAtTR: "2026-09-09",
   publishedAtEN: "2026-09-09",
-  modifiedAtDE: "2026-09-09",
-  modifiedAtTR: "2026-09-09",
+  modifiedAtDE: "2026-11-11",
+  modifiedAtTR: "2026-11-11",
   modifiedAtEN: "2026-09-09",
   ctaTitleDE: "Haftbefehl in der Türkei vor der Reise prüfen lassen?",
   ctaTitleTR: "Seyahatten önce yakalama kararı sorgusu yaptırmak ister misiniz?",
@@ -130,7 +130,7 @@ Dikkat: Mahkemeler ve savcılıklar, şüphelinin yurt dışında yaşamasını 
 
 ## Yakalama kararının diğer sonuçları ve tebligat
 
-Yakalama kararı sadece girişte sorun çıkarmaz. Ayrıca Türkiye'de pasaport işlemlerinin yapılamamasına yol açabilir, konsolosluk işlemlerinizi etkileyebilir ve dosya niteliğine göre kırmızı bülten çıkarılmışsa Interpol üzerinden uluslararası düzeyde aranma söz konusu olabilir. Türkiye'de verilen bir yakalama kararı Almanya'da doğrudan icra edilemez; ancak kırmızı bülten çıkarılmışsa durum değişir.
+Yakalama kararı sadece girişte sorun çıkarmaz. Ayrıca Türkiye'de pasaport işlemlerinin yapılamamasına yol açabilir, konsolosluk işlemlerinizi etkileyebilir ve dosya niteliğine göre kırmızı bülten çıkarılmışsa Interpol üzerinden uluslararası düzeyde aranma söz konusu olabilir. Türkiye'de verilen bir yakalama kararı Almanya'da doğrudan icra edilemez; ancak kırmızı bülten çıkarılmışsa durum değişir. Konsolosluk pasaportunuzu bu yüzden yenilemiyorsa: [Yakalama kararı yüzünden pasaport alamıyorum — yakalama kararı nasıl kaldırılır?](/tr/blog/yurt-disinda-yakalama-karari-kaldirma)
 
 Çoğu müvekkilimiz "benim hiç haberim olmadı" der. Sebebi genellikle tebligattır. 7201 sayılı Tebligat Kanunu, Türkiye'deki eski adresinize yapılan tebligatı usulüne uygunsa geçerli sayabilir — siz o adreste yaşamasanız bile. Tebligatın usulsüz olduğu ispatlanabilirse süreler yeniden işlemeye başlar ve karara itiraz imkânı doğar. [Türkiye'deki ceza davanızı Almanya'dan savunmak](/tr/blog/turkiye-ceza-davasi-tutuklama-karari-almanya-savunma) yazımızda bu yolu ayrıntılı ele aldık.
 
@@ -247,7 +247,7 @@ Zu beachten: Gerichte und Staatsanwaltschaften nehmen teilweise gerade wegen des
 
 ## Weitere Folgen und die Frage der Zustellung
 
-Ein Haftbefehl kann darüber hinaus dazu führen, dass Passangelegenheiten in der Türkei nicht bearbeitet werden und konsularische Vorgänge beeinträchtigt sind. Wurde je nach Aktenlage eine Interpol-Ausschreibung veranlasst, reicht die Wirkung über die Türkei hinaus. Ein in der Türkei erlassener Haftbefehl ist in Deutschland nicht unmittelbar vollstreckbar; bei einer internationalen Ausschreibung stellt sich die Lage jedoch anders dar.
+Ein Haftbefehl kann darüber hinaus dazu führen, dass Passangelegenheiten in der Türkei nicht bearbeitet werden und konsularische Vorgänge beeinträchtigt sind. Wurde je nach Aktenlage eine Interpol-Ausschreibung veranlasst, reicht die Wirkung über die Türkei hinaus. Ein in der Türkei erlassener Haftbefehl ist in Deutschland nicht unmittelbar vollstreckbar; bei einer internationalen Ausschreibung stellt sich die Lage jedoch anders dar. Verweigert das Konsulat deshalb Ihren Pass: [Kein Pass vom Konsulat – so wird die Festnahmeanordnung aufgehoben](/de/blog/haftbefehl-tuerkei-pass-aufhebung)
 
 Häufigste Ursache dafür, dass Betroffene nichts erfahren haben, ist die Zustellung. Das türkische Zustellungsgesetz (Nr. 7201) regelt die Zustellung an im Ausland lebende Staatsangehörige gesondert. Eine Zustellung an eine frühere Anschrift in der Türkei kann wirksam sein, auch wenn Sie dort nicht mehr wohnen. Lässt sich die Fehlerhaftigkeit der Zustellung nachweisen, beginnen die Fristen neu zu laufen und die Entscheidung kann angefochten werden — mehr dazu unter [Strafverfahren in der Türkei — Verteidigung aus Deutschland](/de/blog/strafverfahren-tuerkei-haftbefehl-verteidigung-deutschland).
 

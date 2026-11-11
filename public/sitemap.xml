@@ -2130,7 +2130,7 @@
     <xhtml:link rel="alternate" hreflang="tr" href="https://www.hasandogru.de/tr/blog/turkiyede-hakkimda-yakalama-karari-var-mi" />
     <xhtml:link rel="alternate" hreflang="en" href="https://www.hasandogru.de/en/blog/arrest-warrant-turkey-before-you-travel" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://www.hasandogru.de/de/blog/haftbefehl-tuerkei-einreise-risiko" />
-    <lastmod>2026-09-09</lastmod>
+    <lastmod>2026-11-11</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
@@ -2143,7 +2143,7 @@
     <xhtml:link rel="alternate" hreflang="tr" href="https://www.hasandogru.de/tr/blog/turkiyede-hakkimda-yakalama-karari-var-mi" />
     <xhtml:link rel="alternate" hreflang="en" href="https://www.hasandogru.de/en/blog/arrest-warrant-turkey-before-you-travel" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://www.hasandogru.de/de/blog/haftbefehl-tuerkei-einreise-risiko" />
-    <lastmod>2026-09-09</lastmod>
+    <lastmod>2026-11-11</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
@@ -2601,5 +2601,23 @@
     <lastmod>2026-11-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
+  </url>
+  <url>
+    <loc>https://www.hasandogru.de/de/blog/haftbefehl-tuerkei-pass-aufhebung</loc>
+    <xhtml:link rel="alternate" hreflang="de" href="https://www.hasandogru.de/de/blog/haftbefehl-tuerkei-pass-aufhebung" />
+    <xhtml:link rel="alternate" hreflang="tr" href="https://www.hasandogru.de/tr/blog/yurt-disinda-yakalama-karari-kaldirma" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.hasandogru.de/de/blog/haftbefehl-tuerkei-pass-aufhebung" />
+    <lastmod>2026-11-11</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.hasandogru.de/tr/blog/yurt-disinda-yakalama-karari-kaldirma</loc>
+    <xhtml:link rel="alternate" hreflang="de" href="https://www.hasandogru.de/de/blog/haftbefehl-tuerkei-pass-aufhebung" />
+    <xhtml:link rel="alternate" hreflang="tr" href="https://www.hasandogru.de/tr/blog/yurt-disinda-yakalama-karari-kaldirma" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.hasandogru.de/de/blog/haftbefehl-tuerkei-pass-aufhebung" />
+    <lastmod>2026-11-11</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
   </url>
 </urlset>
