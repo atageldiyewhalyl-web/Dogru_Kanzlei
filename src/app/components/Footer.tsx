@@ -353,7 +353,7 @@ export function Footer() {
               Fotoğraf (Copyright) Kâmil Yılmaz
             </span>
             <a
-              href="https://nüll.com"
+              href="https://nuell-agentur.com/"
               target="_blank"
               rel="noopener noreferrer"
               style={{
