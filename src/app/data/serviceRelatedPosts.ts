@@ -40,6 +40,7 @@ export const serviceRelatedPosts: Record<string, string[]> = {
     "drogendelikt-tuerkei-strafverteidigung-deutschland",
   ],
   "mavi-kart": [
+    "yatirim-karsiligi-ikamet-izni-almanyada-yasayanlar",
     "turk-vatandasligini-yeniden-kazanma",
     "mavi-kart-haklari-rehberi",
     "mavi-kart-miras-gayrimenkul-haklari",
@@ -61,6 +62,7 @@ export const serviceRelatedPosts: Record<string, string[]> = {
     "zwangsvollstreckung-tuerkei-forderungen-aus-deutschland",
   ],
   migrationsrecht: [
+    "yatirim-karsiligi-ikamet-izni-almanyada-yasayanlar",
     "turk-vatandasligini-yeniden-kazanma",
     "wehrdienst-tuerkei-askerlik-rehberi",
     "turkiye-giris-yasagi-vize-reddi",

@@ -36,6 +36,7 @@ import { inheritanceCertificateRecognitionPost } from "./inheritanceCertificateR
 import { fotografliVekaletnameFormfehlerPost, tapuDevirVekaletnamesiPost } from "./vekaletnameFormAndTapuPosts";
 import { arrestWarrantCheckPost } from "./arrestWarrantCheckPost";
 import { arrestWarrantLiftPost } from "./arrestWarrantLiftPost";
+import { investorResidencePermitPost } from "./investorResidencePermitPost";
 import { germanDivorceTurkishStatusPost } from "./germanDivorceTurkishStatusPost";
 import { visaEntryBanTurkeyPost } from "./visaEntryBanTurkeyPost";
 import { militaryServiceTurkeyPost } from "./militaryServiceTurkeyPost";
@@ -1170,6 +1171,7 @@ const hiddenBlogSlugs = new Set([
 ]);
 
 const allBlogPosts: BlogPost[] = [
+  investorResidencePermitPost,
   arrestWarrantLiftPost,
   militaryServiceTurkeyPost,
   regainTurkishCitizenshipPost,
@@ -9278,14 +9280,14 @@ Ehemalige türkische Staatsbürger behalten durch die **Mavi Kart** viele ihrer 
 
 - **Immobilienerwerb**: Sie können wie türkische Bürger Immobilien erwerben.
 - **Erbrecht**: Sie bleiben voll erbberechtigt.
-- **Aufenthalt**: Visumfreier Aufenthalt in der Türkei.
+- **Aufenthalt**: Visumfreier Aufenthalt in der Türkei. Für Ausländer ohne Mavi Kart gibt es seit dem 18.11.2026 zusätzlich die [Aufenthaltserlaubnis gegen Geldanlage](/de/blog/aufenthaltserlaubnis-tuerkei-geldanlage).
 
 **Doğru Kanzlei**: Wir beraten Sie zu allen mavkart-bezogenen Rechtsfragen in der Türkei.`,
     contentTR: `**YASAL UYARI:** Bu makale yalnızca Türk hukuku ile ilgilidir. Büromuzda Alman hukuku (örneğin Alman miras hukuku, BGB uyarınca aile hukuku veya Alman göç hukuku) konusunda danışmanlık verilmemektedir.
 
 ### Mavi Kart Hakları
 
-Türk vatandaşlığından çıkan kişilerin Türkiye'deki haklarını koruyan statüdür.
+Türk vatandaşlığından çıkan kişilerin Türkiye'deki haklarını koruyan statüdür. Mavi Kart sahipleri ikamet izninden muaftır; 18.11.2026'da yürürlüğe giren [yatırım karşılığı ikamet izni](/tr/blog/yatirim-karsiligi-ikamet-izni-almanyada-yasayanlar) ise Mavi Kartı olmayan yabancılar içindir.
 
 **Hukuki Dayanak**: 5901 sayılı TVK Madde 28.`,
     category: "Vatandaşlık Hukuku",

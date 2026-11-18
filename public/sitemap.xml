@@ -748,7 +748,7 @@
     <xhtml:link rel="alternate" hreflang="de-AT" href="https://www.hasandogru.de/de/blog/mavi-kart-rechte-tuerkei" />
     <xhtml:link rel="alternate" hreflang="tr" href="https://www.hasandogru.de/tr/blog/mavi-kart-haklari-rehberi" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://www.hasandogru.de/de/blog/mavi-kart-rechte-tuerkei" />
-    <lastmod>2026-04-12</lastmod>
+    <lastmod>2026-11-18</lastmod>
     <priority>0.6</priority>
   </url>
   <url>
@@ -759,7 +759,7 @@
     <xhtml:link rel="alternate" hreflang="de-AT" href="https://www.hasandogru.de/de/blog/mavi-kart-rechte-tuerkei" />
     <xhtml:link rel="alternate" hreflang="tr" href="https://www.hasandogru.de/tr/blog/mavi-kart-haklari-rehberi" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://www.hasandogru.de/de/blog/mavi-kart-rechte-tuerkei" />
-    <lastmod>2026-04-12</lastmod>
+    <lastmod>2026-11-18</lastmod>
     <priority>0.6</priority>
   </url>
 
@@ -2618,6 +2618,24 @@
     <xhtml:link rel="alternate" hreflang="x-default" href="https://www.hasandogru.de/de/blog/haftbefehl-tuerkei-pass-aufhebung" />
     <lastmod>2026-11-11</lastmod>
     <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.hasandogru.de/de/blog/aufenthaltserlaubnis-tuerkei-geldanlage</loc>
+    <xhtml:link rel="alternate" hreflang="de" href="https://www.hasandogru.de/de/blog/aufenthaltserlaubnis-tuerkei-geldanlage" />
+    <xhtml:link rel="alternate" hreflang="tr" href="https://www.hasandogru.de/tr/blog/yatirim-karsiligi-ikamet-izni-almanyada-yasayanlar" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.hasandogru.de/de/blog/aufenthaltserlaubnis-tuerkei-geldanlage" />
+    <lastmod>2026-11-18</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.hasandogru.de/tr/blog/yatirim-karsiligi-ikamet-izni-almanyada-yasayanlar</loc>
+    <xhtml:link rel="alternate" hreflang="de" href="https://www.hasandogru.de/de/blog/aufenthaltserlaubnis-tuerkei-geldanlage" />
+    <xhtml:link rel="alternate" hreflang="tr" href="https://www.hasandogru.de/tr/blog/yatirim-karsiligi-ikamet-izni-almanyada-yasayanlar" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.hasandogru.de/de/blog/aufenthaltserlaubnis-tuerkei-geldanlage" />
+    <lastmod>2026-11-18</lastmod>
+    <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
 </urlset>
